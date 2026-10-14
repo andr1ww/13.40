@@ -2158,6 +2158,26 @@ public:
 public:
 	static class UEngine* GetEngine();
 
+	void BroadcastNetworkFailure(class UWorld* World, class UNetDriver* NetDriver, ENetworkFailure FailureType, const class FString& ErrorString = FString())
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UEngine*, class UWorld*, class UNetDriver*, ENetworkFailure, const class FString&)>(InSDKUtils::GetImageBase() + 0x4DB41C0), this, World, NetDriver, FailureType, ErrorString);
+	}
+
+	bool CreateNamedNetDriver(class UWorld* InWorld, class FName NetDriverName, class FName NetDriverDefinition)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(UEngine*, class UWorld*, class FName, class FName)>(InSDKUtils::GetImageBase() + 0x4DB8CB0), this, InWorld, NetDriverName, NetDriverDefinition);
+	}
+
+	class UNetDriver* FindNamedNetDriver(class UWorld* InWorld, class FName NetDriverName)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UNetDriver*(*)(UEngine*, class UWorld*, class FName)>(InSDKUtils::GetImageBase() + 0x4DBEB50), this, InWorld, NetDriverName);
+	}
+
+	bool DestroyNamedNetDriver(class UWorld* InWorld, class FName NetDriverName)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(UEngine*, class UWorld*, class FName)>(InSDKUtils::GetImageBase() + 0x4DBA4F0), this, InWorld, NetDriverName);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -4256,6 +4276,17 @@ public:
 	uint8                                         Pad_214[0x4D4];                                    // 0x0214(0x04D4)(Fixing Size After Last Property [ Dumper-7 ])
 	class UReplicationDriver*                     ReplicationDriver;                                 // 0x06E8(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_6F0[0x58];                                     // 0x06F0(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void SetWorld(class UWorld* InWorld)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(UNetDriver*, class UWorld*)>(this, 0x70), this, InWorld);
+	}
+
+	bool InitListen(void* InNotify, struct FURL& ListenURL, bool bReuseAddressAndPort, class FString& Error)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(UNetDriver*, void*, struct FURL&, bool, class FString&)>(this, 0x50), this, InNotify, ListenURL, bReuseAddressAndPort, Error);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -8133,6 +8164,16 @@ public:
 
 public:
 	static class UWorld* GetWorld();
+
+	void* GetNetworkNotify()
+	{
+		return reinterpret_cast<uint8*>(this) + 0x28;
+	}
+
+	struct FLevelCollection* FindCollectionByType(ELevelCollectionType InType)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<struct FLevelCollection*(*)(UWorld*, ELevelCollectionType)>(InSDKUtils::GetImageBase() + 0x4E147B0), this, InType);
+	}
 
 	void HandleTimelineScrubbed();
 	class AWorldSettings* K2_GetWorldSettings();

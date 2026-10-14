@@ -423,6 +423,8 @@ namespace UC
 		inline       wchar_t* CStr()       { return Data; }
 		inline const wchar_t* CStr() const { return Data; }
 
+		inline const wchar_t* operator*() const { return Data && NumElements ? Data : L""; }
+
 	public:
 		template<typename... ArgTypes>
 		static FString Printf(const wchar_t* Fmt, ArgTypes... Args);

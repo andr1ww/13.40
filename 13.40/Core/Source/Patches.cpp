@@ -19,6 +19,10 @@ namespace Patches
 
 	void Init()
 	{
+		void** CRashFixMaybe = reinterpret_cast<void**>(ImageBase + 0x6558CF8);
+		Hooking::VirtualSwap(CRashFixMaybe, 0, reinterpret_cast<void*>(ImageBase + 0x91B840));
+		Hooking::VirtualSwap(CRashFixMaybe, 3, reinterpret_cast<void*>(ImageBase + 0x91B840));
+
 		Hooking::Hook(ImageBase + 0xB5A990, StartInitialPreload, StartInitialPreloadOG);
 		Hooking::Hook(ImageBase + 0x1312430, SendRequestNow, SendRequestNowOG);
 
@@ -29,10 +33,6 @@ namespace Patches
 
 		Hooking::Null(ImageBase + 0x1D43AC0); // gamesession id patch 1
 		Hooking::Null(ImageBase + 0x1D44090); // patch 2 ^
-		Memcury::Scanner RequestExitRef = Memcury::Scanner::FindStringRef(L"Memory pools allocations failed, exiting...\n");
-
-		if (RequestExitRef.IsValid())
-			Hooking::Null(RequestExitRef.ScanFor({ Memcury::ASM::CALL }, true, 1).RelativeOffset(1).Get());
 	}
 }
 

@@ -9890,27 +9890,7 @@ void UNetPushModelHelpers::MarkPropertyDirtyFromRepIndex(class UObject* Object, 
 
 class UEngine* UEngine::GetEngine()
 {
-	static UEngine* GEngine = nullptr;
-
-	if (GEngine)
-		return GEngine;
-	
-	/* (Re-)Initialize if GEngine is nullptr */
-	for (int i = 0; i < UObject::GObjects->Num(); i++)
-	{
-		UObject* Obj = UObject::GObjects->GetByIndex(i);
-
-		if (!Obj)
-			continue;
-
-		if (Obj->IsA(UEngine::StaticClass()) && !Obj->IsDefaultObject())
-		{
-			GEngine = static_cast<UEngine*>(Obj);
-			break;
-		}
-	}
-
-	return GEngine; 
+	return *reinterpret_cast<UEngine**>(InSDKUtils::GetImageBase() + 0x8E90B40);
 }
 
 

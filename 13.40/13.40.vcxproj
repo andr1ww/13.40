@@ -161,6 +161,8 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Runtime\Headers\Engine\GameEngine.h" />
+    <ClInclude Include="Runtime\Headers\Engine\World.h" />
+    <ClInclude Include="Core\Headers\Unreal\UnrealNames.h" />
     <ClInclude Include="Runtime\Headers\Engine\Settings\GameMapsSettings.h" />
     <ClInclude Include="ThirdParty\Hooking\hde64.hpp" />
     <ClInclude Include="ThirdParty\Hooking\Hooking.hpp" />
@@ -182,6 +184,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Runtime\Source\Engine\GameEngine.cpp" />
+    <ClCompile Include="Runtime\Source\Engine\World.cpp" />
     <ClCompile Include="Runtime\Source\Engine\Settings\GameMapsSettings.cpp" />
     <ClCompile Include="SDK\SDK\AIModule_functions.cpp" />
     <ClCompile Include="SDK\SDK\Basic.cpp" />

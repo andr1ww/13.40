@@ -13822,6 +13822,14 @@ public:
 };
 DUMPER7_ASSERTS_FStreamingLevelsToConsider;
 
+enum class ELevelCollectionType : uint8
+{
+	DynamicSourceLevels,
+	DynamicDuplicatedLevels,
+	StaticLevels,
+	MAX
+};
+
 // ScriptStruct Engine.LevelCollection
 // 0x0078 (0x0078 - 0x0000)
 struct FLevelCollection final
@@ -13833,6 +13841,12 @@ public:
 	class UDemoNetDriver*                         DemoNetDriver;                                     // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class ULevel*                                 PersistentLevel;                                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSet<class ULevel*>                           Levels;                                            // 0x0028(0x0050)(NativeAccessSpecifierPrivate)
+
+public:
+	void SetNetDriver(class UNetDriver* const InNetDriver)
+	{
+		NetDriver = InNetDriver;
+	}
 };
 DUMPER7_ASSERTS_FLevelCollection;
 

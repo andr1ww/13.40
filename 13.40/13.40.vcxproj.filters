@@ -15,6 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Runtime\Headers\Engine\World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Headers\Unreal\UnrealNames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Core\Headers\Log\ConsoleOutputDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -56,6 +62,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Runtime\Source\Engine\World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Core\Source\dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
