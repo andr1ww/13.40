@@ -4183,6 +4183,19 @@ public:
 	uint8                                         Pad_1538[0x578];                                   // 0x1538(0x0578)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
+	void Close()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UNetConnection*)>(InSDKUtils::GetImageBase() + 0x4AE8990), this);
+	}
+
+	class FString RemoteAddressToString() const
+	{
+		FString Result;
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<FString*(*)(const UNetConnection*, FString*)>(this, 0x66), this, &Result);
+		return Result;
+	}
+
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("NetConnection")

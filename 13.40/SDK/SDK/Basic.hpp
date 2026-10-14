@@ -334,6 +334,20 @@ public:
 	}
 };
 
+class FMemory final
+{
+public:
+	static void* Realloc(void* Original, uint64 Count, uint32 Alignment = 0)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<void*(*)(void*, uint64, uint32)>(InSDKUtils::GetImageBase() + 0x3230950), Original, Count, Alignment);
+	}
+
+	static void Free(void* Original)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(void*)>(InSDKUtils::GetImageBase() + 0x3221A10), Original);
+	}
+};
+
 // Predefined struct FName
 // 0x0008 (0x0008 - 0x0000)
 class FName final
@@ -356,7 +370,12 @@ public:
 	}
 
 	constexpr FName() = default;
-	
+
+	FName(const wchar_t* Name)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<FName*(*)(FName*, const wchar_t*, int32)>(InSDKUtils::GetImageBase() + 0x331A0A0), this, Name, 1);
+	}
+
 	constexpr FName(const FName&) = default;
 	
 	constexpr FName(FName&&) = default;
@@ -1371,6 +1390,24 @@ template<typename UnderlayingClassType, int32 Size, int32 Align = 0x8>
 using TActorBasedCycleFixup = CyclicDependencyFixupImpl::TCyclicClassFixup<UnderlayingClassType, Size, Align, class AActor>;
 
 SDK_NAMESPACE_END
+
+template<typename... ArgTypes>
+inline UC::FString UC::FString::Printf(const wchar_t* Fmt, ArgTypes... Args)
+{
+	FString Result;
+	SDK_NAMESPACE_NAME ::InSDKUtils::CallGameFunction(reinterpret_cast<FString*(*)(FString*, const wchar_t*, ...)>(SDK_NAMESPACE_NAME ::InSDKUtils::GetImageBase() + 0x31DC280), &Result, Fmt, Args...);
+	return Result;
+}
+
+inline void UC::FString::Free()
+{
+	if (Data)
+		SDK_NAMESPACE_NAME ::FMemory::Free(Data);
+
+	Data = nullptr;
+	NumElements = 0;
+	MaxElements = 0;
+}
 
 
 template <typename T>

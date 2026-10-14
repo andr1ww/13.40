@@ -382,6 +382,8 @@ namespace UC
 	public:
 		using TArray::TArray;
 
+		FString() = default;
+
 		FString(const wchar_t* Str)
 		{
 			const uint32 NullTerminatedLength = static_cast<uint32>(wcslen(Str) + 0x1);
@@ -420,6 +422,12 @@ namespace UC
 	public:
 		inline       wchar_t* CStr()       { return Data; }
 		inline const wchar_t* CStr() const { return Data; }
+
+	public:
+		template<typename... ArgTypes>
+		static FString Printf(const wchar_t* Fmt, ArgTypes... Args);
+
+		void Free();
 
 	public:
 		inline bool operator==(const FString& Other) const { return Other ? NumElements == Other.NumElements && wcscmp(Data, Other.Data) == 0 : false; }

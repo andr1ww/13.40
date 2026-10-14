@@ -1,4 +1,5 @@
 #include "pch.h"
+#include "Core.h"
 #include "Paradise/Public/Core.h"
 #include "Paradise/Globals.h"
 #include "Paradise/Public/Unreal.h"
@@ -14,7 +15,7 @@ void Init()
 	if (CommandLine.find("-nullrhi") == std::string::npos)
 		return;
 
-	AllocConsole();
+	FConsoleOutputDevice::Get().Show();
 
 	FILE* fptr;
 	freopen_s(&fptr, "CONOUT$", "w+", stdout);
@@ -22,9 +23,17 @@ void Init()
 	freopen_s(&fptr, "CONIN$", "r", stdin);
 
 	std::wstring Title = L"13.40 | https://github.com/andr1ww | Loading | Built: ";
-	Title += std::wstring(L"" __DATE__ L" " __TIME__);
+	Title += std::wstring(L"" __DATE__ L" " __TIME__); 
 
 	SetConsoleTitleW(Title.c_str());
+
+	std::thread([]()
+	{
+		while (!GLogConsole || !UWorld::GetWorld())
+			Sleep(250);
+
+		GLog->RemoveOutputDevice(GLogConsole);
+	}).detach();
 
 	for (auto& Init : Initters())
 		Init();

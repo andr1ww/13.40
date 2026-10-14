@@ -75,6 +75,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+!13.40/Core/Headers/Log/
 SERVER/
 
 .idea/
