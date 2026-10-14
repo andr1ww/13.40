@@ -24,6 +24,26 @@
 #include <format>
 
 #include "memcury.h"
+#include "SDK/SDK/Basic.hpp"
+#include "SDK/SDK/CoreUObject_structs.hpp"
+#include "SDK/SDK/CoreUObject_classes.hpp"
+#include "SDK/SDK/Engine_structs.hpp"
+#include "SDK/SDK/Engine_classes.hpp"
+#include "SDK/SDK/FortniteGame_structs.hpp"
+#include "SDK/SDK/FortniteGame_classes.hpp"
+#include "SDK/SDK/GameplayAbilities_structs.hpp"
+#include "SDK/SDK/GameplayAbilities_classes.hpp"
+#include "SDK/SDK/PlayerPawn_Athena_classes.hpp"
+#include "SDK/SDK/GAB_AthenaDBNO_classes.hpp"
+#include "SDK/SDK/McpProfileSys_classes.hpp"
+#include "SDK/SDK/EngineSettings_Classes.hpp"
+#include "SDK/SDK/GameplayTags_classes.hpp"
+#include "SDK/SDK/UACBase_classes.hpp"
+#include "SDK/SDK/OnlineSubsystem_structs.hpp"
+
+using namespace SDK;
+using namespace UC;
+
 
 using std::cout;
 using std::cin;

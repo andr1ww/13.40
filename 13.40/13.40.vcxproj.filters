@@ -74,5 +74,29 @@
     <ClCompile Include="ThirdParty\Paradise\Private\Unreal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\Engine_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\GameplayAbilities_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\FortniteGame_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\CoreUObject_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\Basic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\GameplayTags_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\NavigationSystem_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\AIModule_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -175,6 +175,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\AIModule_functions.cpp" />
+    <ClCompile Include="SDK\SDK\Basic.cpp" />
+    <ClCompile Include="SDK\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="SDK\SDK\Engine_functions.cpp" />
+    <ClCompile Include="SDK\SDK\FortniteGame_functions.cpp" />
+    <ClCompile Include="SDK\SDK\GameplayAbilities_functions.cpp" />
+    <ClCompile Include="SDK\SDK\GameplayTags_functions.cpp" />
+    <ClCompile Include="SDK\SDK\NavigationSystem_functions.cpp" />
     <ClCompile Include="ThirdParty\Hooking\hde64.cpp" />
     <ClCompile Include="ThirdParty\Hooking\Hooking.cpp" />
     <ClCompile Include="ThirdParty\Paradise\Private\Core.cpp" />
