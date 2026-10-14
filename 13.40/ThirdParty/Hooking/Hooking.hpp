@@ -8,18 +8,18 @@ namespace Hooking
 
     bool InternalHook(uintptr_t Ptr, void* Detour, void** Original);
 
-/*    template <class PtrType = void*, class OriginalType = void*>
+    template <class PtrType = void*, class OriginalType = void*>
     std::enable_if_t<!std::is_base_of_v<UObject, OriginalType>, void> Hook(PtrType _Ptr, void* _Detour, OriginalType& _Orig = __nullptrForHook)
     {
         InternalHook((uintptr_t)_Ptr, _Detour, (LPVOID*)(std::is_same_v<OriginalType, void*> ? nullptr : &_Orig));
-    }*/
+    }
 
     bool EnableHook(uintptr_t Ptr);
     bool DisableHook(uintptr_t Ptr);
 
     void VirtualSwap(void** VTable, int Index, void* Detour, void** Original = nullptr);
 
-/*    template <typename ClassType, typename OriginalType = void*>
+    template <typename ClassType, typename OriginalType = void*>
     __forceinline void Hook(uint32_t _Ind, void* _Detour, OriginalType& _Orig = __nullptrForHook)
     {
         auto _Vt = ClassType::GetDefaultObj()->VTable;
@@ -61,7 +61,7 @@ namespace Hooking
             _Orig = (OriginalType)_Fn->ExecFunction;
 
         _Fn->ExecFunction = (void (*)(void*, void*, void*))_Detour;
-    }*/
+    }
 
     template <typename PatchType>
     __forceinline void Patch(uintptr_t ptr, PatchType byte)

@@ -76,7 +76,15 @@ FName BasicFilesImplUtils::StringToName(const wchar_t* Name)
 UObject* BasicFilesImplUtils::GetDefaultObjectImpl(UClass* Class)
 {
 	if (Class)
+	{
+		if (!Class->ClassDefaultObject)
+		{
+			void* (*CreateDefaultObject)(void*) = decltype(CreateDefaultObject)(Class->VTable[0x72]);
+			CreateDefaultObject(Class);
+		}
+
 		return Class->ClassDefaultObject;
+	}
 
 	return nullptr;
 }

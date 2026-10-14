@@ -72,34 +72,41 @@ using std::bind;
 using std::ref;
 using std::thread;
 
-template <typename T>
-__forceinline T& Get(void* Obj, uint32_t Off) { return *(T*)((uintptr_t)Obj + Off); }
+template <typename _Ot>
+__forceinline _Ot& Get(void* Obj, uint32_t Offset)
+{
+    return *(_Ot*)(__int64(Obj) + Offset);
+}
 
-template <typename T>
-__forceinline T& Get(const void* Obj, uint32_t Off) { return *(T*)((uintptr_t)Obj + Off); }
+template <typename _Ot>
+__forceinline _Ot& Get(const void* Obj, uint32_t Offset)
+{
+    return *(_Ot*)(__int64(Obj) + Offset);
+}
 
-template <typename T>
-__forceinline T* Get(const void* Obj, uint32_t Off) { return (T*)((uintptr_t)Obj + Off); }
+template <typename _Ot>
+__forceinline _Ot* Get(const void* Obj, uint32_t Offset)
+{
+    return (_Ot*)(__int64(Obj) + Offset);
+}
 
-template <typename T>
-__forceinline T& Set(const void* Obj, uint32_t Off, const T& Val) { return *(T*)((uintptr_t)Obj + Off) = Val; }
+template <typename _Ot>
+__forceinline void Set(void* Obj, uint32_t Offset, const _Ot& Value)
+{
+    *(_Ot*)((__int64)Obj + Offset) = Value;
+}
 
-template <typename T>
-__forceinline T& Set(void* Obj, uint32_t Off, const T& Val) { return *(T*)((uintptr_t)Obj + Off) = Val; }
+template <typename _Ot>
+__forceinline void Set(const void* Obj, uint32_t Offset, const _Ot& Value)
+{
+    *(_Ot*)((__int64)Obj + Offset) = Value;
+}
 
-template <typename T>
-__forceinline T* Set(const void* Obj, uint32_t Off, const T* Val) { return (T*)((uintptr_t)Obj + Off) = Val; }
-
-template <typename T>
-__forceinline T* Set(const void* Obj, uint32_t Off, const T Val) { return (T*)((uintptr_t)Obj + Off) = Val; }
-
-template <typename T>
-__forceinline T* Set(void* Obj, uint32_t Off, const T* Val) { return (T*)((uintptr_t)Obj + Off) = Val; }
-
-template <typename T>
-__forceinline T* Set(void* Obj, uint32_t Off, const T Val) { return (T*)((uintptr_t)Obj + Off) = Val; }
-
-__forceinline void* GetPtr(const void* Obj, uint32_t Off) { return (void*)((uintptr_t)Obj + Off); }
+template <typename _Ot>
+__forceinline void Set(uintptr_t Offset, const _Ot& Value)
+{
+    *reinterpret_cast<_Ot*>(Offset) = Value;
+}
 
 inline std::vector<std::function<void()>>& Initters()
 {
@@ -133,4 +140,11 @@ inline std::vector<std::function<void()>>& EngineInitters()
         static Name##_Reg erm_##Name##_reg; \
     }
 
-#endif //PCH_H
+template <typename To, typename From>
+FORCEINLINE To* Cast(From* Src)
+{
+    return Src && Src->IsA(To::StaticClass()) ? static_cast<To*>(Src) : nullptr;
+}
+
+#define DefineHook(_Rt, _Name, ...) static inline _Rt (*_Name##OG)(##__VA_ARGS__); _Rt _Name(##__VA_ARGS__);
+#endif

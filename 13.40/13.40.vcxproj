@@ -160,6 +160,8 @@
     <ClInclude Include="Core\Headers\Log\LogMacros.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Runtime\Headers\Engine\GameEngine.h" />
+    <ClInclude Include="Runtime\Headers\Engine\Settings\GameMapsSettings.h" />
     <ClInclude Include="ThirdParty\Hooking\hde64.hpp" />
     <ClInclude Include="ThirdParty\Hooking\Hooking.hpp" />
     <ClInclude Include="ThirdParty\Hooking\table64.hpp" />
@@ -172,12 +174,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\Source\dllmain.cpp" />
+    <ClCompile Include="Core\Source\Patches.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Runtime\Source\Engine\GameEngine.cpp" />
+    <ClCompile Include="Runtime\Source\Engine\Settings\GameMapsSettings.cpp" />
     <ClCompile Include="SDK\SDK\AIModule_functions.cpp" />
     <ClCompile Include="SDK\SDK\Basic.cpp" />
     <ClCompile Include="SDK\SDK\CoreUObject_functions.cpp" />

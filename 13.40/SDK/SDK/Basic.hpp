@@ -223,8 +223,11 @@ ClassType* GetDefaultObjImpl()
 struct FUObjectItem final
 {
 public:
-	class UObject*                                Object;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
-	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UObject* Object;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         Flags;                                             // 0x0008(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         ClusterRootIndex;                                  // 0x000C(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         SerialNumber;                                      // 0x0010(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 DUMPER7_ASSERTS_FUObjectItem;
 
@@ -256,6 +259,21 @@ public:
 	FUObjectItem** GetDecrytedObjPtr() const
 	{
 		return reinterpret_cast<FUObjectItem**>(DecryptPtr(Objects));
+	}
+
+
+	inline struct FUObjectItem* GetItemByIndex(const int32 Index) const
+	{
+		const int32 ChunkIndex = Index / ElementsPerChunk;
+		const int32 InChunkIdx = Index % ElementsPerChunk;
+
+		if (ChunkIndex >= NumChunks || Index >= NumElements)
+			return nullptr;
+
+		FUObjectItem* ChunkPtr = GetDecrytedObjPtr()[ChunkIndex];
+		if (!ChunkPtr) return nullptr;
+
+		return ChunkPtr + InChunkIdx;
 	}
 	
 	inline class UObject* GetByIndex(const int32 Index) const

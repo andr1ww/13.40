@@ -29,7 +29,7 @@ void Init()
 
 	std::thread([]()
 	{
-		while (!GLogConsole || !UWorld::GetWorld())
+		while (!GLogConsole || !GWorld)
 			Sleep(250);
 
 		GLog->RemoveOutputDevice(GLogConsole);
