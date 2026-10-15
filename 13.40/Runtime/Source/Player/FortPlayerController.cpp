@@ -231,9 +231,57 @@ void FortPlayerController::ServerRepairBuildingActor_Implementation(AFortPlayerC
 		UFortAIFunctionLibrary::MakeNoiseEventAtLocation(_this->MyFortPawn, 1000.0f, BuildingLocation, FName());
 }
 
+void FortPlayerController::ServerAttemptInventoryDrop_Implementation(AFortPlayerController* _this, const FGuid& ItemGuid, int32 Count, bool bTrash)
+{
+	AFortPlayerPawn* Pawn = _this->MyFortPawn;
+	AFortInventory* Inventory = _this->WorldInventory;
+
+	if (Count <= 0 || !Pawn || Pawn->bIsDBNO || Pawn->bIsSkydiving || !Inventory || !_this->CanRemoveInventoryItem(ItemGuid))
+		return;
+
+	UFortWorldItem* Item = Inventory->GetItem(ItemGuid);
+	UFortWorldItemDefinition* ItemDefinition = Item ? Cast<UFortWorldItemDefinition>(Item->ItemEntry.ItemDefinition) : nullptr;
+
+	if (!ItemDefinition)
+		return;
+
+	Count = std::clamp(Count, 1, Item->ItemEntry.Count);
+
+	FFortCreatePickupData CreatePickupData{};
+	CreatePickupData.World = GWorld;
+	CreatePickupData.ItemEntry = Item->ItemEntry;
+	CreatePickupData.ItemEntry.SetCount(Count);
+	CreatePickupData.ItemEntry.SetItemGuid(NewGuid());
+	CreatePickupData.PickupSourceTypeFlags = EFortPickupSourceTypeFlag::Player;
+
+	FVector Forward = Pawn->GetActorForwardVector();
+	Forward.Z = 0.f;
+	Forward.Normalize();
+
+	CreatePickupData.SpawnLocation = Pawn->K2_GetActorLocation() + Forward * 70.f + FVector{ 0.f, 0.f, 50.f };
+	FVector DropTarget = Pawn->K2_GetActorLocation() + Forward * 300.f;
+
+	AFortPickup* Pickup = bTrash || ItemDefinition->DropBehavior == EWorldItemDropBehavior::DestroyOnDrop ? nullptr : AFortPickup::CreateFromData(CreatePickupData);
+
+	if (!Inventory->RemoveInventoryItem(ItemGuid, Count, false))
+	{
+		if (Pickup)
+			Pickup->K2_DestroyActor();
+
+		return;
+	}
+
+	if (!Pickup)
+		return;
+
+	Pickup->PawnWhoDroppedPickup = Pawn;
+	Pickup->TossPickup(DropTarget, Pawn, -1, true, true, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::Unset);
+}
+
 void FortPlayerController::Init()
 {
 	Hooking::HookEvery<AFortPlayerController>(0x1068 / 8, ServerExecuteInventoryItem_Implementation);
+	Hooking::HookEvery<AFortPlayerController>(0x10E8 / 8, ServerAttemptInventoryDrop_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x1180 / 8, ServerCreateBuildingActor_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x11B8 / 8, ServerBeginEditingBuildingActor_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x1190 / 8, ServerEditBuildingActor_Implementation);

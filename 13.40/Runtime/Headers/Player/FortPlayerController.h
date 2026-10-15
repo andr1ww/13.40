@@ -10,6 +10,7 @@ namespace FortPlayerController
 	void ServerEditBuildingActor_Implementation(AFortPlayerController* _this, ABuildingSMActor* BuildingActorToEdit, TSubclassOf<ABuildingSMActor> NewBuildingClass, uint8 RotationIterations, bool bMirrored);
 	void ServerEndEditingBuildingActor_Implementation(AFortPlayerController* _this, ABuildingSMActor* BuildingActorToStopEditing);
 	void ServerRepairBuildingActor_Implementation(AFortPlayerController* _this, ABuildingSMActor* BuildingActorToRepair);
+	void ServerAttemptInventoryDrop_Implementation(AFortPlayerController* _this, const FGuid& ItemGuid, int32 Count, bool bTrash);
 
 	void Init();
 }

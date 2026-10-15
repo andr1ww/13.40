@@ -237083,6 +237083,26 @@ void AWrapPreviewGridActor::SetWrap(class UAthenaItemWrapDefinition* NewWrap)
 }
 
 
+bool AFortPlayerController::CanRemoveInventoryItem(const struct FGuid& ItemGuid)
+{
+	if (!WorldInventory)
+		return false;
+
+	class UFortWorldItem* Item = WorldInventory->GetItem(ItemGuid);
+
+	if (!Item)
+		return false;
+
+	class UFortWorldItemDefinition* ItemDefinition = Cast<UFortWorldItemDefinition>(Item->ItemEntry.ItemDefinition);
+
+	if (!ItemDefinition || !ItemDefinition->bCanBeDropped)
+		return false;
+
+	return !ItemDefinition->IsA(UFortBuildingItemDefinition::StaticClass())
+		&& !ItemDefinition->IsA(UFortEditToolItemDefinition::StaticClass())
+		&& !ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass());
+}
+
 bool AFortPlayerController::FixUpCreateBuildingClassData(struct FBuildingClassData& BuildingClassData)
 {
 	class UClass* BuildingClass = BuildingClassData.BuildingClass;

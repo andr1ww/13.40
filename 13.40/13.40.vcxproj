@@ -167,6 +167,7 @@
     <ClInclude Include="Core\Headers\Unreal\UObjectGlobals.h" />
     <ClInclude Include="Core\Headers\Unreal\Stack.h" />
     <ClInclude Include="Runtime\Headers\Actors\BuildingFoundation.h" />
+    <ClInclude Include="Runtime\Headers\Items\FortPickup.h" />
     <ClInclude Include="Runtime\Headers\Athena\FortPoiVolume.h" />
     <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_Aircraft.h" />
     <ClInclude Include="Runtime\Headers\Actors\BuildingActor.h" />
@@ -200,6 +201,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Runtime\Source\Actors\BuildingFoundation.cpp" />
+    <ClCompile Include="Runtime\Source\Items\FortPickup.cpp" />
     <ClCompile Include="Runtime\Source\Athena\FortPoiVolume.cpp" />
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp" />
     <ClCompile Include="Runtime\Source\Actors\BuildingActor.cpp" />

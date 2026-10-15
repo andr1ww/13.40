@@ -5497,6 +5497,8 @@ public:
 		return InSDKUtils::CallGameFunction(reinterpret_cast<class UFortControllerComponent_Aircraft*(*)(AFortPlayerController*)>(InSDKUtils::GetImageBase() + 0x1BBAB50), this);
 	}
 
+	bool CanRemoveInventoryItem(const struct FGuid& ItemGuid);
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -8016,6 +8018,11 @@ public:
 	void SetPickupTarget(class AFortPawn* Pawn, float InFlyTime, const struct FVector& InStartDirection)
 	{
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPickup*, class AFortPawn*, float, const struct FVector*)>(InSDKUtils::GetImageBase() + 0x262AFC0), this, Pawn, InFlyTime, &InStartDirection);
+	}
+
+	void UpdateSpecialActorStat(ESpecialActorStatType InStat, float InValue)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPickup*, ESpecialActorStatType, float)>(InSDKUtils::GetImageBase() + 0x2630610), this, InStat, InValue);
 	}
 
 public:
@@ -67550,6 +67557,11 @@ public:
 	static int32 GetItemMaxStackSize(class AFortPlayerController* PlayerController, const class UFortItemDefinition* ItemDefinition)
 	{
 		return InSDKUtils::CallGameFunction(reinterpret_cast<int32(*)(class AFortPlayerController*, const class UFortItemDefinition*)>(InSDKUtils::GetImageBase() + 0x25FE660), PlayerController, ItemDefinition);
+	}
+
+	int32 GetOverflowFromAddingItem(const struct FFortItemEntry& ItemEntry)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<int32(*)(AFortInventory*, const struct FFortItemEntry*)>(InSDKUtils::GetImageBase() + 0x2600800), this, &ItemEntry);
 	}
 
 public:

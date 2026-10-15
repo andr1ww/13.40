@@ -63,8 +63,26 @@ void FortPlayerPawn::SetPawnCosmeticLoadout(AFortPlayerPawn* _this, FFortAthenaL
 	SetPawnCosmeticLoadoutOG(_this, CosmeticLoadout);
 }
 
+void FortPlayerPawn::ServerHandlePickupInfo_Implementation(AFortPlayerPawn* _this, AFortPickup* Pickup, const FFortPickupRequestInfo& Params)
+{
+	if (!Pickup || Pickup->bPickedUp)
+		return;
+
+	AFortPlayerController* PlayerController = Cast<AFortPlayerController>(_this->Controller);
+
+	if (PlayerController && PlayerController->CanRemoveInventoryItem(Params.SwapWithItem))
+	{
+		if (UFortWorldItem* ItemToSwap = PlayerController->WorldInventory->GetItem(Params.SwapWithItem))
+			PlayerController->ServerAttemptInventoryDrop(Params.SwapWithItem, ItemToSwap->ItemEntry.Count, false);
+	}
+
+	Pickup->PickupLocationData.bPlayPickupSound = Params.bPlayPickupSound;
+	Pickup->SetPickupTarget(_this, Params.FlyTime / _this->PickupSpeedMultiplier, Params.Direction);
+}
+
 void FortPlayerPawn::Init()
 {
+	Hooking::HookEvery<AFortPlayerPawn>(0xF80 / 8, ServerHandlePickupInfo_Implementation);
 	Hooking::Hook<AFortPlayerPawnAthena>(0x1260 / 8, InitAbilitySystemComponentFromPlayerState, InitAbilitySystemComponentFromPlayerStateOG);
 	Hooking::Hook<AFortPlayerPawnAthena>(0x1258 / 8, InitAbilitySystemComponent, InitAbilitySystemComponentOG);
 	Hooking::Hook(ImageBase + 0x2925650, SetPawnCosmeticLoadout, SetPawnCosmeticLoadoutOG);
