@@ -25,10 +25,8 @@ void FortGameMode::InitWorldManager(AFortGameModeAthena* _this, AFortWorldManage
 		GameState->SetWorldManager(WorldManager);
 }
 
-void FortGameMode::InitGameState(AFortGameModeAthena* _this)
+void FortGameMode::SetupPlaylist(AFortGameModeAthena* _this)
 {
-	InitGameStateOG(_this);
-
 	if (_this->CurrentPlaylistName.ComparisonIndex == 0)
 		_this->SetCurrentPlaylistName(FName("Playlist_DefaultSolo"));
 
@@ -62,14 +60,13 @@ void FortGameMode::FinishWorldInitialization(AFortGameModeAthena* _this, AActor*
 	FinishWorldInitializationOG(_this, WorldManager);
 
 	InitWorldManager(_this, Cast<AFortWorldManager>(WorldManager));
+	SetupPlaylist(_this);
 
 	std::wstring Title = L"13.40 | Ready | Built: ";
 	Title += std::wstring(L"" __DATE__ L" " __TIME__);
 
 	SetConsoleTitleW(Title.c_str());
 	UE_LOG(LogFort, Log, TEXT("FortGameMode::FinishWorldInitialization: %s"), *FString(Title.c_str()));
-
-	_this->GameState->OnRep_CurrentPlaylistInfo();
 }
 
 int32 Index;
@@ -129,7 +126,6 @@ void FortGameMode::Init()
 {
 	Hooking::Hook<AFortGameModeAthena>(0x808 / 8, ReadyToStartMatch, ReadyToStartMatchOG);
 
-	Hooking::Hook<AFortGameModeAthena>(0x690 / 8, InitGameState, InitGameStateOG);
 	Hooking::Hook<AFortGameModeAthena>(0xA68 / 8, FinishWorldInitialization, FinishWorldInitializationOG);
 	Hooking::Hook<AFortGameModeAthena>(0x670 / 8, HandleStartingNewPlayer, HandleStartingNewPlayerOG);
 
