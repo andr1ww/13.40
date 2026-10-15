@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UAthenaGenericLobbyViolator_C::SetGamemodeName(const class FText& Name_0, const class FText& SubText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaGenericLobbyViolator_C", "SetGamemodeName");
+	class UFunction* Func = Class->GetFunction("AthenaGenericLobbyViolator_C", "SetGamemodeName");
 
 	Params::AthenaGenericLobbyViolator_C_SetGamemodeName Parms{};
 

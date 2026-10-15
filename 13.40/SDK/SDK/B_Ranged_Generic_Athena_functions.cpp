@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Ranged_Generic_Athena_C::ExecuteUbergraph_B_Ranged_Generic_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ExecuteUbergraph_B_Ranged_Generic_Athena");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ExecuteUbergraph_B_Ranged_Generic_Athena");
 
 	Params::B_Ranged_Generic_Athena_C_ExecuteUbergraph_B_Ranged_Generic_Athena Parms{};
 
@@ -41,10 +38,7 @@ void AB_Ranged_Generic_Athena_C::ExecuteUbergraph_B_Ranged_Generic_Athena(int32 
 
 void AB_Ranged_Generic_Athena_C::ShowWeapon()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowWeapon");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowWeapon");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Ranged_Generic_Athena_C::ShowWeapon()
 
 void AB_Ranged_Generic_Athena_C::HideWeapon()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideWeapon");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideWeapon");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_Ranged_Generic_Athena_C::HideWeapon()
 
 void AB_Ranged_Generic_Athena_C::ShowGunMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowGunMesh");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowGunMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_Ranged_Generic_Athena_C::ShowGunMesh()
 
 void AB_Ranged_Generic_Athena_C::HideGunMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideGunMesh");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideGunMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AB_Ranged_Generic_Athena_C::HideGunMesh()
 
 void AB_Ranged_Generic_Athena_C::ShowWeaponMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowWeaponMesh");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowWeaponMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void AB_Ranged_Generic_Athena_C::ShowWeaponMesh()
 
 void AB_Ranged_Generic_Athena_C::HideWeaponMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideWeaponMesh");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideWeaponMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -128,10 +107,7 @@ void AB_Ranged_Generic_Athena_C::HideWeaponMesh()
 
 void AB_Ranged_Generic_Athena_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLocalControllerOnly)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnWeaponVisibilityChanged");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnWeaponVisibilityChanged");
 
 	Params::B_Ranged_Generic_Athena_C_OnWeaponVisibilityChanged Parms{};
 
@@ -147,10 +123,7 @@ void AB_Ranged_Generic_Athena_C::OnWeaponVisibilityChanged(bool bVisible, bool b
 
 void AB_Ranged_Generic_Athena_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -164,10 +137,7 @@ void AB_Ranged_Generic_Athena_C::ReceiveBeginPlay()
 
 void AB_Ranged_Generic_Athena_C::SetWeaponPierceThrough_ClientRep(bool Enable, int32 TargetLimit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWeaponPierceThrough_ClientRep");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWeaponPierceThrough_ClientRep");
 
 	Params::B_Ranged_Generic_Athena_C_SetWeaponPierceThrough_ClientRep Parms{};
 
@@ -186,10 +156,7 @@ void AB_Ranged_Generic_Athena_C::SetWeaponPierceThrough_ClientRep(bool Enable, i
 
 void AB_Ranged_Generic_Athena_C::SetWeaponPierceThrough(bool Enable, int32 TargetLimit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWeaponPierceThrough");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWeaponPierceThrough");
 
 	Params::B_Ranged_Generic_Athena_C_SetWeaponPierceThrough Parms{};
 
@@ -205,10 +172,7 @@ void AB_Ranged_Generic_Athena_C::SetWeaponPierceThrough(bool Enable, int32 Targe
 
 void AB_Ranged_Generic_Athena_C::OnEquippedWeaponDestory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnEquippedWeaponDestory");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnEquippedWeaponDestory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -219,10 +183,7 @@ void AB_Ranged_Generic_Athena_C::OnEquippedWeaponDestory()
 
 void AB_Ranged_Generic_Athena_C::ShellsON__onPump_()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShellsON_(onPump)");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShellsON_(onPump)");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,10 +196,7 @@ void AB_Ranged_Generic_Athena_C::ShellsON__onPump_()
 
 void AB_Ranged_Generic_Athena_C::OnInitCosmeticAlterations(const struct FFortCosmeticModification& CosmeticMod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnInitCosmeticAlterations");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnInitCosmeticAlterations");
 
 	Params::B_Ranged_Generic_Athena_C_OnInitCosmeticAlterations Parms{};
 
@@ -255,10 +213,7 @@ void AB_Ranged_Generic_Athena_C::OnInitCosmeticAlterations(const struct FFortCos
 
 void AB_Ranged_Generic_Athena_C::OnInitAlteration(class UFortAlterationItemDefinition* NewAlteration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnInitAlteration");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnInitAlteration");
 
 	Params::B_Ranged_Generic_Athena_C_OnInitAlteration Parms{};
 
@@ -273,10 +228,7 @@ void AB_Ranged_Generic_Athena_C::OnInitAlteration(class UFortAlterationItemDefin
 
 void AB_Ranged_Generic_Athena_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -290,10 +242,7 @@ void AB_Ranged_Generic_Athena_C::OnWeaponAttached()
 
 void AB_Ranged_Generic_Athena_C::Update_Enemy_Custom_Depths(bool Enable_Or_Disable, int32 StencilBufferValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Update Enemy Custom Depths");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Update Enemy Custom Depths");
 
 	Params::B_Ranged_Generic_Athena_C_Update_Enemy_Custom_Depths Parms{};
 
@@ -309,10 +258,7 @@ void AB_Ranged_Generic_Athena_C::Update_Enemy_Custom_Depths(bool Enable_Or_Disab
 
 void AB_Ranged_Generic_Athena_C::InitializeScopeVariables()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "InitializeScopeVariables");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "InitializeScopeVariables");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -323,10 +269,7 @@ void AB_Ranged_Generic_Athena_C::InitializeScopeVariables()
 
 void AB_Ranged_Generic_Athena_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -339,10 +282,7 @@ void AB_Ranged_Generic_Athena_C::K2_OnUnEquip()
 
 void AB_Ranged_Generic_Athena_C::OnSetTargeting(bool bNewIsTargeting)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnSetTargeting");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnSetTargeting");
 
 	Params::B_Ranged_Generic_Athena_C_OnSetTargeting Parms{};
 
@@ -359,10 +299,7 @@ void AB_Ranged_Generic_Athena_C::OnSetTargeting(bool bNewIsTargeting)
 
 void AB_Ranged_Generic_Athena_C::OnPlayReloadFX(EFortReloadFXState ReloadStage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnPlayReloadFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnPlayReloadFX");
 
 	Params::B_Ranged_Generic_Athena_C_OnPlayReloadFX Parms{};
 
@@ -377,10 +314,7 @@ void AB_Ranged_Generic_Athena_C::OnPlayReloadFX(EFortReloadFXState ReloadStage)
 
 void AB_Ranged_Generic_Athena_C::OnStopWeaponFireFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnStopWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnStopWeaponFireFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -394,10 +328,7 @@ void AB_Ranged_Generic_Athena_C::OnStopWeaponFireFX()
 
 void AB_Ranged_Generic_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnPlayWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnPlayWeaponFireFX");
 
 	Params::B_Ranged_Generic_Athena_C_OnPlayWeaponFireFX Parms{};
 
@@ -415,10 +346,7 @@ void AB_Ranged_Generic_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool b
 
 void AB_Ranged_Generic_Athena_C::OnLoaded_351A9D71483BD9CF417705946595CB08(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_351A9D71483BD9CF417705946595CB08");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_351A9D71483BD9CF417705946595CB08");
 
 	Params::B_Ranged_Generic_Athena_C_OnLoaded_351A9D71483BD9CF417705946595CB08 Parms{};
 
@@ -435,10 +363,7 @@ void AB_Ranged_Generic_Athena_C::OnLoaded_351A9D71483BD9CF417705946595CB08(class
 
 void AB_Ranged_Generic_Athena_C::OnLoaded_65280D504DA982E453E39BA22D9D1643(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_65280D504DA982E453E39BA22D9D1643");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_65280D504DA982E453E39BA22D9D1643");
 
 	Params::B_Ranged_Generic_Athena_C_OnLoaded_65280D504DA982E453E39BA22D9D1643 Parms{};
 
@@ -455,10 +380,7 @@ void AB_Ranged_Generic_Athena_C::OnLoaded_65280D504DA982E453E39BA22D9D1643(class
 
 void AB_Ranged_Generic_Athena_C::OnLoaded_109F12F046377B483CA7FF92A795CBD2(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_109F12F046377B483CA7FF92A795CBD2");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_109F12F046377B483CA7FF92A795CBD2");
 
 	Params::B_Ranged_Generic_Athena_C_OnLoaded_109F12F046377B483CA7FF92A795CBD2 Parms{};
 
@@ -475,10 +397,7 @@ void AB_Ranged_Generic_Athena_C::OnLoaded_109F12F046377B483CA7FF92A795CBD2(class
 
 void AB_Ranged_Generic_Athena_C::OnLoaded_43F549264BB135D3D385D4BB5846412A(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_43F549264BB135D3D385D4BB5846412A");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_43F549264BB135D3D385D4BB5846412A");
 
 	Params::B_Ranged_Generic_Athena_C_OnLoaded_43F549264BB135D3D385D4BB5846412A Parms{};
 
@@ -493,10 +412,7 @@ void AB_Ranged_Generic_Athena_C::OnLoaded_43F549264BB135D3D385D4BB5846412A(class
 
 void AB_Ranged_Generic_Athena_C::AnimateScopePostProcess__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AnimateScopePostProcess__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AnimateScopePostProcess__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -507,10 +423,7 @@ void AB_Ranged_Generic_Athena_C::AnimateScopePostProcess__UpdateFunc()
 
 void AB_Ranged_Generic_Athena_C::AnimateScopePostProcess__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AnimateScopePostProcess__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AnimateScopePostProcess__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -521,10 +434,7 @@ void AB_Ranged_Generic_Athena_C::AnimateScopePostProcess__FinishedFunc()
 
 void AB_Ranged_Generic_Athena_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -535,10 +445,7 @@ void AB_Ranged_Generic_Athena_C::UserConstructionScript()
 
 void AB_Ranged_Generic_Athena_C::AddRandomScale()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AddRandomScale");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AddRandomScale");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -549,10 +456,7 @@ void AB_Ranged_Generic_Athena_C::AddRandomScale()
 
 void AB_Ranged_Generic_Athena_C::SetWpnRarity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWpnRarity");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWpnRarity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -565,10 +469,7 @@ void AB_Ranged_Generic_Athena_C::SetWpnRarity()
 
 void AB_Ranged_Generic_Athena_C::Muzzle_Flash_FX(bool Persistent_Fire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Muzzle Flash FX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Muzzle Flash FX");
 
 	Params::B_Ranged_Generic_Athena_C_Muzzle_Flash_FX Parms{};
 
@@ -585,10 +486,7 @@ void AB_Ranged_Generic_Athena_C::Muzzle_Flash_FX(bool Persistent_Fire)
 
 void AB_Ranged_Generic_Athena_C::Muzzle_Play_Reload_FX(EFortReloadFXState Selection)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Muzzle Play Reload FX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Muzzle Play Reload FX");
 
 	Params::B_Ranged_Generic_Athena_C_Muzzle_Play_Reload_FX Parms{};
 
@@ -603,10 +501,7 @@ void AB_Ranged_Generic_Athena_C::Muzzle_Play_Reload_FX(EFortReloadFXState Select
 
 void AB_Ranged_Generic_Athena_C::UpdateShellEmittersFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "UpdateShellEmittersFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "UpdateShellEmittersFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -617,10 +512,7 @@ void AB_Ranged_Generic_Athena_C::UpdateShellEmittersFX()
 
 void AB_Ranged_Generic_Athena_C::SetupShellFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetupShellFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetupShellFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -631,10 +523,7 @@ void AB_Ranged_Generic_Athena_C::SetupShellFX()
 
 void AB_Ranged_Generic_Athena_C::DeactivateShellsFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateShellsFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateShellsFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -647,10 +536,7 @@ void AB_Ranged_Generic_Athena_C::DeactivateShellsFX()
 
 void AB_Ranged_Generic_Athena_C::ActivateShellsFX(bool Bool)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateShellsFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateShellsFX");
 
 	Params::B_Ranged_Generic_Athena_C_ActivateShellsFX Parms{};
 
@@ -665,10 +551,7 @@ void AB_Ranged_Generic_Athena_C::ActivateShellsFX(bool Bool)
 
 void AB_Ranged_Generic_Athena_C::ActivateReloadSmokeFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateReloadSmokeFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateReloadSmokeFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -679,10 +562,7 @@ void AB_Ranged_Generic_Athena_C::ActivateReloadSmokeFX()
 
 void AB_Ranged_Generic_Athena_C::DeactivateReloadSmokeFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateReloadSmokeFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateReloadSmokeFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -693,10 +573,7 @@ void AB_Ranged_Generic_Athena_C::DeactivateReloadSmokeFX()
 
 void AB_Ranged_Generic_Athena_C::DeactivateMuzzleFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateMuzzleFX");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateMuzzleFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -709,10 +586,7 @@ void AB_Ranged_Generic_Athena_C::DeactivateMuzzleFX()
 
 void AB_Ranged_Generic_Athena_C::ActivateOrDeactivateWindParticle(bool bNewActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateOrDeactivateWindParticle");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateOrDeactivateWindParticle");
 
 	Params::B_Ranged_Generic_Athena_C_ActivateOrDeactivateWindParticle Parms{};
 
@@ -727,10 +601,7 @@ void AB_Ranged_Generic_Athena_C::ActivateOrDeactivateWindParticle(bool bNewActiv
 
 void AB_Ranged_Generic_Athena_C::HideIronSightsMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideIronSightsMesh");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideIronSightsMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -741,10 +612,7 @@ void AB_Ranged_Generic_Athena_C::HideIronSightsMesh()
 
 void AB_Ranged_Generic_Athena_C::HideReticle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideReticle");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideReticle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -755,10 +623,7 @@ void AB_Ranged_Generic_Athena_C::HideReticle()
 
 void AB_Ranged_Generic_Athena_C::ShowReticle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowReticle");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowReticle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -771,10 +636,7 @@ void AB_Ranged_Generic_Athena_C::ShowReticle()
 
 void AB_Ranged_Generic_Athena_C::HandlePawnAndWeaponVisFor1PTargeting(bool IsTargeting)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HandlePawnAndWeaponVisFor1PTargeting");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HandlePawnAndWeaponVisFor1PTargeting");
 
 	Params::B_Ranged_Generic_Athena_C_HandlePawnAndWeaponVisFor1PTargeting Parms{};
 
@@ -793,10 +655,7 @@ void AB_Ranged_Generic_Athena_C::HandlePawnAndWeaponVisFor1PTargeting(bool IsTar
 
 void AB_Ranged_Generic_Athena_C::GetScopeParameters(class UStaticMeshComponent** ScopeComponent, struct FVector2D* DepthOfFieldVignetteRange, float* WeaponSightsCameraOffset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "GetScopeParameters");
+	class UFunction* Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "GetScopeParameters");
 
 	Params::B_Ranged_Generic_Athena_C_GetScopeParameters Parms{};
 

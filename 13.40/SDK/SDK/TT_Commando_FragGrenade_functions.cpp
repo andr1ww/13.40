@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UTT_Commando_FragGrenade_C::InitializeAbilityInstanceInternal(const class UGameplayAbility* AbilityInstance, const class UFortTooltipContext* Context) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TT_Commando_FragGrenade_C", "InitializeAbilityInstanceInternal");
+	class UFunction* Func = Class->GetFunction("TT_Commando_FragGrenade_C", "InitializeAbilityInstanceInternal");
 
 	Params::TT_Commando_FragGrenade_C_InitializeAbilityInstanceInternal Parms{};
 
@@ -50,10 +47,7 @@ void UTT_Commando_FragGrenade_C::InitializeAbilityInstanceInternal(const class U
 
 bool UTT_Commando_FragGrenade_C::GetTextForTokenFromAbilityInstanceInternal(const class UGameplayAbility* AbilityInstance, const struct FGameplayTag& Tag, const class UFortTooltipContext* Context, const struct FGameplayTag& Token, class FText* OutText) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TT_Commando_FragGrenade_C", "GetTextForTokenFromAbilityInstanceInternal");
+	class UFunction* Func = Class->GetFunction("TT_Commando_FragGrenade_C", "GetTextForTokenFromAbilityInstanceInternal");
 
 	Params::TT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal Parms{};
 
@@ -80,10 +74,7 @@ bool UTT_Commando_FragGrenade_C::GetTextForTokenFromAbilityInstanceInternal(cons
 
 bool UTT_Commando_FragGrenade_C::GetApplicationTag(const class UGameplayAbility* AbilityInstance, struct FGameplayTag* OutTag) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TT_Commando_FragGrenade_C", "GetApplicationTag");
+	class UFunction* Func = Class->GetFunction("TT_Commando_FragGrenade_C", "GetApplicationTag");
 
 	Params::TT_Commando_FragGrenade_C_GetApplicationTag Parms{};
 

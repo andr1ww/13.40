@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULobbyPlayerAddPlayer_C::ExecuteUbergraph_LobbyPlayerAddPlayer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "ExecuteUbergraph_LobbyPlayerAddPlayer");
+	class UFunction* Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "ExecuteUbergraph_LobbyPlayerAddPlayer");
 
 	Params::LobbyPlayerAddPlayer_C_ExecuteUbergraph_LobbyPlayerAddPlayer Parms{};
 
@@ -41,10 +38,7 @@ void ULobbyPlayerAddPlayer_C::ExecuteUbergraph_LobbyPlayerAddPlayer(int32 EntryP
 
 void ULobbyPlayerAddPlayer_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ULobbyPlayerAddPlayer_C::BP_OnUnhovered()
 
 void ULobbyPlayerAddPlayer_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

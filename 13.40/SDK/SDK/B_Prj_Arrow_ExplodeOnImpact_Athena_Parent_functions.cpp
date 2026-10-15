@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::ExecuteUbergraph_B_Prj_Arrow_ExplodeOnImpact_Athena_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "ExecuteUbergraph_B_Prj_Arrow_ExplodeOnImpact_Athena_Parent");
+	class UFunction* Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "ExecuteUbergraph_B_Prj_Arrow_ExplodeOnImpact_Athena_Parent");
 
 	Params::B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C_ExecuteUbergraph_B_Prj_Arrow_ExplodeOnImpact_Athena_Parent Parms{};
 
@@ -45,10 +42,7 @@ void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::ExecuteUbergraph_B_Prj_Arrow_
 
 void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -70,10 +64,7 @@ void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::BndEvt__WaterInteractionCompo
 
 void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::OnTouched(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& HitResult, bool bIsOverlap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "OnTouched");
+	class UFunction* Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "OnTouched");
 
 	Params::B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C_OnTouched Parms{};
 
@@ -91,10 +82,7 @@ void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::OnTouched(class AActor* Other
 
 void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +93,7 @@ void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::ReceiveBeginPlay()
 
 void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::Event_Building_Actor_Destroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "Event_Building_Actor_Destroyed");
+	class UFunction* Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "Event_Building_Actor_Destroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +104,7 @@ void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::Event_Building_Actor_Destroye
 
 void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +115,7 @@ void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::UserConstructionScript()
 
 void AB_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C::OnRep_HitLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "OnRep_HitLocation");
+	class UFunction* Func = Class->GetFunction("B_Prj_Arrow_ExplodeOnImpact_Athena_Parent_C", "OnRep_HitLocation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

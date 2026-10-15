@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_PurpleMouse_KeepCheckingLOS_C::ExecuteUbergraph_GA_PurpleMouse_KeepCheckingLOS(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_PurpleMouse_KeepCheckingLOS_C", "ExecuteUbergraph_GA_PurpleMouse_KeepCheckingLOS");
+	class UFunction* Func = Class->GetFunction("GA_PurpleMouse_KeepCheckingLOS_C", "ExecuteUbergraph_GA_PurpleMouse_KeepCheckingLOS");
 
 	Params::GA_PurpleMouse_KeepCheckingLOS_C_ExecuteUbergraph_GA_PurpleMouse_KeepCheckingLOS Parms{};
 
@@ -41,10 +38,7 @@ void UGA_PurpleMouse_KeepCheckingLOS_C::ExecuteUbergraph_GA_PurpleMouse_KeepChec
 
 void UGA_PurpleMouse_KeepCheckingLOS_C::CheckLOSAgain()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_PurpleMouse_KeepCheckingLOS_C", "CheckLOSAgain");
+	class UFunction* Func = Class->GetFunction("GA_PurpleMouse_KeepCheckingLOS_C", "CheckLOSAgain");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGA_PurpleMouse_KeepCheckingLOS_C::CheckLOSAgain()
 
 void UGA_PurpleMouse_KeepCheckingLOS_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_PurpleMouse_KeepCheckingLOS_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_PurpleMouse_KeepCheckingLOS_C", "K2_OnEndAbility");
 
 	Params::GA_PurpleMouse_KeepCheckingLOS_C_K2_OnEndAbility Parms{};
 
@@ -75,10 +66,7 @@ void UGA_PurpleMouse_KeepCheckingLOS_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_PurpleMouse_KeepCheckingLOS_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_PurpleMouse_KeepCheckingLOS_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_PurpleMouse_KeepCheckingLOS_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

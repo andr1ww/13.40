@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_AppleSun_RemoveFallImmunity_C::ExecuteUbergraph_GA_Athena_AppleSun_RemoveFallImmunity(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "ExecuteUbergraph_GA_Athena_AppleSun_RemoveFallImmunity");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "ExecuteUbergraph_GA_Athena_AppleSun_RemoveFallImmunity");
 
 	Params::GA_Athena_AppleSun_RemoveFallImmunity_C_ExecuteUbergraph_GA_Athena_AppleSun_RemoveFallImmunity Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_AppleSun_RemoveFallImmunity_C::ExecuteUbergraph_GA_Athena_AppleS
 
 void UGA_Athena_AppleSun_RemoveFallImmunity_C::Remove()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "Remove");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "Remove");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Athena_AppleSun_RemoveFallImmunity_C::Remove()
 
 void UGA_Athena_AppleSun_RemoveFallImmunity_C::VehicleLandedCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "VehicleLandedCheck");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "VehicleLandedCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGA_Athena_AppleSun_RemoveFallImmunity_C::VehicleLandedCheck()
 
 void UGA_Athena_AppleSun_RemoveFallImmunity_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UGA_Athena_AppleSun_RemoveFallImmunity_C::K2_ActivateAbility()
 
 void UGA_Athena_AppleSun_RemoveFallImmunity_C::OnChange_E50882E9463BCB5DDE04EE8407D66091(EMovementMode NewMovementMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "OnChange_E50882E9463BCB5DDE04EE8407D66091");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "OnChange_E50882E9463BCB5DDE04EE8407D66091");
 
 	Params::GA_Athena_AppleSun_RemoveFallImmunity_C_OnChange_E50882E9463BCB5DDE04EE8407D66091 Parms{};
 
@@ -105,10 +90,7 @@ void UGA_Athena_AppleSun_RemoveFallImmunity_C::OnChange_E50882E9463BCB5DDE04EE84
 
 void UGA_Athena_AppleSun_RemoveFallImmunity_C::OnChange_3DD8539A4FF5097BAD1292AD341357CA(EMovementMode NewMovementMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "OnChange_3DD8539A4FF5097BAD1292AD341357CA");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_RemoveFallImmunity_C", "OnChange_3DD8539A4FF5097BAD1292AD341357CA");
 
 	Params::GA_Athena_AppleSun_RemoveFallImmunity_C_OnChange_3DD8539A4FF5097BAD1292AD341357CA Parms{};
 

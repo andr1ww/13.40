@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEasyAntiCheatNetComponent::ClientMessage(const TArray<uint8>& Message)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EasyAntiCheatNetComponent", "ClientMessage");
+	class UFunction* Func = Class->GetFunction("EasyAntiCheatNetComponent", "ClientMessage");
 
 	Params::EasyAntiCheatNetComponent_ClientMessage Parms{};
 
@@ -48,10 +45,7 @@ void UEasyAntiCheatNetComponent::ClientMessage(const TArray<uint8>& Message)
 
 void UEasyAntiCheatNetComponent::ServerMessage(const TArray<uint8>& Message)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EasyAntiCheatNetComponent", "ServerMessage");
+	class UFunction* Func = Class->GetFunction("EasyAntiCheatNetComponent", "ServerMessage");
 
 	Params::EasyAntiCheatNetComponent_ServerMessage Parms{};
 

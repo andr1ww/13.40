@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_Consumable_Thrown_C::ExecuteUbergraph_B_Prj_Athena_Consumable_Thrown(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "ExecuteUbergraph_B_Prj_Athena_Consumable_Thrown");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "ExecuteUbergraph_B_Prj_Athena_Consumable_Thrown");
 
 	Params::B_Prj_Athena_Consumable_Thrown_C_ExecuteUbergraph_B_Prj_Athena_Consumable_Thrown Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::ExecuteUbergraph_B_Prj_Athena_Consumable
 
 void AB_Prj_Athena_Consumable_Thrown_C::WaterImpactItemFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "WaterImpactItemFX");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "WaterImpactItemFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::WaterImpactItemFX()
 
 void AB_Prj_Athena_Consumable_Thrown_C::SpawnItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "SpawnItem");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "SpawnItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,10 +64,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::SpawnItem()
 
 void AB_Prj_Athena_Consumable_Thrown_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Athena_Consumable_Thrown_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -95,10 +83,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::BndEvt__WaterInteractionComponent_K2Node
 
 void AB_Prj_Athena_Consumable_Thrown_C::Mark(class AActor* NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "Mark");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "Mark");
 
 	Params::B_Prj_Athena_Consumable_Thrown_C_Mark Parms{};
 
@@ -113,10 +98,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::Mark(class AActor* NewParam)
 
 void AB_Prj_Athena_Consumable_Thrown_C::SpawnedItemFx()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "SpawnedItemFx");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "SpawnedItemFx");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -130,10 +112,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::SpawnedItemFx()
 
 void AB_Prj_Athena_Consumable_Thrown_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnExploded");
 
 	Params::B_Prj_Athena_Consumable_Thrown_C_OnExploded Parms{};
 
@@ -151,10 +130,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::OnExploded(const TArray<class AActor*>& 
 
 void AB_Prj_Athena_Consumable_Thrown_C::OnBounce(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnBounce");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnBounce");
 
 	Params::B_Prj_Athena_Consumable_Thrown_C_OnBounce Parms{};
 
@@ -169,10 +145,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::OnBounce(const struct FHitResult& Hit)
 
 void AB_Prj_Athena_Consumable_Thrown_C::OnReachedLockTargetDistanceThreshold()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnReachedLockTargetDistanceThreshold");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnReachedLockTargetDistanceThreshold");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -183,10 +156,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::OnReachedLockTargetDistanceThreshold()
 
 void AB_Prj_Athena_Consumable_Thrown_C::OnHomingPassedTarget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnHomingPassedTarget");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnHomingPassedTarget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -197,10 +167,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::OnHomingPassedTarget()
 
 void AB_Prj_Athena_Consumable_Thrown_C::Timeout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "Timeout");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "Timeout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -213,10 +180,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::Timeout()
 
 void AB_Prj_Athena_Consumable_Thrown_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnStop");
 
 	Params::B_Prj_Athena_Consumable_Thrown_C_OnStop Parms{};
 
@@ -231,10 +195,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::OnStop(const struct FHitResult& Hit)
 
 void AB_Prj_Athena_Consumable_Thrown_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -245,10 +206,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::ReceiveBeginPlay()
 
 void AB_Prj_Athena_Consumable_Thrown_C::OnRep_Impact_Location()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnRep_Impact Location");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnRep_Impact Location");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -259,10 +217,7 @@ void AB_Prj_Athena_Consumable_Thrown_C::OnRep_Impact_Location()
 
 void AB_Prj_Athena_Consumable_Thrown_C::OnRep_Pickup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnRep_Pickup");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Consumable_Thrown_C", "OnRep_Pickup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

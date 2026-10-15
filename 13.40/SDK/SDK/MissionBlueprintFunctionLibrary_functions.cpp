@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UMissionBlueprintFunctionLibrary_C::RegisterUI_UpdatesWithDamageEvents(class AActor* ActorToRegisterWith, class AFortMissionState* MissionState, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "RegisterUI UpdatesWithDamageEvents");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "RegisterUI UpdatesWithDamageEvents");
 
 	Params::MissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents Parms{};
 
@@ -49,10 +46,7 @@ void UMissionBlueprintFunctionLibrary_C::RegisterUI_UpdatesWithDamageEvents(clas
 
 void UMissionBlueprintFunctionLibrary_C::UnRegisterUI_UpdatesWithDamageEvents(class AActor* ActorToUnRegisterWith, class AFortMissionState* MissionState, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "UnRegisterUI UpdatesWithDamageEvents");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "UnRegisterUI UpdatesWithDamageEvents");
 
 	Params::MissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents Parms{};
 
@@ -74,10 +68,7 @@ void UMissionBlueprintFunctionLibrary_C::UnRegisterUI_UpdatesWithDamageEvents(cl
 
 void UMissionBlueprintFunctionLibrary_C::GetObjectiveBadgeIconBrush(class AFortObjectiveBase* Objective, const struct FGameplayTag& RewardTag, class UObject* __WorldContext, struct FSlateBrush* IconBrush)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetObjectiveBadgeIconBrush");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetObjectiveBadgeIconBrush");
 
 	Params::MissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush Parms{};
 
@@ -104,10 +95,7 @@ void UMissionBlueprintFunctionLibrary_C::GetObjectiveBadgeIconBrush(class AFortO
 
 void UMissionBlueprintFunctionLibrary_C::DoesPlayerHaveQuest(class AFortPlayerController* PlayerController, class UFortQuestItemDefinition* Quest_Item_Reference, class FName Quest_Item_Objective_Backend_Name, class UObject* __WorldContext, bool* QuestValid, class AFortPlayerController** PlayerControllerRef)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DoesPlayerHaveQuest");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DoesPlayerHaveQuest");
 
 	Params::MissionBlueprintFunctionLibrary_C_DoesPlayerHaveQuest Parms{};
 
@@ -135,10 +123,7 @@ void UMissionBlueprintFunctionLibrary_C::DoesPlayerHaveQuest(class AFortPlayerCo
 
 void UMissionBlueprintFunctionLibrary_C::HighlightQuestActor(class AActor* ActorToHighlight, bool HighlightEnabled, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HighlightQuestActor");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HighlightQuestActor");
 
 	Params::MissionBlueprintFunctionLibrary_C_HighlightQuestActor Parms{};
 
@@ -163,10 +148,7 @@ void UMissionBlueprintFunctionLibrary_C::HighlightQuestActor(class AActor* Actor
 
 void UMissionBlueprintFunctionLibrary_C::QuestObjectiveCountAchieved(class AFortPlayerController* PlayerControllerReference, class UFortQuestItemDefinition* Quest_Item_Reference, const struct FDataTableRowHandle& ObjectiveStatHandle, class UObject* __WorldContext, int32* Quest_Count_Achieved, int32* Quest_Count_Required, bool* SuccessfullyFoundCount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "QuestObjectiveCountAchieved");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "QuestObjectiveCountAchieved");
 
 	Params::MissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved Parms{};
 
@@ -198,10 +180,7 @@ void UMissionBlueprintFunctionLibrary_C::QuestObjectiveCountAchieved(class AFort
 
 void UMissionBlueprintFunctionLibrary_C::DoesAnyoneRequireQuest(class UFortQuestItemDefinition* QuestReference, class FName Quest_Backend_Name, class UObject* __WorldContext, bool* SomePlayerNeedsTheQuest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DoesAnyoneRequireQuest");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DoesAnyoneRequireQuest");
 
 	Params::MissionBlueprintFunctionLibrary_C_DoesAnyoneRequireQuest Parms{};
 
@@ -227,10 +206,7 @@ void UMissionBlueprintFunctionLibrary_C::DoesAnyoneRequireQuest(class UFortQuest
 
 void UMissionBlueprintFunctionLibrary_C::ListPlayersWhoNeedQuest(class UFortQuestItemDefinition* Quest_Reference, class FName Quest_Backend_Name, class UObject* __WorldContext, TArray<class AFortPlayerController*>* Player_Controllers_Who_Require_The_Quest, bool* DoesAnyoneRequireTheQuest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "ListPlayersWhoNeedQuest");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "ListPlayersWhoNeedQuest");
 
 	Params::MissionBlueprintFunctionLibrary_C_ListPlayersWhoNeedQuest Parms{};
 
@@ -257,10 +233,7 @@ void UMissionBlueprintFunctionLibrary_C::ListPlayersWhoNeedQuest(class UFortQues
 
 void UMissionBlueprintFunctionLibrary_C::NPC_DroneStartRescue(class AActor* Actor, class AActor* Instigator, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_DroneStartRescue");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_DroneStartRescue");
 
 	Params::MissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue Parms{};
 
@@ -281,10 +254,7 @@ void UMissionBlueprintFunctionLibrary_C::NPC_DroneStartRescue(class AActor* Acto
 
 void UMissionBlueprintFunctionLibrary_C::NPC_DroneStopRescue(class AActor* Actor, class AActor* Instigator, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_DroneStopRescue");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_DroneStopRescue");
 
 	Params::MissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue Parms{};
 
@@ -304,10 +274,7 @@ void UMissionBlueprintFunctionLibrary_C::NPC_DroneStopRescue(class AActor* Actor
 
 void UMissionBlueprintFunctionLibrary_C::FlashObjectiveUI(class AFortObjectiveBase* Objective_Reference, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "FlashObjectiveUI");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "FlashObjectiveUI");
 
 	Params::MissionBlueprintFunctionLibrary_C_FlashObjectiveUI Parms{};
 
@@ -329,10 +296,7 @@ void UMissionBlueprintFunctionLibrary_C::FlashObjectiveUI(class AFortObjectiveBa
 
 void UMissionBlueprintFunctionLibrary_C::AnyPlayerNearActor(float DistanceToCheck, class AActor* Actor, class UObject* __WorldContext, bool* IsPlayerNearActor, TArray<class AFortPlayerPawn*>* PlayersNearActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "AnyPlayerNearActor");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "AnyPlayerNearActor");
 
 	Params::MissionBlueprintFunctionLibrary_C_AnyPlayerNearActor Parms{};
 
@@ -359,10 +323,7 @@ void UMissionBlueprintFunctionLibrary_C::AnyPlayerNearActor(float DistanceToChec
 
 void UMissionBlueprintFunctionLibrary_C::DropChance(float DropPercentChance, class UObject* __WorldContext, bool* DropResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DropChance");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DropChance");
 
 	Params::MissionBlueprintFunctionLibrary_C_DropChance Parms{};
 
@@ -387,10 +348,7 @@ void UMissionBlueprintFunctionLibrary_C::DropChance(float DropPercentChance, cla
 
 void UMissionBlueprintFunctionLibrary_C::GiveQuestUpdateToPlayers(class UFortQuestItemDefinition* Quest_Reference, class FName Quest_Objective_Backend_Name, const struct FDataTableRowHandle& ObjectiveStatEvent, TArray<class AFortPlayerController*>& PlayerControllersForUpdate, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GiveQuestUpdateToPlayers");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GiveQuestUpdateToPlayers");
 
 	Params::MissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers Parms{};
 
@@ -417,10 +375,7 @@ void UMissionBlueprintFunctionLibrary_C::GiveQuestUpdateToPlayers(class UFortQue
 
 void UMissionBlueprintFunctionLibrary_C::AnyPawnNearActor(float DistanceToCheck, class AActor* Actor, class UObject* __WorldContext, bool* IsPawnNearActor, TArray<class AFortPawn*>* PawnsNearActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "AnyPawnNearActor");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "AnyPawnNearActor");
 
 	Params::MissionBlueprintFunctionLibrary_C_AnyPawnNearActor Parms{};
 
@@ -448,10 +403,7 @@ void UMissionBlueprintFunctionLibrary_C::AnyPawnNearActor(float DistanceToCheck,
 
 void UMissionBlueprintFunctionLibrary_C::Random_360_VectorInRange(float MinDistance, float MaxDistance, class UObject* __WorldContext, struct FVector* Random_Vector_Result_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "Random_360_VectorInRange");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "Random_360_VectorInRange");
 
 	Params::MissionBlueprintFunctionLibrary_C_Random_360_VectorInRange Parms{};
 
@@ -476,10 +428,7 @@ void UMissionBlueprintFunctionLibrary_C::Random_360_VectorInRange(float MinDista
 
 void UMissionBlueprintFunctionLibrary_C::GetBuildingRecommendation(class FName RowName, class UObject* __WorldContext, int32* BuildingCount, bool* RowFound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetBuildingRecommendation");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetBuildingRecommendation");
 
 	Params::MissionBlueprintFunctionLibrary_C_GetBuildingRecommendation Parms{};
 
@@ -506,10 +455,7 @@ void UMissionBlueprintFunctionLibrary_C::GetBuildingRecommendation(class FName R
 
 void UMissionBlueprintFunctionLibrary_C::GrantSurvivorBadge(int32 LootLevelIn, ESurvivorBadgeTypes BadgeType, class UObject* __WorldContext, class UFortItemDefinition** NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GrantSurvivorBadge");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GrantSurvivorBadge");
 
 	Params::MissionBlueprintFunctionLibrary_C_GrantSurvivorBadge Parms{};
 
@@ -533,10 +479,7 @@ void UMissionBlueprintFunctionLibrary_C::GrantSurvivorBadge(int32 LootLevelIn, E
 
 void UMissionBlueprintFunctionLibrary_C::BasicBuildingItemDrop(EnumEventWorldItemDrop Item_Drop_Level, const struct FVector& LootDropLocation, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "BasicBuildingItemDrop");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "BasicBuildingItemDrop");
 
 	Params::MissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop Parms{};
 
@@ -559,10 +502,7 @@ void UMissionBlueprintFunctionLibrary_C::BasicBuildingItemDrop(EnumEventWorldIte
 
 void UMissionBlueprintFunctionLibrary_C::SeperatePlayersWhoNeedQuest(class UFortQuestItemDefinition* QuestItemReference, class FName QuestObjectiveBackendName, class UObject* __WorldContext, TArray<class AFortPlayerController*>* PlayersWhoNeedQuest, TArray<class AFortPlayerController*>* PlayersWhoDoNotNeedQuest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "SeperatePlayersWhoNeedQuest");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "SeperatePlayersWhoNeedQuest");
 
 	Params::MissionBlueprintFunctionLibrary_C_SeperatePlayersWhoNeedQuest Parms{};
 
@@ -592,10 +532,7 @@ void UMissionBlueprintFunctionLibrary_C::SeperatePlayersWhoNeedQuest(class UFort
 
 void UMissionBlueprintFunctionLibrary_C::HasPlayerCompletedQuest(class AFortPlayerController* PlayerController, class UFortQuestItemDefinition* QuestReference, class FName QuestBackendName, class UObject* __WorldContext, class AFortPlayerController** PlayerControllerOut, bool* CompletedQuest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HasPlayerCompletedQuest");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HasPlayerCompletedQuest");
 
 	Params::MissionBlueprintFunctionLibrary_C_HasPlayerCompletedQuest Parms{};
 
@@ -624,10 +561,7 @@ void UMissionBlueprintFunctionLibrary_C::HasPlayerCompletedQuest(class AFortPlay
 
 void UMissionBlueprintFunctionLibrary_C::DistanceBetweenTwoVectors(const struct FVector& vector1, const struct FVector& Vector2, class UObject* __WorldContext, float* Distance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DistanceBetweenTwoVectors");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DistanceBetweenTwoVectors");
 
 	Params::MissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors Parms{};
 
@@ -652,10 +586,7 @@ void UMissionBlueprintFunctionLibrary_C::DistanceBetweenTwoVectors(const struct 
 
 void UMissionBlueprintFunctionLibrary_C::ApplyDifficultyOffset(class FName RowName, float BaseDifficulty, class UObject* __WorldContext, bool* Success)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "ApplyDifficultyOffset");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "ApplyDifficultyOffset");
 
 	Params::MissionBlueprintFunctionLibrary_C_ApplyDifficultyOffset Parms{};
 
@@ -679,10 +610,7 @@ void UMissionBlueprintFunctionLibrary_C::ApplyDifficultyOffset(class FName RowNa
 
 void UMissionBlueprintFunctionLibrary_C::GetCurrentDifficulty(class UObject* __WorldContext, float* Difficulty, bool* Success)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetCurrentDifficulty");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetCurrentDifficulty");
 
 	Params::MissionBlueprintFunctionLibrary_C_GetCurrentDifficulty Parms{};
 
@@ -710,10 +638,7 @@ void UMissionBlueprintFunctionLibrary_C::GetCurrentDifficulty(class UObject* __W
 
 void UMissionBlueprintFunctionLibrary_C::PointLocationsBetweenTwoVectors(const struct FVector& Vector_1, const struct FVector& Vector_2, int32 HowManyPoints, class UObject* __WorldContext, TArray<struct FVector>* VectorPoints, bool* SuccessfullyFoundPoints)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "PointLocationsBetweenTwoVectors");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "PointLocationsBetweenTwoVectors");
 
 	Params::MissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors Parms{};
 
@@ -743,10 +668,7 @@ void UMissionBlueprintFunctionLibrary_C::PointLocationsBetweenTwoVectors(const s
 
 void UMissionBlueprintFunctionLibrary_C::GetContributingControllersNearActor(float Distance, class AActor* Actor, class UObject* __WorldContext, TArray<class AFortPlayerController*>* PlayerControllersNearby, bool* SuccessfullyFoundPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetContributingControllersNearActor");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetContributingControllersNearActor");
 
 	Params::MissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor Parms{};
 
@@ -776,10 +698,7 @@ void UMissionBlueprintFunctionLibrary_C::GetContributingControllersNearActor(flo
 
 void UMissionBlueprintFunctionLibrary_C::HasPlayerCompletedQuestObjective(class AFortPlayerController* PlayerController, class UFortQuestItemDefinition* QuestReference, class FName QuestBackendObjectiveName, class UObject* __WorldContext, class AFortPlayerController** PlayerControllerOut, bool* CompletedQuestObjective)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HasPlayerCompletedQuestObjective");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HasPlayerCompletedQuestObjective");
 
 	Params::MissionBlueprintFunctionLibrary_C_HasPlayerCompletedQuestObjective Parms{};
 
@@ -807,10 +726,7 @@ void UMissionBlueprintFunctionLibrary_C::HasPlayerCompletedQuestObjective(class 
 
 void UMissionBlueprintFunctionLibrary_C::HideParticleComponentsAttachedToMesh(class UStaticMeshComponent* MeshComponent, class UObject* __WorldContext, bool* SuccessfullyDeactivatedParticle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HideParticleComponentsAttachedToMesh");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HideParticleComponentsAttachedToMesh");
 
 	Params::MissionBlueprintFunctionLibrary_C_HideParticleComponentsAttachedToMesh Parms{};
 
@@ -835,10 +751,7 @@ void UMissionBlueprintFunctionLibrary_C::HideParticleComponentsAttachedToMesh(cl
 
 void UMissionBlueprintFunctionLibrary_C::DoesAnyPlayerRequireQuestObjective(class UFortQuestItemDefinition* QuestReference, const struct FDataTableRowHandle& QuestObjectiveHandle, class UObject* __WorldContext, TArray<class AFortPlayerController*>* PlayerControllersWhoRequireObjective, bool* SomebodyRequiresObjective)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DoesAnyPlayerRequireQuestObjective");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "DoesAnyPlayerRequireQuestObjective");
 
 	Params::MissionBlueprintFunctionLibrary_C_DoesAnyPlayerRequireQuestObjective Parms{};
 
@@ -868,10 +781,7 @@ void UMissionBlueprintFunctionLibrary_C::DoesAnyPlayerRequireQuestObjective(clas
 
 void UMissionBlueprintFunctionLibrary_C::HasPlayerCompletedQuestObjectiveHandle(class AFortPlayerController* PlayerController, class UFortQuestItemDefinition* QuestReference, const struct FDataTableRowHandle& QuestBackendObjectiveHandle, class UObject* __WorldContext, class AFortPlayerController** PlayerControllerOut, bool* CompletedQuestObjective)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HasPlayerCompletedQuestObjectiveHandle");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HasPlayerCompletedQuestObjectiveHandle");
 
 	Params::MissionBlueprintFunctionLibrary_C_HasPlayerCompletedQuestObjectiveHandle Parms{};
 
@@ -899,10 +809,7 @@ void UMissionBlueprintFunctionLibrary_C::HasPlayerCompletedQuestObjectiveHandle(
 
 void UMissionBlueprintFunctionLibrary_C::HaveAllPlayersCompletedQuest(class UFortQuestItemDefinition* QuestItem, class UObject* __WorldContext, bool* AllPlayersCompletedQuest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HaveAllPlayersCompletedQuest");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "HaveAllPlayersCompletedQuest");
 
 	Params::MissionBlueprintFunctionLibrary_C_HaveAllPlayersCompletedQuest Parms{};
 
@@ -929,10 +836,7 @@ void UMissionBlueprintFunctionLibrary_C::HaveAllPlayersCompletedQuest(class UFor
 
 void UMissionBlueprintFunctionLibrary_C::GetControllersNearActorThatRequireQuestObjective(float Distance, class AActor* Actor, class UFortQuestItemDefinition* Quest_Item, class FName Quest_Item_Backend_Objective_Name, class UObject* __WorldContext, TArray<class AFortPlayerController*>* PlayerControllersNearbyThatRequireQuest, bool* SuccessfullyFoundPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetControllersNearActorThatRequireQuestObjective");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetControllersNearActorThatRequireQuestObjective");
 
 	Params::MissionBlueprintFunctionLibrary_C_GetControllersNearActorThatRequireQuestObjective Parms{};
 
@@ -962,10 +866,7 @@ void UMissionBlueprintFunctionLibrary_C::GetControllersNearActorThatRequireQuest
 
 void UMissionBlueprintFunctionLibrary_C::NPC_LockThenRotateInPlace(bool LockedInPlace, class AFortPlayerPawn* PlayerPawn, class AFortAIPawn* SurvivorPawn, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_LockThenRotateInPlace");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_LockThenRotateInPlace");
 
 	Params::MissionBlueprintFunctionLibrary_C_NPC_LockThenRotateInPlace Parms{};
 
@@ -996,10 +897,7 @@ void UMissionBlueprintFunctionLibrary_C::NPC_LockThenRotateInPlace(bool LockedIn
 
 void UMissionBlueprintFunctionLibrary_C::CheckBasicActorLineOfSight(class AActor* Actor_A, const struct FVector& ActorA_Location_Offset, class AActor* Actor_B, const struct FVector& Actor_B_Location_Offset, bool UseActorHalfHeightForSight, ETraceTypeQuery TraceChannel, EDrawDebugTrace DrawDebugType, float DrawTime, bool bTraceComplex, class UObject* __WorldContext, bool* In_Line_Of_Sight, float* Distance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "CheckBasicActorLineOfSight");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "CheckBasicActorLineOfSight");
 
 	Params::MissionBlueprintFunctionLibrary_C_CheckBasicActorLineOfSight Parms{};
 
@@ -1041,10 +939,7 @@ void UMissionBlueprintFunctionLibrary_C::CheckBasicActorLineOfSight(class AActor
 
 void UMissionBlueprintFunctionLibrary_C::CheckBasicVectorToActorLineOfSight(const struct FVector& Vector_A, class AActor* Actor_B, const struct FVector& Actor_B_Location_Offset, ETraceTypeQuery TraceChannel, EDrawDebugTrace DrawDebugType, float DrawTime, const TArray<class AActor*>& ActorsToIgnore, bool bTraceComplex, class UObject* __WorldContext, bool* In_Line_Of_Sight, float* Distance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "CheckBasicVectorToActorLineOfSight");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "CheckBasicVectorToActorLineOfSight");
 
 	Params::MissionBlueprintFunctionLibrary_C_CheckBasicVectorToActorLineOfSight Parms{};
 
@@ -1077,10 +972,7 @@ void UMissionBlueprintFunctionLibrary_C::CheckBasicVectorToActorLineOfSight(cons
 
 void UMissionBlueprintFunctionLibrary_C::NPC_ConvertTagToNameText(const struct FGameplayTag& PawnTag, class UObject* __WorldContext, class FText* Name_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_ConvertTagToNameText");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_ConvertTagToNameText");
 
 	Params::MissionBlueprintFunctionLibrary_C_NPC_ConvertTagToNameText Parms{};
 
@@ -1105,10 +997,7 @@ void UMissionBlueprintFunctionLibrary_C::NPC_ConvertTagToNameText(const struct F
 
 void UMissionBlueprintFunctionLibrary_C::LaunchHoverboard(class AActor* HoverboardActor, const struct FVector& LaunchVelocity, class FName ForceFeedbackTag, class UObject* __WorldContext, bool* Success)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "LaunchHoverboard");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "LaunchHoverboard");
 
 	Params::MissionBlueprintFunctionLibrary_C_LaunchHoverboard Parms{};
 
@@ -1133,10 +1022,7 @@ void UMissionBlueprintFunctionLibrary_C::LaunchHoverboard(class AActor* Hoverboa
 
 void UMissionBlueprintFunctionLibrary_C::NPC_CanBeElemental(const struct FGameplayTag& PawnTag, class UObject* __WorldContext, bool* Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_CanBeElemental");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "NPC_CanBeElemental");
 
 	Params::MissionBlueprintFunctionLibrary_C_NPC_CanBeElemental Parms{};
 
@@ -1159,10 +1045,7 @@ void UMissionBlueprintFunctionLibrary_C::NPC_CanBeElemental(const struct FGamepl
 
 void UMissionBlueprintFunctionLibrary_C::GetSeasonalEventManager(const class UObject* WorldContextObject, class UObject* __WorldContext, class UFortSeasonalEventManager** SeasonalEventManager)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetSeasonalEventManager");
+	class UFunction* Func = StaticClass()->GetFunction("MissionBlueprintFunctionLibrary_C", "GetSeasonalEventManager");
 
 	Params::MissionBlueprintFunctionLibrary_C_GetSeasonalEventManager Parms{};
 

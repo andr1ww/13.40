@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_VisibilityMannequin(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_VisibilityMannequin");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_VisibilityMannequin");
 
 	Params::BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C_ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_VisibilityMannequin Parms{};
 
@@ -41,10 +38,7 @@ void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::ExecuteUbergraph_B
 
 void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::ClearVisTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "ClearVisTimer");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "ClearVisTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::ClearVisTimer()
 
 void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::ShowMannequin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "ShowMannequin");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "ShowMannequin");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::ShowMannequin()
 
 void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::HideMannequin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "HideMannequin");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "HideMannequin");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::HideMannequin()
 
 void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::BndEvt__FortNavigationVisibility_K2Node_ComponentBoundEvent_1_SimpleVisibilityResponseDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "BndEvt__FortNavigationVisibility_K2Node_ComponentBoundEvent_1_SimpleVisibilityResponseDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "BndEvt__FortNavigationVisibility_K2Node_ComponentBoundEvent_1_SimpleVisibilityResponseDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::BndEvt__FortNaviga
 
 void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::BndEvt__FortNavigationVisibility_K2Node_ComponentBoundEvent_0_SimpleVisibilityResponseDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "BndEvt__FortNavigationVisibility_K2Node_ComponentBoundEvent_0_SimpleVisibilityResponseDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "BndEvt__FortNavigationVisibility_K2Node_ComponentBoundEvent_0_SimpleVisibilityResponseDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::BndEvt__FortNaviga
 
 void ABP_Frontend_EventLevel_NavObject_VisibilityMannequin_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_VisibilityMannequin_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

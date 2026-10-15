@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USimpleMTXDisplay_C::ExecuteUbergraph_SimpleMTXDisplay(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMTXDisplay_C", "ExecuteUbergraph_SimpleMTXDisplay");
+	class UFunction* Func = Class->GetFunction("SimpleMTXDisplay_C", "ExecuteUbergraph_SimpleMTXDisplay");
 
 	Params::SimpleMTXDisplay_C_ExecuteUbergraph_SimpleMTXDisplay Parms{};
 
@@ -43,10 +40,7 @@ void USimpleMTXDisplay_C::ExecuteUbergraph_SimpleMTXDisplay(int32 EntryPoint)
 
 void USimpleMTXDisplay_C::OnUpdateAvailableMTX(int32 AvailableBalance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMTXDisplay_C", "OnUpdateAvailableMTX");
+	class UFunction* Func = Class->GetFunction("SimpleMTXDisplay_C", "OnUpdateAvailableMTX");
 
 	Params::SimpleMTXDisplay_C_OnUpdateAvailableMTX Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGamepadInfoSelectorPanel_v3_C::ExecuteUbergraph_GamepadInfoSelectorPanel_v3(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "ExecuteUbergraph_GamepadInfoSelectorPanel_v3");
+	class UFunction* Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "ExecuteUbergraph_GamepadInfoSelectorPanel_v3");
 
 	Params::GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3 Parms{};
 
@@ -41,10 +38,7 @@ void UGamepadInfoSelectorPanel_v3_C::ExecuteUbergraph_GamepadInfoSelectorPanel_v
 
 void UGamepadInfoSelectorPanel_v3_C::BndEvt__ResetButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "BndEvt__ResetButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "BndEvt__ResetButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGamepadInfoSelectorPanel_v3_C::BndEvt__ResetButton_K2Node_ComponentBoundEv
 
 void UGamepadInfoSelectorPanel_v3_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UGamepadInfoSelectorPanel_v3_C::BP_OnActivated()
 
 void UGamepadInfoSelectorPanel_v3_C::OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "OnAddedToFocusPath");
+	class UFunction* Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "OnAddedToFocusPath");
 
 	Params::GamepadInfoSelectorPanel_v3_C_OnAddedToFocusPath Parms{};
 
@@ -89,10 +77,7 @@ void UGamepadInfoSelectorPanel_v3_C::OnAddedToFocusPath(const struct FFocusEvent
 
 void UGamepadInfoSelectorPanel_v3_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UGamepadInfoSelectorPanel_v3_C::BP_OnDeactivated()
 
 void UGamepadInfoSelectorPanel_v3_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "HandleBack");
 
 	Params::GamepadInfoSelectorPanel_v3_C_HandleBack Parms{};
 
@@ -126,10 +108,7 @@ void UGamepadInfoSelectorPanel_v3_C::HandleBack(bool* PassThrough)
 
 void UGamepadInfoSelectorPanel_v3_C::HandleApply(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "HandleApply");
+	class UFunction* Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "HandleApply");
 
 	Params::GamepadInfoSelectorPanel_v3_C_HandleApply Parms{};
 
@@ -147,10 +126,7 @@ void UGamepadInfoSelectorPanel_v3_C::HandleApply(bool* PassThrough)
 
 void UGamepadInfoSelectorPanel_v3_C::HandleReset(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "HandleReset");
+	class UFunction* Func = Class->GetFunction("GamepadInfoSelectorPanel_v3_C", "HandleReset");
 
 	Params::GamepadInfoSelectorPanel_v3_C_HandleReset Parms{};
 

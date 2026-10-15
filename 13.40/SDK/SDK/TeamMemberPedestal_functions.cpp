@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ATeamMemberPedestal_C::ExecuteUbergraph_TeamMemberPedestal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "ExecuteUbergraph_TeamMemberPedestal");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "ExecuteUbergraph_TeamMemberPedestal");
 
 	Params::TeamMemberPedestal_C_ExecuteUbergraph_TeamMemberPedestal Parms{};
 
@@ -41,10 +38,7 @@ void ATeamMemberPedestal_C::ExecuteUbergraph_TeamMemberPedestal(int32 EntryPoint
 
 void ATeamMemberPedestal_C::OnDisconnectedToCampaignLobby()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnDisconnectedToCampaignLobby");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnDisconnectedToCampaignLobby");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void ATeamMemberPedestal_C::OnDisconnectedToCampaignLobby()
 
 void ATeamMemberPedestal_C::TransitionfromCharactertoLoadingscreen(bool Bool)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionfromCharactertoLoadingscreen");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionfromCharactertoLoadingscreen");
 
 	Params::TeamMemberPedestal_C_TransitionfromCharactertoLoadingscreen Parms{};
 
@@ -77,10 +68,7 @@ void ATeamMemberPedestal_C::TransitionfromCharactertoLoadingscreen(bool Bool)
 
 void ATeamMemberPedestal_C::TransitionToLoadingScreen(bool Bool)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionToLoadingScreen");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionToLoadingScreen");
 
 	Params::TeamMemberPedestal_C_TransitionToLoadingScreen Parms{};
 
@@ -97,10 +85,7 @@ void ATeamMemberPedestal_C::TransitionToLoadingScreen(bool Bool)
 
 void ATeamMemberPedestal_C::TransitionToCharacterScreen(bool Bool)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionToCharacterScreen");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionToCharacterScreen");
 
 	Params::TeamMemberPedestal_C_TransitionToCharacterScreen Parms{};
 
@@ -119,10 +104,7 @@ void ATeamMemberPedestal_C::TransitionToCharacterScreen(bool Bool)
 
 void ATeamMemberPedestal_C::OnAvatarChanged(class UTexture2D* AvatarImage, const struct FColor& AvatarBackground, const struct FColor& HighlightColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnAvatarChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnAvatarChanged");
 
 	Params::TeamMemberPedestal_C_OnAvatarChanged Parms{};
 
@@ -139,10 +121,7 @@ void ATeamMemberPedestal_C::OnAvatarChanged(class UTexture2D* AvatarImage, const
 
 void ATeamMemberPedestal_C::OnPreviewActorSpawned()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnPreviewActorSpawned");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnPreviewActorSpawned");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +132,7 @@ void ATeamMemberPedestal_C::OnPreviewActorSpawned()
 
 void ATeamMemberPedestal_C::OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnUnhovered");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +143,7 @@ void ATeamMemberPedestal_C::OnUnhovered()
 
 void ATeamMemberPedestal_C::OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnHovered");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -183,10 +156,7 @@ void ATeamMemberPedestal_C::OnHovered()
 
 void ATeamMemberPedestal_C::OnTeamMemberSet(bool bHasValidTeamMember)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnTeamMemberSet");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnTeamMemberSet");
 
 	Params::TeamMemberPedestal_C_OnTeamMemberSet Parms{};
 
@@ -201,10 +171,7 @@ void ATeamMemberPedestal_C::OnTeamMemberSet(bool bHasValidTeamMember)
 
 void ATeamMemberPedestal_C::OnItemClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnItemClicked");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnItemClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +182,7 @@ void ATeamMemberPedestal_C::OnItemClicked()
 
 void ATeamMemberPedestal_C::OnConnectedToCampaignLobby()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnConnectedToCampaignLobby");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnConnectedToCampaignLobby");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -233,10 +197,7 @@ void ATeamMemberPedestal_C::OnConnectedToCampaignLobby()
 
 void ATeamMemberPedestal_C::OnOwningPedestalGroupEstablished(int32 SquadIdx, bool bSquadHasLocalPlayer, bool bIsPopulated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnOwningPedestalGroupEstablished");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnOwningPedestalGroupEstablished");
 
 	Params::TeamMemberPedestal_C_OnOwningPedestalGroupEstablished Parms{};
 
@@ -257,10 +218,7 @@ void ATeamMemberPedestal_C::OnOwningPedestalGroupEstablished(int32 SquadIdx, boo
 
 void ATeamMemberPedestal_C::OnNewSquadEstablished(bool bMultipleSquadsPopulated, bool bOwningSquadContainsLocalPlayer, const struct FAthenaTeamDisplayInfo& OwningSquadStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnNewSquadEstablished");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnNewSquadEstablished");
 
 	Params::TeamMemberPedestal_C_OnNewSquadEstablished Parms{};
 
@@ -279,10 +237,7 @@ void ATeamMemberPedestal_C::OnNewSquadEstablished(bool bMultipleSquadsPopulated,
 
 void ATeamMemberPedestal_C::OnGameReadinessChanged(EGameReadiness GameReadiness)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnGameReadinessChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnGameReadinessChanged");
 
 	Params::TeamMemberPedestal_C_OnGameReadinessChanged Parms{};
 
@@ -297,10 +252,7 @@ void ATeamMemberPedestal_C::OnGameReadinessChanged(EGameReadiness GameReadiness)
 
 void ATeamMemberPedestal_C::HidePad()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "HidePad");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "HidePad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -311,10 +263,7 @@ void ATeamMemberPedestal_C::HidePad()
 
 void ATeamMemberPedestal_C::SpawnPad()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "SpawnPad");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "SpawnPad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -328,10 +277,7 @@ void ATeamMemberPedestal_C::SpawnPad()
 
 void ATeamMemberPedestal_C::OnPedestalIsPopulatedChanged(bool bIsPopulated, bool bOwningSquadContainsLocalPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnPedestalIsPopulatedChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnPedestalIsPopulatedChanged");
 
 	Params::TeamMemberPedestal_C_OnPedestalIsPopulatedChanged Parms{};
 
@@ -349,10 +295,7 @@ void ATeamMemberPedestal_C::OnPedestalIsPopulatedChanged(bool bIsPopulated, bool
 
 void ATeamMemberPedestal_C::OnIsCurrentlyInMatchChanged(bool bIsInMatch)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnIsCurrentlyInMatchChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnIsCurrentlyInMatchChanged");
 
 	Params::TeamMemberPedestal_C_OnIsCurrentlyInMatchChanged Parms{};
 
@@ -371,10 +314,7 @@ void ATeamMemberPedestal_C::OnIsCurrentlyInMatchChanged(bool bIsInMatch)
 
 void ATeamMemberPedestal_C::HandleClientEvent_StoreTabSelected(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "HandleClientEvent_StoreTabSelected");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "HandleClientEvent_StoreTabSelected");
 
 	Params::TeamMemberPedestal_C_HandleClientEvent_StoreTabSelected Parms{};
 
@@ -395,10 +335,7 @@ void ATeamMemberPedestal_C::HandleClientEvent_StoreTabSelected(class UObject* Ev
 
 void ATeamMemberPedestal_C::HandleClientEvent_StoreTabClosed(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "HandleClientEvent_StoreTabClosed");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "HandleClientEvent_StoreTabClosed");
 
 	Params::TeamMemberPedestal_C_HandleClientEvent_StoreTabClosed Parms{};
 
@@ -415,10 +352,7 @@ void ATeamMemberPedestal_C::HandleClientEvent_StoreTabClosed(class UObject* Even
 
 void ATeamMemberPedestal_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -431,10 +365,7 @@ void ATeamMemberPedestal_C::ReceiveBeginPlay()
 
 void ATeamMemberPedestal_C::OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9");
 
 	Params::TeamMemberPedestal_C_OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9 Parms{};
 
@@ -449,10 +380,7 @@ void ATeamMemberPedestal_C::OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9(class UObj
 
 void ATeamMemberPedestal_C::Timeline_2__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_2__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_2__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -463,10 +391,7 @@ void ATeamMemberPedestal_C::Timeline_2__UpdateFunc()
 
 void ATeamMemberPedestal_C::Timeline_2__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_2__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_2__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -477,10 +402,7 @@ void ATeamMemberPedestal_C::Timeline_2__FinishedFunc()
 
 void ATeamMemberPedestal_C::Timeline_1__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_1__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_1__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -491,10 +413,7 @@ void ATeamMemberPedestal_C::Timeline_1__UpdateFunc()
 
 void ATeamMemberPedestal_C::Timeline_1__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_1__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_1__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -505,10 +424,7 @@ void ATeamMemberPedestal_C::Timeline_1__FinishedFunc()
 
 void ATeamMemberPedestal_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -519,10 +435,7 @@ void ATeamMemberPedestal_C::Timeline_0__UpdateFunc()
 
 void ATeamMemberPedestal_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -533,10 +446,7 @@ void ATeamMemberPedestal_C::Timeline_0__FinishedFunc()
 
 void ATeamMemberPedestal_C::FadeInPodium__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "FadeInPodium__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "FadeInPodium__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -547,10 +457,7 @@ void ATeamMemberPedestal_C::FadeInPodium__UpdateFunc()
 
 void ATeamMemberPedestal_C::FadeInPodium__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "FadeInPodium__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "FadeInPodium__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -561,10 +468,7 @@ void ATeamMemberPedestal_C::FadeInPodium__FinishedFunc()
 
 void ATeamMemberPedestal_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -575,10 +479,7 @@ void ATeamMemberPedestal_C::UserConstructionScript()
 
 void ATeamMemberPedestal_C::InitializeInputActionRefs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "InitializeInputActionRefs");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "InitializeInputActionRefs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -591,10 +492,7 @@ void ATeamMemberPedestal_C::InitializeInputActionRefs()
 
 void ATeamMemberPedestal_C::HandleHoverInputActions(bool bIsHovered)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "HandleHoverInputActions");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "HandleHoverInputActions");
 
 	Params::TeamMemberPedestal_C_HandleHoverInputActions Parms{};
 
@@ -609,10 +507,7 @@ void ATeamMemberPedestal_C::HandleHoverInputActions(bool bIsHovered)
 
 void ATeamMemberPedestal_C::InitializeContextEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "InitializeContextEvents");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "InitializeContextEvents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -626,10 +521,7 @@ void ATeamMemberPedestal_C::InitializeContextEvents()
 
 void ATeamMemberPedestal_C::OnFrontEndCameraChanged(EFrontEndCamera New_Camera, EFrontEndCamera Old_Camera)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnFrontEndCameraChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnFrontEndCameraChanged");
 
 	Params::TeamMemberPedestal_C_OnFrontEndCameraChanged Parms{};
 
@@ -645,10 +537,7 @@ void ATeamMemberPedestal_C::OnFrontEndCameraChanged(EFrontEndCamera New_Camera, 
 
 void ATeamMemberPedestal_C::RefreshWidgets()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "RefreshWidgets");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "RefreshWidgets");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -659,10 +548,7 @@ void ATeamMemberPedestal_C::RefreshWidgets()
 
 void ATeamMemberPedestal_C::PlayLobbyAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "PlayLobbyAnimation");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "PlayLobbyAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -675,10 +561,7 @@ void ATeamMemberPedestal_C::PlayLobbyAnimation()
 
 void ATeamMemberPedestal_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& Team_Member_Info)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnTeamMemberStateChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnTeamMemberStateChanged");
 
 	Params::TeamMemberPedestal_C_OnTeamMemberStateChanged Parms{};
 
@@ -695,10 +578,7 @@ void ATeamMemberPedestal_C::OnTeamMemberStateChanged(const struct FFortTeamMembe
 
 void ATeamMemberPedestal_C::OnPartyDataChanged(struct FFortTeamMemberInfo& Member_Info)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "OnPartyDataChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "OnPartyDataChanged");
 
 	Params::TeamMemberPedestal_C_OnPartyDataChanged Parms{};
 
@@ -717,10 +597,7 @@ void ATeamMemberPedestal_C::OnPartyDataChanged(struct FFortTeamMemberInfo& Membe
 
 void ATeamMemberPedestal_C::SetFakeBlobShadowVisiblity(bool Visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "SetFakeBlobShadowVisiblity");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "SetFakeBlobShadowVisiblity");
 
 	Params::TeamMemberPedestal_C_SetFakeBlobShadowVisiblity Parms{};
 
@@ -735,10 +612,7 @@ void ATeamMemberPedestal_C::SetFakeBlobShadowVisiblity(bool Visible)
 
 void ATeamMemberPedestal_C::StopLobbyAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "StopLobbyAnimation");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "StopLobbyAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -751,10 +625,7 @@ void ATeamMemberPedestal_C::StopLobbyAnimation()
 
 void ATeamMemberPedestal_C::SetSparkleParticlesEnabled(bool IsEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_C", "SetSparkleParticlesEnabled");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_C", "SetSparkleParticlesEnabled");
 
 	Params::TeamMemberPedestal_C_SetSparkleParticlesEnabled Parms{};
 

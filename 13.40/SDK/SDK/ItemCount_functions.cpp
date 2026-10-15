@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UItemCount_C::SetBrushAndTextStyle(EFortBrushSize InBrushSize, class UClass* InStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCount_C", "SetBrushAndTextStyle");
+	class UFunction* Func = Class->GetFunction("ItemCount_C", "SetBrushAndTextStyle");
 
 	Params::ItemCount_C_SetBrushAndTextStyle Parms{};
 
@@ -43,10 +40,7 @@ void UItemCount_C::SetBrushAndTextStyle(EFortBrushSize InBrushSize, class UClass
 
 void UItemCount_C::UpdateOverrideState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCount_C", "UpdateOverrideState");
+	class UFunction* Func = Class->GetFunction("ItemCount_C", "UpdateOverrideState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void UItemCount_C::UpdateOverrideState()
 
 void UItemCount_C::SetOverrideValue(int32 OverrrideValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCount_C", "SetOverrideValue");
+	class UFunction* Func = Class->GetFunction("ItemCount_C", "SetOverrideValue");
 
 	Params::ItemCount_C_SetOverrideValue Parms{};
 
@@ -79,10 +70,7 @@ void UItemCount_C::SetOverrideValue(int32 OverrrideValue)
 
 void UItemCount_C::SetIsBeingPreviewed(bool BeingPreviewed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCount_C", "SetIsBeingPreviewed");
+	class UFunction* Func = Class->GetFunction("ItemCount_C", "SetIsBeingPreviewed");
 
 	Params::ItemCount_C_SetIsBeingPreviewed Parms{};
 
@@ -99,10 +87,7 @@ void UItemCount_C::SetIsBeingPreviewed(bool BeingPreviewed)
 
 void UItemCount_C::SetItemDefinition(class UFortItemDefinition* ItemDefinition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCount_C", "SetItemDefinition");
+	class UFunction* Func = Class->GetFunction("ItemCount_C", "SetItemDefinition");
 
 	Params::ItemCount_C_SetItemDefinition Parms{};
 
@@ -117,10 +102,7 @@ void UItemCount_C::SetItemDefinition(class UFortItemDefinition* ItemDefinition)
 
 void UItemCount_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCount_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ItemCount_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +115,7 @@ void UItemCount_C::Construct()
 
 void UItemCount_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCount_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ItemCount_C", "PreConstruct");
 
 	Params::ItemCount_C_PreConstruct Parms{};
 
@@ -153,10 +132,7 @@ void UItemCount_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UItemCount_C::ExecuteUbergraph_ItemCount(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCount_C", "ExecuteUbergraph_ItemCount");
+	class UFunction* Func = Class->GetFunction("ItemCount_C", "ExecuteUbergraph_ItemCount");
 
 	Params::ItemCount_C_ExecuteUbergraph_ItemCount Parms{};
 

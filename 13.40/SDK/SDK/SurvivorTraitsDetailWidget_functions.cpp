@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USurvivorTraitsDetailWidget_C::ExecuteUbergraph_SurvivorTraitsDetailWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SurvivorTraitsDetailWidget_C", "ExecuteUbergraph_SurvivorTraitsDetailWidget");
+	class UFunction* Func = Class->GetFunction("SurvivorTraitsDetailWidget_C", "ExecuteUbergraph_SurvivorTraitsDetailWidget");
 
 	Params::SurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget Parms{};
 
@@ -41,10 +38,7 @@ void USurvivorTraitsDetailWidget_C::ExecuteUbergraph_SurvivorTraitsDetailWidget(
 
 void USurvivorTraitsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SurvivorTraitsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("SurvivorTraitsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

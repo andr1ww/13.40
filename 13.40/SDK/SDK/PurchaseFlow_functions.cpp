@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 class FString UPurchaseFlowJSBridge::GetDefaultExternalBrowserID(const class FString& URL)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseFlowJSBridge", "GetDefaultExternalBrowserID");
+	class UFunction* Func = Class->GetFunction("PurchaseFlowJSBridge", "GetDefaultExternalBrowserID");
 
 	Params::PurchaseFlowJSBridge_GetDefaultExternalBrowserID Parms{};
 
@@ -52,10 +49,7 @@ class FString UPurchaseFlowJSBridge::GetDefaultExternalBrowserID(const class FSt
 
 class FString UPurchaseFlowJSBridge::GetExternalBrowserName(const class FString& BrowserId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseFlowJSBridge", "GetExternalBrowserName");
+	class UFunction* Func = Class->GetFunction("PurchaseFlowJSBridge", "GetExternalBrowserName");
 
 	Params::PurchaseFlowJSBridge_GetExternalBrowserName Parms{};
 
@@ -80,10 +74,7 @@ class FString UPurchaseFlowJSBridge::GetExternalBrowserName(const class FString&
 
 class FString UPurchaseFlowJSBridge::GetExternalBrowserPath(const class FString& BrowserId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseFlowJSBridge", "GetExternalBrowserPath");
+	class UFunction* Func = Class->GetFunction("PurchaseFlowJSBridge", "GetExternalBrowserPath");
 
 	Params::PurchaseFlowJSBridge_GetExternalBrowserPath Parms{};
 
@@ -108,10 +99,7 @@ class FString UPurchaseFlowJSBridge::GetExternalBrowserPath(const class FString&
 
 bool UPurchaseFlowJSBridge::LaunchExternalBrowserUrl(const class FString& URL)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseFlowJSBridge", "LaunchExternalBrowserUrl");
+	class UFunction* Func = Class->GetFunction("PurchaseFlowJSBridge", "LaunchExternalBrowserUrl");
 
 	Params::PurchaseFlowJSBridge_LaunchExternalBrowserUrl Parms{};
 
@@ -137,10 +125,7 @@ bool UPurchaseFlowJSBridge::LaunchExternalBrowserUrl(const class FString& URL)
 
 bool UPurchaseFlowJSBridge::LaunchValidatedExternalBrowserUrl(const class FString& AllowedBrowserID, const class FString& URL)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseFlowJSBridge", "LaunchValidatedExternalBrowserUrl");
+	class UFunction* Func = Class->GetFunction("PurchaseFlowJSBridge", "LaunchValidatedExternalBrowserUrl");
 
 	Params::PurchaseFlowJSBridge_LaunchValidatedExternalBrowserUrl Parms{};
 
@@ -165,10 +150,7 @@ bool UPurchaseFlowJSBridge::LaunchValidatedExternalBrowserUrl(const class FStrin
 
 void UPurchaseFlowJSBridge::Receipt(const struct FPurchaseFlowReceiptParam& Receipt_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseFlowJSBridge", "Receipt");
+	class UFunction* Func = Class->GetFunction("PurchaseFlowJSBridge", "Receipt");
 
 	Params::PurchaseFlowJSBridge_Receipt Parms{};
 
@@ -190,10 +172,7 @@ void UPurchaseFlowJSBridge::Receipt(const struct FPurchaseFlowReceiptParam& Rece
 
 void UPurchaseFlowJSBridge::RequestClose(const class FString& CloseInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseFlowJSBridge", "RequestClose");
+	class UFunction* Func = Class->GetFunction("PurchaseFlowJSBridge", "RequestClose");
 
 	Params::PurchaseFlowJSBridge_RequestClose Parms{};
 

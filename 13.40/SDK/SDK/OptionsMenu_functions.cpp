@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UOptionsMenu_C::ExecuteUbergraph_OptionsMenu(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "ExecuteUbergraph_OptionsMenu");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "ExecuteUbergraph_OptionsMenu");
 
 	Params::OptionsMenu_C_ExecuteUbergraph_OptionsMenu Parms{};
 
@@ -41,10 +38,7 @@ void UOptionsMenu_C::ExecuteUbergraph_OptionsMenu(int32 EntryPoint)
 
 void UOptionsMenu_C::OnResetToDefault()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnResetToDefault");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnResetToDefault");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UOptionsMenu_C::OnResetToDefault()
 
 void UOptionsMenu_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::OptionsMenu_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -75,10 +66,7 @@ void UOptionsMenu_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButt
 
 void UOptionsMenu_C::OnApplySettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnApplySettings");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnApplySettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UOptionsMenu_C::OnApplySettings()
 
 void UOptionsMenu_C::OnToggleMode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnToggleMode");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnToggleMode");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UOptionsMenu_C::OnToggleMode()
 
 void UOptionsMenu_C::OnBack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnBack");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnBack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void UOptionsMenu_C::OnBack()
 
 void UOptionsMenu_C::HandleTabGamePadActionsNeedBinds(TArray<class FText>& ScreenLabels)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleTabGamePadActionsNeedBinds");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "HandleTabGamePadActionsNeedBinds");
 
 	Params::OptionsMenu_C_HandleTabGamePadActionsNeedBinds Parms{};
 
@@ -139,10 +118,7 @@ void UOptionsMenu_C::HandleTabGamePadActionsNeedBinds(TArray<class FText>& Scree
 
 void UOptionsMenu_C::ShowLangaugeConfirmation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "ShowLangaugeConfirmation");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "ShowLangaugeConfirmation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,10 +131,7 @@ void UOptionsMenu_C::ShowLangaugeConfirmation()
 
 void UOptionsMenu_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature(class FName TabId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature");
 
 	Params::OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature Parms{};
 
@@ -173,10 +146,7 @@ void UOptionsMenu_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSel
 
 void UOptionsMenu_C::ResetVideoOptionsTimerDelegate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "ResetVideoOptionsTimerDelegate");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "ResetVideoOptionsTimerDelegate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +157,7 @@ void UOptionsMenu_C::ResetVideoOptionsTimerDelegate()
 
 void UOptionsMenu_C::LoadTabClasses()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "LoadTabClasses");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "LoadTabClasses");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -201,10 +168,7 @@ void UOptionsMenu_C::LoadTabClasses()
 
 void UOptionsMenu_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +179,7 @@ void UOptionsMenu_C::BP_OnDeactivated()
 
 void UOptionsMenu_C::HandleSettingsSaveComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleSettingsSaveComplete");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "HandleSettingsSaveComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -229,10 +190,7 @@ void UOptionsMenu_C::HandleSettingsSaveComplete()
 
 void UOptionsMenu_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Construct");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -246,10 +204,7 @@ void UOptionsMenu_C::Construct()
 
 void UOptionsMenu_C::BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature");
 
 	Params::OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature Parms{};
 
@@ -265,10 +220,7 @@ void UOptionsMenu_C::BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_On
 
 void UOptionsMenu_C::OnHandleBack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnHandleBack");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnHandleBack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +231,7 @@ void UOptionsMenu_C::OnHandleBack()
 
 void UOptionsMenu_C::HandleSettingsErrorMessageClosed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleSettingsErrorMessageClosed");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "HandleSettingsErrorMessageClosed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -295,10 +244,7 @@ void UOptionsMenu_C::HandleSettingsErrorMessageClosed()
 
 void UOptionsMenu_C::BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature");
 
 	Params::OptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -313,10 +259,7 @@ void UOptionsMenu_C::BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonBut
 
 void UOptionsMenu_C::HandleBenchmarkComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleBenchmarkComplete");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "HandleBenchmarkComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -330,10 +273,7 @@ void UOptionsMenu_C::HandleBenchmarkComplete()
 
 void UOptionsMenu_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature");
 
 	Params::OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature Parms{};
 
@@ -349,10 +289,7 @@ void UOptionsMenu_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabBut
 
 void UOptionsMenu_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -363,10 +300,7 @@ void UOptionsMenu_C::BP_OnActivated()
 
 void UOptionsMenu_C::Tab_Setting_Changed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Tab Setting Changed");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "Tab Setting Changed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -377,10 +311,7 @@ void UOptionsMenu_C::Tab_Setting_Changed()
 
 void UOptionsMenu_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -393,10 +324,7 @@ void UOptionsMenu_C::Destruct()
 
 void UOptionsMenu_C::BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
 
 	Params::OptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -413,10 +341,7 @@ void UOptionsMenu_C::BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_C
 
 void UOptionsMenu_C::BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature");
 
 	Params::OptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -434,10 +359,7 @@ void UOptionsMenu_C::BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_C
 
 void UOptionsMenu_C::DialogResult_2757852D46593FD0C2380D8F102C53DD(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_2757852D46593FD0C2380D8F102C53DD");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "DialogResult_2757852D46593FD0C2380D8F102C53DD");
 
 	Params::OptionsMenu_C_DialogResult_2757852D46593FD0C2380D8F102C53DD Parms{};
 
@@ -455,10 +377,7 @@ void UOptionsMenu_C::DialogResult_2757852D46593FD0C2380D8F102C53DD(EFortDialogRe
 
 void UOptionsMenu_C::OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE");
 
 	Params::OptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE Parms{};
 
@@ -476,10 +395,7 @@ void UOptionsMenu_C::OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE(class UClass* Loa
 
 void UOptionsMenu_C::DialogResult_B31FF5BD4C0772716F27509EA83B418E(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_B31FF5BD4C0772716F27509EA83B418E");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "DialogResult_B31FF5BD4C0772716F27509EA83B418E");
 
 	Params::OptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E Parms{};
 
@@ -498,10 +414,7 @@ void UOptionsMenu_C::DialogResult_B31FF5BD4C0772716F27509EA83B418E(EFortDialogRe
 
 void UOptionsMenu_C::DialogResult_826C59EC4C294BC872A644878B35A13B(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_826C59EC4C294BC872A644878B35A13B");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "DialogResult_826C59EC4C294BC872A644878B35A13B");
 
 	Params::OptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B Parms{};
 
@@ -520,10 +433,7 @@ void UOptionsMenu_C::DialogResult_826C59EC4C294BC872A644878B35A13B(EFortDialogRe
 
 void UOptionsMenu_C::DialogResult_505313CB4EC9E510DD07E6B544334958(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_505313CB4EC9E510DD07E6B544334958");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "DialogResult_505313CB4EC9E510DD07E6B544334958");
 
 	Params::OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958 Parms{};
 
@@ -542,10 +452,7 @@ void UOptionsMenu_C::DialogResult_505313CB4EC9E510DD07E6B544334958(EFortDialogRe
 
 void UOptionsMenu_C::DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1");
 
 	Params::OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1 Parms{};
 
@@ -563,10 +470,7 @@ void UOptionsMenu_C::DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1(EFortDialogRe
 
 void UOptionsMenu_C::OnLoaded_598823E641B8288CD371F0B50BE07C91(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_598823E641B8288CD371F0B50BE07C91");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_598823E641B8288CD371F0B50BE07C91");
 
 	Params::OptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91 Parms{};
 
@@ -583,10 +487,7 @@ void UOptionsMenu_C::OnLoaded_598823E641B8288CD371F0B50BE07C91(class UClass* Loa
 
 void UOptionsMenu_C::OnLoaded_488EE90943BFF7AA4DB2049A7D72238C(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_488EE90943BFF7AA4DB2049A7D72238C");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_488EE90943BFF7AA4DB2049A7D72238C");
 
 	Params::OptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C Parms{};
 
@@ -603,10 +504,7 @@ void UOptionsMenu_C::OnLoaded_488EE90943BFF7AA4DB2049A7D72238C(class UClass* Loa
 
 void UOptionsMenu_C::OnLoaded_56F757014AB176CE2140009FB54D0D23(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_56F757014AB176CE2140009FB54D0D23");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_56F757014AB176CE2140009FB54D0D23");
 
 	Params::OptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23 Parms{};
 
@@ -623,10 +521,7 @@ void UOptionsMenu_C::OnLoaded_56F757014AB176CE2140009FB54D0D23(class UClass* Loa
 
 void UOptionsMenu_C::OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426");
 
 	Params::OptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426 Parms{};
 
@@ -641,10 +536,7 @@ void UOptionsMenu_C::OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426(class UClass* Loa
 
 void UOptionsMenu_C::Initialize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Initialize");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "Initialize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -655,10 +547,7 @@ void UOptionsMenu_C::Initialize()
 
 void UOptionsMenu_C::Handle_Apply()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Handle Apply");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "Handle Apply");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -671,10 +560,7 @@ void UOptionsMenu_C::Handle_Apply()
 
 void UOptionsMenu_C::Handle_Reset(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Handle Reset");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "Handle Reset");
 
 	Params::OptionsMenu_C_Handle_Reset Parms{};
 
@@ -690,10 +576,7 @@ void UOptionsMenu_C::Handle_Reset(bool* PassThrough)
 
 void UOptionsMenu_C::HandleBack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "HandleBack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -704,10 +587,7 @@ void UOptionsMenu_C::HandleBack()
 
 void UOptionsMenu_C::Handle_Toggle_Mode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Handle Toggle Mode");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "Handle Toggle Mode");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -720,10 +600,7 @@ void UOptionsMenu_C::Handle_Toggle_Mode()
 
 void UOptionsMenu_C::HandleCursorModeChanging(bool IsEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleCursorModeChanging");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "HandleCursorModeChanging");
 
 	Params::OptionsMenu_C_HandleCursorModeChanging Parms{};
 
@@ -744,10 +621,7 @@ void UOptionsMenu_C::HandleCursorModeChanging(bool IsEnabled)
 
 void UOptionsMenu_C::AddTabs(class UClass* WidgetClass, const class FText& DisplayName, class FName NameId, const struct FSlateBrush& Icon, ESettingTab Tab_Type)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "AddTabs");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "AddTabs");
 
 	Params::OptionsMenu_C_AddTabs Parms{};
 
@@ -766,10 +640,7 @@ void UOptionsMenu_C::AddTabs(class UClass* WidgetClass, const class FText& Displ
 
 void UOptionsMenu_C::SetBackground()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "SetBackground");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "SetBackground");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -780,10 +651,7 @@ void UOptionsMenu_C::SetBackground()
 
 void UOptionsMenu_C::CenterOnActiveTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "CenterOnActiveTab");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "CenterOnActiveTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -794,10 +662,7 @@ void UOptionsMenu_C::CenterOnActiveTab()
 
 void UOptionsMenu_C::HandleTabGamepadConfigActionHandlerStates()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleTabGamepadConfigActionHandlerStates");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "HandleTabGamepadConfigActionHandlerStates");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -808,10 +673,7 @@ void UOptionsMenu_C::HandleTabGamepadConfigActionHandlerStates()
 
 void UOptionsMenu_C::BP_ApplySettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "BP_ApplySettings");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "BP_ApplySettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -825,10 +687,7 @@ void UOptionsMenu_C::BP_ApplySettings()
 
 void UOptionsMenu_C::UpdateBasedOnActiveWidget(class UObject* ActiveWidget, bool ShouldCenterOnTab)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "UpdateBasedOnActiveWidget");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "UpdateBasedOnActiveWidget");
 
 	Params::OptionsMenu_C_UpdateBasedOnActiveWidget Parms{};
 
@@ -844,10 +703,7 @@ void UOptionsMenu_C::UpdateBasedOnActiveWidget(class UObject* ActiveWidget, bool
 
 void UOptionsMenu_C::UpdateAllOptionsTabs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "UpdateAllOptionsTabs");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "UpdateAllOptionsTabs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -860,10 +716,7 @@ void UOptionsMenu_C::UpdateAllOptionsTabs()
 
 void UOptionsMenu_C::Update_Header_Text_by_Tab_ID(class FName TabId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "Update Header Text by Tab ID");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "Update Header Text by Tab ID");
 
 	Params::OptionsMenu_C_Update_Header_Text_by_Tab_ID Parms{};
 
@@ -878,10 +731,7 @@ void UOptionsMenu_C::Update_Header_Text_by_Tab_ID(class FName TabId)
 
 void UOptionsMenu_C::HandleResetAvailableActionHandlerStates()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "HandleResetAvailableActionHandlerStates");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "HandleResetAvailableActionHandlerStates");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -894,10 +744,7 @@ void UOptionsMenu_C::HandleResetAvailableActionHandlerStates()
 
 void UOptionsMenu_C::NotifyTabsOfActivationState(class UFortOptionsTab* ActivatedTab)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "NotifyTabsOfActivationState");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "NotifyTabsOfActivationState");
 
 	Params::OptionsMenu_C_NotifyTabsOfActivationState Parms{};
 
@@ -912,10 +759,7 @@ void UOptionsMenu_C::NotifyTabsOfActivationState(class UFortOptionsTab* Activate
 
 void UOptionsMenu_C::CreateMobileBackButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "CreateMobileBackButton");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "CreateMobileBackButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -928,10 +772,7 @@ void UOptionsMenu_C::CreateMobileBackButton()
 
 void UOptionsMenu_C::ResetGameOptionsToDefault(class UFortOptionsTab* InputPin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenu_C", "ResetGameOptionsToDefault");
+	class UFunction* Func = Class->GetFunction("OptionsMenu_C", "ResetGameOptionsToDefault");
 
 	Params::OptionsMenu_C_ResetGameOptionsToDefault Parms{};
 

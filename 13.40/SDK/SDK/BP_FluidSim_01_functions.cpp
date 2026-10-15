@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_FluidSim_01_C::ExecuteUbergraph_BP_FluidSim_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "ExecuteUbergraph_BP_FluidSim_01");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "ExecuteUbergraph_BP_FluidSim_01");
 
 	Params::BP_FluidSim_01_C_ExecuteUbergraph_BP_FluidSim_01 Parms{};
 
@@ -41,10 +38,7 @@ void ABP_FluidSim_01_C::ExecuteUbergraph_BP_FluidSim_01(int32 EntryPoint)
 
 void ABP_FluidSim_01_C::FluidGridDebug()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "FluidGridDebug");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "FluidGridDebug");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_FluidSim_01_C::FluidGridDebug()
 
 void ABP_FluidSim_01_C::Release_RTs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Release RTs");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Release RTs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_FluidSim_01_C::Release_RTs()
 
 void ABP_FluidSim_01_C::ReCheckScalability()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "ReCheckScalability");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "ReCheckScalability");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_FluidSim_01_C::ReCheckScalability()
 
 void ABP_FluidSim_01_C::Allocate_RTs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Allocate RTs");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Allocate RTs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ABP_FluidSim_01_C::Allocate_RTs()
 
 void ABP_FluidSim_01_C::Clear_RTs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Clear RTs");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Clear RTs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +95,7 @@ void ABP_FluidSim_01_C::Clear_RTs()
 
 void ABP_FluidSim_01_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "ReceiveTick");
 
 	Params::BP_FluidSim_01_C_ReceiveTick Parms{};
 
@@ -131,10 +110,7 @@ void ABP_FluidSim_01_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_FluidSim_01_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void ABP_FluidSim_01_C::ReceiveBeginPlay()
 
 void ABP_FluidSim_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +134,7 @@ void ABP_FluidSim_01_C::UserConstructionScript()
 
 void ABP_FluidSim_01_C::Cycle_Render_Targets(class UTextureRenderTarget2D** Current_Target)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Cycle Render Targets");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Cycle Render Targets");
 
 	Params::BP_FluidSim_01_C_Cycle_Render_Targets Parms{};
 
@@ -184,10 +154,7 @@ void ABP_FluidSim_01_C::Cycle_Render_Targets(class UTextureRenderTarget2D** Curr
 
 void ABP_FluidSim_01_C::Convert_Force_Position(const struct FVector& Force_Location, float Sine_Bob, struct FVector* UV_Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Convert Force Position");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Convert Force Position");
 
 	Params::BP_FluidSim_01_C_Convert_Force_Position Parms{};
 
@@ -206,10 +173,7 @@ void ABP_FluidSim_01_C::Convert_Force_Position(const struct FVector& Force_Locat
 
 void ABP_FluidSim_01_C::SetupDisplayMIDs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "SetupDisplayMIDs");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "SetupDisplayMIDs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -220,10 +184,7 @@ void ABP_FluidSim_01_C::SetupDisplayMIDs()
 
 void ABP_FluidSim_01_C::SetupSimMIDs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "SetupSimMIDs");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "SetupSimMIDs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -234,10 +195,7 @@ void ABP_FluidSim_01_C::SetupSimMIDs()
 
 void ABP_FluidSim_01_C::GridMovement()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "GridMovement");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "GridMovement");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -251,10 +209,7 @@ void ABP_FluidSim_01_C::GridMovement()
 
 void ABP_FluidSim_01_C::Get_Force_MID(class UMaterialInterface*& Parent, class UMaterialInstanceDynamic** Mid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Get Force MID");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Get Force MID");
 
 	Params::BP_FluidSim_01_C_Get_Force_MID Parms{};
 
@@ -274,10 +229,7 @@ void ABP_FluidSim_01_C::Get_Force_MID(class UMaterialInterface*& Parent, class U
 
 void ABP_FluidSim_01_C::Get_LandscapeWaterInfo()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Get LandscapeWaterInfo");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Get LandscapeWaterInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -290,10 +242,7 @@ void ABP_FluidSim_01_C::Get_LandscapeWaterInfo()
 
 void ABP_FluidSim_01_C::Apply_Fluid_Force_Impulse(const struct FFluidForceImpulse& Impulse_Settings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Apply Fluid Force Impulse");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Apply Fluid Force Impulse");
 
 	Params::BP_FluidSim_01_C_Apply_Fluid_Force_Impulse Parms{};
 
@@ -308,10 +257,7 @@ void ABP_FluidSim_01_C::Apply_Fluid_Force_Impulse(const struct FFluidForceImpuls
 
 void ABP_FluidSim_01_C::Update_Impulse_Lifetimes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Update Impulse Lifetimes");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Update Impulse Lifetimes");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -326,10 +272,7 @@ void ABP_FluidSim_01_C::Update_Impulse_Lifetimes()
 
 void ABP_FluidSim_01_C::Draw_Impulse_Force(class UCanvas* Canvas, const struct FVector2D& Canvas_Size, const struct FFluidForceImpulsePerInstanceData& Impulse_Settings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Draw Impulse Force");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Draw Impulse Force");
 
 	Params::BP_FluidSim_01_C_Draw_Impulse_Force Parms{};
 
@@ -346,10 +289,7 @@ void ABP_FluidSim_01_C::Draw_Impulse_Force(class UCanvas* Canvas, const struct F
 
 void ABP_FluidSim_01_C::Update_Dynamic_Forces()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Update Dynamic Forces");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Update Dynamic Forces");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -364,10 +304,7 @@ void ABP_FluidSim_01_C::Update_Dynamic_Forces()
 
 void ABP_FluidSim_01_C::Register_Dynamic_Force(const struct FFluidForceDynamic& Dynamic_Fluid_Force, class USceneComponent* Tracked_Component, float WaterLevel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Register Dynamic Force");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Register Dynamic Force");
 
 	Params::BP_FluidSim_01_C_Register_Dynamic_Force Parms{};
 
@@ -386,10 +323,7 @@ void ABP_FluidSim_01_C::Register_Dynamic_Force(const struct FFluidForceDynamic& 
 
 void ABP_FluidSim_01_C::Remove_Dynamic_Force(class UActorComponent* Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Remove Dynamic Force");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Remove Dynamic Force");
 
 	Params::BP_FluidSim_01_C_Remove_Dynamic_Force Parms{};
 
@@ -408,10 +342,7 @@ void ABP_FluidSim_01_C::Remove_Dynamic_Force(class UActorComponent* Component)
 
 void ABP_FluidSim_01_C::Draw_Dynamic_Force(class UCanvas*& Canvas, struct FVector2D& Canvas_Size, struct FFluidForceDynamicPerInstanceData& Dynamic_Force_Settings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Draw Dynamic Force");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Draw Dynamic Force");
 
 	Params::BP_FluidSim_01_C_Draw_Dynamic_Force Parms{};
 
@@ -434,10 +365,7 @@ void ABP_FluidSim_01_C::Draw_Dynamic_Force(class UCanvas*& Canvas, struct FVecto
 
 void ABP_FluidSim_01_C::GetLocalPawn(class APawn** Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "GetLocalPawn");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "GetLocalPawn");
 
 	Params::BP_FluidSim_01_C_GetLocalPawn Parms{};
 
@@ -453,10 +381,7 @@ void ABP_FluidSim_01_C::GetLocalPawn(class APawn** Pawn)
 
 void ABP_FluidSim_01_C::Set_Waterbody_MID_Params()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Set Waterbody MID Params");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Set Waterbody MID Params");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -469,10 +394,7 @@ void ABP_FluidSim_01_C::Set_Waterbody_MID_Params()
 
 void ABP_FluidSim_01_C::Validate_RTs(bool* RTs_All_Valid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Validate RTs");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Validate RTs");
 
 	Params::BP_FluidSim_01_C_Validate_RTs Parms{};
 
@@ -488,10 +410,7 @@ void ABP_FluidSim_01_C::Validate_RTs(bool* RTs_All_Valid)
 
 void ABP_FluidSim_01_C::GetPlayerPawnForces()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "GetPlayerPawnForces");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "GetPlayerPawnForces");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -505,10 +424,7 @@ void ABP_FluidSim_01_C::GetPlayerPawnForces()
 
 void ABP_FluidSim_01_C::Register_Projectile_Force(const struct FFluidForceDynamic& Dynamic_Fluid_Force, class USceneComponent* Tracked_Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Register Projectile Force");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Register Projectile Force");
 
 	Params::BP_FluidSim_01_C_Register_Projectile_Force Parms{};
 
@@ -526,10 +442,7 @@ void ABP_FluidSim_01_C::Register_Projectile_Force(const struct FFluidForceDynami
 
 void ABP_FluidSim_01_C::Remove_Projectile_Force(class UActorComponent* Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Remove Projectile Force");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Remove Projectile Force");
 
 	Params::BP_FluidSim_01_C_Remove_Projectile_Force Parms{};
 
@@ -544,10 +457,7 @@ void ABP_FluidSim_01_C::Remove_Projectile_Force(class UActorComponent* Component
 
 void ABP_FluidSim_01_C::Clear_Sim_from_Waterbody_MIDs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Clear Sim from Waterbody MIDs");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Clear Sim from Waterbody MIDs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -558,10 +468,7 @@ void ABP_FluidSim_01_C::Clear_Sim_from_Waterbody_MIDs()
 
 void ABP_FluidSim_01_C::Get_Frames_Since_Last_Active_Forces()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_01_C", "Get Frames Since Last Active Forces");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_01_C", "Get Frames Since Last Active Forces");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMatchmakingRegionAndPool_C::ExecuteUbergraph_MatchmakingRegionAndPool(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MatchmakingRegionAndPool_C", "ExecuteUbergraph_MatchmakingRegionAndPool");
+	class UFunction* Func = Class->GetFunction("MatchmakingRegionAndPool_C", "ExecuteUbergraph_MatchmakingRegionAndPool");
 
 	Params::MatchmakingRegionAndPool_C_ExecuteUbergraph_MatchmakingRegionAndPool Parms{};
 
@@ -44,10 +41,7 @@ void UMatchmakingRegionAndPool_C::ExecuteUbergraph_MatchmakingRegionAndPool(int3
 
 void UMatchmakingRegionAndPool_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MatchmakingRegionAndPool_C", "Tick");
+	class UFunction* Func = Class->GetFunction("MatchmakingRegionAndPool_C", "Tick");
 
 	Params::MatchmakingRegionAndPool_C_Tick Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Athena_HidingProp_Collision_C::ExecuteUbergraph_GCNL_Athena_HidingProp_Collision(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Collision_C", "ExecuteUbergraph_GCNL_Athena_HidingProp_Collision");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_Collision_C", "ExecuteUbergraph_GCNL_Athena_HidingProp_Collision");
 
 	Params::GCNL_Athena_HidingProp_Collision_C_ExecuteUbergraph_GCNL_Athena_HidingProp_Collision Parms{};
 
@@ -48,10 +45,7 @@ void AGCNL_Athena_HidingProp_Collision_C::ExecuteUbergraph_GCNL_Athena_HidingPro
 
 void AGCNL_Athena_HidingProp_Collision_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Collision_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_Collision_C", "OnRemoval");
 
 	Params::GCNL_Athena_HidingProp_Collision_C_OnRemoval Parms{};
 
@@ -76,10 +70,7 @@ void AGCNL_Athena_HidingProp_Collision_C::OnRemoval(class AActor* MyTarget, cons
 
 void AGCNL_Athena_HidingProp_Collision_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Collision_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_Collision_C", "OnLoopingStart");
 
 	Params::GCNL_Athena_HidingProp_Collision_C_OnLoopingStart Parms{};
 

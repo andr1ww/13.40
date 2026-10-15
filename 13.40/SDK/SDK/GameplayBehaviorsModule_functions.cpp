@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGameplayBehavior::K2_AbortBehavior(class AActor* Avatar)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_AbortBehavior");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_AbortBehavior");
 
 	Params::GameplayBehavior_K2_AbortBehavior Parms{};
 
@@ -48,10 +45,7 @@ void UGameplayBehavior::K2_AbortBehavior(class AActor* Avatar)
 
 void UGameplayBehavior::K2_EndBehavior(class AActor* Avatar)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_EndBehavior");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_EndBehavior");
 
 	Params::GameplayBehavior_K2_EndBehavior Parms{};
 
@@ -74,10 +68,7 @@ void UGameplayBehavior::K2_EndBehavior(class AActor* Avatar)
 
 void UGameplayBehavior::K2_OnFinished(class AActor* Avatar, bool bWasInterrupted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_OnFinished");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_OnFinished");
 
 	Params::GameplayBehavior_K2_OnFinished Parms{};
 
@@ -96,10 +87,7 @@ void UGameplayBehavior::K2_OnFinished(class AActor* Avatar, bool bWasInterrupted
 
 void UGameplayBehavior::K2_OnFinishedCharacter(class ACharacter* Avatar, bool bWasInterrupted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_OnFinishedCharacter");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_OnFinishedCharacter");
 
 	Params::GameplayBehavior_K2_OnFinishedCharacter Parms{};
 
@@ -118,10 +106,7 @@ void UGameplayBehavior::K2_OnFinishedCharacter(class ACharacter* Avatar, bool bW
 
 void UGameplayBehavior::K2_OnFinishedPawn(class APawn* Avatar, bool bWasInterrupted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_OnFinishedPawn");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_OnFinishedPawn");
 
 	Params::GameplayBehavior_K2_OnFinishedPawn Parms{};
 
@@ -140,10 +125,7 @@ void UGameplayBehavior::K2_OnFinishedPawn(class APawn* Avatar, bool bWasInterrup
 
 void UGameplayBehavior::K2_OnTriggered(class AActor* Avatar, const class UGameplayBehaviorConfig* Config)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggered");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggered");
 
 	Params::GameplayBehavior_K2_OnTriggered Parms{};
 
@@ -162,10 +144,7 @@ void UGameplayBehavior::K2_OnTriggered(class AActor* Avatar, const class UGamepl
 
 void UGameplayBehavior::K2_OnTriggeredCharacter(class ACharacter* Avatar, const class UGameplayBehaviorConfig* Config)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggeredCharacter");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggeredCharacter");
 
 	Params::GameplayBehavior_K2_OnTriggeredCharacter Parms{};
 
@@ -184,10 +163,7 @@ void UGameplayBehavior::K2_OnTriggeredCharacter(class ACharacter* Avatar, const 
 
 void UGameplayBehavior::K2_OnTriggeredPawn(class APawn* Avatar, const class UGameplayBehaviorConfig* Config)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggeredPawn");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggeredPawn");
 
 	Params::GameplayBehavior_K2_OnTriggeredPawn Parms{};
 
@@ -206,10 +182,7 @@ void UGameplayBehavior::K2_OnTriggeredPawn(class APawn* Avatar, const class UGam
 
 void UGameplayBehavior::K2_TriggerBehavior(class AActor* Avatar, class UGameplayBehaviorConfig* Config)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_TriggerBehavior");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_TriggerBehavior");
 
 	Params::GameplayBehavior_K2_TriggerBehavior Parms{};
 
@@ -233,10 +206,7 @@ void UGameplayBehavior::K2_TriggerBehavior(class AActor* Avatar, class UGameplay
 
 int32 UGameplayBehavior::K2_GetNextActorIndexInSequence(int32 CurrentIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior", "K2_GetNextActorIndexInSequence");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior", "K2_GetNextActorIndexInSequence");
 
 	Params::GameplayBehavior_K2_GetNextActorIndexInSequence Parms{};
 
@@ -262,10 +232,7 @@ int32 UGameplayBehavior::K2_GetNextActorIndexInSequence(int32 CurrentIndex) cons
 
 void UGameplayBehavior_AnimationBased::OnMontageFinished(class UAnimMontage* Montage, bool bInterrupted, class AActor* InAvatar)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayBehavior_AnimationBased", "OnMontageFinished");
+	class UFunction* Func = Class->GetFunction("GameplayBehavior_AnimationBased", "OnMontageFinished");
 
 	Params::GameplayBehavior_AnimationBased_OnMontageFinished Parms{};
 

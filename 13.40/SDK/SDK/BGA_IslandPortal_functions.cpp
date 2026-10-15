@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_IslandPortal_C::ExecuteUbergraph_BGA_IslandPortal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "ExecuteUbergraph_BGA_IslandPortal");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "ExecuteUbergraph_BGA_IslandPortal");
 
 	Params::BGA_IslandPortal_C_ExecuteUbergraph_BGA_IslandPortal Parms{};
 
@@ -41,10 +38,7 @@ void ABGA_IslandPortal_C::ExecuteUbergraph_BGA_IslandPortal(int32 EntryPoint)
 
 void ABGA_IslandPortal_C::ErrorStateChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "ErrorStateChanged");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "ErrorStateChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void ABGA_IslandPortal_C::ErrorStateChanged()
 
 void ABGA_IslandPortal_C::ServerOnInteractWithIslandPortal(const class AFortPlayerPawn* InteractingPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "ServerOnInteractWithIslandPortal");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "ServerOnInteractWithIslandPortal");
 
 	Params::BGA_IslandPortal_C_ServerOnInteractWithIslandPortal Parms{};
 
@@ -80,10 +71,7 @@ void ABGA_IslandPortal_C::ServerOnInteractWithIslandPortal(const class AFortPlay
 
 void ABGA_IslandPortal_C::BndEvt__HUD_Visibility_Volume_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__HUD Visibility Volume_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__HUD Visibility Volume_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::BGA_IslandPortal_C_BndEvt__HUD_Visibility_Volume_K2Node_ComponentBoundEvent_6_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -108,10 +96,7 @@ void ABGA_IslandPortal_C::BndEvt__HUD_Visibility_Volume_K2Node_ComponentBoundEve
 
 void ABGA_IslandPortal_C::BndEvt__HUD_Visibility_Volume_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__HUD Visibility Volume_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__HUD Visibility Volume_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::BGA_IslandPortal_C_BndEvt__HUD_Visibility_Volume_K2Node_ComponentBoundEvent_5_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -131,10 +116,7 @@ void ABGA_IslandPortal_C::BndEvt__HUD_Visibility_Volume_K2Node_ComponentBoundEve
 
 void ABGA_IslandPortal_C::OnReceivedNewIslandInfo()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OnReceivedNewIslandInfo");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OnReceivedNewIslandInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +129,7 @@ void ABGA_IslandPortal_C::OnReceivedNewIslandInfo()
 
 void ABGA_IslandPortal_C::BroadcastIsBeingInteractedWith(bool IsInteracting)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BroadcastIsBeingInteractedWith");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BroadcastIsBeingInteractedWith");
 
 	Params::BGA_IslandPortal_C_BroadcastIsBeingInteractedWith Parms{};
 
@@ -165,10 +144,7 @@ void ABGA_IslandPortal_C::BroadcastIsBeingInteractedWith(bool IsInteracting)
 
 void ABGA_IslandPortal_C::Play_Teleport_Audio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "Play Teleport Audio");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "Play Teleport Audio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +155,7 @@ void ABGA_IslandPortal_C::Play_Teleport_Audio()
 
 void ABGA_IslandPortal_C::SetupPortalForThumbnailDisplay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "SetupPortalForThumbnailDisplay");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "SetupPortalForThumbnailDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -193,10 +166,7 @@ void ABGA_IslandPortal_C::SetupPortalForThumbnailDisplay()
 
 void ABGA_IslandPortal_C::OnThumbnailTextureReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OnThumbnailTextureReady");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OnThumbnailTextureReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +179,7 @@ void ABGA_IslandPortal_C::OnThumbnailTextureReady()
 
 void ABGA_IslandPortal_C::Play_Rift_Exit_Sound(const struct FVector& Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "Play Rift Exit Sound");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "Play Rift Exit Sound");
 
 	Params::BGA_IslandPortal_C_Play_Rift_Exit_Sound Parms{};
 
@@ -229,10 +196,7 @@ void ABGA_IslandPortal_C::Play_Rift_Exit_Sound(const struct FVector& Location)
 
 void ABGA_IslandPortal_C::ClientSaveDisplayChanged(bool bSaving)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "ClientSaveDisplayChanged");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "ClientSaveDisplayChanged");
 
 	Params::BGA_IslandPortal_C_ClientSaveDisplayChanged Parms{};
 
@@ -247,10 +211,7 @@ void ABGA_IslandPortal_C::ClientSaveDisplayChanged(bool bSaving)
 
 void ABGA_IslandPortal_C::CuratedPortalChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "CuratedPortalChanged");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "CuratedPortalChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -261,10 +222,7 @@ void ABGA_IslandPortal_C::CuratedPortalChanged()
 
 void ABGA_IslandPortal_C::UpdatePortal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePortal");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePortal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -275,10 +233,7 @@ void ABGA_IslandPortal_C::UpdatePortal()
 
 void ABGA_IslandPortal_C::PortalOpenChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "PortalOpenChanged");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "PortalOpenChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -289,10 +244,7 @@ void ABGA_IslandPortal_C::PortalOpenChanged()
 
 void ABGA_IslandPortal_C::TeleportToCreativeHub()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "TeleportToCreativeHub");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "TeleportToCreativeHub");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -303,10 +255,7 @@ void ABGA_IslandPortal_C::TeleportToCreativeHub()
 
 void ABGA_IslandPortal_C::DisplayNameChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "DisplayNameChanged");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "DisplayNameChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -317,10 +266,7 @@ void ABGA_IslandPortal_C::DisplayNameChanged()
 
 void ABGA_IslandPortal_C::PopulationChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "PopulationChanged");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "PopulationChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -331,10 +277,7 @@ void ABGA_IslandPortal_C::PopulationChanged()
 
 void ABGA_IslandPortal_C::CheckShouldDisplayUI()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "CheckShouldDisplayUI");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "CheckShouldDisplayUI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -345,10 +288,7 @@ void ABGA_IslandPortal_C::CheckShouldDisplayUI()
 
 void ABGA_IslandPortal_C::OwningPlayerChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OwningPlayerChanged");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OwningPlayerChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -361,10 +301,7 @@ void ABGA_IslandPortal_C::OwningPlayerChanged()
 
 void ABGA_IslandPortal_C::CheckIsMyPortal(bool IsMyPortal_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "CheckIsMyPortal");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "CheckIsMyPortal");
 
 	Params::BGA_IslandPortal_C_CheckIsMyPortal Parms{};
 
@@ -379,10 +316,7 @@ void ABGA_IslandPortal_C::CheckIsMyPortal(bool IsMyPortal_0)
 
 void ABGA_IslandPortal_C::EvaluateOverlap()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "EvaluateOverlap");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "EvaluateOverlap");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -395,10 +329,7 @@ void ABGA_IslandPortal_C::EvaluateOverlap()
 
 void ABGA_IslandPortal_C::ClientTeleportToLobbyIsland(class AFortPlayerController* RequestingController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "ClientTeleportToLobbyIsland");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "ClientTeleportToLobbyIsland");
 
 	Params::BGA_IslandPortal_C_ClientTeleportToLobbyIsland Parms{};
 
@@ -416,10 +347,7 @@ void ABGA_IslandPortal_C::ClientTeleportToLobbyIsland(class AFortPlayerControlle
 
 void ABGA_IslandPortal_C::NotifyTeleportedPlayerPawn(class AFortPlayerPawn* PlayerPawn_0, bool bTeleportedToIslandStart)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "NotifyTeleportedPlayerPawn");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "NotifyTeleportedPlayerPawn");
 
 	Params::BGA_IslandPortal_C_NotifyTeleportedPlayerPawn Parms{};
 
@@ -437,10 +365,7 @@ void ABGA_IslandPortal_C::NotifyTeleportedPlayerPawn(class AFortPlayerPawn* Play
 
 void ABGA_IslandPortal_C::LoadIslandUI(class AFortPlayerPawn* InteractingPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "LoadIslandUI");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "LoadIslandUI");
 
 	Params::BGA_IslandPortal_C_LoadIslandUI Parms{};
 
@@ -457,10 +382,7 @@ void ABGA_IslandPortal_C::LoadIslandUI(class AFortPlayerPawn* InteractingPawn)
 
 void ABGA_IslandPortal_C::NotifyTeleportedVehicle(class AActor* VehicleActor_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "NotifyTeleportedVehicle");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "NotifyTeleportedVehicle");
 
 	Params::BGA_IslandPortal_C_NotifyTeleportedVehicle Parms{};
 
@@ -477,10 +399,7 @@ void ABGA_IslandPortal_C::NotifyTeleportedVehicle(class AActor* VehicleActor_0)
 
 void ABGA_IslandPortal_C::OverlappingOnBeginPlay(class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OverlappingOnBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OverlappingOnBeginPlay");
 
 	Params::BGA_IslandPortal_C_OverlappingOnBeginPlay Parms{};
 
@@ -497,10 +416,7 @@ void ABGA_IslandPortal_C::OverlappingOnBeginPlay(class AActor* Actor)
 
 void ABGA_IslandPortal_C::PlayCosmeticFX(const struct FVector& DestinationLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "PlayCosmeticFX");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "PlayCosmeticFX");
 
 	Params::BGA_IslandPortal_C_PlayCosmeticFX Parms{};
 
@@ -518,10 +434,7 @@ void ABGA_IslandPortal_C::PlayCosmeticFX(const struct FVector& DestinationLocati
 
 void ABGA_IslandPortal_C::PlayTeleportFX(const struct FVector& PlayerLocation, const struct FVector& DestinationLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "PlayTeleportFX");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "PlayTeleportFX");
 
 	Params::BGA_IslandPortal_C_PlayTeleportFX Parms{};
 
@@ -537,10 +450,7 @@ void ABGA_IslandPortal_C::PlayTeleportFX(const struct FVector& PlayerLocation, c
 
 void ABGA_IslandPortal_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -556,10 +466,7 @@ void ABGA_IslandPortal_C::ReceiveBeginPlay()
 
 void ABGA_IslandPortal_C::BndEvt__Capsule_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__Capsule_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__Capsule_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::BGA_IslandPortal_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -584,10 +491,7 @@ void ABGA_IslandPortal_C::BndEvt__Capsule_K2Node_ComponentBoundEvent_3_Component
 
 void ABGA_IslandPortal_C::BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::BGA_IslandPortal_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -614,10 +518,7 @@ void ABGA_IslandPortal_C::BndEvt__Capsule_K2Node_ComponentBoundEvent_2_Component
 
 void ABGA_IslandPortal_C::BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::BGA_IslandPortal_C_BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -639,10 +540,7 @@ void ABGA_IslandPortal_C::BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_Co
 
 void ABGA_IslandPortal_C::OnLoaded_E60F9B1D4E758E4EA443468A995679B2(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_E60F9B1D4E758E4EA443468A995679B2");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_E60F9B1D4E758E4EA443468A995679B2");
 
 	Params::BGA_IslandPortal_C_OnLoaded_E60F9B1D4E758E4EA443468A995679B2 Parms{};
 
@@ -659,10 +557,7 @@ void ABGA_IslandPortal_C::OnLoaded_E60F9B1D4E758E4EA443468A995679B2(class UClass
 
 void ABGA_IslandPortal_C::OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5");
 
 	Params::BGA_IslandPortal_C_OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5 Parms{};
 
@@ -679,10 +574,7 @@ void ABGA_IslandPortal_C::OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5(class UClass
 
 void ABGA_IslandPortal_C::OnLoaded_A43955A14A20383F466DF18A87BBA501(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_A43955A14A20383F466DF18A87BBA501");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_A43955A14A20383F466DF18A87BBA501");
 
 	Params::BGA_IslandPortal_C_OnLoaded_A43955A14A20383F466DF18A87BBA501 Parms{};
 
@@ -699,10 +591,7 @@ void ABGA_IslandPortal_C::OnLoaded_A43955A14A20383F466DF18A87BBA501(class UClass
 
 void ABGA_IslandPortal_C::OnLoaded_25EC650C4A5067360B49BC87DAFA1B71(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_25EC650C4A5067360B49BC87DAFA1B71");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_25EC650C4A5067360B49BC87DAFA1B71");
 
 	Params::BGA_IslandPortal_C_OnLoaded_25EC650C4A5067360B49BC87DAFA1B71 Parms{};
 
@@ -717,10 +606,7 @@ void ABGA_IslandPortal_C::OnLoaded_25EC650C4A5067360B49BC87DAFA1B71(class UClass
 
 void ABGA_IslandPortal_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -731,10 +617,7 @@ void ABGA_IslandPortal_C::Timeline_0__UpdateFunc()
 
 void ABGA_IslandPortal_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -745,10 +628,7 @@ void ABGA_IslandPortal_C::Timeline_0__FinishedFunc()
 
 void ABGA_IslandPortal_C::VectorScale__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "VectorScale__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "VectorScale__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -759,10 +639,7 @@ void ABGA_IslandPortal_C::VectorScale__UpdateFunc()
 
 void ABGA_IslandPortal_C::VectorScale__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "VectorScale__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "VectorScale__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -775,10 +652,7 @@ void ABGA_IslandPortal_C::VectorScale__FinishedFunc()
 
 void ABGA_IslandPortal_C::PlayExpandOrCollapseAudio(bool Expand)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "PlayExpandOrCollapseAudio");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "PlayExpandOrCollapseAudio");
 
 	Params::BGA_IslandPortal_C_PlayExpandOrCollapseAudio Parms{};
 
@@ -793,10 +667,7 @@ void ABGA_IslandPortal_C::PlayExpandOrCollapseAudio(bool Expand)
 
 void ABGA_IslandPortal_C::OnRep_TeleportLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_TeleportLocation");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_TeleportLocation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -807,10 +678,7 @@ void ABGA_IslandPortal_C::OnRep_TeleportLocation()
 
 void ABGA_IslandPortal_C::OnRep_Vehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_Vehicle");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_Vehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -821,10 +689,7 @@ void ABGA_IslandPortal_C::OnRep_Vehicle()
 
 void ABGA_IslandPortal_C::OnRep_PlayerPawn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_PlayerPawn");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_PlayerPawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -837,10 +702,7 @@ void ABGA_IslandPortal_C::OnRep_PlayerPawn()
 
 void ABGA_IslandPortal_C::CheckForRiftLocUpdate(class AController* InController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "CheckForRiftLocUpdate");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "CheckForRiftLocUpdate");
 
 	Params::BGA_IslandPortal_C_CheckForRiftLocUpdate Parms{};
 
@@ -857,10 +719,7 @@ void ABGA_IslandPortal_C::CheckForRiftLocUpdate(class AController* InController)
 
 void ABGA_IslandPortal_C::UseRiftQuestUpdate(class AController* InController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "UseRiftQuestUpdate");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "UseRiftQuestUpdate");
 
 	Params::BGA_IslandPortal_C_UseRiftQuestUpdate Parms{};
 
@@ -877,10 +736,7 @@ void ABGA_IslandPortal_C::UseRiftQuestUpdate(class AController* InController)
 
 void ABGA_IslandPortal_C::GetPortalPosition(struct FVector* Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "GetPortalPosition");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "GetPortalPosition");
 
 	Params::BGA_IslandPortal_C_GetPortalPosition Parms{};
 
@@ -899,10 +755,7 @@ void ABGA_IslandPortal_C::GetPortalPosition(struct FVector* Location)
 
 bool ABGA_IslandPortal_C::BlueprintOnLocalInteract(class AFortPlayerPawn* InteractingPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintOnLocalInteract");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintOnLocalInteract");
 
 	Params::BGA_IslandPortal_C_BlueprintOnLocalInteract Parms{};
 
@@ -921,10 +774,7 @@ bool ABGA_IslandPortal_C::BlueprintOnLocalInteract(class AFortPlayerPawn* Intera
 
 void ABGA_IslandPortal_C::TeleportToLobbyIsland(class AFortPlayerController* RequestingController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "TeleportToLobbyIsland");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "TeleportToLobbyIsland");
 
 	Params::BGA_IslandPortal_C_TeleportToLobbyIsland Parms{};
 
@@ -942,10 +792,7 @@ void ABGA_IslandPortal_C::TeleportToLobbyIsland(class AFortPlayerController* Req
 
 void ABGA_IslandPortal_C::SetPortalUIVisibility(bool Show, float Distance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "SetPortalUIVisibility");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "SetPortalUIVisibility");
 
 	Params::BGA_IslandPortal_C_SetPortalUIVisibility Parms{};
 
@@ -961,10 +808,7 @@ void ABGA_IslandPortal_C::SetPortalUIVisibility(bool Show, float Distance)
 
 void ABGA_IslandPortal_C::UpdatePopulationDisplay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePopulationDisplay");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePopulationDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -975,10 +819,7 @@ void ABGA_IslandPortal_C::UpdatePopulationDisplay()
 
 void ABGA_IslandPortal_C::UpdateNameDisplay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateNameDisplay");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateNameDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -991,10 +832,7 @@ void ABGA_IslandPortal_C::UpdateNameDisplay()
 
 struct FVector ABGA_IslandPortal_C::ScaleThumbnailPlaneByTextureSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "ScaleThumbnailPlaneByTextureSize");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "ScaleThumbnailPlaneByTextureSize");
 
 	Params::BGA_IslandPortal_C_ScaleThumbnailPlaneByTextureSize Parms{};
 
@@ -1011,10 +849,7 @@ struct FVector ABGA_IslandPortal_C::ScaleThumbnailPlaneByTextureSize()
 
 void ABGA_IslandPortal_C::CanUseHUDInteract(bool* CanInteract)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "CanUseHUDInteract");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "CanUseHUDInteract");
 
 	Params::BGA_IslandPortal_C_CanUseHUDInteract Parms{};
 
@@ -1030,10 +865,7 @@ void ABGA_IslandPortal_C::CanUseHUDInteract(bool* CanInteract)
 
 void ABGA_IslandPortal_C::CloseAndClearDisplayedWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "CloseAndClearDisplayedWidget");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "CloseAndClearDisplayedWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1044,10 +876,7 @@ void ABGA_IslandPortal_C::CloseAndClearDisplayedWidget()
 
 void ABGA_IslandPortal_C::ClearDisplayedWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "ClearDisplayedWidget");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "ClearDisplayedWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1058,10 +887,7 @@ void ABGA_IslandPortal_C::ClearDisplayedWidget()
 
 void ABGA_IslandPortal_C::StartOrEndQuery()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "StartOrEndQuery");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "StartOrEndQuery");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1072,10 +898,7 @@ void ABGA_IslandPortal_C::StartOrEndQuery()
 
 void ABGA_IslandPortal_C::QueryPlayerLookAt()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "QueryPlayerLookAt");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "QueryPlayerLookAt");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1088,10 +911,7 @@ void ABGA_IslandPortal_C::QueryPlayerLookAt()
 
 void ABGA_IslandPortal_C::UpdateCodeEntryScreen(bool bForceScreenUpdate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateCodeEntryScreen");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateCodeEntryScreen");
 
 	Params::BGA_IslandPortal_C_UpdateCodeEntryScreen Parms{};
 
@@ -1106,10 +926,7 @@ void ABGA_IslandPortal_C::UpdateCodeEntryScreen(bool bForceScreenUpdate)
 
 void ABGA_IslandPortal_C::UpdateCodeEntryVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateCodeEntryVisibility");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateCodeEntryVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1120,10 +937,7 @@ void ABGA_IslandPortal_C::UpdateCodeEntryVisibility()
 
 void ABGA_IslandPortal_C::UpdateBaseVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateBaseVisibility");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateBaseVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1136,10 +950,7 @@ void ABGA_IslandPortal_C::UpdateBaseVisibility()
 
 void ABGA_IslandPortal_C::LocalPlayerEnteredRange(class APawn* LocalPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "LocalPlayerEnteredRange");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "LocalPlayerEnteredRange");
 
 	Params::BGA_IslandPortal_C_LocalPlayerEnteredRange Parms{};
 
@@ -1156,10 +967,7 @@ void ABGA_IslandPortal_C::LocalPlayerEnteredRange(class APawn* LocalPawn)
 
 void ABGA_IslandPortal_C::LocalPlayerExitedRange(class APawn* LocalPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "LocalPlayerExitedRange");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "LocalPlayerExitedRange");
 
 	Params::BGA_IslandPortal_C_LocalPlayerExitedRange Parms{};
 
@@ -1177,10 +985,7 @@ void ABGA_IslandPortal_C::LocalPlayerExitedRange(class APawn* LocalPawn)
 
 void ABGA_IslandPortal_C::LocalPlayerRangeCheck(class AActor* OverlappingActor, bool bEnteredRange)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "LocalPlayerRangeCheck");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "LocalPlayerRangeCheck");
 
 	Params::BGA_IslandPortal_C_LocalPlayerRangeCheck Parms{};
 
@@ -1198,10 +1003,7 @@ void ABGA_IslandPortal_C::LocalPlayerRangeCheck(class AActor* OverlappingActor, 
 
 void ABGA_IslandPortal_C::StartTeleport(class AActor* OverlapActor_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "StartTeleport");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "StartTeleport");
 
 	Params::BGA_IslandPortal_C_StartTeleport Parms{};
 
@@ -1216,10 +1018,7 @@ void ABGA_IslandPortal_C::StartTeleport(class AActor* OverlapActor_0)
 
 void ABGA_IslandPortal_C::UpdateInfoPlatePointer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateInfoPlatePointer");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateInfoPlatePointer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1232,10 +1031,7 @@ void ABGA_IslandPortal_C::UpdateInfoPlatePointer()
 
 void ABGA_IslandPortal_C::StartTeleportByInteractionOnServer(class AActor* OverlapActor_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "StartTeleportByInteractionOnServer");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "StartTeleportByInteractionOnServer");
 
 	Params::BGA_IslandPortal_C_StartTeleportByInteractionOnServer Parms{};
 
@@ -1254,10 +1050,7 @@ void ABGA_IslandPortal_C::StartTeleportByInteractionOnServer(class AActor* Overl
 
 void ABGA_IslandPortal_C::DetermineWherePlayerIsLooking(class APawn* Pawn, bool* bIsLookingAtScreen, bool* bIsLookingAtPortal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "DetermineWherePlayerIsLooking");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "DetermineWherePlayerIsLooking");
 
 	Params::BGA_IslandPortal_C_DetermineWherePlayerIsLooking Parms{};
 
@@ -1283,10 +1076,7 @@ void ABGA_IslandPortal_C::DetermineWherePlayerIsLooking(class APawn* Pawn, bool*
 
 bool ABGA_IslandPortal_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintCanInteract");
 
 	Params::BGA_IslandPortal_C_BlueprintCanInteract Parms{};
 
@@ -1309,10 +1099,7 @@ bool ABGA_IslandPortal_C::BlueprintCanInteract(const class AFortPawn* Interactin
 
 class FText ABGA_IslandPortal_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintGetInteractionString");
 
 	Params::BGA_IslandPortal_C_BlueprintGetInteractionString Parms{};
 
@@ -1335,10 +1122,7 @@ class FText ABGA_IslandPortal_C::BlueprintGetInteractionString(const class AFort
 
 bool ABGA_IslandPortal_C::BlueprintGetInteractionTime(const class AFortPawn* InteractingPawn, float* OutInteractionTime, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintGetInteractionTime");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintGetInteractionTime");
 
 	Params::BGA_IslandPortal_C_BlueprintGetInteractionTime Parms{};
 
@@ -1361,10 +1145,7 @@ bool ABGA_IslandPortal_C::BlueprintGetInteractionTime(const class AFortPawn* Int
 
 void ABGA_IslandPortal_C::PortalTeleportsByInteraction(bool* bRequiresInteraction) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "PortalTeleportsByInteraction");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "PortalTeleportsByInteraction");
 
 	Params::BGA_IslandPortal_C_PortalTeleportsByInteraction Parms{};
 
@@ -1382,10 +1163,7 @@ void ABGA_IslandPortal_C::PortalTeleportsByInteraction(bool* bRequiresInteractio
 
 void ABGA_IslandPortal_C::PortalUsesCodeScreen(bool* bUsesCodeScreen) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "PortalUsesCodeScreen");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "PortalUsesCodeScreen");
 
 	Params::BGA_IslandPortal_C_PortalUsesCodeScreen Parms{};
 
@@ -1406,10 +1184,7 @@ void ABGA_IslandPortal_C::PortalUsesCodeScreen(bool* bUsesCodeScreen) const
 
 void ABGA_IslandPortal_C::IsLookingAtSphere(class USphereComponent* LookAtSphere, const struct FVector& Eyes_View_Point_Location, const struct FRotator& Eyes_View_Point_Rotation, bool* bIsLookingAtSphere) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "IsLookingAtSphere");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "IsLookingAtSphere");
 
 	Params::BGA_IslandPortal_C_IsLookingAtSphere Parms{};
 
@@ -1431,10 +1206,7 @@ void ABGA_IslandPortal_C::IsLookingAtSphere(class USphereComponent* LookAtSphere
 
 void ABGA_IslandPortal_C::CanModifyPortal(bool* bCanModify) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "CanModifyPortal");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "CanModifyPortal");
 
 	Params::BGA_IslandPortal_C_CanModifyPortal Parms{};
 
@@ -1455,10 +1227,7 @@ void ABGA_IslandPortal_C::CanModifyPortal(bool* bCanModify) const
 
 void ABGA_IslandPortal_C::GetIconPlacement(const class AActor* SelfActor, const class AActor* ViewingActor, struct FVector* OutLocation, struct FVector* OutExtents) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "GetIconPlacement");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "GetIconPlacement");
 
 	Params::BGA_IslandPortal_C_GetIconPlacement Parms{};
 
@@ -1482,10 +1251,7 @@ void ABGA_IslandPortal_C::GetIconPlacement(const class AActor* SelfActor, const 
 
 bool ABGA_IslandPortal_C::IconPlacementNeedsUpdate() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "IconPlacementNeedsUpdate");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "IconPlacementNeedsUpdate");
 
 	Params::BGA_IslandPortal_C_IconPlacementNeedsUpdate Parms{};
 
@@ -1502,10 +1268,7 @@ bool ABGA_IslandPortal_C::IconPlacementNeedsUpdate() const
 
 bool ABGA_IslandPortal_C::BlueprintUseMobileHighlight() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintUseMobileHighlight");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintUseMobileHighlight");
 
 	Params::BGA_IslandPortal_C_BlueprintUseMobileHighlight Parms{};
 
@@ -1522,10 +1285,7 @@ bool ABGA_IslandPortal_C::BlueprintUseMobileHighlight() const
 
 bool ABGA_IslandPortal_C::BlueprintDisplayMobileInteractPrompt() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintDisplayMobileInteractPrompt");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintDisplayMobileInteractPrompt");
 
 	Params::BGA_IslandPortal_C_BlueprintDisplayMobileInteractPrompt Parms{};
 
@@ -1542,10 +1302,7 @@ bool ABGA_IslandPortal_C::BlueprintDisplayMobileInteractPrompt() const
 
 void ABGA_IslandPortal_C::MobileInteractIsValid(bool* bIsValid) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_IslandPortal_C", "MobileInteractIsValid");
+	class UFunction* Func = Class->GetFunction("BGA_IslandPortal_C", "MobileInteractIsValid");
 
 	Params::BGA_IslandPortal_C_MobileInteractIsValid Parms{};
 

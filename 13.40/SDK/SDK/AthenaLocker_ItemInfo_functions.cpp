@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaLocker_ItemInfo_C::ExecuteUbergraph_AthenaLocker_ItemInfo(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLocker_ItemInfo_C", "ExecuteUbergraph_AthenaLocker_ItemInfo");
+	class UFunction* Func = Class->GetFunction("AthenaLocker_ItemInfo_C", "ExecuteUbergraph_AthenaLocker_ItemInfo");
 
 	Params::AthenaLocker_ItemInfo_C_ExecuteUbergraph_AthenaLocker_ItemInfo Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaLocker_ItemInfo_C::ExecuteUbergraph_AthenaLocker_ItemInfo(int32 Entr
 
 void UAthenaLocker_ItemInfo_C::OnNoItemSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLocker_ItemInfo_C", "OnNoItemSet");
+	class UFunction* Func = Class->GetFunction("AthenaLocker_ItemInfo_C", "OnNoItemSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UAthenaLocker_ItemInfo_C::OnNoItemSet()
 
 void UAthenaLocker_ItemInfo_C::OnItemDefinitionSet(const class UFortItemDefinition* ItemDefinition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLocker_ItemInfo_C", "OnItemDefinitionSet");
+	class UFunction* Func = Class->GetFunction("AthenaLocker_ItemInfo_C", "OnItemDefinitionSet");
 
 	Params::AthenaLocker_ItemInfo_C_OnItemDefinitionSet Parms{};
 
@@ -80,10 +71,7 @@ void UAthenaLocker_ItemInfo_C::OnItemDefinitionSet(const class UFortItemDefiniti
 
 void UAthenaLocker_ItemInfo_C::UpdateRarityWidgets(const struct FFortColorPalette& InColor, EFortRarity InRarity, class UFortItemSeriesDefinition* InSeries, bool HideRarity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLocker_ItemInfo_C", "UpdateRarityWidgets");
+	class UFunction* Func = Class->GetFunction("AthenaLocker_ItemInfo_C", "UpdateRarityWidgets");
 
 	Params::AthenaLocker_ItemInfo_C_UpdateRarityWidgets Parms{};
 

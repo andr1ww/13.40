@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_HidingProp_C::ExecuteUbergraph_B_HidingProp(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "ExecuteUbergraph_B_HidingProp");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "ExecuteUbergraph_B_HidingProp");
 
 	Params::B_HidingProp_C_ExecuteUbergraph_B_HidingProp Parms{};
 
@@ -44,10 +41,7 @@ void AB_HidingProp_C::ExecuteUbergraph_B_HidingProp(int32 EntryPoint)
 
 void AB_HidingProp_C::ExecuteGameplayCue(const struct FGameplayTag& GameplayCueTag, const struct FGameplayCueParameters& CueParameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "ExecuteGameplayCue");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "ExecuteGameplayCue");
 
 	Params::B_HidingProp_C_ExecuteGameplayCue Parms{};
 
@@ -66,10 +60,7 @@ void AB_HidingProp_C::ExecuteGameplayCue(const struct FGameplayTag& GameplayCueT
 
 void AB_HidingProp_C::RemoveGameplayCue(const struct FGameplayTag& GameplayCueTag, const struct FGameplayCueParameters& CueParameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "RemoveGameplayCue");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "RemoveGameplayCue");
 
 	Params::B_HidingProp_C_RemoveGameplayCue Parms{};
 
@@ -88,10 +79,7 @@ void AB_HidingProp_C::RemoveGameplayCue(const struct FGameplayTag& GameplayCueTa
 
 void AB_HidingProp_C::AddGameplayCue(const struct FGameplayTag& GameplayCueTag, const struct FGameplayCueParameters& CueParameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "AddGameplayCue");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "AddGameplayCue");
 
 	Params::B_HidingProp_C_AddGameplayCue Parms{};
 
@@ -107,10 +95,7 @@ void AB_HidingProp_C::AddGameplayCue(const struct FGameplayTag& GameplayCueTag, 
 
 void AB_HidingProp_C::TurnClientCameraCollisionOn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "TurnClientCameraCollisionOn");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "TurnClientCameraCollisionOn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +108,7 @@ void AB_HidingProp_C::TurnClientCameraCollisionOn()
 
 void AB_HidingProp_C::StartHiding(class AFortPawn* InteractingPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "StartHiding");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "StartHiding");
 
 	Params::B_HidingProp_C_StartHiding Parms{};
 
@@ -141,10 +123,7 @@ void AB_HidingProp_C::StartHiding(class AFortPawn* InteractingPawn)
 
 void AB_HidingProp_C::ToggleCameraCollisionForClients()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "ToggleCameraCollisionForClients");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "ToggleCameraCollisionForClients");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -158,10 +137,7 @@ void AB_HidingProp_C::ToggleCameraCollisionForClients()
 
 void AB_HidingProp_C::IgnorePawnCollision(class AFortPawn* Target, const float InIgnoreDuration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "IgnorePawnCollision");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "IgnorePawnCollision");
 
 	Params::B_HidingProp_C_IgnorePawnCollision Parms{};
 
@@ -179,10 +155,7 @@ void AB_HidingProp_C::IgnorePawnCollision(class AFortPawn* Target, const float I
 
 void AB_HidingProp_C::Teleport(class AActor* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "Teleport");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "Teleport");
 
 	Params::B_HidingProp_C_Teleport Parms{};
 
@@ -197,10 +170,7 @@ void AB_HidingProp_C::Teleport(class AActor* Pawn)
 
 void AB_HidingProp_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -213,10 +183,7 @@ void AB_HidingProp_C::ReceiveBeginPlay()
 
 void AB_HidingProp_C::StopHiding(const class AFortPawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "StopHiding");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "StopHiding");
 
 	Params::B_HidingProp_C_StopHiding Parms{};
 
@@ -240,10 +207,7 @@ void AB_HidingProp_C::StopHiding(const class AFortPawn* Pawn)
 
 void AB_HidingProp_C::Pawn_Died(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "Pawn Died");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "Pawn Died");
 
 	Params::B_HidingProp_C_Pawn_Died Parms{};
 
@@ -267,10 +231,7 @@ void AB_HidingProp_C::Pawn_Died(class AActor* DamagedActor, float Damage, class 
 
 void AB_HidingProp_C::WatchForPlayerDeath(class AFortPawn* FortPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "WatchForPlayerDeath");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "WatchForPlayerDeath");
 
 	Params::B_HidingProp_C_WatchForPlayerDeath Parms{};
 
@@ -288,10 +249,7 @@ void AB_HidingProp_C::WatchForPlayerDeath(class AFortPawn* FortPawn)
 
 void AB_HidingProp_C::EndHidingAnalyticSession(class AFortPawn* FortPawn, EEnvironmentalItemEndReason EndReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "EndHidingAnalyticSession");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "EndHidingAnalyticSession");
 
 	Params::B_HidingProp_C_EndHidingAnalyticSession Parms{};
 
@@ -307,10 +265,7 @@ void AB_HidingProp_C::EndHidingAnalyticSession(class AFortPawn* FortPawn, EEnvir
 
 void AB_HidingProp_C::InteractEnter()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "InteractEnter");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "InteractEnter");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -321,10 +276,7 @@ void AB_HidingProp_C::InteractEnter()
 
 void AB_HidingProp_C::HidingPlayerCountChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "HidingPlayerCountChanged");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "HidingPlayerCountChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -335,10 +287,7 @@ void AB_HidingProp_C::HidingPlayerCountChanged()
 
 void AB_HidingProp_C::StopHidingLoop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "StopHidingLoop");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "StopHidingLoop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -351,10 +300,7 @@ void AB_HidingProp_C::StopHidingLoop()
 
 void AB_HidingProp_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "ReceiveActorBeginOverlap");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "ReceiveActorBeginOverlap");
 
 	Params::B_HidingProp_C_ReceiveActorBeginOverlap Parms{};
 
@@ -371,10 +317,7 @@ void AB_HidingProp_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
 
 void AB_HidingProp_C::LaunchPlayersOffTop(class AFortPlayerPawn* PlayerPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "LaunchPlayersOffTop");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "LaunchPlayersOffTop");
 
 	Params::B_HidingProp_C_LaunchPlayersOffTop Parms{};
 
@@ -392,10 +335,7 @@ void AB_HidingProp_C::LaunchPlayersOffTop(class AFortPlayerPawn* PlayerPawn)
 
 void AB_HidingProp_C::LandedOnHayStack(class AFortPlayerPawn* PlayerPawn, float Z_Velocity_Mag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "LandedOnHayStack");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "LandedOnHayStack");
 
 	Params::B_HidingProp_C_LandedOnHayStack Parms{};
 
@@ -418,10 +358,7 @@ void AB_HidingProp_C::LandedOnHayStack(class AFortPlayerPawn* PlayerPawn, float 
 
 void AB_HidingProp_C::BndEvt__S_Athena_Launchpad_Collision_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "BndEvt__S_Athena_Launchpad_Collision_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "BndEvt__S_Athena_Launchpad_Collision_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::B_HidingProp_C_BndEvt__S_Athena_Launchpad_Collision_K2Node_ComponentBoundEvent_4_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -449,10 +386,7 @@ void AB_HidingProp_C::BndEvt__S_Athena_Launchpad_Collision_K2Node_ComponentBound
 
 void AB_HidingProp_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "OnDeathServer");
 
 	Params::B_HidingProp_C_OnDeathServer Parms{};
 
@@ -476,10 +410,7 @@ void AB_HidingProp_C::OnDeathServer(float Damage, const struct FGameplayTagConta
 
 void AB_HidingProp_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "BlueprintOnInteract");
 
 	Params::B_HidingProp_C_BlueprintOnInteract Parms{};
 
@@ -495,10 +426,7 @@ void AB_HidingProp_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn
 
 void AB_HidingProp_C::OnCurieActive_F2BFC8C54691C42FB5230BA7B7DEE141()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "OnCurieActive_F2BFC8C54691C42FB5230BA7B7DEE141");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "OnCurieActive_F2BFC8C54691C42FB5230BA7B7DEE141");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -513,10 +441,7 @@ void AB_HidingProp_C::OnCurieActive_F2BFC8C54691C42FB5230BA7B7DEE141()
 
 void AB_HidingProp_C::OnReady_64CBF02E419FF250B433D5B2A6E5D744(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "OnReady_64CBF02E419FF250B433D5B2A6E5D744");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "OnReady_64CBF02E419FF250B433D5B2A6E5D744");
 
 	Params::B_HidingProp_C_OnReady_64CBF02E419FF250B433D5B2A6E5D744 Parms{};
 
@@ -533,10 +458,7 @@ void AB_HidingProp_C::OnReady_64CBF02E419FF250B433D5B2A6E5D744(class AFortGameSt
 
 void AB_HidingProp_C::OnRep_HidingPlayers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "OnRep_HidingPlayers");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "OnRep_HidingPlayers");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -549,10 +471,7 @@ void AB_HidingProp_C::OnRep_HidingPlayers()
 
 void AB_HidingProp_C::AddHiddenPlayer(class AFortPawn* FortPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "AddHiddenPlayer");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "AddHiddenPlayer");
 
 	Params::B_HidingProp_C_AddHiddenPlayer Parms{};
 
@@ -569,10 +488,7 @@ void AB_HidingProp_C::AddHiddenPlayer(class AFortPawn* FortPawn)
 
 void AB_HidingProp_C::RemoveHiddenPlayer(class AFortPawn* FortPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "RemoveHiddenPlayer");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "RemoveHiddenPlayer");
 
 	Params::B_HidingProp_C_RemoveHiddenPlayer Parms{};
 
@@ -587,10 +503,7 @@ void AB_HidingProp_C::RemoveHiddenPlayer(class AFortPawn* FortPawn)
 
 void AB_HidingProp_C::OnRep_Teleporting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "OnRep_Teleporting");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "OnRep_Teleporting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -603,10 +516,7 @@ void AB_HidingProp_C::OnRep_Teleporting()
 
 bool AB_HidingProp_C::IsInInfiltrationLTM()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "IsInInfiltrationLTM");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "IsInInfiltrationLTM");
 
 	Params::B_HidingProp_C_IsInInfiltrationLTM Parms{};
 
@@ -624,10 +534,7 @@ bool AB_HidingProp_C::IsInInfiltrationLTM()
 
 bool AB_HidingProp_C::CheckCanUsePassage(class UObject* Object)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "CheckCanUsePassage");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "CheckCanUsePassage");
 
 	Params::B_HidingProp_C_CheckCanUsePassage Parms{};
 
@@ -644,10 +551,7 @@ bool AB_HidingProp_C::CheckCanUsePassage(class UObject* Object)
 
 void AB_HidingProp_C::OnRep_IsTeleporter()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "OnRep_IsTeleporter");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "OnRep_IsTeleporter");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -658,10 +562,7 @@ void AB_HidingProp_C::OnRep_IsTeleporter()
 
 void AB_HidingProp_C::OnRep_ContainsPlayer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "OnRep_ContainsPlayer");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "OnRep_ContainsPlayer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -675,10 +576,7 @@ void AB_HidingProp_C::OnRep_ContainsPlayer()
 
 void AB_HidingProp_C::Allow_Cosmetics_For_Pawn(const class AFortPawn*& Pawn, bool* Allow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "Allow Cosmetics For Pawn");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "Allow Cosmetics For Pawn");
 
 	Params::B_HidingProp_C_Allow_Cosmetics_For_Pawn Parms{};
 
@@ -701,10 +599,7 @@ void AB_HidingProp_C::Allow_Cosmetics_For_Pawn(const class AFortPawn*& Pawn, boo
 
 bool AB_HidingProp_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "BlueprintCanInteract");
 
 	Params::B_HidingProp_C_BlueprintCanInteract Parms{};
 
@@ -727,10 +622,7 @@ bool AB_HidingProp_C::BlueprintCanInteract(const class AFortPawn* InteractingPaw
 
 class FText AB_HidingProp_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "BlueprintGetInteractionString");
 
 	Params::B_HidingProp_C_BlueprintGetInteractionString Parms{};
 
@@ -753,10 +645,7 @@ class FText AB_HidingProp_C::BlueprintGetInteractionString(const class AFortPawn
 
 bool AB_HidingProp_C::BlueprintGetInteractionTime(const class AFortPawn* InteractingPawn, float* OutInteractionTime, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "BlueprintGetInteractionTime");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "BlueprintGetInteractionTime");
 
 	Params::B_HidingProp_C_BlueprintGetInteractionTime Parms{};
 
@@ -781,10 +670,7 @@ bool AB_HidingProp_C::BlueprintGetInteractionTime(const class AFortPawn* Interac
 
 class FText AB_HidingProp_C::BlueprintGetFailedInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_C", "BlueprintGetFailedInteractionString");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_C", "BlueprintGetFailedInteractionString");
 
 	Params::B_HidingProp_C_BlueprintGetFailedInteractionString Parms{};
 

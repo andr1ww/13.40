@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void URestartClient_C::OnButtonSet(bool InbShouldExit_OnButtonSet, bool bShouldShow_OnButtonSet)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RestartClient_C", "OnButtonSet");
+	class UFunction* Func = Class->GetFunction("RestartClient_C", "OnButtonSet");
 
 	Params::RestartClient_C_OnButtonSet Parms{};
 
@@ -45,10 +42,7 @@ void URestartClient_C::OnButtonSet(bool InbShouldExit_OnButtonSet, bool bShouldS
 
 void URestartClient_C::BndEvt__Button_Confirm_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RestartClient_C", "BndEvt__Button_Confirm_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("RestartClient_C", "BndEvt__Button_Confirm_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::RestartClient_C_BndEvt__Button_Confirm_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -63,10 +57,7 @@ void URestartClient_C::BndEvt__Button_Confirm_K2Node_ComponentBoundEvent_0_Commo
 
 void URestartClient_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RestartClient_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("RestartClient_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void URestartClient_C::OnInitialized()
 
 void URestartClient_C::ExecuteUbergraph_RestartClient(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RestartClient_C", "ExecuteUbergraph_RestartClient");
+	class UFunction* Func = Class->GetFunction("RestartClient_C", "ExecuteUbergraph_RestartClient");
 
 	Params::RestartClient_C_ExecuteUbergraph_RestartClient Parms{};
 

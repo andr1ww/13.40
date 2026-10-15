@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UChallengeInGameTreeEntry_Challenge_C::ExecuteUbergraph_ChallengeInGameTreeEntry_Challenge(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "ExecuteUbergraph_ChallengeInGameTreeEntry_Challenge");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "ExecuteUbergraph_ChallengeInGameTreeEntry_Challenge");
 
 	Params::ChallengeInGameTreeEntry_Challenge_C_ExecuteUbergraph_ChallengeInGameTreeEntry_Challenge Parms{};
 
@@ -47,10 +44,7 @@ void UChallengeInGameTreeEntry_Challenge_C::ExecuteUbergraph_ChallengeInGameTree
 
 void UChallengeInGameTreeEntry_Challenge_C::OnChallengeInfoSet(bool bIsComplete, bool bIsLocked, bool bIsGroupChallenge, bool bCompact, bool HideRewards)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "OnChallengeInfoSet");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "OnChallengeInfoSet");
 
 	Params::ChallengeInGameTreeEntry_Challenge_C_OnChallengeInfoSet Parms{};
 
@@ -71,10 +65,7 @@ void UChallengeInGameTreeEntry_Challenge_C::OnChallengeInfoSet(bool bIsComplete,
 
 void UChallengeInGameTreeEntry_Challenge_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "OnMouseLeave");
 
 	Params::ChallengeInGameTreeEntry_Challenge_C_OnMouseLeave Parms{};
 
@@ -92,10 +83,7 @@ void UChallengeInGameTreeEntry_Challenge_C::OnMouseLeave(const struct FPointerEv
 
 void UChallengeInGameTreeEntry_Challenge_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "OnMouseEnter");
 
 	Params::ChallengeInGameTreeEntry_Challenge_C_OnMouseEnter Parms{};
 
@@ -113,10 +101,7 @@ void UChallengeInGameTreeEntry_Challenge_C::OnMouseEnter(const struct FGeometry&
 
 void UChallengeInGameTreeEntry_Challenge_C::OnPartyAssistEnabledChanged(bool bIsPartyAssistEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "OnPartyAssistEnabledChanged");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "OnPartyAssistEnabledChanged");
 
 	Params::ChallengeInGameTreeEntry_Challenge_C_OnPartyAssistEnabledChanged Parms{};
 
@@ -133,10 +118,7 @@ void UChallengeInGameTreeEntry_Challenge_C::OnPartyAssistEnabledChanged(bool bIs
 
 void UChallengeInGameTreeEntry_Challenge_C::BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Challenge_C", "BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::ChallengeInGameTreeEntry_Challenge_C_BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 

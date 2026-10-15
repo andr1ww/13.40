@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USimplePipButton_C::ExecuteUbergraph_SimplePipButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "ExecuteUbergraph_SimplePipButton");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "ExecuteUbergraph_SimplePipButton");
 
 	Params::SimplePipButton_C_ExecuteUbergraph_SimplePipButton Parms{};
 
@@ -41,10 +38,7 @@ void USimplePipButton_C::ExecuteUbergraph_SimplePipButton(int32 EntryPoint)
 
 void USimplePipButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USimplePipButton_C::BP_OnUnhovered()
 
 void USimplePipButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void USimplePipButton_C::BP_OnHovered()
 
 void USimplePipButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void USimplePipButton_C::Construct()
 
 void USimplePipButton_C::OnActionComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "OnActionComplete");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "OnActionComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void USimplePipButton_C::OnActionComplete()
 
 void USimplePipButton_C::OnActionProgress(float HeldPercent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "OnActionProgress");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "OnActionProgress");
 
 	Params::SimplePipButton_C_OnActionProgress Parms{};
 
@@ -119,10 +101,7 @@ void USimplePipButton_C::OnActionProgress(float HeldPercent)
 
 void USimplePipButton_C::OnTriggeredInputActionChanged(const struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "OnTriggeredInputActionChanged");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "OnTriggeredInputActionChanged");
 
 	Params::SimplePipButton_C_OnTriggeredInputActionChanged Parms{};
 
@@ -139,10 +118,7 @@ void USimplePipButton_C::OnTriggeredInputActionChanged(const struct FDataTableRo
 
 void USimplePipButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
 
 	Params::SimplePipButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature Parms{};
 
@@ -159,10 +135,7 @@ void USimplePipButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundE
 
 void USimplePipButton_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "PreConstruct");
 
 	Params::SimplePipButton_C_PreConstruct Parms{};
 
@@ -177,10 +150,7 @@ void USimplePipButton_C::PreConstruct(bool IsDesignTime)
 
 void USimplePipButton_C::UpdateTextAndStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "UpdateTextAndStyle");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "UpdateTextAndStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +161,7 @@ void USimplePipButton_C::UpdateTextAndStyle()
 
 void USimplePipButton_C::InitializeButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "InitializeButton");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "InitializeButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +174,7 @@ void USimplePipButton_C::InitializeButton()
 
 void USimplePipButton_C::UpdateStyle(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "UpdateStyle");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "UpdateStyle");
 
 	Params::SimplePipButton_C_UpdateStyle Parms{};
 
@@ -225,10 +189,7 @@ void USimplePipButton_C::UpdateStyle(bool bUsingGamepad)
 
 void USimplePipButton_C::UpdateInputActionLayout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimplePipButton_C", "UpdateInputActionLayout");
+	class UFunction* Func = Class->GetFunction("SimplePipButton_C", "UpdateInputActionLayout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

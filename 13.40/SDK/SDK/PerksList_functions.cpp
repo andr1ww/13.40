@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UPerksList_C::ResetVariables()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerksList_C", "ResetVariables");
+	class UFunction* Func = Class->GetFunction("PerksList_C", "ResetVariables");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UPerksList_C::ResetVariables()
 
 void UPerksList_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerksList_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PerksList_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -52,10 +46,7 @@ void UPerksList_C::Construct()
 
 void UPerksList_C::OnGeneratePerkTier(const struct FFortUIPerkTier& FortPerkTier_OnGeneratePerkTier, class UFortPerkTierWidget_NUI* PerkTierWidget_OnGeneratePerkTier)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerksList_C", "OnGeneratePerkTier");
+	class UFunction* Func = Class->GetFunction("PerksList_C", "OnGeneratePerkTier");
 
 	Params::PerksList_C_OnGeneratePerkTier Parms{};
 
@@ -74,10 +65,7 @@ void UPerksList_C::OnGeneratePerkTier(const struct FFortUIPerkTier& FortPerkTier
 
 void UPerksList_C::OnGeneratePerk(const struct FFortUIPerk& FortPerk_OnGeneratePerk, class UFortPerkWidget_NUI* PerkWidget_OnGeneratePerk)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerksList_C", "OnGeneratePerk");
+	class UFunction* Func = Class->GetFunction("PerksList_C", "OnGeneratePerk");
 
 	Params::PerksList_C_OnGeneratePerk Parms{};
 
@@ -93,10 +81,7 @@ void UPerksList_C::OnGeneratePerk(const struct FFortUIPerk& FortPerk_OnGenerateP
 
 void UPerksList_C::OnHeroChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerksList_C", "OnHeroChanged");
+	class UFunction* Func = Class->GetFunction("PerksList_C", "OnHeroChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,10 +92,7 @@ void UPerksList_C::OnHeroChanged()
 
 void UPerksList_C::OnStateChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerksList_C", "OnStateChanged");
+	class UFunction* Func = Class->GetFunction("PerksList_C", "OnStateChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UPerksList_C::OnStateChanged()
 
 void UPerksList_C::ExecuteUbergraph_PerksList(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerksList_C", "ExecuteUbergraph_PerksList");
+	class UFunction* Func = Class->GetFunction("PerksList_C", "ExecuteUbergraph_PerksList");
 
 	Params::PerksList_C_ExecuteUbergraph_PerksList Parms{};
 

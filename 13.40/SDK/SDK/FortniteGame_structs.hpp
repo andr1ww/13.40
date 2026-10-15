@@ -12695,6 +12695,15 @@ public:
 };
 DUMPER7_ASSERTS_FFortGiftingInfo;
 
+struct FFortGlobalGameplayTags final
+{
+public:
+	uint8                                         Pad_0[0x420];
+	struct FGameplayTag                           EffectInstantDeath;
+	uint8                                         Pad_428[0x2D0];
+	struct FGameplayTag                           ActionPlayerInteractBuild;
+};
+
 // ScriptStruct FortniteGame.FortItemEntryStateValue
 // 0x0010 (0x0010 - 0x0000)
 struct FFortItemEntryStateValue final
@@ -12744,8 +12753,133 @@ public:
 	uint8                                         Pad_108[0x50];                                     // 0x0108(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PickupVariantIndex;                                // 0x0158(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         ItemVariantDataMappingIndex;                       // 0x015C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	FFortItemEntry()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<FFortItemEntry*(*)(FFortItemEntry*)>(InSDKUtils::GetImageBase() + 0x2615450), this);
+	}
+
+	FFortItemEntry(const FFortItemEntry& Other)
+		: FFortItemEntry()
+	{
+		*this = Other;
+	}
+
+	FFortItemEntry(const class UFortItemDefinition* Definition, int32 InCount, int32 InLevel = 0)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<FFortItemEntry*(*)(FFortItemEntry*, const class UFortItemDefinition*, int32, int32)>(InSDKUtils::GetImageBase() + 0x2615010), this, Definition, InCount, InLevel);
+	}
+
+	FFortItemEntry(const class UFortItemDefinition* Definition, int32 InCount, int32 InLevel, const TArray<class UFortAlterationItemDefinition*>& Alterations)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<FFortItemEntry*(*)(FFortItemEntry*, const class UFortItemDefinition*, int32, int32, const TArray<class UFortAlterationItemDefinition*>*)>(InSDKUtils::GetImageBase() + 0x26151D0), this, Definition, InCount, InLevel, &Alterations);
+	}
+
+	~FFortItemEntry()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*)>(InSDKUtils::GetImageBase() + 0x1228A60), this);
+	}
+
+	FFortItemEntry& operator=(const FFortItemEntry& Other)
+	{
+		return *InSDKUtils::CallGameFunction(reinterpret_cast<FFortItemEntry*(*)(FFortItemEntry*, const FFortItemEntry*)>(InSDKUtils::GetImageBase() + 0x2616D80), this, &Other);
+	}
+
+	void SetCount(int32 InCount)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*, int32)>(InSDKUtils::GetImageBase() + 0x262A850), this, InCount);
+	}
+
+	void SetDurability(float InDurability)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*, float)>(InSDKUtils::GetImageBase() + 0x262A990), this, InDurability);
+	}
+
+	void SetItemLevel(int32 InLevel)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*, int32)>(InSDKUtils::GetImageBase() + 0x262AB30), this, InLevel);
+	}
+
+	void SetLoadedAmmo(int32 InLoadedAmmo)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*, int32)>(InSDKUtils::GetImageBase() + 0x262AB80), this, InLoadedAmmo);
+	}
+
+	void SetGameplayAbilitySpecHandle(struct FGameplayAbilitySpecHandle InHandle)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*, struct FGameplayAbilitySpecHandle)>(InSDKUtils::GetImageBase() + 0x262A9E0), this, InHandle);
+	}
+
+	void SetGiftingInfo(const struct FFortGiftingInfo& InGiftingInfo)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*, const struct FFortGiftingInfo*)>(InSDKUtils::GetImageBase() + 0x262AA30), this, &InGiftingInfo);
+	}
+
+	void SetActiveAlterations(const TArray<class UFortAlterationItemDefinition*>& InAlterations)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*, const TArray<class UFortAlterationItemDefinition*>*)>(InSDKUtils::GetImageBase() + 0x262A6C0), this, &InAlterations);
+	}
+
+	void SetParentInventory(class AFortInventory* InParentInventory, bool bInIsReplicatedCopy)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*, class AFortInventory*, bool)>(InSDKUtils::GetImageBase() + 0x262AD90), this, InParentInventory, bInIsReplicatedCopy);
+	}
+
+	void SetToDirty()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*)>(InSDKUtils::GetImageBase() + 0x262BA80), this);
+	}
+
+	void SetItemGuid(const struct FGuid& InItemGuid)
+	{
+		ItemGuid = InItemGuid;
+	}
+
+	bool SetItemGuidFromInstanceId(class FString& InstanceId)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(FFortItemEntry*, class FString*)>(InSDKUtils::GetImageBase() + 0x262AAF0), this, &InstanceId);
+	}
+
+	int32                                GetCount()                     const { return Count; }
+	int32                                GetPreviousCount()             const { return PreviousCount; }
+	class UFortItemDefinition*           GetItemDefinition()            const { return ItemDefinition; }
+	float                                GetDurability()                const { return Durability; }
+	int32                                GetItemLevel()                 const { return Level; }
+	int32                                GetLoadedAmmo()                const { return LoadedAmmo; }
+	int32                                GetPhantomReserveAmmo()        const { return PhantomReserveAmmo; }
+	const class FString&                 GetItemSource()                const { return ItemSource; }
+	const struct FGuid&                  GetItemGuid()                  const { return ItemGuid; }
+	bool                                 IsInventoryOverflowItem()      const { return inventory_overflow_date; }
+	bool                                 WasGifted()                    const { return bWasGifted; }
+	bool                                 IsReplicatedCopy()             const { return bIsReplicatedCopy; }
+	bool                                 IsDirty()                      const { return bIsDirty; }
+	bool                                 IsValidItemEntry()             const { return ItemDefinition != nullptr; }
+	struct FGameplayAbilitySpecHandle    GetGameplayAbilitySpecHandle() const { return GameplayAbilitySpecHandle; }
+	TWeakObjectPtr<class AFortInventory> GetParentInventory()           const { return ParentInventory; }
 };
 DUMPER7_ASSERTS_FFortItemEntry;
+
+struct FFortCreatePickupData final
+{
+public:
+	class UWorld*                                 World = nullptr;
+	struct FFortItemEntry                         ItemEntry;
+	struct FVector                                SpawnLocation{};
+	struct FRotator                               SpawnRotation{};
+	class AFortPlayerController*                  PlayerController = nullptr;
+	class UClass*                                 OverrideClass = nullptr;
+	class AActor*                                 OwnerContainer = nullptr;
+	EFortPickupSourceTypeFlag                     PickupSourceTypeFlags = EFortPickupSourceTypeFlag::Other;
+	EFortPickupSpawnSource                        PickupSpawnSource = EFortPickupSpawnSource::Unset;
+	uint8                                         bRandomRotation : 1 = 1;
+	uint8                                         bPickupOnlyRelevantToOwner : 1 = 1;
+	uint8                                         Pad_19B[0x5];
+};
+static_assert(sizeof(FFortCreatePickupData) == 0x1A0);
+static_assert(offsetof(FFortCreatePickupData, SpawnLocation) == 0x168);
+static_assert(offsetof(FFortCreatePickupData, PlayerController) == 0x180);
+static_assert(offsetof(FFortCreatePickupData, PickupSourceTypeFlags) == 0x198);
 
 // ScriptStruct FortniteGame.FortItemList
 // 0x00C0 (0x01C8 - 0x0108)
@@ -17773,6 +17907,12 @@ public:
 	float                                         EquipAnimRate;                                     // 0x0148(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         QuickBarSlotCooldownDuration;                      // 0x014C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_150[0x8];                                      // 0x0150(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	int32 GetClipSize(float Level) const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<int32(*)(const FFortBaseWeaponStats*, float)>(InSDKUtils::GetImageBase() + 0x2C4AC90), this, Level);
+	}
 };
 DUMPER7_ASSERTS_FFortBaseWeaponStats;
 

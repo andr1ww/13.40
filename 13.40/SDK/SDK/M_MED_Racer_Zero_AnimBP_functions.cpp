@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void M_MED_Racer_Zero_AnimBP::UM_MED_Racer_Zero_AnimBP_C::ExecuteUbergraph_M_MED_Racer_Zero_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Racer_Zero_AnimBP_C", "ExecuteUbergraph_M_MED_Racer_Zero_AnimBP");
+	class UFunction* Func = Class->GetFunction("M_MED_Racer_Zero_AnimBP_C", "ExecuteUbergraph_M_MED_Racer_Zero_AnimBP");
 
 	Params::M_MED_Racer_Zero_AnimBP_C_ExecuteUbergraph_M_MED_Racer_Zero_AnimBP Parms{};
 
@@ -41,10 +38,7 @@ void M_MED_Racer_Zero_AnimBP::UM_MED_Racer_Zero_AnimBP_C::ExecuteUbergraph_M_MED
 
 void M_MED_Racer_Zero_AnimBP::UM_MED_Racer_Zero_AnimBP_C::BlueprintInitializeAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Racer_Zero_AnimBP_C", "BlueprintInitializeAnimation");
+	class UFunction* Func = Class->GetFunction("M_MED_Racer_Zero_AnimBP_C", "BlueprintInitializeAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void M_MED_Racer_Zero_AnimBP::UM_MED_Racer_Zero_AnimBP_C::BlueprintInitializeAni
 
 void M_MED_Racer_Zero_AnimBP::UM_MED_Racer_Zero_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Racer_Zero_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("M_MED_Racer_Zero_AnimBP_C", "AnimGraph");
 
 	Params::M_MED_Racer_Zero_AnimBP_C_AnimGraph Parms{};
 

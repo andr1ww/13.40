@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AMASTER_TODM_C::EmptyTransform(struct FTransform* Transform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "EmptyTransform");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "EmptyTransform");
 
 	Params::MASTER_TODM_C_EmptyTransform Parms{};
 
@@ -42,10 +39,7 @@ void AMASTER_TODM_C::EmptyTransform(struct FTransform* Transform)
 
 void AMASTER_TODM_C::SetHeavySSAO()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "SetHeavySSAO");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "SetHeavySSAO");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -56,10 +50,7 @@ void AMASTER_TODM_C::SetHeavySSAO()
 
 void AMASTER_TODM_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -70,10 +61,7 @@ void AMASTER_TODM_C::UserConstructionScript()
 
 void AMASTER_TODM_C::FlashLightning__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "FlashLightning__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "FlashLightning__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -84,10 +72,7 @@ void AMASTER_TODM_C::FlashLightning__FinishedFunc()
 
 void AMASTER_TODM_C::FlashLightning__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "FlashLightning__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "FlashLightning__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -98,10 +83,7 @@ void AMASTER_TODM_C::FlashLightning__UpdateFunc()
 
 void AMASTER_TODM_C::New_Storm_Timeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -112,10 +94,7 @@ void AMASTER_TODM_C::New_Storm_Timeline__FinishedFunc()
 
 void AMASTER_TODM_C::New_Storm_Timeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -126,10 +105,7 @@ void AMASTER_TODM_C::New_Storm_Timeline__UpdateFunc()
 
 void AMASTER_TODM_C::New_Storm_Timeline__FireOffRain__EventFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__FireOffRain__EventFunc");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__FireOffRain__EventFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -140,10 +116,7 @@ void AMASTER_TODM_C::New_Storm_Timeline__FireOffRain__EventFunc()
 
 void AMASTER_TODM_C::StartStorm()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "StartStorm");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "StartStorm");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -154,10 +127,7 @@ void AMASTER_TODM_C::StartStorm()
 
 void AMASTER_TODM_C::OnStormStart()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "OnStormStart");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "OnStormStart");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -168,10 +138,7 @@ void AMASTER_TODM_C::OnStormStart()
 
 void AMASTER_TODM_C::OnStormEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "OnStormEnd");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "OnStormEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -182,10 +149,7 @@ void AMASTER_TODM_C::OnStormEnd()
 
 void AMASTER_TODM_C::LightningStrike()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "LightningStrike");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "LightningStrike");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -196,10 +160,7 @@ void AMASTER_TODM_C::LightningStrike()
 
 void AMASTER_TODM_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -212,10 +173,7 @@ void AMASTER_TODM_C::ReceiveBeginPlay()
 
 void AMASTER_TODM_C::DisableLightAndFog(bool Enable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "DisableLightAndFog");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "DisableLightAndFog");
 
 	Params::MASTER_TODM_C_DisableLightAndFog Parms{};
 
@@ -230,10 +188,7 @@ void AMASTER_TODM_C::DisableLightAndFog(bool Enable)
 
 void AMASTER_TODM_C::EnableHDRRendering()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "EnableHDRRendering");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "EnableHDRRendering");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -244,10 +199,7 @@ void AMASTER_TODM_C::EnableHDRRendering()
 
 void AMASTER_TODM_C::UpdateSSAO()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "UpdateSSAO");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "UpdateSSAO");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -260,10 +212,7 @@ void AMASTER_TODM_C::UpdateSSAO()
 
 void AMASTER_TODM_C::ExecuteUbergraph_MASTER_TODM(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MASTER_TODM_C", "ExecuteUbergraph_MASTER_TODM");
+	class UFunction* Func = Class->GetFunction("MASTER_TODM_C", "ExecuteUbergraph_MASTER_TODM");
 
 	Params::MASTER_TODM_C_ExecuteUbergraph_MASTER_TODM Parms{};
 

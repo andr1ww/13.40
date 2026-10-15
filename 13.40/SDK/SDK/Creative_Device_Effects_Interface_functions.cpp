@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ICreative_Device_Effects_Interface_C::Get_Creative_Effect_Data(struct FFCreativeEffectColorIndex* Effect_Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("Creative_Device_Effects_Interface_C", "Get Creative Effect Data");
+	class UFunction* Func = AsUObject()->Class->GetFunction("Creative_Device_Effects_Interface_C", "Get Creative Effect Data");
 
 	Params::Creative_Device_Effects_Interface_C_Get_Creative_Effect_Data Parms{};
 

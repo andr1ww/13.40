@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_CreativeRadio_C::ExecuteUbergraph_BP_CreativeRadio(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "ExecuteUbergraph_BP_CreativeRadio");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "ExecuteUbergraph_BP_CreativeRadio");
 
 	Params::BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio Parms{};
 
@@ -41,10 +38,7 @@ void ABP_CreativeRadio_C::ExecuteUbergraph_BP_CreativeRadio(int32 EntryPoint)
 
 void ABP_CreativeRadio_C::OnWorldReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "OnWorldReady");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "OnWorldReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_CreativeRadio_C::OnWorldReady()
 
 void ABP_CreativeRadio_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_CreativeRadio_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent
 
 void ABP_CreativeRadio_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_CreativeRadio_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent
 
 void ABP_CreativeRadio_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ABP_CreativeRadio_C::ReceiveBeginPlay()
 
 void ABP_CreativeRadio_C::OnPropertyChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "OnPropertyChanged");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "OnPropertyChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void ABP_CreativeRadio_C::OnPropertyChanged()
 
 void ABP_CreativeRadio_C::OnRep_CachedVolumeMultiplier()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedVolumeMultiplier");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedVolumeMultiplier");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void ABP_CreativeRadio_C::OnRep_CachedVolumeMultiplier()
 
 void ABP_CreativeRadio_C::OnRep_CachedAttenuationSetting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedAttenuationSetting");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedAttenuationSetting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +115,7 @@ void ABP_CreativeRadio_C::OnRep_CachedAttenuationSetting()
 
 void ABP_CreativeRadio_C::OnRep_CachedShouldDriveVisualization()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedShouldDriveVisualization");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedShouldDriveVisualization");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +126,7 @@ void ABP_CreativeRadio_C::OnRep_CachedShouldDriveVisualization()
 
 void ABP_CreativeRadio_C::SetAttenuationDistance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "SetAttenuationDistance");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "SetAttenuationDistance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +137,7 @@ void ABP_CreativeRadio_C::SetAttenuationDistance()
 
 void ABP_CreativeRadio_C::UpdateCachedAttenuationSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "UpdateCachedAttenuationSettings");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "UpdateCachedAttenuationSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +148,7 @@ void ABP_CreativeRadio_C::UpdateCachedAttenuationSettings()
 
 void ABP_CreativeRadio_C::PlaybackTypeUpgradePath()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "PlaybackTypeUpgradePath");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "PlaybackTypeUpgradePath");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +159,7 @@ void ABP_CreativeRadio_C::PlaybackTypeUpgradePath()
 
 void ABP_CreativeRadio_C::CheckMinigameStateOnPropertyChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "CheckMinigameStateOnPropertyChanged");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "CheckMinigameStateOnPropertyChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -213,10 +174,7 @@ void ABP_CreativeRadio_C::CheckMinigameStateOnPropertyChanged()
 
 class FText ABP_CreativeRadio_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "BlueprintGetInteractionString");
 
 	Params::BP_CreativeRadio_C_BlueprintGetInteractionString Parms{};
 
@@ -239,10 +197,7 @@ class FText ABP_CreativeRadio_C::BlueprintGetInteractionString(const class AFort
 
 bool ABP_CreativeRadio_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeRadio_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BP_CreativeRadio_C", "BlueprintCanInteract");
 
 	Params::BP_CreativeRadio_C_BlueprintCanInteract Parms{};
 

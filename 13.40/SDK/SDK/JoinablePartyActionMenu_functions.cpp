@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UJoinablePartyActionMenu_C::ExecuteUbergraph_JoinablePartyActionMenu(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JoinablePartyActionMenu_C", "ExecuteUbergraph_JoinablePartyActionMenu");
+	class UFunction* Func = Class->GetFunction("JoinablePartyActionMenu_C", "ExecuteUbergraph_JoinablePartyActionMenu");
 
 	Params::JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu Parms{};
 
@@ -41,10 +38,7 @@ void UJoinablePartyActionMenu_C::ExecuteUbergraph_JoinablePartyActionMenu(int32 
 
 void UJoinablePartyActionMenu_C::OnOpened()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JoinablePartyActionMenu_C", "OnOpened");
+	class UFunction* Func = Class->GetFunction("JoinablePartyActionMenu_C", "OnOpened");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UJoinablePartyActionMenu_C::OnOpened()
 
 void UJoinablePartyActionMenu_C::OnToggleConfirmation(bool bIsVisible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JoinablePartyActionMenu_C", "OnToggleConfirmation");
+	class UFunction* Func = Class->GetFunction("JoinablePartyActionMenu_C", "OnToggleConfirmation");
 
 	Params::JoinablePartyActionMenu_C_OnToggleConfirmation Parms{};
 

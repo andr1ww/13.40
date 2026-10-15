@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_UI_ScannerScreen_C::ExecuteUbergraph_BP_UI_ScannerScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ExecuteUbergraph_BP_UI_ScannerScreen");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ExecuteUbergraph_BP_UI_ScannerScreen");
 
 	Params::BP_UI_ScannerScreen_C_ExecuteUbergraph_BP_UI_ScannerScreen Parms{};
 
@@ -43,10 +40,7 @@ void ABP_UI_ScannerScreen_C::ExecuteUbergraph_BP_UI_ScannerScreen(int32 EntryPoi
 
 void ABP_UI_ScannerScreen_C::ScreenEventTargetLost(const class FText& LostText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventTargetLost");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventTargetLost");
 
 	Params::BP_UI_ScannerScreen_C_ScreenEventTargetLost Parms{};
 
@@ -61,10 +55,7 @@ void ABP_UI_ScannerScreen_C::ScreenEventTargetLost(const class FText& LostText)
 
 void ABP_UI_ScannerScreen_C::ScreenEventDismiss()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventDismiss");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventDismiss");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void ABP_UI_ScannerScreen_C::ScreenEventDismiss()
 
 void ABP_UI_ScannerScreen_C::ScreenEventScan()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventScan");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventScan");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void ABP_UI_ScannerScreen_C::ScreenEventScan()
 
 void ABP_UI_ScannerScreen_C::ScreenEventFailure(const class FText& FailureText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventFailure");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventFailure");
 
 	Params::BP_UI_ScannerScreen_C_ScreenEventFailure Parms{};
 
@@ -111,10 +96,7 @@ void ABP_UI_ScannerScreen_C::ScreenEventFailure(const class FText& FailureText)
 
 void ABP_UI_ScannerScreen_C::ScreenEventSuccess(const class FText& SuccessText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventSuccess");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventSuccess");
 
 	Params::BP_UI_ScannerScreen_C_ScreenEventSuccess Parms{};
 
@@ -131,10 +113,7 @@ void ABP_UI_ScannerScreen_C::ScreenEventSuccess(const class FText& SuccessText)
 
 void ABP_UI_ScannerScreen_C::ScreenEventError(bool Reverse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventError");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ScreenEventError");
 
 	Params::BP_UI_ScannerScreen_C_ScreenEventError Parms{};
 
@@ -149,10 +128,7 @@ void ABP_UI_ScannerScreen_C::ScreenEventError(bool Reverse)
 
 void ABP_UI_ScannerScreen_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -163,10 +139,7 @@ void ABP_UI_ScannerScreen_C::ReceiveBeginPlay()
 
 void ABP_UI_ScannerScreen_C::ErrorTimeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ErrorTimeline__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ErrorTimeline__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -177,10 +150,7 @@ void ABP_UI_ScannerScreen_C::ErrorTimeline__UpdateFunc()
 
 void ABP_UI_ScannerScreen_C::ErrorTimeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ErrorTimeline__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_UI_ScannerScreen_C", "ErrorTimeline__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

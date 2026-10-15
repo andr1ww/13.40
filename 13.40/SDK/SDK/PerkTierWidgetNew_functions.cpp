@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPerkTierWidgetNew_C::ExecuteUbergraph_PerkTierWidgetNew(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkTierWidgetNew_C", "ExecuteUbergraph_PerkTierWidgetNew");
+	class UFunction* Func = Class->GetFunction("PerkTierWidgetNew_C", "ExecuteUbergraph_PerkTierWidgetNew");
 
 	Params::PerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew Parms{};
 
@@ -44,10 +41,7 @@ void UPerkTierWidgetNew_C::ExecuteUbergraph_PerkTierWidgetNew(int32 EntryPoint)
 
 void UPerkTierWidgetNew_C::OnGeneratePerk(const struct FFortUIPerk& Perk, class UFortPerkWidget_NUI* PerkWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkTierWidgetNew_C", "OnGeneratePerk");
+	class UFunction* Func = Class->GetFunction("PerkTierWidgetNew_C", "OnGeneratePerk");
 
 	Params::PerkTierWidgetNew_C_OnGeneratePerk Parms{};
 
@@ -63,10 +57,7 @@ void UPerkTierWidgetNew_C::OnGeneratePerk(const struct FFortUIPerk& Perk, class 
 
 void UPerkTierWidgetNew_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkTierWidgetNew_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PerkTierWidgetNew_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +74,7 @@ void UPerkTierWidgetNew_C::Construct()
 
 void UPerkTierWidgetNew_C::InitializeSettings(bool bIncludeName_0, bool bIncludeDescription_0, bool bUseLegacyFixedSizeIcons_0, EFortBrushSize IconSize_0, const struct FFortUIPerkTier& FortPerkTier_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkTierWidgetNew_C", "InitializeSettings");
+	class UFunction* Func = Class->GetFunction("PerkTierWidgetNew_C", "InitializeSettings");
 
 	Params::PerkTierWidgetNew_C_InitializeSettings Parms{};
 

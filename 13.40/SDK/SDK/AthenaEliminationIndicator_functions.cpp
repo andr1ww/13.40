@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaEliminationIndicator_C::ExecuteUbergraph_AthenaEliminationIndicator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaEliminationIndicator_C", "ExecuteUbergraph_AthenaEliminationIndicator");
+	class UFunction* Func = Class->GetFunction("AthenaEliminationIndicator_C", "ExecuteUbergraph_AthenaEliminationIndicator");
 
 	Params::AthenaEliminationIndicator_C_ExecuteUbergraph_AthenaEliminationIndicator Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaEliminationIndicator_C::ExecuteUbergraph_AthenaEliminationIndicator(
 
 void UAthenaEliminationIndicator_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaEliminationIndicator_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaEliminationIndicator_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

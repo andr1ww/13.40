@@ -26,10 +26,7 @@ SDK_NAMESPACE_START
 
 bool UAnimNotifyState_StopMontageGroup_C::Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimNotifyState_StopMontageGroup_C", "Received_NotifyBegin");
+	class UFunction* Func = Class->GetFunction("AnimNotifyState_StopMontageGroup_C", "Received_NotifyBegin");
 
 	Params::AnimNotifyState_StopMontageGroup_C_Received_NotifyBegin Parms{};
 

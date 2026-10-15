@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UGA_Ranged_GenericProjectileImpact_HookGun_C::K2_CommitExecute()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ranged_GenericProjectileImpact_HookGun_C", "K2_CommitExecute");
+	class UFunction* Func = Class->GetFunction("GA_Ranged_GenericProjectileImpact_HookGun_C", "K2_CommitExecute");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UGA_Ranged_GenericProjectileImpact_HookGun_C::K2_CommitExecute()
 
 void UGA_Ranged_GenericProjectileImpact_HookGun_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ranged_GenericProjectileImpact_HookGun_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Ranged_GenericProjectileImpact_HookGun_C", "K2_OnEndAbility");
 
 	Params::GA_Ranged_GenericProjectileImpact_HookGun_C_K2_OnEndAbility Parms{};
 
@@ -57,10 +51,7 @@ void UGA_Ranged_GenericProjectileImpact_HookGun_C::K2_OnEndAbility(bool bWasCanc
 
 void UGA_Ranged_GenericProjectileImpact_HookGun_C::Overflow(class UFortWorldItem* Item_Dropped)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ranged_GenericProjectileImpact_HookGun_C", "Overflow");
+	class UFunction* Func = Class->GetFunction("GA_Ranged_GenericProjectileImpact_HookGun_C", "Overflow");
 
 	Params::GA_Ranged_GenericProjectileImpact_HookGun_C_Overflow Parms{};
 

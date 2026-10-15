@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_FragGrenade_C::ExecuteUbergraph_B_Prj_Athena_FragGrenade(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "ExecuteUbergraph_B_Prj_Athena_FragGrenade");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "ExecuteUbergraph_B_Prj_Athena_FragGrenade");
 
 	Params::B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_Athena_FragGrenade_C::ExecuteUbergraph_B_Prj_Athena_FragGrenade(int3
 
 void AB_Prj_Athena_FragGrenade_C::Pre_Explo_Audio_Tell()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "Pre Explo Audio Tell");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "Pre Explo Audio Tell");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Prj_Athena_FragGrenade_C::Pre_Explo_Audio_Tell()
 
 void AB_Prj_Athena_FragGrenade_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AB_Prj_Athena_FragGrenade_C::ReceiveBeginPlay()
 
 void AB_Prj_Athena_FragGrenade_C::OnBounce(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "OnBounce");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "OnBounce");
 
 	Params::B_Prj_Athena_FragGrenade_C_OnBounce Parms{};
 
@@ -92,10 +80,7 @@ void AB_Prj_Athena_FragGrenade_C::OnBounce(const struct FHitResult& Hit)
 
 void AB_Prj_Athena_FragGrenade_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "OnExploded");
 
 	Params::B_Prj_Athena_FragGrenade_C_OnExploded Parms{};
 
@@ -111,10 +96,7 @@ void AB_Prj_Athena_FragGrenade_C::OnExploded(const TArray<class AActor*>& HitAct
 
 void AB_Prj_Athena_FragGrenade_C::FuseEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "FuseEnded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "FuseEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +107,7 @@ void AB_Prj_Athena_FragGrenade_C::FuseEnded()
 
 void AB_Prj_Athena_FragGrenade_C::PreExploWarning__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "PreExploWarning__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "PreExploWarning__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +118,7 @@ void AB_Prj_Athena_FragGrenade_C::PreExploWarning__UpdateFunc()
 
 void AB_Prj_Athena_FragGrenade_C::PreExploWarning__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "PreExploWarning__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "PreExploWarning__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

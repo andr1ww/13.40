@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APlayerPawn_Athena_Generic_C::ExecuteUbergraph_PlayerPawn_Athena_Generic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "ExecuteUbergraph_PlayerPawn_Athena_Generic");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "ExecuteUbergraph_PlayerPawn_Athena_Generic");
 
 	Params::PlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic Parms{};
 
@@ -44,10 +41,7 @@ void APlayerPawn_Athena_Generic_C::ExecuteUbergraph_PlayerPawn_Athena_Generic(in
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Loop_Shadow_Bomb(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Loop.Shadow.Bomb");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Loop.Shadow.Bomb");
 
 	Params::PlayerPawn_Athena_Generic_C_GameplayCue_Loop_Shadow_Bomb Parms{};
 
@@ -66,10 +60,7 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Loop_Shadow_Bomb(EGameplayCueEven
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_Reapplied(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Shield.Reapplied");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Shield.Reapplied");
 
 	Params::PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied Parms{};
 
@@ -88,10 +79,7 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_Reapplied(EGameplayCueEven
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_Destroyed(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Shield.Destroyed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Shield.Destroyed");
 
 	Params::PlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed Parms{};
 
@@ -110,10 +98,7 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_Destroyed(EGameplayCueEven
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Damage_Shielded(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Damage.Shielded");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Damage.Shielded");
 
 	Params::PlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded Parms{};
 
@@ -132,10 +117,7 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Damage_Shielded(EGameplayCueEvent
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_PotionConsumed(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Shield.PotionConsumed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Shield.PotionConsumed");
 
 	Params::PlayerPawn_Athena_Generic_C_GameplayCue_Shield_PotionConsumed Parms{};
 
@@ -154,10 +136,7 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_PotionConsumed(EGameplayCu
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_SpookyMist_Loop(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Abilities.SpookyMist.Loop");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Abilities.SpookyMist.Loop");
 
 	Params::PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_SpookyMist_Loop Parms{};
 
@@ -173,10 +152,7 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_SpookyMist_Loop(EGamepl
 
 void APlayerPawn_Athena_Generic_C::AnimTrailsDisable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "AnimTrailsDisable");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "AnimTrailsDisable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -196,10 +172,7 @@ void APlayerPawn_Athena_Generic_C::AnimTrailsDisable()
 
 void APlayerPawn_Athena_Generic_C::AnimTrailsSetup(class UParticleSystem* ParticleSystemReference, class UNiagaraSystem* NiagaraSystemReference, class FName FirstSocketName, class FName SecondSocketName, float Width, class UFXSystemComponent* OverrideParticleComp, class FName OverideFirstSocketName, class FName OverideSecondSocketName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "AnimTrailsSetup");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "AnimTrailsSetup");
 
 	Params::PlayerPawn_Athena_Generic_C_AnimTrailsSetup Parms{};
 
@@ -223,10 +196,7 @@ void APlayerPawn_Athena_Generic_C::AnimTrailsSetup(class UParticleSystem* Partic
 
 void APlayerPawn_Athena_Generic_C::AnimTrailsNotify(bool bActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "AnimTrailsNotify");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "AnimTrailsNotify");
 
 	Params::PlayerPawn_Athena_Generic_C_AnimTrailsNotify Parms{};
 
@@ -241,10 +211,7 @@ void APlayerPawn_Athena_Generic_C::AnimTrailsNotify(bool bActive)
 
 void APlayerPawn_Athena_Generic_C::BindOnDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "BindOnDestroyed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "BindOnDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +224,7 @@ void APlayerPawn_Athena_Generic_C::BindOnDestroyed()
 
 void APlayerPawn_Athena_Generic_C::CharacterDestroyed(class AActor* DestroyedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "CharacterDestroyed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "CharacterDestroyed");
 
 	Params::PlayerPawn_Athena_Generic_C_CharacterDestroyed Parms{};
 
@@ -275,10 +239,7 @@ void APlayerPawn_Athena_Generic_C::CharacterDestroyed(class AActor* DestroyedAct
 
 void APlayerPawn_Athena_Generic_C::Entered_WaterVolume()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Entered WaterVolume");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Entered WaterVolume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -297,10 +258,7 @@ void APlayerPawn_Athena_Generic_C::Entered_WaterVolume()
 
 void APlayerPawn_Athena_Generic_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnDeathServer");
 
 	Params::PlayerPawn_Athena_Generic_C_OnDeathServer Parms{};
 
@@ -321,10 +279,7 @@ void APlayerPawn_Athena_Generic_C::OnDeathServer(float Damage, const struct FGam
 
 void APlayerPawn_Athena_Generic_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -338,10 +293,7 @@ void APlayerPawn_Athena_Generic_C::ReceiveDestroyed()
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
 
 	Params::PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 Parms{};
 
@@ -360,10 +312,7 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_Generic_Harv
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
 
 	Params::PlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 Parms{};
 
@@ -379,10 +328,7 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_Generic_Harv
 
 void APlayerPawn_Athena_Generic_C::OnCharacterPartsReinitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnCharacterPartsReinitialized");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnCharacterPartsReinitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -393,10 +339,7 @@ void APlayerPawn_Athena_Generic_C::OnCharacterPartsReinitialized()
 
 void APlayerPawn_Athena_Generic_C::FootStepRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "FootStepRight");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "FootStepRight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -407,10 +350,7 @@ void APlayerPawn_Athena_Generic_C::FootStepRight()
 
 void APlayerPawn_Athena_Generic_C::FootStepLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "FootStepLeft");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "FootStepLeft");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -424,10 +364,7 @@ void APlayerPawn_Athena_Generic_C::FootStepLeft()
 
 void APlayerPawn_Athena_Generic_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnWeaponEquipped");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnWeaponEquipped");
 
 	Params::PlayerPawn_Athena_Generic_C_OnWeaponEquipped Parms{};
 
@@ -445,10 +382,7 @@ void APlayerPawn_Athena_Generic_C::OnWeaponEquipped(class AFortWeapon* NewWeapon
 
 void APlayerPawn_Athena_Generic_C::OnLanded(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnLanded");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnLanded");
 
 	Params::PlayerPawn_Athena_Generic_C_OnLanded Parms{};
 
@@ -471,10 +405,7 @@ void APlayerPawn_Athena_Generic_C::OnLanded(const struct FHitResult& Hit)
 
 void APlayerPawn_Athena_Generic_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnDamagePlayEffects");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "OnDamagePlayEffects");
 
 	Params::PlayerPawn_Athena_Generic_C_OnDamagePlayEffects Parms{};
 
@@ -495,10 +426,7 @@ void APlayerPawn_Athena_Generic_C::OnDamagePlayEffects(float Damage, const struc
 
 void APlayerPawn_Athena_Generic_C::MeleeSwingLeft_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "MeleeSwingLeft_End");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "MeleeSwingLeft_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -509,10 +437,7 @@ void APlayerPawn_Athena_Generic_C::MeleeSwingLeft_End()
 
 void APlayerPawn_Athena_Generic_C::MeleeSwingRight_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "MeleeSwingRight_End");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "MeleeSwingRight_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -525,10 +450,7 @@ void APlayerPawn_Athena_Generic_C::MeleeSwingRight_End()
 
 void APlayerPawn_Athena_Generic_C::MeleeSwingLeft(bool First_Left)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "MeleeSwingLeft");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "MeleeSwingLeft");
 
 	Params::PlayerPawn_Athena_Generic_C_MeleeSwingLeft Parms{};
 
@@ -545,10 +467,7 @@ void APlayerPawn_Athena_Generic_C::MeleeSwingLeft(bool First_Left)
 
 void APlayerPawn_Athena_Generic_C::MeleeSwingRight(bool First_Right)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "MeleeSwingRight");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "MeleeSwingRight");
 
 	Params::PlayerPawn_Athena_Generic_C_MeleeSwingRight Parms{};
 
@@ -563,10 +482,7 @@ void APlayerPawn_Athena_Generic_C::MeleeSwingRight(bool First_Right)
 
 void APlayerPawn_Athena_Generic_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -583,10 +499,7 @@ void APlayerPawn_Athena_Generic_C::UserConstructionScript()
 
 void APlayerPawn_Athena_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_Parent(EFortCustomPartType BodyType, class USkeletalMeshComponent*& DuplicatedSkeletalMeshComponent, class UMaterialInterface* Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Empty_MID_Array, int32 TranslucentSortPriority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Create and Duplicate Effect Skeletal Meshes Parent");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Create and Duplicate Effect Skeletal Meshes Parent");
 
 	Params::PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent Parms{};
 
@@ -611,10 +524,7 @@ void APlayerPawn_Athena_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_P
 
 void APlayerPawn_Athena_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Mesh_0, class USkeletalMeshComponent* Master)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "SlaveAMeshToTheBody");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "SlaveAMeshToTheBody");
 
 	Params::PlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody Parms{};
 
@@ -636,10 +546,7 @@ void APlayerPawn_Athena_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshCompon
 
 void APlayerPawn_Athena_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(EFortCustomPartType BodyType, class UMaterialInterface* Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Empty_MID_Array, int32 TranslucentSortPriority, class UPoseableMeshComponent*& PoseableMesh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Create and Duplicate Effect Poseable Skeletal Mesh");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Create and Duplicate Effect Poseable Skeletal Mesh");
 
 	Params::PlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh Parms{};
 
@@ -661,10 +568,7 @@ void APlayerPawn_Athena_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal
 
 void APlayerPawn_Athena_Generic_C::DisableWaterLevelTick()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "DisableWaterLevelTick");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "DisableWaterLevelTick");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -677,10 +581,7 @@ void APlayerPawn_Athena_Generic_C::DisableWaterLevelTick()
 
 void APlayerPawn_Athena_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Are the wind and water RTT passes enabled");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Are the wind and water RTT passes enabled");
 
 	Params::PlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled Parms{};
 
@@ -696,10 +597,7 @@ void APlayerPawn_Athena_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(boo
 
 void APlayerPawn_Athena_Generic_C::ReInitFrontendPetDisplay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "ReInitFrontendPetDisplay");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "ReInitFrontendPetDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -712,10 +610,7 @@ void APlayerPawn_Athena_Generic_C::ReInitFrontendPetDisplay()
 
 void APlayerPawn_Athena_Generic_C::PlayShieldDestroyedSound(const struct FGameplayCueParameters& GameplayCueParameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "PlayShieldDestroyedSound");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "PlayShieldDestroyedSound");
 
 	Params::PlayerPawn_Athena_Generic_C_PlayShieldDestroyedSound Parms{};
 
@@ -732,10 +627,7 @@ void APlayerPawn_Athena_Generic_C::PlayShieldDestroyedSound(const struct FGamepl
 
 void APlayerPawn_Athena_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Melee_Effect_Color");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_Generic_C", "Melee_Effect_Color");
 
 	Params::PlayerPawn_Athena_Generic_C_Melee_Effect_Color Parms{};
 

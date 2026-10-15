@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APrj_Athena_Bucket_Nice_C::ExecuteUbergraph_Prj_Athena_Bucket_Nice(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "ExecuteUbergraph_Prj_Athena_Bucket_Nice");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "ExecuteUbergraph_Prj_Athena_Bucket_Nice");
 
 	Params::Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice Parms{};
 
@@ -44,10 +41,7 @@ void APrj_Athena_Bucket_Nice_C::ExecuteUbergraph_Prj_Athena_Bucket_Nice(int32 En
 
 void APrj_Athena_Bucket_Nice_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "OnExploded");
 
 	Params::Prj_Athena_Bucket_Nice_C_OnExploded Parms{};
 
@@ -63,10 +57,7 @@ void APrj_Athena_Bucket_Nice_C::OnExploded(const TArray<class AActor*>& HitActor
 
 void APrj_Athena_Bucket_Nice_C::OnRep_TurnOffTrail()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "OnRep_TurnOffTrail");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "OnRep_TurnOffTrail");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

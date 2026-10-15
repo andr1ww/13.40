@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAB_ThrowPlayer_C::ExecuteUbergraph_GAB_ThrowPlayer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_ThrowPlayer_C", "ExecuteUbergraph_GAB_ThrowPlayer");
+	class UFunction* Func = Class->GetFunction("GAB_ThrowPlayer_C", "ExecuteUbergraph_GAB_ThrowPlayer");
 
 	Params::GAB_ThrowPlayer_C_ExecuteUbergraph_GAB_ThrowPlayer Parms{};
 
@@ -43,10 +40,7 @@ void UGAB_ThrowPlayer_C::ExecuteUbergraph_GAB_ThrowPlayer(int32 EntryPoint)
 
 void UGAB_ThrowPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_ThrowPlayer_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GAB_ThrowPlayer_C", "K2_OnEndAbility");
 
 	Params::GAB_ThrowPlayer_C_K2_OnEndAbility Parms{};
 
@@ -61,10 +55,7 @@ void UGAB_ThrowPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_ThrowPlayer_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_ThrowPlayer_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GAB_ThrowPlayer_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -78,10 +69,7 @@ void UGAB_ThrowPlayer_C::K2_ActivateAbility()
 
 void UGAB_ThrowPlayer_C::Triggered_45B7744E4902B26207BAA1954E6BCDEE(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_ThrowPlayer_C", "Triggered_45B7744E4902B26207BAA1954E6BCDEE");
+	class UFunction* Func = Class->GetFunction("GAB_ThrowPlayer_C", "Triggered_45B7744E4902B26207BAA1954E6BCDEE");
 
 	Params::GAB_ThrowPlayer_C_Triggered_45B7744E4902B26207BAA1954E6BCDEE Parms{};
 
@@ -100,10 +88,7 @@ void UGAB_ThrowPlayer_C::Triggered_45B7744E4902B26207BAA1954E6BCDEE(const struct
 
 void UGAB_ThrowPlayer_C::Cancelled_45B7744E4902B26207BAA1954E6BCDEE(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_ThrowPlayer_C", "Cancelled_45B7744E4902B26207BAA1954E6BCDEE");
+	class UFunction* Func = Class->GetFunction("GAB_ThrowPlayer_C", "Cancelled_45B7744E4902B26207BAA1954E6BCDEE");
 
 	Params::GAB_ThrowPlayer_C_Cancelled_45B7744E4902B26207BAA1954E6BCDEE Parms{};
 
@@ -122,10 +107,7 @@ void UGAB_ThrowPlayer_C::Cancelled_45B7744E4902B26207BAA1954E6BCDEE(const struct
 
 void UGAB_ThrowPlayer_C::Completed_45B7744E4902B26207BAA1954E6BCDEE(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_ThrowPlayer_C", "Completed_45B7744E4902B26207BAA1954E6BCDEE");
+	class UFunction* Func = Class->GetFunction("GAB_ThrowPlayer_C", "Completed_45B7744E4902B26207BAA1954E6BCDEE");
 
 	Params::GAB_ThrowPlayer_C_Completed_45B7744E4902B26207BAA1954E6BCDEE Parms{};
 

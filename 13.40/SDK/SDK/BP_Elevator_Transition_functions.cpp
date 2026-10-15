@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Elevator_Transition_C::ExecuteUbergraph_BP_Elevator_Transition(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "ExecuteUbergraph_BP_Elevator_Transition");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "ExecuteUbergraph_BP_Elevator_Transition");
 
 	Params::BP_Elevator_Transition_C_ExecuteUbergraph_BP_Elevator_Transition Parms{};
 
@@ -41,10 +38,7 @@ void ABP_Elevator_Transition_C::ExecuteUbergraph_BP_Elevator_Transition(int32 En
 
 void ABP_Elevator_Transition_C::CloseInstant()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "CloseInstant");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "CloseInstant");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_Elevator_Transition_C::CloseInstant()
 
 void ABP_Elevator_Transition_C::OpenInstant()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "OpenInstant");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "OpenInstant");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_Elevator_Transition_C::OpenInstant()
 
 void ABP_Elevator_Transition_C::StopMoveDown()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "StopMoveDown");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "StopMoveDown");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_Elevator_Transition_C::StopMoveDown()
 
 void ABP_Elevator_Transition_C::StartMoveDown()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "StartMoveDown");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "StartMoveDown");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ABP_Elevator_Transition_C::StartMoveDown()
 
 void ABP_Elevator_Transition_C::StopMoveUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "StopMoveUp");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "StopMoveUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void ABP_Elevator_Transition_C::StopMoveUp()
 
 void ABP_Elevator_Transition_C::StartMoveUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "StartMoveUp");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "StartMoveUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void ABP_Elevator_Transition_C::StartMoveUp()
 
 void ABP_Elevator_Transition_C::CloseDoors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "CloseDoors");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "CloseDoors");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +115,7 @@ void ABP_Elevator_Transition_C::CloseDoors()
 
 void ABP_Elevator_Transition_C::Open_Doors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "Open Doors");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "Open Doors");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +126,7 @@ void ABP_Elevator_Transition_C::Open_Doors()
 
 void ABP_Elevator_Transition_C::Output_Camera_Position()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "Output Camera Position");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "Output Camera Position");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +137,7 @@ void ABP_Elevator_Transition_C::Output_Camera_Position()
 
 void ABP_Elevator_Transition_C::Timeline_2__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_2__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_2__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +148,7 @@ void ABP_Elevator_Transition_C::Timeline_2__UpdateFunc()
 
 void ABP_Elevator_Transition_C::Timeline_2__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_2__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_2__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +159,7 @@ void ABP_Elevator_Transition_C::Timeline_2__FinishedFunc()
 
 void ABP_Elevator_Transition_C::Timeline_1__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_1__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_1__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +170,7 @@ void ABP_Elevator_Transition_C::Timeline_1__UpdateFunc()
 
 void ABP_Elevator_Transition_C::Timeline_1__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_1__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_1__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +181,7 @@ void ABP_Elevator_Transition_C::Timeline_1__FinishedFunc()
 
 void ABP_Elevator_Transition_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +192,7 @@ void ABP_Elevator_Transition_C::Timeline_0__UpdateFunc()
 
 void ABP_Elevator_Transition_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -251,10 +203,7 @@ void ABP_Elevator_Transition_C::Timeline_0__FinishedFunc()
 
 void ABP_Elevator_Transition_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Elevator_Transition_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_Elevator_Transition_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

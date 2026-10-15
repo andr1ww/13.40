@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_GrenadeLauncher_C::ExecuteUbergraph_BP_GrenadeLauncher(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GrenadeLauncher_C", "ExecuteUbergraph_BP_GrenadeLauncher");
+	class UFunction* Func = Class->GetFunction("BP_GrenadeLauncher_C", "ExecuteUbergraph_BP_GrenadeLauncher");
 
 	Params::BP_GrenadeLauncher_C_ExecuteUbergraph_BP_GrenadeLauncher Parms{};
 
@@ -41,10 +38,7 @@ void UBP_GrenadeLauncher_C::ExecuteUbergraph_BP_GrenadeLauncher(int32 EntryPoint
 
 void UBP_GrenadeLauncher_C::AnimNotify_RotateDrum()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GrenadeLauncher_C", "AnimNotify_RotateDrum");
+	class UFunction* Func = Class->GetFunction("BP_GrenadeLauncher_C", "AnimNotify_RotateDrum");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UBP_GrenadeLauncher_C::AnimNotify_RotateDrum()
 
 void UBP_GrenadeLauncher_C::EvaluateGraphExposedInputs_ExecuteUbergraph_BP_GrenadeLauncher_AnimGraphNode_ModifyBone_EA2975074BE60949C2769EB733D75B15()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GrenadeLauncher_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_BP_GrenadeLauncher_AnimGraphNode_ModifyBone_EA2975074BE60949C2769EB733D75B15");
+	class UFunction* Func = Class->GetFunction("BP_GrenadeLauncher_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_BP_GrenadeLauncher_AnimGraphNode_ModifyBone_EA2975074BE60949C2769EB733D75B15");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UBP_GrenadeLauncher_C::EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Grena
 
 void UBP_GrenadeLauncher_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GrenadeLauncher_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("BP_GrenadeLauncher_C", "AnimGraph");
 
 	Params::BP_GrenadeLauncher_C_AnimGraph Parms{};
 

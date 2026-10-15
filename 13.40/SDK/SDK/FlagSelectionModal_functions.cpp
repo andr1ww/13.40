@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFlagSelectionModal_C::ExecuteUbergraph_FlagSelectionModal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlagSelectionModal_C", "ExecuteUbergraph_FlagSelectionModal");
+	class UFunction* Func = Class->GetFunction("FlagSelectionModal_C", "ExecuteUbergraph_FlagSelectionModal");
 
 	Params::FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal Parms{};
 
@@ -41,10 +38,7 @@ void UFlagSelectionModal_C::ExecuteUbergraph_FlagSelectionModal(int32 EntryPoint
 
 void UFlagSelectionModal_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlagSelectionModal_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("FlagSelectionModal_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UFlagSelectionModal_C::BP_OnActivated()
 
 void UFlagSelectionModal_C::BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlagSelectionModal_C", "BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FlagSelectionModal_C", "BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::FlagSelectionModal_C_BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -77,10 +68,7 @@ void UFlagSelectionModal_C::BndEvt__Button_ConfirmationCancel_K2Node_ComponentBo
 
 void UFlagSelectionModal_C::BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlagSelectionModal_C", "BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FlagSelectionModal_C", "BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::FlagSelectionModal_C_BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -97,10 +85,7 @@ void UFlagSelectionModal_C::BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_C
 
 void UFlagSelectionModal_C::Handle_Back(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlagSelectionModal_C", "Handle Back");
+	class UFunction* Func = Class->GetFunction("FlagSelectionModal_C", "Handle Back");
 
 	Params::FlagSelectionModal_C_Handle_Back Parms{};
 

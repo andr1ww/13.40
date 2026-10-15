@@ -13858,6 +13858,31 @@ enum class ELevelCollectionType : uint8
 	MAX
 };
 
+enum class ESpawnActorNameMode : uint8
+{
+	Required_Fatal,
+	Required_ErrorAndReturnNull,
+	Required_ReturnNull,
+	Requested
+};
+
+struct FActorSpawnParameters
+{
+public:
+	class FName Name;
+	class AActor* Template = nullptr;
+	class AActor* Owner = nullptr;
+	class APawn* Instigator = nullptr;
+	class ULevel* OverrideLevel = nullptr;
+	ESpawnActorCollisionHandlingMethod SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::Undefined;
+	uint8 bRemoteOwned : 1 = 0;
+	uint8 bNoFail : 1 = 0;
+	uint8 bDeferConstruction : 1 = 0;
+	uint8 bAllowDuringConstructionScript : 1 = 0;
+	ESpawnActorNameMode NameMode = ESpawnActorNameMode::Required_Fatal;
+	EObjectFlags ObjectFlags = EObjectFlags::Transactional;
+};
+
 // ScriptStruct Engine.LevelCollection
 // 0x0078 (0x0078 - 0x0000)
 struct FLevelCollection final

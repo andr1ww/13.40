@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_ChillBronco_C::ExecuteUbergraph_GA_Athena_ChillBronco(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ChillBronco_C", "ExecuteUbergraph_GA_Athena_ChillBronco");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ChillBronco_C", "ExecuteUbergraph_GA_Athena_ChillBronco");
 
 	Params::GA_Athena_ChillBronco_C_ExecuteUbergraph_GA_Athena_ChillBronco Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Athena_ChillBronco_C::ExecuteUbergraph_GA_Athena_ChillBronco(int32 Entr
 
 void UGA_Athena_ChillBronco_C::OnProjectileSpawned(class AFortProjectileBase* SpawnedProjectile_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ChillBronco_C", "OnProjectileSpawned");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ChillBronco_C", "OnProjectileSpawned");
 
 	Params::GA_Athena_ChillBronco_C_OnProjectileSpawned Parms{};
 
@@ -70,10 +64,7 @@ void UGA_Athena_ChillBronco_C::OnProjectileSpawned(class AFortProjectileBase* Sp
 
 void UGA_Athena_ChillBronco_C::SpawnThrownProjectile(class UClass* ProjectileClass_0, const struct FVector& ProjectileSpawnLocation, const struct FRotator& ProjectileSpawnDirection, const struct FFortGameplayEffectContainerSpec& HitEffectContainerSpec_0, const struct FFortGameplayEffectContainerSpec& ExplosionEffectContainerSpec_0, float ProjectileInitialSpeed, float ProjectileGravityScale_0, class AFortProjectileBase** SpawnedProjectile_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ChillBronco_C", "SpawnThrownProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ChillBronco_C", "SpawnThrownProjectile");
 
 	Params::GA_Athena_ChillBronco_C_SpawnThrownProjectile Parms{};
 

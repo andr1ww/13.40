@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAB_SurfaceChange_C::ExecuteUbergraph_GAB_SurfaceChange(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SurfaceChange_C", "ExecuteUbergraph_GAB_SurfaceChange");
+	class UFunction* Func = Class->GetFunction("GAB_SurfaceChange_C", "ExecuteUbergraph_GAB_SurfaceChange");
 
 	Params::GAB_SurfaceChange_C_ExecuteUbergraph_GAB_SurfaceChange Parms{};
 
@@ -45,10 +42,7 @@ void UGAB_SurfaceChange_C::ExecuteUbergraph_GAB_SurfaceChange(int32 EntryPoint)
 
 void UGAB_SurfaceChange_C::MovementModeChanged(class ACharacter* Character, EMovementMode PrevMovementMode, uint8 PreviousCustomMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SurfaceChange_C", "MovementModeChanged");
+	class UFunction* Func = Class->GetFunction("GAB_SurfaceChange_C", "MovementModeChanged");
 
 	Params::GAB_SurfaceChange_C_MovementModeChanged Parms{};
 
@@ -67,10 +61,7 @@ void UGAB_SurfaceChange_C::MovementModeChanged(class ACharacter* Character, EMov
 
 void UGAB_SurfaceChange_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SurfaceChange_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GAB_SurfaceChange_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GAB_SurfaceChange_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -85,10 +76,7 @@ void UGAB_SurfaceChange_C::K2_ActivateAbilityFromEvent(const struct FGameplayEve
 
 void UGAB_SurfaceChange_C::SurfaceCleanupSpecial()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SurfaceChange_C", "SurfaceCleanupSpecial");
+	class UFunction* Func = Class->GetFunction("GAB_SurfaceChange_C", "SurfaceCleanupSpecial");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +91,7 @@ void UGAB_SurfaceChange_C::SurfaceCleanupSpecial()
 
 void UGAB_SurfaceChange_C::HotfixableGEApplication(const struct FScalableFloat& Input, class UClass* GameplayEffectAppliedOnTrue, class UClass* GameplayEffectAppliedOnFalse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SurfaceChange_C", "HotfixableGEApplication");
+	class UFunction* Func = Class->GetFunction("GAB_SurfaceChange_C", "HotfixableGEApplication");
 
 	Params::GAB_SurfaceChange_C_HotfixableGEApplication Parms{};
 
@@ -123,10 +108,7 @@ void UGAB_SurfaceChange_C::HotfixableGEApplication(const struct FScalableFloat& 
 
 void UGAB_SurfaceChange_C::LavaBounce()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SurfaceChange_C", "LavaBounce");
+	class UFunction* Func = Class->GetFunction("GAB_SurfaceChange_C", "LavaBounce");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -140,10 +122,7 @@ void UGAB_SurfaceChange_C::LavaBounce()
 
 void UGAB_SurfaceChange_C::SurfaceCleanup(bool AddLingeringEffects, EPhysicalSurface SurfaceType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SurfaceChange_C", "SurfaceCleanup");
+	class UFunction* Func = Class->GetFunction("GAB_SurfaceChange_C", "SurfaceCleanup");
 
 	Params::GAB_SurfaceChange_C_SurfaceCleanup Parms{};
 
@@ -159,10 +138,7 @@ void UGAB_SurfaceChange_C::SurfaceCleanup(bool AddLingeringEffects, EPhysicalSur
 
 void UGAB_SurfaceChange_C::OnRep_ReplicatedRandomAngle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_SurfaceChange_C", "OnRep_ReplicatedRandomAngle");
+	class UFunction* Func = Class->GetFunction("GAB_SurfaceChange_C", "OnRep_ReplicatedRandomAngle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

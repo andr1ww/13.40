@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_EnvCampFire_C::ExecuteUbergraph_GA_Athena_EnvCampFire(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "ExecuteUbergraph_GA_Athena_EnvCampFire");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "ExecuteUbergraph_GA_Athena_EnvCampFire");
 
 	Params::GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_EnvCampFire_C::ExecuteUbergraph_GA_Athena_EnvCampFire(int32 Entr
 
 void UGA_Athena_EnvCampFire_C::ForceEndAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "ForceEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "ForceEndAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Athena_EnvCampFire_C::ForceEndAbility()
 
 void UGA_Athena_EnvCampFire_C::EndEvent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "EndEvent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "EndEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UGA_Athena_EnvCampFire_C::EndEvent()
 
 void UGA_Athena_EnvCampFire_C::SetIsStoked(bool IsStoked_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "SetIsStoked");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "SetIsStoked");
 
 	Params::GA_Athena_EnvCampFire_C_SetIsStoked Parms{};
 
@@ -89,10 +77,7 @@ void UGA_Athena_EnvCampFire_C::SetIsStoked(bool IsStoked_0)
 
 void UGA_Athena_EnvCampFire_C::FinishStoke()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "FinishStoke");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "FinishStoke");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UGA_Athena_EnvCampFire_C::FinishStoke()
 
 void UGA_Athena_EnvCampFire_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_Athena_EnvCampFire_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -123,10 +105,7 @@ void UGA_Athena_EnvCampFire_C::K2_ActivateAbilityFromEvent(const struct FGamepla
 
 void UGA_Athena_EnvCampFire_C::ApplyHeal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "ApplyHeal");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "ApplyHeal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +118,7 @@ void UGA_Athena_EnvCampFire_C::ApplyHeal()
 
 void UGA_Athena_EnvCampFire_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_EnvCampFire_C_K2_OnEndAbility Parms{};
 
@@ -159,10 +135,7 @@ void UGA_Athena_EnvCampFire_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_EnvCampFire_C::EventReceived_63E2BB3E47E5E63C7A4A0A8C45DC23E4(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "EventReceived_63E2BB3E47E5E63C7A4A0A8C45DC23E4");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "EventReceived_63E2BB3E47E5E63C7A4A0A8C45DC23E4");
 
 	Params::GA_Athena_EnvCampFire_C_EventReceived_63E2BB3E47E5E63C7A4A0A8C45DC23E4 Parms{};
 
@@ -180,10 +153,7 @@ void UGA_Athena_EnvCampFire_C::EventReceived_63E2BB3E47E5E63C7A4A0A8C45DC23E4(co
 
 void UGA_Athena_EnvCampFire_C::Targeted_EDAB937443020D47385625B06E892DF0(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "Targeted_EDAB937443020D47385625B06E892DF0");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "Targeted_EDAB937443020D47385625B06E892DF0");
 
 	Params::GA_Athena_EnvCampFire_C_Targeted_EDAB937443020D47385625B06E892DF0 Parms{};
 
@@ -202,10 +172,7 @@ void UGA_Athena_EnvCampFire_C::Targeted_EDAB937443020D47385625B06E892DF0(const s
 
 void UGA_Athena_EnvCampFire_C::Cancelled_EDAB937443020D47385625B06E892DF0(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "Cancelled_EDAB937443020D47385625B06E892DF0");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "Cancelled_EDAB937443020D47385625B06E892DF0");
 
 	Params::GA_Athena_EnvCampFire_C_Cancelled_EDAB937443020D47385625B06E892DF0 Parms{};
 
@@ -221,10 +188,7 @@ void UGA_Athena_EnvCampFire_C::Cancelled_EDAB937443020D47385625B06E892DF0(const 
 
 void UGA_Athena_EnvCampFire_C::SetCustomTargetingTrans()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "SetCustomTargetingTrans");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "SetCustomTargetingTrans");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +201,7 @@ void UGA_Athena_EnvCampFire_C::SetCustomTargetingTrans()
 
 void UGA_Athena_EnvCampFire_C::SetBalanceValues(bool Stoke)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "SetBalanceValues");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "SetBalanceValues");
 
 	Params::GA_Athena_EnvCampFire_C_SetBalanceValues Parms{};
 
@@ -257,10 +218,7 @@ void UGA_Athena_EnvCampFire_C::SetBalanceValues(bool Stoke)
 
 struct FTransform UGA_Athena_EnvCampFire_C::GetCustomAbilitySourceTransform() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "GetCustomAbilitySourceTransform");
+	class UFunction* Func = Class->GetFunction("GA_Athena_EnvCampFire_C", "GetCustomAbilitySourceTransform");
 
 	Params::GA_Athena_EnvCampFire_C_GetCustomAbilitySourceTransform Parms{};
 

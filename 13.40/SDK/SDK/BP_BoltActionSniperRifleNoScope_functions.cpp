@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_BoltActionSniperRifleNoScope_C::ExecuteUbergraph_BP_BoltActionSniperRifleNoScope(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BoltActionSniperRifleNoScope_C", "ExecuteUbergraph_BP_BoltActionSniperRifleNoScope");
+	class UFunction* Func = Class->GetFunction("BP_BoltActionSniperRifleNoScope_C", "ExecuteUbergraph_BP_BoltActionSniperRifleNoScope");
 
 	Params::BP_BoltActionSniperRifleNoScope_C_ExecuteUbergraph_BP_BoltActionSniperRifleNoScope Parms{};
 
@@ -43,10 +40,7 @@ void UBP_BoltActionSniperRifleNoScope_C::ExecuteUbergraph_BP_BoltActionSniperRif
 
 void UBP_BoltActionSniperRifleNoScope_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BoltActionSniperRifleNoScope_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("BP_BoltActionSniperRifleNoScope_C", "AnimGraph");
 
 	Params::BP_BoltActionSniperRifleNoScope_C_AnimGraph Parms{};
 

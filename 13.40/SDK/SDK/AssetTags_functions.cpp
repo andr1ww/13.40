@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 bool UAssetTagsSubsystem::CollectionExists(const class FName Name_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AssetTagsSubsystem", "CollectionExists");
+	class UFunction* Func = Class->GetFunction("AssetTagsSubsystem", "CollectionExists");
 
 	Params::AssetTagsSubsystem_CollectionExists Parms{};
 
@@ -52,10 +49,7 @@ bool UAssetTagsSubsystem::CollectionExists(const class FName Name_0)
 
 TArray<struct FAssetData> UAssetTagsSubsystem::GetAssetsInCollection(const class FName Name_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AssetTagsSubsystem", "GetAssetsInCollection");
+	class UFunction* Func = Class->GetFunction("AssetTagsSubsystem", "GetAssetsInCollection");
 
 	Params::AssetTagsSubsystem_GetAssetsInCollection Parms{};
 
@@ -79,10 +73,7 @@ TArray<struct FAssetData> UAssetTagsSubsystem::GetAssetsInCollection(const class
 
 TArray<class FName> UAssetTagsSubsystem::GetCollections()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AssetTagsSubsystem", "GetCollections");
+	class UFunction* Func = Class->GetFunction("AssetTagsSubsystem", "GetCollections");
 
 	Params::AssetTagsSubsystem_GetCollections Parms{};
 
@@ -105,10 +96,7 @@ TArray<class FName> UAssetTagsSubsystem::GetCollections()
 
 TArray<class FName> UAssetTagsSubsystem::GetCollectionsContainingAsset(const class FName AssetPathName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AssetTagsSubsystem", "GetCollectionsContainingAsset");
+	class UFunction* Func = Class->GetFunction("AssetTagsSubsystem", "GetCollectionsContainingAsset");
 
 	Params::AssetTagsSubsystem_GetCollectionsContainingAsset Parms{};
 
@@ -133,10 +121,7 @@ TArray<class FName> UAssetTagsSubsystem::GetCollectionsContainingAsset(const cla
 
 TArray<class FName> UAssetTagsSubsystem::GetCollectionsContainingAssetData(const struct FAssetData& AssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AssetTagsSubsystem", "GetCollectionsContainingAssetData");
+	class UFunction* Func = Class->GetFunction("AssetTagsSubsystem", "GetCollectionsContainingAssetData");
 
 	Params::AssetTagsSubsystem_GetCollectionsContainingAssetData Parms{};
 
@@ -161,10 +146,7 @@ TArray<class FName> UAssetTagsSubsystem::GetCollectionsContainingAssetData(const
 
 TArray<class FName> UAssetTagsSubsystem::GetCollectionsContainingAssetPtr(const class UObject* AssetPtr)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AssetTagsSubsystem", "GetCollectionsContainingAssetPtr");
+	class UFunction* Func = Class->GetFunction("AssetTagsSubsystem", "GetCollectionsContainingAssetPtr");
 
 	Params::AssetTagsSubsystem_GetCollectionsContainingAssetPtr Parms{};
 

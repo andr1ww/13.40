@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ABP_CreativeThumbnail_Sky_Sphere_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeThumbnail_Sky_Sphere_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_CreativeThumbnail_Sky_Sphere_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void ABP_CreativeThumbnail_Sky_Sphere_C::UserConstructionScript()
 
 void ABP_CreativeThumbnail_Sky_Sphere_C::UpdateSunDirection()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeThumbnail_Sky_Sphere_C", "UpdateSunDirection");
+	class UFunction* Func = Class->GetFunction("BP_CreativeThumbnail_Sky_Sphere_C", "UpdateSunDirection");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void ABP_CreativeThumbnail_Sky_Sphere_C::UpdateSunDirection()
 
 void ABP_CreativeThumbnail_Sky_Sphere_C::RefreshMaterial()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CreativeThumbnail_Sky_Sphere_C", "RefreshMaterial");
+	class UFunction* Func = Class->GetFunction("BP_CreativeThumbnail_Sky_Sphere_C", "RefreshMaterial");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

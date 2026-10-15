@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ASpecialEventsCamera_Blueprint_C::OnActivated(class AFortPlayerController* PlayerController_OnActivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpecialEventsCamera_Blueprint_C", "OnActivated");
+	class UFunction* Func = Class->GetFunction("SpecialEventsCamera_Blueprint_C", "OnActivated");
 
 	Params::SpecialEventsCamera_Blueprint_C_OnActivated Parms{};
 
@@ -43,10 +40,7 @@ void ASpecialEventsCamera_Blueprint_C::OnActivated(class AFortPlayerController* 
 
 void ASpecialEventsCamera_Blueprint_C::OnDeactivated(class AFortPlayerController* PlayerController_OnDeactivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpecialEventsCamera_Blueprint_C", "OnDeactivated");
+	class UFunction* Func = Class->GetFunction("SpecialEventsCamera_Blueprint_C", "OnDeactivated");
 
 	Params::SpecialEventsCamera_Blueprint_C_OnDeactivated Parms{};
 
@@ -63,10 +57,7 @@ void ASpecialEventsCamera_Blueprint_C::OnDeactivated(class AFortPlayerController
 
 void ASpecialEventsCamera_Blueprint_C::ExecuteUbergraph_SpecialEventsCamera_Blueprint(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpecialEventsCamera_Blueprint_C", "ExecuteUbergraph_SpecialEventsCamera_Blueprint");
+	class UFunction* Func = Class->GetFunction("SpecialEventsCamera_Blueprint_C", "ExecuteUbergraph_SpecialEventsCamera_Blueprint");
 
 	Params::SpecialEventsCamera_Blueprint_C_ExecuteUbergraph_SpecialEventsCamera_Blueprint Parms{};
 

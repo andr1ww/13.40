@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C", "ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint");
+	class UFunction* Func = Class->GetFunction("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C", "ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint");
 
 	Params::SK_MachineGun_Clip_Skeleton_AnimBlueprint_C_ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint Parms{};
 
@@ -43,10 +40,7 @@ void USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::ExecuteUbergraph_SK_MachineGu
 
 void USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C", "AnimGraph");
 
 	Params::SK_MachineGun_Clip_Skeleton_AnimBlueprint_C_AnimGraph Parms{};
 

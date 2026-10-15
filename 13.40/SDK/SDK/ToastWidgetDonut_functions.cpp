@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UToastWidgetDonut_C::SetupAnimBindings(bool Unbind)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "SetupAnimBindings");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "SetupAnimBindings");
 
 	Params::ToastWidgetDonut_C_SetupAnimBindings Parms{};
 
@@ -41,10 +38,7 @@ void UToastWidgetDonut_C::SetupAnimBindings(bool Unbind)
 
 void UToastWidgetDonut_C::ApplyAdditionalStyling()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "ApplyAdditionalStyling");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "ApplyAdditionalStyling");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UToastWidgetDonut_C::ApplyAdditionalStyling()
 
 void UToastWidgetDonut_C::SetImage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "SetImage");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "SetImage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UToastWidgetDonut_C::SetImage()
 
 ESlateVisibility UToastWidgetDonut_C::GetOpenButtonVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "GetOpenButtonVisibility");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "GetOpenButtonVisibility");
 
 	Params::ToastWidgetDonut_C_GetOpenButtonVisibility Parms{};
 
@@ -89,10 +77,7 @@ ESlateVisibility UToastWidgetDonut_C::GetOpenButtonVisibility()
 
 void UToastWidgetDonut_C::StartIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "StartIntro");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "StartIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -106,10 +91,7 @@ void UToastWidgetDonut_C::StartIntro()
 
 void UToastWidgetDonut_C::ShowText(const class FText& Text, class UCommonTextBlock* TextBlock)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "ShowText");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "ShowText");
 
 	Params::ToastWidgetDonut_C_ShowText Parms{};
 
@@ -127,10 +109,7 @@ void UToastWidgetDonut_C::ShowText(const class FText& Text, class UCommonTextBlo
 
 void UToastWidgetDonut_C::SetToast(class UFortUINotification* Toast)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "SetToast");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "SetToast");
 
 	Params::ToastWidgetDonut_C_SetToast Parms{};
 
@@ -145,10 +124,7 @@ void UToastWidgetDonut_C::SetToast(class UFortUINotification* Toast)
 
 void UToastWidgetDonut_C::PlayOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "PlayOutro");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "PlayOutro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +137,7 @@ void UToastWidgetDonut_C::PlayOutro()
 
 void UToastWidgetDonut_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
 
 	Params::ToastWidgetDonut_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -179,10 +152,7 @@ void UToastWidgetDonut_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_Common
 
 void UToastWidgetDonut_C::HandleOutroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "HandleOutroFinished");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "HandleOutroFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -193,10 +163,7 @@ void UToastWidgetDonut_C::HandleOutroFinished()
 
 void UToastWidgetDonut_C::HandleIntroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "HandleIntroFinished");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "HandleIntroFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +174,7 @@ void UToastWidgetDonut_C::HandleIntroFinished()
 
 void UToastWidgetDonut_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +185,7 @@ void UToastWidgetDonut_C::Construct()
 
 void UToastWidgetDonut_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +198,7 @@ void UToastWidgetDonut_C::Destruct()
 
 void UToastWidgetDonut_C::OnSetToast(class UFortUINotification* ToastNotification_OnSetToast)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "OnSetToast");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "OnSetToast");
 
 	Params::ToastWidgetDonut_C_OnSetToast Parms{};
 
@@ -255,10 +213,7 @@ void UToastWidgetDonut_C::OnSetToast(class UFortUINotification* ToastNotificatio
 
 void UToastWidgetDonut_C::OnPlayOpenAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "OnPlayOpenAnimation");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "OnPlayOpenAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -271,10 +226,7 @@ void UToastWidgetDonut_C::OnPlayOpenAnimation()
 
 void UToastWidgetDonut_C::ExecuteUbergraph_ToastWidgetDonut(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidgetDonut_C", "ExecuteUbergraph_ToastWidgetDonut");
+	class UFunction* Func = Class->GetFunction("ToastWidgetDonut_C", "ExecuteUbergraph_ToastWidgetDonut");
 
 	Params::ToastWidgetDonut_C_ExecuteUbergraph_ToastWidgetDonut Parms{};
 

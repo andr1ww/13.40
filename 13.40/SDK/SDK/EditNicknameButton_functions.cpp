@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEditNicknameButton_C::ExecuteUbergraph_EditNicknameButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditNicknameButton_C", "ExecuteUbergraph_EditNicknameButton");
+	class UFunction* Func = Class->GetFunction("EditNicknameButton_C", "ExecuteUbergraph_EditNicknameButton");
 
 	Params::EditNicknameButton_C_ExecuteUbergraph_EditNicknameButton Parms{};
 
@@ -41,10 +38,7 @@ void UEditNicknameButton_C::ExecuteUbergraph_EditNicknameButton(int32 EntryPoint
 
 void UEditNicknameButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditNicknameButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("EditNicknameButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UEditNicknameButton_C::BP_OnUnhovered()
 
 void UEditNicknameButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditNicknameButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("EditNicknameButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

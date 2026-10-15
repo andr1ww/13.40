@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UTimeSynthComponent::AddQuantizationEventDelegate(ETimeSynthEventQuantization QuantizationType, const TDelegate<void(ETimeSynthEventQuantization QuantizationType, int32 NumBars, float Beat)>& OnQuantizationEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "AddQuantizationEventDelegate");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "AddQuantizationEventDelegate");
 
 	Params::TimeSynthComponent_AddQuantizationEventDelegate Parms{};
 
@@ -50,10 +47,7 @@ void UTimeSynthComponent::AddQuantizationEventDelegate(ETimeSynthEventQuantizati
 
 bool UTimeSynthComponent::HasActiveClips()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "HasActiveClips");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "HasActiveClips");
 
 	Params::TimeSynthComponent_HasActiveClips Parms{};
 
@@ -77,10 +71,7 @@ bool UTimeSynthComponent::HasActiveClips()
 
 struct FTimeSynthClipHandle UTimeSynthComponent::PlayClip(class UTimeSynthClip* InClip, class UTimeSynthVolumeGroup* InVolumeGroup)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "PlayClip");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "PlayClip");
 
 	Params::TimeSynthComponent_PlayClip Parms{};
 
@@ -103,10 +94,7 @@ struct FTimeSynthClipHandle UTimeSynthComponent::PlayClip(class UTimeSynthClip* 
 
 void UTimeSynthComponent::ResetSeed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "ResetSeed");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "ResetSeed");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -124,10 +112,7 @@ void UTimeSynthComponent::ResetSeed()
 
 void UTimeSynthComponent::SetBPM(const float BeatsPerMinute)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "SetBPM");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "SetBPM");
 
 	Params::TimeSynthComponent_SetBPM Parms{};
 
@@ -149,10 +134,7 @@ void UTimeSynthComponent::SetBPM(const float BeatsPerMinute)
 
 void UTimeSynthComponent::SetEnvelopeFollowerEnabled(bool bInIsEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "SetEnvelopeFollowerEnabled");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "SetEnvelopeFollowerEnabled");
 
 	Params::TimeSynthComponent_SetEnvelopeFollowerEnabled Parms{};
 
@@ -174,10 +156,7 @@ void UTimeSynthComponent::SetEnvelopeFollowerEnabled(bool bInIsEnabled)
 
 void UTimeSynthComponent::SetEnvelopeFollowerSettings(const struct FTimeSynthEnvelopeFollowerSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "SetEnvelopeFollowerSettings");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "SetEnvelopeFollowerSettings");
 
 	Params::TimeSynthComponent_SetEnvelopeFollowerSettings Parms{};
 
@@ -199,10 +178,7 @@ void UTimeSynthComponent::SetEnvelopeFollowerSettings(const struct FTimeSynthEnv
 
 void UTimeSynthComponent::SetFFTSize(ETimeSynthFFTSize InFFTSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "SetFFTSize");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "SetFFTSize");
 
 	Params::TimeSynthComponent_SetFFTSize Parms{};
 
@@ -225,10 +201,7 @@ void UTimeSynthComponent::SetFFTSize(ETimeSynthFFTSize InFFTSize)
 
 void UTimeSynthComponent::SetFilterEnabled(ETimeSynthFilter Filter, bool bIsEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "SetFilterEnabled");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "SetFilterEnabled");
 
 	Params::TimeSynthComponent_SetFilterEnabled Parms{};
 
@@ -252,10 +225,7 @@ void UTimeSynthComponent::SetFilterEnabled(ETimeSynthFilter Filter, bool bIsEnab
 
 void UTimeSynthComponent::SetFilterSettings(ETimeSynthFilter Filter, const struct FTimeSynthFilterSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "SetFilterSettings");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "SetFilterSettings");
 
 	Params::TimeSynthComponent_SetFilterSettings Parms{};
 
@@ -278,10 +248,7 @@ void UTimeSynthComponent::SetFilterSettings(ETimeSynthFilter Filter, const struc
 
 void UTimeSynthComponent::SetQuantizationSettings(const struct FTimeSynthQuantizationSettings& InQuantizationSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "SetQuantizationSettings");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "SetQuantizationSettings");
 
 	Params::TimeSynthComponent_SetQuantizationSettings Parms{};
 
@@ -303,10 +270,7 @@ void UTimeSynthComponent::SetQuantizationSettings(const struct FTimeSynthQuantiz
 
 void UTimeSynthComponent::SetSeed(int32 InSeed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "SetSeed");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "SetSeed");
 
 	Params::TimeSynthComponent_SetSeed Parms{};
 
@@ -330,10 +294,7 @@ void UTimeSynthComponent::SetSeed(int32 InSeed)
 
 void UTimeSynthComponent::SetVolumeGroup(class UTimeSynthVolumeGroup* InVolumeGroup, float VolumeDb, float FadeTimeSec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "SetVolumeGroup");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "SetVolumeGroup");
 
 	Params::TimeSynthComponent_SetVolumeGroup Parms{};
 
@@ -358,10 +319,7 @@ void UTimeSynthComponent::SetVolumeGroup(class UTimeSynthVolumeGroup* InVolumeGr
 
 void UTimeSynthComponent::StopClip(const struct FTimeSynthClipHandle& InClipHandle, ETimeSynthEventClipQuantization EventQuantization)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "StopClip");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "StopClip");
 
 	Params::TimeSynthComponent_StopClip Parms{};
 
@@ -386,10 +344,7 @@ void UTimeSynthComponent::StopClip(const struct FTimeSynthClipHandle& InClipHand
 
 void UTimeSynthComponent::StopClipWithFadeOverride(const struct FTimeSynthClipHandle& InClipHandle, ETimeSynthEventClipQuantization EventQuantization, const struct FTimeSynthTimeDef& FadeTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "StopClipWithFadeOverride");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "StopClipWithFadeOverride");
 
 	Params::TimeSynthComponent_StopClipWithFadeOverride Parms{};
 
@@ -414,10 +369,7 @@ void UTimeSynthComponent::StopClipWithFadeOverride(const struct FTimeSynthClipHa
 
 void UTimeSynthComponent::StopSoundsOnVolumeGroup(class UTimeSynthVolumeGroup* InVolumeGroup, ETimeSynthEventClipQuantization EventQuantization)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "StopSoundsOnVolumeGroup");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "StopSoundsOnVolumeGroup");
 
 	Params::TimeSynthComponent_StopSoundsOnVolumeGroup Parms{};
 
@@ -442,10 +394,7 @@ void UTimeSynthComponent::StopSoundsOnVolumeGroup(class UTimeSynthVolumeGroup* I
 
 void UTimeSynthComponent::StopSoundsOnVolumeGroupWithFadeOverride(class UTimeSynthVolumeGroup* InVolumeGroup, ETimeSynthEventClipQuantization EventQuantization, const struct FTimeSynthTimeDef& FadeTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "StopSoundsOnVolumeGroupWithFadeOverride");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "StopSoundsOnVolumeGroupWithFadeOverride");
 
 	Params::TimeSynthComponent_StopSoundsOnVolumeGroupWithFadeOverride Parms{};
 
@@ -469,10 +418,7 @@ void UTimeSynthComponent::StopSoundsOnVolumeGroupWithFadeOverride(class UTimeSyn
 
 int32 UTimeSynthComponent::GetBPM() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "GetBPM");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "GetBPM");
 
 	Params::TimeSynthComponent_GetBPM Parms{};
 
@@ -494,10 +440,7 @@ int32 UTimeSynthComponent::GetBPM() const
 
 float UTimeSynthComponent::GetEnvelopeFollowerValue() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "GetEnvelopeFollowerValue");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "GetEnvelopeFollowerValue");
 
 	Params::TimeSynthComponent_GetEnvelopeFollowerValue Parms{};
 
@@ -519,10 +462,7 @@ float UTimeSynthComponent::GetEnvelopeFollowerValue() const
 
 int32 UTimeSynthComponent::GetMaxActiveClipLimit() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "GetMaxActiveClipLimit");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "GetMaxActiveClipLimit");
 
 	Params::TimeSynthComponent_GetMaxActiveClipLimit Parms{};
 
@@ -544,10 +484,7 @@ int32 UTimeSynthComponent::GetMaxActiveClipLimit() const
 
 TArray<struct FTimeSynthSpectralData> UTimeSynthComponent::GetSpectralData() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TimeSynthComponent", "GetSpectralData");
+	class UFunction* Func = Class->GetFunction("TimeSynthComponent", "GetSpectralData");
 
 	Params::TimeSynthComponent_GetSpectralData Parms{};
 

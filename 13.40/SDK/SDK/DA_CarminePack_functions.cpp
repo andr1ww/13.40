@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ADA_CarminePack_C::ExecuteUbergraph_DA_CarminePack(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_CarminePack_C", "ExecuteUbergraph_DA_CarminePack");
+	class UFunction* Func = Class->GetFunction("DA_CarminePack_C", "ExecuteUbergraph_DA_CarminePack");
 
 	Params::DA_CarminePack_C_ExecuteUbergraph_DA_CarminePack Parms{};
 
@@ -41,10 +38,7 @@ void ADA_CarminePack_C::ExecuteUbergraph_DA_CarminePack(int32 EntryPoint)
 
 void ADA_CarminePack_C::BindPartchanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_CarminePack_C", "BindPartchanged");
+	class UFunction* Func = Class->GetFunction("DA_CarminePack_C", "BindPartchanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void ADA_CarminePack_C::BindPartchanged()
 
 void ADA_CarminePack_C::Landed(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_CarminePack_C", "Landed");
+	class UFunction* Func = Class->GetFunction("DA_CarminePack_C", "Landed");
 
 	Params::DA_CarminePack_C_Landed Parms{};
 
@@ -75,10 +66,7 @@ void ADA_CarminePack_C::Landed(const struct FHitResult& Hit)
 
 void ADA_CarminePack_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_CarminePack_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("DA_CarminePack_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void ADA_CarminePack_C::ReceiveBeginPlay()
 
 void ADA_CarminePack_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_CarminePack_C", "BPPressSecondaryFire");
+	class UFunction* Func = Class->GetFunction("DA_CarminePack_C", "BPPressSecondaryFire");
 
 	Params::DA_CarminePack_C_BPPressSecondaryFire Parms{};
 
@@ -111,10 +96,7 @@ void ADA_CarminePack_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelp
 
 void ADA_CarminePack_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_CarminePack_C", "BPPressTrigger");
+	class UFunction* Func = Class->GetFunction("DA_CarminePack_C", "BPPressTrigger");
 
 	Params::DA_CarminePack_C_BPPressTrigger Parms{};
 
@@ -129,10 +111,7 @@ void ADA_CarminePack_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 
 void ADA_CarminePack_C::OnRep_StoneTags()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_CarminePack_C", "OnRep_StoneTags");
+	class UFunction* Func = Class->GetFunction("DA_CarminePack_C", "OnRep_StoneTags");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

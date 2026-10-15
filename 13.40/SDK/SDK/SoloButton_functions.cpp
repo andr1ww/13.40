@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USoloButton_C::SetText(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "SetText");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "SetText");
 
 	Params::SoloButton_C_SetText Parms{};
 
@@ -41,10 +38,7 @@ void USoloButton_C::SetText(const class FText& Text)
 
 void USoloButton_C::HandleSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "HandleSize");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "HandleSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USoloButton_C::HandleSize()
 
 void USoloButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void USoloButton_C::Construct()
 
 void USoloButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "PreConstruct");
 
 	Params::SoloButton_C_PreConstruct Parms{};
 
@@ -89,10 +77,7 @@ void USoloButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void USoloButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void USoloButton_C::BP_OnHovered()
 
 void USoloButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void USoloButton_C::BP_OnUnhovered()
 
 void USoloButton_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void USoloButton_C::BP_OnClicked()
 
 void USoloButton_C::BP_OnDisabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "BP_OnDisabled");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "BP_OnDisabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void USoloButton_C::BP_OnDisabled()
 
 void USoloButton_C::BP_OnEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "BP_OnEnabled");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "BP_OnEnabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +134,7 @@ void USoloButton_C::BP_OnEnabled()
 
 void USoloButton_C::ExecuteUbergraph_SoloButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_C", "ExecuteUbergraph_SoloButton");
+	class UFunction* Func = Class->GetFunction("SoloButton_C", "ExecuteUbergraph_SoloButton");
 
 	Params::SoloButton_C_ExecuteUbergraph_SoloButton Parms{};
 

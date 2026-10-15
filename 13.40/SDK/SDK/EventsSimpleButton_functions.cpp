@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEventsSimpleButton_C::ExecuteUbergraph_EventsSimpleButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "ExecuteUbergraph_EventsSimpleButton");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "ExecuteUbergraph_EventsSimpleButton");
 
 	Params::EventsSimpleButton_C_ExecuteUbergraph_EventsSimpleButton Parms{};
 
@@ -43,10 +40,7 @@ void UEventsSimpleButton_C::ExecuteUbergraph_EventsSimpleButton(int32 EntryPoint
 
 void UEventsSimpleButton_C::InputTypeChanged(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "InputTypeChanged");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "InputTypeChanged");
 
 	Params::EventsSimpleButton_C_InputTypeChanged Parms{};
 
@@ -63,10 +57,7 @@ void UEventsSimpleButton_C::InputTypeChanged(bool bUsingGamepad)
 
 void UEventsSimpleButton_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "PreConstruct");
 
 	Params::EventsSimpleButton_C_PreConstruct Parms{};
 
@@ -83,10 +74,7 @@ void UEventsSimpleButton_C::PreConstruct(bool IsDesignTime)
 
 void UEventsSimpleButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
 
 	Params::EventsSimpleButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature Parms{};
 
@@ -101,10 +89,7 @@ void UEventsSimpleButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBou
 
 void UEventsSimpleButton_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +100,7 @@ void UEventsSimpleButton_C::BP_OnClicked()
 
 void UEventsSimpleButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -129,10 +111,7 @@ void UEventsSimpleButton_C::BP_OnUnhovered()
 
 void UEventsSimpleButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,10 +122,7 @@ void UEventsSimpleButton_C::BP_OnHovered()
 
 void UEventsSimpleButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +137,7 @@ void UEventsSimpleButton_C::Construct()
 
 struct FEventReply UEventsSimpleButton_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "OnMouseButtonDown");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "OnMouseButtonDown");
 
 	Params::EventsSimpleButton_C_OnMouseButtonDown Parms{};
 
@@ -186,10 +159,7 @@ struct FEventReply UEventsSimpleButton_C::OnMouseButtonDown(const struct FGeomet
 
 struct FEventReply UEventsSimpleButton_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventsSimpleButton_C", "OnMouseButtonUp");
+	class UFunction* Func = Class->GetFunction("EventsSimpleButton_C", "OnMouseButtonUp");
 
 	Params::EventsSimpleButton_C_OnMouseButtonUp Parms{};
 

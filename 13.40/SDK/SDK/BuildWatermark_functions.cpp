@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBuildWatermark_C::ExecuteUbergraph_BuildWatermark(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuildWatermark_C", "ExecuteUbergraph_BuildWatermark");
+	class UFunction* Func = Class->GetFunction("BuildWatermark_C", "ExecuteUbergraph_BuildWatermark");
 
 	Params::BuildWatermark_C_ExecuteUbergraph_BuildWatermark Parms{};
 
@@ -43,10 +40,7 @@ void UBuildWatermark_C::ExecuteUbergraph_BuildWatermark(int32 EntryPoint)
 
 void UBuildWatermark_C::HandlePlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuildWatermark_C", "HandlePlayerStateChanged");
+	class UFunction* Func = Class->GetFunction("BuildWatermark_C", "HandlePlayerStateChanged");
 
 	Params::BuildWatermark_C_HandlePlayerStateChanged Parms{};
 
@@ -61,10 +55,7 @@ void UBuildWatermark_C::HandlePlayerStateChanged(const struct FFortTeamMemberInf
 
 void UBuildWatermark_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuildWatermark_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("BuildWatermark_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UBuildWatermark_C::Destruct()
 
 void UBuildWatermark_C::HandlePartyJoined()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuildWatermark_C", "HandlePartyJoined");
+	class UFunction* Func = Class->GetFunction("BuildWatermark_C", "HandlePartyJoined");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UBuildWatermark_C::HandlePartyJoined()
 
 void UBuildWatermark_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuildWatermark_C", "Construct");
+	class UFunction* Func = Class->GetFunction("BuildWatermark_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

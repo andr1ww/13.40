@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UExplosvieBow_AnimBP_C::ExecuteUbergraph_ExplosvieBow_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosvieBow_AnimBP_C", "ExecuteUbergraph_ExplosvieBow_AnimBP");
+	class UFunction* Func = Class->GetFunction("ExplosvieBow_AnimBP_C", "ExecuteUbergraph_ExplosvieBow_AnimBP");
 
 	Params::ExplosvieBow_AnimBP_C_ExecuteUbergraph_ExplosvieBow_AnimBP Parms{};
 
@@ -41,10 +38,7 @@ void UExplosvieBow_AnimBP_C::ExecuteUbergraph_ExplosvieBow_AnimBP(int32 EntryPoi
 
 void UExplosvieBow_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosvieBow_AnimBP_AnimGraphNode_ModifyBone_0E1011B841DA7A109A69F18ED59C9A93()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosvieBow_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosvieBow_AnimBP_AnimGraphNode_ModifyBone_0E1011B841DA7A109A69F18ED59C9A93");
+	class UFunction* Func = Class->GetFunction("ExplosvieBow_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosvieBow_AnimBP_AnimGraphNode_ModifyBone_0E1011B841DA7A109A69F18ED59C9A93");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UExplosvieBow_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Explosv
 
 void UExplosvieBow_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosvieBow_AnimBP_AnimGraphNode_ModifyBone_D0BC44E84FB0F05DC49A24B18D5B2D51()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosvieBow_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosvieBow_AnimBP_AnimGraphNode_ModifyBone_D0BC44E84FB0F05DC49A24B18D5B2D51");
+	class UFunction* Func = Class->GetFunction("ExplosvieBow_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosvieBow_AnimBP_AnimGraphNode_ModifyBone_D0BC44E84FB0F05DC49A24B18D5B2D51");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UExplosvieBow_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Explosv
 
 void UExplosvieBow_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosvieBow_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("ExplosvieBow_AnimBP_C", "AnimGraph");
 
 	Params::ExplosvieBow_AnimBP_C_AnimGraph Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AWindManager_C::ExecuteUbergraph_WindManager(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "ExecuteUbergraph_WindManager");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "ExecuteUbergraph_WindManager");
 
 	Params::WindManager_C_ExecuteUbergraph_WindManager Parms{};
 
@@ -44,10 +41,7 @@ void AWindManager_C::ExecuteUbergraph_WindManager(int32 EntryPoint)
 
 void AWindManager_C::Add_Render_To_Texture_Particle(class UParticleSystem* EmitterTemplate, const struct FTransform& InTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "Add Render To Texture Particle");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "Add Render To Texture Particle");
 
 	Params::WindManager_C_Add_Render_To_Texture_Particle Parms{};
 
@@ -65,10 +59,7 @@ void AWindManager_C::Add_Render_To_Texture_Particle(class UParticleSystem* Emitt
 
 void AWindManager_C::Update_Test(float NewMagnitude)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "Update Test");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "Update Test");
 
 	Params::WindManager_C_Update_Test Parms{};
 
@@ -83,10 +74,7 @@ void AWindManager_C::Update_Test(float NewMagnitude)
 
 void AWindManager_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +87,7 @@ void AWindManager_C::ReceiveBeginPlay()
 
 void AWindManager_C::Add_Wind_Component(class UPrimitiveComponent* InComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "Add Wind Component");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "Add Wind Component");
 
 	Params::WindManager_C_Add_Wind_Component Parms{};
 
@@ -120,10 +105,7 @@ void AWindManager_C::Add_Wind_Component(class UPrimitiveComponent* InComponent)
 
 void AWindManager_C::Register_player_for_render_to_texture_purposes(class UPrimitiveComponent* Effect_Water_Interaction_FX, class UPrimitiveComponent* Gameplay_Wind_INteraction_Effects)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "Register player for render to texture purposes");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "Register player for render to texture purposes");
 
 	Params::WindManager_C_Register_player_for_render_to_texture_purposes Parms{};
 
@@ -141,10 +123,7 @@ void AWindManager_C::Register_player_for_render_to_texture_purposes(class UPrimi
 
 void AWindManager_C::AddWindParticleSystemComponent(class UParticleSystemComponent* ParticleSystemComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "AddWindParticleSystemComponent");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "AddWindParticleSystemComponent");
 
 	Params::WindManager_C_AddWindParticleSystemComponent Parms{};
 
@@ -161,10 +140,7 @@ void AWindManager_C::AddWindParticleSystemComponent(class UParticleSystemCompone
 
 void AWindManager_C::Play_Water_Splash_Particle_System_At_Location(const struct FTransform& Particle_Transform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "Play Water Splash Particle System At Location");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "Play Water Splash Particle System At Location");
 
 	Params::WindManager_C_Play_Water_Splash_Particle_System_At_Location Parms{};
 
@@ -182,10 +158,7 @@ void AWindManager_C::Play_Water_Splash_Particle_System_At_Location(const struct 
 
 void AWindManager_C::SpawnTestWind(float Radius, float ImpulseMagnitude)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "SpawnTestWind");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "SpawnTestWind");
 
 	Params::WindManager_C_SpawnTestWind Parms{};
 
@@ -204,10 +177,7 @@ void AWindManager_C::SpawnTestWind(float Radius, float ImpulseMagnitude)
 
 void AWindManager_C::OnWindImpulseCylinderCreation(const struct FFortWindImpulseCylinder& WindImpulseCylinder, const struct FFortWindImpulseCylinderDelta& WindImpulseCylinderDelta)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderCreation");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderCreation");
 
 	Params::WindManager_C_OnWindImpulseCylinderCreation Parms{};
 
@@ -225,10 +195,7 @@ void AWindManager_C::OnWindImpulseCylinderCreation(const struct FFortWindImpulse
 
 void AWindManager_C::OnWindImpulseCylinderDeltaComplete(const struct FFortWindImpulseCylinder& WindImpulseCylinder)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderDeltaComplete");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderDeltaComplete");
 
 	Params::WindManager_C_OnWindImpulseCylinderDeltaComplete Parms{};
 
@@ -245,10 +212,7 @@ void AWindManager_C::OnWindImpulseCylinderDeltaComplete(const struct FFortWindIm
 
 void AWindManager_C::OnWindImpulseCylinderDeath(const struct FFortWindImpulseCylinder& WindImpulseCylinder)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderDeath");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderDeath");
 
 	Params::WindManager_C_OnWindImpulseCylinderDeath Parms{};
 
@@ -263,10 +227,7 @@ void AWindManager_C::OnWindImpulseCylinderDeath(const struct FFortWindImpulseCyl
 
 void AWindManager_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -281,10 +242,7 @@ void AWindManager_C::UserConstructionScript()
 
 struct FVector AWindManager_C::Calculate_Camera_Position(float Scale, class USceneCaptureComponent2D* Scene_Capture)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "Calculate Camera Position");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "Calculate Camera Position");
 
 	Params::WindManager_C_Calculate_Camera_Position Parms{};
 
@@ -305,10 +263,7 @@ struct FVector AWindManager_C::Calculate_Camera_Position(float Scale, class USce
 
 void AWindManager_C::UpdateStormWindCylinder(const struct FFortWindImpulseCylinder& Wind_Impulse, const struct FFortWindImpulseCylinderDelta& Wind_Delta)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "UpdateStormWindCylinder");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "UpdateStormWindCylinder");
 
 	Params::WindManager_C_UpdateStormWindCylinder Parms{};
 
@@ -326,10 +281,7 @@ void AWindManager_C::UpdateStormWindCylinder(const struct FFortWindImpulseCylind
 
 void AWindManager_C::RemoveWindCylinder(const struct FFortWindImpulseCylinder& WindImpulseCylinder)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "RemoveWindCylinder");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "RemoveWindCylinder");
 
 	Params::WindManager_C_RemoveWindCylinder Parms{};
 
@@ -349,10 +301,7 @@ void AWindManager_C::RemoveWindCylinder(const struct FFortWindImpulseCylinder& W
 
 void AWindManager_C::UpdateWindDeltaCyl(float Static_Cylinder_Outer_Radius, float Duration, class UMaterialInstanceDynamic* Mid, bool Is_Wind_Circular_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "UpdateWindDeltaCyl");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "UpdateWindDeltaCyl");
 
 	Params::WindManager_C_UpdateWindDeltaCyl Parms{};
 
@@ -393,10 +342,7 @@ void AWindManager_C::UpdateWindDeltaCyl(float Static_Cylinder_Outer_Radius, floa
 
 void AWindManager_C::SetWindMatVariables(class UMaterialInstanceDynamic* Mid, bool Set_AnimatedCylinderCenter, const struct FVector& AnimatedCylinderCenter, bool Set_Animating_Wind_Magnitude, float Animating_Wind_Magnitude, bool Set_Static_Wind_Magnitude, float Static_Wind_Magnitude, bool Set_CylinderCenter, const struct FVector& CylinderCenter, bool Set_WindVector, const struct FVector& WindVector, bool Set_WindCrossVector, const struct FVector& WindCrossVector, bool Set_OverallOuterRadius, float OverallOuterRadius, bool Set_OverallInnerRadius, float OverallInnerRadius, bool Set_Wind_Still_0_or_Animating_1, float Wind_Still_0_or_Animating_1, bool Set_Circular_Shader_, float Circular_Shader_, bool* NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "SetWindMatVariables");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "SetWindMatVariables");
 
 	Params::WindManager_C_SetWindMatVariables Parms{};
 
@@ -438,10 +384,7 @@ void AWindManager_C::SetWindMatVariables(class UMaterialInstanceDynamic* Mid, bo
 
 void AWindManager_C::Find_Matching_Wind_Mesh_Index_And_Write_Bool(const struct FVector& Wind_location, bool* Storm_Cyl_Mesh_Match_0, int32* Wind_Cyl_Mesh_Array_Match_Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WindManager_C", "Find Matching Wind Mesh Index And Write Bool");
+	class UFunction* Func = Class->GetFunction("WindManager_C", "Find Matching Wind Mesh Index And Write Bool");
 
 	Params::WindManager_C_Find_Matching_Wind_Mesh_Index_And_Write_Bool Parms{};
 

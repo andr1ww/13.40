@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UItemUIFunctionLibrary_C::IsNullItem(class UObject* ItemObject, class UObject* __WorldContext, bool* Is_Null_Item)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ItemUIFunctionLibrary_C", "IsNullItem");
+	class UFunction* Func = StaticClass()->GetFunction("ItemUIFunctionLibrary_C", "IsNullItem");
 
 	Params::ItemUIFunctionLibrary_C_IsNullItem Parms{};
 
@@ -53,10 +50,7 @@ void UItemUIFunctionLibrary_C::IsNullItem(class UObject* ItemObject, class UObje
 
 void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fractional_Digits, int32 Max_Fractional_Digits, class UObject* __WorldContext, class FText* Formatted_Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ItemUIFunctionLibrary_C", "Truncate Integer Value");
+	class UFunction* Func = StaticClass()->GetFunction("ItemUIFunctionLibrary_C", "Truncate Integer Value");
 
 	Params::ItemUIFunctionLibrary_C_Truncate_Integer_Value Parms{};
 
@@ -81,10 +75,7 @@ void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fra
 
 void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(EFortItemTier Tier, class UObject* __WorldContext, int32* Numeric_Tier)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ItemUIFunctionLibrary_C", "Convert Tier To Integer");
+	class UFunction* Func = StaticClass()->GetFunction("ItemUIFunctionLibrary_C", "Convert Tier To Integer");
 
 	Params::ItemUIFunctionLibrary_C_Convert_Tier_To_Integer Parms{};
 
@@ -107,10 +98,7 @@ void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(EFortItemTier Tier, class
 
 void UItemUIFunctionLibrary_C::ParseLevelRequiredFromString(const class FString& inString, class UObject* __WorldContext, int32* outInt)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ItemUIFunctionLibrary_C", "ParseLevelRequiredFromString");
+	class UFunction* Func = StaticClass()->GetFunction("ItemUIFunctionLibrary_C", "ParseLevelRequiredFromString");
 
 	Params::ItemUIFunctionLibrary_C_ParseLevelRequiredFromString Parms{};
 

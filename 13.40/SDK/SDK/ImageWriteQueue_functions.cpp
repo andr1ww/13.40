@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UImageWriteBlueprintLibrary::ExportToDisk(class UTexture* Texture, const class FString& Filename, const struct FImageWriteOptions& Options)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ImageWriteBlueprintLibrary", "ExportToDisk");
+	class UFunction* Func = StaticClass()->GetFunction("ImageWriteBlueprintLibrary", "ExportToDisk");
 
 	Params::ImageWriteBlueprintLibrary_ExportToDisk Parms{};
 

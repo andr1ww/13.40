@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ATODM_Disabled_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TODM_Disabled_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("TODM_Disabled_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void ATODM_Disabled_C::UserConstructionScript()
 
 void ATODM_Disabled_C::DisableLightAndFog(bool Enable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TODM_Disabled_C", "DisableLightAndFog");
+	class UFunction* Func = Class->GetFunction("TODM_Disabled_C", "DisableLightAndFog");
 
 	Params::TODM_Disabled_C_DisableLightAndFog Parms{};
 
@@ -55,10 +49,7 @@ void ATODM_Disabled_C::DisableLightAndFog(bool Enable)
 
 void ATODM_Disabled_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TODM_Disabled_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("TODM_Disabled_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void ATODM_Disabled_C::ReceiveBeginPlay()
 
 void ATODM_Disabled_C::ExecuteUbergraph_TODM_Disabled(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TODM_Disabled_C", "ExecuteUbergraph_TODM_Disabled");
+	class UFunction* Func = Class->GetFunction("TODM_Disabled_C", "ExecuteUbergraph_TODM_Disabled");
 
 	Params::TODM_Disabled_C_ExecuteUbergraph_TODM_Disabled Parms{};
 

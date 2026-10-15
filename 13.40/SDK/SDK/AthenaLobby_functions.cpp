@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaLobby_C::ExecuteUbergraph_AthenaLobby(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "ExecuteUbergraph_AthenaLobby");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "ExecuteUbergraph_AthenaLobby");
 
 	Params::AthenaLobby_C_ExecuteUbergraph_AthenaLobby Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaLobby_C::ExecuteUbergraph_AthenaLobby(int32 EntryPoint)
 
 void UAthenaLobby_C::DisplayGlyphQuestUpdated(int32 NewGlyphs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "DisplayGlyphQuestUpdated");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "DisplayGlyphQuestUpdated");
 
 	Params::AthenaLobby_C_DisplayGlyphQuestUpdated Parms{};
 
@@ -64,10 +58,7 @@ void UAthenaLobby_C::DisplayGlyphQuestUpdated(int32 NewGlyphs)
 
 void UAthenaLobby_C::OnPlaylistChanged(EFortLobbyType LobbyType, const class UFortPlaylistAthena* PlaylistData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "OnPlaylistChanged");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "OnPlaylistChanged");
 
 	Params::AthenaLobby_C_OnPlaylistChanged Parms{};
 
@@ -83,10 +74,7 @@ void UAthenaLobby_C::OnPlaylistChanged(EFortLobbyType LobbyType, const class UFo
 
 void UAthenaLobby_C::BndEvt__StoreToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "BndEvt__StoreToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "BndEvt__StoreToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void UAthenaLobby_C::BndEvt__StoreToastWidget_K2Node_ComponentBoundEvent_2_OnFin
 
 void UAthenaLobby_C::TryToastAgainNextFrame()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "TryToastAgainNextFrame");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "TryToastAgainNextFrame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void UAthenaLobby_C::TryToastAgainNextFrame()
 
 void UAthenaLobby_C::AttemptToShowToast()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "AttemptToShowToast");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "AttemptToShowToast");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void UAthenaLobby_C::AttemptToShowToast()
 
 void UAthenaLobby_C::DisplayStoreUpdated(class UStoreToastRequest* StoreUpdatedRequest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "DisplayStoreUpdated");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "DisplayStoreUpdated");
 
 	Params::AthenaLobby_C_DisplayStoreUpdated Parms{};
 
@@ -145,10 +124,7 @@ void UAthenaLobby_C::DisplayStoreUpdated(class UStoreToastRequest* StoreUpdatedR
 
 void UAthenaLobby_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +137,7 @@ void UAthenaLobby_C::BP_OnDeactivated()
 
 void UAthenaLobby_C::BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaLobby_C_BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -179,10 +152,7 @@ void UAthenaLobby_C::BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116
 
 void UAthenaLobby_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -193,10 +163,7 @@ void UAthenaLobby_C::Construct()
 
 void UAthenaLobby_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +176,7 @@ void UAthenaLobby_C::BP_OnActivated()
 
 void UAthenaLobby_C::OnComplete_9036807A49B907A7A1B78EB727BAB97A(class UUserWidget* UserWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "OnComplete_9036807A49B907A7A1B78EB727BAB97A");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "OnComplete_9036807A49B907A7A1B78EB727BAB97A");
 
 	Params::AthenaLobby_C_OnComplete_9036807A49B907A7A1B78EB727BAB97A Parms{};
 
@@ -227,10 +191,7 @@ void UAthenaLobby_C::OnComplete_9036807A49B907A7A1B78EB727BAB97A(class UUserWidg
 
 void UAthenaLobby_C::OnSuccess_DA5E62624D068772EA890193344BA4AE()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "OnSuccess_DA5E62624D068772EA890193344BA4AE");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "OnSuccess_DA5E62624D068772EA890193344BA4AE");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -241,10 +202,7 @@ void UAthenaLobby_C::OnSuccess_DA5E62624D068772EA890193344BA4AE()
 
 void UAthenaLobby_C::OnFailure_DA5E62624D068772EA890193344BA4AE()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "OnFailure_DA5E62624D068772EA890193344BA4AE");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "OnFailure_DA5E62624D068772EA890193344BA4AE");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -255,10 +213,7 @@ void UAthenaLobby_C::OnFailure_DA5E62624D068772EA890193344BA4AE()
 
 void UAthenaLobby_C::StartAthenaLobbyMusic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "StartAthenaLobbyMusic");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "StartAthenaLobbyMusic");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -269,10 +224,7 @@ void UAthenaLobby_C::StartAthenaLobbyMusic()
 
 void UAthenaLobby_C::ConfigureGenericLinkButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "ConfigureGenericLinkButton");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "ConfigureGenericLinkButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -286,10 +238,7 @@ void UAthenaLobby_C::ConfigureGenericLinkButton()
 
 void UAthenaLobby_C::HandleLobbyColorSchemeChange(const struct FLinearColor& NewColorScheme, bool UseDefaultScheme)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobby_C", "HandleLobbyColorSchemeChange");
+	class UFunction* Func = Class->GetFunction("AthenaLobby_C", "HandleLobbyColorSchemeChange");
 
 	Params::AthenaLobby_C_HandleLobbyColorSchemeChange Parms{};
 

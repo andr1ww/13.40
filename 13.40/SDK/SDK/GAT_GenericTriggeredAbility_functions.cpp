@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAT_GenericTriggeredAbility_C::ExecuteUbergraph_GAT_GenericTriggeredAbility(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_GenericTriggeredAbility_C", "ExecuteUbergraph_GAT_GenericTriggeredAbility");
+	class UFunction* Func = Class->GetFunction("GAT_GenericTriggeredAbility_C", "ExecuteUbergraph_GAT_GenericTriggeredAbility");
 
 	Params::GAT_GenericTriggeredAbility_C_ExecuteUbergraph_GAT_GenericTriggeredAbility Parms{};
 
@@ -43,10 +40,7 @@ void UGAT_GenericTriggeredAbility_C::ExecuteUbergraph_GAT_GenericTriggeredAbilit
 
 void UGAT_GenericTriggeredAbility_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_GenericTriggeredAbility_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GAT_GenericTriggeredAbility_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GAT_GenericTriggeredAbility_C_K2_ActivateAbilityFromEvent Parms{};
 

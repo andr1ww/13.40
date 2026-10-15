@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_TillLandFallDamageImmunity_Parent_C::ExecuteUbergraph_GA_Athena_TillLandFallDamageImmunity_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "ExecuteUbergraph_GA_Athena_TillLandFallDamageImmunity_Parent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "ExecuteUbergraph_GA_Athena_TillLandFallDamageImmunity_Parent");
 
 	Params::GA_Athena_TillLandFallDamageImmunity_Parent_C_ExecuteUbergraph_GA_Athena_TillLandFallDamageImmunity_Parent Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Athena_TillLandFallDamageImmunity_Parent_C::ExecuteUbergraph_GA_Athena_
 
 void UGA_Athena_TillLandFallDamageImmunity_Parent_C::PawnLanded(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "PawnLanded");
+	class UFunction* Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "PawnLanded");
 
 	Params::GA_Athena_TillLandFallDamageImmunity_Parent_C_PawnLanded Parms{};
 
@@ -61,10 +55,7 @@ void UGA_Athena_TillLandFallDamageImmunity_Parent_C::PawnLanded(const struct FHi
 
 void UGA_Athena_TillLandFallDamageImmunity_Parent_C::SetUpBinds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "SetUpBinds");
+	class UFunction* Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "SetUpBinds");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UGA_Athena_TillLandFallDamageImmunity_Parent_C::SetUpBinds()
 
 void UGA_Athena_TillLandFallDamageImmunity_Parent_C::SetUpWaits()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "SetUpWaits");
+	class UFunction* Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "SetUpWaits");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UGA_Athena_TillLandFallDamageImmunity_Parent_C::SetUpWaits()
 
 void UGA_Athena_TillLandFallDamageImmunity_Parent_C::CallEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "CallEnd");
+	class UFunction* Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "CallEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UGA_Athena_TillLandFallDamageImmunity_Parent_C::CallEnd()
 
 void UGA_Athena_TillLandFallDamageImmunity_Parent_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_TillLandFallDamageImmunity_Parent_C_K2_OnEndAbility Parms{};
 
@@ -123,10 +105,7 @@ void UGA_Athena_TillLandFallDamageImmunity_Parent_C::K2_OnEndAbility(bool bWasCa
 
 void UGA_Athena_TillLandFallDamageImmunity_Parent_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void UGA_Athena_TillLandFallDamageImmunity_Parent_C::K2_ActivateAbility()
 
 void UGA_Athena_TillLandFallDamageImmunity_Parent_C::Added_15DBA1504E74C72F22BBCBAD8E3CD31E()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "Added_15DBA1504E74C72F22BBCBAD8E3CD31E");
+	class UFunction* Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "Added_15DBA1504E74C72F22BBCBAD8E3CD31E");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +127,7 @@ void UGA_Athena_TillLandFallDamageImmunity_Parent_C::Added_15DBA1504E74C72F22BBC
 
 void UGA_Athena_TillLandFallDamageImmunity_Parent_C::Added_3DBE819D4ED6A0A0909A7690321F9B09()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "Added_3DBE819D4ED6A0A0909A7690321F9B09");
+	class UFunction* Func = Class->GetFunction("GA_Athena_TillLandFallDamageImmunity_Parent_C", "Added_3DBE819D4ED6A0A0909A7690321F9B09");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

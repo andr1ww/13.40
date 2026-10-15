@@ -26,10 +26,7 @@ SDK_NAMESPACE_START
 
 void UFieldSystemComponent::AddFieldCommand(bool Enabled, EFieldPhysicsType Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemComponent", "AddFieldCommand");
+	class UFunction* Func = Class->GetFunction("FieldSystemComponent", "AddFieldCommand");
 
 	Params::FieldSystemComponent_AddFieldCommand Parms{};
 
@@ -56,10 +53,7 @@ void UFieldSystemComponent::AddFieldCommand(bool Enabled, EFieldPhysicsType Targ
 
 void UFieldSystemComponent::ApplyLinearForce(bool Enabled, const struct FVector& Direction, float Magnitude)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemComponent", "ApplyLinearForce");
+	class UFunction* Func = Class->GetFunction("FieldSystemComponent", "ApplyLinearForce");
 
 	Params::FieldSystemComponent_ApplyLinearForce Parms{};
 
@@ -86,10 +80,7 @@ void UFieldSystemComponent::ApplyLinearForce(bool Enabled, const struct FVector&
 
 void UFieldSystemComponent::ApplyPhysicsField(bool Enabled, EFieldPhysicsType Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemComponent", "ApplyPhysicsField");
+	class UFunction* Func = Class->GetFunction("FieldSystemComponent", "ApplyPhysicsField");
 
 	Params::FieldSystemComponent_ApplyPhysicsField Parms{};
 
@@ -116,10 +107,7 @@ void UFieldSystemComponent::ApplyPhysicsField(bool Enabled, EFieldPhysicsType Ta
 
 void UFieldSystemComponent::ApplyRadialForce(bool Enabled, const struct FVector& position, float Magnitude)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemComponent", "ApplyRadialForce");
+	class UFunction* Func = Class->GetFunction("FieldSystemComponent", "ApplyRadialForce");
 
 	Params::FieldSystemComponent_ApplyRadialForce Parms{};
 
@@ -146,10 +134,7 @@ void UFieldSystemComponent::ApplyRadialForce(bool Enabled, const struct FVector&
 
 void UFieldSystemComponent::ApplyRadialVectorFalloffForce(bool Enabled, const struct FVector& position, float Radius, float Magnitude)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemComponent", "ApplyRadialVectorFalloffForce");
+	class UFunction* Func = Class->GetFunction("FieldSystemComponent", "ApplyRadialVectorFalloffForce");
 
 	Params::FieldSystemComponent_ApplyRadialVectorFalloffForce Parms{};
 
@@ -176,10 +161,7 @@ void UFieldSystemComponent::ApplyRadialVectorFalloffForce(bool Enabled, const st
 
 void UFieldSystemComponent::ApplyStayDynamicField(bool Enabled, const struct FVector& position, float Radius)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemComponent", "ApplyStayDynamicField");
+	class UFunction* Func = Class->GetFunction("FieldSystemComponent", "ApplyStayDynamicField");
 
 	Params::FieldSystemComponent_ApplyStayDynamicField Parms{};
 
@@ -207,10 +189,7 @@ void UFieldSystemComponent::ApplyStayDynamicField(bool Enabled, const struct FVe
 
 void UFieldSystemComponent::ApplyStrainField(bool Enabled, const struct FVector& position, float Radius, float Magnitude, int32 Iterations)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemComponent", "ApplyStrainField");
+	class UFunction* Func = Class->GetFunction("FieldSystemComponent", "ApplyStrainField");
 
 	Params::FieldSystemComponent_ApplyStrainField Parms{};
 
@@ -240,10 +219,7 @@ void UFieldSystemComponent::ApplyStrainField(bool Enabled, const struct FVector&
 
 void UFieldSystemComponent::ApplyUniformVectorFalloffForce(bool Enabled, const struct FVector& position, const struct FVector& Direction, float Radius, float Magnitude)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemComponent", "ApplyUniformVectorFalloffForce");
+	class UFunction* Func = Class->GetFunction("FieldSystemComponent", "ApplyUniformVectorFalloffForce");
 
 	Params::FieldSystemComponent_ApplyUniformVectorFalloffForce Parms{};
 
@@ -267,10 +243,7 @@ void UFieldSystemComponent::ApplyUniformVectorFalloffForce(bool Enabled, const s
 
 void UFieldSystemComponent::ResetFieldSystem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemComponent", "ResetFieldSystem");
+	class UFunction* Func = Class->GetFunction("FieldSystemComponent", "ResetFieldSystem");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -289,10 +262,7 @@ void UFieldSystemComponent::ResetFieldSystem()
 
 class UFieldSystemMetaDataIteration* UFieldSystemMetaDataIteration::SetMetaDataIteration(int32 Iterations_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemMetaDataIteration", "SetMetaDataIteration");
+	class UFunction* Func = Class->GetFunction("FieldSystemMetaDataIteration", "SetMetaDataIteration");
 
 	Params::FieldSystemMetaDataIteration_SetMetaDataIteration Parms{};
 
@@ -317,10 +287,7 @@ class UFieldSystemMetaDataIteration* UFieldSystemMetaDataIteration::SetMetaDataI
 
 class UFieldSystemMetaDataProcessingResolution* UFieldSystemMetaDataProcessingResolution::SetMetaDataaProcessingResolutionType(EFieldResolutionType ResolutionType_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FieldSystemMetaDataProcessingResolution", "SetMetaDataaProcessingResolutionType");
+	class UFunction* Func = Class->GetFunction("FieldSystemMetaDataProcessingResolution", "SetMetaDataaProcessingResolutionType");
 
 	Params::FieldSystemMetaDataProcessingResolution_SetMetaDataaProcessingResolutionType Parms{};
 
@@ -345,10 +312,7 @@ class UFieldSystemMetaDataProcessingResolution* UFieldSystemMetaDataProcessingRe
 
 class UUniformInteger* UUniformInteger::SetUniformInteger(int32 Magnitude_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UniformInteger", "SetUniformInteger");
+	class UFunction* Func = Class->GetFunction("UniformInteger", "SetUniformInteger");
 
 	Params::UniformInteger_SetUniformInteger Parms{};
 
@@ -377,10 +341,7 @@ class UUniformInteger* UUniformInteger::SetUniformInteger(int32 Magnitude_0)
 
 class URadialIntMask* URadialIntMask::SetRadialIntMask(float Radius_0, const struct FVector& position_0, int32 InteriorValue_0, int32 ExteriorValue_0, ESetMaskConditionType SetMaskConditionIn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RadialIntMask", "SetRadialIntMask");
+	class UFunction* Func = Class->GetFunction("RadialIntMask", "SetRadialIntMask");
 
 	Params::RadialIntMask_SetRadialIntMask Parms{};
 
@@ -409,10 +370,7 @@ class URadialIntMask* URadialIntMask::SetRadialIntMask(float Radius_0, const str
 
 class UUniformScalar* UUniformScalar::SetUniformScalar(float Magnitude_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UniformScalar", "SetUniformScalar");
+	class UFunction* Func = Class->GetFunction("UniformScalar", "SetUniformScalar");
 
 	Params::UniformScalar_SetUniformScalar Parms{};
 
@@ -443,10 +401,7 @@ class UUniformScalar* UUniformScalar::SetUniformScalar(float Magnitude_0)
 
 class URadialFalloff* URadialFalloff::SetRadialFalloff(float Magnitude_0, float MinRange_0, float MaxRange_0, float Default_0, float Radius_0, const struct FVector& position_0, EFieldFalloffType Falloff_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RadialFalloff", "SetRadialFalloff");
+	class UFunction* Func = Class->GetFunction("RadialFalloff", "SetRadialFalloff");
 
 	Params::RadialFalloff_SetRadialFalloff Parms{};
 
@@ -484,10 +439,7 @@ class URadialFalloff* URadialFalloff::SetRadialFalloff(float Magnitude_0, float 
 
 class UPlaneFalloff* UPlaneFalloff::SetPlaneFalloff(float Magnitude_0, float MinRange_0, float MaxRange_0, float Default_0, float Distance_0, const struct FVector& position_0, const struct FVector& Normal_0, EFieldFalloffType Falloff_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlaneFalloff", "SetPlaneFalloff");
+	class UFunction* Func = Class->GetFunction("PlaneFalloff", "SetPlaneFalloff");
 
 	Params::PlaneFalloff_SetPlaneFalloff Parms{};
 
@@ -524,10 +476,7 @@ class UPlaneFalloff* UPlaneFalloff::SetPlaneFalloff(float Magnitude_0, float Min
 
 class UBoxFalloff* UBoxFalloff::SetBoxFalloff(float Magnitude_0, float MinRange_0, float MaxRange_0, float Default_0, const struct FTransform& Transform_0, EFieldFalloffType Falloff_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BoxFalloff", "SetBoxFalloff");
+	class UFunction* Func = Class->GetFunction("BoxFalloff", "SetBoxFalloff");
 
 	Params::BoxFalloff_SetBoxFalloff Parms{};
 
@@ -559,10 +508,7 @@ class UBoxFalloff* UBoxFalloff::SetBoxFalloff(float Magnitude_0, float MinRange_
 
 class UNoiseField* UNoiseField::SetNoiseField(float MinRange_0, float MaxRange_0, const struct FTransform& Transform_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NoiseField", "SetNoiseField");
+	class UFunction* Func = Class->GetFunction("NoiseField", "SetNoiseField");
 
 	Params::NoiseField_SetNoiseField Parms{};
 
@@ -590,10 +536,7 @@ class UNoiseField* UNoiseField::SetNoiseField(float MinRange_0, float MaxRange_0
 
 class UUniformVector* UUniformVector::SetUniformVector(float Magnitude_0, const struct FVector& Direction_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UniformVector", "SetUniformVector");
+	class UFunction* Func = Class->GetFunction("UniformVector", "SetUniformVector");
 
 	Params::UniformVector_SetUniformVector Parms{};
 
@@ -620,10 +563,7 @@ class UUniformVector* UUniformVector::SetUniformVector(float Magnitude_0, const 
 
 class URadialVector* URadialVector::SetRadialVector(float Magnitude_0, const struct FVector& position_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RadialVector", "SetRadialVector");
+	class UFunction* Func = Class->GetFunction("RadialVector", "SetRadialVector");
 
 	Params::RadialVector_SetRadialVector Parms{};
 
@@ -649,10 +589,7 @@ class URadialVector* URadialVector::SetRadialVector(float Magnitude_0, const str
 
 class URandomVector* URandomVector::SetRandomVector(float Magnitude_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RandomVector", "SetRandomVector");
+	class UFunction* Func = Class->GetFunction("RandomVector", "SetRandomVector");
 
 	Params::RandomVector_SetRandomVector Parms{};
 
@@ -680,10 +617,7 @@ class URandomVector* URandomVector::SetRandomVector(float Magnitude_0)
 
 class UOperatorField* UOperatorField::SetOperatorField(float Magnitude_0, const class UFieldNodeBase* RightField_0, const class UFieldNodeBase* LeftField_0, EFieldOperationType Operation_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OperatorField", "SetOperatorField");
+	class UFunction* Func = Class->GetFunction("OperatorField", "SetOperatorField");
 
 	Params::OperatorField_SetOperatorField Parms{};
 
@@ -711,10 +645,7 @@ class UOperatorField* UOperatorField::SetOperatorField(float Magnitude_0, const 
 
 class UToIntegerField* UToIntegerField::SetToIntegerField(const class UFieldNodeFloat* FloatField_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToIntegerField", "SetToIntegerField");
+	class UFunction* Func = Class->GetFunction("ToIntegerField", "SetToIntegerField");
 
 	Params::ToIntegerField_SetToIntegerField Parms{};
 
@@ -739,10 +670,7 @@ class UToIntegerField* UToIntegerField::SetToIntegerField(const class UFieldNode
 
 class UToFloatField* UToFloatField::SetToFloatField(const class UFieldNodeInt* IntegerField)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToFloatField", "SetToFloatField");
+	class UFunction* Func = Class->GetFunction("ToFloatField", "SetToFloatField");
 
 	Params::ToFloatField_SetToFloatField Parms{};
 
@@ -769,10 +697,7 @@ class UToFloatField* UToFloatField::SetToFloatField(const class UFieldNodeInt* I
 
 class UCullingField* UCullingField::SetCullingField(const class UFieldNodeBase* Culling_0, const class UFieldNodeBase* Field_0, EFieldCullingOperationType Operation_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CullingField", "SetCullingField");
+	class UFunction* Func = Class->GetFunction("CullingField", "SetCullingField");
 
 	Params::CullingField_SetCullingField Parms{};
 
@@ -798,10 +723,7 @@ class UCullingField* UCullingField::SetCullingField(const class UFieldNodeBase* 
 
 class UReturnResultsTerminal* UReturnResultsTerminal::SetReturnResultsTerminal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ReturnResultsTerminal", "SetReturnResultsTerminal");
+	class UFunction* Func = Class->GetFunction("ReturnResultsTerminal", "SetReturnResultsTerminal");
 
 	Params::ReturnResultsTerminal_SetReturnResultsTerminal Parms{};
 

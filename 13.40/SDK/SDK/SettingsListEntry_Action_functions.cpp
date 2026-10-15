@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingsListEntry_Action_C::ExecuteUbergraph_SettingsListEntry_Action(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Action_C", "ExecuteUbergraph_SettingsListEntry_Action");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Action_C", "ExecuteUbergraph_SettingsListEntry_Action");
 
 	Params::SettingsListEntry_Action_C_ExecuteUbergraph_SettingsListEntry_Action Parms{};
 
@@ -43,10 +40,7 @@ void USettingsListEntry_Action_C::ExecuteUbergraph_SettingsListEntry_Action(int3
 
 void USettingsListEntry_Action_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Action_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Action_C", "OnMouseLeave");
 
 	Params::SettingsListEntry_Action_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void USettingsListEntry_Action_C::OnMouseLeave(const struct FPointerEvent& Mouse
 
 void USettingsListEntry_Action_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Action_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Action_C", "OnMouseEnter");
 
 	Params::SettingsListEntry_Action_C_OnMouseEnter Parms{};
 
@@ -85,10 +76,7 @@ void USettingsListEntry_Action_C::OnMouseEnter(const struct FGeometry& MyGeometr
 
 void USettingsListEntry_Action_C::OnSettingAssigned(const class FText& ActionText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Action_C", "OnSettingAssigned");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Action_C", "OnSettingAssigned");
 
 	Params::SettingsListEntry_Action_C_OnSettingAssigned Parms{};
 
@@ -105,10 +93,7 @@ void USettingsListEntry_Action_C::OnSettingAssigned(const class FText& ActionTex
 
 class UWidget* USettingsListEntry_Action_C::GetPrimaryGamepadFocusWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Action_C", "GetPrimaryGamepadFocusWidget");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Action_C", "GetPrimaryGamepadFocusWidget");
 
 	Params::SettingsListEntry_Action_C_GetPrimaryGamepadFocusWidget Parms{};
 

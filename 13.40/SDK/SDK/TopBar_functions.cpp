@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTopBar_C::ExecuteUbergraph_TopBar(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "ExecuteUbergraph_TopBar");
+	class UFunction* Func = Class->GetFunction("TopBar_C", "ExecuteUbergraph_TopBar");
 
 	Params::TopBar_C_ExecuteUbergraph_TopBar Parms{};
 
@@ -41,10 +38,7 @@ void UTopBar_C::ExecuteUbergraph_TopBar(int32 EntryPoint)
 
 void UTopBar_C::OnMobileTabLabelChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "OnMobileTabLabelChanged");
+	class UFunction* Func = Class->GetFunction("TopBar_C", "OnMobileTabLabelChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UTopBar_C::OnMobileTabLabelChanged()
 
 void UTopBar_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "Construct");
+	class UFunction* Func = Class->GetFunction("TopBar_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UTopBar_C::Construct()
 
 void UTopBar_C::UpdateMTXButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "UpdateMTXButton");
+	class UFunction* Func = Class->GetFunction("TopBar_C", "UpdateMTXButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UTopBar_C::UpdateMTXButton()
 
 void UTopBar_C::SetTopTabsVisibility(ESlateVisibility NewVisibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TopBar_C", "SetTopTabsVisibility");
+	class UFunction* Func = Class->GetFunction("TopBar_C", "SetTopTabsVisibility");
 
 	Params::TopBar_C_SetTopTabsVisibility Parms{};
 

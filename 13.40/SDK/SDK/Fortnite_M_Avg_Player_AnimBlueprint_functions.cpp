@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint Parms{};
 
@@ -43,10 +40,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ExecuteUbergraph_Fortnite_M_Avg_Pla
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "BlueprintUpdateAnimation");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_BlueprintUpdateAnimation Parms{};
 
@@ -61,10 +55,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::BlueprintUpdateAnimation(float Delt
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::StopFallFarAnims()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "StopFallFarAnims");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "StopFallFarAnims");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::StopFallFarAnims()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::PlayFallFarAnims()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "PlayFallFarAnims");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "PlayFallFarAnims");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::PlayFallFarAnims()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_HeldObjectPickUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_HeldObjectPickUp");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_HeldObjectPickUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_HeldObjectPickUp()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_HeldObjectPlace()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_HeldObjectPlace");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_HeldObjectPlace");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_HeldObjectPlace()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_OpenGlider()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_OpenGlider");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_OpenGlider");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_OpenGlider()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_CreateToolFlyModeStart_Entered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_CreateToolFlyModeStart_Entered");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_CreateToolFlyModeStart_Entered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_CreateToolFlyModeStart_E
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_CreateToolFlyModeLoop_Entered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_CreateToolFlyModeLoop_Entered");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_CreateToolFlyModeLoop_Entered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +132,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_CreateToolFlyModeLoop_En
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimJumpSurfaceLoop_Exited()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimJumpSurfaceLoop_Exited");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimJumpSurfaceLoop_Exited");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +143,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimJumpSurfaceLoop_Exit
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimMovementAccelAdditive_Exited()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimMovementAccelAdditive_Exited");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimMovementAccelAdditive_Exited");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +154,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimMovementAccelAdditiv
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimStartAdditive_Entered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimStartAdditive_Entered");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimStartAdditive_Entered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -201,10 +165,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimStartAdditive_Entere
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimSprintStart_Entered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimSprintStart_Entered");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimSprintStart_Entered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +176,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimSprintStart_Entered(
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimSprintStart_Exited()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimSprintStart_Exited");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimSprintStart_Exited");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -229,10 +187,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimSprintStart_Exited()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimSprint_Entered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimSprint_Entered");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimSprint_Entered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,10 +198,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimSprint_Entered()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimSprintSlow_Entered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimSprintSlow_Entered");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimSprintSlow_Entered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +209,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimSprintSlow_Entered()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimJumpStart_Exited()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimJumpStart_Exited");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimJumpStart_Exited");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -271,10 +220,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimJumpStart_Exited()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimJumpSurfaceEnd_Exit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimJumpSurfaceEnd_Exit");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_SwimJumpSurfaceEnd_Exit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -285,10 +231,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_SwimJumpSurfaceEnd_Exit(
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_R_2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_R_2");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_R_2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -299,10 +242,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_R_2()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_L_2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_L_2");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_L_2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -313,10 +253,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_L_2()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_R_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_R_End");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_R_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -327,10 +264,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_R_End()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_L_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_L_End");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_L_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -341,10 +275,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_L_End()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_IndigoLaunch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_IndigoLaunch");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_IndigoLaunch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -355,10 +286,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_IndigoLaunch()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_playFacialAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_playFacialAnim");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_playFacialAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -371,10 +299,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_playFacialAnim()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::CharPartEvent(class UFortPlayerAnimInstance* CharPart)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "CharPartEvent");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "CharPartEvent");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_CharPartEvent Parms{};
 
@@ -389,10 +314,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::CharPartEvent(class UFortPlayerAnim
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_R()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_R");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_R");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -403,10 +325,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_R()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_L()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_L");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimNotify_Melee_Swing_L");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -417,10 +336,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimNotify_Melee_Swing_L()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ValidateDBNONativize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ValidateDBNONativize");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ValidateDBNONativize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -433,10 +349,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ValidateDBNONativize()
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "AnimGraph");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_AnimGraph Parms{};
 
@@ -456,10 +369,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::AnimGraph(struct FPoseLink* AnimGra
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleLowerBodyOverride(const struct FPoseLink& InPoseLowerBodyDefault, const struct FPoseLink& InPoseUpperBody, struct FPoseLink* VehicleLowerBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleLowerBodyOverride");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleLowerBodyOverride");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride Parms{};
 
@@ -482,10 +392,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleLowerBodyOverride(const stru
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleFullBodyOverride(const struct FPoseLink& InPoseFullBody, const struct FPoseLink& InPoseUpperAndLowerCachePose, struct FPoseLink* VehicleFullBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleFullBodyOverride");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleFullBodyOverride");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride Parms{};
 
@@ -510,10 +417,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleFullBodyOverride(const struc
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleSplitBodyOverride(const struct FPoseLink& InPoseSplitBody, const struct FPoseLink& InPoseUpperAndLowerBody, const struct FFortAnimInput_TurnInPlace& TurnInPlace_0, const struct FPoseLink& InPoseUpperAndLowerBodyRemoveRoot, struct FPoseLink* VehicleSplitBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleSplitBodyOverride");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleSplitBodyOverride");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride Parms{};
 
@@ -537,10 +441,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleSplitBodyOverride(const stru
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRelaxedEntry, struct FPoseLink* ItemRelaxedEntry_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemRelaxedEntry");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemRelaxedEntry");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemRelaxedEntry Parms{};
 
@@ -561,10 +462,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemRelaxedEntry(const struct FPose
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& InPoseLowerBodyJogPostPivot, struct FPoseLink* ItemLowerBodyJogPostPivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyJogPostPivot");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyJogPostPivot");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPostPivot Parms{};
 
@@ -585,10 +483,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyJogPostPivot(const str
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& InPoseLowerBodyJogPrePivot, struct FPoseLink* ItemLowerBodyJogPrePivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyJogPrePivot");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyJogPrePivot");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPrePivot Parms{};
 
@@ -609,10 +504,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyJogPrePivot(const stru
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyJogStop(const struct FPoseLink& InPoseLowerBodyJogStop, struct FPoseLink* ItemLowerBodyJogStop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyJogStop");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyJogStop");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStop Parms{};
 
@@ -633,10 +525,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyJogStop(const struct F
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyJogStart(const struct FPoseLink& InPoseLowerBodyJogStart, struct FPoseLink* ItemLowerBodyJogStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyJogStart");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyJogStart");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStart Parms{};
 
@@ -657,10 +546,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyJogStart(const struct 
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyMovement(const struct FPoseLink& InPoseLowerBodyMovement, struct FPoseLink* ItemLowerBodyMovement_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyMovement");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyMovement");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyMovement Parms{};
 
@@ -681,10 +567,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyMovement(const struct 
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJogPostPivotAdditive(const struct FPoseLink& InPosePostPivotAdditive, struct FPoseLink* ItemJogPostPivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJogPostPivotAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJogPostPivotAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPostPivotAdditive Parms{};
 
@@ -705,10 +588,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJogPostPivotAdditive(const stru
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJogPrePivotAdditive(const struct FPoseLink& InPosePrePivotAdditive, struct FPoseLink* ItemJogPrePivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJogPrePivotAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJogPrePivotAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPrePivotAdditive Parms{};
 
@@ -729,10 +609,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJogPrePivotAdditive(const struc
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJogStopAdditive(const struct FPoseLink& InPoseJogStopAdditive, struct FPoseLink* ItemJogStopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJogStopAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJogStopAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStopAdditive Parms{};
 
@@ -753,10 +630,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJogStopAdditive(const struct FP
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJogStartAdditive(const struct FPoseLink& InPoseJogStartAdditive, struct FPoseLink* ItemJogStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJogStartAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJogStartAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStartAdditive Parms{};
 
@@ -776,10 +650,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJogStartAdditive(const struct F
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyModeLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFlyModeLoopAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFlyModeLoopAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeLoopAdditive Parms{};
 
@@ -797,10 +668,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFlyModeLoopAdditive(struct FPos
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFlyModeStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFlyModeStartAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFlyModeStartAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeStartAdditive Parms{};
 
@@ -818,10 +686,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFlyModeStartAdditive(struct FPo
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZipLineStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemZipLineStartAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemZipLineStartAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemZipLineStartAdditive Parms{};
 
@@ -839,10 +704,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemZipLineStartAdditive(struct FPo
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetPackJumpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJetPackJumpAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJetPackJumpAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackJumpAdditive Parms{};
 
@@ -860,10 +722,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJetPackJumpAdditive(struct FPos
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJetPackStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJetPackStartAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJetPackStartAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackStartAdditive Parms{};
 
@@ -881,10 +740,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJetPackStartAdditive(struct FPo
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLandAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFallLandAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFallLandAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallLandAdditive Parms{};
 
@@ -902,10 +758,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFallLandAdditive(struct FPoseLi
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFallAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFallAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallAdditive Parms{};
 
@@ -923,10 +776,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFallAdditive(struct FPoseLink* 
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJumpLoopAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJumpLoopAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpLoopAdditive Parms{};
 
@@ -944,10 +794,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJumpLoopAdditive(struct FPoseLi
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJumpUpAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemJumpUpAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpUpAdditive Parms{};
 
@@ -965,10 +812,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemJumpUpAdditive(struct FPoseLink
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSliding_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSlopeSliding");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSlopeSliding");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSlopeSliding Parms{};
 
@@ -986,10 +830,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSlopeSliding(struct FPoseLink* 
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCrouchTurningAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemCrouchTurningAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemCrouchTurningAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemCrouchTurningAdditive Parms{};
 
@@ -1008,10 +849,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemCrouchTurningAdditive(struct FP
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdleAdditive, struct FPoseLink* ItemIdleAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemIdleAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemIdleAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemIdleAdditive Parms{};
 
@@ -1032,10 +870,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemIdleAdditive(const struct FPose
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFullBodySprint(const struct FPoseLink& InPoseSprint, struct FPoseLink* ItemFullBodySprint_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFullBodySprint");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFullBodySprint");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodySprint Parms{};
 
@@ -1057,10 +892,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFullBodySprint(const struct FPo
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam_0, struct FPoseLink* ItemUpperBody_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemUpperBody");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemUpperBody");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody Parms{};
 
@@ -1082,10 +914,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemUpperBody(const struct FPoseLin
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyLeanAdditive(const struct FPoseLink& InPoseLowerBodyLeanAdditive, struct FPoseLink* ItemLowerBodyLeanAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyLeanAdditive");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemLowerBodyLeanAdditive");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyLeanAdditive Parms{};
 
@@ -1105,10 +934,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemLowerBodyLeanAdditive(const str
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJumpStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpStart");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpStart");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStart Parms{};
 
@@ -1126,10 +952,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpStart(struct FPoseLink*
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwimJumpStartLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpStartLoop");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpStartLoop");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStartLoop Parms{};
 
@@ -1147,10 +970,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpStartLoop(struct FPoseL
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJumpFallLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpFallLoop");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpFallLoop");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpFallLoop Parms{};
 
@@ -1168,10 +988,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpFallLoop(struct FPoseLi
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSwimJumpSurfaceLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpSurfaceLoop");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpSurfaceLoop");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceLoop Parms{};
 
@@ -1189,10 +1006,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpSurfaceLoop(struct FPos
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwimJumpSurfaceEnd_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpSurfaceEnd");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSwimJumpSurfaceEnd");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceEnd Parms{};
 
@@ -1211,10 +1025,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSwimJumpSurfaceEnd(struct FPose
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSkeletalControl(const struct FPoseLink& InPose, struct FPoseLink* ItemSkeletalControl_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSkeletalControl");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemSkeletalControl");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSkeletalControl Parms{};
 
@@ -1239,10 +1050,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemSkeletalControl(const struct FP
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemAimOffset(const struct FPoseLink& InPose_AimOffset, float AimOffsetAlpha_0, float Yaw_0, float Pitch_0, const struct FPoseLink& InPose_UpperLowerPreMeleeAO, struct FPoseLink* ItemAimOffset_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemAimOffset");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemAimOffset");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset Parms{};
 
@@ -1267,10 +1075,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemAimOffset(const struct FPoseLin
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFullBodyOverride(const struct FPoseLink& InPoseFullBody, struct FPoseLink* ItemFullBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFullBodyOverride");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemFullBodyOverride");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodyOverride Parms{};
 
@@ -1291,10 +1096,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemFullBodyOverride(const struct F
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemPreIK(const struct FPoseLink& InPose_PreIK, struct FPoseLink* ItemPreIK_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemPreIK");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "ItemPreIK");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_ItemPreIK Parms{};
 
@@ -1314,10 +1116,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::ItemPreIK(const struct FPoseLink& I
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleDBNOJoggingOverride(struct FPoseLink* VehicleDBNOJoggingOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleDBNOJoggingOverride");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleDBNOJoggingOverride");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOJoggingOverride Parms{};
 
@@ -1336,10 +1135,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleDBNOJoggingOverride(struct F
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleDBNOCarriedLeansOverride(const struct FPoseLink& InPoseDBNOCarried, struct FPoseLink* VehicleDBNOCarriedLeansOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleDBNOCarriedLeansOverride");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "VehicleDBNOCarriedLeansOverride");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOCarriedLeansOverride Parms{};
 
@@ -1360,10 +1156,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::VehicleDBNOCarriedLeansOverride(con
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingLayer(const struct FPoseLink& MainPlayerAnimBP, struct FPoseLink* SwimmingLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLayer Parms{};
 
@@ -1385,10 +1178,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingLayer(const struct FPoseLin
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingSprintLayer(const struct FPoseLink& PassThroughSwimmingSprint, bool IsHidingInPropLayer_0, struct FPoseLink* SwimmingSprintLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingSprintLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingSprintLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingSprintLayer Parms{};
 
@@ -1410,10 +1200,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingSprintLayer(const struct FP
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingMovementAdditiveLayerPose(const struct FPoseLink& PassThroughSwimmingMovementAdditive, struct FPoseLink* SwimmingMovementAdditiveLayerPose_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingMovementAdditiveLayerPose");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingMovementAdditiveLayerPose");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingMovementAdditiveLayerPose Parms{};
 
@@ -1434,10 +1221,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingMovementAdditiveLayerPose(c
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingUpperBodyPoseTargetingLayer(const struct FPoseLink& PassThroughSwimmingUpperBodyPoseTargeting, struct FPoseLink* SwimmingUpperBodyPoseTargetingLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingUpperBodyPoseTargetingLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingUpperBodyPoseTargetingLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseTargetingLayer Parms{};
 
@@ -1458,10 +1242,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingUpperBodyPoseTargetingLayer
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingUpperBodyPoseNonTargetingLayer(const struct FPoseLink& PassThroughSwimmingUpperBodyPoseNonTargeting, struct FPoseLink* SwimmingUpperBodyPoseNonTargetingLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingUpperBodyPoseNonTargetingLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingUpperBodyPoseNonTargetingLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseNonTargetingLayer Parms{};
 
@@ -1484,10 +1265,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingUpperBodyPoseNonTargetingLa
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingLowerBodyLayer(const struct FPoseLink& UpperBody_Cache, const struct FPoseLink& PreUpperBodySlot_Cache, const struct FPoseLink& PassThroughSwimmingLowerBody, struct FPoseLink* SwimmingLowerBodyLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingLowerBodyLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingLowerBodyLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer Parms{};
 
@@ -1519,10 +1297,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingLowerBodyLayer(const struct
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingAdditiveLayer(const struct FPoseLink& IdleAdditive_Cache, const struct FPoseLink& MovementAdditiveLayerPose_Cache, const struct FPoseLink& FullBody, float PlayMeleeAttackAOLayer_0, float DisableArmsHeadAdditiveCurveAlphaLayer_0, float DisableIKRootAdditiveCurveAlphaLayer_0, float LocomotionAdditiveAlphaLayer_0, float MainInstanceAdditiveLayerAlpha_0, const struct FPoseLink& UpperAndLowerBody_Cache, const struct FPoseLink& SprintingPose_PostMask_Cache, struct FPoseLink* SwimmingAdditiveLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingAdditiveLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingAdditiveLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer Parms{};
 
@@ -1552,10 +1327,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingAdditiveLayer(const struct 
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingFullBodyAdditiveLayer(const struct FPoseLink& PassThroughFullBodyAdditive, struct FPoseLink* SwimmingFullBodyAdditiveLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingFullBodyAdditiveLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingFullBodyAdditiveLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingFullBodyAdditiveLayer Parms{};
 
@@ -1579,10 +1351,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingFullBodyAdditiveLayer(const
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingDiveJumpingLayer(const struct FPoseLink& PassThroughSwimmingDiveJumping, bool IsHidingInPropLayer2_0, float MainInstanceDiveJumpLayerAlpha_0, EFortPlayerAnimBodyType AnimBodyTypePassThrough_0, struct FPoseLink* SwimmingDiveJumpingLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingDiveJumpingLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "SwimmingDiveJumpingLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingDiveJumpingLayer Parms{};
 
@@ -1606,10 +1375,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::SwimmingDiveJumpingLayer(const stru
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::FullBodyOverride(const struct FPoseLink& PassThroughFullBodyPose, struct FPoseLink* FullBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "FullBodyOverride");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "FullBodyOverride");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_FullBodyOverride Parms{};
 
@@ -1630,10 +1396,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::FullBodyOverride(const struct FPose
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::CharacterSkeletalControlPostLegIK(const struct FPoseLink& InPosePostLegIK, struct FPoseLink* CharacterSkeletalControlPostLegIK_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "CharacterSkeletalControlPostLegIK");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "CharacterSkeletalControlPostLegIK");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_CharacterSkeletalControlPostLegIK Parms{};
 
@@ -1654,10 +1417,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::CharacterSkeletalControlPostLegIK(c
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::CustomLocomotionFullBodyLayer(const struct FPoseLink& PassThroughCustomFullBody, struct FPoseLink* CustomLocomotionFullBodyLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "CustomLocomotionFullBodyLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "CustomLocomotionFullBodyLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_CustomLocomotionFullBodyLayer Parms{};
 
@@ -1678,10 +1438,7 @@ void UFortnite_M_Avg_Player_AnimBlueprint_C::CustomLocomotionFullBodyLayer(const
 
 void UFortnite_M_Avg_Player_AnimBlueprint_C::CustomLocomotionPreIKLayer(const struct FPoseLink& InPosePreIK, struct FPoseLink* CustomLocomotionPreIKLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "CustomLocomotionPreIKLayer");
+	class UFunction* Func = Class->GetFunction("Fortnite_M_Avg_Player_AnimBlueprint_C", "CustomLocomotionPreIKLayer");
 
 	Params::Fortnite_M_Avg_Player_AnimBlueprint_C_CustomLocomotionPreIKLayer Parms{};
 

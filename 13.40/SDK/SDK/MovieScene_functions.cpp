@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMovieSceneSection::SetBlendType(EMovieSceneBlendType InBlendType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "SetBlendType");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "SetBlendType");
 
 	Params::MovieSceneSection_SetBlendType Parms{};
 
@@ -48,10 +45,7 @@ void UMovieSceneSection::SetBlendType(EMovieSceneBlendType InBlendType)
 
 void UMovieSceneSection::SetCompletionMode(EMovieSceneCompletionMode InCompletionMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "SetCompletionMode");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "SetCompletionMode");
 
 	Params::MovieSceneSection_SetCompletionMode Parms{};
 
@@ -73,10 +67,7 @@ void UMovieSceneSection::SetCompletionMode(EMovieSceneCompletionMode InCompletio
 
 void UMovieSceneSection::SetIsActive(bool bInIsActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "SetIsActive");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "SetIsActive");
 
 	Params::MovieSceneSection_SetIsActive Parms{};
 
@@ -98,10 +89,7 @@ void UMovieSceneSection::SetIsActive(bool bInIsActive)
 
 void UMovieSceneSection::SetIsLocked(bool bInIsLocked)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "SetIsLocked");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "SetIsLocked");
 
 	Params::MovieSceneSection_SetIsLocked Parms{};
 
@@ -123,10 +111,7 @@ void UMovieSceneSection::SetIsLocked(bool bInIsLocked)
 
 void UMovieSceneSection::SetOverlapPriority(int32 NewPriority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "SetOverlapPriority");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "SetOverlapPriority");
 
 	Params::MovieSceneSection_SetOverlapPriority Parms{};
 
@@ -148,10 +133,7 @@ void UMovieSceneSection::SetOverlapPriority(int32 NewPriority)
 
 void UMovieSceneSection::SetPostRollFrames(int32 InPostRollFrames)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "SetPostRollFrames");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "SetPostRollFrames");
 
 	Params::MovieSceneSection_SetPostRollFrames Parms{};
 
@@ -173,10 +155,7 @@ void UMovieSceneSection::SetPostRollFrames(int32 InPostRollFrames)
 
 void UMovieSceneSection::SetPreRollFrames(int32 InPreRollFrames)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "SetPreRollFrames");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "SetPreRollFrames");
 
 	Params::MovieSceneSection_SetPreRollFrames Parms{};
 
@@ -198,10 +177,7 @@ void UMovieSceneSection::SetPreRollFrames(int32 InPreRollFrames)
 
 void UMovieSceneSection::SetRowIndex(int32 NewRowIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "SetRowIndex");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "SetRowIndex");
 
 	Params::MovieSceneSection_SetRowIndex Parms{};
 
@@ -223,10 +199,7 @@ void UMovieSceneSection::SetRowIndex(int32 NewRowIndex)
 
 struct FOptionalMovieSceneBlendType UMovieSceneSection::GetBlendType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "GetBlendType");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "GetBlendType");
 
 	Params::MovieSceneSection_GetBlendType Parms{};
 
@@ -248,10 +221,7 @@ struct FOptionalMovieSceneBlendType UMovieSceneSection::GetBlendType() const
 
 EMovieSceneCompletionMode UMovieSceneSection::GetCompletionMode() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "GetCompletionMode");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "GetCompletionMode");
 
 	Params::MovieSceneSection_GetCompletionMode Parms{};
 
@@ -273,10 +243,7 @@ EMovieSceneCompletionMode UMovieSceneSection::GetCompletionMode() const
 
 int32 UMovieSceneSection::GetOverlapPriority() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "GetOverlapPriority");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "GetOverlapPriority");
 
 	Params::MovieSceneSection_GetOverlapPriority Parms{};
 
@@ -298,10 +265,7 @@ int32 UMovieSceneSection::GetOverlapPriority() const
 
 int32 UMovieSceneSection::GetPostRollFrames() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "GetPostRollFrames");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "GetPostRollFrames");
 
 	Params::MovieSceneSection_GetPostRollFrames Parms{};
 
@@ -323,10 +287,7 @@ int32 UMovieSceneSection::GetPostRollFrames() const
 
 int32 UMovieSceneSection::GetPreRollFrames() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "GetPreRollFrames");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "GetPreRollFrames");
 
 	Params::MovieSceneSection_GetPreRollFrames Parms{};
 
@@ -348,10 +309,7 @@ int32 UMovieSceneSection::GetPreRollFrames() const
 
 int32 UMovieSceneSection::GetRowIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "GetRowIndex");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "GetRowIndex");
 
 	Params::MovieSceneSection_GetRowIndex Parms{};
 
@@ -373,10 +331,7 @@ int32 UMovieSceneSection::GetRowIndex() const
 
 bool UMovieSceneSection::IsActive() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "IsActive");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "IsActive");
 
 	Params::MovieSceneSection_IsActive Parms{};
 
@@ -398,10 +353,7 @@ bool UMovieSceneSection::IsActive() const
 
 bool UMovieSceneSection::IsLocked() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSection", "IsLocked");
+	class UFunction* Func = Class->GetFunction("MovieSceneSection", "IsLocked");
 
 	Params::MovieSceneSection_IsLocked Parms{};
 
@@ -424,10 +376,7 @@ bool UMovieSceneSection::IsLocked() const
 
 struct FMovieSceneObjectBindingID UMovieSceneSequence::FindBindingByTag(class FName InBindingName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequence", "FindBindingByTag");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequence", "FindBindingByTag");
 
 	Params::MovieSceneSequence_FindBindingByTag Parms{};
 
@@ -452,10 +401,7 @@ struct FMovieSceneObjectBindingID UMovieSceneSequence::FindBindingByTag(class FN
 
 const TArray<struct FMovieSceneObjectBindingID> UMovieSceneSequence::FindBindingsByTag(class FName InBindingName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequence", "FindBindingsByTag");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequence", "FindBindingsByTag");
 
 	Params::MovieSceneSequence_FindBindingsByTag Parms{};
 
@@ -479,10 +425,7 @@ const TArray<struct FMovieSceneObjectBindingID> UMovieSceneSequence::FindBinding
 
 void UMovieSceneSubSection::SetSequence(class UMovieSceneSequence* Sequence)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSubSection", "SetSequence");
+	class UFunction* Func = Class->GetFunction("MovieSceneSubSection", "SetSequence");
 
 	Params::MovieSceneSubSection_SetSequence Parms{};
 
@@ -504,10 +447,7 @@ void UMovieSceneSubSection::SetSequence(class UMovieSceneSequence* Sequence)
 
 class UMovieSceneSequence* UMovieSceneSubSection::GetSequence() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSubSection", "GetSequence");
+	class UFunction* Func = Class->GetFunction("MovieSceneSubSection", "GetSequence");
 
 	Params::MovieSceneSubSection_GetSequence Parms{};
 
@@ -531,10 +471,7 @@ class UMovieSceneSequence* UMovieSceneSubSection::GetSequence() const
 
 struct FFrameTime IMovieSceneCustomClockSource::OnRequestCurrentTime(const struct FQualifiedFrameTime& InCurrentTime, float InPlayRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MovieSceneCustomClockSource", "OnRequestCurrentTime");
+	class UFunction* Func = AsUObject()->Class->GetFunction("MovieSceneCustomClockSource", "OnRequestCurrentTime");
 
 	Params::MovieSceneCustomClockSource_OnRequestCurrentTime Parms{};
 
@@ -559,10 +496,7 @@ struct FFrameTime IMovieSceneCustomClockSource::OnRequestCurrentTime(const struc
 
 void IMovieSceneCustomClockSource::OnStartPlaying(const struct FQualifiedFrameTime& InStartTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MovieSceneCustomClockSource", "OnStartPlaying");
+	class UFunction* Func = AsUObject()->Class->GetFunction("MovieSceneCustomClockSource", "OnStartPlaying");
 
 	Params::MovieSceneCustomClockSource_OnStartPlaying Parms{};
 
@@ -584,10 +518,7 @@ void IMovieSceneCustomClockSource::OnStartPlaying(const struct FQualifiedFrameTi
 
 void IMovieSceneCustomClockSource::OnStopPlaying(const struct FQualifiedFrameTime& InStopTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MovieSceneCustomClockSource", "OnStopPlaying");
+	class UFunction* Func = AsUObject()->Class->GetFunction("MovieSceneCustomClockSource", "OnStopPlaying");
 
 	Params::MovieSceneCustomClockSource_OnStopPlaying Parms{};
 
@@ -610,10 +541,7 @@ void IMovieSceneCustomClockSource::OnStopPlaying(const struct FQualifiedFrameTim
 
 void IMovieSceneCustomClockSource::OnTick(float DeltaSeconds, float InPlayRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MovieSceneCustomClockSource", "OnTick");
+	class UFunction* Func = AsUObject()->Class->GetFunction("MovieSceneCustomClockSource", "OnTick");
 
 	Params::MovieSceneCustomClockSource_OnTick Parms{};
 
@@ -637,10 +565,7 @@ void IMovieSceneCustomClockSource::OnTick(float DeltaSeconds, float InPlayRate)
 
 float IMovieSceneEasingFunction::OnEvaluate(float Interp) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MovieSceneEasingFunction", "OnEvaluate");
+	class UFunction* Func = AsUObject()->Class->GetFunction("MovieSceneEasingFunction", "OnEvaluate");
 
 	Params::MovieSceneEasingFunction_OnEvaluate Parms{};
 
@@ -657,10 +582,7 @@ float IMovieSceneEasingFunction::OnEvaluate(float Interp) const
 
 void UMovieSceneSequencePlayer::ChangePlaybackDirection()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "ChangePlaybackDirection");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "ChangePlaybackDirection");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -679,10 +601,7 @@ void UMovieSceneSequencePlayer::ChangePlaybackDirection()
 
 TArray<class UObject*> UMovieSceneSequencePlayer::GetBoundObjects(const struct FMovieSceneObjectBindingID& ObjectBinding)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetBoundObjects");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetBoundObjects");
 
 	Params::MovieSceneSequencePlayer_GetBoundObjects Parms{};
 
@@ -706,10 +625,7 @@ TArray<class UObject*> UMovieSceneSequencePlayer::GetBoundObjects(const struct F
 
 bool UMovieSceneSequencePlayer::GetDisableCameraCuts()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetDisableCameraCuts");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetDisableCameraCuts");
 
 	Params::MovieSceneSequencePlayer_GetDisableCameraCuts Parms{};
 
@@ -732,10 +648,7 @@ bool UMovieSceneSequencePlayer::GetDisableCameraCuts()
 
 TArray<struct FMovieSceneObjectBindingID> UMovieSceneSequencePlayer::GetObjectBindings(class UObject* InObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetObjectBindings");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetObjectBindings");
 
 	Params::MovieSceneSequencePlayer_GetObjectBindings Parms{};
 
@@ -757,10 +670,7 @@ TArray<struct FMovieSceneObjectBindingID> UMovieSceneSequencePlayer::GetObjectBi
 
 void UMovieSceneSequencePlayer::GoToEndAndStop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GoToEndAndStop");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GoToEndAndStop");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -778,10 +688,7 @@ void UMovieSceneSequencePlayer::GoToEndAndStop()
 
 void UMovieSceneSequencePlayer::JumpToFrame(const struct FFrameTime& NewPosition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "JumpToFrame");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "JumpToFrame");
 
 	Params::MovieSceneSequencePlayer_JumpToFrame Parms{};
 
@@ -804,10 +711,7 @@ void UMovieSceneSequencePlayer::JumpToFrame(const struct FFrameTime& NewPosition
 
 bool UMovieSceneSequencePlayer::JumpToMarkedFrame(const class FString& InLabel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "JumpToMarkedFrame");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "JumpToMarkedFrame");
 
 	Params::MovieSceneSequencePlayer_JumpToMarkedFrame Parms{};
 
@@ -831,10 +735,7 @@ bool UMovieSceneSequencePlayer::JumpToMarkedFrame(const class FString& InLabel)
 
 void UMovieSceneSequencePlayer::JumpToSeconds(float TimeInSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "JumpToSeconds");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "JumpToSeconds");
 
 	Params::MovieSceneSequencePlayer_JumpToSeconds Parms{};
 
@@ -854,10 +755,7 @@ void UMovieSceneSequencePlayer::JumpToSeconds(float TimeInSeconds)
 
 void UMovieSceneSequencePlayer::Pause()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "Pause");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "Pause");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -873,10 +771,7 @@ void UMovieSceneSequencePlayer::Pause()
 
 void UMovieSceneSequencePlayer::Play()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "Play");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "Play");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -894,10 +789,7 @@ void UMovieSceneSequencePlayer::Play()
 
 void UMovieSceneSequencePlayer::PlayLooping(int32 NumLoops)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayLooping");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayLooping");
 
 	Params::MovieSceneSequencePlayer_PlayLooping Parms{};
 
@@ -917,10 +809,7 @@ void UMovieSceneSequencePlayer::PlayLooping(int32 NumLoops)
 
 void UMovieSceneSequencePlayer::PlayReverse()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayReverse");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayReverse");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -938,10 +827,7 @@ void UMovieSceneSequencePlayer::PlayReverse()
 
 void UMovieSceneSequencePlayer::PlayTo(const struct FMovieSceneSequencePlaybackParams& PlaybackParams)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayTo");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayTo");
 
 	Params::MovieSceneSequencePlayer_PlayTo Parms{};
 
@@ -963,10 +849,7 @@ void UMovieSceneSequencePlayer::PlayTo(const struct FMovieSceneSequencePlaybackP
 
 void UMovieSceneSequencePlayer::PlayToFrame(const struct FFrameTime& NewPosition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayToFrame");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayToFrame");
 
 	Params::MovieSceneSequencePlayer_PlayToFrame Parms{};
 
@@ -989,10 +872,7 @@ void UMovieSceneSequencePlayer::PlayToFrame(const struct FFrameTime& NewPosition
 
 bool UMovieSceneSequencePlayer::PlayToMarkedFrame(const class FString& InLabel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayToMarkedFrame");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayToMarkedFrame");
 
 	Params::MovieSceneSequencePlayer_PlayToMarkedFrame Parms{};
 
@@ -1016,10 +896,7 @@ bool UMovieSceneSequencePlayer::PlayToMarkedFrame(const class FString& InLabel)
 
 void UMovieSceneSequencePlayer::PlayToSeconds(float TimeInSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayToSeconds");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "PlayToSeconds");
 
 	Params::MovieSceneSequencePlayer_PlayToSeconds Parms{};
 
@@ -1042,10 +919,7 @@ void UMovieSceneSequencePlayer::PlayToSeconds(float TimeInSeconds)
 
 void UMovieSceneSequencePlayer::RPC_ExplicitServerUpdateEvent(EUpdatePositionMethod Method, const struct FFrameTime& RelevantTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "RPC_ExplicitServerUpdateEvent");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "RPC_ExplicitServerUpdateEvent");
 
 	Params::MovieSceneSequencePlayer_RPC_ExplicitServerUpdateEvent Parms{};
 
@@ -1068,10 +942,7 @@ void UMovieSceneSequencePlayer::RPC_ExplicitServerUpdateEvent(EUpdatePositionMet
 
 void UMovieSceneSequencePlayer::RPC_OnStopEvent(const struct FFrameTime& StoppedTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "RPC_OnStopEvent");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "RPC_OnStopEvent");
 
 	Params::MovieSceneSequencePlayer_RPC_OnStopEvent Parms{};
 
@@ -1091,10 +962,7 @@ void UMovieSceneSequencePlayer::RPC_OnStopEvent(const struct FFrameTime& Stopped
 
 void UMovieSceneSequencePlayer::Scrub()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "Scrub");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "Scrub");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1112,10 +980,7 @@ void UMovieSceneSequencePlayer::Scrub()
 
 void UMovieSceneSequencePlayer::ScrubToFrame(const struct FFrameTime& NewPosition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "ScrubToFrame");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "ScrubToFrame");
 
 	Params::MovieSceneSequencePlayer_ScrubToFrame Parms{};
 
@@ -1138,10 +1003,7 @@ void UMovieSceneSequencePlayer::ScrubToFrame(const struct FFrameTime& NewPositio
 
 bool UMovieSceneSequencePlayer::ScrubToMarkedFrame(const class FString& InLabel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "ScrubToMarkedFrame");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "ScrubToMarkedFrame");
 
 	Params::MovieSceneSequencePlayer_ScrubToMarkedFrame Parms{};
 
@@ -1165,10 +1027,7 @@ bool UMovieSceneSequencePlayer::ScrubToMarkedFrame(const class FString& InLabel)
 
 void UMovieSceneSequencePlayer::ScrubToSeconds(float TimeInSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "ScrubToSeconds");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "ScrubToSeconds");
 
 	Params::MovieSceneSequencePlayer_ScrubToSeconds Parms{};
 
@@ -1190,10 +1049,7 @@ void UMovieSceneSequencePlayer::ScrubToSeconds(float TimeInSeconds)
 
 void UMovieSceneSequencePlayer::SetDisableCameraCuts(bool bInDisableCameraCuts)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "SetDisableCameraCuts");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "SetDisableCameraCuts");
 
 	Params::MovieSceneSequencePlayer_SetDisableCameraCuts Parms{};
 
@@ -1216,10 +1072,7 @@ void UMovieSceneSequencePlayer::SetDisableCameraCuts(bool bInDisableCameraCuts)
 
 void UMovieSceneSequencePlayer::SetFrameRange(int32 StartFrame, int32 Duration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "SetFrameRange");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "SetFrameRange");
 
 	Params::MovieSceneSequencePlayer_SetFrameRange Parms{};
 
@@ -1242,10 +1095,7 @@ void UMovieSceneSequencePlayer::SetFrameRange(int32 StartFrame, int32 Duration)
 
 void UMovieSceneSequencePlayer::SetFrameRate(const struct FFrameRate& FrameRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "SetFrameRate");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "SetFrameRate");
 
 	Params::MovieSceneSequencePlayer_SetFrameRate Parms{};
 
@@ -1267,10 +1117,7 @@ void UMovieSceneSequencePlayer::SetFrameRate(const struct FFrameRate& FrameRate)
 
 void UMovieSceneSequencePlayer::SetPlaybackPosition(const struct FMovieSceneSequencePlaybackParams& PlaybackParams)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "SetPlaybackPosition");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "SetPlaybackPosition");
 
 	Params::MovieSceneSequencePlayer_SetPlaybackPosition Parms{};
 
@@ -1292,10 +1139,7 @@ void UMovieSceneSequencePlayer::SetPlaybackPosition(const struct FMovieSceneSequ
 
 void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "SetPlayRate");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "SetPlayRate");
 
 	Params::MovieSceneSequencePlayer_SetPlayRate Parms{};
 
@@ -1318,10 +1162,7 @@ void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 
 void UMovieSceneSequencePlayer::SetTimeRange(float StartTime_0, float Duration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "SetTimeRange");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "SetTimeRange");
 
 	Params::MovieSceneSequencePlayer_SetTimeRange Parms{};
 
@@ -1342,10 +1183,7 @@ void UMovieSceneSequencePlayer::SetTimeRange(float StartTime_0, float Duration)
 
 void UMovieSceneSequencePlayer::Stop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "Stop");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "Stop");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1361,10 +1199,7 @@ void UMovieSceneSequencePlayer::Stop()
 
 void UMovieSceneSequencePlayer::StopAtCurrentTime()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "StopAtCurrentTime");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "StopAtCurrentTime");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1382,10 +1217,7 @@ void UMovieSceneSequencePlayer::StopAtCurrentTime()
 
 struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetCurrentTime() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetCurrentTime");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetCurrentTime");
 
 	Params::MovieSceneSequencePlayer_GetCurrentTime Parms{};
 
@@ -1407,10 +1239,7 @@ struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetCurrentTime() const
 
 struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetDuration() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetDuration");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetDuration");
 
 	Params::MovieSceneSequencePlayer_GetDuration Parms{};
 
@@ -1432,10 +1261,7 @@ struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetDuration() const
 
 struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetEndTime() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetEndTime");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetEndTime");
 
 	Params::MovieSceneSequencePlayer_GetEndTime Parms{};
 
@@ -1457,10 +1283,7 @@ struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetEndTime() const
 
 int32 UMovieSceneSequencePlayer::GetFrameDuration() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetFrameDuration");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetFrameDuration");
 
 	Params::MovieSceneSequencePlayer_GetFrameDuration Parms{};
 
@@ -1482,10 +1305,7 @@ int32 UMovieSceneSequencePlayer::GetFrameDuration() const
 
 struct FFrameRate UMovieSceneSequencePlayer::GetFrameRate() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetFrameRate");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetFrameRate");
 
 	Params::MovieSceneSequencePlayer_GetFrameRate Parms{};
 
@@ -1507,10 +1327,7 @@ struct FFrameRate UMovieSceneSequencePlayer::GetFrameRate() const
 
 float UMovieSceneSequencePlayer::GetPlayRate() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetPlayRate");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetPlayRate");
 
 	Params::MovieSceneSequencePlayer_GetPlayRate Parms{};
 
@@ -1532,10 +1349,7 @@ float UMovieSceneSequencePlayer::GetPlayRate() const
 
 struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetStartTime() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "GetStartTime");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "GetStartTime");
 
 	Params::MovieSceneSequencePlayer_GetStartTime Parms{};
 
@@ -1557,10 +1371,7 @@ struct FQualifiedFrameTime UMovieSceneSequencePlayer::GetStartTime() const
 
 bool UMovieSceneSequencePlayer::IsPaused() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "IsPaused");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "IsPaused");
 
 	Params::MovieSceneSequencePlayer_IsPaused Parms{};
 
@@ -1582,10 +1393,7 @@ bool UMovieSceneSequencePlayer::IsPaused() const
 
 bool UMovieSceneSequencePlayer::IsPlaying() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "IsPlaying");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "IsPlaying");
 
 	Params::MovieSceneSequencePlayer_IsPlaying Parms{};
 
@@ -1607,10 +1415,7 @@ bool UMovieSceneSequencePlayer::IsPlaying() const
 
 bool UMovieSceneSequencePlayer::IsReversed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneSequencePlayer", "IsReversed");
+	class UFunction* Func = Class->GetFunction("MovieSceneSequencePlayer", "IsReversed");
 
 	Params::MovieSceneSequencePlayer_IsReversed Parms{};
 

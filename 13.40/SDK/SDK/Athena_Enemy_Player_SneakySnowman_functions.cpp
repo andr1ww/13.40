@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AAthena_Enemy_Player_SneakySnowman_C::ExecuteUbergraph_Athena_Enemy_Player_SneakySnowman(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "ExecuteUbergraph_Athena_Enemy_Player_SneakySnowman");
+	class UFunction* Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "ExecuteUbergraph_Athena_Enemy_Player_SneakySnowman");
 
 	Params::Athena_Enemy_Player_SneakySnowman_C_ExecuteUbergraph_Athena_Enemy_Player_SneakySnowman Parms{};
 
@@ -41,10 +38,7 @@ void AAthena_Enemy_Player_SneakySnowman_C::ExecuteUbergraph_Athena_Enemy_Player_
 
 void AAthena_Enemy_Player_SneakySnowman_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -63,10 +57,7 @@ void AAthena_Enemy_Player_SneakySnowman_C::ReceiveBeginPlay()
 
 void AAthena_Enemy_Player_SneakySnowman_C::OnDamageServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "OnDamageServer");
+	class UFunction* Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "OnDamageServer");
 
 	Params::Athena_Enemy_Player_SneakySnowman_C_OnDamageServer Parms{};
 

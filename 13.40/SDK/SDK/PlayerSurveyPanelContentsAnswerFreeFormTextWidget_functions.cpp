@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::ExecuteUbergraph_PlayerSurveyPanelContentsAnswerFreeFormTextWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerFreeFormTextWidget");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerFreeFormTextWidget");
 
 	Params::PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerFreeFormTextWidget Parms{};
 
@@ -41,10 +38,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::ExecuteUbergraph_Play
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleQuestionChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleQuestionChanged");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleQuestionChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleQuestionChanged
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleCommitCurrentAnswer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleCommitCurrentAnswer");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleCommitCurrentAnswer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleCommitCurrentAn
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleAnswerChanged(const struct FFortPlayerSurveyAnswerContainerChangeEventInfo& EventInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleAnswerChanged");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleAnswerChanged");
 
 	Params::PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_HandleAnswerChanged Parms{};
 
@@ -92,10 +80,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleAnswerChanged(c
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_1_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_1_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_1_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature");
 
 	Params::PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_1_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature Parms{};
 
@@ -113,10 +98,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::BndEvt__EntryTextBox_
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature");
 
 	Params::PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature Parms{};
 
@@ -131,10 +113,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::BndEvt__EntryTextBox_
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +124,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::Construct()
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateEntryText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateEntryText");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateEntryText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +135,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateEntryText()
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateHintText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateHintText");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateHintText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +148,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateHintText()
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandlePlayerEnterAnswer(const class FString& AnswerString)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandlePlayerEnterAnswer");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandlePlayerEnterAnswer");
 
 	Params::PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_HandlePlayerEnterAnswer Parms{};
 
@@ -193,10 +163,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandlePlayerEnterAnsw
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateLimitsText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateLimitsText");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateLimitsText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +176,7 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateLimitsText()
 
 class UWidget* UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::GetDefaultFocusedWidget() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "GetDefaultFocusedWidget");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "GetDefaultFocusedWidget");
 
 	Params::PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_GetDefaultFocusedWidget Parms{};
 
@@ -229,10 +193,7 @@ class UWidget* UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::GetDefaultF
 
 class FText UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::GetSubtitleText() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "GetSubtitleText");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "GetSubtitleText");
 
 	Params::PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_GetSubtitleText Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaChatWidgetModalWrapper_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaChatWidgetModalWrapper_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AthenaChatWidgetModalWrapper_C", "PreConstruct");
 
 	Params::AthenaChatWidgetModalWrapper_C_PreConstruct Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaChatWidgetModalWrapper_C::PreConstruct(bool IsDesignTime_PreConstruc
 
 void UAthenaChatWidgetModalWrapper_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaChatWidgetModalWrapper_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("AthenaChatWidgetModalWrapper_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UAthenaChatWidgetModalWrapper_C::OnInitialized()
 
 void UAthenaChatWidgetModalWrapper_C::ExecuteUbergraph_AthenaChatWidgetModalWrapper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaChatWidgetModalWrapper_C", "ExecuteUbergraph_AthenaChatWidgetModalWrapper");
+	class UFunction* Func = Class->GetFunction("AthenaChatWidgetModalWrapper_C", "ExecuteUbergraph_AthenaChatWidgetModalWrapper");
 
 	Params::AthenaChatWidgetModalWrapper_C_ExecuteUbergraph_AthenaChatWidgetModalWrapper Parms{};
 

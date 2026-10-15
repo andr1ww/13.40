@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFlopper_Gadget_AnimBP_C::ExecuteUbergraph_Flopper_Gadget_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Flopper_Gadget_AnimBP_C", "ExecuteUbergraph_Flopper_Gadget_AnimBP");
+	class UFunction* Func = Class->GetFunction("Flopper_Gadget_AnimBP_C", "ExecuteUbergraph_Flopper_Gadget_AnimBP");
 
 	Params::Flopper_Gadget_AnimBP_C_ExecuteUbergraph_Flopper_Gadget_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UFlopper_Gadget_AnimBP_C::ExecuteUbergraph_Flopper_Gadget_AnimBP(int32 Entr
 
 void UFlopper_Gadget_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Flopper_Gadget_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("Flopper_Gadget_AnimBP_C", "AnimGraph");
 
 	Params::Flopper_Gadget_AnimBP_C_AnimGraph Parms{};
 

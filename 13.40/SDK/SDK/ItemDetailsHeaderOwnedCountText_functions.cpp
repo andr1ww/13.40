@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UItemDetailsHeaderOwnedCountText_C::SetOwnedText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderOwnedCountText_C", "SetOwnedText");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderOwnedCountText_C", "SetOwnedText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UItemDetailsHeaderOwnedCountText_C::SetOwnedText()
 
 void UItemDetailsHeaderOwnedCountText_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderOwnedCountText_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderOwnedCountText_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +45,7 @@ void UItemDetailsHeaderOwnedCountText_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsHeaderOwnedCountText_C::ExecuteUbergraph_ItemDetailsHeaderOwnedCountText(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderOwnedCountText_C", "ExecuteUbergraph_ItemDetailsHeaderOwnedCountText");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderOwnedCountText_C", "ExecuteUbergraph_ItemDetailsHeaderOwnedCountText");
 
 	Params::ItemDetailsHeaderOwnedCountText_C_ExecuteUbergraph_ItemDetailsHeaderOwnedCountText Parms{};
 

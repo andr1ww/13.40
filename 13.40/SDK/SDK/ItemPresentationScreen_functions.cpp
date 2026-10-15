@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemPresentationScreen_C::ExecuteUbergraph_ItemPresentationScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "ExecuteUbergraph_ItemPresentationScreen");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "ExecuteUbergraph_ItemPresentationScreen");
 
 	Params::ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen Parms{};
 
@@ -41,10 +38,7 @@ void UItemPresentationScreen_C::ExecuteUbergraph_ItemPresentationScreen(int32 En
 
 void UItemPresentationScreen_C::SwitchToPaidItems()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "SwitchToPaidItems");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "SwitchToPaidItems");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UItemPresentationScreen_C::SwitchToPaidItems()
 
 void UItemPresentationScreen_C::OnDisplayItemsCollectedText(bool bCloseScreen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnDisplayItemsCollectedText");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnDisplayItemsCollectedText");
 
 	Params::ItemPresentationScreen_C_OnDisplayItemsCollectedText Parms{};
 
@@ -77,10 +68,7 @@ void UItemPresentationScreen_C::OnDisplayItemsCollectedText(bool bCloseScreen)
 
 void UItemPresentationScreen_C::OnFinishDisplayingHotItems(bool bShowOtherRewards)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnFinishDisplayingHotItems");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnFinishDisplayingHotItems");
 
 	Params::ItemPresentationScreen_C_OnFinishDisplayingHotItems Parms{};
 
@@ -97,10 +85,7 @@ void UItemPresentationScreen_C::OnFinishDisplayingHotItems(bool bShowOtherReward
 
 void UItemPresentationScreen_C::OnUpdateNextButtonText(bool bShowNext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateNextButtonText");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateNextButtonText");
 
 	Params::ItemPresentationScreen_C_OnUpdateNextButtonText Parms{};
 
@@ -115,10 +100,7 @@ void UItemPresentationScreen_C::OnUpdateNextButtonText(bool bShowNext)
 
 void UItemPresentationScreen_C::OnCloseScreen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnCloseScreen");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnCloseScreen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +113,7 @@ void UItemPresentationScreen_C::OnCloseScreen()
 
 void UItemPresentationScreen_C::OnDisplayEquipButton(bool bCanEquip)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnDisplayEquipButton");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnDisplayEquipButton");
 
 	Params::ItemPresentationScreen_C_OnDisplayEquipButton Parms{};
 
@@ -151,10 +130,7 @@ void UItemPresentationScreen_C::OnDisplayEquipButton(bool bCanEquip)
 
 void UItemPresentationScreen_C::OnInitialIconAnimation(bool bUsingListView)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnInitialIconAnimation");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnInitialIconAnimation");
 
 	Params::ItemPresentationScreen_C_OnInitialIconAnimation Parms{};
 
@@ -169,10 +145,7 @@ void UItemPresentationScreen_C::OnInitialIconAnimation(bool bUsingListView)
 
 void UItemPresentationScreen_C::OnUpdateItemEquipped()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateItemEquipped");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateItemEquipped");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -185,10 +158,7 @@ void UItemPresentationScreen_C::OnUpdateItemEquipped()
 
 void UItemPresentationScreen_C::OnUpdateOwnedItemText(bool bShowText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateOwnedItemText");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateOwnedItemText");
 
 	Params::ItemPresentationScreen_C_OnUpdateOwnedItemText Parms{};
 
@@ -205,10 +175,7 @@ void UItemPresentationScreen_C::OnUpdateOwnedItemText(bool bShowText)
 
 void UItemPresentationScreen_C::OnUpdateItemInformation(const class UFortItem* FortItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateItemInformation");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateItemInformation");
 
 	Params::ItemPresentationScreen_C_OnUpdateItemInformation Parms{};
 
@@ -225,10 +192,7 @@ void UItemPresentationScreen_C::OnUpdateItemInformation(const class UFortItem* F
 
 void UItemPresentationScreen_C::OnUpdateHeaderInformation(const struct FFortItemHeaderInformation& HeaderInformation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateHeaderInformation");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateHeaderInformation");
 
 	Params::ItemPresentationScreen_C_OnUpdateHeaderInformation Parms{};
 
@@ -243,10 +207,7 @@ void UItemPresentationScreen_C::OnUpdateHeaderInformation(const struct FFortItem
 
 void UItemPresentationScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +218,7 @@ void UItemPresentationScreen_C::BP_OnActivated()
 
 void UItemPresentationScreen_C::HandleAnimationInitialState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "HandleAnimationInitialState");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "HandleAnimationInitialState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -271,10 +229,7 @@ void UItemPresentationScreen_C::HandleAnimationInitialState()
 
 void UItemPresentationScreen_C::PlayIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "PlayIntro");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "PlayIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -287,10 +242,7 @@ void UItemPresentationScreen_C::PlayIntro()
 
 void UItemPresentationScreen_C::StartFade(bool bCloseScreen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "StartFade");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "StartFade");
 
 	Params::ItemPresentationScreen_C_StartFade Parms{};
 
@@ -305,10 +257,7 @@ void UItemPresentationScreen_C::StartFade(bool bCloseScreen)
 
 void UItemPresentationScreen_C::HandlePaidItemIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "HandlePaidItemIntro");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "HandlePaidItemIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -319,10 +268,7 @@ void UItemPresentationScreen_C::HandlePaidItemIntro()
 
 void UItemPresentationScreen_C::HandleFadeAnimFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationScreen_C", "HandleFadeAnimFinished");
+	class UFunction* Func = Class->GetFunction("ItemPresentationScreen_C", "HandleFadeAnimFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

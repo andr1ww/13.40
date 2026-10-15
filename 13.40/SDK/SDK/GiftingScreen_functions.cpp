@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGiftingScreen_C::ExecuteUbergraph_GiftingScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "ExecuteUbergraph_GiftingScreen");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "ExecuteUbergraph_GiftingScreen");
 
 	Params::GiftingScreen_C_ExecuteUbergraph_GiftingScreen Parms{};
 
@@ -43,10 +40,7 @@ void UGiftingScreen_C::ExecuteUbergraph_GiftingScreen(int32 EntryPoint)
 
 void UGiftingScreen_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::GiftingScreen_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -61,10 +55,7 @@ void UGiftingScreen_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonBu
 
 void UGiftingScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UGiftingScreen_C::BP_OnActivated()
 
 void UGiftingScreen_C::OnEndGiftingSubmission(bool bSuccess)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "OnEndGiftingSubmission");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "OnEndGiftingSubmission");
 
 	Params::GiftingScreen_C_OnEndGiftingSubmission Parms{};
 
@@ -95,10 +83,7 @@ void UGiftingScreen_C::OnEndGiftingSubmission(bool bSuccess)
 
 void UGiftingScreen_C::OnBeginGiftingSubmission()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "OnBeginGiftingSubmission");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "OnBeginGiftingSubmission");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void UGiftingScreen_C::OnBeginGiftingSubmission()
 
 void UGiftingScreen_C::BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::GiftingScreen_C_BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -129,10 +111,7 @@ void UGiftingScreen_C::BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonB
 
 void UGiftingScreen_C::OnMoveToFriendSelectStep()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "OnMoveToFriendSelectStep");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "OnMoveToFriendSelectStep");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +124,7 @@ void UGiftingScreen_C::OnMoveToFriendSelectStep()
 
 void UGiftingScreen_C::BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::GiftingScreen_C_BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -165,10 +141,7 @@ void UGiftingScreen_C::BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_Commo
 
 void UGiftingScreen_C::OnMoveToGiftWrapStep(bool bGiftingToSelf)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "OnMoveToGiftWrapStep");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "OnMoveToGiftWrapStep");
 
 	Params::GiftingScreen_C_OnMoveToGiftWrapStep Parms{};
 
@@ -185,10 +158,7 @@ void UGiftingScreen_C::OnMoveToGiftWrapStep(bool bGiftingToSelf)
 
 void UGiftingScreen_C::OnOfferSet(class UFortStoreFrontOfferInfo* NewOfferInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "OnOfferSet");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "OnOfferSet");
 
 	Params::GiftingScreen_C_OnOfferSet Parms{};
 
@@ -203,10 +173,7 @@ void UGiftingScreen_C::OnOfferSet(class UFortStoreFrontOfferInfo* NewOfferInfo)
 
 void UGiftingScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "Construct");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -219,10 +186,7 @@ void UGiftingScreen_C::Construct()
 
 void UGiftingScreen_C::HandleBackClicked(bool* bIsHandled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "HandleBackClicked");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "HandleBackClicked");
 
 	Params::GiftingScreen_C_HandleBackClicked Parms{};
 
@@ -240,10 +204,7 @@ void UGiftingScreen_C::HandleBackClicked(bool* bIsHandled)
 
 void UGiftingScreen_C::ToggleBackAction(bool bEnable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "ToggleBackAction");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "ToggleBackAction");
 
 	Params::GiftingScreen_C_ToggleBackAction Parms{};
 
@@ -260,10 +221,7 @@ void UGiftingScreen_C::ToggleBackAction(bool bEnable)
 
 void UGiftingScreen_C::HandleMoreInfoClicked(bool* bPassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingScreen_C", "HandleMoreInfoClicked");
+	class UFunction* Func = Class->GetFunction("GiftingScreen_C", "HandleMoreInfoClicked");
 
 	Params::GiftingScreen_C_HandleMoreInfoClicked Parms{};
 

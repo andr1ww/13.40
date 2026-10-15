@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMovieWidget_C::ExecuteUbergraph_MovieWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieWidget_C", "ExecuteUbergraph_MovieWidget");
+	class UFunction* Func = Class->GetFunction("MovieWidget_C", "ExecuteUbergraph_MovieWidget");
 
 	Params::MovieWidget_C_ExecuteUbergraph_MovieWidget Parms{};
 
@@ -41,10 +38,7 @@ void UMovieWidget_C::ExecuteUbergraph_MovieWidget(int32 EntryPoint)
 
 void UMovieWidget_C::OnMediaLoaded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieWidget_C", "OnMediaLoaded");
+	class UFunction* Func = Class->GetFunction("MovieWidget_C", "OnMediaLoaded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UMovieWidget_C::OnMediaLoaded()
 
 void UMovieWidget_C::MediaDimensionsUpdated(float NewWidth, float NewHeight)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieWidget_C", "MediaDimensionsUpdated");
+	class UFunction* Func = Class->GetFunction("MovieWidget_C", "MediaDimensionsUpdated");
 
 	Params::MovieWidget_C_MediaDimensionsUpdated Parms{};
 
@@ -77,10 +68,7 @@ void UMovieWidget_C::MediaDimensionsUpdated(float NewWidth, float NewHeight)
 
 void UMovieWidget_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieWidget_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("MovieWidget_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -96,10 +84,7 @@ void UMovieWidget_C::Destruct()
 
 void UMovieWidget_C::Init(class UMediaPlayer* InMediaPlayer, class UMediaSource* InMediaSource, class UObject* InMediaSoundWave, int32 AudioTrack)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieWidget_C", "Init");
+	class UFunction* Func = Class->GetFunction("MovieWidget_C", "Init");
 
 	Params::MovieWidget_C_Init Parms{};
 
@@ -117,10 +102,7 @@ void UMovieWidget_C::Init(class UMediaPlayer* InMediaPlayer, class UMediaSource*
 
 void UMovieWidget_C::StopPlaying()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieWidget_C", "StopPlaying");
+	class UFunction* Func = Class->GetFunction("MovieWidget_C", "StopPlaying");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +115,7 @@ void UMovieWidget_C::StopPlaying()
 
 void UMovieWidget_C::Play(bool ShouldRewind)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieWidget_C", "Play");
+	class UFunction* Func = Class->GetFunction("MovieWidget_C", "Play");
 
 	Params::MovieWidget_C_Play Parms{};
 
@@ -151,10 +130,7 @@ void UMovieWidget_C::Play(bool ShouldRewind)
 
 void UMovieWidget_C::SetDelayedContentValues()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieWidget_C", "SetDelayedContentValues");
+	class UFunction* Func = Class->GetFunction("MovieWidget_C", "SetDelayedContentValues");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USquadSelection_C::ExecuteUbergraph_SquadSelection(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadSelection_C", "ExecuteUbergraph_SquadSelection");
+	class UFunction* Func = Class->GetFunction("SquadSelection_C", "ExecuteUbergraph_SquadSelection");
 
 	Params::SquadSelection_C_ExecuteUbergraph_SquadSelection Parms{};
 
@@ -43,10 +40,7 @@ void USquadSelection_C::ExecuteUbergraph_SquadSelection(int32 EntryPoint)
 
 void USquadSelection_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadSelection_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("SquadSelection_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::SquadSelection_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -63,10 +57,7 @@ void USquadSelection_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonB
 
 void USquadSelection_C::OnLocalPlayerParticipationChanged(bool bIsParticipating)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadSelection_C", "OnLocalPlayerParticipationChanged");
+	class UFunction* Func = Class->GetFunction("SquadSelection_C", "OnLocalPlayerParticipationChanged");
 
 	Params::SquadSelection_C_OnLocalPlayerParticipationChanged Parms{};
 

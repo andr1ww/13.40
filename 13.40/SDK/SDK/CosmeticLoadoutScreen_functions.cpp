@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCosmeticLoadoutScreen_C::ExecuteUbergraph_CosmeticLoadoutScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutScreen_C", "ExecuteUbergraph_CosmeticLoadoutScreen");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutScreen_C", "ExecuteUbergraph_CosmeticLoadoutScreen");
 
 	Params::CosmeticLoadoutScreen_C_ExecuteUbergraph_CosmeticLoadoutScreen Parms{};
 
@@ -43,10 +40,7 @@ void UCosmeticLoadoutScreen_C::ExecuteUbergraph_CosmeticLoadoutScreen(int32 Entr
 
 void UCosmeticLoadoutScreen_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutScreen_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutScreen_C", "PreConstruct");
 
 	Params::CosmeticLoadoutScreen_C_PreConstruct Parms{};
 
@@ -63,10 +57,7 @@ void UCosmeticLoadoutScreen_C::PreConstruct(bool IsDesignTime)
 
 void UCosmeticLoadoutScreen_C::OnFlavorForScreenMode(EFortCosmeticLoadoutScreenMode NewMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutScreen_C", "OnFlavorForScreenMode");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutScreen_C", "OnFlavorForScreenMode");
 
 	Params::CosmeticLoadoutScreen_C_OnFlavorForScreenMode Parms{};
 
@@ -81,10 +72,7 @@ void UCosmeticLoadoutScreen_C::OnFlavorForScreenMode(EFortCosmeticLoadoutScreenM
 
 void UCosmeticLoadoutScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void UCosmeticLoadoutScreen_C::BP_OnActivated()
 
 void UCosmeticLoadoutScreen_C::OnPreviewTile(EFortLoadoutCardType CardType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutScreen_C", "OnPreviewTile");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutScreen_C", "OnPreviewTile");
 
 	Params::CosmeticLoadoutScreen_C_OnPreviewTile Parms{};
 
@@ -117,10 +102,7 @@ void UCosmeticLoadoutScreen_C::OnPreviewTile(EFortLoadoutCardType CardType)
 
 void UCosmeticLoadoutScreen_C::OnInputMethodChanged_Event(ECommonInputType bNewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutScreen_C", "OnInputMethodChanged_Event");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutScreen_C", "OnInputMethodChanged_Event");
 
 	Params::CosmeticLoadoutScreen_C_OnInputMethodChanged_Event Parms{};
 
@@ -135,10 +117,7 @@ void UCosmeticLoadoutScreen_C::OnInputMethodChanged_Event(ECommonInputType bNewI
 
 void UCosmeticLoadoutScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutScreen_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +130,7 @@ void UCosmeticLoadoutScreen_C::Construct()
 
 void UCosmeticLoadoutScreen_C::InitLayout(ECommonInputType InputPin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutScreen_C", "InitLayout");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutScreen_C", "InitLayout");
 
 	Params::CosmeticLoadoutScreen_C_InitLayout Parms{};
 

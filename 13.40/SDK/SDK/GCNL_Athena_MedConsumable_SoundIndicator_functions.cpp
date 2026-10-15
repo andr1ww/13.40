@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Athena_MedConsumable_SoundIndicator_C::ExecuteUbergraph_GCNL_Athena_MedConsumable_SoundIndicator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_MedConsumable_SoundIndicator_C", "ExecuteUbergraph_GCNL_Athena_MedConsumable_SoundIndicator");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_MedConsumable_SoundIndicator_C", "ExecuteUbergraph_GCNL_Athena_MedConsumable_SoundIndicator");
 
 	Params::GCNL_Athena_MedConsumable_SoundIndicator_C_ExecuteUbergraph_GCNL_Athena_MedConsumable_SoundIndicator Parms{};
 
@@ -48,10 +45,7 @@ void AGCNL_Athena_MedConsumable_SoundIndicator_C::ExecuteUbergraph_GCNL_Athena_M
 
 void AGCNL_Athena_MedConsumable_SoundIndicator_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_MedConsumable_SoundIndicator_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_MedConsumable_SoundIndicator_C", "OnRemoval");
 
 	Params::GCNL_Athena_MedConsumable_SoundIndicator_C_OnRemoval Parms{};
 
@@ -71,10 +65,7 @@ void AGCNL_Athena_MedConsumable_SoundIndicator_C::OnRemoval(class AActor* MyTarg
 
 void AGCNL_Athena_MedConsumable_SoundIndicator_C::PlaySoundVisualizer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_MedConsumable_SoundIndicator_C", "PlaySoundVisualizer");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_MedConsumable_SoundIndicator_C", "PlaySoundVisualizer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -90,10 +81,7 @@ void AGCNL_Athena_MedConsumable_SoundIndicator_C::PlaySoundVisualizer()
 
 void AGCNL_Athena_MedConsumable_SoundIndicator_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_MedConsumable_SoundIndicator_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_MedConsumable_SoundIndicator_C", "OnLoopingStart");
 
 	Params::GCNL_Athena_MedConsumable_SoundIndicator_C_OnLoopingStart Parms{};
 

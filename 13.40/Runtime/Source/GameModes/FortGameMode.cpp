@@ -3,6 +3,28 @@
 #include "GameModes/FortGameMode.h"
 DEFINE_ENGINE_INIT(FortGameMode)
 
+void FortGameMode::InitWorldManager(AFortGameModeAthena* _this, AFortWorldManager* WorldManager)
+{
+	AFortGameStateAthena* GameState = _this->GameState;
+
+	if (!GameState)
+		return;
+
+	if (!WorldManager)
+		WorldManager = static_cast<AFortWorldManager*>(UGameplayStatics::GetActorOfClass(GWorld, AFortWorldManager::StaticClass()));
+
+	if (!WorldManager)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("FortGameMode::InitWorldManager: Failed to find a world manager"));
+		return;
+	}
+
+	WorldManager->bStreamInBuildings = true;
+
+	if (GameState->WorldManager != WorldManager)
+		GameState->SetWorldManager(WorldManager);
+}
+
 void FortGameMode::InitGameState(AFortGameModeAthena* _this)
 {
 	InitGameStateOG(_this);
@@ -38,6 +60,8 @@ void FortGameMode::FinishWorldInitialization(AFortGameModeAthena* _this, AActor*
 {
 	_this->bWorldIsReady = true;
 	FinishWorldInitializationOG(_this, WorldManager);
+
+	InitWorldManager(_this, Cast<AFortWorldManager>(WorldManager));
 
 	std::wstring Title = L"13.40 | Ready | Built: ";
 	Title += std::wstring(L"" __DATE__ L" " __TIME__);

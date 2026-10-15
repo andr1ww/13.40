@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTextRotator_C::ExecuteUbergraph_TextRotator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TextRotator_C", "ExecuteUbergraph_TextRotator");
+	class UFunction* Func = Class->GetFunction("TextRotator_C", "ExecuteUbergraph_TextRotator");
 
 	Params::TextRotator_C_ExecuteUbergraph_TextRotator Parms{};
 
@@ -41,10 +38,7 @@ void UTextRotator_C::ExecuteUbergraph_TextRotator(int32 EntryPoint)
 
 void UTextRotator_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TextRotator_C", "Construct");
+	class UFunction* Func = Class->GetFunction("TextRotator_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

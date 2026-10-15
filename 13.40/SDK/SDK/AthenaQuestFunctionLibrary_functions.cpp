@@ -26,10 +26,7 @@ SDK_NAMESPACE_START
 
 void UAthenaQuestFunctionLibrary_C::Athena_HasQuest(class AFortPlayerController* InPlayerControlle, class UFortQuestItemDefinition* InQuestItemRef, class UObject* __WorldContext, bool* PlayerHasQuest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_HasQuest");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_HasQuest");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_HasQuest Parms{};
 
@@ -55,10 +52,7 @@ void UAthenaQuestFunctionLibrary_C::Athena_HasQuest(class AFortPlayerController*
 
 void UAthenaQuestFunctionLibrary_C::Athena_HasPlayerCompletedQuest(class AFortPlayerController* InPlayerControlle, class UFortQuestItemDefinition* InQuestItemRef, class UObject* __WorldContext, bool* HasQuest, bool* QuestCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_HasPlayerCompletedQuest");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_HasPlayerCompletedQuest");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_HasPlayerCompletedQuest Parms{};
 
@@ -89,10 +83,7 @@ void UAthenaQuestFunctionLibrary_C::Athena_HasPlayerCompletedQuest(class AFortPl
 
 void UAthenaQuestFunctionLibrary_C::Athena_CheckQuestAndObjectiveCompletion(class AFortPlayerController* InPlayerControlle, class UFortQuestItemDefinition* InQuestItemRef, class FName ObjectiveBackendName, class UObject* __WorldContext, bool* QuestIsValid, bool* QuestCompleted, bool* ObjectiveCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_CheckQuestAndObjectiveCompletion");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_CheckQuestAndObjectiveCompletion");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_CheckQuestAndObjectiveCompletion Parms{};
 
@@ -127,10 +118,7 @@ void UAthenaQuestFunctionLibrary_C::Athena_CheckQuestAndObjectiveCompletion(clas
 
 void UAthenaQuestFunctionLibrary_C::Athena_CheckQuestAndObjectiveCompletionMP(TArray<class AFortPlayerController*>& InPlayerControlle, class UFortQuestItemDefinition* InQuestItemRef, class FName ObjectiveBackendName, class UObject* __WorldContext, bool* QuestIsValid, bool* QuestCompleted, bool* ObjectiveCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_CheckQuestAndObjectiveCompletionMP");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_CheckQuestAndObjectiveCompletionMP");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_CheckQuestAndObjectiveCompletionMP Parms{};
 
@@ -165,10 +153,7 @@ void UAthenaQuestFunctionLibrary_C::Athena_CheckQuestAndObjectiveCompletionMP(TA
 
 void UAthenaQuestFunctionLibrary_C::Athena_GiveQuestUpdateToPlayers(class UFortQuestItemDefinition* InQuestItemRef, class FName ObjectiveBackendName, const struct FDataTableRowHandle& ObjectiveStatEvent, TArray<class AFortPlayerController*>& PlayerControllersForUpdate, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_GiveQuestUpdateToPlayers");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_GiveQuestUpdateToPlayers");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_GiveQuestUpdateToPlayers Parms{};
 
@@ -197,10 +182,7 @@ void UAthenaQuestFunctionLibrary_C::Athena_GiveQuestUpdateToPlayers(class UFortQ
 
 void UAthenaQuestFunctionLibrary_C::Athena_QuestObjectiveCounter(class AFortPlayerController* FortPlayerControllerAthena, class UFortQuestItemDefinition* ObjectiveItem, const struct FDataTableRowHandle& ObjectiveStat, class UObject* __WorldContext, int32* QuestCountAchieved, int32* QuestCountRequired, bool* CountSuccessfullyReturned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_QuestObjectiveCounter");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_QuestObjectiveCounter");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_QuestObjectiveCounter Parms{};
 
@@ -231,10 +213,7 @@ void UAthenaQuestFunctionLibrary_C::Athena_QuestObjectiveCounter(class AFortPlay
 
 void UAthenaQuestFunctionLibrary_C::Athena_CheckCreativeMode(class AGameStateBase* InGameState, class UObject* __WorldContext, bool* CanCompleteQuest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_CheckCreativeMode");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_CheckCreativeMode");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_CheckCreativeMode Parms{};
 
@@ -257,10 +236,7 @@ void UAthenaQuestFunctionLibrary_C::Athena_CheckCreativeMode(class AGameStateBas
 
 bool UAthenaQuestFunctionLibrary_C::Athena_IsCreativeOrPlaygroundPlaylist(const struct FGameplayTagContainer& TagContainer, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_IsCreativeOrPlaygroundPlaylist");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_IsCreativeOrPlaygroundPlaylist");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_IsCreativeOrPlaygroundPlaylist Parms{};
 
@@ -286,10 +262,7 @@ bool UAthenaQuestFunctionLibrary_C::Athena_IsCreativeOrPlaygroundPlaylist(const 
 
 void UAthenaQuestFunctionLibrary_C::Athena_PlayQuestRewardFeedback(bool PlayFX_onPlayer_, class USoundBase* Success_Sound, class UParticleSystem* Success_Particles, class UForceFeedbackEffect* Success_Shake, class AActor* QuestActor, class AFortPlayerPawn* PlayerPawn, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_PlayQuestRewardFeedback");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_PlayQuestRewardFeedback");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_PlayQuestRewardFeedback Parms{};
 
@@ -316,10 +289,7 @@ void UAthenaQuestFunctionLibrary_C::Athena_PlayQuestRewardFeedback(bool PlayFX_o
 
 void UAthenaQuestFunctionLibrary_C::Athena_PartyAssistCheck(class AFortPlayerController* PlayerController, class FName ObjectiveBackendName, class UObject* __WorldContext, bool* bIsAssistingObjective, bool* bIsValidPlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_PartyAssistCheck");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_PartyAssistCheck");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_PartyAssistCheck Parms{};
 
@@ -348,10 +318,7 @@ void UAthenaQuestFunctionLibrary_C::Athena_PartyAssistCheck(class AFortPlayerCon
 
 void UAthenaQuestFunctionLibrary_C::Athena_CheckActorHasTags(class AActor* TargetActor, const struct FGameplayTagContainer& TagsToCheck, bool OnlyExactMatch, class UObject* __WorldContext, bool* bDidActorHaveTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_CheckActorHasTags");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaQuestFunctionLibrary_C", "Athena_CheckActorHasTags");
 
 	Params::AthenaQuestFunctionLibrary_C_Athena_CheckActorHasTags Parms{};
 

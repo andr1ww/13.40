@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_Shotgun_SG_BFPA_C::ExecuteUbergraph_BP_Shotgun_SG_BFPA(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Shotgun_SG_BFPA_C", "ExecuteUbergraph_BP_Shotgun_SG_BFPA");
+	class UFunction* Func = Class->GetFunction("BP_Shotgun_SG_BFPA_C", "ExecuteUbergraph_BP_Shotgun_SG_BFPA");
 
 	Params::BP_Shotgun_SG_BFPA_C_ExecuteUbergraph_BP_Shotgun_SG_BFPA Parms{};
 
@@ -43,10 +40,7 @@ void UBP_Shotgun_SG_BFPA_C::ExecuteUbergraph_BP_Shotgun_SG_BFPA(int32 EntryPoint
 
 void UBP_Shotgun_SG_BFPA_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Shotgun_SG_BFPA_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("BP_Shotgun_SG_BFPA_C", "AnimGraph");
 
 	Params::BP_Shotgun_SG_BFPA_C_AnimGraph Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UKeyboardPresetRotator_C::ExecuteUbergraph_KeyboardPresetRotator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "ExecuteUbergraph_KeyboardPresetRotator");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "ExecuteUbergraph_KeyboardPresetRotator");
 
 	Params::KeyboardPresetRotator_C_ExecuteUbergraph_KeyboardPresetRotator Parms{};
 
@@ -43,10 +40,7 @@ void UKeyboardPresetRotator_C::ExecuteUbergraph_KeyboardPresetRotator(int32 Entr
 
 void UKeyboardPresetRotator_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "PreConstruct");
 
 	Params::KeyboardPresetRotator_C_PreConstruct Parms{};
 
@@ -63,10 +57,7 @@ void UKeyboardPresetRotator_C::PreConstruct(bool IsDesignTime)
 
 void UKeyboardPresetRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
 
 	Params::KeyboardPresetRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -83,10 +74,7 @@ void UKeyboardPresetRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15
 
 void UKeyboardPresetRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::KeyboardPresetRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -103,10 +91,7 @@ void UKeyboardPresetRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_C
 
 void UKeyboardPresetRotator_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature(int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
 
 	Params::KeyboardPresetRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature Parms{};
 
@@ -121,10 +106,7 @@ void UKeyboardPresetRotator_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_
 
 void UKeyboardPresetRotator_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "Construct");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +119,7 @@ void UKeyboardPresetRotator_C::Construct()
 
 void UKeyboardPresetRotator_C::Update_Row_Selector(int32 Currently_Selected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "Update Row Selector");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "Update Row Selector");
 
 	Params::KeyboardPresetRotator_C_Update_Row_Selector Parms{};
 
@@ -155,10 +134,7 @@ void UKeyboardPresetRotator_C::Update_Row_Selector(int32 Currently_Selected)
 
 void UKeyboardPresetRotator_C::Initialize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "Initialize");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "Initialize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +145,7 @@ void UKeyboardPresetRotator_C::Initialize()
 
 void UKeyboardPresetRotator_C::Center_On_Widget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "Center On Widget");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "Center On Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -185,10 +158,7 @@ void UKeyboardPresetRotator_C::Center_On_Widget()
 
 void UKeyboardPresetRotator_C::Update_Options(TArray<class FText>& NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "Update Options");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "Update Options");
 
 	Params::KeyboardPresetRotator_C_Update_Options Parms{};
 
@@ -209,10 +179,7 @@ void UKeyboardPresetRotator_C::Update_Options(TArray<class FText>& NewParam)
 
 struct FEventReply UKeyboardPresetRotator_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "OnFocusReceived");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "OnFocusReceived");
 
 	Params::KeyboardPresetRotator_C_OnFocusReceived Parms{};
 
@@ -230,10 +197,7 @@ struct FEventReply UKeyboardPresetRotator_C::OnFocusReceived(const struct FGeome
 
 void UKeyboardPresetRotator_C::Update_Size()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "Update Size");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "Update Size");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -246,10 +210,7 @@ void UKeyboardPresetRotator_C::Update_Size()
 
 void UKeyboardPresetRotator_C::Show_Param_Name(bool Show)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KeyboardPresetRotator_C", "Show Param Name");
+	class UFunction* Func = Class->GetFunction("KeyboardPresetRotator_C", "Show Param Name");
 
 	Params::KeyboardPresetRotator_C_Show_Param_Name Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_HeldObject_Place_Component_C::ExecuteUbergraph_GA_HeldObject_Place_Component(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "ExecuteUbergraph_GA_HeldObject_Place_Component");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "ExecuteUbergraph_GA_HeldObject_Place_Component");
 
 	Params::GA_HeldObject_Place_Component_C_ExecuteUbergraph_GA_HeldObject_Place_Component Parms{};
 
@@ -43,10 +40,7 @@ void UGA_HeldObject_Place_Component_C::ExecuteUbergraph_GA_HeldObject_Place_Comp
 
 void UGA_HeldObject_Place_Component_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_HeldObject_Place_Component_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -64,10 +58,7 @@ void UGA_HeldObject_Place_Component_C::K2_ActivateAbilityFromEvent(const struct 
 
 void UGA_HeldObject_Place_Component_C::Triggered_FB73B2F540131A6D5CEF3FB7287803D4(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "Triggered_FB73B2F540131A6D5CEF3FB7287803D4");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "Triggered_FB73B2F540131A6D5CEF3FB7287803D4");
 
 	Params::GA_HeldObject_Place_Component_C_Triggered_FB73B2F540131A6D5CEF3FB7287803D4 Parms{};
 
@@ -86,10 +77,7 @@ void UGA_HeldObject_Place_Component_C::Triggered_FB73B2F540131A6D5CEF3FB7287803D
 
 void UGA_HeldObject_Place_Component_C::Cancelled_FB73B2F540131A6D5CEF3FB7287803D4(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "Cancelled_FB73B2F540131A6D5CEF3FB7287803D4");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "Cancelled_FB73B2F540131A6D5CEF3FB7287803D4");
 
 	Params::GA_HeldObject_Place_Component_C_Cancelled_FB73B2F540131A6D5CEF3FB7287803D4 Parms{};
 
@@ -108,10 +96,7 @@ void UGA_HeldObject_Place_Component_C::Cancelled_FB73B2F540131A6D5CEF3FB7287803D
 
 void UGA_HeldObject_Place_Component_C::Completed_FB73B2F540131A6D5CEF3FB7287803D4(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "Completed_FB73B2F540131A6D5CEF3FB7287803D4");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Place_Component_C", "Completed_FB73B2F540131A6D5CEF3FB7287803D4");
 
 	Params::GA_HeldObject_Place_Component_C_Completed_FB73B2F540131A6D5CEF3FB7287803D4 Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UVoiceChannelHeaderButton_C::ExecuteUbergraph_VoiceChannelHeaderButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "ExecuteUbergraph_VoiceChannelHeaderButton");
+	class UFunction* Func = Class->GetFunction("VoiceChannelHeaderButton_C", "ExecuteUbergraph_VoiceChannelHeaderButton");
 
 	Params::VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton Parms{};
 
@@ -41,10 +38,7 @@ void UVoiceChannelHeaderButton_C::ExecuteUbergraph_VoiceChannelHeaderButton(int3
 
 void UVoiceChannelHeaderButton_C::BP_OnEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnEnabled");
+	class UFunction* Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnEnabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UVoiceChannelHeaderButton_C::BP_OnEnabled()
 
 void UVoiceChannelHeaderButton_C::BP_OnDisabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnDisabled");
+	class UFunction* Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnDisabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UVoiceChannelHeaderButton_C::BP_OnDisabled()
 
 void UVoiceChannelHeaderButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UVoiceChannelHeaderButton_C::BP_OnUnhovered()
 
 void UVoiceChannelHeaderButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -101,10 +86,7 @@ void UVoiceChannelHeaderButton_C::BP_OnHovered()
 
 void UVoiceChannelHeaderButton_C::OnUpdateVisuals(bool bIsActive, bool bRepresentingPlatformChat, bool bChannelAvailable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "OnUpdateVisuals");
+	class UFunction* Func = Class->GetFunction("VoiceChannelHeaderButton_C", "OnUpdateVisuals");
 
 	Params::VoiceChannelHeaderButton_C_OnUpdateVisuals Parms{};
 

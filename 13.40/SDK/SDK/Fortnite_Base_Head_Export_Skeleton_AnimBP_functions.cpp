@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortnite_Base_Head_Export_Skeleton_AnimBP_C::ExecuteUbergraph_Fortnite_Base_Head_Export_Skeleton_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_Base_Head_Export_Skeleton_AnimBP_C", "ExecuteUbergraph_Fortnite_Base_Head_Export_Skeleton_AnimBP");
+	class UFunction* Func = Class->GetFunction("Fortnite_Base_Head_Export_Skeleton_AnimBP_C", "ExecuteUbergraph_Fortnite_Base_Head_Export_Skeleton_AnimBP");
 
 	Params::Fortnite_Base_Head_Export_Skeleton_AnimBP_C_ExecuteUbergraph_Fortnite_Base_Head_Export_Skeleton_AnimBP Parms{};
 
@@ -41,10 +38,7 @@ void UFortnite_Base_Head_Export_Skeleton_AnimBP_C::ExecuteUbergraph_Fortnite_Bas
 
 void UFortnite_Base_Head_Export_Skeleton_AnimBP_C::BlueprintInitializeAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_Base_Head_Export_Skeleton_AnimBP_C", "BlueprintInitializeAnimation");
+	class UFunction* Func = Class->GetFunction("Fortnite_Base_Head_Export_Skeleton_AnimBP_C", "BlueprintInitializeAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UFortnite_Base_Head_Export_Skeleton_AnimBP_C::BlueprintInitializeAnimation(
 
 void UFortnite_Base_Head_Export_Skeleton_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_Base_Head_Export_Skeleton_AnimBP_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("Fortnite_Base_Head_Export_Skeleton_AnimBP_C", "BlueprintUpdateAnimation");
 
 	Params::Fortnite_Base_Head_Export_Skeleton_AnimBP_C_BlueprintUpdateAnimation Parms{};
 
@@ -77,10 +68,7 @@ void UFortnite_Base_Head_Export_Skeleton_AnimBP_C::BlueprintUpdateAnimation(floa
 
 void UFortnite_Base_Head_Export_Skeleton_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fortnite_Base_Head_Export_Skeleton_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("Fortnite_Base_Head_Export_Skeleton_AnimBP_C", "AnimGraph");
 
 	Params::Fortnite_Base_Head_Export_Skeleton_AnimBP_C_AnimGraph Parms{};
 

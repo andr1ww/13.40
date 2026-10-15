@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_SlamDoorOpen_Instigator_C::ExecuteUbergraph_GA_SlamDoorOpen_Instigator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "ExecuteUbergraph_GA_SlamDoorOpen_Instigator");
+	class UFunction* Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "ExecuteUbergraph_GA_SlamDoorOpen_Instigator");
 
 	Params::GA_SlamDoorOpen_Instigator_C_ExecuteUbergraph_GA_SlamDoorOpen_Instigator Parms{};
 
@@ -43,10 +40,7 @@ void UGA_SlamDoorOpen_Instigator_C::ExecuteUbergraph_GA_SlamDoorOpen_Instigator(
 
 void UGA_SlamDoorOpen_Instigator_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_SlamDoorOpen_Instigator_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -64,10 +58,7 @@ void UGA_SlamDoorOpen_Instigator_C::K2_ActivateAbilityFromEvent(const struct FGa
 
 void UGA_SlamDoorOpen_Instigator_C::Triggered_6B6649DA4284DCE7779BA98D6543CFFB(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Triggered_6B6649DA4284DCE7779BA98D6543CFFB");
+	class UFunction* Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Triggered_6B6649DA4284DCE7779BA98D6543CFFB");
 
 	Params::GA_SlamDoorOpen_Instigator_C_Triggered_6B6649DA4284DCE7779BA98D6543CFFB Parms{};
 
@@ -86,10 +77,7 @@ void UGA_SlamDoorOpen_Instigator_C::Triggered_6B6649DA4284DCE7779BA98D6543CFFB(c
 
 void UGA_SlamDoorOpen_Instigator_C::Cancelled_6B6649DA4284DCE7779BA98D6543CFFB(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Cancelled_6B6649DA4284DCE7779BA98D6543CFFB");
+	class UFunction* Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Cancelled_6B6649DA4284DCE7779BA98D6543CFFB");
 
 	Params::GA_SlamDoorOpen_Instigator_C_Cancelled_6B6649DA4284DCE7779BA98D6543CFFB Parms{};
 
@@ -108,10 +96,7 @@ void UGA_SlamDoorOpen_Instigator_C::Cancelled_6B6649DA4284DCE7779BA98D6543CFFB(c
 
 void UGA_SlamDoorOpen_Instigator_C::Completed_6B6649DA4284DCE7779BA98D6543CFFB(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Completed_6B6649DA4284DCE7779BA98D6543CFFB");
+	class UFunction* Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Completed_6B6649DA4284DCE7779BA98D6543CFFB");
 
 	Params::GA_SlamDoorOpen_Instigator_C_Completed_6B6649DA4284DCE7779BA98D6543CFFB Parms{};
 

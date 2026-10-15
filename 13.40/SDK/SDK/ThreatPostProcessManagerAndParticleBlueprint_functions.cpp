@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::SetForceOff(bool bForceOff)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "SetForceOff");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "SetForceOff");
 
 	Params::ThreatPostProcessManagerAndParticleBlueprint_C_SetForceOff Parms{};
 
@@ -45,10 +42,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::SetForceOff(bool bForceOff
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::CalculatePlayerPositionNearBox(const struct FVector& BoxMin, const struct FVector& BoxMax, float* VolumePlayerCoveragePercentage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "CalculatePlayerPositionNearBox");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "CalculatePlayerPositionNearBox");
 
 	Params::ThreatPostProcessManagerAndParticleBlueprint_C_CalculatePlayerPositionNearBox Parms{};
 
@@ -67,10 +61,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::CalculatePlayerPositionNea
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_death__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "Ramp Up down values on death__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "Ramp Up down values on death__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -81,10 +72,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_dea
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_death__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "Ramp Up down values on death__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "Ramp Up down values on death__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_dea
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ReceiveTick");
 
 	Params::ThreatPostProcessManagerAndParticleBlueprint_C_ReceiveTick Parms{};
 
@@ -117,10 +102,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::ReceiveTick(float DeltaSec
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatCloudsChanged(const TArray<struct FThreatLocationInfo>& ThreatLocationInfo_OnThreatCloudsChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnThreatCloudsChanged");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnThreatCloudsChanged");
 
 	Params::ThreatPostProcessManagerAndParticleBlueprint_C_OnThreatCloudsChanged Parms{};
 
@@ -135,10 +117,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatCloudsChanged(cons
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::OnWorldReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnWorldReady");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnWorldReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -149,10 +128,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnWorldReady()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::VFX_RainTracePeriodic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "VFX_RainTracePeriodic");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "VFX_RainTracePeriodic");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -163,10 +139,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::VFX_RainTracePeriodic()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::StartTraceTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "StartTraceTimer");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "StartTraceTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -177,10 +150,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::StartTraceTimer()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::ForceUpdateLensEffect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ForceUpdateLensEffect");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ForceUpdateLensEffect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -193,10 +163,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::ForceUpdateLensEffect()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatOverrideChanged(bool bForceThreatOn_OnThreatOverrideChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnThreatOverrideChanged");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnThreatOverrideChanged");
 
 	Params::ThreatPostProcessManagerAndParticleBlueprint_C_OnThreatOverrideChanged Parms{};
 
@@ -213,10 +180,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatOverrideChanged(bo
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint");
+	class UFunction* Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint");
 
 	Params::ThreatPostProcessManagerAndParticleBlueprint_C_ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint Parms{};
 

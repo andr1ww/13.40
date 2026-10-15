@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UHISMBuilderSettings::SetOverriddenLightMapRes(int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HISMBuilderSettings", "SetOverriddenLightMapRes");
+	class UFunction* Func = Class->GetFunction("HISMBuilderSettings", "SetOverriddenLightMapRes");
 
 	Params::HISMBuilderSettings_SetOverriddenLightMapRes Parms{};
 
@@ -48,10 +45,7 @@ void UHISMBuilderSettings::SetOverriddenLightMapRes(int32 Value)
 
 int32 UHISMBuilderSettings::GetOverriddenLightMapRes() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HISMBuilderSettings", "GetOverriddenLightMapRes");
+	class UFunction* Func = Class->GetFunction("HISMBuilderSettings", "GetOverriddenLightMapRes");
 
 	Params::HISMBuilderSettings_GetOverriddenLightMapRes Parms{};
 
@@ -73,10 +67,7 @@ int32 UHISMBuilderSettings::GetOverriddenLightMapRes() const
 
 float UProceduralParameterModifier::GetContribution() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralParameterModifier", "GetContribution");
+	class UFunction* Func = Class->GetFunction("ProceduralParameterModifier", "GetContribution");
 
 	Params::ProceduralParameterModifier_GetContribution Parms{};
 
@@ -98,10 +89,7 @@ float UProceduralParameterModifier::GetContribution() const
 
 class UProceduralGenerationComponent* UProceduralGenerationContext::GetGenerationComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGenerationContext", "GetGenerationComponent");
+	class UFunction* Func = Class->GetFunction("ProceduralGenerationContext", "GetGenerationComponent");
 
 	Params::ProceduralGenerationContext_GetGenerationComponent Parms{};
 
@@ -123,10 +111,7 @@ class UProceduralGenerationComponent* UProceduralGenerationContext::GetGeneratio
 
 class AVolume* UProceduralGenerationContext::GetGenerationVolume() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGenerationContext", "GetGenerationVolume");
+	class UFunction* Func = Class->GetFunction("ProceduralGenerationContext", "GetGenerationVolume");
 
 	Params::ProceduralGenerationContext_GetGenerationVolume Parms{};
 
@@ -146,10 +131,7 @@ class AVolume* UProceduralGenerationContext::GetGenerationVolume() const
 
 void AProceduralGenerationVolume::ClearGeneratedContent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGenerationVolume", "ClearGeneratedContent");
+	class UFunction* Func = Class->GetFunction("ProceduralGenerationVolume", "ClearGeneratedContent");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -165,10 +147,7 @@ void AProceduralGenerationVolume::ClearGeneratedContent()
 
 void AProceduralGenerationVolume::Generate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGenerationVolume", "Generate");
+	class UFunction* Func = Class->GetFunction("ProceduralGenerationVolume", "Generate");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -184,10 +163,7 @@ void AProceduralGenerationVolume::Generate()
 
 void UProceduralGeneratorContext::ClearGeneratedContent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGeneratorContext", "ClearGeneratedContent");
+	class UFunction* Func = Class->GetFunction("ProceduralGeneratorContext", "ClearGeneratedContent");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -205,10 +181,7 @@ void UProceduralGeneratorContext::ClearGeneratedContent()
 
 bool UProceduralGeneratorContext::Generate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGeneratorContext", "Generate");
+	class UFunction* Func = Class->GetFunction("ProceduralGeneratorContext", "Generate");
 
 	Params::ProceduralGeneratorContext_Generate Parms{};
 
@@ -231,10 +204,7 @@ bool UProceduralGeneratorContext::Generate()
 
 void UProceduralGeneratorContext::GetOrCreateGeneratorContext(class UProceduralGenerator* Generator_0, class UProceduralGeneratorContext** Context)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGeneratorContext", "GetOrCreateGeneratorContext");
+	class UFunction* Func = Class->GetFunction("ProceduralGeneratorContext", "GetOrCreateGeneratorContext");
 
 	Params::ProceduralGeneratorContext_GetOrCreateGeneratorContext Parms{};
 
@@ -257,10 +227,7 @@ void UProceduralGeneratorContext::GetOrCreateGeneratorContext(class UProceduralG
 
 void UProceduralGeneratorContext::OnClearGeneratedContent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGeneratorContext", "OnClearGeneratedContent");
+	class UFunction* Func = Class->GetFunction("ProceduralGeneratorContext", "OnClearGeneratedContent");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -278,10 +245,7 @@ void UProceduralGeneratorContext::OnClearGeneratedContent()
 
 bool UProceduralGeneratorContext::OnGenerate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGeneratorContext", "OnGenerate");
+	class UFunction* Func = Class->GetFunction("ProceduralGeneratorContext", "OnGenerate");
 
 	Params::ProceduralGeneratorContext_OnGenerate Parms{};
 
@@ -303,10 +267,7 @@ bool UProceduralGeneratorContext::OnGenerate()
 
 TArray<class UProceduralGeneratorContext*> UProceduralGeneratorContext::GetGeneratedContexts() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGeneratorContext", "GetGeneratedContexts");
+	class UFunction* Func = Class->GetFunction("ProceduralGeneratorContext", "GetGeneratedContexts");
 
 	Params::ProceduralGeneratorContext_GetGeneratedContexts Parms{};
 
@@ -326,10 +287,7 @@ TArray<class UProceduralGeneratorContext*> UProceduralGeneratorContext::GetGener
 
 void UProceduralGeneratorContext::OnDrawVisualization() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralGeneratorContext", "OnDrawVisualization");
+	class UFunction* Func = Class->GetFunction("ProceduralGeneratorContext", "OnDrawVisualization");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -340,10 +298,7 @@ void UProceduralGeneratorContext::OnDrawVisualization() const
 
 void UProceduralPointCloud::Empty()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralPointCloud", "Empty");
+	class UFunction* Func = Class->GetFunction("ProceduralPointCloud", "Empty");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -362,10 +317,7 @@ void UProceduralPointCloud::Empty()
 
 TArray<struct FProceduralPointCloudPoint> UProceduralPointCloud::GetPointsByTag(class FName InTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralPointCloud", "GetPointsByTag");
+	class UFunction* Func = Class->GetFunction("ProceduralPointCloud", "GetPointsByTag");
 
 	Params::ProceduralPointCloud_GetPointsByTag Parms{};
 
@@ -389,10 +341,7 @@ TArray<struct FProceduralPointCloudPoint> UProceduralPointCloud::GetPointsByTag(
 
 void UProceduralRotationMapModifier::SetPitchMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "SetPitchMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "SetPitchMax");
 
 	Params::ProceduralRotationMapModifier_SetPitchMax Parms{};
 
@@ -414,10 +363,7 @@ void UProceduralRotationMapModifier::SetPitchMax(float InValue)
 
 void UProceduralRotationMapModifier::SetPitchMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "SetPitchMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "SetPitchMin");
 
 	Params::ProceduralRotationMapModifier_SetPitchMin Parms{};
 
@@ -439,10 +385,7 @@ void UProceduralRotationMapModifier::SetPitchMin(float InValue)
 
 void UProceduralRotationMapModifier::SetRollMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "SetRollMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "SetRollMax");
 
 	Params::ProceduralRotationMapModifier_SetRollMax Parms{};
 
@@ -464,10 +407,7 @@ void UProceduralRotationMapModifier::SetRollMax(float InValue)
 
 void UProceduralRotationMapModifier::SetRollMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "SetRollMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "SetRollMin");
 
 	Params::ProceduralRotationMapModifier_SetRollMin Parms{};
 
@@ -489,10 +429,7 @@ void UProceduralRotationMapModifier::SetRollMin(float InValue)
 
 void UProceduralRotationMapModifier::SetYawMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "SetYawMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "SetYawMax");
 
 	Params::ProceduralRotationMapModifier_SetYawMax Parms{};
 
@@ -514,10 +451,7 @@ void UProceduralRotationMapModifier::SetYawMax(float InValue)
 
 void UProceduralRotationMapModifier::SetYawMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "SetYawMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "SetYawMin");
 
 	Params::ProceduralRotationMapModifier_SetYawMin Parms{};
 
@@ -539,10 +473,7 @@ void UProceduralRotationMapModifier::SetYawMin(float InValue)
 
 float UProceduralRotationMapModifier::GetPitchMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "GetPitchMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "GetPitchMax");
 
 	Params::ProceduralRotationMapModifier_GetPitchMax Parms{};
 
@@ -564,10 +495,7 @@ float UProceduralRotationMapModifier::GetPitchMax() const
 
 float UProceduralRotationMapModifier::GetPitchMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "GetPitchMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "GetPitchMin");
 
 	Params::ProceduralRotationMapModifier_GetPitchMin Parms{};
 
@@ -589,10 +517,7 @@ float UProceduralRotationMapModifier::GetPitchMin() const
 
 float UProceduralRotationMapModifier::GetRollMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "GetRollMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "GetRollMax");
 
 	Params::ProceduralRotationMapModifier_GetRollMax Parms{};
 
@@ -614,10 +539,7 @@ float UProceduralRotationMapModifier::GetRollMax() const
 
 float UProceduralRotationMapModifier::GetRollMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "GetRollMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "GetRollMin");
 
 	Params::ProceduralRotationMapModifier_GetRollMin Parms{};
 
@@ -639,10 +561,7 @@ float UProceduralRotationMapModifier::GetRollMin() const
 
 float UProceduralRotationMapModifier::GetYawMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "GetYawMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "GetYawMax");
 
 	Params::ProceduralRotationMapModifier_GetYawMax Parms{};
 
@@ -664,10 +583,7 @@ float UProceduralRotationMapModifier::GetYawMax() const
 
 float UProceduralRotationMapModifier::GetYawMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationMapModifier", "GetYawMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationMapModifier", "GetYawMin");
 
 	Params::ProceduralRotationMapModifier_GetYawMin Parms{};
 
@@ -689,10 +605,7 @@ float UProceduralRotationMapModifier::GetYawMin() const
 
 void UProceduralRotationNoiseModifier::SetRandomPitchMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomPitchMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomPitchMax");
 
 	Params::ProceduralRotationNoiseModifier_SetRandomPitchMax Parms{};
 
@@ -714,10 +627,7 @@ void UProceduralRotationNoiseModifier::SetRandomPitchMax(float InValue)
 
 void UProceduralRotationNoiseModifier::SetRandomPitchMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomPitchMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomPitchMin");
 
 	Params::ProceduralRotationNoiseModifier_SetRandomPitchMin Parms{};
 
@@ -739,10 +649,7 @@ void UProceduralRotationNoiseModifier::SetRandomPitchMin(float InValue)
 
 void UProceduralRotationNoiseModifier::SetRandomRollMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomRollMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomRollMax");
 
 	Params::ProceduralRotationNoiseModifier_SetRandomRollMax Parms{};
 
@@ -764,10 +671,7 @@ void UProceduralRotationNoiseModifier::SetRandomRollMax(float InValue)
 
 void UProceduralRotationNoiseModifier::SetRandomRollMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomRollMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomRollMin");
 
 	Params::ProceduralRotationNoiseModifier_SetRandomRollMin Parms{};
 
@@ -789,10 +693,7 @@ void UProceduralRotationNoiseModifier::SetRandomRollMin(float InValue)
 
 void UProceduralRotationNoiseModifier::SetRandomYawMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomYawMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomYawMax");
 
 	Params::ProceduralRotationNoiseModifier_SetRandomYawMax Parms{};
 
@@ -814,10 +715,7 @@ void UProceduralRotationNoiseModifier::SetRandomYawMax(float InValue)
 
 void UProceduralRotationNoiseModifier::SetRandomYawMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomYawMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "SetRandomYawMin");
 
 	Params::ProceduralRotationNoiseModifier_SetRandomYawMin Parms{};
 
@@ -839,10 +737,7 @@ void UProceduralRotationNoiseModifier::SetRandomYawMin(float InValue)
 
 float UProceduralRotationNoiseModifier::GetRandomPitchMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomPitchMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomPitchMax");
 
 	Params::ProceduralRotationNoiseModifier_GetRandomPitchMax Parms{};
 
@@ -864,10 +759,7 @@ float UProceduralRotationNoiseModifier::GetRandomPitchMax() const
 
 float UProceduralRotationNoiseModifier::GetRandomPitchMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomPitchMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomPitchMin");
 
 	Params::ProceduralRotationNoiseModifier_GetRandomPitchMin Parms{};
 
@@ -889,10 +781,7 @@ float UProceduralRotationNoiseModifier::GetRandomPitchMin() const
 
 float UProceduralRotationNoiseModifier::GetRandomRollMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomRollMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomRollMax");
 
 	Params::ProceduralRotationNoiseModifier_GetRandomRollMax Parms{};
 
@@ -914,10 +803,7 @@ float UProceduralRotationNoiseModifier::GetRandomRollMax() const
 
 float UProceduralRotationNoiseModifier::GetRandomRollMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomRollMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomRollMin");
 
 	Params::ProceduralRotationNoiseModifier_GetRandomRollMin Parms{};
 
@@ -939,10 +825,7 @@ float UProceduralRotationNoiseModifier::GetRandomRollMin() const
 
 float UProceduralRotationNoiseModifier::GetRandomYawMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomYawMax");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomYawMax");
 
 	Params::ProceduralRotationNoiseModifier_GetRandomYawMax Parms{};
 
@@ -964,10 +847,7 @@ float UProceduralRotationNoiseModifier::GetRandomYawMax() const
 
 float UProceduralRotationNoiseModifier::GetRandomYawMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomYawMin");
+	class UFunction* Func = Class->GetFunction("ProceduralRotationNoiseModifier", "GetRandomYawMin");
 
 	Params::ProceduralRotationNoiseModifier_GetRandomYawMin Parms{};
 
@@ -989,10 +869,7 @@ float UProceduralRotationNoiseModifier::GetRandomYawMin() const
 
 void UProceduralScaleMapModifier::SetRemapScaleMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScaleMapModifier", "SetRemapScaleMax");
+	class UFunction* Func = Class->GetFunction("ProceduralScaleMapModifier", "SetRemapScaleMax");
 
 	Params::ProceduralScaleMapModifier_SetRemapScaleMax Parms{};
 
@@ -1014,10 +891,7 @@ void UProceduralScaleMapModifier::SetRemapScaleMax(float InValue)
 
 void UProceduralScaleMapModifier::SetRemapScaleMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScaleMapModifier", "SetRemapScaleMin");
+	class UFunction* Func = Class->GetFunction("ProceduralScaleMapModifier", "SetRemapScaleMin");
 
 	Params::ProceduralScaleMapModifier_SetRemapScaleMin Parms{};
 
@@ -1039,10 +913,7 @@ void UProceduralScaleMapModifier::SetRemapScaleMin(float InValue)
 
 float UProceduralScaleMapModifier::GetRemapScaleMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScaleMapModifier", "GetRemapScaleMax");
+	class UFunction* Func = Class->GetFunction("ProceduralScaleMapModifier", "GetRemapScaleMax");
 
 	Params::ProceduralScaleMapModifier_GetRemapScaleMax Parms{};
 
@@ -1064,10 +935,7 @@ float UProceduralScaleMapModifier::GetRemapScaleMax() const
 
 float UProceduralScaleMapModifier::GetRemapScaleMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScaleMapModifier", "GetRemapScaleMin");
+	class UFunction* Func = Class->GetFunction("ProceduralScaleMapModifier", "GetRemapScaleMin");
 
 	Params::ProceduralScaleMapModifier_GetRemapScaleMin Parms{};
 
@@ -1089,10 +957,7 @@ float UProceduralScaleMapModifier::GetRemapScaleMin() const
 
 void UProceduralScaleNoiseModifier::SetScaleMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScaleNoiseModifier", "SetScaleMax");
+	class UFunction* Func = Class->GetFunction("ProceduralScaleNoiseModifier", "SetScaleMax");
 
 	Params::ProceduralScaleNoiseModifier_SetScaleMax Parms{};
 
@@ -1114,10 +979,7 @@ void UProceduralScaleNoiseModifier::SetScaleMax(float InValue)
 
 void UProceduralScaleNoiseModifier::SetScaleMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScaleNoiseModifier", "SetScaleMin");
+	class UFunction* Func = Class->GetFunction("ProceduralScaleNoiseModifier", "SetScaleMin");
 
 	Params::ProceduralScaleNoiseModifier_SetScaleMin Parms{};
 
@@ -1139,10 +1001,7 @@ void UProceduralScaleNoiseModifier::SetScaleMin(float InValue)
 
 float UProceduralScaleNoiseModifier::GetScaleMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScaleNoiseModifier", "GetScaleMax");
+	class UFunction* Func = Class->GetFunction("ProceduralScaleNoiseModifier", "GetScaleMax");
 
 	Params::ProceduralScaleNoiseModifier_GetScaleMax Parms{};
 
@@ -1164,10 +1023,7 @@ float UProceduralScaleNoiseModifier::GetScaleMax() const
 
 float UProceduralScaleNoiseModifier::GetScaleMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScaleNoiseModifier", "GetScaleMin");
+	class UFunction* Func = Class->GetFunction("ProceduralScaleNoiseModifier", "GetScaleMin");
 
 	Params::ProceduralScaleNoiseModifier_GetScaleMin Parms{};
 
@@ -1189,10 +1045,7 @@ float UProceduralScaleNoiseModifier::GetScaleMin() const
 
 void UProceduralScatterSettings::SetSourcePointDistanceMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScatterSettings", "SetSourcePointDistanceMax");
+	class UFunction* Func = Class->GetFunction("ProceduralScatterSettings", "SetSourcePointDistanceMax");
 
 	Params::ProceduralScatterSettings_SetSourcePointDistanceMax Parms{};
 
@@ -1214,10 +1067,7 @@ void UProceduralScatterSettings::SetSourcePointDistanceMax(float InValue)
 
 void UProceduralScatterSettings::SetSourcePointDistanceMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScatterSettings", "SetSourcePointDistanceMin");
+	class UFunction* Func = Class->GetFunction("ProceduralScatterSettings", "SetSourcePointDistanceMin");
 
 	Params::ProceduralScatterSettings_SetSourcePointDistanceMin Parms{};
 
@@ -1239,10 +1089,7 @@ void UProceduralScatterSettings::SetSourcePointDistanceMin(float InValue)
 
 float UProceduralScatterSettings::GetSourcePointDistanceMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScatterSettings", "GetSourcePointDistanceMax");
+	class UFunction* Func = Class->GetFunction("ProceduralScatterSettings", "GetSourcePointDistanceMax");
 
 	Params::ProceduralScatterSettings_GetSourcePointDistanceMax Parms{};
 
@@ -1264,10 +1111,7 @@ float UProceduralScatterSettings::GetSourcePointDistanceMax() const
 
 float UProceduralScatterSettings::GetSourcePointDistanceMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralScatterSettings", "GetSourcePointDistanceMin");
+	class UFunction* Func = Class->GetFunction("ProceduralScatterSettings", "GetSourcePointDistanceMin");
 
 	Params::ProceduralScatterSettings_GetSourcePointDistanceMin Parms{};
 
@@ -1289,10 +1133,7 @@ float UProceduralScatterSettings::GetSourcePointDistanceMin() const
 
 void UProceduralSurfaceHeightMap::SetHeightRangeMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceHeightMap", "SetHeightRangeMax");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceHeightMap", "SetHeightRangeMax");
 
 	Params::ProceduralSurfaceHeightMap_SetHeightRangeMax Parms{};
 
@@ -1314,10 +1155,7 @@ void UProceduralSurfaceHeightMap::SetHeightRangeMax(float InValue)
 
 void UProceduralSurfaceHeightMap::SetHeightRangeMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceHeightMap", "SetHeightRangeMin");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceHeightMap", "SetHeightRangeMin");
 
 	Params::ProceduralSurfaceHeightMap_SetHeightRangeMin Parms{};
 
@@ -1339,10 +1177,7 @@ void UProceduralSurfaceHeightMap::SetHeightRangeMin(float InValue)
 
 float UProceduralSurfaceHeightMap::GetHeightRangeMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceHeightMap", "GetHeightRangeMax");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceHeightMap", "GetHeightRangeMax");
 
 	Params::ProceduralSurfaceHeightMap_GetHeightRangeMax Parms{};
 
@@ -1364,10 +1199,7 @@ float UProceduralSurfaceHeightMap::GetHeightRangeMax() const
 
 float UProceduralSurfaceHeightMap::GetHeightRangeMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceHeightMap", "GetHeightRangeMin");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceHeightMap", "GetHeightRangeMin");
 
 	Params::ProceduralSurfaceHeightMap_GetHeightRangeMin Parms{};
 
@@ -1390,10 +1222,7 @@ float UProceduralSurfaceHeightMap::GetHeightRangeMin() const
 
 float UProceduralSurfaceHeightMap::GetValue(float InHeight) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceHeightMap", "GetValue");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceHeightMap", "GetValue");
 
 	Params::ProceduralSurfaceHeightMap_GetValue Parms{};
 
@@ -1417,10 +1246,7 @@ float UProceduralSurfaceHeightMap::GetValue(float InHeight) const
 
 void UProceduralSurfaceSlopeAngleMap::SetSlopeAngleRangeMax(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "SetSlopeAngleRangeMax");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "SetSlopeAngleRangeMax");
 
 	Params::ProceduralSurfaceSlopeAngleMap_SetSlopeAngleRangeMax Parms{};
 
@@ -1442,10 +1268,7 @@ void UProceduralSurfaceSlopeAngleMap::SetSlopeAngleRangeMax(float InValue)
 
 void UProceduralSurfaceSlopeAngleMap::SetSlopeAngleRangeMin(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "SetSlopeAngleRangeMin");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "SetSlopeAngleRangeMin");
 
 	Params::ProceduralSurfaceSlopeAngleMap_SetSlopeAngleRangeMin Parms{};
 
@@ -1467,10 +1290,7 @@ void UProceduralSurfaceSlopeAngleMap::SetSlopeAngleRangeMin(float InValue)
 
 float UProceduralSurfaceSlopeAngleMap::GetSlopeAngleRangeMax() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "GetSlopeAngleRangeMax");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "GetSlopeAngleRangeMax");
 
 	Params::ProceduralSurfaceSlopeAngleMap_GetSlopeAngleRangeMax Parms{};
 
@@ -1492,10 +1312,7 @@ float UProceduralSurfaceSlopeAngleMap::GetSlopeAngleRangeMax() const
 
 float UProceduralSurfaceSlopeAngleMap::GetSlopeAngleRangeMin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "GetSlopeAngleRangeMin");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "GetSlopeAngleRangeMin");
 
 	Params::ProceduralSurfaceSlopeAngleMap_GetSlopeAngleRangeMin Parms{};
 
@@ -1518,10 +1335,7 @@ float UProceduralSurfaceSlopeAngleMap::GetSlopeAngleRangeMin() const
 
 float UProceduralSurfaceSlopeAngleMap::GetValue(float InSlopeAngle) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "GetValue");
+	class UFunction* Func = Class->GetFunction("ProceduralSurfaceSlopeAngleMap", "GetValue");
 
 	Params::ProceduralSurfaceSlopeAngleMap_GetValue Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UM_MED_Sandcastle_AnimBP_C::ExecuteUbergraph_M_MED_Sandcastle_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Sandcastle_AnimBP_C", "ExecuteUbergraph_M_MED_Sandcastle_AnimBP");
+	class UFunction* Func = Class->GetFunction("M_MED_Sandcastle_AnimBP_C", "ExecuteUbergraph_M_MED_Sandcastle_AnimBP");
 
 	Params::M_MED_Sandcastle_AnimBP_C_ExecuteUbergraph_M_MED_Sandcastle_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UM_MED_Sandcastle_AnimBP_C::ExecuteUbergraph_M_MED_Sandcastle_AnimBP(int32 
 
 void UM_MED_Sandcastle_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Sandcastle_AnimBP_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("M_MED_Sandcastle_AnimBP_C", "BlueprintUpdateAnimation");
 
 	Params::M_MED_Sandcastle_AnimBP_C_BlueprintUpdateAnimation Parms{};
 
@@ -63,10 +57,7 @@ void UM_MED_Sandcastle_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UM_MED_Sandcastle_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Sandcastle_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("M_MED_Sandcastle_AnimBP_C", "AnimGraph");
 
 	Params::M_MED_Sandcastle_AnimBP_C_AnimGraph Parms{};
 

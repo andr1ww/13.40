@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UF_MED_Ocean_Rider_AnimBP_C::ExecuteUbergraph_F_MED_Ocean_Rider_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Ocean_Rider_AnimBP_C", "ExecuteUbergraph_F_MED_Ocean_Rider_AnimBP");
+	class UFunction* Func = Class->GetFunction("F_MED_Ocean_Rider_AnimBP_C", "ExecuteUbergraph_F_MED_Ocean_Rider_AnimBP");
 
 	Params::F_MED_Ocean_Rider_AnimBP_C_ExecuteUbergraph_F_MED_Ocean_Rider_AnimBP Parms{};
 
@@ -41,10 +38,7 @@ void UF_MED_Ocean_Rider_AnimBP_C::ExecuteUbergraph_F_MED_Ocean_Rider_AnimBP(int3
 
 void UF_MED_Ocean_Rider_AnimBP_C::BlueprintInitializeAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Ocean_Rider_AnimBP_C", "BlueprintInitializeAnimation");
+	class UFunction* Func = Class->GetFunction("F_MED_Ocean_Rider_AnimBP_C", "BlueprintInitializeAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UF_MED_Ocean_Rider_AnimBP_C::BlueprintInitializeAnimation()
 
 void UF_MED_Ocean_Rider_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Ocean_Rider_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("F_MED_Ocean_Rider_AnimBP_C", "AnimGraph");
 
 	Params::F_MED_Ocean_Rider_AnimBP_C_AnimGraph Parms{};
 

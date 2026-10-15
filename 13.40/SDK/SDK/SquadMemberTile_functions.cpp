@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void USquadMemberTile_C::SetVisuals(EGameReadiness Member_Readiness, bool Is_In_Frontend)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "SetVisuals");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "SetVisuals");
 
 	Params::SquadMemberTile_C_SetVisuals Parms{};
 
@@ -43,10 +40,7 @@ void USquadMemberTile_C::SetVisuals(EGameReadiness Member_Readiness, bool Is_In_
 
 void USquadMemberTile_C::SetEmptyVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "SetEmptyVisuals");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "SetEmptyVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void USquadMemberTile_C::SetEmptyVisuals()
 
 void USquadMemberTile_C::SetSitOutVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "SetSitOutVisuals");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "SetSitOutVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void USquadMemberTile_C::SetSitOutVisuals()
 
 void USquadMemberTile_C::SetReadyVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "SetReadyVisuals");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "SetReadyVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void USquadMemberTile_C::SetReadyVisuals()
 
 void USquadMemberTile_C::SetNotReadyVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "SetNotReadyVisuals");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "SetNotReadyVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -101,10 +86,7 @@ void USquadMemberTile_C::SetNotReadyVisuals()
 
 void USquadMemberTile_C::OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7");
 
 	Params::SquadMemberTile_C_OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7 Parms{};
 
@@ -119,10 +101,7 @@ void USquadMemberTile_C::OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7(class UObject
 
 void USquadMemberTile_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +112,7 @@ void USquadMemberTile_C::BP_OnUnhovered()
 
 void USquadMemberTile_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +123,7 @@ void USquadMemberTile_C::BP_OnHovered()
 
 void USquadMemberTile_C::OnSquadAssigned()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "OnSquadAssigned");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "OnSquadAssigned");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +134,7 @@ void USquadMemberTile_C::OnSquadAssigned()
 
 void USquadMemberTile_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -177,10 +147,7 @@ void USquadMemberTile_C::Construct()
 
 void USquadMemberTile_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "PreConstruct");
 
 	Params::SquadMemberTile_C_PreConstruct Parms{};
 
@@ -197,10 +164,7 @@ void USquadMemberTile_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void USquadMemberTile_C::OnMemberGameReadinessChanged(EGameReadiness ReadyStatus_OnMemberGameReadinessChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "OnMemberGameReadinessChanged");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "OnMemberGameReadinessChanged");
 
 	Params::SquadMemberTile_C_OnMemberGameReadinessChanged Parms{};
 
@@ -215,10 +179,7 @@ void USquadMemberTile_C::OnMemberGameReadinessChanged(EGameReadiness ReadyStatus
 
 void USquadMemberTile_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -229,10 +190,7 @@ void USquadMemberTile_C::BP_OnSelected()
 
 void USquadMemberTile_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -245,10 +203,7 @@ void USquadMemberTile_C::BP_OnDeselected()
 
 void USquadMemberTile_C::BP_OnTeamMemberEstablished(bool bHasValidMember_BP_OnTeamMemberEstablished)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnTeamMemberEstablished");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "BP_OnTeamMemberEstablished");
 
 	Params::SquadMemberTile_C_BP_OnTeamMemberEstablished Parms{};
 
@@ -265,10 +220,7 @@ void USquadMemberTile_C::BP_OnTeamMemberEstablished(bool bHasValidMember_BP_OnTe
 
 void USquadMemberTile_C::OnMemberIsInFrontendChanged(bool bIsInFrontEnd_OnMemberIsInFrontendChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "OnMemberIsInFrontendChanged");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "OnMemberIsInFrontendChanged");
 
 	Params::SquadMemberTile_C_OnMemberIsInFrontendChanged Parms{};
 
@@ -285,10 +237,7 @@ void USquadMemberTile_C::OnMemberIsInFrontendChanged(bool bIsInFrontEnd_OnMember
 
 void USquadMemberTile_C::ExecuteUbergraph_SquadMemberTile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMemberTile_C", "ExecuteUbergraph_SquadMemberTile");
+	class UFunction* Func = Class->GetFunction("SquadMemberTile_C", "ExecuteUbergraph_SquadMemberTile");
 
 	Params::SquadMemberTile_C_ExecuteUbergraph_SquadMemberTile Parms{};
 

@@ -20,10 +20,7 @@ SDK_NAMESPACE_START
 
 void UEntityEnableableComponent::OnRep_Enabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityEnableableComponent", "OnRep_Enabled");
+	class UFunction* Func = Class->GetFunction("EntityEnableableComponent", "OnRep_Enabled");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

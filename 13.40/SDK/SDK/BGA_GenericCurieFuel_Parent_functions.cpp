@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_GenericCurieFuel_Parent_C::ExecuteUbergraph_BGA_GenericCurieFuel_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "ExecuteUbergraph_BGA_GenericCurieFuel_Parent");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "ExecuteUbergraph_BGA_GenericCurieFuel_Parent");
 
 	Params::BGA_GenericCurieFuel_Parent_C_ExecuteUbergraph_BGA_GenericCurieFuel_Parent Parms{};
 
@@ -41,10 +38,7 @@ void ABGA_GenericCurieFuel_Parent_C::ExecuteUbergraph_BGA_GenericCurieFuel_Paren
 
 void ABGA_GenericCurieFuel_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -64,10 +58,7 @@ void ABGA_GenericCurieFuel_Parent_C::ReceiveBeginPlay()
 
 void ABGA_GenericCurieFuel_Parent_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "ReceiveHit");
 
 	Params::BGA_GenericCurieFuel_Parent_C_ReceiveHit Parms{};
 
@@ -92,10 +83,7 @@ void ABGA_GenericCurieFuel_Parent_C::ReceiveHit(class UPrimitiveComponent* MyCom
 
 void ABGA_GenericCurieFuel_Parent_C::OnCurieElementDetached_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "OnCurieElementDetached_BP");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "OnCurieElementDetached_BP");
 
 	Params::BGA_GenericCurieFuel_Parent_C_OnCurieElementDetached_BP Parms{};
 
@@ -114,10 +102,7 @@ void ABGA_GenericCurieFuel_Parent_C::OnCurieElementDetached_BP(const struct FCur
 
 void ABGA_GenericCurieFuel_Parent_C::BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
 
 	Params::BGA_GenericCurieFuel_Parent_C_BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
@@ -135,10 +120,7 @@ void ABGA_GenericCurieFuel_Parent_C::BndEvt__FortProjectileMovement_K2Node_Compo
 
 void ABGA_GenericCurieFuel_Parent_C::BaseDied(class AActor* DestroyedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "BaseDied");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "BaseDied");
 
 	Params::BGA_GenericCurieFuel_Parent_C_BaseDied Parms{};
 
@@ -162,10 +144,7 @@ void ABGA_GenericCurieFuel_Parent_C::BaseDied(class AActor* DestroyedActor)
 
 void ABGA_GenericCurieFuel_Parent_C::AttachedComponentDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "AttachedComponentDied");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "AttachedComponentDied");
 
 	Params::BGA_GenericCurieFuel_Parent_C_AttachedComponentDied Parms{};
 
@@ -187,10 +166,7 @@ void ABGA_GenericCurieFuel_Parent_C::AttachedComponentDied(class AActor* Damaged
 
 void ABGA_GenericCurieFuel_Parent_C::OnCurieActive_112B241847E303B58BF962A699068D1C()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "OnCurieActive_112B241847E303B58BF962A699068D1C");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "OnCurieActive_112B241847E303B58BF962A699068D1C");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -201,10 +177,7 @@ void ABGA_GenericCurieFuel_Parent_C::OnCurieActive_112B241847E303B58BF962A699068
 
 void ABGA_GenericCurieFuel_Parent_C::SelfIgnite()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "SelfIgnite");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "SelfIgnite");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -218,10 +191,7 @@ void ABGA_GenericCurieFuel_Parent_C::SelfIgnite()
 
 void ABGA_GenericCurieFuel_Parent_C::HandleHits(class UObject* ObjectRef, class UPrimitiveComponent* PrimitiveObjectRef)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "HandleHits");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "HandleHits");
 
 	Params::BGA_GenericCurieFuel_Parent_C_HandleHits Parms{};
 
@@ -241,10 +211,7 @@ void ABGA_GenericCurieFuel_Parent_C::HandleHits(class UObject* ObjectRef, class 
 
 void ABGA_GenericCurieFuel_Parent_C::HitVehicle(class UObject* ObjectRef, class UPrimitiveComponent* PrimitiveObjectRef, bool* Success)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "HitVehicle");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "HitVehicle");
 
 	Params::BGA_GenericCurieFuel_Parent_C_HitVehicle Parms{};
 
@@ -267,10 +234,7 @@ void ABGA_GenericCurieFuel_Parent_C::HitVehicle(class UObject* ObjectRef, class 
 
 void ABGA_GenericCurieFuel_Parent_C::HitBuildingWall(class UObject* ObjectRef, class UPrimitiveComponent* PrimitiveObjectRef, bool* Success)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "HitBuildingWall");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "HitBuildingWall");
 
 	Params::BGA_GenericCurieFuel_Parent_C_HitBuildingWall Parms{};
 
@@ -293,10 +257,7 @@ void ABGA_GenericCurieFuel_Parent_C::HitBuildingWall(class UObject* ObjectRef, c
 
 void ABGA_GenericCurieFuel_Parent_C::HitBuildingActor(class UObject* ObjectRef, class UPrimitiveComponent* PrimitiveObjectRef, bool* Success)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "HitBuildingActor");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "HitBuildingActor");
 
 	Params::BGA_GenericCurieFuel_Parent_C_HitBuildingActor Parms{};
 
@@ -315,10 +276,7 @@ void ABGA_GenericCurieFuel_Parent_C::HitBuildingActor(class UObject* ObjectRef, 
 
 void ABGA_GenericCurieFuel_Parent_C::OnRep_ResumeSimulation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "OnRep_ResumeSimulation");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "OnRep_ResumeSimulation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -331,10 +289,7 @@ void ABGA_GenericCurieFuel_Parent_C::OnRep_ResumeSimulation()
 
 void ABGA_GenericCurieFuel_Parent_C::IgniteNearbyMaterials(const struct FVector& SpherePos)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "IgniteNearbyMaterials");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "IgniteNearbyMaterials");
 
 	Params::BGA_GenericCurieFuel_Parent_C_IgniteNearbyMaterials Parms{};
 
@@ -352,10 +307,7 @@ void ABGA_GenericCurieFuel_Parent_C::IgniteNearbyMaterials(const struct FVector&
 
 void ABGA_GenericCurieFuel_Parent_C::ShouldPlayNativeCurieFX(EFortCurieNativeFXType FXType, struct FFortNativeCurieFXResponse* OutResponse) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "ShouldPlayNativeCurieFX");
+	class UFunction* Func = Class->GetFunction("BGA_GenericCurieFuel_Parent_C", "ShouldPlayNativeCurieFX");
 
 	Params::BGA_GenericCurieFuel_Parent_C_ShouldPlayNativeCurieFX Parms{};
 

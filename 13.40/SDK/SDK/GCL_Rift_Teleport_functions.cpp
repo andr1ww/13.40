@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 bool AGCL_Rift_Teleport_C::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnRemove");
+	class UFunction* Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnRemove");
 
 	Params::GCL_Rift_Teleport_C_OnRemove Parms{};
 
@@ -50,10 +47,7 @@ bool AGCL_Rift_Teleport_C::OnRemove(class AActor* MyTarget, const struct FGamepl
 
 bool AGCL_Rift_Teleport_C::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Rift_Teleport_C", "WhileActive");
+	class UFunction* Func = Class->GetFunction("GCL_Rift_Teleport_C", "WhileActive");
 
 	Params::GCL_Rift_Teleport_C_WhileActive Parms{};
 
@@ -74,10 +68,7 @@ bool AGCL_Rift_Teleport_C::WhileActive(class AActor* MyTarget, const struct FGam
 
 void AGCL_Rift_Teleport_C::OnStartParticleSystemSpawned(class UParticleSystemComponent* SpawnedParticleSysComponent, const struct FGameplayCueParameters& Parameters) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnStartParticleSystemSpawned");
+	class UFunction* Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnStartParticleSystemSpawned");
 
 	Params::GCL_Rift_Teleport_C_OnStartParticleSystemSpawned Parms{};
 
@@ -96,10 +87,7 @@ void AGCL_Rift_Teleport_C::OnStartParticleSystemSpawned(class UParticleSystemCom
 
 void AGCL_Rift_Teleport_C::OnWhileActiveParticleSystemDeactivate(class UParticleSystemComponent* WhileActiveParticleSysComponent, const struct FGameplayCueParameters& Parameters) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnWhileActiveParticleSystemDeactivate");
+	class UFunction* Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnWhileActiveParticleSystemDeactivate");
 
 	Params::GCL_Rift_Teleport_C_OnWhileActiveParticleSystemDeactivate Parms{};
 

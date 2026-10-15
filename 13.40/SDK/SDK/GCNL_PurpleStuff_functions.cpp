@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_PurpleStuff_C::ExecuteUbergraph_GCNL_PurpleStuff(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_PurpleStuff_C", "ExecuteUbergraph_GCNL_PurpleStuff");
+	class UFunction* Func = Class->GetFunction("GCNL_PurpleStuff_C", "ExecuteUbergraph_GCNL_PurpleStuff");
 
 	Params::GCNL_PurpleStuff_C_ExecuteUbergraph_GCNL_PurpleStuff Parms{};
 
@@ -43,10 +40,7 @@ void AGCNL_PurpleStuff_C::ExecuteUbergraph_GCNL_PurpleStuff(int32 EntryPoint)
 
 void AGCNL_PurpleStuff_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_PurpleStuff_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("GCNL_PurpleStuff_C", "ReceiveTick");
 
 	Params::GCNL_PurpleStuff_C_ReceiveTick Parms{};
 
@@ -61,10 +55,7 @@ void AGCNL_PurpleStuff_C::ReceiveTick(float DeltaSeconds)
 
 void AGCNL_PurpleStuff_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_PurpleStuff_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("GCNL_PurpleStuff_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void AGCNL_PurpleStuff_C::ReceiveBeginPlay()
 
 bool AGCNL_PurpleStuff_C::OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_PurpleStuff_C", "OnActive");
+	class UFunction* Func = Class->GetFunction("GCNL_PurpleStuff_C", "OnActive");
 
 	Params::GCNL_PurpleStuff_C_OnActive Parms{};
 
@@ -104,10 +92,7 @@ bool AGCNL_PurpleStuff_C::OnActive(class AActor* MyTarget, const struct FGamepla
 
 bool AGCNL_PurpleStuff_C::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_PurpleStuff_C", "OnRemove");
+	class UFunction* Func = Class->GetFunction("GCNL_PurpleStuff_C", "OnRemove");
 
 	Params::GCNL_PurpleStuff_C_OnRemove Parms{};
 

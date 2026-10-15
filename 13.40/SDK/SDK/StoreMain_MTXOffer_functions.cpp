@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UStoreMain_MTXOffer_C::ExecuteUbergraph_StoreMain_MTXOffer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "ExecuteUbergraph_StoreMain_MTXOffer");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "ExecuteUbergraph_StoreMain_MTXOffer");
 
 	Params::StoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer Parms{};
 
@@ -43,10 +40,7 @@ void UStoreMain_MTXOffer_C::ExecuteUbergraph_StoreMain_MTXOffer(int32 EntryPoint
 
 void UStoreMain_MTXOffer_C::OnOfferTileBrushLoaded(const struct FSlateBrush& OfferBrush)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnOfferTileBrushLoaded");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnOfferTileBrushLoaded");
 
 	Params::StoreMain_MTXOffer_C_OnOfferTileBrushLoaded Parms{};
 
@@ -61,10 +55,7 @@ void UStoreMain_MTXOffer_C::OnOfferTileBrushLoaded(const struct FSlateBrush& Off
 
 void UStoreMain_MTXOffer_C::OnStoreSelectionOfferSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnStoreSelectionOfferSet");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnStoreSelectionOfferSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UStoreMain_MTXOffer_C::OnStoreSelectionOfferSet()
 
 void UStoreMain_MTXOffer_C::OnUpdateStorePrice(const class FText& InStorePrice)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnUpdateStorePrice");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnUpdateStorePrice");
 
 	Params::StoreMain_MTXOffer_C_OnUpdateStorePrice Parms{};
 
@@ -95,10 +83,7 @@ void UStoreMain_MTXOffer_C::OnUpdateStorePrice(const class FText& InStorePrice)
 
 void UStoreMain_MTXOffer_C::OnOfferSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnOfferSet");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "OnOfferSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void UStoreMain_MTXOffer_C::OnOfferSet()
 
 void UStoreMain_MTXOffer_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "PreConstruct");
 
 	Params::StoreMain_MTXOffer_C_PreConstruct Parms{};
 
@@ -129,10 +111,7 @@ void UStoreMain_MTXOffer_C::PreConstruct(bool IsDesignTime)
 
 void UStoreMain_MTXOffer_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,10 +122,7 @@ void UStoreMain_MTXOffer_C::BP_OnUnhovered()
 
 void UStoreMain_MTXOffer_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +133,7 @@ void UStoreMain_MTXOffer_C::BP_OnHovered()
 
 void UStoreMain_MTXOffer_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "Construct");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +144,7 @@ void UStoreMain_MTXOffer_C::Construct()
 
 void UStoreMain_MTXOffer_C::InitOffer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "InitOffer");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "InitOffer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -185,10 +155,7 @@ void UStoreMain_MTXOffer_C::InitOffer()
 
 void UStoreMain_MTXOffer_C::ShowDetails()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "ShowDetails");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "ShowDetails");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,10 +166,7 @@ void UStoreMain_MTXOffer_C::ShowDetails()
 
 void UStoreMain_MTXOffer_C::TriggerIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "TriggerIntro");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "TriggerIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -213,10 +177,7 @@ void UStoreMain_MTXOffer_C::TriggerIntro()
 
 void UStoreMain_MTXOffer_C::InitialReset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "InitialReset");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "InitialReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -227,10 +188,7 @@ void UStoreMain_MTXOffer_C::InitialReset()
 
 void UStoreMain_MTXOffer_C::TriggerReset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "TriggerReset");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "TriggerReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,10 +201,7 @@ void UStoreMain_MTXOffer_C::TriggerReset()
 
 void UStoreMain_MTXOffer_C::SetTileSize(EFortMtxOfferDisplaySize DisplaySize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "SetTileSize");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "SetTileSize");
 
 	Params::StoreMain_MTXOffer_C_SetTileSize Parms{};
 
@@ -264,10 +219,7 @@ void UStoreMain_MTXOffer_C::SetTileSize(EFortMtxOfferDisplaySize DisplaySize)
 
 void UStoreMain_MTXOffer_C::SetTextOutlineColor(class UTextBlock* Text, const struct FFortMtxGradient& Gradient)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "SetTextOutlineColor");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "SetTextOutlineColor");
 
 	Params::StoreMain_MTXOffer_C_SetTextOutlineColor Parms{};
 
@@ -286,10 +238,7 @@ void UStoreMain_MTXOffer_C::SetTextOutlineColor(class UTextBlock* Text, const st
 
 void UStoreMain_MTXOffer_C::GetBonusText(class UFortStoreFrontOfferInfo* OfferInfo, class FText* BonusText_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_MTXOffer_C", "GetBonusText");
+	class UFunction* Func = Class->GetFunction("StoreMain_MTXOffer_C", "GetBonusText");
 
 	Params::StoreMain_MTXOffer_C_GetBonusText Parms{};
 

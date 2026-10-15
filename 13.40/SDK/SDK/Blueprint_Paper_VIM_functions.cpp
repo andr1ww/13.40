@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBlueprint_Paper_VIM_C::ExecuteUbergraph_Blueprint_Paper_VIM(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Blueprint_Paper_VIM_C", "ExecuteUbergraph_Blueprint_Paper_VIM");
+	class UFunction* Func = Class->GetFunction("Blueprint_Paper_VIM_C", "ExecuteUbergraph_Blueprint_Paper_VIM");
 
 	Params::Blueprint_Paper_VIM_C_ExecuteUbergraph_Blueprint_Paper_VIM Parms{};
 
@@ -43,10 +40,7 @@ void UBlueprint_Paper_VIM_C::ExecuteUbergraph_Blueprint_Paper_VIM(int32 EntryPoi
 
 void UBlueprint_Paper_VIM_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Blueprint_Paper_VIM_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("Blueprint_Paper_VIM_C", "AnimGraph");
 
 	Params::Blueprint_Paper_VIM_C_AnimGraph Parms{};
 

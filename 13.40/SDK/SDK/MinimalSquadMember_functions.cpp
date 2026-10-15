@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UMinimalSquadMember_C::SetEmptyVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadMember_C", "SetEmptyVisuals");
+	class UFunction* Func = Class->GetFunction("MinimalSquadMember_C", "SetEmptyVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UMinimalSquadMember_C::SetEmptyVisuals()
 
 void UMinimalSquadMember_C::SetSitOutVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadMember_C", "SetSitOutVisuals");
+	class UFunction* Func = Class->GetFunction("MinimalSquadMember_C", "SetSitOutVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void UMinimalSquadMember_C::SetSitOutVisuals()
 
 void UMinimalSquadMember_C::SetNotReadyVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadMember_C", "SetNotReadyVisuals");
+	class UFunction* Func = Class->GetFunction("MinimalSquadMember_C", "SetNotReadyVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -63,10 +54,7 @@ void UMinimalSquadMember_C::SetNotReadyVisuals()
 
 void UMinimalSquadMember_C::SetReadyVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadMember_C", "SetReadyVisuals");
+	class UFunction* Func = Class->GetFunction("MinimalSquadMember_C", "SetReadyVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +67,7 @@ void UMinimalSquadMember_C::SetReadyVisuals()
 
 void UMinimalSquadMember_C::OnMemberGameReadinessChanged(EGameReadiness ReadyStatus_OnMemberGameReadinessChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadMember_C", "OnMemberGameReadinessChanged");
+	class UFunction* Func = Class->GetFunction("MinimalSquadMember_C", "OnMemberGameReadinessChanged");
 
 	Params::MinimalSquadMember_C_OnMemberGameReadinessChanged Parms{};
 
@@ -99,10 +84,7 @@ void UMinimalSquadMember_C::OnMemberGameReadinessChanged(EGameReadiness ReadySta
 
 void UMinimalSquadMember_C::BP_OnTeamMemberEstablished(bool bHasValidMember_BP_OnTeamMemberEstablished)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadMember_C", "BP_OnTeamMemberEstablished");
+	class UFunction* Func = Class->GetFunction("MinimalSquadMember_C", "BP_OnTeamMemberEstablished");
 
 	Params::MinimalSquadMember_C_BP_OnTeamMemberEstablished Parms{};
 
@@ -119,10 +101,7 @@ void UMinimalSquadMember_C::BP_OnTeamMemberEstablished(bool bHasValidMember_BP_O
 
 void UMinimalSquadMember_C::ExecuteUbergraph_MinimalSquadMember(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadMember_C", "ExecuteUbergraph_MinimalSquadMember");
+	class UFunction* Func = Class->GetFunction("MinimalSquadMember_C", "ExecuteUbergraph_MinimalSquadMember");
 
 	Params::MinimalSquadMember_C_ExecuteUbergraph_MinimalSquadMember Parms{};
 

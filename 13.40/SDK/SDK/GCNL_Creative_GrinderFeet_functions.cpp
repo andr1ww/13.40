@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Creative_GrinderFeet_C::ExecuteUbergraph_GCNL_Creative_GrinderFeet(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "ExecuteUbergraph_GCNL_Creative_GrinderFeet");
+	class UFunction* Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "ExecuteUbergraph_GCNL_Creative_GrinderFeet");
 
 	Params::GCNL_Creative_GrinderFeet_C_ExecuteUbergraph_GCNL_Creative_GrinderFeet Parms{};
 
@@ -46,10 +43,7 @@ void AGCNL_Creative_GrinderFeet_C::ExecuteUbergraph_GCNL_Creative_GrinderFeet(in
 
 void AGCNL_Creative_GrinderFeet_C::On_Target_Pawn_Hit_Event(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "On Target Pawn Hit Event");
+	class UFunction* Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "On Target Pawn Hit Event");
 
 	Params::GCNL_Creative_GrinderFeet_C_On_Target_Pawn_Hit_Event Parms{};
 
@@ -72,10 +66,7 @@ void AGCNL_Creative_GrinderFeet_C::On_Target_Pawn_Hit_Event(class AActor* SelfAc
 
 void AGCNL_Creative_GrinderFeet_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "OnLoopingStart");
 
 	Params::GCNL_Creative_GrinderFeet_C_OnLoopingStart Parms{};
 
@@ -95,10 +86,7 @@ void AGCNL_Creative_GrinderFeet_C::OnLoopingStart(class AActor* MyTarget, const 
 
 void AGCNL_Creative_GrinderFeet_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "ReceiveTick");
 
 	Params::GCNL_Creative_GrinderFeet_C_ReceiveTick Parms{};
 
@@ -120,10 +108,7 @@ void AGCNL_Creative_GrinderFeet_C::ReceiveTick(float DeltaSeconds)
 
 void AGCNL_Creative_GrinderFeet_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "OnRemoval");
 
 	Params::GCNL_Creative_GrinderFeet_C_OnRemoval Parms{};
 
@@ -150,10 +135,7 @@ void AGCNL_Creative_GrinderFeet_C::OnRemoval(class AActor* MyTarget, const struc
 
 void AGCNL_Creative_GrinderFeet_C::OnApplication(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "OnApplication");
+	class UFunction* Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "OnApplication");
 
 	Params::GCNL_Creative_GrinderFeet_C_OnApplication Parms{};
 
@@ -176,10 +158,7 @@ void AGCNL_Creative_GrinderFeet_C::OnApplication(class AActor* MyTarget, const s
 
 struct FVector AGCNL_Creative_GrinderFeet_C::GetPawnTeamNumber(const class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "GetPawnTeamNumber");
+	class UFunction* Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "GetPawnTeamNumber");
 
 	Params::GCNL_Creative_GrinderFeet_C_GetPawnTeamNumber Parms{};
 
@@ -196,10 +175,7 @@ struct FVector AGCNL_Creative_GrinderFeet_C::GetPawnTeamNumber(const class AActo
 
 void AGCNL_Creative_GrinderFeet_C::DeactivateFootParticles()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "DeactivateFootParticles");
+	class UFunction* Func = Class->GetFunction("GCNL_Creative_GrinderFeet_C", "DeactivateFootParticles");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

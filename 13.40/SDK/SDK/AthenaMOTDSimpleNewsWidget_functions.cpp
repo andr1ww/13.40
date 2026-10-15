@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UAthenaMOTDSimpleNewsWidget_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UAthenaMOTDSimpleNewsWidget_C::BP_OnActivated()
 
 void UAthenaMOTDSimpleNewsWidget_C::ExecuteUbergraph_AthenaMOTDSimpleNewsWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "ExecuteUbergraph_AthenaMOTDSimpleNewsWidget");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "ExecuteUbergraph_AthenaMOTDSimpleNewsWidget");
 
 	Params::AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget Parms{};
 
@@ -57,10 +51,7 @@ void UAthenaMOTDSimpleNewsWidget_C::ExecuteUbergraph_AthenaMOTDSimpleNewsWidget(
 
 void UAthenaMOTDSimpleNewsWidget_C::OnPopulateNews(const struct FAthenaNewsEntry& NewsEntry)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "OnPopulateNews");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "OnPopulateNews");
 
 	Params::AthenaMOTDSimpleNewsWidget_C_OnPopulateNews Parms{};
 
@@ -77,10 +68,7 @@ void UAthenaMOTDSimpleNewsWidget_C::OnPopulateNews(const struct FAthenaNewsEntry
 
 void UAthenaMOTDSimpleNewsWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "PreConstruct");
 
 	Params::AthenaMOTDSimpleNewsWidget_C_PreConstruct Parms{};
 
@@ -98,10 +86,7 @@ void UAthenaMOTDSimpleNewsWidget_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaMOTDSimpleNewsWidget_C::SetDynamicColors(const struct FColor& Dark, const struct FColor& Light)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "SetDynamicColors");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "SetDynamicColors");
 
 	Params::AthenaMOTDSimpleNewsWidget_C_SetDynamicColors Parms{};
 

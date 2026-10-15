@@ -26,10 +26,7 @@ SDK_NAMESPACE_START
 
 bool UAnimNotifyState_TeleportFinished_C::Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimNotifyState_TeleportFinished_C", "Received_NotifyBegin");
+	class UFunction* Func = Class->GetFunction("AnimNotifyState_TeleportFinished_C", "Received_NotifyBegin");
 
 	Params::AnimNotifyState_TeleportFinished_C_Received_NotifyBegin Parms{};
 
@@ -52,10 +49,7 @@ bool UAnimNotifyState_TeleportFinished_C::Received_NotifyBegin(class USkeletalMe
 
 bool UAnimNotifyState_TeleportFinished_C::Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimNotifyState_TeleportFinished_C", "Received_NotifyEnd");
+	class UFunction* Func = Class->GetFunction("AnimNotifyState_TeleportFinished_C", "Received_NotifyEnd");
 
 	Params::AnimNotifyState_TeleportFinished_C_Received_NotifyEnd Parms{};
 

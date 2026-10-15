@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEventLeaderboardDetails_Stat_C::ExecuteUbergraph_EventLeaderboardDetails_Stat(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "ExecuteUbergraph_EventLeaderboardDetails_Stat");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "ExecuteUbergraph_EventLeaderboardDetails_Stat");
 
 	Params::EventLeaderboardDetails_Stat_C_ExecuteUbergraph_EventLeaderboardDetails_Stat Parms{};
 
@@ -41,10 +38,7 @@ void UEventLeaderboardDetails_Stat_C::ExecuteUbergraph_EventLeaderboardDetails_S
 
 void UEventLeaderboardDetails_Stat_C::EventStatAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "EventStatAnim");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "EventStatAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UEventLeaderboardDetails_Stat_C::EventStatAnim()
 
 void UEventLeaderboardDetails_Stat_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "Construct");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,10 +64,7 @@ void UEventLeaderboardDetails_Stat_C::Construct()
 
 void UEventLeaderboardDetails_Stat_C::SetStatData(const class FText& Name_0, float Value, int32 NumFractionalDigits)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "SetStatData");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "SetStatData");
 
 	Params::EventLeaderboardDetails_Stat_C_SetStatData Parms{};
 

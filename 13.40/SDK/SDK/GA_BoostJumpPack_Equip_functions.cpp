@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_BoostJumpPack_Equip_C::ExecuteUbergraph_GA_BoostJumpPack_Equip(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "ExecuteUbergraph_GA_BoostJumpPack_Equip");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "ExecuteUbergraph_GA_BoostJumpPack_Equip");
 
 	Params::GA_BoostJumpPack_Equip_C_ExecuteUbergraph_GA_BoostJumpPack_Equip Parms{};
 
@@ -41,10 +38,7 @@ void UGA_BoostJumpPack_Equip_C::ExecuteUbergraph_GA_BoostJumpPack_Equip(int32 En
 
 void UGA_BoostJumpPack_Equip_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGA_BoostJumpPack_Equip_C::K2_ActivateAbility()
 
 void UGA_BoostJumpPack_Equip_C::IsAuthority(bool* bAuthority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "IsAuthority");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "IsAuthority");
 
 	Params::GA_BoostJumpPack_Equip_C_IsAuthority Parms{};
 
@@ -80,10 +71,7 @@ void UGA_BoostJumpPack_Equip_C::IsAuthority(bool* bAuthority)
 
 bool UGA_BoostJumpPack_Equip_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "K2_CanActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "K2_CanActivateAbility");
 
 	Params::GA_BoostJumpPack_Equip_C_K2_CanActivateAbility Parms{};
 
@@ -106,10 +94,7 @@ bool UGA_BoostJumpPack_Equip_C::K2_CanActivateAbility(const struct FGameplayAbil
 
 void UGA_BoostJumpPack_Equip_C::GetPlayerController(class AFortPlayerPawn* Pawn, class AFortPlayerControllerZone** AsFort_Player_Controller_Zone) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "GetPlayerController");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "GetPlayerController");
 
 	Params::GA_BoostJumpPack_Equip_C_GetPlayerController Parms{};
 
@@ -130,10 +115,7 @@ void UGA_BoostJumpPack_Equip_C::GetPlayerController(class AFortPlayerPawn* Pawn,
 
 class UFortItem* UGA_BoostJumpPack_Equip_C::GetGadgetItem(class AFortPlayerPawn* Pawn) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "GetGadgetItem");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "GetGadgetItem");
 
 	Params::GA_BoostJumpPack_Equip_C_GetGadgetItem Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingsRotator_C::ExecuteUbergraph_SettingsRotator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_C", "ExecuteUbergraph_SettingsRotator");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_C", "ExecuteUbergraph_SettingsRotator");
 
 	Params::SettingsRotator_C_ExecuteUbergraph_SettingsRotator Parms{};
 
@@ -43,10 +40,7 @@ void USettingsRotator_C::ExecuteUbergraph_SettingsRotator(int32 EntryPoint)
 
 void USettingsRotator_C::BP_OnDefaultOptionSpecified(int32 DefaultOptionIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_C", "BP_OnDefaultOptionSpecified");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_C", "BP_OnDefaultOptionSpecified");
 
 	Params::SettingsRotator_C_BP_OnDefaultOptionSpecified Parms{};
 
@@ -63,10 +57,7 @@ void USettingsRotator_C::BP_OnDefaultOptionSpecified(int32 DefaultOptionIndex)
 
 void USettingsRotator_C::BP_OnOptionSelected(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_C", "BP_OnOptionSelected");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_C", "BP_OnOptionSelected");
 
 	Params::SettingsRotator_C_BP_OnOptionSelected Parms{};
 
@@ -83,10 +74,7 @@ void USettingsRotator_C::BP_OnOptionSelected(int32 Index_0)
 
 void USettingsRotator_C::BP_OnOptionsPopulated(int32 Count)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_C", "BP_OnOptionsPopulated");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_C", "BP_OnOptionsPopulated");
 
 	Params::SettingsRotator_C_BP_OnOptionsPopulated Parms{};
 

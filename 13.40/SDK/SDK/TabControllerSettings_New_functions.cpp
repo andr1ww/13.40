@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTabControllerSettings_New_C::ExecuteUbergraph_TabControllerSettings_New(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabControllerSettings_New_C", "ExecuteUbergraph_TabControllerSettings_New");
+	class UFunction* Func = Class->GetFunction("TabControllerSettings_New_C", "ExecuteUbergraph_TabControllerSettings_New");
 
 	Params::TabControllerSettings_New_C_ExecuteUbergraph_TabControllerSettings_New Parms{};
 
@@ -41,10 +38,7 @@ void UTabControllerSettings_New_C::ExecuteUbergraph_TabControllerSettings_New(in
 
 void UTabControllerSettings_New_C::CenterOnTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabControllerSettings_New_C", "CenterOnTab");
+	class UFunction* Func = Class->GetFunction("TabControllerSettings_New_C", "CenterOnTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UTabControllerSettings_New_C::CenterOnTab()
 
 void UTabControllerSettings_New_C::SettingValueChanged(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabControllerSettings_New_C", "SettingValueChanged");
+	class UFunction* Func = Class->GetFunction("TabControllerSettings_New_C", "SettingValueChanged");
 
 	Params::TabControllerSettings_New_C_SettingValueChanged Parms{};
 

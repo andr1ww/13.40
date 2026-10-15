@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UBF_ManagedParticles_C::getNiagaraParticles(class UObject* __WorldContext, struct FGameplayTagContainer* Gameplay_Tag_Container)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BF_ManagedParticles_C", "getNiagaraParticles");
+	class UFunction* Func = StaticClass()->GetFunction("BF_ManagedParticles_C", "getNiagaraParticles");
 
 	Params::BF_ManagedParticles_C_getNiagaraParticles Parms{};
 
@@ -48,10 +45,7 @@ void UBF_ManagedParticles_C::getNiagaraParticles(class UObject* __WorldContext, 
 
 void UBF_ManagedParticles_C::Activate_Managed_Niagara(bool Reset, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BF_ManagedParticles_C", "Activate Managed Niagara");
+	class UFunction* Func = StaticClass()->GetFunction("BF_ManagedParticles_C", "Activate Managed Niagara");
 
 	Params::BF_ManagedParticles_C_Activate_Managed_Niagara Parms{};
 
@@ -69,10 +63,7 @@ void UBF_ManagedParticles_C::Activate_Managed_Niagara(bool Reset, class UObject*
 
 void UBF_ManagedParticles_C::Deactivate_Managed_Niagara(class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BF_ManagedParticles_C", "Deactivate Managed Niagara");
+	class UFunction* Func = StaticClass()->GetFunction("BF_ManagedParticles_C", "Deactivate Managed Niagara");
 
 	Params::BF_ManagedParticles_C_Deactivate_Managed_Niagara Parms{};
 
@@ -91,10 +82,7 @@ void UBF_ManagedParticles_C::Deactivate_Managed_Niagara(class UObject* __WorldCo
 
 void UBF_ManagedParticles_C::Set_Managed_Particles_Parameter__Bool_(class FName Name_0, bool Value, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BF_ManagedParticles_C", "Set Managed Particles Parameter (Bool)");
+	class UFunction* Func = StaticClass()->GetFunction("BF_ManagedParticles_C", "Set Managed Particles Parameter (Bool)");
 
 	Params::BF_ManagedParticles_C_Set_Managed_Particles_Parameter__Bool_ Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Athena_Tether_C::ExecuteUbergraph_GCNL_Athena_Tether(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "ExecuteUbergraph_GCNL_Athena_Tether");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "ExecuteUbergraph_GCNL_Athena_Tether");
 
 	Params::GCNL_Athena_Tether_C_ExecuteUbergraph_GCNL_Athena_Tether Parms{};
 
@@ -41,10 +38,7 @@ void AGCNL_Athena_Tether_C::ExecuteUbergraph_GCNL_Athena_Tether(int32 EntryPoint
 
 void AGCNL_Athena_Tether_C::ScaleInSkisForPlayer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "ScaleInSkisForPlayer");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "ScaleInSkisForPlayer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AGCNL_Athena_Tether_C::ScaleInSkisForPlayer()
 
 void AGCNL_Athena_Tether_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AGCNL_Athena_Tether_C::ReceiveBeginPlay()
 
 void AGCNL_Athena_Tether_C::InitializeTetherGCNL(class UObject* Object)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "InitializeTetherGCNL");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "InitializeTetherGCNL");
 
 	Params::GCNL_Athena_Tether_C_InitializeTetherGCNL Parms{};
 
@@ -89,10 +77,7 @@ void AGCNL_Athena_Tether_C::InitializeTetherGCNL(class UObject* Object)
 
 void AGCNL_Athena_Tether_C::StopFF()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "StopFF");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "StopFF");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void AGCNL_Athena_Tether_C::StopFF()
 
 void AGCNL_Athena_Tether_C::UpdateFF()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "UpdateFF");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "UpdateFF");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void AGCNL_Athena_Tether_C::UpdateFF()
 
 void AGCNL_Athena_Tether_C::StartFF()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "StartFF");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "StartFF");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -135,10 +114,7 @@ void AGCNL_Athena_Tether_C::StartFF()
 
 void AGCNL_Athena_Tether_C::BndEvt__FortLayeredAudio_K2Node_ComponentBoundEvent_0_OnLayeredAudioComponentOneshot__DelegateSignature(class UAudioComponent* AudioComponent, class FName ParameterName, int32 OneshotIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "BndEvt__FortLayeredAudio_K2Node_ComponentBoundEvent_0_OnLayeredAudioComponentOneshot__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "BndEvt__FortLayeredAudio_K2Node_ComponentBoundEvent_0_OnLayeredAudioComponentOneshot__DelegateSignature");
 
 	Params::GCNL_Athena_Tether_C_BndEvt__FortLayeredAudio_K2Node_ComponentBoundEvent_0_OnLayeredAudioComponentOneshot__DelegateSignature Parms{};
 
@@ -162,10 +138,7 @@ void AGCNL_Athena_Tether_C::BndEvt__FortLayeredAudio_K2Node_ComponentBoundEvent_
 
 void AGCNL_Athena_Tether_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "OnRemoval");
 
 	Params::GCNL_Athena_Tether_C_OnRemoval Parms{};
 
@@ -192,10 +165,7 @@ void AGCNL_Athena_Tether_C::OnRemoval(class AActor* MyTarget, const struct FGame
 
 void AGCNL_Athena_Tether_C::OnApplication(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "OnApplication");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "OnApplication");
 
 	Params::GCNL_Athena_Tether_C_OnApplication Parms{};
 
@@ -217,10 +187,7 @@ void AGCNL_Athena_Tether_C::OnApplication(class AActor* MyTarget, const struct F
 
 void AGCNL_Athena_Tether_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "ReceiveTick");
 
 	Params::GCNL_Athena_Tether_C_ReceiveTick Parms{};
 
@@ -235,10 +202,7 @@ void AGCNL_Athena_Tether_C::ReceiveTick(float DeltaSeconds)
 
 void AGCNL_Athena_Tether_C::ScaleInSkis__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "ScaleInSkis__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "ScaleInSkis__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +213,7 @@ void AGCNL_Athena_Tether_C::ScaleInSkis__UpdateFunc()
 
 void AGCNL_Athena_Tether_C::ScaleInSkis__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "ScaleInSkis__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "ScaleInSkis__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +226,7 @@ void AGCNL_Athena_Tether_C::ScaleInSkis__FinishedFunc()
 
 void AGCNL_Athena_Tether_C::UpdateAudio(int32 Surface)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "UpdateAudio");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "UpdateAudio");
 
 	Params::GCNL_Athena_Tether_C_UpdateAudio Parms{};
 
@@ -287,10 +245,7 @@ void AGCNL_Athena_Tether_C::UpdateAudio(int32 Surface)
 
 bool AGCNL_Athena_Tether_C::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "WhileActive");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "WhileActive");
 
 	Params::GCNL_Athena_Tether_C_WhileActive Parms{};
 
@@ -312,10 +267,7 @@ bool AGCNL_Athena_Tether_C::WhileActive(class AActor* MyTarget, const struct FGa
 
 bool AGCNL_Athena_Tether_C::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_Tether_C", "OnRemove");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_Tether_C", "OnRemove");
 
 	Params::GCNL_Athena_Tether_C_OnRemove Parms{};
 

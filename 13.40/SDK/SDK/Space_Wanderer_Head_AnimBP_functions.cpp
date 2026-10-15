@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USpace_Wanderer_Head_AnimBP_C::ExecuteUbergraph_Space_Wanderer_Head_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "ExecuteUbergraph_Space_Wanderer_Head_AnimBP");
+	class UFunction* Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "ExecuteUbergraph_Space_Wanderer_Head_AnimBP");
 
 	Params::Space_Wanderer_Head_AnimBP_C_ExecuteUbergraph_Space_Wanderer_Head_AnimBP Parms{};
 
@@ -41,10 +38,7 @@ void USpace_Wanderer_Head_AnimBP_C::ExecuteUbergraph_Space_Wanderer_Head_AnimBP(
 
 void USpace_Wanderer_Head_AnimBP_C::OnCharacterCustomizationLoaded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "OnCharacterCustomizationLoaded");
+	class UFunction* Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "OnCharacterCustomizationLoaded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USpace_Wanderer_Head_AnimBP_C::OnCharacterCustomizationLoaded()
 
 void USpace_Wanderer_Head_AnimBP_C::BlueprintInitializeAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "BlueprintInitializeAnimation");
+	class UFunction* Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "BlueprintInitializeAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void USpace_Wanderer_Head_AnimBP_C::BlueprintInitializeAnimation()
 
 void USpace_Wanderer_Head_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "BlueprintUpdateAnimation");
 
 	Params::Space_Wanderer_Head_AnimBP_C_BlueprintUpdateAnimation Parms{};
 
@@ -91,10 +79,7 @@ void USpace_Wanderer_Head_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void USpace_Wanderer_Head_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("Space_Wanderer_Head_AnimBP_C", "AnimGraph");
 
 	Params::Space_Wanderer_Head_AnimBP_C_AnimGraph Parms{};
 

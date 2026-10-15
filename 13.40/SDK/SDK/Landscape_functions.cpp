@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ALandscapeProxy::ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "ChangeComponentScreenSizeToUseSubSections");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "ChangeComponentScreenSizeToUseSubSections");
 
 	Params::LandscapeProxy_ChangeComponentScreenSizeToUseSubSections Parms{};
 
@@ -48,10 +45,7 @@ void ALandscapeProxy::ChangeComponentScreenSizeToUseSubSections(float InComponen
 
 void ALandscapeProxy::ChangeLODDistanceFactor(float InLODDistanceFactor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "ChangeLODDistanceFactor");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "ChangeLODDistanceFactor");
 
 	Params::LandscapeProxy_ChangeLODDistanceFactor Parms{};
 
@@ -73,10 +67,7 @@ void ALandscapeProxy::ChangeLODDistanceFactor(float InLODDistanceFactor)
 
 void ALandscapeProxy::ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "ChangeTessellationComponentScreenSize");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "ChangeTessellationComponentScreenSize");
 
 	Params::LandscapeProxy_ChangeTessellationComponentScreenSize Parms{};
 
@@ -98,10 +89,7 @@ void ALandscapeProxy::ChangeTessellationComponentScreenSize(float InTessellation
 
 void ALandscapeProxy::ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "ChangeTessellationComponentScreenSizeFalloff");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "ChangeTessellationComponentScreenSizeFalloff");
 
 	Params::LandscapeProxy_ChangeTessellationComponentScreenSizeFalloff Parms{};
 
@@ -123,10 +111,7 @@ void ALandscapeProxy::ChangeTessellationComponentScreenSizeFalloff(float InUseTe
 
 void ALandscapeProxy::ChangeUseTessellationComponentScreenSizeFalloff(bool InComponentScreenSizeToUseSubSections)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "ChangeUseTessellationComponentScreenSizeFalloff");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "ChangeUseTessellationComponentScreenSizeFalloff");
 
 	Params::LandscapeProxy_ChangeUseTessellationComponentScreenSizeFalloff Parms{};
 
@@ -158,10 +143,7 @@ void ALandscapeProxy::ChangeUseTessellationComponentScreenSizeFalloff(bool InCom
 
 void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32 NumSubdivisions, bool bRaiseHeights, bool bLowerHeights, class ULandscapeLayerInfoObject* PaintLayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "EditorApplySpline");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "EditorApplySpline");
 
 	Params::LandscapeProxy_EditorApplySpline Parms{};
 
@@ -193,10 +175,7 @@ void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponen
 
 void ALandscapeProxy::EditorSetLandscapeMaterial(class UMaterialInterface* NewLandscapeMaterial)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "EditorSetLandscapeMaterial");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "EditorSetLandscapeMaterial");
 
 	Params::LandscapeProxy_EditorSetLandscapeMaterial Parms{};
 
@@ -221,10 +200,7 @@ void ALandscapeProxy::EditorSetLandscapeMaterial(class UMaterialInterface* NewLa
 
 bool ALandscapeProxy::LandscapeExportHeightmapToRenderTarget(class UTextureRenderTarget2D* InRenderTarget, bool InExportHeightIntoRGChannel, bool InExportLandscapeProxies)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "LandscapeExportHeightmapToRenderTarget");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "LandscapeExportHeightmapToRenderTarget");
 
 	Params::LandscapeProxy_LandscapeExportHeightmapToRenderTarget Parms{};
 
@@ -251,10 +227,7 @@ bool ALandscapeProxy::LandscapeExportHeightmapToRenderTarget(class UTextureRende
 
 void ALandscapeProxy::SetLandscapeMaterialScalarParameterValue(class FName ParameterName, float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "SetLandscapeMaterialScalarParameterValue");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "SetLandscapeMaterialScalarParameterValue");
 
 	Params::LandscapeProxy_SetLandscapeMaterialScalarParameterValue Parms{};
 
@@ -278,10 +251,7 @@ void ALandscapeProxy::SetLandscapeMaterialScalarParameterValue(class FName Param
 
 void ALandscapeProxy::SetLandscapeMaterialTextureParameterValue(class FName ParameterName, class UTexture* Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "SetLandscapeMaterialTextureParameterValue");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "SetLandscapeMaterialTextureParameterValue");
 
 	Params::LandscapeProxy_SetLandscapeMaterialTextureParameterValue Parms{};
 
@@ -305,10 +275,7 @@ void ALandscapeProxy::SetLandscapeMaterialTextureParameterValue(class FName Para
 
 void ALandscapeProxy::SetLandscapeMaterialVectorParameterValue(class FName ParameterName, const struct FLinearColor& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeProxy", "SetLandscapeMaterialVectorParameterValue");
+	class UFunction* Func = Class->GetFunction("LandscapeProxy", "SetLandscapeMaterialVectorParameterValue");
 
 	Params::LandscapeProxy_SetLandscapeMaterialVectorParameterValue Parms{};
 
@@ -331,10 +298,7 @@ void ALandscapeProxy::SetLandscapeMaterialVectorParameterValue(class FName Param
 
 void ALandscapeBlueprintBrushBase::GetBlueprintRenderDependencies(TArray<class UTexture2D*>* OutStreamableAssets)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeBlueprintBrushBase", "GetBlueprintRenderDependencies");
+	class UFunction* Func = Class->GetFunction("LandscapeBlueprintBrushBase", "GetBlueprintRenderDependencies");
 
 	Params::LandscapeBlueprintBrushBase_GetBlueprintRenderDependencies Parms{};
 
@@ -354,10 +318,7 @@ void ALandscapeBlueprintBrushBase::GetBlueprintRenderDependencies(TArray<class U
 
 void ALandscapeBlueprintBrushBase::Initialize(const struct FTransform& InLandscapeTransform, const struct FIntPoint& InLandscapeSize, const struct FIntPoint& InLandscapeRenderTargetSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeBlueprintBrushBase", "Initialize");
+	class UFunction* Func = Class->GetFunction("LandscapeBlueprintBrushBase", "Initialize");
 
 	Params::LandscapeBlueprintBrushBase_Initialize Parms{};
 
@@ -384,10 +345,7 @@ void ALandscapeBlueprintBrushBase::Initialize(const struct FTransform& InLandsca
 
 class UTextureRenderTarget2D* ALandscapeBlueprintBrushBase::Render(bool InIsHeightmap, class UTextureRenderTarget2D* InCombinedResult, const class FName& InWeightmapLayerName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeBlueprintBrushBase", "Render");
+	class UFunction* Func = Class->GetFunction("LandscapeBlueprintBrushBase", "Render");
 
 	Params::LandscapeBlueprintBrushBase_Render Parms{};
 
@@ -411,10 +369,7 @@ class UTextureRenderTarget2D* ALandscapeBlueprintBrushBase::Render(bool InIsHeig
 
 void ALandscapeBlueprintBrushBase::RequestLandscapeUpdate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeBlueprintBrushBase", "RequestLandscapeUpdate");
+	class UFunction* Func = Class->GetFunction("LandscapeBlueprintBrushBase", "RequestLandscapeUpdate");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -434,10 +389,7 @@ void ALandscapeBlueprintBrushBase::RequestLandscapeUpdate()
 
 float ULandscapeComponent::EditorGetPaintLayerWeightAtLocation(const struct FVector& InLocation, class ULandscapeLayerInfoObject* PaintLayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeComponent", "EditorGetPaintLayerWeightAtLocation");
+	class UFunction* Func = Class->GetFunction("LandscapeComponent", "EditorGetPaintLayerWeightAtLocation");
 
 	Params::LandscapeComponent_EditorGetPaintLayerWeightAtLocation Parms{};
 
@@ -464,10 +416,7 @@ float ULandscapeComponent::EditorGetPaintLayerWeightAtLocation(const struct FVec
 
 float ULandscapeComponent::EditorGetPaintLayerWeightByNameAtLocation(const struct FVector& InLocation, const class FName InPaintLayerName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeComponent", "EditorGetPaintLayerWeightByNameAtLocation");
+	class UFunction* Func = Class->GetFunction("LandscapeComponent", "EditorGetPaintLayerWeightByNameAtLocation");
 
 	Params::LandscapeComponent_EditorGetPaintLayerWeightByNameAtLocation Parms{};
 
@@ -493,10 +442,7 @@ float ULandscapeComponent::EditorGetPaintLayerWeightByNameAtLocation(const struc
 
 class UMaterialInstanceDynamic* ULandscapeComponent::GetMaterialInstanceDynamic(int32 InIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeComponent", "GetMaterialInstanceDynamic");
+	class UFunction* Func = Class->GetFunction("LandscapeComponent", "GetMaterialInstanceDynamic");
 
 	Params::LandscapeComponent_GetMaterialInstanceDynamic Parms{};
 
@@ -520,10 +466,7 @@ class UMaterialInstanceDynamic* ULandscapeComponent::GetMaterialInstanceDynamic(
 
 class ULandscapeComponent* ULandscapeHeightfieldCollisionComponent::GetRenderComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeHeightfieldCollisionComponent", "GetRenderComponent");
+	class UFunction* Func = Class->GetFunction("LandscapeHeightfieldCollisionComponent", "GetRenderComponent");
 
 	Params::LandscapeHeightfieldCollisionComponent_GetRenderComponent Parms{};
 
@@ -545,10 +488,7 @@ class ULandscapeComponent* ULandscapeHeightfieldCollisionComponent::GetRenderCom
 
 TArray<class USplineMeshComponent*> ULandscapeSplinesComponent::GetSplineMeshComponents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeSplinesComponent", "GetSplineMeshComponents");
+	class UFunction* Func = Class->GetFunction("LandscapeSplinesComponent", "GetSplineMeshComponents");
 
 	Params::LandscapeSplinesComponent_GetSplineMeshComponents Parms{};
 

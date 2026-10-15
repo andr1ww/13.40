@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_DanceGrenade_Stun_C::ExecuteUbergraph_GA_DanceGrenade_Stun(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DanceGrenade_Stun_C", "ExecuteUbergraph_GA_DanceGrenade_Stun");
+	class UFunction* Func = Class->GetFunction("GA_DanceGrenade_Stun_C", "ExecuteUbergraph_GA_DanceGrenade_Stun");
 
 	Params::GA_DanceGrenade_Stun_C_ExecuteUbergraph_GA_DanceGrenade_Stun Parms{};
 
@@ -43,10 +40,7 @@ void UGA_DanceGrenade_Stun_C::ExecuteUbergraph_GA_DanceGrenade_Stun(int32 EntryP
 
 void UGA_DanceGrenade_Stun_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DanceGrenade_Stun_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_DanceGrenade_Stun_C", "K2_OnEndAbility");
 
 	Params::GA_DanceGrenade_Stun_C_K2_OnEndAbility Parms{};
 
@@ -61,10 +55,7 @@ void UGA_DanceGrenade_Stun_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_DanceGrenade_Stun_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DanceGrenade_Stun_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_DanceGrenade_Stun_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

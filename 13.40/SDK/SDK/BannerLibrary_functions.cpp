@@ -28,10 +28,7 @@ SDK_NAMESPACE_START
 
 void UBannerLibrary_C::GenericUpdateMaterial(class UMaterialInstanceDynamic* Target, class UTexture* BannerIcon, const struct FLinearColor& BG_PrimaryColor, const struct FLinearColor& BG_SecondaryColor, class UTexture* ShapeIcon, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BannerLibrary_C", "GenericUpdateMaterial");
+	class UFunction* Func = StaticClass()->GetFunction("BannerLibrary_C", "GenericUpdateMaterial");
 
 	Params::BannerLibrary_C_GenericUpdateMaterial Parms{};
 
@@ -56,10 +53,7 @@ void UBannerLibrary_C::GenericUpdateMaterial(class UMaterialInstanceDynamic* Tar
 
 void UBannerLibrary_C::UpdateBannerColorOnMaterial(class UMaterialInstanceDynamic* Material, const struct FLinearColor& PrimaryBGColor, const struct FLinearColor& SecondaryBGColor, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BannerLibrary_C", "UpdateBannerColorOnMaterial");
+	class UFunction* Func = StaticClass()->GetFunction("BannerLibrary_C", "UpdateBannerColorOnMaterial");
 
 	Params::BannerLibrary_C_UpdateBannerColorOnMaterial Parms{};
 
@@ -81,10 +75,7 @@ void UBannerLibrary_C::UpdateBannerColorOnMaterial(class UMaterialInstanceDynami
 
 void UBannerLibrary_C::UpdateBannerIconOnMaterial(class UMaterialInstanceDynamic* Material, class UTexture* Icon, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BannerLibrary_C", "UpdateBannerIconOnMaterial");
+	class UFunction* Func = StaticClass()->GetFunction("BannerLibrary_C", "UpdateBannerIconOnMaterial");
 
 	Params::BannerLibrary_C_UpdateBannerIconOnMaterial Parms{};
 

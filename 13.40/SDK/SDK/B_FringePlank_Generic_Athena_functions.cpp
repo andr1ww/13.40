@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_FringePlank_Generic_Athena_C::ExecuteUbergraph_B_FringePlank_Generic_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "ExecuteUbergraph_B_FringePlank_Generic_Athena");
+	class UFunction* Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "ExecuteUbergraph_B_FringePlank_Generic_Athena");
 
 	Params::B_FringePlank_Generic_Athena_C_ExecuteUbergraph_B_FringePlank_Generic_Athena Parms{};
 
@@ -41,10 +38,7 @@ void AB_FringePlank_Generic_Athena_C::ExecuteUbergraph_B_FringePlank_Generic_Ath
 
 void AB_FringePlank_Generic_Athena_C::RepAmmoCountChangedGarbage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "RepAmmoCountChangedGarbage");
+	class UFunction* Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "RepAmmoCountChangedGarbage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_FringePlank_Generic_Athena_C::RepAmmoCountChangedGarbage()
 
 void AB_FringePlank_Generic_Athena_C::OnAmmoCountChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "OnAmmoCountChanged");
+	class UFunction* Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "OnAmmoCountChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_FringePlank_Generic_Athena_C::OnAmmoCountChanged()
 
 void AB_FringePlank_Generic_Athena_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void AB_FringePlank_Generic_Athena_C::K2_OnUnEquip()
 
 void AB_FringePlank_Generic_Athena_C::Muzzle_Flash_FX(bool Persistent_Fire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "Muzzle Flash FX");
+	class UFunction* Func = Class->GetFunction("B_FringePlank_Generic_Athena_C", "Muzzle Flash FX");
 
 	Params::B_FringePlank_Generic_Athena_C_Muzzle_Flash_FX Parms{};
 

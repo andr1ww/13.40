@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UToyOptionsComponent_C::ExecuteUbergraph_ToyOptionsComponent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToyOptionsComponent_C", "ExecuteUbergraph_ToyOptionsComponent");
+	class UFunction* Func = Class->GetFunction("ToyOptionsComponent_C", "ExecuteUbergraph_ToyOptionsComponent");
 
 	Params::ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent Parms{};
 
@@ -44,10 +41,7 @@ void UToyOptionsComponent_C::ExecuteUbergraph_ToyOptionsComponent(int32 EntryPoi
 
 void UToyOptionsComponent_C::DisplayOptions(class APlayerController* InteractingPlayer_0, TSoftClassPtr<class UClass> WidgetClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToyOptionsComponent_C", "DisplayOptions");
+	class UFunction* Func = Class->GetFunction("ToyOptionsComponent_C", "DisplayOptions");
 
 	Params::ToyOptionsComponent_C_DisplayOptions Parms{};
 
@@ -65,10 +59,7 @@ void UToyOptionsComponent_C::DisplayOptions(class APlayerController* Interacting
 
 void UToyOptionsComponent_C::OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToyOptionsComponent_C", "OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27");
+	class UFunction* Func = Class->GetFunction("ToyOptionsComponent_C", "OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27");
 
 	Params::ToyOptionsComponent_C_OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27 Parms{};
 
@@ -86,10 +77,7 @@ void UToyOptionsComponent_C::OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27(class UCl
 
 bool UToyOptionsComponent_C::BlueprintOnLocalInteract(class AFortPlayerPawn* InteractingPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToyOptionsComponent_C", "BlueprintOnLocalInteract");
+	class UFunction* Func = Class->GetFunction("ToyOptionsComponent_C", "BlueprintOnLocalInteract");
 
 	Params::ToyOptionsComponent_C_BlueprintOnLocalInteract Parms{};
 

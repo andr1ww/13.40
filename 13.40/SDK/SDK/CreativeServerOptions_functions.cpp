@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreativeServerOptions_C::ExecuteUbergraph_CreativeServerOptions(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptions_C", "ExecuteUbergraph_CreativeServerOptions");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptions_C", "ExecuteUbergraph_CreativeServerOptions");
 
 	Params::CreativeServerOptions_C_ExecuteUbergraph_CreativeServerOptions Parms{};
 
@@ -43,10 +40,7 @@ void UCreativeServerOptions_C::ExecuteUbergraph_CreativeServerOptions(int32 Entr
 
 void UCreativeServerOptions_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptions_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptions_C", "PreConstruct");
 
 	Params::CreativeServerOptions_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UCreativeServerOptions_C::PreConstruct(bool IsDesignTime)
 
 void UCreativeServerOptions_C::EventIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptions_C", "EventIntro");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptions_C", "EventIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UCreativeServerOptions_C::EventIntro()
 
 void UCreativeServerOptions_C::BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeServerOptions_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -97,10 +85,7 @@ void UCreativeServerOptions_C::BndEvt__CircleArrowButton_Right_K2Node_ComponentB
 
 void UCreativeServerOptions_C::BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeServerOptions_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -115,10 +100,7 @@ void UCreativeServerOptions_C::BndEvt__CircleArrowButton_Left_K2Node_ComponentBo
 
 void UCreativeServerOptions_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptions_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptions_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -129,10 +111,7 @@ void UCreativeServerOptions_C::Construct()
 
 void UCreativeServerOptions_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,10 +122,7 @@ void UCreativeServerOptions_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_O
 
 void UCreativeServerOptions_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_2_OnFortSwipeEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_2_OnFortSwipeEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_2_OnFortSwipeEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +133,7 @@ void UCreativeServerOptions_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_2_O
 
 void UCreativeServerOptions_C::OnCreativeServerListRefreshed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptions_C", "OnCreativeServerListRefreshed");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptions_C", "OnCreativeServerListRefreshed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

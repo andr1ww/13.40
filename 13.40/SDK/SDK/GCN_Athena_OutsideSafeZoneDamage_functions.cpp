@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGCN_Athena_OutsideSafeZoneDamage_C::ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage");
 
 	Params::GCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage Parms{};
 
@@ -48,10 +45,7 @@ void UGCN_Athena_OutsideSafeZoneDamage_C::ExecuteUbergraph_GCN_Athena_OutsideSaf
 
 void UGCN_Athena_OutsideSafeZoneDamage_C::OnBurst(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "OnBurst");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "OnBurst");
 
 	Params::GCN_Athena_OutsideSafeZoneDamage_C_OnBurst Parms{};
 
@@ -74,10 +68,7 @@ void UGCN_Athena_OutsideSafeZoneDamage_C::OnBurst(class AActor* MyTarget, const 
 
 void UGCN_Athena_OutsideSafeZoneDamage_C::ZapFX(int32 ZapCount, class APlayerPawn_Athena_C* PlayerPawnAthena) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "ZapFX");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "ZapFX");
 
 	Params::GCN_Athena_OutsideSafeZoneDamage_C_ZapFX Parms{};
 

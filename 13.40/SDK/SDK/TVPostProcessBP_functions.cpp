@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ATVPostProcessBP_C::IsEnabledForCurrentSubgame(bool* bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBP_C", "IsEnabledForCurrentSubgame");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBP_C", "IsEnabledForCurrentSubgame");
 
 	Params::TVPostProcessBP_C_IsEnabledForCurrentSubgame Parms{};
 
@@ -42,10 +39,7 @@ void ATVPostProcessBP_C::IsEnabledForCurrentSubgame(bool* bEnabled)
 
 void ATVPostProcessBP_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBP_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBP_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -56,10 +50,7 @@ void ATVPostProcessBP_C::UserConstructionScript()
 
 void ATVPostProcessBP_C::Camera_DisableEffects()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBP_C", "Camera_DisableEffects");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBP_C", "Camera_DisableEffects");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -70,10 +61,7 @@ void ATVPostProcessBP_C::Camera_DisableEffects()
 
 void ATVPostProcessBP_C::FrontEndCameraSwitch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBP_C", "FrontEndCameraSwitch");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBP_C", "FrontEndCameraSwitch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -84,10 +72,7 @@ void ATVPostProcessBP_C::FrontEndCameraSwitch()
 
 void ATVPostProcessBP_C::ExecuteCameraSwitch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBP_C", "ExecuteCameraSwitch");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBP_C", "ExecuteCameraSwitch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -100,10 +85,7 @@ void ATVPostProcessBP_C::ExecuteCameraSwitch()
 
 void ATVPostProcessBP_C::ExecuteUbergraph_TVPostProcessBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBP_C", "ExecuteUbergraph_TVPostProcessBP");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBP_C", "ExecuteUbergraph_TVPostProcessBP");
 
 	Params::TVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP Parms{};
 

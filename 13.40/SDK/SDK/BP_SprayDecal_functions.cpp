@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_SprayDecal_C::ExecuteUbergraph_BP_SprayDecal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "ExecuteUbergraph_BP_SprayDecal");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "ExecuteUbergraph_BP_SprayDecal");
 
 	Params::BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal Parms{};
 
@@ -43,10 +40,7 @@ void ABP_SprayDecal_C::ExecuteUbergraph_BP_SprayDecal(int32 EntryPoint)
 
 void ABP_SprayDecal_C::OnWallDestoryed(class AActor* DestroyedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnWallDestoryed");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnWallDestoryed");
 
 	Params::BP_SprayDecal_C_OnWallDestoryed Parms{};
 
@@ -61,10 +55,7 @@ void ABP_SprayDecal_C::OnWallDestoryed(class AActor* DestroyedActor)
 
 void ABP_SprayDecal_C::PostLevelSaveSpawnCleanup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "PostLevelSaveSpawnCleanup");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "PostLevelSaveSpawnCleanup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -78,10 +69,7 @@ void ABP_SprayDecal_C::PostLevelSaveSpawnCleanup()
 
 void ABP_SprayDecal_C::OnNearbyTrapPlaced(class ABuildingTrap* Trap, bool bDetatched)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyTrapPlaced");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyTrapPlaced");
 
 	Params::BP_SprayDecal_C_OnNearbyTrapPlaced Parms{};
 
@@ -97,10 +85,7 @@ void ABP_SprayDecal_C::OnNearbyTrapPlaced(class ABuildingTrap* Trap, bool bDetat
 
 void ABP_SprayDecal_C::OnBounceOccurs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnBounceOccurs");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnBounceOccurs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -120,10 +105,7 @@ void ABP_SprayDecal_C::OnBounceOccurs()
 
 void ABP_SprayDecal_C::OnNearbyWallDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyWallDamaged");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyWallDamaged");
 
 	Params::BP_SprayDecal_C_OnNearbyWallDamaged Parms{};
 
@@ -154,10 +136,7 @@ void ABP_SprayDecal_C::OnNearbyWallDamaged(class AActor* DamagedActor, float Dam
 
 void ABP_SprayDecal_C::OnNearbyWallDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyWallDied");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyWallDied");
 
 	Params::BP_SprayDecal_C_OnNearbyWallDied Parms{};
 
@@ -179,10 +158,7 @@ void ABP_SprayDecal_C::OnNearbyWallDied(class AActor* DamagedActor, float Damage
 
 void ABP_SprayDecal_C::StartSprayFadeOutDueToNewPlacement()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "StartSprayFadeOutDueToNewPlacement");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "StartSprayFadeOutDueToNewPlacement");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -193,10 +169,7 @@ void ABP_SprayDecal_C::StartSprayFadeOutDueToNewPlacement()
 
 void ABP_SprayDecal_C::OnSprayInfoReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnSprayInfoReady");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnSprayInfoReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +180,7 @@ void ABP_SprayDecal_C::OnSprayInfoReady()
 
 void ABP_SprayDecal_C::OnSprayAssetReplicatedDown()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnSprayAssetReplicatedDown");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnSprayAssetReplicatedDown");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +191,7 @@ void ABP_SprayDecal_C::OnSprayAssetReplicatedDown()
 
 void ABP_SprayDecal_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -239,10 +206,7 @@ void ABP_SprayDecal_C::ReceiveBeginPlay()
 
 void ABP_SprayDecal_C::OnReady_B252FED346EAB98D54D786BD15C1CC7B(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnReady_B252FED346EAB98D54D786BD15C1CC7B");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnReady_B252FED346EAB98D54D786BD15C1CC7B");
 
 	Params::BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B Parms{};
 
@@ -261,10 +225,7 @@ void ABP_SprayDecal_C::OnReady_B252FED346EAB98D54D786BD15C1CC7B(class AFortGameS
 
 void ABP_SprayDecal_C::OnLoaded_F925FF00475A018319C73E9FB1540BC6(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnLoaded_F925FF00475A018319C73E9FB1540BC6");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnLoaded_F925FF00475A018319C73E9FB1540BC6");
 
 	Params::BP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6 Parms{};
 
@@ -281,10 +242,7 @@ void ABP_SprayDecal_C::OnLoaded_F925FF00475A018319C73E9FB1540BC6(class UObject* 
 
 void ABP_SprayDecal_C::OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA");
 
 	Params::BP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA Parms{};
 
@@ -299,10 +257,7 @@ void ABP_SprayDecal_C::OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA(class UObject* 
 
 void ABP_SprayDecal_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -313,10 +268,7 @@ void ABP_SprayDecal_C::UserConstructionScript()
 
 void ABP_SprayDecal_C::CreateDecalComponents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "CreateDecalComponents");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "CreateDecalComponents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -329,10 +281,7 @@ void ABP_SprayDecal_C::CreateDecalComponents()
 
 struct FUniqueNetIdRepl ABP_SprayDecal_C::GetInstigatorPlayerId()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "GetInstigatorPlayerId");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "GetInstigatorPlayerId");
 
 	Params::BP_SprayDecal_C_GetInstigatorPlayerId Parms{};
 
@@ -347,10 +296,7 @@ struct FUniqueNetIdRepl ABP_SprayDecal_C::GetInstigatorPlayerId()
 
 void ABP_SprayDecal_C::OnRep_DecalFadeoutTime()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "OnRep_DecalFadeoutTime");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "OnRep_DecalFadeoutTime");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -361,10 +307,7 @@ void ABP_SprayDecal_C::OnRep_DecalFadeoutTime()
 
 void ABP_SprayDecal_C::UnbindAndClearNearbyBuildingActors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "UnbindAndClearNearbyBuildingActors");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "UnbindAndClearNearbyBuildingActors");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -375,10 +318,7 @@ void ABP_SprayDecal_C::UnbindAndClearNearbyBuildingActors()
 
 void ABP_SprayDecal_C::FindNearbyBuildingActorsAndBindDelegates()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "FindNearbyBuildingActorsAndBindDelegates");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "FindNearbyBuildingActorsAndBindDelegates");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -389,10 +329,7 @@ void ABP_SprayDecal_C::FindNearbyBuildingActorsAndBindDelegates()
 
 void ABP_SprayDecal_C::AddBoxCollisionForCreative()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SprayDecal_C", "AddBoxCollisionForCreative");
+	class UFunction* Func = Class->GetFunction("BP_SprayDecal_C", "AddBoxCollisionForCreative");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

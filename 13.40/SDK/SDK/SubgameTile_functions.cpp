@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USubgameTile_C::ExecuteUbergraph_SubgameTile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameTile_C", "ExecuteUbergraph_SubgameTile");
+	class UFunction* Func = Class->GetFunction("SubgameTile_C", "ExecuteUbergraph_SubgameTile");
 
 	Params::SubgameTile_C_ExecuteUbergraph_SubgameTile Parms{};
 
@@ -41,10 +38,7 @@ void USubgameTile_C::ExecuteUbergraph_SubgameTile(int32 EntryPoint)
 
 void USubgameTile_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameTile_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SubgameTile_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USubgameTile_C::BP_OnUnhovered()
 
 void USubgameTile_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameTile_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SubgameTile_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void USubgameTile_C::BP_OnHovered()
 
 void USubgameTile_C::BndEvt__Image_KeyArt_K2Node_ComponentBoundEvent_1_onLoadingCompleted__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameTile_C", "BndEvt__Image_KeyArt_K2Node_ComponentBoundEvent_1_onLoadingCompleted__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("SubgameTile_C", "BndEvt__Image_KeyArt_K2Node_ComponentBoundEvent_1_onLoadingCompleted__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void USubgameTile_C::BndEvt__Image_KeyArt_K2Node_ComponentBoundEvent_1_onLoading
 
 void USubgameTile_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameTile_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SubgameTile_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void USubgameTile_C::Construct()
 
 void USubgameTile_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameTile_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SubgameTile_C", "PreConstruct");
 
 	Params::SubgameTile_C_PreConstruct Parms{};
 

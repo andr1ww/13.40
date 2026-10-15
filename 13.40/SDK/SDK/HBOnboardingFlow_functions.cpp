@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AHBOnboardingFlow_C::GetCampaignQuestManager(class UFortQuestManager** QuestManager)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "GetCampaignQuestManager");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "GetCampaignQuestManager");
 
 	Params::HBOnboardingFlow_C_GetCampaignQuestManager Parms{};
 
@@ -44,10 +41,7 @@ void AHBOnboardingFlow_C::GetCampaignQuestManager(class UFortQuestManager** Ques
 
 void AHBOnboardingFlow_C::RecheckNeedToPlayEventMovie(bool* WaitingToCheckAgain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "RecheckNeedToPlayEventMovie");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "RecheckNeedToPlayEventMovie");
 
 	Params::HBOnboardingFlow_C_RecheckNeedToPlayEventMovie Parms{};
 
@@ -65,10 +59,7 @@ void AHBOnboardingFlow_C::RecheckNeedToPlayEventMovie(bool* WaitingToCheckAgain)
 
 bool AHBOnboardingFlow_C::NeedsToPlayEventMovie()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "NeedsToPlayEventMovie");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "NeedsToPlayEventMovie");
 
 	Params::HBOnboardingFlow_C_NeedsToPlayEventMovie Parms{};
 
@@ -83,10 +74,7 @@ bool AHBOnboardingFlow_C::NeedsToPlayEventMovie()
 
 void AHBOnboardingFlow_C::OnCanceled_856A325D44ECC73B857CE5B301E90D33()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "OnCanceled_856A325D44ECC73B857CE5B301E90D33");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "OnCanceled_856A325D44ECC73B857CE5B301E90D33");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void AHBOnboardingFlow_C::OnCanceled_856A325D44ECC73B857CE5B301E90D33()
 
 void AHBOnboardingFlow_C::OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void AHBOnboardingFlow_C::OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33()
 
 void AHBOnboardingFlow_C::OnFailure_50CD26324B96B121A5B49DA66113AE5D()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "OnFailure_50CD26324B96B121A5B49DA66113AE5D");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "OnFailure_50CD26324B96B121A5B49DA66113AE5D");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +107,7 @@ void AHBOnboardingFlow_C::OnFailure_50CD26324B96B121A5B49DA66113AE5D()
 
 void AHBOnboardingFlow_C::OnIgnored_50CD26324B96B121A5B49DA66113AE5D()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "OnIgnored_50CD26324B96B121A5B49DA66113AE5D");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "OnIgnored_50CD26324B96B121A5B49DA66113AE5D");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +118,7 @@ void AHBOnboardingFlow_C::OnIgnored_50CD26324B96B121A5B49DA66113AE5D()
 
 void AHBOnboardingFlow_C::OnSuccess_50CD26324B96B121A5B49DA66113AE5D()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "OnSuccess_50CD26324B96B121A5B49DA66113AE5D");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "OnSuccess_50CD26324B96B121A5B49DA66113AE5D");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void AHBOnboardingFlow_C::OnSuccess_50CD26324B96B121A5B49DA66113AE5D()
 
 void AHBOnboardingFlow_C::HandlePlayEventCine()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "HandlePlayEventCine");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "HandlePlayEventCine");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +144,7 @@ void AHBOnboardingFlow_C::HandlePlayEventCine()
 
 void AHBOnboardingFlow_C::HandleClientEvent_PlayEventMovie(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "HandleClientEvent_PlayEventMovie");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "HandleClientEvent_PlayEventMovie");
 
 	Params::HBOnboardingFlow_C_HandleClientEvent_PlayEventMovie Parms{};
 
@@ -191,10 +161,7 @@ void AHBOnboardingFlow_C::HandleClientEvent_PlayEventMovie(class UObject* EventS
 
 void AHBOnboardingFlow_C::StartFlow()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "StartFlow");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "StartFlow");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +174,7 @@ void AHBOnboardingFlow_C::StartFlow()
 
 void AHBOnboardingFlow_C::ExecuteUbergraph_HBOnboardingFlow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HBOnboardingFlow_C", "ExecuteUbergraph_HBOnboardingFlow");
+	class UFunction* Func = Class->GetFunction("HBOnboardingFlow_C", "ExecuteUbergraph_HBOnboardingFlow");
 
 	Params::HBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow Parms{};
 

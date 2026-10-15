@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMissionInfoPanel_C::ExecuteUbergraph_MissionInfoPanel(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionInfoPanel_C", "ExecuteUbergraph_MissionInfoPanel");
+	class UFunction* Func = Class->GetFunction("MissionInfoPanel_C", "ExecuteUbergraph_MissionInfoPanel");
 
 	Params::MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel Parms{};
 
@@ -43,10 +40,7 @@ void UMissionInfoPanel_C::ExecuteUbergraph_MissionInfoPanel(int32 EntryPoint)
 
 void UMissionInfoPanel_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionInfoPanel_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("MissionInfoPanel_C", "PreConstruct");
 
 	Params::MissionInfoPanel_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UMissionInfoPanel_C::PreConstruct(bool IsDesignTime)
 
 void UMissionInfoPanel_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionInfoPanel_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MissionInfoPanel_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UMissionInfoPanel_C::Construct()
 
 void UMissionInfoPanel_C::SetMissionStyle(const struct FFortChallengeSetStyle& Style)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionInfoPanel_C", "SetMissionStyle");
+	class UFunction* Func = Class->GetFunction("MissionInfoPanel_C", "SetMissionStyle");
 
 	Params::MissionInfoPanel_C_SetMissionStyle Parms{};
 

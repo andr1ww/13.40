@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Athena_SneakySnowman_C::ExecuteUbergraph_GCN_Athena_SneakySnowman(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "ExecuteUbergraph_GCN_Athena_SneakySnowman");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "ExecuteUbergraph_GCN_Athena_SneakySnowman");
 
 	Params::GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman Parms{};
 
@@ -41,10 +38,7 @@ void AGCN_Athena_SneakySnowman_C::ExecuteUbergraph_GCN_Athena_SneakySnowman(int3
 
 void AGCN_Athena_SneakySnowman_C::BeginPlay_Multicast()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "BeginPlay_Multicast");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "BeginPlay_Multicast");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AGCN_Athena_SneakySnowman_C::BeginPlay_Multicast()
 
 void AGCN_Athena_SneakySnowman_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -74,10 +65,7 @@ void AGCN_Athena_SneakySnowman_C::ReceiveBeginPlay()
 
 void AGCN_Athena_SneakySnowman_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnLoopingStart");
 
 	Params::GCN_Athena_SneakySnowman_C_OnLoopingStart Parms{};
 
@@ -102,10 +90,7 @@ void AGCN_Athena_SneakySnowman_C::OnLoopingStart(class AActor* MyTarget, const s
 
 void AGCN_Athena_SneakySnowman_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnRemoval");
 
 	Params::GCN_Athena_SneakySnowman_C_OnRemoval Parms{};
 
@@ -125,10 +110,7 @@ void AGCN_Athena_SneakySnowman_C::OnRemoval(class AActor* MyTarget, const struct
 
 void AGCN_Athena_SneakySnowman_C::On_Player_Step()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "On Player Step");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "On Player Step");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

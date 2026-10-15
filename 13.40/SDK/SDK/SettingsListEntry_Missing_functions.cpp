@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingsListEntry_Missing_C::ExecuteUbergraph_SettingsListEntry_Missing(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Missing_C", "ExecuteUbergraph_SettingsListEntry_Missing");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Missing_C", "ExecuteUbergraph_SettingsListEntry_Missing");
 
 	Params::SettingsListEntry_Missing_C_ExecuteUbergraph_SettingsListEntry_Missing Parms{};
 
@@ -43,10 +40,7 @@ void USettingsListEntry_Missing_C::ExecuteUbergraph_SettingsListEntry_Missing(in
 
 void USettingsListEntry_Missing_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Missing_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Missing_C", "OnMouseLeave");
 
 	Params::SettingsListEntry_Missing_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void USettingsListEntry_Missing_C::OnMouseLeave(const struct FPointerEvent& Mous
 
 void USettingsListEntry_Missing_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Missing_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Missing_C", "OnMouseEnter");
 
 	Params::SettingsListEntry_Missing_C_OnMouseEnter Parms{};
 

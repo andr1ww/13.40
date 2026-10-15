@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void IBPi_CreativeMoveToolOverrides_C::GetCreativeActorOrigin(bool* Override, struct FVector* Center)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPi_CreativeMoveToolOverrides_C", "GetCreativeActorOrigin");
+	class UFunction* Func = AsUObject()->Class->GetFunction("BPi_CreativeMoveToolOverrides_C", "GetCreativeActorOrigin");
 
 	Params::BPi_CreativeMoveToolOverrides_C_GetCreativeActorOrigin Parms{};
 
@@ -49,10 +46,7 @@ void IBPi_CreativeMoveToolOverrides_C::GetCreativeActorOrigin(bool* Override, st
 
 void IBPi_CreativeMoveToolOverrides_C::GetCreativeActorBounds(bool* Override_Bounds, struct FVector* Bounds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPi_CreativeMoveToolOverrides_C", "GetCreativeActorBounds");
+	class UFunction* Func = AsUObject()->Class->GetFunction("BPi_CreativeMoveToolOverrides_C", "GetCreativeActorBounds");
 
 	Params::BPi_CreativeMoveToolOverrides_C_GetCreativeActorBounds Parms{};
 

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UMissionRewardEntry_C::ShowCompletionCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionRewardEntry_C", "ShowCompletionCheck");
+	class UFunction* Func = Class->GetFunction("MissionRewardEntry_C", "ShowCompletionCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UMissionRewardEntry_C::ShowCompletionCheck()
 
 void UMissionRewardEntry_C::HideCompletionCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionRewardEntry_C", "HideCompletionCheck");
+	class UFunction* Func = Class->GetFunction("MissionRewardEntry_C", "HideCompletionCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void UMissionRewardEntry_C::HideCompletionCheck()
 
 void UMissionRewardEntry_C::HideSelectionBorder()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionRewardEntry_C", "HideSelectionBorder");
+	class UFunction* Func = Class->GetFunction("MissionRewardEntry_C", "HideSelectionBorder");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -63,10 +54,7 @@ void UMissionRewardEntry_C::HideSelectionBorder()
 
 void UMissionRewardEntry_C::ShowSelectionBorder()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionRewardEntry_C", "ShowSelectionBorder");
+	class UFunction* Func = Class->GetFunction("MissionRewardEntry_C", "ShowSelectionBorder");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +65,7 @@ void UMissionRewardEntry_C::ShowSelectionBorder()
 
 void UMissionRewardEntry_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionRewardEntry_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MissionRewardEntry_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,10 +78,7 @@ void UMissionRewardEntry_C::Construct()
 
 void UMissionRewardEntry_C::ExecuteUbergraph_MissionRewardEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissionRewardEntry_C", "ExecuteUbergraph_MissionRewardEntry");
+	class UFunction* Func = Class->GetFunction("MissionRewardEntry_C", "ExecuteUbergraph_MissionRewardEntry");
 
 	Params::MissionRewardEntry_C_ExecuteUbergraph_MissionRewardEntry Parms{};
 

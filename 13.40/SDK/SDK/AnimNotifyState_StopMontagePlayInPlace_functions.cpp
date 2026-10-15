@@ -26,10 +26,7 @@ SDK_NAMESPACE_START
 
 bool UAnimNotifyState_StopMontagePlayInPlace_C::Received_NotifyTick(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float FrameDeltaTime) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimNotifyState_StopMontagePlayInPlace_C", "Received_NotifyTick");
+	class UFunction* Func = Class->GetFunction("AnimNotifyState_StopMontagePlayInPlace_C", "Received_NotifyTick");
 
 	Params::AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick Parms{};
 

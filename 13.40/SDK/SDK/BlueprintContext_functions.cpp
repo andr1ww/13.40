@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 class USubsystem* UBlueprintContextLibrary::GetContext(class UObject* ContextObject, TSubclassOf<class USubsystem> Class_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintContextLibrary", "GetContext");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintContextLibrary", "GetContext");
 
 	Params::BlueprintContextLibrary_GetContext Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCL_BoostJumpPack_Hovering_Infinite_C::ExecuteUbergraph_GCL_BoostJumpPack_Hovering_Infinite(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "ExecuteUbergraph_GCL_BoostJumpPack_Hovering_Infinite");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "ExecuteUbergraph_GCL_BoostJumpPack_Hovering_Infinite");
 
 	Params::GCL_BoostJumpPack_Hovering_Infinite_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering_Infinite Parms{};
 
@@ -43,10 +40,7 @@ void AGCL_BoostJumpPack_Hovering_Infinite_C::ExecuteUbergraph_GCL_BoostJumpPack_
 
 void AGCL_BoostJumpPack_Hovering_Infinite_C::On_Pawn_Landed(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "On Pawn Landed");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "On Pawn Landed");
 
 	Params::GCL_BoostJumpPack_Hovering_Infinite_C_On_Pawn_Landed Parms{};
 
@@ -65,10 +59,7 @@ void AGCL_BoostJumpPack_Hovering_Infinite_C::On_Pawn_Landed(const struct FHitRes
 
 bool AGCL_BoostJumpPack_Hovering_Infinite_C::OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "OnActive");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "OnActive");
 
 	Params::GCL_BoostJumpPack_Hovering_Infinite_C_OnActive Parms{};
 
@@ -90,10 +81,7 @@ bool AGCL_BoostJumpPack_Hovering_Infinite_C::OnActive(class AActor* MyTarget, co
 
 bool AGCL_BoostJumpPack_Hovering_Infinite_C::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "OnRemove");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "OnRemove");
 
 	Params::GCL_BoostJumpPack_Hovering_Infinite_C_OnRemove Parms{};
 
@@ -113,10 +101,7 @@ bool AGCL_BoostJumpPack_Hovering_Infinite_C::OnRemove(class AActor* MyTarget, co
 
 void AGCL_BoostJumpPack_Hovering_Infinite_C::SetJetpackAudioEnabled(bool Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "SetJetpackAudioEnabled");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_Infinite_C", "SetJetpackAudioEnabled");
 
 	Params::GCL_BoostJumpPack_Hovering_Infinite_C_SetJetpackAudioEnabled Parms{};
 

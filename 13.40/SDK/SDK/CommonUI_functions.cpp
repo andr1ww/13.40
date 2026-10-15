@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCommonUserWidget::SetConsumePointerInput(bool bInConsumePointerInput)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonUserWidget", "SetConsumePointerInput");
+	class UFunction* Func = Class->GetFunction("CommonUserWidget", "SetConsumePointerInput");
 
 	Params::CommonUserWidget_SetConsumePointerInput Parms{};
 
@@ -46,10 +43,7 @@ void UCommonUserWidget::SetConsumePointerInput(bool bInConsumePointerInput)
 
 void UCommonActivatableWidget::ActivateWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidget", "ActivateWidget");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidget", "ActivateWidget");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -65,10 +59,7 @@ void UCommonActivatableWidget::ActivateWidget()
 
 void UCommonActivatableWidget::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidget", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidget", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void UCommonActivatableWidget::BP_OnActivated()
 
 void UCommonActivatableWidget::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidget", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidget", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +83,7 @@ void UCommonActivatableWidget::BP_OnDeactivated()
 
 bool UCommonActivatableWidget::BP_OnHandleBackAction()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidget", "BP_OnHandleBackAction");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidget", "BP_OnHandleBackAction");
 
 	Params::CommonActivatableWidget_BP_OnHandleBackAction Parms{};
 
@@ -113,10 +98,7 @@ bool UCommonActivatableWidget::BP_OnHandleBackAction()
 
 void UCommonActivatableWidget::DeactivateWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidget", "DeactivateWidget");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidget", "DeactivateWidget");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -134,10 +116,7 @@ void UCommonActivatableWidget::DeactivateWidget()
 
 class UWidget* UCommonActivatableWidget::BP_GetDesiredFocusTarget() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidget", "BP_GetDesiredFocusTarget");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidget", "BP_GetDesiredFocusTarget");
 
 	Params::CommonActivatableWidget_BP_GetDesiredFocusTarget Parms{};
 
@@ -154,10 +133,7 @@ class UWidget* UCommonActivatableWidget::BP_GetDesiredFocusTarget() const
 
 bool UCommonActivatableWidget::IsActivated() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidget", "IsActivated");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidget", "IsActivated");
 
 	Params::CommonActivatableWidget_IsActivated Parms{};
 
@@ -181,10 +157,7 @@ bool UCommonActivatableWidget::IsActivated() const
 
 void UCommonActivatablePanel::AddInputActionHandler(class UDataTable* DataTable, class FName RowName, TDelegate<void(bool* bPassThrough)> CommitedEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionHandler");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionHandler");
 
 	Params::CommonActivatablePanel_AddInputActionHandler Parms{};
 
@@ -211,10 +184,7 @@ void UCommonActivatablePanel::AddInputActionHandler(class UDataTable* DataTable,
 
 void UCommonActivatablePanel::AddInputActionHandlerWithPopup(class UDataTable* DataTable, class FName RowName, TDelegate<void(bool* bPassThrough)> CommitedEvent, class UCommonPopupMenu* PopupMenu)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionHandlerWithPopup");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionHandlerWithPopup");
 
 	Params::CommonActivatablePanel_AddInputActionHandlerWithPopup Parms{};
 
@@ -242,10 +212,7 @@ void UCommonActivatablePanel::AddInputActionHandlerWithPopup(class UDataTable* D
 
 void UCommonActivatablePanel::AddInputActionHandlerWithProgress(class UDataTable* DataTable, class FName RowName, TDelegate<void(bool* bPassThrough)> CommitedEvent, TDelegate<void(float HeldPercent)> ProgressEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionHandlerWithProgress");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionHandlerWithProgress");
 
 	Params::CommonActivatablePanel_AddInputActionHandlerWithProgress Parms{};
 
@@ -274,10 +241,7 @@ void UCommonActivatablePanel::AddInputActionHandlerWithProgress(class UDataTable
 
 void UCommonActivatablePanel::AddInputActionHandlerWithProgressPopup(class UDataTable* DataTable, class FName RowName, TDelegate<void(bool* bPassThrough)> CommitedEvent, TDelegate<void(float HeldPercent)> ProgressEvent, class UCommonPopupMenu* PopupMenu)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionHandlerWithProgressPopup");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionHandlerWithProgressPopup");
 
 	Params::CommonActivatablePanel_AddInputActionHandlerWithProgressPopup Parms{};
 
@@ -304,10 +268,7 @@ void UCommonActivatablePanel::AddInputActionHandlerWithProgressPopup(class UData
 
 void UCommonActivatablePanel::AddInputActionNoHandler(class UDataTable* DataTable, class FName RowName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionNoHandler");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "AddInputActionNoHandler");
 
 	Params::CommonActivatablePanel_AddInputActionNoHandler Parms{};
 
@@ -328,10 +289,7 @@ void UCommonActivatablePanel::AddInputActionNoHandler(class UDataTable* DataTabl
 
 void UCommonActivatablePanel::BeginIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "BeginIntro");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "BeginIntro");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -347,10 +305,7 @@ void UCommonActivatablePanel::BeginIntro()
 
 void UCommonActivatablePanel::BeginOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "BeginOutro");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "BeginOutro");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -366,10 +321,7 @@ void UCommonActivatablePanel::BeginOutro()
 
 void UCommonActivatablePanel::EndIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "EndIntro");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "EndIntro");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -385,10 +337,7 @@ void UCommonActivatablePanel::EndIntro()
 
 void UCommonActivatablePanel::EndOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "EndOutro");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "EndOutro");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -404,10 +353,7 @@ void UCommonActivatablePanel::EndOutro()
 
 void UCommonActivatablePanel::OnAddedToActivationStack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "OnAddedToActivationStack");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "OnAddedToActivationStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -418,10 +364,7 @@ void UCommonActivatablePanel::OnAddedToActivationStack()
 
 void UCommonActivatablePanel::OnBeginIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "OnBeginIntro");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "OnBeginIntro");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -437,10 +380,7 @@ void UCommonActivatablePanel::OnBeginIntro()
 
 void UCommonActivatablePanel::OnBeginOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "OnBeginOutro");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "OnBeginOutro");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -458,10 +398,7 @@ void UCommonActivatablePanel::OnBeginOutro()
 
 void UCommonActivatablePanel::OnInputModeChanged(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "OnInputModeChanged");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "OnInputModeChanged");
 
 	Params::CommonActivatablePanel_OnInputModeChanged Parms{};
 
@@ -476,10 +413,7 @@ void UCommonActivatablePanel::OnInputModeChanged(bool bUsingGamepad)
 
 void UCommonActivatablePanel::OnRemovedFromActivationStack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "OnRemovedFromActivationStack");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "OnRemovedFromActivationStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -490,10 +424,7 @@ void UCommonActivatablePanel::OnRemovedFromActivationStack()
 
 void UCommonActivatablePanel::OnTransitionedBySwitcher()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "OnTransitionedBySwitcher");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "OnTransitionedBySwitcher");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -504,10 +435,7 @@ void UCommonActivatablePanel::OnTransitionedBySwitcher()
 
 void UCommonActivatablePanel::PopPanel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "PopPanel");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "PopPanel");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -523,10 +451,7 @@ void UCommonActivatablePanel::PopPanel()
 
 void UCommonActivatablePanel::RemoveAllInputActionHandlers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "RemoveAllInputActionHandlers");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "RemoveAllInputActionHandlers");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -544,10 +469,7 @@ void UCommonActivatablePanel::RemoveAllInputActionHandlers()
 
 void UCommonActivatablePanel::RemoveInputActionHandler(const struct FDataTableRowHandle& InputActionRow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "RemoveInputActionHandler");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "RemoveInputActionHandler");
 
 	Params::CommonActivatablePanel_RemoveInputActionHandler Parms{};
 
@@ -571,10 +493,7 @@ void UCommonActivatablePanel::RemoveInputActionHandler(const struct FDataTableRo
 
 void UCommonActivatablePanel::SetActionHandlerState(const class UDataTable* DataTable, class FName RowName, EInputActionState State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "SetActionHandlerState");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "SetActionHandlerState");
 
 	Params::CommonActivatablePanel_SetActionHandlerState Parms{};
 
@@ -599,10 +518,7 @@ void UCommonActivatablePanel::SetActionHandlerState(const class UDataTable* Data
 
 void UCommonActivatablePanel::SetActionHandlerStateFromHandle(const struct FDataTableRowHandle& InputActionRow, EInputActionState State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "SetActionHandlerStateFromHandle");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "SetActionHandlerStateFromHandle");
 
 	Params::CommonActivatablePanel_SetActionHandlerStateFromHandle Parms{};
 
@@ -627,10 +543,7 @@ void UCommonActivatablePanel::SetActionHandlerStateFromHandle(const struct FData
 
 void UCommonActivatablePanel::SetActionHandlerStateFromHandleWithDisabledCommitEvent(const struct FDataTableRowHandle& InputActionRow, EInputActionState State, TDelegate<void(bool* bPassThrough)> DisabledCommitEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "SetActionHandlerStateFromHandleWithDisabledCommitEvent");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "SetActionHandlerStateFromHandleWithDisabledCommitEvent");
 
 	Params::CommonActivatablePanel_SetActionHandlerStateFromHandleWithDisabledCommitEvent Parms{};
 
@@ -657,10 +570,7 @@ void UCommonActivatablePanel::SetActionHandlerStateFromHandleWithDisabledCommitE
 
 void UCommonActivatablePanel::SetActionHandlerStateWithDisabledCommitEvent(class UDataTable* DataTable, class FName RowName, EInputActionState State, TDelegate<void(bool* bPassThrough)> DisabledCommitEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "SetActionHandlerStateWithDisabledCommitEvent");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "SetActionHandlerStateWithDisabledCommitEvent");
 
 	Params::CommonActivatablePanel_SetActionHandlerStateWithDisabledCommitEvent Parms{};
 
@@ -686,10 +596,7 @@ void UCommonActivatablePanel::SetActionHandlerStateWithDisabledCommitEvent(class
 
 void UCommonActivatablePanel::SetInputActionHandler(const struct FDataTableRowHandle& InputActionRow, TDelegate<void(bool* bPassThrough)> CommitedEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "SetInputActionHandler");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "SetInputActionHandler");
 
 	Params::CommonActivatablePanel_SetInputActionHandler Parms{};
 
@@ -714,10 +621,7 @@ void UCommonActivatablePanel::SetInputActionHandler(const struct FDataTableRowHa
 
 void UCommonActivatablePanel::SetInputActionHandlerWithPopupMenu(const struct FDataTableRowHandle& InputActionRow, TDelegate<void(bool* bPassThrough)> CommitedEvent, class UCommonPopupMenu* PopupMenu)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "SetInputActionHandlerWithPopupMenu");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "SetInputActionHandlerWithPopupMenu");
 
 	Params::CommonActivatablePanel_SetInputActionHandlerWithPopupMenu Parms{};
 
@@ -743,10 +647,7 @@ void UCommonActivatablePanel::SetInputActionHandlerWithPopupMenu(const struct FD
 
 void UCommonActivatablePanel::SetInputActionHandlerWithProgress(const struct FDataTableRowHandle& InputActionRow, TDelegate<void(bool* bPassThrough)> CommitedEvent, TDelegate<void(float HeldPercent)> ProgressEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "SetInputActionHandlerWithProgress");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "SetInputActionHandlerWithProgress");
 
 	Params::CommonActivatablePanel_SetInputActionHandlerWithProgress Parms{};
 
@@ -773,10 +674,7 @@ void UCommonActivatablePanel::SetInputActionHandlerWithProgress(const struct FDa
 
 void UCommonActivatablePanel::SetInputActionHandlerWithProgressPopupMenu(const struct FDataTableRowHandle& InputActionRow, TDelegate<void(bool* bPassThrough)> CommitedEvent, TDelegate<void(float HeldPercent)> ProgressEvent, class UCommonPopupMenu* PopupMenu)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "SetInputActionHandlerWithProgressPopupMenu");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "SetInputActionHandlerWithProgressPopupMenu");
 
 	Params::CommonActivatablePanel_SetInputActionHandlerWithProgressPopupMenu Parms{};
 
@@ -802,10 +700,7 @@ void UCommonActivatablePanel::SetInputActionHandlerWithProgressPopupMenu(const s
 
 bool UCommonActivatablePanel::GetInputActions(TArray<struct FCommonInputActionHandlerData>* InputActionDataRows) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "GetInputActions");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "GetInputActions");
 
 	Params::CommonActivatablePanel_GetInputActions Parms{};
 
@@ -831,10 +726,7 @@ bool UCommonActivatablePanel::GetInputActions(TArray<struct FCommonInputActionHa
 
 bool UCommonActivatablePanel::HasInputActionHandler(const struct FDataTableRowHandle& InputActionRow) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "HasInputActionHandler");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "HasInputActionHandler");
 
 	Params::CommonActivatablePanel_HasInputActionHandler Parms{};
 
@@ -858,10 +750,7 @@ bool UCommonActivatablePanel::HasInputActionHandler(const struct FDataTableRowHa
 
 bool UCommonActivatablePanel::IsInActivationStack() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "IsInActivationStack");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "IsInActivationStack");
 
 	Params::CommonActivatablePanel_IsInActivationStack Parms{};
 
@@ -883,10 +772,7 @@ bool UCommonActivatablePanel::IsInActivationStack() const
 
 bool UCommonActivatablePanel::IsIntroed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatablePanel", "IsIntroed");
+	class UFunction* Func = Class->GetFunction("CommonActivatablePanel", "IsIntroed");
 
 	Params::CommonActivatablePanel_IsIntroed Parms{};
 
@@ -906,10 +792,7 @@ bool UCommonActivatablePanel::IsIntroed() const
 
 void UCommonTextBlock::ResetScrollState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextBlock", "ResetScrollState");
+	class UFunction* Func = Class->GetFunction("CommonTextBlock", "ResetScrollState");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -927,10 +810,7 @@ void UCommonTextBlock::ResetScrollState()
 
 void UCommonTextBlock::SetStyle(TSubclassOf<class UCommonTextStyle> InStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextBlock", "SetStyle");
+	class UFunction* Func = Class->GetFunction("CommonTextBlock", "SetStyle");
 
 	Params::CommonTextBlock_SetStyle Parms{};
 
@@ -952,10 +832,7 @@ void UCommonTextBlock::SetStyle(TSubclassOf<class UCommonTextStyle> InStyle)
 
 void UCommonTextBlock::SetTextCase(bool bUseAllCaps)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextBlock", "SetTextCase");
+	class UFunction* Func = Class->GetFunction("CommonTextBlock", "SetTextCase");
 
 	Params::CommonTextBlock_SetTextCase Parms{};
 
@@ -977,10 +854,7 @@ void UCommonTextBlock::SetTextCase(bool bUseAllCaps)
 
 void UCommonTextBlock::SetWrapTextWidth(int32 InWrapTextAt)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextBlock", "SetWrapTextWidth");
+	class UFunction* Func = Class->GetFunction("CommonTextBlock", "SetWrapTextWidth");
 
 	Params::CommonTextBlock_SetWrapTextWidth Parms{};
 
@@ -1003,10 +877,7 @@ void UCommonTextBlock::SetWrapTextWidth(int32 InWrapTextAt)
 
 class UCommonActivatableWidget* UCommonActivatableWidgetContainerBase::BP_AddWidget(TSubclassOf<class UCommonActivatableWidget> ActivatableWidgetClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidgetContainerBase", "BP_AddWidget");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidgetContainerBase", "BP_AddWidget");
 
 	Params::CommonActivatableWidgetContainerBase_BP_AddWidget Parms{};
 
@@ -1028,10 +899,7 @@ class UCommonActivatableWidget* UCommonActivatableWidgetContainerBase::BP_AddWid
 
 void UCommonActivatableWidgetContainerBase::ClearWidgets()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidgetContainerBase", "ClearWidgets");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidgetContainerBase", "ClearWidgets");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1049,10 +917,7 @@ void UCommonActivatableWidgetContainerBase::ClearWidgets()
 
 void UCommonActivatableWidgetContainerBase::RemoveWidget(class UCommonActivatableWidget* WidgetToRemove)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidgetContainerBase", "RemoveWidget");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidgetContainerBase", "RemoveWidget");
 
 	Params::CommonActivatableWidgetContainerBase_RemoveWidget Parms{};
 
@@ -1074,10 +939,7 @@ void UCommonActivatableWidgetContainerBase::RemoveWidget(class UCommonActivatabl
 
 class UCommonActivatableWidget* UCommonActivatableWidgetContainerBase::GetActiveWidget() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActivatableWidgetContainerBase", "GetActiveWidget");
+	class UFunction* Func = Class->GetFunction("CommonActivatableWidgetContainerBase", "GetActiveWidget");
 
 	Params::CommonActivatableWidgetContainerBase_GetActiveWidget Parms{};
 
@@ -1099,10 +961,7 @@ class UCommonActivatableWidget* UCommonActivatableWidgetContainerBase::GetActive
 
 void UCommonDateTimeTextBlock::SetCountDownCompletionText(const class FText& InCompletionText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonDateTimeTextBlock", "SetCountDownCompletionText");
+	class UFunction* Func = Class->GetFunction("CommonDateTimeTextBlock", "SetCountDownCompletionText");
 
 	Params::CommonDateTimeTextBlock_SetCountDownCompletionText Parms{};
 
@@ -1126,10 +985,7 @@ void UCommonDateTimeTextBlock::SetCountDownCompletionText(const class FText& InC
 
 void UCommonDateTimeTextBlock::SetDateTimeValue(const struct FDateTime& InDateTime, bool bShowAsCountdown, float InRefreshDelay)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonDateTimeTextBlock", "SetDateTimeValue");
+	class UFunction* Func = Class->GetFunction("CommonDateTimeTextBlock", "SetDateTimeValue");
 
 	Params::CommonDateTimeTextBlock_SetDateTimeValue Parms{};
 
@@ -1153,10 +1009,7 @@ void UCommonDateTimeTextBlock::SetDateTimeValue(const struct FDateTime& InDateTi
 
 void UCommonDateTimeTextBlock::SetTimespanValue(const struct FTimespan& InTimespan)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonDateTimeTextBlock", "SetTimespanValue");
+	class UFunction* Func = Class->GetFunction("CommonDateTimeTextBlock", "SetTimespanValue");
 
 	Params::CommonDateTimeTextBlock_SetTimespanValue Parms{};
 
@@ -1178,10 +1031,7 @@ void UCommonDateTimeTextBlock::SetTimespanValue(const struct FTimespan& InTimesp
 
 struct FDateTime UCommonDateTimeTextBlock::GetDateTime() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonDateTimeTextBlock", "GetDateTime");
+	class UFunction* Func = Class->GetFunction("CommonDateTimeTextBlock", "GetDateTime");
 
 	Params::CommonDateTimeTextBlock_GetDateTime Parms{};
 
@@ -1205,10 +1055,7 @@ struct FDateTime UCommonDateTimeTextBlock::GetDateTime() const
 
 class UWidget* UCommonUILibrary::FindParentWidgetOfType(class UWidget* StartingWidget, TSubclassOf<class UWidget> Type)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CommonUILibrary", "FindParentWidgetOfType");
+	class UFunction* Func = StaticClass()->GetFunction("CommonUILibrary", "FindParentWidgetOfType");
 
 	Params::CommonUILibrary_FindParentWidgetOfType Parms{};
 
@@ -1233,10 +1080,7 @@ class UWidget* UCommonUILibrary::FindParentWidgetOfType(class UWidget* StartingW
 
 void UCommonActionWidget::SetIconRimBrush(const struct FSlateBrush& InIconRimBrush)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActionWidget", "SetIconRimBrush");
+	class UFunction* Func = Class->GetFunction("CommonActionWidget", "SetIconRimBrush");
 
 	Params::CommonActionWidget_SetIconRimBrush Parms{};
 
@@ -1258,10 +1102,7 @@ void UCommonActionWidget::SetIconRimBrush(const struct FSlateBrush& InIconRimBru
 
 void UCommonActionWidget::SetInputAction(const struct FDataTableRowHandle& InputActionRow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActionWidget", "SetInputAction");
+	class UFunction* Func = Class->GetFunction("CommonActionWidget", "SetInputAction");
 
 	Params::CommonActionWidget_SetInputAction Parms{};
 
@@ -1283,10 +1124,7 @@ void UCommonActionWidget::SetInputAction(const struct FDataTableRowHandle& Input
 
 void UCommonActionWidget::SetInputActions(const TArray<struct FDataTableRowHandle>& NewInputActions)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActionWidget", "SetInputActions");
+	class UFunction* Func = Class->GetFunction("CommonActionWidget", "SetInputActions");
 
 	Params::CommonActionWidget_SetInputActions Parms{};
 
@@ -1308,10 +1146,7 @@ void UCommonActionWidget::SetInputActions(const TArray<struct FDataTableRowHandl
 
 class FText UCommonActionWidget::GetDisplayText() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActionWidget", "GetDisplayText");
+	class UFunction* Func = Class->GetFunction("CommonActionWidget", "GetDisplayText");
 
 	Params::CommonActionWidget_GetDisplayText Parms{};
 
@@ -1333,10 +1168,7 @@ class FText UCommonActionWidget::GetDisplayText() const
 
 struct FSlateBrush UCommonActionWidget::GetIcon() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActionWidget", "GetIcon");
+	class UFunction* Func = Class->GetFunction("CommonActionWidget", "GetIcon");
 
 	Params::CommonActionWidget_GetIcon Parms{};
 
@@ -1358,10 +1190,7 @@ struct FSlateBrush UCommonActionWidget::GetIcon() const
 
 bool UCommonActionWidget::IsHeldAction() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonActionWidget", "IsHeldAction");
+	class UFunction* Func = Class->GetFunction("CommonActionWidget", "IsHeldAction");
 
 	Params::CommonActionWidget_IsHeldAction Parms{};
 
@@ -1386,10 +1215,7 @@ bool UCommonActionWidget::IsHeldAction() const
 
 struct FSlateBrush UCommonUISubsystem::GetInputActionButtonIcon(const struct FDataTableRowHandle& InputActionRowHandle, ECommonInputType InputType, ECommonGamepadType GamepadType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonUISubsystem", "GetInputActionButtonIcon");
+	class UFunction* Func = Class->GetFunction("CommonUISubsystem", "GetInputActionButtonIcon");
 
 	Params::CommonUISubsystem_GetInputActionButtonIcon Parms{};
 
@@ -1415,10 +1241,7 @@ struct FSlateBrush UCommonUISubsystem::GetInputActionButtonIcon(const struct FDa
 
 class UCommonInputManager* UCommonUISubsystem::GetInputManager() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonUISubsystem", "GetInputManager");
+	class UFunction* Func = Class->GetFunction("CommonUISubsystem", "GetInputManager");
 
 	Params::CommonUISubsystem_GetInputManager Parms{};
 
@@ -1438,10 +1261,7 @@ class UCommonInputManager* UCommonUISubsystem::GetInputManager() const
 
 void UCommonVisibilitySwitcher::ActivateVisibleSlot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonVisibilitySwitcher", "ActivateVisibleSlot");
+	class UFunction* Func = Class->GetFunction("CommonVisibilitySwitcher", "ActivateVisibleSlot");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1457,10 +1277,7 @@ void UCommonVisibilitySwitcher::ActivateVisibleSlot()
 
 void UCommonVisibilitySwitcher::DeactivateVisibleSlot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonVisibilitySwitcher", "DeactivateVisibleSlot");
+	class UFunction* Func = Class->GetFunction("CommonVisibilitySwitcher", "DeactivateVisibleSlot");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1478,10 +1295,7 @@ void UCommonVisibilitySwitcher::DeactivateVisibleSlot()
 
 void UCommonVisibilitySwitcher::DecrementActiveWidgetIndex(bool bAllowWrapping)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonVisibilitySwitcher", "DecrementActiveWidgetIndex");
+	class UFunction* Func = Class->GetFunction("CommonVisibilitySwitcher", "DecrementActiveWidgetIndex");
 
 	Params::CommonVisibilitySwitcher_DecrementActiveWidgetIndex Parms{};
 
@@ -1503,10 +1317,7 @@ void UCommonVisibilitySwitcher::DecrementActiveWidgetIndex(bool bAllowWrapping)
 
 void UCommonVisibilitySwitcher::IncrementActiveWidgetIndex(bool bAllowWrapping)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonVisibilitySwitcher", "IncrementActiveWidgetIndex");
+	class UFunction* Func = Class->GetFunction("CommonVisibilitySwitcher", "IncrementActiveWidgetIndex");
 
 	Params::CommonVisibilitySwitcher_IncrementActiveWidgetIndex Parms{};
 
@@ -1528,10 +1339,7 @@ void UCommonVisibilitySwitcher::IncrementActiveWidgetIndex(bool bAllowWrapping)
 
 void UCommonVisibilitySwitcher::SetActiveWidget(const class UWidget* Widget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonVisibilitySwitcher", "SetActiveWidget");
+	class UFunction* Func = Class->GetFunction("CommonVisibilitySwitcher", "SetActiveWidget");
 
 	Params::CommonVisibilitySwitcher_SetActiveWidget Parms{};
 
@@ -1553,10 +1361,7 @@ void UCommonVisibilitySwitcher::SetActiveWidget(const class UWidget* Widget)
 
 void UCommonVisibilitySwitcher::SetActiveWidgetIndex(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonVisibilitySwitcher", "SetActiveWidgetIndex");
+	class UFunction* Func = Class->GetFunction("CommonVisibilitySwitcher", "SetActiveWidgetIndex");
 
 	Params::CommonVisibilitySwitcher_SetActiveWidgetIndex Parms{};
 
@@ -1578,10 +1383,7 @@ void UCommonVisibilitySwitcher::SetActiveWidgetIndex(int32 Index_0)
 
 class UWidget* UCommonVisibilitySwitcher::GetActiveWidget() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonVisibilitySwitcher", "GetActiveWidget");
+	class UFunction* Func = Class->GetFunction("CommonVisibilitySwitcher", "GetActiveWidget");
 
 	Params::CommonVisibilitySwitcher_GetActiveWidget Parms{};
 
@@ -1603,10 +1405,7 @@ class UWidget* UCommonVisibilitySwitcher::GetActiveWidget() const
 
 int32 UCommonVisibilitySwitcher::GetActiveWidgetIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonVisibilitySwitcher", "GetActiveWidgetIndex");
+	class UFunction* Func = Class->GetFunction("CommonVisibilitySwitcher", "GetActiveWidgetIndex");
 
 	Params::CommonVisibilitySwitcher_GetActiveWidgetIndex Parms{};
 
@@ -1628,10 +1427,7 @@ int32 UCommonVisibilitySwitcher::GetActiveWidgetIndex() const
 
 void UCommonAnimatedSwitcher::ActivateNextWidget(bool bCanWrap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonAnimatedSwitcher", "ActivateNextWidget");
+	class UFunction* Func = Class->GetFunction("CommonAnimatedSwitcher", "ActivateNextWidget");
 
 	Params::CommonAnimatedSwitcher_ActivateNextWidget Parms{};
 
@@ -1653,10 +1449,7 @@ void UCommonAnimatedSwitcher::ActivateNextWidget(bool bCanWrap)
 
 void UCommonAnimatedSwitcher::ActivatePreviousWidget(bool bCanWrap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonAnimatedSwitcher", "ActivatePreviousWidget");
+	class UFunction* Func = Class->GetFunction("CommonAnimatedSwitcher", "ActivatePreviousWidget");
 
 	Params::CommonAnimatedSwitcher_ActivatePreviousWidget Parms{};
 
@@ -1678,10 +1471,7 @@ void UCommonAnimatedSwitcher::ActivatePreviousWidget(bool bCanWrap)
 
 void UCommonAnimatedSwitcher::SetDisableTransitionAnimation(bool bDisableAnimation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonAnimatedSwitcher", "SetDisableTransitionAnimation");
+	class UFunction* Func = Class->GetFunction("CommonAnimatedSwitcher", "SetDisableTransitionAnimation");
 
 	Params::CommonAnimatedSwitcher_SetDisableTransitionAnimation Parms{};
 
@@ -1703,10 +1493,7 @@ void UCommonAnimatedSwitcher::SetDisableTransitionAnimation(bool bDisableAnimati
 
 bool UCommonAnimatedSwitcher::HasWidgets() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonAnimatedSwitcher", "HasWidgets");
+	class UFunction* Func = Class->GetFunction("CommonAnimatedSwitcher", "HasWidgets");
 
 	Params::CommonAnimatedSwitcher_HasWidgets Parms{};
 
@@ -1728,10 +1515,7 @@ bool UCommonAnimatedSwitcher::HasWidgets() const
 
 void UCommonBorderStyle::GetBackgroundBrush(struct FSlateBrush* Brush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonBorderStyle", "GetBackgroundBrush");
+	class UFunction* Func = Class->GetFunction("CommonBorderStyle", "GetBackgroundBrush");
 
 	Params::CommonBorderStyle_GetBackgroundBrush Parms{};
 
@@ -1755,10 +1539,7 @@ void UCommonBorderStyle::GetBackgroundBrush(struct FSlateBrush* Brush) const
 
 void UCommonWidgetCarouselNavBar::HandleButtonClicked(class UCommonButton* AssociatedButton, int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarouselNavBar", "HandleButtonClicked");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarouselNavBar", "HandleButtonClicked");
 
 	Params::CommonWidgetCarouselNavBar_HandleButtonClicked Parms{};
 
@@ -1782,10 +1563,7 @@ void UCommonWidgetCarouselNavBar::HandleButtonClicked(class UCommonButton* Assoc
 
 void UCommonWidgetCarouselNavBar::HandlePageChanged(class UCommonWidgetCarousel* CommonCarousel, int32 PageIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarouselNavBar", "HandlePageChanged");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarouselNavBar", "HandlePageChanged");
 
 	Params::CommonWidgetCarouselNavBar_HandlePageChanged Parms{};
 
@@ -1808,10 +1586,7 @@ void UCommonWidgetCarouselNavBar::HandlePageChanged(class UCommonWidgetCarousel*
 
 void UCommonWidgetCarouselNavBar::SetLinkedCarousel(class UCommonWidgetCarousel* CommonCarousel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarouselNavBar", "SetLinkedCarousel");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarouselNavBar", "SetLinkedCarousel");
 
 	Params::CommonWidgetCarouselNavBar_SetLinkedCarousel Parms{};
 
@@ -1833,10 +1608,7 @@ void UCommonWidgetCarouselNavBar::SetLinkedCarousel(class UCommonWidgetCarousel*
 
 void UCommonBorder::SetStyle(TSubclassOf<class UCommonBorderStyle> InStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonBorder", "SetStyle");
+	class UFunction* Func = Class->GetFunction("CommonBorder", "SetStyle");
 
 	Params::CommonBorder_SetStyle Parms{};
 
@@ -1856,10 +1628,7 @@ void UCommonBorder::SetStyle(TSubclassOf<class UCommonBorderStyle> InStyle)
 
 void UCommonWidgetSwitcher::ActivateWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetSwitcher", "ActivateWidget");
+	class UFunction* Func = Class->GetFunction("CommonWidgetSwitcher", "ActivateWidget");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1875,10 +1644,7 @@ void UCommonWidgetSwitcher::ActivateWidget()
 
 void UCommonWidgetSwitcher::DeactivateWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetSwitcher", "DeactivateWidget");
+	class UFunction* Func = Class->GetFunction("CommonWidgetSwitcher", "DeactivateWidget");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1896,10 +1662,7 @@ void UCommonWidgetSwitcher::DeactivateWidget()
 
 void UCommonWidgetSwitcher::HandleActiveWidgetDeactivated(class UCommonActivatablePanel* DeactivatedPanel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetSwitcher", "HandleActiveWidgetDeactivated");
+	class UFunction* Func = Class->GetFunction("CommonWidgetSwitcher", "HandleActiveWidgetDeactivated");
 
 	Params::CommonWidgetSwitcher_HandleActiveWidgetDeactivated Parms{};
 
@@ -1922,10 +1685,7 @@ void UCommonWidgetSwitcher::HandleActiveWidgetDeactivated(class UCommonActivatab
 
 void UCommonWidgetSwitcher::SetActiveWidget_Advanced(class UWidget* Widget, const bool AttemptActivationChange)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetSwitcher", "SetActiveWidget_Advanced");
+	class UFunction* Func = Class->GetFunction("CommonWidgetSwitcher", "SetActiveWidget_Advanced");
 
 	Params::CommonWidgetSwitcher_SetActiveWidget_Advanced Parms{};
 
@@ -1949,10 +1709,7 @@ void UCommonWidgetSwitcher::SetActiveWidget_Advanced(class UWidget* Widget, cons
 
 void UCommonWidgetSwitcher::SetActiveWidgetIndex_Advanced(const int32 Index_0, const bool AttemptActivationChange)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetSwitcher", "SetActiveWidgetIndex_Advanced");
+	class UFunction* Func = Class->GetFunction("CommonWidgetSwitcher", "SetActiveWidgetIndex_Advanced");
 
 	Params::CommonWidgetSwitcher_SetActiveWidgetIndex_Advanced Parms{};
 
@@ -1975,10 +1732,7 @@ void UCommonWidgetSwitcher::SetActiveWidgetIndex_Advanced(const int32 Index_0, c
 
 class UWidget* UCommonWidgetStack::PopWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetStack", "PopWidget");
+	class UFunction* Func = Class->GetFunction("CommonWidgetStack", "PopWidget");
 
 	Params::CommonWidgetStack_PopWidget Parms{};
 
@@ -2000,10 +1754,7 @@ class UWidget* UCommonWidgetStack::PopWidget()
 
 void UCommonWidgetStack::PushWidget(class UWidget* InWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetStack", "PushWidget");
+	class UFunction* Func = Class->GetFunction("CommonWidgetStack", "PushWidget");
 
 	Params::CommonWidgetStack_PushWidget Parms{};
 
@@ -2025,10 +1776,7 @@ void UCommonWidgetStack::PushWidget(class UWidget* InWidget)
 
 void UCommonBoundActionBar::SetDisplayOwningPlayerActionsOnly(bool bShouldOnlyDisplayOwningPlayerActions)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonBoundActionBar", "SetDisplayOwningPlayerActionsOnly");
+	class UFunction* Func = Class->GetFunction("CommonBoundActionBar", "SetDisplayOwningPlayerActionsOnly");
 
 	Params::CommonBoundActionBar_SetDisplayOwningPlayerActionsOnly Parms{};
 
@@ -2048,10 +1796,7 @@ void UCommonBoundActionBar::SetDisplayOwningPlayerActionsOnly(bool bShouldOnlyDi
 
 void UCommonButton::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("CommonButton", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2062,10 +1807,7 @@ void UCommonButton::BP_OnClicked()
 
 void UCommonButton::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("CommonButton", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2076,10 +1818,7 @@ void UCommonButton::BP_OnDeselected()
 
 void UCommonButton::BP_OnDisabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "BP_OnDisabled");
+	class UFunction* Func = Class->GetFunction("CommonButton", "BP_OnDisabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2090,10 +1829,7 @@ void UCommonButton::BP_OnDisabled()
 
 void UCommonButton::BP_OnDoubleClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "BP_OnDoubleClicked");
+	class UFunction* Func = Class->GetFunction("CommonButton", "BP_OnDoubleClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2104,10 +1840,7 @@ void UCommonButton::BP_OnDoubleClicked()
 
 void UCommonButton::BP_OnEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "BP_OnEnabled");
+	class UFunction* Func = Class->GetFunction("CommonButton", "BP_OnEnabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2118,10 +1851,7 @@ void UCommonButton::BP_OnEnabled()
 
 void UCommonButton::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("CommonButton", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2132,10 +1862,7 @@ void UCommonButton::BP_OnHovered()
 
 void UCommonButton::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("CommonButton", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2146,10 +1873,7 @@ void UCommonButton::BP_OnSelected()
 
 void UCommonButton::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("CommonButton", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2160,10 +1884,7 @@ void UCommonButton::BP_OnUnhovered()
 
 void UCommonButton::ClearSelection()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "ClearSelection");
+	class UFunction* Func = Class->GetFunction("CommonButton", "ClearSelection");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2181,10 +1902,7 @@ void UCommonButton::ClearSelection()
 
 void UCommonButton::DisableButtonWithReason(const class FText& DisabledReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "DisableButtonWithReason");
+	class UFunction* Func = Class->GetFunction("CommonButton", "DisableButtonWithReason");
 
 	Params::CommonButton_DisableButtonWithReason Parms{};
 
@@ -2204,10 +1922,7 @@ void UCommonButton::DisableButtonWithReason(const class FText& DisabledReason)
 
 void UCommonButton::HandleButtonClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "HandleButtonClicked");
+	class UFunction* Func = Class->GetFunction("CommonButton", "HandleButtonClicked");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2223,10 +1938,7 @@ void UCommonButton::HandleButtonClicked()
 
 void UCommonButton::HandleButtonPressed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "HandleButtonPressed");
+	class UFunction* Func = Class->GetFunction("CommonButton", "HandleButtonPressed");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2242,10 +1954,7 @@ void UCommonButton::HandleButtonPressed()
 
 void UCommonButton::HandleButtonReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "HandleButtonReleased");
+	class UFunction* Func = Class->GetFunction("CommonButton", "HandleButtonReleased");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2261,10 +1970,7 @@ void UCommonButton::HandleButtonReleased()
 
 void UCommonButton::HandleFocusReceived()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "HandleFocusReceived");
+	class UFunction* Func = Class->GetFunction("CommonButton", "HandleFocusReceived");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2282,10 +1988,7 @@ void UCommonButton::HandleFocusReceived()
 
 void UCommonButton::HandleTriggeringActionCommited(bool* bPassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "HandleTriggeringActionCommited");
+	class UFunction* Func = Class->GetFunction("CommonButton", "HandleTriggeringActionCommited");
 
 	Params::CommonButton_HandleTriggeringActionCommited Parms{};
 
@@ -2306,10 +2009,7 @@ void UCommonButton::HandleTriggeringActionCommited(bool* bPassThrough)
 
 void UCommonButton::NativeOnActionComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "NativeOnActionComplete");
+	class UFunction* Func = Class->GetFunction("CommonButton", "NativeOnActionComplete");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2327,10 +2027,7 @@ void UCommonButton::NativeOnActionComplete()
 
 void UCommonButton::NativeOnActionProgress(float HeldPercent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "NativeOnActionProgress");
+	class UFunction* Func = Class->GetFunction("CommonButton", "NativeOnActionProgress");
 
 	Params::CommonButton_NativeOnActionProgress Parms{};
 
@@ -2350,10 +2047,7 @@ void UCommonButton::NativeOnActionProgress(float HeldPercent)
 
 void UCommonButton::OnActionComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "OnActionComplete");
+	class UFunction* Func = Class->GetFunction("CommonButton", "OnActionComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2366,10 +2060,7 @@ void UCommonButton::OnActionComplete()
 
 void UCommonButton::OnActionProgress(float HeldPercent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "OnActionProgress");
+	class UFunction* Func = Class->GetFunction("CommonButton", "OnActionProgress");
 
 	Params::CommonButton_OnActionProgress Parms{};
 
@@ -2384,10 +2075,7 @@ void UCommonButton::OnActionProgress(float HeldPercent)
 
 void UCommonButton::OnCurrentTextStyleChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "OnCurrentTextStyleChanged");
+	class UFunction* Func = Class->GetFunction("CommonButton", "OnCurrentTextStyleChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2400,10 +2088,7 @@ void UCommonButton::OnCurrentTextStyleChanged()
 
 void UCommonButton::OnInputMethodChanged(ECommonInputType CurrentInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "OnInputMethodChanged");
+	class UFunction* Func = Class->GetFunction("CommonButton", "OnInputMethodChanged");
 
 	Params::CommonButton_OnInputMethodChanged Parms{};
 
@@ -2425,10 +2110,7 @@ void UCommonButton::OnInputMethodChanged(ECommonInputType CurrentInputType)
 
 void UCommonButton::OnTriggeredInputActionChanged(const struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "OnTriggeredInputActionChanged");
+	class UFunction* Func = Class->GetFunction("CommonButton", "OnTriggeredInputActionChanged");
 
 	Params::CommonButton_OnTriggeredInputActionChanged Parms{};
 
@@ -2445,10 +2127,7 @@ void UCommonButton::OnTriggeredInputActionChanged(const struct FDataTableRowHand
 
 void UCommonButton::SetClickMethod(EButtonClickMethod InClickMethod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetClickMethod");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetClickMethod");
 
 	Params::CommonButton_SetClickMethod Parms{};
 
@@ -2470,10 +2149,7 @@ void UCommonButton::SetClickMethod(EButtonClickMethod InClickMethod)
 
 void UCommonButton::SetHoveredSoundOverride(class USoundBase* Sound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetHoveredSoundOverride");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetHoveredSoundOverride");
 
 	Params::CommonButton_SetHoveredSoundOverride Parms{};
 
@@ -2496,10 +2172,7 @@ void UCommonButton::SetHoveredSoundOverride(class USoundBase* Sound)
 
 void UCommonButton::SetInputActionProgressMaterial(const struct FSlateBrush& InProgressMaterialBrush, const class FName& InProgressMaterialParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetInputActionProgressMaterial");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetInputActionProgressMaterial");
 
 	Params::CommonButton_SetInputActionProgressMaterial Parms{};
 
@@ -2522,10 +2195,7 @@ void UCommonButton::SetInputActionProgressMaterial(const struct FSlateBrush& InP
 
 void UCommonButton::SetIsFocusable(bool bInIsFocusable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetIsFocusable");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetIsFocusable");
 
 	Params::CommonButton_SetIsFocusable Parms{};
 
@@ -2547,10 +2217,7 @@ void UCommonButton::SetIsFocusable(bool bInIsFocusable)
 
 void UCommonButton::SetIsInteractableWhenSelected(bool bInInteractableWhenSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetIsInteractableWhenSelected");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetIsInteractableWhenSelected");
 
 	Params::CommonButton_SetIsInteractableWhenSelected Parms{};
 
@@ -2572,10 +2239,7 @@ void UCommonButton::SetIsInteractableWhenSelected(bool bInInteractableWhenSelect
 
 void UCommonButton::SetIsInteractionEnabled(bool bInIsInteractionEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetIsInteractionEnabled");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetIsInteractionEnabled");
 
 	Params::CommonButton_SetIsInteractionEnabled Parms{};
 
@@ -2597,10 +2261,7 @@ void UCommonButton::SetIsInteractionEnabled(bool bInIsInteractionEnabled)
 
 void UCommonButton::SetIsSelectable(bool bInIsSelectable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetIsSelectable");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetIsSelectable");
 
 	Params::CommonButton_SetIsSelectable Parms{};
 
@@ -2623,10 +2284,7 @@ void UCommonButton::SetIsSelectable(bool bInIsSelectable)
 
 void UCommonButton::SetIsSelected(bool InSelected, bool bGiveClickFeedback)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetIsSelected");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetIsSelected");
 
 	Params::CommonButton_SetIsSelected Parms{};
 
@@ -2649,10 +2307,7 @@ void UCommonButton::SetIsSelected(bool InSelected, bool bGiveClickFeedback)
 
 void UCommonButton::SetIsToggleable(bool bInIsToggleable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetIsToggleable");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetIsToggleable");
 
 	Params::CommonButton_SetIsToggleable Parms{};
 
@@ -2675,10 +2330,7 @@ void UCommonButton::SetIsToggleable(bool bInIsToggleable)
 
 void UCommonButton::SetMinDimensions(int32 InMinWidth, int32 InMinHeight)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetMinDimensions");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetMinDimensions");
 
 	Params::CommonButton_SetMinDimensions Parms{};
 
@@ -2701,10 +2353,7 @@ void UCommonButton::SetMinDimensions(int32 InMinWidth, int32 InMinHeight)
 
 void UCommonButton::SetPressedSoundOverride(class USoundBase* Sound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetPressedSoundOverride");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetPressedSoundOverride");
 
 	Params::CommonButton_SetPressedSoundOverride Parms{};
 
@@ -2726,10 +2375,7 @@ void UCommonButton::SetPressedSoundOverride(class USoundBase* Sound)
 
 void UCommonButton::SetPressMethod(EButtonPressMethod InPressMethod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetPressMethod");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetPressMethod");
 
 	Params::CommonButton_SetPressMethod Parms{};
 
@@ -2753,10 +2399,7 @@ void UCommonButton::SetPressMethod(EButtonPressMethod InPressMethod)
 
 void UCommonButton::SetSelectedInternal(bool bInSelected, bool bAllowSound, bool bBroadcast)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetSelectedInternal");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetSelectedInternal");
 
 	Params::CommonButton_SetSelectedInternal Parms{};
 
@@ -2780,10 +2423,7 @@ void UCommonButton::SetSelectedInternal(bool bInSelected, bool bAllowSound, bool
 
 void UCommonButton::SetShouldSelectUponReceivingFocus(bool bInShouldSelectUponReceivingFocus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetShouldSelectUponReceivingFocus");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetShouldSelectUponReceivingFocus");
 
 	Params::CommonButton_SetShouldSelectUponReceivingFocus Parms{};
 
@@ -2805,10 +2445,7 @@ void UCommonButton::SetShouldSelectUponReceivingFocus(bool bInShouldSelectUponRe
 
 void UCommonButton::SetShouldUseFallbackDefaultInputAction(bool bInShouldUseFallbackDefaultInputAction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetShouldUseFallbackDefaultInputAction");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetShouldUseFallbackDefaultInputAction");
 
 	Params::CommonButton_SetShouldUseFallbackDefaultInputAction Parms{};
 
@@ -2830,10 +2467,7 @@ void UCommonButton::SetShouldUseFallbackDefaultInputAction(bool bInShouldUseFall
 
 void UCommonButton::SetStyle(TSubclassOf<class UCommonButtonStyle> InStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetStyle");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetStyle");
 
 	Params::CommonButton_SetStyle Parms{};
 
@@ -2855,10 +2489,7 @@ void UCommonButton::SetStyle(TSubclassOf<class UCommonButtonStyle> InStyle)
 
 void UCommonButton::SetTouchMethod(EButtonTouchMethod InTouchMethod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetTouchMethod");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetTouchMethod");
 
 	Params::CommonButton_SetTouchMethod Parms{};
 
@@ -2881,10 +2512,7 @@ void UCommonButton::SetTouchMethod(EButtonTouchMethod InTouchMethod)
 
 void UCommonButton::SetTriggeredInputAction(const struct FDataTableRowHandle& InputActionRow, class UCommonActivatablePanel* OldPanel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetTriggeredInputAction");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetTriggeredInputAction");
 
 	Params::CommonButton_SetTriggeredInputAction Parms{};
 
@@ -2907,10 +2535,7 @@ void UCommonButton::SetTriggeredInputAction(const struct FDataTableRowHandle& In
 
 void UCommonButton::SetTriggeringInputAction(const struct FDataTableRowHandle& InputActionRow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "SetTriggeringInputAction");
+	class UFunction* Func = Class->GetFunction("CommonButton", "SetTriggeringInputAction");
 
 	Params::CommonButton_SetTriggeringInputAction Parms{};
 
@@ -2930,10 +2555,7 @@ void UCommonButton::SetTriggeringInputAction(const struct FDataTableRowHandle& I
 
 void UCommonButton::StopDoubleClickPropagation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "StopDoubleClickPropagation");
+	class UFunction* Func = Class->GetFunction("CommonButton", "StopDoubleClickPropagation");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2951,10 +2573,7 @@ void UCommonButton::StopDoubleClickPropagation()
 
 void UCommonButton::GetCurrentButtonPadding(struct FMargin* OutButtonPadding) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetCurrentButtonPadding");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetCurrentButtonPadding");
 
 	Params::CommonButton_GetCurrentButtonPadding Parms{};
 
@@ -2977,10 +2596,7 @@ void UCommonButton::GetCurrentButtonPadding(struct FMargin* OutButtonPadding) co
 
 void UCommonButton::GetCurrentCustomPadding(struct FMargin* OutCustomPadding) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetCurrentCustomPadding");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetCurrentCustomPadding");
 
 	Params::CommonButton_GetCurrentCustomPadding Parms{};
 
@@ -3003,10 +2619,7 @@ void UCommonButton::GetCurrentCustomPadding(struct FMargin* OutCustomPadding) co
 
 class UCommonTextStyle* UCommonButton::GetCurrentTextStyle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetCurrentTextStyle");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetCurrentTextStyle");
 
 	Params::CommonButton_GetCurrentTextStyle Parms{};
 
@@ -3028,10 +2641,7 @@ class UCommonTextStyle* UCommonButton::GetCurrentTextStyle() const
 
 TSubclassOf<class UCommonTextStyle> UCommonButton::GetCurrentTextStyleClass() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetCurrentTextStyleClass");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetCurrentTextStyleClass");
 
 	Params::CommonButton_GetCurrentTextStyleClass Parms{};
 
@@ -3054,10 +2664,7 @@ TSubclassOf<class UCommonTextStyle> UCommonButton::GetCurrentTextStyleClass() co
 
 bool UCommonButton::GetInputAction(struct FDataTableRowHandle* InputActionRow) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetInputAction");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetInputAction");
 
 	Params::CommonButton_GetInputAction Parms{};
 
@@ -3082,10 +2689,7 @@ bool UCommonButton::GetInputAction(struct FDataTableRowHandle* InputActionRow) c
 
 bool UCommonButton::GetIsFocusable() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetIsFocusable");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetIsFocusable");
 
 	Params::CommonButton_GetIsFocusable Parms{};
 
@@ -3107,10 +2711,7 @@ bool UCommonButton::GetIsFocusable() const
 
 bool UCommonButton::GetSelected() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetSelected");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetSelected");
 
 	Params::CommonButton_GetSelected Parms{};
 
@@ -3132,10 +2733,7 @@ bool UCommonButton::GetSelected() const
 
 bool UCommonButton::GetShouldSelectUponReceivingFocus() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetShouldSelectUponReceivingFocus");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetShouldSelectUponReceivingFocus");
 
 	Params::CommonButton_GetShouldSelectUponReceivingFocus Parms{};
 
@@ -3157,10 +2755,7 @@ bool UCommonButton::GetShouldSelectUponReceivingFocus() const
 
 class UMaterialInstanceDynamic* UCommonButton::GetSingleMaterialStyleMID() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetSingleMaterialStyleMID");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetSingleMaterialStyleMID");
 
 	Params::CommonButton_GetSingleMaterialStyleMID Parms{};
 
@@ -3182,10 +2777,7 @@ class UMaterialInstanceDynamic* UCommonButton::GetSingleMaterialStyleMID() const
 
 class UCommonButtonStyle* UCommonButton::GetStyle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "GetStyle");
+	class UFunction* Func = Class->GetFunction("CommonButton", "GetStyle");
 
 	Params::CommonButton_GetStyle Parms{};
 
@@ -3207,10 +2799,7 @@ class UCommonButtonStyle* UCommonButton::GetStyle() const
 
 bool UCommonButton::IsInteractionEnabled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "IsInteractionEnabled");
+	class UFunction* Func = Class->GetFunction("CommonButton", "IsInteractionEnabled");
 
 	Params::CommonButton_IsInteractionEnabled Parms{};
 
@@ -3232,10 +2821,7 @@ bool UCommonButton::IsInteractionEnabled() const
 
 bool UCommonButton::IsPressed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButton", "IsPressed");
+	class UFunction* Func = Class->GetFunction("CommonButton", "IsPressed");
 
 	Params::CommonButton_IsPressed Parms{};
 
@@ -3255,10 +2841,7 @@ bool UCommonButton::IsPressed() const
 
 void UCommonBoundActionButton::OnUpdateInputAction()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonBoundActionButton", "OnUpdateInputAction");
+	class UFunction* Func = Class->GetFunction("CommonBoundActionButton", "OnUpdateInputAction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -3271,10 +2854,7 @@ void UCommonBoundActionButton::OnUpdateInputAction()
 
 void UCommonButtonStyle::GetButtonPadding(struct FMargin* OutButtonPadding) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetButtonPadding");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetButtonPadding");
 
 	Params::CommonButtonStyle_GetButtonPadding Parms{};
 
@@ -3297,10 +2877,7 @@ void UCommonButtonStyle::GetButtonPadding(struct FMargin* OutButtonPadding) cons
 
 void UCommonButtonStyle::GetCustomPadding(struct FMargin* OutCustomPadding) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetCustomPadding");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetCustomPadding");
 
 	Params::CommonButtonStyle_GetCustomPadding Parms{};
 
@@ -3323,10 +2900,7 @@ void UCommonButtonStyle::GetCustomPadding(struct FMargin* OutCustomPadding) cons
 
 void UCommonButtonStyle::GetDisabledBrush(struct FSlateBrush* Brush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetDisabledBrush");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetDisabledBrush");
 
 	Params::CommonButtonStyle_GetDisabledBrush Parms{};
 
@@ -3349,10 +2923,7 @@ void UCommonButtonStyle::GetDisabledBrush(struct FSlateBrush* Brush) const
 
 class UCommonTextStyle* UCommonButtonStyle::GetDisabledTextStyle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetDisabledTextStyle");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetDisabledTextStyle");
 
 	Params::CommonButtonStyle_GetDisabledTextStyle Parms{};
 
@@ -3374,10 +2945,7 @@ class UCommonTextStyle* UCommonButtonStyle::GetDisabledTextStyle() const
 
 void UCommonButtonStyle::GetMaterialBrush(struct FSlateBrush* Brush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetMaterialBrush");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetMaterialBrush");
 
 	Params::CommonButtonStyle_GetMaterialBrush Parms{};
 
@@ -3400,10 +2968,7 @@ void UCommonButtonStyle::GetMaterialBrush(struct FSlateBrush* Brush) const
 
 void UCommonButtonStyle::GetNormalBaseBrush(struct FSlateBrush* Brush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetNormalBaseBrush");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetNormalBaseBrush");
 
 	Params::CommonButtonStyle_GetNormalBaseBrush Parms{};
 
@@ -3426,10 +2991,7 @@ void UCommonButtonStyle::GetNormalBaseBrush(struct FSlateBrush* Brush) const
 
 void UCommonButtonStyle::GetNormalHoveredBrush(struct FSlateBrush* Brush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetNormalHoveredBrush");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetNormalHoveredBrush");
 
 	Params::CommonButtonStyle_GetNormalHoveredBrush Parms{};
 
@@ -3452,10 +3014,7 @@ void UCommonButtonStyle::GetNormalHoveredBrush(struct FSlateBrush* Brush) const
 
 class UCommonTextStyle* UCommonButtonStyle::GetNormalHoveredTextStyle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetNormalHoveredTextStyle");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetNormalHoveredTextStyle");
 
 	Params::CommonButtonStyle_GetNormalHoveredTextStyle Parms{};
 
@@ -3477,10 +3036,7 @@ class UCommonTextStyle* UCommonButtonStyle::GetNormalHoveredTextStyle() const
 
 void UCommonButtonStyle::GetNormalPressedBrush(struct FSlateBrush* Brush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetNormalPressedBrush");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetNormalPressedBrush");
 
 	Params::CommonButtonStyle_GetNormalPressedBrush Parms{};
 
@@ -3503,10 +3059,7 @@ void UCommonButtonStyle::GetNormalPressedBrush(struct FSlateBrush* Brush) const
 
 class UCommonTextStyle* UCommonButtonStyle::GetNormalTextStyle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetNormalTextStyle");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetNormalTextStyle");
 
 	Params::CommonButtonStyle_GetNormalTextStyle Parms{};
 
@@ -3528,10 +3081,7 @@ class UCommonTextStyle* UCommonButtonStyle::GetNormalTextStyle() const
 
 void UCommonButtonStyle::GetSelectedBaseBrush(struct FSlateBrush* Brush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetSelectedBaseBrush");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetSelectedBaseBrush");
 
 	Params::CommonButtonStyle_GetSelectedBaseBrush Parms{};
 
@@ -3554,10 +3104,7 @@ void UCommonButtonStyle::GetSelectedBaseBrush(struct FSlateBrush* Brush) const
 
 void UCommonButtonStyle::GetSelectedHoveredBrush(struct FSlateBrush* Brush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetSelectedHoveredBrush");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetSelectedHoveredBrush");
 
 	Params::CommonButtonStyle_GetSelectedHoveredBrush Parms{};
 
@@ -3580,10 +3127,7 @@ void UCommonButtonStyle::GetSelectedHoveredBrush(struct FSlateBrush* Brush) cons
 
 class UCommonTextStyle* UCommonButtonStyle::GetSelectedHoveredTextStyle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetSelectedHoveredTextStyle");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetSelectedHoveredTextStyle");
 
 	Params::CommonButtonStyle_GetSelectedHoveredTextStyle Parms{};
 
@@ -3605,10 +3149,7 @@ class UCommonTextStyle* UCommonButtonStyle::GetSelectedHoveredTextStyle() const
 
 void UCommonButtonStyle::GetSelectedPressedBrush(struct FSlateBrush* Brush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetSelectedPressedBrush");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetSelectedPressedBrush");
 
 	Params::CommonButtonStyle_GetSelectedPressedBrush Parms{};
 
@@ -3631,10 +3172,7 @@ void UCommonButtonStyle::GetSelectedPressedBrush(struct FSlateBrush* Brush) cons
 
 class UCommonTextStyle* UCommonButtonStyle::GetSelectedTextStyle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonStyle", "GetSelectedTextStyle");
+	class UFunction* Func = Class->GetFunction("CommonButtonStyle", "GetSelectedTextStyle");
 
 	Params::CommonButtonStyle_GetSelectedTextStyle Parms{};
 
@@ -3656,10 +3194,7 @@ class UCommonTextStyle* UCommonButtonStyle::GetSelectedTextStyle() const
 
 void UCommonWidgetGroupBase::AddWidget(class UWidget* InWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetGroupBase", "AddWidget");
+	class UFunction* Func = Class->GetFunction("CommonWidgetGroupBase", "AddWidget");
 
 	Params::CommonWidgetGroupBase_AddWidget Parms{};
 
@@ -3679,10 +3214,7 @@ void UCommonWidgetGroupBase::AddWidget(class UWidget* InWidget)
 
 void UCommonWidgetGroupBase::RemoveAll()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetGroupBase", "RemoveAll");
+	class UFunction* Func = Class->GetFunction("CommonWidgetGroupBase", "RemoveAll");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3700,10 +3232,7 @@ void UCommonWidgetGroupBase::RemoveAll()
 
 void UCommonWidgetGroupBase::RemoveWidget(class UWidget* InWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetGroupBase", "RemoveWidget");
+	class UFunction* Func = Class->GetFunction("CommonWidgetGroupBase", "RemoveWidget");
 
 	Params::CommonWidgetGroupBase_RemoveWidget Parms{};
 
@@ -3723,10 +3252,7 @@ void UCommonWidgetGroupBase::RemoveWidget(class UWidget* InWidget)
 
 void UCommonButtonGroup::DeselectAll()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "DeselectAll");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "DeselectAll");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3744,10 +3270,7 @@ void UCommonButtonGroup::DeselectAll()
 
 void UCommonButtonGroup::OnButtonHovered(class UCommonButton* BaseButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "OnButtonHovered");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "OnButtonHovered");
 
 	Params::CommonButtonGroup_OnButtonHovered Parms{};
 
@@ -3769,10 +3292,7 @@ void UCommonButtonGroup::OnButtonHovered(class UCommonButton* BaseButton)
 
 void UCommonButtonGroup::OnButtonUnhovered(class UCommonButton* BaseButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "OnButtonUnhovered");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "OnButtonUnhovered");
 
 	Params::CommonButtonGroup_OnButtonUnhovered Parms{};
 
@@ -3794,10 +3314,7 @@ void UCommonButtonGroup::OnButtonUnhovered(class UCommonButton* BaseButton)
 
 void UCommonButtonGroup::OnHandleButtonClicked(class UCommonButton* BaseButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "OnHandleButtonClicked");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "OnHandleButtonClicked");
 
 	Params::CommonButtonGroup_OnHandleButtonClicked Parms{};
 
@@ -3819,10 +3336,7 @@ void UCommonButtonGroup::OnHandleButtonClicked(class UCommonButton* BaseButton)
 
 void UCommonButtonGroup::OnHandleButtonDoubleClicked(class UCommonButton* BaseButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "OnHandleButtonDoubleClicked");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "OnHandleButtonDoubleClicked");
 
 	Params::CommonButtonGroup_OnHandleButtonDoubleClicked Parms{};
 
@@ -3845,10 +3359,7 @@ void UCommonButtonGroup::OnHandleButtonDoubleClicked(class UCommonButton* BaseBu
 
 void UCommonButtonGroup::OnSelectionStateChanged(class UCommonButton* BaseButton, bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "OnSelectionStateChanged");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "OnSelectionStateChanged");
 
 	Params::CommonButtonGroup_OnSelectionStateChanged Parms{};
 
@@ -3871,10 +3382,7 @@ void UCommonButtonGroup::OnSelectionStateChanged(class UCommonButton* BaseButton
 
 void UCommonButtonGroup::SelectButtonAtIndex(int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "SelectButtonAtIndex");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "SelectButtonAtIndex");
 
 	Params::CommonButtonGroup_SelectButtonAtIndex Parms{};
 
@@ -3896,10 +3404,7 @@ void UCommonButtonGroup::SelectButtonAtIndex(int32 ButtonIndex)
 
 void UCommonButtonGroup::SelectNextButton(bool bAllowWrap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "SelectNextButton");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "SelectNextButton");
 
 	Params::CommonButtonGroup_SelectNextButton Parms{};
 
@@ -3921,10 +3426,7 @@ void UCommonButtonGroup::SelectNextButton(bool bAllowWrap)
 
 void UCommonButtonGroup::SelectPreviousButton(bool bAllowWrap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "SelectPreviousButton");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "SelectPreviousButton");
 
 	Params::CommonButtonGroup_SelectPreviousButton Parms{};
 
@@ -3946,10 +3448,7 @@ void UCommonButtonGroup::SelectPreviousButton(bool bAllowWrap)
 
 void UCommonButtonGroup::SetSelectionRequired(bool bRequireSelection)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "SetSelectionRequired");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "SetSelectionRequired");
 
 	Params::CommonButtonGroup_SetSelectionRequired Parms{};
 
@@ -3972,10 +3471,7 @@ void UCommonButtonGroup::SetSelectionRequired(bool bRequireSelection)
 
 int32 UCommonButtonGroup::FindButtonIndex(const class UCommonButton* ButtonToFind) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "FindButtonIndex");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "FindButtonIndex");
 
 	Params::CommonButtonGroup_FindButtonIndex Parms{};
 
@@ -4000,10 +3496,7 @@ int32 UCommonButtonGroup::FindButtonIndex(const class UCommonButton* ButtonToFin
 
 class UCommonButton* UCommonButtonGroup::GetButtonAtIndex(int32 Index_0) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "GetButtonAtIndex");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "GetButtonAtIndex");
 
 	Params::CommonButtonGroup_GetButtonAtIndex Parms{};
 
@@ -4027,10 +3520,7 @@ class UCommonButton* UCommonButtonGroup::GetButtonAtIndex(int32 Index_0) const
 
 int32 UCommonButtonGroup::GetButtonCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "GetButtonCount");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "GetButtonCount");
 
 	Params::CommonButtonGroup_GetButtonCount Parms{};
 
@@ -4052,10 +3542,7 @@ int32 UCommonButtonGroup::GetButtonCount() const
 
 int32 UCommonButtonGroup::GetHoveredButtonIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "GetHoveredButtonIndex");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "GetHoveredButtonIndex");
 
 	Params::CommonButtonGroup_GetHoveredButtonIndex Parms{};
 
@@ -4077,10 +3564,7 @@ int32 UCommonButtonGroup::GetHoveredButtonIndex() const
 
 class UCommonButton* UCommonButtonGroup::GetSelectedButton() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "GetSelectedButton");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "GetSelectedButton");
 
 	Params::CommonButtonGroup_GetSelectedButton Parms{};
 
@@ -4102,10 +3586,7 @@ class UCommonButton* UCommonButtonGroup::GetSelectedButton() const
 
 int32 UCommonButtonGroup::GetSelectedButtonIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "GetSelectedButtonIndex");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "GetSelectedButtonIndex");
 
 	Params::CommonButtonGroup_GetSelectedButtonIndex Parms{};
 
@@ -4127,10 +3608,7 @@ int32 UCommonButtonGroup::GetSelectedButtonIndex() const
 
 bool UCommonButtonGroup::HasAnyButtons() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonButtonGroup", "HasAnyButtons");
+	class UFunction* Func = Class->GetFunction("CommonButtonGroup", "HasAnyButtons");
 
 	Params::CommonButtonGroup_HasAnyButtons Parms{};
 
@@ -4153,10 +3631,7 @@ bool UCommonButtonGroup::HasAnyButtons() const
 
 bool UCommonInputManager::GetAvailableInputActions(TArray<struct FCommonInputActionHandlerData>* AvailableInputActions)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "GetAvailableInputActions");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "GetAvailableInputActions");
 
 	Params::CommonInputManager_GetAvailableInputActions Parms{};
 
@@ -4181,10 +3656,7 @@ bool UCommonInputManager::GetAvailableInputActions(TArray<struct FCommonInputAct
 
 void UCommonInputManager::PopActivatablePanel(class UCommonActivatablePanel* ActivatablePanel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "PopActivatablePanel");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "PopActivatablePanel");
 
 	Params::CommonInputManager_PopActivatablePanel Parms{};
 
@@ -4208,10 +3680,7 @@ void UCommonInputManager::PopActivatablePanel(class UCommonActivatablePanel* Act
 
 void UCommonInputManager::PushActivatablePanel(class UCommonActivatablePanel* ActivatablePanel, bool bIntroPanel, bool bOutroPanelBelow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "PushActivatablePanel");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "PushActivatablePanel");
 
 	Params::CommonInputManager_PushActivatablePanel Parms{};
 
@@ -4233,10 +3702,7 @@ void UCommonInputManager::PushActivatablePanel(class UCommonActivatablePanel* Ac
 
 void UCommonInputManager::ResumeStartingOperationProcessing()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "ResumeStartingOperationProcessing");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "ResumeStartingOperationProcessing");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4254,10 +3720,7 @@ void UCommonInputManager::ResumeStartingOperationProcessing()
 
 void UCommonInputManager::SetGlobalInputHandlerPriorityFilter(int32 InFilterPriority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "SetGlobalInputHandlerPriorityFilter");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "SetGlobalInputHandlerPriorityFilter");
 
 	Params::CommonInputManager_SetGlobalInputHandlerPriorityFilter Parms{};
 
@@ -4282,10 +3745,7 @@ void UCommonInputManager::SetGlobalInputHandlerPriorityFilter(int32 InFilterPrio
 
 bool UCommonInputManager::StartListeningForExistingHeldAction(const struct FDataTableRowHandle& InputActionDataRow, const TDelegate<void()>& CompleteEvent, const TDelegate<void(float HeldPercent)>& ProgressEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "StartListeningForExistingHeldAction");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "StartListeningForExistingHeldAction");
 
 	Params::CommonInputManager_StartListeningForExistingHeldAction Parms{};
 
@@ -4314,10 +3774,7 @@ bool UCommonInputManager::StartListeningForExistingHeldAction(const struct FData
 
 bool UCommonInputManager::StopListeningForExistingHeldAction(const struct FDataTableRowHandle& InputActionDataRow, const TDelegate<void()>& CompleteEvent, const TDelegate<void(float HeldPercent)>& ProgressEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "StopListeningForExistingHeldAction");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "StopListeningForExistingHeldAction");
 
 	Params::CommonInputManager_StopListeningForExistingHeldAction Parms{};
 
@@ -4341,10 +3798,7 @@ bool UCommonInputManager::StopListeningForExistingHeldAction(const struct FDataT
 
 void UCommonInputManager::SuspendStartingOperationProcessing()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "SuspendStartingOperationProcessing");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "SuspendStartingOperationProcessing");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4362,10 +3816,7 @@ void UCommonInputManager::SuspendStartingOperationProcessing()
 
 int32 UCommonInputManager::GetGlobalInputHandlerPriorityFilter() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "GetGlobalInputHandlerPriorityFilter");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "GetGlobalInputHandlerPriorityFilter");
 
 	Params::CommonInputManager_GetGlobalInputHandlerPriorityFilter Parms{};
 
@@ -4387,10 +3838,7 @@ int32 UCommonInputManager::GetGlobalInputHandlerPriorityFilter() const
 
 class UCommonActivatablePanel* UCommonInputManager::GetTopPanel() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "GetTopPanel");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "GetTopPanel");
 
 	Params::CommonInputManager_GetTopPanel Parms{};
 
@@ -4412,10 +3860,7 @@ class UCommonActivatablePanel* UCommonInputManager::GetTopPanel() const
 
 bool UCommonInputManager::IsInputSuspended() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "IsInputSuspended");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "IsInputSuspended");
 
 	Params::CommonInputManager_IsInputSuspended Parms{};
 
@@ -4438,10 +3883,7 @@ bool UCommonInputManager::IsInputSuspended() const
 
 bool UCommonInputManager::IsPanelOnStack(const class UCommonActivatablePanel* InPanel) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputManager", "IsPanelOnStack");
+	class UFunction* Func = Class->GetFunction("CommonInputManager", "IsPanelOnStack");
 
 	Params::CommonInputManager_IsPanelOnStack Parms{};
 
@@ -4466,10 +3908,7 @@ bool UCommonInputManager::IsPanelOnStack(const class UCommonActivatablePanel* In
 
 void UCommonInputReflector::OnButtonAdded(class UCommonButton* AddedButton, const struct FCommonInputActionHandlerData& Data)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputReflector", "OnButtonAdded");
+	class UFunction* Func = Class->GetFunction("CommonInputReflector", "OnButtonAdded");
 
 	Params::CommonInputReflector_OnButtonAdded Parms{};
 
@@ -4488,10 +3927,7 @@ void UCommonInputReflector::OnButtonAdded(class UCommonButton* AddedButton, cons
 
 void UCommonLazyImage::SetBrushFromLazyDisplayAsset(const TSoftObjectPtr<class UObject>& LazyObject, bool bMatchTextureSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLazyImage", "SetBrushFromLazyDisplayAsset");
+	class UFunction* Func = Class->GetFunction("CommonLazyImage", "SetBrushFromLazyDisplayAsset");
 
 	Params::CommonLazyImage_SetBrushFromLazyDisplayAsset Parms{};
 
@@ -4514,10 +3950,7 @@ void UCommonLazyImage::SetBrushFromLazyDisplayAsset(const TSoftObjectPtr<class U
 
 void UCommonLazyImage::SetBrushFromLazyMaterial(const TSoftObjectPtr<class UMaterialInterface>& LazyMaterial)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLazyImage", "SetBrushFromLazyMaterial");
+	class UFunction* Func = Class->GetFunction("CommonLazyImage", "SetBrushFromLazyMaterial");
 
 	Params::CommonLazyImage_SetBrushFromLazyMaterial Parms{};
 
@@ -4540,10 +3973,7 @@ void UCommonLazyImage::SetBrushFromLazyMaterial(const TSoftObjectPtr<class UMate
 
 void UCommonLazyImage::SetBrushFromLazyTexture(const TSoftObjectPtr<class UTexture2D>& LazyTexture, bool bMatchSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLazyImage", "SetBrushFromLazyTexture");
+	class UFunction* Func = Class->GetFunction("CommonLazyImage", "SetBrushFromLazyTexture");
 
 	Params::CommonLazyImage_SetBrushFromLazyTexture Parms{};
 
@@ -4566,10 +3996,7 @@ void UCommonLazyImage::SetBrushFromLazyTexture(const TSoftObjectPtr<class UTextu
 
 void UCommonLazyImage::SetMaterialTextureParamName(class FName TextureParamName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLazyImage", "SetMaterialTextureParamName");
+	class UFunction* Func = Class->GetFunction("CommonLazyImage", "SetMaterialTextureParamName");
 
 	Params::CommonLazyImage_SetMaterialTextureParamName Parms{};
 
@@ -4591,10 +4018,7 @@ void UCommonLazyImage::SetMaterialTextureParamName(class FName TextureParamName)
 
 bool UCommonLazyImage::IsLoading() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLazyImage", "IsLoading");
+	class UFunction* Func = Class->GetFunction("CommonLazyImage", "IsLoading");
 
 	Params::CommonLazyImage_IsLoading Parms{};
 
@@ -4616,10 +4040,7 @@ bool UCommonLazyImage::IsLoading() const
 
 void UCommonLazyWidget::SetLazyContent(const TSoftClassPtr<class UClass> SoftWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLazyWidget", "SetLazyContent");
+	class UFunction* Func = Class->GetFunction("CommonLazyWidget", "SetLazyContent");
 
 	Params::CommonLazyWidget_SetLazyContent Parms{};
 
@@ -4641,10 +4062,7 @@ void UCommonLazyWidget::SetLazyContent(const TSoftClassPtr<class UClass> SoftWid
 
 class UUserWidget* UCommonLazyWidget::GetContent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLazyWidget", "GetContent");
+	class UFunction* Func = Class->GetFunction("CommonLazyWidget", "GetContent");
 
 	Params::CommonLazyWidget_GetContent Parms{};
 
@@ -4666,10 +4084,7 @@ class UUserWidget* UCommonLazyWidget::GetContent() const
 
 bool UCommonLazyWidget::IsLoading() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLazyWidget", "IsLoading");
+	class UFunction* Func = Class->GetFunction("CommonLazyWidget", "IsLoading");
 
 	Params::CommonLazyWidget_IsLoading Parms{};
 
@@ -4691,10 +4106,7 @@ bool UCommonLazyWidget::IsLoading() const
 
 void UCommonListView::SetEntrySpacing(float InEntrySpacing)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonListView", "SetEntrySpacing");
+	class UFunction* Func = Class->GetFunction("CommonListView", "SetEntrySpacing");
 
 	Params::CommonListView_SetEntrySpacing Parms{};
 
@@ -4716,10 +4128,7 @@ void UCommonListView::SetEntrySpacing(float InEntrySpacing)
 
 void ULoadGuardSlot::SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoadGuardSlot", "SetHorizontalAlignment");
+	class UFunction* Func = Class->GetFunction("LoadGuardSlot", "SetHorizontalAlignment");
 
 	Params::LoadGuardSlot_SetHorizontalAlignment Parms{};
 
@@ -4741,10 +4150,7 @@ void ULoadGuardSlot::SetHorizontalAlignment(EHorizontalAlignment InHorizontalAli
 
 void ULoadGuardSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoadGuardSlot", "SetPadding");
+	class UFunction* Func = Class->GetFunction("LoadGuardSlot", "SetPadding");
 
 	Params::LoadGuardSlot_SetPadding Parms{};
 
@@ -4766,10 +4172,7 @@ void ULoadGuardSlot::SetPadding(const struct FMargin& InPadding)
 
 void ULoadGuardSlot::SetVerticalAlignment(EVerticalAlignment InVerticalAlignment)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoadGuardSlot", "SetVerticalAlignment");
+	class UFunction* Func = Class->GetFunction("LoadGuardSlot", "SetVerticalAlignment");
 
 	Params::LoadGuardSlot_SetVerticalAlignment Parms{};
 
@@ -4792,10 +4195,7 @@ void ULoadGuardSlot::SetVerticalAlignment(EVerticalAlignment InVerticalAlignment
 
 void UCommonLoadGuard::BP_GuardAndLoadAsset(const TSoftObjectPtr<class UObject>& InLazyAsset, const TDelegate<void(class UObject* Object)>& OnAssetLoaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLoadGuard", "BP_GuardAndLoadAsset");
+	class UFunction* Func = Class->GetFunction("CommonLoadGuard", "BP_GuardAndLoadAsset");
 
 	Params::CommonLoadGuard_BP_GuardAndLoadAsset Parms{};
 
@@ -4818,10 +4218,7 @@ void UCommonLoadGuard::BP_GuardAndLoadAsset(const TSoftObjectPtr<class UObject>&
 
 void UCommonLoadGuard::SetIsLoading(bool bInIsLoading)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLoadGuard", "SetIsLoading");
+	class UFunction* Func = Class->GetFunction("CommonLoadGuard", "SetIsLoading");
 
 	Params::CommonLoadGuard_SetIsLoading Parms{};
 
@@ -4843,10 +4240,7 @@ void UCommonLoadGuard::SetIsLoading(bool bInIsLoading)
 
 void UCommonLoadGuard::SetLoadingText(const class FText& InLoadingText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLoadGuard", "SetLoadingText");
+	class UFunction* Func = Class->GetFunction("CommonLoadGuard", "SetLoadingText");
 
 	Params::CommonLoadGuard_SetLoadingText Parms{};
 
@@ -4868,10 +4262,7 @@ void UCommonLoadGuard::SetLoadingText(const class FText& InLoadingText)
 
 bool UCommonLoadGuard::IsLoading() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonLoadGuard", "IsLoading");
+	class UFunction* Func = Class->GetFunction("CommonLoadGuard", "IsLoading");
 
 	Params::CommonLoadGuard_IsLoading Parms{};
 
@@ -4896,10 +4287,7 @@ bool UCommonLoadGuard::IsLoading() const
 
 void UCommonNumericTextBlock::InterpolateToValue(const float TargetValue, float MaximumInterpolationDuration, float MinimumChangeRate, float OutroOffset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonNumericTextBlock", "InterpolateToValue");
+	class UFunction* Func = Class->GetFunction("CommonNumericTextBlock", "InterpolateToValue");
 
 	Params::CommonNumericTextBlock_InterpolateToValue Parms{};
 
@@ -4924,10 +4312,7 @@ void UCommonNumericTextBlock::InterpolateToValue(const float TargetValue, float 
 
 void UCommonNumericTextBlock::SetCurrentValue(const float NewValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonNumericTextBlock", "SetCurrentValue");
+	class UFunction* Func = Class->GetFunction("CommonNumericTextBlock", "SetCurrentValue");
 
 	Params::CommonNumericTextBlock_SetCurrentValue Parms{};
 
@@ -4949,10 +4334,7 @@ void UCommonNumericTextBlock::SetCurrentValue(const float NewValue)
 
 void UCommonNumericTextBlock::SetNumericType(ECommonNumericType InNumericType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonNumericTextBlock", "SetNumericType");
+	class UFunction* Func = Class->GetFunction("CommonNumericTextBlock", "SetNumericType");
 
 	Params::CommonNumericTextBlock_SetNumericType Parms{};
 
@@ -4974,10 +4356,7 @@ void UCommonNumericTextBlock::SetNumericType(ECommonNumericType InNumericType)
 
 float UCommonNumericTextBlock::GetTargetValue() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonNumericTextBlock", "GetTargetValue");
+	class UFunction* Func = Class->GetFunction("CommonNumericTextBlock", "GetTargetValue");
 
 	Params::CommonNumericTextBlock_GetTargetValue Parms{};
 
@@ -4999,10 +4378,7 @@ float UCommonNumericTextBlock::GetTargetValue() const
 
 bool UCommonNumericTextBlock::IsInterpolatingNumericValue() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonNumericTextBlock", "IsInterpolatingNumericValue");
+	class UFunction* Func = Class->GetFunction("CommonNumericTextBlock", "IsInterpolatingNumericValue");
 
 	Params::CommonNumericTextBlock_IsInterpolatingNumericValue Parms{};
 
@@ -5022,10 +4398,7 @@ bool UCommonNumericTextBlock::IsInterpolatingNumericValue() const
 
 void ICommonPoolableWidgetInterface::OnAcquireFromPool()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CommonPoolableWidgetInterface", "OnAcquireFromPool");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CommonPoolableWidgetInterface", "OnAcquireFromPool");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5041,10 +4414,7 @@ void ICommonPoolableWidgetInterface::OnAcquireFromPool()
 
 void ICommonPoolableWidgetInterface::OnReleaseToPool()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CommonPoolableWidgetInterface", "OnReleaseToPool");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CommonPoolableWidgetInterface", "OnReleaseToPool");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5062,10 +4432,7 @@ void ICommonPoolableWidgetInterface::OnReleaseToPool()
 
 class UWidget* UCommonPopupButton::GetMenuAnchorWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonPopupButton", "GetMenuAnchorWidget");
+	class UFunction* Func = Class->GetFunction("CommonPopupButton", "GetMenuAnchorWidget");
 
 	Params::CommonPopupButton_GetMenuAnchorWidget Parms{};
 
@@ -5085,10 +4452,7 @@ class UWidget* UCommonPopupButton::GetMenuAnchorWidget()
 
 void UCommonPopupMenu::HandlePostDifferentContextProviderSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonPopupMenu", "HandlePostDifferentContextProviderSet");
+	class UFunction* Func = Class->GetFunction("CommonPopupMenu", "HandlePostDifferentContextProviderSet");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5104,10 +4468,7 @@ void UCommonPopupMenu::HandlePostDifferentContextProviderSet()
 
 void UCommonPopupMenu::HandlePreDifferentContextProviderSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonPopupMenu", "HandlePreDifferentContextProviderSet");
+	class UFunction* Func = Class->GetFunction("CommonPopupMenu", "HandlePreDifferentContextProviderSet");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5125,10 +4486,7 @@ void UCommonPopupMenu::HandlePreDifferentContextProviderSet()
 
 void UCommonPopupMenu::OnIsOpenChanged(bool IsOpen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonPopupMenu", "OnIsOpenChanged");
+	class UFunction* Func = Class->GetFunction("CommonPopupMenu", "OnIsOpenChanged");
 
 	Params::CommonPopupMenu_OnIsOpenChanged Parms{};
 
@@ -5148,10 +4506,7 @@ void UCommonPopupMenu::OnIsOpenChanged(bool IsOpen)
 
 void UCommonPopupMenu::RequestClose()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonPopupMenu", "RequestClose");
+	class UFunction* Func = Class->GetFunction("CommonPopupMenu", "RequestClose");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5169,10 +4524,7 @@ void UCommonPopupMenu::RequestClose()
 
 void UCommonPopupMenu::SetContextProvider(const class UObject* ContextProvidingObject_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonPopupMenu", "SetContextProvider");
+	class UFunction* Func = Class->GetFunction("CommonPopupMenu", "SetContextProvider");
 
 	Params::CommonPopupMenu_SetContextProvider Parms{};
 
@@ -5194,10 +4546,7 @@ void UCommonPopupMenu::SetContextProvider(const class UObject* ContextProvidingO
 
 void UCommonPopupMenu::SetOwningMenuAnchor(const class UMenuAnchor* MenuAnchor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonPopupMenu", "SetOwningMenuAnchor");
+	class UFunction* Func = Class->GetFunction("CommonPopupMenu", "SetOwningMenuAnchor");
 
 	Params::CommonPopupMenu_SetOwningMenuAnchor Parms{};
 
@@ -5219,10 +4568,7 @@ void UCommonPopupMenu::SetOwningMenuAnchor(const class UMenuAnchor* MenuAnchor)
 
 void UCommonRotator::BP_OnOptionSelected(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonRotator", "BP_OnOptionSelected");
+	class UFunction* Func = Class->GetFunction("CommonRotator", "BP_OnOptionSelected");
 
 	Params::CommonRotator_BP_OnOptionSelected Parms{};
 
@@ -5239,10 +4585,7 @@ void UCommonRotator::BP_OnOptionSelected(int32 Index_0)
 
 void UCommonRotator::BP_OnOptionsPopulated(int32 Count)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonRotator", "BP_OnOptionsPopulated");
+	class UFunction* Func = Class->GetFunction("CommonRotator", "BP_OnOptionsPopulated");
 
 	Params::CommonRotator_BP_OnOptionsPopulated Parms{};
 
@@ -5259,10 +4602,7 @@ void UCommonRotator::BP_OnOptionsPopulated(int32 Count)
 
 void UCommonRotator::PopulateTextLabels(const TArray<class FText>& Labels)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonRotator", "PopulateTextLabels");
+	class UFunction* Func = Class->GetFunction("CommonRotator", "PopulateTextLabels");
 
 	Params::CommonRotator_PopulateTextLabels Parms{};
 
@@ -5284,10 +4624,7 @@ void UCommonRotator::PopulateTextLabels(const TArray<class FText>& Labels)
 
 void UCommonRotator::SetSelectedItem(int32 InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonRotator", "SetSelectedItem");
+	class UFunction* Func = Class->GetFunction("CommonRotator", "SetSelectedItem");
 
 	Params::CommonRotator_SetSelectedItem Parms{};
 
@@ -5307,10 +4644,7 @@ void UCommonRotator::SetSelectedItem(int32 InValue)
 
 void UCommonRotator::ShiftTextLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonRotator", "ShiftTextLeft");
+	class UFunction* Func = Class->GetFunction("CommonRotator", "ShiftTextLeft");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5326,10 +4660,7 @@ void UCommonRotator::ShiftTextLeft()
 
 void UCommonRotator::ShiftTextRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonRotator", "ShiftTextRight");
+	class UFunction* Func = Class->GetFunction("CommonRotator", "ShiftTextRight");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5347,10 +4678,7 @@ void UCommonRotator::ShiftTextRight()
 
 int32 UCommonRotator::GetSelectedIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonRotator", "GetSelectedIndex");
+	class UFunction* Func = Class->GetFunction("CommonRotator", "GetSelectedIndex");
 
 	Params::CommonRotator_GetSelectedIndex Parms{};
 
@@ -5372,10 +4700,7 @@ int32 UCommonRotator::GetSelectedIndex() const
 
 class FText UCommonRotator::GetSelectedText() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonRotator", "GetSelectedText");
+	class UFunction* Func = Class->GetFunction("CommonRotator", "GetSelectedText");
 
 	Params::CommonRotator_GetSelectedText Parms{};
 
@@ -5398,10 +4723,7 @@ class FText UCommonRotator::GetSelectedText() const
 
 void UCommonTabListWidget::DisableTabWithReason(class FName TabNameID, const class FText& Reason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "DisableTabWithReason");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "DisableTabWithReason");
 
 	Params::CommonTabListWidget_DisableTabWithReason Parms{};
 
@@ -5425,10 +4747,7 @@ void UCommonTabListWidget::DisableTabWithReason(class FName TabNameID, const cla
 
 class UCommonButton* UCommonTabListWidget::GetTabButtonByID(class FName TabNameID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "GetTabButtonByID");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "GetTabButtonByID");
 
 	Params::CommonTabListWidget_GetTabButtonByID Parms{};
 
@@ -5452,10 +4771,7 @@ class UCommonButton* UCommonTabListWidget::GetTabButtonByID(class FName TabNameI
 
 void UCommonTabListWidget::HandleNextTabInputAction(bool* bPassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "HandleNextTabInputAction");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "HandleNextTabInputAction");
 
 	Params::CommonTabListWidget_HandleNextTabInputAction Parms{};
 
@@ -5476,10 +4792,7 @@ void UCommonTabListWidget::HandleNextTabInputAction(bool* bPassThrough)
 
 void UCommonTabListWidget::HandlePostLinkedSwitcherChanged_BP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "HandlePostLinkedSwitcherChanged_BP");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "HandlePostLinkedSwitcherChanged_BP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -5490,10 +4803,7 @@ void UCommonTabListWidget::HandlePostLinkedSwitcherChanged_BP()
 
 void UCommonTabListWidget::HandlePreLinkedSwitcherChanged_BP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "HandlePreLinkedSwitcherChanged_BP");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "HandlePreLinkedSwitcherChanged_BP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -5506,10 +4816,7 @@ void UCommonTabListWidget::HandlePreLinkedSwitcherChanged_BP()
 
 void UCommonTabListWidget::HandlePreviousTabInputAction(bool* bPassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "HandlePreviousTabInputAction");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "HandlePreviousTabInputAction");
 
 	Params::CommonTabListWidget_HandlePreviousTabInputAction Parms{};
 
@@ -5533,10 +4840,7 @@ void UCommonTabListWidget::HandlePreviousTabInputAction(bool* bPassThrough)
 
 void UCommonTabListWidget::HandleTabButtonSelected(class UCommonButton* SelectedTabButton, int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "HandleTabButtonSelected");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "HandleTabButtonSelected");
 
 	Params::CommonTabListWidget_HandleTabButtonSelected Parms{};
 
@@ -5560,10 +4864,7 @@ void UCommonTabListWidget::HandleTabButtonSelected(class UCommonButton* Selected
 
 void UCommonTabListWidget::HandleTabCreated(class FName TabNameID, class UCommonButton* TabButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "HandleTabCreated");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "HandleTabCreated");
 
 	Params::CommonTabListWidget_HandleTabCreated Parms{};
 
@@ -5587,10 +4888,7 @@ void UCommonTabListWidget::HandleTabCreated(class FName TabNameID, class UCommon
 
 void UCommonTabListWidget::HandleTabRemoved(class FName TabNameID, class UCommonButton* TabButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "HandleTabRemoved");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "HandleTabRemoved");
 
 	Params::CommonTabListWidget_HandleTabRemoved Parms{};
 
@@ -5616,10 +4914,7 @@ void UCommonTabListWidget::HandleTabRemoved(class FName TabNameID, class UCommon
 
 bool UCommonTabListWidget::RegisterTab(class FName TabNameID, TSubclassOf<class UCommonButton> ButtonWidgetType, class UWidget* ContentWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "RegisterTab");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "RegisterTab");
 
 	Params::CommonTabListWidget_RegisterTab Parms{};
 
@@ -5643,10 +4938,7 @@ bool UCommonTabListWidget::RegisterTab(class FName TabNameID, TSubclassOf<class 
 
 void UCommonTabListWidget::RemoveAllTabs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "RemoveAllTabs");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "RemoveAllTabs");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -5665,10 +4957,7 @@ void UCommonTabListWidget::RemoveAllTabs()
 
 bool UCommonTabListWidget::RemoveTab(class FName TabNameID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "RemoveTab");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "RemoveTab");
 
 	Params::CommonTabListWidget_RemoveTab Parms{};
 
@@ -5694,10 +4983,7 @@ bool UCommonTabListWidget::RemoveTab(class FName TabNameID)
 
 bool UCommonTabListWidget::SelectTabByID(class FName TabNameID, bool bSuppressClickFeedback)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "SelectTabByID");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "SelectTabByID");
 
 	Params::CommonTabListWidget_SelectTabByID Parms{};
 
@@ -5722,10 +5008,7 @@ bool UCommonTabListWidget::SelectTabByID(class FName TabNameID, bool bSuppressCl
 
 void UCommonTabListWidget::SetLinkedSwitcher(class UCommonAnimatedSwitcher* CommonSwitcher)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "SetLinkedSwitcher");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "SetLinkedSwitcher");
 
 	Params::CommonTabListWidget_SetLinkedSwitcher Parms{};
 
@@ -5747,10 +5030,7 @@ void UCommonTabListWidget::SetLinkedSwitcher(class UCommonAnimatedSwitcher* Comm
 
 void UCommonTabListWidget::SetListeningForInput(bool bShouldListen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "SetListeningForInput");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "SetListeningForInput");
 
 	Params::CommonTabListWidget_SetListeningForInput Parms{};
 
@@ -5773,10 +5053,7 @@ void UCommonTabListWidget::SetListeningForInput(bool bShouldListen)
 
 void UCommonTabListWidget::SetTabEnabled(class FName TabNameID, bool bEnable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "SetTabEnabled");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "SetTabEnabled");
 
 	Params::CommonTabListWidget_SetTabEnabled Parms{};
 
@@ -5800,10 +5077,7 @@ void UCommonTabListWidget::SetTabEnabled(class FName TabNameID, bool bEnable)
 
 void UCommonTabListWidget::SetTabInteractionEnabled(class FName TabNameID, bool bEnable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "SetTabInteractionEnabled");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "SetTabInteractionEnabled");
 
 	Params::CommonTabListWidget_SetTabInteractionEnabled Parms{};
 
@@ -5827,10 +5101,7 @@ void UCommonTabListWidget::SetTabInteractionEnabled(class FName TabNameID, bool 
 
 void UCommonTabListWidget::SetTabVisibility(class FName TabNameID, ESlateVisibility NewVisibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "SetTabVisibility");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "SetTabVisibility");
 
 	Params::CommonTabListWidget_SetTabVisibility Parms{};
 
@@ -5853,10 +5124,7 @@ void UCommonTabListWidget::SetTabVisibility(class FName TabNameID, ESlateVisibil
 
 class FName UCommonTabListWidget::GetActiveTab() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "GetActiveTab");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "GetActiveTab");
 
 	Params::CommonTabListWidget_GetActiveTab Parms{};
 
@@ -5878,10 +5146,7 @@ class FName UCommonTabListWidget::GetActiveTab() const
 
 class UCommonAnimatedSwitcher* UCommonTabListWidget::GetLinkedSwitcher() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "GetLinkedSwitcher");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "GetLinkedSwitcher");
 
 	Params::CommonTabListWidget_GetLinkedSwitcher Parms{};
 
@@ -5903,10 +5168,7 @@ class UCommonAnimatedSwitcher* UCommonTabListWidget::GetLinkedSwitcher() const
 
 class FName UCommonTabListWidget::GetSelectedTabId() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "GetSelectedTabId");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "GetSelectedTabId");
 
 	Params::CommonTabListWidget_GetSelectedTabId Parms{};
 
@@ -5928,10 +5190,7 @@ class FName UCommonTabListWidget::GetSelectedTabId() const
 
 int32 UCommonTabListWidget::GetTabCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "GetTabCount");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "GetTabCount");
 
 	Params::CommonTabListWidget_GetTabCount Parms{};
 
@@ -5954,10 +5213,7 @@ int32 UCommonTabListWidget::GetTabCount() const
 
 class FName UCommonTabListWidget::GetTabIdAtIndex(int32 Index_0) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTabListWidget", "GetTabIdAtIndex");
+	class UFunction* Func = Class->GetFunction("CommonTabListWidget", "GetTabIdAtIndex");
 
 	Params::CommonTabListWidget_GetTabIdAtIndex Parms{};
 
@@ -5981,10 +5237,7 @@ class FName UCommonTabListWidget::GetTabIdAtIndex(int32 Index_0) const
 
 void UCommonTextStyle::GetColor(struct FLinearColor* OutColor) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextStyle", "GetColor");
+	class UFunction* Func = Class->GetFunction("CommonTextStyle", "GetColor");
 
 	Params::CommonTextStyle_GetColor Parms{};
 
@@ -6007,10 +5260,7 @@ void UCommonTextStyle::GetColor(struct FLinearColor* OutColor) const
 
 void UCommonTextStyle::GetFont(struct FSlateFontInfo* OutFont) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextStyle", "GetFont");
+	class UFunction* Func = Class->GetFunction("CommonTextStyle", "GetFont");
 
 	Params::CommonTextStyle_GetFont Parms{};
 
@@ -6033,10 +5283,7 @@ void UCommonTextStyle::GetFont(struct FSlateFontInfo* OutFont) const
 
 float UCommonTextStyle::GetLineHeightPercentage() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextStyle", "GetLineHeightPercentage");
+	class UFunction* Func = Class->GetFunction("CommonTextStyle", "GetLineHeightPercentage");
 
 	Params::CommonTextStyle_GetLineHeightPercentage Parms{};
 
@@ -6058,10 +5305,7 @@ float UCommonTextStyle::GetLineHeightPercentage() const
 
 void UCommonTextStyle::GetMargin(struct FMargin* OutMargin) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextStyle", "GetMargin");
+	class UFunction* Func = Class->GetFunction("CommonTextStyle", "GetMargin");
 
 	Params::CommonTextStyle_GetMargin Parms{};
 
@@ -6084,10 +5328,7 @@ void UCommonTextStyle::GetMargin(struct FMargin* OutMargin) const
 
 void UCommonTextStyle::GetShadowColor(struct FLinearColor* OutColor) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextStyle", "GetShadowColor");
+	class UFunction* Func = Class->GetFunction("CommonTextStyle", "GetShadowColor");
 
 	Params::CommonTextStyle_GetShadowColor Parms{};
 
@@ -6110,10 +5351,7 @@ void UCommonTextStyle::GetShadowColor(struct FLinearColor* OutColor) const
 
 void UCommonTextStyle::GetShadowOffset(struct FVector2D* OutShadowOffset) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextStyle", "GetShadowOffset");
+	class UFunction* Func = Class->GetFunction("CommonTextStyle", "GetShadowOffset");
 
 	Params::CommonTextStyle_GetShadowOffset Parms{};
 
@@ -6136,10 +5374,7 @@ void UCommonTextStyle::GetShadowOffset(struct FVector2D* OutShadowOffset) const
 
 void UCommonTextStyle::GetStrikeBrush(struct FSlateBrush* OutStrikeBrush) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonTextStyle", "GetStrikeBrush");
+	class UFunction* Func = Class->GetFunction("CommonTextStyle", "GetStrikeBrush");
 
 	Params::CommonTextStyle_GetStrikeBrush Parms{};
 
@@ -6162,10 +5397,7 @@ void UCommonTextStyle::GetStrikeBrush(struct FSlateBrush* OutStrikeBrush) const
 
 void UCommonWidgetCarousel::BeginAutoScrolling(float ScrollInterval)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarousel", "BeginAutoScrolling");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarousel", "BeginAutoScrolling");
 
 	Params::CommonWidgetCarousel_BeginAutoScrolling Parms{};
 
@@ -6185,10 +5417,7 @@ void UCommonWidgetCarousel::BeginAutoScrolling(float ScrollInterval)
 
 void UCommonWidgetCarousel::EndAutoScrolling()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarousel", "EndAutoScrolling");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarousel", "EndAutoScrolling");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6204,10 +5433,7 @@ void UCommonWidgetCarousel::EndAutoScrolling()
 
 void UCommonWidgetCarousel::NextPage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarousel", "NextPage");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarousel", "NextPage");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6223,10 +5449,7 @@ void UCommonWidgetCarousel::NextPage()
 
 void UCommonWidgetCarousel::PreviousPage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarousel", "PreviousPage");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarousel", "PreviousPage");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -6244,10 +5467,7 @@ void UCommonWidgetCarousel::PreviousPage()
 
 void UCommonWidgetCarousel::SetActiveWidget(class UWidget* Widget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarousel", "SetActiveWidget");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarousel", "SetActiveWidget");
 
 	Params::CommonWidgetCarousel_SetActiveWidget Parms{};
 
@@ -6269,10 +5489,7 @@ void UCommonWidgetCarousel::SetActiveWidget(class UWidget* Widget)
 
 void UCommonWidgetCarousel::SetActiveWidgetIndex(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarousel", "SetActiveWidgetIndex");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarousel", "SetActiveWidgetIndex");
 
 	Params::CommonWidgetCarousel_SetActiveWidgetIndex Parms{};
 
@@ -6294,10 +5511,7 @@ void UCommonWidgetCarousel::SetActiveWidgetIndex(int32 Index_0)
 
 int32 UCommonWidgetCarousel::GetActiveWidgetIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarousel", "GetActiveWidgetIndex");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarousel", "GetActiveWidgetIndex");
 
 	Params::CommonWidgetCarousel_GetActiveWidgetIndex Parms{};
 
@@ -6320,10 +5534,7 @@ int32 UCommonWidgetCarousel::GetActiveWidgetIndex() const
 
 class UWidget* UCommonWidgetCarousel::GetWidgetAtIndex(int32 Index_0) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonWidgetCarousel", "GetWidgetAtIndex");
+	class UFunction* Func = Class->GetFunction("CommonWidgetCarousel", "GetWidgetAtIndex");
 
 	Params::CommonWidgetCarousel_GetWidgetAtIndex Parms{};
 

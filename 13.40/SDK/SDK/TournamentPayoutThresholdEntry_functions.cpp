@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTournamentPayoutThresholdEntry_C::ExecuteUbergraph_TournamentPayoutThresholdEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "ExecuteUbergraph_TournamentPayoutThresholdEntry");
+	class UFunction* Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "ExecuteUbergraph_TournamentPayoutThresholdEntry");
 
 	Params::TournamentPayoutThresholdEntry_C_ExecuteUbergraph_TournamentPayoutThresholdEntry Parms{};
 
@@ -43,10 +40,7 @@ void UTournamentPayoutThresholdEntry_C::ExecuteUbergraph_TournamentPayoutThresho
 
 void UTournamentPayoutThresholdEntry_C::OnPayoutDataSet(int32 EntryIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnPayoutDataSet");
+	class UFunction* Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnPayoutDataSet");
 
 	Params::TournamentPayoutThresholdEntry_C_OnPayoutDataSet Parms{};
 
@@ -63,10 +57,7 @@ void UTournamentPayoutThresholdEntry_C::OnPayoutDataSet(int32 EntryIndex)
 
 void UTournamentPayoutThresholdEntry_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnRemovedFromFocusPath");
+	class UFunction* Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnRemovedFromFocusPath");
 
 	Params::TournamentPayoutThresholdEntry_C_OnRemovedFromFocusPath Parms{};
 
@@ -83,10 +74,7 @@ void UTournamentPayoutThresholdEntry_C::OnRemovedFromFocusPath(const struct FFoc
 
 void UTournamentPayoutThresholdEntry_C::OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnAddedToFocusPath");
+	class UFunction* Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnAddedToFocusPath");
 
 	Params::TournamentPayoutThresholdEntry_C_OnAddedToFocusPath Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaTemperature_C::ExecuteUbergraph_AthenaTemperature(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaTemperature_C", "ExecuteUbergraph_AthenaTemperature");
+	class UFunction* Func = Class->GetFunction("AthenaTemperature_C", "ExecuteUbergraph_AthenaTemperature");
 
 	Params::AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaTemperature_C::ExecuteUbergraph_AthenaTemperature(int32 EntryPoint)
 
 void UAthenaTemperature_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaTemperature_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaTemperature_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UAthenaTemperature_C::Construct()
 
 void UAthenaTemperature_C::ShowTemperatureChanged(bool bShowTemperature)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaTemperature_C", "ShowTemperatureChanged");
+	class UFunction* Func = Class->GetFunction("AthenaTemperature_C", "ShowTemperatureChanged");
 
 	Params::AthenaTemperature_C_ShowTemperatureChanged Parms{};
 

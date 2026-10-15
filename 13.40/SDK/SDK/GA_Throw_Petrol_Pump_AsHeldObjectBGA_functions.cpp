@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Throw_Petrol_Pump_AsHeldObjectBGA_C::ExecuteUbergraph_GA_Throw_Petrol_Pump_AsHeldObjectBGA(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_Petrol_Pump_AsHeldObjectBGA_C", "ExecuteUbergraph_GA_Throw_Petrol_Pump_AsHeldObjectBGA");
+	class UFunction* Func = Class->GetFunction("GA_Throw_Petrol_Pump_AsHeldObjectBGA_C", "ExecuteUbergraph_GA_Throw_Petrol_Pump_AsHeldObjectBGA");
 
 	Params::GA_Throw_Petrol_Pump_AsHeldObjectBGA_C_ExecuteUbergraph_GA_Throw_Petrol_Pump_AsHeldObjectBGA Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Throw_Petrol_Pump_AsHeldObjectBGA_C::ExecuteUbergraph_GA_Throw_Petrol_P
 
 void UGA_Throw_Petrol_Pump_AsHeldObjectBGA_C::UpdateDummyProjectileBGA()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_Petrol_Pump_AsHeldObjectBGA_C", "UpdateDummyProjectileBGA");
+	class UFunction* Func = Class->GetFunction("GA_Throw_Petrol_Pump_AsHeldObjectBGA_C", "UpdateDummyProjectileBGA");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Throw_Petrol_Pump_AsHeldObjectBGA_C::UpdateDummyProjectileBGA()
 
 void UGA_Throw_Petrol_Pump_AsHeldObjectBGA_C::UpdateSpawnedBGA_ServerOnly_()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_Petrol_Pump_AsHeldObjectBGA_C", "UpdateSpawnedBGA(ServerOnly)");
+	class UFunction* Func = Class->GetFunction("GA_Throw_Petrol_Pump_AsHeldObjectBGA_C", "UpdateSpawnedBGA(ServerOnly)");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

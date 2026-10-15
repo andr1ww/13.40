@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_MegaStorm_DamageRing_C::ExecuteUbergraph_GCNL_MegaStorm_DamageRing(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "ExecuteUbergraph_GCNL_MegaStorm_DamageRing");
+	class UFunction* Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "ExecuteUbergraph_GCNL_MegaStorm_DamageRing");
 
 	Params::GCNL_MegaStorm_DamageRing_C_ExecuteUbergraph_GCNL_MegaStorm_DamageRing Parms{};
 
@@ -41,10 +38,7 @@ void AGCNL_MegaStorm_DamageRing_C::ExecuteUbergraph_GCNL_MegaStorm_DamageRing(in
 
 void AGCNL_MegaStorm_DamageRing_C::Reset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Reset");
+	class UFunction* Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Reset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -62,10 +56,7 @@ void AGCNL_MegaStorm_DamageRing_C::Reset()
 
 void AGCNL_MegaStorm_DamageRing_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "OnRemoval");
 
 	Params::GCNL_MegaStorm_DamageRing_C_OnRemoval Parms{};
 
@@ -90,10 +81,7 @@ void AGCNL_MegaStorm_DamageRing_C::OnRemoval(class AActor* MyTarget, const struc
 
 void AGCNL_MegaStorm_DamageRing_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "OnLoopingStart");
 
 	Params::GCNL_MegaStorm_DamageRing_C_OnLoopingStart Parms{};
 
@@ -111,10 +99,7 @@ void AGCNL_MegaStorm_DamageRing_C::OnLoopingStart(class AActor* MyTarget, const 
 
 void AGCNL_MegaStorm_DamageRing_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +110,7 @@ void AGCNL_MegaStorm_DamageRing_C::ReceiveBeginPlay()
 
 void AGCNL_MegaStorm_DamageRing_C::Timeline_1__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Timeline_1__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Timeline_1__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +121,7 @@ void AGCNL_MegaStorm_DamageRing_C::Timeline_1__UpdateFunc()
 
 void AGCNL_MegaStorm_DamageRing_C::Timeline_1__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Timeline_1__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Timeline_1__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +132,7 @@ void AGCNL_MegaStorm_DamageRing_C::Timeline_1__FinishedFunc()
 
 void AGCNL_MegaStorm_DamageRing_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +143,7 @@ void AGCNL_MegaStorm_DamageRing_C::Timeline_0__UpdateFunc()
 
 void AGCNL_MegaStorm_DamageRing_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_MegaStorm_DamageRing_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

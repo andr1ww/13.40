@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_Athena_Petrol_C::ExecuteUbergraph_BGA_Athena_Petrol(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "ExecuteUbergraph_BGA_Athena_Petrol");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "ExecuteUbergraph_BGA_Athena_Petrol");
 
 	Params::BGA_Athena_Petrol_C_ExecuteUbergraph_BGA_Athena_Petrol Parms{};
 
@@ -44,10 +41,7 @@ void ABGA_Athena_Petrol_C::ExecuteUbergraph_BGA_Athena_Petrol(int32 EntryPoint)
 
 void ABGA_Athena_Petrol_C::OnCurieStateDetached_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& StateTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "OnCurieStateDetached_BP");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "OnCurieStateDetached_BP");
 
 	Params::BGA_Athena_Petrol_C_OnCurieStateDetached_BP Parms{};
 
@@ -67,10 +61,7 @@ void ABGA_Athena_Petrol_C::OnCurieStateDetached_BP(const struct FCurieContainerH
 
 void ABGA_Athena_Petrol_C::OnCurieElementInteract_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag, const struct FCurieInteractParamsHandle& InteractParamsHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "OnCurieElementInteract_BP");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "OnCurieElementInteract_BP");
 
 	Params::BGA_Athena_Petrol_C_OnCurieElementInteract_BP Parms{};
 
@@ -87,10 +78,7 @@ void ABGA_Athena_Petrol_C::OnCurieElementInteract_BP(const struct FCurieContaine
 
 void ABGA_Athena_Petrol_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -104,10 +92,7 @@ void ABGA_Athena_Petrol_C::ReceiveDestroyed()
 
 void ABGA_Athena_Petrol_C::InteractingWithFire(class AActor* OverlappingActor, const struct FHitResult& HitResult_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "InteractingWithFire");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "InteractingWithFire");
 
 	Params::BGA_Athena_Petrol_C_InteractingWithFire Parms{};
 
@@ -123,10 +108,7 @@ void ABGA_Athena_Petrol_C::InteractingWithFire(class AActor* OverlappingActor, c
 
 void ABGA_Athena_Petrol_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -142,10 +124,7 @@ void ABGA_Athena_Petrol_C::ReceiveBeginPlay()
 
 void ABGA_Athena_Petrol_C::BndEvt__SphereCollisionComponent_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "BndEvt__SphereCollisionComponent_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "BndEvt__SphereCollisionComponent_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::BGA_Athena_Petrol_C_BndEvt__SphereCollisionComponent_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -170,10 +149,7 @@ void ABGA_Athena_Petrol_C::BndEvt__SphereCollisionComponent_K2Node_ComponentBoun
 
 void ABGA_Athena_Petrol_C::BndEvt__SphereCollisionComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "BndEvt__SphereCollisionComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "BndEvt__SphereCollisionComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::BGA_Athena_Petrol_C_BndEvt__SphereCollisionComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -193,10 +169,7 @@ void ABGA_Athena_Petrol_C::BndEvt__SphereCollisionComponent_K2Node_ComponentBoun
 
 void ABGA_Athena_Petrol_C::ClientOnIgnite()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "ClientOnIgnite");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "ClientOnIgnite");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +180,7 @@ void ABGA_Athena_Petrol_C::ClientOnIgnite()
 
 void ABGA_Athena_Petrol_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +191,7 @@ void ABGA_Athena_Petrol_C::UserConstructionScript()
 
 void ABGA_Athena_Petrol_C::OnRep_Lit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "OnRep_Lit");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "OnRep_Lit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,10 +202,7 @@ void ABGA_Athena_Petrol_C::OnRep_Lit()
 
 void ABGA_Athena_Petrol_C::Ignite_Self()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "Ignite Self");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "Ignite Self");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +213,7 @@ void ABGA_Athena_Petrol_C::Ignite_Self()
 
 void ABGA_Athena_Petrol_C::IgniteNearbyMaterials()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Petrol_C", "IgniteNearbyMaterials");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Petrol_C", "IgniteNearbyMaterials");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

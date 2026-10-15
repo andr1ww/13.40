@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemShopScreen_C::ExecuteUbergraph_ItemShopScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemShopScreen_C", "ExecuteUbergraph_ItemShopScreen");
+	class UFunction* Func = Class->GetFunction("ItemShopScreen_C", "ExecuteUbergraph_ItemShopScreen");
 
 	Params::ItemShopScreen_C_ExecuteUbergraph_ItemShopScreen Parms{};
 
@@ -41,10 +38,7 @@ void UItemShopScreen_C::ExecuteUbergraph_ItemShopScreen(int32 EntryPoint)
 
 void UItemShopScreen_C::PostDonutDrop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemShopScreen_C", "PostDonutDrop");
+	class UFunction* Func = Class->GetFunction("ItemShopScreen_C", "PostDonutDrop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UItemShopScreen_C::PostDonutDrop()
 
 void UItemShopScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemShopScreen_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ItemShopScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UItemShopScreen_C::Construct()
 
 void UItemShopScreen_C::BPPlayDonutAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemShopScreen_C", "BPPlayDonutAnimation");
+	class UFunction* Func = Class->GetFunction("ItemShopScreen_C", "BPPlayDonutAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UItemShopScreen_C::BPPlayDonutAnimation()
 
 void UItemShopScreen_C::BPSetupForDonutSequence(bool bEventEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemShopScreen_C", "BPSetupForDonutSequence");
+	class UFunction* Func = Class->GetFunction("ItemShopScreen_C", "BPSetupForDonutSequence");
 
 	Params::ItemShopScreen_C_BPSetupForDonutSequence Parms{};
 
@@ -103,10 +88,7 @@ void UItemShopScreen_C::BPSetupForDonutSequence(bool bEventEnabled)
 
 void UItemShopScreen_C::OnEstablishingSections()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemShopScreen_C", "OnEstablishingSections");
+	class UFunction* Func = Class->GetFunction("ItemShopScreen_C", "OnEstablishingSections");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void UItemShopScreen_C::OnEstablishingSections()
 
 void UItemShopScreen_C::OnSectionsEstablished(bool bEmpty)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemShopScreen_C", "OnSectionsEstablished");
+	class UFunction* Func = Class->GetFunction("ItemShopScreen_C", "OnSectionsEstablished");
 
 	Params::ItemShopScreen_C_OnSectionsEstablished Parms{};
 

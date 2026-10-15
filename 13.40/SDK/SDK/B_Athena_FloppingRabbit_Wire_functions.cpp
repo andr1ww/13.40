@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Athena_FloppingRabbit_Wire_C::ExecuteUbergraph_B_Athena_FloppingRabbit_Wire(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "ExecuteUbergraph_B_Athena_FloppingRabbit_Wire");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "ExecuteUbergraph_B_Athena_FloppingRabbit_Wire");
 
 	Params::B_Athena_FloppingRabbit_Wire_C_ExecuteUbergraph_B_Athena_FloppingRabbit_Wire Parms{};
 
@@ -43,10 +40,7 @@ void AB_Athena_FloppingRabbit_Wire_C::ExecuteUbergraph_B_Athena_FloppingRabbit_W
 
 void AB_Athena_FloppingRabbit_Wire_C::ActivateProjectileMovmentComponent(class UActorComponent* Target)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "ActivateProjectileMovmentComponent");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "ActivateProjectileMovmentComponent");
 
 	Params::B_Athena_FloppingRabbit_Wire_C_ActivateProjectileMovmentComponent Parms{};
 
@@ -61,10 +55,7 @@ void AB_Athena_FloppingRabbit_Wire_C::ActivateProjectileMovmentComponent(class U
 
 void AB_Athena_FloppingRabbit_Wire_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void AB_Athena_FloppingRabbit_Wire_C::ReceiveBeginPlay()
 
 void AB_Athena_FloppingRabbit_Wire_C::StartReeling()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "StartReeling");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "StartReeling");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void AB_Athena_FloppingRabbit_Wire_C::StartReeling()
 
 void AB_Athena_FloppingRabbit_Wire_C::AttachNonFishingPickups(const class AFortPickup*& InputPin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "AttachNonFishingPickups");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "AttachNonFishingPickups");
 
 	Params::B_Athena_FloppingRabbit_Wire_C_AttachNonFishingPickups Parms{};
 
@@ -109,10 +94,7 @@ void AB_Athena_FloppingRabbit_Wire_C::AttachNonFishingPickups(const class AFortP
 
 void AB_Athena_FloppingRabbit_Wire_C::DropAndDestroy()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "DropAndDestroy");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "DropAndDestroy");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void AB_Athena_FloppingRabbit_Wire_C::DropAndDestroy()
 
 void AB_Athena_FloppingRabbit_Wire_C::PlayMontage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "PlayMontage");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "PlayMontage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void AB_Athena_FloppingRabbit_Wire_C::PlayMontage()
 
 void AB_Athena_FloppingRabbit_Wire_C::TightenRope()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "TightenRope");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "TightenRope");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void AB_Athena_FloppingRabbit_Wire_C::TightenRope()
 
 void AB_Athena_FloppingRabbit_Wire_C::OnCompleted_B5133DFD4E421DB08F1ED09C5E2197B4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnCompleted_B5133DFD4E421DB08F1ED09C5E2197B4");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnCompleted_B5133DFD4E421DB08F1ED09C5E2197B4");
 
 	Params::B_Athena_FloppingRabbit_Wire_C_OnCompleted_B5133DFD4E421DB08F1ED09C5E2197B4 Parms{};
 
@@ -173,10 +146,7 @@ void AB_Athena_FloppingRabbit_Wire_C::OnCompleted_B5133DFD4E421DB08F1ED09C5E2197
 
 void AB_Athena_FloppingRabbit_Wire_C::OnBlendOut_B5133DFD4E421DB08F1ED09C5E2197B4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnBlendOut_B5133DFD4E421DB08F1ED09C5E2197B4");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnBlendOut_B5133DFD4E421DB08F1ED09C5E2197B4");
 
 	Params::B_Athena_FloppingRabbit_Wire_C_OnBlendOut_B5133DFD4E421DB08F1ED09C5E2197B4 Parms{};
 
@@ -193,10 +163,7 @@ void AB_Athena_FloppingRabbit_Wire_C::OnBlendOut_B5133DFD4E421DB08F1ED09C5E2197B
 
 void AB_Athena_FloppingRabbit_Wire_C::OnInterrupted_B5133DFD4E421DB08F1ED09C5E2197B4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnInterrupted_B5133DFD4E421DB08F1ED09C5E2197B4");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnInterrupted_B5133DFD4E421DB08F1ED09C5E2197B4");
 
 	Params::B_Athena_FloppingRabbit_Wire_C_OnInterrupted_B5133DFD4E421DB08F1ED09C5E2197B4 Parms{};
 
@@ -213,10 +180,7 @@ void AB_Athena_FloppingRabbit_Wire_C::OnInterrupted_B5133DFD4E421DB08F1ED09C5E21
 
 void AB_Athena_FloppingRabbit_Wire_C::OnNotifyBegin_B5133DFD4E421DB08F1ED09C5E2197B4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnNotifyBegin_B5133DFD4E421DB08F1ED09C5E2197B4");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnNotifyBegin_B5133DFD4E421DB08F1ED09C5E2197B4");
 
 	Params::B_Athena_FloppingRabbit_Wire_C_OnNotifyBegin_B5133DFD4E421DB08F1ED09C5E2197B4 Parms{};
 
@@ -233,10 +197,7 @@ void AB_Athena_FloppingRabbit_Wire_C::OnNotifyBegin_B5133DFD4E421DB08F1ED09C5E21
 
 void AB_Athena_FloppingRabbit_Wire_C::OnNotifyEnd_B5133DFD4E421DB08F1ED09C5E2197B4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnNotifyEnd_B5133DFD4E421DB08F1ED09C5E2197B4");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnNotifyEnd_B5133DFD4E421DB08F1ED09C5E2197B4");
 
 	Params::B_Athena_FloppingRabbit_Wire_C_OnNotifyEnd_B5133DFD4E421DB08F1ED09C5E2197B4 Parms{};
 
@@ -251,10 +212,7 @@ void AB_Athena_FloppingRabbit_Wire_C::OnNotifyEnd_B5133DFD4E421DB08F1ED09C5E2197
 
 void AB_Athena_FloppingRabbit_Wire_C::Tight__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "Tight__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "Tight__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +223,7 @@ void AB_Athena_FloppingRabbit_Wire_C::Tight__UpdateFunc()
 
 void AB_Athena_FloppingRabbit_Wire_C::Tight__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "Tight__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "Tight__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +234,7 @@ void AB_Athena_FloppingRabbit_Wire_C::Tight__FinishedFunc()
 
 void AB_Athena_FloppingRabbit_Wire_C::Reel_In__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "Reel In__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "Reel In__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -293,10 +245,7 @@ void AB_Athena_FloppingRabbit_Wire_C::Reel_In__UpdateFunc()
 
 void AB_Athena_FloppingRabbit_Wire_C::Reel_In__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "Reel In__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "Reel In__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -307,10 +256,7 @@ void AB_Athena_FloppingRabbit_Wire_C::Reel_In__FinishedFunc()
 
 void AB_Athena_FloppingRabbit_Wire_C::OnRep_CatchParticleOn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnRep_CatchParticleOn");
+	class UFunction* Func = Class->GetFunction("B_Athena_FloppingRabbit_Wire_C", "OnRep_CatchParticleOn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

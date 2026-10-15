@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemDetailsHeaderItemDisplayText_C::GetDisplayName(class FText* DisplayName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderItemDisplayText_C", "GetDisplayName");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderItemDisplayText_C", "GetDisplayName");
 
 	Params::ItemDetailsHeaderItemDisplayText_C_GetDisplayName Parms{};
 
@@ -42,10 +39,7 @@ void UItemDetailsHeaderItemDisplayText_C::GetDisplayName(class FText* DisplayNam
 
 void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderItemDisplayText_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderItemDisplayText_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -56,10 +50,7 @@ void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderItemDisplayText_C", "HandlePostDifferentItemToCompareWithSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderItemDisplayText_C", "HandlePostDifferentItemToCompareWithSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -72,10 +63,7 @@ void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToCompareWithSe
 
 void UItemDetailsHeaderItemDisplayText_C::ExecuteUbergraph_ItemDetailsHeaderItemDisplayText(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderItemDisplayText_C", "ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderItemDisplayText_C", "ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
 
 	Params::ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText Parms{};
 

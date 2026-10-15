@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_ReplayPC_Athena_C::ExecuteUbergraph_BP_ReplayPC_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "ExecuteUbergraph_BP_ReplayPC_Athena");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "ExecuteUbergraph_BP_ReplayPC_Athena");
 
 	Params::BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena Parms{};
 
@@ -41,10 +38,7 @@ void ABP_ReplayPC_Athena_C::ExecuteUbergraph_BP_ReplayPC_Athena(int32 EntryPoint
 
 void ABP_ReplayPC_Athena_C::Looping_Audio_Update()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "Looping Audio Update");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "Looping Audio Update");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_ReplayPC_Athena_C::Looping_Audio_Update()
 
 void ABP_ReplayPC_Athena_C::Handle_Parachute_Audio_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "Handle Parachute Audio State");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "Handle Parachute Audio State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void ABP_ReplayPC_Athena_C::Handle_Parachute_Audio_State()
 
 void ABP_ReplayPC_Athena_C::On_Pause_State_Changed(bool bPaused)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "On Pause State Changed");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "On Pause State Changed");
 
 	Params::BP_ReplayPC_Athena_C_On_Pause_State_Changed Parms{};
 
@@ -89,10 +77,7 @@ void ABP_ReplayPC_Athena_C::On_Pause_State_Changed(bool bPaused)
 
 void ABP_ReplayPC_Athena_C::OnZoomInBegin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomInBegin");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomInBegin");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void ABP_ReplayPC_Athena_C::OnZoomInBegin()
 
 void ABP_ReplayPC_Athena_C::OnZoomInEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomInEnd");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomInEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void ABP_ReplayPC_Athena_C::OnZoomInEnd()
 
 void ABP_ReplayPC_Athena_C::OnZoomOutBegin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomOutBegin");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomOutBegin");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void ABP_ReplayPC_Athena_C::OnZoomOutBegin()
 
 void ABP_ReplayPC_Athena_C::OnZoomOutEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomOutEnd");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomOutEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +123,7 @@ void ABP_ReplayPC_Athena_C::OnZoomOutEnd()
 
 void ABP_ReplayPC_Athena_C::OnReplayHudVisibilityChanged(const EHudVisibilityState IsVisible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnReplayHudVisibilityChanged");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnReplayHudVisibilityChanged");
 
 	Params::BP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged Parms{};
 
@@ -167,10 +140,7 @@ void ABP_ReplayPC_Athena_C::OnReplayHudVisibilityChanged(const EHudVisibilitySta
 
 void ABP_ReplayPC_Athena_C::_Speedup_Loops(float Playback_Multiplier)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", " Speedup Loops");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", " Speedup Loops");
 
 	Params::BP_ReplayPC_Athena_C__Speedup_Loops Parms{};
 
@@ -187,10 +157,7 @@ void ABP_ReplayPC_Athena_C::_Speedup_Loops(float Playback_Multiplier)
 
 void ABP_ReplayPC_Athena_C::OnNotifyNewPlaybackMultiplier(float NewMultiplier)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnNotifyNewPlaybackMultiplier");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnNotifyNewPlaybackMultiplier");
 
 	Params::BP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier Parms{};
 
@@ -205,10 +172,7 @@ void ABP_ReplayPC_Athena_C::OnNotifyNewPlaybackMultiplier(float NewMultiplier)
 
 void ABP_ReplayPC_Athena_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -219,10 +183,7 @@ void ABP_ReplayPC_Athena_C::ReceiveBeginPlay()
 
 void ABP_ReplayPC_Athena_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,10 +196,7 @@ void ABP_ReplayPC_Athena_C::UserConstructionScript()
 
 class USoundBase* ABP_ReplayPC_Athena_C::GetSkydivingSound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "GetSkydivingSound");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "GetSkydivingSound");
 
 	Params::BP_ReplayPC_Athena_C_GetSkydivingSound Parms{};
 
@@ -255,10 +213,7 @@ class USoundBase* ABP_ReplayPC_Athena_C::GetSkydivingSound()
 
 void ABP_ReplayPC_Athena_C::SetSkydivingAudioEnabled(bool Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "SetSkydivingAudioEnabled");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "SetSkydivingAudioEnabled");
 
 	Params::BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled Parms{};
 
@@ -275,10 +230,7 @@ void ABP_ReplayPC_Athena_C::SetSkydivingAudioEnabled(bool Enabled)
 
 void ABP_ReplayPC_Athena_C::IsGameplayCamera(bool* IsGameplayCamera_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "IsGameplayCamera");
+	class UFunction* Func = Class->GetFunction("BP_ReplayPC_Athena_C", "IsGameplayCamera");
 
 	Params::BP_ReplayPC_Athena_C_IsGameplayCamera Parms{};
 

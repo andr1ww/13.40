@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USquad_C::OnLoaded_68F5F01141304474DB5D18BD77CD085C(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Squad_C", "OnLoaded_68F5F01141304474DB5D18BD77CD085C");
+	class UFunction* Func = Class->GetFunction("Squad_C", "OnLoaded_68F5F01141304474DB5D18BD77CD085C");
 
 	Params::Squad_C_OnLoaded_68F5F01141304474DB5D18BD77CD085C Parms{};
 
@@ -43,10 +40,7 @@ void USquad_C::OnLoaded_68F5F01141304474DB5D18BD77CD085C(class UObject* Loaded)
 
 void USquad_C::OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Squad_C", "OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E");
+	class UFunction* Func = Class->GetFunction("Squad_C", "OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E");
 
 	Params::Squad_C_OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E Parms{};
 
@@ -63,10 +57,7 @@ void USquad_C::OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E(class UObject* Loaded)
 
 void USquad_C::OnSquadAssigned(const struct FAthenaTeamDisplayInfo& SquadStyle_OnSquadAssigned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Squad_C", "OnSquadAssigned");
+	class UFunction* Func = Class->GetFunction("Squad_C", "OnSquadAssigned");
 
 	Params::Squad_C_OnSquadAssigned Parms{};
 
@@ -84,10 +75,7 @@ void USquad_C::OnSquadAssigned(const struct FAthenaTeamDisplayInfo& SquadStyle_O
 
 void USquad_C::OnSquadIsEmptyChanged(bool bSquadIsEmpty_OnSquadIsEmptyChanged, bool bMultipleSquadsPopulated_OnSquadIsEmptyChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Squad_C", "OnSquadIsEmptyChanged");
+	class UFunction* Func = Class->GetFunction("Squad_C", "OnSquadIsEmptyChanged");
 
 	Params::Squad_C_OnSquadIsEmptyChanged Parms{};
 
@@ -105,10 +93,7 @@ void USquad_C::OnSquadIsEmptyChanged(bool bSquadIsEmpty_OnSquadIsEmptyChanged, b
 
 void USquad_C::ExecuteUbergraph_Squad(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Squad_C", "ExecuteUbergraph_Squad");
+	class UFunction* Func = Class->GetFunction("Squad_C", "ExecuteUbergraph_Squad");
 
 	Params::Squad_C_ExecuteUbergraph_Squad Parms{};
 

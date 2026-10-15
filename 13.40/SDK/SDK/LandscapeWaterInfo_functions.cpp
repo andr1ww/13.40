@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ALandscapeWaterInfo_C::ExecuteUbergraph_LandscapeWaterInfo(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeWaterInfo_C", "ExecuteUbergraph_LandscapeWaterInfo");
+	class UFunction* Func = Class->GetFunction("LandscapeWaterInfo_C", "ExecuteUbergraph_LandscapeWaterInfo");
 
 	Params::LandscapeWaterInfo_C_ExecuteUbergraph_LandscapeWaterInfo Parms{};
 
@@ -41,10 +38,7 @@ void ALandscapeWaterInfo_C::ExecuteUbergraph_LandscapeWaterInfo(int32 EntryPoint
 
 void ALandscapeWaterInfo_C::Set_Flood_Water_Level()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeWaterInfo_C", "Set Flood Water Level");
+	class UFunction* Func = Class->GetFunction("LandscapeWaterInfo_C", "Set Flood Water Level");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void ALandscapeWaterInfo_C::Set_Flood_Water_Level()
 
 void ALandscapeWaterInfo_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeWaterInfo_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("LandscapeWaterInfo_C", "ReceiveEndPlay");
 
 	Params::LandscapeWaterInfo_C_ReceiveEndPlay Parms{};
 
@@ -75,10 +66,7 @@ void ALandscapeWaterInfo_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 
 void ALandscapeWaterInfo_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeWaterInfo_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("LandscapeWaterInfo_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void ALandscapeWaterInfo_C::ReceiveBeginPlay()
 
 void ALandscapeWaterInfo_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeWaterInfo_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("LandscapeWaterInfo_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void ALandscapeWaterInfo_C::UserConstructionScript()
 
 void ALandscapeWaterInfo_C::Set_Water_MPC_Values()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeWaterInfo_C", "Set Water MPC Values");
+	class UFunction* Func = Class->GetFunction("LandscapeWaterInfo_C", "Set Water MPC Values");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void ALandscapeWaterInfo_C::Set_Water_MPC_Values()
 
 void ALandscapeWaterInfo_C::Update_Water_MID(class UTexture* Texture)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeWaterInfo_C", "Update Water MID");
+	class UFunction* Func = Class->GetFunction("LandscapeWaterInfo_C", "Update Water MID");
 
 	Params::LandscapeWaterInfo_C_Update_Water_MID Parms{};
 
@@ -137,10 +116,7 @@ void ALandscapeWaterInfo_C::Update_Water_MID(class UTexture* Texture)
 
 void ALandscapeWaterInfo_C::UpdateGameTexture()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LandscapeWaterInfo_C", "UpdateGameTexture");
+	class UFunction* Func = Class->GetFunction("LandscapeWaterInfo_C", "UpdateGameTexture");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

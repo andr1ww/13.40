@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ANiagaraActor::OnNiagaraSystemFinished(class UNiagaraComponent* FinishedComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraActor", "OnNiagaraSystemFinished");
+	class UFunction* Func = Class->GetFunction("NiagaraActor", "OnNiagaraSystemFinished");
 
 	Params::NiagaraActor_OnNiagaraSystemFinished Parms{};
 
@@ -48,10 +45,7 @@ void ANiagaraActor::OnNiagaraSystemFinished(class UNiagaraComponent* FinishedCom
 
 void ANiagaraActor::SetDestroyOnSystemFinish(bool bShouldDestroyOnSystemFinish)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraActor", "SetDestroyOnSystemFinish");
+	class UFunction* Func = Class->GetFunction("NiagaraActor", "SetDestroyOnSystemFinish");
 
 	Params::NiagaraActor_SetDestroyOnSystemFinish Parms{};
 
@@ -74,10 +68,7 @@ void ANiagaraActor::SetDestroyOnSystemFinish(bool bShouldDestroyOnSystemFinish)
 
 void UNiagaraComponent::AdvanceSimulation(int32 TickCount, float TickDeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "AdvanceSimulation");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "AdvanceSimulation");
 
 	Params::NiagaraComponent_AdvanceSimulation Parms{};
 
@@ -101,10 +92,7 @@ void UNiagaraComponent::AdvanceSimulation(int32 TickCount, float TickDeltaSecond
 
 void UNiagaraComponent::AdvanceSimulationByTime(float SimulateTime, float TickDeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "AdvanceSimulationByTime");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "AdvanceSimulationByTime");
 
 	Params::NiagaraComponent_AdvanceSimulationByTime Parms{};
 
@@ -128,10 +116,7 @@ void UNiagaraComponent::AdvanceSimulationByTime(float SimulateTime, float TickDe
 
 class UNiagaraDataInterface* UNiagaraComponent::GetDataInterface(const class FString& Name_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetDataInterface");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetDataInterface");
 
 	Params::NiagaraComponent_GetDataInterface Parms{};
 
@@ -156,10 +141,7 @@ class UNiagaraDataInterface* UNiagaraComponent::GetDataInterface(const class FSt
 
 TArray<struct FVector> UNiagaraComponent::GetNiagaraParticlePositions_DebugOnly(const class FString& InEmitterName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetNiagaraParticlePositions_DebugOnly");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetNiagaraParticlePositions_DebugOnly");
 
 	Params::NiagaraComponent_GetNiagaraParticlePositions_DebugOnly Parms{};
 
@@ -185,10 +167,7 @@ TArray<struct FVector> UNiagaraComponent::GetNiagaraParticlePositions_DebugOnly(
 
 TArray<float> UNiagaraComponent::GetNiagaraParticleValues_DebugOnly(const class FString& InEmitterName, const class FString& InValueName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetNiagaraParticleValues_DebugOnly");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetNiagaraParticleValues_DebugOnly");
 
 	Params::NiagaraComponent_GetNiagaraParticleValues_DebugOnly Parms{};
 
@@ -215,10 +194,7 @@ TArray<float> UNiagaraComponent::GetNiagaraParticleValues_DebugOnly(const class 
 
 TArray<struct FVector> UNiagaraComponent::GetNiagaraParticleValueVec3_DebugOnly(const class FString& InEmitterName, const class FString& InValueName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetNiagaraParticleValueVec3_DebugOnly");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetNiagaraParticleValueVec3_DebugOnly");
 
 	Params::NiagaraComponent_GetNiagaraParticleValueVec3_DebugOnly Parms{};
 
@@ -241,10 +217,7 @@ TArray<struct FVector> UNiagaraComponent::GetNiagaraParticleValueVec3_DebugOnly(
 
 void UNiagaraComponent::ReinitializeSystem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "ReinitializeSystem");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "ReinitializeSystem");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -260,10 +233,7 @@ void UNiagaraComponent::ReinitializeSystem()
 
 void UNiagaraComponent::ResetSystem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "ResetSystem");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "ResetSystem");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -281,10 +251,7 @@ void UNiagaraComponent::ResetSystem()
 
 void UNiagaraComponent::SeekToDesiredAge(float InDesiredAge)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SeekToDesiredAge");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SeekToDesiredAge");
 
 	Params::NiagaraComponent_SeekToDesiredAge Parms{};
 
@@ -306,10 +273,7 @@ void UNiagaraComponent::SeekToDesiredAge(float InDesiredAge)
 
 void UNiagaraComponent::SetAgeUpdateMode(ENiagaraAgeUpdateMode InAgeUpdateMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetAgeUpdateMode");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetAgeUpdateMode");
 
 	Params::NiagaraComponent_SetAgeUpdateMode Parms{};
 
@@ -331,10 +295,7 @@ void UNiagaraComponent::SetAgeUpdateMode(ENiagaraAgeUpdateMode InAgeUpdateMode)
 
 void UNiagaraComponent::SetAllowScalability(bool bAllow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetAllowScalability");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetAllowScalability");
 
 	Params::NiagaraComponent_SetAllowScalability Parms{};
 
@@ -356,10 +317,7 @@ void UNiagaraComponent::SetAllowScalability(bool bAllow)
 
 void UNiagaraComponent::SetAsset(class UNiagaraSystem* InAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetAsset");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetAsset");
 
 	Params::NiagaraComponent_SetAsset Parms{};
 
@@ -381,10 +339,7 @@ void UNiagaraComponent::SetAsset(class UNiagaraSystem* InAsset)
 
 void UNiagaraComponent::SetAutoDestroy(bool bInAutoDestroy)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetAutoDestroy");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetAutoDestroy");
 
 	Params::NiagaraComponent_SetAutoDestroy Parms{};
 
@@ -406,10 +361,7 @@ void UNiagaraComponent::SetAutoDestroy(bool bInAutoDestroy)
 
 void UNiagaraComponent::SetCanRenderWhileSeeking(bool bInCanRenderWhileSeeking)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetCanRenderWhileSeeking");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetCanRenderWhileSeeking");
 
 	Params::NiagaraComponent_SetCanRenderWhileSeeking Parms{};
 
@@ -431,10 +383,7 @@ void UNiagaraComponent::SetCanRenderWhileSeeking(bool bInCanRenderWhileSeeking)
 
 void UNiagaraComponent::SetDesiredAge(float InDesiredAge)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetDesiredAge");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetDesiredAge");
 
 	Params::NiagaraComponent_SetDesiredAge Parms{};
 
@@ -456,10 +405,7 @@ void UNiagaraComponent::SetDesiredAge(float InDesiredAge)
 
 void UNiagaraComponent::SetForceSolo(bool bInForceSolo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetForceSolo");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetForceSolo");
 
 	Params::NiagaraComponent_SetForceSolo Parms{};
 
@@ -481,10 +427,7 @@ void UNiagaraComponent::SetForceSolo(bool bInForceSolo)
 
 void UNiagaraComponent::SetMaxSimTime(float InMaxTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetMaxSimTime");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetMaxSimTime");
 
 	Params::NiagaraComponent_SetMaxSimTime Parms{};
 
@@ -507,10 +450,7 @@ void UNiagaraComponent::SetMaxSimTime(float InMaxTime)
 
 void UNiagaraComponent::SetNiagaraVariableActor(const class FString& InVariableName, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableActor");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableActor");
 
 	Params::NiagaraComponent_SetNiagaraVariableActor Parms{};
 
@@ -534,10 +474,7 @@ void UNiagaraComponent::SetNiagaraVariableActor(const class FString& InVariableN
 
 void UNiagaraComponent::SetNiagaraVariableBool(const class FString& InVariableName, bool InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableBool");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableBool");
 
 	Params::NiagaraComponent_SetNiagaraVariableBool Parms{};
 
@@ -561,10 +498,7 @@ void UNiagaraComponent::SetNiagaraVariableBool(const class FString& InVariableNa
 
 void UNiagaraComponent::SetNiagaraVariableFloat(const class FString& InVariableName, float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableFloat");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableFloat");
 
 	Params::NiagaraComponent_SetNiagaraVariableFloat Parms{};
 
@@ -588,10 +522,7 @@ void UNiagaraComponent::SetNiagaraVariableFloat(const class FString& InVariableN
 
 void UNiagaraComponent::SetNiagaraVariableInt(const class FString& InVariableName, int32 InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableInt");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableInt");
 
 	Params::NiagaraComponent_SetNiagaraVariableInt Parms{};
 
@@ -615,10 +546,7 @@ void UNiagaraComponent::SetNiagaraVariableInt(const class FString& InVariableNam
 
 void UNiagaraComponent::SetNiagaraVariableLinearColor(const class FString& InVariableName, const struct FLinearColor& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableLinearColor");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableLinearColor");
 
 	Params::NiagaraComponent_SetNiagaraVariableLinearColor Parms{};
 
@@ -642,10 +570,7 @@ void UNiagaraComponent::SetNiagaraVariableLinearColor(const class FString& InVar
 
 void UNiagaraComponent::SetNiagaraVariableObject(const class FString& InVariableName, class UObject* Object)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableObject");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableObject");
 
 	Params::NiagaraComponent_SetNiagaraVariableObject Parms{};
 
@@ -669,10 +594,7 @@ void UNiagaraComponent::SetNiagaraVariableObject(const class FString& InVariable
 
 void UNiagaraComponent::SetNiagaraVariableQuat(const class FString& InVariableName, const struct FQuat& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableQuat");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableQuat");
 
 	Params::NiagaraComponent_SetNiagaraVariableQuat Parms{};
 
@@ -696,10 +618,7 @@ void UNiagaraComponent::SetNiagaraVariableQuat(const class FString& InVariableNa
 
 void UNiagaraComponent::SetNiagaraVariableVec2(const class FString& InVariableName, const struct FVector2D& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableVec2");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableVec2");
 
 	Params::NiagaraComponent_SetNiagaraVariableVec2 Parms{};
 
@@ -723,10 +642,7 @@ void UNiagaraComponent::SetNiagaraVariableVec2(const class FString& InVariableNa
 
 void UNiagaraComponent::SetNiagaraVariableVec3(const class FString& InVariableName, const struct FVector& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableVec3");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableVec3");
 
 	Params::NiagaraComponent_SetNiagaraVariableVec3 Parms{};
 
@@ -750,10 +666,7 @@ void UNiagaraComponent::SetNiagaraVariableVec3(const class FString& InVariableNa
 
 void UNiagaraComponent::SetNiagaraVariableVec4(const class FString& InVariableName, const struct FVector4& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableVec4");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetNiagaraVariableVec4");
 
 	Params::NiagaraComponent_SetNiagaraVariableVec4 Parms{};
 
@@ -776,10 +689,7 @@ void UNiagaraComponent::SetNiagaraVariableVec4(const class FString& InVariableNa
 
 void UNiagaraComponent::SetPaused(bool bInPaused)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetPaused");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetPaused");
 
 	Params::NiagaraComponent_SetPaused Parms{};
 
@@ -802,10 +712,7 @@ void UNiagaraComponent::SetPaused(bool bInPaused)
 
 void UNiagaraComponent::SetPreviewLODDistance(bool bEnablePreviewLODDistance, float PreviewLODDistance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetPreviewLODDistance");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetPreviewLODDistance");
 
 	Params::NiagaraComponent_SetPreviewLODDistance Parms{};
 
@@ -828,10 +735,7 @@ void UNiagaraComponent::SetPreviewLODDistance(bool bEnablePreviewLODDistance, fl
 
 void UNiagaraComponent::SetRenderingEnabled(bool bInRenderingEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetRenderingEnabled");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetRenderingEnabled");
 
 	Params::NiagaraComponent_SetRenderingEnabled Parms{};
 
@@ -853,10 +757,7 @@ void UNiagaraComponent::SetRenderingEnabled(bool bInRenderingEnabled)
 
 void UNiagaraComponent::SetSeekDelta(float InSeekDelta)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetSeekDelta");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetSeekDelta");
 
 	Params::NiagaraComponent_SetSeekDelta Parms{};
 
@@ -878,10 +779,7 @@ void UNiagaraComponent::SetSeekDelta(float InSeekDelta)
 
 void UNiagaraComponent::SetTickBehavior(ENiagaraTickBehavior NewTickBehavior)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetTickBehavior");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetTickBehavior");
 
 	Params::NiagaraComponent_SetTickBehavior Parms{};
 
@@ -904,10 +802,7 @@ void UNiagaraComponent::SetTickBehavior(ENiagaraTickBehavior NewTickBehavior)
 
 void UNiagaraComponent::SetVariableActor(class FName InVariableName, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableActor");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableActor");
 
 	Params::NiagaraComponent_SetVariableActor Parms{};
 
@@ -931,10 +826,7 @@ void UNiagaraComponent::SetVariableActor(class FName InVariableName, class AActo
 
 void UNiagaraComponent::SetVariableBool(class FName InVariableName, bool InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableBool");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableBool");
 
 	Params::NiagaraComponent_SetVariableBool Parms{};
 
@@ -958,10 +850,7 @@ void UNiagaraComponent::SetVariableBool(class FName InVariableName, bool InValue
 
 void UNiagaraComponent::SetVariableFloat(class FName InVariableName, float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableFloat");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableFloat");
 
 	Params::NiagaraComponent_SetVariableFloat Parms{};
 
@@ -985,10 +874,7 @@ void UNiagaraComponent::SetVariableFloat(class FName InVariableName, float InVal
 
 void UNiagaraComponent::SetVariableInt(class FName InVariableName, int32 InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableInt");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableInt");
 
 	Params::NiagaraComponent_SetVariableInt Parms{};
 
@@ -1012,10 +898,7 @@ void UNiagaraComponent::SetVariableInt(class FName InVariableName, int32 InValue
 
 void UNiagaraComponent::SetVariableLinearColor(class FName InVariableName, const struct FLinearColor& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableLinearColor");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableLinearColor");
 
 	Params::NiagaraComponent_SetVariableLinearColor Parms{};
 
@@ -1039,10 +922,7 @@ void UNiagaraComponent::SetVariableLinearColor(class FName InVariableName, const
 
 void UNiagaraComponent::SetVariableMaterial(class FName InVariableName, class UMaterialInterface* Object)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableMaterial");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableMaterial");
 
 	Params::NiagaraComponent_SetVariableMaterial Parms{};
 
@@ -1066,10 +946,7 @@ void UNiagaraComponent::SetVariableMaterial(class FName InVariableName, class UM
 
 void UNiagaraComponent::SetVariableObject(class FName InVariableName, class UObject* Object)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableObject");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableObject");
 
 	Params::NiagaraComponent_SetVariableObject Parms{};
 
@@ -1093,10 +970,7 @@ void UNiagaraComponent::SetVariableObject(class FName InVariableName, class UObj
 
 void UNiagaraComponent::SetVariableQuat(class FName InVariableName, const struct FQuat& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableQuat");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableQuat");
 
 	Params::NiagaraComponent_SetVariableQuat Parms{};
 
@@ -1120,10 +994,7 @@ void UNiagaraComponent::SetVariableQuat(class FName InVariableName, const struct
 
 void UNiagaraComponent::SetVariableVec2(class FName InVariableName, const struct FVector2D& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableVec2");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableVec2");
 
 	Params::NiagaraComponent_SetVariableVec2 Parms{};
 
@@ -1147,10 +1018,7 @@ void UNiagaraComponent::SetVariableVec2(class FName InVariableName, const struct
 
 void UNiagaraComponent::SetVariableVec3(class FName InVariableName, const struct FVector& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableVec3");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableVec3");
 
 	Params::NiagaraComponent_SetVariableVec3 Parms{};
 
@@ -1174,10 +1042,7 @@ void UNiagaraComponent::SetVariableVec3(class FName InVariableName, const struct
 
 void UNiagaraComponent::SetVariableVec4(class FName InVariableName, const struct FVector4& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "SetVariableVec4");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "SetVariableVec4");
 
 	Params::NiagaraComponent_SetVariableVec4 Parms{};
 
@@ -1200,10 +1065,7 @@ void UNiagaraComponent::SetVariableVec4(class FName InVariableName, const struct
 
 ENiagaraAgeUpdateMode UNiagaraComponent::GetAgeUpdateMode() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetAgeUpdateMode");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetAgeUpdateMode");
 
 	Params::NiagaraComponent_GetAgeUpdateMode Parms{};
 
@@ -1225,10 +1087,7 @@ ENiagaraAgeUpdateMode UNiagaraComponent::GetAgeUpdateMode() const
 
 class UNiagaraSystem* UNiagaraComponent::GetAsset() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetAsset");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetAsset");
 
 	Params::NiagaraComponent_GetAsset Parms{};
 
@@ -1250,10 +1109,7 @@ class UNiagaraSystem* UNiagaraComponent::GetAsset() const
 
 float UNiagaraComponent::GetDesiredAge() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetDesiredAge");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetDesiredAge");
 
 	Params::NiagaraComponent_GetDesiredAge Parms{};
 
@@ -1275,10 +1131,7 @@ float UNiagaraComponent::GetDesiredAge() const
 
 bool UNiagaraComponent::GetForceSolo() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetForceSolo");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetForceSolo");
 
 	Params::NiagaraComponent_GetForceSolo Parms{};
 
@@ -1300,10 +1153,7 @@ bool UNiagaraComponent::GetForceSolo() const
 
 float UNiagaraComponent::GetMaxSimTime() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetMaxSimTime");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetMaxSimTime");
 
 	Params::NiagaraComponent_GetMaxSimTime Parms{};
 
@@ -1325,10 +1175,7 @@ float UNiagaraComponent::GetMaxSimTime() const
 
 int32 UNiagaraComponent::GetPreviewLODDistance() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetPreviewLODDistance");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetPreviewLODDistance");
 
 	Params::NiagaraComponent_GetPreviewLODDistance Parms{};
 
@@ -1350,10 +1197,7 @@ int32 UNiagaraComponent::GetPreviewLODDistance() const
 
 bool UNiagaraComponent::GetPreviewLODDistanceEnabled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetPreviewLODDistanceEnabled");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetPreviewLODDistanceEnabled");
 
 	Params::NiagaraComponent_GetPreviewLODDistanceEnabled Parms{};
 
@@ -1375,10 +1219,7 @@ bool UNiagaraComponent::GetPreviewLODDistanceEnabled() const
 
 float UNiagaraComponent::GetSeekDelta() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetSeekDelta");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetSeekDelta");
 
 	Params::NiagaraComponent_GetSeekDelta Parms{};
 
@@ -1400,10 +1241,7 @@ float UNiagaraComponent::GetSeekDelta() const
 
 ENiagaraTickBehavior UNiagaraComponent::GetTickBehavior() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "GetTickBehavior");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "GetTickBehavior");
 
 	Params::NiagaraComponent_GetTickBehavior Parms{};
 
@@ -1425,10 +1263,7 @@ ENiagaraTickBehavior UNiagaraComponent::GetTickBehavior() const
 
 bool UNiagaraComponent::IsPaused() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraComponent", "IsPaused");
+	class UFunction* Func = Class->GetFunction("NiagaraComponent", "IsPaused");
 
 	Params::NiagaraComponent_IsPaused Parms{};
 
@@ -1448,10 +1283,7 @@ bool UNiagaraComponent::IsPaused() const
 
 void UNiagaraDataInterfaceArray::UpdateGPU()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceArray", "UpdateGPU");
+	class UFunction* Func = Class->GetFunction("NiagaraDataInterfaceArray", "UpdateGPU");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1471,10 +1303,7 @@ void UNiagaraDataInterfaceArray::UpdateGPU()
 
 TArray<bool> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayBool(class UNiagaraComponent* NiagaraSystem, class FName OverrideName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayBool");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayBool");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_GetNiagaraArrayBool Parms{};
 
@@ -1501,10 +1330,7 @@ TArray<bool> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayBool(clas
 
 TArray<struct FLinearColor> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayColor(class UNiagaraComponent* NiagaraSystem, class FName OverrideName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayColor");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayColor");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_GetNiagaraArrayColor Parms{};
 
@@ -1531,10 +1357,7 @@ TArray<struct FLinearColor> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagar
 
 TArray<float> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayFloat(class UNiagaraComponent* NiagaraSystem, class FName OverrideName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayFloat");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayFloat");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_GetNiagaraArrayFloat Parms{};
 
@@ -1561,10 +1384,7 @@ TArray<float> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayFloat(cl
 
 TArray<int32> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayInt32(class UNiagaraComponent* NiagaraSystem, class FName OverrideName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayInt32");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayInt32");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_GetNiagaraArrayInt32 Parms{};
 
@@ -1591,10 +1411,7 @@ TArray<int32> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayInt32(cl
 
 TArray<struct FQuat> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayQuat(class UNiagaraComponent* NiagaraSystem, class FName OverrideName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayQuat");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayQuat");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_GetNiagaraArrayQuat Parms{};
 
@@ -1621,10 +1438,7 @@ TArray<struct FQuat> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayQ
 
 TArray<struct FVector> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayVector(class UNiagaraComponent* NiagaraSystem, class FName OverrideName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayVector");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayVector");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_GetNiagaraArrayVector Parms{};
 
@@ -1651,10 +1465,7 @@ TArray<struct FVector> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArra
 
 TArray<struct FVector2D> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayVector2D(class UNiagaraComponent* NiagaraSystem, class FName OverrideName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayVector2D");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayVector2D");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_GetNiagaraArrayVector2D Parms{};
 
@@ -1681,10 +1492,7 @@ TArray<struct FVector2D> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraAr
 
 TArray<struct FVector4> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArrayVector4(class UNiagaraComponent* NiagaraSystem, class FName OverrideName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayVector4");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "GetNiagaraArrayVector4");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_GetNiagaraArrayVector4 Parms{};
 
@@ -1711,10 +1519,7 @@ TArray<struct FVector4> UNiagaraDataInterfaceArrayFunctionLibrary::GetNiagaraArr
 
 void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayBool(class UNiagaraComponent* NiagaraSystem, class FName OverrideName, const TArray<bool>& ArrayData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayBool");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayBool");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_SetNiagaraArrayBool Parms{};
 
@@ -1740,10 +1545,7 @@ void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayBool(class UNiaga
 
 void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayColor(class UNiagaraComponent* NiagaraSystem, class FName OverrideName, const TArray<struct FLinearColor>& ArrayData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayColor");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayColor");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_SetNiagaraArrayColor Parms{};
 
@@ -1769,10 +1571,7 @@ void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayColor(class UNiag
 
 void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayFloat(class UNiagaraComponent* NiagaraSystem, class FName OverrideName, const TArray<float>& ArrayData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayFloat");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayFloat");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_SetNiagaraArrayFloat Parms{};
 
@@ -1798,10 +1597,7 @@ void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayFloat(class UNiag
 
 void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayInt32(class UNiagaraComponent* NiagaraSystem, class FName OverrideName, const TArray<int32>& ArrayData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayInt32");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayInt32");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_SetNiagaraArrayInt32 Parms{};
 
@@ -1827,10 +1623,7 @@ void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayInt32(class UNiag
 
 void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayQuat(class UNiagaraComponent* NiagaraSystem, class FName OverrideName, const TArray<struct FQuat>& ArrayData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayQuat");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayQuat");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_SetNiagaraArrayQuat Parms{};
 
@@ -1856,10 +1649,7 @@ void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayQuat(class UNiaga
 
 void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayVector(class UNiagaraComponent* NiagaraSystem, class FName OverrideName, const TArray<struct FVector>& ArrayData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayVector");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayVector");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_SetNiagaraArrayVector Parms{};
 
@@ -1885,10 +1675,7 @@ void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayVector(class UNia
 
 void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayVector2D(class UNiagaraComponent* NiagaraSystem, class FName OverrideName, const TArray<struct FVector2D>& ArrayData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayVector2D");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayVector2D");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_SetNiagaraArrayVector2D Parms{};
 
@@ -1914,10 +1701,7 @@ void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayVector2D(class UN
 
 void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayVector4(class UNiagaraComponent* NiagaraSystem, class FName OverrideName, const TArray<struct FVector4>& ArrayData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayVector4");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraDataInterfaceArrayFunctionLibrary", "SetNiagaraArrayVector4");
 
 	Params::NiagaraDataInterfaceArrayFunctionLibrary_SetNiagaraArrayVector4 Parms{};
 
@@ -1942,10 +1726,7 @@ void UNiagaraDataInterfaceArrayFunctionLibrary::SetNiagaraArrayVector4(class UNi
 
 void INiagaraParticleCallbackHandler::ReceiveParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("NiagaraParticleCallbackHandler", "ReceiveParticleData");
+	class UFunction* Func = AsUObject()->Class->GetFunction("NiagaraParticleCallbackHandler", "ReceiveParticleData");
 
 	Params::NiagaraParticleCallbackHandler_ReceiveParticleData Parms{};
 
@@ -1972,10 +1753,7 @@ void INiagaraParticleCallbackHandler::ReceiveParticleData(const TArray<struct FB
 
 bool UNiagaraDataInterfaceGrid2DCollection::FillRawTexture2D(const class UNiagaraComponent* Component, class UTextureRenderTarget2D* Dest, int32* TilesX, int32* TilesY)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "FillRawTexture2D");
+	class UFunction* Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "FillRawTexture2D");
 
 	Params::NiagaraDataInterfaceGrid2DCollection_FillRawTexture2D Parms{};
 
@@ -2009,10 +1787,7 @@ bool UNiagaraDataInterfaceGrid2DCollection::FillRawTexture2D(const class UNiagar
 
 bool UNiagaraDataInterfaceGrid2DCollection::FillTexture2D(const class UNiagaraComponent* Component, class UTextureRenderTarget2D* Dest, int32 AttributeIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "FillTexture2D");
+	class UFunction* Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "FillTexture2D");
 
 	Params::NiagaraDataInterfaceGrid2DCollection_FillTexture2D Parms{};
 
@@ -2040,10 +1815,7 @@ bool UNiagaraDataInterfaceGrid2DCollection::FillTexture2D(const class UNiagaraCo
 
 void UNiagaraDataInterfaceGrid2DCollection::GetRawTextureSize(const class UNiagaraComponent* Component, int32* SizeX, int32* SizeY)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "GetRawTextureSize");
+	class UFunction* Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "GetRawTextureSize");
 
 	Params::NiagaraDataInterfaceGrid2DCollection_GetRawTextureSize Parms{};
 
@@ -2073,10 +1845,7 @@ void UNiagaraDataInterfaceGrid2DCollection::GetRawTextureSize(const class UNiaga
 
 void UNiagaraDataInterfaceGrid2DCollection::GetTextureSize(const class UNiagaraComponent* Component, int32* SizeX, int32* SizeY)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "GetTextureSize");
+	class UFunction* Func = Class->GetFunction("NiagaraDataInterfaceGrid2DCollection", "GetTextureSize");
 
 	Params::NiagaraDataInterfaceGrid2DCollection_GetTextureSize Parms{};
 
@@ -2109,10 +1878,7 @@ void UNiagaraDataInterfaceGrid2DCollection::GetTextureSize(const class UNiagaraC
 
 bool UNiagaraDataInterfaceGrid3DCollection::FillRawVolumeTexture(const class UNiagaraComponent* Component, class UVolumeTexture* Dest, int32* TilesX, int32* TilesY, int32* TileZ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid3DCollection", "FillRawVolumeTexture");
+	class UFunction* Func = Class->GetFunction("NiagaraDataInterfaceGrid3DCollection", "FillRawVolumeTexture");
 
 	Params::NiagaraDataInterfaceGrid3DCollection_FillRawVolumeTexture Parms{};
 
@@ -2149,10 +1915,7 @@ bool UNiagaraDataInterfaceGrid3DCollection::FillRawVolumeTexture(const class UNi
 
 bool UNiagaraDataInterfaceGrid3DCollection::FillVolumeTexture(const class UNiagaraComponent* Component, class UVolumeTexture* Dest, int32 AttributeIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid3DCollection", "FillVolumeTexture");
+	class UFunction* Func = Class->GetFunction("NiagaraDataInterfaceGrid3DCollection", "FillVolumeTexture");
 
 	Params::NiagaraDataInterfaceGrid3DCollection_FillVolumeTexture Parms{};
 
@@ -2181,10 +1944,7 @@ bool UNiagaraDataInterfaceGrid3DCollection::FillVolumeTexture(const class UNiaga
 
 void UNiagaraDataInterfaceGrid3DCollection::GetRawTextureSize(const class UNiagaraComponent* Component, int32* SizeX, int32* SizeY, int32* SizeZ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid3DCollection", "GetRawTextureSize");
+	class UFunction* Func = Class->GetFunction("NiagaraDataInterfaceGrid3DCollection", "GetRawTextureSize");
 
 	Params::NiagaraDataInterfaceGrid3DCollection_GetRawTextureSize Parms{};
 
@@ -2218,10 +1978,7 @@ void UNiagaraDataInterfaceGrid3DCollection::GetRawTextureSize(const class UNiaga
 
 void UNiagaraDataInterfaceGrid3DCollection::GetTextureSize(const class UNiagaraComponent* Component, int32* SizeX, int32* SizeY, int32* SizeZ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraDataInterfaceGrid3DCollection", "GetTextureSize");
+	class UFunction* Func = Class->GetFunction("NiagaraDataInterfaceGrid3DCollection", "GetTextureSize");
 
 	Params::NiagaraDataInterfaceGrid3DCollection_GetTextureSize Parms{};
 
@@ -2254,10 +2011,7 @@ void UNiagaraDataInterfaceGrid3DCollection::GetTextureSize(const class UNiagaraC
 
 class UNiagaraParameterCollectionInstance* UNiagaraFunctionLibrary::GetNiagaraParameterCollection(class UObject* WorldContextObject, class UNiagaraParameterCollection* Collection)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "GetNiagaraParameterCollection");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "GetNiagaraParameterCollection");
 
 	Params::NiagaraFunctionLibrary_GetNiagaraParameterCollection Parms{};
 
@@ -2284,10 +2038,7 @@ class UNiagaraParameterCollectionInstance* UNiagaraFunctionLibrary::GetNiagaraPa
 
 void UNiagaraFunctionLibrary::OverrideSystemUserVariableSkeletalMeshComponent(class UNiagaraComponent* NiagaraSystem, const class FString& OverrideName, class USkeletalMeshComponent* SkeletalMeshComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "OverrideSystemUserVariableSkeletalMeshComponent");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "OverrideSystemUserVariableSkeletalMeshComponent");
 
 	Params::NiagaraFunctionLibrary_OverrideSystemUserVariableSkeletalMeshComponent Parms{};
 
@@ -2313,10 +2064,7 @@ void UNiagaraFunctionLibrary::OverrideSystemUserVariableSkeletalMeshComponent(cl
 
 void UNiagaraFunctionLibrary::OverrideSystemUserVariableStaticMesh(class UNiagaraComponent* NiagaraSystem, const class FString& OverrideName, class UStaticMesh* StaticMesh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "OverrideSystemUserVariableStaticMesh");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "OverrideSystemUserVariableStaticMesh");
 
 	Params::NiagaraFunctionLibrary_OverrideSystemUserVariableStaticMesh Parms{};
 
@@ -2342,10 +2090,7 @@ void UNiagaraFunctionLibrary::OverrideSystemUserVariableStaticMesh(class UNiagar
 
 void UNiagaraFunctionLibrary::OverrideSystemUserVariableStaticMeshComponent(class UNiagaraComponent* NiagaraSystem, const class FString& OverrideName, class UStaticMeshComponent* StaticMeshComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "OverrideSystemUserVariableStaticMeshComponent");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "OverrideSystemUserVariableStaticMeshComponent");
 
 	Params::NiagaraFunctionLibrary_OverrideSystemUserVariableStaticMeshComponent Parms{};
 
@@ -2371,10 +2116,7 @@ void UNiagaraFunctionLibrary::OverrideSystemUserVariableStaticMeshComponent(clas
 
 void UNiagaraFunctionLibrary::SetSkeletalMeshDataInterfaceSamplingRegions(class UNiagaraComponent* NiagaraSystem, const class FString& OverrideName, const TArray<class FName>& SamplingRegions)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SetSkeletalMeshDataInterfaceSamplingRegions");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SetSkeletalMeshDataInterfaceSamplingRegions");
 
 	Params::NiagaraFunctionLibrary_SetSkeletalMeshDataInterfaceSamplingRegions Parms{};
 
@@ -2400,10 +2142,7 @@ void UNiagaraFunctionLibrary::SetSkeletalMeshDataInterfaceSamplingRegions(class 
 
 void UNiagaraFunctionLibrary::SetTextureObject(class UNiagaraComponent* NiagaraSystem, const class FString& OverrideName, class UTexture* Texture)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SetTextureObject");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SetTextureObject");
 
 	Params::NiagaraFunctionLibrary_SetTextureObject Parms{};
 
@@ -2429,10 +2168,7 @@ void UNiagaraFunctionLibrary::SetTextureObject(class UNiagaraComponent* NiagaraS
 
 void UNiagaraFunctionLibrary::SetVolumeTextureObject(class UNiagaraComponent* NiagaraSystem, const class FString& OverrideName, class UVolumeTexture* Texture)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SetVolumeTextureObject");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SetVolumeTextureObject");
 
 	Params::NiagaraFunctionLibrary_SetVolumeTextureObject Parms{};
 
@@ -2465,10 +2201,7 @@ void UNiagaraFunctionLibrary::SetVolumeTextureObject(class UNiagaraComponent* Ni
 
 class UNiagaraComponent* UNiagaraFunctionLibrary::SpawnSystemAtLocation(const class UObject* WorldContextObject, class UNiagaraSystem* SystemTemplate, const struct FVector& Location, const struct FRotator& Rotation, const struct FVector& Scale, bool bAutoDestroy, bool bAutoActivate, ENCPoolMethod PoolingMethod, bool bPreCullCheck)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SpawnSystemAtLocation");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SpawnSystemAtLocation");
 
 	Params::NiagaraFunctionLibrary_SpawnSystemAtLocation Parms{};
 
@@ -2510,10 +2243,7 @@ class UNiagaraComponent* UNiagaraFunctionLibrary::SpawnSystemAtLocation(const cl
 
 class UNiagaraComponent* UNiagaraFunctionLibrary::SpawnSystemAttached(class UNiagaraSystem* SystemTemplate, class USceneComponent* AttachToComponent, class FName AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, EAttachLocation LocationType, bool bAutoDestroy, bool bAutoActivate, ENCPoolMethod PoolingMethod, bool bPreCullCheck)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SpawnSystemAttached");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraFunctionLibrary", "SpawnSystemAttached");
 
 	Params::NiagaraFunctionLibrary_SpawnSystemAttached Parms{};
 
@@ -2547,10 +2277,7 @@ class UNiagaraComponent* UNiagaraFunctionLibrary::SpawnSystemAttached(class UNia
 
 bool UNiagaraParameterCollectionInstance::GetBoolParameter(const class FString& InVariableName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetBoolParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetBoolParameter");
 
 	Params::NiagaraParameterCollectionInstance_GetBoolParameter Parms{};
 
@@ -2575,10 +2302,7 @@ bool UNiagaraParameterCollectionInstance::GetBoolParameter(const class FString& 
 
 struct FLinearColor UNiagaraParameterCollectionInstance::GetColorParameter(const class FString& InVariableName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetColorParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetColorParameter");
 
 	Params::NiagaraParameterCollectionInstance_GetColorParameter Parms{};
 
@@ -2603,10 +2327,7 @@ struct FLinearColor UNiagaraParameterCollectionInstance::GetColorParameter(const
 
 float UNiagaraParameterCollectionInstance::GetFloatParameter(const class FString& InVariableName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetFloatParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetFloatParameter");
 
 	Params::NiagaraParameterCollectionInstance_GetFloatParameter Parms{};
 
@@ -2631,10 +2352,7 @@ float UNiagaraParameterCollectionInstance::GetFloatParameter(const class FString
 
 int32 UNiagaraParameterCollectionInstance::GetIntParameter(const class FString& InVariableName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetIntParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetIntParameter");
 
 	Params::NiagaraParameterCollectionInstance_GetIntParameter Parms{};
 
@@ -2659,10 +2377,7 @@ int32 UNiagaraParameterCollectionInstance::GetIntParameter(const class FString& 
 
 struct FQuat UNiagaraParameterCollectionInstance::GetQuatParameter(const class FString& InVariableName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetQuatParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetQuatParameter");
 
 	Params::NiagaraParameterCollectionInstance_GetQuatParameter Parms{};
 
@@ -2687,10 +2402,7 @@ struct FQuat UNiagaraParameterCollectionInstance::GetQuatParameter(const class F
 
 struct FVector2D UNiagaraParameterCollectionInstance::GetVector2DParameter(const class FString& InVariableName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetVector2DParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetVector2DParameter");
 
 	Params::NiagaraParameterCollectionInstance_GetVector2DParameter Parms{};
 
@@ -2715,10 +2427,7 @@ struct FVector2D UNiagaraParameterCollectionInstance::GetVector2DParameter(const
 
 struct FVector4 UNiagaraParameterCollectionInstance::GetVector4Parameter(const class FString& InVariableName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetVector4Parameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetVector4Parameter");
 
 	Params::NiagaraParameterCollectionInstance_GetVector4Parameter Parms{};
 
@@ -2743,10 +2452,7 @@ struct FVector4 UNiagaraParameterCollectionInstance::GetVector4Parameter(const c
 
 struct FVector UNiagaraParameterCollectionInstance::GetVectorParameter(const class FString& InVariableName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetVectorParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "GetVectorParameter");
 
 	Params::NiagaraParameterCollectionInstance_GetVectorParameter Parms{};
 
@@ -2771,10 +2477,7 @@ struct FVector UNiagaraParameterCollectionInstance::GetVectorParameter(const cla
 
 void UNiagaraParameterCollectionInstance::SetBoolParameter(const class FString& InVariableName, bool InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetBoolParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetBoolParameter");
 
 	Params::NiagaraParameterCollectionInstance_SetBoolParameter Parms{};
 
@@ -2798,10 +2501,7 @@ void UNiagaraParameterCollectionInstance::SetBoolParameter(const class FString& 
 
 void UNiagaraParameterCollectionInstance::SetColorParameter(const class FString& InVariableName, const struct FLinearColor& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetColorParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetColorParameter");
 
 	Params::NiagaraParameterCollectionInstance_SetColorParameter Parms{};
 
@@ -2825,10 +2525,7 @@ void UNiagaraParameterCollectionInstance::SetColorParameter(const class FString&
 
 void UNiagaraParameterCollectionInstance::SetFloatParameter(const class FString& InVariableName, float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetFloatParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetFloatParameter");
 
 	Params::NiagaraParameterCollectionInstance_SetFloatParameter Parms{};
 
@@ -2852,10 +2549,7 @@ void UNiagaraParameterCollectionInstance::SetFloatParameter(const class FString&
 
 void UNiagaraParameterCollectionInstance::SetIntParameter(const class FString& InVariableName, int32 InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetIntParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetIntParameter");
 
 	Params::NiagaraParameterCollectionInstance_SetIntParameter Parms{};
 
@@ -2879,10 +2573,7 @@ void UNiagaraParameterCollectionInstance::SetIntParameter(const class FString& I
 
 void UNiagaraParameterCollectionInstance::SetQuatParameter(const class FString& InVariableName, const struct FQuat& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetQuatParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetQuatParameter");
 
 	Params::NiagaraParameterCollectionInstance_SetQuatParameter Parms{};
 
@@ -2906,10 +2597,7 @@ void UNiagaraParameterCollectionInstance::SetQuatParameter(const class FString& 
 
 void UNiagaraParameterCollectionInstance::SetVector2DParameter(const class FString& InVariableName, const struct FVector2D& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetVector2DParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetVector2DParameter");
 
 	Params::NiagaraParameterCollectionInstance_SetVector2DParameter Parms{};
 
@@ -2933,10 +2621,7 @@ void UNiagaraParameterCollectionInstance::SetVector2DParameter(const class FStri
 
 void UNiagaraParameterCollectionInstance::SetVector4Parameter(const class FString& InVariableName, const struct FVector4& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetVector4Parameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetVector4Parameter");
 
 	Params::NiagaraParameterCollectionInstance_SetVector4Parameter Parms{};
 
@@ -2960,10 +2645,7 @@ void UNiagaraParameterCollectionInstance::SetVector4Parameter(const class FStrin
 
 void UNiagaraParameterCollectionInstance::SetVectorParameter(const class FString& InVariableName, const struct FVector& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetVectorParameter");
+	class UFunction* Func = Class->GetFunction("NiagaraParameterCollectionInstance", "SetVectorParameter");
 
 	Params::NiagaraParameterCollectionInstance_SetVectorParameter Parms{};
 
@@ -2987,10 +2669,7 @@ void UNiagaraParameterCollectionInstance::SetVectorParameter(const class FString
 
 void ANiagaraPreviewBase::SetLabelText(const class FText& InXAxisText, const class FText& InYAxisText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewBase", "SetLabelText");
+	class UFunction* Func = Class->GetFunction("NiagaraPreviewBase", "SetLabelText");
 
 	Params::NiagaraPreviewBase_SetLabelText Parms{};
 
@@ -3008,10 +2687,7 @@ void ANiagaraPreviewBase::SetLabelText(const class FText& InXAxisText, const cla
 
 void ANiagaraPreviewBase::SetSystem(class UNiagaraSystem* InSystem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewBase", "SetSystem");
+	class UFunction* Func = Class->GetFunction("NiagaraPreviewBase", "SetSystem");
 
 	Params::NiagaraPreviewBase_SetSystem Parms{};
 
@@ -3031,10 +2707,7 @@ void ANiagaraPreviewBase::SetSystem(class UNiagaraSystem* InSystem)
 
 void UNiagaraPreviewAxis::ApplyToPreview(class UNiagaraComponent* PreviewComponent, int32 PreviewIndex, bool bIsXAxis, class FString* OutLabelText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewAxis", "ApplyToPreview");
+	class UFunction* Func = Class->GetFunction("NiagaraPreviewAxis", "ApplyToPreview");
 
 	Params::NiagaraPreviewAxis_ApplyToPreview Parms{};
 
@@ -3061,10 +2734,7 @@ void UNiagaraPreviewAxis::ApplyToPreview(class UNiagaraComponent* PreviewCompone
 
 int32 UNiagaraPreviewAxis::Num()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewAxis", "Num");
+	class UFunction* Func = Class->GetFunction("NiagaraPreviewAxis", "Num");
 
 	Params::NiagaraPreviewAxis_Num Parms{};
 
@@ -3086,10 +2756,7 @@ int32 UNiagaraPreviewAxis::Num()
 
 void ANiagaraPreviewGrid::ActivatePreviews(bool bReset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewGrid", "ActivatePreviews");
+	class UFunction* Func = Class->GetFunction("NiagaraPreviewGrid", "ActivatePreviews");
 
 	Params::NiagaraPreviewGrid_ActivatePreviews Parms{};
 
@@ -3109,10 +2776,7 @@ void ANiagaraPreviewGrid::ActivatePreviews(bool bReset)
 
 void ANiagaraPreviewGrid::DeactivatePreviews()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewGrid", "DeactivatePreviews");
+	class UFunction* Func = Class->GetFunction("NiagaraPreviewGrid", "DeactivatePreviews");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3130,10 +2794,7 @@ void ANiagaraPreviewGrid::DeactivatePreviews()
 
 void ANiagaraPreviewGrid::GetPreviews(TArray<class UNiagaraComponent*>* OutPreviews)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewGrid", "GetPreviews");
+	class UFunction* Func = Class->GetFunction("NiagaraPreviewGrid", "GetPreviews");
 
 	Params::NiagaraPreviewGrid_GetPreviews Parms{};
 
@@ -3156,10 +2817,7 @@ void ANiagaraPreviewGrid::GetPreviews(TArray<class UNiagaraComponent*>* OutPrevi
 
 void ANiagaraPreviewGrid::SetPaused(bool bPaused)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraPreviewGrid", "SetPaused");
+	class UFunction* Func = Class->GetFunction("NiagaraPreviewGrid", "SetPaused");
 
 	Params::NiagaraPreviewGrid_SetPaused Parms{};
 
@@ -3179,10 +2837,7 @@ void ANiagaraPreviewGrid::SetPaused(bool bPaused)
 
 void UNiagaraScript::RaiseOnGPUCompilationComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraScript", "RaiseOnGPUCompilationComplete");
+	class UFunction* Func = Class->GetFunction("NiagaraScript", "RaiseOnGPUCompilationComplete");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

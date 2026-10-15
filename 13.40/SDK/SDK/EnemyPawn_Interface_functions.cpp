@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void IEnemyPawn_Interface_C::Orphaned(bool* IsOrphaned, class AFortPawn** AttachedPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("EnemyPawn_Interface_C", "Orphaned");
+	class UFunction* Func = AsUObject()->Class->GetFunction("EnemyPawn_Interface_C", "Orphaned");
 
 	Params::EnemyPawn_Interface_C_Orphaned Parms{};
 

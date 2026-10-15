@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_AppleSun_Apple_Athena_C::ExecuteUbergraph_BGA_AppleSun_Apple_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "ExecuteUbergraph_BGA_AppleSun_Apple_Athena");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "ExecuteUbergraph_BGA_AppleSun_Apple_Athena");
 
 	Params::BGA_AppleSun_Apple_Athena_C_ExecuteUbergraph_BGA_AppleSun_Apple_Athena Parms{};
 
@@ -41,10 +38,7 @@ void ABGA_AppleSun_Apple_Athena_C::ExecuteUbergraph_BGA_AppleSun_Apple_Athena(in
 
 void ABGA_AppleSun_Apple_Athena_C::CatchObjectsInside()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "CatchObjectsInside");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "CatchObjectsInside");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -60,10 +54,7 @@ void ABGA_AppleSun_Apple_Athena_C::CatchObjectsInside()
 
 void ABGA_AppleSun_Apple_Athena_C::BndEvt__PlayerDetector_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BndEvt__PlayerDetector_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BndEvt__PlayerDetector_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::BGA_AppleSun_Apple_Athena_C_BndEvt__PlayerDetector_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -88,10 +79,7 @@ void ABGA_AppleSun_Apple_Athena_C::BndEvt__PlayerDetector_K2Node_ComponentBoundE
 
 void ABGA_AppleSun_Apple_Athena_C::BndEvt__PlayerDetector_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BndEvt__PlayerDetector_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BndEvt__PlayerDetector_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::BGA_AppleSun_Apple_Athena_C_BndEvt__PlayerDetector_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -111,10 +99,7 @@ void ABGA_AppleSun_Apple_Athena_C::BndEvt__PlayerDetector_K2Node_ComponentBoundE
 
 void ABGA_AppleSun_Apple_Athena_C::BndEvt__FortLinkToActor_K2Node_ComponentBoundEvent_0_OnLinkedActorDestroyed__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BndEvt__FortLinkToActor_K2Node_ComponentBoundEvent_0_OnLinkedActorDestroyed__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BndEvt__FortLinkToActor_K2Node_ComponentBoundEvent_0_OnLinkedActorDestroyed__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +118,7 @@ void ABGA_AppleSun_Apple_Athena_C::BndEvt__FortLinkToActor_K2Node_ComponentBound
 
 void ABGA_AppleSun_Apple_Athena_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "OnDeathPlayEffects");
 
 	Params::BGA_AppleSun_Apple_Athena_C_OnDeathPlayEffects Parms{};
 
@@ -157,10 +139,7 @@ void ABGA_AppleSun_Apple_Athena_C::OnDeathPlayEffects(float Damage, const struct
 
 void ABGA_AppleSun_Apple_Athena_C::DestroyPad()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "DestroyPad");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "DestroyPad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -178,10 +157,7 @@ void ABGA_AppleSun_Apple_Athena_C::DestroyPad()
 
 void ABGA_AppleSun_Apple_Athena_C::BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::BGA_AppleSun_Apple_Athena_C_BndEvt__Box_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -201,10 +177,7 @@ void ABGA_AppleSun_Apple_Athena_C::BndEvt__Box_K2Node_ComponentBoundEvent_2_Comp
 
 void ABGA_AppleSun_Apple_Athena_C::DespawnTell()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "DespawnTell");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "DespawnTell");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -218,10 +191,7 @@ void ABGA_AppleSun_Apple_Athena_C::DespawnTell()
 
 void ABGA_AppleSun_Apple_Athena_C::BounceMulticast(const struct FVector& position, const float BounceIntensity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BounceMulticast");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BounceMulticast");
 
 	Params::BGA_AppleSun_Apple_Athena_C_BounceMulticast Parms{};
 
@@ -237,10 +207,7 @@ void ABGA_AppleSun_Apple_Athena_C::BounceMulticast(const struct FVector& positio
 
 void ABGA_AppleSun_Apple_Athena_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -251,10 +218,7 @@ void ABGA_AppleSun_Apple_Athena_C::ReceiveBeginPlay()
 
 void ABGA_AppleSun_Apple_Athena_C::Destroy__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "Destroy__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "Destroy__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +229,7 @@ void ABGA_AppleSun_Apple_Athena_C::Destroy__UpdateFunc()
 
 void ABGA_AppleSun_Apple_Athena_C::Destroy__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "Destroy__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "Destroy__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +240,7 @@ void ABGA_AppleSun_Apple_Athena_C::Destroy__FinishedFunc()
 
 void ABGA_AppleSun_Apple_Athena_C::BeginDeflate__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BeginDeflate__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BeginDeflate__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -293,10 +251,7 @@ void ABGA_AppleSun_Apple_Athena_C::BeginDeflate__UpdateFunc()
 
 void ABGA_AppleSun_Apple_Athena_C::BeginDeflate__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BeginDeflate__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "BeginDeflate__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -307,10 +262,7 @@ void ABGA_AppleSun_Apple_Athena_C::BeginDeflate__FinishedFunc()
 
 void ABGA_AppleSun_Apple_Athena_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -323,10 +275,7 @@ void ABGA_AppleSun_Apple_Athena_C::UserConstructionScript()
 
 void ABGA_AppleSun_Apple_Athena_C::CheckForSpyPerk(bool* HasPerk)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "CheckForSpyPerk");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "CheckForSpyPerk");
 
 	Params::BGA_AppleSun_Apple_Athena_C_CheckForSpyPerk Parms{};
 
@@ -345,10 +294,7 @@ void ABGA_AppleSun_Apple_Athena_C::CheckForSpyPerk(bool* HasPerk)
 
 struct FVector ABGA_AppleSun_Apple_Athena_C::Get_Launch_Reference_Vector(class ACharacter* Fort_Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "Get Launch Reference Vector");
+	class UFunction* Func = Class->GetFunction("BGA_AppleSun_Apple_Athena_C", "Get Launch Reference Vector");
 
 	Params::BGA_AppleSun_Apple_Athena_C_Get_Launch_Reference_Vector Parms{};
 

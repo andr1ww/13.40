@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UNPCStatusWidgetBar_C::ExecuteUbergraph_NPCStatusWidgetBar(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPCStatusWidgetBar_C", "ExecuteUbergraph_NPCStatusWidgetBar");
+	class UFunction* Func = Class->GetFunction("NPCStatusWidgetBar_C", "ExecuteUbergraph_NPCStatusWidgetBar");
 
 	Params::NPCStatusWidgetBar_C_ExecuteUbergraph_NPCStatusWidgetBar Parms{};
 
@@ -43,10 +40,7 @@ void UNPCStatusWidgetBar_C::ExecuteUbergraph_NPCStatusWidgetBar(int32 EntryPoint
 
 void UNPCStatusWidgetBar_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPCStatusWidgetBar_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("NPCStatusWidgetBar_C", "PreConstruct");
 
 	Params::NPCStatusWidgetBar_C_PreConstruct Parms{};
 
@@ -63,10 +57,7 @@ void UNPCStatusWidgetBar_C::PreConstruct(bool IsDesignTime)
 
 void UNPCStatusWidgetBar_C::SetPercent(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPCStatusWidgetBar_C", "SetPercent");
+	class UFunction* Func = Class->GetFunction("NPCStatusWidgetBar_C", "SetPercent");
 
 	Params::NPCStatusWidgetBar_C_SetPercent Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEventTeamMatchHistoryModal_C::ExecuteUbergraph_EventTeamMatchHistoryModal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "ExecuteUbergraph_EventTeamMatchHistoryModal");
+	class UFunction* Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "ExecuteUbergraph_EventTeamMatchHistoryModal");
 
 	Params::EventTeamMatchHistoryModal_C_ExecuteUbergraph_EventTeamMatchHistoryModal Parms{};
 
@@ -44,10 +41,7 @@ void UEventTeamMatchHistoryModal_C::ExecuteUbergraph_EventTeamMatchHistoryModal(
 
 void UEventTeamMatchHistoryModal_C::OnSetupMatchHistory(const class FString& TournamentId, const class FString& EventWindowId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "OnSetupMatchHistory");
+	class UFunction* Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "OnSetupMatchHistory");
 
 	Params::EventTeamMatchHistoryModal_C_OnSetupMatchHistory Parms{};
 
@@ -63,10 +57,7 @@ void UEventTeamMatchHistoryModal_C::OnSetupMatchHistory(const class FString& Tou
 
 void UEventTeamMatchHistoryModal_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void UEventTeamMatchHistoryModal_C::BP_OnActivated()
 
 void UEventTeamMatchHistoryModal_C::BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::EventTeamMatchHistoryModal_C_BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 

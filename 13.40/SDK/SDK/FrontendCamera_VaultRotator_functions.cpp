@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFrontendCamera_VaultRotator_C::SetVaultRotatorLighting(class FName ItemRotatorTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "SetVaultRotatorLighting");
+	class UFunction* Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "SetVaultRotatorLighting");
 
 	Params::FrontendCamera_VaultRotator_C_SetVaultRotatorLighting Parms{};
 
@@ -43,10 +40,7 @@ void AFrontendCamera_VaultRotator_C::SetVaultRotatorLighting(class FName ItemRot
 
 void AFrontendCamera_VaultRotator_C::OnActivated(class AFortPlayerController* PlayerController_OnActivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "OnActivated");
+	class UFunction* Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "OnActivated");
 
 	Params::FrontendCamera_VaultRotator_C_OnActivated Parms{};
 
@@ -63,10 +57,7 @@ void AFrontendCamera_VaultRotator_C::OnActivated(class AFortPlayerController* Pl
 
 void AFrontendCamera_VaultRotator_C::OnDeactivated(class AFortPlayerController* PlayerController_OnDeactivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "OnDeactivated");
+	class UFunction* Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "OnDeactivated");
 
 	Params::FrontendCamera_VaultRotator_C_OnDeactivated Parms{};
 
@@ -83,10 +74,7 @@ void AFrontendCamera_VaultRotator_C::OnDeactivated(class AFortPlayerController* 
 
 void AFrontendCamera_VaultRotator_C::ExecuteUbergraph_FrontendCamera_VaultRotator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "ExecuteUbergraph_FrontendCamera_VaultRotator");
+	class UFunction* Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "ExecuteUbergraph_FrontendCamera_VaultRotator");
 
 	Params::FrontendCamera_VaultRotator_C_ExecuteUbergraph_FrontendCamera_VaultRotator Parms{};
 

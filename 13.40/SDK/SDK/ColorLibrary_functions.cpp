@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UColorLibrary_C::Get_HarvestWeakPoint_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* StyleSheetOut)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ColorLibrary_C", "Get HarvestWeakPoint Color");
+	class UFunction* Func = StaticClass()->GetFunction("ColorLibrary_C", "Get HarvestWeakPoint Color");
 
 	Params::ColorLibrary_C_Get_HarvestWeakPoint_Color Parms{};
 
@@ -54,10 +51,7 @@ void UColorLibrary_C::Get_HarvestWeakPoint_Color(const struct FColorStylesheet& 
 
 void UColorLibrary_C::Get_Base___Buff_Colors(EFortStatValueDisplayType Display_Type, EFortBuffState Buff_State, const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Base, struct FLinearColor* Buff)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Base & Buff Colors");
+	class UFunction* Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Base & Buff Colors");
 
 	Params::ColorLibrary_C_Get_Base___Buff_Colors Parms{};
 
@@ -85,10 +79,7 @@ void UColorLibrary_C::Get_Base___Buff_Colors(EFortStatValueDisplayType Display_T
 
 void UColorLibrary_C::Get_Bolt_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Bolt Elemental Color");
+	class UFunction* Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Bolt Elemental Color");
 
 	Params::ColorLibrary_C_Get_Bolt_Elemental_Color Parms{};
 
@@ -111,10 +102,7 @@ void UColorLibrary_C::Get_Bolt_Elemental_Color(const struct FColorStylesheet& St
 
 void UColorLibrary_C::Get_Ice_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Ice Elemental Color");
+	class UFunction* Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Ice Elemental Color");
 
 	Params::ColorLibrary_C_Get_Ice_Elemental_Color Parms{};
 
@@ -137,10 +125,7 @@ void UColorLibrary_C::Get_Ice_Elemental_Color(const struct FColorStylesheet& Sty
 
 void UColorLibrary_C::Get_Fire_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Fire Elemental Color");
+	class UFunction* Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Fire Elemental Color");
 
 	Params::ColorLibrary_C_Get_Fire_Elemental_Color Parms{};
 
@@ -163,10 +148,7 @@ void UColorLibrary_C::Get_Fire_Elemental_Color(const struct FColorStylesheet& St
 
 void UColorLibrary_C::Get_Unique_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Unique Color");
+	class UFunction* Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Unique Color");
 
 	Params::ColorLibrary_C_Get_Unique_Color Parms{};
 
@@ -189,10 +171,7 @@ void UColorLibrary_C::Get_Unique_Color(const struct FColorStylesheet& Stylesheet
 
 void UColorLibrary_C::Get_Debuff_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Debuff Color");
+	class UFunction* Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Debuff Color");
 
 	Params::ColorLibrary_C_Get_Debuff_Color Parms{};
 
@@ -215,10 +194,7 @@ void UColorLibrary_C::Get_Debuff_Color(const struct FColorStylesheet& Stylesheet
 
 void UColorLibrary_C::Get_Buff_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Buff Color");
+	class UFunction* Func = StaticClass()->GetFunction("ColorLibrary_C", "Get Buff Color");
 
 	Params::ColorLibrary_C_Get_Buff_Color Parms{};
 

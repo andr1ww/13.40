@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UUnderwaterAudioComponent_C::ExecuteUbergraph_UnderwaterAudioComponent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnderwaterAudioComponent_C", "ExecuteUbergraph_UnderwaterAudioComponent");
+	class UFunction* Func = Class->GetFunction("UnderwaterAudioComponent_C", "ExecuteUbergraph_UnderwaterAudioComponent");
 
 	Params::UnderwaterAudioComponent_C_ExecuteUbergraph_UnderwaterAudioComponent Parms{};
 
@@ -43,10 +40,7 @@ void UUnderwaterAudioComponent_C::ExecuteUbergraph_UnderwaterAudioComponent(int3
 
 void UUnderwaterAudioComponent_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnderwaterAudioComponent_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("UnderwaterAudioComponent_C", "ReceiveEndPlay");
 
 	Params::UnderwaterAudioComponent_C_ReceiveEndPlay Parms{};
 
@@ -64,10 +58,7 @@ void UUnderwaterAudioComponent_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 
 void UUnderwaterAudioComponent_C::On_Camera_Underwater_State_Changed(bool bIsUnderWater, float DepthUnderwater)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnderwaterAudioComponent_C", "On Camera Underwater State Changed");
+	class UFunction* Func = Class->GetFunction("UnderwaterAudioComponent_C", "On Camera Underwater State Changed");
 
 	Params::UnderwaterAudioComponent_C_On_Camera_Underwater_State_Changed Parms{};
 
@@ -83,10 +74,7 @@ void UUnderwaterAudioComponent_C::On_Camera_Underwater_State_Changed(bool bIsUnd
 
 void UUnderwaterAudioComponent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UnderwaterAudioComponent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("UnderwaterAudioComponent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

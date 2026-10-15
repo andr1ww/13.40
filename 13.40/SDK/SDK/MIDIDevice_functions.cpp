@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 class UMIDIDeviceController* UMIDIDeviceManager::CreateMIDIDeviceController(const int32 DeviceID, const int32 MIDIBufferSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MIDIDeviceManager", "CreateMIDIDeviceController");
+	class UFunction* Func = StaticClass()->GetFunction("MIDIDeviceManager", "CreateMIDIDeviceController");
 
 	Params::MIDIDeviceManager_CreateMIDIDeviceController Parms{};
 
@@ -55,10 +52,7 @@ class UMIDIDeviceController* UMIDIDeviceManager::CreateMIDIDeviceController(cons
 
 class UMIDIDeviceInputController* UMIDIDeviceManager::CreateMIDIDeviceInputController(const int32 DeviceID, const int32 MIDIBufferSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MIDIDeviceManager", "CreateMIDIDeviceInputController");
+	class UFunction* Func = StaticClass()->GetFunction("MIDIDeviceManager", "CreateMIDIDeviceInputController");
 
 	Params::MIDIDeviceManager_CreateMIDIDeviceInputController Parms{};
 
@@ -84,10 +78,7 @@ class UMIDIDeviceInputController* UMIDIDeviceManager::CreateMIDIDeviceInputContr
 
 class UMIDIDeviceOutputController* UMIDIDeviceManager::CreateMIDIDeviceOutputController(const int32 DeviceID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MIDIDeviceManager", "CreateMIDIDeviceOutputController");
+	class UFunction* Func = StaticClass()->GetFunction("MIDIDeviceManager", "CreateMIDIDeviceOutputController");
 
 	Params::MIDIDeviceManager_CreateMIDIDeviceOutputController Parms{};
 
@@ -112,10 +103,7 @@ class UMIDIDeviceOutputController* UMIDIDeviceManager::CreateMIDIDeviceOutputCon
 
 void UMIDIDeviceManager::FindAllMIDIDeviceInfo(TArray<struct FMIDIDeviceInfo>* OutMIDIInputDevices, TArray<struct FMIDIDeviceInfo>* OutMIDIOutputDevices)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MIDIDeviceManager", "FindAllMIDIDeviceInfo");
+	class UFunction* Func = StaticClass()->GetFunction("MIDIDeviceManager", "FindAllMIDIDeviceInfo");
 
 	Params::MIDIDeviceManager_FindAllMIDIDeviceInfo Parms{};
 
@@ -141,10 +129,7 @@ void UMIDIDeviceManager::FindAllMIDIDeviceInfo(TArray<struct FMIDIDeviceInfo>* O
 
 void UMIDIDeviceManager::FindMIDIDevices(TArray<struct FFoundMIDIDevice>* OutMIDIDevices)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MIDIDeviceManager", "FindMIDIDevices");
+	class UFunction* Func = StaticClass()->GetFunction("MIDIDeviceManager", "FindMIDIDevices");
 
 	Params::MIDIDeviceManager_FindMIDIDevices Parms{};
 
@@ -167,10 +152,7 @@ void UMIDIDeviceManager::FindMIDIDevices(TArray<struct FFoundMIDIDevice>* OutMID
 
 void UMIDIDeviceManager::GetDefaultIMIDIInputDeviceID(int32* DeviceID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MIDIDeviceManager", "GetDefaultIMIDIInputDeviceID");
+	class UFunction* Func = StaticClass()->GetFunction("MIDIDeviceManager", "GetDefaultIMIDIInputDeviceID");
 
 	Params::MIDIDeviceManager_GetDefaultIMIDIInputDeviceID Parms{};
 
@@ -193,10 +175,7 @@ void UMIDIDeviceManager::GetDefaultIMIDIInputDeviceID(int32* DeviceID)
 
 void UMIDIDeviceManager::GetDefaultIMIDIOutputDeviceID(int32* DeviceID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MIDIDeviceManager", "GetDefaultIMIDIOutputDeviceID");
+	class UFunction* Func = StaticClass()->GetFunction("MIDIDeviceManager", "GetDefaultIMIDIOutputDeviceID");
 
 	Params::MIDIDeviceManager_GetDefaultIMIDIOutputDeviceID Parms{};
 
@@ -220,10 +199,7 @@ void UMIDIDeviceManager::GetDefaultIMIDIOutputDeviceID(int32* DeviceID)
 
 void UMIDIDeviceManager::GetMIDIInputDeviceIDByName(const class FString& DeviceName, int32* DeviceID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MIDIDeviceManager", "GetMIDIInputDeviceIDByName");
+	class UFunction* Func = StaticClass()->GetFunction("MIDIDeviceManager", "GetMIDIInputDeviceIDByName");
 
 	Params::MIDIDeviceManager_GetMIDIInputDeviceIDByName Parms{};
 
@@ -249,10 +225,7 @@ void UMIDIDeviceManager::GetMIDIInputDeviceIDByName(const class FString& DeviceN
 
 void UMIDIDeviceManager::GetMIDIOutputDeviceIDByName(const class FString& DeviceName, int32* DeviceID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MIDIDeviceManager", "GetMIDIOutputDeviceIDByName");
+	class UFunction* Func = StaticClass()->GetFunction("MIDIDeviceManager", "GetMIDIOutputDeviceIDByName");
 
 	Params::MIDIDeviceManager_GetMIDIOutputDeviceIDByName Parms{};
 
@@ -278,10 +251,7 @@ void UMIDIDeviceManager::GetMIDIOutputDeviceIDByName(const class FString& Device
 
 void UMIDIDeviceOutputController::SendMIDIChannelAftertouch(int32 Channel, float Amount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIChannelAftertouch");
+	class UFunction* Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIChannelAftertouch");
 
 	Params::MIDIDeviceOutputController_SendMIDIChannelAftertouch Parms{};
 
@@ -306,10 +276,7 @@ void UMIDIDeviceOutputController::SendMIDIChannelAftertouch(int32 Channel, float
 
 void UMIDIDeviceOutputController::SendMIDIControlChange(int32 Channel, int32 Type, int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIControlChange");
+	class UFunction* Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIControlChange");
 
 	Params::MIDIDeviceOutputController_SendMIDIControlChange Parms{};
 
@@ -336,10 +303,7 @@ void UMIDIDeviceOutputController::SendMIDIControlChange(int32 Channel, int32 Typ
 
 void UMIDIDeviceOutputController::SendMIDIEvent(EMIDIEventType EventType, int32 Channel, int32 data1, int32 data2)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIEvent");
+	class UFunction* Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIEvent");
 
 	Params::MIDIDeviceOutputController_SendMIDIEvent Parms{};
 
@@ -366,10 +330,7 @@ void UMIDIDeviceOutputController::SendMIDIEvent(EMIDIEventType EventType, int32 
 
 void UMIDIDeviceOutputController::SendMIDINoteAftertouch(int32 Channel, int32 Note, float Amount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDINoteAftertouch");
+	class UFunction* Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDINoteAftertouch");
 
 	Params::MIDIDeviceOutputController_SendMIDINoteAftertouch Parms{};
 
@@ -395,10 +356,7 @@ void UMIDIDeviceOutputController::SendMIDINoteAftertouch(int32 Channel, int32 No
 
 void UMIDIDeviceOutputController::SendMIDINoteOff(int32 Channel, int32 Note, int32 Velocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDINoteOff");
+	class UFunction* Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDINoteOff");
 
 	Params::MIDIDeviceOutputController_SendMIDINoteOff Parms{};
 
@@ -424,10 +382,7 @@ void UMIDIDeviceOutputController::SendMIDINoteOff(int32 Channel, int32 Note, int
 
 void UMIDIDeviceOutputController::SendMIDINoteOn(int32 Channel, int32 Note, int32 Velocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDINoteOn");
+	class UFunction* Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDINoteOn");
 
 	Params::MIDIDeviceOutputController_SendMIDINoteOn Parms{};
 
@@ -452,10 +407,7 @@ void UMIDIDeviceOutputController::SendMIDINoteOn(int32 Channel, int32 Note, int3
 
 void UMIDIDeviceOutputController::SendMIDIPitchBend(int32 Channel, int32 Pitch)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIPitchBend");
+	class UFunction* Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIPitchBend");
 
 	Params::MIDIDeviceOutputController_SendMIDIPitchBend Parms{};
 
@@ -479,10 +431,7 @@ void UMIDIDeviceOutputController::SendMIDIPitchBend(int32 Channel, int32 Pitch)
 
 void UMIDIDeviceOutputController::SendMIDIProgramChange(int32 Channel, int32 ProgramNumber)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIProgramChange");
+	class UFunction* Func = Class->GetFunction("MIDIDeviceOutputController", "SendMIDIProgramChange");
 
 	Params::MIDIDeviceOutputController_SendMIDIProgramChange Parms{};
 

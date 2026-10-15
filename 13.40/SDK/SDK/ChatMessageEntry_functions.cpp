@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UChatMessageEntry_C::OnEntryUpdated_1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatMessageEntry_C", "OnEntryUpdated_1");
+	class UFunction* Func = Class->GetFunction("ChatMessageEntry_C", "OnEntryUpdated_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UChatMessageEntry_C::OnEntryUpdated_1()
 
 void UChatMessageEntry_C::ExecuteUbergraph_ChatMessageEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatMessageEntry_C", "ExecuteUbergraph_ChatMessageEntry");
+	class UFunction* Func = Class->GetFunction("ChatMessageEntry_C", "ExecuteUbergraph_ChatMessageEntry");
 
 	Params::ChatMessageEntry_C_ExecuteUbergraph_ChatMessageEntry Parms{};
 
@@ -57,10 +51,7 @@ void UChatMessageEntry_C::ExecuteUbergraph_ChatMessageEntry(int32 EntryPoint)
 
 void UChatMessageEntry_C::OnFocusedChanged(bool bIsFocused)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatMessageEntry_C", "OnFocusedChanged");
+	class UFunction* Func = Class->GetFunction("ChatMessageEntry_C", "OnFocusedChanged");
 
 	Params::ChatMessageEntry_C_OnFocusedChanged Parms{};
 
@@ -75,10 +66,7 @@ void UChatMessageEntry_C::OnFocusedChanged(bool bIsFocused)
 
 void UChatMessageEntry_C::BndEvt__Button_FocusTarget_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatMessageEntry_C", "BndEvt__Button_FocusTarget_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ChatMessageEntry_C", "BndEvt__Button_FocusTarget_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UChatMessageEntry_C::BndEvt__Button_FocusTarget_K2Node_ComponentBoundEvent_
 
 void UChatMessageEntry_C::HandleSelectionStatusChanged(bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatMessageEntry_C", "HandleSelectionStatusChanged");
+	class UFunction* Func = Class->GetFunction("ChatMessageEntry_C", "HandleSelectionStatusChanged");
 
 	Params::ChatMessageEntry_C_HandleSelectionStatusChanged Parms{};
 

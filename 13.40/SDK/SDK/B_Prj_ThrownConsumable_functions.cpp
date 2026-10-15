@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_ThrownConsumable_C::ExecuteUbergraph_B_Prj_ThrownConsumable(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ExecuteUbergraph_B_Prj_ThrownConsumable");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ExecuteUbergraph_B_Prj_ThrownConsumable");
 
 	Params::B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_ThrownConsumable_C::ExecuteUbergraph_B_Prj_ThrownConsumable(int32 En
 
 void AB_Prj_ThrownConsumable_C::ResetSimulatedComponents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ResetSimulatedComponents");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ResetSimulatedComponents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AB_Prj_ThrownConsumable_C::ResetSimulatedComponents()
 
 void AB_Prj_ThrownConsumable_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnStop");
 
 	Params::B_Prj_ThrownConsumable_C_OnStop Parms{};
 
@@ -77,10 +68,7 @@ void AB_Prj_ThrownConsumable_C::OnStop(const struct FHitResult& Hit)
 
 void AB_Prj_ThrownConsumable_C::OnBounce(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnBounce");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnBounce");
 
 	Params::B_Prj_ThrownConsumable_C_OnBounce Parms{};
 
@@ -98,10 +86,7 @@ void AB_Prj_ThrownConsumable_C::OnBounce(const struct FHitResult& Hit)
 
 void AB_Prj_ThrownConsumable_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnExploded");
 
 	Params::B_Prj_ThrownConsumable_C_OnExploded Parms{};
 
@@ -117,10 +102,7 @@ void AB_Prj_ThrownConsumable_C::OnExploded(const TArray<class AActor*>& HitActor
 
 void AB_Prj_ThrownConsumable_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +113,7 @@ void AB_Prj_ThrownConsumable_C::ReceiveBeginPlay()
 
 void AB_Prj_ThrownConsumable_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

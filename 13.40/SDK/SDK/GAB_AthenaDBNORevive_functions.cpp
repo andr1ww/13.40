@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAB_AthenaDBNORevive_C::ExecuteUbergraph_GAB_AthenaDBNORevive(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "ExecuteUbergraph_GAB_AthenaDBNORevive");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "ExecuteUbergraph_GAB_AthenaDBNORevive");
 
 	Params::GAB_AthenaDBNORevive_C_ExecuteUbergraph_GAB_AthenaDBNORevive Parms{};
 
@@ -43,10 +40,7 @@ void UGAB_AthenaDBNORevive_C::ExecuteUbergraph_GAB_AthenaDBNORevive(int32 EntryP
 
 void UGAB_AthenaDBNORevive_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "K2_OnEndAbility");
 
 	Params::GAB_AthenaDBNORevive_C_K2_OnEndAbility Parms{};
 
@@ -63,10 +57,7 @@ void UGAB_AthenaDBNORevive_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_AthenaDBNORevive_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GAB_AthenaDBNORevive_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -84,10 +75,7 @@ void UGAB_AthenaDBNORevive_C::K2_ActivateAbilityFromEvent(const struct FGameplay
 
 void UGAB_AthenaDBNORevive_C::Targeted_779E7BAA49FEAD286C5164B83CDFD609(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Targeted_779E7BAA49FEAD286C5164B83CDFD609");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Targeted_779E7BAA49FEAD286C5164B83CDFD609");
 
 	Params::GAB_AthenaDBNORevive_C_Targeted_779E7BAA49FEAD286C5164B83CDFD609 Parms{};
 
@@ -106,10 +94,7 @@ void UGAB_AthenaDBNORevive_C::Targeted_779E7BAA49FEAD286C5164B83CDFD609(const st
 
 void UGAB_AthenaDBNORevive_C::Cancelled_779E7BAA49FEAD286C5164B83CDFD609(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Cancelled_779E7BAA49FEAD286C5164B83CDFD609");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Cancelled_779E7BAA49FEAD286C5164B83CDFD609");
 
 	Params::GAB_AthenaDBNORevive_C_Cancelled_779E7BAA49FEAD286C5164B83CDFD609 Parms{};
 
@@ -128,10 +113,7 @@ void UGAB_AthenaDBNORevive_C::Cancelled_779E7BAA49FEAD286C5164B83CDFD609(const s
 
 void UGAB_AthenaDBNORevive_C::Triggered_23712DBC45E68EA0C91A4895CBD8B3A6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Triggered_23712DBC45E68EA0C91A4895CBD8B3A6");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Triggered_23712DBC45E68EA0C91A4895CBD8B3A6");
 
 	Params::GAB_AthenaDBNORevive_C_Triggered_23712DBC45E68EA0C91A4895CBD8B3A6 Parms{};
 
@@ -150,10 +132,7 @@ void UGAB_AthenaDBNORevive_C::Triggered_23712DBC45E68EA0C91A4895CBD8B3A6(const s
 
 void UGAB_AthenaDBNORevive_C::Cancelled_23712DBC45E68EA0C91A4895CBD8B3A6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Cancelled_23712DBC45E68EA0C91A4895CBD8B3A6");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Cancelled_23712DBC45E68EA0C91A4895CBD8B3A6");
 
 	Params::GAB_AthenaDBNORevive_C_Cancelled_23712DBC45E68EA0C91A4895CBD8B3A6 Parms{};
 
@@ -172,10 +151,7 @@ void UGAB_AthenaDBNORevive_C::Cancelled_23712DBC45E68EA0C91A4895CBD8B3A6(const s
 
 void UGAB_AthenaDBNORevive_C::Completed_23712DBC45E68EA0C91A4895CBD8B3A6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Completed_23712DBC45E68EA0C91A4895CBD8B3A6");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Completed_23712DBC45E68EA0C91A4895CBD8B3A6");
 
 	Params::GAB_AthenaDBNORevive_C_Completed_23712DBC45E68EA0C91A4895CBD8B3A6 Parms{};
 
@@ -193,10 +169,7 @@ void UGAB_AthenaDBNORevive_C::Completed_23712DBC45E68EA0C91A4895CBD8B3A6(const s
 
 void UGAB_AthenaDBNORevive_C::Get_DBNO_Outro_Montage(class UAnimMontage** DBNOMontageOutro_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Get DBNO Outro Montage");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNORevive_C", "Get DBNO Outro Montage");
 
 	Params::GAB_AthenaDBNORevive_C_Get_DBNO_Outro_Montage Parms{};
 

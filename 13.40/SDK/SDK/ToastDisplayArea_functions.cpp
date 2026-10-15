@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UToastDisplayArea_C::TestFrontendToast()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastDisplayArea_C", "TestFrontendToast");
+	class UFunction* Func = Class->GetFunction("ToastDisplayArea_C", "TestFrontendToast");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UToastDisplayArea_C::TestFrontendToast()
 
 void UToastDisplayArea_C::ExecuteUbergraph_ToastDisplayArea(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastDisplayArea_C", "ExecuteUbergraph_ToastDisplayArea");
+	class UFunction* Func = Class->GetFunction("ToastDisplayArea_C", "ExecuteUbergraph_ToastDisplayArea");
 
 	Params::ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea Parms{};
 

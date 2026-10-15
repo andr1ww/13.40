@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTabTouchOptions_New_C::ExecuteUbergraph_TabTouchOptions_New(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabTouchOptions_New_C", "ExecuteUbergraph_TabTouchOptions_New");
+	class UFunction* Func = Class->GetFunction("TabTouchOptions_New_C", "ExecuteUbergraph_TabTouchOptions_New");
 
 	Params::TabTouchOptions_New_C_ExecuteUbergraph_TabTouchOptions_New Parms{};
 
@@ -44,10 +41,7 @@ void UTabTouchOptions_New_C::ExecuteUbergraph_TabTouchOptions_New(int32 EntryPoi
 
 void UTabTouchOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature(class UFortSetting* Setting, class FName Action)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabTouchOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TabTouchOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
 
 	Params::TabTouchOptions_New_C_BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature Parms{};
 
@@ -65,10 +59,7 @@ void UTabTouchOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1
 
 void UTabTouchOptions_New_C::SettingValueChanged(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabTouchOptions_New_C", "SettingValueChanged");
+	class UFunction* Func = Class->GetFunction("TabTouchOptions_New_C", "SettingValueChanged");
 
 	Params::TabTouchOptions_New_C_SettingValueChanged Parms{};
 
@@ -83,10 +74,7 @@ void UTabTouchOptions_New_C::SettingValueChanged(float Value)
 
 void UTabTouchOptions_New_C::CenterOnTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabTouchOptions_New_C", "CenterOnTab");
+	class UFunction* Func = Class->GetFunction("TabTouchOptions_New_C", "CenterOnTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +87,7 @@ void UTabTouchOptions_New_C::CenterOnTab()
 
 void UTabTouchOptions_New_C::OnComplete_70DA8CBD478310A11CA48A9F568B15E0(class UUserWidget* UserWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabTouchOptions_New_C", "OnComplete_70DA8CBD478310A11CA48A9F568B15E0");
+	class UFunction* Func = Class->GetFunction("TabTouchOptions_New_C", "OnComplete_70DA8CBD478310A11CA48A9F568B15E0");
 
 	Params::TabTouchOptions_New_C_OnComplete_70DA8CBD478310A11CA48A9F568B15E0 Parms{};
 

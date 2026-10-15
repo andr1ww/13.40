@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBuoyancyComponent::OnPontoonEnteredWater(const struct FSphericalPontoon& Pontoon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuoyancyComponent", "OnPontoonEnteredWater");
+	class UFunction* Func = Class->GetFunction("BuoyancyComponent", "OnPontoonEnteredWater");
 
 	Params::BuoyancyComponent_OnPontoonEnteredWater Parms{};
 
@@ -48,10 +45,7 @@ void UBuoyancyComponent::OnPontoonEnteredWater(const struct FSphericalPontoon& P
 
 void UBuoyancyComponent::OnPontoonExitedWater(const struct FSphericalPontoon& Pontoon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuoyancyComponent", "OnPontoonExitedWater");
+	class UFunction* Func = Class->GetFunction("BuoyancyComponent", "OnPontoonExitedWater");
 
 	Params::BuoyancyComponent_OnPontoonExitedWater Parms{};
 
@@ -75,10 +69,7 @@ void UBuoyancyComponent::OnPontoonExitedWater(const struct FSphericalPontoon& Po
 
 void UNiagaraWaterFunctionLibrary::SetWaterBody(class UNiagaraComponent* NiagaraSystem, const class FString& OverrideName, class AWaterBody* WaterBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NiagaraWaterFunctionLibrary", "SetWaterBody");
+	class UFunction* Func = StaticClass()->GetFunction("NiagaraWaterFunctionLibrary", "SetWaterBody");
 
 	Params::NiagaraWaterFunctionLibrary_SetWaterBody Parms{};
 
@@ -102,10 +93,7 @@ void UNiagaraWaterFunctionLibrary::SetWaterBody(class UNiagaraComponent* Niagara
 
 class UMaterialInstanceDynamic* AWaterBody::GetRiverToLakeTransitionMaterialInstance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "GetRiverToLakeTransitionMaterialInstance");
+	class UFunction* Func = Class->GetFunction("WaterBody", "GetRiverToLakeTransitionMaterialInstance");
 
 	Params::WaterBody_GetRiverToLakeTransitionMaterialInstance Parms{};
 
@@ -127,10 +115,7 @@ class UMaterialInstanceDynamic* AWaterBody::GetRiverToLakeTransitionMaterialInst
 
 class UMaterialInstanceDynamic* AWaterBody::GetRiverToOceanTransitionMaterialInstance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "GetRiverToOceanTransitionMaterialInstance");
+	class UFunction* Func = Class->GetFunction("WaterBody", "GetRiverToOceanTransitionMaterialInstance");
 
 	Params::WaterBody_GetRiverToOceanTransitionMaterialInstance Parms{};
 
@@ -152,10 +137,7 @@ class UMaterialInstanceDynamic* AWaterBody::GetRiverToOceanTransitionMaterialIns
 
 class UMaterialInstanceDynamic* AWaterBody::GetUnderwaterPostProcessMaterialInstance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "GetUnderwaterPostProcessMaterialInstance");
+	class UFunction* Func = Class->GetFunction("WaterBody", "GetUnderwaterPostProcessMaterialInstance");
 
 	Params::WaterBody_GetUnderwaterPostProcessMaterialInstance Parms{};
 
@@ -177,10 +159,7 @@ class UMaterialInstanceDynamic* AWaterBody::GetUnderwaterPostProcessMaterialInst
 
 class UMaterialInstanceDynamic* AWaterBody::GetWaterMaterialInstance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "GetWaterMaterialInstance");
+	class UFunction* Func = Class->GetFunction("WaterBody", "GetWaterMaterialInstance");
 
 	Params::WaterBody_GetWaterMaterialInstance Parms{};
 
@@ -203,10 +182,7 @@ class UMaterialInstanceDynamic* AWaterBody::GetWaterMaterialInstance()
 
 void AWaterBody::OnWaterBodyChanged(bool bShapeOrPositionChanged, bool bWeightmapSettingsChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "OnWaterBodyChanged");
+	class UFunction* Func = Class->GetFunction("WaterBody", "OnWaterBodyChanged");
 
 	Params::WaterBody_OnWaterBodyChanged Parms{};
 
@@ -227,10 +203,7 @@ void AWaterBody::OnWaterBodyChanged(bool bShapeOrPositionChanged, bool bWeightma
 
 void AWaterBody::OnWaterBodyFinishedUpdating()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "OnWaterBodyFinishedUpdating");
+	class UFunction* Func = Class->GetFunction("WaterBody", "OnWaterBodyFinishedUpdating");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,10 +216,7 @@ void AWaterBody::OnWaterBodyFinishedUpdating()
 
 TArray<class AWaterBodyExclusionVolume*> AWaterBody::GetExclusionVolumes() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "GetExclusionVolumes");
+	class UFunction* Func = Class->GetFunction("WaterBody", "GetExclusionVolumes");
 
 	Params::WaterBody_GetExclusionVolumes Parms{};
 
@@ -268,10 +238,7 @@ TArray<class AWaterBodyExclusionVolume*> AWaterBody::GetExclusionVolumes() const
 
 TArray<class AWaterBodyIsland*> AWaterBody::GetIslands() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "GetIslands");
+	class UFunction* Func = Class->GetFunction("WaterBody", "GetIslands");
 
 	Params::WaterBody_GetIslands Parms{};
 
@@ -293,10 +260,7 @@ TArray<class AWaterBodyIsland*> AWaterBody::GetIslands() const
 
 TArray<class UStaticMeshComponent*> AWaterBody::GetWaterMeshComponents() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "GetWaterMeshComponents");
+	class UFunction* Func = Class->GetFunction("WaterBody", "GetWaterMeshComponents");
 
 	Params::WaterBody_GetWaterMeshComponents Parms{};
 
@@ -318,10 +282,7 @@ TArray<class UStaticMeshComponent*> AWaterBody::GetWaterMeshComponents() const
 
 class UWaterSplineComponent* AWaterBody::GetWaterSpline() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBody", "GetWaterSpline");
+	class UFunction* Func = Class->GetFunction("WaterBody", "GetWaterSpline");
 
 	Params::WaterBody_GetWaterSpline Parms{};
 
@@ -343,10 +304,7 @@ class UWaterSplineComponent* AWaterBody::GetWaterSpline() const
 
 class UWaterSplineComponent* AWaterBodyIsland::GetWaterSpline() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterBodyIsland", "GetWaterSpline");
+	class UFunction* Func = Class->GetFunction("WaterBodyIsland", "GetWaterSpline");
 
 	Params::WaterBodyIsland_GetWaterSpline Parms{};
 
@@ -368,10 +326,7 @@ class UWaterSplineComponent* AWaterBodyIsland::GetWaterSpline() const
 
 bool UWaterMeshComponent::IsEnabled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterMeshComponent", "IsEnabled");
+	class UFunction* Func = Class->GetFunction("WaterMeshComponent", "IsEnabled");
 
 	Params::WaterMeshComponent_IsEnabled Parms{};
 
@@ -393,10 +348,7 @@ bool UWaterMeshComponent::IsEnabled() const
 
 int32 UWaterSubsystem::GetShallowWaterMaxDynamicForces()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WaterSubsystem", "GetShallowWaterMaxDynamicForces");
+	class UFunction* Func = StaticClass()->GetFunction("WaterSubsystem", "GetShallowWaterMaxDynamicForces");
 
 	Params::WaterSubsystem_GetShallowWaterMaxDynamicForces Parms{};
 
@@ -418,10 +370,7 @@ int32 UWaterSubsystem::GetShallowWaterMaxDynamicForces()
 
 int32 UWaterSubsystem::GetShallowWaterMaxImpulseForces()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WaterSubsystem", "GetShallowWaterMaxImpulseForces");
+	class UFunction* Func = StaticClass()->GetFunction("WaterSubsystem", "GetShallowWaterMaxImpulseForces");
 
 	Params::WaterSubsystem_GetShallowWaterMaxImpulseForces Parms{};
 
@@ -443,10 +392,7 @@ int32 UWaterSubsystem::GetShallowWaterMaxImpulseForces()
 
 int32 UWaterSubsystem::GetShallowWaterSimulationRenderTargetSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("WaterSubsystem", "GetShallowWaterSimulationRenderTargetSize");
+	class UFunction* Func = StaticClass()->GetFunction("WaterSubsystem", "GetShallowWaterSimulationRenderTargetSize");
 
 	Params::WaterSubsystem_GetShallowWaterSimulationRenderTargetSize Parms{};
 
@@ -469,10 +415,7 @@ int32 UWaterSubsystem::GetShallowWaterSimulationRenderTargetSize()
 
 void UWaterSubsystem::PrintToWaterLog(const class FString& Message, bool bWarning)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "PrintToWaterLog");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "PrintToWaterLog");
 
 	Params::WaterSubsystem_PrintToWaterLog Parms{};
 
@@ -495,10 +438,7 @@ void UWaterSubsystem::PrintToWaterLog(const class FString& Message, bool bWarnin
 
 void UWaterSubsystem::SetOceanFloodHeight(float InFloodHeight)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "SetOceanFloodHeight");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "SetOceanFloodHeight");
 
 	Params::WaterSubsystem_SetOceanFloodHeight Parms{};
 
@@ -520,10 +460,7 @@ void UWaterSubsystem::SetOceanFloodHeight(float InFloodHeight)
 
 float UWaterSubsystem::GetCameraUnderwaterDepth() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "GetCameraUnderwaterDepth");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "GetCameraUnderwaterDepth");
 
 	Params::WaterSubsystem_GetCameraUnderwaterDepth Parms{};
 
@@ -545,10 +482,7 @@ float UWaterSubsystem::GetCameraUnderwaterDepth() const
 
 float UWaterSubsystem::GetOceanBaseHeight() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "GetOceanBaseHeight");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "GetOceanBaseHeight");
 
 	Params::WaterSubsystem_GetOceanBaseHeight Parms{};
 
@@ -570,10 +504,7 @@ float UWaterSubsystem::GetOceanBaseHeight() const
 
 float UWaterSubsystem::GetOceanFloodHeight() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "GetOceanFloodHeight");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "GetOceanFloodHeight");
 
 	Params::WaterSubsystem_GetOceanFloodHeight Parms{};
 
@@ -595,10 +526,7 @@ float UWaterSubsystem::GetOceanFloodHeight() const
 
 float UWaterSubsystem::GetOceanTotalHeight() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "GetOceanTotalHeight");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "GetOceanTotalHeight");
 
 	Params::WaterSubsystem_GetOceanTotalHeight Parms{};
 
@@ -620,10 +548,7 @@ float UWaterSubsystem::GetOceanTotalHeight() const
 
 float UWaterSubsystem::GetSmoothedWorldTimeSeconds() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "GetSmoothedWorldTimeSeconds");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "GetSmoothedWorldTimeSeconds");
 
 	Params::WaterSubsystem_GetSmoothedWorldTimeSeconds Parms{};
 
@@ -645,10 +570,7 @@ float UWaterSubsystem::GetSmoothedWorldTimeSeconds() const
 
 bool UWaterSubsystem::IsShallowWaterSimulationEnabled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "IsShallowWaterSimulationEnabled");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "IsShallowWaterSimulationEnabled");
 
 	Params::WaterSubsystem_IsShallowWaterSimulationEnabled Parms{};
 
@@ -670,10 +592,7 @@ bool UWaterSubsystem::IsShallowWaterSimulationEnabled() const
 
 bool UWaterSubsystem::IsUnderwaterPostProcessEnabled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "IsUnderwaterPostProcessEnabled");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "IsUnderwaterPostProcessEnabled");
 
 	Params::WaterSubsystem_IsUnderwaterPostProcessEnabled Parms{};
 
@@ -695,10 +614,7 @@ bool UWaterSubsystem::IsUnderwaterPostProcessEnabled() const
 
 bool UWaterSubsystem::IsWaterRenderingEnabled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WaterSubsystem", "IsWaterRenderingEnabled");
+	class UFunction* Func = Class->GetFunction("WaterSubsystem", "IsWaterRenderingEnabled");
 
 	Params::WaterSubsystem_IsWaterRenderingEnabled Parms{};
 

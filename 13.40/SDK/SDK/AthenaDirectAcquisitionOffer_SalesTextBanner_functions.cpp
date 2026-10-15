@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaDirectAcquisitionOffer_SalesTextBanner_C::ExecuteUbergraph_AthenaDirectAcquisitionOffer_SalesTextBanner(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SalesTextBanner_C", "ExecuteUbergraph_AthenaDirectAcquisitionOffer_SalesTextBanner");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SalesTextBanner_C", "ExecuteUbergraph_AthenaDirectAcquisitionOffer_SalesTextBanner");
 
 	Params::AthenaDirectAcquisitionOffer_SalesTextBanner_C_ExecuteUbergraph_AthenaDirectAcquisitionOffer_SalesTextBanner Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaDirectAcquisitionOffer_SalesTextBanner_C::ExecuteUbergraph_AthenaDir
 
 void UAthenaDirectAcquisitionOffer_SalesTextBanner_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SalesTextBanner_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SalesTextBanner_C", "PreConstruct");
 
 	Params::AthenaDirectAcquisitionOffer_SalesTextBanner_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UAthenaDirectAcquisitionOffer_SalesTextBanner_C::PreConstruct(bool IsDesign
 
 void UAthenaDirectAcquisitionOffer_SalesTextBanner_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SalesTextBanner_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SalesTextBanner_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UAthenaDirectAcquisitionOffer_SalesTextBanner_C::Construct()
 
 void UAthenaDirectAcquisitionOffer_SalesTextBanner_C::Set_Sales_Text(const class FText& Sales_Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SalesTextBanner_C", "Set Sales Text");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SalesTextBanner_C", "Set Sales Text");
 
 	Params::AthenaDirectAcquisitionOffer_SalesTextBanner_C_Set_Sales_Text Parms{};
 

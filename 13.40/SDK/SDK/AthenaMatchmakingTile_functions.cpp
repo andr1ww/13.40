@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaMatchmakingTile_C::ExecuteUbergraph_AthenaMatchmakingTile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "ExecuteUbergraph_AthenaMatchmakingTile");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "ExecuteUbergraph_AthenaMatchmakingTile");
 
 	Params::AthenaMatchmakingTile_C_ExecuteUbergraph_AthenaMatchmakingTile Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaMatchmakingTile_C::ExecuteUbergraph_AthenaMatchmakingTile(int32 Entr
 
 void UAthenaMatchmakingTile_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UAthenaMatchmakingTile_C::BP_OnSelected()
 
 void UAthenaMatchmakingTile_C::UpdateDateTime()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "UpdateDateTime");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "UpdateDateTime");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UAthenaMatchmakingTile_C::UpdateDateTime()
 
 void UAthenaMatchmakingTile_C::PlayTileReveal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "PlayTileReveal");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "PlayTileReveal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UAthenaMatchmakingTile_C::PlayTileReveal()
 
 void UAthenaMatchmakingTile_C::OnCMSDataUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "OnCMSDataUpdated");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "OnCMSDataUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UAthenaMatchmakingTile_C::OnCMSDataUpdated()
 
 void UAthenaMatchmakingTile_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void UAthenaMatchmakingTile_C::Construct()
 
 void UAthenaMatchmakingTile_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void UAthenaMatchmakingTile_C::BP_OnClicked()
 
 void UAthenaMatchmakingTile_C::SetDefaultImage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "SetDefaultImage");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "SetDefaultImage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +117,7 @@ void UAthenaMatchmakingTile_C::SetDefaultImage()
 
 void UAthenaMatchmakingTile_C::UpdateTileAvailability(bool Available)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "UpdateTileAvailability");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "UpdateTileAvailability");
 
 	Params::AthenaMatchmakingTile_C_UpdateTileAvailability Parms{};
 
@@ -159,10 +132,7 @@ void UAthenaMatchmakingTile_C::UpdateTileAvailability(bool Available)
 
 void UAthenaMatchmakingTile_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +143,7 @@ void UAthenaMatchmakingTile_C::BP_OnHovered()
 
 void UAthenaMatchmakingTile_C::OnImageLoadingComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "OnImageLoadingComplete");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "OnImageLoadingComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +154,7 @@ void UAthenaMatchmakingTile_C::OnImageLoadingComplete()
 
 void UAthenaMatchmakingTile_C::TilePlaylistSetAsMatchmakingPlaylist()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "TilePlaylistSetAsMatchmakingPlaylist");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "TilePlaylistSetAsMatchmakingPlaylist");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +167,7 @@ void UAthenaMatchmakingTile_C::TilePlaylistSetAsMatchmakingPlaylist()
 
 void UAthenaMatchmakingTile_C::PlaylistChanged(const struct FPlaylistFrontEndData& PlaylistToRepresent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "PlaylistChanged");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "PlaylistChanged");
 
 	Params::AthenaMatchmakingTile_C_PlaylistChanged Parms{};
 
@@ -223,10 +184,7 @@ void UAthenaMatchmakingTile_C::PlaylistChanged(const struct FPlaylistFrontEndDat
 
 void UAthenaMatchmakingTile_C::SetTileSize(int32 NumRowTiles)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "SetTileSize");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "SetTileSize");
 
 	Params::AthenaMatchmakingTile_C_SetTileSize Parms{};
 
@@ -241,10 +199,7 @@ void UAthenaMatchmakingTile_C::SetTileSize(int32 NumRowTiles)
 
 void UAthenaMatchmakingTile_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +212,7 @@ void UAthenaMatchmakingTile_C::BP_OnDeselected()
 
 void UAthenaMatchmakingTile_C::PlayIntroOrOutro(bool PlayIntro)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingTile_C", "PlayIntroOrOutro");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingTile_C", "PlayIntroOrOutro");
 
 	Params::AthenaMatchmakingTile_C_PlayIntroOrOutro Parms{};
 

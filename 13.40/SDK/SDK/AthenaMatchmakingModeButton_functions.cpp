@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaMatchmakingModeButton_C::ExecuteUbergraph_AthenaMatchmakingModeButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "ExecuteUbergraph_AthenaMatchmakingModeButton");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "ExecuteUbergraph_AthenaMatchmakingModeButton");
 
 	Params::AthenaMatchmakingModeButton_C_ExecuteUbergraph_AthenaMatchmakingModeButton Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaMatchmakingModeButton_C::ExecuteUbergraph_AthenaMatchmakingModeButto
 
 void UAthenaMatchmakingModeButton_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "OnMouseLeave");
 
 	Params::AthenaMatchmakingModeButton_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void UAthenaMatchmakingModeButton_C::OnMouseLeave(const struct FPointerEvent& Mo
 
 void UAthenaMatchmakingModeButton_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "OnMouseEnter");
 
 	Params::AthenaMatchmakingModeButton_C_OnMouseEnter Parms{};
 
@@ -85,10 +76,7 @@ void UAthenaMatchmakingModeButton_C::OnMouseEnter(const struct FGeometry& MyGeom
 
 void UAthenaMatchmakingModeButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "SetTabLabelInfo");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "SetTabLabelInfo");
 
 	Params::AthenaMatchmakingModeButton_C_SetTabLabelInfo Parms{};
 
@@ -106,10 +94,7 @@ void UAthenaMatchmakingModeButton_C::SetTabLabelInfo(const struct FFortTabButton
 
 void UAthenaMatchmakingModeButton_C::PlaylistChanged(class UFortPlaylistAthena* NewPlaylist, const class FText& OverrideName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "PlaylistChanged");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "PlaylistChanged");
 
 	Params::AthenaMatchmakingModeButton_C_PlaylistChanged Parms{};
 
@@ -127,10 +112,7 @@ void UAthenaMatchmakingModeButton_C::PlaylistChanged(class UFortPlaylistAthena* 
 
 void UAthenaMatchmakingModeButton_C::SetSquadFillText(bool bFill)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "SetSquadFillText");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "SetSquadFillText");
 
 	Params::AthenaMatchmakingModeButton_C_SetSquadFillText Parms{};
 
@@ -145,10 +127,7 @@ void UAthenaMatchmakingModeButton_C::SetSquadFillText(bool bFill)
 
 void UAthenaMatchmakingModeButton_C::RefreshFillText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "RefreshFillText");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "RefreshFillText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +140,7 @@ void UAthenaMatchmakingModeButton_C::RefreshFillText()
 
 void UAthenaMatchmakingModeButton_C::RefreshLimitedPoolWarning(bool IsCrossplayEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "RefreshLimitedPoolWarning");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "RefreshLimitedPoolWarning");
 
 	Params::AthenaMatchmakingModeButton_C_RefreshLimitedPoolWarning Parms{};
 

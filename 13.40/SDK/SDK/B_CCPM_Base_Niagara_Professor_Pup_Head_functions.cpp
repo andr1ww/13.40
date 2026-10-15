@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ExecuteUbergraph_B_CCPM_Base_Niagara_Professor_Pup_Head(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ExecuteUbergraph_B_CCPM_Base_Niagara_Professor_Pup_Head");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ExecuteUbergraph_B_CCPM_Base_Niagara_Professor_Pup_Head");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_ExecuteUbergraph_B_CCPM_Base_Niagara_Professor_Pup_Head Parms{};
 
@@ -41,10 +38,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ExecuteUbergraph_B_CCPM_Base_Nia
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnPawnAndPartChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnPawnAndPartChanged");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnPawnAndPartChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnPawnAndPartChanged()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ResetTrue()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ResetTrue");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ResetTrue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ResetTrue()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ResetFalse()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ResetFalse");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ResetFalse");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,10 +75,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ResetFalse()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Character_Movement_Updated(float DeltaSeconds, const struct FVector& OldLocation, const struct FVector& OldVelocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Character Movement Updated");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Character Movement Updated");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_Character_Movement_Updated Parms{};
 
@@ -107,10 +92,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Character_Movement_Updated(float
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnBeginSkydiving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnBeginSkydiving");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnBeginSkydiving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,10 +103,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnBeginSkydiving()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnEndSkydiving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnEndSkydiving");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnEndSkydiving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -135,10 +114,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnEndSkydiving()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ResIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ResIn");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ResIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -149,10 +125,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ResIn()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ResOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ResOut");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "ResOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -163,10 +136,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::ResOut()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Enter_Vehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Enter Vehicle");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Enter Vehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -177,10 +147,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Enter_Vehicle()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Exit_Vehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Exit Vehicle");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Exit Vehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +162,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Exit_Vehicle()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnDayPhaseChanged");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnDayPhaseChanged");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_OnDayPhaseChanged Parms{};
 
@@ -217,10 +181,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnDayPhaseChanged(EFortDayPhase 
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Night_Phase(bool At_Creation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Night Phase");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Night Phase");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_Night_Phase Parms{};
 
@@ -237,10 +198,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Night_Phase(bool At_Creation)
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Evening_Phase(bool At_Creation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Evening Phase");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Evening Phase");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_Evening_Phase Parms{};
 
@@ -257,10 +215,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Evening_Phase(bool At_Creation)
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Day_Phase(bool At_Creation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Day Phase");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Day Phase");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_Day_Phase Parms{};
 
@@ -277,10 +232,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Day_Phase(bool At_Creation)
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Morning_Phase(bool At_Creation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Morning Phase");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "Morning Phase");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_Morning_Phase Parms{};
 
@@ -300,10 +252,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::Morning_Phase(bool At_Creation)
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnHitPawn(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnHitPawn");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnHitPawn");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_OnHitPawn Parms{};
 
@@ -321,10 +270,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnHitPawn(class AActor* SelfActo
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnTargetingOrFirstPersonCameraChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnTargetingOrFirstPersonCameraChanged");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "OnTargetingOrFirstPersonCameraChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -335,10 +281,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::OnTargetingOrFirstPersonCameraCh
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::TimeOfDayChanges__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "TimeOfDayChanges__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "TimeOfDayChanges__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -349,10 +292,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::TimeOfDayChanges__UpdateFunc()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::TimeOfDayChanges__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "TimeOfDayChanges__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "TimeOfDayChanges__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -365,10 +305,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::TimeOfDayChanges__FinishedFunc()
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::getIsDriving(bool* isDriving_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "getIsDriving");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "getIsDriving");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_getIsDriving Parms{};
 
@@ -387,10 +324,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::getIsDriving(bool* isDriving_0)
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable__Color_(class FName Name_0, const struct FLinearColor& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Color)");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Color)");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_set_Niagara_System_User_Variable__Color_ Parms{};
 
@@ -409,10 +343,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable__Float_(class FName Name_0, float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Float)");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Float)");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_set_Niagara_System_User_Variable__Float_ Parms{};
 
@@ -431,10 +362,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable__Int_(class FName Name_0, int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Int)");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Int)");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_set_Niagara_System_User_Variable__Int_ Parms{};
 
@@ -453,10 +381,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable__Vector_(class FName Name_0, const struct FVector& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Vector)");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Vector)");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_set_Niagara_System_User_Variable__Vector_ Parms{};
 
@@ -475,10 +400,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable__Bool_(class FName Name_0, bool Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Bool)");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "set Niagara System User Variable (Bool)");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_set_Niagara_System_User_Variable__Bool_ Parms{};
 
@@ -496,10 +418,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::set_Niagara_System_User_Variable
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::getNiagaraParticles(struct FGameplayTagContainer* Gameplay_Tag_Container)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "getNiagaraParticles");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "getNiagaraParticles");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_getNiagaraParticles Parms{};
 
@@ -517,10 +436,7 @@ void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::getNiagaraParticles(struct FGame
 
 void AB_CCPM_Base_Niagara_Professor_Pup_Head_C::getIsFrontEnd(bool* IsInFrontEnd_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "getIsFrontEnd");
+	class UFunction* Func = Class->GetFunction("B_CCPM_Base_Niagara_Professor_Pup_Head_C", "getIsFrontEnd");
 
 	Params::B_CCPM_Base_Niagara_Professor_Pup_Head_C_getIsFrontEnd Parms{};
 

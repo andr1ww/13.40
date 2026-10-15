@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ASoldierMannequin_Male_C::ExecuteUbergraph_SoldierMannequin_Male(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoldierMannequin_Male_C", "ExecuteUbergraph_SoldierMannequin_Male");
+	class UFunction* Func = Class->GetFunction("SoldierMannequin_Male_C", "ExecuteUbergraph_SoldierMannequin_Male");
 
 	Params::SoldierMannequin_Male_C_ExecuteUbergraph_SoldierMannequin_Male Parms{};
 
@@ -41,10 +38,7 @@ void ASoldierMannequin_Male_C::ExecuteUbergraph_SoldierMannequin_Male(int32 Entr
 
 void ASoldierMannequin_Male_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoldierMannequin_Male_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("SoldierMannequin_Male_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ASoldierMannequin_Male_C::ReceiveDestroyed()
 
 void ASoldierMannequin_Male_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoldierMannequin_Male_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("SoldierMannequin_Male_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

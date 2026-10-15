@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_AppleSun_Passive_C::ExecuteUbergraph_GA_Athena_AppleSun_Passive(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "ExecuteUbergraph_GA_Athena_AppleSun_Passive");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "ExecuteUbergraph_GA_Athena_AppleSun_Passive");
 
 	Params::GA_Athena_AppleSun_Passive_C_ExecuteUbergraph_GA_Athena_AppleSun_Passive Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_AppleSun_Passive_C::ExecuteUbergraph_GA_Athena_AppleSun_Passive(
 
 void UGA_Athena_AppleSun_Passive_C::Remove_Item_From_Inventory_()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Remove Item From Inventory?");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Remove Item From Inventory?");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Athena_AppleSun_Passive_C::Remove_Item_From_Inventory_()
 
 void UGA_Athena_AppleSun_Passive_C::Throw_Server()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Throw_Server");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Throw_Server");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGA_Athena_AppleSun_Passive_C::Throw_Server()
 
 void UGA_Athena_AppleSun_Passive_C::UpdateIsCloseToGround()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "UpdateIsCloseToGround");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "UpdateIsCloseToGround");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UGA_Athena_AppleSun_Passive_C::UpdateIsCloseToGround()
 
 void UGA_Athena_AppleSun_Passive_C::UpdateCanCrashpad()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "UpdateCanCrashpad");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "UpdateCanCrashpad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UGA_Athena_AppleSun_Passive_C::UpdateCanCrashpad()
 
 void UGA_Athena_AppleSun_Passive_C::SpawnProjectile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "SpawnProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "SpawnProjectile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +95,7 @@ void UGA_Athena_AppleSun_Passive_C::SpawnProjectile()
 
 void UGA_Athena_AppleSun_Passive_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_AppleSun_Passive_C_K2_OnEndAbility Parms{};
 
@@ -131,10 +110,7 @@ void UGA_Athena_AppleSun_Passive_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_AppleSun_Passive_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -148,10 +124,7 @@ void UGA_Athena_AppleSun_Passive_C::K2_ActivateAbility()
 
 void UGA_Athena_AppleSun_Passive_C::Triggered_6CF7877A4087E6390DA1828899D54EFB(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Triggered_6CF7877A4087E6390DA1828899D54EFB");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Triggered_6CF7877A4087E6390DA1828899D54EFB");
 
 	Params::GA_Athena_AppleSun_Passive_C_Triggered_6CF7877A4087E6390DA1828899D54EFB Parms{};
 
@@ -170,10 +143,7 @@ void UGA_Athena_AppleSun_Passive_C::Triggered_6CF7877A4087E6390DA1828899D54EFB(c
 
 void UGA_Athena_AppleSun_Passive_C::Cancelled_6CF7877A4087E6390DA1828899D54EFB(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Cancelled_6CF7877A4087E6390DA1828899D54EFB");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Cancelled_6CF7877A4087E6390DA1828899D54EFB");
 
 	Params::GA_Athena_AppleSun_Passive_C_Cancelled_6CF7877A4087E6390DA1828899D54EFB Parms{};
 
@@ -192,10 +162,7 @@ void UGA_Athena_AppleSun_Passive_C::Cancelled_6CF7877A4087E6390DA1828899D54EFB(c
 
 void UGA_Athena_AppleSun_Passive_C::Completed_6CF7877A4087E6390DA1828899D54EFB(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Completed_6CF7877A4087E6390DA1828899D54EFB");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Completed_6CF7877A4087E6390DA1828899D54EFB");
 
 	Params::GA_Athena_AppleSun_Passive_C_Completed_6CF7877A4087E6390DA1828899D54EFB Parms{};
 
@@ -214,10 +181,7 @@ void UGA_Athena_AppleSun_Passive_C::Completed_6CF7877A4087E6390DA1828899D54EFB(c
 
 void UGA_Athena_AppleSun_Passive_C::Triggered_E2E08D9245B8C2437B278CACDF6A674C(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Triggered_E2E08D9245B8C2437B278CACDF6A674C");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Triggered_E2E08D9245B8C2437B278CACDF6A674C");
 
 	Params::GA_Athena_AppleSun_Passive_C_Triggered_E2E08D9245B8C2437B278CACDF6A674C Parms{};
 
@@ -236,10 +200,7 @@ void UGA_Athena_AppleSun_Passive_C::Triggered_E2E08D9245B8C2437B278CACDF6A674C(c
 
 void UGA_Athena_AppleSun_Passive_C::Cancelled_E2E08D9245B8C2437B278CACDF6A674C(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Cancelled_E2E08D9245B8C2437B278CACDF6A674C");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Cancelled_E2E08D9245B8C2437B278CACDF6A674C");
 
 	Params::GA_Athena_AppleSun_Passive_C_Cancelled_E2E08D9245B8C2437B278CACDF6A674C Parms{};
 
@@ -258,10 +219,7 @@ void UGA_Athena_AppleSun_Passive_C::Cancelled_E2E08D9245B8C2437B278CACDF6A674C(c
 
 void UGA_Athena_AppleSun_Passive_C::Completed_E2E08D9245B8C2437B278CACDF6A674C(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Completed_E2E08D9245B8C2437B278CACDF6A674C");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "Completed_E2E08D9245B8C2437B278CACDF6A674C");
 
 	Params::GA_Athena_AppleSun_Passive_C_Completed_E2E08D9245B8C2437B278CACDF6A674C Parms{};
 
@@ -279,10 +237,7 @@ void UGA_Athena_AppleSun_Passive_C::Completed_E2E08D9245B8C2437B278CACDF6A674C(c
 
 void UGA_Athena_AppleSun_Passive_C::EventReceived_88451BF04FEA60EEE79926856BA05A42(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "EventReceived_88451BF04FEA60EEE79926856BA05A42");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "EventReceived_88451BF04FEA60EEE79926856BA05A42");
 
 	Params::GA_Athena_AppleSun_Passive_C_EventReceived_88451BF04FEA60EEE79926856BA05A42 Parms{};
 
@@ -299,10 +254,7 @@ void UGA_Athena_AppleSun_Passive_C::EventReceived_88451BF04FEA60EEE79926856BA05A
 
 void UGA_Athena_AppleSun_Passive_C::HasEnoughStacks(bool* Return)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "HasEnoughStacks");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_Passive_C", "HasEnoughStacks");
 
 	Params::GA_Athena_AppleSun_Passive_C_HasEnoughStacks Parms{};
 

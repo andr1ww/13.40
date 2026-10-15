@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UItemDescriptionDetailWidget_C::HandleItemChanged(bool ItemChanged, bool AmmoChanged, bool IngredientsChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandleItemChanged");
+	class UFunction* Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandleItemChanged");
 
 	Params::ItemDescriptionDetailWidget_C_HandleItemChanged Parms{};
 
@@ -45,10 +42,7 @@ void UItemDescriptionDetailWidget_C::HandleItemChanged(bool ItemChanged, bool Am
 
 void UItemDescriptionDetailWidget_C::UpdateQuantityTextBlock()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "UpdateQuantityTextBlock");
+	class UFunction* Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "UpdateQuantityTextBlock");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -61,10 +55,7 @@ void UItemDescriptionDetailWidget_C::UpdateQuantityTextBlock()
 
 void UItemDescriptionDetailWidget_C::IsItemSimple(bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "IsItemSimple");
+	class UFunction* Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "IsItemSimple");
 
 	Params::ItemDescriptionDetailWidget_C_IsItemSimple Parms{};
 
@@ -80,10 +71,7 @@ void UItemDescriptionDetailWidget_C::IsItemSimple(bool* Result)
 
 void UItemDescriptionDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -94,10 +82,7 @@ void UItemDescriptionDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDescriptionDetailWidget_C::HandlePreDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandlePreDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandlePreDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -108,10 +93,7 @@ void UItemDescriptionDetailWidget_C::HandlePreDifferentItemToDetailSet()
 
 void UItemDescriptionDetailWidget_C::HandleQuantityOverrideChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandleQuantityOverrideChanged");
+	class UFunction* Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandleQuantityOverrideChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -124,10 +106,7 @@ void UItemDescriptionDetailWidget_C::HandleQuantityOverrideChanged()
 
 void UItemDescriptionDetailWidget_C::ExecuteUbergraph_ItemDescriptionDetailWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "ExecuteUbergraph_ItemDescriptionDetailWidget");
+	class UFunction* Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "ExecuteUbergraph_ItemDescriptionDetailWidget");
 
 	Params::ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget Parms{};
 

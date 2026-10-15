@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_HeldObjectSocketManager_C::ExecuteUbergraph_B_HeldObjectSocketManager(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocketManager_C", "ExecuteUbergraph_B_HeldObjectSocketManager");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocketManager_C", "ExecuteUbergraph_B_HeldObjectSocketManager");
 
 	Params::B_HeldObjectSocketManager_C_ExecuteUbergraph_B_HeldObjectSocketManager Parms{};
 
@@ -41,10 +38,7 @@ void AB_HeldObjectSocketManager_C::ExecuteUbergraph_B_HeldObjectSocketManager(in
 
 void AB_HeldObjectSocketManager_C::OnCombinationCorrect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocketManager_C", "OnCombinationCorrect");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocketManager_C", "OnCombinationCorrect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_HeldObjectSocketManager_C::OnCombinationCorrect()
 
 void AB_HeldObjectSocketManager_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocketManager_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocketManager_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AB_HeldObjectSocketManager_C::ReceiveBeginPlay()
 
 void AB_HeldObjectSocketManager_C::UpdateHeldObjectTags(class AB_HeldObjectSocket_C* ChangedSocket)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocketManager_C", "UpdateHeldObjectTags");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocketManager_C", "UpdateHeldObjectTags");
 
 	Params::B_HeldObjectSocketManager_C_UpdateHeldObjectTags Parms{};
 
@@ -94,10 +82,7 @@ void AB_HeldObjectSocketManager_C::UpdateHeldObjectTags(class AB_HeldObjectSocke
 
 void AB_HeldObjectSocketManager_C::VerifyHeldObjectTags(TArray<struct FGameplayTagContainer>& CorrectTags, TArray<struct FGameplayTagContainer>& CurrentTags_0, bool OrderMatters, bool* IsValidMatch)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocketManager_C", "VerifyHeldObjectTags");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocketManager_C", "VerifyHeldObjectTags");
 
 	Params::B_HeldObjectSocketManager_C_VerifyHeldObjectTags Parms{};
 
@@ -120,10 +105,7 @@ void AB_HeldObjectSocketManager_C::VerifyHeldObjectTags(TArray<struct FGameplayT
 
 void AB_HeldObjectSocketManager_C::CheckTagMatches()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocketManager_C", "CheckTagMatches");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocketManager_C", "CheckTagMatches");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -134,10 +116,7 @@ void AB_HeldObjectSocketManager_C::CheckTagMatches()
 
 void AB_HeldObjectSocketManager_C::OnRep_CombinationCorrect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocketManager_C", "OnRep_CombinationCorrect");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocketManager_C", "OnRep_CombinationCorrect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

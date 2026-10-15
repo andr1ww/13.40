@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_Athena_Lock_Parent_C::ExecuteUbergraph_BGA_Athena_Lock_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ExecuteUbergraph_BGA_Athena_Lock_Parent");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ExecuteUbergraph_BGA_Athena_Lock_Parent");
 
 	Params::BGA_Athena_Lock_Parent_C_ExecuteUbergraph_BGA_Athena_Lock_Parent Parms{};
 
@@ -50,10 +47,7 @@ void ABGA_Athena_Lock_Parent_C::ExecuteUbergraph_BGA_Athena_Lock_Parent(int32 En
 
 void ABGA_Athena_Lock_Parent_C::ParentActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ParentActorDied");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ParentActorDied");
 
 	Params::BGA_Athena_Lock_Parent_C_ParentActorDied Parms{};
 
@@ -75,10 +69,7 @@ void ABGA_Athena_Lock_Parent_C::ParentActorDied(class AActor* DamagedActor, floa
 
 void ABGA_Athena_Lock_Parent_C::NotEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "NotEnabled");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "NotEnabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +80,7 @@ void ABGA_Athena_Lock_Parent_C::NotEnabled()
 
 void ABGA_Athena_Lock_Parent_C::UnlockOpenDoor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "UnlockOpenDoor");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "UnlockOpenDoor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +91,7 @@ void ABGA_Athena_Lock_Parent_C::UnlockOpenDoor()
 
 void ABGA_Athena_Lock_Parent_C::LockCloseDoor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "LockCloseDoor");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "LockCloseDoor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +102,7 @@ void ABGA_Athena_Lock_Parent_C::LockCloseDoor()
 
 void ABGA_Athena_Lock_Parent_C::OpenContainers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OpenContainers");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OpenContainers");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +113,7 @@ void ABGA_Athena_Lock_Parent_C::OpenContainers()
 
 void ABGA_Athena_Lock_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -148,10 +127,7 @@ void ABGA_Athena_Lock_Parent_C::ReceiveBeginPlay()
 
 void ABGA_Athena_Lock_Parent_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BlueprintOnInteract");
 
 	Params::BGA_Athena_Lock_Parent_C_BlueprintOnInteract Parms{};
 
@@ -167,10 +143,7 @@ void ABGA_Athena_Lock_Parent_C::BlueprintOnInteract(const class AFortPawn* Inter
 
 void ABGA_Athena_Lock_Parent_C::TimedRelock()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "TimedRelock");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "TimedRelock");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -183,10 +156,7 @@ void ABGA_Athena_Lock_Parent_C::TimedRelock()
 
 void ABGA_Athena_Lock_Parent_C::SetLock(Enum_Athena_Lock LockState_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "SetLock");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "SetLock");
 
 	Params::BGA_Athena_Lock_Parent_C_SetLock Parms{};
 
@@ -201,10 +171,7 @@ void ABGA_Athena_Lock_Parent_C::SetLock(Enum_Athena_Lock LockState_0)
 
 void ABGA_Athena_Lock_Parent_C::ApplyFailCheckEffect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ApplyFailCheckEffect");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ApplyFailCheckEffect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +182,7 @@ void ABGA_Athena_Lock_Parent_C::ApplyFailCheckEffect()
 
 void ABGA_Athena_Lock_Parent_C::HideAndKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "HideAndKill");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "HideAndKill");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -229,10 +193,7 @@ void ABGA_Athena_Lock_Parent_C::HideAndKill()
 
 void ABGA_Athena_Lock_Parent_C::BndEvt__FortLinkToActor_K2Node_ComponentBoundEvent_0_OnLinkedActorDestroyed__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BndEvt__FortLinkToActor_K2Node_ComponentBoundEvent_0_OnLinkedActorDestroyed__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BndEvt__FortLinkToActor_K2Node_ComponentBoundEvent_0_OnLinkedActorDestroyed__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,10 +204,7 @@ void ABGA_Athena_Lock_Parent_C::BndEvt__FortLinkToActor_K2Node_ComponentBoundEve
 
 void ABGA_Athena_Lock_Parent_C::OnUnLocked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnUnLocked");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnUnLocked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +215,7 @@ void ABGA_Athena_Lock_Parent_C::OnUnLocked()
 
 void ABGA_Athena_Lock_Parent_C::OnLocked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnLocked");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnLocked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -273,10 +228,7 @@ void ABGA_Athena_Lock_Parent_C::OnLocked()
 
 void ABGA_Athena_Lock_Parent_C::OnFirstInteract(class AFortPawn* InteractingPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnFirstInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnFirstInteract");
 
 	Params::BGA_Athena_Lock_Parent_C_OnFirstInteract Parms{};
 
@@ -293,10 +245,7 @@ void ABGA_Athena_Lock_Parent_C::OnFirstInteract(class AFortPawn* InteractingPawn
 
 void ABGA_Athena_Lock_Parent_C::OnSecondInteract(class AFortPawn* InteractingPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnSecondInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnSecondInteract");
 
 	Params::BGA_Athena_Lock_Parent_C_OnSecondInteract Parms{};
 
@@ -315,10 +264,7 @@ void ABGA_Athena_Lock_Parent_C::OnSecondInteract(class AFortPawn* InteractingPaw
 
 void ABGA_Athena_Lock_Parent_C::OnReady_19560710434050E125B3ADA0163CD609(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnReady_19560710434050E125B3ADA0163CD609");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnReady_19560710434050E125B3ADA0163CD609");
 
 	Params::BGA_Athena_Lock_Parent_C_OnReady_19560710434050E125B3ADA0163CD609 Parms{};
 
@@ -335,10 +281,7 @@ void ABGA_Athena_Lock_Parent_C::OnReady_19560710434050E125B3ADA0163CD609(class A
 
 void ABGA_Athena_Lock_Parent_C::OnRep_LockState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnRep_LockState");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnRep_LockState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -349,10 +292,7 @@ void ABGA_Athena_Lock_Parent_C::OnRep_LockState()
 
 void ABGA_Athena_Lock_Parent_C::OnRep_EverInteractSetLock()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnRep_EverInteractSetLock");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "OnRep_EverInteractSetLock");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -367,10 +307,7 @@ void ABGA_Athena_Lock_Parent_C::OnRep_EverInteractSetLock()
 
 void ABGA_Athena_Lock_Parent_C::LockCheck(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, bool* CheckPassed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "LockCheck");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "LockCheck");
 
 	Params::BGA_Athena_Lock_Parent_C_LockCheck Parms{};
 
@@ -394,10 +331,7 @@ void ABGA_Athena_Lock_Parent_C::LockCheck(const class AFortPawn* InteractingPawn
 
 bool ABGA_Athena_Lock_Parent_C::ShouldDie(float Damage, class AController* EventInstigator, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ShouldDie");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "ShouldDie");
 
 	Params::BGA_Athena_Lock_Parent_C_ShouldDie Parms{};
 
@@ -418,10 +352,7 @@ bool ABGA_Athena_Lock_Parent_C::ShouldDie(float Damage, class AController* Event
 
 void ABGA_Athena_Lock_Parent_C::Lock_Set_Interact_Collision(bool On)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "Lock Set Interact Collision");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "Lock Set Interact Collision");
 
 	Params::BGA_Athena_Lock_Parent_C_Lock_Set_Interact_Collision Parms{};
 
@@ -440,10 +371,7 @@ void ABGA_Athena_Lock_Parent_C::Lock_Set_Interact_Collision(bool On)
 
 class FText ABGA_Athena_Lock_Parent_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BlueprintGetInteractionString");
 
 	Params::BGA_Athena_Lock_Parent_C_BlueprintGetInteractionString Parms{};
 
@@ -466,10 +394,7 @@ class FText ABGA_Athena_Lock_Parent_C::BlueprintGetInteractionString(const class
 
 bool ABGA_Athena_Lock_Parent_C::BlueprintGetInteractionTime(const class AFortPawn* InteractingPawn, float* OutInteractionTime, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BlueprintGetInteractionTime");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BlueprintGetInteractionTime");
 
 	Params::BGA_Athena_Lock_Parent_C_BlueprintGetInteractionTime Parms{};
 
@@ -495,10 +420,7 @@ bool ABGA_Athena_Lock_Parent_C::BlueprintGetInteractionTime(const class AFortPaw
 
 bool ABGA_Athena_Lock_Parent_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Lock_Parent_C", "BlueprintCanInteract");
 
 	Params::BGA_Athena_Lock_Parent_C_BlueprintCanInteract Parms{};
 

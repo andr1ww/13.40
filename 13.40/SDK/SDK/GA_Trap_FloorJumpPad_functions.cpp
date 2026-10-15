@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Trap_FloorJumpPad_C::ExecuteUbergraph_GA_Trap_FloorJumpPad(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "ExecuteUbergraph_GA_Trap_FloorJumpPad");
+	class UFunction* Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "ExecuteUbergraph_GA_Trap_FloorJumpPad");
 
 	Params::GA_Trap_FloorJumpPad_C_ExecuteUbergraph_GA_Trap_FloorJumpPad Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Trap_FloorJumpPad_C::ExecuteUbergraph_GA_Trap_FloorJumpPad(int32 EntryP
 
 void UGA_Trap_FloorJumpPad_C::PlayPlayerFX(class AFortPlayerPawn* Player)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "PlayPlayerFX");
+	class UFunction* Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "PlayPlayerFX");
 
 	Params::GA_Trap_FloorJumpPad_C_PlayPlayerFX Parms{};
 
@@ -64,10 +58,7 @@ void UGA_Trap_FloorJumpPad_C::PlayPlayerFX(class AFortPlayerPawn* Player)
 
 void UGA_Trap_FloorJumpPad_C::Targeted_E91C59AB43D826926CE5CEAA22E84570(const struct FGameplayAbilityTargetDataHandle& TargetData_0, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "Targeted_E91C59AB43D826926CE5CEAA22E84570");
+	class UFunction* Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "Targeted_E91C59AB43D826926CE5CEAA22E84570");
 
 	Params::GA_Trap_FloorJumpPad_C_Targeted_E91C59AB43D826926CE5CEAA22E84570 Parms{};
 
@@ -86,10 +77,7 @@ void UGA_Trap_FloorJumpPad_C::Targeted_E91C59AB43D826926CE5CEAA22E84570(const st
 
 void UGA_Trap_FloorJumpPad_C::Cancelled_E91C59AB43D826926CE5CEAA22E84570(const struct FGameplayAbilityTargetDataHandle& TargetData_0, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "Cancelled_E91C59AB43D826926CE5CEAA22E84570");
+	class UFunction* Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "Cancelled_E91C59AB43D826926CE5CEAA22E84570");
 
 	Params::GA_Trap_FloorJumpPad_C_Cancelled_E91C59AB43D826926CE5CEAA22E84570 Parms{};
 
@@ -105,10 +93,7 @@ void UGA_Trap_FloorJumpPad_C::Cancelled_E91C59AB43D826926CE5CEAA22E84570(const s
 
 void UGA_Trap_FloorJumpPad_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Trap_FloorJumpPad_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

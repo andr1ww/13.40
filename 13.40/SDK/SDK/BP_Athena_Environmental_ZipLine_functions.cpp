@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Athena_Environmental_ZipLine_C::ExecuteUbergraph_BP_Athena_Environmental_ZipLine(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "ExecuteUbergraph_BP_Athena_Environmental_ZipLine");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "ExecuteUbergraph_BP_Athena_Environmental_ZipLine");
 
 	Params::BP_Athena_Environmental_ZipLine_C_ExecuteUbergraph_BP_Athena_Environmental_ZipLine Parms{};
 
@@ -46,10 +43,7 @@ void ABP_Athena_Environmental_ZipLine_C::ExecuteUbergraph_BP_Athena_Environmenta
 
 void ABP_Athena_Environmental_ZipLine_C::HandleOnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnEndOverlap");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnEndOverlap");
 
 	Params::BP_Athena_Environmental_ZipLine_C_HandleOnEndOverlap Parms{};
 
@@ -74,10 +68,7 @@ void ABP_Athena_Environmental_ZipLine_C::HandleOnEndOverlap(class UPrimitiveComp
 
 void ABP_Athena_Environmental_ZipLine_C::HandleOnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnBeginOverlap");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnBeginOverlap");
 
 	Params::BP_Athena_Environmental_ZipLine_C_HandleOnBeginOverlap Parms{};
 
@@ -101,10 +92,7 @@ void ABP_Athena_Environmental_ZipLine_C::HandleOnBeginOverlap(class UPrimitiveCo
 
 void ABP_Athena_Environmental_ZipLine_C::HandleOnMovementModeChanged(class ACharacter* Character, EMovementMode PrevMovementMode, uint8 PreviousCustomMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnMovementModeChanged");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnMovementModeChanged");
 
 	Params::BP_Athena_Environmental_ZipLine_C_HandleOnMovementModeChanged Parms{};
 
@@ -121,10 +109,7 @@ void ABP_Athena_Environmental_ZipLine_C::HandleOnMovementModeChanged(class AChar
 
 void ABP_Athena_Environmental_ZipLine_C::HandleOnMapInfoInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnMapInfoInitialized");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnMapInfoInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -135,10 +120,7 @@ void ABP_Athena_Environmental_ZipLine_C::HandleOnMapInfoInitialized()
 
 void ABP_Athena_Environmental_ZipLine_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -149,10 +131,7 @@ void ABP_Athena_Environmental_ZipLine_C::ReceiveBeginPlay()
 
 void ABP_Athena_Environmental_ZipLine_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +144,7 @@ void ABP_Athena_Environmental_ZipLine_C::UserConstructionScript()
 
 void ABP_Athena_Environmental_ZipLine_C::StartZipLining(class AFortPlayerPawn* FortPlayerPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "StartZipLining");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "StartZipLining");
 
 	Params::BP_Athena_Environmental_ZipLine_C_StartZipLining Parms{};
 
@@ -187,10 +163,7 @@ void ABP_Athena_Environmental_ZipLine_C::StartZipLining(class AFortPlayerPawn* F
 
 void ABP_Athena_Environmental_ZipLine_C::GetCharacterCustomMovementMode(class APawn* Character, EFortCustomMovement* CustomMovementMode, EMovementMode* MovementMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "GetCharacterCustomMovementMode");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "GetCharacterCustomMovementMode");
 
 	Params::BP_Athena_Environmental_ZipLine_C_GetCharacterCustomMovementMode Parms{};
 
@@ -213,10 +186,7 @@ void ABP_Athena_Environmental_ZipLine_C::GetCharacterCustomMovementMode(class AP
 
 void ABP_Athena_Environmental_ZipLine_C::QuestCheckForUse(class AFortPlayerController* FortPlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "QuestCheckForUse");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "QuestCheckForUse");
 
 	Params::BP_Athena_Environmental_ZipLine_C_QuestCheckForUse Parms{};
 
@@ -234,10 +204,7 @@ void ABP_Athena_Environmental_ZipLine_C::QuestCheckForUse(class AFortPlayerContr
 
 void ABP_Athena_Environmental_ZipLine_C::CheckForBuildings(class AFortPlayerPawn* Player, bool* BuildingNearby_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "CheckForBuildings");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "CheckForBuildings");
 
 	Params::BP_Athena_Environmental_ZipLine_C_CheckForBuildings Parms{};
 
@@ -257,10 +224,7 @@ void ABP_Athena_Environmental_ZipLine_C::CheckForBuildings(class AFortPlayerPawn
 
 void ABP_Athena_Environmental_ZipLine_C::HandleEnterZipline(class AFortPlayerPawn* InPlayerPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleEnterZipline");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleEnterZipline");
 
 	Params::BP_Athena_Environmental_ZipLine_C_HandleEnterZipline Parms{};
 
@@ -275,10 +239,7 @@ void ABP_Athena_Environmental_ZipLine_C::HandleEnterZipline(class AFortPlayerPaw
 
 void ABP_Athena_Environmental_ZipLine_C::Setup_Overlap_Bindings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "Setup Overlap Bindings");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "Setup Overlap Bindings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -289,10 +250,7 @@ void ABP_Athena_Environmental_ZipLine_C::Setup_Overlap_Bindings()
 
 void ABP_Athena_Environmental_ZipLine_C::CalculatePositionsOfPoles()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "CalculatePositionsOfPoles");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "CalculatePositionsOfPoles");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -308,10 +266,7 @@ void ABP_Athena_Environmental_ZipLine_C::CalculatePositionsOfPoles()
 
 bool ABP_Athena_Environmental_ZipLine_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "BlueprintCanInteract");
 
 	Params::BP_Athena_Environmental_ZipLine_C_BlueprintCanInteract Parms{};
 

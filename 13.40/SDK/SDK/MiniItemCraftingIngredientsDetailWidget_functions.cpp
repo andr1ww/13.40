@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMiniItemCraftingIngredientsDetailWidget_C::ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget");
+	class UFunction* Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget");
 
 	Params::MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget Parms{};
 
@@ -41,10 +38,7 @@ void UMiniItemCraftingIngredientsDetailWidget_C::ExecuteUbergraph_MiniItemCrafti
 
 void UMiniItemCraftingIngredientsDetailWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UMiniItemCraftingIngredientsDetailWidget_C::Construct()
 
 void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
+	class UFunction* Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompar
 
 void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -86,10 +74,7 @@ void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetail
 
 void UMiniItemCraftingIngredientsDetailWidget_C::GetRecipeItemQuantityPairs(class UFortItem* Item, TArray<struct FFortItemQuantityPair>* Pairs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "GetRecipeItemQuantityPairs");
+	class UFunction* Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "GetRecipeItemQuantityPairs");
 
 	Params::MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs Parms{};
 

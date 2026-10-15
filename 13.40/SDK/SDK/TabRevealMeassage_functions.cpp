@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UTabRevealMeassage_C::AutoClose()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabRevealMeassage_C", "AutoClose");
+	class UFunction* Func = Class->GetFunction("TabRevealMeassage_C", "AutoClose");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UTabRevealMeassage_C::AutoClose()
 
 void UTabRevealMeassage_C::ToggleTimer(bool Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabRevealMeassage_C", "ToggleTimer");
+	class UFunction* Func = Class->GetFunction("TabRevealMeassage_C", "ToggleTimer");
 
 	Params::TabRevealMeassage_C_ToggleTimer Parms{};
 
@@ -55,10 +49,7 @@ void UTabRevealMeassage_C::ToggleTimer(bool Enabled)
 
 void UTabRevealMeassage_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabRevealMeassage_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("TabRevealMeassage_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UTabRevealMeassage_C::BP_OnActivated()
 
 void UTabRevealMeassage_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabRevealMeassage_C", "Construct");
+	class UFunction* Func = Class->GetFunction("TabRevealMeassage_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UTabRevealMeassage_C::Construct()
 
 void UTabRevealMeassage_C::CloseWindow()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabRevealMeassage_C", "CloseWindow");
+	class UFunction* Func = Class->GetFunction("TabRevealMeassage_C", "CloseWindow");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UTabRevealMeassage_C::CloseWindow()
 
 void UTabRevealMeassage_C::ExecuteUbergraph_TabRevealMeassage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabRevealMeassage_C", "ExecuteUbergraph_TabRevealMeassage");
+	class UFunction* Func = Class->GetFunction("TabRevealMeassage_C", "ExecuteUbergraph_TabRevealMeassage");
 
 	Params::TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAT_CommandoActiveAbility_C::ExecuteUbergraph_GAT_CommandoActiveAbility(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_CommandoActiveAbility_C", "ExecuteUbergraph_GAT_CommandoActiveAbility");
+	class UFunction* Func = Class->GetFunction("GAT_CommandoActiveAbility_C", "ExecuteUbergraph_GAT_CommandoActiveAbility");
 
 	Params::GAT_CommandoActiveAbility_C_ExecuteUbergraph_GAT_CommandoActiveAbility Parms{};
 
@@ -41,10 +38,7 @@ void UGAT_CommandoActiveAbility_C::ExecuteUbergraph_GAT_CommandoActiveAbility(in
 
 void UGAT_CommandoActiveAbility_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_CommandoActiveAbility_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GAT_CommandoActiveAbility_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

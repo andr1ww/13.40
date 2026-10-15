@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Athena_HidingProp_PropTeleporting_C::ExecuteUbergraph_GCNL_Athena_HidingProp_PropTeleporting(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_PropTeleporting_C", "ExecuteUbergraph_GCNL_Athena_HidingProp_PropTeleporting");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_PropTeleporting_C", "ExecuteUbergraph_GCNL_Athena_HidingProp_PropTeleporting");
 
 	Params::GCNL_Athena_HidingProp_PropTeleporting_C_ExecuteUbergraph_GCNL_Athena_HidingProp_PropTeleporting Parms{};
 
@@ -41,10 +38,7 @@ void AGCNL_Athena_HidingProp_PropTeleporting_C::ExecuteUbergraph_GCNL_Athena_Hid
 
 void AGCNL_Athena_HidingProp_PropTeleporting_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_PropTeleporting_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_PropTeleporting_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

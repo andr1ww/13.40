@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USourceEffectChorusPreset::SetDepthModulator(const struct FSoundModulationDestinationSettings& InModulatorSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectChorusPreset", "SetDepthModulator");
+	class UFunction* Func = Class->GetFunction("SourceEffectChorusPreset", "SetDepthModulator");
 
 	Params::SourceEffectChorusPreset_SetDepthModulator Parms{};
 
@@ -48,10 +45,7 @@ void USourceEffectChorusPreset::SetDepthModulator(const struct FSoundModulationD
 
 void USourceEffectChorusPreset::SetDryModulator(const struct FSoundModulationDestinationSettings& InModulatorSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectChorusPreset", "SetDryModulator");
+	class UFunction* Func = Class->GetFunction("SourceEffectChorusPreset", "SetDryModulator");
 
 	Params::SourceEffectChorusPreset_SetDryModulator Parms{};
 
@@ -73,10 +67,7 @@ void USourceEffectChorusPreset::SetDryModulator(const struct FSoundModulationDes
 
 void USourceEffectChorusPreset::SetFeedbackModulator(const struct FSoundModulationDestinationSettings& InModulatorSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectChorusPreset", "SetFeedbackModulator");
+	class UFunction* Func = Class->GetFunction("SourceEffectChorusPreset", "SetFeedbackModulator");
 
 	Params::SourceEffectChorusPreset_SetFeedbackModulator Parms{};
 
@@ -98,10 +89,7 @@ void USourceEffectChorusPreset::SetFeedbackModulator(const struct FSoundModulati
 
 void USourceEffectChorusPreset::SetFrequencyModulator(const struct FSoundModulationDestinationSettings& InModulatorSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectChorusPreset", "SetFrequencyModulator");
+	class UFunction* Func = Class->GetFunction("SourceEffectChorusPreset", "SetFrequencyModulator");
 
 	Params::SourceEffectChorusPreset_SetFrequencyModulator Parms{};
 
@@ -123,10 +111,7 @@ void USourceEffectChorusPreset::SetFrequencyModulator(const struct FSoundModulat
 
 void USourceEffectChorusPreset::SetSettings(const struct FSourceEffectChorusSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectChorusPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectChorusPreset", "SetSettings");
 
 	Params::SourceEffectChorusPreset_SetSettings Parms{};
 
@@ -148,10 +133,7 @@ void USourceEffectChorusPreset::SetSettings(const struct FSourceEffectChorusSett
 
 void USourceEffectChorusPreset::SetSpreadModulator(const struct FSoundModulationDestinationSettings& InModulatorSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectChorusPreset", "SetSpreadModulator");
+	class UFunction* Func = Class->GetFunction("SourceEffectChorusPreset", "SetSpreadModulator");
 
 	Params::SourceEffectChorusPreset_SetSpreadModulator Parms{};
 
@@ -173,10 +155,7 @@ void USourceEffectChorusPreset::SetSpreadModulator(const struct FSoundModulation
 
 void USourceEffectChorusPreset::SetWetModulator(const struct FSoundModulationDestinationSettings& InModulatorSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectChorusPreset", "SetWetModulator");
+	class UFunction* Func = Class->GetFunction("SourceEffectChorusPreset", "SetWetModulator");
 
 	Params::SourceEffectChorusPreset_SetWetModulator Parms{};
 
@@ -198,10 +177,7 @@ void USourceEffectChorusPreset::SetWetModulator(const struct FSoundModulationDes
 
 void USourceEffectDynamicsProcessorPreset::SetSettings(const struct FSourceEffectDynamicsProcessorSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectDynamicsProcessorPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectDynamicsProcessorPreset", "SetSettings");
 
 	Params::SourceEffectDynamicsProcessorPreset_SetSettings Parms{};
 
@@ -225,10 +201,7 @@ void USourceEffectDynamicsProcessorPreset::SetSettings(const struct FSourceEffec
 
 void UModularSynthLibrary::AddModularSynthPresetToBankAsset(class UModularSynthPresetBank* InBank, const struct FModularSynthPreset& Preset, const class FString& PresetName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ModularSynthLibrary", "AddModularSynthPresetToBankAsset");
+	class UFunction* Func = StaticClass()->GetFunction("ModularSynthLibrary", "AddModularSynthPresetToBankAsset");
 
 	Params::ModularSynthLibrary_AddModularSynthPresetToBankAsset Parms{};
 
@@ -255,10 +228,7 @@ void UModularSynthLibrary::AddModularSynthPresetToBankAsset(class UModularSynthP
 
 struct FPatchId UModularSynthComponent::CreatePatch(const ESynth1PatchSource PatchSource, const TArray<struct FSynth1PatchCable>& PatchCables, const bool bEnableByDefault)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "CreatePatch");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "CreatePatch");
 
 	Params::ModularSynthComponent_CreatePatch Parms{};
 
@@ -286,10 +256,7 @@ struct FPatchId UModularSynthComponent::CreatePatch(const ESynth1PatchSource Pat
 
 void UModularSynthComponent::NoteOff(const float Note, const bool bAllNotesOff, const bool bKillAllNotes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "NoteOff");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "NoteOff");
 
 	Params::ModularSynthComponent_NoteOff Parms{};
 
@@ -315,10 +282,7 @@ void UModularSynthComponent::NoteOff(const float Note, const bool bAllNotesOff, 
 
 void UModularSynthComponent::NoteOn(const float Note, const int32 Velocity, const float Duration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "NoteOn");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "NoteOn");
 
 	Params::ModularSynthComponent_NoteOn Parms{};
 
@@ -342,10 +306,7 @@ void UModularSynthComponent::NoteOn(const float Note, const int32 Velocity, cons
 
 void UModularSynthComponent::SetAttackTime(float AttackTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetAttackTime");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetAttackTime");
 
 	Params::ModularSynthComponent_SetAttackTime Parms{};
 
@@ -367,10 +328,7 @@ void UModularSynthComponent::SetAttackTime(float AttackTimeMsec)
 
 void UModularSynthComponent::SetChorusDepth(float Depth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetChorusDepth");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetChorusDepth");
 
 	Params::ModularSynthComponent_SetChorusDepth Parms{};
 
@@ -392,10 +350,7 @@ void UModularSynthComponent::SetChorusDepth(float Depth)
 
 void UModularSynthComponent::SetChorusEnabled(bool EnableChorus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetChorusEnabled");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetChorusEnabled");
 
 	Params::ModularSynthComponent_SetChorusEnabled Parms{};
 
@@ -417,10 +372,7 @@ void UModularSynthComponent::SetChorusEnabled(bool EnableChorus)
 
 void UModularSynthComponent::SetChorusFeedback(float Feedback)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetChorusFeedback");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetChorusFeedback");
 
 	Params::ModularSynthComponent_SetChorusFeedback Parms{};
 
@@ -442,10 +394,7 @@ void UModularSynthComponent::SetChorusFeedback(float Feedback)
 
 void UModularSynthComponent::SetChorusFrequency(float Frequency)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetChorusFrequency");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetChorusFrequency");
 
 	Params::ModularSynthComponent_SetChorusFrequency Parms{};
 
@@ -467,10 +416,7 @@ void UModularSynthComponent::SetChorusFrequency(float Frequency)
 
 void UModularSynthComponent::SetDecayTime(float DecayTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetDecayTime");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetDecayTime");
 
 	Params::ModularSynthComponent_SetDecayTime Parms{};
 
@@ -492,10 +438,7 @@ void UModularSynthComponent::SetDecayTime(float DecayTimeMsec)
 
 void UModularSynthComponent::SetEnableLegato(bool LegatoEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetEnableLegato");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetEnableLegato");
 
 	Params::ModularSynthComponent_SetEnableLegato Parms{};
 
@@ -519,10 +462,7 @@ void UModularSynthComponent::SetEnableLegato(bool LegatoEnabled)
 
 bool UModularSynthComponent::SetEnablePatch(const struct FPatchId& PatchId, const bool bIsEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetEnablePatch");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetEnablePatch");
 
 	Params::ModularSynthComponent_SetEnablePatch Parms{};
 
@@ -547,10 +487,7 @@ bool UModularSynthComponent::SetEnablePatch(const struct FPatchId& PatchId, cons
 
 void UModularSynthComponent::SetEnablePolyphony(bool bEnablePolyphony)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetEnablePolyphony");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetEnablePolyphony");
 
 	Params::ModularSynthComponent_SetEnablePolyphony Parms{};
 
@@ -572,10 +509,7 @@ void UModularSynthComponent::SetEnablePolyphony(bool bEnablePolyphony)
 
 void UModularSynthComponent::SetEnableRetrigger(bool RetriggerEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetEnableRetrigger");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetEnableRetrigger");
 
 	Params::ModularSynthComponent_SetEnableRetrigger Parms{};
 
@@ -597,10 +531,7 @@ void UModularSynthComponent::SetEnableRetrigger(bool RetriggerEnabled)
 
 void UModularSynthComponent::SetEnableUnison(bool EnableUnison)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetEnableUnison");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetEnableUnison");
 
 	Params::ModularSynthComponent_SetEnableUnison Parms{};
 
@@ -622,10 +553,7 @@ void UModularSynthComponent::SetEnableUnison(bool EnableUnison)
 
 void UModularSynthComponent::SetFilterAlgorithm(ESynthFilterAlgorithm FilterAlgorithm)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetFilterAlgorithm");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetFilterAlgorithm");
 
 	Params::ModularSynthComponent_SetFilterAlgorithm Parms{};
 
@@ -647,10 +575,7 @@ void UModularSynthComponent::SetFilterAlgorithm(ESynthFilterAlgorithm FilterAlgo
 
 void UModularSynthComponent::SetFilterFrequency(float FilterFrequencyHz)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetFilterFrequency");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetFilterFrequency");
 
 	Params::ModularSynthComponent_SetFilterFrequency Parms{};
 
@@ -672,10 +597,7 @@ void UModularSynthComponent::SetFilterFrequency(float FilterFrequencyHz)
 
 void UModularSynthComponent::SetFilterFrequencyMod(float FilterFrequencyHz)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetFilterFrequencyMod");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetFilterFrequencyMod");
 
 	Params::ModularSynthComponent_SetFilterFrequencyMod Parms{};
 
@@ -697,10 +619,7 @@ void UModularSynthComponent::SetFilterFrequencyMod(float FilterFrequencyHz)
 
 void UModularSynthComponent::SetFilterQ(float FilterQ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetFilterQ");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetFilterQ");
 
 	Params::ModularSynthComponent_SetFilterQ Parms{};
 
@@ -722,10 +641,7 @@ void UModularSynthComponent::SetFilterQ(float FilterQ)
 
 void UModularSynthComponent::SetFilterQMod(float FilterQ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetFilterQMod");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetFilterQMod");
 
 	Params::ModularSynthComponent_SetFilterQMod Parms{};
 
@@ -747,10 +663,7 @@ void UModularSynthComponent::SetFilterQMod(float FilterQ)
 
 void UModularSynthComponent::SetFilterType(ESynthFilterType FilterType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetFilterType");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetFilterType");
 
 	Params::ModularSynthComponent_SetFilterType Parms{};
 
@@ -772,10 +685,7 @@ void UModularSynthComponent::SetFilterType(ESynthFilterType FilterType)
 
 void UModularSynthComponent::SetGainDb(float GainDb)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetGainDb");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetGainDb");
 
 	Params::ModularSynthComponent_SetGainDb Parms{};
 
@@ -798,10 +708,7 @@ void UModularSynthComponent::SetGainDb(float GainDb)
 
 void UModularSynthComponent::SetLFOFrequency(int32 LFOIndex, float FrequencyHz)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetLFOFrequency");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetLFOFrequency");
 
 	Params::ModularSynthComponent_SetLFOFrequency Parms{};
 
@@ -825,10 +732,7 @@ void UModularSynthComponent::SetLFOFrequency(int32 LFOIndex, float FrequencyHz)
 
 void UModularSynthComponent::SetLFOFrequencyMod(int32 LFOIndex, float FrequencyModHz)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetLFOFrequencyMod");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetLFOFrequencyMod");
 
 	Params::ModularSynthComponent_SetLFOFrequencyMod Parms{};
 
@@ -852,10 +756,7 @@ void UModularSynthComponent::SetLFOFrequencyMod(int32 LFOIndex, float FrequencyM
 
 void UModularSynthComponent::SetLFOGain(int32 LFOIndex, float Gain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetLFOGain");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetLFOGain");
 
 	Params::ModularSynthComponent_SetLFOGain Parms{};
 
@@ -879,10 +780,7 @@ void UModularSynthComponent::SetLFOGain(int32 LFOIndex, float Gain)
 
 void UModularSynthComponent::SetLFOGainMod(int32 LFOIndex, float GainMod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetLFOGainMod");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetLFOGainMod");
 
 	Params::ModularSynthComponent_SetLFOGainMod Parms{};
 
@@ -906,10 +804,7 @@ void UModularSynthComponent::SetLFOGainMod(int32 LFOIndex, float GainMod)
 
 void UModularSynthComponent::SetLFOMode(int32 LFOIndex, ESynthLFOMode LFOMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetLFOMode");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetLFOMode");
 
 	Params::ModularSynthComponent_SetLFOMode Parms{};
 
@@ -933,10 +828,7 @@ void UModularSynthComponent::SetLFOMode(int32 LFOIndex, ESynthLFOMode LFOMode)
 
 void UModularSynthComponent::SetLFOPatch(int32 LFOIndex, ESynthLFOPatchType LFOPatchType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetLFOPatch");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetLFOPatch");
 
 	Params::ModularSynthComponent_SetLFOPatch Parms{};
 
@@ -960,10 +852,7 @@ void UModularSynthComponent::SetLFOPatch(int32 LFOIndex, ESynthLFOPatchType LFOP
 
 void UModularSynthComponent::SetLFOType(int32 LFOIndex, ESynthLFOType LFOType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetLFOType");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetLFOType");
 
 	Params::ModularSynthComponent_SetLFOType Parms{};
 
@@ -986,10 +875,7 @@ void UModularSynthComponent::SetLFOType(int32 LFOIndex, ESynthLFOType LFOType)
 
 void UModularSynthComponent::SetModEnvAttackTime(const float AttackTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetModEnvAttackTime");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetModEnvAttackTime");
 
 	Params::ModularSynthComponent_SetModEnvAttackTime Parms{};
 
@@ -1011,10 +897,7 @@ void UModularSynthComponent::SetModEnvAttackTime(const float AttackTimeMsec)
 
 void UModularSynthComponent::SetModEnvBiasInvert(const bool bInvert)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetModEnvBiasInvert");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetModEnvBiasInvert");
 
 	Params::ModularSynthComponent_SetModEnvBiasInvert Parms{};
 
@@ -1036,10 +919,7 @@ void UModularSynthComponent::SetModEnvBiasInvert(const bool bInvert)
 
 void UModularSynthComponent::SetModEnvBiasPatch(const ESynthModEnvBiasPatch InPatchType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetModEnvBiasPatch");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetModEnvBiasPatch");
 
 	Params::ModularSynthComponent_SetModEnvBiasPatch Parms{};
 
@@ -1061,10 +941,7 @@ void UModularSynthComponent::SetModEnvBiasPatch(const ESynthModEnvBiasPatch InPa
 
 void UModularSynthComponent::SetModEnvDecayTime(const float DecayTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetModEnvDecayTime");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetModEnvDecayTime");
 
 	Params::ModularSynthComponent_SetModEnvDecayTime Parms{};
 
@@ -1086,10 +963,7 @@ void UModularSynthComponent::SetModEnvDecayTime(const float DecayTimeMsec)
 
 void UModularSynthComponent::SetModEnvDepth(const float Depth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetModEnvDepth");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetModEnvDepth");
 
 	Params::ModularSynthComponent_SetModEnvDepth Parms{};
 
@@ -1111,10 +985,7 @@ void UModularSynthComponent::SetModEnvDepth(const float Depth)
 
 void UModularSynthComponent::SetModEnvInvert(const bool bInvert)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetModEnvInvert");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetModEnvInvert");
 
 	Params::ModularSynthComponent_SetModEnvInvert Parms{};
 
@@ -1136,10 +1007,7 @@ void UModularSynthComponent::SetModEnvInvert(const bool bInvert)
 
 void UModularSynthComponent::SetModEnvPatch(const ESynthModEnvPatch InPatchType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetModEnvPatch");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetModEnvPatch");
 
 	Params::ModularSynthComponent_SetModEnvPatch Parms{};
 
@@ -1161,10 +1029,7 @@ void UModularSynthComponent::SetModEnvPatch(const ESynthModEnvPatch InPatchType)
 
 void UModularSynthComponent::SetModEnvReleaseTime(const float Release)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetModEnvReleaseTime");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetModEnvReleaseTime");
 
 	Params::ModularSynthComponent_SetModEnvReleaseTime Parms{};
 
@@ -1186,10 +1051,7 @@ void UModularSynthComponent::SetModEnvReleaseTime(const float Release)
 
 void UModularSynthComponent::SetModEnvSustainGain(const float SustainGain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetModEnvSustainGain");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetModEnvSustainGain");
 
 	Params::ModularSynthComponent_SetModEnvSustainGain Parms{};
 
@@ -1212,10 +1074,7 @@ void UModularSynthComponent::SetModEnvSustainGain(const float SustainGain)
 
 void UModularSynthComponent::SetOscCents(int32 OscIndex, float Cents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetOscCents");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetOscCents");
 
 	Params::ModularSynthComponent_SetOscCents Parms{};
 
@@ -1239,10 +1098,7 @@ void UModularSynthComponent::SetOscCents(int32 OscIndex, float Cents)
 
 void UModularSynthComponent::SetOscFrequencyMod(int32 OscIndex, float OscFreqMod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetOscFrequencyMod");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetOscFrequencyMod");
 
 	Params::ModularSynthComponent_SetOscFrequencyMod Parms{};
 
@@ -1266,10 +1122,7 @@ void UModularSynthComponent::SetOscFrequencyMod(int32 OscIndex, float OscFreqMod
 
 void UModularSynthComponent::SetOscGain(int32 OscIndex, float OscGain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetOscGain");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetOscGain");
 
 	Params::ModularSynthComponent_SetOscGain Parms{};
 
@@ -1293,10 +1146,7 @@ void UModularSynthComponent::SetOscGain(int32 OscIndex, float OscGain)
 
 void UModularSynthComponent::SetOscGainMod(int32 OscIndex, float OscGainMod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetOscGainMod");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetOscGainMod");
 
 	Params::ModularSynthComponent_SetOscGainMod Parms{};
 
@@ -1320,10 +1170,7 @@ void UModularSynthComponent::SetOscGainMod(int32 OscIndex, float OscGainMod)
 
 void UModularSynthComponent::SetOscOctave(int32 OscIndex, float Octave)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetOscOctave");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetOscOctave");
 
 	Params::ModularSynthComponent_SetOscOctave Parms{};
 
@@ -1347,10 +1194,7 @@ void UModularSynthComponent::SetOscOctave(int32 OscIndex, float Octave)
 
 void UModularSynthComponent::SetOscPulsewidth(int32 OscIndex, float Pulsewidth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetOscPulsewidth");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetOscPulsewidth");
 
 	Params::ModularSynthComponent_SetOscPulsewidth Parms{};
 
@@ -1374,10 +1218,7 @@ void UModularSynthComponent::SetOscPulsewidth(int32 OscIndex, float Pulsewidth)
 
 void UModularSynthComponent::SetOscSemitones(int32 OscIndex, float Semitones)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetOscSemitones");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetOscSemitones");
 
 	Params::ModularSynthComponent_SetOscSemitones Parms{};
 
@@ -1400,10 +1241,7 @@ void UModularSynthComponent::SetOscSemitones(int32 OscIndex, float Semitones)
 
 void UModularSynthComponent::SetOscSync(const bool bIsSynced)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetOscSync");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetOscSync");
 
 	Params::ModularSynthComponent_SetOscSync Parms{};
 
@@ -1426,10 +1264,7 @@ void UModularSynthComponent::SetOscSync(const bool bIsSynced)
 
 void UModularSynthComponent::SetOscType(int32 OscIndex, ESynth1OscType OscType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetOscType");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetOscType");
 
 	Params::ModularSynthComponent_SetOscType Parms{};
 
@@ -1452,10 +1287,7 @@ void UModularSynthComponent::SetOscType(int32 OscIndex, ESynth1OscType OscType)
 
 void UModularSynthComponent::SetPan(float Pan)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetPan");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetPan");
 
 	Params::ModularSynthComponent_SetPan Parms{};
 
@@ -1477,10 +1309,7 @@ void UModularSynthComponent::SetPan(float Pan)
 
 void UModularSynthComponent::SetPitchBend(float PitchBend)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetPitchBend");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetPitchBend");
 
 	Params::ModularSynthComponent_SetPitchBend Parms{};
 
@@ -1502,10 +1331,7 @@ void UModularSynthComponent::SetPitchBend(float PitchBend)
 
 void UModularSynthComponent::SetPortamento(float Portamento)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetPortamento");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetPortamento");
 
 	Params::ModularSynthComponent_SetPortamento Parms{};
 
@@ -1527,10 +1353,7 @@ void UModularSynthComponent::SetPortamento(float Portamento)
 
 void UModularSynthComponent::SetReleaseTime(float ReleaseTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetReleaseTime");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetReleaseTime");
 
 	Params::ModularSynthComponent_SetReleaseTime Parms{};
 
@@ -1552,10 +1375,7 @@ void UModularSynthComponent::SetReleaseTime(float ReleaseTimeMsec)
 
 void UModularSynthComponent::SetSpread(float Spread)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetSpread");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetSpread");
 
 	Params::ModularSynthComponent_SetSpread Parms{};
 
@@ -1577,10 +1397,7 @@ void UModularSynthComponent::SetSpread(float Spread)
 
 void UModularSynthComponent::SetStereoDelayFeedback(float DelayFeedback)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayFeedback");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayFeedback");
 
 	Params::ModularSynthComponent_SetStereoDelayFeedback Parms{};
 
@@ -1602,10 +1419,7 @@ void UModularSynthComponent::SetStereoDelayFeedback(float DelayFeedback)
 
 void UModularSynthComponent::SetStereoDelayIsEnabled(bool StereoDelayEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayIsEnabled");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayIsEnabled");
 
 	Params::ModularSynthComponent_SetStereoDelayIsEnabled Parms{};
 
@@ -1627,10 +1441,7 @@ void UModularSynthComponent::SetStereoDelayIsEnabled(bool StereoDelayEnabled)
 
 void UModularSynthComponent::SetStereoDelayMode(ESynthStereoDelayMode StereoDelayMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayMode");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayMode");
 
 	Params::ModularSynthComponent_SetStereoDelayMode Parms{};
 
@@ -1652,10 +1463,7 @@ void UModularSynthComponent::SetStereoDelayMode(ESynthStereoDelayMode StereoDela
 
 void UModularSynthComponent::SetStereoDelayRatio(float DelayRatio)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayRatio");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayRatio");
 
 	Params::ModularSynthComponent_SetStereoDelayRatio Parms{};
 
@@ -1677,10 +1485,7 @@ void UModularSynthComponent::SetStereoDelayRatio(float DelayRatio)
 
 void UModularSynthComponent::SetStereoDelayTime(float DelayTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayTime");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayTime");
 
 	Params::ModularSynthComponent_SetStereoDelayTime Parms{};
 
@@ -1702,10 +1507,7 @@ void UModularSynthComponent::SetStereoDelayTime(float DelayTimeMsec)
 
 void UModularSynthComponent::SetStereoDelayWetlevel(float DelayWetlevel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayWetlevel");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetStereoDelayWetlevel");
 
 	Params::ModularSynthComponent_SetStereoDelayWetlevel Parms{};
 
@@ -1727,10 +1529,7 @@ void UModularSynthComponent::SetStereoDelayWetlevel(float DelayWetlevel)
 
 void UModularSynthComponent::SetSustainGain(float SustainGain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetSustainGain");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetSustainGain");
 
 	Params::ModularSynthComponent_SetSustainGain Parms{};
 
@@ -1752,10 +1551,7 @@ void UModularSynthComponent::SetSustainGain(float SustainGain)
 
 void UModularSynthComponent::SetSynthPreset(const struct FModularSynthPreset& SynthPreset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ModularSynthComponent", "SetSynthPreset");
+	class UFunction* Func = Class->GetFunction("ModularSynthComponent", "SetSynthPreset");
 
 	Params::ModularSynthComponent_SetSynthPreset Parms{};
 
@@ -1777,10 +1573,7 @@ void UModularSynthComponent::SetSynthPreset(const struct FModularSynthPreset& Sy
 
 void USourceEffectBitCrusherPreset::SetBitModulator(const struct FSoundModulationDestinationSettings& InModulatorSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectBitCrusherPreset", "SetBitModulator");
+	class UFunction* Func = Class->GetFunction("SourceEffectBitCrusherPreset", "SetBitModulator");
 
 	Params::SourceEffectBitCrusherPreset_SetBitModulator Parms{};
 
@@ -1802,10 +1595,7 @@ void USourceEffectBitCrusherPreset::SetBitModulator(const struct FSoundModulatio
 
 void USourceEffectBitCrusherPreset::SetSampleRateModulator(const struct FSoundModulationDestinationSettings& InModulatorSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectBitCrusherPreset", "SetSampleRateModulator");
+	class UFunction* Func = Class->GetFunction("SourceEffectBitCrusherPreset", "SetSampleRateModulator");
 
 	Params::SourceEffectBitCrusherPreset_SetSampleRateModulator Parms{};
 
@@ -1827,10 +1617,7 @@ void USourceEffectBitCrusherPreset::SetSampleRateModulator(const struct FSoundMo
 
 void USourceEffectBitCrusherPreset::SetSettings(const struct FSourceEffectBitCrusherSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectBitCrusherPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectBitCrusherPreset", "SetSettings");
 
 	Params::SourceEffectBitCrusherPreset_SetSettings Parms{};
 
@@ -1852,10 +1639,7 @@ void USourceEffectBitCrusherPreset::SetSettings(const struct FSourceEffectBitCru
 
 void USourceEffectEnvelopeFollowerPreset::RegisterEnvelopeFollowerListener(class UEnvelopeFollowerListener* EnvelopeFollowerListener)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectEnvelopeFollowerPreset", "RegisterEnvelopeFollowerListener");
+	class UFunction* Func = Class->GetFunction("SourceEffectEnvelopeFollowerPreset", "RegisterEnvelopeFollowerListener");
 
 	Params::SourceEffectEnvelopeFollowerPreset_RegisterEnvelopeFollowerListener Parms{};
 
@@ -1877,10 +1661,7 @@ void USourceEffectEnvelopeFollowerPreset::RegisterEnvelopeFollowerListener(class
 
 void USourceEffectEnvelopeFollowerPreset::SetSettings(const struct FSourceEffectEnvelopeFollowerSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectEnvelopeFollowerPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectEnvelopeFollowerPreset", "SetSettings");
 
 	Params::SourceEffectEnvelopeFollowerPreset_SetSettings Parms{};
 
@@ -1902,10 +1683,7 @@ void USourceEffectEnvelopeFollowerPreset::SetSettings(const struct FSourceEffect
 
 void USourceEffectEnvelopeFollowerPreset::UnregisterEnvelopeFollowerListener(class UEnvelopeFollowerListener* EnvelopeFollowerListener)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectEnvelopeFollowerPreset", "UnregisterEnvelopeFollowerListener");
+	class UFunction* Func = Class->GetFunction("SourceEffectEnvelopeFollowerPreset", "UnregisterEnvelopeFollowerListener");
 
 	Params::SourceEffectEnvelopeFollowerPreset_UnregisterEnvelopeFollowerListener Parms{};
 
@@ -1927,10 +1705,7 @@ void USourceEffectEnvelopeFollowerPreset::UnregisterEnvelopeFollowerListener(cla
 
 void USourceEffectEQPreset::SetSettings(const struct FSourceEffectEQSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectEQPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectEQPreset", "SetSettings");
 
 	Params::SourceEffectEQPreset_SetSettings Parms{};
 
@@ -1952,10 +1727,7 @@ void USourceEffectEQPreset::SetSettings(const struct FSourceEffectEQSettings& In
 
 void USourceEffectFilterPreset::SetSettings(const struct FSourceEffectFilterSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectFilterPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectFilterPreset", "SetSettings");
 
 	Params::SourceEffectFilterPreset_SetSettings Parms{};
 
@@ -1977,10 +1749,7 @@ void USourceEffectFilterPreset::SetSettings(const struct FSourceEffectFilterSett
 
 void USourceEffectFoldbackDistortionPreset::SetSettings(const struct FSourceEffectFoldbackDistortionSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectFoldbackDistortionPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectFoldbackDistortionPreset", "SetSettings");
 
 	Params::SourceEffectFoldbackDistortionPreset_SetSettings Parms{};
 
@@ -2002,10 +1771,7 @@ void USourceEffectFoldbackDistortionPreset::SetSettings(const struct FSourceEffe
 
 void USourceEffectMidSideSpreaderPreset::SetSettings(const struct FSourceEffectMidSideSpreaderSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectMidSideSpreaderPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectMidSideSpreaderPreset", "SetSettings");
 
 	Params::SourceEffectMidSideSpreaderPreset_SetSettings Parms{};
 
@@ -2027,10 +1793,7 @@ void USourceEffectMidSideSpreaderPreset::SetSettings(const struct FSourceEffectM
 
 void USourceEffectPannerPreset::SetSettings(const struct FSourceEffectPannerSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectPannerPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectPannerPreset", "SetSettings");
 
 	Params::SourceEffectPannerPreset_SetSettings Parms{};
 
@@ -2052,10 +1815,7 @@ void USourceEffectPannerPreset::SetSettings(const struct FSourceEffectPannerSett
 
 void USourceEffectPhaserPreset::SetSettings(const struct FSourceEffectPhaserSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectPhaserPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectPhaserPreset", "SetSettings");
 
 	Params::SourceEffectPhaserPreset_SetSettings Parms{};
 
@@ -2077,10 +1837,7 @@ void USourceEffectPhaserPreset::SetSettings(const struct FSourceEffectPhaserSett
 
 void USourceEffectRingModulationPreset::SetSettings(const struct FSourceEffectRingModulationSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectRingModulationPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectRingModulationPreset", "SetSettings");
 
 	Params::SourceEffectRingModulationPreset_SetSettings Parms{};
 
@@ -2102,10 +1859,7 @@ void USourceEffectRingModulationPreset::SetSettings(const struct FSourceEffectRi
 
 void USourceEffectSimpleDelayPreset::SetSettings(const struct FSourceEffectSimpleDelaySettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectSimpleDelayPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectSimpleDelayPreset", "SetSettings");
 
 	Params::SourceEffectSimpleDelayPreset_SetSettings Parms{};
 
@@ -2127,10 +1881,7 @@ void USourceEffectSimpleDelayPreset::SetSettings(const struct FSourceEffectSimpl
 
 void USourceEffectStereoDelayPreset::SetSettings(const struct FSourceEffectStereoDelaySettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectStereoDelayPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectStereoDelayPreset", "SetSettings");
 
 	Params::SourceEffectStereoDelayPreset_SetSettings Parms{};
 
@@ -2152,10 +1903,7 @@ void USourceEffectStereoDelayPreset::SetSettings(const struct FSourceEffectStere
 
 void USourceEffectWaveShaperPreset::SetSettings(const struct FSourceEffectWaveShaperSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SourceEffectWaveShaperPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SourceEffectWaveShaperPreset", "SetSettings");
 
 	Params::SourceEffectWaveShaperPreset_SetSettings Parms{};
 
@@ -2177,10 +1925,7 @@ void USourceEffectWaveShaperPreset::SetSettings(const struct FSourceEffectWaveSh
 
 void USubmixEffectConvolutionReverbPreset::SetImpulseResponse(class UAudioImpulseResponse* InImpulseResponse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectConvolutionReverbPreset", "SetImpulseResponse");
+	class UFunction* Func = Class->GetFunction("SubmixEffectConvolutionReverbPreset", "SetImpulseResponse");
 
 	Params::SubmixEffectConvolutionReverbPreset_SetImpulseResponse Parms{};
 
@@ -2202,10 +1947,7 @@ void USubmixEffectConvolutionReverbPreset::SetImpulseResponse(class UAudioImpuls
 
 void USubmixEffectConvolutionReverbPreset::SetSettings(const struct FSubmixEffectConvolutionReverbSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectConvolutionReverbPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SubmixEffectConvolutionReverbPreset", "SetSettings");
 
 	Params::SubmixEffectConvolutionReverbPreset_SetSettings Parms{};
 
@@ -2227,10 +1969,7 @@ void USubmixEffectConvolutionReverbPreset::SetSettings(const struct FSubmixEffec
 
 float USubmixEffectDelayPreset::GetMaxDelayInMilliseconds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectDelayPreset", "GetMaxDelayInMilliseconds");
+	class UFunction* Func = Class->GetFunction("SubmixEffectDelayPreset", "GetMaxDelayInMilliseconds");
 
 	Params::SubmixEffectDelayPreset_GetMaxDelayInMilliseconds Parms{};
 
@@ -2252,10 +1991,7 @@ float USubmixEffectDelayPreset::GetMaxDelayInMilliseconds()
 
 void USubmixEffectDelayPreset::SetDelay(float Length)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectDelayPreset", "SetDelay");
+	class UFunction* Func = Class->GetFunction("SubmixEffectDelayPreset", "SetDelay");
 
 	Params::SubmixEffectDelayPreset_SetDelay Parms{};
 
@@ -2277,10 +2013,7 @@ void USubmixEffectDelayPreset::SetDelay(float Length)
 
 void USubmixEffectDelayPreset::SetInterpolationTime(float Time)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectDelayPreset", "SetInterpolationTime");
+	class UFunction* Func = Class->GetFunction("SubmixEffectDelayPreset", "SetInterpolationTime");
 
 	Params::SubmixEffectDelayPreset_SetInterpolationTime Parms{};
 
@@ -2302,10 +2035,7 @@ void USubmixEffectDelayPreset::SetInterpolationTime(float Time)
 
 void USubmixEffectDelayPreset::SetSettings(const struct FSubmixEffectDelaySettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectDelayPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SubmixEffectDelayPreset", "SetSettings");
 
 	Params::SubmixEffectDelayPreset_SetSettings Parms{};
 
@@ -2327,10 +2057,7 @@ void USubmixEffectDelayPreset::SetSettings(const struct FSubmixEffectDelaySettin
 
 void USubmixEffectFilterPreset::SetFilterAlgorithm(ESubmixFilterAlgorithm InAlgorithm)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterAlgorithm");
+	class UFunction* Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterAlgorithm");
 
 	Params::SubmixEffectFilterPreset_SetFilterAlgorithm Parms{};
 
@@ -2352,10 +2079,7 @@ void USubmixEffectFilterPreset::SetFilterAlgorithm(ESubmixFilterAlgorithm InAlgo
 
 void USubmixEffectFilterPreset::SetFilterCutoffFrequency(float InFrequency)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterCutoffFrequency");
+	class UFunction* Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterCutoffFrequency");
 
 	Params::SubmixEffectFilterPreset_SetFilterCutoffFrequency Parms{};
 
@@ -2377,10 +2101,7 @@ void USubmixEffectFilterPreset::SetFilterCutoffFrequency(float InFrequency)
 
 void USubmixEffectFilterPreset::SetFilterCutoffFrequencyMod(float InFrequency)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterCutoffFrequencyMod");
+	class UFunction* Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterCutoffFrequencyMod");
 
 	Params::SubmixEffectFilterPreset_SetFilterCutoffFrequencyMod Parms{};
 
@@ -2402,10 +2123,7 @@ void USubmixEffectFilterPreset::SetFilterCutoffFrequencyMod(float InFrequency)
 
 void USubmixEffectFilterPreset::SetFilterQ(float InQ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterQ");
+	class UFunction* Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterQ");
 
 	Params::SubmixEffectFilterPreset_SetFilterQ Parms{};
 
@@ -2427,10 +2145,7 @@ void USubmixEffectFilterPreset::SetFilterQ(float InQ)
 
 void USubmixEffectFilterPreset::SetFilterQMod(float InQ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterQMod");
+	class UFunction* Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterQMod");
 
 	Params::SubmixEffectFilterPreset_SetFilterQMod Parms{};
 
@@ -2452,10 +2167,7 @@ void USubmixEffectFilterPreset::SetFilterQMod(float InQ)
 
 void USubmixEffectFilterPreset::SetFilterType(ESubmixFilterType InType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterType");
+	class UFunction* Func = Class->GetFunction("SubmixEffectFilterPreset", "SetFilterType");
 
 	Params::SubmixEffectFilterPreset_SetFilterType Parms{};
 
@@ -2477,10 +2189,7 @@ void USubmixEffectFilterPreset::SetFilterType(ESubmixFilterType InType)
 
 void USubmixEffectFilterPreset::SetSettings(const struct FSubmixEffectFilterSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectFilterPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SubmixEffectFilterPreset", "SetSettings");
 
 	Params::SubmixEffectFilterPreset_SetSettings Parms{};
 
@@ -2502,10 +2211,7 @@ void USubmixEffectFilterPreset::SetSettings(const struct FSubmixEffectFilterSett
 
 void USubmixEffectFlexiverbPreset::SetSettings(const struct FSubmixEffectFlexiverbSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectFlexiverbPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SubmixEffectFlexiverbPreset", "SetSettings");
 
 	Params::SubmixEffectFlexiverbPreset_SetSettings Parms{};
 
@@ -2527,10 +2233,7 @@ void USubmixEffectFlexiverbPreset::SetSettings(const struct FSubmixEffectFlexive
 
 void USubmixEffectStereoDelayPreset::SetSettings(const struct FSubmixEffectStereoDelaySettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectStereoDelayPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SubmixEffectStereoDelayPreset", "SetSettings");
 
 	Params::SubmixEffectStereoDelayPreset_SetSettings Parms{};
 
@@ -2552,10 +2255,7 @@ void USubmixEffectStereoDelayPreset::SetSettings(const struct FSubmixEffectStere
 
 void USubmixEffectTapDelayPreset::AddTap(int32* TapId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectTapDelayPreset", "AddTap");
+	class UFunction* Func = Class->GetFunction("SubmixEffectTapDelayPreset", "AddTap");
 
 	Params::SubmixEffectTapDelayPreset_AddTap Parms{};
 
@@ -2578,10 +2278,7 @@ void USubmixEffectTapDelayPreset::AddTap(int32* TapId)
 
 float USubmixEffectTapDelayPreset::GetMaxDelayInMilliseconds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectTapDelayPreset", "GetMaxDelayInMilliseconds");
+	class UFunction* Func = Class->GetFunction("SubmixEffectTapDelayPreset", "GetMaxDelayInMilliseconds");
 
 	Params::SubmixEffectTapDelayPreset_GetMaxDelayInMilliseconds Parms{};
 
@@ -2604,10 +2301,7 @@ float USubmixEffectTapDelayPreset::GetMaxDelayInMilliseconds()
 
 void USubmixEffectTapDelayPreset::GetTap(int32 TapId, struct FTapDelayInfo* TapInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectTapDelayPreset", "GetTap");
+	class UFunction* Func = Class->GetFunction("SubmixEffectTapDelayPreset", "GetTap");
 
 	Params::SubmixEffectTapDelayPreset_GetTap Parms{};
 
@@ -2632,10 +2326,7 @@ void USubmixEffectTapDelayPreset::GetTap(int32 TapId, struct FTapDelayInfo* TapI
 
 void USubmixEffectTapDelayPreset::GetTapIds(TArray<int32>* TapIds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectTapDelayPreset", "GetTapIds");
+	class UFunction* Func = Class->GetFunction("SubmixEffectTapDelayPreset", "GetTapIds");
 
 	Params::SubmixEffectTapDelayPreset_GetTapIds Parms{};
 
@@ -2658,10 +2349,7 @@ void USubmixEffectTapDelayPreset::GetTapIds(TArray<int32>* TapIds)
 
 void USubmixEffectTapDelayPreset::RemoveTap(int32 TapId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectTapDelayPreset", "RemoveTap");
+	class UFunction* Func = Class->GetFunction("SubmixEffectTapDelayPreset", "RemoveTap");
 
 	Params::SubmixEffectTapDelayPreset_RemoveTap Parms{};
 
@@ -2683,10 +2371,7 @@ void USubmixEffectTapDelayPreset::RemoveTap(int32 TapId)
 
 void USubmixEffectTapDelayPreset::SetInterpolationTime(float Time)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectTapDelayPreset", "SetInterpolationTime");
+	class UFunction* Func = Class->GetFunction("SubmixEffectTapDelayPreset", "SetInterpolationTime");
 
 	Params::SubmixEffectTapDelayPreset_SetInterpolationTime Parms{};
 
@@ -2708,10 +2393,7 @@ void USubmixEffectTapDelayPreset::SetInterpolationTime(float Time)
 
 void USubmixEffectTapDelayPreset::SetSettings(const struct FSubmixEffectTapDelaySettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectTapDelayPreset", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SubmixEffectTapDelayPreset", "SetSettings");
 
 	Params::SubmixEffectTapDelayPreset_SetSettings Parms{};
 
@@ -2734,10 +2416,7 @@ void USubmixEffectTapDelayPreset::SetSettings(const struct FSubmixEffectTapDelay
 
 void USubmixEffectTapDelayPreset::SetTap(int32 TapId, const struct FTapDelayInfo& TapInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubmixEffectTapDelayPreset", "SetTap");
+	class UFunction* Func = Class->GetFunction("SubmixEffectTapDelayPreset", "SetTap");
 
 	Params::SubmixEffectTapDelayPreset_SetTap Parms{};
 
@@ -2760,10 +2439,7 @@ void USubmixEffectTapDelayPreset::SetTap(int32 TapId, const struct FTapDelayInfo
 
 void USynth2DSlider::SetIndentHandle(bool InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Synth2DSlider", "SetIndentHandle");
+	class UFunction* Func = Class->GetFunction("Synth2DSlider", "SetIndentHandle");
 
 	Params::Synth2DSlider_SetIndentHandle Parms{};
 
@@ -2785,10 +2461,7 @@ void USynth2DSlider::SetIndentHandle(bool InValue)
 
 void USynth2DSlider::SetLocked(bool InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Synth2DSlider", "SetLocked");
+	class UFunction* Func = Class->GetFunction("Synth2DSlider", "SetLocked");
 
 	Params::Synth2DSlider_SetLocked Parms{};
 
@@ -2810,10 +2483,7 @@ void USynth2DSlider::SetLocked(bool InValue)
 
 void USynth2DSlider::SetSliderHandleColor(const struct FLinearColor& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Synth2DSlider", "SetSliderHandleColor");
+	class UFunction* Func = Class->GetFunction("Synth2DSlider", "SetSliderHandleColor");
 
 	Params::Synth2DSlider_SetSliderHandleColor Parms{};
 
@@ -2835,10 +2505,7 @@ void USynth2DSlider::SetSliderHandleColor(const struct FLinearColor& InValue)
 
 void USynth2DSlider::SetStepSize(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Synth2DSlider", "SetStepSize");
+	class UFunction* Func = Class->GetFunction("Synth2DSlider", "SetStepSize");
 
 	Params::Synth2DSlider_SetStepSize Parms{};
 
@@ -2860,10 +2527,7 @@ void USynth2DSlider::SetStepSize(float InValue)
 
 void USynth2DSlider::SetValue(const struct FVector2D& InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Synth2DSlider", "SetValue");
+	class UFunction* Func = Class->GetFunction("Synth2DSlider", "SetValue");
 
 	Params::Synth2DSlider_SetValue Parms{};
 
@@ -2885,10 +2549,7 @@ void USynth2DSlider::SetValue(const struct FVector2D& InValue)
 
 struct FVector2D USynth2DSlider::GetValue() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Synth2DSlider", "GetValue");
+	class UFunction* Func = Class->GetFunction("Synth2DSlider", "GetValue");
 
 	Params::Synth2DSlider_GetValue Parms{};
 
@@ -2911,10 +2572,7 @@ struct FVector2D USynth2DSlider::GetValue() const
 
 void UGranularSynth::NoteOff(const float Note, const bool bKill)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "NoteOff");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "NoteOff");
 
 	Params::GranularSynth_NoteOff Parms{};
 
@@ -2939,10 +2597,7 @@ void UGranularSynth::NoteOff(const float Note, const bool bKill)
 
 void UGranularSynth::NoteOn(const float Note, const int32 Velocity, const float Duration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "NoteOn");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "NoteOn");
 
 	Params::GranularSynth_NoteOn Parms{};
 
@@ -2966,10 +2621,7 @@ void UGranularSynth::NoteOn(const float Note, const int32 Velocity, const float 
 
 void UGranularSynth::SetAttackTime(const float AttackTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetAttackTime");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetAttackTime");
 
 	Params::GranularSynth_SetAttackTime Parms{};
 
@@ -2991,10 +2643,7 @@ void UGranularSynth::SetAttackTime(const float AttackTimeMsec)
 
 void UGranularSynth::SetDecayTime(const float DecayTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetDecayTime");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetDecayTime");
 
 	Params::GranularSynth_SetDecayTime Parms{};
 
@@ -3017,10 +2666,7 @@ void UGranularSynth::SetDecayTime(const float DecayTimeMsec)
 
 void UGranularSynth::SetGrainDuration(const float BaseDurationMsec, const struct FVector2D& DurationRange)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetGrainDuration");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetGrainDuration");
 
 	Params::GranularSynth_SetGrainDuration Parms{};
 
@@ -3043,10 +2689,7 @@ void UGranularSynth::SetGrainDuration(const float BaseDurationMsec, const struct
 
 void UGranularSynth::SetGrainEnvelopeType(const EGranularSynthEnvelopeType EnvelopeType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetGrainEnvelopeType");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetGrainEnvelopeType");
 
 	Params::GranularSynth_SetGrainEnvelopeType Parms{};
 
@@ -3069,10 +2712,7 @@ void UGranularSynth::SetGrainEnvelopeType(const EGranularSynthEnvelopeType Envel
 
 void UGranularSynth::SetGrainPan(const float BasePan, const struct FVector2D& PanRange)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetGrainPan");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetGrainPan");
 
 	Params::GranularSynth_SetGrainPan Parms{};
 
@@ -3096,10 +2736,7 @@ void UGranularSynth::SetGrainPan(const float BasePan, const struct FVector2D& Pa
 
 void UGranularSynth::SetGrainPitch(const float BasePitch, const struct FVector2D& PitchRange)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetGrainPitch");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetGrainPitch");
 
 	Params::GranularSynth_SetGrainPitch Parms{};
 
@@ -3122,10 +2759,7 @@ void UGranularSynth::SetGrainPitch(const float BasePitch, const struct FVector2D
 
 void UGranularSynth::SetGrainProbability(const float InGrainProbability)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetGrainProbability");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetGrainProbability");
 
 	Params::GranularSynth_SetGrainProbability Parms{};
 
@@ -3147,10 +2781,7 @@ void UGranularSynth::SetGrainProbability(const float InGrainProbability)
 
 void UGranularSynth::SetGrainsPerSecond(const float InGrainsPerSecond)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetGrainsPerSecond");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetGrainsPerSecond");
 
 	Params::GranularSynth_SetGrainsPerSecond Parms{};
 
@@ -3173,10 +2804,7 @@ void UGranularSynth::SetGrainsPerSecond(const float InGrainsPerSecond)
 
 void UGranularSynth::SetGrainVolume(const float BaseVolume, const struct FVector2D& VolumeRange)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetGrainVolume");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetGrainVolume");
 
 	Params::GranularSynth_SetGrainVolume Parms{};
 
@@ -3199,10 +2827,7 @@ void UGranularSynth::SetGrainVolume(const float BaseVolume, const struct FVector
 
 void UGranularSynth::SetPlaybackSpeed(const float InPlayheadRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetPlaybackSpeed");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetPlaybackSpeed");
 
 	Params::GranularSynth_SetPlaybackSpeed Parms{};
 
@@ -3226,10 +2851,7 @@ void UGranularSynth::SetPlaybackSpeed(const float InPlayheadRate)
 
 void UGranularSynth::SetPlayheadTime(const float InPositionSec, const float LerpTimeSec, EGranularSynthSeekType SeekType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetPlayheadTime");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetPlayheadTime");
 
 	Params::GranularSynth_SetPlayheadTime Parms{};
 
@@ -3253,10 +2875,7 @@ void UGranularSynth::SetPlayheadTime(const float InPositionSec, const float Lerp
 
 void UGranularSynth::SetReleaseTimeMsec(const float ReleaseTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetReleaseTimeMsec");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetReleaseTimeMsec");
 
 	Params::GranularSynth_SetReleaseTimeMsec Parms{};
 
@@ -3278,10 +2897,7 @@ void UGranularSynth::SetReleaseTimeMsec(const float ReleaseTimeMsec)
 
 void UGranularSynth::SetScrubMode(const bool bScrubMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetScrubMode");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetScrubMode");
 
 	Params::GranularSynth_SetScrubMode Parms{};
 
@@ -3303,10 +2919,7 @@ void UGranularSynth::SetScrubMode(const bool bScrubMode)
 
 void UGranularSynth::SetSoundWave(class USoundWave* InSoundWave)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetSoundWave");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetSoundWave");
 
 	Params::GranularSynth_SetSoundWave Parms{};
 
@@ -3328,10 +2941,7 @@ void UGranularSynth::SetSoundWave(class USoundWave* InSoundWave)
 
 void UGranularSynth::SetSustainGain(const float SustainGain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "SetSustainGain");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "SetSustainGain");
 
 	Params::GranularSynth_SetSustainGain Parms{};
 
@@ -3353,10 +2963,7 @@ void UGranularSynth::SetSustainGain(const float SustainGain)
 
 float UGranularSynth::GetCurrentPlayheadTime() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "GetCurrentPlayheadTime");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "GetCurrentPlayheadTime");
 
 	Params::GranularSynth_GetCurrentPlayheadTime Parms{};
 
@@ -3378,10 +2985,7 @@ float UGranularSynth::GetCurrentPlayheadTime() const
 
 float UGranularSynth::GetSampleDuration() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "GetSampleDuration");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "GetSampleDuration");
 
 	Params::GranularSynth_GetSampleDuration Parms{};
 
@@ -3403,10 +3007,7 @@ float UGranularSynth::GetSampleDuration() const
 
 bool UGranularSynth::IsLoaded() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GranularSynth", "IsLoaded");
+	class UFunction* Func = Class->GetFunction("GranularSynth", "IsLoaded");
 
 	Params::GranularSynth_IsLoaded Parms{};
 
@@ -3429,10 +3030,7 @@ bool UGranularSynth::IsLoaded() const
 
 float USynthComponentMonoWaveTable::GetCurveTangent(int32 TableIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "GetCurveTangent");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "GetCurveTangent");
 
 	Params::SynthComponentMonoWaveTable_GetCurveTangent Parms{};
 
@@ -3456,10 +3054,7 @@ float USynthComponentMonoWaveTable::GetCurveTangent(int32 TableIndex)
 
 int32 USynthComponentMonoWaveTable::GetNumTableEntries()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "GetNumTableEntries");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "GetNumTableEntries");
 
 	Params::SynthComponentMonoWaveTable_GetNumTableEntries Parms{};
 
@@ -3481,10 +3076,7 @@ int32 USynthComponentMonoWaveTable::GetNumTableEntries()
 
 void USynthComponentMonoWaveTable::NoteOff(const float InMidiNote)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "NoteOff");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "NoteOff");
 
 	Params::SynthComponentMonoWaveTable_NoteOff Parms{};
 
@@ -3507,10 +3099,7 @@ void USynthComponentMonoWaveTable::NoteOff(const float InMidiNote)
 
 void USynthComponentMonoWaveTable::NoteOn(const float InMidiNote, const float InVelocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "NoteOn");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "NoteOn");
 
 	Params::SynthComponentMonoWaveTable_NoteOn Parms{};
 
@@ -3531,10 +3120,7 @@ void USynthComponentMonoWaveTable::NoteOn(const float InMidiNote, const float In
 
 void USynthComponentMonoWaveTable::RefreshAllWaveTables()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "RefreshAllWaveTables");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "RefreshAllWaveTables");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -3552,10 +3138,7 @@ void USynthComponentMonoWaveTable::RefreshAllWaveTables()
 
 void USynthComponentMonoWaveTable::RefreshWaveTable(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "RefreshWaveTable");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "RefreshWaveTable");
 
 	Params::SynthComponentMonoWaveTable_RefreshWaveTable Parms{};
 
@@ -3577,10 +3160,7 @@ void USynthComponentMonoWaveTable::RefreshWaveTable(int32 Index_0)
 
 void USynthComponentMonoWaveTable::SetAmpEnvelopeAttackTime(const float InAttackTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeAttackTime");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeAttackTime");
 
 	Params::SynthComponentMonoWaveTable_SetAmpEnvelopeAttackTime Parms{};
 
@@ -3602,10 +3182,7 @@ void USynthComponentMonoWaveTable::SetAmpEnvelopeAttackTime(const float InAttack
 
 void USynthComponentMonoWaveTable::SetAmpEnvelopeBiasDepth(const float InDepth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeBiasDepth");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeBiasDepth");
 
 	Params::SynthComponentMonoWaveTable_SetAmpEnvelopeBiasDepth Parms{};
 
@@ -3627,10 +3204,7 @@ void USynthComponentMonoWaveTable::SetAmpEnvelopeBiasDepth(const float InDepth)
 
 void USynthComponentMonoWaveTable::SetAmpEnvelopeBiasInvert(const bool bInBiasInvert)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeBiasInvert");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeBiasInvert");
 
 	Params::SynthComponentMonoWaveTable_SetAmpEnvelopeBiasInvert Parms{};
 
@@ -3652,10 +3226,7 @@ void USynthComponentMonoWaveTable::SetAmpEnvelopeBiasInvert(const bool bInBiasIn
 
 void USynthComponentMonoWaveTable::SetAmpEnvelopeDecayTime(const float InDecayTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeDecayTime");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeDecayTime");
 
 	Params::SynthComponentMonoWaveTable_SetAmpEnvelopeDecayTime Parms{};
 
@@ -3677,10 +3248,7 @@ void USynthComponentMonoWaveTable::SetAmpEnvelopeDecayTime(const float InDecayTi
 
 void USynthComponentMonoWaveTable::SetAmpEnvelopeDepth(const float InDepth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeDepth");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeDepth");
 
 	Params::SynthComponentMonoWaveTable_SetAmpEnvelopeDepth Parms{};
 
@@ -3702,10 +3270,7 @@ void USynthComponentMonoWaveTable::SetAmpEnvelopeDepth(const float InDepth)
 
 void USynthComponentMonoWaveTable::SetAmpEnvelopeInvert(const bool bInInvert)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeInvert");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeInvert");
 
 	Params::SynthComponentMonoWaveTable_SetAmpEnvelopeInvert Parms{};
 
@@ -3727,10 +3292,7 @@ void USynthComponentMonoWaveTable::SetAmpEnvelopeInvert(const bool bInInvert)
 
 void USynthComponentMonoWaveTable::SetAmpEnvelopeReleaseTime(const float InReleaseTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeReleaseTime");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeReleaseTime");
 
 	Params::SynthComponentMonoWaveTable_SetAmpEnvelopeReleaseTime Parms{};
 
@@ -3752,10 +3314,7 @@ void USynthComponentMonoWaveTable::SetAmpEnvelopeReleaseTime(const float InRelea
 
 void USynthComponentMonoWaveTable::SetAmpEnvelopeSustainGain(const float InSustainGain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeSustainGain");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetAmpEnvelopeSustainGain");
 
 	Params::SynthComponentMonoWaveTable_SetAmpEnvelopeSustainGain Parms{};
 
@@ -3779,10 +3338,7 @@ void USynthComponentMonoWaveTable::SetAmpEnvelopeSustainGain(const float InSusta
 
 bool USynthComponentMonoWaveTable::SetCurveInterpolationType(ECurveInterpolationType InterpolationType, int32 TableIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetCurveInterpolationType");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetCurveInterpolationType");
 
 	Params::SynthComponentMonoWaveTable_SetCurveInterpolationType Parms{};
 
@@ -3809,10 +3365,7 @@ bool USynthComponentMonoWaveTable::SetCurveInterpolationType(ECurveInterpolation
 
 bool USynthComponentMonoWaveTable::SetCurveTangent(int32 TableIndex, float InNewTangent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetCurveTangent");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetCurveTangent");
 
 	Params::SynthComponentMonoWaveTable_SetCurveTangent Parms{};
 
@@ -3840,10 +3393,7 @@ bool USynthComponentMonoWaveTable::SetCurveTangent(int32 TableIndex, float InNew
 
 bool USynthComponentMonoWaveTable::SetCurveValue(int32 TableIndex, int32 KeyframeIndex, const float NewValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetCurveValue");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetCurveValue");
 
 	Params::SynthComponentMonoWaveTable_SetCurveValue Parms{};
 
@@ -3869,10 +3419,7 @@ bool USynthComponentMonoWaveTable::SetCurveValue(int32 TableIndex, int32 Keyfram
 
 void USynthComponentMonoWaveTable::SetFilterEnvelopeAttackTime(const float InAttackTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeAttackTime");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeAttackTime");
 
 	Params::SynthComponentMonoWaveTable_SetFilterEnvelopeAttackTime Parms{};
 
@@ -3894,10 +3441,7 @@ void USynthComponentMonoWaveTable::SetFilterEnvelopeAttackTime(const float InAtt
 
 void USynthComponentMonoWaveTable::SetFilterEnvelopeBiasDepth(const float InDepth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeBiasDepth");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeBiasDepth");
 
 	Params::SynthComponentMonoWaveTable_SetFilterEnvelopeBiasDepth Parms{};
 
@@ -3919,10 +3463,7 @@ void USynthComponentMonoWaveTable::SetFilterEnvelopeBiasDepth(const float InDept
 
 void USynthComponentMonoWaveTable::SetFilterEnvelopeBiasInvert(const bool bInBiasInvert)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeBiasInvert");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeBiasInvert");
 
 	Params::SynthComponentMonoWaveTable_SetFilterEnvelopeBiasInvert Parms{};
 
@@ -3944,10 +3485,7 @@ void USynthComponentMonoWaveTable::SetFilterEnvelopeBiasInvert(const bool bInBia
 
 void USynthComponentMonoWaveTable::SetFilterEnvelopeDepth(const float InDepth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeDepth");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeDepth");
 
 	Params::SynthComponentMonoWaveTable_SetFilterEnvelopeDepth Parms{};
 
@@ -3969,10 +3507,7 @@ void USynthComponentMonoWaveTable::SetFilterEnvelopeDepth(const float InDepth)
 
 void USynthComponentMonoWaveTable::SetFilterEnvelopeInvert(const bool bInInvert)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeInvert");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeInvert");
 
 	Params::SynthComponentMonoWaveTable_SetFilterEnvelopeInvert Parms{};
 
@@ -3994,10 +3529,7 @@ void USynthComponentMonoWaveTable::SetFilterEnvelopeInvert(const bool bInInvert)
 
 void USynthComponentMonoWaveTable::SetFilterEnvelopenDecayTime(const float InDecayTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopenDecayTime");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopenDecayTime");
 
 	Params::SynthComponentMonoWaveTable_SetFilterEnvelopenDecayTime Parms{};
 
@@ -4019,10 +3551,7 @@ void USynthComponentMonoWaveTable::SetFilterEnvelopenDecayTime(const float InDec
 
 void USynthComponentMonoWaveTable::SetFilterEnvelopeReleaseTime(const float InReleaseTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeReleaseTime");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeReleaseTime");
 
 	Params::SynthComponentMonoWaveTable_SetFilterEnvelopeReleaseTime Parms{};
 
@@ -4044,10 +3573,7 @@ void USynthComponentMonoWaveTable::SetFilterEnvelopeReleaseTime(const float InRe
 
 void USynthComponentMonoWaveTable::SetFilterEnvelopeSustainGain(const float InSustainGain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeSustainGain");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFilterEnvelopeSustainGain");
 
 	Params::SynthComponentMonoWaveTable_SetFilterEnvelopeSustainGain Parms{};
 
@@ -4069,10 +3595,7 @@ void USynthComponentMonoWaveTable::SetFilterEnvelopeSustainGain(const float InSu
 
 void USynthComponentMonoWaveTable::SetFrequency(const float FrequencyHz)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFrequency");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFrequency");
 
 	Params::SynthComponentMonoWaveTable_SetFrequency Parms{};
 
@@ -4094,10 +3617,7 @@ void USynthComponentMonoWaveTable::SetFrequency(const float FrequencyHz)
 
 void USynthComponentMonoWaveTable::SetFrequencyPitchBend(const float FrequencyOffsetCents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFrequencyPitchBend");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFrequencyPitchBend");
 
 	Params::SynthComponentMonoWaveTable_SetFrequencyPitchBend Parms{};
 
@@ -4119,10 +3639,7 @@ void USynthComponentMonoWaveTable::SetFrequencyPitchBend(const float FrequencyOf
 
 void USynthComponentMonoWaveTable::SetFrequencyWithMidiNote(const float InMidiNote)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFrequencyWithMidiNote");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetFrequencyWithMidiNote");
 
 	Params::SynthComponentMonoWaveTable_SetFrequencyWithMidiNote Parms{};
 
@@ -4144,10 +3661,7 @@ void USynthComponentMonoWaveTable::SetFrequencyWithMidiNote(const float InMidiNo
 
 void USynthComponentMonoWaveTable::SetLowPassFilterResonance(float InNewQ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetLowPassFilterResonance");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetLowPassFilterResonance");
 
 	Params::SynthComponentMonoWaveTable_SetLowPassFilterResonance Parms{};
 
@@ -4169,10 +3683,7 @@ void USynthComponentMonoWaveTable::SetLowPassFilterResonance(float InNewQ)
 
 void USynthComponentMonoWaveTable::SetPositionEnvelopeAttackTime(const float InAttackTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeAttackTime");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeAttackTime");
 
 	Params::SynthComponentMonoWaveTable_SetPositionEnvelopeAttackTime Parms{};
 
@@ -4194,10 +3705,7 @@ void USynthComponentMonoWaveTable::SetPositionEnvelopeAttackTime(const float InA
 
 void USynthComponentMonoWaveTable::SetPositionEnvelopeBiasDepth(const float InDepth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeBiasDepth");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeBiasDepth");
 
 	Params::SynthComponentMonoWaveTable_SetPositionEnvelopeBiasDepth Parms{};
 
@@ -4219,10 +3727,7 @@ void USynthComponentMonoWaveTable::SetPositionEnvelopeBiasDepth(const float InDe
 
 void USynthComponentMonoWaveTable::SetPositionEnvelopeBiasInvert(const bool bInBiasInvert)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeBiasInvert");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeBiasInvert");
 
 	Params::SynthComponentMonoWaveTable_SetPositionEnvelopeBiasInvert Parms{};
 
@@ -4244,10 +3749,7 @@ void USynthComponentMonoWaveTable::SetPositionEnvelopeBiasInvert(const bool bInB
 
 void USynthComponentMonoWaveTable::SetPositionEnvelopeDecayTime(const float InDecayTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeDecayTime");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeDecayTime");
 
 	Params::SynthComponentMonoWaveTable_SetPositionEnvelopeDecayTime Parms{};
 
@@ -4269,10 +3771,7 @@ void USynthComponentMonoWaveTable::SetPositionEnvelopeDecayTime(const float InDe
 
 void USynthComponentMonoWaveTable::SetPositionEnvelopeDepth(const float InDepth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeDepth");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeDepth");
 
 	Params::SynthComponentMonoWaveTable_SetPositionEnvelopeDepth Parms{};
 
@@ -4294,10 +3793,7 @@ void USynthComponentMonoWaveTable::SetPositionEnvelopeDepth(const float InDepth)
 
 void USynthComponentMonoWaveTable::SetPositionEnvelopeInvert(const bool bInInvert)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeInvert");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeInvert");
 
 	Params::SynthComponentMonoWaveTable_SetPositionEnvelopeInvert Parms{};
 
@@ -4319,10 +3815,7 @@ void USynthComponentMonoWaveTable::SetPositionEnvelopeInvert(const bool bInInver
 
 void USynthComponentMonoWaveTable::SetPositionEnvelopeReleaseTime(const float InReleaseTimeMsec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeReleaseTime");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeReleaseTime");
 
 	Params::SynthComponentMonoWaveTable_SetPositionEnvelopeReleaseTime Parms{};
 
@@ -4344,10 +3837,7 @@ void USynthComponentMonoWaveTable::SetPositionEnvelopeReleaseTime(const float In
 
 void USynthComponentMonoWaveTable::SetPositionEnvelopeSustainGain(const float InSustainGain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeSustainGain");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPositionEnvelopeSustainGain");
 
 	Params::SynthComponentMonoWaveTable_SetPositionEnvelopeSustainGain Parms{};
 
@@ -4369,10 +3859,7 @@ void USynthComponentMonoWaveTable::SetPositionEnvelopeSustainGain(const float In
 
 void USynthComponentMonoWaveTable::SetPosLfoDepth(const float InLfoDepth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPosLfoDepth");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPosLfoDepth");
 
 	Params::SynthComponentMonoWaveTable_SetPosLfoDepth Parms{};
 
@@ -4394,10 +3881,7 @@ void USynthComponentMonoWaveTable::SetPosLfoDepth(const float InLfoDepth)
 
 void USynthComponentMonoWaveTable::SetPosLfoFrequency(const float InLfoFrequency)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPosLfoFrequency");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPosLfoFrequency");
 
 	Params::SynthComponentMonoWaveTable_SetPosLfoFrequency Parms{};
 
@@ -4419,10 +3903,7 @@ void USynthComponentMonoWaveTable::SetPosLfoFrequency(const float InLfoFrequency
 
 void USynthComponentMonoWaveTable::SetPosLfoType(const ESynthLFOType InLfoType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPosLfoType");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetPosLfoType");
 
 	Params::SynthComponentMonoWaveTable_SetPosLfoType Parms{};
 
@@ -4444,10 +3925,7 @@ void USynthComponentMonoWaveTable::SetPosLfoType(const ESynthLFOType InLfoType)
 
 void USynthComponentMonoWaveTable::SetSustainPedalState(bool InSustainPedalState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetSustainPedalState");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetSustainPedalState");
 
 	Params::SynthComponentMonoWaveTable_SetSustainPedalState Parms{};
 
@@ -4469,10 +3947,7 @@ void USynthComponentMonoWaveTable::SetSustainPedalState(bool InSustainPedalState
 
 void USynthComponentMonoWaveTable::SetWaveTablePosition(float InPosition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetWaveTablePosition");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "SetWaveTablePosition");
 
 	Params::SynthComponentMonoWaveTable_SetWaveTablePosition Parms{};
 
@@ -4495,10 +3970,7 @@ void USynthComponentMonoWaveTable::SetWaveTablePosition(float InPosition)
 
 TArray<float> USynthComponentMonoWaveTable::GetKeyFrameValuesForTable(float TableIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "GetKeyFrameValuesForTable");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "GetKeyFrameValuesForTable");
 
 	Params::SynthComponentMonoWaveTable_GetKeyFrameValuesForTable Parms{};
 
@@ -4522,10 +3994,7 @@ TArray<float> USynthComponentMonoWaveTable::GetKeyFrameValuesForTable(float Tabl
 
 int32 USynthComponentMonoWaveTable::GetMaxTableIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMonoWaveTable", "GetMaxTableIndex");
+	class UFunction* Func = Class->GetFunction("SynthComponentMonoWaveTable", "GetMaxTableIndex");
 
 	Params::SynthComponentMonoWaveTable_GetMaxTableIndex Parms{};
 
@@ -4548,10 +4017,7 @@ int32 USynthComponentMonoWaveTable::GetMaxTableIndex() const
 
 void USynthComponentMoto::GetRPMRange(float* OutMinRPM, float* OutMaxRPM)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMoto", "GetRPMRange");
+	class UFunction* Func = Class->GetFunction("SynthComponentMoto", "GetRPMRange");
 
 	Params::SynthComponentMoto_GetRPMRange Parms{};
 
@@ -4578,10 +4044,7 @@ void USynthComponentMoto::GetRPMRange(float* OutMinRPM, float* OutMaxRPM)
 
 void USynthComponentMoto::SetRPM(float InRPM, float InTimeSec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMoto", "SetRPM");
+	class UFunction* Func = Class->GetFunction("SynthComponentMoto", "SetRPM");
 
 	Params::SynthComponentMoto_SetRPM Parms{};
 
@@ -4604,10 +4067,7 @@ void USynthComponentMoto::SetRPM(float InRPM, float InTimeSec)
 
 void USynthComponentMoto::SetSettings(const struct FMotoSynthRuntimeSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMoto", "SetSettings");
+	class UFunction* Func = Class->GetFunction("SynthComponentMoto", "SetSettings");
 
 	Params::SynthComponentMoto_SetSettings Parms{};
 
@@ -4629,10 +4089,7 @@ void USynthComponentMoto::SetSettings(const struct FMotoSynthRuntimeSettings& In
 
 bool USynthComponentMoto::IsEnabled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentMoto", "IsEnabled");
+	class UFunction* Func = Class->GetFunction("SynthComponentMoto", "IsEnabled");
 
 	Params::SynthComponentMoto_IsEnabled Parms{};
 
@@ -4654,10 +4111,7 @@ bool USynthComponentMoto::IsEnabled() const
 
 void USynthComponentToneGenerator::SetFrequency(float InFrequency)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentToneGenerator", "SetFrequency");
+	class UFunction* Func = Class->GetFunction("SynthComponentToneGenerator", "SetFrequency");
 
 	Params::SynthComponentToneGenerator_SetFrequency Parms{};
 
@@ -4679,10 +4133,7 @@ void USynthComponentToneGenerator::SetFrequency(float InFrequency)
 
 void USynthComponentToneGenerator::SetVolume(float InVolume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthComponentToneGenerator", "SetVolume");
+	class UFunction* Func = Class->GetFunction("SynthComponentToneGenerator", "SetVolume");
 
 	Params::SynthComponentToneGenerator_SetVolume Parms{};
 
@@ -4706,10 +4157,7 @@ void USynthComponentToneGenerator::SetVolume(float InVolume)
 
 void USynthSamplePlayer::SeekToTime(float TimeSec, ESamplePlayerSeekType SeekType, bool bWrap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthSamplePlayer", "SeekToTime");
+	class UFunction* Func = Class->GetFunction("SynthSamplePlayer", "SeekToTime");
 
 	Params::SynthSamplePlayer_SeekToTime Parms{};
 
@@ -4734,10 +4182,7 @@ void USynthSamplePlayer::SeekToTime(float TimeSec, ESamplePlayerSeekType SeekTyp
 
 void USynthSamplePlayer::SetPitch(float InPitch, float TimeSec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthSamplePlayer", "SetPitch");
+	class UFunction* Func = Class->GetFunction("SynthSamplePlayer", "SetPitch");
 
 	Params::SynthSamplePlayer_SetPitch Parms{};
 
@@ -4760,10 +4205,7 @@ void USynthSamplePlayer::SetPitch(float InPitch, float TimeSec)
 
 void USynthSamplePlayer::SetScrubMode(bool bScrubMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthSamplePlayer", "SetScrubMode");
+	class UFunction* Func = Class->GetFunction("SynthSamplePlayer", "SetScrubMode");
 
 	Params::SynthSamplePlayer_SetScrubMode Parms{};
 
@@ -4785,10 +4227,7 @@ void USynthSamplePlayer::SetScrubMode(bool bScrubMode)
 
 void USynthSamplePlayer::SetScrubTimeWidth(float InScrubTimeWidthSec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthSamplePlayer", "SetScrubTimeWidth");
+	class UFunction* Func = Class->GetFunction("SynthSamplePlayer", "SetScrubTimeWidth");
 
 	Params::SynthSamplePlayer_SetScrubTimeWidth Parms{};
 
@@ -4810,10 +4249,7 @@ void USynthSamplePlayer::SetScrubTimeWidth(float InScrubTimeWidthSec)
 
 void USynthSamplePlayer::SetSoundWave(class USoundWave* InSoundWave)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthSamplePlayer", "SetSoundWave");
+	class UFunction* Func = Class->GetFunction("SynthSamplePlayer", "SetSoundWave");
 
 	Params::SynthSamplePlayer_SetSoundWave Parms{};
 
@@ -4835,10 +4271,7 @@ void USynthSamplePlayer::SetSoundWave(class USoundWave* InSoundWave)
 
 float USynthSamplePlayer::GetCurrentPlaybackProgressPercent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthSamplePlayer", "GetCurrentPlaybackProgressPercent");
+	class UFunction* Func = Class->GetFunction("SynthSamplePlayer", "GetCurrentPlaybackProgressPercent");
 
 	Params::SynthSamplePlayer_GetCurrentPlaybackProgressPercent Parms{};
 
@@ -4860,10 +4293,7 @@ float USynthSamplePlayer::GetCurrentPlaybackProgressPercent() const
 
 float USynthSamplePlayer::GetCurrentPlaybackProgressTime() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthSamplePlayer", "GetCurrentPlaybackProgressTime");
+	class UFunction* Func = Class->GetFunction("SynthSamplePlayer", "GetCurrentPlaybackProgressTime");
 
 	Params::SynthSamplePlayer_GetCurrentPlaybackProgressTime Parms{};
 
@@ -4885,10 +4315,7 @@ float USynthSamplePlayer::GetCurrentPlaybackProgressTime() const
 
 float USynthSamplePlayer::GetSampleDuration() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthSamplePlayer", "GetSampleDuration");
+	class UFunction* Func = Class->GetFunction("SynthSamplePlayer", "GetSampleDuration");
 
 	Params::SynthSamplePlayer_GetSampleDuration Parms{};
 
@@ -4910,10 +4337,7 @@ float USynthSamplePlayer::GetSampleDuration() const
 
 bool USynthSamplePlayer::IsLoaded() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthSamplePlayer", "IsLoaded");
+	class UFunction* Func = Class->GetFunction("SynthSamplePlayer", "IsLoaded");
 
 	Params::SynthSamplePlayer_IsLoaded Parms{};
 
@@ -4940,10 +4364,7 @@ bool USynthSamplePlayer::IsLoaded() const
 
 float USynthesisUtilitiesBlueprintFunctionLibrary::GetLinearFrequency(float InLogFrequencyValue, float InDomainMin, float InDomainMax, float InRangeMin, float InRangeMax)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SynthesisUtilitiesBlueprintFunctionLibrary", "GetLinearFrequency");
+	class UFunction* Func = StaticClass()->GetFunction("SynthesisUtilitiesBlueprintFunctionLibrary", "GetLinearFrequency");
 
 	Params::SynthesisUtilitiesBlueprintFunctionLibrary_GetLinearFrequency Parms{};
 
@@ -4976,10 +4397,7 @@ float USynthesisUtilitiesBlueprintFunctionLibrary::GetLinearFrequency(float InLo
 
 float USynthesisUtilitiesBlueprintFunctionLibrary::GetLogFrequency(float InLinearValue, float InDomainMin, float InDomainMax, float InRangeMin, float InRangeMax)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SynthesisUtilitiesBlueprintFunctionLibrary", "GetLogFrequency");
+	class UFunction* Func = StaticClass()->GetFunction("SynthesisUtilitiesBlueprintFunctionLibrary", "GetLogFrequency");
 
 	Params::SynthesisUtilitiesBlueprintFunctionLibrary_GetLogFrequency Parms{};
 
@@ -5007,10 +4425,7 @@ float USynthesisUtilitiesBlueprintFunctionLibrary::GetLogFrequency(float InLinea
 
 void USynthKnob::SetLocked(bool InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthKnob", "SetLocked");
+	class UFunction* Func = Class->GetFunction("SynthKnob", "SetLocked");
 
 	Params::SynthKnob_SetLocked Parms{};
 
@@ -5032,10 +4447,7 @@ void USynthKnob::SetLocked(bool InValue)
 
 void USynthKnob::SetStepSize(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthKnob", "SetStepSize");
+	class UFunction* Func = Class->GetFunction("SynthKnob", "SetStepSize");
 
 	Params::SynthKnob_SetStepSize Parms{};
 
@@ -5057,10 +4469,7 @@ void USynthKnob::SetStepSize(float InValue)
 
 void USynthKnob::SetValue(float InValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthKnob", "SetValue");
+	class UFunction* Func = Class->GetFunction("SynthKnob", "SetValue");
 
 	Params::SynthKnob_SetValue Parms{};
 
@@ -5082,10 +4491,7 @@ void USynthKnob::SetValue(float InValue)
 
 float USynthKnob::GetValue() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SynthKnob", "GetValue");
+	class UFunction* Func = Class->GetFunction("SynthKnob", "GetValue");
 
 	Params::SynthKnob_GetValue Parms{};
 

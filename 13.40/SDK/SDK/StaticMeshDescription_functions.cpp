@@ -31,10 +31,7 @@ SDK_NAMESPACE_START
 
 void UStaticMeshDescription::CreateCube(const struct FVector& Center, const struct FVector& HalfExtents, const struct FPolygonGroupID& PolygonGroup, struct FPolygonID* PolygonID_PlusX, struct FPolygonID* PolygonID_MinusX, struct FPolygonID* PolygonID_PlusY, struct FPolygonID* PolygonID_MinusY, struct FPolygonID* PolygonID_PlusZ, struct FPolygonID* PolygonID_MinusZ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StaticMeshDescription", "CreateCube");
+	class UFunction* Func = Class->GetFunction("StaticMeshDescription", "CreateCube");
 
 	Params::StaticMeshDescription_CreateCube Parms{};
 
@@ -77,10 +74,7 @@ void UStaticMeshDescription::CreateCube(const struct FVector& Center, const stru
 
 void UStaticMeshDescription::SetPolygonGroupMaterialSlotName(const struct FPolygonGroupID& PolygonGroupID, const class FName& SlotName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StaticMeshDescription", "SetPolygonGroupMaterialSlotName");
+	class UFunction* Func = Class->GetFunction("StaticMeshDescription", "SetPolygonGroupMaterialSlotName");
 
 	Params::StaticMeshDescription_SetPolygonGroupMaterialSlotName Parms{};
 
@@ -105,10 +99,7 @@ void UStaticMeshDescription::SetPolygonGroupMaterialSlotName(const struct FPolyg
 
 void UStaticMeshDescription::SetVertexInstanceUV(const struct FVertexInstanceID& VertexInstanceID, const struct FVector2D& UV, int32 UVIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StaticMeshDescription", "SetVertexInstanceUV");
+	class UFunction* Func = Class->GetFunction("StaticMeshDescription", "SetVertexInstanceUV");
 
 	Params::StaticMeshDescription_SetVertexInstanceUV Parms{};
 
@@ -134,10 +125,7 @@ void UStaticMeshDescription::SetVertexInstanceUV(const struct FVertexInstanceID&
 
 struct FVector2D UStaticMeshDescription::GetVertexInstanceUV(const struct FVertexInstanceID& VertexInstanceID, int32 UVIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StaticMeshDescription", "GetVertexInstanceUV");
+	class UFunction* Func = Class->GetFunction("StaticMeshDescription", "GetVertexInstanceUV");
 
 	Params::StaticMeshDescription_GetVertexInstanceUV Parms{};
 

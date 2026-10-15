@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMoonbeam_PowerRatingWidget_C::ExecuteUbergraph_Moonbeam_PowerRatingWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "ExecuteUbergraph_Moonbeam_PowerRatingWidget");
+	class UFunction* Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "ExecuteUbergraph_Moonbeam_PowerRatingWidget");
 
 	Params::Moonbeam_PowerRatingWidget_C_ExecuteUbergraph_Moonbeam_PowerRatingWidget Parms{};
 
@@ -41,10 +38,7 @@ void UMoonbeam_PowerRatingWidget_C::ExecuteUbergraph_Moonbeam_PowerRatingWidget(
 
 void UMoonbeam_PowerRatingWidget_C::OnTeamMembershipChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "OnTeamMembershipChanged");
+	class UFunction* Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "OnTeamMembershipChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UMoonbeam_PowerRatingWidget_C::OnTeamMembershipChanged()
 
 void UMoonbeam_PowerRatingWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "PreConstruct");
 
 	Params::Moonbeam_PowerRatingWidget_C_PreConstruct Parms{};
 
@@ -78,10 +69,7 @@ void UMoonbeam_PowerRatingWidget_C::PreConstruct(bool IsDesignTime)
 
 void UMoonbeam_PowerRatingWidget_C::OnPowerRatingProgressUpdated(float BaseRatingProgress, float TeamRatingProgress)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "OnPowerRatingProgressUpdated");
+	class UFunction* Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "OnPowerRatingProgressUpdated");
 
 	Params::Moonbeam_PowerRatingWidget_C_OnPowerRatingProgressUpdated Parms{};
 
@@ -99,10 +87,7 @@ void UMoonbeam_PowerRatingWidget_C::OnPowerRatingProgressUpdated(float BaseRatin
 
 void UMoonbeam_PowerRatingWidget_C::OnTeamPowerRatingUpdated(int32 TeamPowerRating)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "OnTeamPowerRatingUpdated");
+	class UFunction* Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "OnTeamPowerRatingUpdated");
 
 	Params::Moonbeam_PowerRatingWidget_C_OnTeamPowerRatingUpdated Parms{};
 
@@ -119,10 +104,7 @@ void UMoonbeam_PowerRatingWidget_C::OnTeamPowerRatingUpdated(int32 TeamPowerRati
 
 void UMoonbeam_PowerRatingWidget_C::OnBasePowerRatingUpdated(int32 BasePowerRating)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "OnBasePowerRatingUpdated");
+	class UFunction* Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "OnBasePowerRatingUpdated");
 
 	Params::Moonbeam_PowerRatingWidget_C_OnBasePowerRatingUpdated Parms{};
 
@@ -137,10 +119,7 @@ void UMoonbeam_PowerRatingWidget_C::OnBasePowerRatingUpdated(int32 BasePowerRati
 
 void UMoonbeam_PowerRatingWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +130,7 @@ void UMoonbeam_PowerRatingWidget_C::Construct()
 
 void UMoonbeam_PowerRatingWidget_C::UpdateWidgetState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "UpdateWidgetState");
+	class UFunction* Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "UpdateWidgetState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +143,7 @@ void UMoonbeam_PowerRatingWidget_C::UpdateWidgetState()
 
 void UMoonbeam_PowerRatingWidget_C::SetBackgroundColor(const struct FLinearColor& NewColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "SetBackgroundColor");
+	class UFunction* Func = Class->GetFunction("Moonbeam_PowerRatingWidget_C", "SetBackgroundColor");
 
 	Params::Moonbeam_PowerRatingWidget_C_SetBackgroundColor Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_AmbientAudioController_C::ExecuteUbergraph_BP_AmbientAudioController(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioController_C", "ExecuteUbergraph_BP_AmbientAudioController");
+	class UFunction* Func = Class->GetFunction("BP_AmbientAudioController_C", "ExecuteUbergraph_BP_AmbientAudioController");
 
 	Params::BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController Parms{};
 
@@ -43,10 +40,7 @@ void UBP_AmbientAudioController_C::ExecuteUbergraph_BP_AmbientAudioController(in
 
 void UBP_AmbientAudioController_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveTick");
 
 	Params::BP_AmbientAudioController_C_ReceiveTick Parms{};
 
@@ -61,10 +55,7 @@ void UBP_AmbientAudioController_C::ReceiveTick(float DeltaSeconds)
 
 void UBP_AmbientAudioController_C::Evaluate_Inside_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioController_C", "Evaluate Inside State");
+	class UFunction* Func = Class->GetFunction("BP_AmbientAudioController_C", "Evaluate Inside State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UBP_AmbientAudioController_C::Evaluate_Inside_State()
 
 void UBP_AmbientAudioController_C::OnCheckIfSurrounded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioController_C", "OnCheckIfSurrounded");
+	class UFunction* Func = Class->GetFunction("BP_AmbientAudioController_C", "OnCheckIfSurrounded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UBP_AmbientAudioController_C::OnCheckIfSurrounded()
 
 void UBP_AmbientAudioController_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveEndPlay");
 
 	Params::BP_AmbientAudioController_C_ReceiveEndPlay Parms{};
 
@@ -109,10 +94,7 @@ void UBP_AmbientAudioController_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 
 void UBP_AmbientAudioController_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void UBP_AmbientAudioController_C::ReceiveBeginPlay()
 
 bool UBP_AmbientAudioController_C::Trace(const struct FVector& Start, const struct FVector& Direction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioController_C", "Trace");
+	class UFunction* Func = Class->GetFunction("BP_AmbientAudioController_C", "Trace");
 
 	Params::BP_AmbientAudioController_C_Trace Parms{};
 
@@ -150,10 +129,7 @@ bool UBP_AmbientAudioController_C::Trace(const struct FVector& Start, const stru
 
 void UBP_AmbientAudioController_C::SetTargetLPFFreq(float Target)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioController_C", "SetTargetLPFFreq");
+	class UFunction* Func = Class->GetFunction("BP_AmbientAudioController_C", "SetTargetLPFFreq");
 
 	Params::BP_AmbientAudioController_C_SetTargetLPFFreq Parms{};
 
@@ -168,10 +144,7 @@ void UBP_AmbientAudioController_C::SetTargetLPFFreq(float Target)
 
 void UBP_AmbientAudioController_C::UpdateSnowSetupBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioController_C", "UpdateSnowSetupBP");
+	class UFunction* Func = Class->GetFunction("BP_AmbientAudioController_C", "UpdateSnowSetupBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

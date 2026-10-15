@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_HeldObject_Throw_Component_TnTina_C::ExecuteUbergraph_GA_HeldObject_Throw_Component_TnTina(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Throw_Component_TnTina_C", "ExecuteUbergraph_GA_HeldObject_Throw_Component_TnTina");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Throw_Component_TnTina_C", "ExecuteUbergraph_GA_HeldObject_Throw_Component_TnTina");
 
 	Params::GA_HeldObject_Throw_Component_TnTina_C_ExecuteUbergraph_GA_HeldObject_Throw_Component_TnTina Parms{};
 
@@ -41,10 +38,7 @@ void UGA_HeldObject_Throw_Component_TnTina_C::ExecuteUbergraph_GA_HeldObject_Thr
 
 void UGA_HeldObject_Throw_Component_TnTina_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Throw_Component_TnTina_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Throw_Component_TnTina_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

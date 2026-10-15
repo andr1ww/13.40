@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USoloButton_BattlePassPurchase_C::ExecuteUbergraph_SoloButton_BattlePassPurchase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "ExecuteUbergraph_SoloButton_BattlePassPurchase");
+	class UFunction* Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "ExecuteUbergraph_SoloButton_BattlePassPurchase");
 
 	Params::SoloButton_BattlePassPurchase_C_ExecuteUbergraph_SoloButton_BattlePassPurchase Parms{};
 
@@ -41,10 +38,7 @@ void USoloButton_BattlePassPurchase_C::ExecuteUbergraph_SoloButton_BattlePassPur
 
 void USoloButton_BattlePassPurchase_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USoloButton_BattlePassPurchase_C::BP_OnClicked()
 
 void USoloButton_BattlePassPurchase_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void USoloButton_BattlePassPurchase_C::BP_OnUnhovered()
 
 void USoloButton_BattlePassPurchase_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void USoloButton_BattlePassPurchase_C::BP_OnHovered()
 
 void USoloButton_BattlePassPurchase_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "PreConstruct");
 
 	Params::SoloButton_BattlePassPurchase_C_PreConstruct Parms{};
 
@@ -103,10 +88,7 @@ void USoloButton_BattlePassPurchase_C::PreConstruct(bool IsDesignTime)
 
 void USoloButton_BattlePassPurchase_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void USoloButton_BattlePassPurchase_C::Construct()
 
 void USoloButton_BattlePassPurchase_C::HandleSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "HandleSize");
+	class UFunction* Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "HandleSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +112,7 @@ void USoloButton_BattlePassPurchase_C::HandleSize()
 
 void USoloButton_BattlePassPurchase_C::SetText(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "SetText");
+	class UFunction* Func = Class->GetFunction("SoloButton_BattlePassPurchase_C", "SetText");
 
 	Params::SoloButton_BattlePassPurchase_C_SetText Parms{};
 

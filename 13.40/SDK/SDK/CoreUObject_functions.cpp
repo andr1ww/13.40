@@ -144,10 +144,7 @@ bool UObject::IsDefaultObject() const
 
 void UObject::ExecuteUbergraph(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Object", "ExecuteUbergraph");
+	class UFunction* Func = Class->GetFunction("Object", "ExecuteUbergraph");
 
 	Params::Object_ExecuteUbergraph Parms{};
 
@@ -193,16 +190,13 @@ bool UStruct::IsSubclassOf(const FName& BaseClassName) const
 
 class UFunction* UClass::GetFunction(const FName& ClassName, const FName& FuncName) const
 {
+	if (UFunction* Func = FindFunctionByName(FuncName))
+		return Func;
+
 	for (const UStruct* Clss = this; Clss; Clss = Clss->SuperStruct)
 	{
-		if (Clss->Name != ClassName)
-			continue;
-
-		for (UField* Field = Clss->Children; Field; Field = Field->Next)
-		{
-			if (Field->HasTypeFlag(EClassCastFlags::Function) && Field->Name == FuncName)
-				return static_cast<class UFunction*>(Field);
-		}
+		if (Clss->Name == ClassName)
+			return static_cast<const UClass*>(Clss)->FindFunctionByName(FuncName, false);
 	}
 
 	return nullptr;
@@ -214,37 +208,51 @@ class UFunction* UClass::GetFunction(const FName& ClassName, const FName& FuncNa
 
 class UFunction* UClass::GetFunction(const FName& FuncName) const
 {
-	for (const UStruct* Clss = this; Clss; Clss = Clss->SuperStruct)
-	{
-		for (UField* Field = Clss->Children; Field; Field = Field->Next)
-		{
-			if (Field->HasTypeFlag(EClassCastFlags::Function) && Field->Name == FuncName)
-				return static_cast<class UFunction*>(Field);
-		}
-	}
-
-	return nullptr;
+	return FindFunctionByName(FuncName);
 }
 
 
 // Predefined Function
 // Gets a UFunction from this UClasses' 'Children' list
 
+struct FFunctionCacheHash
+{
+	using is_transparent = void;
+
+	size_t operator()(std::string_view Str) const
+	{
+		return std::hash<std::string_view>{}(Str);
+	}
+};
+
 class UFunction* UClass::GetFunction(const char* ClassName, const char* FuncName) const
 {
-	for(const UStruct* Clss = this; Clss; Clss = Clss->SuperStruct)
-	{
-		if (Clss->GetName() != ClassName)
-			continue;
-			
-		for (UField* Field = Clss->Children; Field; Field = Field->Next)
-		{
-			if(Field->HasTypeFlag(EClassCastFlags::Function) && Field->GetName() == FuncName)
-				return static_cast<class UFunction*>(Field);
-		}
-	}
+	static SRWLOCK Lock = SRWLOCK_INIT;
+	static std::unordered_map<const UClass*, std::unordered_map<std::string, UFunction*, FFunctionCacheHash, std::equal_to<>>> Cache;
 
-	return nullptr;
+	UFunction* Func = nullptr;
+
+	AcquireSRWLockShared(&Lock);
+	if (auto ClassIt = Cache.find(this); ClassIt != Cache.end())
+	{
+		if (auto FuncIt = ClassIt->second.find(std::string_view(FuncName)); FuncIt != ClassIt->second.end())
+			Func = FuncIt->second;
+	}
+	ReleaseSRWLockShared(&Lock);
+
+	if (Func)
+		return Func;
+
+	Func = GetFunction(FName(ClassName), FName(FuncName));
+
+	if (!Func)
+		return nullptr;
+
+	AcquireSRWLockExclusive(&Lock);
+	Cache[this].emplace(FuncName, Func);
+	ReleaseSRWLockExclusive(&Lock);
+
+	return Func;
 }
 
 

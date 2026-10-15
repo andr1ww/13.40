@@ -29,10 +29,7 @@ SDK_NAMESPACE_START
 
 void UHidingProp_CameraModifier_C::BlueprintModifyCamera(float DeltaTime, const struct FVector& ViewLocation, const struct FRotator& ViewRotation, float FOV, struct FVector* NewViewLocation, struct FRotator* NewViewRotation, float* NewFOV)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HidingProp_CameraModifier_C", "BlueprintModifyCamera");
+	class UFunction* Func = Class->GetFunction("HidingProp_CameraModifier_C", "BlueprintModifyCamera");
 
 	Params::HidingProp_CameraModifier_C_BlueprintModifyCamera Parms{};
 

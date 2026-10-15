@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 TSoftObjectPtr<class UTexture2D> UAlterationWidget_C::GetValidLazyTexture()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "GetValidLazyTexture");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "GetValidLazyTexture");
 
 	Params::AlterationWidget_C_GetValidLazyTexture Parms{};
 
@@ -43,10 +40,7 @@ TSoftObjectPtr<class UTexture2D> UAlterationWidget_C::GetValidLazyTexture()
 
 void UAlterationWidget_C::HasValidTexture(bool* ValidBrush)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "HasValidTexture");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "HasValidTexture");
 
 	Params::AlterationWidget_C_HasValidTexture Parms{};
 
@@ -65,10 +59,7 @@ void UAlterationWidget_C::HasValidTexture(bool* ValidBrush)
 
 void UAlterationWidget_C::IsGamplaySlot(class UFortAlterationItemDefinition* Alteration, bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "IsGamplaySlot");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "IsGamplaySlot");
 
 	Params::AlterationWidget_C_IsGamplaySlot Parms{};
 
@@ -86,10 +77,7 @@ void UAlterationWidget_C::IsGamplaySlot(class UFortAlterationItemDefinition* Alt
 
 void UAlterationWidget_C::TriggerTextAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "TriggerTextAnimation");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "TriggerTextAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,10 +95,7 @@ void UAlterationWidget_C::TriggerTextAnimation()
 
 void UAlterationWidget_C::SetWidgetSettings(bool bInIncludeName, bool bInIncludeShortDescription, bool bInIncludeDescription, EFortBrushSize InIconSize, bool bInUseLargeFormatName, bool InShouldShowRarity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "SetWidgetSettings");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "SetWidgetSettings");
 
 	Params::AlterationWidget_C_SetWidgetSettings Parms{};
 
@@ -130,10 +115,7 @@ void UAlterationWidget_C::SetWidgetSettings(bool bInIncludeName, bool bInInclude
 
 void UAlterationWidget_C::InitLockedLayout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "InitLockedLayout");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "InitLockedLayout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -144,10 +126,7 @@ void UAlterationWidget_C::InitLockedLayout()
 
 void UAlterationWidget_C::SetEvolutionDetails()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "SetEvolutionDetails");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "SetEvolutionDetails");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -158,10 +137,7 @@ void UAlterationWidget_C::SetEvolutionDetails()
 
 void UAlterationWidget_C::UpdatePips()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "UpdatePips");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "UpdatePips");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -172,10 +148,7 @@ void UAlterationWidget_C::UpdatePips()
 
 void UAlterationWidget_C::InitDescriptiveText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "InitDescriptiveText");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "InitDescriptiveText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -186,10 +159,7 @@ void UAlterationWidget_C::InitDescriptiveText()
 
 void UAlterationWidget_C::InitIcon()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "InitIcon");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "InitIcon");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -202,10 +172,7 @@ void UAlterationWidget_C::InitIcon()
 
 bool UAlterationWidget_C::ShouldFadeAlteration()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "ShouldFadeAlteration");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "ShouldFadeAlteration");
 
 	Params::AlterationWidget_C_ShouldFadeAlteration Parms{};
 
@@ -222,10 +189,7 @@ bool UAlterationWidget_C::ShouldFadeAlteration()
 
 struct FLinearColor UAlterationWidget_C::GetHighlightColor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "GetHighlightColor");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "GetHighlightColor");
 
 	Params::AlterationWidget_C_GetHighlightColor Parms{};
 
@@ -240,10 +204,7 @@ struct FLinearColor UAlterationWidget_C::GetHighlightColor()
 
 void UAlterationWidget_C::OnSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "OnSetup");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -256,10 +217,7 @@ void UAlterationWidget_C::OnSetup()
 
 void UAlterationWidget_C::ExecuteUbergraph_AlterationWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "ExecuteUbergraph_AlterationWidget");
+	class UFunction* Func = Class->GetFunction("AlterationWidget_C", "ExecuteUbergraph_AlterationWidget");
 
 	Params::AlterationWidget_C_ExecuteUbergraph_AlterationWidget Parms{};
 

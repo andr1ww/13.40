@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_SpectatorPawn_C::ExecuteUbergraph_BP_SpectatorPawn(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpectatorPawn_C", "ExecuteUbergraph_BP_SpectatorPawn");
+	class UFunction* Func = Class->GetFunction("BP_SpectatorPawn_C", "ExecuteUbergraph_BP_SpectatorPawn");
 
 	Params::BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn Parms{};
 
@@ -41,10 +38,7 @@ void ABP_SpectatorPawn_C::ExecuteUbergraph_BP_SpectatorPawn(int32 EntryPoint)
 
 void ABP_SpectatorPawn_C::Handle_Parachute_Audio_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpectatorPawn_C", "Handle Parachute Audio State");
+	class UFunction* Func = Class->GetFunction("BP_SpectatorPawn_C", "Handle Parachute Audio State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_SpectatorPawn_C::Handle_Parachute_Audio_State()
 
 void ABP_SpectatorPawn_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpectatorPawn_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_SpectatorPawn_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void ABP_SpectatorPawn_C::ReceiveBeginPlay()
 
 class USoundBase* ABP_SpectatorPawn_C::GetSkydivingSound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpectatorPawn_C", "GetSkydivingSound");
+	class UFunction* Func = Class->GetFunction("BP_SpectatorPawn_C", "GetSkydivingSound");
 
 	Params::BP_SpectatorPawn_C_GetSkydivingSound Parms{};
 
@@ -91,10 +79,7 @@ class USoundBase* ABP_SpectatorPawn_C::GetSkydivingSound()
 
 void ABP_SpectatorPawn_C::SetSkydivingAudioEnabled(bool Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpectatorPawn_C", "SetSkydivingAudioEnabled");
+	class UFunction* Func = Class->GetFunction("BP_SpectatorPawn_C", "SetSkydivingAudioEnabled");
 
 	Params::BP_SpectatorPawn_C_SetSkydivingAudioEnabled Parms{};
 

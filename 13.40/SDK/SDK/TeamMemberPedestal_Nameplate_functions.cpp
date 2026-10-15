@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTeamMemberPedestal_Nameplate_C::ExecuteUbergraph_TeamMemberPedestal_Nameplate(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "ExecuteUbergraph_TeamMemberPedestal_Nameplate");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "ExecuteUbergraph_TeamMemberPedestal_Nameplate");
 
 	Params::TeamMemberPedestal_Nameplate_C_ExecuteUbergraph_TeamMemberPedestal_Nameplate Parms{};
 
@@ -43,10 +40,7 @@ void UTeamMemberPedestal_Nameplate_C::ExecuteUbergraph_TeamMemberPedestal_Namepl
 
 void UTeamMemberPedestal_Nameplate_C::OnCurrentSubGameChanged(ESubGame NewSubGame)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnCurrentSubGameChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnCurrentSubGameChanged");
 
 	Params::TeamMemberPedestal_Nameplate_C_OnCurrentSubGameChanged Parms{};
 
@@ -63,10 +57,7 @@ void UTeamMemberPedestal_Nameplate_C::OnCurrentSubGameChanged(ESubGame NewSubGam
 
 void UTeamMemberPedestal_Nameplate_C::OnPlayReadyAudio(bool bIsReadyForMatchmaking)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnPlayReadyAudio");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnPlayReadyAudio");
 
 	Params::TeamMemberPedestal_Nameplate_C_OnPlayReadyAudio Parms{};
 
@@ -84,10 +75,7 @@ void UTeamMemberPedestal_Nameplate_C::OnPlayReadyAudio(bool bIsReadyForMatchmaki
 
 void UTeamMemberPedestal_Nameplate_C::OnFrontEndCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnFrontEndCameraChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnFrontEndCameraChanged");
 
 	Params::TeamMemberPedestal_Nameplate_C_OnFrontEndCameraChanged Parms{};
 
@@ -103,10 +91,7 @@ void UTeamMemberPedestal_Nameplate_C::OnFrontEndCameraChanged(EFrontEndCamera Ne
 
 void UTeamMemberPedestal_Nameplate_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "Construct");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +104,7 @@ void UTeamMemberPedestal_Nameplate_C::Construct()
 
 void UTeamMemberPedestal_Nameplate_C::BP_OnTeamMemberEstablished(bool bHasValidMember)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "BP_OnTeamMemberEstablished");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "BP_OnTeamMemberEstablished");
 
 	Params::TeamMemberPedestal_Nameplate_C_BP_OnTeamMemberEstablished Parms{};
 
@@ -139,10 +121,7 @@ void UTeamMemberPedestal_Nameplate_C::BP_OnTeamMemberEstablished(bool bHasValidM
 
 void UTeamMemberPedestal_Nameplate_C::OnReadyStatusChanged(EGameReadiness GameReadiness)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnReadyStatusChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnReadyStatusChanged");
 
 	Params::TeamMemberPedestal_Nameplate_C_OnReadyStatusChanged Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_FluidSim_FN_C::ExecuteUbergraph_BP_FluidSim_FN(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_FN_C", "ExecuteUbergraph_BP_FluidSim_FN");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_FN_C", "ExecuteUbergraph_BP_FluidSim_FN");
 
 	Params::BP_FluidSim_FN_C_ExecuteUbergraph_BP_FluidSim_FN Parms{};
 
@@ -41,10 +38,7 @@ void ABP_FluidSim_FN_C::ExecuteUbergraph_BP_FluidSim_FN(int32 EntryPoint)
 
 void ABP_FluidSim_FN_C::GetPlayerPawnForces()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_FN_C", "GetPlayerPawnForces");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_FN_C", "GetPlayerPawnForces");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void ABP_FluidSim_FN_C::GetPlayerPawnForces()
 
 void ABP_FluidSim_FN_C::GetLocalPawn(class APawn** Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_FN_C", "GetLocalPawn");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_FN_C", "GetLocalPawn");
 
 	Params::BP_FluidSim_FN_C_GetLocalPawn Parms{};
 
@@ -76,10 +67,7 @@ void ABP_FluidSim_FN_C::GetLocalPawn(class APawn** Pawn)
 
 void ABP_FluidSim_FN_C::GetFortnitePawnForces()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FluidSim_FN_C", "GetFortnitePawnForces");
+	class UFunction* Func = Class->GetFunction("BP_FluidSim_FN_C", "GetFortnitePawnForces");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

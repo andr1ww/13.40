@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Shotgun_Charge_Athena_C::ExecuteUbergraph_B_Shotgun_Charge_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "ExecuteUbergraph_B_Shotgun_Charge_Athena");
+	class UFunction* Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "ExecuteUbergraph_B_Shotgun_Charge_Athena");
 
 	Params::B_Shotgun_Charge_Athena_C_ExecuteUbergraph_B_Shotgun_Charge_Athena Parms{};
 
@@ -41,10 +38,7 @@ void AB_Shotgun_Charge_Athena_C::ExecuteUbergraph_B_Shotgun_Charge_Athena(int32 
 
 void AB_Shotgun_Charge_Athena_C::ChargeAudioVisualizer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "ChargeAudioVisualizer");
+	class UFunction* Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "ChargeAudioVisualizer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Shotgun_Charge_Athena_C::ChargeAudioVisualizer()
 
 void AB_Shotgun_Charge_Athena_C::OnEndCharge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "OnEndCharge");
+	class UFunction* Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "OnEndCharge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_Shotgun_Charge_Athena_C::OnEndCharge()
 
 void AB_Shotgun_Charge_Athena_C::OnReachedMaxCharge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "OnReachedMaxCharge");
+	class UFunction* Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "OnReachedMaxCharge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_Shotgun_Charge_Athena_C::OnReachedMaxCharge()
 
 void AB_Shotgun_Charge_Athena_C::OnStartCharge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "OnStartCharge");
+	class UFunction* Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "OnStartCharge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AB_Shotgun_Charge_Athena_C::OnStartCharge()
 
 void AB_Shotgun_Charge_Athena_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -114,10 +96,7 @@ void AB_Shotgun_Charge_Athena_C::K2_OnUnEquip()
 
 void AB_Shotgun_Charge_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "OnPlayWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_Shotgun_Charge_Athena_C", "OnPlayWeaponFireFX");
 
 	Params::B_Shotgun_Charge_Athena_C_OnPlayWeaponFireFX Parms{};
 

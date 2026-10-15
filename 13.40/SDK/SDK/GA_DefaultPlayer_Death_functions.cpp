@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_DefaultPlayer_Death_C::ExecuteUbergraph_GA_DefaultPlayer_Death(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_Death_C", "ExecuteUbergraph_GA_DefaultPlayer_Death");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_Death_C", "ExecuteUbergraph_GA_DefaultPlayer_Death");
 
 	Params::GA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death Parms{};
 
@@ -41,10 +38,7 @@ void UGA_DefaultPlayer_Death_C::ExecuteUbergraph_GA_DefaultPlayer_Death(int32 En
 
 void UGA_DefaultPlayer_Death_C::PickDeathMontageSection()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_Death_C", "PickDeathMontageSection");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_Death_C", "PickDeathMontageSection");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

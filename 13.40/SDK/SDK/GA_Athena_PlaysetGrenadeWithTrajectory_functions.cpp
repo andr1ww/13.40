@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::ExecuteUbergraph_GA_Athena_PlaysetGrenadeWithTrajectory(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "ExecuteUbergraph_GA_Athena_PlaysetGrenadeWithTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "ExecuteUbergraph_GA_Athena_PlaysetGrenadeWithTrajectory");
 
 	Params::GA_Athena_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_PlaysetGrenadeWithTrajectory Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::ExecuteUbergraph_GA_Athena_Plays
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::OnAbilityInputReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "OnAbilityInputReleased");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "OnAbilityInputReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::OnAbilityInputReleased()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::AthenaProjectileSpawned(class AFortProjectileBase* ProjectileReference_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "AthenaProjectileSpawned");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "AthenaProjectileSpawned");
 
 	Params::GA_Athena_PlaysetGrenadeWithTrajectory_C_AthenaProjectileSpawned Parms{};
 
@@ -75,10 +66,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::AthenaProjectileSpawned(class AF
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::InitTrajectoryVariables()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "InitTrajectoryVariables");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "InitTrajectoryVariables");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -92,10 +80,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::InitTrajectoryVariables()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::Server_SpawnProjectile(const struct FVector& Location, const struct FRotator& Direction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "Server_SpawnProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "Server_SpawnProjectile");
 
 	Params::GA_Athena_PlaysetGrenadeWithTrajectory_C_Server_SpawnProjectile Parms{};
 
@@ -111,10 +96,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::Server_SpawnProjectile(const str
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::CleanupTrajectoryDisplay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "CleanupTrajectoryDisplay");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "CleanupTrajectoryDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +107,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::CleanupTrajectoryDisplay()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +118,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::K2_ActivateAbility()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::UpdateTrajectorySpline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "UpdateTrajectorySpline");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "UpdateTrajectorySpline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::UpdateTrajectorySpline()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetupDummyProjectileRed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetupDummyProjectileRed");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetupDummyProjectileRed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +142,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetupDummyProjectileRed()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::GetActivePlaysetData(class UFortPlaysetItemDefinition** OutData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "GetActivePlaysetData");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "GetActivePlaysetData");
 
 	Params::GA_Athena_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData Parms{};
 
@@ -190,10 +160,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::GetActivePlaysetData(class UFort
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetPlaysetData(class AFortProjectileBase* Projectile_Reference)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetPlaysetData");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetPlaysetData");
 
 	Params::GA_Athena_PlaysetGrenadeWithTrajectory_C_SetPlaysetData Parms{};
 
@@ -208,10 +175,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetPlaysetData(class AFortProjec
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetActivePlaysetOnPlayer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetActivePlaysetOnPlayer");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetActivePlaysetOnPlayer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -226,10 +190,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetActivePlaysetOnPlayer()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::CalculateRotation(class UFortPlaysetItemDefinition* Playset, const struct FRotator& Rotation, struct FRotator* NewRotation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "CalculateRotation");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "CalculateRotation");
 
 	Params::GA_Athena_PlaysetGrenadeWithTrajectory_C_CalculateRotation Parms{};
 
@@ -248,10 +209,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::CalculateRotation(class UFortPla
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::DestroyProjectileTrajectory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "DestroyProjectileTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "DestroyProjectileTrajectory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

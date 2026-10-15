@@ -27,10 +27,7 @@ SDK_NAMESPACE_START
 
 void UOnsetNRT::GetChannelOnsetsBetweenTimes(const float InStartSeconds, const float InEndSeconds, const int32 InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OnsetNRT", "GetChannelOnsetsBetweenTimes");
+	class UFunction* Func = Class->GetFunction("OnsetNRT", "GetChannelOnsetsBetweenTimes");
 
 	Params::OnsetNRT_GetChannelOnsetsBetweenTimes Parms{};
 
@@ -64,10 +61,7 @@ void UOnsetNRT::GetChannelOnsetsBetweenTimes(const float InStartSeconds, const f
 
 void UOnsetNRT::GetNormalizedChannelOnsetsBetweenTimes(const float InStartSeconds, const float InEndSeconds, const int32 InChannel, TArray<float>* OutOnsetTimestamps, TArray<float>* OutOnsetStrengths) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OnsetNRT", "GetNormalizedChannelOnsetsBetweenTimes");
+	class UFunction* Func = Class->GetFunction("OnsetNRT", "GetNormalizedChannelOnsetsBetweenTimes");
 
 	Params::OnsetNRT_GetNormalizedChannelOnsetsBetweenTimes Parms{};
 
@@ -99,10 +93,7 @@ void UOnsetNRT::GetNormalizedChannelOnsetsBetweenTimes(const float InStartSecond
 
 void UConstantQNRT::GetChannelConstantQAtTime(const float InSeconds, const int32 InChannel, TArray<float>* OutConstantQ) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConstantQNRT", "GetChannelConstantQAtTime");
+	class UFunction* Func = Class->GetFunction("ConstantQNRT", "GetChannelConstantQAtTime");
 
 	Params::ConstantQNRT_GetChannelConstantQAtTime Parms{};
 
@@ -130,10 +121,7 @@ void UConstantQNRT::GetChannelConstantQAtTime(const float InSeconds, const int32
 
 void UConstantQNRT::GetNormalizedChannelConstantQAtTime(const float InSeconds, const int32 InChannel, TArray<float>* OutConstantQ) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConstantQNRT", "GetNormalizedChannelConstantQAtTime");
+	class UFunction* Func = Class->GetFunction("ConstantQNRT", "GetNormalizedChannelConstantQAtTime");
 
 	Params::ConstantQNRT_GetNormalizedChannelConstantQAtTime Parms{};
 
@@ -161,10 +149,7 @@ void UConstantQNRT::GetNormalizedChannelConstantQAtTime(const float InSeconds, c
 
 void ULoudnessNRT::GetChannelLoudnessAtTime(const float InSeconds, const int32 InChannel, float* OutLoudness) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoudnessNRT", "GetChannelLoudnessAtTime");
+	class UFunction* Func = Class->GetFunction("LoudnessNRT", "GetChannelLoudnessAtTime");
 
 	Params::LoudnessNRT_GetChannelLoudnessAtTime Parms{};
 
@@ -191,10 +176,7 @@ void ULoudnessNRT::GetChannelLoudnessAtTime(const float InSeconds, const int32 I
 
 void ULoudnessNRT::GetLoudnessAtTime(const float InSeconds, float* OutLoudness) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoudnessNRT", "GetLoudnessAtTime");
+	class UFunction* Func = Class->GetFunction("LoudnessNRT", "GetLoudnessAtTime");
 
 	Params::LoudnessNRT_GetLoudnessAtTime Parms{};
 
@@ -221,10 +203,7 @@ void ULoudnessNRT::GetLoudnessAtTime(const float InSeconds, float* OutLoudness) 
 
 void ULoudnessNRT::GetNormalizedChannelLoudnessAtTime(const float InSeconds, const int32 InChannel, float* OutLoudness) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoudnessNRT", "GetNormalizedChannelLoudnessAtTime");
+	class UFunction* Func = Class->GetFunction("LoudnessNRT", "GetNormalizedChannelLoudnessAtTime");
 
 	Params::LoudnessNRT_GetNormalizedChannelLoudnessAtTime Parms{};
 
@@ -251,10 +230,7 @@ void ULoudnessNRT::GetNormalizedChannelLoudnessAtTime(const float InSeconds, con
 
 void ULoudnessNRT::GetNormalizedLoudnessAtTime(const float InSeconds, float* OutLoudness) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoudnessNRT", "GetNormalizedLoudnessAtTime");
+	class UFunction* Func = Class->GetFunction("LoudnessNRT", "GetNormalizedLoudnessAtTime");
 
 	Params::LoudnessNRT_GetNormalizedLoudnessAtTime Parms{};
 

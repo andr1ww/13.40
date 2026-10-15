@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemPresentationEntry_C::ExecuteUbergraph_ItemPresentationEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "ExecuteUbergraph_ItemPresentationEntry");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "ExecuteUbergraph_ItemPresentationEntry");
 
 	Params::ItemPresentationEntry_C_ExecuteUbergraph_ItemPresentationEntry Parms{};
 
@@ -41,10 +38,7 @@ void UItemPresentationEntry_C::ExecuteUbergraph_ItemPresentationEntry(int32 Entr
 
 void UItemPresentationEntry_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UItemPresentationEntry_C::BP_OnDeselected()
 
 void UItemPresentationEntry_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UItemPresentationEntry_C::BP_OnSelected()
 
 void UItemPresentationEntry_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "OnMouseLeave");
 
 	Params::ItemPresentationEntry_C_OnMouseLeave Parms{};
 
@@ -89,10 +77,7 @@ void UItemPresentationEntry_C::OnMouseLeave(const struct FPointerEvent& MouseEve
 
 void UItemPresentationEntry_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UItemPresentationEntry_C::Construct()
 
 void UItemPresentationEntry_C::DelayIntroAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "DelayIntroAnimation");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "DelayIntroAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UItemPresentationEntry_C::DelayIntroAnimation()
 
 void UItemPresentationEntry_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void UItemPresentationEntry_C::BP_OnUnhovered()
 
 void UItemPresentationEntry_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void UItemPresentationEntry_C::BP_OnHovered()
 
 void UItemPresentationEntry_C::HandleHover()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "HandleHover");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "HandleHover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +132,7 @@ void UItemPresentationEntry_C::HandleHover()
 
 void UItemPresentationEntry_C::HandleUnhover()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "HandleUnhover");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "HandleUnhover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +143,7 @@ void UItemPresentationEntry_C::HandleUnhover()
 
 void UItemPresentationEntry_C::HandleSelectedAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "HandleSelectedAnim");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "HandleSelectedAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +154,7 @@ void UItemPresentationEntry_C::HandleSelectedAnim()
 
 void UItemPresentationEntry_C::HandelDeselectedAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "HandelDeselectedAnim");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "HandelDeselectedAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +167,7 @@ void UItemPresentationEntry_C::HandelDeselectedAnim()
 
 void UItemPresentationEntry_C::PlayIntro(float TimeBeforeStart)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationEntry_C", "PlayIntro");
+	class UFunction* Func = Class->GetFunction("ItemPresentationEntry_C", "PlayIntro");
 
 	Params::ItemPresentationEntry_C_PlayIntro Parms{};
 

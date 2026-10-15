@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory");
 
 	Params::GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::ExecuteUbergraph_GA_Ath
 
 void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::SetActivePlaysetOnPlayer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "SetActivePlaysetOnPlayer");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "SetActivePlaysetOnPlayer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::SetActivePlaysetOnPlaye
 
 void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::SetPlaysetData(class AFortProjectileBase* Projectile_Reference)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "SetPlaysetData");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "SetPlaysetData");
 
 	Params::GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_SetPlaysetData Parms{};
 
@@ -77,10 +68,7 @@ void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::SetPlaysetData(class AF
 
 void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_K2_OnEndAbility Parms{};
 
@@ -95,10 +83,7 @@ void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::K2_OnEndAbility(bool bW
 
 void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::K2_ActivateAbility()
 
 void UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::GetActivePlaysetData(class UFortPlaysetItemDefinition** OutData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "GetActivePlaysetData");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C", "GetActivePlaysetData");
 
 	Params::GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UDivisionDetailsScreen_C::RightShoulderButton(bool* Handled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionDetailsScreen_C", "RightShoulderButton");
+	class UFunction* Func = Class->GetFunction("DivisionDetailsScreen_C", "RightShoulderButton");
 
 	Params::DivisionDetailsScreen_C_RightShoulderButton Parms{};
 
@@ -44,10 +41,7 @@ void UDivisionDetailsScreen_C::RightShoulderButton(bool* Handled)
 
 void UDivisionDetailsScreen_C::LeftShoulderButton(bool* Handled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionDetailsScreen_C", "LeftShoulderButton");
+	class UFunction* Func = Class->GetFunction("DivisionDetailsScreen_C", "LeftShoulderButton");
 
 	Params::DivisionDetailsScreen_C_LeftShoulderButton Parms{};
 
@@ -65,10 +59,7 @@ void UDivisionDetailsScreen_C::LeftShoulderButton(bool* Handled)
 
 void UDivisionDetailsScreen_C::EmptyFunction(bool* Handled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionDetailsScreen_C", "EmptyFunction");
+	class UFunction* Func = Class->GetFunction("DivisionDetailsScreen_C", "EmptyFunction");
 
 	Params::DivisionDetailsScreen_C_EmptyFunction Parms{};
 
@@ -84,10 +75,7 @@ void UDivisionDetailsScreen_C::EmptyFunction(bool* Handled)
 
 void UDivisionDetailsScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionDetailsScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("DivisionDetailsScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -100,10 +88,7 @@ void UDivisionDetailsScreen_C::BP_OnActivated()
 
 void UDivisionDetailsScreen_C::BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionDetailsScreen_C", "BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("DivisionDetailsScreen_C", "BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::DivisionDetailsScreen_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -120,10 +105,7 @@ void UDivisionDetailsScreen_C::BndEvt__BackButton_K2Node_ComponentBoundEvent_0_C
 
 void UDivisionDetailsScreen_C::BndEvt__NextButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionDetailsScreen_C", "BndEvt__NextButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("DivisionDetailsScreen_C", "BndEvt__NextButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::DivisionDetailsScreen_C_BndEvt__NextButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -140,10 +122,7 @@ void UDivisionDetailsScreen_C::BndEvt__NextButton_K2Node_ComponentBoundEvent_1_C
 
 void UDivisionDetailsScreen_C::ExecuteUbergraph_DivisionDetailsScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionDetailsScreen_C", "ExecuteUbergraph_DivisionDetailsScreen");
+	class UFunction* Func = Class->GetFunction("DivisionDetailsScreen_C", "ExecuteUbergraph_DivisionDetailsScreen");
 
 	Params::DivisionDetailsScreen_C_ExecuteUbergraph_DivisionDetailsScreen Parms{};
 

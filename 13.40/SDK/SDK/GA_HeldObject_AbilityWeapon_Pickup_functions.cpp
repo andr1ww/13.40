@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_HeldObject_AbilityWeapon_Pickup_C::ExecuteUbergraph_GA_HeldObject_AbilityWeapon_Pickup(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "ExecuteUbergraph_GA_HeldObject_AbilityWeapon_Pickup");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "ExecuteUbergraph_GA_HeldObject_AbilityWeapon_Pickup");
 
 	Params::GA_HeldObject_AbilityWeapon_Pickup_C_ExecuteUbergraph_GA_HeldObject_AbilityWeapon_Pickup Parms{};
 
@@ -41,10 +38,7 @@ void UGA_HeldObject_AbilityWeapon_Pickup_C::ExecuteUbergraph_GA_HeldObject_Abili
 
 void UGA_HeldObject_AbilityWeapon_Pickup_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_HeldObject_AbilityWeapon_Pickup_C::K2_ActivateAbility()
 
 void UGA_HeldObject_AbilityWeapon_Pickup_C::OnCompleted_064121774728AAB46B8294B952EF27BA()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "OnCompleted_064121774728AAB46B8294B952EF27BA");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "OnCompleted_064121774728AAB46B8294B952EF27BA");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGA_HeldObject_AbilityWeapon_Pickup_C::OnCompleted_064121774728AAB46B8294B9
 
 void UGA_HeldObject_AbilityWeapon_Pickup_C::OnBlendOut_064121774728AAB46B8294B952EF27BA()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "OnBlendOut_064121774728AAB46B8294B952EF27BA");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "OnBlendOut_064121774728AAB46B8294B952EF27BA");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UGA_HeldObject_AbilityWeapon_Pickup_C::OnBlendOut_064121774728AAB46B8294B95
 
 void UGA_HeldObject_AbilityWeapon_Pickup_C::OnInterrupted_064121774728AAB46B8294B952EF27BA()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "OnInterrupted_064121774728AAB46B8294B952EF27BA");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "OnInterrupted_064121774728AAB46B8294B952EF27BA");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UGA_HeldObject_AbilityWeapon_Pickup_C::OnInterrupted_064121774728AAB46B8294
 
 void UGA_HeldObject_AbilityWeapon_Pickup_C::OnCancelled_064121774728AAB46B8294B952EF27BA()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "OnCancelled_064121774728AAB46B8294B952EF27BA");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_Pickup_C", "OnCancelled_064121774728AAB46B8294B952EF27BA");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UB_GasPump_Valet_Component_C::ExecuteUbergraph_B_GasPump_Valet_Component(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_GasPump_Valet_Component_C", "ExecuteUbergraph_B_GasPump_Valet_Component");
+	class UFunction* Func = Class->GetFunction("B_GasPump_Valet_Component_C", "ExecuteUbergraph_B_GasPump_Valet_Component");
 
 	Params::B_GasPump_Valet_Component_C_ExecuteUbergraph_B_GasPump_Valet_Component Parms{};
 
@@ -41,10 +38,7 @@ void UB_GasPump_Valet_Component_C::ExecuteUbergraph_B_GasPump_Valet_Component(in
 
 void UB_GasPump_Valet_Component_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_GasPump_Valet_Component_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_GasPump_Valet_Component_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

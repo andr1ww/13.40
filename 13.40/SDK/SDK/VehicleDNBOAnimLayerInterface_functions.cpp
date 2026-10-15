@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void IVehicleDNBOAnimLayerInterface_C::VehicleDBNOCarriedLeansOverride(const struct FPoseLink& InPoseDBNOCarried, struct FPoseLink* VehicleDBNOCarriedLeansOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOCarriedLeansOverride");
+	class UFunction* Func = AsUObject()->Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOCarriedLeansOverride");
 
 	Params::VehicleDNBOAnimLayerInterface_C_VehicleDBNOCarriedLeansOverride Parms{};
 
@@ -47,10 +44,7 @@ void IVehicleDNBOAnimLayerInterface_C::VehicleDBNOCarriedLeansOverride(const str
 
 void IVehicleDNBOAnimLayerInterface_C::VehicleDBNOJoggingOverride(struct FPoseLink* VehicleDBNOJoggingOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOJoggingOverride");
+	class UFunction* Func = AsUObject()->Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOJoggingOverride");
 
 	Params::VehicleDNBOAnimLayerInterface_C_VehicleDBNOJoggingOverride Parms{};
 

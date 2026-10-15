@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C", "ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C", "ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails");
 
 	Params::AthenaDirectAcquisitonDetails_BattlePassStarDetails_C_ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::ExecuteUbergraph_At
 
 void UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::SetNumOfBattlePassStars(int32 NumOfBattlePassStars)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C", "SetNumOfBattlePassStars");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C", "SetNumOfBattlePassStars");
 
 	Params::AthenaDirectAcquisitonDetails_BattlePassStarDetails_C_SetNumOfBattlePassStars Parms{};
 

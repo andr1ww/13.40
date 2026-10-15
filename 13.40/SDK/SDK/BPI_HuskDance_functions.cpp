@@ -20,10 +20,7 @@ SDK_NAMESPACE_START
 
 void IBPI_HuskDance_C::OnBeginDance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_HuskDance_C", "OnBeginDance");
+	class UFunction* Func = AsUObject()->Class->GetFunction("BPI_HuskDance_C", "OnBeginDance");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }
@@ -34,10 +31,7 @@ void IBPI_HuskDance_C::OnBeginDance()
 
 void IBPI_HuskDance_C::OnEndDance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_HuskDance_C", "OnEndDance");
+	class UFunction* Func = AsUObject()->Class->GetFunction("BPI_HuskDance_C", "OnEndDance");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 class UResonanceAudioReverbPluginPreset* UResonanceAudioBlueprintFunctionLibrary::GetGlobalReverbPreset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ResonanceAudioBlueprintFunctionLibrary", "GetGlobalReverbPreset");
+	class UFunction* Func = StaticClass()->GetFunction("ResonanceAudioBlueprintFunctionLibrary", "GetGlobalReverbPreset");
 
 	Params::ResonanceAudioBlueprintFunctionLibrary_GetGlobalReverbPreset Parms{};
 
@@ -48,10 +45,7 @@ class UResonanceAudioReverbPluginPreset* UResonanceAudioBlueprintFunctionLibrary
 
 void UResonanceAudioBlueprintFunctionLibrary::SetGlobalReverbPreset(class UResonanceAudioReverbPluginPreset* InPreset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ResonanceAudioBlueprintFunctionLibrary", "SetGlobalReverbPreset");
+	class UFunction* Func = StaticClass()->GetFunction("ResonanceAudioBlueprintFunctionLibrary", "SetGlobalReverbPreset");
 
 	Params::ResonanceAudioBlueprintFunctionLibrary_SetGlobalReverbPreset Parms{};
 
@@ -73,10 +67,7 @@ void UResonanceAudioBlueprintFunctionLibrary::SetGlobalReverbPreset(class UReson
 
 void UResonanceAudioReverbPluginPreset::SetEnableRoomEffects(bool bInEnableRoomEffects)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetEnableRoomEffects");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetEnableRoomEffects");
 
 	Params::ResonanceAudioReverbPluginPreset_SetEnableRoomEffects Parms{};
 
@@ -98,10 +89,7 @@ void UResonanceAudioReverbPluginPreset::SetEnableRoomEffects(bool bInEnableRoomE
 
 void UResonanceAudioReverbPluginPreset::SetReflectionScalar(float InReflectionScalar)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetReflectionScalar");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetReflectionScalar");
 
 	Params::ResonanceAudioReverbPluginPreset_SetReflectionScalar Parms{};
 
@@ -123,10 +111,7 @@ void UResonanceAudioReverbPluginPreset::SetReflectionScalar(float InReflectionSc
 
 void UResonanceAudioReverbPluginPreset::SetReverbBrightness(float InReverbBrightness)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetReverbBrightness");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetReverbBrightness");
 
 	Params::ResonanceAudioReverbPluginPreset_SetReverbBrightness Parms{};
 
@@ -148,10 +133,7 @@ void UResonanceAudioReverbPluginPreset::SetReverbBrightness(float InReverbBright
 
 void UResonanceAudioReverbPluginPreset::SetReverbGain(float InReverbGain)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetReverbGain");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetReverbGain");
 
 	Params::ResonanceAudioReverbPluginPreset_SetReverbGain Parms{};
 
@@ -173,10 +155,7 @@ void UResonanceAudioReverbPluginPreset::SetReverbGain(float InReverbGain)
 
 void UResonanceAudioReverbPluginPreset::SetReverbTimeModifier(float InReverbTimeModifier)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetReverbTimeModifier");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetReverbTimeModifier");
 
 	Params::ResonanceAudioReverbPluginPreset_SetReverbTimeModifier Parms{};
 
@@ -198,10 +177,7 @@ void UResonanceAudioReverbPluginPreset::SetReverbTimeModifier(float InReverbTime
 
 void UResonanceAudioReverbPluginPreset::SetRoomDimensions(const struct FVector& InDimensions)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetRoomDimensions");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetRoomDimensions");
 
 	Params::ResonanceAudioReverbPluginPreset_SetRoomDimensions Parms{};
 
@@ -223,10 +199,7 @@ void UResonanceAudioReverbPluginPreset::SetRoomDimensions(const struct FVector& 
 
 void UResonanceAudioReverbPluginPreset::SetRoomMaterials(const TArray<ERaMaterialName>& InMaterials)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetRoomMaterials");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetRoomMaterials");
 
 	Params::ResonanceAudioReverbPluginPreset_SetRoomMaterials Parms{};
 
@@ -248,10 +221,7 @@ void UResonanceAudioReverbPluginPreset::SetRoomMaterials(const TArray<ERaMateria
 
 void UResonanceAudioReverbPluginPreset::SetRoomPosition(const struct FVector& InPosition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetRoomPosition");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetRoomPosition");
 
 	Params::ResonanceAudioReverbPluginPreset_SetRoomPosition Parms{};
 
@@ -273,10 +243,7 @@ void UResonanceAudioReverbPluginPreset::SetRoomPosition(const struct FVector& In
 
 void UResonanceAudioReverbPluginPreset::SetRoomRotation(const struct FQuat& InRotation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetRoomRotation");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioReverbPluginPreset", "SetRoomRotation");
 
 	Params::ResonanceAudioReverbPluginPreset_SetRoomRotation Parms{};
 
@@ -299,10 +266,7 @@ void UResonanceAudioReverbPluginPreset::SetRoomRotation(const struct FQuat& InRo
 
 void UResonanceAudioSpatializationSourceSettings::SetSoundSourceDirectivity(float InPattern, float InSharpness)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioSpatializationSourceSettings", "SetSoundSourceDirectivity");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioSpatializationSourceSettings", "SetSoundSourceDirectivity");
 
 	Params::ResonanceAudioSpatializationSourceSettings_SetSoundSourceDirectivity Parms{};
 
@@ -325,10 +289,7 @@ void UResonanceAudioSpatializationSourceSettings::SetSoundSourceDirectivity(floa
 
 void UResonanceAudioSpatializationSourceSettings::SetSoundSourceSpread(float InSpread)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ResonanceAudioSpatializationSourceSettings", "SetSoundSourceSpread");
+	class UFunction* Func = Class->GetFunction("ResonanceAudioSpatializationSourceSettings", "SetSoundSourceSpread");
 
 	Params::ResonanceAudioSpatializationSourceSettings_SetSoundSourceSpread Parms{};
 

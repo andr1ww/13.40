@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_EnvCampFire_Stoke_C::ExecuteUbergraph_GCNL_EnvCampFire_Stoke(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Stoke_C", "ExecuteUbergraph_GCNL_EnvCampFire_Stoke");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Stoke_C", "ExecuteUbergraph_GCNL_EnvCampFire_Stoke");
 
 	Params::GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke Parms{};
 
@@ -46,10 +43,7 @@ void AGCNL_EnvCampFire_Stoke_C::ExecuteUbergraph_GCNL_EnvCampFire_Stoke(int32 En
 
 void AGCNL_EnvCampFire_Stoke_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Stoke_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Stoke_C", "OnLoopingStart");
 
 	Params::GCNL_EnvCampFire_Stoke_C_OnLoopingStart Parms{};
 

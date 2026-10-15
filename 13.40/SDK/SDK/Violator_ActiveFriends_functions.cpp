@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UViolator_ActiveFriends_C::ExecuteUbergraph_Violator_ActiveFriends(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Violator_ActiveFriends_C", "ExecuteUbergraph_Violator_ActiveFriends");
+	class UFunction* Func = Class->GetFunction("Violator_ActiveFriends_C", "ExecuteUbergraph_Violator_ActiveFriends");
 
 	Params::Violator_ActiveFriends_C_ExecuteUbergraph_Violator_ActiveFriends Parms{};
 
@@ -41,10 +38,7 @@ void UViolator_ActiveFriends_C::ExecuteUbergraph_Violator_ActiveFriends(int32 En
 
 void UViolator_ActiveFriends_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Violator_ActiveFriends_C", "Construct");
+	class UFunction* Func = Class->GetFunction("Violator_ActiveFriends_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UViolator_ActiveFriends_C::Construct()
 
 void UViolator_ActiveFriends_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Violator_ActiveFriends_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("Violator_ActiveFriends_C", "PreConstruct");
 
 	Params::Violator_ActiveFriends_C_PreConstruct Parms{};
 
@@ -75,10 +66,7 @@ void UViolator_ActiveFriends_C::PreConstruct(bool IsDesignTime)
 
 void UViolator_ActiveFriends_C::UpdateData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Violator_ActiveFriends_C", "UpdateData");
+	class UFunction* Func = Class->GetFunction("Violator_ActiveFriends_C", "UpdateData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UViolator_ActiveFriends_C::UpdateData()
 
 void UViolator_ActiveFriends_C::CallOut_Surface()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Violator_ActiveFriends_C", "CallOut Surface");
+	class UFunction* Func = Class->GetFunction("Violator_ActiveFriends_C", "CallOut Surface");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UViolator_ActiveFriends_C::CallOut_Surface()
 
 void UViolator_ActiveFriends_C::CallOut_Hide()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Violator_ActiveFriends_C", "CallOut Hide");
+	class UFunction* Func = Class->GetFunction("Violator_ActiveFriends_C", "CallOut Hide");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

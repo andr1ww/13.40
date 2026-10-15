@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UChallengeInGameTreeEntry_Header_C::ExecuteUbergraph_ChallengeInGameTreeEntry_Header(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "ExecuteUbergraph_ChallengeInGameTreeEntry_Header");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "ExecuteUbergraph_ChallengeInGameTreeEntry_Header");
 
 	Params::ChallengeInGameTreeEntry_Header_C_ExecuteUbergraph_ChallengeInGameTreeEntry_Header Parms{};
 
@@ -43,10 +40,7 @@ void UChallengeInGameTreeEntry_Header_C::ExecuteUbergraph_ChallengeInGameTreeEnt
 
 void UChallengeInGameTreeEntry_Header_C::OnChallengeSetEstablished(const struct FFortChallengeSetStyle& DisplayStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnChallengeSetEstablished");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnChallengeSetEstablished");
 
 	Params::ChallengeInGameTreeEntry_Header_C_OnChallengeSetEstablished Parms{};
 
@@ -63,10 +57,7 @@ void UChallengeInGameTreeEntry_Header_C::OnChallengeSetEstablished(const struct 
 
 void UChallengeInGameTreeEntry_Header_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "BP_OnItemExpansionChanged");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "BP_OnItemExpansionChanged");
 
 	Params::ChallengeInGameTreeEntry_Header_C_BP_OnItemExpansionChanged Parms{};
 
@@ -83,10 +74,7 @@ void UChallengeInGameTreeEntry_Header_C::BP_OnItemExpansionChanged(bool bIsExpan
 
 void UChallengeInGameTreeEntry_Header_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnMouseLeave");
 
 	Params::ChallengeInGameTreeEntry_Header_C_OnMouseLeave Parms{};
 
@@ -104,10 +92,7 @@ void UChallengeInGameTreeEntry_Header_C::OnMouseLeave(const struct FPointerEvent
 
 void UChallengeInGameTreeEntry_Header_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnMouseEnter");
 
 	Params::ChallengeInGameTreeEntry_Header_C_OnMouseEnter Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UHorizontalTabList_C::SetVerticalAlignment(EVerticalAlignment FillVertically)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "SetVerticalAlignment");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "SetVerticalAlignment");
 
 	Params::HorizontalTabList_C_SetVerticalAlignment Parms{};
 
@@ -41,10 +38,7 @@ void UHorizontalTabList_C::SetVerticalAlignment(EVerticalAlignment FillVerticall
 
 void UHorizontalTabList_C::UpdateGamepadKeyVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "UpdateGamepadKeyVisibility");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "UpdateGamepadKeyVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UHorizontalTabList_C::UpdateGamepadKeyVisibility()
 
 class UCommonButton* UHorizontalTabList_C::Get_Tab_From_Id(class FName TabNameID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "Get Tab From Id");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "Get Tab From Id");
 
 	Params::HorizontalTabList_C_Get_Tab_From_Id Parms{};
 
@@ -78,10 +69,7 @@ class UCommonButton* UHorizontalTabList_C::Get_Tab_From_Id(class FName TabNameID
 
 void UHorizontalTabList_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "Construct");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -94,10 +82,7 @@ void UHorizontalTabList_C::Construct()
 
 void UHorizontalTabList_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "PreConstruct");
 
 	Params::HorizontalTabList_C_PreConstruct Parms{};
 
@@ -112,10 +97,7 @@ void UHorizontalTabList_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UHorizontalTabList_C::Previous_Visibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "Previous Visibility");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "Previous Visibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -128,10 +110,7 @@ void UHorizontalTabList_C::Previous_Visibility()
 
 void UHorizontalTabList_C::CustomEvent_0(class FName TabId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "CustomEvent_0");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "CustomEvent_0");
 
 	Params::HorizontalTabList_C_CustomEvent_0 Parms{};
 
@@ -149,10 +128,7 @@ void UHorizontalTabList_C::CustomEvent_0(class FName TabId)
 
 void UHorizontalTabList_C::HandleTabCreated(class FName TabNameID_HandleTabCreated, class UCommonButton* TabButton_HandleTabCreated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "HandleTabCreated");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "HandleTabCreated");
 
 	Params::HorizontalTabList_C_HandleTabCreated Parms{};
 
@@ -171,10 +147,7 @@ void UHorizontalTabList_C::HandleTabCreated(class FName TabNameID_HandleTabCreat
 
 void UHorizontalTabList_C::HandleTabRemoved(class FName TabNameID_HandleTabRemoved, class UCommonButton* TabButton_HandleTabRemoved)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "HandleTabRemoved");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "HandleTabRemoved");
 
 	Params::HorizontalTabList_C_HandleTabRemoved Parms{};
 
@@ -192,10 +165,7 @@ void UHorizontalTabList_C::HandleTabRemoved(class FName TabNameID_HandleTabRemov
 
 void UHorizontalTabList_C::HandleOnInputMethodChanged(ECommonInputType bNewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "HandleOnInputMethodChanged");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "HandleOnInputMethodChanged");
 
 	Params::HorizontalTabList_C_HandleOnInputMethodChanged Parms{};
 
@@ -212,10 +182,7 @@ void UHorizontalTabList_C::HandleOnInputMethodChanged(ECommonInputType bNewInput
 
 void UHorizontalTabList_C::ExecuteUbergraph_HorizontalTabList(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "ExecuteUbergraph_HorizontalTabList");
+	class UFunction* Func = Class->GetFunction("HorizontalTabList_C", "ExecuteUbergraph_HorizontalTabList");
 
 	Params::HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList Parms{};
 

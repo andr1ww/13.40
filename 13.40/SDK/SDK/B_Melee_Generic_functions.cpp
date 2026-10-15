@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Melee_Generic_C::ExecuteUbergraph_B_Melee_Generic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "ExecuteUbergraph_B_Melee_Generic");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "ExecuteUbergraph_B_Melee_Generic");
 
 	Params::B_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic Parms{};
 
@@ -41,10 +38,7 @@ void AB_Melee_Generic_C::ExecuteUbergraph_B_Melee_Generic(int32 EntryPoint)
 
 void AB_Melee_Generic_C::OnWeaponDetached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponDetached");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponDetached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void AB_Melee_Generic_C::OnWeaponDetached()
 
 void AB_Melee_Generic_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLocalControllerOnly)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponVisibilityChanged");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponVisibilityChanged");
 
 	Params::B_Melee_Generic_C_OnWeaponVisibilityChanged Parms{};
 
@@ -79,10 +70,7 @@ void AB_Melee_Generic_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLo
 
 void AB_Melee_Generic_C::OnInitCosmeticAlterations(const struct FFortCosmeticModification& CosmeticMod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "OnInitCosmeticAlterations");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "OnInitCosmeticAlterations");
 
 	Params::B_Melee_Generic_C_OnInitCosmeticAlterations Parms{};
 
@@ -97,10 +85,7 @@ void AB_Melee_Generic_C::OnInitCosmeticAlterations(const struct FFortCosmeticMod
 
 void AB_Melee_Generic_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void AB_Melee_Generic_C::OnWeaponAttached()
 
 void AB_Melee_Generic_C::OnEquippedWeaponDestory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "OnEquippedWeaponDestory");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "OnEquippedWeaponDestory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -129,10 +111,7 @@ void AB_Melee_Generic_C::OnEquippedWeaponDestory()
 
 void AB_Melee_Generic_C::OnPlayImpactFX(const struct FHitResult& HitResult, EPhysicalSurface ImpactPhysicalSurface, class UFXSystemComponent* SpawnedPSC)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "OnPlayImpactFX");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "OnPlayImpactFX");
 
 	Params::B_Melee_Generic_C_OnPlayImpactFX Parms{};
 
@@ -149,10 +128,7 @@ void AB_Melee_Generic_C::OnPlayImpactFX(const struct FHitResult& HitResult, EPhy
 
 void AB_Melee_Generic_C::PlayRClickImpacts()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "PlayRClickImpacts");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "PlayRClickImpacts");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -166,10 +142,7 @@ void AB_Melee_Generic_C::PlayRClickImpacts()
 
 void AB_Melee_Generic_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "OnPlayWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "OnPlayWeaponFireFX");
 
 	Params::B_Melee_Generic_C_OnPlayWeaponFireFX Parms{};
 
@@ -185,10 +158,7 @@ void AB_Melee_Generic_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondar
 
 void AB_Melee_Generic_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,10 +169,7 @@ void AB_Melee_Generic_C::ReceiveBeginPlay()
 
 void AB_Melee_Generic_C::MeleeSwingLeft_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingLeft_End");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingLeft_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -213,10 +180,7 @@ void AB_Melee_Generic_C::MeleeSwingLeft_End()
 
 void AB_Melee_Generic_C::MeleeSwingRight_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingRight_End");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingRight_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -227,10 +191,7 @@ void AB_Melee_Generic_C::MeleeSwingRight_End()
 
 void AB_Melee_Generic_C::FootStepRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "FootStepRight");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "FootStepRight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -241,10 +202,7 @@ void AB_Melee_Generic_C::FootStepRight()
 
 void AB_Melee_Generic_C::FootStepLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "FootStepLeft");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "FootStepLeft");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +215,7 @@ void AB_Melee_Generic_C::FootStepLeft()
 
 void AB_Melee_Generic_C::MeleeSwingLeft(bool First_Left)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingLeft");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingLeft");
 
 	Params::B_Melee_Generic_C_MeleeSwingLeft Parms{};
 
@@ -277,10 +232,7 @@ void AB_Melee_Generic_C::MeleeSwingLeft(bool First_Left)
 
 void AB_Melee_Generic_C::MeleeSwingRight(bool First_Right)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingRight");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingRight");
 
 	Params::B_Melee_Generic_C_MeleeSwingRight Parms{};
 
@@ -297,10 +249,7 @@ void AB_Melee_Generic_C::MeleeSwingRight(bool First_Right)
 
 void AB_Melee_Generic_C::OnLoaded_CB594210420542B302428F8181D85E48(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "OnLoaded_CB594210420542B302428F8181D85E48");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "OnLoaded_CB594210420542B302428F8181D85E48");
 
 	Params::B_Melee_Generic_C_OnLoaded_CB594210420542B302428F8181D85E48 Parms{};
 
@@ -315,10 +264,7 @@ void AB_Melee_Generic_C::OnLoaded_CB594210420542B302428F8181D85E48(class UObject
 
 void AB_Melee_Generic_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -329,10 +275,7 @@ void AB_Melee_Generic_C::UserConstructionScript()
 
 void AB_Melee_Generic_C::SetWpnRarity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "SetWpnRarity");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "SetWpnRarity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -346,10 +289,7 @@ void AB_Melee_Generic_C::SetWpnRarity()
 
 void AB_Melee_Generic_C::SetActiveAlterationIdleParticles(bool Active, bool Reset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "SetActiveAlterationIdleParticles");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "SetActiveAlterationIdleParticles");
 
 	Params::B_Melee_Generic_C_SetActiveAlterationIdleParticles Parms{};
 
@@ -367,10 +307,7 @@ void AB_Melee_Generic_C::SetActiveAlterationIdleParticles(bool Active, bool Rese
 
 void AB_Melee_Generic_C::PlayCQCPickaxeEnemyAudio(const struct FHitResult& Hit_Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "PlayCQCPickaxeEnemyAudio");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "PlayCQCPickaxeEnemyAudio");
 
 	Params::B_Melee_Generic_C_PlayCQCPickaxeEnemyAudio Parms{};
 
@@ -387,10 +324,7 @@ void AB_Melee_Generic_C::PlayCQCPickaxeEnemyAudio(const struct FHitResult& Hit_R
 
 void AB_Melee_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Melee_Generic_C", "Melee_Effect_Color");
+	class UFunction* Func = Class->GetFunction("B_Melee_Generic_C", "Melee_Effect_Color");
 
 	Params::B_Melee_Generic_C_Melee_Effect_Color Parms{};
 

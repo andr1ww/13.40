@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UConfirmationWindow_C::HandleConfigureDeclineButton(class UCommonButton* New_Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "HandleConfigureDeclineButton");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "HandleConfigureDeclineButton");
 
 	Params::ConfirmationWindow_C_HandleConfigureDeclineButton Parms{};
 
@@ -45,10 +42,7 @@ void UConfirmationWindow_C::HandleConfigureDeclineButton(class UCommonButton* Ne
 
 void UConfirmationWindow_C::ConfigureConfirmationButton(class UCommonButton* Button_ConfigureConfirmationButton, const struct FConfirmationDialogAction& Action_ConfigureConfirmationButton, bool bSimpleConfirm_ConfigureConfirmationButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "ConfigureConfirmationButton");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "ConfigureConfirmationButton");
 
 	Params::ConfirmationWindow_C_ConfigureConfirmationButton Parms{};
 
@@ -65,10 +59,7 @@ void UConfirmationWindow_C::ConfigureConfirmationButton(class UCommonButton* But
 
 void UConfirmationWindow_C::PlayShowSound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "PlayShowSound");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "PlayShowSound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +74,7 @@ void UConfirmationWindow_C::PlayShowSound()
 
 struct FEventReply UConfirmationWindow_C::TapToClose(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "TapToClose");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "TapToClose");
 
 	Params::ConfirmationWindow_C_TapToClose Parms{};
 
@@ -104,10 +92,7 @@ struct FEventReply UConfirmationWindow_C::TapToClose(const struct FGeometry& MyG
 
 void UConfirmationWindow_C::SetupNonInteractiveContent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "SetupNonInteractiveContent");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "SetupNonInteractiveContent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -122,10 +107,7 @@ void UConfirmationWindow_C::SetupNonInteractiveContent()
 
 struct FDataTableRowHandle UConfirmationWindow_C::GetInputAction(class FName RowName, bool UseInputAction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "GetInputAction");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "GetInputAction");
 
 	Params::ConfirmationWindow_C_GetInputAction Parms{};
 
@@ -143,10 +125,7 @@ struct FDataTableRowHandle UConfirmationWindow_C::GetInputAction(class FName Row
 
 void UConfirmationWindow_C::Initialize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "Initialize");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "Initialize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +136,7 @@ void UConfirmationWindow_C::Initialize()
 
 void UConfirmationWindow_C::OnBeginOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "OnBeginOutro");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "OnBeginOutro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +149,7 @@ void UConfirmationWindow_C::OnBeginOutro()
 
 void UConfirmationWindow_C::ConfigureDeclineButton(class UCommonButton* Button_ConfigureDeclineButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "ConfigureDeclineButton");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "ConfigureDeclineButton");
 
 	Params::ConfirmationWindow_C_ConfigureDeclineButton Parms{};
 
@@ -191,10 +164,7 @@ void UConfirmationWindow_C::ConfigureDeclineButton(class UCommonButton* Button_C
 
 void UConfirmationWindow_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +177,7 @@ void UConfirmationWindow_C::BP_OnActivated()
 
 void UConfirmationWindow_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::ConfirmationWindow_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -227,10 +194,7 @@ void UConfirmationWindow_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_Com
 
 void UConfirmationWindow_C::ExecuteUbergraph_ConfirmationWindow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ConfirmationWindow_C", "ExecuteUbergraph_ConfirmationWindow");
+	class UFunction* Func = Class->GetFunction("ConfirmationWindow_C", "ExecuteUbergraph_ConfirmationWindow");
 
 	Params::ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow Parms{};
 

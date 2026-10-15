@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 bool UEyeTrackerFunctionLibrary::GetGazeData(struct FEyeTrackerGazeData* OutGazeData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "GetGazeData");
+	class UFunction* Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "GetGazeData");
 
 	Params::EyeTrackerFunctionLibrary_GetGazeData Parms{};
 
@@ -53,10 +50,7 @@ bool UEyeTrackerFunctionLibrary::GetGazeData(struct FEyeTrackerGazeData* OutGaze
 
 bool UEyeTrackerFunctionLibrary::GetStereoGazeData(struct FEyeTrackerStereoGazeData* OutGazeData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "GetStereoGazeData");
+	class UFunction* Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "GetStereoGazeData");
 
 	Params::EyeTrackerFunctionLibrary_GetStereoGazeData Parms{};
 
@@ -81,10 +75,7 @@ bool UEyeTrackerFunctionLibrary::GetStereoGazeData(struct FEyeTrackerStereoGazeD
 
 bool UEyeTrackerFunctionLibrary::IsEyeTrackerConnected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "IsEyeTrackerConnected");
+	class UFunction* Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "IsEyeTrackerConnected");
 
 	Params::EyeTrackerFunctionLibrary_IsEyeTrackerConnected Parms{};
 
@@ -106,10 +97,7 @@ bool UEyeTrackerFunctionLibrary::IsEyeTrackerConnected()
 
 bool UEyeTrackerFunctionLibrary::IsStereoGazeDataAvailable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "IsStereoGazeDataAvailable");
+	class UFunction* Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "IsStereoGazeDataAvailable");
 
 	Params::EyeTrackerFunctionLibrary_IsStereoGazeDataAvailable Parms{};
 
@@ -131,10 +119,7 @@ bool UEyeTrackerFunctionLibrary::IsStereoGazeDataAvailable()
 
 void UEyeTrackerFunctionLibrary::SetEyeTrackedPlayer(class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "SetEyeTrackedPlayer");
+	class UFunction* Func = StaticClass()->GetFunction("EyeTrackerFunctionLibrary", "SetEyeTrackedPlayer");
 
 	Params::EyeTrackerFunctionLibrary_SetEyeTrackedPlayer Parms{};
 

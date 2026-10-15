@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthena_ConfirmationWindow_C::ExecuteUbergraph_Athena_ConfirmationWindow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_ConfirmationWindow_C", "ExecuteUbergraph_Athena_ConfirmationWindow");
+	class UFunction* Func = Class->GetFunction("Athena_ConfirmationWindow_C", "ExecuteUbergraph_Athena_ConfirmationWindow");
 
 	Params::Athena_ConfirmationWindow_C_ExecuteUbergraph_Athena_ConfirmationWindow Parms{};
 
@@ -44,10 +41,7 @@ void UAthena_ConfirmationWindow_C::ExecuteUbergraph_Athena_ConfirmationWindow(in
 
 void UAthena_ConfirmationWindow_C::OnSetButtonText(class UCommonButton* Button, const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_ConfirmationWindow_C", "OnSetButtonText");
+	class UFunction* Func = Class->GetFunction("Athena_ConfirmationWindow_C", "OnSetButtonText");
 
 	Params::Athena_ConfirmationWindow_C_OnSetButtonText Parms{};
 

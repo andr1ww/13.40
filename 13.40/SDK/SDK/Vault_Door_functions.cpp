@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AVault_Door_C::ExecuteUbergraph_Vault_Door(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "ExecuteUbergraph_Vault_Door");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "ExecuteUbergraph_Vault_Door");
 
 	Params::Vault_Door_C_ExecuteUbergraph_Vault_Door Parms{};
 
@@ -41,10 +38,7 @@ void AVault_Door_C::ExecuteUbergraph_Vault_Door(int32 EntryPoint)
 
 void AVault_Door_C::OpeningTimeline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "OpeningTimeline");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "OpeningTimeline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AVault_Door_C::OpeningTimeline()
 
 void AVault_Door_C::VaultOpen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "VaultOpen");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "VaultOpen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AVault_Door_C::VaultOpen()
 
 void AVault_Door_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AVault_Door_C::ReceiveBeginPlay()
 
 void AVault_Door_C::Open__Trigger_Light__EventFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "Open__Trigger Light__EventFunc");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "Open__Trigger Light__EventFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AVault_Door_C::Open__Trigger_Light__EventFunc()
 
 void AVault_Door_C::Open__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "Open__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "Open__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void AVault_Door_C::Open__UpdateFunc()
 
 void AVault_Door_C::Open__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "Open__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "Open__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void AVault_Door_C::Open__FinishedFunc()
 
 void AVault_Door_C::OnRep_HasBeenOpening()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "OnRep_HasBeenOpening");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "OnRep_HasBeenOpening");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -144,10 +120,7 @@ void AVault_Door_C::OnRep_HasBeenOpening()
 
 bool AVault_Door_C::ShouldDie(float Damage, class AController* EventInstigator, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "ShouldDie");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "ShouldDie");
 
 	Params::Vault_Door_C_ShouldDie Parms{};
 
@@ -171,10 +144,7 @@ bool AVault_Door_C::ShouldDie(float Damage, class AController* EventInstigator, 
 
 bool AVault_Door_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Vault_Door_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("Vault_Door_C", "BlueprintCanInteract");
 
 	Params::Vault_Door_C_BlueprintCanInteract Parms{};
 

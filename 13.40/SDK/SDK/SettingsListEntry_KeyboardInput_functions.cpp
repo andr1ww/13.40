@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingsListEntry_KeyboardInput_C::ExecuteUbergraph_SettingsListEntry_KeyboardInput(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_KeyboardInput_C", "ExecuteUbergraph_SettingsListEntry_KeyboardInput");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_KeyboardInput_C", "ExecuteUbergraph_SettingsListEntry_KeyboardInput");
 
 	Params::SettingsListEntry_KeyboardInput_C_ExecuteUbergraph_SettingsListEntry_KeyboardInput Parms{};
 
@@ -43,10 +40,7 @@ void USettingsListEntry_KeyboardInput_C::ExecuteUbergraph_SettingsListEntry_Keyb
 
 void USettingsListEntry_KeyboardInput_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_KeyboardInput_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_KeyboardInput_C", "OnMouseLeave");
 
 	Params::SettingsListEntry_KeyboardInput_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void USettingsListEntry_KeyboardInput_C::OnMouseLeave(const struct FPointerEvent
 
 void USettingsListEntry_KeyboardInput_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_KeyboardInput_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_KeyboardInput_C", "OnMouseEnter");
 
 	Params::SettingsListEntry_KeyboardInput_C_OnMouseEnter Parms{};
 
@@ -86,10 +77,7 @@ void USettingsListEntry_KeyboardInput_C::OnMouseEnter(const struct FGeometry& My
 
 void USettingsListEntry_KeyboardInput_C::OnUpdateKeyText(const class FText& PrimaryKeyText, const class FText& SecondaryKeyText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_KeyboardInput_C", "OnUpdateKeyText");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_KeyboardInput_C", "OnUpdateKeyText");
 
 	Params::SettingsListEntry_KeyboardInput_C_OnUpdateKeyText Parms{};
 

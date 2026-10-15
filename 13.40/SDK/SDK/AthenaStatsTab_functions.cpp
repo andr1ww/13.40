@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaStatsTab_C::ExecuteUbergraph_AthenaStatsTab(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "ExecuteUbergraph_AthenaStatsTab");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "ExecuteUbergraph_AthenaStatsTab");
 
 	Params::AthenaStatsTab_C_ExecuteUbergraph_AthenaStatsTab Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaStatsTab_C::ExecuteUbergraph_AthenaStatsTab(int32 EntryPoint)
 
 void UAthenaStatsTab_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaStatsTab_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -63,10 +57,7 @@ void UAthenaStatsTab_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonB
 
 void UAthenaStatsTab_C::BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaStatsTab_C_BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -83,10 +74,7 @@ void UAthenaStatsTab_C::BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_
 
 void UAthenaStatsTab_C::SetPlatformButtonText(const class FText& PlatformButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "SetPlatformButtonText");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "SetPlatformButtonText");
 
 	Params::AthenaStatsTab_C_SetPlatformButtonText Parms{};
 
@@ -103,10 +91,7 @@ void UAthenaStatsTab_C::SetPlatformButtonText(const class FText& PlatformButtonT
 
 void UAthenaStatsTab_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaStatsTab_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -123,10 +108,7 @@ void UAthenaStatsTab_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_Comm
 
 void UAthenaStatsTab_C::OnInputMethodChanged_Event_0(ECommonInputType bNewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "OnInputMethodChanged_Event_0");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "OnInputMethodChanged_Event_0");
 
 	Params::AthenaStatsTab_C_OnInputMethodChanged_Event_0 Parms{};
 
@@ -141,10 +123,7 @@ void UAthenaStatsTab_C::OnInputMethodChanged_Event_0(ECommonInputType bNewInputT
 
 void UAthenaStatsTab_C::OnQueryStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryStarted");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +136,7 @@ void UAthenaStatsTab_C::OnQueryStarted()
 
 void UAthenaStatsTab_C::BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature(class FName TabId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
 
 	Params::AthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature Parms{};
 
@@ -178,10 +154,7 @@ void UAthenaStatsTab_C::BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabS
 
 void UAthenaStatsTab_C::OnQueryFinished(bool bWasSuccessful, bool bHasStatsToDisplay)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryFinished");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryFinished");
 
 	Params::AthenaStatsTab_C_OnQueryFinished Parms{};
 
@@ -197,10 +170,7 @@ void UAthenaStatsTab_C::OnQueryFinished(bool bWasSuccessful, bool bHasStatsToDis
 
 void UAthenaStatsTab_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -211,10 +181,7 @@ void UAthenaStatsTab_C::BP_OnActivated()
 
 void UAthenaStatsTab_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -227,10 +194,7 @@ void UAthenaStatsTab_C::Construct()
 
 void UAthenaStatsTab_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "HandleBack");
 
 	Params::AthenaStatsTab_C_HandleBack Parms{};
 
@@ -246,10 +210,7 @@ void UAthenaStatsTab_C::HandleBack(bool* PassThrough)
 
 void UAthenaStatsTab_C::Init_Back_Action()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "Init Back Action");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "Init Back Action");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -262,10 +223,7 @@ void UAthenaStatsTab_C::Init_Back_Action()
 
 class FText UAthenaStatsTab_C::GetAccountLevelText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "GetAccountLevelText");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "GetAccountLevelText");
 
 	Params::AthenaStatsTab_C_GetAccountLevelText Parms{};
 
@@ -282,10 +240,7 @@ class FText UAthenaStatsTab_C::GetAccountLevelText()
 
 void UAthenaStatsTab_C::GetFriendMatchXpBoostText(class FText* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "GetFriendMatchXpBoostText");
+	class UFunction* Func = Class->GetFunction("AthenaStatsTab_C", "GetFriendMatchXpBoostText");
 
 	Params::AthenaStatsTab_C_GetFriendMatchXpBoostText Parms{};
 

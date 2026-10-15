@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaDirectAcquisitionMTXDetails_C::ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails");
 
 	Params::AthenaDirectAcquisitionMTXDetails_C_ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::ExecuteUbergraph_AthenaDirectAcquisit
 
 void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionMTXDetails_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -61,10 +55,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__CloseButton_K2Node_ComponentB
 
 void UAthenaDirectAcquisitionMTXDetails_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::BP_OnActivated()
 
 void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionMTXDetails_C_BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -97,10 +85,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__GiftButton_K2Node_ComponentBo
 
 void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionMTXDetails_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -119,10 +104,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__PanelButton_K2Node_ComponentB
 
 void UAthenaDirectAcquisitionMTXDetails_C::HandlePurchaseComplete(bool bSuccess, const TArray<struct FPurchasedItemInfo>& PurchasedItems, const class FString& OfferId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandlePurchaseComplete");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandlePurchaseComplete");
 
 	Params::AthenaDirectAcquisitionMTXDetails_C_HandlePurchaseComplete Parms{};
 
@@ -141,10 +123,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::HandlePurchaseComplete(bool bSuccess,
 
 void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionMTXDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -161,10 +140,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__PurchaseButton_K2Node_Compone
 
 void UAthenaDirectAcquisitionMTXDetails_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandleBack");
 
 	Params::AthenaDirectAcquisitionMTXDetails_C_HandleBack Parms{};
 
@@ -180,10 +156,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::HandleBack(bool* PassThrough)
 
 void UAthenaDirectAcquisitionMTXDetails_C::Init()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "Init");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "Init");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -194,10 +167,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::Init()
 
 void UAthenaDirectAcquisitionMTXDetails_C::PopDetails()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "PopDetails");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "PopDetails");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -208,10 +178,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::PopDetails()
 
 void UAthenaDirectAcquisitionMTXDetails_C::InitPurchaseButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitPurchaseButton");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitPurchaseButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -224,10 +191,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::InitPurchaseButton()
 
 class UWidget* UAthenaDirectAcquisitionMTXDetails_C::GetWidgetForFramingViewedItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "GetWidgetForFramingViewedItem");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "GetWidgetForFramingViewedItem");
 
 	Params::AthenaDirectAcquisitionMTXDetails_C_GetWidgetForFramingViewedItem Parms{};
 
@@ -242,10 +206,7 @@ class UWidget* UAthenaDirectAcquisitionMTXDetails_C::GetWidgetForFramingViewedIt
 
 void UAthenaDirectAcquisitionMTXDetails_C::InitAffiliateInfo()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitAffiliateInfo");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitAffiliateInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

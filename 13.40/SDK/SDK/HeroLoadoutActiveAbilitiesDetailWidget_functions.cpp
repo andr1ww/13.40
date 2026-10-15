@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UHeroLoadoutActiveAbilitiesDetailWidget_C::OnPlayerHomebaseChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "OnPlayerHomebaseChanged");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "OnPlayerHomebaseChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UHeroLoadoutActiveAbilitiesDetailWidget_C::OnPlayerHomebaseChanged()
 
 void UHeroLoadoutActiveAbilitiesDetailWidget_C::ExecuteUbergraph_HeroLoadoutActiveAbilitiesDetailWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "ExecuteUbergraph_HeroLoadoutActiveAbilitiesDetailWidget");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "ExecuteUbergraph_HeroLoadoutActiveAbilitiesDetailWidget");
 
 	Params::HeroLoadoutActiveAbilitiesDetailWidget_C_ExecuteUbergraph_HeroLoadoutActiveAbilitiesDetailWidget Parms{};
 
@@ -55,10 +49,7 @@ void UHeroLoadoutActiveAbilitiesDetailWidget_C::ExecuteUbergraph_HeroLoadoutActi
 
 void UHeroLoadoutActiveAbilitiesDetailWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UHeroLoadoutActiveAbilitiesDetailWidget_C::Construct()
 
 void UHeroLoadoutActiveAbilitiesDetailWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "PreConstruct");
 
 	Params::HeroLoadoutActiveAbilitiesDetailWidget_C_PreConstruct Parms{};
 
@@ -89,10 +77,7 @@ void UHeroLoadoutActiveAbilitiesDetailWidget_C::PreConstruct(bool IsDesignTime)
 
 void UHeroLoadoutActiveAbilitiesDetailWidget_C::HandleItemToDetailChangedBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "HandleItemToDetailChangedBP");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "HandleItemToDetailChangedBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UHeroLoadoutActiveAbilitiesDetailWidget_C::HandleItemToDetailChangedBP()
 
 void UHeroLoadoutActiveAbilitiesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UHeroLoadoutActiveAbilitiesDetailWidget_C::HandlePostDifferentItemToDetailS
 
 void UHeroLoadoutActiveAbilitiesDetailWidget_C::UpdateFromItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "UpdateFromItem");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "UpdateFromItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void UHeroLoadoutActiveAbilitiesDetailWidget_C::UpdateFromItem()
 
 void UHeroLoadoutActiveAbilitiesDetailWidget_C::CreateAbilityTooltips()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "CreateAbilityTooltips");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilitiesDetailWidget_C", "CreateAbilityTooltips");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

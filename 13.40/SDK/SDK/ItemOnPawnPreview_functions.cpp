@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AItemOnPawnPreview_C::SwitchErebusLighting(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "SwitchErebusLighting");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "SwitchErebusLighting");
 
 	Params::ItemOnPawnPreview_C_SwitchErebusLighting Parms{};
 
@@ -43,10 +40,7 @@ void AItemOnPawnPreview_C::SwitchErebusLighting(bool Visibility)
 
 void AItemOnPawnPreview_C::SetFloorEnabled(bool Show_Floor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "SetFloorEnabled");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "SetFloorEnabled");
 
 	Params::ItemOnPawnPreview_C_SetFloorEnabled Parms{};
 
@@ -63,10 +57,7 @@ void AItemOnPawnPreview_C::SetFloorEnabled(bool Show_Floor)
 
 void AItemOnPawnPreview_C::LightControl(bool Active)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "LightControl");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "LightControl");
 
 	Params::ItemOnPawnPreview_C_LightControl Parms{};
 
@@ -83,10 +74,7 @@ void AItemOnPawnPreview_C::LightControl(bool Active)
 
 void AItemOnPawnPreview_C::SwitchPCLighting(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "SwitchPCLighting");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "SwitchPCLighting");
 
 	Params::ItemOnPawnPreview_C_SwitchPCLighting Parms{};
 
@@ -103,10 +91,7 @@ void AItemOnPawnPreview_C::SwitchPCLighting(bool Visibility)
 
 void AItemOnPawnPreview_C::SwitchMobileLighting(bool NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "SwitchMobileLighting");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "SwitchMobileLighting");
 
 	Params::ItemOnPawnPreview_C_SwitchMobileLighting Parms{};
 
@@ -121,10 +106,7 @@ void AItemOnPawnPreview_C::SwitchMobileLighting(bool NewParam)
 
 void AItemOnPawnPreview_C::OnPreviewVisualsSpawned()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "OnPreviewVisualsSpawned");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "OnPreviewVisualsSpawned");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -135,10 +117,7 @@ void AItemOnPawnPreview_C::OnPreviewVisualsSpawned()
 
 void AItemOnPawnPreview_C::UpdateSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "UpdateSettings");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "UpdateSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +130,7 @@ void AItemOnPawnPreview_C::UpdateSettings()
 
 void AItemOnPawnPreview_C::OnSetFloorMaterial(class UMaterialInterface* InMaterialInstance_OnSetFloorMaterial)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "OnSetFloorMaterial");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "OnSetFloorMaterial");
 
 	Params::ItemOnPawnPreview_C_OnSetFloorMaterial Parms{};
 
@@ -169,10 +145,7 @@ void AItemOnPawnPreview_C::OnSetFloorMaterial(class UMaterialInterface* InMateri
 
 void AItemOnPawnPreview_C::OnAllLODStreamingComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "OnAllLODStreamingComplete");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "OnAllLODStreamingComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -183,10 +156,7 @@ void AItemOnPawnPreview_C::OnAllLODStreamingComplete()
 
 void AItemOnPawnPreview_C::OnCurrentVisualsCleanedUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "OnCurrentVisualsCleanedUp");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "OnCurrentVisualsCleanedUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,10 +169,7 @@ void AItemOnPawnPreview_C::OnCurrentVisualsCleanedUp()
 
 void AItemOnPawnPreview_C::ExecuteUbergraph_ItemOnPawnPreview(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemOnPawnPreview_C", "ExecuteUbergraph_ItemOnPawnPreview");
+	class UFunction* Func = Class->GetFunction("ItemOnPawnPreview_C", "ExecuteUbergraph_ItemOnPawnPreview");
 
 	Params::ItemOnPawnPreview_C_ExecuteUbergraph_ItemOnPawnPreview Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Pawn_DangerGrape_C::ExecuteUbergraph_BP_Pawn_DangerGrape(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Pawn_DangerGrape_C", "ExecuteUbergraph_BP_Pawn_DangerGrape");
+	class UFunction* Func = Class->GetFunction("BP_Pawn_DangerGrape_C", "ExecuteUbergraph_BP_Pawn_DangerGrape");
 
 	Params::BP_Pawn_DangerGrape_C_ExecuteUbergraph_BP_Pawn_DangerGrape Parms{};
 
@@ -49,10 +46,7 @@ void ABP_Pawn_DangerGrape_C::ExecuteUbergraph_BP_Pawn_DangerGrape(int32 EntryPoi
 
 void ABP_Pawn_DangerGrape_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Pawn_DangerGrape_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("BP_Pawn_DangerGrape_C", "OnDeathPlayEffects");
 
 	Params::BP_Pawn_DangerGrape_C_OnDeathPlayEffects Parms{};
 
@@ -73,10 +67,7 @@ void ABP_Pawn_DangerGrape_C::OnDeathPlayEffects(float Damage, const struct FGame
 
 void ABP_Pawn_DangerGrape_C::PlayResOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Pawn_DangerGrape_C", "PlayResOut");
+	class UFunction* Func = Class->GetFunction("BP_Pawn_DangerGrape_C", "PlayResOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,10 +78,7 @@ void ABP_Pawn_DangerGrape_C::PlayResOut()
 
 void ABP_Pawn_DangerGrape_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Pawn_DangerGrape_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Pawn_DangerGrape_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

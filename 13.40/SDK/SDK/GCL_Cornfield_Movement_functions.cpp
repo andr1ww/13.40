@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCL_Cornfield_Movement_C::ExecuteUbergraph_GCL_Cornfield_Movement(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "ExecuteUbergraph_GCL_Cornfield_Movement");
+	class UFunction* Func = Class->GetFunction("GCL_Cornfield_Movement_C", "ExecuteUbergraph_GCL_Cornfield_Movement");
 
 	Params::GCL_Cornfield_Movement_C_ExecuteUbergraph_GCL_Cornfield_Movement Parms{};
 
@@ -41,10 +38,7 @@ void AGCL_Cornfield_Movement_C::ExecuteUbergraph_GCL_Cornfield_Movement(int32 En
 
 void AGCL_Cornfield_Movement_C::On_Player_Step()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "On Player Step");
+	class UFunction* Func = Class->GetFunction("GCL_Cornfield_Movement_C", "On Player Step");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AGCL_Cornfield_Movement_C::On_Player_Step()
 
 void AGCL_Cornfield_Movement_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("GCL_Cornfield_Movement_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,10 +64,7 @@ void AGCL_Cornfield_Movement_C::ReceiveBeginPlay()
 
 bool AGCL_Cornfield_Movement_C::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "OnRemove");
+	class UFunction* Func = Class->GetFunction("GCL_Cornfield_Movement_C", "OnRemove");
 
 	Params::GCL_Cornfield_Movement_C_OnRemove Parms{};
 
@@ -98,10 +86,7 @@ bool AGCL_Cornfield_Movement_C::OnRemove(class AActor* MyTarget, const struct FG
 
 bool AGCL_Cornfield_Movement_C::OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "OnActive");
+	class UFunction* Func = Class->GetFunction("GCL_Cornfield_Movement_C", "OnActive");
 
 	Params::GCL_Cornfield_Movement_C_OnActive Parms{};
 
@@ -123,10 +108,7 @@ bool AGCL_Cornfield_Movement_C::OnActive(class AActor* MyTarget, const struct FG
 
 bool AGCL_Cornfield_Movement_C::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "WhileActive");
+	class UFunction* Func = Class->GetFunction("GCL_Cornfield_Movement_C", "WhileActive");
 
 	Params::GCL_Cornfield_Movement_C_WhileActive Parms{};
 

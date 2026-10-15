@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULocalUserSettingTitle_C::ExecuteUbergraph_LocalUserSettingTitle(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserSettingTitle_C", "ExecuteUbergraph_LocalUserSettingTitle");
+	class UFunction* Func = Class->GetFunction("LocalUserSettingTitle_C", "ExecuteUbergraph_LocalUserSettingTitle");
 
 	Params::LocalUserSettingTitle_C_ExecuteUbergraph_LocalUserSettingTitle Parms{};
 
@@ -43,10 +40,7 @@ void ULocalUserSettingTitle_C::ExecuteUbergraph_LocalUserSettingTitle(int32 Entr
 
 void ULocalUserSettingTitle_C::OnExpansionChanged(bool bIsExpanded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserSettingTitle_C", "OnExpansionChanged");
+	class UFunction* Func = Class->GetFunction("LocalUserSettingTitle_C", "OnExpansionChanged");
 
 	Params::LocalUserSettingTitle_C_OnExpansionChanged Parms{};
 
@@ -61,10 +55,7 @@ void ULocalUserSettingTitle_C::OnExpansionChanged(bool bIsExpanded)
 
 void ULocalUserSettingTitle_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserSettingTitle_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("LocalUserSettingTitle_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void ULocalUserSettingTitle_C::BP_OnHovered()
 
 void ULocalUserSettingTitle_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserSettingTitle_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("LocalUserSettingTitle_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void ULocalUserSettingTitle_C::BP_OnUnhovered()
 
 void ULocalUserSettingTitle_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserSettingTitle_C", "Construct");
+	class UFunction* Func = Class->GetFunction("LocalUserSettingTitle_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

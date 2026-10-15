@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AItemPreviewPedestal_C::Remove_Floor(class AFortItemPreviewActor* Preview)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewPedestal_C", "Remove Floor");
+	class UFunction* Func = Class->GetFunction("ItemPreviewPedestal_C", "Remove Floor");
 
 	Params::ItemPreviewPedestal_C_Remove_Floor Parms{};
 
@@ -41,10 +38,7 @@ void AItemPreviewPedestal_C::Remove_Floor(class AFortItemPreviewActor* Preview)
 
 void AItemPreviewPedestal_C::OnItemDisplayed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewPedestal_C", "OnItemDisplayed");
+	class UFunction* Func = Class->GetFunction("ItemPreviewPedestal_C", "OnItemDisplayed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AItemPreviewPedestal_C::OnItemDisplayed()
 
 void AItemPreviewPedestal_C::ExecuteUbergraph_ItemPreviewPedestal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewPedestal_C", "ExecuteUbergraph_ItemPreviewPedestal");
+	class UFunction* Func = Class->GetFunction("ItemPreviewPedestal_C", "ExecuteUbergraph_ItemPreviewPedestal");
 
 	Params::ItemPreviewPedestal_C_ExecuteUbergraph_ItemPreviewPedestal Parms{};
 

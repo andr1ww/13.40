@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGhostRockLayerAnimBP_C::ExecuteUbergraph_GhostRockLayerAnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ExecuteUbergraph_GhostRockLayerAnimBP");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ExecuteUbergraph_GhostRockLayerAnimBP");
 
 	Params::GhostRockLayerAnimBP_C_ExecuteUbergraph_GhostRockLayerAnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UGhostRockLayerAnimBP_C::ExecuteUbergraph_GhostRockLayerAnimBP(int32 EntryP
 
 void UGhostRockLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "AnimGraph");
 
 	Params::GhostRockLayerAnimBP_C_AnimGraph Parms{};
 
@@ -65,10 +59,7 @@ void UGhostRockLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 void UGhostRockLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRelaxedEntry, struct FPoseLink* ItemRelaxedEntry_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemRelaxedEntry");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemRelaxedEntry");
 
 	Params::GhostRockLayerAnimBP_C_ItemRelaxedEntry Parms{};
 
@@ -89,10 +80,7 @@ void UGhostRockLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRel
 
 void UGhostRockLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& InPoseLowerBodyJogPostPivot, struct FPoseLink* ItemLowerBodyJogPostPivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
 
 	Params::GhostRockLayerAnimBP_C_ItemLowerBodyJogPostPivot Parms{};
 
@@ -113,10 +101,7 @@ void UGhostRockLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& 
 
 void UGhostRockLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& InPoseLowerBodyJogPrePivot, struct FPoseLink* ItemLowerBodyJogPrePivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
 
 	Params::GhostRockLayerAnimBP_C_ItemLowerBodyJogPrePivot Parms{};
 
@@ -137,10 +122,7 @@ void UGhostRockLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& I
 
 void UGhostRockLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InPoseLowerBodyJogStop, struct FPoseLink* ItemLowerBodyJogStop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyJogStop");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyJogStop");
 
 	Params::GhostRockLayerAnimBP_C_ItemLowerBodyJogStop Parms{};
 
@@ -161,10 +143,7 @@ void UGhostRockLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InPos
 
 void UGhostRockLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& InPoseLowerBodyJogStart, struct FPoseLink* ItemLowerBodyJogStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyJogStart");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyJogStart");
 
 	Params::GhostRockLayerAnimBP_C_ItemLowerBodyJogStart Parms{};
 
@@ -185,10 +164,7 @@ void UGhostRockLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& InPo
 
 void UGhostRockLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& InPoseLowerBodyMovement, struct FPoseLink* ItemLowerBodyMovement_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyMovement");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyMovement");
 
 	Params::GhostRockLayerAnimBP_C_ItemLowerBodyMovement Parms{};
 
@@ -209,10 +185,7 @@ void UGhostRockLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& InPo
 
 void UGhostRockLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink& InPosePostPivotAdditive, struct FPoseLink* ItemJogPostPivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJogPostPivotAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJogPostPivotAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemJogPostPivotAdditive Parms{};
 
@@ -233,10 +206,7 @@ void UGhostRockLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink& I
 
 void UGhostRockLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& InPosePrePivotAdditive, struct FPoseLink* ItemJogPrePivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJogPrePivotAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJogPrePivotAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemJogPrePivotAdditive Parms{};
 
@@ -257,10 +227,7 @@ void UGhostRockLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& In
 
 void UGhostRockLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPoseJogStopAdditive, struct FPoseLink* ItemJogStopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJogStopAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJogStopAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemJogStopAdditive Parms{};
 
@@ -281,10 +248,7 @@ void UGhostRockLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPose
 
 void UGhostRockLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InPoseJogStartAdditive, struct FPoseLink* ItemJogStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJogStartAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJogStartAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemJogStartAdditive Parms{};
 
@@ -304,10 +268,7 @@ void UGhostRockLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InPos
 
 void UGhostRockLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyModeLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFlyModeLoopAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFlyModeLoopAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemFlyModeLoopAdditive Parms{};
 
@@ -325,10 +286,7 @@ void UGhostRockLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyM
 
 void UGhostRockLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFlyModeStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFlyModeStartAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFlyModeStartAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemFlyModeStartAdditive Parms{};
 
@@ -346,10 +304,7 @@ void UGhostRockLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFly
 
 void UGhostRockLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZipLineStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemZipLineStartAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemZipLineStartAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemZipLineStartAdditive Parms{};
 
@@ -367,10 +322,7 @@ void UGhostRockLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZip
 
 void UGhostRockLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetPackJumpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJetPackJumpAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJetPackJumpAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemJetPackJumpAdditive Parms{};
 
@@ -388,10 +340,7 @@ void UGhostRockLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetP
 
 void UGhostRockLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJetPackStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJetPackStartAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJetPackStartAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemJetPackStartAdditive Parms{};
 
@@ -409,10 +358,7 @@ void UGhostRockLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJet
 
 void UGhostRockLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLandAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFallLandAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFallLandAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemFallLandAdditive Parms{};
 
@@ -430,10 +376,7 @@ void UGhostRockLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLan
 
 void UGhostRockLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFallAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFallAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemFallAdditive Parms{};
 
@@ -451,10 +394,7 @@ void UGhostRockLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditiv
 
 void UGhostRockLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJumpLoopAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJumpLoopAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemJumpLoopAdditive Parms{};
 
@@ -472,10 +412,7 @@ void UGhostRockLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoo
 
 void UGhostRockLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJumpUpAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemJumpUpAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemJumpUpAdditive Parms{};
 
@@ -493,10 +430,7 @@ void UGhostRockLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdd
 
 void UGhostRockLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSliding_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemSlopeSliding");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemSlopeSliding");
 
 	Params::GhostRockLayerAnimBP_C_ItemSlopeSliding Parms{};
 
@@ -514,10 +448,7 @@ void UGhostRockLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSlidin
 
 void UGhostRockLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCrouchTurningAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemCrouchTurningAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemCrouchTurningAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemCrouchTurningAdditive Parms{};
 
@@ -536,10 +467,7 @@ void UGhostRockLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCr
 
 void UGhostRockLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdleAdditive, struct FPoseLink* ItemIdleAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemIdleAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemIdleAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemIdleAdditive Parms{};
 
@@ -560,10 +488,7 @@ void UGhostRockLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdl
 
 void UGhostRockLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPoseSprint, struct FPoseLink* ItemFullBodySprint_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFullBodySprint");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemFullBodySprint");
 
 	Params::GhostRockLayerAnimBP_C_ItemFullBodySprint Parms{};
 
@@ -585,10 +510,7 @@ void UGhostRockLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPoseS
 
 void UGhostRockLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam_0, struct FPoseLink* ItemUpperBody_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemUpperBody");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemUpperBody");
 
 	Params::GhostRockLayerAnimBP_C_ItemUpperBody Parms{};
 
@@ -610,10 +532,7 @@ void UGhostRockLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUpperB
 
 void UGhostRockLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLink& InPoseLowerBodyLeanAdditive, struct FPoseLink* ItemLowerBodyLeanAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
+	class UFunction* Func = Class->GetFunction("GhostRockLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
 
 	Params::GhostRockLayerAnimBP_C_ItemLowerBodyLeanAdditive Parms{};
 

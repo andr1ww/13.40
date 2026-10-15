@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ATracer_Shotgun_C::ExecuteUbergraph_Tracer_Shotgun(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Tracer_Shotgun_C", "ExecuteUbergraph_Tracer_Shotgun");
+	class UFunction* Func = Class->GetFunction("Tracer_Shotgun_C", "ExecuteUbergraph_Tracer_Shotgun");
 
 	Params::Tracer_Shotgun_C_ExecuteUbergraph_Tracer_Shotgun Parms{};
 
@@ -41,10 +38,7 @@ void ATracer_Shotgun_C::ExecuteUbergraph_Tracer_Shotgun(int32 EntryPoint)
 
 void ATracer_Shotgun_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Tracer_Shotgun_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Tracer_Shotgun_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ATracer_Shotgun_C::ReceiveBeginPlay()
 
 void ATracer_Shotgun_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Tracer_Shotgun_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("Tracer_Shotgun_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

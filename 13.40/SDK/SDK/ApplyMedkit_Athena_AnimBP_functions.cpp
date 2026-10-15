@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UApplyMedkit_Athena_AnimBP_C::ExecuteUbergraph_ApplyMedkit_Athena_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ApplyMedkit_Athena_AnimBP_C", "ExecuteUbergraph_ApplyMedkit_Athena_AnimBP");
+	class UFunction* Func = Class->GetFunction("ApplyMedkit_Athena_AnimBP_C", "ExecuteUbergraph_ApplyMedkit_Athena_AnimBP");
 
 	Params::ApplyMedkit_Athena_AnimBP_C_ExecuteUbergraph_ApplyMedkit_Athena_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UApplyMedkit_Athena_AnimBP_C::ExecuteUbergraph_ApplyMedkit_Athena_AnimBP(in
 
 void UApplyMedkit_Athena_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ApplyMedkit_Athena_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("ApplyMedkit_Athena_AnimBP_C", "AnimGraph");
 
 	Params::ApplyMedkit_Athena_AnimBP_C_AnimGraph Parms{};
 

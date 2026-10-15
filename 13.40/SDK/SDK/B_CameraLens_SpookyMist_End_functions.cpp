@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_CameraLens_SpookyMist_End_C::ExecuteUbergraph_B_CameraLens_SpookyMist_End(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_SpookyMist_End_C", "ExecuteUbergraph_B_CameraLens_SpookyMist_End");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_SpookyMist_End_C", "ExecuteUbergraph_B_CameraLens_SpookyMist_End");
 
 	Params::B_CameraLens_SpookyMist_End_C_ExecuteUbergraph_B_CameraLens_SpookyMist_End Parms{};
 
@@ -41,10 +38,7 @@ void AB_CameraLens_SpookyMist_End_C::ExecuteUbergraph_B_CameraLens_SpookyMist_En
 
 void AB_CameraLens_SpookyMist_End_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_SpookyMist_End_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_SpookyMist_End_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

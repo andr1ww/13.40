@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Battlepass_LightSwitcher_C::ExecuteUbergraph_BP_Battlepass_LightSwitcher(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "ExecuteUbergraph_BP_Battlepass_LightSwitcher");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "ExecuteUbergraph_BP_Battlepass_LightSwitcher");
 
 	Params::BP_Battlepass_LightSwitcher_C_ExecuteUbergraph_BP_Battlepass_LightSwitcher Parms{};
 
@@ -41,10 +38,7 @@ void ABP_Battlepass_LightSwitcher_C::ExecuteUbergraph_BP_Battlepass_LightSwitche
 
 void ABP_Battlepass_LightSwitcher_C::DisableLevelSetLighting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "DisableLevelSetLighting");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "DisableLevelSetLighting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_Battlepass_LightSwitcher_C::DisableLevelSetLighting()
 
 void ABP_Battlepass_LightSwitcher_C::EnableLevelSetLighting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "EnableLevelSetLighting");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "EnableLevelSetLighting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_Battlepass_LightSwitcher_C::EnableLevelSetLighting()
 
 void ABP_Battlepass_LightSwitcher_C::UpdateSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "UpdateSettings");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "UpdateSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_Battlepass_LightSwitcher_C::UpdateSettings()
 
 void ABP_Battlepass_LightSwitcher_C::DisableLobbySetLighting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "DisableLobbySetLighting");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "DisableLobbySetLighting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ABP_Battlepass_LightSwitcher_C::DisableLobbySetLighting()
 
 void ABP_Battlepass_LightSwitcher_C::EnableLobbySetLighting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "EnableLobbySetLighting");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "EnableLobbySetLighting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void ABP_Battlepass_LightSwitcher_C::EnableLobbySetLighting()
 
 void ABP_Battlepass_LightSwitcher_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void ABP_Battlepass_LightSwitcher_C::ReceiveBeginPlay()
 
 void ABP_Battlepass_LightSwitcher_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -142,10 +118,7 @@ void ABP_Battlepass_LightSwitcher_C::UserConstructionScript()
 
 void ABP_Battlepass_LightSwitcher_C::SetVisiblityofSceneLighting(bool Activate, bool ConstructionScript)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "SetVisiblityofSceneLighting");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "SetVisiblityofSceneLighting");
 
 	Params::BP_Battlepass_LightSwitcher_C_SetVisiblityofSceneLighting Parms{};
 
@@ -161,10 +134,7 @@ void ABP_Battlepass_LightSwitcher_C::SetVisiblityofSceneLighting(bool Activate, 
 
 void ABP_Battlepass_LightSwitcher_C::SetVisiblityofDetailSpecificMeshes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "SetVisiblityofDetailSpecificMeshes");
+	class UFunction* Func = Class->GetFunction("BP_Battlepass_LightSwitcher_C", "SetVisiblityofDetailSpecificMeshes");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

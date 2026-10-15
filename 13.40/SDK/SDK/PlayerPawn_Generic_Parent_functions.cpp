@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APlayerPawn_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Generic_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ExecuteUbergraph_PlayerPawn_Generic_Parent");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ExecuteUbergraph_PlayerPawn_Generic_Parent");
 
 	Params::PlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent Parms{};
 
@@ -41,10 +38,7 @@ void APlayerPawn_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Generic_Parent(in
 
 void APlayerPawn_Generic_Parent_C::ReinitializeWeaponMaterials()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ReinitializeWeaponMaterials");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ReinitializeWeaponMaterials");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void APlayerPawn_Generic_Parent_C::ReinitializeWeaponMaterials()
 
 void APlayerPawn_Generic_Parent_C::Player_Creates_a_Splash(const struct FTransform& NewTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "Player Creates a Splash");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "Player Creates a Splash");
 
 	Params::PlayerPawn_Generic_Parent_C_Player_Creates_a_Splash Parms{};
 
@@ -75,10 +66,7 @@ void APlayerPawn_Generic_Parent_C::Player_Creates_a_Splash(const struct FTransfo
 
 void APlayerPawn_Generic_Parent_C::Entered_Water_Volume()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "Entered Water Volume");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "Entered Water Volume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void APlayerPawn_Generic_Parent_C::Entered_Water_Volume()
 
 void APlayerPawn_Generic_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

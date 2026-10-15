@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFloatingInteraction_Indicator_S13_Punchcard_C::ExecuteUbergraph_FloatingInteraction_Indicator_S13_Punchcard(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "ExecuteUbergraph_FloatingInteraction_Indicator_S13_Punchcard");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "ExecuteUbergraph_FloatingInteraction_Indicator_S13_Punchcard");
 
 	Params::FloatingInteraction_Indicator_S13_Punchcard_C_ExecuteUbergraph_FloatingInteraction_Indicator_S13_Punchcard Parms{};
 
@@ -43,10 +40,7 @@ void UFloatingInteraction_Indicator_S13_Punchcard_C::ExecuteUbergraph_FloatingIn
 
 void UFloatingInteraction_Indicator_S13_Punchcard_C::SetBangState(bool bShowBang)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "SetBangState");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "SetBangState");
 
 	Params::FloatingInteraction_Indicator_S13_Punchcard_C_SetBangState Parms{};
 
@@ -61,10 +55,7 @@ void UFloatingInteraction_Indicator_S13_Punchcard_C::SetBangState(bool bShowBang
 
 void UFloatingInteraction_Indicator_S13_Punchcard_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "Construct");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UFloatingInteraction_Indicator_S13_Punchcard_C::Construct()
 
 void UFloatingInteraction_Indicator_S13_Punchcard_C::TriggerLoopingHoverStateAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "TriggerLoopingHoverStateAnim");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "TriggerLoopingHoverStateAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UFloatingInteraction_Indicator_S13_Punchcard_C::TriggerLoopingHoverStateAni
 
 void UFloatingInteraction_Indicator_S13_Punchcard_C::OnObjectHoverEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "OnObjectHoverEnd");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "OnObjectHoverEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UFloatingInteraction_Indicator_S13_Punchcard_C::OnObjectHoverEnd()
 
 void UFloatingInteraction_Indicator_S13_Punchcard_C::OnObjectHoverBegin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "OnObjectHoverBegin");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "OnObjectHoverBegin");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void UFloatingInteraction_Indicator_S13_Punchcard_C::OnObjectHoverBegin()
 
 void UFloatingInteraction_Indicator_S13_Punchcard_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_Punchcard_C", "PreConstruct");
 
 	Params::FloatingInteraction_Indicator_S13_Punchcard_C_PreConstruct Parms{};
 

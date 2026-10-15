@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UImagePlateComponent::OnRenderTextureChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImagePlateComponent", "OnRenderTextureChanged");
+	class UFunction* Func = Class->GetFunction("ImagePlateComponent", "OnRenderTextureChanged");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -42,10 +39,7 @@ void UImagePlateComponent::OnRenderTextureChanged()
 
 void UImagePlateComponent::SetImagePlate(const struct FImagePlateParameters& Plate_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImagePlateComponent", "SetImagePlate");
+	class UFunction* Func = Class->GetFunction("ImagePlateComponent", "SetImagePlate");
 
 	Params::ImagePlateComponent_SetImagePlate Parms{};
 
@@ -67,10 +61,7 @@ void UImagePlateComponent::SetImagePlate(const struct FImagePlateParameters& Pla
 
 struct FImagePlateParameters UImagePlateComponent::GetPlate() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImagePlateComponent", "GetPlate");
+	class UFunction* Func = Class->GetFunction("ImagePlateComponent", "GetPlate");
 
 	Params::ImagePlateComponent_GetPlate Parms{};
 

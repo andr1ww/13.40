@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 class UAndroidPermissionCallbackProxy* UAndroidPermissionFunctionLibrary::AcquirePermissions(const TArray<class FString>& Permissions)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AndroidPermissionFunctionLibrary", "AcquirePermissions");
+	class UFunction* Func = StaticClass()->GetFunction("AndroidPermissionFunctionLibrary", "AcquirePermissions");
 
 	Params::AndroidPermissionFunctionLibrary_AcquirePermissions Parms{};
 
@@ -52,10 +49,7 @@ class UAndroidPermissionCallbackProxy* UAndroidPermissionFunctionLibrary::Acquir
 
 bool UAndroidPermissionFunctionLibrary::CheckPermission(const class FString& Permission)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AndroidPermissionFunctionLibrary", "CheckPermission");
+	class UFunction* Func = StaticClass()->GetFunction("AndroidPermissionFunctionLibrary", "CheckPermission");
 
 	Params::AndroidPermissionFunctionLibrary_CheckPermission Parms{};
 

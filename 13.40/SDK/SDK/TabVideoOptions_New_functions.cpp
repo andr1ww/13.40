@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTabVideoOptions_New_C::ExecuteUbergraph_TabVideoOptions_New(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabVideoOptions_New_C", "ExecuteUbergraph_TabVideoOptions_New");
+	class UFunction* Func = Class->GetFunction("TabVideoOptions_New_C", "ExecuteUbergraph_TabVideoOptions_New");
 
 	Params::TabVideoOptions_New_C_ExecuteUbergraph_TabVideoOptions_New Parms{};
 
@@ -44,10 +41,7 @@ void UTabVideoOptions_New_C::ExecuteUbergraph_TabVideoOptions_New(int32 EntryPoi
 
 void UTabVideoOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature(class UFortSetting* Setting, class FName Action)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabVideoOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TabVideoOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
 
 	Params::TabVideoOptions_New_C_BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature Parms{};
 
@@ -65,10 +59,7 @@ void UTabVideoOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1
 
 void UTabVideoOptions_New_C::SettingValueChanged(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabVideoOptions_New_C", "SettingValueChanged");
+	class UFunction* Func = Class->GetFunction("TabVideoOptions_New_C", "SettingValueChanged");
 
 	Params::TabVideoOptions_New_C_SettingValueChanged Parms{};
 
@@ -83,10 +74,7 @@ void UTabVideoOptions_New_C::SettingValueChanged(float Value)
 
 void UTabVideoOptions_New_C::CenterOnTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabVideoOptions_New_C", "CenterOnTab");
+	class UFunction* Func = Class->GetFunction("TabVideoOptions_New_C", "CenterOnTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +87,7 @@ void UTabVideoOptions_New_C::CenterOnTab()
 
 void UTabVideoOptions_New_C::OnComplete_7E19F26B42A808FDADDB569CFB68CCB7(class UUserWidget* UserWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabVideoOptions_New_C", "OnComplete_7E19F26B42A808FDADDB569CFB68CCB7");
+	class UFunction* Func = Class->GetFunction("TabVideoOptions_New_C", "OnComplete_7E19F26B42A808FDADDB569CFB68CCB7");
 
 	Params::TabVideoOptions_New_C_OnComplete_7E19F26B42A808FDADDB569CFB68CCB7 Parms{};
 

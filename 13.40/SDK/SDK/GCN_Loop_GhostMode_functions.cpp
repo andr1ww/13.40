@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Loop_GhostMode_C::ExecuteUbergraph_GCN_Loop_GhostMode(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "ExecuteUbergraph_GCN_Loop_GhostMode");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_GhostMode_C", "ExecuteUbergraph_GCN_Loop_GhostMode");
 
 	Params::GCN_Loop_GhostMode_C_ExecuteUbergraph_GCN_Loop_GhostMode Parms{};
 
@@ -41,10 +38,7 @@ void AGCN_Loop_GhostMode_C::ExecuteUbergraph_GCN_Loop_GhostMode(int32 EntryPoint
 
 void AGCN_Loop_GhostMode_C::FadeMaterialsOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsOut");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AGCN_Loop_GhostMode_C::FadeMaterialsOut()
 
 void AGCN_Loop_GhostMode_C::FadeMaterialsIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsIn");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -76,10 +67,7 @@ void AGCN_Loop_GhostMode_C::FadeMaterialsIn()
 
 void AGCN_Loop_GhostMode_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_GhostMode_C", "OnRemoval");
 
 	Params::GCN_Loop_GhostMode_C_OnRemoval Parms{};
 
@@ -104,10 +92,7 @@ void AGCN_Loop_GhostMode_C::OnRemoval(class AActor* MyTarget, const struct FGame
 
 void AGCN_Loop_GhostMode_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_GhostMode_C", "OnLoopingStart");
 
 	Params::GCN_Loop_GhostMode_C_OnLoopingStart Parms{};
 
@@ -125,10 +110,7 @@ void AGCN_Loop_GhostMode_C::OnLoopingStart(class AActor* MyTarget, const struct 
 
 void AGCN_Loop_GhostMode_C::FadeMaterialsTL__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsTL__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsTL__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +121,7 @@ void AGCN_Loop_GhostMode_C::FadeMaterialsTL__UpdateFunc()
 
 void AGCN_Loop_GhostMode_C::FadeMaterialsTL__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsTL__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsTL__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -156,10 +135,7 @@ void AGCN_Loop_GhostMode_C::FadeMaterialsTL__FinishedFunc()
 
 void AGCN_Loop_GhostMode_C::Highlight_Lerp(float Alpha, struct FPawnHighlight* Highlight)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "Highlight Lerp");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_GhostMode_C", "Highlight Lerp");
 
 	Params::GCN_Loop_GhostMode_C_Highlight_Lerp Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaDirectAcquisitionOffer_SpecialBanner_C::ExecuteUbergraph_AthenaDirectAcquisitionOffer_SpecialBanner(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SpecialBanner_C", "ExecuteUbergraph_AthenaDirectAcquisitionOffer_SpecialBanner");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SpecialBanner_C", "ExecuteUbergraph_AthenaDirectAcquisitionOffer_SpecialBanner");
 
 	Params::AthenaDirectAcquisitionOffer_SpecialBanner_C_ExecuteUbergraph_AthenaDirectAcquisitionOffer_SpecialBanner Parms{};
 
@@ -47,10 +44,7 @@ void UAthenaDirectAcquisitionOffer_SpecialBanner_C::ExecuteUbergraph_AthenaDirec
 
 void UAthenaDirectAcquisitionOffer_SpecialBanner_C::SetupSpecialOfferBanner(bool bHasSale, const class FText& SaleText, const class FString& BannerOverrideTag, bool bHasBattlePassStars_0, int32 iNumOfBattlePassStars)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SpecialBanner_C", "SetupSpecialOfferBanner");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SpecialBanner_C", "SetupSpecialOfferBanner");
 
 	Params::AthenaDirectAcquisitionOffer_SpecialBanner_C_SetupSpecialOfferBanner Parms{};
 

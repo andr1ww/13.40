@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_MedConsumable_Parent_C::ExecuteUbergraph_GA_Athena_MedConsumable_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "ExecuteUbergraph_GA_Athena_MedConsumable_Parent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "ExecuteUbergraph_GA_Athena_MedConsumable_Parent");
 
 	Params::GA_Athena_MedConsumable_Parent_C_ExecuteUbergraph_GA_Athena_MedConsumable_Parent Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Athena_MedConsumable_Parent_C::ExecuteUbergraph_GA_Athena_MedConsumable
 
 void UGA_Athena_MedConsumable_Parent_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_MedConsumable_Parent_C_K2_OnEndAbility Parms{};
 
@@ -61,10 +55,7 @@ void UGA_Athena_MedConsumable_Parent_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_MedConsumable_Parent_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -78,10 +69,7 @@ void UGA_Athena_MedConsumable_Parent_C::K2_ActivateAbility()
 
 void UGA_Athena_MedConsumable_Parent_C::Triggered_4C02BFB04B18D9E79F84848FFE6D2C32(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Triggered_4C02BFB04B18D9E79F84848FFE6D2C32");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Triggered_4C02BFB04B18D9E79F84848FFE6D2C32");
 
 	Params::GA_Athena_MedConsumable_Parent_C_Triggered_4C02BFB04B18D9E79F84848FFE6D2C32 Parms{};
 
@@ -100,10 +88,7 @@ void UGA_Athena_MedConsumable_Parent_C::Triggered_4C02BFB04B18D9E79F84848FFE6D2C
 
 void UGA_Athena_MedConsumable_Parent_C::Cancelled_4C02BFB04B18D9E79F84848FFE6D2C32(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Cancelled_4C02BFB04B18D9E79F84848FFE6D2C32");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Cancelled_4C02BFB04B18D9E79F84848FFE6D2C32");
 
 	Params::GA_Athena_MedConsumable_Parent_C_Cancelled_4C02BFB04B18D9E79F84848FFE6D2C32 Parms{};
 
@@ -122,10 +107,7 @@ void UGA_Athena_MedConsumable_Parent_C::Cancelled_4C02BFB04B18D9E79F84848FFE6D2C
 
 void UGA_Athena_MedConsumable_Parent_C::Completed_4C02BFB04B18D9E79F84848FFE6D2C32(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Completed_4C02BFB04B18D9E79F84848FFE6D2C32");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Completed_4C02BFB04B18D9E79F84848FFE6D2C32");
 
 	Params::GA_Athena_MedConsumable_Parent_C_Completed_4C02BFB04B18D9E79F84848FFE6D2C32 Parms{};
 
@@ -141,10 +123,7 @@ void UGA_Athena_MedConsumable_Parent_C::Completed_4C02BFB04B18D9E79F84848FFE6D2C
 
 void UGA_Athena_MedConsumable_Parent_C::ShieldCalc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "ShieldCalc");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "ShieldCalc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,10 +134,7 @@ void UGA_Athena_MedConsumable_Parent_C::ShieldCalc()
 
 void UGA_Athena_MedConsumable_Parent_C::HealthCalc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "HealthCalc");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "HealthCalc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +147,7 @@ void UGA_Athena_MedConsumable_Parent_C::HealthCalc()
 
 void UGA_Athena_MedConsumable_Parent_C::SetupGE(struct FGameplayEffectSpecHandle* Effect_Out)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "SetupGE");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "SetupGE");
 
 	Params::GA_Athena_MedConsumable_Parent_C_SetupGE Parms{};
 
@@ -190,10 +163,7 @@ void UGA_Athena_MedConsumable_Parent_C::SetupGE(struct FGameplayEffectSpecHandle
 
 void UGA_Athena_MedConsumable_Parent_C::MakeCustomMontageInfo()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "MakeCustomMontageInfo");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "MakeCustomMontageInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -204,10 +174,7 @@ void UGA_Athena_MedConsumable_Parent_C::MakeCustomMontageInfo()
 
 void UGA_Athena_MedConsumable_Parent_C::OnMontageTriggered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "OnMontageTriggered");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "OnMontageTriggered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -222,10 +189,7 @@ void UGA_Athena_MedConsumable_Parent_C::OnMontageTriggered()
 
 bool UGA_Athena_MedConsumable_Parent_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_CanActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_CanActivateAbility");
 
 	Params::GA_Athena_MedConsumable_Parent_C_K2_CanActivateAbility Parms{};
 

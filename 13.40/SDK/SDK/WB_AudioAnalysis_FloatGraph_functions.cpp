@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UWB_AudioAnalysis_FloatGraph_C::ExecuteUbergraph_WB_AudioAnalysis_FloatGraph(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "ExecuteUbergraph_WB_AudioAnalysis_FloatGraph");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "ExecuteUbergraph_WB_AudioAnalysis_FloatGraph");
 
 	Params::WB_AudioAnalysis_FloatGraph_C_ExecuteUbergraph_WB_AudioAnalysis_FloatGraph Parms{};
 
@@ -45,10 +42,7 @@ void UWB_AudioAnalysis_FloatGraph_C::ExecuteUbergraph_WB_AudioAnalysis_FloatGrap
 
 void UWB_AudioAnalysis_FloatGraph_C::Initialize_MPC(class FName Parameter_0, class UMaterialParameterCollection* Collection, int32 VectorIndex_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "Initialize MPC");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "Initialize MPC");
 
 	Params::WB_AudioAnalysis_FloatGraph_C_Initialize_MPC Parms{};
 
@@ -68,10 +62,7 @@ void UWB_AudioAnalysis_FloatGraph_C::Initialize_MPC(class FName Parameter_0, cla
 
 void UWB_AudioAnalysis_FloatGraph_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "Tick");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "Tick");
 
 	Params::WB_AudioAnalysis_FloatGraph_C_Tick Parms{};
 
@@ -87,10 +78,7 @@ void UWB_AudioAnalysis_FloatGraph_C::Tick(const struct FGeometry& MyGeometry, fl
 
 void UWB_AudioAnalysis_FloatGraph_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "Construct");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +91,7 @@ void UWB_AudioAnalysis_FloatGraph_C::Construct()
 
 void UWB_AudioAnalysis_FloatGraph_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "PreConstruct");
 
 	Params::WB_AudioAnalysis_FloatGraph_C_PreConstruct Parms{};
 
@@ -123,10 +108,7 @@ void UWB_AudioAnalysis_FloatGraph_C::PreConstruct(bool IsDesignTime)
 
 void UWB_AudioAnalysis_FloatGraph_C::Set_Value(float Value_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "Set Value");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "Set Value");
 
 	Params::WB_AudioAnalysis_FloatGraph_C_Set_Value Parms{};
 
@@ -143,10 +125,7 @@ void UWB_AudioAnalysis_FloatGraph_C::Set_Value(float Value_0)
 
 void UWB_AudioAnalysis_FloatGraph_C::calcWidgetSize(const struct FGeometry& geom)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "calcWidgetSize");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "calcWidgetSize");
 
 	Params::WB_AudioAnalysis_FloatGraph_C_calcWidgetSize Parms{};
 
@@ -163,10 +142,7 @@ void UWB_AudioAnalysis_FloatGraph_C::calcWidgetSize(const struct FGeometry& geom
 
 void UWB_AudioAnalysis_FloatGraph_C::OnPaint(struct FPaintContext& Context) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "OnPaint");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_FloatGraph_C", "OnPaint");
 
 	Params::WB_AudioAnalysis_FloatGraph_C_OnPaint Parms{};
 

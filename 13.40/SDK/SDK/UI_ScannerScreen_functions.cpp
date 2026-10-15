@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UUI_ScannerScreen_C::ExecuteUbergraph_UI_ScannerScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_ScannerScreen_C", "ExecuteUbergraph_UI_ScannerScreen");
+	class UFunction* Func = Class->GetFunction("UI_ScannerScreen_C", "ExecuteUbergraph_UI_ScannerScreen");
 
 	Params::UI_ScannerScreen_C_ExecuteUbergraph_UI_ScannerScreen Parms{};
 
@@ -43,10 +40,7 @@ void UUI_ScannerScreen_C::ExecuteUbergraph_UI_ScannerScreen(int32 EntryPoint)
 
 void UUI_ScannerScreen_C::EventTargetLost(const class FText& ScreenText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_ScannerScreen_C", "EventTargetLost");
+	class UFunction* Func = Class->GetFunction("UI_ScannerScreen_C", "EventTargetLost");
 
 	Params::UI_ScannerScreen_C_EventTargetLost Parms{};
 
@@ -61,10 +55,7 @@ void UUI_ScannerScreen_C::EventTargetLost(const class FText& ScreenText)
 
 void UUI_ScannerScreen_C::EventScanning()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_ScannerScreen_C", "EventScanning");
+	class UFunction* Func = Class->GetFunction("UI_ScannerScreen_C", "EventScanning");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UUI_ScannerScreen_C::EventScanning()
 
 void UUI_ScannerScreen_C::EventSuccess(const class FText& ScreenText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_ScannerScreen_C", "EventSuccess");
+	class UFunction* Func = Class->GetFunction("UI_ScannerScreen_C", "EventSuccess");
 
 	Params::UI_ScannerScreen_C_EventSuccess Parms{};
 
@@ -97,10 +85,7 @@ void UUI_ScannerScreen_C::EventSuccess(const class FText& ScreenText)
 
 void UUI_ScannerScreen_C::EventFail(const class FText& ScreenText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_ScannerScreen_C", "EventFail");
+	class UFunction* Func = Class->GetFunction("UI_ScannerScreen_C", "EventFail");
 
 	Params::UI_ScannerScreen_C_EventFail Parms{};
 

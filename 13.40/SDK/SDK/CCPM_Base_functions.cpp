@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ACCPM_Base_C::ExecuteUbergraph_CCPM_Base(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "ExecuteUbergraph_CCPM_Base");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "ExecuteUbergraph_CCPM_Base");
 
 	Params::CCPM_Base_C_ExecuteUbergraph_CCPM_Base Parms{};
 
@@ -41,10 +38,7 @@ void ACCPM_Base_C::ExecuteUbergraph_CCPM_Base(int32 EntryPoint)
 
 void ACCPM_Base_C::Attachment()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "Attachment");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "Attachment");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ACCPM_Base_C::Attachment()
 
 void ACCPM_Base_C::OnPawnAndPartChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "OnPawnAndPartChanged");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "OnPawnAndPartChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void ACCPM_Base_C::OnPawnAndPartChanged()
 
 void ACCPM_Base_C::isHiddingInProp(bool IsHidden)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "isHiddingInProp");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "isHiddingInProp");
 
 	Params::CCPM_Base_C_isHiddingInProp Parms{};
 
@@ -93,10 +81,7 @@ void ACCPM_Base_C::isHiddingInProp(bool IsHidden)
 
 void ACCPM_Base_C::PlayerMovementTick(float DeltaSeconds, const struct FVector& OldLocation, const struct FVector& OldVelocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "PlayerMovementTick");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "PlayerMovementTick");
 
 	Params::CCPM_Base_C_PlayerMovementTick Parms{};
 
@@ -113,10 +98,7 @@ void ACCPM_Base_C::PlayerMovementTick(float DeltaSeconds, const struct FVector& 
 
 void ACCPM_Base_C::ExitVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "ExitVehicle");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "ExitVehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void ACCPM_Base_C::ExitVehicle()
 
 void ACCPM_Base_C::EnterVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "EnterVehicle");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "EnterVehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +120,7 @@ void ACCPM_Base_C::EnterVehicle()
 
 void ACCPM_Base_C::Open()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "Open");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "Open");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,10 +131,7 @@ void ACCPM_Base_C::Open()
 
 void ACCPM_Base_C::ExitingHidingProp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "ExitingHidingProp");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "ExitingHidingProp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +142,7 @@ void ACCPM_Base_C::ExitingHidingProp()
 
 void ACCPM_Base_C::EnteringHidingProp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "EnteringHidingProp");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "EnteringHidingProp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -183,10 +153,7 @@ void ACCPM_Base_C::EnteringHidingProp()
 
 void ACCPM_Base_C::OnTargetingOrFirstPersonCameraChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "OnTargetingOrFirstPersonCameraChanged");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "OnTargetingOrFirstPersonCameraChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -197,10 +164,7 @@ void ACCPM_Base_C::OnTargetingOrFirstPersonCameraChanged()
 
 void ACCPM_Base_C::Close()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "Close");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "Close");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -211,10 +175,7 @@ void ACCPM_Base_C::Close()
 
 void ACCPM_Base_C::OnEndSkydiving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "OnEndSkydiving");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "OnEndSkydiving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,10 +186,7 @@ void ACCPM_Base_C::OnEndSkydiving()
 
 void ACCPM_Base_C::OnBeginSkydiving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "OnBeginSkydiving");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "OnBeginSkydiving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -239,10 +197,7 @@ void ACCPM_Base_C::OnBeginSkydiving()
 
 void ACCPM_Base_C::Reset_Enter_Vehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "Reset Enter Vehicle");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "Reset Enter Vehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +208,7 @@ void ACCPM_Base_C::Reset_Enter_Vehicle()
 
 void ACCPM_Base_C::Reset_Exit_Vehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "Reset Exit Vehicle");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "Reset Exit Vehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -267,10 +219,7 @@ void ACCPM_Base_C::Reset_Exit_Vehicle()
 
 void ACCPM_Base_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -284,10 +233,7 @@ void ACCPM_Base_C::UserConstructionScript()
 
 void ACCPM_Base_C::attachParticleSystem(class UParticleSystemComponent* Particle_System_Component, class FName Socket_Name)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "attachParticleSystem");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "attachParticleSystem");
 
 	Params::CCPM_Base_C_attachParticleSystem Parms{};
 
@@ -305,10 +251,7 @@ void ACCPM_Base_C::attachParticleSystem(class UParticleSystemComponent* Particle
 
 void ACCPM_Base_C::overrideCharacterPartType(EFortCustomPartType Part_Type)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_Base_C", "overrideCharacterPartType");
+	class UFunction* Func = Class->GetFunction("CCPM_Base_C", "overrideCharacterPartType");
 
 	Params::CCPM_Base_C_overrideCharacterPartType Parms{};
 

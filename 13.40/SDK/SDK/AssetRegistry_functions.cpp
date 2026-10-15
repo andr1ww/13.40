@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 struct FAssetData UAssetRegistryHelpers::CreateAssetData(const class UObject* InAsset, bool bAllowBlueprintClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "CreateAssetData");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "CreateAssetData");
 
 	Params::AssetRegistryHelpers_CreateAssetData Parms{};
 
@@ -54,10 +51,7 @@ struct FAssetData UAssetRegistryHelpers::CreateAssetData(const class UObject* In
 
 class UObject* UAssetRegistryHelpers::GetAsset(const struct FAssetData& InAssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetAsset");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetAsset");
 
 	Params::AssetRegistryHelpers_GetAsset Parms{};
 
@@ -81,10 +75,7 @@ class UObject* UAssetRegistryHelpers::GetAsset(const struct FAssetData& InAssetD
 
 TScriptInterface<class IAssetRegistry> UAssetRegistryHelpers::GetAssetRegistry()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetAssetRegistry");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetAssetRegistry");
 
 	Params::AssetRegistryHelpers_GetAssetRegistry Parms{};
 
@@ -107,10 +98,7 @@ TScriptInterface<class IAssetRegistry> UAssetRegistryHelpers::GetAssetRegistry()
 
 class UClass* UAssetRegistryHelpers::GetClass(const struct FAssetData& InAssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetClass");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetClass");
 
 	Params::AssetRegistryHelpers_GetClass Parms{};
 
@@ -135,10 +123,7 @@ class UClass* UAssetRegistryHelpers::GetClass(const struct FAssetData& InAssetDa
 
 class FString UAssetRegistryHelpers::GetExportTextName(const struct FAssetData& InAssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetExportTextName");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetExportTextName");
 
 	Params::AssetRegistryHelpers_GetExportTextName Parms{};
 
@@ -163,10 +148,7 @@ class FString UAssetRegistryHelpers::GetExportTextName(const struct FAssetData& 
 
 class FString UAssetRegistryHelpers::GetFullName(const struct FAssetData& InAssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetFullName");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetFullName");
 
 	Params::AssetRegistryHelpers_GetFullName Parms{};
 
@@ -193,10 +175,7 @@ class FString UAssetRegistryHelpers::GetFullName(const struct FAssetData& InAsse
 
 bool UAssetRegistryHelpers::GetTagValue(const struct FAssetData& InAssetData, const class FName& InTagName, class FString* OutTagValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetTagValue");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "GetTagValue");
 
 	Params::AssetRegistryHelpers_GetTagValue Parms{};
 
@@ -225,10 +204,7 @@ bool UAssetRegistryHelpers::GetTagValue(const struct FAssetData& InAssetData, co
 
 bool UAssetRegistryHelpers::IsAssetLoaded(const struct FAssetData& InAssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "IsAssetLoaded");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "IsAssetLoaded");
 
 	Params::AssetRegistryHelpers_IsAssetLoaded Parms{};
 
@@ -253,10 +229,7 @@ bool UAssetRegistryHelpers::IsAssetLoaded(const struct FAssetData& InAssetData)
 
 bool UAssetRegistryHelpers::IsRedirector(const struct FAssetData& InAssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "IsRedirector");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "IsRedirector");
 
 	Params::AssetRegistryHelpers_IsRedirector Parms{};
 
@@ -281,10 +254,7 @@ bool UAssetRegistryHelpers::IsRedirector(const struct FAssetData& InAssetData)
 
 bool UAssetRegistryHelpers::IsUAsset(const struct FAssetData& InAssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "IsUAsset");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "IsUAsset");
 
 	Params::AssetRegistryHelpers_IsUAsset Parms{};
 
@@ -309,10 +279,7 @@ bool UAssetRegistryHelpers::IsUAsset(const struct FAssetData& InAssetData)
 
 bool UAssetRegistryHelpers::IsValid(const struct FAssetData& InAssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "IsValid");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "IsValid");
 
 	Params::AssetRegistryHelpers_IsValid Parms{};
 
@@ -338,10 +305,7 @@ bool UAssetRegistryHelpers::IsValid(const struct FAssetData& InAssetData)
 
 struct FARFilter UAssetRegistryHelpers::SetFilterTagsAndValues(const struct FARFilter& InFilter, const TArray<struct FTagAndValue>& InTagsAndValues)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "SetFilterTagsAndValues");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "SetFilterTagsAndValues");
 
 	Params::AssetRegistryHelpers_SetFilterTagsAndValues Parms{};
 
@@ -367,10 +331,7 @@ struct FARFilter UAssetRegistryHelpers::SetFilterTagsAndValues(const struct FARF
 
 struct FSoftObjectPath UAssetRegistryHelpers::ToSoftObjectPath(const struct FAssetData& InAssetData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AssetRegistryHelpers", "ToSoftObjectPath");
+	class UFunction* Func = StaticClass()->GetFunction("AssetRegistryHelpers", "ToSoftObjectPath");
 
 	Params::AssetRegistryHelpers_ToSoftObjectPath Parms{};
 
@@ -394,10 +355,7 @@ struct FSoftObjectPath UAssetRegistryHelpers::ToSoftObjectPath(const struct FAss
 
 void IAssetRegistry::PrioritizeSearchPath(const class FString& PathToPrioritize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "PrioritizeSearchPath");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "PrioritizeSearchPath");
 
 	Params::AssetRegistry_PrioritizeSearchPath Parms{};
 
@@ -420,10 +378,7 @@ void IAssetRegistry::PrioritizeSearchPath(const class FString& PathToPrioritize)
 
 void IAssetRegistry::ScanFilesSynchronous(const TArray<class FString>& InFilePaths, bool bForceRescan)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "ScanFilesSynchronous");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "ScanFilesSynchronous");
 
 	Params::AssetRegistry_ScanFilesSynchronous Parms{};
 
@@ -446,10 +401,7 @@ void IAssetRegistry::ScanFilesSynchronous(const TArray<class FString>& InFilePat
 
 void IAssetRegistry::ScanModifiedAssetFiles(const TArray<class FString>& InFilePaths)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "ScanModifiedAssetFiles");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "ScanModifiedAssetFiles");
 
 	Params::AssetRegistry_ScanModifiedAssetFiles Parms{};
 
@@ -472,10 +424,7 @@ void IAssetRegistry::ScanModifiedAssetFiles(const TArray<class FString>& InFileP
 
 void IAssetRegistry::ScanPathsSynchronous(const TArray<class FString>& InPaths, bool bForceRescan)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "ScanPathsSynchronous");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "ScanPathsSynchronous");
 
 	Params::AssetRegistry_ScanPathsSynchronous Parms{};
 
@@ -498,10 +447,7 @@ void IAssetRegistry::ScanPathsSynchronous(const TArray<class FString>& InPaths, 
 
 void IAssetRegistry::SearchAllAssets(bool bSynchronousSearch)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "SearchAllAssets");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "SearchAllAssets");
 
 	Params::AssetRegistry_SearchAllAssets Parms{};
 
@@ -525,10 +471,7 @@ void IAssetRegistry::SearchAllAssets(bool bSynchronousSearch)
 
 bool IAssetRegistry::GetAllAssets(TArray<struct FAssetData>* OutAssetData, bool bIncludeOnlyOnDiskAssets) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAllAssets");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAllAssets");
 
 	Params::AssetRegistry_GetAllAssets Parms{};
 
@@ -555,10 +498,7 @@ bool IAssetRegistry::GetAllAssets(TArray<struct FAssetData>* OutAssetData, bool 
 
 void IAssetRegistry::GetAllCachedPaths(TArray<class FString>* OutPathList) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAllCachedPaths");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAllCachedPaths");
 
 	Params::AssetRegistry_GetAllCachedPaths Parms{};
 
@@ -583,10 +523,7 @@ void IAssetRegistry::GetAllCachedPaths(TArray<class FString>* OutPathList) const
 
 struct FAssetData IAssetRegistry::GetAssetByObjectPath(const class FName ObjectPath, bool bIncludeOnlyOnDiskAssets) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssetByObjectPath");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssetByObjectPath");
 
 	Params::AssetRegistry_GetAssetByObjectPath Parms{};
 
@@ -613,10 +550,7 @@ struct FAssetData IAssetRegistry::GetAssetByObjectPath(const class FName ObjectP
 
 bool IAssetRegistry::GetAssets(const struct FARFilter& Filter, TArray<struct FAssetData>* OutAssetData) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssets");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssets");
 
 	Params::AssetRegistry_GetAssets Parms{};
 
@@ -646,10 +580,7 @@ bool IAssetRegistry::GetAssets(const struct FARFilter& Filter, TArray<struct FAs
 
 bool IAssetRegistry::GetAssetsByClass(class FName ClassName, TArray<struct FAssetData>* OutAssetData, bool bSearchSubClasses) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssetsByClass");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssetsByClass");
 
 	Params::AssetRegistry_GetAssetsByClass Parms{};
 
@@ -680,10 +611,7 @@ bool IAssetRegistry::GetAssetsByClass(class FName ClassName, TArray<struct FAsse
 
 bool IAssetRegistry::GetAssetsByPackageName(class FName PackageName, TArray<struct FAssetData>* OutAssetData, bool bIncludeOnlyOnDiskAssets) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssetsByPackageName");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssetsByPackageName");
 
 	Params::AssetRegistry_GetAssetsByPackageName Parms{};
 
@@ -715,10 +643,7 @@ bool IAssetRegistry::GetAssetsByPackageName(class FName PackageName, TArray<stru
 
 bool IAssetRegistry::GetAssetsByPath(class FName PackagePath, TArray<struct FAssetData>* OutAssetData, bool bRecursive, bool bIncludeOnlyOnDiskAssets) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssetsByPath");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetAssetsByPath");
 
 	Params::AssetRegistry_GetAssetsByPath Parms{};
 
@@ -749,10 +674,7 @@ bool IAssetRegistry::GetAssetsByPath(class FName PackagePath, TArray<struct FAss
 
 void IAssetRegistry::GetSubPaths(const class FString& InBasePath, TArray<class FString>* OutPathList, bool bInRecurse) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetSubPaths");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "GetSubPaths");
 
 	Params::AssetRegistry_GetSubPaths Parms{};
 
@@ -780,10 +702,7 @@ void IAssetRegistry::GetSubPaths(const class FString& InBasePath, TArray<class F
 
 bool IAssetRegistry::HasAssets(const class FName PackagePath, const bool bRecursive) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "HasAssets");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "HasAssets");
 
 	Params::AssetRegistry_HasAssets Parms{};
 
@@ -808,10 +727,7 @@ bool IAssetRegistry::HasAssets(const class FName PackagePath, const bool bRecurs
 
 bool IAssetRegistry::IsLoadingAssets() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "IsLoadingAssets");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "IsLoadingAssets");
 
 	Params::AssetRegistry_IsLoadingAssets Parms{};
 
@@ -836,10 +752,7 @@ bool IAssetRegistry::IsLoadingAssets() const
 
 bool IAssetRegistry::K2_GetDependencies(class FName PackageName, const struct FAssetRegistryDependencyOptions& DependencyOptions, TArray<class FName>* OutDependencies) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "K2_GetDependencies");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "K2_GetDependencies");
 
 	Params::AssetRegistry_K2_GetDependencies Parms{};
 
@@ -870,10 +783,7 @@ bool IAssetRegistry::K2_GetDependencies(class FName PackageName, const struct FA
 
 bool IAssetRegistry::K2_GetReferencers(class FName PackageName, const struct FAssetRegistryDependencyOptions& ReferenceOptions, TArray<class FName>* OutReferencers) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "K2_GetReferencers");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "K2_GetReferencers");
 
 	Params::AssetRegistry_K2_GetReferencers Parms{};
 
@@ -902,10 +812,7 @@ bool IAssetRegistry::K2_GetReferencers(class FName PackageName, const struct FAs
 
 void IAssetRegistry::RunAssetsThroughFilter(TArray<struct FAssetData>& AssetDataList, const struct FARFilter& Filter) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "RunAssetsThroughFilter");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "RunAssetsThroughFilter");
 
 	Params::AssetRegistry_RunAssetsThroughFilter Parms{};
 
@@ -931,10 +838,7 @@ void IAssetRegistry::RunAssetsThroughFilter(TArray<struct FAssetData>& AssetData
 
 void IAssetRegistry::UseFilterToExcludeAssets(TArray<struct FAssetData>& AssetDataList, const struct FARFilter& Filter) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("AssetRegistry", "UseFilterToExcludeAssets");
+	class UFunction* Func = AsUObject()->Class->GetFunction("AssetRegistry", "UseFilterToExcludeAssets");
 
 	Params::AssetRegistry_UseFilterToExcludeAssets Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UArenaLeaderboard_C::ExecuteUbergraph_ArenaLeaderboard(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "ExecuteUbergraph_ArenaLeaderboard");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "ExecuteUbergraph_ArenaLeaderboard");
 
 	Params::ArenaLeaderboard_C_ExecuteUbergraph_ArenaLeaderboard Parms{};
 
@@ -41,10 +38,7 @@ void UArenaLeaderboard_C::ExecuteUbergraph_ArenaLeaderboard(int32 EntryPoint)
 
 void UArenaLeaderboard_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UArenaLeaderboard_C::Construct()
 
 void UArenaLeaderboard_C::Item_Double_Clicked(class UObject* Item)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "Item Double-Clicked");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "Item Double-Clicked");
 
 	Params::ArenaLeaderboard_C_Item_Double_Clicked Parms{};
 
@@ -75,10 +66,7 @@ void UArenaLeaderboard_C::Item_Double_Clicked(class UObject* Item)
 
 void UArenaLeaderboard_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UArenaLeaderboard_C::BP_OnDeactivated()
 
 void UArenaLeaderboard_C::OnColorize(const struct FFortTournamentDisplayInfo& ColorInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "OnColorize");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "OnColorize");
 
 	Params::ArenaLeaderboard_C_OnColorize Parms{};
 
@@ -112,10 +97,7 @@ void UArenaLeaderboard_C::OnColorize(const struct FFortTournamentDisplayInfo& Co
 
 void UArenaLeaderboard_C::SetupForEvent(const class FString& EventId, const class FString& EventWindowId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "SetupForEvent");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "SetupForEvent");
 
 	Params::ArenaLeaderboard_C_SetupForEvent Parms{};
 
@@ -133,10 +115,7 @@ void UArenaLeaderboard_C::SetupForEvent(const class FString& EventId, const clas
 
 void UArenaLeaderboard_C::ShowMyStats(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "ShowMyStats");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "ShowMyStats");
 
 	Params::ArenaLeaderboard_C_ShowMyStats Parms{};
 
@@ -151,10 +130,7 @@ void UArenaLeaderboard_C::ShowMyStats(class UCommonButton* Button)
 
 void UArenaLeaderboard_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +143,7 @@ void UArenaLeaderboard_C::OnInitialized()
 
 void UArenaLeaderboard_C::OnLeaderboardEntrySelected(const class UFortEventLeaderboardEntryData* EntryData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "OnLeaderboardEntrySelected");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "OnLeaderboardEntrySelected");
 
 	Params::ArenaLeaderboard_C_OnLeaderboardEntrySelected Parms{};
 
@@ -188,10 +161,7 @@ void UArenaLeaderboard_C::OnLeaderboardEntrySelected(const class UFortEventLeade
 
 void UArenaLeaderboard_C::Initialize_Children_For_Event(const class FString& Event_Id, const class FString& Event_Window_Id)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaLeaderboard_C", "Initialize Children For Event");
+	class UFunction* Func = Class->GetFunction("ArenaLeaderboard_C", "Initialize Children For Event");
 
 	Params::ArenaLeaderboard_C_Initialize_Children_For_Event Parms{};
 

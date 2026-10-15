@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBattlePassItemTracker_C::ExecuteUbergraph_BattlePassItemTracker(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassItemTracker_C", "ExecuteUbergraph_BattlePassItemTracker");
+	class UFunction* Func = Class->GetFunction("BattlePassItemTracker_C", "ExecuteUbergraph_BattlePassItemTracker");
 
 	Params::BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker Parms{};
 
@@ -41,10 +38,7 @@ void UBattlePassItemTracker_C::ExecuteUbergraph_BattlePassItemTracker(int32 Entr
 
 void UBattlePassItemTracker_C::OnInterpStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassItemTracker_C", "OnInterpStarted");
+	class UFunction* Func = Class->GetFunction("BattlePassItemTracker_C", "OnInterpStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UBattlePassItemTracker_C::OnInterpStarted()
 
 void UBattlePassItemTracker_C::OnInterpEnded(class UCommonNumericTextBlock* NumericTextBlock, const bool HadCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassItemTracker_C", "OnInterpEnded");
+	class UFunction* Func = Class->GetFunction("BattlePassItemTracker_C", "OnInterpEnded");
 
 	Params::BattlePassItemTracker_C_OnInterpEnded Parms{};
 
@@ -77,10 +68,7 @@ void UBattlePassItemTracker_C::OnInterpEnded(class UCommonNumericTextBlock* Nume
 
 void UBattlePassItemTracker_C::HandleIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassItemTracker_C", "HandleIntro");
+	class UFunction* Func = Class->GetFunction("BattlePassItemTracker_C", "HandleIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UBattlePassItemTracker_C::HandleIntro()
 
 void UBattlePassItemTracker_C::HandleIncrease()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassItemTracker_C", "HandleIncrease");
+	class UFunction* Func = Class->GetFunction("BattlePassItemTracker_C", "HandleIncrease");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UBattlePassItemTracker_C::HandleIncrease()
 
 void UBattlePassItemTracker_C::HandleNumberVisible()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassItemTracker_C", "HandleNumberVisible");
+	class UFunction* Func = Class->GetFunction("BattlePassItemTracker_C", "HandleNumberVisible");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void UBattlePassItemTracker_C::HandleNumberVisible()
 
 void UBattlePassItemTracker_C::HandleInitialState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassItemTracker_C", "HandleInitialState");
+	class UFunction* Func = Class->GetFunction("BattlePassItemTracker_C", "HandleInitialState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

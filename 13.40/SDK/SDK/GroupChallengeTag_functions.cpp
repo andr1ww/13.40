@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGroupChallengeTag_C::ExecuteUbergraph_GroupChallengeTag(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GroupChallengeTag_C", "ExecuteUbergraph_GroupChallengeTag");
+	class UFunction* Func = Class->GetFunction("GroupChallengeTag_C", "ExecuteUbergraph_GroupChallengeTag");
 
 	Params::GroupChallengeTag_C_ExecuteUbergraph_GroupChallengeTag Parms{};
 
@@ -43,10 +40,7 @@ void UGroupChallengeTag_C::ExecuteUbergraph_GroupChallengeTag(int32 EntryPoint)
 
 void UGroupChallengeTag_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GroupChallengeTag_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("GroupChallengeTag_C", "PreConstruct");
 
 	Params::GroupChallengeTag_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UGroupChallengeTag_C::PreConstruct(bool IsDesignTime)
 
 void UGroupChallengeTag_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GroupChallengeTag_C", "Construct");
+	class UFunction* Func = Class->GetFunction("GroupChallengeTag_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

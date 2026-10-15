@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void IItemAnimLayerInterface_C::ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam, struct FPoseLink* ItemUpperBody_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemUpperBody");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemUpperBody");
 
 	Params::ItemAnimLayerInterface_C_ItemUpperBody Parms{};
 
@@ -50,10 +47,7 @@ void IItemAnimLayerInterface_C::ItemUpperBody(const struct FPoseLink& InPoseUppe
 
 void IItemAnimLayerInterface_C::ItemFullBodySprint(const struct FPoseLink& InPoseSprint, struct FPoseLink* ItemFullBodySprint_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFullBodySprint");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFullBodySprint");
 
 	Params::ItemAnimLayerInterface_C_ItemFullBodySprint Parms{};
 
@@ -74,10 +68,7 @@ void IItemAnimLayerInterface_C::ItemFullBodySprint(const struct FPoseLink& InPos
 
 void IItemAnimLayerInterface_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdleAdditive, struct FPoseLink* ItemIdleAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemIdleAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemIdleAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemIdleAdditive Parms{};
 
@@ -97,10 +88,7 @@ void IItemAnimLayerInterface_C::ItemIdleAdditive(const struct FPoseLink& InPoseI
 
 void IItemAnimLayerInterface_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCrouchTurningAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemCrouchTurningAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemCrouchTurningAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemCrouchTurningAdditive Parms{};
 
@@ -118,10 +106,7 @@ void IItemAnimLayerInterface_C::ItemCrouchTurningAdditive(struct FPoseLink* Item
 
 void IItemAnimLayerInterface_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSliding_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSlopeSliding");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSlopeSliding");
 
 	Params::ItemAnimLayerInterface_C_ItemSlopeSliding Parms{};
 
@@ -139,10 +124,7 @@ void IItemAnimLayerInterface_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSlid
 
 void IItemAnimLayerInterface_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJumpUpAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJumpUpAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJumpUpAdditive Parms{};
 
@@ -160,10 +142,7 @@ void IItemAnimLayerInterface_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpA
 
 void IItemAnimLayerInterface_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJumpLoopAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJumpLoopAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJumpLoopAdditive Parms{};
 
@@ -181,10 +160,7 @@ void IItemAnimLayerInterface_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpL
 
 void IItemAnimLayerInterface_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFallAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFallAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemFallAdditive Parms{};
 
@@ -202,10 +178,7 @@ void IItemAnimLayerInterface_C::ItemFallAdditive(struct FPoseLink* ItemFallAddit
 
 void IItemAnimLayerInterface_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLandAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFallLandAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFallLandAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemFallLandAdditive Parms{};
 
@@ -223,10 +196,7 @@ void IItemAnimLayerInterface_C::ItemFallLandAdditive(struct FPoseLink* ItemFallL
 
 void IItemAnimLayerInterface_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJetPackStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJetPackStartAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJetPackStartAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJetPackStartAdditive Parms{};
 
@@ -244,10 +214,7 @@ void IItemAnimLayerInterface_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJ
 
 void IItemAnimLayerInterface_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetPackJumpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJetPackJumpAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJetPackJumpAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJetPackJumpAdditive Parms{};
 
@@ -265,10 +232,7 @@ void IItemAnimLayerInterface_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJe
 
 void IItemAnimLayerInterface_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZipLineStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemZipLineStartAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemZipLineStartAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemZipLineStartAdditive Parms{};
 
@@ -286,10 +250,7 @@ void IItemAnimLayerInterface_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZ
 
 void IItemAnimLayerInterface_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFlyModeStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFlyModeStartAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFlyModeStartAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemFlyModeStartAdditive Parms{};
 
@@ -307,10 +268,7 @@ void IItemAnimLayerInterface_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemF
 
 void IItemAnimLayerInterface_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyModeLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFlyModeLoopAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFlyModeLoopAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemFlyModeLoopAdditive Parms{};
 
@@ -329,10 +287,7 @@ void IItemAnimLayerInterface_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFl
 
 void IItemAnimLayerInterface_C::ItemJogStartAdditive(const struct FPoseLink& InPoseJogStartAdditive, struct FPoseLink* ItemJogStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogStartAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogStartAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJogStartAdditive Parms{};
 
@@ -353,10 +308,7 @@ void IItemAnimLayerInterface_C::ItemJogStartAdditive(const struct FPoseLink& InP
 
 void IItemAnimLayerInterface_C::ItemJogStopAdditive(const struct FPoseLink& InPoseJogStopAdditive, struct FPoseLink* ItemJogStopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogStopAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogStopAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJogStopAdditive Parms{};
 
@@ -377,10 +329,7 @@ void IItemAnimLayerInterface_C::ItemJogStopAdditive(const struct FPoseLink& InPo
 
 void IItemAnimLayerInterface_C::ItemJogPrePivotAdditive(const struct FPoseLink& InPosePrePivotAdditive, struct FPoseLink* ItemJogPrePivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogPrePivotAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogPrePivotAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJogPrePivotAdditive Parms{};
 
@@ -401,10 +350,7 @@ void IItemAnimLayerInterface_C::ItemJogPrePivotAdditive(const struct FPoseLink& 
 
 void IItemAnimLayerInterface_C::ItemJogPostPivotAdditive(const struct FPoseLink& InPosePostPivotAdditive, struct FPoseLink* ItemJogPostPivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogPostPivotAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogPostPivotAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJogPostPivotAdditive Parms{};
 
@@ -425,10 +371,7 @@ void IItemAnimLayerInterface_C::ItemJogPostPivotAdditive(const struct FPoseLink&
 
 void IItemAnimLayerInterface_C::ItemLowerBodyMovement(const struct FPoseLink& InPoseLowerBodyMovement, struct FPoseLink* ItemLowerBodyMovement_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyMovement");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyMovement");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyMovement Parms{};
 
@@ -449,10 +392,7 @@ void IItemAnimLayerInterface_C::ItemLowerBodyMovement(const struct FPoseLink& In
 
 void IItemAnimLayerInterface_C::ItemLowerBodyLeanAdditive(const struct FPoseLink& InPoseLowerBodyLeanAdditive, struct FPoseLink* ItemLowerBodyLeanAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyLeanAdditive");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyLeanAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyLeanAdditive Parms{};
 
@@ -473,10 +413,7 @@ void IItemAnimLayerInterface_C::ItemLowerBodyLeanAdditive(const struct FPoseLink
 
 void IItemAnimLayerInterface_C::ItemLowerBodyJogStart(const struct FPoseLink& InPoseLowerBodyJogStart, struct FPoseLink* ItemLowerBodyJogStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogStart");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogStart");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyJogStart Parms{};
 
@@ -497,10 +434,7 @@ void IItemAnimLayerInterface_C::ItemLowerBodyJogStart(const struct FPoseLink& In
 
 void IItemAnimLayerInterface_C::ItemLowerBodyJogStop(const struct FPoseLink& InPoseLowerBodyJogStop, struct FPoseLink* ItemLowerBodyJogStop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogStop");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogStop");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyJogStop Parms{};
 
@@ -521,10 +455,7 @@ void IItemAnimLayerInterface_C::ItemLowerBodyJogStop(const struct FPoseLink& InP
 
 void IItemAnimLayerInterface_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& InPoseLowerBodyJogPrePivot, struct FPoseLink* ItemLowerBodyJogPrePivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogPrePivot");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogPrePivot");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyJogPrePivot Parms{};
 
@@ -545,10 +476,7 @@ void IItemAnimLayerInterface_C::ItemLowerBodyJogPrePivot(const struct FPoseLink&
 
 void IItemAnimLayerInterface_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& InPoseLowerBodyJogPostPivot, struct FPoseLink* ItemLowerBodyJogPostPivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogPostPivot");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogPostPivot");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyJogPostPivot Parms{};
 
@@ -569,10 +497,7 @@ void IItemAnimLayerInterface_C::ItemLowerBodyJogPostPivot(const struct FPoseLink
 
 void IItemAnimLayerInterface_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRelaxedEntry, struct FPoseLink* ItemRelaxedEntry_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemRelaxedEntry");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemRelaxedEntry");
 
 	Params::ItemAnimLayerInterface_C_ItemRelaxedEntry Parms{};
 
@@ -592,10 +517,7 @@ void IItemAnimLayerInterface_C::ItemRelaxedEntry(const struct FPoseLink& InPoseR
 
 void IItemAnimLayerInterface_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJumpStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpStart");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpStart");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpStart Parms{};
 
@@ -613,10 +535,7 @@ void IItemAnimLayerInterface_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJump
 
 void IItemAnimLayerInterface_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwimJumpStartLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpStartLoop");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpStartLoop");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpStartLoop Parms{};
 
@@ -634,10 +553,7 @@ void IItemAnimLayerInterface_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwim
 
 void IItemAnimLayerInterface_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJumpFallLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpFallLoop");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpFallLoop");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpFallLoop Parms{};
 
@@ -655,10 +571,7 @@ void IItemAnimLayerInterface_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJ
 
 void IItemAnimLayerInterface_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSwimJumpSurfaceLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpSurfaceLoop");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpSurfaceLoop");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpSurfaceLoop Parms{};
 
@@ -676,10 +589,7 @@ void IItemAnimLayerInterface_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSw
 
 void IItemAnimLayerInterface_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwimJumpSurfaceEnd_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpSurfaceEnd");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpSurfaceEnd");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpSurfaceEnd Parms{};
 
@@ -698,10 +608,7 @@ void IItemAnimLayerInterface_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwi
 
 void IItemAnimLayerInterface_C::ItemSkeletalControl(const struct FPoseLink& InPose, struct FPoseLink* ItemSkeletalControl_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSkeletalControl");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSkeletalControl");
 
 	Params::ItemAnimLayerInterface_C_ItemSkeletalControl Parms{};
 
@@ -726,10 +633,7 @@ void IItemAnimLayerInterface_C::ItemSkeletalControl(const struct FPoseLink& InPo
 
 void IItemAnimLayerInterface_C::ItemAimOffset(const struct FPoseLink& InPose_AimOffset, float AimOffsetAlpha, float Yaw, float Pitch, const struct FPoseLink& InPose_UpperLowerPreMeleeAO, struct FPoseLink* ItemAimOffset_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemAimOffset");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemAimOffset");
 
 	Params::ItemAnimLayerInterface_C_ItemAimOffset Parms{};
 
@@ -754,10 +658,7 @@ void IItemAnimLayerInterface_C::ItemAimOffset(const struct FPoseLink& InPose_Aim
 
 void IItemAnimLayerInterface_C::ItemFullBodyOverride(const struct FPoseLink& InPoseFullBody, struct FPoseLink* ItemFullBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFullBodyOverride");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFullBodyOverride");
 
 	Params::ItemAnimLayerInterface_C_ItemFullBodyOverride Parms{};
 
@@ -778,10 +679,7 @@ void IItemAnimLayerInterface_C::ItemFullBodyOverride(const struct FPoseLink& InP
 
 void IItemAnimLayerInterface_C::ItemPreIK(const struct FPoseLink& InPose_PreIK, struct FPoseLink* ItemPreIK_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemPreIK");
+	class UFunction* Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemPreIK");
 
 	Params::ItemAnimLayerInterface_C_ItemPreIK Parms{};
 

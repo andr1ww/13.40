@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortLayeredAudioComponent_Glider_C::ExecuteUbergraph_FortLayeredAudioComponent_Glider(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortLayeredAudioComponent_Glider_C", "ExecuteUbergraph_FortLayeredAudioComponent_Glider");
+	class UFunction* Func = Class->GetFunction("FortLayeredAudioComponent_Glider_C", "ExecuteUbergraph_FortLayeredAudioComponent_Glider");
 
 	Params::FortLayeredAudioComponent_Glider_C_ExecuteUbergraph_FortLayeredAudioComponent_Glider Parms{};
 
@@ -44,10 +41,7 @@ void UFortLayeredAudioComponent_Glider_C::ExecuteUbergraph_FortLayeredAudioCompo
 
 void UFortLayeredAudioComponent_Glider_C::Update_Glider_Audio(float ForwardDot, float RightDot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortLayeredAudioComponent_Glider_C", "Update Glider Audio");
+	class UFunction* Func = Class->GetFunction("FortLayeredAudioComponent_Glider_C", "Update Glider Audio");
 
 	Params::FortLayeredAudioComponent_Glider_C_Update_Glider_Audio Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPendingAccountMergeNotification_C::ExecuteUbergraph_PendingAccountMergeNotification(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PendingAccountMergeNotification_C", "ExecuteUbergraph_PendingAccountMergeNotification");
+	class UFunction* Func = Class->GetFunction("PendingAccountMergeNotification_C", "ExecuteUbergraph_PendingAccountMergeNotification");
 
 	Params::PendingAccountMergeNotification_C_ExecuteUbergraph_PendingAccountMergeNotification Parms{};
 
@@ -43,10 +40,7 @@ void UPendingAccountMergeNotification_C::ExecuteUbergraph_PendingAccountMergeNot
 
 void UPendingAccountMergeNotification_C::OnInputChanged(ECommonInputType bNewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PendingAccountMergeNotification_C", "OnInputChanged");
+	class UFunction* Func = Class->GetFunction("PendingAccountMergeNotification_C", "OnInputChanged");
 
 	Params::PendingAccountMergeNotification_C_OnInputChanged Parms{};
 
@@ -61,10 +55,7 @@ void UPendingAccountMergeNotification_C::OnInputChanged(ECommonInputType bNewInp
 
 void UPendingAccountMergeNotification_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PendingAccountMergeNotification_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("PendingAccountMergeNotification_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UPendingAccountMergeNotification_C::Destruct()
 
 void UPendingAccountMergeNotification_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UPendingAccountMergeNotification_C::BP_OnClicked()
 
 void UPendingAccountMergeNotification_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UPendingAccountMergeNotification_C::BP_OnUnhovered()
 
 void UPendingAccountMergeNotification_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void UPendingAccountMergeNotification_C::BP_OnHovered()
 
 void UPendingAccountMergeNotification_C::Hovered(bool IsHovered_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PendingAccountMergeNotification_C", "Hovered");
+	class UFunction* Func = Class->GetFunction("PendingAccountMergeNotification_C", "Hovered");
 
 	Params::PendingAccountMergeNotification_C_Hovered Parms{};
 
@@ -137,10 +116,7 @@ void UPendingAccountMergeNotification_C::Hovered(bool IsHovered_0)
 
 void UPendingAccountMergeNotification_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PendingAccountMergeNotification_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PendingAccountMergeNotification_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

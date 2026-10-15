@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemSeriesOrRarity_C::UpdateItemDefinition(class UFortItemDefinition* ItemDefinition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemSeriesOrRarity_C", "UpdateItemDefinition");
+	class UFunction* Func = Class->GetFunction("ItemSeriesOrRarity_C", "UpdateItemDefinition");
 
 	Params::ItemSeriesOrRarity_C_UpdateItemDefinition Parms{};
 

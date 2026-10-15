@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaDirectAquisitionStyleScreen_C::ExecuteUbergraph_AthenaDirectAquisitionStyleScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "ExecuteUbergraph_AthenaDirectAquisitionStyleScreen");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "ExecuteUbergraph_AthenaDirectAquisitionStyleScreen");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_ExecuteUbergraph_AthenaDirectAquisitionStyleScreen Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaDirectAquisitionStyleScreen_C::ExecuteUbergraph_AthenaDirectAquisiti
 
 void UAthenaDirectAquisitionStyleScreen_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -65,10 +59,7 @@ void UAthenaDirectAquisitionStyleScreen_C::BndEvt__CloseButton_K2Node_ComponentB
 
 void UAthenaDirectAquisitionStyleScreen_C::OnVariantChanged(const struct FGameplayTag& VariantChannel, const struct FGameplayTag& VariantTag, bool IsOwned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "OnVariantChanged");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "OnVariantChanged");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_OnVariantChanged Parms{};
 
@@ -87,10 +78,7 @@ void UAthenaDirectAquisitionStyleScreen_C::OnVariantChanged(const struct FGamepl
 
 void UAthenaDirectAquisitionStyleScreen_C::BndEvt__Button_Next_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BndEvt__Button_Next_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BndEvt__Button_Next_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_BndEvt__Button_Next_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -107,10 +95,7 @@ void UAthenaDirectAquisitionStyleScreen_C::BndEvt__Button_Next_K2Node_ComponentB
 
 void UAthenaDirectAquisitionStyleScreen_C::BndEvt__Button_Previous_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BndEvt__Button_Previous_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BndEvt__Button_Previous_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_BndEvt__Button_Previous_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -125,10 +110,7 @@ void UAthenaDirectAquisitionStyleScreen_C::BndEvt__Button_Previous_K2Node_Compon
 
 void UAthenaDirectAquisitionStyleScreen_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +121,7 @@ void UAthenaDirectAquisitionStyleScreen_C::BP_OnDeactivated()
 
 void UAthenaDirectAquisitionStyleScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +132,7 @@ void UAthenaDirectAquisitionStyleScreen_C::BP_OnActivated()
 
 void UAthenaDirectAquisitionStyleScreen_C::OnOfferSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "OnOfferSet");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "OnOfferSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +145,7 @@ void UAthenaDirectAquisitionStyleScreen_C::OnOfferSet()
 
 void UAthenaDirectAquisitionStyleScreen_C::HandleBack(bool* bPassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "HandleBack");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_HandleBack Parms{};
 
@@ -190,10 +163,7 @@ void UAthenaDirectAquisitionStyleScreen_C::HandleBack(bool* bPassThrough)
 
 class UWidget* UAthenaDirectAquisitionStyleScreen_C::GetWidgetForFramingViewedItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "GetWidgetForFramingViewedItem");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "GetWidgetForFramingViewedItem");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_GetWidgetForFramingViewedItem Parms{};
 
@@ -212,10 +182,7 @@ class UWidget* UAthenaDirectAquisitionStyleScreen_C::GetWidgetForFramingViewedIt
 
 void UAthenaDirectAquisitionStyleScreen_C::UpdateFromVariant(const struct FGameplayTag& VariantChannelTag, const struct FGameplayTag& VariantTag, bool IsOwned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "UpdateFromVariant");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "UpdateFromVariant");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_UpdateFromVariant Parms{};
 
@@ -232,10 +199,7 @@ void UAthenaDirectAquisitionStyleScreen_C::UpdateFromVariant(const struct FGamep
 
 void UAthenaDirectAquisitionStyleScreen_C::ScanOfferForVariants()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "ScanOfferForVariants");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "ScanOfferForVariants");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -248,10 +212,7 @@ void UAthenaDirectAquisitionStyleScreen_C::ScanOfferForVariants()
 
 void UAthenaDirectAquisitionStyleScreen_C::SwitchToNextItemInOffer(int32 Direction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "SwitchToNextItemInOffer");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "SwitchToNextItemInOffer");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_SwitchToNextItemInOffer Parms{};
 
@@ -266,10 +227,7 @@ void UAthenaDirectAquisitionStyleScreen_C::SwitchToNextItemInOffer(int32 Directi
 
 void UAthenaDirectAquisitionStyleScreen_C::RebuildStylesFromOffer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "RebuildStylesFromOffer");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "RebuildStylesFromOffer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -282,10 +240,7 @@ void UAthenaDirectAquisitionStyleScreen_C::RebuildStylesFromOffer()
 
 class UFortAccountItemDefinition* UAthenaDirectAquisitionStyleScreen_C::GetOfferGrantedItemDef()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "GetOfferGrantedItemDef");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "GetOfferGrantedItemDef");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_GetOfferGrantedItemDef Parms{};
 
@@ -300,10 +255,7 @@ class UFortAccountItemDefinition* UAthenaDirectAquisitionStyleScreen_C::GetOffer
 
 void UAthenaDirectAquisitionStyleScreen_C::SetupCharacterItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "SetupCharacterItem");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "SetupCharacterItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -316,10 +268,7 @@ void UAthenaDirectAquisitionStyleScreen_C::SetupCharacterItem()
 
 void UAthenaDirectAquisitionStyleScreen_C::ViewVaultItemWithBackpack(class UFortItemDefinition* ItemToRepresent_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "ViewVaultItemWithBackpack");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAquisitionStyleScreen_C", "ViewVaultItemWithBackpack");
 
 	Params::AthenaDirectAquisitionStyleScreen_C_ViewVaultItemWithBackpack Parms{};
 

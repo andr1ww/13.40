@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreativeServerFriend_C::InitData(const class FString& FriendName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerFriend_C", "InitData");
+	class UFunction* Func = Class->GetFunction("CreativeServerFriend_C", "InitData");
 
 	Params::CreativeServerFriend_C_InitData Parms{};
 

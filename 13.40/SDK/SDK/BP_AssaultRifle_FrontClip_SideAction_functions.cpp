@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_AssaultRifle_FrontClip_SideAction_C::ExecuteUbergraph_BP_AssaultRifle_FrontClip_SideAction(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AssaultRifle_FrontClip_SideAction_C", "ExecuteUbergraph_BP_AssaultRifle_FrontClip_SideAction");
+	class UFunction* Func = Class->GetFunction("BP_AssaultRifle_FrontClip_SideAction_C", "ExecuteUbergraph_BP_AssaultRifle_FrontClip_SideAction");
 
 	Params::BP_AssaultRifle_FrontClip_SideAction_C_ExecuteUbergraph_BP_AssaultRifle_FrontClip_SideAction Parms{};
 
@@ -43,10 +40,7 @@ void UBP_AssaultRifle_FrontClip_SideAction_C::ExecuteUbergraph_BP_AssaultRifle_F
 
 void UBP_AssaultRifle_FrontClip_SideAction_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AssaultRifle_FrontClip_SideAction_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("BP_AssaultRifle_FrontClip_SideAction_C", "AnimGraph");
 
 	Params::BP_AssaultRifle_FrontClip_SideAction_C_AnimGraph Parms{};
 

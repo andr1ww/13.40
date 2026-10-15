@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTeamMemberPedestal_XPBoostInfo_C::ExecuteUbergraph_TeamMemberPedestal_XPBoostInfo(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "ExecuteUbergraph_TeamMemberPedestal_XPBoostInfo");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "ExecuteUbergraph_TeamMemberPedestal_XPBoostInfo");
 
 	Params::TeamMemberPedestal_XPBoostInfo_C_ExecuteUbergraph_TeamMemberPedestal_XPBoostInfo Parms{};
 
@@ -44,10 +41,7 @@ void UTeamMemberPedestal_XPBoostInfo_C::ExecuteUbergraph_TeamMemberPedestal_XPBo
 
 void UTeamMemberPedestal_XPBoostInfo_C::OnCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "OnCameraChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "OnCameraChanged");
 
 	Params::TeamMemberPedestal_XPBoostInfo_C_OnCameraChanged Parms{};
 
@@ -63,10 +57,7 @@ void UTeamMemberPedestal_XPBoostInfo_C::OnCameraChanged(EFrontEndCamera NewCamer
 
 void UTeamMemberPedestal_XPBoostInfo_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "Construct");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

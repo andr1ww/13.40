@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULetoFrontendJoinPrompt_Side_C::ExecuteUbergraph_LetoFrontendJoinPrompt_Side(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LetoFrontendJoinPrompt_Side_C", "ExecuteUbergraph_LetoFrontendJoinPrompt_Side");
+	class UFunction* Func = Class->GetFunction("LetoFrontendJoinPrompt_Side_C", "ExecuteUbergraph_LetoFrontendJoinPrompt_Side");
 
 	Params::LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side Parms{};
 
@@ -43,10 +40,7 @@ void ULetoFrontendJoinPrompt_Side_C::ExecuteUbergraph_LetoFrontendJoinPrompt_Sid
 
 void ULetoFrontendJoinPrompt_Side_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LetoFrontendJoinPrompt_Side_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("LetoFrontendJoinPrompt_Side_C", "OnMouseLeave");
 
 	Params::LetoFrontendJoinPrompt_Side_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void ULetoFrontendJoinPrompt_Side_C::OnMouseLeave(const struct FPointerEvent& Mo
 
 void ULetoFrontendJoinPrompt_Side_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LetoFrontendJoinPrompt_Side_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("LetoFrontendJoinPrompt_Side_C", "OnMouseEnter");
 
 	Params::LetoFrontendJoinPrompt_Side_C_OnMouseEnter Parms{};
 

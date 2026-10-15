@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AAthena_Player_Bush_C::ExecuteUbergraph_Athena_Player_Bush(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Player_Bush_C", "ExecuteUbergraph_Athena_Player_Bush");
+	class UFunction* Func = Class->GetFunction("Athena_Player_Bush_C", "ExecuteUbergraph_Athena_Player_Bush");
 
 	Params::Athena_Player_Bush_C_ExecuteUbergraph_Athena_Player_Bush Parms{};
 
@@ -41,10 +38,7 @@ void AAthena_Player_Bush_C::ExecuteUbergraph_Athena_Player_Bush(int32 EntryPoint
 
 void AAthena_Player_Bush_C::RemoveBush()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Player_Bush_C", "RemoveBush");
+	class UFunction* Func = Class->GetFunction("Athena_Player_Bush_C", "RemoveBush");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -63,10 +57,7 @@ void AAthena_Player_Bush_C::RemoveBush()
 
 void AAthena_Player_Bush_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Player_Bush_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("Athena_Player_Bush_C", "OnDeathServer");
 
 	Params::Athena_Player_Bush_C_OnDeathServer Parms{};
 
@@ -87,10 +78,7 @@ void AAthena_Player_Bush_C::OnDeathServer(float Damage, const struct FGameplayTa
 
 void AAthena_Player_Bush_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Player_Bush_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Athena_Player_Bush_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +97,7 @@ void AAthena_Player_Bush_C::ReceiveBeginPlay()
 
 void AAthena_Player_Bush_C::OnDamageServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Player_Bush_C", "OnDamageServer");
+	class UFunction* Func = Class->GetFunction("Athena_Player_Bush_C", "OnDamageServer");
 
 	Params::Athena_Player_Bush_C_OnDamageServer Parms{};
 
@@ -133,10 +118,7 @@ void AAthena_Player_Bush_C::OnDamageServer(float Damage, const struct FGameplayT
 
 void AAthena_Player_Bush_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Player_Bush_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("Athena_Player_Bush_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -150,10 +132,7 @@ void AAthena_Player_Bush_C::UserConstructionScript()
 
 void AAthena_Player_Bush_C::CheckInstIsOwner(class AActor* DamageCauser, class AActor** Owner_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Player_Bush_C", "CheckInstIsOwner");
+	class UFunction* Func = Class->GetFunction("Athena_Player_Bush_C", "CheckInstIsOwner");
 
 	Params::Athena_Player_Bush_C_CheckInstIsOwner Parms{};
 

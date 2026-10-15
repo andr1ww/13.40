@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_SplineMesh_BP12_C::ExecuteUbergraph_BP_SplineMesh_BP12(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineMesh_BP12_C", "ExecuteUbergraph_BP_SplineMesh_BP12");
+	class UFunction* Func = Class->GetFunction("BP_SplineMesh_BP12_C", "ExecuteUbergraph_BP_SplineMesh_BP12");
 
 	Params::BP_SplineMesh_BP12_C_ExecuteUbergraph_BP_SplineMesh_BP12 Parms{};
 
@@ -41,10 +38,7 @@ void ABP_SplineMesh_BP12_C::ExecuteUbergraph_BP_SplineMesh_BP12(int32 EntryPoint
 
 void ABP_SplineMesh_BP12_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineMesh_BP12_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_SplineMesh_BP12_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_SplineMesh_BP12_C::ReceiveBeginPlay()
 
 void ABP_SplineMesh_BP12_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineMesh_BP12_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_SplineMesh_BP12_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

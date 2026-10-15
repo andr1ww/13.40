@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_ProjectileTrajectory_ExplosiveBow_C::ExecuteUbergraph_BP_ProjectileTrajectory_ExplosiveBow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "ExecuteUbergraph_BP_ProjectileTrajectory_ExplosiveBow");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "ExecuteUbergraph_BP_ProjectileTrajectory_ExplosiveBow");
 
 	Params::BP_ProjectileTrajectory_ExplosiveBow_C_ExecuteUbergraph_BP_ProjectileTrajectory_ExplosiveBow Parms{};
 
@@ -44,10 +41,7 @@ void ABP_ProjectileTrajectory_ExplosiveBow_C::ExecuteUbergraph_BP_ProjectileTraj
 
 void ABP_ProjectileTrajectory_ExplosiveBow_C::SetTrajectorySpline(const TArray<struct FVector>& SplinePoints, const TArray<struct FVector>& SplineTangents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "SetTrajectorySpline");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "SetTrajectorySpline");
 
 	Params::BP_ProjectileTrajectory_ExplosiveBow_C_SetTrajectorySpline Parms{};
 
@@ -63,10 +57,7 @@ void ABP_ProjectileTrajectory_ExplosiveBow_C::SetTrajectorySpline(const TArray<s
 
 void ABP_ProjectileTrajectory_ExplosiveBow_C::Pulse()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "Pulse");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "Pulse");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void ABP_ProjectileTrajectory_ExplosiveBow_C::Pulse()
 
 void ABP_ProjectileTrajectory_ExplosiveBow_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -94,10 +82,7 @@ void ABP_ProjectileTrajectory_ExplosiveBow_C::ReceiveBeginPlay()
 
 void ABP_ProjectileTrajectory_ExplosiveBow_C::SetTrajectorySplineInternal(TArray<struct FVector>& SplinePoints, TArray<struct FVector>& SplineTangents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "SetTrajectorySplineInternal");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "SetTrajectorySplineInternal");
 
 	Params::BP_ProjectileTrajectory_ExplosiveBow_C_SetTrajectorySplineInternal Parms{};
 
@@ -116,10 +101,7 @@ void ABP_ProjectileTrajectory_ExplosiveBow_C::SetTrajectorySplineInternal(TArray
 
 void ABP_ProjectileTrajectory_ExplosiveBow_C::UpdateFromTrajectoryOwner()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "UpdateFromTrajectoryOwner");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "UpdateFromTrajectoryOwner");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -134,10 +116,7 @@ void ABP_ProjectileTrajectory_ExplosiveBow_C::UpdateFromTrajectoryOwner()
 
 void ABP_ProjectileTrajectory_ExplosiveBow_C::SetShouldUpdateFromOwner(bool ShouldUpdate, class UObject* Owner_0, float Interval)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "SetShouldUpdateFromOwner");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_ExplosiveBow_C", "SetShouldUpdateFromOwner");
 
 	Params::BP_ProjectileTrajectory_ExplosiveBow_C_SetShouldUpdateFromOwner Parms{};
 

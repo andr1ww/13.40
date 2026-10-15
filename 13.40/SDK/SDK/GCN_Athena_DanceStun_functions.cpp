@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Athena_DanceStun_C::ExecuteUbergraph_GCN_Athena_DanceStun(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_DanceStun_C", "ExecuteUbergraph_GCN_Athena_DanceStun");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_DanceStun_C", "ExecuteUbergraph_GCN_Athena_DanceStun");
 
 	Params::GCN_Athena_DanceStun_C_ExecuteUbergraph_GCN_Athena_DanceStun Parms{};
 
@@ -43,10 +40,7 @@ void AGCN_Athena_DanceStun_C::ExecuteUbergraph_GCN_Athena_DanceStun(int32 EntryP
 
 void AGCN_Athena_DanceStun_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_DanceStun_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_DanceStun_C", "ReceiveTick");
 
 	Params::GCN_Athena_DanceStun_C_ReceiveTick Parms{};
 
@@ -65,10 +59,7 @@ void AGCN_Athena_DanceStun_C::ReceiveTick(float DeltaSeconds)
 
 bool AGCN_Athena_DanceStun_C::OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_DanceStun_C", "OnActive");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_DanceStun_C", "OnActive");
 
 	Params::GCN_Athena_DanceStun_C_OnActive Parms{};
 
@@ -90,10 +81,7 @@ bool AGCN_Athena_DanceStun_C::OnActive(class AActor* MyTarget, const struct FGam
 
 bool AGCN_Athena_DanceStun_C::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_DanceStun_C", "OnRemove");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_DanceStun_C", "OnRemove");
 
 	Params::GCN_Athena_DanceStun_C_OnRemove Parms{};
 

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UFriendSubscriptionToastWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UFriendSubscriptionToastWidget_C::Construct()
 
 void UFriendSubscriptionToastWidget_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "PreConstruct");
 
 	Params::FriendSubscriptionToastWidget_C_PreConstruct Parms{};
 
@@ -55,10 +49,7 @@ void UFriendSubscriptionToastWidget_C::PreConstruct(bool IsDesignTime_PreConstru
 
 void UFriendSubscriptionToastWidget_C::Popup_Animation_Finished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "Popup Animation Finished");
+	class UFunction* Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "Popup Animation Finished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UFriendSubscriptionToastWidget_C::Popup_Animation_Finished()
 
 void UFriendSubscriptionToastWidget_C::OnPlayOpenAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "OnPlayOpenAnimation");
+	class UFunction* Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "OnPlayOpenAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UFriendSubscriptionToastWidget_C::OnPlayOpenAnimation()
 
 void UFriendSubscriptionToastWidget_C::OnPlayCloseAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "OnPlayCloseAnimation");
+	class UFunction* Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "OnPlayCloseAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UFriendSubscriptionToastWidget_C::OnPlayCloseAnimation()
 
 void UFriendSubscriptionToastWidget_C::ExecuteUbergraph_FriendSubscriptionToastWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "ExecuteUbergraph_FriendSubscriptionToastWidget");
+	class UFunction* Func = Class->GetFunction("FriendSubscriptionToastWidget_C", "ExecuteUbergraph_FriendSubscriptionToastWidget");
 
 	Params::FriendSubscriptionToastWidget_C_ExecuteUbergraph_FriendSubscriptionToastWidget Parms{};
 

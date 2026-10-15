@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFilteredTextEntryWidget_C::ExecuteUbergraph_FilteredTextEntryWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "ExecuteUbergraph_FilteredTextEntryWidget");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "ExecuteUbergraph_FilteredTextEntryWidget");
 
 	Params::FilteredTextEntryWidget_C_ExecuteUbergraph_FilteredTextEntryWidget Parms{};
 
@@ -44,10 +41,7 @@ void UFilteredTextEntryWidget_C::ExecuteUbergraph_FilteredTextEntryWidget(int32 
 
 void UFilteredTextEntryWidget_C::BndEvt__EditText_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "BndEvt__EditText_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "BndEvt__EditText_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature");
 
 	Params::FilteredTextEntryWidget_C_BndEvt__EditText_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
 
@@ -65,10 +59,7 @@ void UFilteredTextEntryWidget_C::BndEvt__EditText_K2Node_ComponentBoundEvent_2_O
 
 void UFilteredTextEntryWidget_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "OnMouseLeave");
 
 	Params::FilteredTextEntryWidget_C_OnMouseLeave Parms{};
 
@@ -86,10 +77,7 @@ void UFilteredTextEntryWidget_C::OnMouseLeave(const struct FPointerEvent& MouseE
 
 void UFilteredTextEntryWidget_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "OnMouseEnter");
 
 	Params::FilteredTextEntryWidget_C_OnMouseEnter Parms{};
 
@@ -107,10 +95,7 @@ void UFilteredTextEntryWidget_C::OnMouseEnter(const struct FGeometry& MyGeometry
 
 void UFilteredTextEntryWidget_C::BndEvt__EditText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "BndEvt__EditText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "BndEvt__EditText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature");
 
 	Params::FilteredTextEntryWidget_C_BndEvt__EditText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature Parms{};
 
@@ -127,10 +112,7 @@ void UFilteredTextEntryWidget_C::BndEvt__EditText_K2Node_ComponentBoundEvent_0_O
 
 void UFilteredTextEntryWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "PreConstruct");
 
 	Params::FilteredTextEntryWidget_C_PreConstruct Parms{};
 
@@ -148,10 +130,7 @@ void UFilteredTextEntryWidget_C::PreConstruct(bool IsDesignTime)
 
 void UFilteredTextEntryWidget_C::OnDirtyTextAttempted(bool bIsBadText, bool bAdditionalValidationFailed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "OnDirtyTextAttempted");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "OnDirtyTextAttempted");
 
 	Params::FilteredTextEntryWidget_C_OnDirtyTextAttempted Parms{};
 
@@ -167,10 +146,7 @@ void UFilteredTextEntryWidget_C::OnDirtyTextAttempted(bool bIsBadText, bool bAdd
 
 void UFilteredTextEntryWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -188,10 +164,7 @@ void UFilteredTextEntryWidget_C::Construct()
 
 void UFilteredTextEntryWidget_C::UpdateConfiguration(bool bOverrideStyle, bool bHideValidation, ETextJustify TextJustification, bool bShouldShowTextPrompt, const class FText& PromptDisplayText, class UClass* TextStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "UpdateConfiguration");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "UpdateConfiguration");
 
 	Params::FilteredTextEntryWidget_C_UpdateConfiguration Parms{};
 
@@ -211,10 +184,7 @@ void UFilteredTextEntryWidget_C::UpdateConfiguration(bool bOverrideStyle, bool b
 
 void UFilteredTextEntryWidget_C::SetTextFocus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "SetTextFocus");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "SetTextFocus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -227,10 +197,7 @@ void UFilteredTextEntryWidget_C::SetTextFocus()
 
 void UFilteredTextEntryWidget_C::HandleShowPrompt(const class FText& CurrentText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "HandleShowPrompt");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "HandleShowPrompt");
 
 	Params::FilteredTextEntryWidget_C_HandleShowPrompt Parms{};
 
@@ -247,10 +214,7 @@ void UFilteredTextEntryWidget_C::HandleShowPrompt(const class FText& CurrentText
 
 void UFilteredTextEntryWidget_C::GetCurrentText(class FText* Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "GetCurrentText");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "GetCurrentText");
 
 	Params::FilteredTextEntryWidget_C_GetCurrentText Parms{};
 
@@ -269,10 +233,7 @@ void UFilteredTextEntryWidget_C::GetCurrentText(class FText* Text)
 
 void UFilteredTextEntryWidget_C::GetErrorText(bool Additional_Validator_Failed, class FText* Appropriate_Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FilteredTextEntryWidget_C", "GetErrorText");
+	class UFunction* Func = Class->GetFunction("FilteredTextEntryWidget_C", "GetErrorText");
 
 	Params::FilteredTextEntryWidget_C_GetErrorText Parms{};
 

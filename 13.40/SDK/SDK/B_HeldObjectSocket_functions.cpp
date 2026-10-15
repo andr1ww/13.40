@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_HeldObjectSocket_C::ExecuteUbergraph_B_HeldObjectSocket(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocket_C", "ExecuteUbergraph_B_HeldObjectSocket");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocket_C", "ExecuteUbergraph_B_HeldObjectSocket");
 
 	Params::B_HeldObjectSocket_C_ExecuteUbergraph_B_HeldObjectSocket Parms{};
 
@@ -41,10 +38,7 @@ void AB_HeldObjectSocket_C::ExecuteUbergraph_B_HeldObjectSocket(int32 EntryPoint
 
 void AB_HeldObjectSocket_C::EventOnSocketEmptied()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocket_C", "EventOnSocketEmptied");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocket_C", "EventOnSocketEmptied");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_HeldObjectSocket_C::EventOnSocketEmptied()
 
 void AB_HeldObjectSocket_C::EventOnSocketFilled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocket_C", "EventOnSocketFilled");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocket_C", "EventOnSocketFilled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -74,10 +65,7 @@ void AB_HeldObjectSocket_C::EventOnSocketFilled()
 
 void AB_HeldObjectSocket_C::OnHitHeldObject(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocket_C", "OnHitHeldObject");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocket_C", "OnHitHeldObject");
 
 	Params::B_HeldObjectSocket_C_OnHitHeldObject Parms{};
 
@@ -95,10 +83,7 @@ void AB_HeldObjectSocket_C::OnHitHeldObject(class AActor* SelfActor, class AActo
 
 void AB_HeldObjectSocket_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocket_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocket_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void AB_HeldObjectSocket_C::ReceiveBeginPlay()
 
 void AB_HeldObjectSocket_C::OnRep_SocketIsFilled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocket_C", "OnRep_SocketIsFilled");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocket_C", "OnRep_SocketIsFilled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void AB_HeldObjectSocket_C::OnRep_SocketIsFilled()
 
 void AB_HeldObjectSocket_C::ValidateHeldObject(class AB_HeldObject_Parent_C* HeldObject_Input, class AB_HeldObject_Parent_C** HeldObject_Output, bool* IsValid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObjectSocket_C", "ValidateHeldObject");
+	class UFunction* Func = Class->GetFunction("B_HeldObjectSocket_C", "ValidateHeldObject");
 
 	Params::B_HeldObjectSocket_C_ValidateHeldObject Parms{};
 

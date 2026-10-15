@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFrontendChallengeInfoPanelEntry_C::ExecuteUbergraph_FrontendChallengeInfoPanelEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendChallengeInfoPanelEntry_C", "ExecuteUbergraph_FrontendChallengeInfoPanelEntry");
+	class UFunction* Func = Class->GetFunction("FrontendChallengeInfoPanelEntry_C", "ExecuteUbergraph_FrontendChallengeInfoPanelEntry");
 
 	Params::FrontendChallengeInfoPanelEntry_C_ExecuteUbergraph_FrontendChallengeInfoPanelEntry Parms{};
 
@@ -41,10 +38,7 @@ void UFrontendChallengeInfoPanelEntry_C::ExecuteUbergraph_FrontendChallengeInfoP
 
 void UFrontendChallengeInfoPanelEntry_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendChallengeInfoPanelEntry_C", "Construct");
+	class UFunction* Func = Class->GetFunction("FrontendChallengeInfoPanelEntry_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UFrontendChallengeInfoPanelEntry_C::Construct()
 
 void UFrontendChallengeInfoPanelEntry_C::OnLocalPlayerMissingAssistedChallenge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendChallengeInfoPanelEntry_C", "OnLocalPlayerMissingAssistedChallenge");
+	class UFunction* Func = Class->GetFunction("FrontendChallengeInfoPanelEntry_C", "OnLocalPlayerMissingAssistedChallenge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UFrontendChallengeInfoPanelEntry_C::OnLocalPlayerMissingAssistedChallenge()
 
 void UFrontendChallengeInfoPanelEntry_C::OnChallengeInfoSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendChallengeInfoPanelEntry_C", "OnChallengeInfoSet");
+	class UFunction* Func = Class->GetFunction("FrontendChallengeInfoPanelEntry_C", "OnChallengeInfoSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UShowdownEventTile_C::ExecuteUbergraph_ShowdownEventTile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "ExecuteUbergraph_ShowdownEventTile");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "ExecuteUbergraph_ShowdownEventTile");
 
 	Params::ShowdownEventTile_C_ExecuteUbergraph_ShowdownEventTile Parms{};
 
@@ -41,10 +38,7 @@ void UShowdownEventTile_C::ExecuteUbergraph_ShowdownEventTile(int32 EntryPoint)
 
 void UShowdownEventTile_C::EventMultiRoundStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "EventMultiRoundStyle");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "EventMultiRoundStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UShowdownEventTile_C::EventMultiRoundStyle()
 
 void UShowdownEventTile_C::EventColorizeDispatch(const struct FFortTournamentDisplayInfo& DisplayInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "EventColorizeDispatch");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "EventColorizeDispatch");
 
 	Params::ShowdownEventTile_C_EventColorizeDispatch Parms{};
 
@@ -77,10 +68,7 @@ void UShowdownEventTile_C::EventColorizeDispatch(const struct FFortTournamentDis
 
 void UShowdownEventTile_C::EventColorize(const struct FFortTournamentDisplayInfo& DisplayInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "EventColorize");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "EventColorize");
 
 	Params::ShowdownEventTile_C_EventColorize Parms{};
 
@@ -97,10 +85,7 @@ void UShowdownEventTile_C::EventColorize(const struct FFortTournamentDisplayInfo
 
 void UShowdownEventTile_C::EventSetState(EFortShowdownEventState EventState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "EventSetState");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "EventSetState");
 
 	Params::ShowdownEventTile_C_EventSetState Parms{};
 
@@ -117,10 +102,7 @@ void UShowdownEventTile_C::EventSetState(EFortShowdownEventState EventState)
 
 void UShowdownEventTile_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "OnRemovedFromFocusPath");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "OnRemovedFromFocusPath");
 
 	Params::ShowdownEventTile_C_OnRemovedFromFocusPath Parms{};
 
@@ -137,10 +119,7 @@ void UShowdownEventTile_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFo
 
 void UShowdownEventTile_C::OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "OnAddedToFocusPath");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "OnAddedToFocusPath");
 
 	Params::ShowdownEventTile_C_OnAddedToFocusPath Parms{};
 
@@ -155,10 +134,7 @@ void UShowdownEventTile_C::OnAddedToFocusPath(const struct FFocusEvent& InFocusE
 
 void UShowdownEventTile_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +145,7 @@ void UShowdownEventTile_C::BP_OnDeselected()
 
 void UShowdownEventTile_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -183,10 +156,7 @@ void UShowdownEventTile_C::BP_OnSelected()
 
 void UShowdownEventTile_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -197,10 +167,7 @@ void UShowdownEventTile_C::BP_OnUnhovered()
 
 void UShowdownEventTile_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -213,10 +180,7 @@ void UShowdownEventTile_C::BP_OnHovered()
 
 void UShowdownEventTile_C::EventResize(bool Out)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "EventResize");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "EventResize");
 
 	Params::ShowdownEventTile_C_EventResize Parms{};
 
@@ -233,10 +197,7 @@ void UShowdownEventTile_C::EventResize(bool Out)
 
 void UShowdownEventTile_C::EventIntro(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "EventIntro");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "EventIntro");
 
 	Params::ShowdownEventTile_C_EventIntro Parms{};
 
@@ -251,10 +212,7 @@ void UShowdownEventTile_C::EventIntro(int32 Index_0)
 
 void UShowdownEventTile_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +223,7 @@ void UShowdownEventTile_C::BP_OnClicked()
 
 void UShowdownEventTile_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -282,10 +237,7 @@ void UShowdownEventTile_C::Construct()
 
 void UShowdownEventTile_C::SetData(const class FString& TournamentInfo, const class FString& EventInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "SetData");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTile_C", "SetData");
 
 	Params::ShowdownEventTile_C_SetData Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Throw_HeldObject_C::ExecuteUbergraph_GA_Throw_HeldObject(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "ExecuteUbergraph_GA_Throw_HeldObject");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "ExecuteUbergraph_GA_Throw_HeldObject");
 
 	Params::GA_Throw_HeldObject_C_ExecuteUbergraph_GA_Throw_HeldObject Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Throw_HeldObject_C::ExecuteUbergraph_GA_Throw_HeldObject(int32 EntryPoi
 
 void UGA_Throw_HeldObject_C::OnAbilityInputReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "OnAbilityInputReleased");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "OnAbilityInputReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Throw_HeldObject_C::OnAbilityInputReleased()
 
 void UGA_Throw_HeldObject_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGA_Throw_HeldObject_C::K2_ActivateAbility()
 
 void UGA_Throw_HeldObject_C::UpdateTrajectory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "UpdateTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "UpdateTrajectory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UGA_Throw_HeldObject_C::UpdateTrajectory()
 
 void UGA_Throw_HeldObject_C::CleanupTrajectoryIndicatorOnUnequip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "CleanupTrajectoryIndicatorOnUnequip");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "CleanupTrajectoryIndicatorOnUnequip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UGA_Throw_HeldObject_C::CleanupTrajectoryIndicatorOnUnequip()
 
 void UGA_Throw_HeldObject_C::InitTrajectoryVariables()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "InitTrajectoryVariables");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "InitTrajectoryVariables");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void UGA_Throw_HeldObject_C::InitTrajectoryVariables()
 
 void UGA_Throw_HeldObject_C::ThrowProjectile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "ThrowProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "ThrowProjectile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +106,7 @@ void UGA_Throw_HeldObject_C::ThrowProjectile()
 
 void UGA_Throw_HeldObject_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "K2_OnEndAbility");
 
 	Params::GA_Throw_HeldObject_C_K2_OnEndAbility Parms{};
 
@@ -145,10 +121,7 @@ void UGA_Throw_HeldObject_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Throw_HeldObject_C::AttemptSpawnThrownProjectile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "AttemptSpawnThrownProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "AttemptSpawnThrownProjectile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +132,7 @@ void UGA_Throw_HeldObject_C::AttemptSpawnThrownProjectile()
 
 void UGA_Throw_HeldObject_C::OnFinish_5115EDCE4339523BE389D09CA4A2AECC()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "OnFinish_5115EDCE4339523BE389D09CA4A2AECC");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "OnFinish_5115EDCE4339523BE389D09CA4A2AECC");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -176,10 +146,7 @@ void UGA_Throw_HeldObject_C::OnFinish_5115EDCE4339523BE389D09CA4A2AECC()
 
 void UGA_Throw_HeldObject_C::Triggered_9DD11B80484829AF1E8DC5ACFC965E7A(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "Triggered_9DD11B80484829AF1E8DC5ACFC965E7A");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "Triggered_9DD11B80484829AF1E8DC5ACFC965E7A");
 
 	Params::GA_Throw_HeldObject_C_Triggered_9DD11B80484829AF1E8DC5ACFC965E7A Parms{};
 
@@ -198,10 +165,7 @@ void UGA_Throw_HeldObject_C::Triggered_9DD11B80484829AF1E8DC5ACFC965E7A(const st
 
 void UGA_Throw_HeldObject_C::Cancelled_9DD11B80484829AF1E8DC5ACFC965E7A(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "Cancelled_9DD11B80484829AF1E8DC5ACFC965E7A");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "Cancelled_9DD11B80484829AF1E8DC5ACFC965E7A");
 
 	Params::GA_Throw_HeldObject_C_Cancelled_9DD11B80484829AF1E8DC5ACFC965E7A Parms{};
 
@@ -220,10 +184,7 @@ void UGA_Throw_HeldObject_C::Cancelled_9DD11B80484829AF1E8DC5ACFC965E7A(const st
 
 void UGA_Throw_HeldObject_C::Completed_9DD11B80484829AF1E8DC5ACFC965E7A(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "Completed_9DD11B80484829AF1E8DC5ACFC965E7A");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "Completed_9DD11B80484829AF1E8DC5ACFC965E7A");
 
 	Params::GA_Throw_HeldObject_C_Completed_9DD11B80484829AF1E8DC5ACFC965E7A Parms{};
 
@@ -239,10 +200,7 @@ void UGA_Throw_HeldObject_C::Completed_9DD11B80484829AF1E8DC5ACFC965E7A(const st
 
 void UGA_Throw_HeldObject_C::PrethrowSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "PrethrowSetup");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "PrethrowSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -261,10 +219,7 @@ void UGA_Throw_HeldObject_C::PrethrowSetup()
 
 void UGA_Throw_HeldObject_C::SpawnThrownProjectile(class UClass* ProjectileClass_0, const struct FVector& ProjectileSpawnLocation, const struct FRotator& ProjectileSpawnDirection, const struct FFortGameplayEffectContainerSpec& ExplosionEffectContainerSpec_0, float ProjectileInitialSpeed, float ProjectileGravityScale_0, class AFortProjectileBase** SpawnedProjectile_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "SpawnThrownProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "SpawnThrownProjectile");
 
 	Params::GA_Throw_HeldObject_C_SpawnThrownProjectile Parms{};
 
@@ -289,10 +244,7 @@ void UGA_Throw_HeldObject_C::SpawnThrownProjectile(class UClass* ProjectileClass
 
 void UGA_Throw_HeldObject_C::OnHeldObjectThrown(class AFortProjectileBase* SpawnedProjectile_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "OnHeldObjectThrown");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "OnHeldObjectThrown");
 
 	Params::GA_Throw_HeldObject_C_OnHeldObjectThrown Parms{};
 
@@ -307,10 +259,7 @@ void UGA_Throw_HeldObject_C::OnHeldObjectThrown(class AFortProjectileBase* Spawn
 
 void UGA_Throw_HeldObject_C::OnHeldObjectSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "OnHeldObjectSetup");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "OnHeldObjectSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -321,10 +270,7 @@ void UGA_Throw_HeldObject_C::OnHeldObjectSetup()
 
 void UGA_Throw_HeldObject_C::SetupDummyProjectile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "SetupDummyProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "SetupDummyProjectile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -335,10 +281,7 @@ void UGA_Throw_HeldObject_C::SetupDummyProjectile()
 
 void UGA_Throw_HeldObject_C::UpdateTrajectorySpline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "UpdateTrajectorySpline");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "UpdateTrajectorySpline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -349,10 +292,7 @@ void UGA_Throw_HeldObject_C::UpdateTrajectorySpline()
 
 void UGA_Throw_HeldObject_C::PostThrowCleanup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "PostThrowCleanup");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "PostThrowCleanup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -363,10 +303,7 @@ void UGA_Throw_HeldObject_C::PostThrowCleanup()
 
 void UGA_Throw_HeldObject_C::CleanupTrajectory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "CleanupTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "CleanupTrajectory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -377,10 +314,7 @@ void UGA_Throw_HeldObject_C::CleanupTrajectory()
 
 void UGA_Throw_HeldObject_C::SetupDummyProjectileSocketed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "SetupDummyProjectileSocketed");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "SetupDummyProjectileSocketed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -394,10 +328,7 @@ void UGA_Throw_HeldObject_C::SetupDummyProjectileSocketed()
 
 void UGA_Throw_HeldObject_C::HitValidSocket(const struct FHitResult& HitResult, bool* CanSocket)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "HitValidSocket");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "HitValidSocket");
 
 	Params::GA_Throw_HeldObject_C_HitValidSocket Parms{};
 
@@ -419,10 +350,7 @@ void UGA_Throw_HeldObject_C::HitValidSocket(const struct FHitResult& HitResult, 
 
 void UGA_Throw_HeldObject_C::GetProjectileTrajectoryPoints(TArray<struct FVector>* OutSplinePoints, TArray<struct FVector>* OutSplineTangents, struct FHitResult* OutHitResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "GetProjectileTrajectoryPoints");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "GetProjectileTrajectoryPoints");
 
 	Params::GA_Throw_HeldObject_C_GetProjectileTrajectoryPoints Parms{};
 
@@ -447,10 +375,7 @@ void UGA_Throw_HeldObject_C::GetProjectileTrajectoryPoints(TArray<struct FVector
 
 class AFortProjectileTrajectory* UGA_Throw_HeldObject_C::SpawnTrajectoryIndicator(bool bSpawnOnEquip)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "SpawnTrajectoryIndicator");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "SpawnTrajectoryIndicator");
 
 	Params::GA_Throw_HeldObject_C_SpawnTrajectoryIndicator Parms{};
 
@@ -470,10 +395,7 @@ class AFortProjectileTrajectory* UGA_Throw_HeldObject_C::SpawnTrajectoryIndicato
 
 void UGA_Throw_HeldObject_C::GetSpawnLocationAndRotation(struct FVector* Location, struct FRotator* Rotation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "GetSpawnLocationAndRotation");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "GetSpawnLocationAndRotation");
 
 	Params::GA_Throw_HeldObject_C_GetSpawnLocationAndRotation Parms{};
 
@@ -494,10 +416,7 @@ void UGA_Throw_HeldObject_C::GetSpawnLocationAndRotation(struct FVector* Locatio
 
 void UGA_Throw_HeldObject_C::GetOwningPlayer(class AFortPlayerPawn** Player_Pawn) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "GetOwningPlayer");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "GetOwningPlayer");
 
 	Params::GA_Throw_HeldObject_C_GetOwningPlayer Parms{};
 
@@ -515,10 +434,7 @@ void UGA_Throw_HeldObject_C::GetOwningPlayer(class AFortPlayerPawn** Player_Pawn
 
 TSubclassOf<class AFortProjectileTrajectory> UGA_Throw_HeldObject_C::GetProjectileTrajectoryActor() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "GetProjectileTrajectoryActor");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "GetProjectileTrajectoryActor");
 
 	Params::GA_Throw_HeldObject_C_GetProjectileTrajectoryActor Parms{};
 
@@ -535,10 +451,7 @@ TSubclassOf<class AFortProjectileTrajectory> UGA_Throw_HeldObject_C::GetProjecti
 
 bool UGA_Throw_HeldObject_C::ShouldOnlyShowTrajectoryOnUse() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Throw_HeldObject_C", "ShouldOnlyShowTrajectoryOnUse");
+	class UFunction* Func = Class->GetFunction("GA_Throw_HeldObject_C", "ShouldOnlyShowTrajectoryOnUse");
 
 	Params::GA_Throw_HeldObject_C_ShouldOnlyShowTrajectoryOnUse Parms{};
 

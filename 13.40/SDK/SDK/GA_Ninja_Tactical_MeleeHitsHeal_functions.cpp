@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Ninja_Tactical_MeleeHitsHeal_C::ExecuteUbergraph_GA_Ninja_Tactical_MeleeHitsHeal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "ExecuteUbergraph_GA_Ninja_Tactical_MeleeHitsHeal");
+	class UFunction* Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "ExecuteUbergraph_GA_Ninja_Tactical_MeleeHitsHeal");
 
 	Params::GA_Ninja_Tactical_MeleeHitsHeal_C_ExecuteUbergraph_GA_Ninja_Tactical_MeleeHitsHeal Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Ninja_Tactical_MeleeHitsHeal_C::ExecuteUbergraph_GA_Ninja_Tactical_Mele
 
 void UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_OnEndAbility");
 
 	Params::GA_Ninja_Tactical_MeleeHitsHeal_C_K2_OnEndAbility Parms{};
 
@@ -63,10 +57,7 @@ void UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Ninja_Tactical_MeleeHitsHeal_C::SetupAbility(class UAbilitySystemComponent* AbilitySystem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "SetupAbility");
+	class UFunction* Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "SetupAbility");
 
 	Params::GA_Ninja_Tactical_MeleeHitsHeal_C_SetupAbility Parms{};
 
@@ -83,10 +74,7 @@ void UGA_Ninja_Tactical_MeleeHitsHeal_C::SetupAbility(class UAbilitySystemCompon
 
 void UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_Ninja_Tactical_MeleeHitsHeal_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -105,10 +93,7 @@ void UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_ActivateAbilityFromEvent(const struc
 
 bool UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+	class UFunction* Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
 
 	Params::GA_Ninja_Tactical_MeleeHitsHeal_C_K2_ShouldAbilityRespondToEvent Parms{};
 

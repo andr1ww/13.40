@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMicIndicator_C::ExecuteUbergraph_MicIndicator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MicIndicator_C", "ExecuteUbergraph_MicIndicator");
+	class UFunction* Func = Class->GetFunction("MicIndicator_C", "ExecuteUbergraph_MicIndicator");
 
 	Params::MicIndicator_C_ExecuteUbergraph_MicIndicator Parms{};
 
@@ -43,10 +40,7 @@ void UMicIndicator_C::ExecuteUbergraph_MicIndicator(int32 EntryPoint)
 
 void UMicIndicator_C::OnPlayerMuted(bool bIsMuted_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MicIndicator_C", "OnPlayerMuted");
+	class UFunction* Func = Class->GetFunction("MicIndicator_C", "OnPlayerMuted");
 
 	Params::MicIndicator_C_OnPlayerMuted Parms{};
 
@@ -63,10 +57,7 @@ void UMicIndicator_C::OnPlayerMuted(bool bIsMuted_0)
 
 void UMicIndicator_C::OnPlayerTalkingChanged(bool bIsTalking_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MicIndicator_C", "OnPlayerTalkingChanged");
+	class UFunction* Func = Class->GetFunction("MicIndicator_C", "OnPlayerTalkingChanged");
 
 	Params::MicIndicator_C_OnPlayerTalkingChanged Parms{};
 

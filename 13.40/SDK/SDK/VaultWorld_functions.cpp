@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AVaultWorld_C::GetVaultRotator(class AVaultRotator_C** VaultRotator)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWorld_C", "GetVaultRotator");
+	class UFunction* Func = Class->GetFunction("VaultWorld_C", "GetVaultRotator");
 
 	Params::VaultWorld_C_GetVaultRotator Parms{};
 
@@ -42,10 +39,7 @@ void AVaultWorld_C::GetVaultRotator(class AVaultRotator_C** VaultRotator)
 
 void AVaultWorld_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWorld_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("VaultWorld_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void AVaultWorld_C::ReceiveBeginPlay()
 
 void AVaultWorld_C::ExecuteUbergraph_VaultWorld(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWorld_C", "ExecuteUbergraph_VaultWorld");
+	class UFunction* Func = Class->GetFunction("VaultWorld_C", "ExecuteUbergraph_VaultWorld");
 
 	Params::VaultWorld_C_ExecuteUbergraph_VaultWorld Parms{};
 

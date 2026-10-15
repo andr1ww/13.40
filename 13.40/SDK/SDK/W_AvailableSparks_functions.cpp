@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UW_AvailableSparks_C::ExecuteUbergraph_W_AvailableSparks(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AvailableSparks_C", "ExecuteUbergraph_W_AvailableSparks");
+	class UFunction* Func = Class->GetFunction("W_AvailableSparks_C", "ExecuteUbergraph_W_AvailableSparks");
 
 	Params::W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks Parms{};
 
@@ -41,10 +38,7 @@ void UW_AvailableSparks_C::ExecuteUbergraph_W_AvailableSparks(int32 EntryPoint)
 
 void UW_AvailableSparks_C::PlayIdle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AvailableSparks_C", "PlayIdle");
+	class UFunction* Func = Class->GetFunction("W_AvailableSparks_C", "PlayIdle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UW_AvailableSparks_C::PlayIdle()
 
 void UW_AvailableSparks_C::PlayAvailableVotes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AvailableSparks_C", "PlayAvailableVotes");
+	class UFunction* Func = Class->GetFunction("W_AvailableSparks_C", "PlayAvailableVotes");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UW_AvailableSparks_C::PlayAvailableVotes()
 
 void UW_AvailableSparks_C::PlayEventOver(float StartValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AvailableSparks_C", "PlayEventOver");
+	class UFunction* Func = Class->GetFunction("W_AvailableSparks_C", "PlayEventOver");
 
 	Params::W_AvailableSparks_C_PlayEventOver Parms{};
 
@@ -91,10 +79,7 @@ void UW_AvailableSparks_C::PlayEventOver(float StartValue)
 
 void UW_AvailableSparks_C::PlayCountdown(float StartValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AvailableSparks_C", "PlayCountdown");
+	class UFunction* Func = Class->GetFunction("W_AvailableSparks_C", "PlayCountdown");
 
 	Params::W_AvailableSparks_C_PlayCountdown Parms{};
 
@@ -109,10 +94,7 @@ void UW_AvailableSparks_C::PlayCountdown(float StartValue)
 
 void UW_AvailableSparks_C::PlayDecreaseVote()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AvailableSparks_C", "PlayDecreaseVote");
+	class UFunction* Func = Class->GetFunction("W_AvailableSparks_C", "PlayDecreaseVote");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UW_AvailableSparks_C::PlayDecreaseVote()
 
 void UW_AvailableSparks_C::PlayIncreaseVote()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("W_AvailableSparks_C", "PlayIncreaseVote");
+	class UFunction* Func = Class->GetFunction("W_AvailableSparks_C", "PlayIncreaseVote");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

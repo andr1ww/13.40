@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortVoiceChannelSpeaker_C::ExecuteUbergraph_FortVoiceChannelSpeaker(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "ExecuteUbergraph_FortVoiceChannelSpeaker");
+	class UFunction* Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "ExecuteUbergraph_FortVoiceChannelSpeaker");
 
 	Params::FortVoiceChannelSpeaker_C_ExecuteUbergraph_FortVoiceChannelSpeaker Parms{};
 
@@ -43,10 +40,7 @@ void UFortVoiceChannelSpeaker_C::ExecuteUbergraph_FortVoiceChannelSpeaker(int32 
 
 void UFortVoiceChannelSpeaker_C::OnAnimateTalkingChanged(bool bIsNowTalking)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "OnAnimateTalkingChanged");
+	class UFunction* Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "OnAnimateTalkingChanged");
 
 	Params::FortVoiceChannelSpeaker_C_OnAnimateTalkingChanged Parms{};
 
@@ -63,10 +57,7 @@ void UFortVoiceChannelSpeaker_C::OnAnimateTalkingChanged(bool bIsNowTalking)
 
 void UFortVoiceChannelSpeaker_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "PreConstruct");
 
 	Params::FortVoiceChannelSpeaker_C_PreConstruct Parms{};
 
@@ -83,10 +74,7 @@ void UFortVoiceChannelSpeaker_C::PreConstruct(bool IsDesignTime)
 
 void UFortVoiceChannelSpeaker_C::OnStyleAssigned(EChannelSpeakerStyle NewStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "OnStyleAssigned");
+	class UFunction* Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "OnStyleAssigned");
 
 	Params::FortVoiceChannelSpeaker_C_OnStyleAssigned Parms{};
 

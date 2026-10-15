@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UWebLogin_C::DisplayWidget(class UWidget* WebWidget_DisplayWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WebLogin_C", "DisplayWidget");
+	class UFunction* Func = Class->GetFunction("WebLogin_C", "DisplayWidget");
 
 	Params::WebLogin_C_DisplayWidget Parms{};
 
@@ -41,10 +38,7 @@ void UWebLogin_C::DisplayWidget(class UWidget* WebWidget_DisplayWidget)
 
 void UWebLogin_C::DismissWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WebLogin_C", "DismissWidget");
+	class UFunction* Func = Class->GetFunction("WebLogin_C", "DismissWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UWebLogin_C::DismissWidget()
 
 void UWebLogin_C::ExecuteUbergraph_WebLogin(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WebLogin_C", "ExecuteUbergraph_WebLogin");
+	class UFunction* Func = Class->GetFunction("WebLogin_C", "ExecuteUbergraph_WebLogin");
 
 	Params::WebLogin_C_ExecuteUbergraph_WebLogin Parms{};
 

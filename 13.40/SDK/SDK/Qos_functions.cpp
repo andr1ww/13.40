@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AQosBeaconClient::ClientQosResponse(EQosResponseType Response)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QosBeaconClient", "ClientQosResponse");
+	class UFunction* Func = Class->GetFunction("QosBeaconClient", "ClientQosResponse");
 
 	Params::QosBeaconClient_ClientQosResponse Parms{};
 
@@ -48,10 +45,7 @@ void AQosBeaconClient::ClientQosResponse(EQosResponseType Response)
 
 void AQosBeaconClient::ServerQosRequest(const class FString& InSessionId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QosBeaconClient", "ServerQosRequest");
+	class UFunction* Func = Class->GetFunction("QosBeaconClient", "ServerQosRequest");
 
 	Params::QosBeaconClient_ServerQosRequest Parms{};
 

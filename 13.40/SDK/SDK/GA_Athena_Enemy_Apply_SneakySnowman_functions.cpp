@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman");
 
 	Params::GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::ExecuteUbergraph_GA_Athena_Enemy_Ap
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::VehicleWeaponCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "VehicleWeaponCheck");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "VehicleWeaponCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::VehicleWeaponCheck()
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_Enemy_Apply_SneakySnowman_C_K2_OnEndAbility Parms{};
 
@@ -75,10 +66,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::EndAbilitySequence()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "EndAbilitySequence");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "EndAbilitySequence");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::EndAbilitySequence()
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::RestartAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "RestartAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "RestartAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::RestartAbility()
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::EndAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "EndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "EndAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::EndAbility()
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +112,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::K2_ActivateAbility()
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD");
 
 	Params::GA_Athena_Enemy_Apply_SneakySnowman_C_EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD Parms{};
 
@@ -154,10 +130,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::EventReceived_1D1745F441AF12F5AE3A2
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
 
 	Params::GA_Athena_Enemy_Apply_SneakySnowman_C_Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0 Parms{};
 
@@ -176,10 +149,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::Triggered_1521DF0D4D64DB4FF1C1D6BB8
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
 
 	Params::GA_Athena_Enemy_Apply_SneakySnowman_C_Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0 Parms{};
 
@@ -198,10 +168,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::Cancelled_1521DF0D4D64DB4FF1C1D6BB8
 
 void UGA_Athena_Enemy_Apply_SneakySnowman_C::Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
 
 	Params::GA_Athena_Enemy_Apply_SneakySnowman_C_Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0 Parms{};
 
@@ -219,10 +186,7 @@ void UGA_Athena_Enemy_Apply_SneakySnowman_C::Completed_1521DF0D4D64DB4FF1C1D6BB8
 
 bool UGA_Athena_Enemy_Apply_SneakySnowman_C::HasVehicleWeapon_()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "HasVehicleWeapon?");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Enemy_Apply_SneakySnowman_C", "HasVehicleWeapon?");
 
 	Params::GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_ Parms{};
 

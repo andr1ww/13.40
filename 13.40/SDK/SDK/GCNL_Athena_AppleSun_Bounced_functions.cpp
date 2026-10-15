@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Athena_AppleSun_Bounced_C::ExecuteUbergraph_GCNL_Athena_AppleSun_Bounced(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_AppleSun_Bounced_C", "ExecuteUbergraph_GCNL_Athena_AppleSun_Bounced");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_AppleSun_Bounced_C", "ExecuteUbergraph_GCNL_Athena_AppleSun_Bounced");
 
 	Params::GCNL_Athena_AppleSun_Bounced_C_ExecuteUbergraph_GCNL_Athena_AppleSun_Bounced Parms{};
 
@@ -48,10 +45,7 @@ void AGCNL_Athena_AppleSun_Bounced_C::ExecuteUbergraph_GCNL_Athena_AppleSun_Boun
 
 void AGCNL_Athena_AppleSun_Bounced_C::OnApplication(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_AppleSun_Bounced_C", "OnApplication");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_AppleSun_Bounced_C", "OnApplication");
 
 	Params::GCNL_Athena_AppleSun_Bounced_C_OnApplication Parms{};
 

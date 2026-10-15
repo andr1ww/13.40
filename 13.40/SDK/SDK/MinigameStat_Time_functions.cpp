@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 class FText UMinigameStat_Time_C::FormatStat(int32 InCount) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameStat_Time_C", "FormatStat");
+	class UFunction* Func = Class->GetFunction("MinigameStat_Time_C", "FormatStat");
 
 	Params::MinigameStat_Time_C_FormatStat Parms{};
 
@@ -48,10 +45,7 @@ class FText UMinigameStat_Time_C::FormatStat(int32 InCount) const
 
 int32 UMinigameStat_Time_C::Compare(int32 FirstScore, int32 SecondScore) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameStat_Time_C", "Compare");
+	class UFunction* Func = Class->GetFunction("MinigameStat_Time_C", "Compare");
 
 	Params::MinigameStat_Time_C_Compare Parms{};
 
@@ -73,10 +67,7 @@ int32 UMinigameStat_Time_C::Compare(int32 FirstScore, int32 SecondScore) const
 
 int32 UMinigameStat_Time_C::Accumulate(int32 A, int32 B) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameStat_Time_C", "Accumulate");
+	class UFunction* Func = Class->GetFunction("MinigameStat_Time_C", "Accumulate");
 
 	Params::MinigameStat_Time_C_Accumulate Parms{};
 

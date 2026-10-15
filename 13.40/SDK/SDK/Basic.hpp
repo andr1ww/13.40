@@ -561,6 +561,10 @@ public:
 	{
 		return TextData->TextSource.ToString();
 	}
+	bool IsEmpty() const
+	{
+		return !TextData || TextData->TextSource.Num() <= 1;
+	}
 };
 DUMPER7_ASSERTS_FText;
 
@@ -661,6 +665,11 @@ DUMPER7_ASSERTS_FSoftObjectPath;
 
 class FSoftObjectPtr : public TPersistentObjectPtr<FakeSoftObjectPtr::FSoftObjectPath>
 {
+public:
+	class UObject* LoadSynchronous() const
+	{
+		return reinterpret_cast<class UObject* (*)(const FSoftObjectPtr*)>(InSDKUtils::GetImageBase() + 0xA619F0)(this);
+	}
 };
 
 template<typename UEType>
@@ -675,6 +684,10 @@ public:
 	{
 		return static_cast<UEType*>(TPersistentObjectPtr::Get());
 	}
+	UEType* LoadSynchronous() const
+	{
+		return static_cast<UEType*>(FSoftObjectPtr::LoadSynchronous());
+	}
 };
 
 template<typename UEType>
@@ -688,6 +701,10 @@ public:
 	UEType* operator->() const
 	{
 		return static_cast<UEType*>(TPersistentObjectPtr::Get());
+	}
+	UEType* LoadSynchronous() const
+	{
+		return static_cast<UEType*>(FSoftObjectPtr::LoadSynchronous());
 	}
 };
 
@@ -1422,6 +1439,20 @@ inline void UC::TArray<ArrayElementType>::Reserve(int32 Num)
 		MaxElements = Num + NumElements;
 		Data = static_cast<ArrayElementType*>(SDK_NAMESPACE_NAME ::FMemory::Realloc(Data, static_cast<uint64>(MaxElements) * sizeof(ArrayElementType), alignof(ArrayElementType)));
 	}
+}
+
+template<typename ArrayElementType>
+inline void UC::TArray<ArrayElementType>::Free()
+{
+	for (int32 i = 0; i < NumElements; i++)
+		Data[i].~ArrayElementType();
+
+	if (Data)
+		SDK_NAMESPACE_NAME ::FMemory::Free(Data);
+
+	Data = nullptr;
+	NumElements = 0;
+	MaxElements = 0;
 }
 
 template<typename... ArgTypes>

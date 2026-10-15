@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USocialPanel_TopBarExtension_C::ExecuteUbergraph_SocialPanel_TopBarExtension(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "ExecuteUbergraph_SocialPanel_TopBarExtension");
+	class UFunction* Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "ExecuteUbergraph_SocialPanel_TopBarExtension");
 
 	Params::SocialPanel_TopBarExtension_C_ExecuteUbergraph_SocialPanel_TopBarExtension Parms{};
 
@@ -41,10 +38,7 @@ void USocialPanel_TopBarExtension_C::ExecuteUbergraph_SocialPanel_TopBarExtensio
 
 void USocialPanel_TopBarExtension_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USocialPanel_TopBarExtension_C::BP_OnUnhovered()
 
 void USocialPanel_TopBarExtension_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

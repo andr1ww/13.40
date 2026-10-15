@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMcpProfile::DeleteAllProfiles(struct FClientUrlContext* Context)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("McpProfile", "DeleteAllProfiles");
+	class UFunction* Func = Class->GetFunction("McpProfile", "DeleteAllProfiles");
 
 	Params::McpProfile_DeleteAllProfiles Parms{};
 
@@ -49,10 +46,7 @@ void UMcpProfile::DeleteAllProfiles(struct FClientUrlContext* Context)
 
 void UMcpProfile::DeleteProfile(struct FClientUrlContext* Context)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("McpProfile", "DeleteProfile");
+	class UFunction* Func = Class->GetFunction("McpProfile", "DeleteProfile");
 
 	Params::McpProfile_DeleteProfile Parms{};
 
@@ -77,10 +71,7 @@ void UMcpProfile::DeleteProfile(struct FClientUrlContext* Context)
 
 void UMcpProfile::LockProfileForWrite(const class FString& Code, int32 Timeout, struct FDedicatedServerUrlContext* Context)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("McpProfile", "LockProfileForWrite");
+	class UFunction* Func = Class->GetFunction("McpProfile", "LockProfileForWrite");
 
 	Params::McpProfile_LockProfileForWrite Parms{};
 
@@ -106,10 +97,7 @@ void UMcpProfile::LockProfileForWrite(const class FString& Code, int32 Timeout, 
 
 void UMcpProfile::QueryProfile(struct FBaseUrlContext* Context)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("McpProfile", "QueryProfile");
+	class UFunction* Func = Class->GetFunction("McpProfile", "QueryProfile");
 
 	Params::McpProfile_QueryProfile Parms{};
 
@@ -132,10 +120,7 @@ void UMcpProfile::QueryProfile(struct FBaseUrlContext* Context)
 
 void UMcpProfile::QueryPublicProfile(struct FBaseUrlContext* Context)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("McpProfile", "QueryPublicProfile");
+	class UFunction* Func = Class->GetFunction("McpProfile", "QueryPublicProfile");
 
 	Params::McpProfile_QueryPublicProfile Parms{};
 
@@ -159,10 +144,7 @@ void UMcpProfile::QueryPublicProfile(struct FBaseUrlContext* Context)
 
 void UMcpProfile::UnlockProfileForWrite(const class FString& Code, struct FDedicatedServerUrlContext* Context)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("McpProfile", "UnlockProfileForWrite");
+	class UFunction* Func = Class->GetFunction("McpProfile", "UnlockProfileForWrite");
 
 	Params::McpProfile_UnlockProfileForWrite Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULoadingSubGameContentModal_C::ExecuteUbergraph_LoadingSubGameContentModal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoadingSubGameContentModal_C", "ExecuteUbergraph_LoadingSubGameContentModal");
+	class UFunction* Func = Class->GetFunction("LoadingSubGameContentModal_C", "ExecuteUbergraph_LoadingSubGameContentModal");
 
 	Params::LoadingSubGameContentModal_C_ExecuteUbergraph_LoadingSubGameContentModal Parms{};
 
@@ -41,10 +38,7 @@ void ULoadingSubGameContentModal_C::ExecuteUbergraph_LoadingSubGameContentModal(
 
 void ULoadingSubGameContentModal_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoadingSubGameContentModal_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("LoadingSubGameContentModal_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void ULoadingSubGameContentModal_C::OnInitialized()
 
 void ULoadingSubGameContentModal_C::OnUpdatedProgress(float Percent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoadingSubGameContentModal_C", "OnUpdatedProgress");
+	class UFunction* Func = Class->GetFunction("LoadingSubGameContentModal_C", "OnUpdatedProgress");
 
 	Params::LoadingSubGameContentModal_C_OnUpdatedProgress Parms{};
 

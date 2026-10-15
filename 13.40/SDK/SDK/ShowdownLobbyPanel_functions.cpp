@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UShowdownLobbyPanel_C::InputTypeChanged(bool isGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "InputTypeChanged");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "InputTypeChanged");
 
 	Params::ShowdownLobbyPanel_C_InputTypeChanged Parms{};
 
@@ -41,10 +38,7 @@ void UShowdownLobbyPanel_C::InputTypeChanged(bool isGamepad)
 
 void UShowdownLobbyPanel_C::HandleCrossplayChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "HandleCrossplayChanged");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "HandleCrossplayChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UShowdownLobbyPanel_C::HandleCrossplayChanged()
 
 void UShowdownLobbyPanel_C::UpdateColors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "UpdateColors");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "UpdateColors");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UShowdownLobbyPanel_C::UpdateColors()
 
 void UShowdownLobbyPanel_C::Refresh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "Refresh");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UShowdownLobbyPanel_C::Refresh()
 
 void UShowdownLobbyPanel_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UShowdownLobbyPanel_C::RefreshDataBP()
 
 void UShowdownLobbyPanel_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +95,7 @@ void UShowdownLobbyPanel_C::Construct()
 
 void UShowdownLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::ShowdownLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -131,10 +110,7 @@ void UShowdownLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEven
 
 void UShowdownLobbyPanel_C::EventColorize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "EventColorize");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "EventColorize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +123,7 @@ void UShowdownLobbyPanel_C::EventColorize()
 
 void UShowdownLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::ShowdownLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -167,10 +140,7 @@ void UShowdownLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEven
 
 void UShowdownLobbyPanel_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "PreConstruct");
 
 	Params::ShowdownLobbyPanel_C_PreConstruct Parms{};
 
@@ -187,10 +157,7 @@ void UShowdownLobbyPanel_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UShowdownLobbyPanel_C::BrandingToggle(bool hasBranding)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "BrandingToggle");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "BrandingToggle");
 
 	Params::ShowdownLobbyPanel_C_BrandingToggle Parms{};
 
@@ -207,10 +174,7 @@ void UShowdownLobbyPanel_C::BrandingToggle(bool hasBranding)
 
 void UShowdownLobbyPanel_C::EventSwitchUI(ECommonInputType bNewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "EventSwitchUI");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "EventSwitchUI");
 
 	Params::ShowdownLobbyPanel_C_EventSwitchUI Parms{};
 
@@ -227,10 +191,7 @@ void UShowdownLobbyPanel_C::EventSwitchUI(ECommonInputType bNewInputType)
 
 void UShowdownLobbyPanel_C::ExecuteUbergraph_ShowdownLobbyPanel(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyPanel_C", "ExecuteUbergraph_ShowdownLobbyPanel");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyPanel_C", "ExecuteUbergraph_ShowdownLobbyPanel");
 
 	Params::ShowdownLobbyPanel_C_ExecuteUbergraph_ShowdownLobbyPanel Parms{};
 

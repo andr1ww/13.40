@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 class UFXSystemComponent* UAnimNotify_PlayNiagaraEffect::GetSpawnedEffect() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimNotify_PlayNiagaraEffect", "GetSpawnedEffect");
+	class UFunction* Func = Class->GetFunction("AnimNotify_PlayNiagaraEffect", "GetSpawnedEffect");
 
 	Params::AnimNotify_PlayNiagaraEffect_GetSpawnedEffect Parms{};
 

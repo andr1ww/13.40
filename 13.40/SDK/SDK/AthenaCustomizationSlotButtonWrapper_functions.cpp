@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaCustomizationSlotButtonWrapper_C::ExecuteUbergraph_AthenaCustomizationSlotButtonWrapper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "ExecuteUbergraph_AthenaCustomizationSlotButtonWrapper");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "ExecuteUbergraph_AthenaCustomizationSlotButtonWrapper");
 
 	Params::AthenaCustomizationSlotButtonWrapper_C_ExecuteUbergraph_AthenaCustomizationSlotButtonWrapper Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaCustomizationSlotButtonWrapper_C::ExecuteUbergraph_AthenaCustomizati
 
 void UAthenaCustomizationSlotButtonWrapper_C::AnimPopulateInternal(int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "AnimPopulateInternal");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "AnimPopulateInternal");
 
 	Params::AthenaCustomizationSlotButtonWrapper_C_AnimPopulateInternal Parms{};
 
@@ -63,10 +57,7 @@ void UAthenaCustomizationSlotButtonWrapper_C::AnimPopulateInternal(int32 ButtonI
 
 void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_ComponentBoundEvent_47_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_47_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_47_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaCustomizationSlotButtonWrapper_C_BndEvt__SlotButton_K2Node_ComponentBoundEvent_47_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -83,10 +74,7 @@ void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_Componen
 
 void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaCustomizationSlotButtonWrapper_C_BndEvt__SlotButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -101,10 +89,7 @@ void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_Componen
 
 void UAthenaCustomizationSlotButtonWrapper_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +102,7 @@ void UAthenaCustomizationSlotButtonWrapper_C::Construct()
 
 void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaCustomizationSlotButtonWrapper_C_BndEvt__SlotButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -138,10 +120,7 @@ void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_Componen
 
 void UAthenaCustomizationSlotButtonWrapper_C::GetCustomizationSlotActiveState(bool* bCosmeticAvaialble, bool* bActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "GetCustomizationSlotActiveState");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "GetCustomizationSlotActiveState");
 
 	Params::AthenaCustomizationSlotButtonWrapper_C_GetCustomizationSlotActiveState Parms{};
 
@@ -160,10 +139,7 @@ void UAthenaCustomizationSlotButtonWrapper_C::GetCustomizationSlotActiveState(bo
 
 void UAthenaCustomizationSlotButtonWrapper_C::ResetPopulateAnimVisual()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "ResetPopulateAnimVisual");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "ResetPopulateAnimVisual");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void AFortAthenaMutator_Nitrogen::HandleGameStartCountdownEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "HandleGameStartCountdownEnd");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "HandleGameStartCountdownEnd");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -40,10 +37,7 @@ void AFortAthenaMutator_Nitrogen::HandleGameStartCountdownEnd()
 
 void AFortAthenaMutator_Nitrogen::HandleGroupTeleportComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "HandleGroupTeleportComplete");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "HandleGroupTeleportComplete");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -61,10 +55,7 @@ void AFortAthenaMutator_Nitrogen::HandleGroupTeleportComplete()
 
 void AFortAthenaMutator_Nitrogen::HandlePlayerTeleportComplete(class AFortPlayerStateAthena* PlayerState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "HandlePlayerTeleportComplete");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "HandlePlayerTeleportComplete");
 
 	Params::FortAthenaMutator_Nitrogen_HandlePlayerTeleportComplete Parms{};
 
@@ -86,10 +77,7 @@ void AFortAthenaMutator_Nitrogen::HandlePlayerTeleportComplete(class AFortPlayer
 
 void AFortAthenaMutator_Nitrogen::OnNitrogenVehicleDestroyed(class AActor* VehicleDestroyed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnNitrogenVehicleDestroyed");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnNitrogenVehicleDestroyed");
 
 	Params::FortAthenaMutator_Nitrogen_OnNitrogenVehicleDestroyed Parms{};
 
@@ -112,10 +100,7 @@ void AFortAthenaMutator_Nitrogen::OnNitrogenVehicleDestroyed(class AActor* Vehic
 
 void AFortAthenaMutator_Nitrogen::OnNitrogenVehicleDriverChanged(const class AFortPlayerControllerAthena* NewController, class AFortAthenaVehicle* Vehicle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnNitrogenVehicleDriverChanged");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnNitrogenVehicleDriverChanged");
 
 	Params::FortAthenaMutator_Nitrogen_OnNitrogenVehicleDriverChanged Parms{};
 
@@ -139,10 +124,7 @@ void AFortAthenaMutator_Nitrogen::OnNitrogenVehicleDriverChanged(const class AFo
 
 void AFortAthenaMutator_Nitrogen::OnNitrogenVehiclePlayerExit(const class AFortPlayerControllerAthena* PlayerController, class AFortAthenaVehicle* Vehicle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnNitrogenVehiclePlayerExit");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnNitrogenVehiclePlayerExit");
 
 	Params::FortAthenaMutator_Nitrogen_OnNitrogenVehiclePlayerExit Parms{};
 
@@ -163,10 +145,7 @@ void AFortAthenaMutator_Nitrogen::OnNitrogenVehiclePlayerExit(const class AFortP
 
 void AFortAthenaMutator_Nitrogen::OnRep_CurrentFares()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnRep_CurrentFares");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnRep_CurrentFares");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -182,10 +161,7 @@ void AFortAthenaMutator_Nitrogen::OnRep_CurrentFares()
 
 void AFortAthenaMutator_Nitrogen::OnRep_NitrogenGamePhase()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnRep_NitrogenGamePhase");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnRep_NitrogenGamePhase");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -201,10 +177,7 @@ void AFortAthenaMutator_Nitrogen::OnRep_NitrogenGamePhase()
 
 void AFortAthenaMutator_Nitrogen::OnRep_NitrogenSpawnInfo()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnRep_NitrogenSpawnInfo");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnRep_NitrogenSpawnInfo");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -220,10 +193,7 @@ void AFortAthenaMutator_Nitrogen::OnRep_NitrogenSpawnInfo()
 
 void AFortAthenaMutator_Nitrogen::OnRep_SortedTeamDataByScore()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnRep_SortedTeamDataByScore");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Nitrogen", "OnRep_SortedTeamDataByScore");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -239,10 +209,7 @@ void AFortAthenaMutator_Nitrogen::OnRep_SortedTeamDataByScore()
 
 void UFortCheatManager_Nitrogen::CompleteNitrogenFare()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheatManager_Nitrogen", "CompleteNitrogenFare");
+	class UFunction* Func = Class->GetFunction("FortCheatManager_Nitrogen", "CompleteNitrogenFare");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -258,10 +225,7 @@ void UFortCheatManager_Nitrogen::CompleteNitrogenFare()
 
 void UFortCheatManager_Nitrogen::SetNitrogenNavDestinationToCurrentLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheatManager_Nitrogen", "SetNitrogenNavDestinationToCurrentLocation");
+	class UFunction* Func = Class->GetFunction("FortCheatManager_Nitrogen", "SetNitrogenNavDestinationToCurrentLocation");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -280,10 +244,7 @@ void UFortCheatManager_Nitrogen::SetNitrogenNavDestinationToCurrentLocation()
 
 void UFortCheatManager_Nitrogen::SetNitrogenScore(const int32 Score, const uint8 ScoreReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheatManager_Nitrogen", "SetNitrogenScore");
+	class UFunction* Func = Class->GetFunction("FortCheatManager_Nitrogen", "SetNitrogenScore");
 
 	Params::FortCheatManager_Nitrogen_SetNitrogenScore Parms{};
 
@@ -307,10 +268,7 @@ void UFortCheatManager_Nitrogen::SetNitrogenScore(const int32 Score, const uint8
 
 void UFortCheatManager_Nitrogen::SpawnNitrogenFare(const float PickUpDistance, const float DropOffDistance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheatManager_Nitrogen", "SpawnNitrogenFare");
+	class UFunction* Func = Class->GetFunction("FortCheatManager_Nitrogen", "SpawnNitrogenFare");
 
 	Params::FortCheatManager_Nitrogen_SpawnNitrogenFare Parms{};
 
@@ -333,10 +291,7 @@ void UFortCheatManager_Nitrogen::SpawnNitrogenFare(const float PickUpDistance, c
 
 void UFortCheatManager_Nitrogen::TeleportToNitrogenRespawnActor(const int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheatManager_Nitrogen", "TeleportToNitrogenRespawnActor");
+	class UFunction* Func = Class->GetFunction("FortCheatManager_Nitrogen", "TeleportToNitrogenRespawnActor");
 
 	Params::FortCheatManager_Nitrogen_TeleportToNitrogenRespawnActor Parms{};
 
@@ -358,10 +313,7 @@ void UFortCheatManager_Nitrogen::TeleportToNitrogenRespawnActor(const int32 Inde
 
 void UFortCheatManager_Nitrogen::TeleportToNitrogenSpawnActor(const int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheatManager_Nitrogen", "TeleportToNitrogenSpawnActor");
+	class UFunction* Func = Class->GetFunction("FortCheatManager_Nitrogen", "TeleportToNitrogenSpawnActor");
 
 	Params::FortCheatManager_Nitrogen_TeleportToNitrogenSpawnActor Parms{};
 
@@ -385,10 +337,7 @@ void UFortCheatManager_Nitrogen::TeleportToNitrogenSpawnActor(const int32 Index_
 
 void UFortCheatManager_Nitrogen::TeleportToSquadStartAtIndex(const int32 Index_0, const struct FFortSquadStartSearchParamData& SearchParam, class FString* TeleportReasonString)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheatManager_Nitrogen", "TeleportToSquadStartAtIndex");
+	class UFunction* Func = Class->GetFunction("FortCheatManager_Nitrogen", "TeleportToSquadStartAtIndex");
 
 	Params::FortCheatManager_Nitrogen_TeleportToSquadStartAtIndex Parms{};
 
@@ -415,10 +364,7 @@ void UFortCheatManager_Nitrogen::TeleportToSquadStartAtIndex(const int32 Index_0
 
 void ANitrogenFare::DropOffPointOverlapped(class AAthenaTraversePoint* TraversePoint, class AFortPlayerStateAthena* PlayerState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFare", "DropOffPointOverlapped");
+	class UFunction* Func = Class->GetFunction("NitrogenFare", "DropOffPointOverlapped");
 
 	Params::NitrogenFare_DropOffPointOverlapped Parms{};
 
@@ -439,10 +385,7 @@ void ANitrogenFare::DropOffPointOverlapped(class AAthenaTraversePoint* TraverseP
 
 void ANitrogenFare::OnRep_PassengerPickedUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFare", "OnRep_PassengerPickedUp");
+	class UFunction* Func = Class->GetFunction("NitrogenFare", "OnRep_PassengerPickedUp");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -460,10 +403,7 @@ void ANitrogenFare::OnRep_PassengerPickedUp()
 
 void ANitrogenFare::OnVehicleDestroyed(class AFortDagwoodVehicle* DestroyedVehicle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFare", "OnVehicleDestroyed");
+	class UFunction* Func = Class->GetFunction("NitrogenFare", "OnVehicleDestroyed");
 
 	Params::NitrogenFare_OnVehicleDestroyed Parms{};
 
@@ -486,10 +426,7 @@ void ANitrogenFare::OnVehicleDestroyed(class AFortDagwoodVehicle* DestroyedVehic
 
 void ANitrogenFare::OnVehicleDriverChanged(const class AFortPlayerControllerAthena* NewDriver, class AFortAthenaVehicle* Vehicle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFare", "OnVehicleDriverChanged");
+	class UFunction* Func = Class->GetFunction("NitrogenFare", "OnVehicleDriverChanged");
 
 	Params::NitrogenFare_OnVehicleDriverChanged Parms{};
 
@@ -513,10 +450,7 @@ void ANitrogenFare::OnVehicleDriverChanged(const class AFortPlayerControllerAthe
 
 void ANitrogenFare::OnVehicleEndPlay(class AActor* DestroyedVehicle, EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFare", "OnVehicleEndPlay");
+	class UFunction* Func = Class->GetFunction("NitrogenFare", "OnVehicleEndPlay");
 
 	Params::NitrogenFare_OnVehicleEndPlay Parms{};
 
@@ -540,10 +474,7 @@ void ANitrogenFare::OnVehicleEndPlay(class AActor* DestroyedVehicle, EEndPlayRea
 
 void ANitrogenFare::PickUpPointOverlapped(class AAthenaTraversePoint* TraversePoint, class AFortPlayerStateAthena* PlayerState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFare", "PickUpPointOverlapped");
+	class UFunction* Func = Class->GetFunction("NitrogenFare", "PickUpPointOverlapped");
 
 	Params::NitrogenFare_PickUpPointOverlapped Parms{};
 
@@ -566,10 +497,7 @@ void ANitrogenFare::PickUpPointOverlapped(class AAthenaTraversePoint* TraversePo
 
 const int32 ANitrogenFare::GetRewardValue() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFare", "GetRewardValue");
+	class UFunction* Func = Class->GetFunction("NitrogenFare", "GetRewardValue");
 
 	Params::NitrogenFare_GetRewardValue Parms{};
 
@@ -596,10 +524,7 @@ const int32 ANitrogenFare::GetRewardValue() const
 
 void ANitrogenPickup::OnNitrogenPickupOverlapped(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPickup", "OnNitrogenPickupOverlapped");
+	class UFunction* Func = Class->GetFunction("NitrogenPickup", "OnNitrogenPickupOverlapped");
 
 	Params::NitrogenPickup_OnNitrogenPickupOverlapped Parms{};
 
@@ -624,10 +549,7 @@ void ANitrogenPickup::OnNitrogenPickupOverlapped(class UPrimitiveComponent* Over
 
 void ANitrogenPickup::OnRep_TeamHidden()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPickup", "OnRep_TeamHidden");
+	class UFunction* Func = Class->GetFunction("NitrogenPickup", "OnRep_TeamHidden");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -645,10 +567,7 @@ void ANitrogenPickup::OnRep_TeamHidden()
 
 void ANitrogenFareValueIndicator::OnFareIndicatorValueChanged(const uint8 NewIndicatorValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareValueIndicator", "OnFareIndicatorValueChanged");
+	class UFunction* Func = Class->GetFunction("NitrogenFareValueIndicator", "OnFareIndicatorValueChanged");
 
 	Params::NitrogenFareValueIndicator_OnFareIndicatorValueChanged Parms{};
 
@@ -663,10 +582,7 @@ void ANitrogenFareValueIndicator::OnFareIndicatorValueChanged(const uint8 NewInd
 
 void ANitrogenFareValueIndicator::OnRep_IndicatorValue()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareValueIndicator", "OnRep_IndicatorValue");
+	class UFunction* Func = Class->GetFunction("NitrogenFareValueIndicator", "OnRep_IndicatorValue");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -682,10 +598,7 @@ void ANitrogenFareValueIndicator::OnRep_IndicatorValue()
 
 void ANitrogenNavArrow::RecallArrowToOwner()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenNavArrow", "RecallArrowToOwner");
+	class UFunction* Func = Class->GetFunction("NitrogenNavArrow", "RecallArrowToOwner");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -701,10 +614,7 @@ void ANitrogenNavArrow::RecallArrowToOwner()
 
 void ANitrogenNavArrow::ThrowArrowToDestination()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenNavArrow", "ThrowArrowToDestination");
+	class UFunction* Func = Class->GetFunction("NitrogenNavArrow", "ThrowArrowToDestination");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -720,10 +630,7 @@ void ANitrogenNavArrow::ThrowArrowToDestination()
 
 void ANitrogenNavArrow::UpdatePrimaryColorForDistance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenNavArrow", "UpdatePrimaryColorForDistance");
+	class UFunction* Func = Class->GetFunction("NitrogenNavArrow", "UpdatePrimaryColorForDistance");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -739,10 +646,7 @@ void ANitrogenNavArrow::UpdatePrimaryColorForDistance()
 
 void ANitrogenNavArrow::UpdatePulseSpeedForDistance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenNavArrow", "UpdatePulseSpeedForDistance");
+	class UFunction* Func = Class->GetFunction("NitrogenNavArrow", "UpdatePulseSpeedForDistance");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -760,10 +664,7 @@ void ANitrogenNavArrow::UpdatePulseSpeedForDistance()
 
 void UNitrogenPassengerPawnComponent::ClientHandleFinishedCharacterCustomization(class AFortPlayerPawn* PlayerPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPassengerPawnComponent", "ClientHandleFinishedCharacterCustomization");
+	class UFunction* Func = Class->GetFunction("NitrogenPassengerPawnComponent", "ClientHandleFinishedCharacterCustomization");
 
 	Params::NitrogenPassengerPawnComponent_ClientHandleFinishedCharacterCustomization Parms{};
 
@@ -783,10 +684,7 @@ void UNitrogenPassengerPawnComponent::ClientHandleFinishedCharacterCustomization
 
 void UNitrogenPassengerPawnComponent::ClientPlayDeathEffects()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPassengerPawnComponent", "ClientPlayDeathEffects");
+	class UFunction* Func = Class->GetFunction("NitrogenPassengerPawnComponent", "ClientPlayDeathEffects");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -797,10 +695,7 @@ void UNitrogenPassengerPawnComponent::ClientPlayDeathEffects()
 
 void UNitrogenPassengerPawnComponent::OnRep_FareValueIndicator()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPassengerPawnComponent", "OnRep_FareValueIndicator");
+	class UFunction* Func = Class->GetFunction("NitrogenPassengerPawnComponent", "OnRep_FareValueIndicator");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -816,10 +711,7 @@ void UNitrogenPassengerPawnComponent::OnRep_FareValueIndicator()
 
 void UNitrogenPassengerPawnComponent::OnRep_PassengerState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPassengerPawnComponent", "OnRep_PassengerState");
+	class UFunction* Func = Class->GetFunction("NitrogenPassengerPawnComponent", "OnRep_PassengerState");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -835,10 +727,7 @@ void UNitrogenPassengerPawnComponent::OnRep_PassengerState()
 
 void ANitrogenFareDataRepActor::OnRep_FareRepData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareDataRepActor", "OnRep_FareRepData");
+	class UFunction* Func = Class->GetFunction("NitrogenFareDataRepActor", "OnRep_FareRepData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -858,10 +747,7 @@ void ANitrogenFareDataRepActor::OnRep_FareRepData()
 
 void UNitrogenPlayerComponent::ClientHandleLoadingScreenStateChanged(class AFortPlayerControllerAthena* PlayerController, bool bEnableLoadScreen, const class FText& HUDReasonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "ClientHandleLoadingScreenStateChanged");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "ClientHandleLoadingScreenStateChanged");
 
 	Params::NitrogenPlayerComponent_ClientHandleLoadingScreenStateChanged Parms{};
 
@@ -886,10 +772,7 @@ void UNitrogenPlayerComponent::ClientHandleLoadingScreenStateChanged(class AFort
 
 void UNitrogenPlayerComponent::HandleVehicleDestroyedBuildingActor(class AFortAthenaVehicle* Vehicle, class ABuildingActor* BuildingActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "HandleVehicleDestroyedBuildingActor");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "HandleVehicleDestroyedBuildingActor");
 
 	Params::NitrogenPlayerComponent_HandleVehicleDestroyedBuildingActor Parms{};
 
@@ -910,10 +793,7 @@ void UNitrogenPlayerComponent::HandleVehicleDestroyedBuildingActor(class AFortAt
 
 void UNitrogenPlayerComponent::OnEnterVehicleDriver()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "OnEnterVehicleDriver");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "OnEnterVehicleDriver");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -929,10 +809,7 @@ void UNitrogenPlayerComponent::OnEnterVehicleDriver()
 
 void UNitrogenPlayerComponent::OnEnterVehiclePassenger()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "OnEnterVehiclePassenger");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "OnEnterVehiclePassenger");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -948,10 +825,7 @@ void UNitrogenPlayerComponent::OnEnterVehiclePassenger()
 
 void UNitrogenPlayerComponent::OnExitVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "OnExitVehicle");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "OnExitVehicle");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -967,10 +841,7 @@ void UNitrogenPlayerComponent::OnExitVehicle()
 
 void UNitrogenPlayerComponent::OnGameStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "OnGameStarted");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "OnGameStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -983,10 +854,7 @@ void UNitrogenPlayerComponent::OnGameStarted()
 
 void UNitrogenPlayerComponent::OnNitrogenGamePhaseChanged(ENitrogenGamePhase NewGamePhase)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "OnNitrogenGamePhaseChanged");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "OnNitrogenGamePhaseChanged");
 
 	Params::NitrogenPlayerComponent_OnNitrogenGamePhaseChanged Parms{};
 
@@ -1006,10 +874,7 @@ void UNitrogenPlayerComponent::OnNitrogenGamePhaseChanged(ENitrogenGamePhase New
 
 void UNitrogenPlayerComponent::OnRep_CachedMutator()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "OnRep_CachedMutator");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "OnRep_CachedMutator");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1025,10 +890,7 @@ void UNitrogenPlayerComponent::OnRep_CachedMutator()
 
 void UNitrogenPlayerComponent::OnRep_FareDataRepActor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "OnRep_FareDataRepActor");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "OnRep_FareDataRepActor");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1046,10 +908,7 @@ void UNitrogenPlayerComponent::OnRep_FareDataRepActor()
 
 float UNitrogenPlayerComponent::GetDistanceFromClosestPassenger() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "GetDistanceFromClosestPassenger");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "GetDistanceFromClosestPassenger");
 
 	Params::NitrogenPlayerComponent_GetDistanceFromClosestPassenger Parms{};
 
@@ -1071,10 +930,7 @@ float UNitrogenPlayerComponent::GetDistanceFromClosestPassenger() const
 
 float UNitrogenPlayerComponent::GetDistanceFromDropOff() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlayerComponent", "GetDistanceFromDropOff");
+	class UFunction* Func = Class->GetFunction("NitrogenPlayerComponent", "GetDistanceFromDropOff");
 
 	Params::NitrogenPlayerComponent_GetDistanceFromDropOff Parms{};
 
@@ -1096,10 +952,7 @@ float UNitrogenPlayerComponent::GetDistanceFromDropOff() const
 
 void ANitrogenTraversePoint::OnClientInteracted(bool bOwnedByClient)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenTraversePoint", "OnClientInteracted");
+	class UFunction* Func = Class->GetFunction("NitrogenTraversePoint", "OnClientInteracted");
 
 	Params::NitrogenTraversePoint_OnClientInteracted Parms{};
 
@@ -1116,10 +969,7 @@ void ANitrogenTraversePoint::OnClientInteracted(bool bOwnedByClient)
 
 void ANitrogenTraversePoint::OnClientVisibiltyUpdated(bool bNewHidden)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenTraversePoint", "OnClientVisibiltyUpdated");
+	class UFunction* Func = Class->GetFunction("NitrogenTraversePoint", "OnClientVisibiltyUpdated");
 
 	Params::NitrogenTraversePoint_OnClientVisibiltyUpdated Parms{};
 
@@ -1140,10 +990,7 @@ void ANitrogenTraversePoint::OnClientVisibiltyUpdated(bool bNewHidden)
 
 void UNitrogenVehicleComponent::HandleVehicleOnHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenVehicleComponent", "HandleVehicleOnHit");
+	class UFunction* Func = Class->GetFunction("NitrogenVehicleComponent", "HandleVehicleOnHit");
 
 	Params::NitrogenVehicleComponent_HandleVehicleOnHit Parms{};
 
@@ -1169,10 +1016,7 @@ void UNitrogenVehicleComponent::HandleVehicleOnHit(class UPrimitiveComponent* Hi
 
 void UNitrogenVehicleComponent::SetBoostFXActive(const bool bActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenVehicleComponent", "SetBoostFXActive");
+	class UFunction* Func = Class->GetFunction("NitrogenVehicleComponent", "SetBoostFXActive");
 
 	Params::NitrogenVehicleComponent_SetBoostFXActive Parms{};
 
@@ -1194,10 +1038,7 @@ void UNitrogenVehicleComponent::SetBoostFXActive(const bool bActive)
 
 void UNitrogenVehicleComponent::TimelineBoostFXUpdate_JetFlamesHeight(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenVehicleComponent", "TimelineBoostFXUpdate_JetFlamesHeight");
+	class UFunction* Func = Class->GetFunction("NitrogenVehicleComponent", "TimelineBoostFXUpdate_JetFlamesHeight");
 
 	Params::NitrogenVehicleComponent_TimelineBoostFXUpdate_JetFlamesHeight Parms{};
 
@@ -1219,10 +1060,7 @@ void UNitrogenVehicleComponent::TimelineBoostFXUpdate_JetFlamesHeight(float Valu
 
 void UNitrogenVehicleComponent::TimelineBoostFXUpdate_JetSparksCounts(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenVehicleComponent", "TimelineBoostFXUpdate_JetSparksCounts");
+	class UFunction* Func = Class->GetFunction("NitrogenVehicleComponent", "TimelineBoostFXUpdate_JetSparksCounts");
 
 	Params::NitrogenVehicleComponent_TimelineBoostFXUpdate_JetSparksCounts Parms{};
 
@@ -1244,10 +1082,7 @@ void UNitrogenVehicleComponent::TimelineBoostFXUpdate_JetSparksCounts(float Valu
 
 bool UNitrogenVehicleComponent::IsVehicleUnderCleanupWaterDepth() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenVehicleComponent", "IsVehicleUnderCleanupWaterDepth");
+	class UFunction* Func = Class->GetFunction("NitrogenVehicleComponent", "IsVehicleUnderCleanupWaterDepth");
 
 	Params::NitrogenVehicleComponent_IsVehicleUnderCleanupWaterDepth Parms{};
 

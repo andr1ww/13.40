@@ -20,10 +20,7 @@ SDK_NAMESPACE_START
 
 void UFortHoagieVehicleReticle::OnSetupComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortHoagieVehicleReticle", "OnSetupComplete");
+	class UFunction* Func = Class->GetFunction("FortHoagieVehicleReticle", "OnSetupComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

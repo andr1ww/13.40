@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UUserActionMenu_C::ExecuteUbergraph_UserActionMenu(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserActionMenu_C", "ExecuteUbergraph_UserActionMenu");
+	class UFunction* Func = Class->GetFunction("UserActionMenu_C", "ExecuteUbergraph_UserActionMenu");
 
 	Params::UserActionMenu_C_ExecuteUbergraph_UserActionMenu Parms{};
 
@@ -41,10 +38,7 @@ void UUserActionMenu_C::ExecuteUbergraph_UserActionMenu(int32 EntryPoint)
 
 void UUserActionMenu_C::OnOpened()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserActionMenu_C", "OnOpened");
+	class UFunction* Func = Class->GetFunction("UserActionMenu_C", "OnOpened");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UUserActionMenu_C::OnOpened()
 
 void UUserActionMenu_C::OnToggleConfirmation(bool bIsVisible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserActionMenu_C", "OnToggleConfirmation");
+	class UFunction* Func = Class->GetFunction("UserActionMenu_C", "OnToggleConfirmation");
 
 	Params::UserActionMenu_C_OnToggleConfirmation Parms{};
 

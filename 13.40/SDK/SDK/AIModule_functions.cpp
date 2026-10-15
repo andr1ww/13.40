@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UAISense_Prediction::RequestControllerPredictionEvent(class AAIController* Requestor, class AActor* PredictedActor, float PredictionTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AISense_Prediction", "RequestControllerPredictionEvent");
+	class UFunction* Func = StaticClass()->GetFunction("AISense_Prediction", "RequestControllerPredictionEvent");
 
 	Params::AISense_Prediction_RequestControllerPredictionEvent Parms{};
 
@@ -54,10 +51,7 @@ void UAISense_Prediction::RequestControllerPredictionEvent(class AAIController* 
 
 void UAISense_Prediction::RequestPawnPredictionEvent(class APawn* Requestor, class AActor* PredictedActor, float PredictionTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AISense_Prediction", "RequestPawnPredictionEvent");
+	class UFunction* Func = StaticClass()->GetFunction("AISense_Prediction", "RequestPawnPredictionEvent");
 
 	Params::AISense_Prediction_RequestPawnPredictionEvent Parms{};
 
@@ -79,10 +73,7 @@ void UAISense_Prediction::RequestPawnPredictionEvent(class APawn* Requestor, cla
 
 void UBrainComponent::RestartLogic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BrainComponent", "RestartLogic");
+	class UFunction* Func = Class->GetFunction("BrainComponent", "RestartLogic");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -98,10 +89,7 @@ void UBrainComponent::RestartLogic()
 
 void UBrainComponent::StartLogic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BrainComponent", "StartLogic");
+	class UFunction* Func = Class->GetFunction("BrainComponent", "StartLogic");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -119,10 +107,7 @@ void UBrainComponent::StartLogic()
 
 void UBrainComponent::StopLogic(const class FString& Reason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BrainComponent", "StopLogic");
+	class UFunction* Func = Class->GetFunction("BrainComponent", "StopLogic");
 
 	Params::BrainComponent_StopLogic Parms{};
 
@@ -144,10 +129,7 @@ void UBrainComponent::StopLogic(const class FString& Reason)
 
 bool UBrainComponent::IsPaused() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BrainComponent", "IsPaused");
+	class UFunction* Func = Class->GetFunction("BrainComponent", "IsPaused");
 
 	Params::BrainComponent_IsPaused Parms{};
 
@@ -169,10 +151,7 @@ bool UBrainComponent::IsPaused() const
 
 bool UBrainComponent::IsRunning() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BrainComponent", "IsRunning");
+	class UFunction* Func = Class->GetFunction("BrainComponent", "IsRunning");
 
 	Params::BrainComponent_IsRunning Parms{};
 
@@ -196,10 +175,7 @@ bool UBrainComponent::IsRunning() const
 
 void UBehaviorTreeComponent::AddCooldownTagDuration(const struct FGameplayTag& CooldownTag, float CooldownDuration, bool bAddToExistingDuration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BehaviorTreeComponent", "AddCooldownTagDuration");
+	class UFunction* Func = Class->GetFunction("BehaviorTreeComponent", "AddCooldownTagDuration");
 
 	Params::BehaviorTreeComponent_AddCooldownTagDuration Parms{};
 
@@ -224,10 +200,7 @@ void UBehaviorTreeComponent::AddCooldownTagDuration(const struct FGameplayTag& C
 
 void UBehaviorTreeComponent::SetDynamicSubtree(const struct FGameplayTag& InjectTag, class UBehaviorTree* BehaviorAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BehaviorTreeComponent", "SetDynamicSubtree");
+	class UFunction* Func = Class->GetFunction("BehaviorTreeComponent", "SetDynamicSubtree");
 
 	Params::BehaviorTreeComponent_SetDynamicSubtree Parms{};
 
@@ -251,10 +224,7 @@ void UBehaviorTreeComponent::SetDynamicSubtree(const struct FGameplayTag& Inject
 
 float UBehaviorTreeComponent::GetTagCooldownEndTime(const struct FGameplayTag& CooldownTag) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BehaviorTreeComponent", "GetTagCooldownEndTime");
+	class UFunction* Func = Class->GetFunction("BehaviorTreeComponent", "GetTagCooldownEndTime");
 
 	Params::BehaviorTreeComponent_GetTagCooldownEndTime Parms{};
 
@@ -280,10 +250,7 @@ float UBehaviorTreeComponent::GetTagCooldownEndTime(const struct FGameplayTag& C
 
 class UPawnAction* UPawnAction::CreateActionInstance(class UObject* WorldContextObject, TSubclassOf<class UPawnAction> ActionClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("PawnAction", "CreateActionInstance");
+	class UFunction* Func = StaticClass()->GetFunction("PawnAction", "CreateActionInstance");
 
 	Params::PawnAction_CreateActionInstance Parms{};
 
@@ -308,10 +275,7 @@ class UPawnAction* UPawnAction::CreateActionInstance(class UObject* WorldContext
 
 void UPawnAction::Finish(EPawnActionResult WithResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnAction", "Finish");
+	class UFunction* Func = Class->GetFunction("PawnAction", "Finish");
 
 	Params::PawnAction_Finish Parms{};
 
@@ -333,10 +297,7 @@ void UPawnAction::Finish(EPawnActionResult WithResult)
 
 EAIRequestPriority UPawnAction::GetActionPriority()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnAction", "GetActionPriority");
+	class UFunction* Func = Class->GetFunction("PawnAction", "GetActionPriority");
 
 	Params::PawnAction_GetActionPriority Parms{};
 
@@ -359,10 +320,7 @@ EAIRequestPriority UPawnAction::GetActionPriority()
 
 void UPawnAction_BlueprintBase::ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionFinished");
+	class UFunction* Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionFinished");
 
 	Params::PawnAction_BlueprintBase_ActionFinished Parms{};
 
@@ -380,10 +338,7 @@ void UPawnAction_BlueprintBase::ActionFinished(class APawn* ControlledPawn, EPaw
 
 void UPawnAction_BlueprintBase::ActionPause(class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionPause");
+	class UFunction* Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionPause");
 
 	Params::PawnAction_BlueprintBase_ActionPause Parms{};
 
@@ -400,10 +355,7 @@ void UPawnAction_BlueprintBase::ActionPause(class APawn* ControlledPawn)
 
 void UPawnAction_BlueprintBase::ActionResume(class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionResume");
+	class UFunction* Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionResume");
 
 	Params::PawnAction_BlueprintBase_ActionResume Parms{};
 
@@ -420,10 +372,7 @@ void UPawnAction_BlueprintBase::ActionResume(class APawn* ControlledPawn)
 
 void UPawnAction_BlueprintBase::ActionStart(class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionStart");
+	class UFunction* Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionStart");
 
 	Params::PawnAction_BlueprintBase_ActionStart Parms{};
 
@@ -441,10 +390,7 @@ void UPawnAction_BlueprintBase::ActionStart(class APawn* ControlledPawn)
 
 void UPawnAction_BlueprintBase::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionTick");
+	class UFunction* Func = Class->GetFunction("PawnAction_BlueprintBase", "ActionTick");
 
 	Params::PawnAction_BlueprintBase_ActionTick Parms{};
 
@@ -463,10 +409,7 @@ void UPawnAction_BlueprintBase::ActionTick(class APawn* ControlledPawn, float De
 
 bool UBTDecorator_BlueprintBase::PerformConditionCheck(class AActor* OwnerActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "PerformConditionCheck");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "PerformConditionCheck");
 
 	Params::BTDecorator_BlueprintBase_PerformConditionCheck Parms{};
 
@@ -487,10 +430,7 @@ bool UBTDecorator_BlueprintBase::PerformConditionCheck(class AActor* OwnerActor)
 
 bool UBTDecorator_BlueprintBase::PerformConditionCheckAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "PerformConditionCheckAI");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "PerformConditionCheckAI");
 
 	Params::BTDecorator_BlueprintBase_PerformConditionCheckAI Parms{};
 
@@ -511,10 +451,7 @@ bool UBTDecorator_BlueprintBase::PerformConditionCheckAI(class AAIController* Ow
 
 void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(class AActor* OwnerActor, EBTNodeResult NodeResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveExecutionFinish");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveExecutionFinish");
 
 	Params::BTDecorator_BlueprintBase_ReceiveExecutionFinish Parms{};
 
@@ -534,10 +471,7 @@ void UBTDecorator_BlueprintBase::ReceiveExecutionFinish(class AActor* OwnerActor
 
 void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(class AAIController* OwnerController, class APawn* ControlledPawn, EBTNodeResult NodeResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveExecutionFinishAI");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveExecutionFinishAI");
 
 	Params::BTDecorator_BlueprintBase_ReceiveExecutionFinishAI Parms{};
 
@@ -556,10 +490,7 @@ void UBTDecorator_BlueprintBase::ReceiveExecutionFinishAI(class AAIController* O
 
 void UBTDecorator_BlueprintBase::ReceiveExecutionStart(class AActor* OwnerActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveExecutionStart");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveExecutionStart");
 
 	Params::BTDecorator_BlueprintBase_ReceiveExecutionStart Parms{};
 
@@ -577,10 +508,7 @@ void UBTDecorator_BlueprintBase::ReceiveExecutionStart(class AActor* OwnerActor)
 
 void UBTDecorator_BlueprintBase::ReceiveExecutionStartAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveExecutionStartAI");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveExecutionStartAI");
 
 	Params::BTDecorator_BlueprintBase_ReceiveExecutionStartAI Parms{};
 
@@ -598,10 +526,7 @@ void UBTDecorator_BlueprintBase::ReceiveExecutionStartAI(class AAIController* Ow
 
 void UBTDecorator_BlueprintBase::ReceiveObserverActivated(class AActor* OwnerActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveObserverActivated");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveObserverActivated");
 
 	Params::BTDecorator_BlueprintBase_ReceiveObserverActivated Parms{};
 
@@ -619,10 +544,7 @@ void UBTDecorator_BlueprintBase::ReceiveObserverActivated(class AActor* OwnerAct
 
 void UBTDecorator_BlueprintBase::ReceiveObserverActivatedAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveObserverActivatedAI");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveObserverActivatedAI");
 
 	Params::BTDecorator_BlueprintBase_ReceiveObserverActivatedAI Parms{};
 
@@ -640,10 +562,7 @@ void UBTDecorator_BlueprintBase::ReceiveObserverActivatedAI(class AAIController*
 
 void UBTDecorator_BlueprintBase::ReceiveObserverDeactivated(class AActor* OwnerActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveObserverDeactivated");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveObserverDeactivated");
 
 	Params::BTDecorator_BlueprintBase_ReceiveObserverDeactivated Parms{};
 
@@ -661,10 +580,7 @@ void UBTDecorator_BlueprintBase::ReceiveObserverDeactivated(class AActor* OwnerA
 
 void UBTDecorator_BlueprintBase::ReceiveObserverDeactivatedAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveObserverDeactivatedAI");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveObserverDeactivatedAI");
 
 	Params::BTDecorator_BlueprintBase_ReceiveObserverDeactivatedAI Parms{};
 
@@ -683,10 +599,7 @@ void UBTDecorator_BlueprintBase::ReceiveObserverDeactivatedAI(class AAIControlle
 
 void UBTDecorator_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveTick");
 
 	Params::BTDecorator_BlueprintBase_ReceiveTick Parms{};
 
@@ -706,10 +619,7 @@ void UBTDecorator_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float Del
 
 void UBTDecorator_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveTickAI");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "ReceiveTickAI");
 
 	Params::BTDecorator_BlueprintBase_ReceiveTickAI Parms{};
 
@@ -728,10 +638,7 @@ void UBTDecorator_BlueprintBase::ReceiveTickAI(class AAIController* OwnerControl
 
 bool UBTDecorator_BlueprintBase::IsDecoratorExecutionActive() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "IsDecoratorExecutionActive");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "IsDecoratorExecutionActive");
 
 	Params::BTDecorator_BlueprintBase_IsDecoratorExecutionActive Parms{};
 
@@ -753,10 +660,7 @@ bool UBTDecorator_BlueprintBase::IsDecoratorExecutionActive() const
 
 bool UBTDecorator_BlueprintBase::IsDecoratorObserverActive() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTDecorator_BlueprintBase", "IsDecoratorObserverActive");
+	class UFunction* Func = Class->GetFunction("BTDecorator_BlueprintBase", "IsDecoratorObserverActive");
 
 	Params::BTDecorator_BlueprintBase_IsDecoratorObserverActive Parms{};
 
@@ -778,10 +682,7 @@ bool UBTDecorator_BlueprintBase::IsDecoratorObserverActive() const
 
 void AAIController::ClaimTaskResource(TSubclassOf<class UGameplayTaskResource> ResourceClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "ClaimTaskResource");
+	class UFunction* Func = Class->GetFunction("AIController", "ClaimTaskResource");
 
 	Params::AIController_ClaimTaskResource Parms{};
 
@@ -803,10 +704,7 @@ void AAIController::ClaimTaskResource(TSubclassOf<class UGameplayTaskResource> R
 
 class UAIPerceptionComponent* AAIController::GetAIPerceptionComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "GetAIPerceptionComponent");
+	class UFunction* Func = Class->GetFunction("AIController", "GetAIPerceptionComponent");
 
 	Params::AIController_GetAIPerceptionComponent Parms{};
 
@@ -826,10 +724,7 @@ class UAIPerceptionComponent* AAIController::GetAIPerceptionComponent()
 
 void AAIController::K2_ClearFocus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "K2_ClearFocus");
+	class UFunction* Func = Class->GetFunction("AIController", "K2_ClearFocus");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -847,10 +742,7 @@ void AAIController::K2_ClearFocus()
 
 void AAIController::K2_SetFocalPoint(const struct FVector& FP)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "K2_SetFocalPoint");
+	class UFunction* Func = Class->GetFunction("AIController", "K2_SetFocalPoint");
 
 	Params::AIController_K2_SetFocalPoint Parms{};
 
@@ -872,10 +764,7 @@ void AAIController::K2_SetFocalPoint(const struct FVector& FP)
 
 void AAIController::K2_SetFocus(class AActor* NewFocus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "K2_SetFocus");
+	class UFunction* Func = Class->GetFunction("AIController", "K2_SetFocus");
 
 	Params::AIController_K2_SetFocus Parms{};
 
@@ -904,10 +793,7 @@ void AAIController::K2_SetFocus(class AActor* NewFocus)
 
 EPathFollowingRequestResult AAIController::MoveToActor(class AActor* Goal, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bCanStrafe, TSubclassOf<class UNavigationQueryFilter> FilterClass, bool bAllowPartialPath)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "MoveToActor");
+	class UFunction* Func = Class->GetFunction("AIController", "MoveToActor");
 
 	Params::AIController_MoveToActor Parms{};
 
@@ -945,10 +831,7 @@ EPathFollowingRequestResult AAIController::MoveToActor(class AActor* Goal, float
 
 EPathFollowingRequestResult AAIController::MoveToLocation(const struct FVector& Dest, float AcceptanceRadius, bool bStopOnOverlap, bool bUsePathfinding, bool bProjectDestinationToNavigation, bool bCanStrafe, TSubclassOf<class UNavigationQueryFilter> FilterClass, bool bAllowPartialPath)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "MoveToLocation");
+	class UFunction* Func = Class->GetFunction("AIController", "MoveToLocation");
 
 	Params::AIController_MoveToLocation Parms{};
 
@@ -980,10 +863,7 @@ EPathFollowingRequestResult AAIController::MoveToLocation(const struct FVector& 
 
 void AAIController::OnGameplayTaskResourcesClaimed(const struct FGameplayResourceSet& NewlyClaimed, const struct FGameplayResourceSet& FreshlyReleased)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "OnGameplayTaskResourcesClaimed");
+	class UFunction* Func = Class->GetFunction("AIController", "OnGameplayTaskResourcesClaimed");
 
 	Params::AIController_OnGameplayTaskResourcesClaimed Parms{};
 
@@ -1007,10 +887,7 @@ void AAIController::OnGameplayTaskResourcesClaimed(const struct FGameplayResourc
 
 void AAIController::OnUsingBlackBoard(class UBlackboardComponent* BlackboardComp, class UBlackboardData* BlackboardAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "OnUsingBlackBoard");
+	class UFunction* Func = Class->GetFunction("AIController", "OnUsingBlackBoard");
 
 	Params::AIController_OnUsingBlackBoard Parms{};
 
@@ -1029,10 +906,7 @@ void AAIController::OnUsingBlackBoard(class UBlackboardComponent* BlackboardComp
 
 bool AAIController::RunBehaviorTree(class UBehaviorTree* BTAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "RunBehaviorTree");
+	class UFunction* Func = Class->GetFunction("AIController", "RunBehaviorTree");
 
 	Params::AIController_RunBehaviorTree Parms{};
 
@@ -1056,10 +930,7 @@ bool AAIController::RunBehaviorTree(class UBehaviorTree* BTAsset)
 
 void AAIController::SetMoveBlockDetection(bool bEnable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "SetMoveBlockDetection");
+	class UFunction* Func = Class->GetFunction("AIController", "SetMoveBlockDetection");
 
 	Params::AIController_SetMoveBlockDetection Parms{};
 
@@ -1081,10 +952,7 @@ void AAIController::SetMoveBlockDetection(bool bEnable)
 
 void AAIController::SetPathFollowingComponent(class UPathFollowingComponent* NewPFComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "SetPathFollowingComponent");
+	class UFunction* Func = Class->GetFunction("AIController", "SetPathFollowingComponent");
 
 	Params::AIController_SetPathFollowingComponent Parms{};
 
@@ -1106,10 +974,7 @@ void AAIController::SetPathFollowingComponent(class UPathFollowingComponent* New
 
 void AAIController::UnclaimTaskResource(TSubclassOf<class UGameplayTaskResource> ResourceClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "UnclaimTaskResource");
+	class UFunction* Func = Class->GetFunction("AIController", "UnclaimTaskResource");
 
 	Params::AIController_UnclaimTaskResource Parms{};
 
@@ -1133,10 +998,7 @@ void AAIController::UnclaimTaskResource(TSubclassOf<class UGameplayTaskResource>
 
 bool AAIController::UseBlackboard(class UBlackboardData* BlackboardAsset, class UBlackboardComponent** BlackboardComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "UseBlackboard");
+	class UFunction* Func = Class->GetFunction("AIController", "UseBlackboard");
 
 	Params::AIController_UseBlackboard Parms{};
 
@@ -1163,10 +1025,7 @@ bool AAIController::UseBlackboard(class UBlackboardData* BlackboardAsset, class 
 
 struct FVector AAIController::GetFocalPoint() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "GetFocalPoint");
+	class UFunction* Func = Class->GetFunction("AIController", "GetFocalPoint");
 
 	Params::AIController_GetFocalPoint Parms{};
 
@@ -1189,10 +1048,7 @@ struct FVector AAIController::GetFocalPoint() const
 
 struct FVector AAIController::GetFocalPointOnActor(const class AActor* Actor) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "GetFocalPointOnActor");
+	class UFunction* Func = Class->GetFunction("AIController", "GetFocalPointOnActor");
 
 	Params::AIController_GetFocalPointOnActor Parms{};
 
@@ -1216,10 +1072,7 @@ struct FVector AAIController::GetFocalPointOnActor(const class AActor* Actor) co
 
 class AActor* AAIController::GetFocusActor() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "GetFocusActor");
+	class UFunction* Func = Class->GetFunction("AIController", "GetFocusActor");
 
 	Params::AIController_GetFocusActor Parms{};
 
@@ -1241,10 +1094,7 @@ class AActor* AAIController::GetFocusActor() const
 
 struct FVector AAIController::GetImmediateMoveDestination() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "GetImmediateMoveDestination");
+	class UFunction* Func = Class->GetFunction("AIController", "GetImmediateMoveDestination");
 
 	Params::AIController_GetImmediateMoveDestination Parms{};
 
@@ -1266,10 +1116,7 @@ struct FVector AAIController::GetImmediateMoveDestination() const
 
 EPathFollowingStatus AAIController::GetMoveStatus() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "GetMoveStatus");
+	class UFunction* Func = Class->GetFunction("AIController", "GetMoveStatus");
 
 	Params::AIController_GetMoveStatus Parms{};
 
@@ -1291,10 +1138,7 @@ EPathFollowingStatus AAIController::GetMoveStatus() const
 
 class UPathFollowingComponent* AAIController::GetPathFollowingComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "GetPathFollowingComponent");
+	class UFunction* Func = Class->GetFunction("AIController", "GetPathFollowingComponent");
 
 	Params::AIController_GetPathFollowingComponent Parms{};
 
@@ -1316,10 +1160,7 @@ class UPathFollowingComponent* AAIController::GetPathFollowingComponent() const
 
 bool AAIController::HasPartialPath() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIController", "HasPartialPath");
+	class UFunction* Func = Class->GetFunction("AIController", "HasPartialPath");
 
 	Params::AIController_HasPartialPath Parms{};
 
@@ -1339,10 +1180,7 @@ bool AAIController::HasPartialPath() const
 
 void UAIPerceptionComponent::ForgetAll()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionComponent", "ForgetAll");
+	class UFunction* Func = Class->GetFunction("AIPerceptionComponent", "ForgetAll");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1362,10 +1200,7 @@ void UAIPerceptionComponent::ForgetAll()
 
 bool UAIPerceptionComponent::GetActorsPerception(class AActor* Actor, struct FActorPerceptionBlueprintInfo* Info)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionComponent", "GetActorsPerception");
+	class UFunction* Func = Class->GetFunction("AIPerceptionComponent", "GetActorsPerception");
 
 	Params::AIPerceptionComponent_GetActorsPerception Parms{};
 
@@ -1393,10 +1228,7 @@ bool UAIPerceptionComponent::GetActorsPerception(class AActor* Actor, struct FAc
 
 void UAIPerceptionComponent::OnOwnerEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionComponent", "OnOwnerEndPlay");
+	class UFunction* Func = Class->GetFunction("AIPerceptionComponent", "OnOwnerEndPlay");
 
 	Params::AIPerceptionComponent_OnOwnerEndPlay Parms{};
 
@@ -1417,10 +1249,7 @@ void UAIPerceptionComponent::OnOwnerEndPlay(class AActor* Actor, EEndPlayReason 
 
 void UAIPerceptionComponent::RequestStimuliListenerUpdate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionComponent", "RequestStimuliListenerUpdate");
+	class UFunction* Func = Class->GetFunction("AIPerceptionComponent", "RequestStimuliListenerUpdate");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1439,10 +1268,7 @@ void UAIPerceptionComponent::RequestStimuliListenerUpdate()
 
 void UAIPerceptionComponent::SetSenseEnabled(TSubclassOf<class UAISense> SenseClass, const bool bEnable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionComponent", "SetSenseEnabled");
+	class UFunction* Func = Class->GetFunction("AIPerceptionComponent", "SetSenseEnabled");
 
 	Params::AIPerceptionComponent_SetSenseEnabled Parms{};
 
@@ -1466,10 +1292,7 @@ void UAIPerceptionComponent::SetSenseEnabled(TSubclassOf<class UAISense> SenseCl
 
 void UAIPerceptionComponent::GetCurrentlyPerceivedActors(TSubclassOf<class UAISense> SenseToUse, TArray<class AActor*>* OutActors) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionComponent", "GetCurrentlyPerceivedActors");
+	class UFunction* Func = Class->GetFunction("AIPerceptionComponent", "GetCurrentlyPerceivedActors");
 
 	Params::AIPerceptionComponent_GetCurrentlyPerceivedActors Parms{};
 
@@ -1495,10 +1318,7 @@ void UAIPerceptionComponent::GetCurrentlyPerceivedActors(TSubclassOf<class UAISe
 
 void UAIPerceptionComponent::GetKnownPerceivedActors(TSubclassOf<class UAISense> SenseToUse, TArray<class AActor*>* OutActors) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionComponent", "GetKnownPerceivedActors");
+	class UFunction* Func = Class->GetFunction("AIPerceptionComponent", "GetKnownPerceivedActors");
 
 	Params::AIPerceptionComponent_GetKnownPerceivedActors Parms{};
 
@@ -1524,10 +1344,7 @@ void UAIPerceptionComponent::GetKnownPerceivedActors(TSubclassOf<class UAISense>
 
 void UAIPerceptionComponent::GetPerceivedActors(TSubclassOf<class UAISense> SenseToUse, TArray<class AActor*>* OutActors) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionComponent", "GetPerceivedActors");
+	class UFunction* Func = Class->GetFunction("AIPerceptionComponent", "GetPerceivedActors");
 
 	Params::AIPerceptionComponent_GetPerceivedActors Parms{};
 
@@ -1552,10 +1369,7 @@ void UAIPerceptionComponent::GetPerceivedActors(TSubclassOf<class UAISense> Sens
 
 void UAIPerceptionComponent::GetPerceivedHostileActors(TArray<class AActor*>* OutActors) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionComponent", "GetPerceivedHostileActors");
+	class UFunction* Func = Class->GetFunction("AIPerceptionComponent", "GetPerceivedHostileActors");
 
 	Params::AIPerceptionComponent_GetPerceivedHostileActors Parms{};
 
@@ -1583,10 +1397,7 @@ void UAIPerceptionComponent::GetPerceivedHostileActors(TArray<class AActor*>* Ou
 
 void UAISense_Hearing::ReportNoiseEvent(class UObject* WorldContextObject, const struct FVector& NoiseLocation, float Loudness, class AActor* Instigator, float MaxRange, class FName Tag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AISense_Hearing", "ReportNoiseEvent");
+	class UFunction* Func = StaticClass()->GetFunction("AISense_Hearing", "ReportNoiseEvent");
 
 	Params::AISense_Hearing_ReportNoiseEvent Parms{};
 
@@ -1611,10 +1422,7 @@ void UAISense_Hearing::ReportNoiseEvent(class UObject* WorldContextObject, const
 
 void UAISystem::AIIgnorePlayers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISystem", "AIIgnorePlayers");
+	class UFunction* Func = Class->GetFunction("AISystem", "AIIgnorePlayers");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1630,10 +1438,7 @@ void UAISystem::AIIgnorePlayers()
 
 void UAISystem::AILoggingVerbose()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISystem", "AILoggingVerbose");
+	class UFunction* Func = Class->GetFunction("AISystem", "AILoggingVerbose");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1652,10 +1457,7 @@ void UAISystem::AILoggingVerbose()
 
 void UEnvQueryInstanceBlueprintWrapper::SetNamedParam(class FName ParamName, float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "SetNamedParam");
+	class UFunction* Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "SetNamedParam");
 
 	Params::EnvQueryInstanceBlueprintWrapper_SetNamedParam Parms{};
 
@@ -1679,10 +1481,7 @@ void UEnvQueryInstanceBlueprintWrapper::SetNamedParam(class FName ParamName, flo
 
 float UEnvQueryInstanceBlueprintWrapper::GetItemScore(int32 ItemIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetItemScore");
+	class UFunction* Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetItemScore");
 
 	Params::EnvQueryInstanceBlueprintWrapper_GetItemScore Parms{};
 
@@ -1707,10 +1506,7 @@ float UEnvQueryInstanceBlueprintWrapper::GetItemScore(int32 ItemIndex) const
 
 bool UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsActors(TArray<class AActor*>* ResultActors) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetQueryResultsAsActors");
+	class UFunction* Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetQueryResultsAsActors");
 
 	Params::EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsActors Parms{};
 
@@ -1736,10 +1532,7 @@ bool UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsActors(TArray<class AAc
 
 bool UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsLocations(TArray<struct FVector>* ResultLocations) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetQueryResultsAsLocations");
+	class UFunction* Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetQueryResultsAsLocations");
 
 	Params::EnvQueryInstanceBlueprintWrapper_GetQueryResultsAsLocations Parms{};
 
@@ -1764,10 +1557,7 @@ bool UEnvQueryInstanceBlueprintWrapper::GetQueryResultsAsLocations(TArray<struct
 
 TArray<class AActor*> UEnvQueryInstanceBlueprintWrapper::GetResultsAsActors() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetResultsAsActors");
+	class UFunction* Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetResultsAsActors");
 
 	Params::EnvQueryInstanceBlueprintWrapper_GetResultsAsActors Parms{};
 
@@ -1789,10 +1579,7 @@ TArray<class AActor*> UEnvQueryInstanceBlueprintWrapper::GetResultsAsActors() co
 
 TArray<struct FVector> UEnvQueryInstanceBlueprintWrapper::GetResultsAsLocations() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetResultsAsLocations");
+	class UFunction* Func = Class->GetFunction("EnvQueryInstanceBlueprintWrapper", "GetResultsAsLocations");
 
 	Params::EnvQueryInstanceBlueprintWrapper_GetResultsAsLocations Parms{};
 
@@ -1817,10 +1604,7 @@ TArray<struct FVector> UEnvQueryInstanceBlueprintWrapper::GetResultsAsLocations(
 
 void UPathFollowingComponent::OnActorBump(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PathFollowingComponent", "OnActorBump");
+	class UFunction* Func = Class->GetFunction("PathFollowingComponent", "OnActorBump");
 
 	Params::PathFollowingComponent_OnActorBump Parms{};
 
@@ -1845,10 +1629,7 @@ void UPathFollowingComponent::OnActorBump(class AActor* SelfActor, class AActor*
 
 void UPathFollowingComponent::OnNavDataRegistered(class ANavigationData* NavData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PathFollowingComponent", "OnNavDataRegistered");
+	class UFunction* Func = Class->GetFunction("PathFollowingComponent", "OnNavDataRegistered");
 
 	Params::PathFollowingComponent_OnNavDataRegistered Parms{};
 
@@ -1870,10 +1651,7 @@ void UPathFollowingComponent::OnNavDataRegistered(class ANavigationData* NavData
 
 EPathFollowingAction UPathFollowingComponent::GetPathActionType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PathFollowingComponent", "GetPathActionType");
+	class UFunction* Func = Class->GetFunction("PathFollowingComponent", "GetPathActionType");
 
 	Params::PathFollowingComponent_GetPathActionType Parms{};
 
@@ -1895,10 +1673,7 @@ EPathFollowingAction UPathFollowingComponent::GetPathActionType() const
 
 struct FVector UPathFollowingComponent::GetPathDestination() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PathFollowingComponent", "GetPathDestination");
+	class UFunction* Func = Class->GetFunction("PathFollowingComponent", "GetPathDestination");
 
 	Params::PathFollowingComponent_GetPathDestination Parms{};
 
@@ -1930,10 +1705,7 @@ struct FVector UPathFollowingComponent::GetPathDestination() const
 
 class UAITask_MoveTo* UAITask_MoveTo::AIMoveTo(class AAIController* Controller, const struct FVector& GoalLocation, class AActor* GoalActor, float AcceptanceRadius, EAIOptionFlag StopOnOverlap, EAIOptionFlag AcceptPartialPath, bool bUsePathfinding, bool bLockAILogic, bool bUseContinuosGoalTracking, EAIOptionFlag ProjectGoalOnNavigation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITask_MoveTo", "AIMoveTo");
+	class UFunction* Func = StaticClass()->GetFunction("AITask_MoveTo", "AIMoveTo");
 
 	Params::AITask_MoveTo_AIMoveTo Parms{};
 
@@ -1966,10 +1738,7 @@ class UAITask_MoveTo* UAITask_MoveTo::AIMoveTo(class AAIController* Controller, 
 
 void UCrowdFollowingComponent::SuspendCrowdSteering(bool bSuspend)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CrowdFollowingComponent", "SuspendCrowdSteering");
+	class UFunction* Func = Class->GetFunction("CrowdFollowingComponent", "SuspendCrowdSteering");
 
 	Params::CrowdFollowingComponent_SuspendCrowdSteering Parms{};
 
@@ -1997,10 +1766,7 @@ void UCrowdFollowingComponent::SuspendCrowdSteering(bool bSuspend)
 
 class UAIAsyncTaskBlueprintProxy* UAIBlueprintHelperLibrary::CreateMoveToProxyObject(class UObject* WorldContextObject, class APawn* Pawn, const struct FVector& Destination, class AActor* TargetActor, float AcceptanceRadius, bool bStopOnOverlap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "CreateMoveToProxyObject");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "CreateMoveToProxyObject");
 
 	Params::AIBlueprintHelperLibrary_CreateMoveToProxyObject Parms{};
 
@@ -2030,10 +1796,7 @@ class UAIAsyncTaskBlueprintProxy* UAIBlueprintHelperLibrary::CreateMoveToProxyOb
 
 class AAIController* UAIBlueprintHelperLibrary::GetAIController(class AActor* ControlledActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "GetAIController");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "GetAIController");
 
 	Params::AIBlueprintHelperLibrary_GetAIController Parms{};
 
@@ -2058,10 +1821,7 @@ class AAIController* UAIBlueprintHelperLibrary::GetAIController(class AActor* Co
 
 class UBlackboardComponent* UAIBlueprintHelperLibrary::GetBlackboard(class AActor* Target)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "GetBlackboard");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "GetBlackboard");
 
 	Params::AIBlueprintHelperLibrary_GetBlackboard Parms{};
 
@@ -2086,10 +1846,7 @@ class UBlackboardComponent* UAIBlueprintHelperLibrary::GetBlackboard(class AActo
 
 class UNavigationPath* UAIBlueprintHelperLibrary::GetCurrentPath(class AController* Controller)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "GetCurrentPath");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "GetCurrentPath");
 
 	Params::AIBlueprintHelperLibrary_GetCurrentPath Parms{};
 
@@ -2114,10 +1871,7 @@ class UNavigationPath* UAIBlueprintHelperLibrary::GetCurrentPath(class AControll
 
 bool UAIBlueprintHelperLibrary::IsValidAIDirection(const struct FVector& DirectionVector)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "IsValidAIDirection");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "IsValidAIDirection");
 
 	Params::AIBlueprintHelperLibrary_IsValidAIDirection Parms{};
 
@@ -2142,10 +1896,7 @@ bool UAIBlueprintHelperLibrary::IsValidAIDirection(const struct FVector& Directi
 
 bool UAIBlueprintHelperLibrary::IsValidAILocation(const struct FVector& Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "IsValidAILocation");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "IsValidAILocation");
 
 	Params::AIBlueprintHelperLibrary_IsValidAILocation Parms{};
 
@@ -2170,10 +1921,7 @@ bool UAIBlueprintHelperLibrary::IsValidAILocation(const struct FVector& Location
 
 bool UAIBlueprintHelperLibrary::IsValidAIRotation(const struct FRotator& Rotation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "IsValidAIRotation");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "IsValidAIRotation");
 
 	Params::AIBlueprintHelperLibrary_IsValidAIRotation Parms{};
 
@@ -2199,10 +1947,7 @@ bool UAIBlueprintHelperLibrary::IsValidAIRotation(const struct FRotator& Rotatio
 
 void UAIBlueprintHelperLibrary::LockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bLockMovement, bool LockAILogic)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "LockAIResourcesWithAnimation");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "LockAIResourcesWithAnimation");
 
 	Params::AIBlueprintHelperLibrary_LockAIResourcesWithAnimation Parms{};
 
@@ -2229,10 +1974,7 @@ void UAIBlueprintHelperLibrary::LockAIResourcesWithAnimation(class UAnimInstance
 
 void UAIBlueprintHelperLibrary::SendAIMessage(class APawn* Target, class FName Message, class UObject* MessageSource, bool bSuccess)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "SendAIMessage");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "SendAIMessage");
 
 	Params::AIBlueprintHelperLibrary_SendAIMessage Parms{};
 
@@ -2258,10 +2000,7 @@ void UAIBlueprintHelperLibrary::SendAIMessage(class APawn* Target, class FName M
 
 void UAIBlueprintHelperLibrary::SimpleMoveToActor(class AController* Controller, const class AActor* Goal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "SimpleMoveToActor");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "SimpleMoveToActor");
 
 	Params::AIBlueprintHelperLibrary_SimpleMoveToActor Parms{};
 
@@ -2285,10 +2024,7 @@ void UAIBlueprintHelperLibrary::SimpleMoveToActor(class AController* Controller,
 
 void UAIBlueprintHelperLibrary::SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "SimpleMoveToLocation");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "SimpleMoveToLocation");
 
 	Params::AIBlueprintHelperLibrary_SimpleMoveToLocation Parms{};
 
@@ -2318,10 +2054,7 @@ void UAIBlueprintHelperLibrary::SimpleMoveToLocation(class AController* Controll
 
 class APawn* UAIBlueprintHelperLibrary::SpawnAIFromClass(class UObject* WorldContextObject, TSubclassOf<class APawn> PawnClass, class UBehaviorTree* BehaviorTree, const struct FVector& Location, const struct FRotator& Rotation, bool bNoCollisionFail, class AActor* Owner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "SpawnAIFromClass");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "SpawnAIFromClass");
 
 	Params::AIBlueprintHelperLibrary_SpawnAIFromClass Parms{};
 
@@ -2353,10 +2086,7 @@ class APawn* UAIBlueprintHelperLibrary::SpawnAIFromClass(class UObject* WorldCon
 
 void UAIBlueprintHelperLibrary::UnlockAIResourcesWithAnimation(class UAnimInstance* AnimInstance, bool bUnlockMovement, bool UnlockAILogic)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "UnlockAIResourcesWithAnimation");
+	class UFunction* Func = StaticClass()->GetFunction("AIBlueprintHelperLibrary", "UnlockAIResourcesWithAnimation");
 
 	Params::AIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation Parms{};
 
@@ -2380,10 +2110,7 @@ void UAIBlueprintHelperLibrary::UnlockAIResourcesWithAnimation(class UAnimInstan
 
 void UAIPerceptionStimuliSourceComponent::RegisterForSense(TSubclassOf<class UAISense> SenseClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionStimuliSourceComponent", "RegisterForSense");
+	class UFunction* Func = Class->GetFunction("AIPerceptionStimuliSourceComponent", "RegisterForSense");
 
 	Params::AIPerceptionStimuliSourceComponent_RegisterForSense Parms{};
 
@@ -2403,10 +2130,7 @@ void UAIPerceptionStimuliSourceComponent::RegisterForSense(TSubclassOf<class UAI
 
 void UAIPerceptionStimuliSourceComponent::RegisterWithPerceptionSystem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionStimuliSourceComponent", "RegisterWithPerceptionSystem");
+	class UFunction* Func = Class->GetFunction("AIPerceptionStimuliSourceComponent", "RegisterWithPerceptionSystem");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2422,10 +2146,7 @@ void UAIPerceptionStimuliSourceComponent::RegisterWithPerceptionSystem()
 
 void UAIPerceptionStimuliSourceComponent::UnregisterFromPerceptionSystem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionStimuliSourceComponent", "UnregisterFromPerceptionSystem");
+	class UFunction* Func = Class->GetFunction("AIPerceptionStimuliSourceComponent", "UnregisterFromPerceptionSystem");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2443,10 +2164,7 @@ void UAIPerceptionStimuliSourceComponent::UnregisterFromPerceptionSystem()
 
 void UAIPerceptionStimuliSourceComponent::UnregisterFromSense(TSubclassOf<class UAISense> SenseClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionStimuliSourceComponent", "UnregisterFromSense");
+	class UFunction* Func = Class->GetFunction("AIPerceptionStimuliSourceComponent", "UnregisterFromSense");
 
 	Params::AIPerceptionStimuliSourceComponent_UnregisterFromSense Parms{};
 
@@ -2469,10 +2187,7 @@ void UAIPerceptionStimuliSourceComponent::UnregisterFromSense(TSubclassOf<class 
 
 void ANavLinkProxy::ReceiveSmartLinkReached(class AActor* Agent, const struct FVector& Destination)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkProxy", "ReceiveSmartLinkReached");
+	class UFunction* Func = Class->GetFunction("NavLinkProxy", "ReceiveSmartLinkReached");
 
 	Params::NavLinkProxy_ReceiveSmartLinkReached Parms{};
 
@@ -2490,10 +2205,7 @@ void ANavLinkProxy::ReceiveSmartLinkReached(class AActor* Agent, const struct FV
 
 void ANavLinkProxy::ResumePathFollowing(class AActor* Agent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkProxy", "ResumePathFollowing");
+	class UFunction* Func = Class->GetFunction("NavLinkProxy", "ResumePathFollowing");
 
 	Params::NavLinkProxy_ResumePathFollowing Parms{};
 
@@ -2515,10 +2227,7 @@ void ANavLinkProxy::ResumePathFollowing(class AActor* Agent)
 
 void ANavLinkProxy::SetSmartLinkEnabled(bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkProxy", "SetSmartLinkEnabled");
+	class UFunction* Func = Class->GetFunction("NavLinkProxy", "SetSmartLinkEnabled");
 
 	Params::NavLinkProxy_SetSmartLinkEnabled Parms{};
 
@@ -2540,10 +2249,7 @@ void ANavLinkProxy::SetSmartLinkEnabled(bool bEnabled)
 
 bool ANavLinkProxy::HasMovingAgents() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkProxy", "HasMovingAgents");
+	class UFunction* Func = Class->GetFunction("NavLinkProxy", "HasMovingAgents");
 
 	Params::NavLinkProxy_HasMovingAgents Parms{};
 
@@ -2565,10 +2271,7 @@ bool ANavLinkProxy::HasMovingAgents() const
 
 bool ANavLinkProxy::IsSmartLinkEnabled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavLinkProxy", "IsSmartLinkEnabled");
+	class UFunction* Func = Class->GetFunction("NavLinkProxy", "IsSmartLinkEnabled");
 
 	Params::NavLinkProxy_IsSmartLinkEnabled Parms{};
 
@@ -2592,10 +2295,7 @@ bool ANavLinkProxy::IsSmartLinkEnabled() const
 
 TSubclassOf<class UAISense> UAIPerceptionSystem::GetSenseClassForStimulus(class UObject* WorldContextObject, const struct FAIStimulus& Stimulus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIPerceptionSystem", "GetSenseClassForStimulus");
+	class UFunction* Func = StaticClass()->GetFunction("AIPerceptionSystem", "GetSenseClassForStimulus");
 
 	Params::AIPerceptionSystem_GetSenseClassForStimulus Parms{};
 
@@ -2623,10 +2323,7 @@ TSubclassOf<class UAISense> UAIPerceptionSystem::GetSenseClassForStimulus(class 
 
 bool UAIPerceptionSystem::RegisterPerceptionStimuliSource(class UObject* WorldContextObject, TSubclassOf<class UAISense> Sense, class AActor* Target)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIPerceptionSystem", "RegisterPerceptionStimuliSource");
+	class UFunction* Func = StaticClass()->GetFunction("AIPerceptionSystem", "RegisterPerceptionStimuliSource");
 
 	Params::AIPerceptionSystem_RegisterPerceptionStimuliSource Parms{};
 
@@ -2653,10 +2350,7 @@ bool UAIPerceptionSystem::RegisterPerceptionStimuliSource(class UObject* WorldCo
 
 void UAIPerceptionSystem::ReportPerceptionEvent(class UObject* WorldContextObject, class UAISenseEvent* PerceptionEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AIPerceptionSystem", "ReportPerceptionEvent");
+	class UFunction* Func = StaticClass()->GetFunction("AIPerceptionSystem", "ReportPerceptionEvent");
 
 	Params::AIPerceptionSystem_ReportPerceptionEvent Parms{};
 
@@ -2680,10 +2374,7 @@ void UAIPerceptionSystem::ReportPerceptionEvent(class UObject* WorldContextObjec
 
 void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(class AActor* Actor, EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionSystem", "OnPerceptionStimuliSourceEndPlay");
+	class UFunction* Func = Class->GetFunction("AIPerceptionSystem", "OnPerceptionStimuliSourceEndPlay");
 
 	Params::AIPerceptionSystem_OnPerceptionStimuliSourceEndPlay Parms{};
 
@@ -2706,10 +2397,7 @@ void UAIPerceptionSystem::OnPerceptionStimuliSourceEndPlay(class AActor* Actor, 
 
 void UAIPerceptionSystem::ReportEvent(class UAISenseEvent* PerceptionEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIPerceptionSystem", "ReportEvent");
+	class UFunction* Func = Class->GetFunction("AIPerceptionSystem", "ReportEvent");
 
 	Params::AIPerceptionSystem_ReportEvent Parms{};
 
@@ -2732,10 +2420,7 @@ void UAIPerceptionSystem::ReportEvent(class UAISenseEvent* PerceptionEvent)
 
 void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(const struct FAIRequestID& RequestID, EPathFollowingResult MovementResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AIAsyncTaskBlueprintProxy", "OnMoveCompleted");
+	class UFunction* Func = Class->GetFunction("AIAsyncTaskBlueprintProxy", "OnMoveCompleted");
 
 	Params::AIAsyncTaskBlueprintProxy_OnMoveCompleted Parms{};
 
@@ -2758,10 +2443,7 @@ void UAIAsyncTaskBlueprintProxy::OnMoveCompleted(const struct FAIRequestID& Requ
 
 void UAISense_Blueprint::K2_OnNewPawn(class APawn* NewPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISense_Blueprint", "K2_OnNewPawn");
+	class UFunction* Func = Class->GetFunction("AISense_Blueprint", "K2_OnNewPawn");
 
 	Params::AISense_Blueprint_K2_OnNewPawn Parms{};
 
@@ -2779,10 +2461,7 @@ void UAISense_Blueprint::K2_OnNewPawn(class APawn* NewPawn)
 
 void UAISense_Blueprint::OnListenerRegistered(class AActor* ActorListener, class UAIPerceptionComponent* PerceptionComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISense_Blueprint", "OnListenerRegistered");
+	class UFunction* Func = Class->GetFunction("AISense_Blueprint", "OnListenerRegistered");
 
 	Params::AISense_Blueprint_OnListenerRegistered Parms{};
 
@@ -2801,10 +2480,7 @@ void UAISense_Blueprint::OnListenerRegistered(class AActor* ActorListener, class
 
 void UAISense_Blueprint::OnListenerUnregistered(class AActor* ActorListener, class UAIPerceptionComponent* PerceptionComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISense_Blueprint", "OnListenerUnregistered");
+	class UFunction* Func = Class->GetFunction("AISense_Blueprint", "OnListenerUnregistered");
 
 	Params::AISense_Blueprint_OnListenerUnregistered Parms{};
 
@@ -2823,10 +2499,7 @@ void UAISense_Blueprint::OnListenerUnregistered(class AActor* ActorListener, cla
 
 void UAISense_Blueprint::OnListenerUpdated(class AActor* ActorListener, class UAIPerceptionComponent* PerceptionComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISense_Blueprint", "OnListenerUpdated");
+	class UFunction* Func = Class->GetFunction("AISense_Blueprint", "OnListenerUpdated");
 
 	Params::AISense_Blueprint_OnListenerUpdated Parms{};
 
@@ -2845,10 +2518,7 @@ void UAISense_Blueprint::OnListenerUpdated(class AActor* ActorListener, class UA
 
 float UAISense_Blueprint::OnUpdate(const TArray<class UAISenseEvent*>& EventsToProcess)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISense_Blueprint", "OnUpdate");
+	class UFunction* Func = Class->GetFunction("AISense_Blueprint", "OnUpdate");
 
 	Params::AISense_Blueprint_OnUpdate Parms{};
 
@@ -2867,10 +2537,7 @@ float UAISense_Blueprint::OnUpdate(const TArray<class UAISenseEvent*>& EventsToP
 
 void UAISense_Blueprint::GetAllListenerActors(TArray<class AActor*>* ListenerActors) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISense_Blueprint", "GetAllListenerActors");
+	class UFunction* Func = Class->GetFunction("AISense_Blueprint", "GetAllListenerActors");
 
 	Params::AISense_Blueprint_GetAllListenerActors Parms{};
 
@@ -2893,10 +2560,7 @@ void UAISense_Blueprint::GetAllListenerActors(TArray<class AActor*>* ListenerAct
 
 void UAISense_Blueprint::GetAllListenerComponents(TArray<class UAIPerceptionComponent*>* ListenerComponents) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AISense_Blueprint", "GetAllListenerComponents");
+	class UFunction* Func = Class->GetFunction("AISense_Blueprint", "GetAllListenerComponents");
 
 	Params::AISense_Blueprint_GetAllListenerComponents Parms{};
 
@@ -2924,10 +2588,7 @@ void UAISense_Blueprint::GetAllListenerComponents(TArray<class UAIPerceptionComp
 
 void UAISense_Damage::ReportDamageEvent(class UObject* WorldContextObject, class AActor* DamagedActor, class AActor* Instigator, float DamageAmount, const struct FVector& EventLocation, const struct FVector& HitLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AISense_Damage", "ReportDamageEvent");
+	class UFunction* Func = StaticClass()->GetFunction("AISense_Damage", "ReportDamageEvent");
 
 	Params::AISense_Damage_ReportDamageEvent Parms{};
 
@@ -2956,10 +2617,7 @@ void UAISense_Damage::ReportDamageEvent(class UObject* WorldContextObject, class
 
 class UAITask_RunEQS* UAITask_RunEQS::RunEQS(class AAIController* Controller, class UEnvQuery* QueryTemplate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITask_RunEQS", "RunEQS");
+	class UFunction* Func = StaticClass()->GetFunction("AITask_RunEQS", "RunEQS");
 
 	Params::AITask_RunEQS_RunEQS Parms{};
 
@@ -2984,10 +2642,7 @@ class UAITask_RunEQS* UAITask_RunEQS::RunEQS(class AAIController* Controller, cl
 
 class UBlackboardData* IBlackboardAssetProvider::GetBlackboardAsset() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BlackboardAssetProvider", "GetBlackboardAsset");
+	class UFunction* Func = AsUObject()->Class->GetFunction("BlackboardAssetProvider", "GetBlackboardAsset");
 
 	Params::BlackboardAssetProvider_GetBlackboardAsset Parms{};
 
@@ -3009,10 +2664,7 @@ class UBlackboardData* IBlackboardAssetProvider::GetBlackboardAsset() const
 
 void UBlackboardComponent::ClearValue(const class FName& KeyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "ClearValue");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "ClearValue");
 
 	Params::BlackboardComponent_ClearValue Parms{};
 
@@ -3035,10 +2687,7 @@ void UBlackboardComponent::ClearValue(const class FName& KeyName)
 
 void UBlackboardComponent::SetValueAsBool(const class FName& KeyName, bool BoolValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsBool");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsBool");
 
 	Params::BlackboardComponent_SetValueAsBool Parms{};
 
@@ -3062,10 +2711,7 @@ void UBlackboardComponent::SetValueAsBool(const class FName& KeyName, bool BoolV
 
 void UBlackboardComponent::SetValueAsClass(const class FName& KeyName, class UClass* ClassValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsClass");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsClass");
 
 	Params::BlackboardComponent_SetValueAsClass Parms{};
 
@@ -3089,10 +2735,7 @@ void UBlackboardComponent::SetValueAsClass(const class FName& KeyName, class UCl
 
 void UBlackboardComponent::SetValueAsEnum(const class FName& KeyName, uint8 EnumValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsEnum");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsEnum");
 
 	Params::BlackboardComponent_SetValueAsEnum Parms{};
 
@@ -3116,10 +2759,7 @@ void UBlackboardComponent::SetValueAsEnum(const class FName& KeyName, uint8 Enum
 
 void UBlackboardComponent::SetValueAsFloat(const class FName& KeyName, float FloatValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsFloat");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsFloat");
 
 	Params::BlackboardComponent_SetValueAsFloat Parms{};
 
@@ -3143,10 +2783,7 @@ void UBlackboardComponent::SetValueAsFloat(const class FName& KeyName, float Flo
 
 void UBlackboardComponent::SetValueAsInt(const class FName& KeyName, int32 IntValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsInt");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsInt");
 
 	Params::BlackboardComponent_SetValueAsInt Parms{};
 
@@ -3170,10 +2807,7 @@ void UBlackboardComponent::SetValueAsInt(const class FName& KeyName, int32 IntVa
 
 void UBlackboardComponent::SetValueAsName(const class FName& KeyName, class FName NameValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsName");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsName");
 
 	Params::BlackboardComponent_SetValueAsName Parms{};
 
@@ -3197,10 +2831,7 @@ void UBlackboardComponent::SetValueAsName(const class FName& KeyName, class FNam
 
 void UBlackboardComponent::SetValueAsObject(const class FName& KeyName, class UObject* ObjectValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsObject");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsObject");
 
 	Params::BlackboardComponent_SetValueAsObject Parms{};
 
@@ -3224,10 +2855,7 @@ void UBlackboardComponent::SetValueAsObject(const class FName& KeyName, class UO
 
 void UBlackboardComponent::SetValueAsRotator(const class FName& KeyName, const struct FRotator& VectorValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsRotator");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsRotator");
 
 	Params::BlackboardComponent_SetValueAsRotator Parms{};
 
@@ -3251,10 +2879,7 @@ void UBlackboardComponent::SetValueAsRotator(const class FName& KeyName, const s
 
 void UBlackboardComponent::SetValueAsString(const class FName& KeyName, const class FString& StringValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsString");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsString");
 
 	Params::BlackboardComponent_SetValueAsString Parms{};
 
@@ -3278,10 +2903,7 @@ void UBlackboardComponent::SetValueAsString(const class FName& KeyName, const cl
 
 void UBlackboardComponent::SetValueAsVector(const class FName& KeyName, const struct FVector& VectorValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "SetValueAsVector");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "SetValueAsVector");
 
 	Params::BlackboardComponent_SetValueAsVector Parms{};
 
@@ -3306,10 +2928,7 @@ void UBlackboardComponent::SetValueAsVector(const class FName& KeyName, const st
 
 bool UBlackboardComponent::GetLocationFromEntry(const class FName& KeyName, struct FVector* ResultLocation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetLocationFromEntry");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetLocationFromEntry");
 
 	Params::BlackboardComponent_GetLocationFromEntry Parms{};
 
@@ -3338,10 +2957,7 @@ bool UBlackboardComponent::GetLocationFromEntry(const class FName& KeyName, stru
 
 bool UBlackboardComponent::GetRotationFromEntry(const class FName& KeyName, struct FRotator* ResultRotation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetRotationFromEntry");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetRotationFromEntry");
 
 	Params::BlackboardComponent_GetRotationFromEntry Parms{};
 
@@ -3369,10 +2985,7 @@ bool UBlackboardComponent::GetRotationFromEntry(const class FName& KeyName, stru
 
 bool UBlackboardComponent::GetValueAsBool(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsBool");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsBool");
 
 	Params::BlackboardComponent_GetValueAsBool Parms{};
 
@@ -3397,10 +3010,7 @@ bool UBlackboardComponent::GetValueAsBool(const class FName& KeyName) const
 
 class UClass* UBlackboardComponent::GetValueAsClass(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsClass");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsClass");
 
 	Params::BlackboardComponent_GetValueAsClass Parms{};
 
@@ -3425,10 +3035,7 @@ class UClass* UBlackboardComponent::GetValueAsClass(const class FName& KeyName) 
 
 uint8 UBlackboardComponent::GetValueAsEnum(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsEnum");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsEnum");
 
 	Params::BlackboardComponent_GetValueAsEnum Parms{};
 
@@ -3453,10 +3060,7 @@ uint8 UBlackboardComponent::GetValueAsEnum(const class FName& KeyName) const
 
 float UBlackboardComponent::GetValueAsFloat(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsFloat");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsFloat");
 
 	Params::BlackboardComponent_GetValueAsFloat Parms{};
 
@@ -3481,10 +3085,7 @@ float UBlackboardComponent::GetValueAsFloat(const class FName& KeyName) const
 
 int32 UBlackboardComponent::GetValueAsInt(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsInt");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsInt");
 
 	Params::BlackboardComponent_GetValueAsInt Parms{};
 
@@ -3509,10 +3110,7 @@ int32 UBlackboardComponent::GetValueAsInt(const class FName& KeyName) const
 
 class FName UBlackboardComponent::GetValueAsName(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsName");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsName");
 
 	Params::BlackboardComponent_GetValueAsName Parms{};
 
@@ -3537,10 +3135,7 @@ class FName UBlackboardComponent::GetValueAsName(const class FName& KeyName) con
 
 class UObject* UBlackboardComponent::GetValueAsObject(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsObject");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsObject");
 
 	Params::BlackboardComponent_GetValueAsObject Parms{};
 
@@ -3565,10 +3160,7 @@ class UObject* UBlackboardComponent::GetValueAsObject(const class FName& KeyName
 
 struct FRotator UBlackboardComponent::GetValueAsRotator(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsRotator");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsRotator");
 
 	Params::BlackboardComponent_GetValueAsRotator Parms{};
 
@@ -3593,10 +3185,7 @@ struct FRotator UBlackboardComponent::GetValueAsRotator(const class FName& KeyNa
 
 class FString UBlackboardComponent::GetValueAsString(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsString");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsString");
 
 	Params::BlackboardComponent_GetValueAsString Parms{};
 
@@ -3621,10 +3210,7 @@ class FString UBlackboardComponent::GetValueAsString(const class FName& KeyName)
 
 struct FVector UBlackboardComponent::GetValueAsVector(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "GetValueAsVector");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "GetValueAsVector");
 
 	Params::BlackboardComponent_GetValueAsVector Parms{};
 
@@ -3649,10 +3235,7 @@ struct FVector UBlackboardComponent::GetValueAsVector(const class FName& KeyName
 
 bool UBlackboardComponent::IsVectorValueSet(const class FName& KeyName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BlackboardComponent", "IsVectorValueSet");
+	class UFunction* Func = Class->GetFunction("BlackboardComponent", "IsVectorValueSet");
 
 	Params::BlackboardComponent_IsVectorValueSet Parms{};
 
@@ -3677,10 +3260,7 @@ bool UBlackboardComponent::IsVectorValueSet(const class FName& KeyName) const
 
 void UBTFunctionLibrary::ClearBlackboardValue(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "ClearBlackboardValue");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "ClearBlackboardValue");
 
 	Params::BTFunctionLibrary_ClearBlackboardValue Parms{};
 
@@ -3704,10 +3284,7 @@ void UBTFunctionLibrary::ClearBlackboardValue(class UBTNode* NodeOwner, const st
 
 void UBTFunctionLibrary::ClearBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "ClearBlackboardValueAsVector");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "ClearBlackboardValueAsVector");
 
 	Params::BTFunctionLibrary_ClearBlackboardValueAsVector Parms{};
 
@@ -3732,10 +3309,7 @@ void UBTFunctionLibrary::ClearBlackboardValueAsVector(class UBTNode* NodeOwner, 
 
 class AActor* UBTFunctionLibrary::GetBlackboardValueAsActor(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsActor");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsActor");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsActor Parms{};
 
@@ -3762,10 +3336,7 @@ class AActor* UBTFunctionLibrary::GetBlackboardValueAsActor(class UBTNode* NodeO
 
 bool UBTFunctionLibrary::GetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsBool");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsBool");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsBool Parms{};
 
@@ -3792,10 +3363,7 @@ bool UBTFunctionLibrary::GetBlackboardValueAsBool(class UBTNode* NodeOwner, cons
 
 class UClass* UBTFunctionLibrary::GetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsClass");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsClass");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsClass Parms{};
 
@@ -3822,10 +3390,7 @@ class UClass* UBTFunctionLibrary::GetBlackboardValueAsClass(class UBTNode* NodeO
 
 uint8 UBTFunctionLibrary::GetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsEnum");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsEnum");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsEnum Parms{};
 
@@ -3852,10 +3417,7 @@ uint8 UBTFunctionLibrary::GetBlackboardValueAsEnum(class UBTNode* NodeOwner, con
 
 float UBTFunctionLibrary::GetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsFloat");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsFloat");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsFloat Parms{};
 
@@ -3882,10 +3444,7 @@ float UBTFunctionLibrary::GetBlackboardValueAsFloat(class UBTNode* NodeOwner, co
 
 int32 UBTFunctionLibrary::GetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsInt");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsInt");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsInt Parms{};
 
@@ -3912,10 +3471,7 @@ int32 UBTFunctionLibrary::GetBlackboardValueAsInt(class UBTNode* NodeOwner, cons
 
 class FName UBTFunctionLibrary::GetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsName");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsName");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsName Parms{};
 
@@ -3942,10 +3498,7 @@ class FName UBTFunctionLibrary::GetBlackboardValueAsName(class UBTNode* NodeOwne
 
 class UObject* UBTFunctionLibrary::GetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsObject");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsObject");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsObject Parms{};
 
@@ -3972,10 +3525,7 @@ class UObject* UBTFunctionLibrary::GetBlackboardValueAsObject(class UBTNode* Nod
 
 struct FRotator UBTFunctionLibrary::GetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsRotator");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsRotator");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsRotator Parms{};
 
@@ -4002,10 +3552,7 @@ struct FRotator UBTFunctionLibrary::GetBlackboardValueAsRotator(class UBTNode* N
 
 class FString UBTFunctionLibrary::GetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsString");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsString");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsString Parms{};
 
@@ -4032,10 +3579,7 @@ class FString UBTFunctionLibrary::GetBlackboardValueAsString(class UBTNode* Node
 
 struct FVector UBTFunctionLibrary::GetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsVector");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetBlackboardValueAsVector");
 
 	Params::BTFunctionLibrary_GetBlackboardValueAsVector Parms{};
 
@@ -4061,10 +3605,7 @@ struct FVector UBTFunctionLibrary::GetBlackboardValueAsVector(class UBTNode* Nod
 
 class UBehaviorTreeComponent* UBTFunctionLibrary::GetOwnerComponent(class UBTNode* NodeOwner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetOwnerComponent");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetOwnerComponent");
 
 	Params::BTFunctionLibrary_GetOwnerComponent Parms{};
 
@@ -4089,10 +3630,7 @@ class UBehaviorTreeComponent* UBTFunctionLibrary::GetOwnerComponent(class UBTNod
 
 class UBlackboardComponent* UBTFunctionLibrary::GetOwnersBlackboard(class UBTNode* NodeOwner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetOwnersBlackboard");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "GetOwnersBlackboard");
 
 	Params::BTFunctionLibrary_GetOwnersBlackboard Parms{};
 
@@ -4118,10 +3656,7 @@ class UBlackboardComponent* UBTFunctionLibrary::GetOwnersBlackboard(class UBTNod
 
 void UBTFunctionLibrary::SetBlackboardValueAsBool(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, bool Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsBool");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsBool");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsBool Parms{};
 
@@ -4147,10 +3682,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsBool(class UBTNode* NodeOwner, cons
 
 void UBTFunctionLibrary::SetBlackboardValueAsClass(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UClass* Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsClass");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsClass");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsClass Parms{};
 
@@ -4176,10 +3708,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsClass(class UBTNode* NodeOwner, con
 
 void UBTFunctionLibrary::SetBlackboardValueAsEnum(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, uint8 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsEnum");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsEnum");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsEnum Parms{};
 
@@ -4205,10 +3734,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsEnum(class UBTNode* NodeOwner, cons
 
 void UBTFunctionLibrary::SetBlackboardValueAsFloat(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsFloat");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsFloat");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsFloat Parms{};
 
@@ -4234,10 +3760,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsFloat(class UBTNode* NodeOwner, con
 
 void UBTFunctionLibrary::SetBlackboardValueAsInt(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsInt");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsInt");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsInt Parms{};
 
@@ -4263,10 +3786,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsInt(class UBTNode* NodeOwner, const
 
 void UBTFunctionLibrary::SetBlackboardValueAsName(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class FName Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsName");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsName");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsName Parms{};
 
@@ -4292,10 +3812,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsName(class UBTNode* NodeOwner, cons
 
 void UBTFunctionLibrary::SetBlackboardValueAsObject(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, class UObject* Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsObject");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsObject");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsObject Parms{};
 
@@ -4321,10 +3838,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsObject(class UBTNode* NodeOwner, co
 
 void UBTFunctionLibrary::SetBlackboardValueAsRotator(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FRotator& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsRotator");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsRotator");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsRotator Parms{};
 
@@ -4350,10 +3864,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsRotator(class UBTNode* NodeOwner, c
 
 void UBTFunctionLibrary::SetBlackboardValueAsString(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const class FString& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsString");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsString");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsString Parms{};
 
@@ -4379,10 +3890,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsString(class UBTNode* NodeOwner, co
 
 void UBTFunctionLibrary::SetBlackboardValueAsVector(class UBTNode* NodeOwner, const struct FBlackboardKeySelector& Key, const struct FVector& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsVector");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "SetBlackboardValueAsVector");
 
 	Params::BTFunctionLibrary_SetBlackboardValueAsVector Parms{};
 
@@ -4407,10 +3915,7 @@ void UBTFunctionLibrary::SetBlackboardValueAsVector(class UBTNode* NodeOwner, co
 
 void UBTFunctionLibrary::StartUsingExternalEvent(class UBTNode* NodeOwner, class AActor* OwningActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "StartUsingExternalEvent");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "StartUsingExternalEvent");
 
 	Params::BTFunctionLibrary_StartUsingExternalEvent Parms{};
 
@@ -4433,10 +3938,7 @@ void UBTFunctionLibrary::StartUsingExternalEvent(class UBTNode* NodeOwner, class
 
 void UBTFunctionLibrary::StopUsingExternalEvent(class UBTNode* NodeOwner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BTFunctionLibrary", "StopUsingExternalEvent");
+	class UFunction* Func = StaticClass()->GetFunction("BTFunctionLibrary", "StopUsingExternalEvent");
 
 	Params::BTFunctionLibrary_StopUsingExternalEvent Parms{};
 
@@ -4458,10 +3960,7 @@ void UBTFunctionLibrary::StopUsingExternalEvent(class UBTNode* NodeOwner)
 
 void UBTService_BlueprintBase::ReceiveActivation(class AActor* OwnerActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveActivation");
+	class UFunction* Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveActivation");
 
 	Params::BTService_BlueprintBase_ReceiveActivation Parms{};
 
@@ -4479,10 +3978,7 @@ void UBTService_BlueprintBase::ReceiveActivation(class AActor* OwnerActor)
 
 void UBTService_BlueprintBase::ReceiveActivationAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveActivationAI");
+	class UFunction* Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveActivationAI");
 
 	Params::BTService_BlueprintBase_ReceiveActivationAI Parms{};
 
@@ -4500,10 +3996,7 @@ void UBTService_BlueprintBase::ReceiveActivationAI(class AAIController* OwnerCon
 
 void UBTService_BlueprintBase::ReceiveDeactivation(class AActor* OwnerActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveDeactivation");
+	class UFunction* Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveDeactivation");
 
 	Params::BTService_BlueprintBase_ReceiveDeactivation Parms{};
 
@@ -4521,10 +4014,7 @@ void UBTService_BlueprintBase::ReceiveDeactivation(class AActor* OwnerActor)
 
 void UBTService_BlueprintBase::ReceiveDeactivationAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveDeactivationAI");
+	class UFunction* Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveDeactivationAI");
 
 	Params::BTService_BlueprintBase_ReceiveDeactivationAI Parms{};
 
@@ -4542,10 +4032,7 @@ void UBTService_BlueprintBase::ReceiveDeactivationAI(class AAIController* OwnerC
 
 void UBTService_BlueprintBase::ReceiveSearchStart(class AActor* OwnerActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveSearchStart");
+	class UFunction* Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveSearchStart");
 
 	Params::BTService_BlueprintBase_ReceiveSearchStart Parms{};
 
@@ -4563,10 +4050,7 @@ void UBTService_BlueprintBase::ReceiveSearchStart(class AActor* OwnerActor)
 
 void UBTService_BlueprintBase::ReceiveSearchStartAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveSearchStartAI");
+	class UFunction* Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveSearchStartAI");
 
 	Params::BTService_BlueprintBase_ReceiveSearchStartAI Parms{};
 
@@ -4585,10 +4069,7 @@ void UBTService_BlueprintBase::ReceiveSearchStartAI(class AAIController* OwnerCo
 
 void UBTService_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveTick");
 
 	Params::BTService_BlueprintBase_ReceiveTick Parms{};
 
@@ -4608,10 +4089,7 @@ void UBTService_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float Delta
 
 void UBTService_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveTickAI");
+	class UFunction* Func = Class->GetFunction("BTService_BlueprintBase", "ReceiveTickAI");
 
 	Params::BTService_BlueprintBase_ReceiveTickAI Parms{};
 
@@ -4630,10 +4108,7 @@ void UBTService_BlueprintBase::ReceiveTickAI(class AAIController* OwnerControlle
 
 bool UBTService_BlueprintBase::IsServiceActive() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTService_BlueprintBase", "IsServiceActive");
+	class UFunction* Func = Class->GetFunction("BTService_BlueprintBase", "IsServiceActive");
 
 	Params::BTService_BlueprintBase_IsServiceActive Parms{};
 
@@ -4653,10 +4128,7 @@ bool UBTService_BlueprintBase::IsServiceActive() const
 
 void UBTTask_BlueprintBase::FinishAbort()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "FinishAbort");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "FinishAbort");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -4674,10 +4146,7 @@ void UBTTask_BlueprintBase::FinishAbort()
 
 void UBTTask_BlueprintBase::FinishExecute(bool bSuccess)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "FinishExecute");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "FinishExecute");
 
 	Params::BTTask_BlueprintBase_FinishExecute Parms{};
 
@@ -4699,10 +4168,7 @@ void UBTTask_BlueprintBase::FinishExecute(bool bSuccess)
 
 void UBTTask_BlueprintBase::ReceiveAbort(class AActor* OwnerActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveAbort");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveAbort");
 
 	Params::BTTask_BlueprintBase_ReceiveAbort Parms{};
 
@@ -4720,10 +4186,7 @@ void UBTTask_BlueprintBase::ReceiveAbort(class AActor* OwnerActor)
 
 void UBTTask_BlueprintBase::ReceiveAbortAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveAbortAI");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveAbortAI");
 
 	Params::BTTask_BlueprintBase_ReceiveAbortAI Parms{};
 
@@ -4741,10 +4204,7 @@ void UBTTask_BlueprintBase::ReceiveAbortAI(class AAIController* OwnerController,
 
 void UBTTask_BlueprintBase::ReceiveExecute(class AActor* OwnerActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveExecute");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveExecute");
 
 	Params::BTTask_BlueprintBase_ReceiveExecute Parms{};
 
@@ -4762,10 +4222,7 @@ void UBTTask_BlueprintBase::ReceiveExecute(class AActor* OwnerActor)
 
 void UBTTask_BlueprintBase::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveExecuteAI");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveExecuteAI");
 
 	Params::BTTask_BlueprintBase_ReceiveExecuteAI Parms{};
 
@@ -4784,10 +4241,7 @@ void UBTTask_BlueprintBase::ReceiveExecuteAI(class AAIController* OwnerControlle
 
 void UBTTask_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveTick");
 
 	Params::BTTask_BlueprintBase_ReceiveTick Parms{};
 
@@ -4807,10 +4261,7 @@ void UBTTask_BlueprintBase::ReceiveTick(class AActor* OwnerActor, float DeltaSec
 
 void UBTTask_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveTickAI");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "ReceiveTickAI");
 
 	Params::BTTask_BlueprintBase_ReceiveTickAI Parms{};
 
@@ -4829,10 +4280,7 @@ void UBTTask_BlueprintBase::ReceiveTickAI(class AAIController* OwnerController, 
 
 void UBTTask_BlueprintBase::SetFinishOnMessage(class FName MessageName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "SetFinishOnMessage");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "SetFinishOnMessage");
 
 	Params::BTTask_BlueprintBase_SetFinishOnMessage Parms{};
 
@@ -4855,10 +4303,7 @@ void UBTTask_BlueprintBase::SetFinishOnMessage(class FName MessageName)
 
 void UBTTask_BlueprintBase::SetFinishOnMessageWithId(class FName MessageName, int32 RequestID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "SetFinishOnMessageWithId");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "SetFinishOnMessageWithId");
 
 	Params::BTTask_BlueprintBase_SetFinishOnMessageWithId Parms{};
 
@@ -4881,10 +4326,7 @@ void UBTTask_BlueprintBase::SetFinishOnMessageWithId(class FName MessageName, in
 
 bool UBTTask_BlueprintBase::IsTaskAborting() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "IsTaskAborting");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "IsTaskAborting");
 
 	Params::BTTask_BlueprintBase_IsTaskAborting Parms{};
 
@@ -4906,10 +4348,7 @@ bool UBTTask_BlueprintBase::IsTaskAborting() const
 
 bool UBTTask_BlueprintBase::IsTaskExecuting() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_BlueprintBase", "IsTaskExecuting");
+	class UFunction* Func = Class->GetFunction("BTTask_BlueprintBase", "IsTaskExecuting");
 
 	Params::BTTask_BlueprintBase_IsTaskExecuting Parms{};
 
@@ -4933,10 +4372,7 @@ bool UBTTask_BlueprintBase::IsTaskExecuting() const
 
 void UEnvQueryContext_BlueprintBase::ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideActorsSet");
+	class UFunction* Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideActorsSet");
 
 	Params::EnvQueryContext_BlueprintBase_ProvideActorsSet Parms{};
 
@@ -4959,10 +4395,7 @@ void UEnvQueryContext_BlueprintBase::ProvideActorsSet(class UObject* QuerierObje
 
 void UEnvQueryContext_BlueprintBase::ProvideLocationsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<struct FVector>* ResultingLocationSet) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideLocationsSet");
+	class UFunction* Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideLocationsSet");
 
 	Params::EnvQueryContext_BlueprintBase_ProvideLocationsSet Parms{};
 
@@ -4985,10 +4418,7 @@ void UEnvQueryContext_BlueprintBase::ProvideLocationsSet(class UObject* QuerierO
 
 void UEnvQueryContext_BlueprintBase::ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor** ResultingActor) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideSingleActor");
+	class UFunction* Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideSingleActor");
 
 	Params::EnvQueryContext_BlueprintBase_ProvideSingleActor Parms{};
 
@@ -5011,10 +4441,7 @@ void UEnvQueryContext_BlueprintBase::ProvideSingleActor(class UObject* QuerierOb
 
 void UEnvQueryContext_BlueprintBase::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideSingleLocation");
+	class UFunction* Func = Class->GetFunction("EnvQueryContext_BlueprintBase", "ProvideSingleLocation");
 
 	Params::EnvQueryContext_BlueprintBase_ProvideSingleLocation Parms{};
 
@@ -5035,10 +4462,7 @@ void UEnvQueryContext_BlueprintBase::ProvideSingleLocation(class UObject* Querie
 
 void UEnvQueryGenerator_BlueprintBase::AddGeneratedActor(class AActor* GeneratedActor) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "AddGeneratedActor");
+	class UFunction* Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "AddGeneratedActor");
 
 	Params::EnvQueryGenerator_BlueprintBase_AddGeneratedActor Parms{};
 
@@ -5060,10 +4484,7 @@ void UEnvQueryGenerator_BlueprintBase::AddGeneratedActor(class AActor* Generated
 
 void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(const struct FVector& GeneratedVector) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "AddGeneratedVector");
+	class UFunction* Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "AddGeneratedVector");
 
 	Params::EnvQueryGenerator_BlueprintBase_AddGeneratedVector Parms{};
 
@@ -5085,10 +4506,7 @@ void UEnvQueryGenerator_BlueprintBase::AddGeneratedVector(const struct FVector& 
 
 void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(const TArray<struct FVector>& ContextLocations) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "DoItemGeneration");
+	class UFunction* Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "DoItemGeneration");
 
 	Params::EnvQueryGenerator_BlueprintBase_DoItemGeneration Parms{};
 
@@ -5105,10 +4523,7 @@ void UEnvQueryGenerator_BlueprintBase::DoItemGeneration(const TArray<struct FVec
 
 class UObject* UEnvQueryGenerator_BlueprintBase::GetQuerier() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "GetQuerier");
+	class UFunction* Func = Class->GetFunction("EnvQueryGenerator_BlueprintBase", "GetQuerier");
 
 	Params::EnvQueryGenerator_BlueprintBase_GetQuerier Parms{};
 
@@ -5135,10 +4550,7 @@ class UObject* UEnvQueryGenerator_BlueprintBase::GetQuerier() const
 
 class UEnvQueryInstanceBlueprintWrapper* UEnvQueryManager::RunEQSQuery(class UObject* WorldContextObject, class UEnvQuery* QueryTemplate, class UObject* Querier, EEnvQueryRunMode RunMode, TSubclassOf<class UEnvQueryInstanceBlueprintWrapper> WrapperClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EnvQueryManager", "RunEQSQuery");
+	class UFunction* Func = StaticClass()->GetFunction("EnvQueryManager", "RunEQSQuery");
 
 	Params::EnvQueryManager_RunEQSQuery Parms{};
 
@@ -5173,10 +4585,7 @@ class UEnvQueryInstanceBlueprintWrapper* UEnvQueryManager::RunEQSQuery(class UOb
 
 int32 UNavLocalGridManager::AddLocalNavigationGridForBox(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent, const struct FRotator& Rotation, const int32 Radius2D, const float Height, bool bRebuildGrids)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForBox");
+	class UFunction* Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForBox");
 
 	Params::NavLocalGridManager_AddLocalNavigationGridForBox Parms{};
 
@@ -5213,10 +4622,7 @@ int32 UNavLocalGridManager::AddLocalNavigationGridForBox(class UObject* WorldCon
 
 int32 UNavLocalGridManager::AddLocalNavigationGridForCapsule(class UObject* WorldContextObject, const struct FVector& Location, float CapsuleRadius, float CapsuleHalfHeight, const int32 Radius2D, const float Height, bool bRebuildGrids)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForCapsule");
+	class UFunction* Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForCapsule");
 
 	Params::NavLocalGridManager_AddLocalNavigationGridForCapsule Parms{};
 
@@ -5251,10 +4657,7 @@ int32 UNavLocalGridManager::AddLocalNavigationGridForCapsule(class UObject* Worl
 
 int32 UNavLocalGridManager::AddLocalNavigationGridForPoint(class UObject* WorldContextObject, const struct FVector& Location, const int32 Radius2D, const float Height, bool bRebuildGrids)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForPoint");
+	class UFunction* Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForPoint");
 
 	Params::NavLocalGridManager_AddLocalNavigationGridForPoint Parms{};
 
@@ -5287,10 +4690,7 @@ int32 UNavLocalGridManager::AddLocalNavigationGridForPoint(class UObject* WorldC
 
 int32 UNavLocalGridManager::AddLocalNavigationGridForPoints(class UObject* WorldContextObject, const TArray<struct FVector>& Locations, const int32 Radius2D, const float Height, bool bRebuildGrids)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForPoints");
+	class UFunction* Func = StaticClass()->GetFunction("NavLocalGridManager", "AddLocalNavigationGridForPoints");
 
 	Params::NavLocalGridManager_AddLocalNavigationGridForPoints Parms{};
 
@@ -5322,10 +4722,7 @@ int32 UNavLocalGridManager::AddLocalNavigationGridForPoints(class UObject* World
 
 bool UNavLocalGridManager::FindLocalNavigationGridPath(class UObject* WorldContextObject, const struct FVector& Start, const struct FVector& End, TArray<struct FVector>* PathPoints)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "FindLocalNavigationGridPath");
+	class UFunction* Func = StaticClass()->GetFunction("NavLocalGridManager", "FindLocalNavigationGridPath");
 
 	Params::NavLocalGridManager_FindLocalNavigationGridPath Parms{};
 
@@ -5356,10 +4753,7 @@ bool UNavLocalGridManager::FindLocalNavigationGridPath(class UObject* WorldConte
 
 void UNavLocalGridManager::RemoveLocalNavigationGrid(class UObject* WorldContextObject, int32 GridId, bool bRebuildGrids)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "RemoveLocalNavigationGrid");
+	class UFunction* Func = StaticClass()->GetFunction("NavLocalGridManager", "RemoveLocalNavigationGrid");
 
 	Params::NavLocalGridManager_RemoveLocalNavigationGrid Parms{};
 
@@ -5385,10 +4779,7 @@ void UNavLocalGridManager::RemoveLocalNavigationGrid(class UObject* WorldContext
 
 bool UNavLocalGridManager::SetLocalNavigationGridDensity(class UObject* WorldContextObject, float CellSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavLocalGridManager", "SetLocalNavigationGridDensity");
+	class UFunction* Func = StaticClass()->GetFunction("NavLocalGridManager", "SetLocalNavigationGridDensity");
 
 	Params::NavLocalGridManager_SetLocalNavigationGridDensity Parms{};
 
@@ -5416,10 +4807,7 @@ bool UNavLocalGridManager::SetLocalNavigationGridDensity(class UObject* WorldCon
 
 bool UPawnActionsComponent::K2_PerformAction(class APawn* Pawn, class UPawnAction* Action, EAIRequestPriority Priority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("PawnActionsComponent", "K2_PerformAction");
+	class UFunction* Func = StaticClass()->GetFunction("PawnActionsComponent", "K2_PerformAction");
 
 	Params::PawnActionsComponent_K2_PerformAction Parms{};
 
@@ -5446,10 +4834,7 @@ bool UPawnActionsComponent::K2_PerformAction(class APawn* Pawn, class UPawnActio
 
 EPawnActionAbortState UPawnActionsComponent::K2_AbortAction(class UPawnAction* ActionToAbort)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnActionsComponent", "K2_AbortAction");
+	class UFunction* Func = Class->GetFunction("PawnActionsComponent", "K2_AbortAction");
 
 	Params::PawnActionsComponent_K2_AbortAction Parms{};
 
@@ -5474,10 +4859,7 @@ EPawnActionAbortState UPawnActionsComponent::K2_AbortAction(class UPawnAction* A
 
 EPawnActionAbortState UPawnActionsComponent::K2_ForceAbortAction(class UPawnAction* ActionToAbort)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnActionsComponent", "K2_ForceAbortAction");
+	class UFunction* Func = Class->GetFunction("PawnActionsComponent", "K2_ForceAbortAction");
 
 	Params::PawnActionsComponent_K2_ForceAbortAction Parms{};
 
@@ -5504,10 +4886,7 @@ EPawnActionAbortState UPawnActionsComponent::K2_ForceAbortAction(class UPawnActi
 
 bool UPawnActionsComponent::K2_PushAction(class UPawnAction* NewAction, EAIRequestPriority Priority, class UObject* Instigator)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnActionsComponent", "K2_PushAction");
+	class UFunction* Func = Class->GetFunction("PawnActionsComponent", "K2_PushAction");
 
 	Params::PawnActionsComponent_K2_PushAction Parms{};
 
@@ -5533,10 +4912,7 @@ bool UPawnActionsComponent::K2_PushAction(class UPawnAction* NewAction, EAIReque
 
 void UPawnSensingComponent::SetPeripheralVisionAngle(const float NewPeripheralVisionAngle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnSensingComponent", "SetPeripheralVisionAngle");
+	class UFunction* Func = Class->GetFunction("PawnSensingComponent", "SetPeripheralVisionAngle");
 
 	Params::PawnSensingComponent_SetPeripheralVisionAngle Parms{};
 
@@ -5558,10 +4934,7 @@ void UPawnSensingComponent::SetPeripheralVisionAngle(const float NewPeripheralVi
 
 void UPawnSensingComponent::SetSensingInterval(const float NewSensingInterval)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnSensingComponent", "SetSensingInterval");
+	class UFunction* Func = Class->GetFunction("PawnSensingComponent", "SetSensingInterval");
 
 	Params::PawnSensingComponent_SetSensingInterval Parms{};
 
@@ -5583,10 +4956,7 @@ void UPawnSensingComponent::SetSensingInterval(const float NewSensingInterval)
 
 void UPawnSensingComponent::SetSensingUpdatesEnabled(const bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnSensingComponent", "SetSensingUpdatesEnabled");
+	class UFunction* Func = Class->GetFunction("PawnSensingComponent", "SetSensingUpdatesEnabled");
 
 	Params::PawnSensingComponent_SetSensingUpdatesEnabled Parms{};
 
@@ -5608,10 +4978,7 @@ void UPawnSensingComponent::SetSensingUpdatesEnabled(const bool bEnabled)
 
 float UPawnSensingComponent::GetPeripheralVisionAngle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnSensingComponent", "GetPeripheralVisionAngle");
+	class UFunction* Func = Class->GetFunction("PawnSensingComponent", "GetPeripheralVisionAngle");
 
 	Params::PawnSensingComponent_GetPeripheralVisionAngle Parms{};
 
@@ -5633,10 +5000,7 @@ float UPawnSensingComponent::GetPeripheralVisionAngle() const
 
 float UPawnSensingComponent::GetPeripheralVisionCosine() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PawnSensingComponent", "GetPeripheralVisionCosine");
+	class UFunction* Func = Class->GetFunction("PawnSensingComponent", "GetPeripheralVisionCosine");
 
 	Params::PawnSensingComponent_GetPeripheralVisionCosine Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UChaosDestructionListener::AddChaosSolverActor(class AChaosSolverActor* ChaosSolverActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "AddChaosSolverActor");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "AddChaosSolverActor");
 
 	Params::ChaosDestructionListener_AddChaosSolverActor Parms{};
 
@@ -48,10 +45,7 @@ void UChaosDestructionListener::AddChaosSolverActor(class AChaosSolverActor* Cha
 
 void UChaosDestructionListener::AddGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "AddGeometryCollectionActor");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "AddGeometryCollectionActor");
 
 	Params::ChaosDestructionListener_AddGeometryCollectionActor Parms{};
 
@@ -73,10 +67,7 @@ void UChaosDestructionListener::AddGeometryCollectionActor(class AGeometryCollec
 
 void UChaosDestructionListener::RemoveChaosSolverActor(class AChaosSolverActor* ChaosSolverActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "RemoveChaosSolverActor");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "RemoveChaosSolverActor");
 
 	Params::ChaosDestructionListener_RemoveChaosSolverActor Parms{};
 
@@ -98,10 +89,7 @@ void UChaosDestructionListener::RemoveChaosSolverActor(class AChaosSolverActor* 
 
 void UChaosDestructionListener::RemoveGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "RemoveGeometryCollectionActor");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "RemoveGeometryCollectionActor");
 
 	Params::ChaosDestructionListener_RemoveGeometryCollectionActor Parms{};
 
@@ -123,10 +111,7 @@ void UChaosDestructionListener::RemoveGeometryCollectionActor(class AGeometryCol
 
 void UChaosDestructionListener::SetBreakingEventEnabled(bool bIsEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "SetBreakingEventEnabled");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "SetBreakingEventEnabled");
 
 	Params::ChaosDestructionListener_SetBreakingEventEnabled Parms{};
 
@@ -148,10 +133,7 @@ void UChaosDestructionListener::SetBreakingEventEnabled(bool bIsEnabled)
 
 void UChaosDestructionListener::SetBreakingEventRequestSettings(const struct FChaosBreakingEventRequestSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "SetBreakingEventRequestSettings");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "SetBreakingEventRequestSettings");
 
 	Params::ChaosDestructionListener_SetBreakingEventRequestSettings Parms{};
 
@@ -173,10 +155,7 @@ void UChaosDestructionListener::SetBreakingEventRequestSettings(const struct FCh
 
 void UChaosDestructionListener::SetCollisionEventEnabled(bool bIsEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "SetCollisionEventEnabled");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "SetCollisionEventEnabled");
 
 	Params::ChaosDestructionListener_SetCollisionEventEnabled Parms{};
 
@@ -198,10 +177,7 @@ void UChaosDestructionListener::SetCollisionEventEnabled(bool bIsEnabled)
 
 void UChaosDestructionListener::SetCollisionEventRequestSettings(const struct FChaosCollisionEventRequestSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "SetCollisionEventRequestSettings");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "SetCollisionEventRequestSettings");
 
 	Params::ChaosDestructionListener_SetCollisionEventRequestSettings Parms{};
 
@@ -223,10 +199,7 @@ void UChaosDestructionListener::SetCollisionEventRequestSettings(const struct FC
 
 void UChaosDestructionListener::SetTrailingEventEnabled(bool bIsEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "SetTrailingEventEnabled");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "SetTrailingEventEnabled");
 
 	Params::ChaosDestructionListener_SetTrailingEventEnabled Parms{};
 
@@ -248,10 +221,7 @@ void UChaosDestructionListener::SetTrailingEventEnabled(bool bIsEnabled)
 
 void UChaosDestructionListener::SetTrailingEventRequestSettings(const struct FChaosTrailingEventRequestSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "SetTrailingEventRequestSettings");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "SetTrailingEventRequestSettings");
 
 	Params::ChaosDestructionListener_SetTrailingEventRequestSettings Parms{};
 
@@ -274,10 +244,7 @@ void UChaosDestructionListener::SetTrailingEventRequestSettings(const struct FCh
 
 void UChaosDestructionListener::SortBreakingEvents(TArray<struct FChaosBreakingEventData>& BreakingEvents, EChaosBreakingSortMethod SortMethod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "SortBreakingEvents");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "SortBreakingEvents");
 
 	Params::ChaosDestructionListener_SortBreakingEvents Parms{};
 
@@ -303,10 +270,7 @@ void UChaosDestructionListener::SortBreakingEvents(TArray<struct FChaosBreakingE
 
 void UChaosDestructionListener::SortCollisionEvents(TArray<struct FChaosCollisionEventData>& CollisionEvents, EChaosCollisionSortMethod SortMethod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "SortCollisionEvents");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "SortCollisionEvents");
 
 	Params::ChaosDestructionListener_SortCollisionEvents Parms{};
 
@@ -332,10 +296,7 @@ void UChaosDestructionListener::SortCollisionEvents(TArray<struct FChaosCollisio
 
 void UChaosDestructionListener::SortTrailingEvents(TArray<struct FChaosTrailingEventData>& TrailingEvents, EChaosTrailingSortMethod SortMethod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "SortTrailingEvents");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "SortTrailingEvents");
 
 	Params::ChaosDestructionListener_SortTrailingEvents Parms{};
 
@@ -360,10 +321,7 @@ void UChaosDestructionListener::SortTrailingEvents(TArray<struct FChaosTrailingE
 
 bool UChaosDestructionListener::IsEventListening() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosDestructionListener", "IsEventListening");
+	class UFunction* Func = Class->GetFunction("ChaosDestructionListener", "IsEventListening");
 
 	Params::ChaosDestructionListener_IsEventListening Parms{};
 
@@ -388,10 +346,7 @@ bool UChaosDestructionListener::IsEventListening() const
 
 bool AGeometryCollectionActor::RaycastSingle(const struct FVector& Start, const struct FVector& End, struct FHitResult* OutHit) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GeometryCollectionActor", "RaycastSingle");
+	class UFunction* Func = Class->GetFunction("GeometryCollectionActor", "RaycastSingle");
 
 	Params::GeometryCollectionActor_RaycastSingle Parms{};
 
@@ -420,10 +375,7 @@ bool AGeometryCollectionActor::RaycastSingle(const struct FVector& Start, const 
 
 void UGeometryCollectionComponent::ApplyKinematicField(float Radius, const struct FVector& position)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GeometryCollectionComponent", "ApplyKinematicField");
+	class UFunction* Func = Class->GetFunction("GeometryCollectionComponent", "ApplyKinematicField");
 
 	Params::GeometryCollectionComponent_ApplyKinematicField Parms{};
 
@@ -449,10 +401,7 @@ void UGeometryCollectionComponent::ApplyKinematicField(float Radius, const struc
 
 void UGeometryCollectionComponent::ApplyPhysicsField(bool Enabled, EGeometryCollectionPhysicsTypeEnum Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GeometryCollectionComponent", "ApplyPhysicsField");
+	class UFunction* Func = Class->GetFunction("GeometryCollectionComponent", "ApplyPhysicsField");
 
 	Params::GeometryCollectionComponent_ApplyPhysicsField Parms{};
 
@@ -477,10 +426,7 @@ void UGeometryCollectionComponent::ApplyPhysicsField(bool Enabled, EGeometryColl
 
 void UGeometryCollectionComponent::ReceivePhysicsCollision(const struct FChaosPhysicsCollisionInfo& CollisionInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GeometryCollectionComponent", "ReceivePhysicsCollision");
+	class UFunction* Func = Class->GetFunction("GeometryCollectionComponent", "ReceivePhysicsCollision");
 
 	Params::GeometryCollectionComponent_ReceivePhysicsCollision Parms{};
 
@@ -497,10 +443,7 @@ void UGeometryCollectionComponent::ReceivePhysicsCollision(const struct FChaosPh
 
 void UGeometryCollectionComponent::SetNotifyBreaks(bool bNewNotifyBreaks)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GeometryCollectionComponent", "SetNotifyBreaks");
+	class UFunction* Func = Class->GetFunction("GeometryCollectionComponent", "SetNotifyBreaks");
 
 	Params::GeometryCollectionComponent_SetNotifyBreaks Parms{};
 
@@ -522,10 +465,7 @@ void UGeometryCollectionComponent::SetNotifyBreaks(bool bNewNotifyBreaks)
 
 void USkeletalMeshSimulationComponent::ReceivePhysicsCollision(const struct FChaosPhysicsCollisionInfo& CollisionInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkeletalMeshSimulationComponent", "ReceivePhysicsCollision");
+	class UFunction* Func = Class->GetFunction("SkeletalMeshSimulationComponent", "ReceivePhysicsCollision");
 
 	Params::SkeletalMeshSimulationComponent_ReceivePhysicsCollision Parms{};
 
@@ -540,10 +480,7 @@ void USkeletalMeshSimulationComponent::ReceivePhysicsCollision(const struct FCha
 
 void UStaticMeshSimulationComponent::ForceRecreatePhysicsState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StaticMeshSimulationComponent", "ForceRecreatePhysicsState");
+	class UFunction* Func = Class->GetFunction("StaticMeshSimulationComponent", "ForceRecreatePhysicsState");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -561,10 +498,7 @@ void UStaticMeshSimulationComponent::ForceRecreatePhysicsState()
 
 void UStaticMeshSimulationComponent::ReceivePhysicsCollision(const struct FChaosPhysicsCollisionInfo& CollisionInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StaticMeshSimulationComponent", "ReceivePhysicsCollision");
+	class UFunction* Func = Class->GetFunction("StaticMeshSimulationComponent", "ReceivePhysicsCollision");
 
 	Params::StaticMeshSimulationComponent_ReceivePhysicsCollision Parms{};
 

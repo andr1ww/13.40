@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitonDetails_RefundDisclaimer_C", "ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitonDetails_RefundDisclaimer_C", "ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer");
 
 	Params::AthenaDirectAcquisitonDetails_RefundDisclaimer_C_ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::ExecuteUbergraph_AthenaD
 
 void UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitonDetails_RefundDisclaimer_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitonDetails_RefundDisclaimer_C", "PreConstruct");
 
 	Params::AthenaDirectAcquisitonDetails_RefundDisclaimer_C_PreConstruct Parms{};
 

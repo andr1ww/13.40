@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UStatusWidget_C::SetContinueButtonText(const class FText& ContinueText_SetContinueButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatusWidget_C", "SetContinueButtonText");
+	class UFunction* Func = Class->GetFunction("StatusWidget_C", "SetContinueButtonText");
 
 	Params::StatusWidget_C_SetContinueButtonText Parms{};
 
@@ -43,10 +40,7 @@ void UStatusWidget_C::SetContinueButtonText(const class FText& ContinueText_SetC
 
 void UStatusWidget_C::ExecuteUbergraph_StatusWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatusWidget_C", "ExecuteUbergraph_StatusWidget");
+	class UFunction* Func = Class->GetFunction("StatusWidget_C", "ExecuteUbergraph_StatusWidget");
 
 	Params::StatusWidget_C_ExecuteUbergraph_StatusWidget Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreativePlayModal_C::ExecuteUbergraph_CreativePlayModal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "ExecuteUbergraph_CreativePlayModal");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "ExecuteUbergraph_CreativePlayModal");
 
 	Params::CreativePlayModal_C_ExecuteUbergraph_CreativePlayModal Parms{};
 
@@ -43,10 +40,7 @@ void UCreativePlayModal_C::ExecuteUbergraph_CreativePlayModal(int32 EntryPoint)
 
 void UCreativePlayModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativePlayModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -63,10 +57,7 @@ void UCreativePlayModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_3_Comm
 
 void UCreativePlayModal_C::OnInputMethodChanged(ECommonInputType bNewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "OnInputMethodChanged");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "OnInputMethodChanged");
 
 	Params::CreativePlayModal_C_OnInputMethodChanged Parms{};
 
@@ -83,10 +74,7 @@ void UCreativePlayModal_C::OnInputMethodChanged(ECommonInputType bNewInputType)
 
 void UCreativePlayModal_C::CreativeIslandCodeConfirmedEvent(const class UFortCreativeIslandLink* IslandLink)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "CreativeIslandCodeConfirmedEvent");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "CreativeIslandCodeConfirmedEvent");
 
 	Params::CreativePlayModal_C_CreativeIslandCodeConfirmedEvent Parms{};
 
@@ -103,10 +91,7 @@ void UCreativePlayModal_C::CreativeIslandCodeConfirmedEvent(const class UFortCre
 
 void UCreativePlayModal_C::BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativePlayModal_C_BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -123,10 +108,7 @@ void UCreativePlayModal_C::BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2
 
 void UCreativePlayModal_C::BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativePlayModal_C_BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -141,10 +123,7 @@ void UCreativePlayModal_C::BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1
 
 void UCreativePlayModal_C::OnBeginOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "OnBeginOutro");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "OnBeginOutro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,10 +134,7 @@ void UCreativePlayModal_C::OnBeginOutro()
 
 void UCreativePlayModal_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +145,7 @@ void UCreativePlayModal_C::BP_OnDeactivated()
 
 void UCreativePlayModal_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -183,10 +156,7 @@ void UCreativePlayModal_C::BP_OnActivated()
 
 void UCreativePlayModal_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,10 +169,7 @@ void UCreativePlayModal_C::Construct()
 
 void UCreativePlayModal_C::BndEvt__CreativeOptionsServers_K2Node_ComponentBoundEvent_0_OnSelectedServerChanged__DelegateSignature(class UFortCreativeServerInfo* ServerInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__CreativeOptionsServers_K2Node_ComponentBoundEvent_0_OnSelectedServerChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__CreativeOptionsServers_K2Node_ComponentBoundEvent_0_OnSelectedServerChanged__DelegateSignature");
 
 	Params::CreativePlayModal_C_BndEvt__CreativeOptionsServers_K2Node_ComponentBoundEvent_0_OnSelectedServerChanged__DelegateSignature Parms{};
 
@@ -219,10 +186,7 @@ void UCreativePlayModal_C::BndEvt__CreativeOptionsServers_K2Node_ComponentBoundE
 
 void UCreativePlayModal_C::InitFromObject(class UObject* InitObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "InitFromObject");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "InitFromObject");
 
 	Params::CreativePlayModal_C_InitFromObject Parms{};
 
@@ -239,10 +203,7 @@ void UCreativePlayModal_C::InitFromObject(class UObject* InitObject)
 
 void UCreativePlayModal_C::NullActionHandler(bool* bPassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "NullActionHandler");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "NullActionHandler");
 
 	Params::CreativePlayModal_C_NullActionHandler Parms{};
 
@@ -258,10 +219,7 @@ void UCreativePlayModal_C::NullActionHandler(bool* bPassThrough)
 
 void UCreativePlayModal_C::InitializeAddFriends()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "InitializeAddFriends");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "InitializeAddFriends");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -272,10 +230,7 @@ void UCreativePlayModal_C::InitializeAddFriends()
 
 void UCreativePlayModal_C::HandleSocialImportClosed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "HandleSocialImportClosed");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "HandleSocialImportClosed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -288,10 +243,7 @@ void UCreativePlayModal_C::HandleSocialImportClosed()
 
 void UCreativePlayModal_C::SetStartIsland(const class FText& StartIslandName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "SetStartIsland");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "SetStartIsland");
 
 	Params::CreativePlayModal_C_SetStartIsland Parms{};
 
@@ -306,10 +258,7 @@ void UCreativePlayModal_C::SetStartIsland(const class FText& StartIslandName)
 
 void UCreativePlayModal_C::ManageCancelButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativePlayModal_C", "ManageCancelButton");
+	class UFunction* Func = Class->GetFunction("CreativePlayModal_C", "ManageCancelButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

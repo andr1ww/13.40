@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULightningViolator_C::ExecuteUbergraph_LightningViolator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LightningViolator_C", "ExecuteUbergraph_LightningViolator");
+	class UFunction* Func = Class->GetFunction("LightningViolator_C", "ExecuteUbergraph_LightningViolator");
 
 	Params::LightningViolator_C_ExecuteUbergraph_LightningViolator Parms{};
 
@@ -41,10 +38,7 @@ void ULightningViolator_C::ExecuteUbergraph_LightningViolator(int32 EntryPoint)
 
 void ULightningViolator_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LightningViolator_C", "Construct");
+	class UFunction* Func = Class->GetFunction("LightningViolator_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void ULightningViolator_C::Construct()
 
 void ULightningViolator_C::EventSetText(const class FText& NewText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LightningViolator_C", "EventSetText");
+	class UFunction* Func = Class->GetFunction("LightningViolator_C", "EventSetText");
 
 	Params::LightningViolator_C_EventSetText Parms{};
 
@@ -77,10 +68,7 @@ void ULightningViolator_C::EventSetText(const class FText& NewText)
 
 void ULightningViolator_C::EventColorBG(const struct FLinearColor& NewColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LightningViolator_C", "EventColorBG");
+	class UFunction* Func = Class->GetFunction("LightningViolator_C", "EventColorBG");
 
 	Params::LightningViolator_C_EventColorBG Parms{};
 
@@ -97,10 +85,7 @@ void ULightningViolator_C::EventColorBG(const struct FLinearColor& NewColor)
 
 void ULightningViolator_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LightningViolator_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("LightningViolator_C", "PreConstruct");
 
 	Params::LightningViolator_C_PreConstruct Parms{};
 
@@ -119,10 +104,7 @@ void ULightningViolator_C::PreConstruct(bool IsDesignTime)
 
 void ULightningViolator_C::TailPosition(bool ShowTail, EHorizontalAlignment HPosition, bool OnTop)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LightningViolator_C", "TailPosition");
+	class UFunction* Func = Class->GetFunction("LightningViolator_C", "TailPosition");
 
 	Params::LightningViolator_C_TailPosition Parms{};
 

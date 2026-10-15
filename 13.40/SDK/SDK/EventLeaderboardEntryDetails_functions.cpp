@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEventLeaderboardEntryDetails_C::ExecuteUbergraph_EventLeaderboardEntryDetails(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "ExecuteUbergraph_EventLeaderboardEntryDetails");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "ExecuteUbergraph_EventLeaderboardEntryDetails");
 
 	Params::EventLeaderboardEntryDetails_C_ExecuteUbergraph_EventLeaderboardEntryDetails Parms{};
 
@@ -43,10 +40,7 @@ void UEventLeaderboardEntryDetails_C::ExecuteUbergraph_EventLeaderboardEntryDeta
 
 void UEventLeaderboardEntryDetails_C::BndEvt__Button_MatchHistory_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__Button_MatchHistory_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__Button_MatchHistory_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
 
 	Params::EventLeaderboardEntryDetails_C_BndEvt__Button_MatchHistory_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -63,10 +57,7 @@ void UEventLeaderboardEntryDetails_C::BndEvt__Button_MatchHistory_K2Node_Compone
 
 void UEventLeaderboardEntryDetails_C::BndEvt__Button_MatchHistory_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__Button_MatchHistory_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__Button_MatchHistory_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
 
 	Params::EventLeaderboardEntryDetails_C_BndEvt__Button_MatchHistory_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -83,10 +74,7 @@ void UEventLeaderboardEntryDetails_C::BndEvt__Button_MatchHistory_K2Node_Compone
 
 void UEventLeaderboardEntryDetails_C::BndEvt__Button_WatchLive_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__Button_WatchLive_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__Button_WatchLive_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
 
 	Params::EventLeaderboardEntryDetails_C_BndEvt__Button_WatchLive_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -103,10 +91,7 @@ void UEventLeaderboardEntryDetails_C::BndEvt__Button_WatchLive_K2Node_ComponentB
 
 void UEventLeaderboardEntryDetails_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::EventLeaderboardEntryDetails_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -123,10 +108,7 @@ void UEventLeaderboardEntryDetails_C::BndEvt__IconTextButton_K2Node_ComponentBou
 
 void UEventLeaderboardEntryDetails_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::EventLeaderboardEntryDetails_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -141,10 +123,7 @@ void UEventLeaderboardEntryDetails_C::BndEvt__IconTextButton_K2Node_ComponentBou
 
 void UEventLeaderboardEntryDetails_C::LeaderboardEntryDoubleClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "LeaderboardEntryDoubleClicked");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "LeaderboardEntryDoubleClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +136,7 @@ void UEventLeaderboardEntryDetails_C::LeaderboardEntryDoubleClicked()
 
 void UEventLeaderboardEntryDetails_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::EventLeaderboardEntryDetails_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -175,10 +151,7 @@ void UEventLeaderboardEntryDetails_C::BndEvt__IconTextButton_K2Node_ComponentBou
 
 void UEventLeaderboardEntryDetails_C::EventIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "EventIntro");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "EventIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +164,7 @@ void UEventLeaderboardEntryDetails_C::EventIntro()
 
 void UEventLeaderboardEntryDetails_C::EventColorize(const struct FFortTournamentDisplayInfo& TournamentDisplayInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "EventColorize");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "EventColorize");
 
 	Params::EventLeaderboardEntryDetails_C_EventColorize Parms{};
 
@@ -209,10 +179,7 @@ void UEventLeaderboardEntryDetails_C::EventColorize(const struct FFortTournament
 
 void UEventLeaderboardEntryDetails_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "Construct");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -226,10 +193,7 @@ void UEventLeaderboardEntryDetails_C::Construct()
 
 void UEventLeaderboardEntryDetails_C::Show_Details(class UFortEventLeaderboardEntryData* EntryData, ETournamentDisplayType EventType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "Show Details");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "Show Details");
 
 	Params::EventLeaderboardEntryDetails_C_Show_Details Parms{};
 
@@ -248,10 +212,7 @@ void UEventLeaderboardEntryDetails_C::Show_Details(class UFortEventLeaderboardEn
 
 void UEventLeaderboardEntryDetails_C::SetTournamentValues(const class FString& InTournamentId, const class FString& InEventWindowId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "SetTournamentValues");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntryDetails_C", "SetTournamentValues");
 
 	Params::EventLeaderboardEntryDetails_C_SetTournamentValues Parms{};
 

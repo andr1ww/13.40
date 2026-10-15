@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAnimSharingStateInstance::GetInstancedActors(TArray<class AActor*>* Actors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimSharingStateInstance", "GetInstancedActors");
+	class UFunction* Func = Class->GetFunction("AnimSharingStateInstance", "GetInstancedActors");
 
 	Params::AnimSharingStateInstance_GetInstancedActors Parms{};
 
@@ -49,10 +46,7 @@ void UAnimSharingStateInstance::GetInstancedActors(TArray<class AActor*>* Actors
 
 bool UAnimationSharingManager::AnimationSharingEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnimationSharingManager", "AnimationSharingEnabled");
+	class UFunction* Func = StaticClass()->GetFunction("AnimationSharingManager", "AnimationSharingEnabled");
 
 	Params::AnimationSharingManager_AnimationSharingEnabled Parms{};
 
@@ -76,10 +70,7 @@ bool UAnimationSharingManager::AnimationSharingEnabled()
 
 bool UAnimationSharingManager::CreateAnimationSharingManager(class UObject* WorldContextObject, const class UAnimationSharingSetup* Setup)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnimationSharingManager", "CreateAnimationSharingManager");
+	class UFunction* Func = StaticClass()->GetFunction("AnimationSharingManager", "CreateAnimationSharingManager");
 
 	Params::AnimationSharingManager_CreateAnimationSharingManager Parms{};
 
@@ -105,10 +96,7 @@ bool UAnimationSharingManager::CreateAnimationSharingManager(class UObject* Worl
 
 class UAnimationSharingManager* UAnimationSharingManager::GetAnimationSharingManager(class UObject* WorldContextObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnimationSharingManager", "GetAnimationSharingManager");
+	class UFunction* Func = StaticClass()->GetFunction("AnimationSharingManager", "GetAnimationSharingManager");
 
 	Params::AnimationSharingManager_GetAnimationSharingManager Parms{};
 
@@ -133,10 +121,7 @@ class UAnimationSharingManager* UAnimationSharingManager::GetAnimationSharingMan
 
 void UAnimationSharingManager::RegisterActorWithSkeletonBP(class AActor* InActor, const class USkeleton* SharingSkeleton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimationSharingManager", "RegisterActorWithSkeletonBP");
+	class UFunction* Func = Class->GetFunction("AnimationSharingManager", "RegisterActorWithSkeletonBP");
 
 	Params::AnimationSharingManager_RegisterActorWithSkeletonBP Parms{};
 
@@ -159,10 +144,7 @@ void UAnimationSharingManager::RegisterActorWithSkeletonBP(class AActor* InActor
 
 class UEnum* UAnimationSharingStateProcessor::GetAnimationStateEnum()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimationSharingStateProcessor", "GetAnimationStateEnum");
+	class UFunction* Func = Class->GetFunction("AnimationSharingStateProcessor", "GetAnimationStateEnum");
 
 	Params::AnimationSharingStateProcessor_GetAnimationStateEnum Parms{};
 
@@ -188,10 +170,7 @@ class UEnum* UAnimationSharingStateProcessor::GetAnimationStateEnum()
 
 void UAnimationSharingStateProcessor::ProcessActorState(int32* OutState, class AActor* InActor, uint8 CurrentState, uint8 OnDemandState, bool* bShouldProcess)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimationSharingStateProcessor", "ProcessActorState");
+	class UFunction* Func = Class->GetFunction("AnimationSharingStateProcessor", "ProcessActorState");
 
 	Params::AnimationSharingStateProcessor_ProcessActorState Parms{};
 

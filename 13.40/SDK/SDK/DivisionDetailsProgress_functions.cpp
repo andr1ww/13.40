@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UDivisionDetailsProgress_C::OnSetInProgress(float NewPercent_OnSetInProgress, bool bIsInProgress_OnSetInProgress)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionDetailsProgress_C", "OnSetInProgress");
+	class UFunction* Func = Class->GetFunction("DivisionDetailsProgress_C", "OnSetInProgress");
 
 	Params::DivisionDetailsProgress_C_OnSetInProgress Parms{};
 
@@ -45,10 +42,7 @@ void UDivisionDetailsProgress_C::OnSetInProgress(float NewPercent_OnSetInProgres
 
 void UDivisionDetailsProgress_C::ExecuteUbergraph_DivisionDetailsProgress(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionDetailsProgress_C", "ExecuteUbergraph_DivisionDetailsProgress");
+	class UFunction* Func = Class->GetFunction("DivisionDetailsProgress_C", "ExecuteUbergraph_DivisionDetailsProgress");
 
 	Params::DivisionDetailsProgress_C_ExecuteUbergraph_DivisionDetailsProgress Parms{};
 

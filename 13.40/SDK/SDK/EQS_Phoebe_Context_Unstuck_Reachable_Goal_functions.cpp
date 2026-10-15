@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EQS_Phoebe_Context_Unstuck_Reachable_Goal_C", "ProvideSingleLocation");
+	class UFunction* Func = Class->GetFunction("EQS_Phoebe_Context_Unstuck_Reachable_Goal_C", "ProvideSingleLocation");
 
 	Params::EQS_Phoebe_Context_Unstuck_Reachable_Goal_C_ProvideSingleLocation Parms{};
 

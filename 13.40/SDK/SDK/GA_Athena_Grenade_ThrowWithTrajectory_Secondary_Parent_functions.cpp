@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::ExecuteUbergraph_GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "ExecuteUbergraph_GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "ExecuteUbergraph_GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_ExecuteUbergraph_GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::ExecuteUbergraph
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::ThrowMontageStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "ThrowMontageStarted");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "ThrowMontageStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::ThrowMontageStar
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::UpdateTrajectory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "UpdateTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "UpdateTrajectory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::UpdateTrajectory
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::CleanupTrajectoryIndicatorOnUnequip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "CleanupTrajectoryIndicatorOnUnequip");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "CleanupTrajectoryIndicatorOnUnequip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::CleanupTrajector
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::K2_ActivateAbili
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnAbilityInputReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnAbilityInputReleased");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnAbilityInputReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnAbilityInputRe
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::InitTrajectoryVariables()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "InitTrajectoryVariables");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "InitTrajectoryVariables");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +106,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::InitTrajectoryVa
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_K2_OnEndAbility Parms{};
 
@@ -145,10 +121,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::K2_OnEndAbility(
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::AttemptSpawnThrownProjectile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "AttemptSpawnThrownProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "AttemptSpawnThrownProjectile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +132,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::AttemptSpawnThro
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::ThrowProjectile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "ThrowProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "ThrowProjectile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +143,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::ThrowProjectile(
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnSync_65BB2FE343979EBE180BC6A76D8BF92F()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnSync_65BB2FE343979EBE180BC6A76D8BF92F");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnSync_65BB2FE343979EBE180BC6A76D8BF92F");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -189,10 +156,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnSync_65BB2FE34
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::EventReceived_11F8FEDB4634DE47482E1B962FB8A5E6(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "EventReceived_11F8FEDB4634DE47482E1B962FB8A5E6");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "EventReceived_11F8FEDB4634DE47482E1B962FB8A5E6");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_EventReceived_11F8FEDB4634DE47482E1B962FB8A5E6 Parms{};
 
@@ -207,10 +171,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::EventReceived_11
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnCompleted_2A7663C74EF65992AD4E1F86CA08C8B1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnCompleted_2A7663C74EF65992AD4E1F86CA08C8B1");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnCompleted_2A7663C74EF65992AD4E1F86CA08C8B1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +182,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnCompleted_2A76
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnBlendOut_2A7663C74EF65992AD4E1F86CA08C8B1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnBlendOut_2A7663C74EF65992AD4E1F86CA08C8B1");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnBlendOut_2A7663C74EF65992AD4E1F86CA08C8B1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,10 +193,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnBlendOut_2A766
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnInterrupted_2A7663C74EF65992AD4E1F86CA08C8B1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnInterrupted_2A7663C74EF65992AD4E1F86CA08C8B1");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnInterrupted_2A7663C74EF65992AD4E1F86CA08C8B1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +204,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnInterrupted_2A
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnCancelled_2A7663C74EF65992AD4E1F86CA08C8B1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnCancelled_2A7663C74EF65992AD4E1F86CA08C8B1");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnCancelled_2A7663C74EF65992AD4E1F86CA08C8B1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -263,10 +215,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnCancelled_2A76
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnFinish_79D5F1274D4E02F76A06EEAFF19FADF3()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnFinish_79D5F1274D4E02F76A06EEAFF19FADF3");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnFinish_79D5F1274D4E02F76A06EEAFF19FADF3");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -280,10 +229,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnFinish_79D5F12
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::Triggered_7CDE11F247AD13935CDDCCA29666AC3E(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "Triggered_7CDE11F247AD13935CDDCCA29666AC3E");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "Triggered_7CDE11F247AD13935CDDCCA29666AC3E");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_Triggered_7CDE11F247AD13935CDDCCA29666AC3E Parms{};
 
@@ -302,10 +248,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::Triggered_7CDE11
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::Cancelled_7CDE11F247AD13935CDDCCA29666AC3E(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "Cancelled_7CDE11F247AD13935CDDCCA29666AC3E");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "Cancelled_7CDE11F247AD13935CDDCCA29666AC3E");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_Cancelled_7CDE11F247AD13935CDDCCA29666AC3E Parms{};
 
@@ -324,10 +267,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::Cancelled_7CDE11
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::Completed_7CDE11F247AD13935CDDCCA29666AC3E(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "Completed_7CDE11F247AD13935CDDCCA29666AC3E");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "Completed_7CDE11F247AD13935CDDCCA29666AC3E");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_Completed_7CDE11F247AD13935CDDCCA29666AC3E Parms{};
 
@@ -343,10 +283,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::Completed_7CDE11
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::PrethrowSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "PrethrowSetup");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "PrethrowSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -366,10 +303,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::PrethrowSetup()
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::SpawnThrownProjectile(class UClass* ProjectileClass_0, const struct FVector& ProjectileSpawnLocation, const struct FRotator& ProjectileSpawnDirection, const struct FFortGameplayEffectContainerSpec& HitEffectContainerSpec_0, const struct FFortGameplayEffectContainerSpec& ExplosionEffectContainerSpec_0, float ProjectileInitialSpeed, float ProjectileGravityScale_0, class AFortProjectileBase** SpawnedProjectile_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "SpawnThrownProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "SpawnThrownProjectile");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_SpawnThrownProjectile Parms{};
 
@@ -395,10 +329,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::SpawnThrownProje
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnProjectileSpawned(class AFortProjectileBase* SpawnedProjectile_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnProjectileSpawned");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnProjectileSpawned");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_OnProjectileSpawned Parms{};
 
@@ -413,10 +344,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnProjectileSpaw
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnProjectileSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnProjectileSetup");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "OnProjectileSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -427,10 +355,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::OnProjectileSetu
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::SetupDummyProjectile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "SetupDummyProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "SetupDummyProjectile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -441,10 +366,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::SetupDummyProjec
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::UpdateTrajectorySpline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "UpdateTrajectorySpline");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "UpdateTrajectorySpline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -455,10 +377,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::UpdateTrajectory
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::PostThrowCleanup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "PostThrowCleanup");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "PostThrowCleanup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -469,10 +388,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::PostThrowCleanup
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::CleanupTrajectory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "CleanupTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "CleanupTrajectory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -485,10 +401,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::CleanupTrajector
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetProjectileInitialSpeedToUse(float* ProjectileSpeedToUse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetProjectileInitialSpeedToUse");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetProjectileInitialSpeedToUse");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_GetProjectileInitialSpeedToUse Parms{};
 
@@ -506,10 +419,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetProjectileIni
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetProjectileInitialGravityScaleToUse(float* GravityScaleToUse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetProjectileInitialGravityScaleToUse");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetProjectileInitialGravityScaleToUse");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_GetProjectileInitialGravityScaleToUse Parms{};
 
@@ -529,10 +439,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetProjectileIni
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetProjectileTrajectoryPoints(TArray<struct FVector>* OutSplinePoints, TArray<struct FVector>* OutSplineTangents, struct FHitResult* OutHitResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetProjectileTrajectoryPoints");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetProjectileTrajectoryPoints");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_GetProjectileTrajectoryPoints Parms{};
 
@@ -557,10 +464,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetProjectileTra
 
 class AFortProjectileTrajectory* UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::SpawnTrajectoryIndicator(bool bSpawnOnEquip)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "SpawnTrajectoryIndicator");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "SpawnTrajectoryIndicator");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_SpawnTrajectoryIndicator Parms{};
 
@@ -580,10 +484,7 @@ class AFortProjectileTrajectory* UGA_Athena_Grenade_ThrowWithTrajectory_Secondar
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetSpawnLocationAndRotation(struct FVector* Location, struct FRotator* Rotation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetSpawnLocationAndRotation");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetSpawnLocationAndRotation");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_GetSpawnLocationAndRotation Parms{};
 
@@ -604,10 +505,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetSpawnLocation
 
 void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetOwningPlayer(class AFortPlayerPawn** Player_Pawn) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetOwningPlayer");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetOwningPlayer");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_GetOwningPlayer Parms{};
 
@@ -625,10 +523,7 @@ void UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetOwningPlayer(
 
 TSubclassOf<class AFortProjectileTrajectory> UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::GetProjectileTrajectoryActor() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetProjectileTrajectoryActor");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "GetProjectileTrajectoryActor");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_GetProjectileTrajectoryActor Parms{};
 
@@ -645,10 +540,7 @@ TSubclassOf<class AFortProjectileTrajectory> UGA_Athena_Grenade_ThrowWithTraject
 
 bool UGA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C::ShouldOnlyShowTrajectoryOnUse() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "ShouldOnlyShowTrajectoryOnUse");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C", "ShouldOnlyShowTrajectoryOnUse");
 
 	Params::GA_Athena_Grenade_ThrowWithTrajectory_Secondary_Parent_C_ShouldOnlyShowTrajectoryOnUse Parms{};
 

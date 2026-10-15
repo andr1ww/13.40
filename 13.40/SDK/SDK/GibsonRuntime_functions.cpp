@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void AFortAthenaMutator_Gibson::OnGamePhaseStepChanged(const TScriptInterface<class IFortSafeZoneInterface>& SafeZoneInterface, const EAthenaGamePhaseStep GamePhaseStep)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnGamePhaseStepChanged");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnGamePhaseStepChanged");
 
 	Params::FortAthenaMutator_Gibson_OnGamePhaseStepChanged Parms{};
 
@@ -48,10 +45,7 @@ void AFortAthenaMutator_Gibson::OnGamePhaseStepChanged(const TScriptInterface<cl
 
 void AFortAthenaMutator_Gibson::OnMutatorReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnMutatorReady");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnMutatorReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,10 +59,7 @@ void AFortAthenaMutator_Gibson::OnMutatorReady()
 
 void AFortAthenaMutator_Gibson::OnPlayerPawnDBNOStateChanged(class AFortPawn* InPlayer, bool bInIsDBNO)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnPlayerPawnDBNOStateChanged");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnPlayerPawnDBNOStateChanged");
 
 	Params::FortAthenaMutator_Gibson_OnPlayerPawnDBNOStateChanged Parms{};
 
@@ -89,10 +80,7 @@ void AFortAthenaMutator_Gibson::OnPlayerPawnDBNOStateChanged(class AFortPawn* In
 
 void AFortAthenaMutator_Gibson::OnSafeZoneUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnSafeZoneUpdated");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnSafeZoneUpdated");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -112,10 +100,7 @@ void AFortAthenaMutator_Gibson::OnSafeZoneUpdated()
 
 void AFortAthenaMutator_Gibson::OnServerGameMemberRemoved(uint8 InSquadId, uint8 InTeamIndex, class AFortPlayerStateAthena* ChangedPS)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnServerGameMemberRemoved");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Gibson", "OnServerGameMemberRemoved");
 
 	Params::FortAthenaMutator_Gibson_OnServerGameMemberRemoved Parms{};
 
@@ -139,10 +124,7 @@ void AFortAthenaMutator_Gibson::OnServerGameMemberRemoved(uint8 InSquadId, uint8
 
 void AFortAthenaMutator_Gibson::SpawnReinforcementSquad(const class AActor* ReinforcementSpawner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMutator_Gibson", "SpawnReinforcementSquad");
+	class UFunction* Func = Class->GetFunction("FortAthenaMutator_Gibson", "SpawnReinforcementSquad");
 
 	Params::FortAthenaMutator_Gibson_SpawnReinforcementSquad Parms{};
 
@@ -162,10 +144,7 @@ void AFortAthenaMutator_Gibson::SpawnReinforcementSquad(const class AActor* Rein
 
 void UFortCheatManager_Gibson::GibsonForcePodSpawn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheatManager_Gibson", "GibsonForcePodSpawn");
+	class UFunction* Func = Class->GetFunction("FortCheatManager_Gibson", "GibsonForcePodSpawn");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

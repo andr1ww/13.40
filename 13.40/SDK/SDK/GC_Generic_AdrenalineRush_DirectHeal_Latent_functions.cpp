@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::ExecuteUbergraph_GC_Generic_AdrenalineRush_DirectHeal_Latent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "ExecuteUbergraph_GC_Generic_AdrenalineRush_DirectHeal_Latent");
+	class UFunction* Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "ExecuteUbergraph_GC_Generic_AdrenalineRush_DirectHeal_Latent");
 
 	Params::GC_Generic_AdrenalineRush_DirectHeal_Latent_C_ExecuteUbergraph_GC_Generic_AdrenalineRush_DirectHeal_Latent Parms{};
 
@@ -45,10 +42,7 @@ void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::ExecuteUbergraph_GC_Generic
 
 void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::K2_HandleGameplayCue(class AActor* MyTarget, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "K2_HandleGameplayCue");
+	class UFunction* Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "K2_HandleGameplayCue");
 
 	Params::GC_Generic_AdrenalineRush_DirectHeal_Latent_C_K2_HandleGameplayCue Parms{};
 
@@ -65,10 +59,7 @@ void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::K2_HandleGameplayCue(class 
 
 void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::HealthSweep__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "HealthSweep__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "HealthSweep__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::HealthSweep__UpdateFunc()
 
 void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::HealthSweep__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "HealthSweep__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "HealthSweep__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -96,10 +84,7 @@ void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::HealthSweep__FinishedFunc()
 
 void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Set_Adrenaline_Rush_Visibility(bool Visible, class AFortPlayerPawn* Player_Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "Set Adrenaline Rush Visibility");
+	class UFunction* Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "Set Adrenaline Rush Visibility");
 
 	Params::GC_Generic_AdrenalineRush_DirectHeal_Latent_C_Set_Adrenaline_Rush_Visibility Parms{};
 
@@ -117,10 +102,7 @@ void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Set_Adrenaline_Rush_Visibil
 
 void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Duplicate_Meshes(class AFortPlayerPawn* Player_Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "Duplicate Meshes");
+	class UFunction* Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "Duplicate Meshes");
 
 	Params::GC_Generic_AdrenalineRush_DirectHeal_Latent_C_Duplicate_Meshes Parms{};
 
@@ -137,10 +119,7 @@ void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Duplicate_Meshes(class AFor
 
 void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Toggle_Mesh_Visibility(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "Toggle Mesh Visibility");
+	class UFunction* Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "Toggle Mesh Visibility");
 
 	Params::GC_Generic_AdrenalineRush_DirectHeal_Latent_C_Toggle_Mesh_Visibility Parms{};
 

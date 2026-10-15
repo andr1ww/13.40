@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void IPetAnimLayerInterface_C::PetFullOverrideLayer(const struct FPoseLink& InPose, struct FPoseLink* PetFullOverrideLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("PetAnimLayerInterface_C", "PetFullOverrideLayer");
+	class UFunction* Func = AsUObject()->Class->GetFunction("PetAnimLayerInterface_C", "PetFullOverrideLayer");
 
 	Params::PetAnimLayerInterface_C_PetFullOverrideLayer Parms{};
 
@@ -52,10 +49,7 @@ void IPetAnimLayerInterface_C::PetFullOverrideLayer(const struct FPoseLink& InPo
 
 void IPetAnimLayerInterface_C::PetSkeletalControlLayer(const struct FPoseLink& Pose, float LookAtOverrideInput, const struct FVector& LookAtTargetLocationInput, float LegIKAlphaOverride, float HandIKAlphaOverride, struct FPoseLink* PetSkeletalControlLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("PetAnimLayerInterface_C", "PetSkeletalControlLayer");
+	class UFunction* Func = AsUObject()->Class->GetFunction("PetAnimLayerInterface_C", "PetSkeletalControlLayer");
 
 	Params::PetAnimLayerInterface_C_PetSkeletalControlLayer Parms{};
 

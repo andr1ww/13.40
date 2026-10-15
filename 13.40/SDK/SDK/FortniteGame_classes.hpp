@@ -1428,6 +1428,11 @@ public:
 	bool IsConsolePlayer() const;
 	bool IsMeshNetPlayer() const;
 
+	void ApplyCharacterCustomization(class AActor* Pawn)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPlayerState*, class AActor*)>(InSDKUtils::GetImageBase() + 0x29E0C70), this, Pawn);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -2020,6 +2025,11 @@ public:
 	bool ShouldDisplayMobileInteractPrompt() const;
 	bool UseDefaultHealthBar() const;
 
+	void Die(const struct FGameplayTag& DeathTag, class AController* InstigatedBy = nullptr, class AActor* DamageCauser = nullptr, void* EffectContextHandle = nullptr)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(ABuildingActor*, struct FGameplayTag, class AController*, class AActor*, void*)>(InSDKUtils::GetImageBase() + 0x2126B80), this, DeathTag, InstigatedBy, DamageCauser, EffectContextHandle);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -2135,7 +2145,8 @@ public:
 	class FName                                   DestructionLootTierKey;                            // 0x0850(0x0008)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FCurveTableRowHandle                   BuildingResourceAmountOverride;                    // 0x0858(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                         MaxResourcesToSpawn;                               // 0x0868(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_86C[0x14];                                     // 0x086C(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         UndistributedResources;                            // 0x086C(0x0004)(Transient, IsPlainOldData, NoDestructor, Protected)
+	uint8                                         Pad_870[0x10];                                     // 0x0870(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSoftObjectPtr<class UMaterialInterface>> IntenseWindMaterials;                           // 0x0880(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UParticleSystem*                        BreakEffect;                                       // 0x0890(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSoftObjectPtr<class UParticleSystem>         DeathParticles;                                    // 0x0898(0x0028)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -2293,6 +2304,36 @@ public:
 	bool IsSupportedByWorld() const;
 	bool IsUnderConstruction() const;
 	bool WillRegisterWithStructuralGrid() const;
+
+	float DetermineMaxResourcesToSpawn(bool bRandomize)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<float(*)(ABuildingSMActor*, bool)>(this, 0xAB8 / 8), this, bRandomize);
+	}
+
+	class ABuildingSMActor* ReplaceBuildingActor(EBuildingReplacementType ReplacementType, class UClass* NewBuildingClass, int32 BuildingLevel, int32 RotationIterations, bool bMirrored, class AFortPlayerController* PlayerController)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<class ABuildingSMActor*(*)(ABuildingSMActor*, EBuildingReplacementType, class UClass*, int32, int32, bool, class AFortPlayerController*)>(this, 0xBB8 / 8), this, ReplacementType, NewBuildingClass, BuildingLevel, RotationIterations, bMirrored, PlayerController);
+	}
+
+	bool CanBePlayerEdited(class AActor* Editor)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(ABuildingSMActor*, class AActor*)>(this, 0xBC8 / 8), this, Editor);
+	}
+
+	void SetEditingPlayer(class AFortPlayerStateZone* NewEditingPlayer)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(ABuildingSMActor*, class AFortPlayerStateZone*)>(this, 0xBE0 / 8), this, NewEditingPlayer);
+	}
+
+	bool NeedsRepair()
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(ABuildingSMActor*)>(this, 0xC58 / 8), this);
+	}
+
+	bool IsBeingPlayerEdited()
+	{
+		return EditingPlayer != nullptr;
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -3070,6 +3111,11 @@ public:
 	bool IsInventorySizeLimited() const;
 	bool IsStackable() const;
 	bool ShouldShowPreviewOnCurrentHero(const int32 InSubSlot) const;
+
+	bool ServerExecute(class UFortItem* Item, class UObject* Controller)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(UFortItemDefinition*, class UFortItem*, class UObject*)>(this, 0x4B8 / 8), this, Item, Controller);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -5386,6 +5432,70 @@ public:
 	void ReportVideoStreamingError(class UMediaPlayer* MediaPlayer, bool bLocalContentFallback, const class FString& LastError) const;
 	void SendStreamingAnalytics(class UMediaPlayer* MediaPlayer) const;
 	bool ShouldShowInfoIndicator(const class AActor* TestActor) const;
+
+	class UObject* GetOrInitializeHero()
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<class UObject*(*)(AFortPlayerController*)>(this, 0x1C00 / 8), this);
+	}
+
+	bool CanPerformNativeAction(const struct FGameplayTag& ActionTag)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(AFortPlayerController*, const struct FGameplayTag*)>(this, 0x15F0 / 8), this, &ActionTag);
+	}
+
+	bool CanAffordToPlaceBuildableClass(const struct FBuildingClassData& BuildingClassData)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(AFortPlayerController*, const struct FBuildingClassData*)>(this, 0x19B0 / 8), this, &BuildingClassData);
+	}
+
+	bool CanAffordToRepair(class ABuildingSMActor* BuildingActor)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(AFortPlayerController*, class ABuildingSMActor*)>(this, 0x19B8 / 8), this, BuildingActor);
+	}
+
+	bool IsBuildingRestricted(const struct FBuildingClassData& BuildingClassData, const struct FVector& WorldLocation, const struct FRotator& WorldRotation)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(AFortPlayerController*, const struct FBuildingClassData*, const struct FVector*, const struct FRotator*)>(this, 0x19C0 / 8), this, &BuildingClassData, &WorldLocation, &WorldRotation);
+	}
+
+	bool HasRequiredBuildingLevel(int32 UpgradeLevel, EFortResourceType ResourceType)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(AFortPlayerController*, int32, EFortResourceType)>(this, 0x19C8 / 8), this, UpgradeLevel, ResourceType);
+	}
+
+	int32 PayBuildableClassPlacementCost(const struct FBuildingClassData& BuildingClassData)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<int32(*)(AFortPlayerController*, const struct FBuildingClassData*)>(this, 0x1A10 / 8), this, &BuildingClassData);
+	}
+
+	int32 PayBuildingRepairCost(class ABuildingSMActor* BuildingActor)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<int32(*)(AFortPlayerController*, class ABuildingSMActor*)>(this, 0x1A18 / 8), this, BuildingActor);
+	}
+
+	class FText GetErrorMessageFromStructuralQuery(EFortStructuralGridQueryResults QueryResults)
+	{
+		class FText Result{};
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<class FText*(*)(AFortPlayerController*, class FText*, EFortStructuralGridQueryResults)>(this, 0x1A20 / 8), this, &Result, QueryResults);
+		return Result;
+	}
+
+	EFortStructuralGridQueryResults CanPlaceBuildableClassInStructuralGrid(TSubclassOf<class ABuildingSMActor> ClassToBuild, const struct FVector& WorldLocation, const struct FRotator& WorldRotation, bool bMirrored, TArray<class ABuildingActor*>* ExistingBuildings, EFortBuildPreviewMarkerOptionalAdjustment* MarkerOptionalAdjustment)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<EFortStructuralGridQueryResults(*)(AFortPlayerController*, TSubclassOf<class ABuildingSMActor>, const struct FVector*, const struct FRotator*, bool, TArray<class ABuildingActor*>*, EFortBuildPreviewMarkerOptionalAdjustment*)>(this, 0x1A28 / 8), this, ClassToBuild, &WorldLocation, &WorldRotation, bMirrored, ExistingBuildings, MarkerOptionalAdjustment);
+	}
+
+	void TriggerUIFeedbackEvent(class FName EventName)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPlayerController*, class FName)>(InSDKUtils::GetImageBase() + 0x2997340), this, EventName);
+	}
+
+	bool FixUpCreateBuildingClassData(struct FBuildingClassData& BuildingClassData);
+
+	class UFortControllerComponent_Aircraft* GetAircraftComponent()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UFortControllerComponent_Aircraft*(*)(AFortPlayerController*)>(InSDKUtils::GetImageBase() + 0x1BBAB50), this);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -7898,6 +8008,16 @@ public:
 	class AFortPawn* GetPawnWhoDroppedPickup() const;
 	bool PickedUp() const;
 
+	static class AFortPickup* CreateFromData(const struct FFortCreatePickupData& PickupData)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class AFortPickup*(*)(const struct FFortCreatePickupData*)>(InSDKUtils::GetImageBase() + 0x261B5B0), &PickupData);
+	}
+
+	void SetPickupTarget(class AFortPawn* Pawn, float InFlyTime, const struct FVector& InStartDirection)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPickup*, class AFortPawn*, float, const struct FVector*)>(InSDKUtils::GetImageBase() + 0x262AFC0), this, Pawn, InFlyTime, &InStartDirection);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -8467,6 +8587,16 @@ public:
 	float GetMatchTime() const;
 	bool GetPlayerRespawningBlocked_Temporarily() const;
 	int32 GetWorldDaysElapsed() const;
+
+	void SetWorldManager(class AFortWorldManager* InWorldManager)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(AFortGameState*, class AFortWorldManager*)>(this, 0x748 / 8), this, InWorldManager);
+	}
+
+	void ApplyHomebaseEffectsOnPlayerSetup(const struct FUniqueNetIdRepl& AccountId, class UObject* McpProfile, class IAbilitySystemInterface* Interface, class UObject* Hero, bool bApplyHeroEffects, bool bApplyTeamPerks, bool bApplyGadgets)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(AFortGameState*, const struct FUniqueNetIdRepl*, class UObject*, class IAbilitySystemInterface*, class UObject*, bool, bool, bool)>(this, 0x8B8 / 8), this, &AccountId, McpProfile, Interface, Hero, bApplyHeroEffects, bApplyTeamPerks, bApplyGadgets);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -16241,6 +16371,20 @@ public:
 	bool ShouldDriverHaveReticle() const;
 	float TimeFromJumpApex() const;
 
+	void OnBlueprintPlace()
+	{
+		if (Role == ENetRole::ROLE_SimulatedProxy)
+			return;
+
+		if (!BluePrintPlaceAnimation || !Mesh)
+			return;
+
+		class UAnimInstance* AnimInstance = Mesh->GetAnimInstance();
+
+		if (AnimInstance && !AnimInstance->Montage_IsPlaying(BluePrintPlaceAnimation))
+			PlayAnimMontage(BluePrintPlaceAnimation, 1.0f, FName());
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -17207,6 +17351,16 @@ public:
 	void SetDynamicFoundationTransform(const struct FTransform& NewTransform);
 
 	bool DoesBuildingFoundationContainActor(class AActor* Actor) const;
+
+	void SelectAndSetupMyBuildingLevel()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(ABuildingFoundation*, int64)>(InSDKUtils::GetImageBase() + 0x2160960), this, 0);
+	}
+
+	bool StreamInMyBuilding(bool bMakeVisibleAfterLoad = false)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(ABuildingFoundation*, bool)>(InSDKUtils::GetImageBase() + 0x2165000), this, bMakeVisibleAfterLoad);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -34523,6 +34677,16 @@ public:
 	bool IsRespawningAllowed(class AFortPlayerState* PlayerState) const;
 	bool ShouldDisablePlayerTeleportingDuringMissionResults() const;
 
+	void OnAbilitySystemInterfaceReadyForPersistentGameplayEffects(class IAbilitySystemInterface* Interface)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameStateZone*, class IAbilitySystemInterface*)>(InSDKUtils::GetImageBase() + 0x24AA3B0), this, Interface);
+	}
+
+	void GetPlayerBuildableClasses(TArray<TSubclassOf<class ABuildingSMActor>>& OutBuildableClasses, const struct FPlayerBuildableClassFilter& Filter)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameStateZone*, TArray<TSubclassOf<class ABuildingSMActor>>*, const struct FPlayerBuildableClassFilter*)>(InSDKUtils::GetImageBase() + 0x24A4CB0), this, &OutBuildableClasses, &Filter);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -40445,6 +40609,31 @@ public:
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameMode*, class FName)>(InSDKUtils::GetImageBase() + 0x247A9E0), this, PlaylistName);
 	}
 
+	void ScoreBuildingConstruction(class AFortPlayerController* PlayerController, class ABuildingActor* BuildingActor)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameMode*, class AFortPlayerController*, class ABuildingActor*)>(InSDKUtils::GetImageBase() + 0x24765E0), this, PlayerController, BuildingActor);
+	}
+
+	void ScoreBuildingEdit(class AFortPlayerController* PlayerController, class ABuildingActor* BuildingActor)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameMode*, class AFortPlayerController*, class ABuildingActor*)>(InSDKUtils::GetImageBase() + 0x2476820), this, PlayerController, BuildingActor);
+	}
+
+	void ScoreBuildingRepair(class AFortPlayerController* PlayerController, class ABuildingActor* BuildingActor)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameMode*, class AFortPlayerController*, class ABuildingActor*)>(InSDKUtils::GetImageBase() + 0x2476980), this, PlayerController, BuildingActor);
+	}
+
+	void GetLootTierDataTables(TArray<class UDataTable*>* OutTables)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(AFortGameMode*, TArray<class UDataTable*>*)>(this, 0x9B8 / 8), this, OutTables);
+	}
+
+	void GetLootPackageDataTables(TArray<class UDataTable*>* OutTables)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(AFortGameMode*, TArray<class UDataTable*>*)>(this, 0x9C0 / 8), this, OutTables);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -40846,6 +41035,11 @@ public:
 		return InSDKUtils::CallGameFunction(reinterpret_cast<int32(*)(AFortGameModeAthena*, bool)>(InSDKUtils::GetImageBase() + 0x1EA2E60), this, false);
 	}
 
+	TArray<struct FItemAndCount>* GetStartingItems(TArray<struct FItemAndCount>* OutItems, bool bInitialSpawn, class AController* Controller)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<TArray<struct FItemAndCount>*(*)(AFortGameModeAthena*, TArray<struct FItemAndCount>*, bool, class AController*)>(this, 0xCF8 / 8), this, OutItems, bInitialSpawn, Controller);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -40971,6 +41165,11 @@ public:
 public:
 	int32 GetBRXPBonusPoints() const;
 	bool IsEventFlagActive(const class FString& QueriedEventFlagName) const;
+
+	void RefreshCalendar()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UFortSeasonalEventManager*)>(InSDKUtils::GetImageBase() + 0x2843B30), this);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -47782,7 +47981,11 @@ class UFortControllerComponent_Aircraft final : public UFortControllerComponent
 public:
 	TMulticastInlineDelegate<void()>              OnAircraftStateChange;                             // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class AFortAircraft*                          CurrentAircraft;                                   // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C8[0x38];                                      // 0x00C8(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_C8[0x30];                                      // 0x00C8(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsInAircraft;                                     // 0x00F8(0x0001)
+	bool                                          bHasExitedAircraft;                                // 0x00F9(0x0001)
+	bool                                          bIsAttemptingAircraftJump;                         // 0x00FA(0x0001)
+	uint8                                         Pad_FB[0x5];                                       // 0x00FB(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClientEnterAircraft(class AFortAircraft* InAircraft);
@@ -49835,6 +50038,26 @@ public:
 	int32 GetFuelChargeValue() const;
 	void GetOwnedGameplayTags(struct FGameplayTagContainer* TagContainer) const;
 	bool SeenInFrontend() const;
+
+	static class UFortWorldItem* New(class AFortInventory* Inventory, struct FFortItemEntry* ItemEntry)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UFortWorldItem*(*)(class AFortInventory*, struct FFortItemEntry*)>(InSDKUtils::GetImageBase() + 0x26521B0), Inventory, ItemEntry);
+	}
+
+	void OnItemInstanceAdded(class IFortInventoryOwnerInterface* InventoryOwner)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(UFortWorldItem*, class IFortInventoryOwnerInterface*)>(this, 0x4C0 / 8), this, InventoryOwner);
+	}
+
+	void OnItemInstanceRemoved(class IFortInventoryOwnerInterface* InventoryOwner, int32 NumInStackOnRemove)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(UFortWorldItem*, class IFortInventoryOwnerInterface*, int32)>(this, 0x4C8 / 8), this, InventoryOwner, NumInStackOnRemove);
+	}
+
+	bool SetNumInStack(int32 InNumInStack, bool bResetRegenCooldown)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(UFortWorldItem*, int32, bool)>(this, 0x4F8 / 8), this, InNumInStack, bResetRegenCooldown);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -67271,7 +67494,9 @@ public:
 	bool                                          bRequiresLocalUpdate;                              // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bRequiresSaving;                                   // 0x0401(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bIsShuttingDown;                                   // 0x0402(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_403[0x15];                                     // 0x0403(0x0015)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_403[0x1];                                      // 0x0403(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bAllowMcpItemCreation;                             // 0x0404(0x0001)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_405[0x13];                                     // 0x0405(0x0013)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UFortWorldItem*>                 PendingInstances;                                  // 0x0418(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UFortItem*>                      RecentlyAdded;                                     // 0x0428(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UFortItem*>                      RecentlyRemoved;                                   // 0x0438(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -67280,6 +67505,52 @@ public:
 
 public:
 	void HandleInventoryLocalUpdate();
+
+	class UFortWorldItem* GiveItemToInventoryOwner(struct FFortItemEntry ItemEntry);
+	bool RemoveInventoryItem(const struct FGuid& ItemGuid, int32 Count, bool bForceRemoval);
+
+	void InitializeExistingItem(class UFortWorldItem* WorldItem)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortInventory*, class UFortWorldItem*)>(InSDKUtils::GetImageBase() + 0x2606ED0), this, WorldItem);
+	}
+
+	class UFortWorldItem* GetItem(const struct FGuid& ItemGuid)
+	{
+		for (int32 i = 0; i < Inventory.ItemInstances.Num(); i++)
+		{
+			class UFortWorldItem* Item = Inventory.ItemInstances[i];
+
+			if (Item && Item->ItemEntry.ItemGuid == ItemGuid)
+				return Item;
+		}
+
+		return nullptr;
+	}
+
+	TArray<class UFortWorldItem*>& GetItems()
+	{
+		return Inventory.ItemInstances;
+	}
+
+	void SetItemRequiresUpdate(struct FFortItemEntry* Entry)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortInventory*, struct FFortItemEntry*)>(InSDKUtils::GetImageBase() + 0x260EC30), this, Entry);
+	}
+
+	void SetRequiresUpdate()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortInventory*)>(InSDKUtils::GetImageBase() + 0x260F6A0), this);
+	}
+
+	class UFortWorldItem* FindExistingItemForDefinition(const class UFortItemDefinition* ItemDefinition, bool bInStorageVault)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UFortWorldItem*(*)(AFortInventory*, const class UFortItemDefinition*, bool)>(InSDKUtils::GetImageBase() + 0x25F7210), this, ItemDefinition, bInStorageVault);
+	}
+
+	static int32 GetItemMaxStackSize(class AFortPlayerController* PlayerController, const class UFortItemDefinition* ItemDefinition)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<int32(*)(class AFortPlayerController*, const class UFortItemDefinition*)>(InSDKUtils::GetImageBase() + 0x25FE660), PlayerController, ItemDefinition);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -73657,6 +73928,11 @@ public:
 	class USoundMix*                              VisualizationSoundMix;                             // 0x0558(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UFortRespawnDataTable*                  RespawnDataTable;                                  // 0x0560(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UPoiNamedWeights*                       NamedWeightsByPoi;                                 // 0x0568(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+	static class UGameDataBR* Get()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UGameDataBR*(*)()>(InSDKUtils::GetImageBase() + 0x1FDD400));
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -80729,6 +81005,28 @@ public:
 	uint8                                         Pad_4A8C[0x4];                                     // 0x4A8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UWorld>                  DefaultLobbyBackgroundLevel;                       // 0x4A90(0x0028)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
+	static class UFortGameData* GetGameData()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UFortGameData*(*)()>(InSDKUtils::GetImageBase() + 0x24346B0));
+	}
+
+	class UFortResourceItemDefinition* GetResourceItemDefinition(EFortResourceType Type)
+	{
+		switch (Type)
+		{
+		case EFortResourceType::Wood:
+			return WoodItemDefinition.LoadSynchronous();
+		case EFortResourceType::Stone:
+			return StoneItemDefinition.LoadSynchronous();
+		case EFortResourceType::Metal:
+			return MetalItemDefinition.LoadSynchronous();
+		case EFortResourceType::Permanite:
+			return PermaniteItemDefinition.LoadSynchronous();
+		default:
+			return nullptr;
+		}
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -83961,6 +84259,16 @@ public:
 
 	struct FContentInstallError GetLastOnDemandContentInstallError();
 
+	static void InitializePlayerGameplayAbilities(class IAbilitySystemInterface* PlayerStateOrProxy)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(class IAbilitySystemInterface*)>(InSDKUtils::GetImageBase() + 0x24A85D0), PlayerStateOrProxy);
+	}
+
+	static struct FFortGlobalGameplayTags* GameplayTags()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<struct FFortGlobalGameplayTags*(*)()>(InSDKUtils::GetImageBase() + 0x249EFB0));
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -86009,6 +86317,12 @@ DUMPER7_ASSERTS_IFortInventoryOverrideProvider;
 class IFortInventoryOwnerInterface final
 {
 public:
+	class AFortInventory* GetWorldInventory()
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<class AFortInventory*(*)(IFortInventoryOwnerInterface*)>(this, 9), this);
+	}
+
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("FortInventoryOwnerInterface")
@@ -86493,6 +86807,16 @@ public:
 
 public:
 	void OnRep_EditActor();
+
+	void SetEditActor(class ABuildingSMActor* NewEditActor)
+	{
+		if (Role != ENetRole::ROLE_Authority)
+			return;
+
+		EditActor = NewEditActor;
+		ForceNetUpdate();
+		OnRep_EditActor();
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -100917,6 +101241,17 @@ public:
 	struct FScalableFloat                         DefaultWeaponAmmoMultiplier;                       // 0x0040(0x0020)(Edit, NativeAccessSpecifierPrivate)
 	TArray<struct FWeaponPickupAmmoMultiplierOverrideData> WeaponPickupAmmoMultiplierOverrideArray;  // 0x0060(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<struct FSourceToAmmoMultiplierOverrideData> SourceToAmmoMultiplierOverrideArray;          // 0x0070(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+	static class UFortWeaponPickupSpawnAmmoData* Get()
+	{
+		class UGameDataBR* GameDataBR = UGameDataBR::Get();
+		return GameDataBR ? GameDataBR->FortWeaponPickupSpawnAmmoData.LoadSynchronous() : nullptr;
+	}
+
+	class AFortPickup* CreateAmmoPickup(class UWorld* World, const class UFortWorldItemDefinition* AmmoItemDefinition, const struct FGameplayTagContainer& WeaponTags, const struct FGameplayTagContainer& SourceTags, const struct FVector& Location, EFortPickupSourceTypeFlag SourceTypeFlag, EFortPickupSpawnSource SpawnSource, class AActor* OwnerContainer)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class AFortPickup*(*)(UFortWeaponPickupSpawnAmmoData*, class UWorld*, const class UFortWorldItemDefinition*, const struct FGameplayTagContainer*, const struct FGameplayTagContainer*, const struct FVector*, EFortPickupSourceTypeFlag, EFortPickupSpawnSource, class AActor*)>(InSDKUtils::GetImageBase() + 0x256F190), this, World, AmmoItemDefinition, &WeaponTags, &SourceTags, &Location, SourceTypeFlag, SpawnSource, OwnerContainer);
+	}
 
 public:
 	static class UClass* StaticClass()

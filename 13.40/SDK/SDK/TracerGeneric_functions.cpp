@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ATracerGeneric_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TracerGeneric_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("TracerGeneric_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AVaultCharacterPlacementHelper_C::UpdatePosition_For_Camera(EFrontEndCamera FrontEndCamera)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "UpdatePosition For Camera");
+	class UFunction* Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "UpdatePosition For Camera");
 
 	Params::VaultCharacterPlacementHelper_C_UpdatePosition_For_Camera Parms{};
 
@@ -41,10 +38,7 @@ void AVaultCharacterPlacementHelper_C::UpdatePosition_For_Camera(EFrontEndCamera
 
 void AVaultCharacterPlacementHelper_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AVaultCharacterPlacementHelper_C::UserConstructionScript()
 
 void AVaultCharacterPlacementHelper_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AVaultCharacterPlacementHelper_C::ReceiveBeginPlay()
 
 void AVaultCharacterPlacementHelper_C::SubGameChanged_Event_0(ESubGame SubGame)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "SubGameChanged_Event_0");
+	class UFunction* Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "SubGameChanged_Event_0");
 
 	Params::VaultCharacterPlacementHelper_C_SubGameChanged_Event_0 Parms{};
 
@@ -92,10 +80,7 @@ void AVaultCharacterPlacementHelper_C::SubGameChanged_Event_0(ESubGame SubGame)
 
 void AVaultCharacterPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "OnFrontEndCameraChanged");
+	class UFunction* Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "OnFrontEndCameraChanged");
 
 	Params::VaultCharacterPlacementHelper_C_OnFrontEndCameraChanged Parms{};
 
@@ -113,10 +98,7 @@ void AVaultCharacterPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera N
 
 void AVaultCharacterPlacementHelper_C::ExecuteUbergraph_VaultCharacterPlacementHelper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "ExecuteUbergraph_VaultCharacterPlacementHelper");
+	class UFunction* Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "ExecuteUbergraph_VaultCharacterPlacementHelper");
 
 	Params::VaultCharacterPlacementHelper_C_ExecuteUbergraph_VaultCharacterPlacementHelper Parms{};
 

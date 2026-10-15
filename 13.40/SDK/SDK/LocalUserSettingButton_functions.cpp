@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULocalUserSettingButton_C::ExecuteUbergraph_LocalUserSettingButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserSettingButton_C", "ExecuteUbergraph_LocalUserSettingButton");
+	class UFunction* Func = Class->GetFunction("LocalUserSettingButton_C", "ExecuteUbergraph_LocalUserSettingButton");
 
 	Params::LocalUserSettingButton_C_ExecuteUbergraph_LocalUserSettingButton Parms{};
 
@@ -41,10 +38,7 @@ void ULocalUserSettingButton_C::ExecuteUbergraph_LocalUserSettingButton(int32 En
 
 void ULocalUserSettingButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserSettingButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("LocalUserSettingButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ULocalUserSettingButton_C::BP_OnUnhovered()
 
 void ULocalUserSettingButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserSettingButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("LocalUserSettingButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

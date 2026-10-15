@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCL_BoostJumpPack_FuelRegen_C::ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen");
 
 	Params::GCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen Parms{};
 
@@ -43,10 +40,7 @@ void AGCL_BoostJumpPack_FuelRegen_C::ExecuteUbergraph_GCL_BoostJumpPack_FuelRege
 
 void AGCL_BoostJumpPack_FuelRegen_C::ResetBlink(class AFortPlayerPawn* PlayerPawn_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "ResetBlink");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "ResetBlink");
 
 	Params::GCL_BoostJumpPack_FuelRegen_C_ResetBlink Parms{};
 
@@ -61,10 +55,7 @@ void AGCL_BoostJumpPack_FuelRegen_C::ResetBlink(class AFortPlayerPawn* PlayerPaw
 
 void AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "FullBlinkTimeline__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "FullBlinkTimeline__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline__UpdateFunc()
 
 void AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "FullBlinkTimeline__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "FullBlinkTimeline__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

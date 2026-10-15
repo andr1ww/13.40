@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaMatchmakingPlayButton_C::SetButtonText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "SetButtonText");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "SetButtonText");
 
 	Params::AthenaMatchmakingPlayButton_C_SetButtonText Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaMatchmakingPlayButton_C::SetButtonText(const class FText& InText)
 
 void UAthenaMatchmakingPlayButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UAthenaMatchmakingPlayButton_C::BP_OnHovered()
 
 void UAthenaMatchmakingPlayButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UAthenaMatchmakingPlayButton_C::BP_OnUnhovered()
 
 void UAthenaMatchmakingPlayButton_C::ExecuteUbergraph_AthenaMatchmakingPlayButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "ExecuteUbergraph_AthenaMatchmakingPlayButton");
+	class UFunction* Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "ExecuteUbergraph_AthenaMatchmakingPlayButton");
 
 	Params::AthenaMatchmakingPlayButton_C_ExecuteUbergraph_AthenaMatchmakingPlayButton Parms{};
 

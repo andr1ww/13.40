@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGamepadMappingInfo_v3_C::ExecuteUbergraph_GamepadMappingInfo_v3(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "ExecuteUbergraph_GamepadMappingInfo_v3");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "ExecuteUbergraph_GamepadMappingInfo_v3");
 
 	Params::GamepadMappingInfo_v3_C_ExecuteUbergraph_GamepadMappingInfo_v3 Parms{};
 
@@ -43,10 +40,7 @@ void UGamepadMappingInfo_v3_C::ExecuteUbergraph_GamepadMappingInfo_v3(int32 Entr
 
 void UGamepadMappingInfo_v3_C::DeadzoneLookResetButtonClicked_Bind(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DeadzoneLookResetButtonClicked_Bind");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DeadzoneLookResetButtonClicked_Bind");
 
 	Params::GamepadMappingInfo_v3_C_DeadzoneLookResetButtonClicked_Bind Parms{};
 
@@ -63,10 +57,7 @@ void UGamepadMappingInfo_v3_C::DeadzoneLookResetButtonClicked_Bind(class UCommon
 
 void UGamepadMappingInfo_v3_C::DeadzoneMoveResetButtonClicked_Bind(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DeadzoneMoveResetButtonClicked_Bind");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DeadzoneMoveResetButtonClicked_Bind");
 
 	Params::GamepadMappingInfo_v3_C_DeadzoneMoveResetButtonClicked_Bind Parms{};
 
@@ -81,10 +72,7 @@ void UGamepadMappingInfo_v3_C::DeadzoneMoveResetButtonClicked_Bind(class UCommon
 
 void UGamepadMappingInfo_v3_C::DeadZoneTabDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DeadZoneTabDeselected");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DeadZoneTabDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +83,7 @@ void UGamepadMappingInfo_v3_C::DeadZoneTabDeselected()
 
 void UGamepadMappingInfo_v3_C::DeadZoneTabSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DeadZoneTabSelected");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DeadZoneTabSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void UGamepadMappingInfo_v3_C::DeadZoneTabSelected()
 
 void UGamepadMappingInfo_v3_C::UpdateCustomButtons()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "UpdateCustomButtons");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "UpdateCustomButtons");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +107,7 @@ void UGamepadMappingInfo_v3_C::UpdateCustomButtons()
 
 void UGamepadMappingInfo_v3_C::OnButtonClicked_Bind(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "OnButtonClicked_Bind");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "OnButtonClicked_Bind");
 
 	Params::GamepadMappingInfo_v3_C_OnButtonClicked_Bind Parms{};
 
@@ -143,10 +122,7 @@ void UGamepadMappingInfo_v3_C::OnButtonClicked_Bind(class UCommonButton* Button)
 
 void UGamepadMappingInfo_v3_C::Update_Controller_Images()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Update Controller Images");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Update Controller Images");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +133,7 @@ void UGamepadMappingInfo_v3_C::Update_Controller_Images()
 
 void UGamepadMappingInfo_v3_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Construct");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +146,7 @@ void UGamepadMappingInfo_v3_C::Construct()
 
 void UGamepadMappingInfo_v3_C::OnLoaded_CDBC1B27496027B96D10BC9A64224F3D(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "OnLoaded_CDBC1B27496027B96D10BC9A64224F3D");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "OnLoaded_CDBC1B27496027B96D10BC9A64224F3D");
 
 	Params::GamepadMappingInfo_v3_C_OnLoaded_CDBC1B27496027B96D10BC9A64224F3D Parms{};
 
@@ -195,10 +165,7 @@ void UGamepadMappingInfo_v3_C::OnLoaded_CDBC1B27496027B96D10BC9A64224F3D(class U
 
 void UGamepadMappingInfo_v3_C::Update_Displayed_Mapping(int32 Platform, EFortInputActionGroup Mode, int32 Configuration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Update Displayed Mapping");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Update Displayed Mapping");
 
 	Params::GamepadMappingInfo_v3_C_Update_Displayed_Mapping Parms{};
 
@@ -218,10 +185,7 @@ void UGamepadMappingInfo_v3_C::Update_Displayed_Mapping(int32 Platform, EFortInp
 
 void UGamepadMappingInfo_v3_C::OnConfigChanged(EFortInputActionGroup Mode, int32 Config)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "OnConfigChanged");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "OnConfigChanged");
 
 	Params::GamepadMappingInfo_v3_C_OnConfigChanged Parms{};
 
@@ -240,10 +204,7 @@ void UGamepadMappingInfo_v3_C::OnConfigChanged(EFortInputActionGroup Mode, int32
 
 void UGamepadMappingInfo_v3_C::HandleConfigChanged_Athena(EFortInputActionGroup Mode, int32 Config)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "HandleConfigChanged_Athena");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "HandleConfigChanged_Athena");
 
 	Params::GamepadMappingInfo_v3_C_HandleConfigChanged_Athena Parms{};
 
@@ -262,10 +223,7 @@ void UGamepadMappingInfo_v3_C::HandleConfigChanged_Athena(EFortInputActionGroup 
 
 void UGamepadMappingInfo_v3_C::HandleConfigChanged(EFortInputActionGroup Mode, int32 Config)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "HandleConfigChanged");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "HandleConfigChanged");
 
 	Params::GamepadMappingInfo_v3_C_HandleConfigChanged Parms{};
 
@@ -283,10 +241,7 @@ void UGamepadMappingInfo_v3_C::HandleConfigChanged(EFortInputActionGroup Mode, i
 
 void UGamepadMappingInfo_v3_C::Handle_Config_Changed_STW_Build_Mode(int32 Config)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Handle Config Changed STW Build Mode");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Handle Config Changed STW Build Mode");
 
 	Params::GamepadMappingInfo_v3_C_Handle_Config_Changed_STW_Build_Mode Parms{};
 
@@ -303,10 +258,7 @@ void UGamepadMappingInfo_v3_C::Handle_Config_Changed_STW_Build_Mode(int32 Config
 
 void UGamepadMappingInfo_v3_C::Handle_Config_Changed_STW_Combat_Mode(int32 Config)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Handle Config Changed STW Combat Mode");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Handle Config Changed STW Combat Mode");
 
 	Params::GamepadMappingInfo_v3_C_Handle_Config_Changed_STW_Combat_Mode Parms{};
 
@@ -321,10 +273,7 @@ void UGamepadMappingInfo_v3_C::Handle_Config_Changed_STW_Combat_Mode(int32 Confi
 
 void UGamepadMappingInfo_v3_C::Handle_Config_Changed_Hide_or_Show_Unused_Text_Lines()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Handle Config Changed Hide or Show Unused Text Lines");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "Handle Config Changed Hide or Show Unused Text Lines");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -335,10 +284,7 @@ void UGamepadMappingInfo_v3_C::Handle_Config_Changed_Hide_or_Show_Unused_Text_Li
 
 void UGamepadMappingInfo_v3_C::InitializeListOfButtonLabelTextWidgets()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "InitializeListOfButtonLabelTextWidgets");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "InitializeListOfButtonLabelTextWidgets");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -351,10 +297,7 @@ void UGamepadMappingInfo_v3_C::InitializeListOfButtonLabelTextWidgets()
 
 void UGamepadMappingInfo_v3_C::InitializeListOfButtonTextForSTWCombatProBuild(TArray<class FText>& ButtonTextLabels)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "InitializeListOfButtonTextForSTWCombatProBuild");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "InitializeListOfButtonTextForSTWCombatProBuild");
 
 	Params::GamepadMappingInfo_v3_C_InitializeListOfButtonTextForSTWCombatProBuild Parms{};
 
@@ -374,10 +317,7 @@ void UGamepadMappingInfo_v3_C::InitializeListOfButtonTextForSTWCombatProBuild(TA
 
 void UGamepadMappingInfo_v3_C::GetDesiredSlateVisibilityForAbilityChordFromTextDisplay(class UTextBlock* TextWidget, ESlateVisibility* DesiredSlateVisibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "GetDesiredSlateVisibilityForAbilityChordFromTextDisplay");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "GetDesiredSlateVisibilityForAbilityChordFromTextDisplay");
 
 	Params::GamepadMappingInfo_v3_C_GetDesiredSlateVisibilityForAbilityChordFromTextDisplay Parms{};
 
@@ -397,10 +337,7 @@ void UGamepadMappingInfo_v3_C::GetDesiredSlateVisibilityForAbilityChordFromTextD
 
 void UGamepadMappingInfo_v3_C::SetTextFieldVisibilityForExtraLine(class UTextBlock* TextWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "SetTextFieldVisibilityForExtraLine");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "SetTextFieldVisibilityForExtraLine");
 
 	Params::GamepadMappingInfo_v3_C_SetTextFieldVisibilityForExtraLine Parms{};
 
@@ -417,10 +354,7 @@ void UGamepadMappingInfo_v3_C::SetTextFieldVisibilityForExtraLine(class UTextBlo
 
 void UGamepadMappingInfo_v3_C::InitializeListOfButtonTextForSTWCombatProCombat(TArray<class FText>& ButtonTextLabels)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "InitializeListOfButtonTextForSTWCombatProCombat");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "InitializeListOfButtonTextForSTWCombatProCombat");
 
 	Params::GamepadMappingInfo_v3_C_InitializeListOfButtonTextForSTWCombatProCombat Parms{};
 
@@ -437,10 +371,7 @@ void UGamepadMappingInfo_v3_C::InitializeListOfButtonTextForSTWCombatProCombat(T
 
 void UGamepadMappingInfo_v3_C::ClearAllComboTextLines()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "ClearAllComboTextLines");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "ClearAllComboTextLines");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -453,10 +384,7 @@ void UGamepadMappingInfo_v3_C::ClearAllComboTextLines()
 
 void UGamepadMappingInfo_v3_C::GetControllerImage(TSoftObjectPtr<class UTexture2D>* Texture)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "GetControllerImage");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "GetControllerImage");
 
 	Params::GamepadMappingInfo_v3_C_GetControllerImage Parms{};
 
@@ -474,10 +402,7 @@ void UGamepadMappingInfo_v3_C::GetControllerImage(TSoftObjectPtr<class UTexture2
 
 void UGamepadMappingInfo_v3_C::InitializeListOfButtonTextForSTW_BuilderProBuild(TArray<class FText>& ButtonTextLabels)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "InitializeListOfButtonTextForSTW_BuilderProBuild");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "InitializeListOfButtonTextForSTW_BuilderProBuild");
 
 	Params::GamepadMappingInfo_v3_C_InitializeListOfButtonTextForSTW_BuilderProBuild Parms{};
 
@@ -496,10 +421,7 @@ void UGamepadMappingInfo_v3_C::InitializeListOfButtonTextForSTW_BuilderProBuild(
 
 void UGamepadMappingInfo_v3_C::SetButtonTextLabelsFromTextArray(TArray<class FText>& Array)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "SetButtonTextLabelsFromTextArray");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "SetButtonTextLabelsFromTextArray");
 
 	Params::GamepadMappingInfo_v3_C_SetButtonTextLabelsFromTextArray Parms{};
 
@@ -518,10 +440,7 @@ void UGamepadMappingInfo_v3_C::SetButtonTextLabelsFromTextArray(TArray<class FTe
 
 void UGamepadMappingInfo_v3_C::SetTextForMode(EFortInputActionGroup Selection)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "SetTextForMode");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "SetTextForMode");
 
 	Params::GamepadMappingInfo_v3_C_SetTextForMode Parms{};
 
@@ -540,10 +459,7 @@ void UGamepadMappingInfo_v3_C::SetTextForMode(EFortInputActionGroup Selection)
 
 void UGamepadMappingInfo_v3_C::GetCustomButtonDataForKey(const struct FKey& Key, class FName* ActionName, class FText* DescText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "GetCustomButtonDataForKey");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "GetCustomButtonDataForKey");
 
 	Params::GamepadMappingInfo_v3_C_GetCustomButtonDataForKey Parms{};
 
@@ -568,10 +484,7 @@ void UGamepadMappingInfo_v3_C::GetCustomButtonDataForKey(const struct FKey& Key,
 
 struct FEventReply UGamepadMappingInfo_v3_C::On_Image_LightBox_MouseButtonDown_0(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "On_Image_LightBox_MouseButtonDown_0");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "On_Image_LightBox_MouseButtonDown_0");
 
 	Params::GamepadMappingInfo_v3_C_On_Image_LightBox_MouseButtonDown_0 Parms{};
 
@@ -589,10 +502,7 @@ struct FEventReply UGamepadMappingInfo_v3_C::On_Image_LightBox_MouseButtonDown_0
 
 void UGamepadMappingInfo_v3_C::HideEditModeTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "HideEditModeTab");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "HideEditModeTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -603,10 +513,7 @@ void UGamepadMappingInfo_v3_C::HideEditModeTab()
 
 void UGamepadMappingInfo_v3_C::ShowEditModeTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "ShowEditModeTab");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "ShowEditModeTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -617,10 +524,7 @@ void UGamepadMappingInfo_v3_C::ShowEditModeTab()
 
 void UGamepadMappingInfo_v3_C::GamepadMappingInfoNavLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "GamepadMappingInfoNavLeft");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "GamepadMappingInfoNavLeft");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -634,10 +538,7 @@ void UGamepadMappingInfo_v3_C::GamepadMappingInfoNavLeft()
 
 class UWidget* UGamepadMappingInfo_v3_C::DoCustomNavigation_0(EUINavigation Navigation_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DoCustomNavigation_0");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "DoCustomNavigation_0");
 
 	Params::GamepadMappingInfo_v3_C_DoCustomNavigation_0 Parms{};
 
@@ -654,10 +555,7 @@ class UWidget* UGamepadMappingInfo_v3_C::DoCustomNavigation_0(EUINavigation Navi
 
 void UGamepadMappingInfo_v3_C::HideDeadZoneTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "HideDeadZoneTab");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "HideDeadZoneTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -668,10 +566,7 @@ void UGamepadMappingInfo_v3_C::HideDeadZoneTab()
 
 void UGamepadMappingInfo_v3_C::ShowDeadZoneTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadMappingInfo_v3_C", "ShowDeadZoneTab");
+	class UFunction* Func = Class->GetFunction("GamepadMappingInfo_v3_C", "ShowDeadZoneTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

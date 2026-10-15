@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USocialPanelView_UserLists_C::ExecuteUbergraph_SocialPanelView_UserLists(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelView_UserLists_C", "ExecuteUbergraph_SocialPanelView_UserLists");
+	class UFunction* Func = Class->GetFunction("SocialPanelView_UserLists_C", "ExecuteUbergraph_SocialPanelView_UserLists");
 
 	Params::SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists Parms{};
 
@@ -43,10 +40,7 @@ void USocialPanelView_UserLists_C::ExecuteUbergraph_SocialPanelView_UserLists(in
 
 void USocialPanelView_UserLists_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelView_UserLists_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SocialPanelView_UserLists_C", "PreConstruct");
 
 	Params::SocialPanelView_UserLists_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void USocialPanelView_UserLists_C::PreConstruct(bool IsDesignTime)
 
 void USocialPanelView_UserLists_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelView_UserLists_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SocialPanelView_UserLists_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void USocialPanelView_UserLists_C::Construct()
 
 void USocialPanelView_UserLists_C::OnSetVoiceChannelButtonText(const class FText& ButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelView_UserLists_C", "OnSetVoiceChannelButtonText");
+	class UFunction* Func = Class->GetFunction("SocialPanelView_UserLists_C", "OnSetVoiceChannelButtonText");
 
 	Params::SocialPanelView_UserLists_C_OnSetVoiceChannelButtonText Parms{};
 
@@ -98,10 +86,7 @@ void USocialPanelView_UserLists_C::OnSetVoiceChannelButtonText(const class FText
 
 void USocialPanelView_UserLists_C::BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelView_UserLists_C", "BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("SocialPanelView_UserLists_C", "BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
 
 	Params::SocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature Parms{};
 

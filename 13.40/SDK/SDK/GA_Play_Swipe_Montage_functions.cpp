@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Play_Swipe_Montage_C::ExecuteUbergraph_GA_Play_Swipe_Montage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "ExecuteUbergraph_GA_Play_Swipe_Montage");
+	class UFunction* Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "ExecuteUbergraph_GA_Play_Swipe_Montage");
 
 	Params::GA_Play_Swipe_Montage_C_ExecuteUbergraph_GA_Play_Swipe_Montage Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Play_Swipe_Montage_C::ExecuteUbergraph_GA_Play_Swipe_Montage(int32 Entr
 
 void UGA_Play_Swipe_Montage_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Play_Swipe_Montage_C::K2_ActivateAbility()
 
 void UGA_Play_Swipe_Montage_C::OnCompleted_72D325494FA9FD623AC13DA17B9ACCEF()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "OnCompleted_72D325494FA9FD623AC13DA17B9ACCEF");
+	class UFunction* Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "OnCompleted_72D325494FA9FD623AC13DA17B9ACCEF");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGA_Play_Swipe_Montage_C::OnCompleted_72D325494FA9FD623AC13DA17B9ACCEF()
 
 void UGA_Play_Swipe_Montage_C::OnBlendOut_72D325494FA9FD623AC13DA17B9ACCEF()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "OnBlendOut_72D325494FA9FD623AC13DA17B9ACCEF");
+	class UFunction* Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "OnBlendOut_72D325494FA9FD623AC13DA17B9ACCEF");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UGA_Play_Swipe_Montage_C::OnBlendOut_72D325494FA9FD623AC13DA17B9ACCEF()
 
 void UGA_Play_Swipe_Montage_C::OnInterrupted_72D325494FA9FD623AC13DA17B9ACCEF()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "OnInterrupted_72D325494FA9FD623AC13DA17B9ACCEF");
+	class UFunction* Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "OnInterrupted_72D325494FA9FD623AC13DA17B9ACCEF");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UGA_Play_Swipe_Montage_C::OnInterrupted_72D325494FA9FD623AC13DA17B9ACCEF()
 
 void UGA_Play_Swipe_Montage_C::OnCancelled_72D325494FA9FD623AC13DA17B9ACCEF()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "OnCancelled_72D325494FA9FD623AC13DA17B9ACCEF");
+	class UFunction* Func = Class->GetFunction("GA_Play_Swipe_Montage_C", "OnCancelled_72D325494FA9FD623AC13DA17B9ACCEF");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

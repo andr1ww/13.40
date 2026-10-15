@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingsListEntry_Discrete_C::ExecuteUbergraph_SettingsListEntry_Discrete(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Discrete_C", "ExecuteUbergraph_SettingsListEntry_Discrete");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Discrete_C", "ExecuteUbergraph_SettingsListEntry_Discrete");
 
 	Params::SettingsListEntry_Discrete_C_ExecuteUbergraph_SettingsListEntry_Discrete Parms{};
 
@@ -43,10 +40,7 @@ void USettingsListEntry_Discrete_C::ExecuteUbergraph_SettingsListEntry_Discrete(
 
 void USettingsListEntry_Discrete_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Discrete_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Discrete_C", "OnMouseLeave");
 
 	Params::SettingsListEntry_Discrete_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void USettingsListEntry_Discrete_C::OnMouseLeave(const struct FPointerEvent& Mou
 
 void USettingsListEntry_Discrete_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Discrete_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Discrete_C", "OnMouseEnter");
 
 	Params::SettingsListEntry_Discrete_C_OnMouseEnter Parms{};
 
@@ -85,10 +76,7 @@ void USettingsListEntry_Discrete_C::OnMouseEnter(const struct FGeometry& MyGeome
 
 class UWidget* USettingsListEntry_Discrete_C::GetPrimaryGamepadFocusWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Discrete_C", "GetPrimaryGamepadFocusWidget");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Discrete_C", "GetPrimaryGamepadFocusWidget");
 
 	Params::SettingsListEntry_Discrete_C_GetPrimaryGamepadFocusWidget Parms{};
 

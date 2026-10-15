@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingsListEntry_Scalar_Narrow_C::ExecuteUbergraph_SettingsListEntry_Scalar_Narrow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "ExecuteUbergraph_SettingsListEntry_Scalar_Narrow");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "ExecuteUbergraph_SettingsListEntry_Scalar_Narrow");
 
 	Params::SettingsListEntry_Scalar_Narrow_C_ExecuteUbergraph_SettingsListEntry_Scalar_Narrow Parms{};
 
@@ -43,10 +40,7 @@ void USettingsListEntry_Scalar_Narrow_C::ExecuteUbergraph_SettingsListEntry_Scal
 
 void USettingsListEntry_Scalar_Narrow_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "OnMouseLeave");
 
 	Params::SettingsListEntry_Scalar_Narrow_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void USettingsListEntry_Scalar_Narrow_C::OnMouseLeave(const struct FPointerEvent
 
 void USettingsListEntry_Scalar_Narrow_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "OnMouseEnter");
 
 	Params::SettingsListEntry_Scalar_Narrow_C_OnMouseEnter Parms{};
 
@@ -85,10 +76,7 @@ void USettingsListEntry_Scalar_Narrow_C::OnMouseEnter(const struct FGeometry& My
 
 void USettingsListEntry_Scalar_Narrow_C::OnDefaultValueChanged(float DefaultValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "OnDefaultValueChanged");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "OnDefaultValueChanged");
 
 	Params::SettingsListEntry_Scalar_Narrow_C_OnDefaultValueChanged Parms{};
 
@@ -105,10 +93,7 @@ void USettingsListEntry_Scalar_Narrow_C::OnDefaultValueChanged(float DefaultValu
 
 void USettingsListEntry_Scalar_Narrow_C::OnValueChanged(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "OnValueChanged");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "OnValueChanged");
 
 	Params::SettingsListEntry_Scalar_Narrow_C_OnValueChanged Parms{};
 
@@ -125,10 +110,7 @@ void USettingsListEntry_Scalar_Narrow_C::OnValueChanged(float Value)
 
 class UWidget* USettingsListEntry_Scalar_Narrow_C::GetPrimaryGamepadFocusWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "GetPrimaryGamepadFocusWidget");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Scalar_Narrow_C", "GetPrimaryGamepadFocusWidget");
 
 	Params::SettingsListEntry_Scalar_Narrow_C_GetPrimaryGamepadFocusWidget Parms{};
 

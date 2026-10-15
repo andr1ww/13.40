@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UAccountPinLinkingWindow_C::BndEvt__Switcher_Main_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AccountPinLinkingWindow_C", "BndEvt__Switcher_Main_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AccountPinLinkingWindow_C", "BndEvt__Switcher_Main_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
 
 	Params::AccountPinLinkingWindow_C_BndEvt__Switcher_Main_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature Parms{};
 
@@ -45,10 +42,7 @@ void UAccountPinLinkingWindow_C::BndEvt__Switcher_Main_K2Node_ComponentBoundEven
 
 void UAccountPinLinkingWindow_C::ExecuteUbergraph_AccountPinLinkingWindow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AccountPinLinkingWindow_C", "ExecuteUbergraph_AccountPinLinkingWindow");
+	class UFunction* Func = Class->GetFunction("AccountPinLinkingWindow_C", "ExecuteUbergraph_AccountPinLinkingWindow");
 
 	Params::AccountPinLinkingWindow_C_ExecuteUbergraph_AccountPinLinkingWindow Parms{};
 

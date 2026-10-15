@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAT_Athena_PurpleStuff_C::ExecuteUbergraph_GAT_Athena_PurpleStuff(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_Athena_PurpleStuff_C", "ExecuteUbergraph_GAT_Athena_PurpleStuff");
+	class UFunction* Func = Class->GetFunction("GAT_Athena_PurpleStuff_C", "ExecuteUbergraph_GAT_Athena_PurpleStuff");
 
 	Params::GAT_Athena_PurpleStuff_C_ExecuteUbergraph_GAT_Athena_PurpleStuff Parms{};
 
@@ -41,10 +38,7 @@ void UGAT_Athena_PurpleStuff_C::ExecuteUbergraph_GAT_Athena_PurpleStuff(int32 En
 
 void UGAT_Athena_PurpleStuff_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_Athena_PurpleStuff_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GAT_Athena_PurpleStuff_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

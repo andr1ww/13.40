@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaMOTDTileMainPage_C::ExecuteUbergraph_AthenaMOTDTileMainPage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "ExecuteUbergraph_AthenaMOTDTileMainPage");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "ExecuteUbergraph_AthenaMOTDTileMainPage");
 
 	Params::AthenaMOTDTileMainPage_C_ExecuteUbergraph_AthenaMOTDTileMainPage Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaMOTDTileMainPage_C::ExecuteUbergraph_AthenaMOTDTileMainPage(int32 En
 
 void UAthenaMOTDTileMainPage_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UAthenaMOTDTileMainPage_C::BP_OnDeselected()
 
 void UAthenaMOTDTileMainPage_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UAthenaMOTDTileMainPage_C::BP_OnSelected()
 
 void UAthenaMOTDTileMainPage_C::OnPopulateNews(const struct FAthenaNewsEntry& NewsEntry)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnPopulateNews");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnPopulateNews");
 
 	Params::AthenaMOTDTileMainPage_C_OnPopulateNews Parms{};
 
@@ -89,10 +77,7 @@ void UAthenaMOTDTileMainPage_C::OnPopulateNews(const struct FAthenaNewsEntry& Ne
 
 void UAthenaMOTDTileMainPage_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UAthenaMOTDTileMainPage_C::Construct()
 
 void UAthenaMOTDTileMainPage_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "BP_OnItemSelectionChanged");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "BP_OnItemSelectionChanged");
 
 	Params::AthenaMOTDTileMainPage_C_BP_OnItemSelectionChanged Parms{};
 
@@ -125,10 +107,7 @@ void UAthenaMOTDTileMainPage_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UAthenaMOTDTileMainPage_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnMouseLeave");
 
 	Params::AthenaMOTDTileMainPage_C_OnMouseLeave Parms{};
 
@@ -146,10 +125,7 @@ void UAthenaMOTDTileMainPage_C::OnMouseLeave(const struct FPointerEvent& MouseEv
 
 void UAthenaMOTDTileMainPage_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnMouseEnter");
 
 	Params::AthenaMOTDTileMainPage_C_OnMouseEnter Parms{};
 
@@ -167,10 +143,7 @@ void UAthenaMOTDTileMainPage_C::OnMouseEnter(const struct FGeometry& MyGeometry,
 
 void UAthenaMOTDTileMainPage_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "PreConstruct");
 
 	Params::AthenaMOTDTileMainPage_C_PreConstruct Parms{};
 
@@ -185,10 +158,7 @@ void UAthenaMOTDTileMainPage_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaMOTDTileMainPage_C::ShowImageOnly()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "ShowImageOnly");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "ShowImageOnly");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,10 +169,7 @@ void UAthenaMOTDTileMainPage_C::ShowImageOnly()
 
 void UAthenaMOTDTileMainPage_C::UpdateDisplay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "UpdateDisplay");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "UpdateDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UAthenaBoundActionButton_C::UpdateInputActionIconSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBoundActionButton_C", "UpdateInputActionIconSize");
+	class UFunction* Func = Class->GetFunction("AthenaBoundActionButton_C", "UpdateInputActionIconSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UAthenaBoundActionButton_C::UpdateInputActionIconSize()
 
 void UAthenaBoundActionButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBoundActionButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaBoundActionButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +45,7 @@ void UAthenaBoundActionButton_C::Construct()
 
 void UAthenaBoundActionButton_C::ExecuteUbergraph_AthenaBoundActionButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBoundActionButton_C", "ExecuteUbergraph_AthenaBoundActionButton");
+	class UFunction* Func = Class->GetFunction("AthenaBoundActionButton_C", "ExecuteUbergraph_AthenaBoundActionButton");
 
 	Params::AthenaBoundActionButton_C_ExecuteUbergraph_AthenaBoundActionButton Parms{};
 

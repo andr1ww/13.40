@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPreviewUnbindAction_C::ExecuteUbergraph_PreviewUnbindAction(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PreviewUnbindAction_C", "ExecuteUbergraph_PreviewUnbindAction");
+	class UFunction* Func = Class->GetFunction("PreviewUnbindAction_C", "ExecuteUbergraph_PreviewUnbindAction");
 
 	Params::PreviewUnbindAction_C_ExecuteUbergraph_PreviewUnbindAction Parms{};
 
@@ -43,10 +40,7 @@ void UPreviewUnbindAction_C::ExecuteUbergraph_PreviewUnbindAction(int32 EntryPoi
 
 void UPreviewUnbindAction_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PreviewUnbindAction_C", "OnListItemObjectSet");
+	class UFunction* Func = Class->GetFunction("PreviewUnbindAction_C", "OnListItemObjectSet");
 
 	Params::PreviewUnbindAction_C_OnListItemObjectSet Parms{};
 
@@ -63,10 +57,7 @@ void UPreviewUnbindAction_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UPreviewUnbindAction_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PreviewUnbindAction_C", "BP_OnItemSelectionChanged");
+	class UFunction* Func = Class->GetFunction("PreviewUnbindAction_C", "BP_OnItemSelectionChanged");
 
 	Params::PreviewUnbindAction_C_BP_OnItemSelectionChanged Parms{};
 
@@ -83,10 +74,7 @@ void UPreviewUnbindAction_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UPreviewUnbindAction_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PreviewUnbindAction_C", "BP_OnItemExpansionChanged");
+	class UFunction* Func = Class->GetFunction("PreviewUnbindAction_C", "BP_OnItemExpansionChanged");
 
 	Params::PreviewUnbindAction_C_BP_OnItemExpansionChanged Parms{};
 
@@ -101,10 +89,7 @@ void UPreviewUnbindAction_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UPreviewUnbindAction_C::BP_OnEntryReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PreviewUnbindAction_C", "BP_OnEntryReleased");
+	class UFunction* Func = Class->GetFunction("PreviewUnbindAction_C", "BP_OnEntryReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

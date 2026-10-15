@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UStatsListItemWIdget_C::Initial_Reset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "Initial Reset");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "Initial Reset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UStatsListItemWIdget_C::Initial_Reset()
 
 void UStatsListItemWIdget_C::Populate_Update()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "Populate-Update");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "Populate-Update");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +45,7 @@ void UStatsListItemWIdget_C::Populate_Update()
 
 void UStatsListItemWIdget_C::SetTextAndBorderHighlight(bool bHightlight)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "SetTextAndBorderHighlight");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "SetTextAndBorderHighlight");
 
 	Params::StatsListItemWIdget_C_SetTextAndBorderHighlight Parms{};
 
@@ -71,10 +62,7 @@ void UStatsListItemWIdget_C::SetTextAndBorderHighlight(bool bHightlight)
 
 class UWidget* UStatsListItemWIdget_C::GetListItemTooltipWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "GetListItemTooltipWidget");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "GetListItemTooltipWidget");
 
 	Params::StatsListItemWIdget_C_GetListItemTooltipWidget Parms{};
 
@@ -91,10 +79,7 @@ class UWidget* UStatsListItemWIdget_C::GetListItemTooltipWidget()
 
 void UStatsListItemWIdget_C::SetStatIcon(const struct FSlateBrush& NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "SetStatIcon");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "SetStatIcon");
 
 	Params::StatsListItemWIdget_C_SetStatIcon Parms{};
 
@@ -111,10 +96,7 @@ void UStatsListItemWIdget_C::SetStatIcon(const struct FSlateBrush& NewParam)
 
 void UStatsListItemWIdget_C::UpdateBuffArrows(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateBuffArrows");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateBuffArrows");
 
 	Params::StatsListItemWIdget_C_UpdateBuffArrows Parms{};
 
@@ -131,10 +113,7 @@ void UStatsListItemWIdget_C::UpdateBuffArrows(const struct FFortDisplayAttribute
 
 void UStatsListItemWIdget_C::UpdateBasicPairLabel(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateBasicPairLabel");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateBasicPairLabel");
 
 	Params::StatsListItemWIdget_C_UpdateBasicPairLabel Parms{};
 
@@ -151,10 +130,7 @@ void UStatsListItemWIdget_C::UpdateBasicPairLabel(const struct FFortDisplayAttri
 
 void UStatsListItemWIdget_C::UpdateValueText(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateValueText");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateValueText");
 
 	Params::StatsListItemWIdget_C_UpdateValueText Parms{};
 
@@ -171,10 +147,7 @@ void UStatsListItemWIdget_C::UpdateValueText(const struct FFortDisplayAttribute&
 
 void UStatsListItemWIdget_C::UpdateType(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateType");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateType");
 
 	Params::StatsListItemWIdget_C_UpdateType Parms{};
 
@@ -191,10 +164,7 @@ void UStatsListItemWIdget_C::UpdateType(const struct FFortDisplayAttribute& Curr
 
 void UStatsListItemWIdget_C::UpdateColors(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateColors");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "UpdateColors");
 
 	Params::StatsListItemWIdget_C_UpdateColors Parms{};
 
@@ -209,10 +179,7 @@ void UStatsListItemWIdget_C::UpdateColors(const struct FFortDisplayAttribute& Cu
 
 void UStatsListItemWIdget_C::Update()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "Update");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "Update");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,10 +192,7 @@ void UStatsListItemWIdget_C::Update()
 
 void UStatsListItemWIdget_C::ValueChanged(float Delta_ValueChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "ValueChanged");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "ValueChanged");
 
 	Params::StatsListItemWIdget_C_ValueChanged Parms{};
 
@@ -243,10 +207,7 @@ void UStatsListItemWIdget_C::ValueChanged(float Delta_ValueChanged)
 
 void UStatsListItemWIdget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +218,7 @@ void UStatsListItemWIdget_C::Construct()
 
 void UStatsListItemWIdget_C::PreviewEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "PreviewEnded");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "PreviewEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -271,10 +229,7 @@ void UStatsListItemWIdget_C::PreviewEnded()
 
 void UStatsListItemWIdget_C::PreviewStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "PreviewStarted");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "PreviewStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -285,10 +240,7 @@ void UStatsListItemWIdget_C::PreviewStarted()
 
 void UStatsListItemWIdget_C::DisplayAttributeChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "DisplayAttributeChanged");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "DisplayAttributeChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -301,10 +253,7 @@ void UStatsListItemWIdget_C::DisplayAttributeChanged()
 
 void UStatsListItemWIdget_C::ExecuteUbergraph_StatsListItemWIdget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListItemWIdget_C", "ExecuteUbergraph_StatsListItemWIdget");
+	class UFunction* Func = Class->GetFunction("StatsListItemWIdget_C", "ExecuteUbergraph_StatsListItemWIdget");
 
 	Params::StatsListItemWIdget_C_ExecuteUbergraph_StatsListItemWIdget Parms{};
 

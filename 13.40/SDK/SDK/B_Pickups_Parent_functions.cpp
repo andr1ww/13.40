@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Pickups_Parent_C::ExecuteUbergraph_B_Pickups_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "ExecuteUbergraph_B_Pickups_Parent");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "ExecuteUbergraph_B_Pickups_Parent");
 
 	Params::B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent Parms{};
 
@@ -41,10 +38,7 @@ void AB_Pickups_Parent_C::ExecuteUbergraph_B_Pickups_Parent(int32 EntryPoint)
 
 void AB_Pickups_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Pickups_Parent_C::ReceiveBeginPlay()
 
 void AB_Pickups_Parent_C::OnPickedUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "OnPickedUp");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "OnPickedUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AB_Pickups_Parent_C::OnPickedUp()
 
 void AB_Pickups_Parent_C::OnAboutToEnterBackpack(class AFortPawn* PickupTarget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "OnAboutToEnterBackpack");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "OnAboutToEnterBackpack");
 
 	Params::B_Pickups_Parent_C_OnAboutToEnterBackpack Parms{};
 
@@ -91,10 +79,7 @@ void AB_Pickups_Parent_C::OnAboutToEnterBackpack(class AFortPawn* PickupTarget)
 
 void AB_Pickups_Parent_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveTick");
 
 	Params::B_Pickups_Parent_C_ReceiveTick Parms{};
 
@@ -109,10 +94,7 @@ void AB_Pickups_Parent_C::ReceiveTick(float DeltaSeconds)
 
 void AB_Pickups_Parent_C::OnTossed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "OnTossed");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "OnTossed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void AB_Pickups_Parent_C::OnTossed()
 
 void AB_Pickups_Parent_C::OnAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "OnAttached");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "OnAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void AB_Pickups_Parent_C::OnAttached()
 
 void AB_Pickups_Parent_C::HideBackgroundAndSpotlight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "HideBackgroundAndSpotlight");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "HideBackgroundAndSpotlight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +127,7 @@ void AB_Pickups_Parent_C::HideBackgroundAndSpotlight()
 
 void AB_Pickups_Parent_C::DisableBacchusHighlight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "DisableBacchusHighlight");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "DisableBacchusHighlight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +138,7 @@ void AB_Pickups_Parent_C::DisableBacchusHighlight()
 
 void AB_Pickups_Parent_C::EnableBacchusHighlight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "EnableBacchusHighlight");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "EnableBacchusHighlight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +149,7 @@ void AB_Pickups_Parent_C::EnableBacchusHighlight()
 
 void AB_Pickups_Parent_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -193,10 +160,7 @@ void AB_Pickups_Parent_C::ReceiveDestroyed()
 
 void AB_Pickups_Parent_C::MobileSelectedTL__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "MobileSelectedTL__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "MobileSelectedTL__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +171,7 @@ void AB_Pickups_Parent_C::MobileSelectedTL__UpdateFunc()
 
 void AB_Pickups_Parent_C::MobileSelectedTL__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "MobileSelectedTL__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "MobileSelectedTL__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +182,7 @@ void AB_Pickups_Parent_C::MobileSelectedTL__FinishedFunc()
 
 void AB_Pickups_Parent_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,10 +193,7 @@ void AB_Pickups_Parent_C::UserConstructionScript()
 
 void AB_Pickups_Parent_C::SetRarityColor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "SetRarityColor");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "SetRarityColor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +204,7 @@ void AB_Pickups_Parent_C::SetRarityColor()
 
 void AB_Pickups_Parent_C::SpawnPickedUpTrailPS()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "SpawnPickedUpTrailPS");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "SpawnPickedUpTrailPS");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +217,7 @@ void AB_Pickups_Parent_C::SpawnPickedUpTrailPS()
 
 void AB_Pickups_Parent_C::SetHologramPickedUpParams(bool Tier_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "SetHologramPickedUpParams");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "SetHologramPickedUpParams");
 
 	Params::B_Pickups_Parent_C_SetHologramPickedUpParams Parms{};
 
@@ -283,10 +232,7 @@ void AB_Pickups_Parent_C::SetHologramPickedUpParams(bool Tier_0)
 
 void AB_Pickups_Parent_C::ScaleHologramTimingsForPvP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "ScaleHologramTimingsForPvP");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "ScaleHologramTimingsForPvP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -297,10 +243,7 @@ void AB_Pickups_Parent_C::ScaleHologramTimingsForPvP()
 
 void AB_Pickups_Parent_C::ReleaseStretchMIDs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "ReleaseStretchMIDs");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "ReleaseStretchMIDs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -311,10 +254,7 @@ void AB_Pickups_Parent_C::ReleaseStretchMIDs()
 
 void AB_Pickups_Parent_C::DestroyBackgroundVisualComponents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "DestroyBackgroundVisualComponents");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "DestroyBackgroundVisualComponents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -327,10 +267,7 @@ void AB_Pickups_Parent_C::DestroyBackgroundVisualComponents()
 
 void AB_Pickups_Parent_C::SetHiddenBackgroundVisualComponents(bool Hidden)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "SetHiddenBackgroundVisualComponents");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "SetHiddenBackgroundVisualComponents");
 
 	Params::B_Pickups_Parent_C_SetHiddenBackgroundVisualComponents Parms{};
 
@@ -345,10 +282,7 @@ void AB_Pickups_Parent_C::SetHiddenBackgroundVisualComponents(bool Hidden)
 
 void AB_Pickups_Parent_C::SetupBaseMIDs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "SetupBaseMIDs");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "SetupBaseMIDs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -359,10 +293,7 @@ void AB_Pickups_Parent_C::SetupBaseMIDs()
 
 void AB_Pickups_Parent_C::SetupStretchMIDs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "SetupStretchMIDs");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "SetupStretchMIDs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -373,10 +304,7 @@ void AB_Pickups_Parent_C::SetupStretchMIDs()
 
 void AB_Pickups_Parent_C::Unique_Material_MIDs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "Unique Material MIDs");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "Unique Material MIDs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -389,10 +317,7 @@ void AB_Pickups_Parent_C::Unique_Material_MIDs()
 
 void AB_Pickups_Parent_C::SetInitialHologramParams(class UMaterialInstanceDynamic* Mid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "SetInitialHologramParams");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "SetInitialHologramParams");
 
 	Params::B_Pickups_Parent_C_SetInitialHologramParams Parms{};
 
@@ -410,10 +335,7 @@ void AB_Pickups_Parent_C::SetInitialHologramParams(class UMaterialInstanceDynami
 
 void AB_Pickups_Parent_C::SetActiveBackgroundParticleSystem(bool Active, bool Reset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "SetActiveBackgroundParticleSystem");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "SetActiveBackgroundParticleSystem");
 
 	Params::B_Pickups_Parent_C_SetActiveBackgroundParticleSystem Parms{};
 
@@ -431,10 +353,7 @@ void AB_Pickups_Parent_C::SetActiveBackgroundParticleSystem(bool Active, bool Re
 
 void AB_Pickups_Parent_C::SetVisibleMobileInteractIcon(bool Visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "SetVisibleMobileInteractIcon");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "SetVisibleMobileInteractIcon");
 
 	Params::B_Pickups_Parent_C_SetVisibleMobileInteractIcon Parms{};
 
@@ -449,10 +368,7 @@ void AB_Pickups_Parent_C::SetVisibleMobileInteractIcon(bool Visible)
 
 void AB_Pickups_Parent_C::Set_Draw_Distance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "Set Draw Distance");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "Set Draw Distance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -463,10 +379,7 @@ void AB_Pickups_Parent_C::Set_Draw_Distance()
 
 void AB_Pickups_Parent_C::Randomize_Mesh_Rotation_for_BR()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "Randomize Mesh Rotation for BR");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "Randomize Mesh Rotation for BR");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -477,10 +390,7 @@ void AB_Pickups_Parent_C::Randomize_Mesh_Rotation_for_BR()
 
 void AB_Pickups_Parent_C::Mobile_Interation_Icon_Setup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "Mobile Interation Icon Setup");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "Mobile Interation Icon Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -491,10 +401,7 @@ void AB_Pickups_Parent_C::Mobile_Interation_Icon_Setup()
 
 void AB_Pickups_Parent_C::Initial_Parenting_Setup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Parent_C", "Initial Parenting Setup");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Parent_C", "Initial Parenting Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 struct FEventReply USkewButton_C::OnMouseButtonUp(const struct FGeometry& MyGeometry_OnMouseButtonUp, const struct FPointerEvent& MouseEvent_OnMouseButtonUp)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "OnMouseButtonUp");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "OnMouseButtonUp");
 
 	Params::SkewButton_C_OnMouseButtonUp Parms{};
 
@@ -50,10 +47,7 @@ struct FEventReply USkewButton_C::OnMouseButtonUp(const struct FGeometry& MyGeom
 
 struct FEventReply USkewButton_C::OnMouseButtonDown(const struct FGeometry& MyGeometry_OnMouseButtonDown, const struct FPointerEvent& MouseEvent_OnMouseButtonDown)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "OnMouseButtonDown");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "OnMouseButtonDown");
 
 	Params::SkewButton_C_OnMouseButtonDown Parms{};
 
@@ -75,10 +69,7 @@ struct FEventReply USkewButton_C::OnMouseButtonDown(const struct FGeometry& MyGe
 
 struct FEventReply USkewButton_C::OnTouchEnded(const struct FGeometry& MyGeometry_OnTouchEnded, const struct FPointerEvent& InTouchEvent_OnTouchEnded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "OnTouchEnded");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "OnTouchEnded");
 
 	Params::SkewButton_C_OnTouchEnded Parms{};
 
@@ -100,10 +91,7 @@ struct FEventReply USkewButton_C::OnTouchEnded(const struct FGeometry& MyGeometr
 
 struct FEventReply USkewButton_C::OnTouchStarted(const struct FGeometry& MyGeometry_OnTouchStarted, const struct FPointerEvent& InTouchEvent_OnTouchStarted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "OnTouchStarted");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "OnTouchStarted");
 
 	Params::SkewButton_C_OnTouchStarted Parms{};
 
@@ -121,10 +109,7 @@ struct FEventReply USkewButton_C::OnTouchStarted(const struct FGeometry& MyGeome
 
 void USkewButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -138,10 +123,7 @@ void USkewButton_C::Construct()
 
 void USkewButton_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseEnter, const struct FPointerEvent& MouseEvent_OnMouseEnter)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "OnMouseEnter");
 
 	Params::SkewButton_C_OnMouseEnter Parms{};
 
@@ -157,10 +139,7 @@ void USkewButton_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseEnter
 
 void USkewButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +150,7 @@ void USkewButton_C::BP_OnHovered()
 
 void USkewButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +163,7 @@ void USkewButton_C::BP_OnUnhovered()
 
 void USkewButton_C::OnMouseLeave(const struct FPointerEvent& MouseEvent_OnMouseLeave)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "OnMouseLeave");
 
 	Params::SkewButton_C_OnMouseLeave Parms{};
 
@@ -205,10 +178,7 @@ void USkewButton_C::OnMouseLeave(const struct FPointerEvent& MouseEvent_OnMouseL
 
 void USkewButton_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +191,7 @@ void USkewButton_C::BP_OnClicked()
 
 void USkewButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "PreConstruct");
 
 	Params::SkewButton_C_PreConstruct Parms{};
 
@@ -241,10 +208,7 @@ void USkewButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void USkewButton_C::ExecuteUbergraph_SkewButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkewButton_C", "ExecuteUbergraph_SkewButton");
+	class UFunction* Func = Class->GetFunction("SkewButton_C", "ExecuteUbergraph_SkewButton");
 
 	Params::SkewButton_C_ExecuteUbergraph_SkewButton Parms{};
 

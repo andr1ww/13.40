@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APrj_Athena_Bucket_Old_C::ExecuteUbergraph_Prj_Athena_Bucket_Old(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ExecuteUbergraph_Prj_Athena_Bucket_Old");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ExecuteUbergraph_Prj_Athena_Bucket_Old");
 
 	Params::Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old Parms{};
 
@@ -41,10 +38,7 @@ void APrj_Athena_Bucket_Old_C::ExecuteUbergraph_Prj_Athena_Bucket_Old(int32 Entr
 
 void APrj_Athena_Bucket_Old_C::Held_Water_Impact()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "Held Water Impact");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "Held Water Impact");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void APrj_Athena_Bucket_Old_C::Held_Water_Impact()
 
 void APrj_Athena_Bucket_Old_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void APrj_Athena_Bucket_Old_C::ReceiveBeginPlay()
 
 void APrj_Athena_Bucket_Old_C::PlayHitSound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "PlayHitSound");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "PlayHitSound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,10 +75,7 @@ void APrj_Athena_Bucket_Old_C::PlayHitSound()
 
 void APrj_Athena_Bucket_Old_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -110,10 +95,7 @@ void APrj_Athena_Bucket_Old_C::BndEvt__WaterInteractionComponent_K2Node_Componen
 
 void APrj_Athena_Bucket_Old_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "OnExploded");
 
 	Params::Prj_Athena_Bucket_Old_C_OnExploded Parms{};
 
@@ -138,10 +120,7 @@ void APrj_Athena_Bucket_Old_C::OnExploded(const TArray<class AActor*>& HitActors
 
 void APrj_Athena_Bucket_Old_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ReceiveHit");
 
 	Params::Prj_Athena_Bucket_Old_C_ReceiveHit Parms{};
 
@@ -163,10 +142,7 @@ void APrj_Athena_Bucket_Old_C::ReceiveHit(class UPrimitiveComponent* MyComp, cla
 
 void APrj_Athena_Bucket_Old_C::OnRep_TurnOffFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "OnRep_TurnOffFX");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "OnRep_TurnOffFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

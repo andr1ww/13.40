@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBPS12MainRoomPOITag_C::ExecuteUbergraph_BPS12MainRoomPOITag(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPS12MainRoomPOITag_C", "ExecuteUbergraph_BPS12MainRoomPOITag");
+	class UFunction* Func = Class->GetFunction("BPS12MainRoomPOITag_C", "ExecuteUbergraph_BPS12MainRoomPOITag");
 
 	Params::BPS12MainRoomPOITag_C_ExecuteUbergraph_BPS12MainRoomPOITag Parms{};
 
@@ -41,10 +38,7 @@ void UBPS12MainRoomPOITag_C::ExecuteUbergraph_BPS12MainRoomPOITag(int32 EntryPoi
 
 void UBPS12MainRoomPOITag_C::CollapseWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPS12MainRoomPOITag_C", "CollapseWidget");
+	class UFunction* Func = Class->GetFunction("BPS12MainRoomPOITag_C", "CollapseWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UBPS12MainRoomPOITag_C::CollapseWidget()
 
 void UBPS12MainRoomPOITag_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPS12MainRoomPOITag_C", "Construct");
+	class UFunction* Func = Class->GetFunction("BPS12MainRoomPOITag_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UBPS12MainRoomPOITag_C::Construct()
 
 void UBPS12MainRoomPOITag_C::Animate_POI_Title(const class FText& POI_Name_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPS12MainRoomPOITag_C", "Animate POI Title");
+	class UFunction* Func = Class->GetFunction("BPS12MainRoomPOITag_C", "Animate POI Title");
 
 	Params::BPS12MainRoomPOITag_C_Animate_POI_Title Parms{};
 

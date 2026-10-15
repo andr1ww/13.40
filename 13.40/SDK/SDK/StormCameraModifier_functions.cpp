@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UStormCameraModifier_C::BlueprintModifyPostProcess(float DeltaTime, float* PostProcessBlendWeight, struct FPostProcessSettings* PostProcessSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StormCameraModifier_C", "BlueprintModifyPostProcess");
+	class UFunction* Func = Class->GetFunction("StormCameraModifier_C", "BlueprintModifyPostProcess");
 
 	Params::StormCameraModifier_C_BlueprintModifyPostProcess Parms{};
 

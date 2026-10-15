@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USquadMarker_C::ExecuteUbergraph_SquadMarker(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SquadMarker_C", "ExecuteUbergraph_SquadMarker");
+	class UFunction* Func = Class->GetFunction("SquadMarker_C", "ExecuteUbergraph_SquadMarker");
 
 	Params::SquadMarker_C_ExecuteUbergraph_SquadMarker Parms{};
 

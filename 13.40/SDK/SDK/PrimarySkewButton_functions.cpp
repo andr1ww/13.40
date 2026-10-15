@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 struct FEventReply UPrimarySkewButton_C::OnMouseButtonUp(const struct FGeometry& MyGeometry_OnMouseButtonUp, const struct FPointerEvent& MouseEvent_OnMouseButtonUp)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PrimarySkewButton_C", "OnMouseButtonUp");
+	class UFunction* Func = Class->GetFunction("PrimarySkewButton_C", "OnMouseButtonUp");
 
 	Params::PrimarySkewButton_C_OnMouseButtonUp Parms{};
 
@@ -50,10 +47,7 @@ struct FEventReply UPrimarySkewButton_C::OnMouseButtonUp(const struct FGeometry&
 
 struct FEventReply UPrimarySkewButton_C::OnMouseButtonDown(const struct FGeometry& MyGeometry_OnMouseButtonDown, const struct FPointerEvent& MouseEvent_OnMouseButtonDown)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PrimarySkewButton_C", "OnMouseButtonDown");
+	class UFunction* Func = Class->GetFunction("PrimarySkewButton_C", "OnMouseButtonDown");
 
 	Params::PrimarySkewButton_C_OnMouseButtonDown Parms{};
 
@@ -71,10 +65,7 @@ struct FEventReply UPrimarySkewButton_C::OnMouseButtonDown(const struct FGeometr
 
 void UPrimarySkewButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PrimarySkewButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PrimarySkewButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +76,7 @@ void UPrimarySkewButton_C::Construct()
 
 void UPrimarySkewButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PrimarySkewButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("PrimarySkewButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +87,7 @@ void UPrimarySkewButton_C::BP_OnHovered()
 
 void UPrimarySkewButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PrimarySkewButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("PrimarySkewButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +98,7 @@ void UPrimarySkewButton_C::BP_OnUnhovered()
 
 void UPrimarySkewButton_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PrimarySkewButton_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("PrimarySkewButton_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -129,10 +111,7 @@ void UPrimarySkewButton_C::BP_OnClicked()
 
 void UPrimarySkewButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PrimarySkewButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("PrimarySkewButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
 
 	Params::PrimarySkewButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature Parms{};
 
@@ -149,10 +128,7 @@ void UPrimarySkewButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoun
 
 void UPrimarySkewButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PrimarySkewButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("PrimarySkewButton_C", "PreConstruct");
 
 	Params::PrimarySkewButton_C_PreConstruct Parms{};
 
@@ -169,10 +145,7 @@ void UPrimarySkewButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UPrimarySkewButton_C::ExecuteUbergraph_PrimarySkewButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PrimarySkewButton_C", "ExecuteUbergraph_PrimarySkewButton");
+	class UFunction* Func = Class->GetFunction("PrimarySkewButton_C", "ExecuteUbergraph_PrimarySkewButton");
 
 	Params::PrimarySkewButton_C_ExecuteUbergraph_PrimarySkewButton Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFort_Entry_Music_Controller_BP_C::Change_Music(class USoundBase* New_Music)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "Change Music");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "Change Music");
 
 	Params::Fort_Entry_Music_Controller_BP_C_Change_Music Parms{};
 
@@ -41,10 +38,7 @@ void AFort_Entry_Music_Controller_BP_C::Change_Music(class USoundBase* New_Music
 
 void AFort_Entry_Music_Controller_BP_C::ListenToMusicPacks()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ListenToMusicPacks");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ListenToMusicPacks");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AFort_Entry_Music_Controller_BP_C::ListenToMusicPacks()
 
 void AFort_Entry_Music_Controller_BP_C::OnMusicPackChanged(const class UAthenaMusicPackItemDefinition* NewMusicPack)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "OnMusicPackChanged");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "OnMusicPackChanged");
 
 	Params::Fort_Entry_Music_Controller_BP_C_OnMusicPackChanged Parms{};
 
@@ -78,10 +69,7 @@ void AFort_Entry_Music_Controller_BP_C::OnMusicPackChanged(const class UAthenaMu
 
 void AFort_Entry_Music_Controller_BP_C::Lobby_Music_Override(bool Lobby_Music_Activate, class USoundBase* New_Music)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "Lobby Music Override");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "Lobby Music Override");
 
 	Params::Fort_Entry_Music_Controller_BP_C_Lobby_Music_Override Parms{};
 
@@ -97,10 +85,7 @@ void AFort_Entry_Music_Controller_BP_C::Lobby_Music_Override(bool Lobby_Music_Ac
 
 void AFort_Entry_Music_Controller_BP_C::MakeNextMusicPackStartFromBeginning()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "MakeNextMusicPackStartFromBeginning");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "MakeNextMusicPackStartFromBeginning");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +98,7 @@ void AFort_Entry_Music_Controller_BP_C::MakeNextMusicPackStartFromBeginning()
 
 void AFort_Entry_Music_Controller_BP_C::DelayedPlayMusicPack(class UAthenaMusicPackItemDefinition* MusicPackToPlayLater)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "DelayedPlayMusicPack");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "DelayedPlayMusicPack");
 
 	Params::Fort_Entry_Music_Controller_BP_C_DelayedPlayMusicPack Parms{};
 
@@ -131,10 +113,7 @@ void AFort_Entry_Music_Controller_BP_C::DelayedPlayMusicPack(class UAthenaMusicP
 
 void AFort_Entry_Music_Controller_BP_C::ClearDelayedPlayMusicPack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ClearDelayedPlayMusicPack");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ClearDelayedPlayMusicPack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +124,7 @@ void AFort_Entry_Music_Controller_BP_C::ClearDelayedPlayMusicPack()
 
 void AFort_Entry_Music_Controller_BP_C::PlayEquippedMusicPack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "PlayEquippedMusicPack");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "PlayEquippedMusicPack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +135,7 @@ void AFort_Entry_Music_Controller_BP_C::PlayEquippedMusicPack()
 
 void AFort_Entry_Music_Controller_BP_C::StartMusic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "StartMusic");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "StartMusic");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +148,7 @@ void AFort_Entry_Music_Controller_BP_C::StartMusic()
 
 void AFort_Entry_Music_Controller_BP_C::ExecuteUbergraph_Fort_Entry_Music_Controller_BP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ExecuteUbergraph_Fort_Entry_Music_Controller_BP");
+	class UFunction* Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ExecuteUbergraph_Fort_Entry_Music_Controller_BP");
 
 	Params::Fort_Entry_Music_Controller_BP_C_ExecuteUbergraph_Fort_Entry_Music_Controller_BP Parms{};
 

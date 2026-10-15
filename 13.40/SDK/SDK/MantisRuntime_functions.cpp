@@ -26,10 +26,7 @@ SDK_NAMESPACE_START
 
 class UFortAbilityTask_ApplyRootMotionMantisForce* UFortAbilityTask_ApplyRootMotionMantisForce::ApplyRootMotionMantisForce(class UGameplayAbility* OwningAbility, float Duration_0, class UAnimMontage* TechniqueMontage_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FortAbilityTask_ApplyRootMotionMantisForce", "ApplyRootMotionMantisForce");
+	class UFunction* Func = StaticClass()->GetFunction("FortAbilityTask_ApplyRootMotionMantisForce", "ApplyRootMotionMantisForce");
 
 	Params::FortAbilityTask_ApplyRootMotionMantisForce_ApplyRootMotionMantisForce Parms{};
 
@@ -56,10 +53,7 @@ class UFortAbilityTask_ApplyRootMotionMantisForce* UFortAbilityTask_ApplyRootMot
 
 void UFortMantisPawnComponent::OnCharacterMovementPreUpdate(class UCharacterMovementComponent* CharMoveComp, float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMantisPawnComponent", "OnCharacterMovementPreUpdate");
+	class UFunction* Func = Class->GetFunction("FortMantisPawnComponent", "OnCharacterMovementPreUpdate");
 
 	Params::FortMantisPawnComponent_OnCharacterMovementPreUpdate Parms{};
 
@@ -83,10 +77,7 @@ void UFortMantisPawnComponent::OnCharacterMovementPreUpdate(class UCharacterMove
 
 void UFortMantisPawnComponent::OnPostPhysicsRotation(class UCharacterMovementComponent* CharMoveComp, float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMantisPawnComponent", "OnPostPhysicsRotation");
+	class UFunction* Func = Class->GetFunction("FortMantisPawnComponent", "OnPostPhysicsRotation");
 
 	Params::FortMantisPawnComponent_OnPostPhysicsRotation Parms{};
 
@@ -110,10 +101,7 @@ void UFortMantisPawnComponent::OnPostPhysicsRotation(class UCharacterMovementCom
 
 void UFortGameplayAbility_Mantis::BP_OnMantisTechniqueHit(const struct FGameplayAbilityTargetDataHandle& TargetDataHandle, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameplayAbility_Mantis", "BP_OnMantisTechniqueHit");
+	class UFunction* Func = Class->GetFunction("FortGameplayAbility_Mantis", "BP_OnMantisTechniqueHit");
 
 	Params::FortGameplayAbility_Mantis_BP_OnMantisTechniqueHit Parms{};
 
@@ -129,10 +117,7 @@ void UFortGameplayAbility_Mantis::BP_OnMantisTechniqueHit(const struct FGameplay
 
 void UFortGameplayAbility_Mantis::OnMontageCancelled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameplayAbility_Mantis", "OnMontageCancelled");
+	class UFunction* Func = Class->GetFunction("FortGameplayAbility_Mantis", "OnMontageCancelled");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -148,10 +133,7 @@ void UFortGameplayAbility_Mantis::OnMontageCancelled()
 
 void UFortGameplayAbility_Mantis::OnMontageFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameplayAbility_Mantis", "OnMontageFinished");
+	class UFunction* Func = Class->GetFunction("FortGameplayAbility_Mantis", "OnMontageFinished");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

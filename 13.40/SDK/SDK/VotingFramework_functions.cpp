@@ -26,10 +26,7 @@ SDK_NAMESPACE_START
 
 void UVoteBroadcasterComponent::ServerSubmitVotesAggregated(class FName VoteSessionId, class FName VoteId, class FName VoteSelectionId, int32 VoteDelta)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteBroadcasterComponent", "ServerSubmitVotesAggregated");
+	class UFunction* Func = Class->GetFunction("VoteBroadcasterComponent", "ServerSubmitVotesAggregated");
 
 	Params::VoteBroadcasterComponent_ServerSubmitVotesAggregated Parms{};
 
@@ -56,10 +53,7 @@ void UVoteBroadcasterComponent::ServerSubmitVotesAggregated(class FName VoteSess
 
 void UVoteBroadcasterComponent::VoteEnd(class FName VoteSessionId, class FName VoteId, class FName WinningVoteSelectionId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteBroadcasterComponent", "VoteEnd");
+	class UFunction* Func = Class->GetFunction("VoteBroadcasterComponent", "VoteEnd");
 
 	Params::VoteBroadcasterComponent_VoteEnd Parms{};
 
@@ -83,10 +77,7 @@ void UVoteBroadcasterComponent::VoteEnd(class FName VoteSessionId, class FName V
 
 void UVoteBroadcasterComponent::VoteSessionComplete(class FName VoteSessionId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteBroadcasterComponent", "VoteSessionComplete");
+	class UFunction* Func = Class->GetFunction("VoteBroadcasterComponent", "VoteSessionComplete");
 
 	Params::VoteBroadcasterComponent_VoteSessionComplete Parms{};
 
@@ -110,10 +101,7 @@ void UVoteBroadcasterComponent::VoteSessionComplete(class FName VoteSessionId)
 
 void UVoteBroadcasterComponent::VoteSessionSetup(class FName VoteSessionId, class FName StartingVoteId, EVoteSessionNetworkType NetworkType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteBroadcasterComponent", "VoteSessionSetup");
+	class UFunction* Func = Class->GetFunction("VoteBroadcasterComponent", "VoteSessionSetup");
 
 	Params::VoteBroadcasterComponent_VoteSessionSetup Parms{};
 
@@ -137,10 +125,7 @@ void UVoteBroadcasterComponent::VoteSessionSetup(class FName VoteSessionId, clas
 
 void UVoteBroadcasterComponent::VoteSessionShutdown(class FName VoteSessionId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteBroadcasterComponent", "VoteSessionShutdown");
+	class UFunction* Func = Class->GetFunction("VoteBroadcasterComponent", "VoteSessionShutdown");
 
 	Params::VoteBroadcasterComponent_VoteSessionShutdown Parms{};
 
@@ -163,10 +148,7 @@ void UVoteBroadcasterComponent::VoteSessionShutdown(class FName VoteSessionId)
 
 void UVoteBroadcasterComponent::VoteSetup(class FName VoteSessionId, class FName VoteId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteBroadcasterComponent", "VoteSetup");
+	class UFunction* Func = Class->GetFunction("VoteBroadcasterComponent", "VoteSetup");
 
 	Params::VoteBroadcasterComponent_VoteSetup Parms{};
 
@@ -190,10 +172,7 @@ void UVoteBroadcasterComponent::VoteSetup(class FName VoteSessionId, class FName
 
 void UVoteBroadcasterComponent::VoteStart(class FName VoteSessionId, class FName VoteId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteBroadcasterComponent", "VoteStart");
+	class UFunction* Func = Class->GetFunction("VoteBroadcasterComponent", "VoteStart");
 
 	Params::VoteBroadcasterComponent_VoteStart Parms{};
 
@@ -216,10 +195,7 @@ void UVoteBroadcasterComponent::VoteStart(class FName VoteSessionId, class FName
 
 void UVoteResponderComponent::CastDefaultVoteSelection(const class APlayerState* InPlayerState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteResponderComponent", "CastDefaultVoteSelection");
+	class UFunction* Func = Class->GetFunction("VoteResponderComponent", "CastDefaultVoteSelection");
 
 	Params::VoteResponderComponent_CastDefaultVoteSelection Parms{};
 
@@ -242,10 +218,7 @@ void UVoteResponderComponent::CastDefaultVoteSelection(const class APlayerState*
 
 void UVoteResponderComponent::CastManualVoteSelection(const class APlayerState* InPlayerState, const struct FGameplayTag& VoteSelection)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteResponderComponent", "CastManualVoteSelection");
+	class UFunction* Func = Class->GetFunction("VoteResponderComponent", "CastManualVoteSelection");
 
 	Params::VoteResponderComponent_CastManualVoteSelection Parms{};
 
@@ -269,10 +242,7 @@ void UVoteResponderComponent::CastManualVoteSelection(const class APlayerState* 
 
 void UVoteResponderComponent::CastManualVoteSelectionAtIndex(const class APlayerState* InPlayerState, const int32 SelectionIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteResponderComponent", "CastManualVoteSelectionAtIndex");
+	class UFunction* Func = Class->GetFunction("VoteResponderComponent", "CastManualVoteSelectionAtIndex");
 
 	Params::VoteResponderComponent_CastManualVoteSelectionAtIndex Parms{};
 
@@ -296,10 +266,7 @@ void UVoteResponderComponent::CastManualVoteSelectionAtIndex(const class APlayer
 
 void UVoteResponderComponent::ServerCastVoteSelection(const struct FUniqueNetIdRepl& InUserId, const struct FCastedVote& CastedVote)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoteResponderComponent", "ServerCastVoteSelection");
+	class UFunction* Func = Class->GetFunction("VoteResponderComponent", "ServerCastVoteSelection");
 
 	Params::VoteResponderComponent_ServerCastVoteSelection Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AItemPreviewSideSwap_C::ExecuteUbergraph_ItemPreviewSideSwap(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "ExecuteUbergraph_ItemPreviewSideSwap");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "ExecuteUbergraph_ItemPreviewSideSwap");
 
 	Params::ItemPreviewSideSwap_C_ExecuteUbergraph_ItemPreviewSideSwap Parms{};
 
@@ -43,10 +40,7 @@ void AItemPreviewSideSwap_C::ExecuteUbergraph_ItemPreviewSideSwap(int32 EntryPoi
 
 void AItemPreviewSideSwap_C::OnTargetZoomLevelSet(float TargetZoomLevel_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "OnTargetZoomLevelSet");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "OnTargetZoomLevelSet");
 
 	Params::ItemPreviewSideSwap_C_OnTargetZoomLevelSet Parms{};
 
@@ -61,10 +55,7 @@ void AItemPreviewSideSwap_C::OnTargetZoomLevelSet(float TargetZoomLevel_0)
 
 void AItemPreviewSideSwap_C::UpdateSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "UpdateSettings");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "UpdateSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -78,10 +69,7 @@ void AItemPreviewSideSwap_C::UpdateSettings()
 
 void AItemPreviewSideSwap_C::OnNewSceneRequested(const class UFortAccountItemDefinition* PrimaryRequestedItem, const struct FSceneTransitionOptions& TransitionOptions)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "OnNewSceneRequested");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "OnNewSceneRequested");
 
 	Params::ItemPreviewSideSwap_C_OnNewSceneRequested Parms{};
 
@@ -100,10 +88,7 @@ void AItemPreviewSideSwap_C::OnNewSceneRequested(const class UFortAccountItemDef
 
 void AItemPreviewSideSwap_C::OnReadyToSwap(const class UFortAccountItemDefinition* PrimaryRequestedItem, const struct FSceneTransitionOptions& Options)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "OnReadyToSwap");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "OnReadyToSwap");
 
 	Params::ItemPreviewSideSwap_C_OnReadyToSwap Parms{};
 
@@ -119,10 +104,7 @@ void AItemPreviewSideSwap_C::OnReadyToSwap(const class UFortAccountItemDefinitio
 
 void AItemPreviewSideSwap_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +115,7 @@ void AItemPreviewSideSwap_C::ReceiveBeginPlay()
 
 void AItemPreviewSideSwap_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +126,7 @@ void AItemPreviewSideSwap_C::Timeline_0__UpdateFunc()
 
 void AItemPreviewSideSwap_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +137,7 @@ void AItemPreviewSideSwap_C::Timeline_0__FinishedFunc()
 
 void AItemPreviewSideSwap_C::MoveOutRight__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveOutRight__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveOutRight__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +148,7 @@ void AItemPreviewSideSwap_C::MoveOutRight__UpdateFunc()
 
 void AItemPreviewSideSwap_C::MoveOutRight__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveOutRight__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveOutRight__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -189,10 +159,7 @@ void AItemPreviewSideSwap_C::MoveOutRight__FinishedFunc()
 
 void AItemPreviewSideSwap_C::MoveInRight__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveInRight__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveInRight__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +170,7 @@ void AItemPreviewSideSwap_C::MoveInRight__UpdateFunc()
 
 void AItemPreviewSideSwap_C::MoveInRight__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveInRight__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveInRight__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -217,10 +181,7 @@ void AItemPreviewSideSwap_C::MoveInRight__FinishedFunc()
 
 void AItemPreviewSideSwap_C::MoveInLeft__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveInLeft__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveInLeft__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -231,10 +192,7 @@ void AItemPreviewSideSwap_C::MoveInLeft__UpdateFunc()
 
 void AItemPreviewSideSwap_C::MoveInLeft__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveInLeft__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveInLeft__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -245,10 +203,7 @@ void AItemPreviewSideSwap_C::MoveInLeft__FinishedFunc()
 
 void AItemPreviewSideSwap_C::MoveOutLeft__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveOutLeft__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveOutLeft__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -259,10 +214,7 @@ void AItemPreviewSideSwap_C::MoveOutLeft__UpdateFunc()
 
 void AItemPreviewSideSwap_C::MoveOutLeft__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveOutLeft__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "MoveOutLeft__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -275,10 +227,7 @@ void AItemPreviewSideSwap_C::MoveOutLeft__FinishedFunc()
 
 void AItemPreviewSideSwap_C::SwitchMobileLighting(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "SwitchMobileLighting");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "SwitchMobileLighting");
 
 	Params::ItemPreviewSideSwap_C_SwitchMobileLighting Parms{};
 
@@ -295,10 +244,7 @@ void AItemPreviewSideSwap_C::SwitchMobileLighting(bool Visibility)
 
 void AItemPreviewSideSwap_C::SwitchPCLighting_LOWDetail(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "SwitchPCLighting_LOWDetail");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "SwitchPCLighting_LOWDetail");
 
 	Params::ItemPreviewSideSwap_C_SwitchPCLighting_LOWDetail Parms{};
 
@@ -315,10 +261,7 @@ void AItemPreviewSideSwap_C::SwitchPCLighting_LOWDetail(bool Visibility)
 
 void AItemPreviewSideSwap_C::SwitchPCLighting(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "SwitchPCLighting");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "SwitchPCLighting");
 
 	Params::ItemPreviewSideSwap_C_SwitchPCLighting Parms{};
 
@@ -335,10 +278,7 @@ void AItemPreviewSideSwap_C::SwitchPCLighting(bool Visibility)
 
 void AItemPreviewSideSwap_C::LightControl(bool Active)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPreviewSideSwap_C", "LightControl");
+	class UFunction* Func = Class->GetFunction("ItemPreviewSideSwap_C", "LightControl");
 
 	Params::ItemPreviewSideSwap_C_LightControl Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AAthenaSupplyDropBalloon_C::ExecuteUbergraph_AthenaSupplyDropBalloon(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "ExecuteUbergraph_AthenaSupplyDropBalloon");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "ExecuteUbergraph_AthenaSupplyDropBalloon");
 
 	Params::AthenaSupplyDropBalloon_C_ExecuteUbergraph_AthenaSupplyDropBalloon Parms{};
 
@@ -49,10 +46,7 @@ void AAthenaSupplyDropBalloon_C::ExecuteUbergraph_AthenaSupplyDropBalloon(int32 
 
 void AAthenaSupplyDropBalloon_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "OnDeathServer");
 
 	Params::AthenaSupplyDropBalloon_C_OnDeathServer Parms{};
 
@@ -81,10 +75,7 @@ void AAthenaSupplyDropBalloon_C::OnDeathServer(float Damage, const struct FGamep
 
 void AAthenaSupplyDropBalloon_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "OnDeathPlayEffects");
 
 	Params::AthenaSupplyDropBalloon_C_OnDeathPlayEffects Parms{};
 
@@ -105,10 +96,7 @@ void AAthenaSupplyDropBalloon_C::OnDeathPlayEffects(float Damage, const struct F
 
 void AAthenaSupplyDropBalloon_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +115,7 @@ void AAthenaSupplyDropBalloon_C::ReceiveBeginPlay()
 
 void AAthenaSupplyDropBalloon_C::OnDamageServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "OnDamageServer");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDropBalloon_C", "OnDamageServer");
 
 	Params::AthenaSupplyDropBalloon_C_OnDamageServer Parms{};
 

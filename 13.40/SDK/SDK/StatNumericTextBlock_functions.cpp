@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UStatNumericTextBlock_C::SetComparisonState(EFortBuffState Buff_State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatNumericTextBlock_C", "SetComparisonState");
+	class UFunction* Func = Class->GetFunction("StatNumericTextBlock_C", "SetComparisonState");
 
 	Params::StatNumericTextBlock_C_SetComparisonState Parms{};
 
@@ -41,10 +38,7 @@ void UStatNumericTextBlock_C::SetComparisonState(EFortBuffState Buff_State)
 
 void UStatNumericTextBlock_C::UpdateComparison()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatNumericTextBlock_C", "UpdateComparison");
+	class UFunction* Func = Class->GetFunction("StatNumericTextBlock_C", "UpdateComparison");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UStatNumericTextBlock_C::UpdateComparison()
 
 void UStatNumericTextBlock_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatNumericTextBlock_C", "Construct");
+	class UFunction* Func = Class->GetFunction("StatNumericTextBlock_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UStatNumericTextBlock_C::Construct()
 
 void UStatNumericTextBlock_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatNumericTextBlock_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("StatNumericTextBlock_C", "PreConstruct");
 
 	Params::StatNumericTextBlock_C_PreConstruct Parms{};
 
@@ -91,10 +79,7 @@ void UStatNumericTextBlock_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UStatNumericTextBlock_C::ExecuteUbergraph_StatNumericTextBlock(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatNumericTextBlock_C", "ExecuteUbergraph_StatNumericTextBlock");
+	class UFunction* Func = Class->GetFunction("StatNumericTextBlock_C", "ExecuteUbergraph_StatNumericTextBlock");
 
 	Params::StatNumericTextBlock_C_ExecuteUbergraph_StatNumericTextBlock Parms{};
 

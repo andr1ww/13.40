@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_FuelEquipped_C::ExecuteUbergraph_GA_FuelEquipped(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FuelEquipped_C", "ExecuteUbergraph_GA_FuelEquipped");
+	class UFunction* Func = Class->GetFunction("GA_FuelEquipped_C", "ExecuteUbergraph_GA_FuelEquipped");
 
 	Params::GA_FuelEquipped_C_ExecuteUbergraph_GA_FuelEquipped Parms{};
 
@@ -43,10 +40,7 @@ void UGA_FuelEquipped_C::ExecuteUbergraph_GA_FuelEquipped(int32 EntryPoint)
 
 void UGA_FuelEquipped_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FuelEquipped_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_FuelEquipped_C", "K2_OnEndAbility");
 
 	Params::GA_FuelEquipped_C_K2_OnEndAbility Parms{};
 
@@ -61,10 +55,7 @@ void UGA_FuelEquipped_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_FuelEquipped_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FuelEquipped_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_FuelEquipped_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

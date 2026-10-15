@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_StormMeshRotator_C::ExecuteUbergraph_BP_StormMeshRotator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StormMeshRotator_C", "ExecuteUbergraph_BP_StormMeshRotator");
+	class UFunction* Func = Class->GetFunction("BP_StormMeshRotator_C", "ExecuteUbergraph_BP_StormMeshRotator");
 
 	Params::BP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator Parms{};
 
@@ -43,10 +40,7 @@ void ABP_StormMeshRotator_C::ExecuteUbergraph_BP_StormMeshRotator(int32 EntryPoi
 
 void ABP_StormMeshRotator_C::OnStormEffectsEnabled(bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StormMeshRotator_C", "OnStormEffectsEnabled");
+	class UFunction* Func = Class->GetFunction("BP_StormMeshRotator_C", "OnStormEffectsEnabled");
 
 	Params::BP_StormMeshRotator_C_OnStormEffectsEnabled Parms{};
 
@@ -61,10 +55,7 @@ void ABP_StormMeshRotator_C::OnStormEffectsEnabled(bool bEnabled)
 
 void ABP_StormMeshRotator_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StormMeshRotator_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_StormMeshRotator_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void ABP_StormMeshRotator_C::ReceiveBeginPlay()
 
 void ABP_StormMeshRotator_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StormMeshRotator_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_StormMeshRotator_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

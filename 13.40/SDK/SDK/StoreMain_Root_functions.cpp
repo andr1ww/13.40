@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UStoreMain_Root_C::ExecuteUbergraph_StoreMain_Root(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "ExecuteUbergraph_StoreMain_Root");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "ExecuteUbergraph_StoreMain_Root");
 
 	Params::StoreMain_Root_C_ExecuteUbergraph_StoreMain_Root Parms{};
 
@@ -41,10 +38,7 @@ void UStoreMain_Root_C::ExecuteUbergraph_StoreMain_Root(int32 EntryPoint)
 
 void UStoreMain_Root_C::OnTransitionedBySwitcher()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "OnTransitionedBySwitcher");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "OnTransitionedBySwitcher");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UStoreMain_Root_C::OnTransitionedBySwitcher()
 
 void UStoreMain_Root_C::OnStartReadingOffers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "OnStartReadingOffers");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "OnStartReadingOffers");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UStoreMain_Root_C::OnStartReadingOffers()
 
 void UStoreMain_Root_C::OnPurchasingDisabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "OnPurchasingDisabled");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "OnPurchasingDisabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UStoreMain_Root_C::OnPurchasingDisabled()
 
 void UStoreMain_Root_C::GenerateOfferWidget(class UFortStoreFrontOfferInfo* OfferData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "GenerateOfferWidget");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "GenerateOfferWidget");
 
 	Params::StoreMain_Root_C_GenerateOfferWidget Parms{};
 
@@ -106,10 +91,7 @@ void UStoreMain_Root_C::GenerateOfferWidget(class UFortStoreFrontOfferInfo* Offe
 
 void UStoreMain_Root_C::OnUpdateOtherPlatformMTXMessage(bool HasOtherPlatformCurrency, const class FText& CurrencyMessageLocText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "OnUpdateOtherPlatformMTXMessage");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "OnUpdateOtherPlatformMTXMessage");
 
 	Params::StoreMain_Root_C_OnUpdateOtherPlatformMTXMessage Parms{};
 
@@ -125,10 +107,7 @@ void UStoreMain_Root_C::OnUpdateOtherPlatformMTXMessage(bool HasOtherPlatformCur
 
 void UStoreMain_Root_C::OnRemovedFromActivationStack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "OnRemovedFromActivationStack");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "OnRemovedFromActivationStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +118,7 @@ void UStoreMain_Root_C::OnRemovedFromActivationStack()
 
 void UStoreMain_Root_C::OnAddedToActivationStack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "OnAddedToActivationStack");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "OnAddedToActivationStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void UStoreMain_Root_C::OnAddedToActivationStack()
 
 void UStoreMain_Root_C::ClearOfferWidgets()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "ClearOfferWidgets");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "ClearOfferWidgets");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +140,7 @@ void UStoreMain_Root_C::ClearOfferWidgets()
 
 void UStoreMain_Root_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +151,7 @@ void UStoreMain_Root_C::BP_OnDeactivated()
 
 void UStoreMain_Root_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +162,7 @@ void UStoreMain_Root_C::BP_OnActivated()
 
 void UStoreMain_Root_C::OnOffersGenerated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "OnOffersGenerated");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "OnOffersGenerated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +173,7 @@ void UStoreMain_Root_C::OnOffersGenerated()
 
 void UStoreMain_Root_C::NoOffersAvailable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "NoOffersAvailable");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "NoOffersAvailable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +184,7 @@ void UStoreMain_Root_C::NoOffersAvailable()
 
 void UStoreMain_Root_C::Focus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "Focus");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "Focus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +195,7 @@ void UStoreMain_Root_C::Focus()
 
 void UStoreMain_Root_C::UpdateCurrencyNotification()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "UpdateCurrencyNotification");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "UpdateCurrencyNotification");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +208,7 @@ void UStoreMain_Root_C::UpdateCurrencyNotification()
 
 void UStoreMain_Root_C::Start_Ambient_Sound(bool Condition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "Start Ambient Sound");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "Start Ambient Sound");
 
 	Params::StoreMain_Root_C_Start_Ambient_Sound Parms{};
 
@@ -273,10 +225,7 @@ void UStoreMain_Root_C::Start_Ambient_Sound(bool Condition)
 
 bool UStoreMain_Root_C::Get_Main_Tab_Reference()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "Get Main Tab Reference");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "Get Main Tab Reference");
 
 	Params::StoreMain_Root_C_Get_Main_Tab_Reference Parms{};
 
@@ -291,10 +240,7 @@ bool UStoreMain_Root_C::Get_Main_Tab_Reference()
 
 void UStoreMain_Root_C::LayoutVBuckTiles()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "LayoutVBuckTiles");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "LayoutVBuckTiles");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -305,10 +251,7 @@ void UStoreMain_Root_C::LayoutVBuckTiles()
 
 void UStoreMain_Root_C::SetupFirstFocusableTile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "SetupFirstFocusableTile");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "SetupFirstFocusableTile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -319,10 +262,7 @@ void UStoreMain_Root_C::SetupFirstFocusableTile()
 
 void UStoreMain_Root_C::SetupForCampaignUpsell()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "SetupForCampaignUpsell");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "SetupForCampaignUpsell");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -335,10 +275,7 @@ void UStoreMain_Root_C::SetupForCampaignUpsell()
 
 void UStoreMain_Root_C::HandleRedeem(bool* bPassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "HandleRedeem");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "HandleRedeem");
 
 	Params::StoreMain_Root_C_HandleRedeem Parms{};
 
@@ -356,10 +293,7 @@ void UStoreMain_Root_C::HandleRedeem(bool* bPassThrough)
 
 void UStoreMain_Root_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "HandleBack");
 
 	Params::StoreMain_Root_C_HandleBack Parms{};
 
@@ -375,10 +309,7 @@ void UStoreMain_Root_C::HandleBack(bool* PassThrough)
 
 void UStoreMain_Root_C::PlayEquippedLockerMusic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "PlayEquippedLockerMusic");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "PlayEquippedLockerMusic");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -391,10 +322,7 @@ void UStoreMain_Root_C::PlayEquippedLockerMusic()
 
 void UStoreMain_Root_C::HandleGenerateOffer(class UFortStoreFrontOfferInfo* OfferInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "HandleGenerateOffer");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "HandleGenerateOffer");
 
 	Params::StoreMain_Root_C_HandleGenerateOffer Parms{};
 
@@ -409,10 +337,7 @@ void UStoreMain_Root_C::HandleGenerateOffer(class UFortStoreFrontOfferInfo* Offe
 
 void UStoreMain_Root_C::HandleAllOffersGenerated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "HandleAllOffersGenerated");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "HandleAllOffersGenerated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -426,10 +351,7 @@ void UStoreMain_Root_C::HandleAllOffersGenerated()
 
 void UStoreMain_Root_C::GetVisibilityByChildrenPresence(class UPanelWidget* Panel, ESlateVisibility* NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "GetVisibilityByChildrenPresence");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "GetVisibilityByChildrenPresence");
 
 	Params::StoreMain_Root_C_GetVisibilityByChildrenPresence Parms{};
 
@@ -449,10 +371,7 @@ void UStoreMain_Root_C::GetVisibilityByChildrenPresence(class UPanelWidget* Pane
 
 class UWidget* UStoreMain_Root_C::BP_GetDesiredFocusTarget() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "BP_GetDesiredFocusTarget");
+	class UFunction* Func = Class->GetFunction("StoreMain_Root_C", "BP_GetDesiredFocusTarget");
 
 	Params::StoreMain_Root_C_BP_GetDesiredFocusTarget Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UOptionsMenuSetting_C::ExecuteUbergraph_OptionsMenuSetting(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "ExecuteUbergraph_OptionsMenuSetting");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "ExecuteUbergraph_OptionsMenuSetting");
 
 	Params::OptionsMenuSetting_C_ExecuteUbergraph_OptionsMenuSetting Parms{};
 
@@ -44,10 +41,7 @@ void UOptionsMenuSetting_C::ExecuteUbergraph_OptionsMenuSetting(int32 EntryPoint
 
 void UOptionsMenuSetting_C::SetControlsEnabled(bool bEnabled, const class FText& DisabledReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "SetControlsEnabled");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "SetControlsEnabled");
 
 	Params::OptionsMenuSetting_C_SetControlsEnabled Parms{};
 
@@ -63,10 +57,7 @@ void UOptionsMenuSetting_C::SetControlsEnabled(bool bEnabled, const class FText&
 
 void UOptionsMenuSetting_C::Refresh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "Refresh");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void UOptionsMenuSetting_C::Refresh()
 
 void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature");
 
 	Params::OptionsMenuSetting_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature Parms{};
 
@@ -97,10 +85,7 @@ void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFl
 
 void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_On
 
 void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +107,7 @@ void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnM
 
 void UOptionsMenuSetting_C::CenterOnWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "CenterOnWidget");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "CenterOnWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +120,7 @@ void UOptionsMenuSetting_C::CenterOnWidget()
 
 void UOptionsMenuSetting_C::UpdateSetting(class UCommonTextBlock* TooltipTextBlock)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSetting");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSetting");
 
 	Params::OptionsMenuSetting_C_UpdateSetting Parms{};
 
@@ -161,10 +137,7 @@ void UOptionsMenuSetting_C::UpdateSetting(class UCommonTextBlock* TooltipTextBlo
 
 void UOptionsMenuSetting_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature");
 
 	Params::OptionsMenuSetting_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -179,10 +152,7 @@ void UOptionsMenuSetting_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEven
 
 void UOptionsMenuSetting_C::BP_OnEntryReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnEntryReleased");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnEntryReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +165,7 @@ void UOptionsMenuSetting_C::BP_OnEntryReleased()
 
 void UOptionsMenuSetting_C::BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature");
 
 	Params::OptionsMenuSetting_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature Parms{};
 
@@ -215,10 +182,7 @@ void UOptionsMenuSetting_C::BndEvt__MenuAnchorSettingDescription_K2Node_Componen
 
 void UOptionsMenuSetting_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "OnListItemObjectSet");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "OnListItemObjectSet");
 
 	Params::OptionsMenuSetting_C_OnListItemObjectSet Parms{};
 
@@ -235,10 +199,7 @@ void UOptionsMenuSetting_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature");
 
 	Params::OptionsMenuSetting_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature Parms{};
 
@@ -256,10 +217,7 @@ void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_On
 
 void UOptionsMenuSetting_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "OnMouseEnter");
 
 	Params::OptionsMenuSetting_C_OnMouseEnter Parms{};
 
@@ -277,10 +235,7 @@ void UOptionsMenuSetting_C::OnMouseEnter(const struct FGeometry& MyGeometry, con
 
 void UOptionsMenuSetting_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "OnMouseLeave");
 
 	Params::OptionsMenuSetting_C_OnMouseLeave Parms{};
 
@@ -295,10 +250,7 @@ void UOptionsMenuSetting_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 
 void UOptionsMenuSetting_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "Construct");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -311,10 +263,7 @@ void UOptionsMenuSetting_C::Construct()
 
 void UOptionsMenuSetting_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemSelectionChanged");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemSelectionChanged");
 
 	Params::OptionsMenuSetting_C_BP_OnItemSelectionChanged Parms{};
 
@@ -331,10 +280,7 @@ void UOptionsMenuSetting_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UOptionsMenuSetting_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemExpansionChanged");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemExpansionChanged");
 
 	Params::OptionsMenuSetting_C_BP_OnItemExpansionChanged Parms{};
 
@@ -349,10 +295,7 @@ void UOptionsMenuSetting_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UOptionsMenuSetting_C::UpdateSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSize");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -363,10 +306,7 @@ void UOptionsMenuSetting_C::UpdateSize()
 
 void UOptionsMenuSetting_C::HandlePawnSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "HandlePawnSet");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "HandlePawnSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -379,10 +319,7 @@ void UOptionsMenuSetting_C::HandlePawnSet()
 
 class UWidget* UOptionsMenuSetting_C::OnGetMenuContent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "OnGetMenuContent");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "OnGetMenuContent");
 
 	Params::OptionsMenuSetting_C_OnGetMenuContent Parms{};
 
@@ -397,10 +334,7 @@ class UWidget* UOptionsMenuSetting_C::OnGetMenuContent()
 
 void UOptionsMenuSetting_C::Show_Tooltip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "Show Tooltip");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "Show Tooltip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -411,10 +345,7 @@ void UOptionsMenuSetting_C::Show_Tooltip()
 
 void UOptionsMenuSetting_C::Hide_Tooltip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "Hide Tooltip");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "Hide Tooltip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -427,10 +358,7 @@ void UOptionsMenuSetting_C::Hide_Tooltip()
 
 void UOptionsMenuSetting_C::SetSliderTextRenderScale(float Scale_Normalized)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "SetSliderTextRenderScale");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "SetSliderTextRenderScale");
 
 	Params::OptionsMenuSetting_C_SetSliderTextRenderScale Parms{};
 
@@ -445,10 +373,7 @@ void UOptionsMenuSetting_C::SetSliderTextRenderScale(float Scale_Normalized)
 
 void UOptionsMenuSetting_C::SetDarkTabStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "SetDarkTabStyle");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "SetDarkTabStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -462,10 +387,7 @@ void UOptionsMenuSetting_C::SetDarkTabStyle()
 
 void UOptionsMenuSetting_C::ConvertSliderValueToSettingsValue(float SliderValue_0, float* SettingsValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "ConvertSliderValueToSettingsValue");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "ConvertSliderValueToSettingsValue");
 
 	Params::OptionsMenuSetting_C_ConvertSliderValueToSettingsValue Parms{};
 
@@ -483,10 +405,7 @@ void UOptionsMenuSetting_C::ConvertSliderValueToSettingsValue(float SliderValue_
 
 void UOptionsMenuSetting_C::UpdateSliderTexture()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSliderTexture");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSliderTexture");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -500,10 +419,7 @@ void UOptionsMenuSetting_C::UpdateSliderTexture()
 
 void UOptionsMenuSetting_C::ConvertSettingsValueToSliderValue(float SettingsValue, float* SliderValue_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "ConvertSettingsValueToSliderValue");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "ConvertSettingsValueToSliderValue");
 
 	Params::OptionsMenuSetting_C_ConvertSettingsValueToSliderValue Parms{};
 
@@ -521,10 +437,7 @@ void UOptionsMenuSetting_C::ConvertSettingsValueToSliderValue(float SettingsValu
 
 void UOptionsMenuSetting_C::UpdateVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateVisuals");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -539,10 +452,7 @@ void UOptionsMenuSetting_C::UpdateVisuals()
 
 void UOptionsMenuSetting_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaulFontSize, int32 MobileFont)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuSetting_C", "SetFontSize");
+	class UFunction* Func = Class->GetFunction("OptionsMenuSetting_C", "SetFontSize");
 
 	Params::OptionsMenuSetting_C_SetFontSize Parms{};
 

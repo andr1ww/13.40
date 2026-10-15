@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Curie_IceBlock_C::ExecuteUbergraph_BP_Curie_IceBlock(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_IceBlock_C", "ExecuteUbergraph_BP_Curie_IceBlock");
+	class UFunction* Func = Class->GetFunction("BP_Curie_IceBlock_C", "ExecuteUbergraph_BP_Curie_IceBlock");
 
 	Params::BP_Curie_IceBlock_C_ExecuteUbergraph_BP_Curie_IceBlock Parms{};
 
@@ -41,10 +38,7 @@ void ABP_Curie_IceBlock_C::ExecuteUbergraph_BP_Curie_IceBlock(int32 EntryPoint)
 
 void ABP_Curie_IceBlock_C::HandleShrink()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_IceBlock_C", "HandleShrink");
+	class UFunction* Func = Class->GetFunction("BP_Curie_IceBlock_C", "HandleShrink");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_Curie_IceBlock_C::HandleShrink()
 
 void ABP_Curie_IceBlock_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_IceBlock_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Curie_IceBlock_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_Curie_IceBlock_C::ReceiveBeginPlay()
 
 void ABP_Curie_IceBlock_C::Shrink__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_IceBlock_C", "Shrink__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_Curie_IceBlock_C", "Shrink__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_Curie_IceBlock_C::Shrink__UpdateFunc()
 
 void ABP_Curie_IceBlock_C::Shrink__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_IceBlock_C", "Shrink__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_Curie_IceBlock_C", "Shrink__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ABP_Curie_IceBlock_C::Shrink__FinishedFunc()
 
 void ABP_Curie_IceBlock_C::Growth__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_IceBlock_C", "Growth__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_Curie_IceBlock_C", "Growth__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void ABP_Curie_IceBlock_C::Growth__UpdateFunc()
 
 void ABP_Curie_IceBlock_C::Growth__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_IceBlock_C", "Growth__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_Curie_IceBlock_C", "Growth__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

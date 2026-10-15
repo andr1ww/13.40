@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreativeIslandLinkScreen_C::ExecuteUbergraph_CreativeIslandLinkScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "ExecuteUbergraph_CreativeIslandLinkScreen");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "ExecuteUbergraph_CreativeIslandLinkScreen");
 
 	Params::CreativeIslandLinkScreen_C_ExecuteUbergraph_CreativeIslandLinkScreen Parms{};
 
@@ -43,10 +40,7 @@ void UCreativeIslandLinkScreen_C::ExecuteUbergraph_CreativeIslandLinkScreen(int3
 
 void UCreativeIslandLinkScreen_C::BndEvt__Button_Refresh_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__Button_Refresh_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__Button_Refresh_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeIslandLinkScreen_C_BndEvt__Button_Refresh_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -63,10 +57,7 @@ void UCreativeIslandLinkScreen_C::BndEvt__Button_Refresh_K2Node_ComponentBoundEv
 
 void UCreativeIslandLinkScreen_C::BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeIslandLinkScreen_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -83,10 +74,7 @@ void UCreativeIslandLinkScreen_C::BndEvt__SimpleCommonButton_K2Node_ComponentBou
 
 void UCreativeIslandLinkScreen_C::BndEvt__CommonActionWidget_0_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__CommonActionWidget_0_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__CommonActionWidget_0_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
 
 	Params::CreativeIslandLinkScreen_C_BndEvt__CommonActionWidget_0_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature Parms{};
 
@@ -103,10 +91,7 @@ void UCreativeIslandLinkScreen_C::BndEvt__CommonActionWidget_0_K2Node_ComponentB
 
 void UCreativeIslandLinkScreen_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "PreConstruct");
 
 	Params::CreativeIslandLinkScreen_C_PreConstruct Parms{};
 
@@ -121,10 +106,7 @@ void UCreativeIslandLinkScreen_C::PreConstruct(bool IsDesignTime)
 
 void UCreativeIslandLinkScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +119,7 @@ void UCreativeIslandLinkScreen_C::BP_OnActivated()
 
 void UCreativeIslandLinkScreen_C::OnCreativeIslandLinkValidated(EFortCreativeIslandLinkValidationResult ValidateResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnCreativeIslandLinkValidated");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnCreativeIslandLinkValidated");
 
 	Params::CreativeIslandLinkScreen_C_OnCreativeIslandLinkValidated Parms{};
 
@@ -155,10 +134,7 @@ void UCreativeIslandLinkScreen_C::OnCreativeIslandLinkValidated(EFortCreativeIsl
 
 void UCreativeIslandLinkScreen_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +145,7 @@ void UCreativeIslandLinkScreen_C::Destruct()
 
 void UCreativeIslandLinkScreen_C::OnAddedToActivationStack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnAddedToActivationStack");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnAddedToActivationStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -185,10 +158,7 @@ void UCreativeIslandLinkScreen_C::OnAddedToActivationStack()
 
 void UCreativeIslandLinkScreen_C::InitFromObject(class UObject* InitObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "InitFromObject");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "InitFromObject");
 
 	Params::CreativeIslandLinkScreen_C_InitFromObject Parms{};
 
@@ -203,10 +173,7 @@ void UCreativeIslandLinkScreen_C::InitFromObject(class UObject* InitObject)
 
 void UCreativeIslandLinkScreen_C::OnCreativeIslandLinksPopulated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnCreativeIslandLinksPopulated");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnCreativeIslandLinksPopulated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -219,10 +186,7 @@ void UCreativeIslandLinkScreen_C::OnCreativeIslandLinksPopulated()
 
 void UCreativeIslandLinkScreen_C::OnIslandLinkEntryTextChanged(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnIslandLinkEntryTextChanged");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnIslandLinkEntryTextChanged");
 
 	Params::CreativeIslandLinkScreen_C_OnIslandLinkEntryTextChanged Parms{};
 
@@ -237,10 +201,7 @@ void UCreativeIslandLinkScreen_C::OnIslandLinkEntryTextChanged(const class FText
 
 void UCreativeIslandLinkScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

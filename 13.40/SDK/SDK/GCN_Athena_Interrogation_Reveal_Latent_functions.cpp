@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Athena_Interrogation_Reveal_Latent_C::ExecuteUbergraph_GCN_Athena_Interrogation_Reveal_Latent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "ExecuteUbergraph_GCN_Athena_Interrogation_Reveal_Latent");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "ExecuteUbergraph_GCN_Athena_Interrogation_Reveal_Latent");
 
 	Params::GCN_Athena_Interrogation_Reveal_Latent_C_ExecuteUbergraph_GCN_Athena_Interrogation_Reveal_Latent Parms{};
 
@@ -41,10 +38,7 @@ void AGCN_Athena_Interrogation_Reveal_Latent_C::ExecuteUbergraph_GCN_Athena_Inte
 
 void AGCN_Athena_Interrogation_Reveal_Latent_C::PlayWorldSweep()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "PlayWorldSweep");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "PlayWorldSweep");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AGCN_Athena_Interrogation_Reveal_Latent_C::PlayWorldSweep()
 
 void AGCN_Athena_Interrogation_Reveal_Latent_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "ReceiveEndPlay");
 
 	Params::GCN_Athena_Interrogation_Reveal_Latent_C_ReceiveEndPlay Parms{};
 
@@ -75,10 +66,7 @@ void AGCN_Athena_Interrogation_Reveal_Latent_C::ReceiveEndPlay(EEndPlayReason En
 
 void AGCN_Athena_Interrogation_Reveal_Latent_C::EndSweepFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "EndSweepFX");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "EndSweepFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void AGCN_Athena_Interrogation_Reveal_Latent_C::EndSweepFX()
 
 void AGCN_Athena_Interrogation_Reveal_Latent_C::BeginSweepFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "BeginSweepFX");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "BeginSweepFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,10 +92,7 @@ void AGCN_Athena_Interrogation_Reveal_Latent_C::BeginSweepFX()
 
 bool AGCN_Athena_Interrogation_Reveal_Latent_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "OnExecute");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Interrogation_Reveal_Latent_C", "OnExecute");
 
 	Params::GCN_Athena_Interrogation_Reveal_Latent_C_OnExecute Parms{};
 

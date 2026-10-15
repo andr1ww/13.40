@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ADA_AshtonPack_C::ExecuteUbergraph_DA_AshtonPack(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_AshtonPack_C", "ExecuteUbergraph_DA_AshtonPack");
+	class UFunction* Func = Class->GetFunction("DA_AshtonPack_C", "ExecuteUbergraph_DA_AshtonPack");
 
 	Params::DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack Parms{};
 
@@ -43,10 +40,7 @@ void ADA_AshtonPack_C::ExecuteUbergraph_DA_AshtonPack(int32 EntryPoint)
 
 void ADA_AshtonPack_C::Landed(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_AshtonPack_C", "Landed");
+	class UFunction* Func = Class->GetFunction("DA_AshtonPack_C", "Landed");
 
 	Params::DA_AshtonPack_C_Landed Parms{};
 
@@ -61,10 +55,7 @@ void ADA_AshtonPack_C::Landed(const struct FHitResult& Hit)
 
 void ADA_AshtonPack_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_AshtonPack_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("DA_AshtonPack_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void ADA_AshtonPack_C::ReceiveBeginPlay()
 
 void ADA_AshtonPack_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_AshtonPack_C", "BPPressSecondaryFire");
+	class UFunction* Func = Class->GetFunction("DA_AshtonPack_C", "BPPressSecondaryFire");
 
 	Params::DA_AshtonPack_C_BPPressSecondaryFire Parms{};
 
@@ -97,10 +85,7 @@ void ADA_AshtonPack_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelpe
 
 void ADA_AshtonPack_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_AshtonPack_C", "BPPressTrigger");
+	class UFunction* Func = Class->GetFunction("DA_AshtonPack_C", "BPPressTrigger");
 
 	Params::DA_AshtonPack_C_BPPressTrigger Parms{};
 

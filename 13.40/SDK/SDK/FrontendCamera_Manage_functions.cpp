@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFrontendCamera_Manage_C::OnActivated(class AFortPlayerController* PlayerController_OnActivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendCamera_Manage_C", "OnActivated");
+	class UFunction* Func = Class->GetFunction("FrontendCamera_Manage_C", "OnActivated");
 
 	Params::FrontendCamera_Manage_C_OnActivated Parms{};
 
@@ -43,10 +40,7 @@ void AFrontendCamera_Manage_C::OnActivated(class AFortPlayerController* PlayerCo
 
 void AFrontendCamera_Manage_C::OnDeactivated(class AFortPlayerController* PlayerController_OnDeactivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendCamera_Manage_C", "OnDeactivated");
+	class UFunction* Func = Class->GetFunction("FrontendCamera_Manage_C", "OnDeactivated");
 
 	Params::FrontendCamera_Manage_C_OnDeactivated Parms{};
 
@@ -63,10 +57,7 @@ void AFrontendCamera_Manage_C::OnDeactivated(class AFortPlayerController* Player
 
 void AFrontendCamera_Manage_C::ExecuteUbergraph_FrontendCamera_Manage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendCamera_Manage_C", "ExecuteUbergraph_FrontendCamera_Manage");
+	class UFunction* Func = Class->GetFunction("FrontendCamera_Manage_C", "ExecuteUbergraph_FrontendCamera_Manage");
 
 	Params::FrontendCamera_Manage_C_ExecuteUbergraph_FrontendCamera_Manage Parms{};
 

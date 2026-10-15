@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UBP_TimeSynthTrackComponent_SpicySake_C::OnDataTrackerUpdate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_SpicySake_C", "OnDataTrackerUpdate");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_SpicySake_C", "OnDataTrackerUpdate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UBP_TimeSynthTrackComponent_SpicySake_C::OnDataTrackerUpdate()
 
 void UBP_TimeSynthTrackComponent_SpicySake_C::GetRemainingEventCooldown(float* Cooldown)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_SpicySake_C", "GetRemainingEventCooldown");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_SpicySake_C", "GetRemainingEventCooldown");
 
 	Params::BP_TimeSynthTrackComponent_SpicySake_C_GetRemainingEventCooldown Parms{};
 
@@ -56,10 +50,7 @@ void UBP_TimeSynthTrackComponent_SpicySake_C::GetRemainingEventCooldown(float* C
 
 void UBP_TimeSynthTrackComponent_SpicySake_C::HandleMixState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_SpicySake_C", "HandleMixState");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_SpicySake_C", "HandleMixState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -70,10 +61,7 @@ void UBP_TimeSynthTrackComponent_SpicySake_C::HandleMixState()
 
 void UBP_TimeSynthTrackComponent_SpicySake_C::OnDataTrackerStart()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_SpicySake_C", "OnDataTrackerStart");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_SpicySake_C", "OnDataTrackerStart");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

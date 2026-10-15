@@ -20,10 +20,7 @@ SDK_NAMESPACE_START
 
 void ULatencyWidget::StartTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LatencyWidget", "StartTimer");
+	class UFunction* Func = Class->GetFunction("LatencyWidget", "StartTimer");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -39,10 +36,7 @@ void ULatencyWidget::StartTimer()
 
 void ULatencyWidget::StopTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LatencyWidget", "StopTimer");
+	class UFunction* Func = Class->GetFunction("LatencyWidget", "StopTimer");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

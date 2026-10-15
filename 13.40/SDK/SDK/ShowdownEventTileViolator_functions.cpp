@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UShowdownEventTileViolator_C::ExecuteUbergraph_ShowdownEventTileViolator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileViolator_C", "ExecuteUbergraph_ShowdownEventTileViolator");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileViolator_C", "ExecuteUbergraph_ShowdownEventTileViolator");
 
 	Params::ShowdownEventTileViolator_C_ExecuteUbergraph_ShowdownEventTileViolator Parms{};
 
@@ -41,10 +38,7 @@ void UShowdownEventTileViolator_C::ExecuteUbergraph_ShowdownEventTileViolator(in
 
 void UShowdownEventTileViolator_C::RefreshViolatorData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileViolator_C", "RefreshViolatorData");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileViolator_C", "RefreshViolatorData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UShowdownEventTileViolator_C::RefreshViolatorData()
 
 void UShowdownEventTileViolator_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileViolator_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileViolator_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UShowdownEventTileViolator_C::RefreshDataBP()
 
 void UShowdownEventTileViolator_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileViolator_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileViolator_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

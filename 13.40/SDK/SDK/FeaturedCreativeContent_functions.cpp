@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFeaturedCreativeContent_C::ExecuteUbergraph_FeaturedCreativeContent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeaturedCreativeContent_C", "ExecuteUbergraph_FeaturedCreativeContent");
+	class UFunction* Func = Class->GetFunction("FeaturedCreativeContent_C", "ExecuteUbergraph_FeaturedCreativeContent");
 
 	Params::FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent Parms{};
 
@@ -43,10 +40,7 @@ void UFeaturedCreativeContent_C::ExecuteUbergraph_FeaturedCreativeContent(int32 
 
 void UFeaturedCreativeContent_C::BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature(int32 CurrentPageIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeaturedCreativeContent_C", "BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FeaturedCreativeContent_C", "BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature");
 
 	Params::FeaturedCreativeContent_C_BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature Parms{};
 
@@ -64,10 +58,7 @@ void UFeaturedCreativeContent_C::BndEvt__CMSImageSlideShow_K2Node_ComponentBound
 
 void UFeaturedCreativeContent_C::OnSetupAds(const TArray<class FString>& MediaURLs, const TArray<struct FCreativeAdData>& AdMetadata)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeaturedCreativeContent_C", "OnSetupAds");
+	class UFunction* Func = Class->GetFunction("FeaturedCreativeContent_C", "OnSetupAds");
 
 	Params::FeaturedCreativeContent_C_OnSetupAds Parms{};
 
@@ -85,10 +76,7 @@ void UFeaturedCreativeContent_C::OnSetupAds(const TArray<class FString>& MediaUR
 
 void UFeaturedCreativeContent_C::SetFeaturedContentDetails(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeaturedCreativeContent_C", "SetFeaturedContentDetails");
+	class UFunction* Func = Class->GetFunction("FeaturedCreativeContent_C", "SetFeaturedContentDetails");
 
 	Params::FeaturedCreativeContent_C_SetFeaturedContentDetails Parms{};
 

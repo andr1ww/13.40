@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Hook_Athena_C::ExecuteUbergraph_B_Prj_Hook_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "ExecuteUbergraph_B_Prj_Hook_Athena");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "ExecuteUbergraph_B_Prj_Hook_Athena");
 
 	Params::B_Prj_Hook_Athena_C_ExecuteUbergraph_B_Prj_Hook_Athena Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_Hook_Athena_C::ExecuteUbergraph_B_Prj_Hook_Athena(int32 EntryPoint)
 
 void AB_Prj_Hook_Athena_C::Grapple()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "Grapple");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "Grapple");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void AB_Prj_Hook_Athena_C::Grapple()
 
 void AB_Prj_Hook_Athena_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Hook_Athena_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -79,10 +70,7 @@ void AB_Prj_Hook_Athena_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBou
 
 void AB_Prj_Hook_Athena_C::LaunchCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "LaunchCheck");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "LaunchCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,10 +81,7 @@ void AB_Prj_Hook_Athena_C::LaunchCheck()
 
 void AB_Prj_Hook_Athena_C::GrappleVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "GrappleVehicle");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "GrappleVehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -116,10 +101,7 @@ void AB_Prj_Hook_Athena_C::GrappleVehicle()
 
 void AB_Prj_Hook_Athena_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation_0, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "ReceiveHit");
 
 	Params::B_Prj_Hook_Athena_C_ReceiveHit Parms{};
 
@@ -141,10 +123,7 @@ void AB_Prj_Hook_Athena_C::ReceiveHit(class UPrimitiveComponent* MyComp, class A
 
 void AB_Prj_Hook_Athena_C::WeaponCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "WeaponCheck");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "WeaponCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +136,7 @@ void AB_Prj_Hook_Athena_C::WeaponCheck()
 
 void AB_Prj_Hook_Athena_C::Travel(const struct FVector& HitLocation_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "Travel");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "Travel");
 
 	Params::B_Prj_Hook_Athena_C_Travel Parms{};
 
@@ -175,10 +151,7 @@ void AB_Prj_Hook_Athena_C::Travel(const struct FVector& HitLocation_0)
 
 void AB_Prj_Hook_Athena_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -189,10 +162,7 @@ void AB_Prj_Hook_Athena_C::ReceiveDestroyed()
 
 void AB_Prj_Hook_Athena_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -205,10 +175,7 @@ void AB_Prj_Hook_Athena_C::ReceiveBeginPlay()
 
 void AB_Prj_Hook_Athena_C::OnCompleted_93AE81F64BBD13E0E55C399F05E160E3(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnCompleted_93AE81F64BBD13E0E55C399F05E160E3");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnCompleted_93AE81F64BBD13E0E55C399F05E160E3");
 
 	Params::B_Prj_Hook_Athena_C_OnCompleted_93AE81F64BBD13E0E55C399F05E160E3 Parms{};
 
@@ -225,10 +192,7 @@ void AB_Prj_Hook_Athena_C::OnCompleted_93AE81F64BBD13E0E55C399F05E160E3(class FN
 
 void AB_Prj_Hook_Athena_C::OnBlendOut_93AE81F64BBD13E0E55C399F05E160E3(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnBlendOut_93AE81F64BBD13E0E55C399F05E160E3");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnBlendOut_93AE81F64BBD13E0E55C399F05E160E3");
 
 	Params::B_Prj_Hook_Athena_C_OnBlendOut_93AE81F64BBD13E0E55C399F05E160E3 Parms{};
 
@@ -245,10 +209,7 @@ void AB_Prj_Hook_Athena_C::OnBlendOut_93AE81F64BBD13E0E55C399F05E160E3(class FNa
 
 void AB_Prj_Hook_Athena_C::OnInterrupted_93AE81F64BBD13E0E55C399F05E160E3(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnInterrupted_93AE81F64BBD13E0E55C399F05E160E3");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnInterrupted_93AE81F64BBD13E0E55C399F05E160E3");
 
 	Params::B_Prj_Hook_Athena_C_OnInterrupted_93AE81F64BBD13E0E55C399F05E160E3 Parms{};
 
@@ -265,10 +226,7 @@ void AB_Prj_Hook_Athena_C::OnInterrupted_93AE81F64BBD13E0E55C399F05E160E3(class 
 
 void AB_Prj_Hook_Athena_C::OnNotifyBegin_93AE81F64BBD13E0E55C399F05E160E3(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyBegin_93AE81F64BBD13E0E55C399F05E160E3");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyBegin_93AE81F64BBD13E0E55C399F05E160E3");
 
 	Params::B_Prj_Hook_Athena_C_OnNotifyBegin_93AE81F64BBD13E0E55C399F05E160E3 Parms{};
 
@@ -285,10 +243,7 @@ void AB_Prj_Hook_Athena_C::OnNotifyBegin_93AE81F64BBD13E0E55C399F05E160E3(class 
 
 void AB_Prj_Hook_Athena_C::OnNotifyEnd_93AE81F64BBD13E0E55C399F05E160E3(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyEnd_93AE81F64BBD13E0E55C399F05E160E3");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyEnd_93AE81F64BBD13E0E55C399F05E160E3");
 
 	Params::B_Prj_Hook_Athena_C_OnNotifyEnd_93AE81F64BBD13E0E55C399F05E160E3 Parms{};
 
@@ -305,10 +260,7 @@ void AB_Prj_Hook_Athena_C::OnNotifyEnd_93AE81F64BBD13E0E55C399F05E160E3(class FN
 
 void AB_Prj_Hook_Athena_C::OnCompleted_46D1167E4A05BB9A8529A6981DFAD6A4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnCompleted_46D1167E4A05BB9A8529A6981DFAD6A4");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnCompleted_46D1167E4A05BB9A8529A6981DFAD6A4");
 
 	Params::B_Prj_Hook_Athena_C_OnCompleted_46D1167E4A05BB9A8529A6981DFAD6A4 Parms{};
 
@@ -325,10 +277,7 @@ void AB_Prj_Hook_Athena_C::OnCompleted_46D1167E4A05BB9A8529A6981DFAD6A4(class FN
 
 void AB_Prj_Hook_Athena_C::OnBlendOut_46D1167E4A05BB9A8529A6981DFAD6A4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnBlendOut_46D1167E4A05BB9A8529A6981DFAD6A4");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnBlendOut_46D1167E4A05BB9A8529A6981DFAD6A4");
 
 	Params::B_Prj_Hook_Athena_C_OnBlendOut_46D1167E4A05BB9A8529A6981DFAD6A4 Parms{};
 
@@ -345,10 +294,7 @@ void AB_Prj_Hook_Athena_C::OnBlendOut_46D1167E4A05BB9A8529A6981DFAD6A4(class FNa
 
 void AB_Prj_Hook_Athena_C::OnInterrupted_46D1167E4A05BB9A8529A6981DFAD6A4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnInterrupted_46D1167E4A05BB9A8529A6981DFAD6A4");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnInterrupted_46D1167E4A05BB9A8529A6981DFAD6A4");
 
 	Params::B_Prj_Hook_Athena_C_OnInterrupted_46D1167E4A05BB9A8529A6981DFAD6A4 Parms{};
 
@@ -365,10 +311,7 @@ void AB_Prj_Hook_Athena_C::OnInterrupted_46D1167E4A05BB9A8529A6981DFAD6A4(class 
 
 void AB_Prj_Hook_Athena_C::OnNotifyBegin_46D1167E4A05BB9A8529A6981DFAD6A4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyBegin_46D1167E4A05BB9A8529A6981DFAD6A4");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyBegin_46D1167E4A05BB9A8529A6981DFAD6A4");
 
 	Params::B_Prj_Hook_Athena_C_OnNotifyBegin_46D1167E4A05BB9A8529A6981DFAD6A4 Parms{};
 
@@ -385,10 +328,7 @@ void AB_Prj_Hook_Athena_C::OnNotifyBegin_46D1167E4A05BB9A8529A6981DFAD6A4(class 
 
 void AB_Prj_Hook_Athena_C::OnNotifyEnd_46D1167E4A05BB9A8529A6981DFAD6A4(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyEnd_46D1167E4A05BB9A8529A6981DFAD6A4");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyEnd_46D1167E4A05BB9A8529A6981DFAD6A4");
 
 	Params::B_Prj_Hook_Athena_C_OnNotifyEnd_46D1167E4A05BB9A8529A6981DFAD6A4 Parms{};
 
@@ -405,10 +345,7 @@ void AB_Prj_Hook_Athena_C::OnNotifyEnd_46D1167E4A05BB9A8529A6981DFAD6A4(class FN
 
 void AB_Prj_Hook_Athena_C::OnCompleted_0A1B172F45DE2A614770489FAD619748(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnCompleted_0A1B172F45DE2A614770489FAD619748");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnCompleted_0A1B172F45DE2A614770489FAD619748");
 
 	Params::B_Prj_Hook_Athena_C_OnCompleted_0A1B172F45DE2A614770489FAD619748 Parms{};
 
@@ -425,10 +362,7 @@ void AB_Prj_Hook_Athena_C::OnCompleted_0A1B172F45DE2A614770489FAD619748(class FN
 
 void AB_Prj_Hook_Athena_C::OnBlendOut_0A1B172F45DE2A614770489FAD619748(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnBlendOut_0A1B172F45DE2A614770489FAD619748");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnBlendOut_0A1B172F45DE2A614770489FAD619748");
 
 	Params::B_Prj_Hook_Athena_C_OnBlendOut_0A1B172F45DE2A614770489FAD619748 Parms{};
 
@@ -445,10 +379,7 @@ void AB_Prj_Hook_Athena_C::OnBlendOut_0A1B172F45DE2A614770489FAD619748(class FNa
 
 void AB_Prj_Hook_Athena_C::OnInterrupted_0A1B172F45DE2A614770489FAD619748(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnInterrupted_0A1B172F45DE2A614770489FAD619748");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnInterrupted_0A1B172F45DE2A614770489FAD619748");
 
 	Params::B_Prj_Hook_Athena_C_OnInterrupted_0A1B172F45DE2A614770489FAD619748 Parms{};
 
@@ -465,10 +396,7 @@ void AB_Prj_Hook_Athena_C::OnInterrupted_0A1B172F45DE2A614770489FAD619748(class 
 
 void AB_Prj_Hook_Athena_C::OnNotifyBegin_0A1B172F45DE2A614770489FAD619748(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyBegin_0A1B172F45DE2A614770489FAD619748");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyBegin_0A1B172F45DE2A614770489FAD619748");
 
 	Params::B_Prj_Hook_Athena_C_OnNotifyBegin_0A1B172F45DE2A614770489FAD619748 Parms{};
 
@@ -485,10 +413,7 @@ void AB_Prj_Hook_Athena_C::OnNotifyBegin_0A1B172F45DE2A614770489FAD619748(class 
 
 void AB_Prj_Hook_Athena_C::OnNotifyEnd_0A1B172F45DE2A614770489FAD619748(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyEnd_0A1B172F45DE2A614770489FAD619748");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnNotifyEnd_0A1B172F45DE2A614770489FAD619748");
 
 	Params::B_Prj_Hook_Athena_C_OnNotifyEnd_0A1B172F45DE2A614770489FAD619748 Parms{};
 
@@ -503,10 +428,7 @@ void AB_Prj_Hook_Athena_C::OnNotifyEnd_0A1B172F45DE2A614770489FAD619748(class FN
 
 void AB_Prj_Hook_Athena_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -520,10 +442,7 @@ void AB_Prj_Hook_Athena_C::UserConstructionScript()
 
 void AB_Prj_Hook_Athena_C::PlayStickSounds(const struct FVector& Location, class AActor* HitActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "PlayStickSounds");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "PlayStickSounds");
 
 	Params::B_Prj_Hook_Athena_C_PlayStickSounds Parms{};
 
@@ -542,10 +461,7 @@ void AB_Prj_Hook_Athena_C::PlayStickSounds(const struct FVector& Location, class
 
 void AB_Prj_Hook_Athena_C::HandleHits(const struct FHitResult& Hit, class AActor** Target_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleHits");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleHits");
 
 	Params::B_Prj_Hook_Athena_C_HandleHits Parms{};
 
@@ -563,10 +479,7 @@ void AB_Prj_Hook_Athena_C::HandleHits(const struct FHitResult& Hit, class AActor
 
 void AB_Prj_Hook_Athena_C::IncapacitateTarget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "IncapacitateTarget");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "IncapacitateTarget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -577,10 +490,7 @@ void AB_Prj_Hook_Athena_C::IncapacitateTarget()
 
 void AB_Prj_Hook_Athena_C::CalculateYankForce()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "CalculateYankForce");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "CalculateYankForce");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -591,10 +501,7 @@ void AB_Prj_Hook_Athena_C::CalculateYankForce()
 
 void AB_Prj_Hook_Athena_C::OnRep_Target()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnRep_Target");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnRep_Target");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -605,10 +512,7 @@ void AB_Prj_Hook_Athena_C::OnRep_Target()
 
 void AB_Prj_Hook_Athena_C::OnRep_HookStopped()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnRep_HookStopped");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnRep_HookStopped");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -623,10 +527,7 @@ void AB_Prj_Hook_Athena_C::OnRep_HookStopped()
 
 void AB_Prj_Hook_Athena_C::PickGrappleMontage(float PitchAngle, bool InHoverboard, class FName* SectionName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "PickGrappleMontage");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "PickGrappleMontage");
 
 	Params::B_Prj_Hook_Athena_C_PickGrappleMontage Parms{};
 
@@ -648,10 +549,7 @@ void AB_Prj_Hook_Athena_C::PickGrappleMontage(float PitchAngle, bool InHoverboar
 
 void AB_Prj_Hook_Athena_C::HandleSticks(class UObject* Object, class UPrimitiveComponent* Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleSticks");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleSticks");
 
 	Params::B_Prj_Hook_Athena_C_HandleSticks Parms{};
 
@@ -670,10 +568,7 @@ void AB_Prj_Hook_Athena_C::HandleSticks(class UObject* Object, class UPrimitiveC
 
 void AB_Prj_Hook_Athena_C::HandleStuckVehicle(class UObject* Object, class UPrimitiveComponent* Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleStuckVehicle");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleStuckVehicle");
 
 	Params::B_Prj_Hook_Athena_C_HandleStuckVehicle Parms{};
 
@@ -692,10 +587,7 @@ void AB_Prj_Hook_Athena_C::HandleStuckVehicle(class UObject* Object, class UPrim
 
 void AB_Prj_Hook_Athena_C::HandleStuckBuilding(class UObject* Object, class UPrimitiveComponent* Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleStuckBuilding");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleStuckBuilding");
 
 	Params::B_Prj_Hook_Athena_C_HandleStuckBuilding Parms{};
 
@@ -714,10 +606,7 @@ void AB_Prj_Hook_Athena_C::HandleStuckBuilding(class UObject* Object, class UPri
 
 void AB_Prj_Hook_Athena_C::HandleStuckSupplyDrop(class UObject* Object, class UPrimitiveComponent* Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleStuckSupplyDrop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleStuckSupplyDrop");
 
 	Params::B_Prj_Hook_Athena_C_HandleStuckSupplyDrop Parms{};
 
@@ -733,10 +622,7 @@ void AB_Prj_Hook_Athena_C::HandleStuckSupplyDrop(class UObject* Object, class UP
 
 void AB_Prj_Hook_Athena_C::OnRep_StruckActor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnRep_StruckActor");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnRep_StruckActor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -750,10 +636,7 @@ void AB_Prj_Hook_Athena_C::OnRep_StruckActor()
 
 void AB_Prj_Hook_Athena_C::HandleStuckProjectiles(class UObject* Object, class UPrimitiveComponent* Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleStuckProjectiles");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleStuckProjectiles");
 
 	Params::B_Prj_Hook_Athena_C_HandleStuckProjectiles Parms{};
 
@@ -769,10 +652,7 @@ void AB_Prj_Hook_Athena_C::HandleStuckProjectiles(class UObject* Object, class U
 
 void AB_Prj_Hook_Athena_C::HandleMomentum()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleMomentum");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleMomentum");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -783,10 +663,7 @@ void AB_Prj_Hook_Athena_C::HandleMomentum()
 
 void AB_Prj_Hook_Athena_C::OnRep_Momentum()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnRep_Momentum");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "OnRep_Momentum");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -799,10 +676,7 @@ void AB_Prj_Hook_Athena_C::OnRep_Momentum()
 
 void AB_Prj_Hook_Athena_C::HandleLaunch(bool* JumpPadding_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleLaunch");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "HandleLaunch");
 
 	Params::B_Prj_Hook_Athena_C_HandleLaunch Parms{};
 
@@ -818,10 +692,7 @@ void AB_Prj_Hook_Athena_C::HandleLaunch(bool* JumpPadding_)
 
 void AB_Prj_Hook_Athena_C::JackalCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "JackalCheck");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "JackalCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -835,10 +706,7 @@ void AB_Prj_Hook_Athena_C::JackalCheck()
 
 void AB_Prj_Hook_Athena_C::SpawnRope(class AFortPlayerPawn* PlayerPawn_0, class AB_HookGunRope_C** RopeSpawned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "SpawnRope");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "SpawnRope");
 
 	Params::B_Prj_Hook_Athena_C_SpawnRope Parms{};
 
@@ -856,10 +724,7 @@ void AB_Prj_Hook_Athena_C::SpawnRope(class AFortPlayerPawn* PlayerPawn_0, class 
 
 void AB_Prj_Hook_Athena_C::GiveQuestCredit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "GiveQuestCredit");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "GiveQuestCredit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -874,10 +739,7 @@ void AB_Prj_Hook_Athena_C::GiveQuestCredit()
 
 struct FVector AB_Prj_Hook_Athena_C::MomentumCheck(const struct FVector& A, const struct FVector& A2)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "MomentumCheck");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "MomentumCheck");
 
 	Params::B_Prj_Hook_Athena_C_MomentumCheck Parms{};
 
@@ -897,10 +759,7 @@ struct FVector AB_Prj_Hook_Athena_C::MomentumCheck(const struct FVector& A, cons
 
 float AB_Prj_Hook_Athena_C::GetVehicleArc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "GetVehicleArc");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "GetVehicleArc");
 
 	Params::B_Prj_Hook_Athena_C_GetVehicleArc Parms{};
 
@@ -917,10 +776,7 @@ float AB_Prj_Hook_Athena_C::GetVehicleArc()
 
 float AB_Prj_Hook_Athena_C::GetVehicleLaunchMult()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "GetVehicleLaunchMult");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "GetVehicleLaunchMult");
 
 	Params::B_Prj_Hook_Athena_C_GetVehicleLaunchMult Parms{};
 
@@ -938,10 +794,7 @@ float AB_Prj_Hook_Athena_C::GetVehicleLaunchMult()
 
 void AB_Prj_Hook_Athena_C::PickGrappleMontageSection(float PitchAngle, class FName* SectionName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Hook_Athena_C", "PickGrappleMontageSection");
+	class UFunction* Func = Class->GetFunction("B_Prj_Hook_Athena_C", "PickGrappleMontageSection");
 
 	Params::B_Prj_Hook_Athena_C_PickGrappleMontageSection Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleChoiceWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleChoiceWidget");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleChoiceWidget");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleChoiceWidget Parms{};
 
@@ -43,10 +40,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ExecuteUbergraph_Pl
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleButtonFocused(int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleButtonFocused");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleButtonFocused");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleButtonFocused Parms{};
 
@@ -63,10 +57,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleButtonFocused
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleButtonClicked(int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleButtonClicked");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleButtonClicked");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleButtonClicked Parms{};
 
@@ -81,10 +72,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleButtonClicked
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleQuestionChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleQuestionChanged");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleQuestionChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleQuestionChang
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleAnswerChanged(const struct FFortPlayerSurveyAnswerContainerChangeEventInfo& EventInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleAnswerChanged");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleAnswerChanged");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleAnswerChanged Parms{};
 
@@ -115,10 +100,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleAnswerChanged
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleCommitCurrentAnswer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleCommitCurrentAnswer");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleCommitCurrentAnswer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -129,10 +111,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleCommitCurrent
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +124,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::Construct()
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandlePlayerRequestAnswer(int32 AnswerIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandlePlayerRequestAnswer");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandlePlayerRequestAnswer");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandlePlayerRequestAnswer Parms{};
 
@@ -163,10 +139,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandlePlayerRequest
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::UpdateEntryBoxContents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "UpdateEntryBoxContents");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "UpdateEntryBoxContents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +154,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::UpdateEntryBoxConte
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ScrollSelectedItemIntoView(bool FallBackToDefault, bool AnimateScroll, bool OverrideScrollDestination)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "ScrollSelectedItemIntoView");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "ScrollSelectedItemIntoView");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_ScrollSelectedItemIntoView Parms{};
 
@@ -203,10 +173,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ScrollSelectedItemI
 
 class UWidget* UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultFocusedWidget() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultFocusedWidget");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultFocusedWidget");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetDefaultFocusedWidget Parms{};
 
@@ -223,10 +190,7 @@ class UWidget* UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaul
 
 class FText UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetSubtitleText() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetSubtitleText");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetSubtitleText");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetSubtitleText Parms{};
 
@@ -244,10 +208,7 @@ class FText UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetSubtitleT
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultFocusedWidgetPostDummy(EUINavigation Navigation_0, class UWidget** Widget) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultFocusedWidgetPostDummy");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultFocusedWidgetPostDummy");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetDefaultFocusedWidgetPostDummy Parms{};
 
@@ -267,10 +228,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultFocusedWi
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultInitialChoiceIndex(int32* Index_0) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultInitialChoiceIndex");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultInitialChoiceIndex");
 
 	Params::PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetDefaultInitialChoiceIndex Parms{};
 

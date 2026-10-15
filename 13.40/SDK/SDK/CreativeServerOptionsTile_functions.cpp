@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreativeServerOptionsTile_C::ExecuteUbergraph_CreativeServerOptionsTile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "ExecuteUbergraph_CreativeServerOptionsTile");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "ExecuteUbergraph_CreativeServerOptionsTile");
 
 	Params::CreativeServerOptionsTile_C_ExecuteUbergraph_CreativeServerOptionsTile Parms{};
 
@@ -41,10 +38,7 @@ void UCreativeServerOptionsTile_C::ExecuteUbergraph_CreativeServerOptionsTile(in
 
 void UCreativeServerOptionsTile_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UCreativeServerOptionsTile_C::Construct()
 
 void UCreativeServerOptionsTile_C::SetBackgroundImage(int32 ArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "SetBackgroundImage");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "SetBackgroundImage");
 
 	Params::CreativeServerOptionsTile_C_SetBackgroundImage Parms{};
 
@@ -75,10 +66,7 @@ void UCreativeServerOptionsTile_C::SetBackgroundImage(int32 ArrayIndex)
 
 void UCreativeServerOptionsTile_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UCreativeServerOptionsTile_C::BP_OnUnhovered()
 
 void UCreativeServerOptionsTile_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UCreativeServerOptionsTile_C::BP_OnHovered()
 
 void UCreativeServerOptionsTile_C::InputMethodChanged(ECommonInputType bNewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "InputMethodChanged");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "InputMethodChanged");
 
 	Params::CreativeServerOptionsTile_C_InputMethodChanged Parms{};
 
@@ -123,10 +105,7 @@ void UCreativeServerOptionsTile_C::InputMethodChanged(ECommonInputType bNewInput
 
 void UCreativeServerOptionsTile_C::InitializeSelectedButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "InitializeSelectedButton");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "InitializeSelectedButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void UCreativeServerOptionsTile_C::InitializeSelectedButton()
 
 void UCreativeServerOptionsTile_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +127,7 @@ void UCreativeServerOptionsTile_C::BP_OnDeselected()
 
 void UCreativeServerOptionsTile_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +140,7 @@ void UCreativeServerOptionsTile_C::BP_OnSelected()
 
 void UCreativeServerOptionsTile_C::BndEvt__Button_ShowFriends_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__Button_ShowFriends_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__Button_ShowFriends_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeServerOptionsTile_C_BndEvt__Button_ShowFriends_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -187,10 +157,7 @@ void UCreativeServerOptionsTile_C::BndEvt__Button_ShowFriends_K2Node_ComponentBo
 
 void UCreativeServerOptionsTile_C::BndEvt__Button_CloseFriends_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__Button_CloseFriends_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__Button_CloseFriends_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeServerOptionsTile_C_BndEvt__Button_CloseFriends_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -207,10 +174,7 @@ void UCreativeServerOptionsTile_C::BndEvt__Button_CloseFriends_K2Node_ComponentB
 
 void UCreativeServerOptionsTile_C::SetBPData(const class UFortCreativeServerInfo* ServerInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "SetBPData");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "SetBPData");
 
 	Params::CreativeServerOptionsTile_C_SetBPData Parms{};
 
@@ -227,10 +191,7 @@ void UCreativeServerOptionsTile_C::SetBPData(const class UFortCreativeServerInfo
 
 void UCreativeServerOptionsTile_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "PreConstruct");
 
 	Params::CreativeServerOptionsTile_C_PreConstruct Parms{};
 
@@ -247,10 +208,7 @@ void UCreativeServerOptionsTile_C::PreConstruct(bool IsDesignTime)
 
 void UCreativeServerOptionsTile_C::BndEvt__CreateServerPrivacy_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__CreateServerPrivacy_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__CreateServerPrivacy_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeServerOptionsTile_C_BndEvt__CreateServerPrivacy_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -267,10 +225,7 @@ void UCreativeServerOptionsTile_C::BndEvt__CreateServerPrivacy_K2Node_ComponentB
 
 void UCreativeServerOptionsTile_C::BndEvt__CreateServerPrivacy_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__CreateServerPrivacy_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__CreateServerPrivacy_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeServerOptionsTile_C_BndEvt__CreateServerPrivacy_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -287,10 +242,7 @@ void UCreativeServerOptionsTile_C::BndEvt__CreateServerPrivacy_K2Node_ComponentB
 
 void UCreativeServerOptionsTile_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeServerOptionsTile_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -307,10 +259,7 @@ void UCreativeServerOptionsTile_C::BndEvt__IconTextButton_K2Node_ComponentBoundE
 
 void UCreativeServerOptionsTile_C::OnLoaded_3534B041413498BC4DD6D2B727558DF9(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "OnLoaded_3534B041413498BC4DD6D2B727558DF9");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "OnLoaded_3534B041413498BC4DD6D2B727558DF9");
 
 	Params::CreativeServerOptionsTile_C_OnLoaded_3534B041413498BC4DD6D2B727558DF9 Parms{};
 
@@ -327,10 +276,7 @@ void UCreativeServerOptionsTile_C::OnLoaded_3534B041413498BC4DD6D2B727558DF9(cla
 
 void UCreativeServerOptionsTile_C::InitServerInfo(class UFortCreativeServerInfo* ServerInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerOptionsTile_C", "InitServerInfo");
+	class UFunction* Func = Class->GetFunction("CreativeServerOptionsTile_C", "InitServerInfo");
 
 	Params::CreativeServerOptionsTile_C_InitServerInfo Parms{};
 

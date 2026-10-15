@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::ExecuteUbergraph_BP_TimeSynthTrackComponent_DataTracker(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "ExecuteUbergraph_BP_TimeSynthTrackComponent_DataTracker");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "ExecuteUbergraph_BP_TimeSynthTrackComponent_DataTracker");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_ExecuteUbergraph_BP_TimeSynthTrackComponent_DataTracker Parms{};
 
@@ -41,10 +38,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::ExecuteUbergraph_BP_TimeSynthTra
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::ReceiveBeginPlay()
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::OnReady_FFC0E068479278E143D010AF8EB81D0D(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnReady_FFC0E068479278E143D010AF8EB81D0D");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnReady_FFC0E068479278E143D010AF8EB81D0D");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_OnReady_FFC0E068479278E143D010AF8EB81D0D Parms{};
 
@@ -79,10 +70,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::OnReady_FFC0E068479278E143D010AF
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerStart()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerStart");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerStart");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,10 +81,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerStart()
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerUpdate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerUpdate");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerUpdate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,10 +92,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerUpdate()
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerEnd");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerEnd()
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::GetDataTrackerComponent(class UFortGameplayDataTrackerComponent** DataTrackerComponent_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "GetDataTrackerComponent");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "GetDataTrackerComponent");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_GetDataTrackerComponent Parms{};
 
@@ -144,10 +123,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::GetDataTrackerComponent(class UF
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::AssignDataTrackerComponent(class UFortGameplayDataTrackerComponent* DataTrackerComponent_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "AssignDataTrackerComponent");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "AssignDataTrackerComponent");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_AssignDataTrackerComponent Parms{};
 
@@ -162,10 +138,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::AssignDataTrackerComponent(class
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::GetDataTrackerComponentManager()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "GetDataTrackerComponentManager");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "GetDataTrackerComponentManager");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -178,10 +151,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::GetDataTrackerComponentManager()
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerComponentRegistered(class UFortGameplayDataTrackerComponent* Data_Tracker_Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerComponentRegistered");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerComponentRegistered");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_OnDataTrackerComponentRegistered Parms{};
 
@@ -198,10 +168,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerComponentRegistered
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerComponentUnRegistered(class UFortGameplayDataTrackerComponent* Data_Tracker_Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerComponentUnRegistered");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnDataTrackerComponentUnRegistered");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_OnDataTrackerComponentUnRegistered Parms{};
 
@@ -219,10 +186,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::OnDataTrackerComponentUnRegister
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::OnAnyEventValueChanged(class UFortGameplayDataTrackerComponent* Data_Tracker_Component, bool Has_Event_Values)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnAnyEventValueChanged");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "OnAnyEventValueChanged");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_OnAnyEventValueChanged Parms{};
 
@@ -240,10 +204,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::OnAnyEventValueChanged(class UFo
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::GetRemainingEventCooldown(float* Cooldown)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "GetRemainingEventCooldown");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "GetRemainingEventCooldown");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_GetRemainingEventCooldown Parms{};
 
@@ -261,10 +222,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::GetRemainingEventCooldown(float*
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::GetIsEnabled(bool* Enabled_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "GetIsEnabled");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "GetIsEnabled");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_GetIsEnabled Parms{};
 
@@ -282,10 +240,7 @@ void UBP_TimeSynthTrackComponent_DataTracker_C::GetIsEnabled(bool* Enabled_0)
 
 void UBP_TimeSynthTrackComponent_DataTracker_C::QueueTrackStop(bool Play_Outro)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "QueueTrackStop");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_DataTracker_C", "QueueTrackStop");
 
 	Params::BP_TimeSynthTrackComponent_DataTracker_C_QueueTrackStop Parms{};
 

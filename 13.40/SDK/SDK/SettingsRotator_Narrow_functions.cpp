@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingsRotator_Narrow_C::ExecuteUbergraph_SettingsRotator_Narrow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_Narrow_C", "ExecuteUbergraph_SettingsRotator_Narrow");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_Narrow_C", "ExecuteUbergraph_SettingsRotator_Narrow");
 
 	Params::SettingsRotator_Narrow_C_ExecuteUbergraph_SettingsRotator_Narrow Parms{};
 
@@ -41,10 +38,7 @@ void USettingsRotator_Narrow_C::ExecuteUbergraph_SettingsRotator_Narrow(int32 En
 
 void USettingsRotator_Narrow_C::OnUnHover_Animation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_Narrow_C", "OnUnHover Animation");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_Narrow_C", "OnUnHover Animation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USettingsRotator_Narrow_C::OnUnHover_Animation()
 
 void USettingsRotator_Narrow_C::OnHover_Animation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_Narrow_C", "OnHover Animation");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_Narrow_C", "OnHover Animation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void USettingsRotator_Narrow_C::OnHover_Animation()
 
 void USettingsRotator_Narrow_C::BP_OnDefaultOptionSpecified(int32 DefaultOptionIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_Narrow_C", "BP_OnDefaultOptionSpecified");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_Narrow_C", "BP_OnDefaultOptionSpecified");
 
 	Params::SettingsRotator_Narrow_C_BP_OnDefaultOptionSpecified Parms{};
 
@@ -91,10 +79,7 @@ void USettingsRotator_Narrow_C::BP_OnDefaultOptionSpecified(int32 DefaultOptionI
 
 void USettingsRotator_Narrow_C::BP_OnOptionSelected(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_Narrow_C", "BP_OnOptionSelected");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_Narrow_C", "BP_OnOptionSelected");
 
 	Params::SettingsRotator_Narrow_C_BP_OnOptionSelected Parms{};
 
@@ -111,10 +96,7 @@ void USettingsRotator_Narrow_C::BP_OnOptionSelected(int32 Index_0)
 
 void USettingsRotator_Narrow_C::BP_OnOptionsPopulated(int32 Count)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsRotator_Narrow_C", "BP_OnOptionsPopulated");
+	class UFunction* Func = Class->GetFunction("SettingsRotator_Narrow_C", "BP_OnOptionsPopulated");
 
 	Params::SettingsRotator_Narrow_C_BP_OnOptionsPopulated Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerBanner_C::ExecuteUbergraph_PlayerBanner(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "ExecuteUbergraph_PlayerBanner");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "ExecuteUbergraph_PlayerBanner");
 
 	Params::PlayerBanner_C_ExecuteUbergraph_PlayerBanner Parms{};
 
@@ -41,10 +38,7 @@ void UPlayerBanner_C::ExecuteUbergraph_PlayerBanner(int32 EntryPoint)
 
 void UPlayerBanner_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UPlayerBanner_C::Destruct()
 
 void UPlayerBanner_C::Account_Info_Changed(const struct FFortPublicAccountInfo& NewInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "Account Info Changed");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "Account Info Changed");
 
 	Params::PlayerBanner_C_Account_Info_Changed Parms{};
 
@@ -78,10 +69,7 @@ void UPlayerBanner_C::Account_Info_Changed(const struct FFortPublicAccountInfo& 
 
 void UPlayerBanner_C::SetBannerImage(const struct FFortHomeBaseInfo& Image_info, bool* Success)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "SetBannerImage");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "SetBannerImage");
 
 	Params::PlayerBanner_C_SetBannerImage Parms{};
 
@@ -101,10 +89,7 @@ void UPlayerBanner_C::SetBannerImage(const struct FFortHomeBaseInfo& Image_info,
 
 void UPlayerBanner_C::SetBannerIconId(class FName InBannerIconId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconId");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconId");
 
 	Params::PlayerBanner_C_SetBannerIconId Parms{};
 
@@ -121,10 +106,7 @@ void UPlayerBanner_C::SetBannerIconId(class FName InBannerIconId)
 
 void UPlayerBanner_C::SetBannerColorId(class FName InBannerColorId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "SetBannerColorId");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "SetBannerColorId");
 
 	Params::PlayerBanner_C_SetBannerColorId Parms{};
 
@@ -141,10 +123,7 @@ void UPlayerBanner_C::SetBannerColorId(class FName InBannerColorId)
 
 void UPlayerBanner_C::SetBannerOwner(const struct FUniqueNetIdRepl& OwnerId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "SetBannerOwner");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "SetBannerOwner");
 
 	Params::PlayerBanner_C_SetBannerOwner Parms{};
 
@@ -161,10 +140,7 @@ void UPlayerBanner_C::SetBannerOwner(const struct FUniqueNetIdRepl& OwnerId)
 
 void UPlayerBanner_C::GetBannerMID(class UMaterialInstanceDynamic** BannerMID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "GetBannerMID");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "GetBannerMID");
 
 	Params::PlayerBanner_C_GetBannerMID Parms{};
 
@@ -182,10 +158,7 @@ void UPlayerBanner_C::GetBannerMID(class UMaterialInstanceDynamic** BannerMID)
 
 void UPlayerBanner_C::OnBannerIconLoaded(class UObject* LoadedObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "OnBannerIconLoaded");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "OnBannerIconLoaded");
 
 	Params::PlayerBanner_C_OnBannerIconLoaded Parms{};
 
@@ -200,10 +173,7 @@ void UPlayerBanner_C::OnBannerIconLoaded(class UObject* LoadedObject)
 
 void UPlayerBanner_C::ClearBannerState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "ClearBannerState");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "ClearBannerState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -214,10 +184,7 @@ void UPlayerBanner_C::ClearBannerState()
 
 void UPlayerBanner_C::EnableSurround()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "EnableSurround");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "EnableSurround");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -230,10 +197,7 @@ void UPlayerBanner_C::EnableSurround()
 
 void UPlayerBanner_C::OnSurroundIconLoaded(class UObject* LoadedObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "OnSurroundIconLoaded");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "OnSurroundIconLoaded");
 
 	Params::PlayerBanner_C_OnSurroundIconLoaded Parms{};
 
@@ -250,10 +214,7 @@ void UPlayerBanner_C::OnSurroundIconLoaded(class UObject* LoadedObject)
 
 void UPlayerBanner_C::RefreshSurround(int32 Level)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "RefreshSurround");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "RefreshSurround");
 
 	Params::PlayerBanner_C_RefreshSurround Parms{};
 
@@ -270,10 +231,7 @@ void UPlayerBanner_C::RefreshSurround(int32 Level)
 
 void UPlayerBanner_C::ToggleBannerMask(bool Enable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "ToggleBannerMask");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "ToggleBannerMask");
 
 	Params::PlayerBanner_C_ToggleBannerMask Parms{};
 
@@ -291,10 +249,7 @@ void UPlayerBanner_C::ToggleBannerMask(bool Enable)
 
 void UPlayerBanner_C::SetBannerIconAndColor(class FName IconId, class FName ColorId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconAndColor");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconAndColor");
 
 	Params::PlayerBanner_C_SetBannerIconAndColor Parms{};
 
@@ -310,10 +265,7 @@ void UPlayerBanner_C::SetBannerIconAndColor(class FName IconId, class FName Colo
 
 void UPlayerBanner_C::SetBannerIconAndColorFromProfile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconAndColorFromProfile");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconAndColorFromProfile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -324,10 +276,7 @@ void UPlayerBanner_C::SetBannerIconAndColorFromProfile()
 
 void UPlayerBanner_C::SetupSurround()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "SetupSurround");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "SetupSurround");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -338,10 +287,7 @@ void UPlayerBanner_C::SetupSurround()
 
 void UPlayerBanner_C::UnbindDelegates()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBanner_C", "UnbindDelegates");
+	class UFunction* Func = Class->GetFunction("PlayerBanner_C", "UnbindDelegates");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

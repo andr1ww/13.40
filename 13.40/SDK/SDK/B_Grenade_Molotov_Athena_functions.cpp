@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Grenade_Molotov_Athena_C::ExecuteUbergraph_B_Grenade_Molotov_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Grenade_Molotov_Athena_C", "ExecuteUbergraph_B_Grenade_Molotov_Athena");
+	class UFunction* Func = Class->GetFunction("B_Grenade_Molotov_Athena_C", "ExecuteUbergraph_B_Grenade_Molotov_Athena");
 
 	Params::B_Grenade_Molotov_Athena_C_ExecuteUbergraph_B_Grenade_Molotov_Athena Parms{};
 
@@ -41,10 +38,7 @@ void AB_Grenade_Molotov_Athena_C::ExecuteUbergraph_B_Grenade_Molotov_Athena(int3
 
 void AB_Grenade_Molotov_Athena_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Grenade_Molotov_Athena_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_Grenade_Molotov_Athena_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Grenade_Molotov_Athena_C::K2_OnUnEquip()
 
 void AB_Grenade_Molotov_Athena_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Grenade_Molotov_Athena_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_Grenade_Molotov_Athena_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

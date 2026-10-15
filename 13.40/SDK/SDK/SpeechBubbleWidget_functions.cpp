@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USpeechBubbleWidget_C::ExecuteUbergraph_SpeechBubbleWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpeechBubbleWidget_C", "ExecuteUbergraph_SpeechBubbleWidget");
+	class UFunction* Func = Class->GetFunction("SpeechBubbleWidget_C", "ExecuteUbergraph_SpeechBubbleWidget");
 
 	Params::SpeechBubbleWidget_C_ExecuteUbergraph_SpeechBubbleWidget Parms{};
 
@@ -43,10 +40,7 @@ void USpeechBubbleWidget_C::ExecuteUbergraph_SpeechBubbleWidget(int32 EntryPoint
 
 void USpeechBubbleWidget_C::InitFromObject(class UObject* InitObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpeechBubbleWidget_C", "InitFromObject");
+	class UFunction* Func = Class->GetFunction("SpeechBubbleWidget_C", "InitFromObject");
 
 	Params::SpeechBubbleWidget_C_InitFromObject Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_PDW_C::ExecuteUbergraph_BP_PDW(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PDW_C", "ExecuteUbergraph_BP_PDW");
+	class UFunction* Func = Class->GetFunction("BP_PDW_C", "ExecuteUbergraph_BP_PDW");
 
 	Params::BP_PDW_C_ExecuteUbergraph_BP_PDW Parms{};
 
@@ -43,10 +40,7 @@ void UBP_PDW_C::ExecuteUbergraph_BP_PDW(int32 EntryPoint)
 
 void UBP_PDW_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PDW_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("BP_PDW_C", "AnimGraph");
 
 	Params::BP_PDW_C_AnimGraph Parms{};
 

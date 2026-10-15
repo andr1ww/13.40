@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Athena_BadgerBangs_ChargeUpLight_C::ExecuteUbergraph_GCNL_Athena_BadgerBangs_ChargeUpLight(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_BadgerBangs_ChargeUpLight_C", "ExecuteUbergraph_GCNL_Athena_BadgerBangs_ChargeUpLight");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_BadgerBangs_ChargeUpLight_C", "ExecuteUbergraph_GCNL_Athena_BadgerBangs_ChargeUpLight");
 
 	Params::GCNL_Athena_BadgerBangs_ChargeUpLight_C_ExecuteUbergraph_GCNL_Athena_BadgerBangs_ChargeUpLight Parms{};
 
@@ -46,10 +43,7 @@ void AGCNL_Athena_BadgerBangs_ChargeUpLight_C::ExecuteUbergraph_GCNL_Athena_Badg
 
 void AGCNL_Athena_BadgerBangs_ChargeUpLight_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_BadgerBangs_ChargeUpLight_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_BadgerBangs_ChargeUpLight_C", "OnLoopingStart");
 
 	Params::GCNL_Athena_BadgerBangs_ChargeUpLight_C_OnLoopingStart Parms{};
 

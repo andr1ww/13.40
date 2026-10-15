@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFortWaterBodyBP_C::ExecuteUbergraph_FortWaterBodyBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortWaterBodyBP_C", "ExecuteUbergraph_FortWaterBodyBP");
+	class UFunction* Func = Class->GetFunction("FortWaterBodyBP_C", "ExecuteUbergraph_FortWaterBodyBP");
 
 	Params::FortWaterBodyBP_C_ExecuteUbergraph_FortWaterBodyBP Parms{};
 
@@ -43,10 +40,7 @@ void AFortWaterBodyBP_C::ExecuteUbergraph_FortWaterBodyBP(int32 EntryPoint)
 
 void AFortWaterBodyBP_C::OnReceivedBulletImpact(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortWaterBodyBP_C", "OnReceivedBulletImpact");
+	class UFunction* Func = Class->GetFunction("FortWaterBodyBP_C", "OnReceivedBulletImpact");
 
 	Params::FortWaterBodyBP_C_OnReceivedBulletImpact Parms{};
 
@@ -61,10 +55,7 @@ void AFortWaterBodyBP_C::OnReceivedBulletImpact(const struct FHitResult& Hit)
 
 void AFortWaterBodyBP_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortWaterBodyBP_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("FortWaterBodyBP_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void AFortWaterBodyBP_C::ReceiveBeginPlay()
 
 void AFortWaterBodyBP_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortWaterBodyBP_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("FortWaterBodyBP_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UImportFriends_C::ExecuteUbergraph_ImportFriends(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "ExecuteUbergraph_ImportFriends");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "ExecuteUbergraph_ImportFriends");
 
 	Params::ImportFriends_C_ExecuteUbergraph_ImportFriends Parms{};
 
@@ -43,10 +40,7 @@ void UImportFriends_C::ExecuteUbergraph_ImportFriends(int32 EntryPoint)
 
 void UImportFriends_C::OnIncentivizedSet(bool bIncentivized)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "OnIncentivizedSet");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "OnIncentivizedSet");
 
 	Params::ImportFriends_C_OnIncentivizedSet Parms{};
 
@@ -61,10 +55,7 @@ void UImportFriends_C::OnIncentivizedSet(bool bIncentivized)
 
 void UImportFriends_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UImportFriends_C::BP_OnActivated()
 
 void UImportFriends_C::BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature");
 
 	Params::ImportFriends_C_BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -97,10 +85,7 @@ void UImportFriends_C::BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_7
 
 void UImportFriends_C::OnPanelTypeSet(ESocialImportPanelType NewType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "OnPanelTypeSet");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "OnPanelTypeSet");
 
 	Params::ImportFriends_C_OnPanelTypeSet Parms{};
 
@@ -115,10 +100,7 @@ void UImportFriends_C::OnPanelTypeSet(ESocialImportPanelType NewType)
 
 void UImportFriends_C::HandleDescriptionText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "HandleDescriptionText");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "HandleDescriptionText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -129,10 +111,7 @@ void UImportFriends_C::HandleDescriptionText()
 
 void UImportFriends_C::HandleHeaderText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "HandleHeaderText");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "HandleHeaderText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +124,7 @@ void UImportFriends_C::HandleHeaderText()
 
 void UImportFriends_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "PreConstruct");
 
 	Params::ImportFriends_C_PreConstruct Parms{};
 
@@ -168,10 +144,7 @@ void UImportFriends_C::PreConstruct(bool IsDesignTime)
 
 void UImportFriends_C::ScaleTextboxWithWrappingWorkaround(class UScaleBox* ContainingScaleBox, int32 CharLimitThreshold, class UCommonTextBlock* TargetText, int32 WrapAtHorrizontal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "ScaleTextboxWithWrappingWorkaround");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "ScaleTextboxWithWrappingWorkaround");
 
 	Params::ImportFriends_C_ScaleTextboxWithWrappingWorkaround Parms{};
 
@@ -193,10 +166,7 @@ void UImportFriends_C::ScaleTextboxWithWrappingWorkaround(class UScaleBox* Conta
 
 void UImportFriends_C::ScaleTextButton(int32 CharThreshold, class UScaleBox* ContainingScaleBox, class UIconTextButton_C* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImportFriends_C", "ScaleTextButton");
+	class UFunction* Func = Class->GetFunction("ImportFriends_C", "ScaleTextButton");
 
 	Params::ImportFriends_C_ScaleTextButton Parms{};
 

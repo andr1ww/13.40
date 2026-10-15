@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UStatsModeItemDetailsHostPanel_Store_C::HandleHasItemMarkedForMulchingChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsModeItemDetailsHostPanel_Store_C", "HandleHasItemMarkedForMulchingChanged");
+	class UFunction* Func = Class->GetFunction("StatsModeItemDetailsHostPanel_Store_C", "HandleHasItemMarkedForMulchingChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UStatsModeItemDetailsHostPanel_Store_C::HandleHasItemMarkedForMulchingChang
 
 void UStatsModeItemDetailsHostPanel_Store_C::ExecuteUbergraph_StatsModeItemDetailsHostPanel_Store(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsModeItemDetailsHostPanel_Store_C", "ExecuteUbergraph_StatsModeItemDetailsHostPanel_Store");
+	class UFunction* Func = Class->GetFunction("StatsModeItemDetailsHostPanel_Store_C", "ExecuteUbergraph_StatsModeItemDetailsHostPanel_Store");
 
 	Params::StatsModeItemDetailsHostPanel_Store_C_ExecuteUbergraph_StatsModeItemDetailsHostPanel_Store Parms{};
 

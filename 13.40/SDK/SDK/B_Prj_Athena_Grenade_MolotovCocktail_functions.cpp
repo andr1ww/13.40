@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_C::ExecuteUbergraph_B_Prj_Athena_Grenade_MolotovCocktail(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "ExecuteUbergraph_B_Prj_Athena_Grenade_MolotovCocktail");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "ExecuteUbergraph_B_Prj_Athena_Grenade_MolotovCocktail");
 
 	Params::B_Prj_Athena_Grenade_MolotovCocktail_C_ExecuteUbergraph_B_Prj_Athena_Grenade_MolotovCocktail Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_C::ExecuteUbergraph_B_Prj_Athena_Gren
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_C::HasEnteredWater()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "HasEnteredWater");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "HasEnteredWater");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_C::HasEnteredWater()
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Athena_Grenade_MolotovCocktail_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -88,10 +79,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_C::BndEvt__WaterInteractionComponent_
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "ReceiveHit");
 
 	Params::B_Prj_Athena_Grenade_MolotovCocktail_C_ReceiveHit Parms{};
 
@@ -113,10 +101,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_C::ReceiveHit(class UPrimitiveCompone
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +112,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_C::ReceiveBeginPlay()
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_C::OnCurieActive_7575DCC3440AA42836D7988BCA6485E5()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "OnCurieActive_7575DCC3440AA42836D7988BCA6485E5");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "OnCurieActive_7575DCC3440AA42836D7988BCA6485E5");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +123,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_C::OnCurieActive_7575DCC3440AA42836D7
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_C::Drunk_Projectiles()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "Drunk Projectiles");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "Drunk Projectiles");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,10 +134,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_C::Drunk_Projectiles()
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_C::FireflyProjectileLogic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "FireflyProjectileLogic");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_C", "FireflyProjectileLogic");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

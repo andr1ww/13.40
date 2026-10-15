@@ -28,10 +28,7 @@ SDK_NAMESPACE_START
 
 void UGC_Abilities_Activation_DBNOResurrect_C::OnBurst(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Abilities_Activation_DBNOResurrect_C", "OnBurst");
+	class UFunction* Func = Class->GetFunction("GC_Abilities_Activation_DBNOResurrect_C", "OnBurst");
 
 	Params::GC_Abilities_Activation_DBNOResurrect_C_OnBurst Parms{};
 

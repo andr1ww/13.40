@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ATVPostProcessBPAthena_C::IsEnabledForCurrentSubgame(bool* bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBPAthena_C", "IsEnabledForCurrentSubgame");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBPAthena_C", "IsEnabledForCurrentSubgame");
 
 	Params::TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame Parms{};
 
@@ -42,10 +39,7 @@ void ATVPostProcessBPAthena_C::IsEnabledForCurrentSubgame(bool* bEnabled)
 
 void ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBPAthena_C", "FrontEndCameraSwitchFadeAthena__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBPAthena_C", "FrontEndCameraSwitchFadeAthena__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -56,10 +50,7 @@ void ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena__FinishedFunc()
 
 void ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBPAthena_C", "FrontEndCameraSwitchFadeAthena__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBPAthena_C", "FrontEndCameraSwitchFadeAthena__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -70,10 +61,7 @@ void ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena__UpdateFunc()
 
 void ATVPostProcessBPAthena_C::ExecuteCameraSwitch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBPAthena_C", "ExecuteCameraSwitch");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBPAthena_C", "ExecuteCameraSwitch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -84,10 +72,7 @@ void ATVPostProcessBPAthena_C::ExecuteCameraSwitch()
 
 void ATVPostProcessBPAthena_C::Camera_DisableEffects()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBPAthena_C", "Camera_DisableEffects");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBPAthena_C", "Camera_DisableEffects");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -100,10 +85,7 @@ void ATVPostProcessBPAthena_C::Camera_DisableEffects()
 
 void ATVPostProcessBPAthena_C::ExecuteUbergraph_TVPostProcessBPAthena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TVPostProcessBPAthena_C", "ExecuteUbergraph_TVPostProcessBPAthena");
+	class UFunction* Func = Class->GetFunction("TVPostProcessBPAthena_C", "ExecuteUbergraph_TVPostProcessBPAthena");
 
 	Params::TVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena Parms{};
 

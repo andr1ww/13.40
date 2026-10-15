@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USoloButton_WinterFest_C::ExecuteUbergraph_SoloButton_WinterFest(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_WinterFest_C", "ExecuteUbergraph_SoloButton_WinterFest");
+	class UFunction* Func = Class->GetFunction("SoloButton_WinterFest_C", "ExecuteUbergraph_SoloButton_WinterFest");
 
 	Params::SoloButton_WinterFest_C_ExecuteUbergraph_SoloButton_WinterFest Parms{};
 
@@ -41,10 +38,7 @@ void USoloButton_WinterFest_C::ExecuteUbergraph_SoloButton_WinterFest(int32 Entr
 
 void USoloButton_WinterFest_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USoloButton_WinterFest_C::BP_OnClicked()
 
 void USoloButton_WinterFest_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void USoloButton_WinterFest_C::BP_OnUnhovered()
 
 void USoloButton_WinterFest_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void USoloButton_WinterFest_C::BP_OnHovered()
 
 void USoloButton_WinterFest_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_WinterFest_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SoloButton_WinterFest_C", "PreConstruct");
 
 	Params::SoloButton_WinterFest_C_PreConstruct Parms{};
 
@@ -103,10 +88,7 @@ void USoloButton_WinterFest_C::PreConstruct(bool IsDesignTime)
 
 void USoloButton_WinterFest_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_WinterFest_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SoloButton_WinterFest_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void USoloButton_WinterFest_C::Construct()
 
 void USoloButton_WinterFest_C::HandleSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_WinterFest_C", "HandleSize");
+	class UFunction* Func = Class->GetFunction("SoloButton_WinterFest_C", "HandleSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +112,7 @@ void USoloButton_WinterFest_C::HandleSize()
 
 void USoloButton_WinterFest_C::SetText(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SoloButton_WinterFest_C", "SetText");
+	class UFunction* Func = Class->GetFunction("SoloButton_WinterFest_C", "SetText");
 
 	Params::SoloButton_WinterFest_C_SetText Parms{};
 

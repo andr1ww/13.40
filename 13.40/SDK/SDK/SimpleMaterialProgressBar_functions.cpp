@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USimpleMaterialProgressBar_C::ExecuteUbergraph_SimpleMaterialProgressBar(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "ExecuteUbergraph_SimpleMaterialProgressBar");
+	class UFunction* Func = Class->GetFunction("SimpleMaterialProgressBar_C", "ExecuteUbergraph_SimpleMaterialProgressBar");
 
 	Params::SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar Parms{};
 
@@ -41,10 +38,7 @@ void USimpleMaterialProgressBar_C::ExecuteUbergraph_SimpleMaterialProgressBar(in
 
 void USimpleMaterialProgressBar_C::EventFillFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "EventFillFinished");
+	class UFunction* Func = Class->GetFunction("SimpleMaterialProgressBar_C", "EventFillFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void USimpleMaterialProgressBar_C::EventFillFinished()
 
 void USimpleMaterialProgressBar_C::AnimateProgress(float StartAmount, float EndAmount, float AnimSpeed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "AnimateProgress");
+	class UFunction* Func = Class->GetFunction("SimpleMaterialProgressBar_C", "AnimateProgress");
 
 	Params::SimpleMaterialProgressBar_C_AnimateProgress Parms{};
 
@@ -79,10 +70,7 @@ void USimpleMaterialProgressBar_C::AnimateProgress(float StartAmount, float EndA
 
 void USimpleMaterialProgressBar_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SimpleMaterialProgressBar_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +83,7 @@ void USimpleMaterialProgressBar_C::Construct()
 
 void USimpleMaterialProgressBar_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SimpleMaterialProgressBar_C", "PreConstruct");
 
 	Params::SimpleMaterialProgressBar_C_PreConstruct Parms{};
 
@@ -115,10 +100,7 @@ void USimpleMaterialProgressBar_C::PreConstruct(bool IsDesignTime)
 
 void USimpleMaterialProgressBar_C::SetProgress(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetProgress");
+	class UFunction* Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetProgress");
 
 	Params::SimpleMaterialProgressBar_C_SetProgress Parms{};
 
@@ -135,10 +117,7 @@ void USimpleMaterialProgressBar_C::SetProgress(float Value)
 
 void USimpleMaterialProgressBar_C::SetColorA(const struct FLinearColor& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorA");
+	class UFunction* Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorA");
 
 	Params::SimpleMaterialProgressBar_C_SetColorA Parms{};
 
@@ -155,10 +134,7 @@ void USimpleMaterialProgressBar_C::SetColorA(const struct FLinearColor& Value)
 
 void USimpleMaterialProgressBar_C::SetColorB(const struct FLinearColor& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorB");
+	class UFunction* Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorB");
 
 	Params::SimpleMaterialProgressBar_C_SetColorB Parms{};
 
@@ -175,10 +151,7 @@ void USimpleMaterialProgressBar_C::SetColorB(const struct FLinearColor& Value)
 
 void USimpleMaterialProgressBar_C::SetColorBackground(const struct FLinearColor& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorBackground");
+	class UFunction* Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorBackground");
 
 	Params::SimpleMaterialProgressBar_C_SetColorBackground Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCircleArrowButton_C::ExecuteUbergraph_CircleArrowButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CircleArrowButton_C", "ExecuteUbergraph_CircleArrowButton");
+	class UFunction* Func = Class->GetFunction("CircleArrowButton_C", "ExecuteUbergraph_CircleArrowButton");
 
 	Params::CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton Parms{};
 
@@ -41,10 +38,7 @@ void UCircleArrowButton_C::ExecuteUbergraph_CircleArrowButton(int32 EntryPoint)
 
 void UCircleArrowButton_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CircleArrowButton_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("CircleArrowButton_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UCircleArrowButton_C::BP_OnClicked()
 
 void UCircleArrowButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CircleArrowButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("CircleArrowButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UCircleArrowButton_C::BP_OnUnhovered()
 
 void UCircleArrowButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CircleArrowButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("CircleArrowButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UCircleArrowButton_C::BP_OnHovered()
 
 void UCircleArrowButton_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CircleArrowButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("CircleArrowButton_C", "PreConstruct");
 
 	Params::CircleArrowButton_C_PreConstruct Parms{};
 
@@ -106,10 +91,7 @@ void UCircleArrowButton_C::PreConstruct(bool IsDesignTime)
 
 void UCircleArrowButton_C::UpdateArrowColor(const struct FLinearColor& Color, const struct FLinearColor& HoverColor_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CircleArrowButton_C", "UpdateArrowColor");
+	class UFunction* Func = Class->GetFunction("CircleArrowButton_C", "UpdateArrowColor");
 
 	Params::CircleArrowButton_C_UpdateArrowColor Parms{};
 

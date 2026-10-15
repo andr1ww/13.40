@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UInviteEventTitle_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InviteEventTitle_C", "Construct");
+	class UFunction* Func = Class->GetFunction("InviteEventTitle_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UInviteEventTitle_C::Construct()
 
 void UInviteEventTitle_C::ExecuteUbergraph_InviteEventTitle(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InviteEventTitle_C", "ExecuteUbergraph_InviteEventTitle");
+	class UFunction* Func = Class->GetFunction("InviteEventTitle_C", "ExecuteUbergraph_InviteEventTitle");
 
 	Params::InviteEventTitle_C_ExecuteUbergraph_InviteEventTitle Parms{};
 

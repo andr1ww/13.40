@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_ShootingTarget_Master_C::ExecuteUbergraph_B_ShootingTarget_Master(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ExecuteUbergraph_B_ShootingTarget_Master");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "ExecuteUbergraph_B_ShootingTarget_Master");
 
 	Params::B_ShootingTarget_Master_C_ExecuteUbergraph_B_ShootingTarget_Master Parms{};
 
@@ -41,10 +38,7 @@ void AB_ShootingTarget_Master_C::ExecuteUbergraph_B_ShootingTarget_Master(int32 
 
 void AB_ShootingTarget_Master_C::PostFinishSpawning()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PostFinishSpawning");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "PostFinishSpawning");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_ShootingTarget_Master_C::PostFinishSpawning()
 
 void AB_ShootingTarget_Master_C::PopUpTargetTimerEvent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTargetTimerEvent");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTargetTimerEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AB_ShootingTarget_Master_C::PopUpTargetTimerEvent()
 
 void AB_ShootingTarget_Master_C::Target_Movement_Audio(bool Jump_Up_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Target Movement Audio");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "Target Movement Audio");
 
 	Params::B_ShootingTarget_Master_C_Target_Movement_Audio Parms{};
 
@@ -91,10 +79,7 @@ void AB_ShootingTarget_Master_C::Target_Movement_Audio(bool Jump_Up_)
 
 void AB_ShootingTarget_Master_C::SpawnWeakpointFX(const struct FTransform& ImpactTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SpawnWeakpointFX");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "SpawnWeakpointFX");
 
 	Params::B_ShootingTarget_Master_C_SpawnWeakpointFX Parms{};
 
@@ -112,10 +97,7 @@ void AB_ShootingTarget_Master_C::SpawnWeakpointFX(const struct FTransform& Impac
 
 void AB_ShootingTarget_Master_C::Impact_Audio(int32 Check_for_Positive_Score, class AController* Instigator_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Impact Audio");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "Impact Audio");
 
 	Params::B_ShootingTarget_Master_C_Impact_Audio Parms{};
 
@@ -133,10 +115,7 @@ void AB_ShootingTarget_Master_C::Impact_Audio(int32 Check_for_Positive_Score, cl
 
 void AB_ShootingTarget_Master_C::Knock_Down_Audio(bool Knocked_Down_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Knock Down Audio");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "Knock Down Audio");
 
 	Params::B_ShootingTarget_Master_C_Knock_Down_Audio Parms{};
 
@@ -151,10 +130,7 @@ void AB_ShootingTarget_Master_C::Knock_Down_Audio(bool Knocked_Down_)
 
 void AB_ShootingTarget_Master_C::SetHopTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetHopTimer");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetHopTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +141,7 @@ void AB_ShootingTarget_Master_C::SetHopTimer()
 
 void AB_ShootingTarget_Master_C::HopTimerEvent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "HopTimerEvent");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "HopTimerEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +154,7 @@ void AB_ShootingTarget_Master_C::HopTimerEvent()
 
 void AB_ShootingTarget_Master_C::Hop(bool InJumpUpPosition_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Hop");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "Hop");
 
 	Params::B_ShootingTarget_Master_C_Hop Parms{};
 
@@ -201,10 +171,7 @@ void AB_ShootingTarget_Master_C::Hop(bool InJumpUpPosition_0)
 
 void AB_ShootingTarget_Master_C::SetHideTargetTimer(float TimerDuration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetHideTargetTimer");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetHideTargetTimer");
 
 	Params::B_ShootingTarget_Master_C_SetHideTargetTimer Parms{};
 
@@ -219,10 +186,7 @@ void AB_ShootingTarget_Master_C::SetHideTargetTimer(float TimerDuration)
 
 void AB_ShootingTarget_Master_C::HideTargetTimerEvent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "HideTargetTimerEvent");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "HideTargetTimerEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -233,10 +197,7 @@ void AB_ShootingTarget_Master_C::HideTargetTimerEvent()
 
 void AB_ShootingTarget_Master_C::ResetFromSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ResetFromSettings");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "ResetFromSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -247,10 +208,7 @@ void AB_ShootingTarget_Master_C::ResetFromSettings()
 
 void AB_ShootingTarget_Master_C::InitializeSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "InitializeSettings");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "InitializeSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -261,10 +219,7 @@ void AB_ShootingTarget_Master_C::InitializeSettings()
 
 void AB_ShootingTarget_Master_C::PickMeshFromSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PickMeshFromSettings");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "PickMeshFromSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -275,10 +230,7 @@ void AB_ShootingTarget_Master_C::PickMeshFromSettings()
 
 void AB_ShootingTarget_Master_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_4_SimpleDynamicMulticastDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_4_SimpleDynamicMulticastDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_4_SimpleDynamicMulticastDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -289,10 +241,7 @@ void AB_ShootingTarget_Master_C::BndEvt__FortMinigameProgress_K2Node_ComponentBo
 
 void AB_ShootingTarget_Master_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -311,10 +260,7 @@ void AB_ShootingTarget_Master_C::ReceiveBeginPlay()
 
 void AB_ShootingTarget_Master_C::OnDamageServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnDamageServer");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnDamageServer");
 
 	Params::B_ShootingTarget_Master_C_OnDamageServer Parms{};
 
@@ -335,10 +281,7 @@ void AB_ShootingTarget_Master_C::OnDamageServer(float Damage, const struct FGame
 
 void AB_ShootingTarget_Master_C::KnockdownTarget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockdownTarget");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockdownTarget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -356,10 +299,7 @@ void AB_ShootingTarget_Master_C::KnockdownTarget()
 
 void AB_ShootingTarget_Master_C::BndEvt__ProximityTrigger_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ProximityTrigger_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ProximityTrigger_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::B_ShootingTarget_Master_C_BndEvt__ProximityTrigger_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -379,10 +319,7 @@ void AB_ShootingTarget_Master_C::BndEvt__ProximityTrigger_K2Node_ComponentBoundE
 
 void AB_ShootingTarget_Master_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -395,10 +332,7 @@ void AB_ShootingTarget_Master_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBou
 
 void AB_ShootingTarget_Master_C::PopUpTarget(bool MinigameJustStartedOrStopped)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTarget");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTarget");
 
 	Params::B_ShootingTarget_Master_C_PopUpTarget Parms{};
 
@@ -413,10 +347,7 @@ void AB_ShootingTarget_Master_C::PopUpTarget(bool MinigameJustStartedOrStopped)
 
 void AB_ShootingTarget_Master_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -427,10 +358,7 @@ void AB_ShootingTarget_Master_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBou
 
 void AB_ShootingTarget_Master_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_0_SimpleDynamicMulticastDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_0_SimpleDynamicMulticastDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_0_SimpleDynamicMulticastDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -443,10 +371,7 @@ void AB_ShootingTarget_Master_C::BndEvt__FortMinigameProgress_K2Node_ComponentBo
 
 void AB_ShootingTarget_Master_C::OnLoaded_068F5161459B8B1AEAD4A0B19781287D(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnLoaded_068F5161459B8B1AEAD4A0B19781287D");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnLoaded_068F5161459B8B1AEAD4A0B19781287D");
 
 	Params::B_ShootingTarget_Master_C_OnLoaded_068F5161459B8B1AEAD4A0B19781287D Parms{};
 
@@ -461,10 +386,7 @@ void AB_ShootingTarget_Master_C::OnLoaded_068F5161459B8B1AEAD4A0B19781287D(class
 
 void AB_ShootingTarget_Master_C::OnReady_A57ED5A14BEB6A98DB20D88D1582D58A()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnReady_A57ED5A14BEB6A98DB20D88D1582D58A");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnReady_A57ED5A14BEB6A98DB20D88D1582D58A");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -475,10 +397,7 @@ void AB_ShootingTarget_Master_C::OnReady_A57ED5A14BEB6A98DB20D88D1582D58A()
 
 void AB_ShootingTarget_Master_C::Timeline_2__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Timeline_2__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "Timeline_2__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -489,10 +408,7 @@ void AB_ShootingTarget_Master_C::Timeline_2__UpdateFunc()
 
 void AB_ShootingTarget_Master_C::Timeline_2__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Timeline_2__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "Timeline_2__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -503,10 +419,7 @@ void AB_ShootingTarget_Master_C::Timeline_2__FinishedFunc()
 
 void AB_ShootingTarget_Master_C::KnockDownTimeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockDownTimeline__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockDownTimeline__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -517,10 +430,7 @@ void AB_ShootingTarget_Master_C::KnockDownTimeline__UpdateFunc()
 
 void AB_ShootingTarget_Master_C::KnockDownTimeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockDownTimeline__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockDownTimeline__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -531,10 +441,7 @@ void AB_ShootingTarget_Master_C::KnockDownTimeline__FinishedFunc()
 
 void AB_ShootingTarget_Master_C::PopUpTimeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTimeline__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTimeline__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -545,10 +452,7 @@ void AB_ShootingTarget_Master_C::PopUpTimeline__UpdateFunc()
 
 void AB_ShootingTarget_Master_C::PopUpTimeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTimeline__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTimeline__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -562,10 +466,7 @@ void AB_ShootingTarget_Master_C::PopUpTimeline__FinishedFunc()
 
 void AB_ShootingTarget_Master_C::CanPopUp(bool MinigameJustStartedOrStopped, bool* CanPopUp_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CanPopUp");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "CanPopUp");
 
 	Params::B_ShootingTarget_Master_C_CanPopUp Parms{};
 
@@ -583,10 +484,7 @@ void AB_ShootingTarget_Master_C::CanPopUp(bool MinigameJustStartedOrStopped, boo
 
 void AB_ShootingTarget_Master_C::ResetWeakPoints()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ResetWeakPoints");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "ResetWeakPoints");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -601,10 +499,7 @@ void AB_ShootingTarget_Master_C::ResetWeakPoints()
 
 bool AB_ShootingTarget_Master_C::WeakPointWasHit(const struct FHitResult& Hit_Result, class UPrimitiveComponent** HitComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "WeakPointWasHit");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "WeakPointWasHit");
 
 	Params::B_ShootingTarget_Master_C_WeakPointWasHit Parms{};
 
@@ -628,10 +523,7 @@ bool AB_ShootingTarget_Master_C::WeakPointWasHit(const struct FHitResult& Hit_Re
 
 void AB_ShootingTarget_Master_C::PrepareChosenTarget(class UStaticMeshComponent* StaticMeshComponent_0, class UPrimitiveComponent* WeakPointComponent_1, class UPrimitiveComponent* WeakPointComponent2)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PrepareChosenTarget");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "PrepareChosenTarget");
 
 	Params::B_ShootingTarget_Master_C_PrepareChosenTarget Parms{};
 
@@ -650,10 +542,7 @@ void AB_ShootingTarget_Master_C::PrepareChosenTarget(class UStaticMeshComponent*
 
 void AB_ShootingTarget_Master_C::CalculateScore(int32* ScoreToAward)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CalculateScore");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "CalculateScore");
 
 	Params::B_ShootingTarget_Master_C_CalculateScore Parms{};
 
@@ -673,10 +562,7 @@ void AB_ShootingTarget_Master_C::CalculateScore(int32* ScoreToAward)
 
 void AB_ShootingTarget_Master_C::AwardScore(class AFortPlayerController* FortPlayerController, int32* ScoreAwarded, int32* TeamAwardedPoints)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "AwardScore");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "AwardScore");
 
 	Params::B_ShootingTarget_Master_C_AwardScore Parms{};
 
@@ -701,10 +587,7 @@ void AB_ShootingTarget_Master_C::AwardScore(class AFortPlayerController* FortPla
 
 void AB_ShootingTarget_Master_C::ShouldTriggerTarget(class UObject* Overlapping_Actor, class UPrimitiveComponent* Overlapping_Component, bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ShouldTriggerTarget");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "ShouldTriggerTarget");
 
 	Params::B_ShootingTarget_Master_C_ShouldTriggerTarget Parms{};
 
@@ -725,10 +608,7 @@ void AB_ShootingTarget_Master_C::ShouldTriggerTarget(class UObject* Overlapping_
 
 void AB_ShootingTarget_Master_C::MinigameIsRunning(bool* MinigameIsRunning_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "MinigameIsRunning");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "MinigameIsRunning");
 
 	Params::B_ShootingTarget_Master_C_MinigameIsRunning Parms{};
 
@@ -744,10 +624,7 @@ void AB_ShootingTarget_Master_C::MinigameIsRunning(bool* MinigameIsRunning_0)
 
 void AB_ShootingTarget_Master_C::SetStartingPosition()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetStartingPosition");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetStartingPosition");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -760,10 +637,7 @@ void AB_ShootingTarget_Master_C::SetStartingPosition()
 
 bool AB_ShootingTarget_Master_C::TargetShouldFall()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "TargetShouldFall");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "TargetShouldFall");
 
 	Params::B_ShootingTarget_Master_C_TargetShouldFall Parms{};
 
@@ -780,10 +654,7 @@ bool AB_ShootingTarget_Master_C::TargetShouldFall()
 
 void AB_ShootingTarget_Master_C::SetMaxHealth(float NewMaxHealth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetMaxHealth");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetMaxHealth");
 
 	Params::B_ShootingTarget_Master_C_SetMaxHealth Parms{};
 
@@ -798,10 +669,7 @@ void AB_ShootingTarget_Master_C::SetMaxHealth(float NewMaxHealth)
 
 void AB_ShootingTarget_Master_C::HideTarget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "HideTarget");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "HideTarget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -812,10 +680,7 @@ void AB_ShootingTarget_Master_C::HideTarget()
 
 void AB_ShootingTarget_Master_C::InitializeHideTargetTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "InitializeHideTargetTimer");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "InitializeHideTargetTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -826,10 +691,7 @@ void AB_ShootingTarget_Master_C::InitializeHideTargetTimer()
 
 void AB_ShootingTarget_Master_C::ClearBunnyHopTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ClearBunnyHopTimer");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "ClearBunnyHopTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -840,10 +702,7 @@ void AB_ShootingTarget_Master_C::ClearBunnyHopTimer()
 
 void AB_ShootingTarget_Master_C::SetBunnyHopTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetBunnyHopTimer");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetBunnyHopTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -854,10 +713,7 @@ void AB_ShootingTarget_Master_C::SetBunnyHopTimer()
 
 void AB_ShootingTarget_Master_C::CheckIfShouldHop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CheckIfShouldHop");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "CheckIfShouldHop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -868,10 +724,7 @@ void AB_ShootingTarget_Master_C::CheckIfShouldHop()
 
 void AB_ShootingTarget_Master_C::CreateWeakPointArray()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CreateWeakPointArray");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "CreateWeakPointArray");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -884,10 +737,7 @@ void AB_ShootingTarget_Master_C::CreateWeakPointArray()
 
 void AB_ShootingTarget_Master_C::SetAimAssistEnabled(bool NewType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetAimAssistEnabled");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetAimAssistEnabled");
 
 	Params::B_ShootingTarget_Master_C_SetAimAssistEnabled Parms{};
 
@@ -909,10 +759,7 @@ void AB_ShootingTarget_Master_C::SetAimAssistEnabled(bool NewType)
 
 float AB_ShootingTarget_Master_C::BlueprintModifyIncomingDamage(float Damage, const struct FGameplayTagContainer& InTags, const struct FGameplayEffectContextHandle& EffectContext, class AController* EventInstigator, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BlueprintModifyIncomingDamage");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "BlueprintModifyIncomingDamage");
 
 	Params::B_ShootingTarget_Master_C_BlueprintModifyIncomingDamage Parms{};
 
@@ -935,10 +782,7 @@ float AB_ShootingTarget_Master_C::BlueprintModifyIncomingDamage(float Damage, co
 
 void AB_ShootingTarget_Master_C::UpdateHealthBarVisibility(bool ShouldShowBar)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "UpdateHealthBarVisibility");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "UpdateHealthBarVisibility");
 
 	Params::B_ShootingTarget_Master_C_UpdateHealthBarVisibility Parms{};
 
@@ -957,10 +801,7 @@ void AB_ShootingTarget_Master_C::UpdateHealthBarVisibility(bool ShouldShowBar)
 
 bool AB_ShootingTarget_Master_C::IsWithinWeakpointBounds(const struct FVector& Impact_Location, const class USceneComponent* Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "IsWithinWeakpointBounds");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "IsWithinWeakpointBounds");
 
 	Params::B_ShootingTarget_Master_C_IsWithinWeakpointBounds Parms{};
 
@@ -982,10 +823,7 @@ bool AB_ShootingTarget_Master_C::IsWithinWeakpointBounds(const struct FVector& I
 
 void AB_ShootingTarget_Master_C::CalculateDamageFromWeaponData(class UFortWeaponItemDefinition* WeaponData, float InDamage, float* OutDamage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CalculateDamageFromWeaponData");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "CalculateDamageFromWeaponData");
 
 	Params::B_ShootingTarget_Master_C_CalculateDamageFromWeaponData Parms{};
 
@@ -1007,10 +845,7 @@ void AB_ShootingTarget_Master_C::CalculateDamageFromWeaponData(class UFortWeapon
 
 void AB_ShootingTarget_Master_C::GetWeaponDataFromDamageCauser(class UObject* DamageCauser, class UFortWeaponItemDefinition** OutWeaponData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetWeaponDataFromDamageCauser");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetWeaponDataFromDamageCauser");
 
 	Params::B_ShootingTarget_Master_C_GetWeaponDataFromDamageCauser Parms{};
 
@@ -1030,10 +865,7 @@ void AB_ShootingTarget_Master_C::GetWeaponDataFromDamageCauser(class UObject* Da
 
 void AB_ShootingTarget_Master_C::WeakPointArrayContainsItems(bool* ArrayContainsItems)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "WeakPointArrayContainsItems");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "WeakPointArrayContainsItems");
 
 	Params::B_ShootingTarget_Master_C_WeakPointArrayContainsItems Parms{};
 
@@ -1049,10 +881,7 @@ void AB_ShootingTarget_Master_C::WeakPointArrayContainsItems(bool* ArrayContains
 
 void AB_ShootingTarget_Master_C::RestoreToMaxHealth()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "RestoreToMaxHealth");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "RestoreToMaxHealth");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1063,10 +892,7 @@ void AB_ShootingTarget_Master_C::RestoreToMaxHealth()
 
 void AB_ShootingTarget_Master_C::OnRep_TargetMeshSetting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnRep_TargetMeshSetting");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnRep_TargetMeshSetting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1079,10 +905,7 @@ void AB_ShootingTarget_Master_C::OnRep_TargetMeshSetting()
 
 class UStaticMesh* AB_ShootingTarget_Master_C::GetCollisionStaticMesh() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetCollisionStaticMesh");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetCollisionStaticMesh");
 
 	Params::B_ShootingTarget_Master_C_GetCollisionStaticMesh Parms{};
 
@@ -1099,10 +922,7 @@ class UStaticMesh* AB_ShootingTarget_Master_C::GetCollisionStaticMesh() const
 
 TArray<class UMeshComponent*> AB_ShootingTarget_Master_C::GetMeshComponents() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetMeshComponents");
+	class UFunction* Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetMeshComponents");
 
 	Params::B_ShootingTarget_Master_C_GetMeshComponents Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Frontend_EventLevel_NavObject_Mannequin_C::ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_Mannequin(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_Mannequin_C", "ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_Mannequin");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_Mannequin_C", "ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_Mannequin");
 
 	Params::BP_Frontend_EventLevel_NavObject_Mannequin_C_ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_Mannequin Parms{};
 
@@ -41,10 +38,7 @@ void ABP_Frontend_EventLevel_NavObject_Mannequin_C::ExecuteUbergraph_BP_Frontend
 
 void ABP_Frontend_EventLevel_NavObject_Mannequin_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_Mannequin_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_Mannequin_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

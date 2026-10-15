@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAB_AthenaDBNO_C::ExecuteUbergraph_GAB_AthenaDBNO(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "ExecuteUbergraph_GAB_AthenaDBNO");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "ExecuteUbergraph_GAB_AthenaDBNO");
 
 	Params::GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO Parms{};
 
@@ -41,10 +38,7 @@ void UGAB_AthenaDBNO_C::ExecuteUbergraph_GAB_AthenaDBNO(int32 EntryPoint)
 
 void UGAB_AthenaDBNO_C::DropHeldObjects()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "DropHeldObjects");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "DropHeldObjects");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGAB_AthenaDBNO_C::DropHeldObjects()
 
 void UGAB_AthenaDBNO_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "K2_OnEndAbility");
 
 	Params::GAB_AthenaDBNO_C_K2_OnEndAbility Parms{};
 
@@ -77,10 +68,7 @@ void UGAB_AthenaDBNO_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_AthenaDBNO_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GAB_AthenaDBNO_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -95,10 +83,7 @@ void UGAB_AthenaDBNO_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventD
 
 void UGAB_AthenaDBNO_C::OnFinish_4C169D40441E45B462D83CBBA67F6E45()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnFinish_4C169D40441E45B462D83CBBA67F6E45");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnFinish_4C169D40441E45B462D83CBBA67F6E45");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void UGAB_AthenaDBNO_C::OnFinish_4C169D40441E45B462D83CBBA67F6E45()
 
 void UGAB_AthenaDBNO_C::OnStateEnded_C85094F843D5075FE4872C95AFC5D6B6()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnStateEnded_C85094F843D5075FE4872C95AFC5D6B6");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnStateEnded_C85094F843D5075FE4872C95AFC5D6B6");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UGAB_AthenaDBNO_C::OnStateEnded_C85094F843D5075FE4872C95AFC5D6B6()
 
 void UGAB_AthenaDBNO_C::OnStateInterrupted_C85094F843D5075FE4872C95AFC5D6B6()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnStateInterrupted_C85094F843D5075FE4872C95AFC5D6B6");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnStateInterrupted_C85094F843D5075FE4872C95AFC5D6B6");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void UGAB_AthenaDBNO_C::OnStateInterrupted_C85094F843D5075FE4872C95AFC5D6B6()
 
 void UGAB_AthenaDBNO_C::OnCompleted_F0F6785443BD2E74F5591884CB19F35F()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnCompleted_F0F6785443BD2E74F5591884CB19F35F");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnCompleted_F0F6785443BD2E74F5591884CB19F35F");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +127,7 @@ void UGAB_AthenaDBNO_C::OnCompleted_F0F6785443BD2E74F5591884CB19F35F()
 
 void UGAB_AthenaDBNO_C::OnBlendOut_F0F6785443BD2E74F5591884CB19F35F()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnBlendOut_F0F6785443BD2E74F5591884CB19F35F");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnBlendOut_F0F6785443BD2E74F5591884CB19F35F");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +138,7 @@ void UGAB_AthenaDBNO_C::OnBlendOut_F0F6785443BD2E74F5591884CB19F35F()
 
 void UGAB_AthenaDBNO_C::OnInterrupted_F0F6785443BD2E74F5591884CB19F35F()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnInterrupted_F0F6785443BD2E74F5591884CB19F35F");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnInterrupted_F0F6785443BD2E74F5591884CB19F35F");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +149,7 @@ void UGAB_AthenaDBNO_C::OnInterrupted_F0F6785443BD2E74F5591884CB19F35F()
 
 void UGAB_AthenaDBNO_C::OnCancelled_F0F6785443BD2E74F5591884CB19F35F()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnCancelled_F0F6785443BD2E74F5591884CB19F35F");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "OnCancelled_F0F6785443BD2E74F5591884CB19F35F");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +162,7 @@ void UGAB_AthenaDBNO_C::OnCancelled_F0F6785443BD2E74F5591884CB19F35F()
 
 void UGAB_AthenaDBNO_C::InitializeDeathHitDirection(const struct FGameplayEventData& EventHitData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "InitializeDeathHitDirection");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "InitializeDeathHitDirection");
 
 	Params::GAB_AthenaDBNO_C_InitializeDeathHitDirection Parms{};
 
@@ -215,10 +179,7 @@ void UGAB_AthenaDBNO_C::InitializeDeathHitDirection(const struct FGameplayEventD
 
 void UGAB_AthenaDBNO_C::GetInitialHealAmount(float* Health)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "GetInitialHealAmount");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "GetInitialHealAmount");
 
 	Params::GAB_AthenaDBNO_C_GetInitialHealAmount Parms{};
 
@@ -236,10 +197,7 @@ void UGAB_AthenaDBNO_C::GetInitialHealAmount(float* Health)
 
 class UAnimMontage* UGAB_AthenaDBNO_C::Get_DBNO_Montage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_AthenaDBNO_C", "Get DBNO Montage");
+	class UFunction* Func = Class->GetFunction("GAB_AthenaDBNO_C", "Get DBNO Montage");
 
 	Params::GAB_AthenaDBNO_C_Get_DBNO_Montage Parms{};
 

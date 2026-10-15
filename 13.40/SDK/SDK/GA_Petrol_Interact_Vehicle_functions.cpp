@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Petrol_Interact_Vehicle_C::ExecuteUbergraph_GA_Petrol_Interact_Vehicle(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Petrol_Interact_Vehicle_C", "ExecuteUbergraph_GA_Petrol_Interact_Vehicle");
+	class UFunction* Func = Class->GetFunction("GA_Petrol_Interact_Vehicle_C", "ExecuteUbergraph_GA_Petrol_Interact_Vehicle");
 
 	Params::GA_Petrol_Interact_Vehicle_C_ExecuteUbergraph_GA_Petrol_Interact_Vehicle Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Petrol_Interact_Vehicle_C::ExecuteUbergraph_GA_Petrol_Interact_Vehicle(
 
 void UGA_Petrol_Interact_Vehicle_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Petrol_Interact_Vehicle_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Petrol_Interact_Vehicle_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

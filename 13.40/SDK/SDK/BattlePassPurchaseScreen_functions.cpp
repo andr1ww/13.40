@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBattlePassPurchaseScreen_C::ExecuteUbergraph_BattlePassPurchaseScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseScreen_C", "ExecuteUbergraph_BattlePassPurchaseScreen");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseScreen_C", "ExecuteUbergraph_BattlePassPurchaseScreen");
 
 	Params::BattlePassPurchaseScreen_C_ExecuteUbergraph_BattlePassPurchaseScreen Parms{};
 
@@ -44,10 +41,7 @@ void UBattlePassPurchaseScreen_C::ExecuteUbergraph_BattlePassPurchaseScreen(int3
 
 void UBattlePassPurchaseScreen_C::OnPurchaseClicked(bool bPlayForward, bool bBuyBattleBundle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseScreen_C", "OnPurchaseClicked");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseScreen_C", "OnPurchaseClicked");
 
 	Params::BattlePassPurchaseScreen_C_OnPurchaseClicked Parms{};
 
@@ -63,10 +57,7 @@ void UBattlePassPurchaseScreen_C::OnPurchaseClicked(bool bPlayForward, bool bBuy
 
 void UBattlePassPurchaseScreen_C::OnFinalPurchaseConfirmed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseScreen_C", "OnFinalPurchaseConfirmed");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseScreen_C", "OnFinalPurchaseConfirmed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UBattlePassPurchaseScreen_C::OnFinalPurchaseConfirmed()
 
 void UBattlePassPurchaseScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UBattlePassPurchaseScreen_C::BP_OnActivated()
 
 void UBattlePassPurchaseScreen_C::OnLeaveScreen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseScreen_C", "OnLeaveScreen");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseScreen_C", "OnLeaveScreen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UBattlePassPurchaseScreen_C::OnLeaveScreen()
 
 void UBattlePassPurchaseScreen_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseScreen_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseScreen_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

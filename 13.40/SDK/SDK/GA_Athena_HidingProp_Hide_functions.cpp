@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_HidingProp_Hide_C::ExecuteUbergraph_GA_Athena_HidingProp_Hide(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "ExecuteUbergraph_GA_Athena_HidingProp_Hide");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "ExecuteUbergraph_GA_Athena_HidingProp_Hide");
 
 	Params::GA_Athena_HidingProp_Hide_C_ExecuteUbergraph_GA_Athena_HidingProp_Hide Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_HidingProp_Hide_C::ExecuteUbergraph_GA_Athena_HidingProp_Hide(in
 
 void UGA_Athena_HidingProp_Hide_C::End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "End");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Athena_HidingProp_Hide_C::End()
 
 void UGA_Athena_HidingProp_Hide_C::RustleLoop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "RustleLoop");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "RustleLoop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UGA_Athena_HidingProp_Hide_C::RustleLoop()
 
 void UGA_Athena_HidingProp_Hide_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_HidingProp_Hide_C_K2_OnEndAbility Parms{};
 
@@ -91,10 +79,7 @@ void UGA_Athena_HidingProp_Hide_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_HidingProp_Hide_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_Athena_HidingProp_Hide_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -109,10 +94,7 @@ void UGA_Athena_HidingProp_Hide_C::K2_ActivateAbilityFromEvent(const struct FGam
 
 void UGA_Athena_HidingProp_Hide_C::Added_75ABACB94D60139EB5D79798D471DB17()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_75ABACB94D60139EB5D79798D471DB17");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_75ABACB94D60139EB5D79798D471DB17");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UGA_Athena_HidingProp_Hide_C::Added_75ABACB94D60139EB5D79798D471DB17()
 
 void UGA_Athena_HidingProp_Hide_C::Added_1D4A49874AC422976CAC2C9155DDA736()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_1D4A49874AC422976CAC2C9155DDA736");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_1D4A49874AC422976CAC2C9155DDA736");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void UGA_Athena_HidingProp_Hide_C::Added_1D4A49874AC422976CAC2C9155DDA736()
 
 void UGA_Athena_HidingProp_Hide_C::Added_D329D9924DF9DF1B79D0738C6CB8EBA1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_D329D9924DF9DF1B79D0738C6CB8EBA1");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_D329D9924DF9DF1B79D0738C6CB8EBA1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +127,7 @@ void UGA_Athena_HidingProp_Hide_C::Added_D329D9924DF9DF1B79D0738C6CB8EBA1()
 
 void UGA_Athena_HidingProp_Hide_C::Added_E60D990647FDAB06895E738C7A2BAE7E()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_E60D990647FDAB06895E738C7A2BAE7E");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_E60D990647FDAB06895E738C7A2BAE7E");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +138,7 @@ void UGA_Athena_HidingProp_Hide_C::Added_E60D990647FDAB06895E738C7A2BAE7E()
 
 void UGA_Athena_HidingProp_Hide_C::Added_CD24BC554E955808A88A5B809807A94E()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_CD24BC554E955808A88A5B809807A94E");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_CD24BC554E955808A88A5B809807A94E");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +149,7 @@ void UGA_Athena_HidingProp_Hide_C::Added_CD24BC554E955808A88A5B809807A94E()
 
 void UGA_Athena_HidingProp_Hide_C::Added_35C56E354FE08855A837E0BDFB150F20()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_35C56E354FE08855A837E0BDFB150F20");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_35C56E354FE08855A837E0BDFB150F20");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -193,10 +160,7 @@ void UGA_Athena_HidingProp_Hide_C::Added_35C56E354FE08855A837E0BDFB150F20()
 
 void UGA_Athena_HidingProp_Hide_C::Added_F049BFC743FE176042ECD98641AFE2B9()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_F049BFC743FE176042ECD98641AFE2B9");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Added_F049BFC743FE176042ECD98641AFE2B9");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +171,7 @@ void UGA_Athena_HidingProp_Hide_C::Added_F049BFC743FE176042ECD98641AFE2B9()
 
 void UGA_Athena_HidingProp_Hide_C::OnTimedOut_8010F4C64221E8F497C6559558420C32()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "OnTimedOut_8010F4C64221E8F497C6559558420C32");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "OnTimedOut_8010F4C64221E8F497C6559558420C32");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +182,7 @@ void UGA_Athena_HidingProp_Hide_C::OnTimedOut_8010F4C64221E8F497C6559558420C32()
 
 void UGA_Athena_HidingProp_Hide_C::OnTimedOutAndDestinationReached_8010F4C64221E8F497C6559558420C32()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "OnTimedOutAndDestinationReached_8010F4C64221E8F497C6559558420C32");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "OnTimedOutAndDestinationReached_8010F4C64221E8F497C6559558420C32");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,10 +193,7 @@ void UGA_Athena_HidingProp_Hide_C::OnTimedOutAndDestinationReached_8010F4C64221E
 
 void UGA_Athena_HidingProp_Hide_C::OnTimedOut_859E251740F1C46B914344A9FC343B19()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "OnTimedOut_859E251740F1C46B914344A9FC343B19");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "OnTimedOut_859E251740F1C46B914344A9FC343B19");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +204,7 @@ void UGA_Athena_HidingProp_Hide_C::OnTimedOut_859E251740F1C46B914344A9FC343B19()
 
 void UGA_Athena_HidingProp_Hide_C::OnTimedOutAndDestinationReached_859E251740F1C46B914344A9FC343B19()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "OnTimedOutAndDestinationReached_859E251740F1C46B914344A9FC343B19");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "OnTimedOutAndDestinationReached_859E251740F1C46B914344A9FC343B19");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -266,10 +218,7 @@ void UGA_Athena_HidingProp_Hide_C::OnTimedOutAndDestinationReached_859E251740F1C
 
 void UGA_Athena_HidingProp_Hide_C::Triggered_75B60D4B43DAA553E4C21EA3D2E3AD03(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Triggered_75B60D4B43DAA553E4C21EA3D2E3AD03");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Triggered_75B60D4B43DAA553E4C21EA3D2E3AD03");
 
 	Params::GA_Athena_HidingProp_Hide_C_Triggered_75B60D4B43DAA553E4C21EA3D2E3AD03 Parms{};
 
@@ -288,10 +237,7 @@ void UGA_Athena_HidingProp_Hide_C::Triggered_75B60D4B43DAA553E4C21EA3D2E3AD03(co
 
 void UGA_Athena_HidingProp_Hide_C::Cancelled_75B60D4B43DAA553E4C21EA3D2E3AD03(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Cancelled_75B60D4B43DAA553E4C21EA3D2E3AD03");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Cancelled_75B60D4B43DAA553E4C21EA3D2E3AD03");
 
 	Params::GA_Athena_HidingProp_Hide_C_Cancelled_75B60D4B43DAA553E4C21EA3D2E3AD03 Parms{};
 
@@ -310,10 +256,7 @@ void UGA_Athena_HidingProp_Hide_C::Cancelled_75B60D4B43DAA553E4C21EA3D2E3AD03(co
 
 void UGA_Athena_HidingProp_Hide_C::Completed_75B60D4B43DAA553E4C21EA3D2E3AD03(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Completed_75B60D4B43DAA553E4C21EA3D2E3AD03");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "Completed_75B60D4B43DAA553E4C21EA3D2E3AD03");
 
 	Params::GA_Athena_HidingProp_Hide_C_Completed_75B60D4B43DAA553E4C21EA3D2E3AD03 Parms{};
 
@@ -331,10 +274,7 @@ void UGA_Athena_HidingProp_Hide_C::Completed_75B60D4B43DAA553E4C21EA3D2E3AD03(co
 
 void UGA_Athena_HidingProp_Hide_C::SetCosmeticsAllowed(bool Allowed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "SetCosmeticsAllowed");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_Hide_C", "SetCosmeticsAllowed");
 
 	Params::GA_Athena_HidingProp_Hide_C_SetCosmeticsAllowed Parms{};
 

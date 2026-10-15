@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_ProjectileTrajectory_HeldObjectSocket_C::ExecuteUbergraph_BP_ProjectileTrajectory_HeldObjectSocket(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_HeldObjectSocket_C", "ExecuteUbergraph_BP_ProjectileTrajectory_HeldObjectSocket");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_HeldObjectSocket_C", "ExecuteUbergraph_BP_ProjectileTrajectory_HeldObjectSocket");
 
 	Params::BP_ProjectileTrajectory_HeldObjectSocket_C_ExecuteUbergraph_BP_ProjectileTrajectory_HeldObjectSocket Parms{};
 
@@ -41,10 +38,7 @@ void ABP_ProjectileTrajectory_HeldObjectSocket_C::ExecuteUbergraph_BP_Projectile
 
 void ABP_ProjectileTrajectory_HeldObjectSocket_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_HeldObjectSocket_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_HeldObjectSocket_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

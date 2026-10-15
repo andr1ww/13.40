@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_Athena_FlopperSpawn_World_C::ExecuteUbergraph_BGA_Athena_FlopperSpawn_World(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ExecuteUbergraph_BGA_Athena_FlopperSpawn_World");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ExecuteUbergraph_BGA_Athena_FlopperSpawn_World");
 
 	Params::BGA_Athena_FlopperSpawn_World_C_ExecuteUbergraph_BGA_Athena_FlopperSpawn_World Parms{};
 
@@ -44,10 +41,7 @@ void ABGA_Athena_FlopperSpawn_World_C::ExecuteUbergraph_BGA_Athena_FlopperSpawn_
 
 void ABGA_Athena_FlopperSpawn_World_C::SpawnFromExplosion(class AActor* Instigator_0, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "SpawnFromExplosion");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "SpawnFromExplosion");
 
 	Params::BGA_Athena_FlopperSpawn_World_C_SpawnFromExplosion Parms{};
 
@@ -71,10 +65,7 @@ void ABGA_Athena_FlopperSpawn_World_C::SpawnFromExplosion(class AActor* Instigat
 
 void ABGA_Athena_FlopperSpawn_World_C::OnDamageServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnDamageServer");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnDamageServer");
 
 	Params::BGA_Athena_FlopperSpawn_World_C_OnDamageServer Parms{};
 
@@ -95,10 +86,7 @@ void ABGA_Athena_FlopperSpawn_World_C::OnDamageServer(float Damage, const struct
 
 void ABGA_Athena_FlopperSpawn_World_C::SpawnJumpingFish()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "SpawnJumpingFish");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "SpawnJumpingFish");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +105,7 @@ void ABGA_Athena_FlopperSpawn_World_C::SpawnJumpingFish()
 
 void ABGA_Athena_FlopperSpawn_World_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnDeathPlayEffects");
 
 	Params::BGA_Athena_FlopperSpawn_World_C_OnDeathPlayEffects Parms{};
 
@@ -141,10 +126,7 @@ void ABGA_Athena_FlopperSpawn_World_C::OnDeathPlayEffects(float Damage, const st
 
 void ABGA_Athena_FlopperSpawn_World_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +139,7 @@ void ABGA_Athena_FlopperSpawn_World_C::ReceiveBeginPlay()
 
 float ABGA_Athena_FlopperSpawn_World_C::RandomTimeInterval()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "RandomTimeInterval");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "RandomTimeInterval");
 
 	Params::BGA_Athena_FlopperSpawn_World_C_RandomTimeInterval Parms{};
 
@@ -175,10 +154,7 @@ float ABGA_Athena_FlopperSpawn_World_C::RandomTimeInterval()
 
 void ABGA_Athena_FlopperSpawn_World_C::OnRep_FortWaterBody()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnRep_FortWaterBody");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnRep_FortWaterBody");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -192,10 +168,7 @@ void ABGA_Athena_FlopperSpawn_World_C::OnRep_FortWaterBody()
 
 void ABGA_Athena_FlopperSpawn_World_C::ExplosionQuestProgress(class AActor* Instigator_0, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ExplosionQuestProgress");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ExplosionQuestProgress");
 
 	Params::BGA_Athena_FlopperSpawn_World_C_ExplosionQuestProgress Parms{};
 
@@ -215,10 +188,7 @@ void ABGA_Athena_FlopperSpawn_World_C::ExplosionQuestProgress(class AActor* Inst
 
 void ABGA_Athena_FlopperSpawn_World_C::GetLootTier(bool IsExplosion, bool IsProFishingRod, class FName* Output_Get)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "GetLootTier");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "GetLootTier");
 
 	Params::BGA_Athena_FlopperSpawn_World_C_GetLootTier Parms{};
 

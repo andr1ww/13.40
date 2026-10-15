@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void A_WaterMeshBlueprintMaster_C::ExecuteUbergraph__WaterMeshBlueprintMaster(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "ExecuteUbergraph__WaterMeshBlueprintMaster");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "ExecuteUbergraph__WaterMeshBlueprintMaster");
 
 	Params::_WaterMeshBlueprintMaster_C_ExecuteUbergraph__WaterMeshBlueprintMaster Parms{};
 
@@ -41,10 +38,7 @@ void A_WaterMeshBlueprintMaster_C::ExecuteUbergraph__WaterMeshBlueprintMaster(in
 
 void A_WaterMeshBlueprintMaster_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void A_WaterMeshBlueprintMaster_C::ReceiveBeginPlay()
 
 void A_WaterMeshBlueprintMaster_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "Construct");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -74,10 +65,7 @@ void A_WaterMeshBlueprintMaster_C::Construct()
 
 void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_69_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_69_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_69_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_69_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -102,10 +90,7 @@ void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh_K2Node_ComponentBoundEv
 
 void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_185_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -132,10 +117,7 @@ void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh4_K2Node_ComponentBoundE
 
 void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_190_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -162,10 +144,7 @@ void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh3_K2Node_ComponentBoundE
 
 void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_196_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -190,10 +169,7 @@ void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh2_K2Node_ComponentBoundE
 
 void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_203_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_203_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_203_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh4_K2Node_ComponentBoundEvent_203_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -218,10 +194,7 @@ void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh4_K2Node_ComponentBoundE
 
 void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh_K2Node_ComponentBoundEvent_66_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -246,10 +219,7 @@ void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh_K2Node_ComponentBoundEv
 
 void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_211_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_211_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_211_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh3_K2Node_ComponentBoundEvent_211_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -272,10 +242,7 @@ void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh3_K2Node_ComponentBoundE
 
 void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_220_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_220_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_220_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_220_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -293,10 +260,7 @@ void A_WaterMeshBlueprintMaster_C::BndEvt__CollisionMesh2_K2Node_ComponentBoundE
 
 void A_WaterMeshBlueprintMaster_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -310,10 +274,7 @@ void A_WaterMeshBlueprintMaster_C::UserConstructionScript()
 
 void A_WaterMeshBlueprintMaster_C::SetupMeshCollisionVolumes(class UStaticMeshComponent* StaticMeshComponent, int32 Target_Int)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "SetupMeshCollisionVolumes");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "SetupMeshCollisionVolumes");
 
 	Params::_WaterMeshBlueprintMaster_C_SetupMeshCollisionVolumes Parms{};
 
@@ -333,10 +294,7 @@ void A_WaterMeshBlueprintMaster_C::SetupMeshCollisionVolumes(class UStaticMeshCo
 
 void A_WaterMeshBlueprintMaster_C::Find_Placement_on_water_mesh_surfaces(struct FTransform* Traced_Transform, struct FVector* VelocityVector, bool* Trace_Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "Find Placement on water mesh surfaces");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "Find Placement on water mesh surfaces");
 
 	Params::_WaterMeshBlueprintMaster_C_Find_Placement_on_water_mesh_surfaces Parms{};
 
@@ -362,10 +320,7 @@ void A_WaterMeshBlueprintMaster_C::Find_Placement_on_water_mesh_surfaces(struct 
 
 void A_WaterMeshBlueprintMaster_C::Handle_Water_Penetration_Components_And_Arrays(bool In_T_Out_F, class AActor* Touching_Actor, class UStaticMeshComponent* Touching_Volume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "Handle Water Penetration Components And Arrays");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "Handle Water Penetration Components And Arrays");
 
 	Params::_WaterMeshBlueprintMaster_C_Handle_Water_Penetration_Components_And_Arrays Parms{};
 
@@ -382,10 +337,7 @@ void A_WaterMeshBlueprintMaster_C::Handle_Water_Penetration_Components_And_Array
 
 void A_WaterMeshBlueprintMaster_C::Construction()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "Construction");
+	class UFunction* Func = Class->GetFunction("_WaterMeshBlueprintMaster_C", "Construction");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

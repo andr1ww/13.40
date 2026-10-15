@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APlayerPawn_Generic_C::ExecuteUbergraph_PlayerPawn_Generic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "ExecuteUbergraph_PlayerPawn_Generic");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "ExecuteUbergraph_PlayerPawn_Generic");
 
 	Params::PlayerPawn_Generic_C_ExecuteUbergraph_PlayerPawn_Generic Parms{};
 
@@ -43,10 +40,7 @@ void APlayerPawn_Generic_C::ExecuteUbergraph_PlayerPawn_Generic(int32 EntryPoint
 
 void APlayerPawn_Generic_C::AnimTrailsNotify(bool bActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsNotify");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsNotify");
 
 	Params::PlayerPawn_Generic_C_AnimTrailsNotify Parms{};
 
@@ -70,10 +64,7 @@ void APlayerPawn_Generic_C::AnimTrailsNotify(bool bActive)
 
 void APlayerPawn_Generic_C::AnimTrailsSetup(class UParticleSystem* ParticleSystemReference, class UNiagaraSystem* NiagaraSystemReference, class FName FirstSocketName, class FName SecondSocketName, float Width, class UFXSystemComponent* OverrideParticleComp, class FName OverideFirstSocketName, class FName OverideSecondSocketName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsSetup");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsSetup");
 
 	Params::PlayerPawn_Generic_C_AnimTrailsSetup Parms{};
 
@@ -95,10 +86,7 @@ void APlayerPawn_Generic_C::AnimTrailsSetup(class UParticleSystem* ParticleSyste
 
 void APlayerPawn_Generic_C::AnimTrailsDisable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsDisable");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsDisable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +97,7 @@ void APlayerPawn_Generic_C::AnimTrailsDisable()
 
 void APlayerPawn_Generic_C::OnLand_CE()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnLand_CE");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnLand_CE");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +110,7 @@ void APlayerPawn_Generic_C::OnLand_CE()
 
 void APlayerPawn_Generic_C::SetBlockedByPawns(bool bLocked)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "SetBlockedByPawns");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "SetBlockedByPawns");
 
 	Params::PlayerPawn_Generic_C_SetBlockedByPawns Parms{};
 
@@ -143,10 +125,7 @@ void APlayerPawn_Generic_C::SetBlockedByPawns(bool bLocked)
 
 void APlayerPawn_Generic_C::OnExitedWaterVolume()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnExitedWaterVolume");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnExitedWaterVolume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +136,7 @@ void APlayerPawn_Generic_C::OnExitedWaterVolume()
 
 void APlayerPawn_Generic_C::OnEnteredWaterVolume()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnEnteredWaterVolume");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnEnteredWaterVolume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +147,7 @@ void APlayerPawn_Generic_C::OnEnteredWaterVolume()
 
 void APlayerPawn_Generic_C::MeleeSwingRight_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingRight_End");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingRight_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -185,10 +158,7 @@ void APlayerPawn_Generic_C::MeleeSwingRight_End()
 
 void APlayerPawn_Generic_C::MeleeSwingLeft_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingLeft_End");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingLeft_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -201,10 +171,7 @@ void APlayerPawn_Generic_C::MeleeSwingLeft_End()
 
 void APlayerPawn_Generic_C::MeleeSwingRight(bool First_Right)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingRight");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingRight");
 
 	Params::PlayerPawn_Generic_C_MeleeSwingRight Parms{};
 
@@ -221,10 +188,7 @@ void APlayerPawn_Generic_C::MeleeSwingRight(bool First_Right)
 
 void APlayerPawn_Generic_C::MeleeSwingLeft(bool First_Left)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingLeft");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingLeft");
 
 	Params::PlayerPawn_Generic_C_MeleeSwingLeft Parms{};
 
@@ -239,10 +203,7 @@ void APlayerPawn_Generic_C::MeleeSwingLeft(bool First_Left)
 
 void APlayerPawn_Generic_C::OnExitedVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnExitedVehicle");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnExitedVehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +214,7 @@ void APlayerPawn_Generic_C::OnExitedVehicle()
 
 void APlayerPawn_Generic_C::OnEnteredVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnEnteredVehicle");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnEnteredVehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -270,10 +228,7 @@ void APlayerPawn_Generic_C::OnEnteredVehicle()
 
 void APlayerPawn_Generic_C::GameplayCue_Damage(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Damage");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Damage");
 
 	Params::PlayerPawn_Generic_C_GameplayCue_Damage Parms{};
 
@@ -292,10 +247,7 @@ void APlayerPawn_Generic_C::GameplayCue_Damage(EGameplayCueEvent EventType, cons
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_Destroyed(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Shield.Destroyed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Shield.Destroyed");
 
 	Params::PlayerPawn_Generic_C_GameplayCue_Shield_Destroyed Parms{};
 
@@ -314,10 +266,7 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_Destroyed(EGameplayCueEvent Event
 
 void APlayerPawn_Generic_C::GameplayCue_Damage_Shielded(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Damage.Shielded");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Damage.Shielded");
 
 	Params::PlayerPawn_Generic_C_GameplayCue_Damage_Shielded Parms{};
 
@@ -336,10 +285,7 @@ void APlayerPawn_Generic_C::GameplayCue_Damage_Shielded(EGameplayCueEvent EventT
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_FullyCharged(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Shield.FullyCharged");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Shield.FullyCharged");
 
 	Params::PlayerPawn_Generic_C_GameplayCue_Shield_FullyCharged Parms{};
 
@@ -363,10 +309,7 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_FullyCharged(EGameplayCueEvent Ev
 
 void APlayerPawn_Generic_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDeathPlayEffects");
 
 	Params::PlayerPawn_Generic_C_OnDeathPlayEffects Parms{};
 
@@ -387,10 +330,7 @@ void APlayerPawn_Generic_C::OnDeathPlayEffects(float Damage, const struct FGamep
 
 void APlayerPawn_Generic_C::ReinitializeWeaponMaterials()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "ReinitializeWeaponMaterials");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "ReinitializeWeaponMaterials");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -403,10 +343,7 @@ void APlayerPawn_Generic_C::ReinitializeWeaponMaterials()
 
 void APlayerPawn_Generic_C::Player_Creates_a_Splash(const struct FTransform& NewTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Player Creates a Splash");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Player Creates a Splash");
 
 	Params::PlayerPawn_Generic_C_Player_Creates_a_Splash Parms{};
 
@@ -421,10 +358,7 @@ void APlayerPawn_Generic_C::Player_Creates_a_Splash(const struct FTransform& New
 
 void APlayerPawn_Generic_C::Entered_Water_Volume()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Entered Water Volume");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Entered Water Volume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -437,10 +371,7 @@ void APlayerPawn_Generic_C::Entered_Water_Volume()
 
 void APlayerPawn_Generic_C::PlayGameplayWindEffect(EPlayerWindParticleEmitters Player_Wind_Particle_Emitter_To_Fire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "PlayGameplayWindEffect");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "PlayGameplayWindEffect");
 
 	Params::PlayerPawn_Generic_C_PlayGameplayWindEffect Parms{};
 
@@ -463,10 +394,7 @@ void APlayerPawn_Generic_C::PlayGameplayWindEffect(EPlayerWindParticleEmitters P
 
 void APlayerPawn_Generic_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDeathServer");
 
 	Params::PlayerPawn_Generic_C_OnDeathServer Parms{};
 
@@ -489,10 +417,7 @@ void APlayerPawn_Generic_C::OnDeathServer(float Damage, const struct FGameplayTa
 
 void APlayerPawn_Generic_C::MultiEndSwap(class AFortWeapon* CurrentWeapon_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "MultiEndSwap");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "MultiEndSwap");
 
 	Params::PlayerPawn_Generic_C_MultiEndSwap Parms{};
 
@@ -507,10 +432,7 @@ void APlayerPawn_Generic_C::MultiEndSwap(class AFortWeapon* CurrentWeapon_0)
 
 void APlayerPawn_Generic_C::UnBindWeaponSwap()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "UnBindWeaponSwap");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "UnBindWeaponSwap");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -524,10 +446,7 @@ void APlayerPawn_Generic_C::UnBindWeaponSwap()
 
 void APlayerPawn_Generic_C::MultiSwapWeapon(class AFortWeapon* New, class AFortWeapon* Prev)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "MultiSwapWeapon");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "MultiSwapWeapon");
 
 	Params::PlayerPawn_Generic_C_MultiSwapWeapon Parms{};
 
@@ -545,10 +464,7 @@ void APlayerPawn_Generic_C::MultiSwapWeapon(class AFortWeapon* New, class AFortW
 
 void APlayerPawn_Generic_C::BindWeaponSwap(float InDuration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "BindWeaponSwap");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "BindWeaponSwap");
 
 	Params::PlayerPawn_Generic_C_BindWeaponSwap Parms{};
 
@@ -566,10 +482,7 @@ void APlayerPawn_Generic_C::BindWeaponSwap(float InDuration)
 
 void APlayerPawn_Generic_C::ClientBindWeaponSwap(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "ClientBindWeaponSwap");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "ClientBindWeaponSwap");
 
 	Params::PlayerPawn_Generic_C_ClientBindWeaponSwap Parms{};
 
@@ -585,10 +498,7 @@ void APlayerPawn_Generic_C::ClientBindWeaponSwap(class AFortWeapon* NewWeapon, c
 
 void APlayerPawn_Generic_C::OnClearSentence()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnClearSentence");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnClearSentence");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -601,10 +511,7 @@ void APlayerPawn_Generic_C::OnClearSentence()
 
 void APlayerPawn_Generic_C::OnDisplaySentence(const class FText& SpeechText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDisplaySentence");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDisplaySentence");
 
 	Params::PlayerPawn_Generic_C_OnDisplaySentence Parms{};
 
@@ -621,10 +528,7 @@ void APlayerPawn_Generic_C::OnDisplaySentence(const class FText& SpeechText)
 
 void APlayerPawn_Generic_C::ReceivePossessed(class AController* NewController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "ReceivePossessed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "ReceivePossessed");
 
 	Params::PlayerPawn_Generic_C_ReceivePossessed Parms{};
 
@@ -641,10 +545,7 @@ void APlayerPawn_Generic_C::ReceivePossessed(class AController* NewController)
 
 void APlayerPawn_Generic_C::OnBaseChanged(class AActor* NewBase)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnBaseChanged");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnBaseChanged");
 
 	Params::PlayerPawn_Generic_C_OnBaseChanged Parms{};
 
@@ -661,10 +562,7 @@ void APlayerPawn_Generic_C::OnBaseChanged(class AActor* NewBase)
 
 void APlayerPawn_Generic_C::InternalSetFirstPersonCamera(bool NewUseFirstPersonCamera)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "InternalSetFirstPersonCamera");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "InternalSetFirstPersonCamera");
 
 	Params::PlayerPawn_Generic_C_InternalSetFirstPersonCamera Parms{};
 
@@ -681,10 +579,7 @@ void APlayerPawn_Generic_C::InternalSetFirstPersonCamera(bool NewUseFirstPersonC
 
 void APlayerPawn_Generic_C::SetFirstPersonCamera(bool bNewUseFirstPersonCamera)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "SetFirstPersonCamera");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "SetFirstPersonCamera");
 
 	Params::PlayerPawn_Generic_C_SetFirstPersonCamera Parms{};
 
@@ -702,10 +597,7 @@ void APlayerPawn_Generic_C::SetFirstPersonCamera(bool bNewUseFirstPersonCamera)
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
 
 	Params::PlayerPawn_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 Parms{};
 
@@ -724,10 +616,7 @@ void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
 
 	Params::PlayerPawn_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 Parms{};
 
@@ -743,10 +632,7 @@ void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff
 
 void APlayerPawn_Generic_C::OnCharacterPartsReinitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnCharacterPartsReinitialized");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnCharacterPartsReinitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -757,10 +643,7 @@ void APlayerPawn_Generic_C::OnCharacterPartsReinitialized()
 
 void APlayerPawn_Generic_C::FootStepRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "FootStepRight");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "FootStepRight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -771,10 +654,7 @@ void APlayerPawn_Generic_C::FootStepRight()
 
 void APlayerPawn_Generic_C::FootStepLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "FootStepLeft");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "FootStepLeft");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -787,10 +667,7 @@ void APlayerPawn_Generic_C::FootStepLeft()
 
 void APlayerPawn_Generic_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "ReceiveTick");
 
 	Params::PlayerPawn_Generic_C_ReceiveTick Parms{};
 
@@ -808,10 +685,7 @@ void APlayerPawn_Generic_C::ReceiveTick(float DeltaSeconds)
 
 void APlayerPawn_Generic_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnWeaponEquipped");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnWeaponEquipped");
 
 	Params::PlayerPawn_Generic_C_OnWeaponEquipped Parms{};
 
@@ -829,10 +703,7 @@ void APlayerPawn_Generic_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class
 
 void APlayerPawn_Generic_C::OnLanded(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnLanded");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnLanded");
 
 	Params::PlayerPawn_Generic_C_OnLanded Parms{};
 
@@ -855,10 +726,7 @@ void APlayerPawn_Generic_C::OnLanded(const struct FHitResult& Hit)
 
 void APlayerPawn_Generic_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDamagePlayEffects");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDamagePlayEffects");
 
 	Params::PlayerPawn_Generic_C_OnDamagePlayEffects Parms{};
 
@@ -879,10 +747,7 @@ void APlayerPawn_Generic_C::OnDamagePlayEffects(float Damage, const struct FGame
 
 void APlayerPawn_Generic_C::ShatterShield__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "ShatterShield__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "ShatterShield__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -893,10 +758,7 @@ void APlayerPawn_Generic_C::ShatterShield__UpdateFunc()
 
 void APlayerPawn_Generic_C::ShatterShield__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "ShatterShield__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "ShatterShield__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -907,10 +769,7 @@ void APlayerPawn_Generic_C::ShatterShield__FinishedFunc()
 
 void APlayerPawn_Generic_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -927,10 +786,7 @@ void APlayerPawn_Generic_C::UserConstructionScript()
 
 void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_Parent(EFortCustomPartType BodyType, class USkeletalMeshComponent*& DuplicatedSkeletalMeshComponent, class UMaterialInterface* Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Empty_MID_Array, int32 TranslucentSortPriority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Create and Duplicate Effect Skeletal Meshes Parent");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Create and Duplicate Effect Skeletal Meshes Parent");
 
 	Params::PlayerPawn_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent Parms{};
 
@@ -952,10 +808,7 @@ void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_Parent(E
 
 void APlayerPawn_Generic_C::FindShieldOpacity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "FindShieldOpacity");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "FindShieldOpacity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -971,10 +824,7 @@ void APlayerPawn_Generic_C::FindShieldOpacity()
 
 void APlayerPawn_Generic_C::SetShieldMids(float Highlight_Cracks, bool Set_Highlight_Cracks, float Push, bool Set_Push)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "SetShieldMids");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "SetShieldMids");
 
 	Params::PlayerPawn_Generic_C_SetShieldMids Parms{};
 
@@ -998,10 +848,7 @@ void APlayerPawn_Generic_C::SetShieldMids(float Highlight_Cracks, bool Set_Highl
 
 void APlayerPawn_Generic_C::SetShieldMids_InternalLoop(float Highlight_Cracks, bool Set_Highlight_Cracks, float Push, bool Set_Push, TArray<class UMaterialInstanceDynamic*>& NewParam1)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "SetShieldMids_InternalLoop");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "SetShieldMids_InternalLoop");
 
 	Params::PlayerPawn_Generic_C_SetShieldMids_InternalLoop Parms{};
 
@@ -1025,10 +872,7 @@ void APlayerPawn_Generic_C::SetShieldMids_InternalLoop(float Highlight_Cracks, b
 
 void APlayerPawn_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Mesh_0, class USkeletalMeshComponent* Master)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "SlaveAMeshToTheBody");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "SlaveAMeshToTheBody");
 
 	Params::PlayerPawn_Generic_C_SlaveAMeshToTheBody Parms{};
 
@@ -1044,10 +888,7 @@ void APlayerPawn_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Me
 
 void APlayerPawn_Generic_C::ToggleShieldVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "ToggleShieldVisibility");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "ToggleShieldVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1064,10 +905,7 @@ void APlayerPawn_Generic_C::ToggleShieldVisibility()
 
 void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(EFortCustomPartType BodyType, class UMaterialInterface* Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Empty_MID_Array, int32 TranslucentSortPriority, class UPoseableMeshComponent*& PoseableMesh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Create and Duplicate Effect Poseable Skeletal Mesh");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Create and Duplicate Effect Poseable Skeletal Mesh");
 
 	Params::PlayerPawn_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh Parms{};
 
@@ -1099,10 +937,7 @@ void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(E
 
 void APlayerPawn_Generic_C::Setup_FX_Mesh_Duplicates(class UMaterialInterface*& Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Charm_MID_Array, class USkeletalMeshComponent*& Charm_Mesh, TArray<class UMaterialInstanceDynamic*>& Head_MID_Array, class USkeletalMeshComponent*& Head_Mesh, TArray<class UMaterialInstanceDynamic*>& Body_MID_Array, class USkeletalMeshComponent*& Body_Mesh, int32 Translucent_Sort_Order, bool Transfer_Material_Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Setup FX Mesh Duplicates");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Setup FX Mesh Duplicates");
 
 	Params::PlayerPawn_Generic_C_Setup_FX_Mesh_Duplicates Parms{};
 
@@ -1133,10 +968,7 @@ void APlayerPawn_Generic_C::Setup_FX_Mesh_Duplicates(class UMaterialInterface*& 
 
 void APlayerPawn_Generic_C::OnRep_On_Player_Built_Floor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnRep_On_Player_Built_Floor");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnRep_On_Player_Built_Floor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1147,10 +979,7 @@ void APlayerPawn_Generic_C::OnRep_On_Player_Built_Floor()
 
 void APlayerPawn_Generic_C::DisableWaterLevelTick()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "DisableWaterLevelTick");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "DisableWaterLevelTick");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1163,10 +992,7 @@ void APlayerPawn_Generic_C::DisableWaterLevelTick()
 
 void APlayerPawn_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Are the wind and water RTT passes enabled");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Are the wind and water RTT passes enabled");
 
 	Params::PlayerPawn_Generic_C_Are_the_wind_and_water_RTT_passes_enabled Parms{};
 
@@ -1184,10 +1010,7 @@ void APlayerPawn_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewP
 
 void APlayerPawn_Generic_C::TriggerGameplayWindEmitter(EPlayerWindParticleEmitters Player_Wind_Particle_Emitter_To_Fire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "TriggerGameplayWindEmitter");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "TriggerGameplayWindEmitter");
 
 	Params::PlayerPawn_Generic_C_TriggerGameplayWindEmitter Parms{};
 
@@ -1204,10 +1027,7 @@ void APlayerPawn_Generic_C::TriggerGameplayWindEmitter(EPlayerWindParticleEmitte
 
 void APlayerPawn_Generic_C::Override_Materials_and_Copy_Parameters_on_Weapons_Mesh(class UMaterialInterface* Material_to_Apply)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Override Materials and Copy Parameters on Weapons Mesh");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Override Materials and Copy Parameters on Weapons Mesh");
 
 	Params::PlayerPawn_Generic_C_Override_Materials_and_Copy_Parameters_on_Weapons_Mesh Parms{};
 
@@ -1222,10 +1042,7 @@ void APlayerPawn_Generic_C::Override_Materials_and_Copy_Parameters_on_Weapons_Me
 
 void APlayerPawn_Generic_C::Restore_Previous_Materials_on_Character_Mesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Restore Previous Materials on Character Mesh");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Restore Previous Materials on Character Mesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1238,10 +1055,7 @@ void APlayerPawn_Generic_C::Restore_Previous_Materials_on_Character_Mesh()
 
 void APlayerPawn_Generic_C::Restore_Previous_Materials_on_Weapons_Mesh(class AFortWeapon* Weapon_to_Restore)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Restore Previous Materials on Weapons Mesh");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Restore Previous Materials on Weapons Mesh");
 
 	Params::PlayerPawn_Generic_C_Restore_Previous_Materials_on_Weapons_Mesh Parms{};
 
@@ -1259,10 +1073,7 @@ void APlayerPawn_Generic_C::Restore_Previous_Materials_on_Weapons_Mesh(class AFo
 
 void APlayerPawn_Generic_C::Set_Scalar_Parameter_on_Character_MIDs(class FName Parameter_Name, float Parameter_Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Scalar Parameter on Character MIDs");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Scalar Parameter on Character MIDs");
 
 	Params::PlayerPawn_Generic_C_Set_Scalar_Parameter_on_Character_MIDs Parms{};
 
@@ -1281,10 +1092,7 @@ void APlayerPawn_Generic_C::Set_Scalar_Parameter_on_Character_MIDs(class FName P
 
 void APlayerPawn_Generic_C::Set_Scalar_Parameter_on_Duplicate_Mesh_MIDs(class FName Parameter_Name, float Parameter_Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Scalar Parameter on Duplicate Mesh MIDs");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Scalar Parameter on Duplicate Mesh MIDs");
 
 	Params::PlayerPawn_Generic_C_Set_Scalar_Parameter_on_Duplicate_Mesh_MIDs Parms{};
 
@@ -1300,10 +1108,7 @@ void APlayerPawn_Generic_C::Set_Scalar_Parameter_on_Duplicate_Mesh_MIDs(class FN
 
 void APlayerPawn_Generic_C::Set_Body_Type_Sounds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Body Type Sounds");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Body Type Sounds");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1316,10 +1121,7 @@ void APlayerPawn_Generic_C::Set_Body_Type_Sounds()
 
 void APlayerPawn_Generic_C::EnableWaterAudio(bool IsEnteringWater)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "EnableWaterAudio");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "EnableWaterAudio");
 
 	Params::PlayerPawn_Generic_C_EnableWaterAudio Parms{};
 
@@ -1337,10 +1139,7 @@ void APlayerPawn_Generic_C::EnableWaterAudio(bool IsEnteringWater)
 
 void APlayerPawn_Generic_C::PlayHitSound(class AFortPawn* Instigator_0, class AActor* Damage_Causer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "PlayHitSound");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "PlayHitSound");
 
 	Params::PlayerPawn_Generic_C_PlayHitSound Parms{};
 
@@ -1356,10 +1155,7 @@ void APlayerPawn_Generic_C::PlayHitSound(class AFortPawn* Instigator_0, class AA
 
 void APlayerPawn_Generic_C::OnRep_BlockedByPawns()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnRep_BlockedByPawns");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "OnRep_BlockedByPawns");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1372,10 +1168,7 @@ void APlayerPawn_Generic_C::OnRep_BlockedByPawns()
 
 float APlayerPawn_Generic_C::GetShieldPercent2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "GetShieldPercent2");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "GetShieldPercent2");
 
 	Params::PlayerPawn_Generic_C_GetShieldPercent2 Parms{};
 
@@ -1392,10 +1185,7 @@ float APlayerPawn_Generic_C::GetShieldPercent2()
 
 float APlayerPawn_Generic_C::GetHealthPercent2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "GetHealthPercent2");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "GetHealthPercent2");
 
 	Params::PlayerPawn_Generic_C_GetHealthPercent2 Parms{};
 
@@ -1412,10 +1202,7 @@ float APlayerPawn_Generic_C::GetHealthPercent2()
 
 void APlayerPawn_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Generic_C", "Melee_Effect_Color");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Generic_C", "Melee_Effect_Color");
 
 	Params::PlayerPawn_Generic_C_Melee_Effect_Color Parms{};
 

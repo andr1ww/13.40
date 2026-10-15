@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerDiscovered_C::ExecuteUbergraph_PlayerDiscovered(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerDiscovered_C", "ExecuteUbergraph_PlayerDiscovered");
+	class UFunction* Func = Class->GetFunction("PlayerDiscovered_C", "ExecuteUbergraph_PlayerDiscovered");
 
 	Params::PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered Parms{};
 
@@ -41,10 +38,7 @@ void UPlayerDiscovered_C::ExecuteUbergraph_PlayerDiscovered(int32 EntryPoint)
 
 void UPlayerDiscovered_C::Play_Brief_Show_Sound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerDiscovered_C", "Play Brief Show Sound");
+	class UFunction* Func = Class->GetFunction("PlayerDiscovered_C", "Play Brief Show Sound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UPlayerDiscovered_C::Play_Brief_Show_Sound()
 
 void UPlayerDiscovered_C::OnStompedByOtherWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerDiscovered_C", "OnStompedByOtherWidget");
+	class UFunction* Func = Class->GetFunction("PlayerDiscovered_C", "OnStompedByOtherWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UPlayerDiscovered_C::OnStompedByOtherWidget()
 
 void UPlayerDiscovered_C::OnStompFailed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerDiscovered_C", "OnStompFailed");
+	class UFunction* Func = Class->GetFunction("PlayerDiscovered_C", "OnStompFailed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UPlayerDiscovered_C::OnStompFailed()
 
 void UPlayerDiscovered_C::Brief_Show_Finished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerDiscovered_C", "Brief Show Finished");
+	class UFunction* Func = Class->GetFunction("PlayerDiscovered_C", "Brief Show Finished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UPlayerDiscovered_C::Brief_Show_Finished()
 
 void UPlayerDiscovered_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerDiscovered_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PlayerDiscovered_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -114,10 +96,7 @@ void UPlayerDiscovered_C::Construct()
 
 void UPlayerDiscovered_C::OnNewDiscovery(const class FText& LocalizedLocationName, bool bIsNamedLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerDiscovered_C", "OnNewDiscovery");
+	class UFunction* Func = Class->GetFunction("PlayerDiscovered_C", "OnNewDiscovery");
 
 	Params::PlayerDiscovered_C_OnNewDiscovery Parms{};
 
@@ -137,10 +116,7 @@ void UPlayerDiscovered_C::OnNewDiscovery(const class FText& LocalizedLocationNam
 
 void UPlayerDiscovered_C::OnReady_B498D6844B33E66A7C160F972A87F88A(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerDiscovered_C", "OnReady_B498D6844B33E66A7C160F972A87F88A");
+	class UFunction* Func = Class->GetFunction("PlayerDiscovered_C", "OnReady_B498D6844B33E66A7C160F972A87F88A");
 
 	Params::PlayerDiscovered_C_OnReady_B498D6844B33E66A7C160F972A87F88A Parms{};
 
@@ -157,10 +133,7 @@ void UPlayerDiscovered_C::OnReady_B498D6844B33E66A7C160F972A87F88A(class AFortGa
 
 void UPlayerDiscovered_C::EndOfShow()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerDiscovered_C", "EndOfShow");
+	class UFunction* Func = Class->GetFunction("PlayerDiscovered_C", "EndOfShow");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

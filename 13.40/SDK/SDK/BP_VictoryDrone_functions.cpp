@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_VictoryDrone_C::ExecuteUbergraph_BP_VictoryDrone(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "ExecuteUbergraph_BP_VictoryDrone");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "ExecuteUbergraph_BP_VictoryDrone");
 
 	Params::BP_VictoryDrone_C_ExecuteUbergraph_BP_VictoryDrone Parms{};
 
@@ -43,10 +40,7 @@ void ABP_VictoryDrone_C::ExecuteUbergraph_BP_VictoryDrone(int32 EntryPoint)
 
 void ABP_VictoryDrone_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "ReceiveTick");
 
 	Params::BP_VictoryDrone_C_ReceiveTick Parms{};
 
@@ -64,10 +58,7 @@ void ABP_VictoryDrone_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_VictoryDrone_C::OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool bInterrupted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "OnSpawnOutAnimEnded");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "OnSpawnOutAnimEnded");
 
 	Params::BP_VictoryDrone_C_OnSpawnOutAnimEnded Parms{};
 
@@ -83,10 +74,7 @@ void ABP_VictoryDrone_C::OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool b
 
 void ABP_VictoryDrone_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void ABP_VictoryDrone_C::ReceiveBeginPlay()
 
 void ABP_VictoryDrone_C::InitDrone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "InitDrone");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "InitDrone");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void ABP_VictoryDrone_C::InitDrone()
 
 void ABP_VictoryDrone_C::PlaySpawnAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "PlaySpawnAnim");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "PlaySpawnAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +107,7 @@ void ABP_VictoryDrone_C::PlaySpawnAnim()
 
 void ABP_VictoryDrone_C::NotifyTeleportFinishedTriggered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "NotifyTeleportFinishedTriggered");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "NotifyTeleportFinishedTriggered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +120,7 @@ void ABP_VictoryDrone_C::NotifyTeleportFinishedTriggered()
 
 void ABP_VictoryDrone_C::NPC_FX_Parameters(TArray<struct FParticleSysParam>* Instance_Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "NPC FX Parameters");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "NPC FX Parameters");
 
 	Params::BP_VictoryDrone_C_NPC_FX_Parameters Parms{};
 
@@ -162,10 +138,7 @@ void ABP_VictoryDrone_C::NPC_FX_Parameters(TArray<struct FParticleSysParam>* Ins
 
 void ABP_VictoryDrone_C::Decoy_FX_Parameters(TArray<struct FParticleSysParam>* Instance_Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "Decoy FX Parameters");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "Decoy FX Parameters");
 
 	Params::BP_VictoryDrone_C_Decoy_FX_Parameters Parms{};
 
@@ -183,10 +156,7 @@ void ABP_VictoryDrone_C::Decoy_FX_Parameters(TArray<struct FParticleSysParam>* I
 
 void ABP_VictoryDrone_C::Added_Death_Audio(class USoundBase* Sound_to_Spawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VictoryDrone_C", "Added Death Audio");
+	class UFunction* Func = Class->GetFunction("BP_VictoryDrone_C", "Added Death Audio");
 
 	Params::BP_VictoryDrone_C_Added_Death_Audio Parms{};
 

@@ -30,10 +30,7 @@ SDK_NAMESPACE_START
 
 void URenderToTextureFunctionLibrary_C::Array_to_HLSL_Int_Array(EIntTypes Type, class FString& Variable_Name, TArray<int32>& Int, TArray<struct FVector2D>& int2, TArray<struct FVector>& int3, TArray<struct FLinearColor>& int4, class UObject* __WorldContext, class FString* String)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("RenderToTextureFunctionLibrary_C", "Array to HLSL Int Array");
+	class UFunction* Func = StaticClass()->GetFunction("RenderToTextureFunctionLibrary_C", "Array to HLSL Int Array");
 
 	Params::RenderToTextureFunctionLibrary_C_Array_to_HLSL_Int_Array Parms{};
 
@@ -70,10 +67,7 @@ void URenderToTextureFunctionLibrary_C::Array_to_HLSL_Int_Array(EIntTypes Type, 
 
 void URenderToTextureFunctionLibrary_C::Set_Canvas_Material_Scale_and_Position(const struct FVector2D& Size, const struct FVector2D& position, float Scale, class UObject* __WorldContext, struct FVector2D* Screen_Position, struct FVector2D* Screen_Size)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("RenderToTextureFunctionLibrary_C", "Set Canvas Material Scale and Position");
+	class UFunction* Func = StaticClass()->GetFunction("RenderToTextureFunctionLibrary_C", "Set Canvas Material Scale and Position");
 
 	Params::RenderToTextureFunctionLibrary_C_Set_Canvas_Material_Scale_and_Position Parms{};
 

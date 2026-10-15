@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UShowdownScreen_C::ExecuteUbergraph_ShowdownScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "ExecuteUbergraph_ShowdownScreen");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "ExecuteUbergraph_ShowdownScreen");
 
 	Params::ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen Parms{};
 
@@ -41,10 +38,7 @@ void UShowdownScreen_C::ExecuteUbergraph_ShowdownScreen(int32 EntryPoint)
 
 void UShowdownScreen_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UShowdownScreen_C::BP_OnDeactivated()
 
 void UShowdownScreen_C::SelectedEndTournament(bool bEndIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "SelectedEndTournament");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "SelectedEndTournament");
 
 	Params::ShowdownScreen_C_SelectedEndTournament Parms{};
 
@@ -77,10 +68,7 @@ void UShowdownScreen_C::SelectedEndTournament(bool bEndIsSelected)
 
 void UShowdownScreen_C::SelectedFrontTournament(bool bFrontIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "SelectedFrontTournament");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "SelectedFrontTournament");
 
 	Params::ShowdownScreen_C_SelectedFrontTournament Parms{};
 
@@ -98,10 +86,7 @@ void UShowdownScreen_C::SelectedFrontTournament(bool bFrontIsSelected)
 
 void UShowdownScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "Tick");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "Tick");
 
 	Params::ShowdownScreen_C_Tick Parms{};
 
@@ -119,10 +104,7 @@ void UShowdownScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTi
 
 void UShowdownScreen_C::TournamentListSelect(class UWidget* CurrentWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "TournamentListSelect");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "TournamentListSelect");
 
 	Params::ShowdownScreen_C_TournamentListSelect Parms{};
 
@@ -139,10 +121,7 @@ void UShowdownScreen_C::TournamentListSelect(class UWidget* CurrentWidget)
 
 void UShowdownScreen_C::OnInputModeChanged(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "OnInputModeChanged");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "OnInputModeChanged");
 
 	Params::ShowdownScreen_C_OnInputModeChanged Parms{};
 
@@ -157,10 +136,7 @@ void UShowdownScreen_C::OnInputModeChanged(bool bUsingGamepad)
 
 void UShowdownScreen_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_4_OnFortSwipeEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_4_OnFortSwipeEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_4_OnFortSwipeEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +147,7 @@ void UShowdownScreen_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_4_OnFortSw
 
 void UShowdownScreen_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -185,10 +158,7 @@ void UShowdownScreen_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSw
 
 void UShowdownScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,10 +169,7 @@ void UShowdownScreen_C::BP_OnActivated()
 
 void UShowdownScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +182,7 @@ void UShowdownScreen_C::Construct()
 
 void UShowdownScreen_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "PreConstruct");
 
 	Params::ShowdownScreen_C_PreConstruct Parms{};
 
@@ -235,10 +199,7 @@ void UShowdownScreen_C::PreConstruct(bool IsDesignTime)
 
 void UShowdownScreen_C::BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature(float CurrentOffset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature");
 
 	Params::ShowdownScreen_C_BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature Parms{};
 
@@ -255,10 +216,7 @@ void UShowdownScreen_C::BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEv
 
 void UShowdownScreen_C::BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::ShowdownScreen_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -275,10 +233,7 @@ void UShowdownScreen_C::BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEve
 
 void UShowdownScreen_C::BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ShowdownScreen_C", "BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::ShowdownScreen_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 

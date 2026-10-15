@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBuiltInEmotePopUP_C::ExecuteUbergraph_BuiltInEmotePopUP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuiltInEmotePopUP_C", "ExecuteUbergraph_BuiltInEmotePopUP");
+	class UFunction* Func = Class->GetFunction("BuiltInEmotePopUP_C", "ExecuteUbergraph_BuiltInEmotePopUP");
 
 	Params::BuiltInEmotePopUP_C_ExecuteUbergraph_BuiltInEmotePopUP Parms{};
 
@@ -41,10 +38,7 @@ void UBuiltInEmotePopUP_C::ExecuteUbergraph_BuiltInEmotePopUP(int32 EntryPoint)
 
 void UBuiltInEmotePopUP_C::RequuestFadeOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuiltInEmotePopUP_C", "RequuestFadeOut");
+	class UFunction* Func = Class->GetFunction("BuiltInEmotePopUP_C", "RequuestFadeOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UBuiltInEmotePopUP_C::RequuestFadeOut()
 
 void UBuiltInEmotePopUP_C::RequestFadeIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BuiltInEmotePopUP_C", "RequestFadeIn");
+	class UFunction* Func = Class->GetFunction("BuiltInEmotePopUP_C", "RequestFadeIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

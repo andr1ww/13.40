@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Glider_Niagara_C::ExecuteUbergraph_B_Glider_Niagara(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "ExecuteUbergraph_B_Glider_Niagara");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "ExecuteUbergraph_B_Glider_Niagara");
 
 	Params::B_Glider_Niagara_C_ExecuteUbergraph_B_Glider_Niagara Parms{};
 
@@ -45,10 +42,7 @@ void AB_Glider_Niagara_C::ExecuteUbergraph_B_Glider_Niagara(int32 EntryPoint)
 
 void AB_Glider_Niagara_C::FX_System_Update(float Forward_Dot, float Right_Dot, bool Is_Fully_Deployed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "FX System Update");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "FX System Update");
 
 	Params::B_Glider_Niagara_C_FX_System_Update Parms{};
 
@@ -68,10 +62,7 @@ void AB_Glider_Niagara_C::FX_System_Update(float Forward_Dot, float Right_Dot, b
 
 void AB_Glider_Niagara_C::Audio_Update(float ForwardDot, float RightDot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "Audio Update");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "Audio Update");
 
 	Params::B_Glider_Niagara_C_Audio_Update Parms{};
 
@@ -87,10 +78,7 @@ void AB_Glider_Niagara_C::Audio_Update(float ForwardDot, float RightDot)
 
 void AB_Glider_Niagara_C::OnReceiveParachuteItemdef()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "OnReceiveParachuteItemdef");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "OnReceiveParachuteItemdef");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +91,7 @@ void AB_Glider_Niagara_C::OnReceiveParachuteItemdef()
 
 void AB_Glider_Niagara_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "ReceiveEndPlay");
 
 	Params::B_Glider_Niagara_C_ReceiveEndPlay Parms{};
 
@@ -121,10 +106,7 @@ void AB_Glider_Niagara_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 
 void AB_Glider_Niagara_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -140,10 +122,7 @@ void AB_Glider_Niagara_C::ReceiveBeginPlay()
 
 void AB_Glider_Niagara_C::OnParachuteTrailUpdated(float MovementLengthSquared, float ForwardDot, float RightDot, float RotationalMovementAcceleration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "OnParachuteTrailUpdated");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "OnParachuteTrailUpdated");
 
 	Params::B_Glider_Niagara_C_OnParachuteTrailUpdated Parms{};
 
@@ -163,10 +142,7 @@ void AB_Glider_Niagara_C::OnParachuteTrailUpdated(float MovementLengthSquared, f
 
 void AB_Glider_Niagara_C::K2_SetChuteMeshVisibility(bool bParachuteVisibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "K2_SetChuteMeshVisibility");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "K2_SetChuteMeshVisibility");
 
 	Params::B_Glider_Niagara_C_K2_SetChuteMeshVisibility Parms{};
 
@@ -181,10 +157,7 @@ void AB_Glider_Niagara_C::K2_SetChuteMeshVisibility(bool bParachuteVisibility)
 
 void AB_Glider_Niagara_C::Do_Front_End_Setup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "Do Front End Setup");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "Do Front End Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,10 +172,7 @@ void AB_Glider_Niagara_C::Do_Front_End_Setup()
 
 void AB_Glider_Niagara_C::OnDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "OnDayPhaseChanged");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "OnDayPhaseChanged");
 
 	Params::B_Glider_Niagara_C_OnDayPhaseChanged Parms{};
 
@@ -219,10 +189,7 @@ void AB_Glider_Niagara_C::OnDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFort
 
 void AB_Glider_Niagara_C::OnGliderFullyDeployed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "OnGliderFullyDeployed");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "OnGliderFullyDeployed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -233,10 +200,7 @@ void AB_Glider_Niagara_C::OnGliderFullyDeployed()
 
 void AB_Glider_Niagara_C::On_Managed_Particles_Spawned_and_Ready()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "On Managed Particles Spawned and Ready");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "On Managed Particles Spawned and Ready");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -247,10 +211,7 @@ void AB_Glider_Niagara_C::On_Managed_Particles_Spawned_and_Ready()
 
 void AB_Glider_Niagara_C::OnComponentsReady_155854BF43EF505B38EF969297E36093()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "OnComponentsReady_155854BF43EF505B38EF969297E36093");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "OnComponentsReady_155854BF43EF505B38EF969297E36093");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -261,10 +222,7 @@ void AB_Glider_Niagara_C::OnComponentsReady_155854BF43EF505B38EF969297E36093()
 
 void AB_Glider_Niagara_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -278,10 +236,7 @@ void AB_Glider_Niagara_C::UserConstructionScript()
 
 void AB_Glider_Niagara_C::set_Niagara_System_Default_Variables(float Forward_Dot, float Right_Dot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System Default Variables");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System Default Variables");
 
 	Params::B_Glider_Niagara_C_set_Niagara_System_Default_Variables Parms{};
 
@@ -299,10 +254,7 @@ void AB_Glider_Niagara_C::set_Niagara_System_Default_Variables(float Forward_Dot
 
 void AB_Glider_Niagara_C::get_Niagara_Particles__Gameplay_Tag_Array_(struct FGameplayTagContainer* Gameplay_Tag_Container)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "get Niagara Particles (Gameplay Tag Array)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "get Niagara Particles (Gameplay Tag Array)");
 
 	Params::B_Glider_Niagara_C_get_Niagara_Particles__Gameplay_Tag_Array_ Parms{};
 
@@ -320,10 +272,7 @@ void AB_Glider_Niagara_C::get_Niagara_Particles__Gameplay_Tag_Array_(struct FGam
 
 void AB_Glider_Niagara_C::get_Cascade_Particles__Gameplay_Tag_Array_(struct FGameplayTagContainer* Gameplay_Tag_Container)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "get Cascade Particles (Gameplay Tag Array)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "get Cascade Particles (Gameplay Tag Array)");
 
 	Params::B_Glider_Niagara_C_get_Cascade_Particles__Gameplay_Tag_Array_ Parms{};
 
@@ -342,10 +291,7 @@ void AB_Glider_Niagara_C::get_Cascade_Particles__Gameplay_Tag_Array_(struct FGam
 
 void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Float_(class FName Name_0, float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Float)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Float)");
 
 	Params::B_Glider_Niagara_C_set_Niagara_System_User_Variable__Float_ Parms{};
 
@@ -364,10 +310,7 @@ void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Float_(class FName N
 
 void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Vector_(class FName Name_0, const struct FVector& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Vector)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Vector)");
 
 	Params::B_Glider_Niagara_C_set_Niagara_System_User_Variable__Vector_ Parms{};
 
@@ -386,10 +329,7 @@ void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Vector_(class FName 
 
 void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Int_(class FName Name_0, int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Int)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Int)");
 
 	Params::B_Glider_Niagara_C_set_Niagara_System_User_Variable__Int_ Parms{};
 
@@ -408,10 +348,7 @@ void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Int_(class FName Nam
 
 void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Bool_(class FName Name_0, bool Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Bool)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Bool)");
 
 	Params::B_Glider_Niagara_C_set_Niagara_System_User_Variable__Bool_ Parms{};
 
@@ -430,10 +367,7 @@ void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Bool_(class FName Na
 
 void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Color_(class FName Name_0, const struct FLinearColor& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Color)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "set Niagara System User Variable (Color)");
 
 	Params::B_Glider_Niagara_C_set_Niagara_System_User_Variable__Color_ Parms{};
 
@@ -451,10 +385,7 @@ void AB_Glider_Niagara_C::set_Niagara_System_User_Variable__Color_(class FName N
 
 void AB_Glider_Niagara_C::activate_Niagara_System(bool Reset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "activate Niagara System");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "activate Niagara System");
 
 	Params::B_Glider_Niagara_C_activate_Niagara_System Parms{};
 
@@ -469,10 +400,7 @@ void AB_Glider_Niagara_C::activate_Niagara_System(bool Reset)
 
 void AB_Glider_Niagara_C::deactivate_Niagara_System()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Niagara_C", "deactivate Niagara System");
+	class UFunction* Func = Class->GetFunction("B_Glider_Niagara_C", "deactivate Niagara System");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

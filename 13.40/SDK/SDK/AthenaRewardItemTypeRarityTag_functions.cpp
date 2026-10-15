@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaRewardItemTypeRarityTag_C::ExecuteUbergraph_AthenaRewardItemTypeRarityTag(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "ExecuteUbergraph_AthenaRewardItemTypeRarityTag");
+	class UFunction* Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "ExecuteUbergraph_AthenaRewardItemTypeRarityTag");
 
 	Params::AthenaRewardItemTypeRarityTag_C_ExecuteUbergraph_AthenaRewardItemTypeRarityTag Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaRewardItemTypeRarityTag_C::ExecuteUbergraph_AthenaRewardItemTypeRari
 
 void UAthenaRewardItemTypeRarityTag_C::OnInitializeRarityWithoutSeries(const struct FFortRarityItemData& RarityData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "OnInitializeRarityWithoutSeries");
+	class UFunction* Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "OnInitializeRarityWithoutSeries");
 
 	Params::AthenaRewardItemTypeRarityTag_C_OnInitializeRarityWithoutSeries Parms{};
 
@@ -63,10 +57,7 @@ void UAthenaRewardItemTypeRarityTag_C::OnInitializeRarityWithoutSeries(const str
 
 void UAthenaRewardItemTypeRarityTag_C::OnInitializeRarityWithSeries(const class UFortItemSeriesDefinition* SeriesData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "OnInitializeRarityWithSeries");
+	class UFunction* Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "OnInitializeRarityWithSeries");
 
 	Params::AthenaRewardItemTypeRarityTag_C_OnInitializeRarityWithSeries Parms{};
 

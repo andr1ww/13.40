@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AAthena_GameState_C::ExecuteUbergraph_Athena_GameState(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_GameState_C", "ExecuteUbergraph_Athena_GameState");
+	class UFunction* Func = Class->GetFunction("Athena_GameState_C", "ExecuteUbergraph_Athena_GameState");
 
 	Params::Athena_GameState_C_ExecuteUbergraph_Athena_GameState Parms{};
 
@@ -41,10 +38,7 @@ void AAthena_GameState_C::ExecuteUbergraph_Athena_GameState(int32 EntryPoint)
 
 void AAthena_GameState_C::OnWinnerAnnounced()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_GameState_C", "OnWinnerAnnounced");
+	class UFunction* Func = Class->GetFunction("Athena_GameState_C", "OnWinnerAnnounced");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AAthena_GameState_C::OnWinnerAnnounced()
 
 void AAthena_GameState_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_GameState_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Athena_GameState_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AAthena_GameState_C::Timeline_0__UpdateFunc()
 
 void AAthena_GameState_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_GameState_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Athena_GameState_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UUACNetworkComponent::SendClientHello(uint32 SessionKey)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UACNetworkComponent", "SendClientHello");
+	class UFunction* Func = Class->GetFunction("UACNetworkComponent", "SendClientHello");
 
 	Params::UACNetworkComponent_SendClientHello Parms{};
 
@@ -49,10 +46,7 @@ void UUACNetworkComponent::SendClientHello(uint32 SessionKey)
 
 void UUACNetworkComponent::SendPacketToClient(uint8 Type, const TArray<uint8>& Packet)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UACNetworkComponent", "SendPacketToClient");
+	class UFunction* Func = Class->GetFunction("UACNetworkComponent", "SendPacketToClient");
 
 	Params::UACNetworkComponent_SendPacketToClient Parms{};
 
@@ -76,10 +70,7 @@ void UUACNetworkComponent::SendPacketToClient(uint8 Type, const TArray<uint8>& P
 
 void UUACNetworkComponent::SendPacketToServer(uint8 Type, const TArray<uint8>& Packet)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UACNetworkComponent", "SendPacketToServer");
+	class UFunction* Func = Class->GetFunction("UACNetworkComponent", "SendPacketToServer");
 
 	Params::UACNetworkComponent_SendPacketToServer Parms{};
 

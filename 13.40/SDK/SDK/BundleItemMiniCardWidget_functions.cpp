@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UBundleItemMiniCardWidget_C::Play_Anim___Show()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BundleItemMiniCardWidget_C", "Play Anim - Show");
+	class UFunction* Func = Class->GetFunction("BundleItemMiniCardWidget_C", "Play Anim - Show");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UBundleItemMiniCardWidget_C::Play_Anim___Show()
 
 void UBundleItemMiniCardWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BundleItemMiniCardWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("BundleItemMiniCardWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +45,7 @@ void UBundleItemMiniCardWidget_C::Construct()
 
 void UBundleItemMiniCardWidget_C::ExecuteUbergraph_BundleItemMiniCardWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BundleItemMiniCardWidget_C", "ExecuteUbergraph_BundleItemMiniCardWidget");
+	class UFunction* Func = Class->GetFunction("BundleItemMiniCardWidget_C", "ExecuteUbergraph_BundleItemMiniCardWidget");
 
 	Params::BundleItemMiniCardWidget_C_ExecuteUbergraph_BundleItemMiniCardWidget Parms{};
 
@@ -71,10 +62,7 @@ void UBundleItemMiniCardWidget_C::ExecuteUbergraph_BundleItemMiniCardWidget(int3
 
 class UObject* UBundleItemMiniCardWidget_C::GetListItemObject() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BundleItemMiniCardWidget_C", "GetListItemObject");
+	class UFunction* Func = Class->GetFunction("BundleItemMiniCardWidget_C", "GetListItemObject");
 
 	Params::BundleItemMiniCardWidget_C_GetListItemObject Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UIconTextButton_C::ExecuteUbergraph_IconTextButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "ExecuteUbergraph_IconTextButton");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "ExecuteUbergraph_IconTextButton");
 
 	Params::IconTextButton_C_ExecuteUbergraph_IconTextButton Parms{};
 
@@ -41,10 +38,7 @@ void UIconTextButton_C::ExecuteUbergraph_IconTextButton(int32 EntryPoint)
 
 void UIconTextButton_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UIconTextButton_C::Destruct()
 
 void UIconTextButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UIconTextButton_C::Construct()
 
 void UIconTextButton_C::OnActionComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "OnActionComplete");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "OnActionComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UIconTextButton_C::OnActionComplete()
 
 void UIconTextButton_C::OnActionProgress(float HeldPercent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "OnActionProgress");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "OnActionProgress");
 
 	Params::IconTextButton_C_OnActionProgress Parms{};
 
@@ -105,10 +90,7 @@ void UIconTextButton_C::OnActionProgress(float HeldPercent)
 
 void UIconTextButton_C::OnTriggeredInputActionChanged(const struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "OnTriggeredInputActionChanged");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "OnTriggeredInputActionChanged");
 
 	Params::IconTextButton_C_OnTriggeredInputActionChanged Parms{};
 
@@ -125,10 +107,7 @@ void UIconTextButton_C::OnTriggeredInputActionChanged(const struct FDataTableRow
 
 void UIconTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "SetTabLabelInfo");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "SetTabLabelInfo");
 
 	Params::IconTextButton_C_SetTabLabelInfo Parms{};
 
@@ -145,10 +124,7 @@ void UIconTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& Ta
 
 void UIconTextButton_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "PreConstruct");
 
 	Params::IconTextButton_C_PreConstruct Parms{};
 
@@ -163,10 +139,7 @@ void UIconTextButton_C::PreConstruct(bool IsDesignTime)
 
 void UIconTextButton_C::OnCurrentTextStyleChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "OnCurrentTextStyleChanged");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "OnCurrentTextStyleChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +152,7 @@ void UIconTextButton_C::OnCurrentTextStyleChanged()
 
 void UIconTextButton_C::Set_Text(const class FText& ButtonText_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "Set Text");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "Set Text");
 
 	Params::IconTextButton_C_Set_Text Parms{};
 
@@ -199,10 +169,7 @@ void UIconTextButton_C::Set_Text(const class FText& ButtonText_0)
 
 void UIconTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "Set Icon");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "Set Icon");
 
 	Params::IconTextButton_C_Set_Icon Parms{};
 
@@ -217,10 +184,7 @@ void UIconTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 
 void UIconTextButton_C::InitializeButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "InitializeButton");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "InitializeButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -233,10 +197,7 @@ void UIconTextButton_C::InitializeButton()
 
 void UIconTextButton_C::UpdateTextAndStyle(ECommonInputType InputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "UpdateTextAndStyle");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "UpdateTextAndStyle");
 
 	Params::IconTextButton_C_UpdateTextAndStyle Parms{};
 
@@ -253,10 +214,7 @@ void UIconTextButton_C::UpdateTextAndStyle(ECommonInputType InputType)
 
 void UIconTextButton_C::SetControllerStyle(class UClass* ControllerInputStyle_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "SetControllerStyle");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "SetControllerStyle");
 
 	Params::IconTextButton_C_SetControllerStyle Parms{};
 
@@ -271,10 +229,7 @@ void UIconTextButton_C::SetControllerStyle(class UClass* ControllerInputStyle_0)
 
 void UIconTextButton_C::UpdateText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "UpdateText");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "UpdateText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -287,10 +242,7 @@ void UIconTextButton_C::UpdateText()
 
 void UIconTextButton_C::UpdateStyle(bool UsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "UpdateStyle");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "UpdateStyle");
 
 	Params::IconTextButton_C_UpdateStyle Parms{};
 
@@ -307,10 +259,7 @@ void UIconTextButton_C::UpdateStyle(bool UsingGamepad)
 
 void UIconTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "SetMouseKeyboardStyle");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "SetMouseKeyboardStyle");
 
 	Params::IconTextButton_C_SetMouseKeyboardStyle Parms{};
 
@@ -325,10 +274,7 @@ void UIconTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle
 
 void UIconTextButton_C::UpdateContentAlignment()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "UpdateContentAlignment");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "UpdateContentAlignment");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -341,10 +287,7 @@ void UIconTextButton_C::UpdateContentAlignment()
 
 void UIconTextButton_C::SetContentAlignment(EHorizontalAlignment ContentAlignment_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "SetContentAlignment");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "SetContentAlignment");
 
 	Params::IconTextButton_C_SetContentAlignment Parms{};
 
@@ -359,10 +302,7 @@ void UIconTextButton_C::SetContentAlignment(EHorizontalAlignment ContentAlignmen
 
 void UIconTextButton_C::UpdateTextStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "UpdateTextStyle");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "UpdateTextStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -373,10 +313,7 @@ void UIconTextButton_C::UpdateTextStyle()
 
 void UIconTextButton_C::SetInitialMouseKeyboardStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "SetInitialMouseKeyboardStyle");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "SetInitialMouseKeyboardStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -389,10 +326,7 @@ void UIconTextButton_C::SetInitialMouseKeyboardStyle()
 
 void UIconTextButton_C::SetTextInternal(const class FText& InButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "SetTextInternal");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "SetTextInternal");
 
 	Params::IconTextButton_C_SetTextInternal Parms{};
 
@@ -409,10 +343,7 @@ void UIconTextButton_C::SetTextInternal(const class FText& InButtonText)
 
 void UIconTextButton_C::ShowIcon(bool bShouldShow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "ShowIcon");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "ShowIcon");
 
 	Params::IconTextButton_C_ShowIcon Parms{};
 
@@ -429,10 +360,7 @@ void UIconTextButton_C::ShowIcon(bool bShouldShow)
 
 void UIconTextButton_C::Get_Dynamic_Material(class UMaterialInstanceDynamic** Ret_Material)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "Get Dynamic Material");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "Get Dynamic Material");
 
 	Params::IconTextButton_C_Get_Dynamic_Material Parms{};
 
@@ -450,10 +378,7 @@ void UIconTextButton_C::Get_Dynamic_Material(class UMaterialInstanceDynamic** Re
 
 void UIconTextButton_C::GetPressProgress(float* Progress)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTextButton_C", "GetPressProgress");
+	class UFunction* Func = Class->GetFunction("IconTextButton_C", "GetPressProgress");
 
 	Params::IconTextButton_C_GetPressProgress Parms{};
 

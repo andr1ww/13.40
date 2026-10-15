@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void S13_MainRoom_ToPunchboard::USequenceDirector_C::ExecuteUbergraph_SequenceDirector(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "ExecuteUbergraph_SequenceDirector");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "ExecuteUbergraph_SequenceDirector");
 
 	Params::SequenceDirector_C_ExecuteUbergraph_SequenceDirector Parms{};
 
@@ -43,10 +40,7 @@ void S13_MainRoom_ToPunchboard::USequenceDirector_C::ExecuteUbergraph_SequenceDi
 
 void S13_MainRoom_ToPunchboard::USequenceDirector_C::Audio_Camera_Move_Event(class USoundBase* Sound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "Audio Camera Move Event");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "Audio Camera Move Event");
 
 	Params::SequenceDirector_C_Audio_Camera_Move_Event Parms{};
 
@@ -61,10 +55,7 @@ void S13_MainRoom_ToPunchboard::USequenceDirector_C::Audio_Camera_Move_Event(cla
 
 void S13_MainRoom_ToPunchboard::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_0");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void S13_MainRoom_ToPunchboard::USequenceDirector_C::SequenceEvent__ENTRYPOINTSe
 
 void S13_MainRoom_ToPunchboard::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_1");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

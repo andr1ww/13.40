@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMiniShieldPotion_Prop_AnimBP_C::ExecuteUbergraph_MiniShieldPotion_Prop_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniShieldPotion_Prop_AnimBP_C", "ExecuteUbergraph_MiniShieldPotion_Prop_AnimBP");
+	class UFunction* Func = Class->GetFunction("MiniShieldPotion_Prop_AnimBP_C", "ExecuteUbergraph_MiniShieldPotion_Prop_AnimBP");
 
 	Params::MiniShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_MiniShieldPotion_Prop_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UMiniShieldPotion_Prop_AnimBP_C::ExecuteUbergraph_MiniShieldPotion_Prop_Ani
 
 void UMiniShieldPotion_Prop_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniShieldPotion_Prop_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("MiniShieldPotion_Prop_AnimBP_C", "AnimGraph");
 
 	Params::MiniShieldPotion_Prop_AnimBP_C_AnimGraph Parms{};
 

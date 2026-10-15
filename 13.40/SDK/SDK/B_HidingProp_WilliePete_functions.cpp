@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_HidingProp_WilliePete_C::ExecuteUbergraph_B_HidingProp_WilliePete(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "ExecuteUbergraph_B_HidingProp_WilliePete");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "ExecuteUbergraph_B_HidingProp_WilliePete");
 
 	Params::B_HidingProp_WilliePete_C_ExecuteUbergraph_B_HidingProp_WilliePete Parms{};
 
@@ -43,10 +40,7 @@ void AB_HidingProp_WilliePete_C::ExecuteUbergraph_B_HidingProp_WilliePete(int32 
 
 void AB_HidingProp_WilliePete_C::ResetGravity(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "ResetGravity");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "ResetGravity");
 
 	Params::B_HidingProp_WilliePete_C_ResetGravity Parms{};
 
@@ -61,10 +55,7 @@ void AB_HidingProp_WilliePete_C::ResetGravity(const struct FHitResult& Hit)
 
 void AB_HidingProp_WilliePete_C::Complete_Setup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "Complete Setup");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "Complete Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -82,10 +73,7 @@ void AB_HidingProp_WilliePete_C::Complete_Setup()
 
 void AB_HidingProp_WilliePete_C::BndEvt__overlapCylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "BndEvt__overlapCylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "BndEvt__overlapCylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::B_HidingProp_WilliePete_C_BndEvt__overlapCylinder_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -105,10 +93,7 @@ void AB_HidingProp_WilliePete_C::BndEvt__overlapCylinder_K2Node_ComponentBoundEv
 
 void AB_HidingProp_WilliePete_C::Remove_GE()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "Remove GE");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "Remove GE");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,10 +106,7 @@ void AB_HidingProp_WilliePete_C::Remove_GE()
 
 void AB_HidingProp_WilliePete_C::Non_Pawn_Teleport(class AActor* TeleportingActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "Non Pawn Teleport");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "Non Pawn Teleport");
 
 	Params::B_HidingProp_WilliePete_C_Non_Pawn_Teleport Parms{};
 
@@ -141,10 +123,7 @@ void AB_HidingProp_WilliePete_C::Non_Pawn_Teleport(class AActor* TeleportingActo
 
 void AB_HidingProp_WilliePete_C::Non_Pawn_Actor_Destroyed(class AActor* DestroyedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "Non Pawn Actor Destroyed");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "Non Pawn Actor Destroyed");
 
 	Params::B_HidingProp_WilliePete_C_Non_Pawn_Actor_Destroyed Parms{};
 
@@ -163,10 +142,7 @@ void AB_HidingProp_WilliePete_C::Non_Pawn_Actor_Destroyed(class AActor* Destroye
 
 void AB_HidingProp_WilliePete_C::OnReady_74044DD44988556292500EB8F289359F(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "OnReady_74044DD44988556292500EB8F289359F");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "OnReady_74044DD44988556292500EB8F289359F");
 
 	Params::B_HidingProp_WilliePete_C_OnReady_74044DD44988556292500EB8F289359F Parms{};
 
@@ -190,10 +166,7 @@ void AB_HidingProp_WilliePete_C::OnReady_74044DD44988556292500EB8F289359F(class 
 
 void AB_HidingProp_WilliePete_C::TeleportExitSpeed(const struct FVector& ExitFVector, float EnterSpeed, float OverrideSpeed, float MinimumSpeed, bool ForceSpeedOverride, struct FVector* TeleportExitVelocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "TeleportExitSpeed");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "TeleportExitSpeed");
 
 	Params::B_HidingProp_WilliePete_C_TeleportExitSpeed Parms{};
 
@@ -215,10 +188,7 @@ void AB_HidingProp_WilliePete_C::TeleportExitSpeed(const struct FVector& ExitFVe
 
 void AB_HidingProp_WilliePete_C::OnRep_AdjustedLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "OnRep_AdjustedLocation");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "OnRep_AdjustedLocation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -231,10 +201,7 @@ void AB_HidingProp_WilliePete_C::OnRep_AdjustedLocation()
 
 void AB_HidingProp_WilliePete_C::HelperLocationLogger(const class FString& inString)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "HelperLocationLogger");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "HelperLocationLogger");
 
 	Params::B_HidingProp_WilliePete_C_HelperLocationLogger Parms{};
 
@@ -249,10 +216,7 @@ void AB_HidingProp_WilliePete_C::HelperLocationLogger(const class FString& inStr
 
 void AB_HidingProp_WilliePete_C::OnRep_bSetSilentDie()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "OnRep_bSetSilentDie");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "OnRep_bSetSilentDie");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -263,10 +227,7 @@ void AB_HidingProp_WilliePete_C::OnRep_bSetSilentDie()
 
 void AB_HidingProp_WilliePete_C::OnRep_bSetSpawnedWaterBody()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "OnRep_bSetSpawnedWaterBody");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "OnRep_bSetSpawnedWaterBody");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +240,7 @@ void AB_HidingProp_WilliePete_C::OnRep_bSetSpawnedWaterBody()
 
 void AB_HidingProp_WilliePete_C::StopHiding(const class AFortPawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "StopHiding");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "StopHiding");
 
 	Params::B_HidingProp_WilliePete_C_StopHiding Parms{};
 
@@ -297,10 +255,7 @@ void AB_HidingProp_WilliePete_C::StopHiding(const class AFortPawn* Pawn)
 
 void AB_HidingProp_WilliePete_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HidingProp_WilliePete_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_HidingProp_WilliePete_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

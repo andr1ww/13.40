@@ -26,10 +26,7 @@ SDK_NAMESPACE_START
 
 int32 UFoliageStatistics::FoliageOverlappingBoxCount(class UObject* WorldContextObject, const class UStaticMesh* StaticMesh, const struct FBox& Box)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FoliageStatistics", "FoliageOverlappingBoxCount");
+	class UFunction* Func = StaticClass()->GetFunction("FoliageStatistics", "FoliageOverlappingBoxCount");
 
 	Params::FoliageStatistics_FoliageOverlappingBoxCount Parms{};
 
@@ -59,10 +56,7 @@ int32 UFoliageStatistics::FoliageOverlappingBoxCount(class UObject* WorldContext
 
 int32 UFoliageStatistics::FoliageOverlappingSphereCount(class UObject* WorldContextObject, const class UStaticMesh* StaticMesh, const struct FVector& CenterPosition, float Radius)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FoliageStatistics", "FoliageOverlappingSphereCount");
+	class UFunction* Func = StaticClass()->GetFunction("FoliageStatistics", "FoliageOverlappingSphereCount");
 
 	Params::FoliageStatistics_FoliageOverlappingSphereCount Parms{};
 
@@ -89,10 +83,7 @@ int32 UFoliageStatistics::FoliageOverlappingSphereCount(class UObject* WorldCont
 
 void UProceduralFoliageSpawner::Simulate(int32 NumSteps)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProceduralFoliageSpawner", "Simulate");
+	class UFunction* Func = Class->GetFunction("ProceduralFoliageSpawner", "Simulate");
 
 	Params::ProceduralFoliageSpawner_Simulate Parms{};
 
@@ -119,10 +110,7 @@ void UProceduralFoliageSpawner::Simulate(int32 NumSteps)
 
 void AInteractiveFoliageActor::CapsuleTouched(class UPrimitiveComponent* OverlappedComp, class AActor* Other, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& OverlapInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InteractiveFoliageActor", "CapsuleTouched");
+	class UFunction* Func = Class->GetFunction("InteractiveFoliageActor", "CapsuleTouched");
 
 	Params::InteractiveFoliageActor_CapsuleTouched Parms{};
 

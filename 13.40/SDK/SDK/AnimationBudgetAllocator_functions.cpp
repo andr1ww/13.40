@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UAnimationBudgetBlueprintLibrary::EnableAnimationBudget(class UObject* WorldContextObject, bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnimationBudgetBlueprintLibrary", "EnableAnimationBudget");
+	class UFunction* Func = StaticClass()->GetFunction("AnimationBudgetBlueprintLibrary", "EnableAnimationBudget");
 
 	Params::AnimationBudgetBlueprintLibrary_EnableAnimationBudget Parms{};
 
@@ -51,10 +48,7 @@ void UAnimationBudgetBlueprintLibrary::EnableAnimationBudget(class UObject* Worl
 
 void UAnimationBudgetBlueprintLibrary::SetAnimationBudgetParameters(class UObject* WorldContextObject, const struct FAnimationBudgetAllocatorParameters& InParameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnimationBudgetBlueprintLibrary", "SetAnimationBudgetParameters");
+	class UFunction* Func = StaticClass()->GetFunction("AnimationBudgetBlueprintLibrary", "SetAnimationBudgetParameters");
 
 	Params::AnimationBudgetBlueprintLibrary_SetAnimationBudgetParameters Parms{};
 
@@ -77,10 +71,7 @@ void UAnimationBudgetBlueprintLibrary::SetAnimationBudgetParameters(class UObjec
 
 void USkeletalMeshComponentBudgeted::SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SkeletalMeshComponentBudgeted", "SetAutoRegisterWithBudgetAllocator");
+	class UFunction* Func = Class->GetFunction("SkeletalMeshComponentBudgeted", "SetAutoRegisterWithBudgetAllocator");
 
 	Params::SkeletalMeshComponentBudgeted_SetAutoRegisterWithBudgetAllocator Parms{};
 

@@ -8,5 +8,7 @@ namespace FortGameMode
 	DefineHook(void, HandleStartingNewPlayer, AFortGameModeAthena* _this, AFortPlayerControllerAthena* a2);
 	DefineHook(bool, ReadyToStartMatch, AFortGameModeAthena* _this);
 
+	void InitWorldManager(AFortGameModeAthena* _this, AFortWorldManager* WorldManager);
+
 	void Init();
 }

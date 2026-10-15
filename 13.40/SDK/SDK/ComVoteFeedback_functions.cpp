@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UComVoteFeedback_C::ExecuteUbergraph_ComVoteFeedback(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ComVoteFeedback_C", "ExecuteUbergraph_ComVoteFeedback");
+	class UFunction* Func = Class->GetFunction("ComVoteFeedback_C", "ExecuteUbergraph_ComVoteFeedback");
 
 	Params::ComVoteFeedback_C_ExecuteUbergraph_ComVoteFeedback Parms{};
 
@@ -41,10 +38,7 @@ void UComVoteFeedback_C::ExecuteUbergraph_ComVoteFeedback(int32 EntryPoint)
 
 void UComVoteFeedback_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ComVoteFeedback_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ComVoteFeedback_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

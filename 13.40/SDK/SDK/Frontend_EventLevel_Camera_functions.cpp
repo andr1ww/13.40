@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void AFrontend_EventLevel_Camera_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_EventLevel_Camera_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("Frontend_EventLevel_Camera_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

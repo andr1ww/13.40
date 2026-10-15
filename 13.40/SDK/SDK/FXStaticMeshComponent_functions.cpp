@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UFXStaticMeshComponent_C::ApplyBuildingHitEffect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FXStaticMeshComponent_C", "ApplyBuildingHitEffect");
+	class UFunction* Func = Class->GetFunction("FXStaticMeshComponent_C", "ApplyBuildingHitEffect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -40,10 +37,7 @@ void UFXStaticMeshComponent_C::ApplyBuildingHitEffect()
 
 void UFXStaticMeshComponent_C::ApplyEffect(class UMaterialInterface* Source_Material, float FadeInTime, float Duration, float FadeOutTimer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FXStaticMeshComponent_C", "ApplyEffect");
+	class UFunction* Func = Class->GetFunction("FXStaticMeshComponent_C", "ApplyEffect");
 
 	Params::FXStaticMeshComponent_C_ApplyEffect Parms{};
 
@@ -61,10 +55,7 @@ void UFXStaticMeshComponent_C::ApplyEffect(class UMaterialInterface* Source_Mate
 
 void UFXStaticMeshComponent_C::ApplyAwakenEffect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FXStaticMeshComponent_C", "ApplyAwakenEffect");
+	class UFunction* Func = Class->GetFunction("FXStaticMeshComponent_C", "ApplyAwakenEffect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

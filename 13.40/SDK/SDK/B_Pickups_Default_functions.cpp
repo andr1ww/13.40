@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Pickups_Default_C::ExecuteUbergraph_B_Pickups_Default(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Default_C", "ExecuteUbergraph_B_Pickups_Default");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Default_C", "ExecuteUbergraph_B_Pickups_Default");
 
 	Params::B_Pickups_Default_C_ExecuteUbergraph_B_Pickups_Default Parms{};
 
@@ -41,10 +38,7 @@ void AB_Pickups_Default_C::ExecuteUbergraph_B_Pickups_Default(int32 EntryPoint)
 
 void AB_Pickups_Default_C::HideBackgroundAndSpotlight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Default_C", "HideBackgroundAndSpotlight");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Default_C", "HideBackgroundAndSpotlight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Pickups_Default_C::HideBackgroundAndSpotlight()
 
 void AB_Pickups_Default_C::OnPickedUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Default_C", "OnPickedUp");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Default_C", "OnPickedUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_Pickups_Default_C::OnPickedUp()
 
 void AB_Pickups_Default_C::OnTossed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Default_C", "OnTossed");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Default_C", "OnTossed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_Pickups_Default_C::OnTossed()
 
 void AB_Pickups_Default_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Default_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Default_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AB_Pickups_Default_C::UserConstructionScript()
 
 void AB_Pickups_Default_C::Setup_Light()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Default_C", "Setup Light");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Default_C", "Setup Light");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +95,7 @@ void AB_Pickups_Default_C::Setup_Light()
 
 void AB_Pickups_Default_C::Set_Initial_BKGD_Param(class UMaterialInstanceDynamic* Mid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Default_C", "Set Initial BKGD Param");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Default_C", "Set Initial BKGD Param");
 
 	Params::B_Pickups_Default_C_Set_Initial_BKGD_Param Parms{};
 
@@ -131,10 +110,7 @@ void AB_Pickups_Default_C::Set_Initial_BKGD_Param(class UMaterialInstanceDynamic
 
 void AB_Pickups_Default_C::Randomize_Mesh_Rotation_for_BR()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Pickups_Default_C", "Randomize Mesh Rotation for BR");
+	class UFunction* Func = Class->GetFunction("B_Pickups_Default_C", "Randomize Mesh Rotation for BR");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

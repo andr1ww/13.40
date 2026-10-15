@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_HeldObject_Parent_C::ExecuteUbergraph_BGA_HeldObject_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ExecuteUbergraph_BGA_HeldObject_Parent");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ExecuteUbergraph_BGA_HeldObject_Parent");
 
 	Params::BGA_HeldObject_Parent_C_ExecuteUbergraph_BGA_HeldObject_Parent Parms{};
 
@@ -41,10 +38,7 @@ void ABGA_HeldObject_Parent_C::ExecuteUbergraph_BGA_HeldObject_Parent(int32 Entr
 
 void ABGA_HeldObject_Parent_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void ABGA_HeldObject_Parent_C::ReceiveDestroyed()
 
 void ABGA_HeldObject_Parent_C::OnSecondInteract(class AFortPawn* InteractingPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnSecondInteract");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnSecondInteract");
 
 	Params::BGA_HeldObject_Parent_C_OnSecondInteract Parms{};
 
@@ -75,10 +66,7 @@ void ABGA_HeldObject_Parent_C::OnSecondInteract(class AFortPawn* InteractingPawn
 
 void ABGA_HeldObject_Parent_C::BndEvt__FortHeldObject_K2Node_ComponentBoundEvent_5_OnHeldObjectPlaced__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortHeldObject_K2Node_ComponentBoundEvent_5_OnHeldObjectPlaced__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortHeldObject_K2Node_ComponentBoundEvent_5_OnHeldObjectPlaced__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void ABGA_HeldObject_Parent_C::BndEvt__FortHeldObject_K2Node_ComponentBoundEvent
 
 void ABGA_HeldObject_Parent_C::OnFirstInteract(class AFortPawn* Interacting_Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnFirstInteract");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnFirstInteract");
 
 	Params::BGA_HeldObject_Parent_C_OnFirstInteract Parms{};
 
@@ -109,10 +94,7 @@ void ABGA_HeldObject_Parent_C::OnFirstInteract(class AFortPawn* Interacting_Pawn
 
 void ABGA_HeldObject_Parent_C::BndEvt__FortLinkToActor_K2Node_ComponentBoundEvent_0_OnLinkedActorDestroyed__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortLinkToActor_K2Node_ComponentBoundEvent_0_OnLinkedActorDestroyed__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortLinkToActor_K2Node_ComponentBoundEvent_0_OnLinkedActorDestroyed__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -132,10 +114,7 @@ void ABGA_HeldObject_Parent_C::BndEvt__FortLinkToActor_K2Node_ComponentBoundEven
 
 void ABGA_HeldObject_Parent_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ReceiveHit");
 
 	Params::BGA_HeldObject_Parent_C_ReceiveHit Parms{};
 
@@ -157,10 +136,7 @@ void ABGA_HeldObject_Parent_C::ReceiveHit(class UPrimitiveComponent* MyComp, cla
 
 void ABGA_HeldObject_Parent_C::ResetRelativeTransformOnAttach()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ResetRelativeTransformOnAttach");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ResetRelativeTransformOnAttach");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +147,7 @@ void ABGA_HeldObject_Parent_C::ResetRelativeTransformOnAttach()
 
 void ABGA_HeldObject_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -185,10 +158,7 @@ void ABGA_HeldObject_Parent_C::ReceiveBeginPlay()
 
 void ABGA_HeldObject_Parent_C::BndEvt__FortHeldObject_K2Node_ComponentBoundEvent_6_OnHeldObjectPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortHeldObject_K2Node_ComponentBoundEvent_6_OnHeldObjectPickedUp__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortHeldObject_K2Node_ComponentBoundEvent_6_OnHeldObjectPickedUp__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +173,7 @@ void ABGA_HeldObject_Parent_C::BndEvt__FortHeldObject_K2Node_ComponentBoundEvent
 
 void ABGA_HeldObject_Parent_C::AttachSetup(const struct FVector& Location, const struct FVector& HitNormal, bool NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "AttachSetup");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "AttachSetup");
 
 	Params::BGA_HeldObject_Parent_C_AttachSetup Parms{};
 
@@ -225,10 +192,7 @@ void ABGA_HeldObject_Parent_C::AttachSetup(const struct FVector& Location, const
 
 void ABGA_HeldObject_Parent_C::BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_4_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_4_OnProjectileStopDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_4_OnProjectileStopDelegate__DelegateSignature");
 
 	Params::BGA_HeldObject_Parent_C_BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_4_OnProjectileStopDelegate__DelegateSignature Parms{};
 
@@ -243,10 +207,7 @@ void ABGA_HeldObject_Parent_C::BndEvt__FortProjectileMovement_K2Node_ComponentBo
 
 void ABGA_HeldObject_Parent_C::BndEvt__FortHeldObject_K2Node_ComponentBoundEvent_2_OnHeldObjectThrown__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortHeldObject_K2Node_ComponentBoundEvent_2_OnHeldObjectThrown__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortHeldObject_K2Node_ComponentBoundEvent_2_OnHeldObjectThrown__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -260,10 +221,7 @@ void ABGA_HeldObject_Parent_C::BndEvt__FortHeldObject_K2Node_ComponentBoundEvent
 
 void ABGA_HeldObject_Parent_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BlueprintOnInteract");
 
 	Params::BGA_HeldObject_Parent_C_BlueprintOnInteract Parms{};
 
@@ -283,10 +241,7 @@ void ABGA_HeldObject_Parent_C::BlueprintOnInteract(const class AFortPawn* Intera
 
 void ABGA_HeldObject_Parent_C::BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_3_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_3_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_3_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::BGA_HeldObject_Parent_C_BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_3_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -306,10 +261,7 @@ void ABGA_HeldObject_Parent_C::BndEvt__FortWaterInteraction_K2Node_ComponentBoun
 
 void ABGA_HeldObject_Parent_C::BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature");
 
 	Params::BGA_HeldObject_Parent_C_BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
@@ -325,10 +277,7 @@ void ABGA_HeldObject_Parent_C::BndEvt__FortProjectileMovement_K2Node_ComponentBo
 
 void ABGA_HeldObject_Parent_C::PlayGenericDeath()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "PlayGenericDeath");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "PlayGenericDeath");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -339,10 +288,7 @@ void ABGA_HeldObject_Parent_C::PlayGenericDeath()
 
 void ABGA_HeldObject_Parent_C::HideActor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "HideActor");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "HideActor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -361,10 +307,7 @@ void ABGA_HeldObject_Parent_C::HideActor()
 
 void ABGA_HeldObject_Parent_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnDeathServer");
 
 	Params::BGA_HeldObject_Parent_C_OnDeathServer Parms{};
 
@@ -389,10 +332,7 @@ void ABGA_HeldObject_Parent_C::OnDeathServer(float Damage, const struct FGamepla
 
 void ABGA_HeldObject_Parent_C::OnReady_BC2B03BE47B5044C184341970EAD7AAB(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnReady_BC2B03BE47B5044C184341970EAD7AAB");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnReady_BC2B03BE47B5044C184341970EAD7AAB");
 
 	Params::BGA_HeldObject_Parent_C_OnReady_BC2B03BE47B5044C184341970EAD7AAB Parms{};
 
@@ -409,10 +349,7 @@ void ABGA_HeldObject_Parent_C::OnReady_BC2B03BE47B5044C184341970EAD7AAB(class AF
 
 void ABGA_HeldObject_Parent_C::OnRep_RepStartMoving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnRep_RepStartMoving");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnRep_RepStartMoving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -423,10 +360,7 @@ void ABGA_HeldObject_Parent_C::OnRep_RepStartMoving()
 
 void ABGA_HeldObject_Parent_C::OnRep_RepHideActor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnRep_RepHideActor");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnRep_RepHideActor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -442,10 +376,7 @@ void ABGA_HeldObject_Parent_C::OnRep_RepHideActor()
 
 bool ABGA_HeldObject_Parent_C::ShouldDie(float Damage, class AController* EventInstigator, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ShouldDie");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "ShouldDie");
 
 	Params::BGA_HeldObject_Parent_C_ShouldDie Parms{};
 
@@ -466,10 +397,7 @@ bool ABGA_HeldObject_Parent_C::ShouldDie(float Damage, class AController* EventI
 
 void ABGA_HeldObject_Parent_C::FindAttachAngle(const struct FVector& HitLoc)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "FindAttachAngle");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "FindAttachAngle");
 
 	Params::BGA_HeldObject_Parent_C_FindAttachAngle Parms{};
 
@@ -486,10 +414,7 @@ void ABGA_HeldObject_Parent_C::FindAttachAngle(const struct FVector& HitLoc)
 
 void ABGA_HeldObject_Parent_C::GetAttachComponent(class USceneComponent** Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "GetAttachComponent");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "GetAttachComponent");
 
 	Params::BGA_HeldObject_Parent_C_GetAttachComponent Parms{};
 
@@ -505,10 +430,7 @@ void ABGA_HeldObject_Parent_C::GetAttachComponent(class USceneComponent** Compon
 
 void ABGA_HeldObject_Parent_C::SetAttachDefaultTransform()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "SetAttachDefaultTransform");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "SetAttachDefaultTransform");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -519,10 +441,7 @@ void ABGA_HeldObject_Parent_C::SetAttachDefaultTransform()
 
 void ABGA_HeldObject_Parent_C::OnRep_AttachTransform()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnRep_AttachTransform");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "OnRep_AttachTransform");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -533,10 +452,7 @@ void ABGA_HeldObject_Parent_C::OnRep_AttachTransform()
 
 void ABGA_HeldObject_Parent_C::SetBeenThrownPlaced()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "SetBeenThrownPlaced");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "SetBeenThrownPlaced");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -552,10 +468,7 @@ void ABGA_HeldObject_Parent_C::SetBeenThrownPlaced()
 
 bool ABGA_HeldObject_Parent_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BlueprintCanInteract");
 
 	Params::BGA_HeldObject_Parent_C_BlueprintCanInteract Parms{};
 
@@ -578,10 +491,7 @@ bool ABGA_HeldObject_Parent_C::BlueprintCanInteract(const class AFortPawn* Inter
 
 class FText ABGA_HeldObject_Parent_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BlueprintGetInteractionString");
 
 	Params::BGA_HeldObject_Parent_C_BlueprintGetInteractionString Parms{};
 
@@ -604,10 +514,7 @@ class FText ABGA_HeldObject_Parent_C::BlueprintGetInteractionString(const class 
 
 bool ABGA_HeldObject_Parent_C::BlueprintGetInteractionTime(const class AFortPawn* InteractingPawn, float* OutInteractionTime, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BlueprintGetInteractionTime");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "BlueprintGetInteractionTime");
 
 	Params::BGA_HeldObject_Parent_C_BlueprintGetInteractionTime Parms{};
 
@@ -631,10 +538,7 @@ bool ABGA_HeldObject_Parent_C::BlueprintGetInteractionTime(const class AFortPawn
 
 void ABGA_HeldObject_Parent_C::GetCanFirstInteract(class AFortPawn* InteractingPawn, bool* Return) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_HeldObject_Parent_C", "GetCanFirstInteract");
+	class UFunction* Func = Class->GetFunction("BGA_HeldObject_Parent_C", "GetCanFirstInteract");
 
 	Params::BGA_HeldObject_Parent_C_GetCanFirstInteract Parms{};
 

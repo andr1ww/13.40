@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UBattlePassTracker_C::HandleInitialState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassTracker_C", "HandleInitialState");
+	class UFunction* Func = Class->GetFunction("BattlePassTracker_C", "HandleInitialState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UBattlePassTracker_C::HandleInitialState()
 
 void UBattlePassTracker_C::HandleButtonIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassTracker_C", "HandleButtonIn");
+	class UFunction* Func = Class->GetFunction("BattlePassTracker_C", "HandleButtonIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

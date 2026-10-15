@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Keycard_Mark_Passive_Parent_C::ExecuteUbergraph_GA_Keycard_Mark_Passive_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Keycard_Mark_Passive_Parent_C", "ExecuteUbergraph_GA_Keycard_Mark_Passive_Parent");
+	class UFunction* Func = Class->GetFunction("GA_Keycard_Mark_Passive_Parent_C", "ExecuteUbergraph_GA_Keycard_Mark_Passive_Parent");
 
 	Params::GA_Keycard_Mark_Passive_Parent_C_ExecuteUbergraph_GA_Keycard_Mark_Passive_Parent Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Keycard_Mark_Passive_Parent_C::ExecuteUbergraph_GA_Keycard_Mark_Passive
 
 void UGA_Keycard_Mark_Passive_Parent_C::DrawTrailToVault()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Keycard_Mark_Passive_Parent_C", "DrawTrailToVault");
+	class UFunction* Func = Class->GetFunction("GA_Keycard_Mark_Passive_Parent_C", "DrawTrailToVault");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Keycard_Mark_Passive_Parent_C::DrawTrailToVault()
 
 void UGA_Keycard_Mark_Passive_Parent_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Keycard_Mark_Passive_Parent_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Keycard_Mark_Passive_Parent_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGA_Keycard_Mark_Passive_Parent_C::K2_ActivateAbility()
 
 void UGA_Keycard_Mark_Passive_Parent_C::InitAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Keycard_Mark_Passive_Parent_C", "InitAbility");
+	class UFunction* Func = Class->GetFunction("GA_Keycard_Mark_Passive_Parent_C", "InitAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

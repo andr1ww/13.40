@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEventLeaderboardSummary_C::ExecuteUbergraph_EventLeaderboardSummary(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardSummary_C", "ExecuteUbergraph_EventLeaderboardSummary");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardSummary_C", "ExecuteUbergraph_EventLeaderboardSummary");
 
 	Params::EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary Parms{};
 
@@ -41,10 +38,7 @@ void UEventLeaderboardSummary_C::ExecuteUbergraph_EventLeaderboardSummary(int32 
 
 void UEventLeaderboardSummary_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardSummary_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardSummary_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UEventLeaderboardSummary_C::RefreshDataBP()
 
 void UEventLeaderboardSummary_C::BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardSummary_C", "BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardSummary_C", "BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -77,10 +68,7 @@ void UEventLeaderboardSummary_C::BndEvt__Button_ViewAll_K2Node_ComponentBoundEve
 
 void UEventLeaderboardSummary_C::BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardSummary_C", "BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardSummary_C", "BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -97,10 +85,7 @@ void UEventLeaderboardSummary_C::BndEvt__Button_ViewAll_K2Node_ComponentBoundEve
 
 void UEventLeaderboardSummary_C::EventColorize(const struct FFortTournamentDisplayInfo& TournamentDisplayInfo_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardSummary_C", "EventColorize");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardSummary_C", "EventColorize");
 
 	Params::EventLeaderboardSummary_C_EventColorize Parms{};
 
@@ -117,10 +102,7 @@ void UEventLeaderboardSummary_C::EventColorize(const struct FFortTournamentDispl
 
 void UEventLeaderboardSummary_C::BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardSummary_C", "BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardSummary_C", "BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_SplineVolumeTrail_v1b_C::ExecuteUbergraph_BP_SplineVolumeTrail_v1b(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ExecuteUbergraph_BP_SplineVolumeTrail_v1b");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ExecuteUbergraph_BP_SplineVolumeTrail_v1b");
 
 	Params::BP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b Parms{};
 
@@ -41,10 +38,7 @@ void ABP_SplineVolumeTrail_v1b_C::ExecuteUbergraph_BP_SplineVolumeTrail_v1b(int3
 
 void ABP_SplineVolumeTrail_v1b_C::GenerateCurveTextures()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "GenerateCurveTextures");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "GenerateCurveTextures");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_SplineVolumeTrail_v1b_C::GenerateCurveTextures()
 
 void ABP_SplineVolumeTrail_v1b_C::ClearRenderTarget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ClearRenderTarget");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ClearRenderTarget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_SplineVolumeTrail_v1b_C::ClearRenderTarget()
 
 void ABP_SplineVolumeTrail_v1b_C::Recently_Rendered_Check()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "Recently Rendered Check");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "Recently Rendered Check");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_SplineVolumeTrail_v1b_C::Recently_Rendered_Check()
 
 void ABP_SplineVolumeTrail_v1b_C::Tick_Interval_LOD_Check()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "Tick Interval LOD Check");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "Tick Interval LOD Check");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ABP_SplineVolumeTrail_v1b_C::Tick_Interval_LOD_Check()
 
 void ABP_SplineVolumeTrail_v1b_C::ManuallyStopSplineSystem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ManuallyStopSplineSystem");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ManuallyStopSplineSystem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void ABP_SplineVolumeTrail_v1b_C::ManuallyStopSplineSystem()
 
 void ABP_SplineVolumeTrail_v1b_C::DebugMode_Rotate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "DebugMode_Rotate");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "DebugMode_Rotate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void ABP_SplineVolumeTrail_v1b_C::DebugMode_Rotate()
 
 void ABP_SplineVolumeTrail_v1b_C::SplineSystemDurationReached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SplineSystemDurationReached");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SplineSystemDurationReached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +115,7 @@ void ABP_SplineVolumeTrail_v1b_C::SplineSystemDurationReached()
 
 void ABP_SplineVolumeTrail_v1b_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,10 +128,7 @@ void ABP_SplineVolumeTrail_v1b_C::ReceiveBeginPlay()
 
 void ABP_SplineVolumeTrail_v1b_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ReceiveTick");
 
 	Params::BP_SplineVolumeTrail_v1b_C_ReceiveTick Parms{};
 
@@ -173,10 +143,7 @@ void ABP_SplineVolumeTrail_v1b_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "DebugRotateTimeline__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "DebugRotateTimeline__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +154,7 @@ void ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline__UpdateFunc()
 
 void ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "DebugRotateTimeline__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "DebugRotateTimeline__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -201,10 +165,7 @@ void ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline__FinishedFunc()
 
 void ABP_SplineVolumeTrail_v1b_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +176,7 @@ void ABP_SplineVolumeTrail_v1b_C::UserConstructionScript()
 
 void ABP_SplineVolumeTrail_v1b_C::AddSplineMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "AddSplineMesh");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "AddSplineMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -231,10 +189,7 @@ void ABP_SplineVolumeTrail_v1b_C::AddSplineMesh()
 
 void ABP_SplineVolumeTrail_v1b_C::SetStartAndEndSplineMesh(bool Update_Spline_Mesh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetStartAndEndSplineMesh");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetStartAndEndSplineMesh");
 
 	Params::BP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh Parms{};
 
@@ -249,10 +204,7 @@ void ABP_SplineVolumeTrail_v1b_C::SetStartAndEndSplineMesh(bool Update_Spline_Me
 
 void ABP_SplineVolumeTrail_v1b_C::AddSplinePoint()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "AddSplinePoint");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "AddSplinePoint");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -263,10 +215,7 @@ void ABP_SplineVolumeTrail_v1b_C::AddSplinePoint()
 
 void ABP_SplineVolumeTrail_v1b_C::UpdateSplinePointPosition()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UpdateSplinePointPosition");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UpdateSplinePointPosition");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -277,10 +226,7 @@ void ABP_SplineVolumeTrail_v1b_C::UpdateSplinePointPosition()
 
 void ABP_SplineVolumeTrail_v1b_C::SplineTimestampManagement()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SplineTimestampManagement");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SplineTimestampManagement");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -291,10 +237,7 @@ void ABP_SplineVolumeTrail_v1b_C::SplineTimestampManagement()
 
 void ABP_SplineVolumeTrail_v1b_C::ScaleSplineMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ScaleSplineMesh");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ScaleSplineMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -305,10 +248,7 @@ void ABP_SplineVolumeTrail_v1b_C::ScaleSplineMesh()
 
 void ABP_SplineVolumeTrail_v1b_C::UpdateMID()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UpdateMID");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UpdateMID");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -319,10 +259,7 @@ void ABP_SplineVolumeTrail_v1b_C::UpdateMID()
 
 void ABP_SplineVolumeTrail_v1b_C::UpdateParticleSystemPosition()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UpdateParticleSystemPosition");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UpdateParticleSystemPosition");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -333,10 +270,7 @@ void ABP_SplineVolumeTrail_v1b_C::UpdateParticleSystemPosition()
 
 void ABP_SplineVolumeTrail_v1b_C::RollSplineMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "RollSplineMesh");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "RollSplineMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -349,10 +283,7 @@ void ABP_SplineVolumeTrail_v1b_C::RollSplineMesh()
 
 void ABP_SplineVolumeTrail_v1b_C::SetForwardAxisOnSplineMesh(class USplineMeshComponent* SplineMesh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetForwardAxisOnSplineMesh");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetForwardAxisOnSplineMesh");
 
 	Params::BP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh Parms{};
 
@@ -367,10 +298,7 @@ void ABP_SplineVolumeTrail_v1b_C::SetForwardAxisOnSplineMesh(class USplineMeshCo
 
 void ABP_SplineVolumeTrail_v1b_C::SetNewSplinePointsBool()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetNewSplinePointsBool");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetNewSplinePointsBool");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -383,10 +311,7 @@ void ABP_SplineVolumeTrail_v1b_C::SetNewSplinePointsBool()
 
 bool ABP_SplineVolumeTrail_v1b_C::AddSplineDistanceCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "AddSplineDistanceCheck");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "AddSplineDistanceCheck");
 
 	Params::BP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck Parms{};
 
@@ -401,10 +326,7 @@ bool ABP_SplineVolumeTrail_v1b_C::AddSplineDistanceCheck()
 
 void ABP_SplineVolumeTrail_v1b_C::SetWasRecentlyRendered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetWasRecentlyRendered");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetWasRecentlyRendered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -415,10 +337,7 @@ void ABP_SplineVolumeTrail_v1b_C::SetWasRecentlyRendered()
 
 void ABP_SplineVolumeTrail_v1b_C::TickIntervalLODCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "TickIntervalLODCheck");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "TickIntervalLODCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -433,10 +352,7 @@ void ABP_SplineVolumeTrail_v1b_C::TickIntervalLODCheck()
 
 void ABP_SplineVolumeTrail_v1b_C::GetLinearColorFromCurveAtTime(class UCurveLinearColor* Curve_Linear_Color, int32 Index_0, struct FLinearColor* LinearColorOut)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "GetLinearColorFromCurveAtTime");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "GetLinearColorFromCurveAtTime");
 
 	Params::BP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime Parms{};
 
@@ -455,10 +371,7 @@ void ABP_SplineVolumeTrail_v1b_C::GetLinearColorFromCurveAtTime(class UCurveLine
 
 void ABP_SplineVolumeTrail_v1b_C::RedistributePointsAlongSpline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "RedistributePointsAlongSpline");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "RedistributePointsAlongSpline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -469,10 +382,7 @@ void ABP_SplineVolumeTrail_v1b_C::RedistributePointsAlongSpline()
 
 void ABP_SplineVolumeTrail_v1b_C::SplineUpdateOnTick()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SplineUpdateOnTick");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SplineUpdateOnTick");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -486,10 +396,7 @@ void ABP_SplineVolumeTrail_v1b_C::SplineUpdateOnTick()
 
 void ABP_SplineVolumeTrail_v1b_C::ReturnSplineMeshToPool(class USplineMeshComponent* SplineMesh, int32 IndexToRemove)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ReturnSplineMeshToPool");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "ReturnSplineMeshToPool");
 
 	Params::BP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool Parms{};
 
@@ -509,10 +416,7 @@ void ABP_SplineVolumeTrail_v1b_C::ReturnSplineMeshToPool(class USplineMeshCompon
 
 void ABP_SplineVolumeTrail_v1b_C::BakeLinearColor(class UCurveLinearColor* Curve_Linear_Color, int32 Pixel__X_, struct FLinearColor* LinearColorOut)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "BakeLinearColor");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "BakeLinearColor");
 
 	Params::BP_SplineVolumeTrail_v1b_C_BakeLinearColor Parms{};
 
@@ -531,10 +435,7 @@ void ABP_SplineVolumeTrail_v1b_C::BakeLinearColor(class UCurveLinearColor* Curve
 
 void ABP_SplineVolumeTrail_v1b_C::DestroyAllSplineMeshes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "DestroyAllSplineMeshes");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "DestroyAllSplineMeshes");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -547,10 +448,7 @@ void ABP_SplineVolumeTrail_v1b_C::DestroyAllSplineMeshes()
 
 void ABP_SplineVolumeTrail_v1b_C::SetStartAndEndAllSplineMeshes(bool Update_All_Spline_Meshes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetStartAndEndAllSplineMeshes");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "SetStartAndEndAllSplineMeshes");
 
 	Params::BP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes Parms{};
 
@@ -568,10 +466,7 @@ void ABP_SplineVolumeTrail_v1b_C::SetStartAndEndAllSplineMeshes(bool Update_All_
 
 void ABP_SplineVolumeTrail_v1b_C::GetSocketLocationWS(class FName Socket_Name, struct FVector* Location_WS)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "GetSocketLocationWS");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "GetSocketLocationWS");
 
 	Params::BP_SplineVolumeTrail_v1b_C_GetSocketLocationWS Parms{};
 
@@ -589,10 +484,7 @@ void ABP_SplineVolumeTrail_v1b_C::GetSocketLocationWS(class FName Socket_Name, s
 
 void ABP_SplineVolumeTrail_v1b_C::UpdateCheapSplinesWPOVectors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UpdateCheapSplinesWPOVectors");
+	class UFunction* Func = Class->GetFunction("BP_SplineVolumeTrail_v1b_C", "UpdateCheapSplinesWPOVectors");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

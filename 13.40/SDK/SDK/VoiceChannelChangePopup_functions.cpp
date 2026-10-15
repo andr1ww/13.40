@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UVoiceChannelChangePopup_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelChangePopup_C", "Construct");
+	class UFunction* Func = Class->GetFunction("VoiceChannelChangePopup_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UVoiceChannelChangePopup_C::Construct()
 
 void UVoiceChannelChangePopup_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelChangePopup_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("VoiceChannelChangePopup_C", "PreConstruct");
 
 	Params::VoiceChannelChangePopup_C_PreConstruct Parms{};
 
@@ -55,10 +49,7 @@ void UVoiceChannelChangePopup_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UVoiceChannelChangePopup_C::Popup_Animation_Finished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelChangePopup_C", "Popup Animation Finished");
+	class UFunction* Func = Class->GetFunction("VoiceChannelChangePopup_C", "Popup Animation Finished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UVoiceChannelChangePopup_C::Popup_Animation_Finished()
 
 void UVoiceChannelChangePopup_C::OnPlayOpenAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnPlayOpenAnimation");
+	class UFunction* Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnPlayOpenAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UVoiceChannelChangePopup_C::OnPlayOpenAnimation()
 
 void UVoiceChannelChangePopup_C::OnPlayCloseAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnPlayCloseAnimation");
+	class UFunction* Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnPlayCloseAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UVoiceChannelChangePopup_C::OnPlayCloseAnimation()
 
 void UVoiceChannelChangePopup_C::OnInputModeChanged(ECommonInputType NewInputType_OnInputModeChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnInputModeChanged");
+	class UFunction* Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnInputModeChanged");
 
 	Params::VoiceChannelChangePopup_C_OnInputModeChanged Parms{};
 
@@ -119,10 +101,7 @@ void UVoiceChannelChangePopup_C::OnInputModeChanged(ECommonInputType NewInputTyp
 
 void UVoiceChannelChangePopup_C::ExecuteUbergraph_VoiceChannelChangePopup(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelChangePopup_C", "ExecuteUbergraph_VoiceChannelChangePopup");
+	class UFunction* Func = Class->GetFunction("VoiceChannelChangePopup_C", "ExecuteUbergraph_VoiceChannelChangePopup");
 
 	Params::VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup Parms{};
 

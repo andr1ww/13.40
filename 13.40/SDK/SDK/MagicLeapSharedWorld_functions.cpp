@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AMagicLeapSharedWorldGameMode::DetermineSharedWorldData(struct FMagicLeapSharedWorldSharedData* NewSharedWorldData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldGameMode", "DetermineSharedWorldData");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldGameMode", "DetermineSharedWorldData");
 
 	Params::MagicLeapSharedWorldGameMode_DetermineSharedWorldData Parms{};
 
@@ -47,10 +44,7 @@ void AMagicLeapSharedWorldGameMode::DetermineSharedWorldData(struct FMagicLeapSh
 
 void AMagicLeapSharedWorldGameMode::SelectChosenOne()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldGameMode", "SelectChosenOne");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldGameMode", "SelectChosenOne");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -68,10 +62,7 @@ void AMagicLeapSharedWorldGameMode::SelectChosenOne()
 
 bool AMagicLeapSharedWorldGameMode::SendSharedWorldDataToClients()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldGameMode", "SendSharedWorldDataToClients");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldGameMode", "SendSharedWorldDataToClients");
 
 	Params::MagicLeapSharedWorldGameMode_SendSharedWorldDataToClients Parms{};
 
@@ -91,10 +82,7 @@ bool AMagicLeapSharedWorldGameMode::SendSharedWorldDataToClients()
 
 void AMagicLeapSharedWorldGameState::OnReplicate_AlignmentTransforms()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldGameState", "OnReplicate_AlignmentTransforms");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldGameState", "OnReplicate_AlignmentTransforms");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -110,10 +98,7 @@ void AMagicLeapSharedWorldGameState::OnReplicate_AlignmentTransforms()
 
 void AMagicLeapSharedWorldGameState::OnReplicate_SharedWorldData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldGameState", "OnReplicate_SharedWorldData");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldGameState", "OnReplicate_SharedWorldData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -131,10 +116,7 @@ void AMagicLeapSharedWorldGameState::OnReplicate_SharedWorldData()
 
 struct FTransform AMagicLeapSharedWorldGameState::CalculateXRCameraRootTransform() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldGameState", "CalculateXRCameraRootTransform");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldGameState", "CalculateXRCameraRootTransform");
 
 	Params::MagicLeapSharedWorldGameState_CalculateXRCameraRootTransform Parms{};
 
@@ -154,10 +136,7 @@ struct FTransform AMagicLeapSharedWorldGameState::CalculateXRCameraRootTransform
 
 void AMagicLeapSharedWorldPlayerController::ClientMarkReadyForSendingLocalData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "ClientMarkReadyForSendingLocalData");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "ClientMarkReadyForSendingLocalData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -175,10 +154,7 @@ void AMagicLeapSharedWorldPlayerController::ClientMarkReadyForSendingLocalData()
 
 void AMagicLeapSharedWorldPlayerController::ClientSetChosenOne(bool bChosenOne)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "ClientSetChosenOne");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "ClientSetChosenOne");
 
 	Params::MagicLeapSharedWorldPlayerController_ClientSetChosenOne Parms{};
 
@@ -200,10 +176,7 @@ void AMagicLeapSharedWorldPlayerController::ClientSetChosenOne(bool bChosenOne)
 
 void AMagicLeapSharedWorldPlayerController::ServerSetAlignmentTransforms(const struct FMagicLeapSharedWorldAlignmentTransforms& InAlignmentTransforms)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "ServerSetAlignmentTransforms");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "ServerSetAlignmentTransforms");
 
 	Params::MagicLeapSharedWorldPlayerController_ServerSetAlignmentTransforms Parms{};
 
@@ -225,10 +198,7 @@ void AMagicLeapSharedWorldPlayerController::ServerSetAlignmentTransforms(const s
 
 void AMagicLeapSharedWorldPlayerController::ServerSetLocalWorldData(const struct FMagicLeapSharedWorldLocalData& LocalWorldReplicationData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "ServerSetLocalWorldData");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "ServerSetLocalWorldData");
 
 	Params::MagicLeapSharedWorldPlayerController_ServerSetLocalWorldData Parms{};
 
@@ -250,10 +220,7 @@ void AMagicLeapSharedWorldPlayerController::ServerSetLocalWorldData(const struct
 
 bool AMagicLeapSharedWorldPlayerController::CanSendLocalDataToServer() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "CanSendLocalDataToServer");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "CanSendLocalDataToServer");
 
 	Params::MagicLeapSharedWorldPlayerController_CanSendLocalDataToServer Parms{};
 
@@ -275,10 +242,7 @@ bool AMagicLeapSharedWorldPlayerController::CanSendLocalDataToServer() const
 
 bool AMagicLeapSharedWorldPlayerController::IsChosenOne() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "IsChosenOne");
+	class UFunction* Func = Class->GetFunction("MagicLeapSharedWorldPlayerController", "IsChosenOne");
 
 	Params::MagicLeapSharedWorldPlayerController_IsChosenOne Parms{};
 

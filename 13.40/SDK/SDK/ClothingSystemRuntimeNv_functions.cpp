@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UClothingSimulationInteractorNv::SetAnimDriveDamperStiffness(float InStiffness)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractorNv", "SetAnimDriveDamperStiffness");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractorNv", "SetAnimDriveDamperStiffness");
 
 	Params::ClothingSimulationInteractorNv_SetAnimDriveDamperStiffness Parms{};
 

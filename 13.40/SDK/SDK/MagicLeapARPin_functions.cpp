@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 class UMagicLeapARPinSaveGame* UMagicLeapARPinComponent::GetPinData(TSubclassOf<class UMagicLeapARPinSaveGame> PinDataClass_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapARPinComponent", "GetPinData");
+	class UFunction* Func = Class->GetFunction("MagicLeapARPinComponent", "GetPinData");
 
 	Params::MagicLeapARPinComponent_GetPinData Parms{};
 
@@ -52,10 +49,7 @@ class UMagicLeapARPinSaveGame* UMagicLeapARPinComponent::GetPinData(TSubclassOf<
 
 bool UMagicLeapARPinComponent::GetPinnedPinID(struct FGuid* PinID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapARPinComponent", "GetPinnedPinID");
+	class UFunction* Func = Class->GetFunction("MagicLeapARPinComponent", "GetPinnedPinID");
 
 	Params::MagicLeapARPinComponent_GetPinnedPinID Parms{};
 
@@ -81,10 +75,7 @@ bool UMagicLeapARPinComponent::GetPinnedPinID(struct FGuid* PinID)
 
 bool UMagicLeapARPinComponent::PinActor(class AActor* ActorToPin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapARPinComponent", "PinActor");
+	class UFunction* Func = Class->GetFunction("MagicLeapARPinComponent", "PinActor");
 
 	Params::MagicLeapARPinComponent_PinActor Parms{};
 
@@ -109,10 +100,7 @@ bool UMagicLeapARPinComponent::PinActor(class AActor* ActorToPin)
 
 bool UMagicLeapARPinComponent::PinSceneComponent(class USceneComponent* ComponentToPin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapARPinComponent", "PinSceneComponent");
+	class UFunction* Func = Class->GetFunction("MagicLeapARPinComponent", "PinSceneComponent");
 
 	Params::MagicLeapARPinComponent_PinSceneComponent Parms{};
 
@@ -134,10 +122,7 @@ bool UMagicLeapARPinComponent::PinSceneComponent(class USceneComponent* Componen
 
 void UMagicLeapARPinComponent::UnPin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapARPinComponent", "UnPin");
+	class UFunction* Func = Class->GetFunction("MagicLeapARPinComponent", "UnPin");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -156,10 +141,7 @@ void UMagicLeapARPinComponent::UnPin()
 
 bool UMagicLeapARPinComponent::GetPinState(struct FMagicLeapARPinState* State) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapARPinComponent", "GetPinState");
+	class UFunction* Func = Class->GetFunction("MagicLeapARPinComponent", "GetPinState");
 
 	Params::MagicLeapARPinComponent_GetPinState Parms{};
 
@@ -184,10 +166,7 @@ bool UMagicLeapARPinComponent::GetPinState(struct FMagicLeapARPinState* State) c
 
 bool UMagicLeapARPinComponent::IsPinned() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapARPinComponent", "IsPinned");
+	class UFunction* Func = Class->GetFunction("MagicLeapARPinComponent", "IsPinned");
 
 	Params::MagicLeapARPinComponent_IsPinned Parms{};
 
@@ -209,10 +188,7 @@ bool UMagicLeapARPinComponent::IsPinned() const
 
 bool UMagicLeapARPinComponent::PinRestoredOrSynced() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MagicLeapARPinComponent", "PinRestoredOrSynced");
+	class UFunction* Func = Class->GetFunction("MagicLeapARPinComponent", "PinRestoredOrSynced");
 
 	Params::MagicLeapARPinComponent_PinRestoredOrSynced Parms{};
 
@@ -234,10 +210,7 @@ bool UMagicLeapARPinComponent::PinRestoredOrSynced() const
 
 void UMagicLeapARPinFunctionLibrary::BindToOnMagicLeapARPinUpdatedDelegate(const TDelegate<void(const TArray<struct FGuid>& Added, const TArray<struct FGuid>& Updated, const TArray<struct FGuid>& Deleted)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "BindToOnMagicLeapARPinUpdatedDelegate");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "BindToOnMagicLeapARPinUpdatedDelegate");
 
 	Params::MagicLeapARPinFunctionLibrary_BindToOnMagicLeapARPinUpdatedDelegate Parms{};
 
@@ -259,10 +232,7 @@ void UMagicLeapARPinFunctionLibrary::BindToOnMagicLeapARPinUpdatedDelegate(const
 
 EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::CreateTracker()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "CreateTracker");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "CreateTracker");
 
 	Params::MagicLeapARPinFunctionLibrary_CreateTracker Parms{};
 
@@ -284,10 +254,7 @@ EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::CreateTracker()
 
 EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::DestroyTracker()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "DestroyTracker");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "DestroyTracker");
 
 	Params::MagicLeapARPinFunctionLibrary_DestroyTracker Parms{};
 
@@ -313,10 +280,7 @@ EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::DestroyTracker()
 
 bool UMagicLeapARPinFunctionLibrary::GetARPinPositionAndOrientation(const struct FGuid& PinID, struct FVector* position, struct FRotator* Orientation, bool* PinFoundInEnvironment)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetARPinPositionAndOrientation");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetARPinPositionAndOrientation");
 
 	Params::MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation Parms{};
 
@@ -353,10 +317,7 @@ bool UMagicLeapARPinFunctionLibrary::GetARPinPositionAndOrientation(const struct
 
 bool UMagicLeapARPinFunctionLibrary::GetARPinPositionAndOrientation_TrackingSpace(const struct FGuid& PinID, struct FVector* position, struct FRotator* Orientation, bool* PinFoundInEnvironment)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetARPinPositionAndOrientation_TrackingSpace");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetARPinPositionAndOrientation_TrackingSpace");
 
 	Params::MagicLeapARPinFunctionLibrary_GetARPinPositionAndOrientation_TrackingSpace Parms{};
 
@@ -391,10 +352,7 @@ bool UMagicLeapARPinFunctionLibrary::GetARPinPositionAndOrientation_TrackingSpac
 
 EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::GetARPinState(const struct FGuid& PinID, struct FMagicLeapARPinState* State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetARPinState");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetARPinState");
 
 	Params::MagicLeapARPinFunctionLibrary_GetARPinState Parms{};
 
@@ -422,10 +380,7 @@ EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::GetARPinState(const
 
 class FString UMagicLeapARPinFunctionLibrary::GetARPinStateToString(const struct FMagicLeapARPinState& State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetARPinStateToString");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetARPinStateToString");
 
 	Params::MagicLeapARPinFunctionLibrary_GetARPinStateToString Parms{};
 
@@ -451,10 +406,7 @@ class FString UMagicLeapARPinFunctionLibrary::GetARPinStateToString(const struct
 
 EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::GetAvailableARPins(int32 NumRequested, TArray<struct FGuid>* Pins)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetAvailableARPins");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetAvailableARPins");
 
 	Params::MagicLeapARPinFunctionLibrary_GetAvailableARPins Parms{};
 
@@ -483,10 +435,7 @@ EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::GetAvailableARPins(
 
 EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::GetClosestARPin(const struct FVector& SearchPoint, struct FGuid* PinID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetClosestARPin");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetClosestARPin");
 
 	Params::MagicLeapARPinFunctionLibrary_GetClosestARPin Parms{};
 
@@ -514,10 +463,7 @@ EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::GetClosestARPin(con
 
 EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::GetNumAvailableARPins(int32* Count)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetNumAvailableARPins");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "GetNumAvailableARPins");
 
 	Params::MagicLeapARPinFunctionLibrary_GetNumAvailableARPins Parms{};
 
@@ -542,10 +488,7 @@ EMagicLeapPassableWorldError UMagicLeapARPinFunctionLibrary::GetNumAvailableARPi
 
 bool UMagicLeapARPinFunctionLibrary::IsTrackerValid()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "IsTrackerValid");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "IsTrackerValid");
 
 	Params::MagicLeapARPinFunctionLibrary_IsTrackerValid Parms{};
 
@@ -567,10 +510,7 @@ bool UMagicLeapARPinFunctionLibrary::IsTrackerValid()
 
 void UMagicLeapARPinFunctionLibrary::UnBindToOnMagicLeapARPinUpdatedDelegate(const TDelegate<void(const TArray<struct FGuid>& Added, const TArray<struct FGuid>& Updated, const TArray<struct FGuid>& Deleted)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "UnBindToOnMagicLeapARPinUpdatedDelegate");
+	class UFunction* Func = StaticClass()->GetFunction("MagicLeapARPinFunctionLibrary", "UnBindToOnMagicLeapARPinUpdatedDelegate");
 
 	Params::MagicLeapARPinFunctionLibrary_UnBindToOnMagicLeapARPinUpdatedDelegate Parms{};
 

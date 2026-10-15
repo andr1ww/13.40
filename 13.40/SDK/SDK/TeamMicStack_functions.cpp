@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTeamMicStack_C::ExecuteUbergraph_TeamMicStack(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMicStack_C", "ExecuteUbergraph_TeamMicStack");
+	class UFunction* Func = Class->GetFunction("TeamMicStack_C", "ExecuteUbergraph_TeamMicStack");
 
 	Params::TeamMicStack_C_ExecuteUbergraph_TeamMicStack Parms{};
 
@@ -41,10 +38,7 @@ void UTeamMicStack_C::ExecuteUbergraph_TeamMicStack(int32 EntryPoint)
 
 void UTeamMicStack_C::HandlePartyLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMicStack_C", "HandlePartyLeft");
+	class UFunction* Func = Class->GetFunction("TeamMicStack_C", "HandlePartyLeft");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UTeamMicStack_C::HandlePartyLeft()
 
 void UTeamMicStack_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMicStack_C", "Construct");
+	class UFunction* Func = Class->GetFunction("TeamMicStack_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UTeamMicStack_C::Construct()
 
 void UTeamMicStack_C::HandleTeamMemberRemoved(int32 Member_Index)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMicStack_C", "HandleTeamMemberRemoved");
+	class UFunction* Func = Class->GetFunction("TeamMicStack_C", "HandleTeamMemberRemoved");
 
 	Params::TeamMicStack_C_HandleTeamMemberRemoved Parms{};
 
@@ -91,10 +79,7 @@ void UTeamMicStack_C::HandleTeamMemberRemoved(int32 Member_Index)
 
 void UTeamMicStack_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& Member_Info)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMicStack_C", "HandleTeamMemberChanged");
+	class UFunction* Func = Class->GetFunction("TeamMicStack_C", "HandleTeamMemberChanged");
 
 	Params::TeamMicStack_C_HandleTeamMemberChanged Parms{};
 
@@ -111,10 +96,7 @@ void UTeamMicStack_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& 
 
 void UTeamMicStack_C::AppendTeamMember(struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMicStack_C", "AppendTeamMember");
+	class UFunction* Func = Class->GetFunction("TeamMicStack_C", "AppendTeamMember");
 
 	Params::TeamMicStack_C_AppendTeamMember Parms{};
 
@@ -131,10 +113,7 @@ void UTeamMicStack_C::AppendTeamMember(struct FFortTeamMemberInfo& TeamMemberInf
 
 void UTeamMicStack_C::ClearContents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMicStack_C", "ClearContents");
+	class UFunction* Func = Class->GetFunction("TeamMicStack_C", "ClearContents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

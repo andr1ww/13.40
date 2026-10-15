@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAT_ActiveAbility_C::ExecuteUbergraph_GAT_ActiveAbility(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_C", "ExecuteUbergraph_GAT_ActiveAbility");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_C", "ExecuteUbergraph_GAT_ActiveAbility");
 
 	Params::GAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility Parms{};
 
@@ -41,10 +38,7 @@ void UGAT_ActiveAbility_C::ExecuteUbergraph_GAT_ActiveAbility(int32 EntryPoint)
 
 void UGAT_ActiveAbility_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UGAT_ActiveAbility_C::K2_ActivateAbility()
 
 void UGAT_ActiveAbility_C::SetPawnCollision(class AFortPawn* FortPawn, bool CollisionOn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_C", "SetPawnCollision");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_C", "SetPawnCollision");
 
 	Params::GAT_ActiveAbility_C_SetPawnCollision Parms{};
 
@@ -79,10 +70,7 @@ void UGAT_ActiveAbility_C::SetPawnCollision(class AFortPawn* FortPawn, bool Coll
 
 void UGAT_ActiveAbility_C::SetKnockbackImmunity(bool ImmunityOn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_C", "SetKnockbackImmunity");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_C", "SetKnockbackImmunity");
 
 	Params::GAT_ActiveAbility_C_SetKnockbackImmunity Parms{};
 
@@ -100,10 +88,7 @@ void UGAT_ActiveAbility_C::SetKnockbackImmunity(bool ImmunityOn)
 
 void UGAT_ActiveAbility_C::ActiveAbilitySetup(class UAbilitySystemComponent* AbilitySystemIn, class UAbilitySystemComponent** AbilitySystemOut)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_C", "ActiveAbilitySetup");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_C", "ActiveAbilitySetup");
 
 	Params::GAT_ActiveAbility_C_ActiveAbilitySetup Parms{};
 
@@ -128,10 +113,7 @@ void UGAT_ActiveAbility_C::ActiveAbilitySetup(class UAbilitySystemComponent* Abi
 
 void UGAT_ActiveAbility_C::SetHolsterWeaponWithName(class AFortPawn* Target_Fort_Pawn, bool ShouldHolster, bool PlayEquipAnim, bool ShowDebugPrintName, bool* IsWeaponHolstered, bool* OperationSuccessful)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_C", "SetHolsterWeaponWithName");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_C", "SetHolsterWeaponWithName");
 
 	Params::GAT_ActiveAbility_C_SetHolsterWeaponWithName Parms{};
 
@@ -155,10 +137,7 @@ void UGAT_ActiveAbility_C::SetHolsterWeaponWithName(class AFortPawn* Target_Fort
 
 void UGAT_ActiveAbility_C::SendHeroAbilityActivationEvent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_C", "SendHeroAbilityActivationEvent");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_C", "SendHeroAbilityActivationEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +150,7 @@ void UGAT_ActiveAbility_C::SendHeroAbilityActivationEvent()
 
 void UGAT_ActiveAbility_C::EndAbilityWithReason(const class FString& Reason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_C", "EndAbilityWithReason");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_C", "EndAbilityWithReason");
 
 	Params::GAT_ActiveAbility_C_EndAbilityWithReason Parms{};
 
@@ -193,10 +169,7 @@ void UGAT_ActiveAbility_C::EndAbilityWithReason(const class FString& Reason)
 
 bool UGAT_ActiveAbility_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_C", "K2_ShouldAbilityRespondToEvent");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_C", "K2_ShouldAbilityRespondToEvent");
 
 	Params::GAT_ActiveAbility_C_K2_ShouldAbilityRespondToEvent Parms{};
 

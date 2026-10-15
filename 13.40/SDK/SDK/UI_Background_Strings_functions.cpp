@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UUI_Background_Strings_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_Background_Strings_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("UI_Background_Strings_C", "PreConstruct");
 
 	Params::UI_Background_Strings_C_PreConstruct Parms{};
 
@@ -41,10 +38,7 @@ void UUI_Background_Strings_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UUI_Background_Strings_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_Background_Strings_C", "Construct");
+	class UFunction* Func = Class->GetFunction("UI_Background_Strings_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UUI_Background_Strings_C::Construct()
 
 void UUI_Background_Strings_C::ExecuteUbergraph_UI_Background_Strings(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UI_Background_Strings_C", "ExecuteUbergraph_UI_Background_Strings");
+	class UFunction* Func = Class->GetFunction("UI_Background_Strings_C", "ExecuteUbergraph_UI_Background_Strings");
 
 	Params::UI_Background_Strings_C_ExecuteUbergraph_UI_Background_Strings Parms{};
 

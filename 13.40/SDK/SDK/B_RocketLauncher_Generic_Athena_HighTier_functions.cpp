@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_RocketLauncher_Generic_Athena_HighTier_C::ExecuteUbergraph_B_RocketLauncher_Generic_Athena_HighTier(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_RocketLauncher_Generic_Athena_HighTier_C", "ExecuteUbergraph_B_RocketLauncher_Generic_Athena_HighTier");
+	class UFunction* Func = Class->GetFunction("B_RocketLauncher_Generic_Athena_HighTier_C", "ExecuteUbergraph_B_RocketLauncher_Generic_Athena_HighTier");
 
 	Params::B_RocketLauncher_Generic_Athena_HighTier_C_ExecuteUbergraph_B_RocketLauncher_Generic_Athena_HighTier Parms{};
 
@@ -43,10 +40,7 @@ void AB_RocketLauncher_Generic_Athena_HighTier_C::ExecuteUbergraph_B_RocketLaunc
 
 void AB_RocketLauncher_Generic_Athena_HighTier_C::Muzzle_Flash_FX(bool Persistent_Fire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_RocketLauncher_Generic_Athena_HighTier_C", "Muzzle Flash FX");
+	class UFunction* Func = Class->GetFunction("B_RocketLauncher_Generic_Athena_HighTier_C", "Muzzle Flash FX");
 
 	Params::B_RocketLauncher_Generic_Athena_HighTier_C_Muzzle_Flash_FX Parms{};
 

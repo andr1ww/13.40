@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_ZipLine_Smash_C::ExecuteUbergraph_GA_Athena_ZipLine_Smash(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "ExecuteUbergraph_GA_Athena_ZipLine_Smash");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "ExecuteUbergraph_GA_Athena_ZipLine_Smash");
 
 	Params::GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Athena_ZipLine_Smash_C::ExecuteUbergraph_GA_Athena_ZipLine_Smash(int32 
 
 void UGA_Athena_ZipLine_Smash_C::EnterWaterExit(class AFortPlayerPawn* FortPlayerPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "EnterWaterExit");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "EnterWaterExit");
 
 	Params::GA_Athena_ZipLine_Smash_C_EnterWaterExit Parms{};
 
@@ -61,10 +55,7 @@ void UGA_Athena_ZipLine_Smash_C::EnterWaterExit(class AFortPlayerPawn* FortPlaye
 
 void UGA_Athena_ZipLine_Smash_C::SwimmingStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SwimmingStarted");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SwimmingStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UGA_Athena_ZipLine_Smash_C::SwimmingStarted()
 
 void UGA_Athena_ZipLine_Smash_C::BindEvent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "BindEvent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "BindEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UGA_Athena_ZipLine_Smash_C::BindEvent()
 
 void UGA_Athena_ZipLine_Smash_C::DelaySpawnMotor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "DelaySpawnMotor");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "DelaySpawnMotor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UGA_Athena_ZipLine_Smash_C::DelaySpawnMotor()
 
 void UGA_Athena_ZipLine_Smash_C::OnBeginSkydiving_Bind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnBeginSkydiving_Bind");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnBeginSkydiving_Bind");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UGA_Athena_ZipLine_Smash_C::OnBeginSkydiving_Bind()
 
 void UGA_Athena_ZipLine_Smash_C::OnEnteredAircraft_Bind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnEnteredAircraft_Bind");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnEnteredAircraft_Bind");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -140,10 +119,7 @@ void UGA_Athena_ZipLine_Smash_C::OnEnteredAircraft_Bind()
 
 void UGA_Athena_ZipLine_Smash_C::OnPawnDied_Bind(class AActor* NewParam, float NewParam2, class AController* NewParam3, class AActor* NewParam4, const struct FVector& NewParam5, class UPrimitiveComponent* NewParam6, class FName NewParam7, const struct FVector& NewParam8)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnPawnDied_Bind");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnPawnDied_Bind");
 
 	Params::GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind Parms{};
 
@@ -165,10 +141,7 @@ void UGA_Athena_ZipLine_Smash_C::OnPawnDied_Bind(class AActor* NewParam, float N
 
 void UGA_Athena_ZipLine_Smash_C::ZipliningComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "ZipliningComplete");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "ZipliningComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +152,7 @@ void UGA_Athena_ZipLine_Smash_C::ZipliningComplete()
 
 void UGA_Athena_ZipLine_Smash_C::OnEnterVehicle_Bind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnEnterVehicle_Bind");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnEnterVehicle_Bind");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -193,10 +163,7 @@ void UGA_Athena_ZipLine_Smash_C::OnEnterVehicle_Bind()
 
 void UGA_Athena_ZipLine_Smash_C::SurroundingsCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SurroundingsCheck");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SurroundingsCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +174,7 @@ void UGA_Athena_ZipLine_Smash_C::SurroundingsCheck()
 
 void UGA_Athena_ZipLine_Smash_C::RemoveFallDamageImmunity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "RemoveFallDamageImmunity");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "RemoveFallDamageImmunity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +187,7 @@ void UGA_Athena_ZipLine_Smash_C::RemoveFallDamageImmunity()
 
 void UGA_Athena_ZipLine_Smash_C::HandleZiplineStateChanged(bool bIsZiplining)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "HandleZiplineStateChanged");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "HandleZiplineStateChanged");
 
 	Params::GA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged Parms{};
 
@@ -243,10 +204,7 @@ void UGA_Athena_ZipLine_Smash_C::HandleZiplineStateChanged(bool bIsZiplining)
 
 void UGA_Athena_ZipLine_Smash_C::OnPawnLanded_Bind(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnPawnLanded_Bind");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnPawnLanded_Bind");
 
 	Params::GA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind Parms{};
 
@@ -263,10 +221,7 @@ void UGA_Athena_ZipLine_Smash_C::OnPawnLanded_Bind(const struct FHitResult& Hit)
 
 void UGA_Athena_ZipLine_Smash_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -281,10 +236,7 @@ void UGA_Athena_ZipLine_Smash_C::K2_ActivateAbilityFromEvent(const struct FGamep
 
 void UGA_Athena_ZipLine_Smash_C::Added_57667DA14EF15649A9E09AA4184D83F2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "Added_57667DA14EF15649A9E09AA4184D83F2");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "Added_57667DA14EF15649A9E09AA4184D83F2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -295,10 +247,7 @@ void UGA_Athena_ZipLine_Smash_C::Added_57667DA14EF15649A9E09AA4184D83F2()
 
 void UGA_Athena_ZipLine_Smash_C::Added_98DA090E476D590C00C74EAC10378F60()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "Added_98DA090E476D590C00C74EAC10378F60");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "Added_98DA090E476D590C00C74EAC10378F60");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -311,10 +260,7 @@ void UGA_Athena_ZipLine_Smash_C::Added_98DA090E476D590C00C74EAC10378F60()
 
 void UGA_Athena_ZipLine_Smash_C::BreakNearbyStructures(class AFortPlayerPawn* PlayerPawn_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "BreakNearbyStructures");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "BreakNearbyStructures");
 
 	Params::GA_Athena_ZipLine_Smash_C_BreakNearbyStructures Parms{};
 
@@ -331,10 +277,7 @@ void UGA_Athena_ZipLine_Smash_C::BreakNearbyStructures(class AFortPlayerPawn* Pl
 
 void UGA_Athena_ZipLine_Smash_C::SpawnMotor(class AActor* PlayerPawn_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SpawnMotor");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SpawnMotor");
 
 	Params::GA_Athena_ZipLine_Smash_C_SpawnMotor Parms{};
 
@@ -349,10 +292,7 @@ void UGA_Athena_ZipLine_Smash_C::SpawnMotor(class AActor* PlayerPawn_0)
 
 void UGA_Athena_ZipLine_Smash_C::CheckMotor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "CheckMotor");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "CheckMotor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -363,10 +303,7 @@ void UGA_Athena_ZipLine_Smash_C::CheckMotor()
 
 void UGA_Athena_ZipLine_Smash_C::CheckForQuestProgress()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "CheckForQuestProgress");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "CheckForQuestProgress");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

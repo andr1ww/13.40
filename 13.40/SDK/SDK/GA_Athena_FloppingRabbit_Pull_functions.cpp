@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_FloppingRabbit_Pull_C::ExecuteUbergraph_GA_Athena_FloppingRabbit_Pull(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Pull_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit_Pull");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_Pull_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit_Pull");
 
 	Params::GA_Athena_FloppingRabbit_Pull_C_ExecuteUbergraph_GA_Athena_FloppingRabbit_Pull Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_FloppingRabbit_Pull_C::ExecuteUbergraph_GA_Athena_FloppingRabbit
 
 void UGA_Athena_FloppingRabbit_Pull_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Pull_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_Pull_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

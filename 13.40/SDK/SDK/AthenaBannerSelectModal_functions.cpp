@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaBannerSelectModal_C::ExecuteUbergraph_AthenaBannerSelectModal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBannerSelectModal_C", "ExecuteUbergraph_AthenaBannerSelectModal");
+	class UFunction* Func = Class->GetFunction("AthenaBannerSelectModal_C", "ExecuteUbergraph_AthenaBannerSelectModal");
 
 	Params::AthenaBannerSelectModal_C_ExecuteUbergraph_AthenaBannerSelectModal Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaBannerSelectModal_C::ExecuteUbergraph_AthenaBannerSelectModal(int32 
 
 void UAthenaBannerSelectModal_C::Close()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBannerSelectModal_C", "Close");
+	class UFunction* Func = Class->GetFunction("AthenaBannerSelectModal_C", "Close");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UAthenaBannerSelectModal_C::Close()
 
 void UAthenaBannerSelectModal_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBannerSelectModal_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaBannerSelectModal_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UAthenaBannerSelectModal_C::BP_OnActivated()
 
 void UAthenaBannerSelectModal_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBannerSelectModal_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("AthenaBannerSelectModal_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -86,10 +74,7 @@ void UAthenaBannerSelectModal_C::BP_OnDeactivated()
 
 void UAthenaBannerSelectModal_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature(class FName IconId, class FName ColorId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBannerSelectModal_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaBannerSelectModal_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature");
 
 	Params::AthenaBannerSelectModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature Parms{};
 
@@ -105,10 +90,7 @@ void UAthenaBannerSelectModal_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_Compo
 
 void UAthenaBannerSelectModal_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBannerSelectModal_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaBannerSelectModal_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,10 +103,7 @@ void UAthenaBannerSelectModal_C::Construct()
 
 void UAthenaBannerSelectModal_C::HandleCloseAction(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBannerSelectModal_C", "HandleCloseAction");
+	class UFunction* Func = Class->GetFunction("AthenaBannerSelectModal_C", "HandleCloseAction");
 
 	Params::AthenaBannerSelectModal_C_HandleCloseAction Parms{};
 
@@ -140,10 +119,7 @@ void UAthenaBannerSelectModal_C::HandleCloseAction(bool* PassThrough)
 
 void UAthenaBannerSelectModal_C::Setup_Input_Action_Handlers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBannerSelectModal_C", "Setup Input Action Handlers");
+	class UFunction* Func = Class->GetFunction("AthenaBannerSelectModal_C", "Setup Input Action Handlers");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -158,10 +134,7 @@ void UAthenaBannerSelectModal_C::Setup_Input_Action_Handlers()
 
 struct FEventReply UAthenaBannerSelectModal_C::On_BorderTouch_MouseButtonDown_0(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBannerSelectModal_C", "On_BorderTouch_MouseButtonDown_0");
+	class UFunction* Func = Class->GetFunction("AthenaBannerSelectModal_C", "On_BorderTouch_MouseButtonDown_0");
 
 	Params::AthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0 Parms{};
 

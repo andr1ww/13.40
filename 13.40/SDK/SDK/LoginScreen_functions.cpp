@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ULoginScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoginScreen_C", "Construct");
+	class UFunction* Func = Class->GetFunction("LoginScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -38,10 +35,7 @@ void ULoginScreen_C::Construct()
 
 void ULoginScreen_C::BndEvt__Switcher_ScreenContents_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoginScreen_C", "BndEvt__Switcher_ScreenContents_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("LoginScreen_C", "BndEvt__Switcher_ScreenContents_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
 
 	Params::LoginScreen_C_BndEvt__Switcher_ScreenContents_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature Parms{};
 
@@ -59,10 +53,7 @@ void ULoginScreen_C::BndEvt__Switcher_ScreenContents_K2Node_ComponentBoundEvent_
 
 void ULoginScreen_C::OnEnterState_1(EFortUIState PreviousUIState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoginScreen_C", "OnEnterState_1");
+	class UFunction* Func = Class->GetFunction("LoginScreen_C", "OnEnterState_1");
 
 	Params::LoginScreen_C_OnEnterState_1 Parms{};
 
@@ -79,10 +70,7 @@ void ULoginScreen_C::OnEnterState_1(EFortUIState PreviousUIState)
 
 void ULoginScreen_C::ExecuteUbergraph_LoginScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoginScreen_C", "ExecuteUbergraph_LoginScreen");
+	class UFunction* Func = Class->GetFunction("LoginScreen_C", "ExecuteUbergraph_LoginScreen");
 
 	Params::LoginScreen_C_ExecuteUbergraph_LoginScreen Parms{};
 

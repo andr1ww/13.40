@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMinigameButtons_C::ExecuteUbergraph_MinigameButtons(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "ExecuteUbergraph_MinigameButtons");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "ExecuteUbergraph_MinigameButtons");
 
 	Params::MinigameButtons_C_ExecuteUbergraph_MinigameButtons Parms{};
 
@@ -41,10 +38,7 @@ void UMinigameButtons_C::ExecuteUbergraph_MinigameButtons(int32 EntryPoint)
 
 void UMinigameButtons_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UMinigameButtons_C::OnInitialized()
 
 void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
 
 	Params::MinigameButtons_C_BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -77,10 +68,7 @@ void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_Com
 
 void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
 
 	Params::MinigameButtons_C_BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -97,10 +85,7 @@ void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_C
 
 void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
 
 	Params::MinigameButtons_C_BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -117,10 +102,7 @@ void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_Com
 
 void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
 
 	Params::MinigameButtons_C_BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -137,10 +119,7 @@ void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_C
 
 void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
 
 	Params::MinigameButtons_C_BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -157,10 +136,7 @@ void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_C
 
 void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::MinigameButtons_C_BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -177,10 +153,7 @@ void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_Com
 
 void UMinigameButtons_C::SetWidgetSwitcherIndex(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "SetWidgetSwitcherIndex");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "SetWidgetSwitcherIndex");
 
 	Params::MinigameButtons_C_SetWidgetSwitcherIndex Parms{};
 
@@ -197,10 +170,7 @@ void UMinigameButtons_C::SetWidgetSwitcherIndex(int32 Index_0)
 
 void UMinigameButtons_C::BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::MinigameButtons_C_BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -217,10 +187,7 @@ void UMinigameButtons_C::BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_Comm
 
 void UMinigameButtons_C::BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::MinigameButtons_C_BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -235,10 +202,7 @@ void UMinigameButtons_C::BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_Co
 
 void UMinigameButtons_C::UpdateButtons()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "UpdateButtons");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "UpdateButtons");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +213,7 @@ void UMinigameButtons_C::UpdateButtons()
 
 void UMinigameButtons_C::CenterOnCurrentButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "CenterOnCurrentButton");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "CenterOnCurrentButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +226,7 @@ void UMinigameButtons_C::CenterOnCurrentButton()
 
 void UMinigameButtons_C::SetButtonState(EMinigameButtonsState Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "SetButtonState");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "SetButtonState");
 
 	Params::MinigameButtons_C_SetButtonState Parms{};
 
@@ -283,10 +241,7 @@ void UMinigameButtons_C::SetButtonState(EMinigameButtonsState Value)
 
 void UMinigameButtons_C::UpdateButtonsFromButtonState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameButtons_C", "UpdateButtonsFromButtonState");
+	class UFunction* Func = Class->GetFunction("MinigameButtons_C", "UpdateButtonsFromButtonState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

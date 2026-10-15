@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_FloppingRabbit_Passive_C::ExecuteUbergraph_GA_Athena_FloppingRabbit_Passive(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit_Passive");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit_Passive");
 
 	Params::GA_Athena_FloppingRabbit_Passive_C_ExecuteUbergraph_GA_Athena_FloppingRabbit_Passive Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_FloppingRabbit_Passive_C::ExecuteUbergraph_GA_Athena_FloppingRab
 
 void UGA_Athena_FloppingRabbit_Passive_C::EndFishing()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "EndFishing");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "EndFishing");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGA_Athena_FloppingRabbit_Passive_C::EndFishing()
 
 void UGA_Athena_FloppingRabbit_Passive_C::Seat_Changed(int32 SeatIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "Seat Changed");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "Seat Changed");
 
 	Params::GA_Athena_FloppingRabbit_Passive_C_Seat_Changed Parms{};
 
@@ -77,10 +68,7 @@ void UGA_Athena_FloppingRabbit_Passive_C::Seat_Changed(int32 SeatIndex)
 
 void UGA_Athena_FloppingRabbit_Passive_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_Athena_FloppingRabbit_Passive_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -97,10 +85,7 @@ void UGA_Athena_FloppingRabbit_Passive_C::K2_ActivateAbilityFromEvent(const stru
 
 void UGA_Athena_FloppingRabbit_Passive_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_FloppingRabbit_Passive_C_K2_OnEndAbility Parms{};
 
@@ -119,10 +104,7 @@ void UGA_Athena_FloppingRabbit_Passive_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_FloppingRabbit_Passive_C::SetBobberHidden(bool HideBobber, class AFortWeapon** CurrentWeapon, class AB_FloppingRabbit_Weap_Athena_C** CastedToRabbitWeapon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "SetBobberHidden");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "SetBobberHidden");
 
 	Params::GA_Athena_FloppingRabbit_Passive_C_SetBobberHidden Parms{};
 
@@ -143,10 +125,7 @@ void UGA_Athena_FloppingRabbit_Passive_C::SetBobberHidden(bool HideBobber, class
 
 void UGA_Athena_FloppingRabbit_Passive_C::SaveOutRod()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "SaveOutRod");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_Passive_C", "SaveOutRod");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 int32 ULiveLinkBlueprintLibrary::ChildCount(struct FLiveLinkTransform& LiveLinkTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "ChildCount");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "ChildCount");
 
 	Params::LiveLinkBlueprintLibrary_ChildCount Parms{};
 
@@ -54,10 +51,7 @@ int32 ULiveLinkBlueprintLibrary::ChildCount(struct FLiveLinkTransform& LiveLinkT
 
 void ULiveLinkBlueprintLibrary::ComponentSpaceTransform(struct FLiveLinkTransform& LiveLinkTransform, struct FTransform* Transform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "ComponentSpaceTransform");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "ComponentSpaceTransform");
 
 	Params::LiveLinkBlueprintLibrary_ComponentSpaceTransform Parms{};
 
@@ -86,10 +80,7 @@ void ULiveLinkBlueprintLibrary::ComponentSpaceTransform(struct FLiveLinkTransfor
 
 bool ULiveLinkBlueprintLibrary::EvaluateLiveLinkFrame(const struct FLiveLinkSubjectRepresentation& SubjectRepresentation, struct FLiveLinkBaseBlueprintData* OutBlueprintData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "EvaluateLiveLinkFrame");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "EvaluateLiveLinkFrame");
 
 	Params::LiveLinkBlueprintLibrary_EvaluateLiveLinkFrame Parms{};
 
@@ -120,10 +111,7 @@ bool ULiveLinkBlueprintLibrary::EvaluateLiveLinkFrame(const struct FLiveLinkSubj
 
 bool ULiveLinkBlueprintLibrary::EvaluateLiveLinkFrameAtSceneTime(const struct FLiveLinkSubjectName& SubjectName, TSubclassOf<class ULiveLinkRole> Role, const struct FTimecode& SceneTime, struct FLiveLinkBaseBlueprintData* OutBlueprintData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "EvaluateLiveLinkFrameAtSceneTime");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "EvaluateLiveLinkFrameAtSceneTime");
 
 	Params::LiveLinkBlueprintLibrary_EvaluateLiveLinkFrameAtSceneTime Parms{};
 
@@ -156,10 +144,7 @@ bool ULiveLinkBlueprintLibrary::EvaluateLiveLinkFrameAtSceneTime(const struct FL
 
 bool ULiveLinkBlueprintLibrary::EvaluateLiveLinkFrameAtWorldTimeOffset(const struct FLiveLinkSubjectName& SubjectName, TSubclassOf<class ULiveLinkRole> Role, float WorldTimeOffset, struct FLiveLinkBaseBlueprintData* OutBlueprintData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "EvaluateLiveLinkFrameAtWorldTimeOffset");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "EvaluateLiveLinkFrameAtWorldTimeOffset");
 
 	Params::LiveLinkBlueprintLibrary_EvaluateLiveLinkFrameAtWorldTimeOffset Parms{};
 
@@ -191,10 +176,7 @@ bool ULiveLinkBlueprintLibrary::EvaluateLiveLinkFrameAtWorldTimeOffset(const str
 
 bool ULiveLinkBlueprintLibrary::EvaluateLiveLinkFrameWithSpecificRole(const struct FLiveLinkSubjectName& SubjectName, TSubclassOf<class ULiveLinkRole> Role, struct FLiveLinkBaseBlueprintData* OutBlueprintData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "EvaluateLiveLinkFrameWithSpecificRole");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "EvaluateLiveLinkFrameWithSpecificRole");
 
 	Params::LiveLinkBlueprintLibrary_EvaluateLiveLinkFrameWithSpecificRole Parms{};
 
@@ -223,10 +205,7 @@ bool ULiveLinkBlueprintLibrary::EvaluateLiveLinkFrameWithSpecificRole(const stru
 
 void ULiveLinkBlueprintLibrary::GetBasicData(struct FSubjectFrameHandle& SubjectFrameHandle, struct FLiveLinkBasicBlueprintData* BasicBlueprintData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetBasicData");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetBasicData");
 
 	Params::LiveLinkBlueprintLibrary_GetBasicData Parms{};
 
@@ -254,10 +233,7 @@ void ULiveLinkBlueprintLibrary::GetBasicData(struct FSubjectFrameHandle& Subject
 
 void ULiveLinkBlueprintLibrary::GetChildren(struct FLiveLinkTransform& LiveLinkTransform, TArray<struct FLiveLinkTransform>* Children)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetChildren");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetChildren");
 
 	Params::LiveLinkBlueprintLibrary_GetChildren Parms{};
 
@@ -285,10 +261,7 @@ void ULiveLinkBlueprintLibrary::GetChildren(struct FLiveLinkTransform& LiveLinkT
 
 void ULiveLinkBlueprintLibrary::GetCurves(struct FSubjectFrameHandle& SubjectFrameHandle, TMap<class FName, float>* Curves)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetCurves");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetCurves");
 
 	Params::LiveLinkBlueprintLibrary_GetCurves Parms{};
 
@@ -316,10 +289,7 @@ void ULiveLinkBlueprintLibrary::GetCurves(struct FSubjectFrameHandle& SubjectFra
 
 TArray<struct FLiveLinkSubjectName> ULiveLinkBlueprintLibrary::GetLiveLinkEnabledSubjectNames(bool bIncludeVirtualSubject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetLiveLinkEnabledSubjectNames");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetLiveLinkEnabledSubjectNames");
 
 	Params::LiveLinkBlueprintLibrary_GetLiveLinkEnabledSubjectNames Parms{};
 
@@ -344,10 +314,7 @@ TArray<struct FLiveLinkSubjectName> ULiveLinkBlueprintLibrary::GetLiveLinkEnable
 
 TSubclassOf<class ULiveLinkRole> ULiveLinkBlueprintLibrary::GetLiveLinkSubjectRole(const struct FLiveLinkSubjectName& SubjectName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetLiveLinkSubjectRole");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetLiveLinkSubjectRole");
 
 	Params::LiveLinkBlueprintLibrary_GetLiveLinkSubjectRole Parms{};
 
@@ -373,10 +340,7 @@ TSubclassOf<class ULiveLinkRole> ULiveLinkBlueprintLibrary::GetLiveLinkSubjectRo
 
 TArray<struct FLiveLinkSubjectKey> ULiveLinkBlueprintLibrary::GetLiveLinkSubjects(bool bIncludeDisabledSubject, bool bIncludeDisal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetLiveLinkSubjects");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetLiveLinkSubjects");
 
 	Params::LiveLinkBlueprintLibrary_GetLiveLinkSubjects Parms{};
 
@@ -402,10 +366,7 @@ TArray<struct FLiveLinkSubjectKey> ULiveLinkBlueprintLibrary::GetLiveLinkSubject
 
 void ULiveLinkBlueprintLibrary::GetMetadata(struct FSubjectFrameHandle& SubjectFrameHandle, struct FSubjectMetadata* MetaData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetMetadata");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetMetadata");
 
 	Params::LiveLinkBlueprintLibrary_GetMetadata Parms{};
 
@@ -433,10 +394,7 @@ void ULiveLinkBlueprintLibrary::GetMetadata(struct FSubjectFrameHandle& SubjectF
 
 void ULiveLinkBlueprintLibrary::GetParent(struct FLiveLinkTransform& LiveLinkTransform, struct FLiveLinkTransform* Parent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetParent");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetParent");
 
 	Params::LiveLinkBlueprintLibrary_GetParent Parms{};
 
@@ -466,10 +424,7 @@ void ULiveLinkBlueprintLibrary::GetParent(struct FLiveLinkTransform& LiveLinkTra
 
 bool ULiveLinkBlueprintLibrary::GetPropertyValue(struct FLiveLinkBasicBlueprintData& BasicData, class FName PropertyName, float* Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetPropertyValue");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetPropertyValue");
 
 	Params::LiveLinkBlueprintLibrary_GetPropertyValue Parms{};
 
@@ -500,10 +455,7 @@ bool ULiveLinkBlueprintLibrary::GetPropertyValue(struct FLiveLinkBasicBlueprintD
 
 void ULiveLinkBlueprintLibrary::GetRootTransform(struct FSubjectFrameHandle& SubjectFrameHandle, struct FLiveLinkTransform* LiveLinkTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetRootTransform");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetRootTransform");
 
 	Params::LiveLinkBlueprintLibrary_GetRootTransform Parms{};
 
@@ -531,10 +483,7 @@ void ULiveLinkBlueprintLibrary::GetRootTransform(struct FSubjectFrameHandle& Sub
 
 class FText ULiveLinkBlueprintLibrary::GetSourceMachineName(struct FLiveLinkSourceHandle& SourceHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetSourceMachineName");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetSourceMachineName");
 
 	Params::LiveLinkBlueprintLibrary_GetSourceMachineName Parms{};
 
@@ -561,10 +510,7 @@ class FText ULiveLinkBlueprintLibrary::GetSourceMachineName(struct FLiveLinkSour
 
 class FText ULiveLinkBlueprintLibrary::GetSourceStatus(struct FLiveLinkSourceHandle& SourceHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetSourceStatus");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetSourceStatus");
 
 	Params::LiveLinkBlueprintLibrary_GetSourceStatus Parms{};
 
@@ -591,10 +537,7 @@ class FText ULiveLinkBlueprintLibrary::GetSourceStatus(struct FLiveLinkSourceHan
 
 class FText ULiveLinkBlueprintLibrary::GetSourceType(struct FLiveLinkSourceHandle& SourceHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetSourceType");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetSourceType");
 
 	Params::LiveLinkBlueprintLibrary_GetSourceType Parms{};
 
@@ -621,10 +564,7 @@ class FText ULiveLinkBlueprintLibrary::GetSourceType(struct FLiveLinkSourceHandl
 
 TSubclassOf<class ULiveLinkRole> ULiveLinkBlueprintLibrary::GetSpecificLiveLinkSubjectRole(const struct FLiveLinkSubjectKey& SubjectKey)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetSpecificLiveLinkSubjectRole");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetSpecificLiveLinkSubjectRole");
 
 	Params::LiveLinkBlueprintLibrary_GetSpecificLiveLinkSubjectRole Parms{};
 
@@ -650,10 +590,7 @@ TSubclassOf<class ULiveLinkRole> ULiveLinkBlueprintLibrary::GetSpecificLiveLinkS
 
 void ULiveLinkBlueprintLibrary::GetTransformByIndex(struct FSubjectFrameHandle& SubjectFrameHandle, int32 TransformIndex, struct FLiveLinkTransform* LiveLinkTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetTransformByIndex");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetTransformByIndex");
 
 	Params::LiveLinkBlueprintLibrary_GetTransformByIndex Parms{};
 
@@ -683,10 +620,7 @@ void ULiveLinkBlueprintLibrary::GetTransformByIndex(struct FSubjectFrameHandle& 
 
 void ULiveLinkBlueprintLibrary::GetTransformByName(struct FSubjectFrameHandle& SubjectFrameHandle, class FName TransformName_0, struct FLiveLinkTransform* LiveLinkTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetTransformByName");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "GetTransformByName");
 
 	Params::LiveLinkBlueprintLibrary_GetTransformByName Parms{};
 
@@ -715,10 +649,7 @@ void ULiveLinkBlueprintLibrary::GetTransformByName(struct FSubjectFrameHandle& S
 
 bool ULiveLinkBlueprintLibrary::HasParent(struct FLiveLinkTransform& LiveLinkTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "HasParent");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "HasParent");
 
 	Params::LiveLinkBlueprintLibrary_HasParent Parms{};
 
@@ -745,10 +676,7 @@ bool ULiveLinkBlueprintLibrary::HasParent(struct FLiveLinkTransform& LiveLinkTra
 
 bool ULiveLinkBlueprintLibrary::IsSourceStillValid(struct FLiveLinkSourceHandle& SourceHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "IsSourceStillValid");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "IsSourceStillValid");
 
 	Params::LiveLinkBlueprintLibrary_IsSourceStillValid Parms{};
 
@@ -775,10 +703,7 @@ bool ULiveLinkBlueprintLibrary::IsSourceStillValid(struct FLiveLinkSourceHandle&
 
 int32 ULiveLinkBlueprintLibrary::NumberOfTransforms(struct FSubjectFrameHandle& SubjectFrameHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "NumberOfTransforms");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "NumberOfTransforms");
 
 	Params::LiveLinkBlueprintLibrary_NumberOfTransforms Parms{};
 
@@ -805,10 +730,7 @@ int32 ULiveLinkBlueprintLibrary::NumberOfTransforms(struct FSubjectFrameHandle& 
 
 void ULiveLinkBlueprintLibrary::ParentBoneSpaceTransform(struct FLiveLinkTransform& LiveLinkTransform, struct FTransform* Transform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "ParentBoneSpaceTransform");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "ParentBoneSpaceTransform");
 
 	Params::LiveLinkBlueprintLibrary_ParentBoneSpaceTransform Parms{};
 
@@ -836,10 +758,7 @@ void ULiveLinkBlueprintLibrary::ParentBoneSpaceTransform(struct FLiveLinkTransfo
 
 bool ULiveLinkBlueprintLibrary::RemoveSource(struct FLiveLinkSourceHandle& SourceHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "RemoveSource");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "RemoveSource");
 
 	Params::LiveLinkBlueprintLibrary_RemoveSource Parms{};
 
@@ -866,10 +785,7 @@ bool ULiveLinkBlueprintLibrary::RemoveSource(struct FLiveLinkSourceHandle& Sourc
 
 void ULiveLinkBlueprintLibrary::TransformName(struct FLiveLinkTransform& LiveLinkTransform, class FName* Name_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "TransformName");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "TransformName");
 
 	Params::LiveLinkBlueprintLibrary_TransformName Parms{};
 
@@ -897,10 +813,7 @@ void ULiveLinkBlueprintLibrary::TransformName(struct FLiveLinkTransform& LiveLin
 
 void ULiveLinkBlueprintLibrary::TransformNames(struct FSubjectFrameHandle& SubjectFrameHandle, TArray<class FName>* TransformNames_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "TransformNames");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkBlueprintLibrary", "TransformNames");
 
 	Params::LiveLinkBlueprintLibrary_TransformNames Parms{};
 
@@ -928,10 +841,7 @@ void ULiveLinkBlueprintLibrary::TransformNames(struct FSubjectFrameHandle& Subje
 
 bool ULiveLinkBlueprintLibrary::IsLiveLinkSubjectEnabled(const struct FLiveLinkSubjectName& SubjectName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkBlueprintLibrary", "IsLiveLinkSubjectEnabled");
+	class UFunction* Func = Class->GetFunction("LiveLinkBlueprintLibrary", "IsLiveLinkSubjectEnabled");
 
 	Params::LiveLinkBlueprintLibrary_IsLiveLinkSubjectEnabled Parms{};
 
@@ -957,10 +867,7 @@ bool ULiveLinkBlueprintLibrary::IsLiveLinkSubjectEnabled(const struct FLiveLinkS
 
 bool ULiveLinkBlueprintLibrary::IsSpecificLiveLinkSubjectEnabled(const struct FLiveLinkSubjectKey& SubjectKey, bool bForThisFrame)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkBlueprintLibrary", "IsSpecificLiveLinkSubjectEnabled");
+	class UFunction* Func = Class->GetFunction("LiveLinkBlueprintLibrary", "IsSpecificLiveLinkSubjectEnabled");
 
 	Params::LiveLinkBlueprintLibrary_IsSpecificLiveLinkSubjectEnabled Parms{};
 
@@ -986,10 +893,7 @@ bool ULiveLinkBlueprintLibrary::IsSpecificLiveLinkSubjectEnabled(const struct FL
 
 void ULiveLinkBlueprintLibrary::SetLiveLinkSubjectEnabled(const struct FLiveLinkSubjectKey& SubjectKey, bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkBlueprintLibrary", "SetLiveLinkSubjectEnabled");
+	class UFunction* Func = Class->GetFunction("LiveLinkBlueprintLibrary", "SetLiveLinkSubjectEnabled");
 
 	Params::LiveLinkBlueprintLibrary_SetLiveLinkSubjectEnabled Parms{};
 
@@ -1012,10 +916,7 @@ void ULiveLinkBlueprintLibrary::SetLiveLinkSubjectEnabled(const struct FLiveLink
 
 void ULiveLinkComponent::GetAvailableSubjectNames(TArray<class FName>* SubjectNames)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkComponent", "GetAvailableSubjectNames");
+	class UFunction* Func = Class->GetFunction("LiveLinkComponent", "GetAvailableSubjectNames");
 
 	Params::LiveLinkComponent_GetAvailableSubjectNames Parms{};
 
@@ -1040,10 +941,7 @@ void ULiveLinkComponent::GetAvailableSubjectNames(TArray<class FName>* SubjectNa
 
 void ULiveLinkComponent::GetSubjectData(const class FName SubjectName, bool* bSuccess, struct FSubjectFrameHandle* SubjectFrameHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkComponent", "GetSubjectData");
+	class UFunction* Func = Class->GetFunction("LiveLinkComponent", "GetSubjectData");
 
 	Params::LiveLinkComponent_GetSubjectData Parms{};
 
@@ -1074,10 +972,7 @@ void ULiveLinkComponent::GetSubjectData(const class FName SubjectName, bool* bSu
 
 void ULiveLinkComponent::GetSubjectDataAtSceneTime(const class FName SubjectName, const struct FTimecode& SceneTime, bool* bSuccess, struct FSubjectFrameHandle* SubjectFrameHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkComponent", "GetSubjectDataAtSceneTime");
+	class UFunction* Func = Class->GetFunction("LiveLinkComponent", "GetSubjectDataAtSceneTime");
 
 	Params::LiveLinkComponent_GetSubjectDataAtSceneTime Parms{};
 
@@ -1109,10 +1004,7 @@ void ULiveLinkComponent::GetSubjectDataAtSceneTime(const class FName SubjectName
 
 void ULiveLinkComponent::GetSubjectDataAtWorldTime(const class FName SubjectName, const float WorldTime, bool* bSuccess, struct FSubjectFrameHandle* SubjectFrameHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkComponent", "GetSubjectDataAtWorldTime");
+	class UFunction* Func = Class->GetFunction("LiveLinkComponent", "GetSubjectDataAtWorldTime");
 
 	Params::LiveLinkComponent_GetSubjectDataAtWorldTime Parms{};
 
@@ -1141,10 +1033,7 @@ void ULiveLinkComponent::GetSubjectDataAtWorldTime(const class FName SubjectName
 
 void ULiveLinkInstance::SetRetargetAsset(TSubclassOf<class ULiveLinkRetargetAsset> RetargetAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkInstance", "SetRetargetAsset");
+	class UFunction* Func = Class->GetFunction("LiveLinkInstance", "SetRetargetAsset");
 
 	Params::LiveLinkInstance_SetRetargetAsset Parms{};
 
@@ -1166,10 +1055,7 @@ void ULiveLinkInstance::SetRetargetAsset(TSubclassOf<class ULiveLinkRetargetAsse
 
 void ULiveLinkInstance::SetSubject(const struct FLiveLinkSubjectName& SubjectName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkInstance", "SetSubject");
+	class UFunction* Func = Class->GetFunction("LiveLinkInstance", "SetSubject");
 
 	Params::LiveLinkInstance_SetSubject Parms{};
 
@@ -1192,10 +1078,7 @@ void ULiveLinkInstance::SetSubject(const struct FLiveLinkSubjectName& SubjectNam
 
 void ULiveLinkMessageBusFinder::ConnectToProvider(struct FProviderPollResult& Provider, struct FLiveLinkSourceHandle* SourceHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkMessageBusFinder", "ConnectToProvider");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkMessageBusFinder", "ConnectToProvider");
 
 	Params::LiveLinkMessageBusFinder_ConnectToProvider Parms{};
 
@@ -1222,10 +1105,7 @@ void ULiveLinkMessageBusFinder::ConnectToProvider(struct FProviderPollResult& Pr
 
 class ULiveLinkMessageBusFinder* ULiveLinkMessageBusFinder::ConstructMessageBusFinder()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkMessageBusFinder", "ConstructMessageBusFinder");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkMessageBusFinder", "ConstructMessageBusFinder");
 
 	Params::LiveLinkMessageBusFinder_ConstructMessageBusFinder Parms{};
 
@@ -1250,10 +1130,7 @@ class ULiveLinkMessageBusFinder* ULiveLinkMessageBusFinder::ConstructMessageBusF
 
 void ULiveLinkMessageBusFinder::GetAvailableProviders(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, float Duration, TArray<struct FProviderPollResult>* AvailableProviders)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkMessageBusFinder", "GetAvailableProviders");
+	class UFunction* Func = Class->GetFunction("LiveLinkMessageBusFinder", "GetAvailableProviders");
 
 	Params::LiveLinkMessageBusFinder_GetAvailableProviders Parms{};
 
@@ -1278,10 +1155,7 @@ void ULiveLinkMessageBusFinder::GetAvailableProviders(class UObject* WorldContex
 
 void ULiveLinkPreset::BuildFromClient()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkPreset", "BuildFromClient");
+	class UFunction* Func = Class->GetFunction("LiveLinkPreset", "BuildFromClient");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1300,10 +1174,7 @@ void ULiveLinkPreset::BuildFromClient()
 
 bool ULiveLinkPreset::AddToClient(const bool bRecreatePresets) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkPreset", "AddToClient");
+	class UFunction* Func = Class->GetFunction("LiveLinkPreset", "AddToClient");
 
 	Params::LiveLinkPreset_AddToClient Parms{};
 
@@ -1327,10 +1198,7 @@ bool ULiveLinkPreset::AddToClient(const bool bRecreatePresets) const
 
 bool ULiveLinkPreset::ApplyToClient() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkPreset", "ApplyToClient");
+	class UFunction* Func = Class->GetFunction("LiveLinkPreset", "ApplyToClient");
 
 	Params::LiveLinkPreset_ApplyToClient Parms{};
 
@@ -1353,10 +1221,7 @@ bool ULiveLinkPreset::ApplyToClient() const
 
 class FName ULiveLinkRemapAsset::GetRemappedBoneName(class FName BoneName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkRemapAsset", "GetRemappedBoneName");
+	class UFunction* Func = Class->GetFunction("LiveLinkRemapAsset", "GetRemappedBoneName");
 
 	Params::LiveLinkRemapAsset_GetRemappedBoneName Parms{};
 
@@ -1381,10 +1246,7 @@ class FName ULiveLinkRemapAsset::GetRemappedBoneName(class FName BoneName) const
 
 class FName ULiveLinkRemapAsset::GetRemappedCurveName(class FName CurveName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkRemapAsset", "GetRemappedCurveName");
+	class UFunction* Func = Class->GetFunction("LiveLinkRemapAsset", "GetRemappedCurveName");
 
 	Params::LiveLinkRemapAsset_GetRemappedCurveName Parms{};
 
@@ -1408,10 +1270,7 @@ class FName ULiveLinkRemapAsset::GetRemappedCurveName(class FName CurveName) con
 
 void ULiveLinkRemapAsset::RemapCurveElements(TMap<class FName, float>& CurveItems) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkRemapAsset", "RemapCurveElements");
+	class UFunction* Func = Class->GetFunction("LiveLinkRemapAsset", "RemapCurveElements");
 
 	Params::LiveLinkRemapAsset_RemapCurveElements Parms{};
 

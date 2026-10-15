@@ -428,6 +428,27 @@ public:
 	struct FGameplayEffectContextHandle MakeEffectContext() const;
 	struct FGameplayEffectSpecHandle MakeOutgoingSpec(TSubclassOf<class UGameplayEffect> GameplayEffectClass, float Level, const struct FGameplayEffectContextHandle& Context) const;
 
+	struct FGameplayAbilitySpec* FindAbilitySpecFromHandle(struct FGameplayAbilitySpecHandle Handle)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<struct FGameplayAbilitySpec*(*)(UAbilitySystemComponent*, struct FGameplayAbilitySpecHandle)>(InSDKUtils::GetImageBase() + 0x99EC30), this, Handle);
+	}
+
+	void ConsumeAllReplicatedData(struct FGameplayAbilitySpecHandle AbilityHandle, const struct FPredictionKey& AbilityOriginalPredictionKey)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(UAbilitySystemComponent*, struct FGameplayAbilitySpecHandle, const struct FPredictionKey*)>(this, 0x790 / 8), this, AbilityHandle, &AbilityOriginalPredictionKey);
+	}
+
+	bool InternalTryActivateAbility(struct FGameplayAbilitySpecHandle AbilityToActivate, const struct FPredictionKey& InPredictionKey, class UGameplayAbility** OutInstancedAbility = nullptr, void* OnGameplayAbilityEndedDelegate = nullptr, const struct FGameplayEventData* TriggerEventData = nullptr)
+	{
+		struct FPredictionKey PredictionKey = InPredictionKey;
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(UAbilitySystemComponent*, struct FGameplayAbilitySpecHandle, struct FPredictionKey*, class UGameplayAbility**, void*, const struct FGameplayEventData*)>(InSDKUtils::GetImageBase() + 0x9ACC70), this, AbilityToActivate, &PredictionKey, OutInstancedAbility, OnGameplayAbilityEndedDelegate, TriggerEventData);
+	}
+
+	void MarkAbilitySpecDirty(struct FGameplayAbilitySpec& Spec, bool WasAddOrRemove = false)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UAbilitySystemComponent*, struct FGameplayAbilitySpec*, bool)>(InSDKUtils::GetImageBase() + 0x9AFA70), this, &Spec, WasAddOrRemove);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -579,6 +600,12 @@ DUMPER7_ASSERTS_AGameplayCueNotify_Actor;
 // 0x0000 (0x0000 - 0x0000)
 class IAbilitySystemInterface final
 {
+public:
+	class UAbilitySystemComponent* GetAbilitySystemComponent()
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<class UAbilitySystemComponent*(*)(IAbilitySystemInterface*)>(this, 1), this);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{

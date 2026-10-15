@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_CurieState_ElementAttached_Fire_C::ExecuteUbergraph_GCNL_CurieState_ElementAttached_Fire(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "ExecuteUbergraph_GCNL_CurieState_ElementAttached_Fire");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "ExecuteUbergraph_GCNL_CurieState_ElementAttached_Fire");
 
 	Params::GCNL_CurieState_ElementAttached_Fire_C_ExecuteUbergraph_GCNL_CurieState_ElementAttached_Fire Parms{};
 
@@ -41,10 +38,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::ExecuteUbergraph_GCNL_CurieState_E
 
 void AGCNL_CurieState_ElementAttached_Fire_C::FadeBodyFXOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "FadeBodyFXOut");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "FadeBodyFXOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -62,10 +56,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::FadeBodyFXOut()
 
 void AGCNL_CurieState_ElementAttached_Fire_C::OnApplication(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "OnApplication");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "OnApplication");
 
 	Params::GCNL_CurieState_ElementAttached_Fire_C_OnApplication Parms{};
 
@@ -92,10 +83,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::OnApplication(class AActor* MyTarg
 
 void AGCNL_CurieState_ElementAttached_Fire_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "OnRemoval");
 
 	Params::GCNL_CurieState_ElementAttached_Fire_C_OnRemoval Parms{};
 
@@ -117,10 +105,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::OnRemoval(class AActor* MyTarget, 
 
 void AGCNL_CurieState_ElementAttached_Fire_C::SetBodyFXParameters(EB_Enum_PlayerFireStates PreviousPlayerFireState_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "SetBodyFXParameters");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "SetBodyFXParameters");
 
 	Params::GCNL_CurieState_ElementAttached_Fire_C_SetBodyFXParameters Parms{};
 
@@ -137,10 +122,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::SetBodyFXParameters(EB_Enum_Player
 
 void AGCNL_CurieState_ElementAttached_Fire_C::GetPlayerFireState(EB_Enum_PlayerFireStates* Player_State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "GetPlayerFireState");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "GetPlayerFireState");
 
 	Params::GCNL_CurieState_ElementAttached_Fire_C_GetPlayerFireState Parms{};
 
@@ -160,10 +142,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::GetPlayerFireState(EB_Enum_PlayerF
 
 void AGCNL_CurieState_ElementAttached_Fire_C::OnCurieStateChanged(class UObject* Owner_0, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& StateIdentifier)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "OnCurieStateChanged");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "OnCurieStateChanged");
 
 	Params::GCNL_CurieState_ElementAttached_Fire_C_OnCurieStateChanged Parms{};
 
@@ -180,10 +159,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::OnCurieStateChanged(class UObject*
 
 void AGCNL_CurieState_ElementAttached_Fire_C::ActivateBodyFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "ActivateBodyFX");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "ActivateBodyFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -194,10 +170,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::ActivateBodyFX()
 
 void AGCNL_CurieState_ElementAttached_Fire_C::DeactivateBodyFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "DeactivateBodyFX");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "DeactivateBodyFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -210,10 +183,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::DeactivateBodyFX()
 
 void AGCNL_CurieState_ElementAttached_Fire_C::UpdatePlayerVisualsByState(EB_Enum_PlayerFireStates PlayerState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "UpdatePlayerVisualsByState");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "UpdatePlayerVisualsByState");
 
 	Params::GCNL_CurieState_ElementAttached_Fire_C_UpdatePlayerVisualsByState Parms{};
 
@@ -228,10 +198,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::UpdatePlayerVisualsByState(EB_Enum
 
 void AGCNL_CurieState_ElementAttached_Fire_C::ClearAllHandles()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "ClearAllHandles");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "ClearAllHandles");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -242,10 +209,7 @@ void AGCNL_CurieState_ElementAttached_Fire_C::ClearAllHandles()
 
 void AGCNL_CurieState_ElementAttached_Fire_C::FadeOnFireAudioComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "FadeOnFireAudioComponent");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Fire_C", "FadeOnFireAudioComponent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

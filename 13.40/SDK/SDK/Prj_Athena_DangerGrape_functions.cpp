@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APrj_Athena_DangerGrape_C::ExecuteUbergraph_Prj_Athena_DangerGrape(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "ExecuteUbergraph_Prj_Athena_DangerGrape");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "ExecuteUbergraph_Prj_Athena_DangerGrape");
 
 	Params::Prj_Athena_DangerGrape_C_ExecuteUbergraph_Prj_Athena_DangerGrape Parms{};
 
@@ -50,10 +47,7 @@ void APrj_Athena_DangerGrape_C::ExecuteUbergraph_Prj_Athena_DangerGrape(int32 En
 
 void APrj_Athena_DangerGrape_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "ReceiveHit");
 
 	Params::Prj_Athena_DangerGrape_C_ReceiveHit Parms{};
 
@@ -77,10 +71,7 @@ void APrj_Athena_DangerGrape_C::ReceiveHit(class UPrimitiveComponent* MyComp, cl
 
 void APrj_Athena_DangerGrape_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "OnStop");
 
 	Params::Prj_Athena_DangerGrape_C_OnStop Parms{};
 
@@ -99,10 +90,7 @@ void APrj_Athena_DangerGrape_C::OnStop(const struct FHitResult& Hit)
 
 void APrj_Athena_DangerGrape_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::Prj_Athena_DangerGrape_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -119,10 +107,7 @@ void APrj_Athena_DangerGrape_C::BndEvt__WaterInteractionComponent_K2Node_Compone
 
 void APrj_Athena_DangerGrape_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +118,7 @@ void APrj_Athena_DangerGrape_C::ReceiveBeginPlay()
 
 void APrj_Athena_DangerGrape_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_DangerGrape_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

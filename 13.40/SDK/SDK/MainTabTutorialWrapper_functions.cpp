@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UMainTabTutorialWrapper_C::TutorialWrapperFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "TutorialWrapperFinished");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "TutorialWrapperFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UMainTabTutorialWrapper_C::TutorialWrapperFinished()
 
 void UMainTabTutorialWrapper_C::SetParentButton(class UCommonButton* ParentButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "SetParentButton");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "SetParentButton");
 
 	Params::MainTabTutorialWrapper_C_SetParentButton Parms{};
 
@@ -58,10 +52,7 @@ void UMainTabTutorialWrapper_C::SetParentButton(class UCommonButton* ParentButto
 
 void UMainTabTutorialWrapper_C::GetTutorialCalloutData(const struct FFortUITutorialData& TutorialData, struct FFortToastDisplayInfo* FortToastDisplayInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "GetTutorialCalloutData");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "GetTutorialCalloutData");
 
 	Params::MainTabTutorialWrapper_C_GetTutorialCalloutData Parms{};
 
@@ -82,10 +73,7 @@ void UMainTabTutorialWrapper_C::GetTutorialCalloutData(const struct FFortUITutor
 
 void UMainTabTutorialWrapper_C::HasValidData(const struct FFortUITutorialData& FortUITutorialData, bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "HasValidData");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "HasValidData");
 
 	Params::MainTabTutorialWrapper_C_HasValidData Parms{};
 
@@ -106,10 +94,7 @@ void UMainTabTutorialWrapper_C::HasValidData(const struct FFortUITutorialData& F
 
 void UMainTabTutorialWrapper_C::HandleTutorialCallout(const class FName& TutorialObjectiveName, ETutorialType TutorialType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "HandleTutorialCallout");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "HandleTutorialCallout");
 
 	Params::MainTabTutorialWrapper_C_HandleTutorialCallout Parms{};
 
@@ -125,10 +110,7 @@ void UMainTabTutorialWrapper_C::HandleTutorialCallout(const class FName& Tutoria
 
 void UMainTabTutorialWrapper_C::CheckFinishTutorialWrapper()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "CheckFinishTutorialWrapper");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "CheckFinishTutorialWrapper");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +121,7 @@ void UMainTabTutorialWrapper_C::CheckFinishTutorialWrapper()
 
 void UMainTabTutorialWrapper_C::OnStopCallout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnStopCallout");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnStopCallout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -156,10 +135,7 @@ void UMainTabTutorialWrapper_C::OnStopCallout()
 
 void UMainTabTutorialWrapper_C::OnStartCallout(class FName TutorialObjectiveName_OnStartCallout, ETutorialType TutorialType_OnStartCallout)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnStartCallout");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnStartCallout");
 
 	Params::MainTabTutorialWrapper_C_OnStartCallout Parms{};
 
@@ -175,10 +151,7 @@ void UMainTabTutorialWrapper_C::OnStartCallout(class FName TutorialObjectiveName
 
 void UMainTabTutorialWrapper_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -189,10 +162,7 @@ void UMainTabTutorialWrapper_C::Construct()
 
 void UMainTabTutorialWrapper_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +173,7 @@ void UMainTabTutorialWrapper_C::Destruct()
 
 void UMainTabTutorialWrapper_C::OnFinishedToast()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnFinishedToast");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnFinishedToast");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -219,10 +186,7 @@ void UMainTabTutorialWrapper_C::OnFinishedToast()
 
 void UMainTabTutorialWrapper_C::ExecuteUbergraph_MainTabTutorialWrapper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialWrapper_C", "ExecuteUbergraph_MainTabTutorialWrapper");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialWrapper_C", "ExecuteUbergraph_MainTabTutorialWrapper");
 
 	Params::MainTabTutorialWrapper_C_ExecuteUbergraph_MainTabTutorialWrapper Parms{};
 

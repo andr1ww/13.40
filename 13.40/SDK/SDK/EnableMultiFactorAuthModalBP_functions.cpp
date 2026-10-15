@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEnableMultiFactorAuthModalBP_C::ExecuteUbergraph_EnableMultiFactorAuthModalBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "ExecuteUbergraph_EnableMultiFactorAuthModalBP");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "ExecuteUbergraph_EnableMultiFactorAuthModalBP");
 
 	Params::EnableMultiFactorAuthModalBP_C_ExecuteUbergraph_EnableMultiFactorAuthModalBP Parms{};
 
@@ -43,10 +40,7 @@ void UEnableMultiFactorAuthModalBP_C::ExecuteUbergraph_EnableMultiFactorAuthModa
 
 void UEnableMultiFactorAuthModalBP_C::OnInputModeChanged(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnInputModeChanged");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnInputModeChanged");
 
 	Params::EnableMultiFactorAuthModalBP_C_OnInputModeChanged Parms{};
 
@@ -61,10 +55,7 @@ void UEnableMultiFactorAuthModalBP_C::OnInputModeChanged(bool bUsingGamepad)
 
 void UEnableMultiFactorAuthModalBP_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "Construct");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UEnableMultiFactorAuthModalBP_C::Construct()
 
 void UEnableMultiFactorAuthModalBP_C::OnSetScreenConfiguration(bool bIsConsole)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnSetScreenConfiguration");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnSetScreenConfiguration");
 
 	Params::EnableMultiFactorAuthModalBP_C_OnSetScreenConfiguration Parms{};
 
@@ -97,10 +85,7 @@ void UEnableMultiFactorAuthModalBP_C::OnSetScreenConfiguration(bool bIsConsole)
 
 void UEnableMultiFactorAuthModalBP_C::OnConsoleDisplayURLProvided(const class FText& UniquePlayerURLText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnConsoleDisplayURLProvided");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnConsoleDisplayURLProvided");
 
 	Params::EnableMultiFactorAuthModalBP_C_OnConsoleDisplayURLProvided Parms{};
 
@@ -117,10 +102,7 @@ void UEnableMultiFactorAuthModalBP_C::OnConsoleDisplayURLProvided(const class FT
 
 void UEnableMultiFactorAuthModalBP_C::OnSetExitButtonText(const class FText& NewButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnSetExitButtonText");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnSetExitButtonText");
 
 	Params::EnableMultiFactorAuthModalBP_C_OnSetExitButtonText Parms{};
 
@@ -137,10 +119,7 @@ void UEnableMultiFactorAuthModalBP_C::OnSetExitButtonText(const class FText& New
 
 void UEnableMultiFactorAuthModalBP_C::OnIncentivizedSet(bool bIncentivized)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnIncentivizedSet");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnIncentivizedSet");
 
 	Params::EnableMultiFactorAuthModalBP_C_OnIncentivizedSet Parms{};
 
@@ -155,10 +134,7 @@ void UEnableMultiFactorAuthModalBP_C::OnIncentivizedSet(bool bIncentivized)
 
 void UEnableMultiFactorAuthModalBP_C::HandleHeaderText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "HandleHeaderText");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "HandleHeaderText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +147,7 @@ void UEnableMultiFactorAuthModalBP_C::HandleHeaderText()
 
 void UEnableMultiFactorAuthModalBP_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "PreConstruct");
 
 	Params::EnableMultiFactorAuthModalBP_C_PreConstruct Parms{};
 
@@ -189,10 +162,7 @@ void UEnableMultiFactorAuthModalBP_C::PreConstruct(bool IsDesignTime)
 
 void UEnableMultiFactorAuthModalBP_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +173,7 @@ void UEnableMultiFactorAuthModalBP_C::BP_OnActivated()
 
 void UEnableMultiFactorAuthModalBP_C::NavRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "NavRight");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "NavRight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -217,10 +184,7 @@ void UEnableMultiFactorAuthModalBP_C::NavRight()
 
 void UEnableMultiFactorAuthModalBP_C::NavUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "NavUp");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "NavUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -231,10 +195,7 @@ void UEnableMultiFactorAuthModalBP_C::NavUp()
 
 void UEnableMultiFactorAuthModalBP_C::HandleSetScreenMode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "HandleSetScreenMode");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "HandleSetScreenMode");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -245,10 +206,7 @@ void UEnableMultiFactorAuthModalBP_C::HandleSetScreenMode()
 
 void UEnableMultiFactorAuthModalBP_C::AnimationFullyCompleteBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "AnimationFullyCompleteBP");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "AnimationFullyCompleteBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -259,10 +217,7 @@ void UEnableMultiFactorAuthModalBP_C::AnimationFullyCompleteBP()
 
 void UEnableMultiFactorAuthModalBP_C::ScaleTitleForCulture()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "ScaleTitleForCulture");
+	class UFunction* Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "ScaleTitleForCulture");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

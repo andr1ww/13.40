@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void URewardInfoSimpleWidget_C::GetDisplayName(class FText* DisplayName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RewardInfoSimpleWidget_C", "GetDisplayName");
+	class UFunction* Func = Class->GetFunction("RewardInfoSimpleWidget_C", "GetDisplayName");
 
 	Params::RewardInfoSimpleWidget_C_GetDisplayName Parms{};
 
@@ -42,10 +39,7 @@ void URewardInfoSimpleWidget_C::GetDisplayName(class FText* DisplayName)
 
 void URewardInfoSimpleWidget_C::HandleDifferentItemOrQuantitySetBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RewardInfoSimpleWidget_C", "HandleDifferentItemOrQuantitySetBP");
+	class UFunction* Func = Class->GetFunction("RewardInfoSimpleWidget_C", "HandleDifferentItemOrQuantitySetBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void URewardInfoSimpleWidget_C::HandleDifferentItemOrQuantitySetBP()
 
 void URewardInfoSimpleWidget_C::ExecuteUbergraph_RewardInfoSimpleWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RewardInfoSimpleWidget_C", "ExecuteUbergraph_RewardInfoSimpleWidget");
+	class UFunction* Func = Class->GetFunction("RewardInfoSimpleWidget_C", "ExecuteUbergraph_RewardInfoSimpleWidget");
 
 	Params::RewardInfoSimpleWidget_C_ExecuteUbergraph_RewardInfoSimpleWidget Parms{};
 

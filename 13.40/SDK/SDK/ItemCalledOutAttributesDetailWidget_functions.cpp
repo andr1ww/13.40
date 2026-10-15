@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemCalledOutAttributesDetailWidget_C::ExecuteUbergraph_ItemCalledOutAttributesDetailWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "ExecuteUbergraph_ItemCalledOutAttributesDetailWidget");
+	class UFunction* Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "ExecuteUbergraph_ItemCalledOutAttributesDetailWidget");
 
 	Params::ItemCalledOutAttributesDetailWidget_C_ExecuteUbergraph_ItemCalledOutAttributesDetailWidget Parms{};
 
@@ -41,10 +38,7 @@ void UItemCalledOutAttributesDetailWidget_C::ExecuteUbergraph_ItemCalledOutAttri
 
 void UItemCalledOutAttributesDetailWidget_C::HandleItemToDetailChangedBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "HandleItemToDetailChangedBP");
+	class UFunction* Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "HandleItemToDetailChangedBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UItemCalledOutAttributesDetailWidget_C::HandleItemToDetailChangedBP()
 
 void UItemCalledOutAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UItemCalledOutAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet(
 
 void UItemCalledOutAttributesDetailWidget_C::GetDisplayAttributesToCallOut(TArray<struct FFortDisplayAttribute>* Attributes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "GetDisplayAttributesToCallOut");
+	class UFunction* Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "GetDisplayAttributesToCallOut");
 
 	Params::ItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut Parms{};
 
@@ -90,10 +78,7 @@ void UItemCalledOutAttributesDetailWidget_C::GetDisplayAttributesToCallOut(TArra
 
 void UItemCalledOutAttributesDetailWidget_C::UpdateStats()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "UpdateStats");
+	class UFunction* Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "UpdateStats");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -104,10 +89,7 @@ void UItemCalledOutAttributesDetailWidget_C::UpdateStats()
 
 void UItemCalledOutAttributesDetailWidget_C::Clear_Stats()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "Clear Stats");
+	class UFunction* Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "Clear Stats");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

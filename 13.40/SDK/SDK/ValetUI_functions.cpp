@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortAthenaVehicleFuelWidget::OnAddedFuel(float NewFuelPercent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnAddedFuel");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnAddedFuel");
 
 	Params::FortAthenaVehicleFuelWidget_OnAddedFuel Parms{};
 
@@ -46,10 +43,7 @@ void UFortAthenaVehicleFuelWidget::OnAddedFuel(float NewFuelPercent)
 
 void UFortAthenaVehicleFuelWidget::OnBoostFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnBoostFinished");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnBoostFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -60,10 +54,7 @@ void UFortAthenaVehicleFuelWidget::OnBoostFinished()
 
 void UFortAthenaVehicleFuelWidget::OnBoostStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnBoostStarted");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnBoostStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -74,10 +65,7 @@ void UFortAthenaVehicleFuelWidget::OnBoostStarted()
 
 void UFortAthenaVehicleFuelWidget::OnLowInFuel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnLowInFuel");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnLowInFuel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -88,10 +76,7 @@ void UFortAthenaVehicleFuelWidget::OnLowInFuel()
 
 void UFortAthenaVehicleFuelWidget::OnOutOfFuel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnOutOfFuel");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnOutOfFuel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -102,10 +87,7 @@ void UFortAthenaVehicleFuelWidget::OnOutOfFuel()
 
 void UFortAthenaVehicleFuelWidget::OnRechargableBoostFilled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnRechargableBoostFilled");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnRechargableBoostFilled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -118,10 +100,7 @@ void UFortAthenaVehicleFuelWidget::OnRechargableBoostFilled()
 
 void UFortAthenaVehicleFuelWidget::OnUpdateRechargeableBoostPercent(float BoostPercent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnUpdateRechargeableBoostPercent");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnUpdateRechargeableBoostPercent");
 
 	Params::FortAthenaVehicleFuelWidget_OnUpdateRechargeableBoostPercent Parms{};
 
@@ -136,10 +115,7 @@ void UFortAthenaVehicleFuelWidget::OnUpdateRechargeableBoostPercent(float BoostP
 
 void UFortAthenaVehicleFuelWidget::OnValetNameUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnValetNameUpdated");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "OnValetNameUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void UFortAthenaVehicleFuelWidget::OnValetNameUpdated()
 
 void UFortAthenaVehicleFuelWidget::SetupVehicleFuelWidget(class AActor* NewVehicle, const bool bRequestShowWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "SetupVehicleFuelWidget");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "SetupVehicleFuelWidget");
 
 	Params::FortAthenaVehicleFuelWidget_SetupVehicleFuelWidget Parms{};
 
@@ -180,10 +153,7 @@ void UFortAthenaVehicleFuelWidget::SetupVehicleFuelWidget(class AActor* NewVehic
 
 void UFortAthenaVehicleFuelWidget::SetVehicleProperties(bool bInfiniteFuel, bool bUsesRechargeableBoost)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "SetVehicleProperties");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "SetVehicleProperties");
 
 	Params::FortAthenaVehicleFuelWidget_SetVehicleProperties Parms{};
 
@@ -199,10 +169,7 @@ void UFortAthenaVehicleFuelWidget::SetVehicleProperties(bool bInfiniteFuel, bool
 
 void UFortAthenaVehicleFuelWidget::ShowNoFuelMessage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "ShowNoFuelMessage");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "ShowNoFuelMessage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +182,7 @@ void UFortAthenaVehicleFuelWidget::ShowNoFuelMessage()
 
 void UFortAthenaVehicleFuelWidget::UpdateFuelWidgetVisibilities(bool bIsLowOnFuel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "UpdateFuelWidgetVisibilities");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "UpdateFuelWidgetVisibilities");
 
 	Params::FortAthenaVehicleFuelWidget_UpdateFuelWidgetVisibilities Parms{};
 
@@ -235,10 +199,7 @@ void UFortAthenaVehicleFuelWidget::UpdateFuelWidgetVisibilities(bool bIsLowOnFue
 
 void UFortAthenaVehicleFuelWidget::UpdateRPMMeter(float NormalizedRPM)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "UpdateRPMMeter");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "UpdateRPMMeter");
 
 	Params::FortAthenaVehicleFuelWidget_UpdateRPMMeter Parms{};
 
@@ -256,10 +217,7 @@ void UFortAthenaVehicleFuelWidget::UpdateRPMMeter(float NormalizedRPM)
 
 void UFortAthenaVehicleFuelWidget::UpdateSecondaryMeter(float FuelPercentage, bool bIsLowOnFuel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "UpdateSecondaryMeter");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "UpdateSecondaryMeter");
 
 	Params::FortAthenaVehicleFuelWidget_UpdateSecondaryMeter Parms{};
 
@@ -277,10 +235,7 @@ void UFortAthenaVehicleFuelWidget::UpdateSecondaryMeter(float FuelPercentage, bo
 
 void UFortAthenaVehicleFuelWidget::UpdateSpeedometer(float NormalizedSpeed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "UpdateSpeedometer");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "UpdateSpeedometer");
 
 	Params::FortAthenaVehicleFuelWidget_UpdateSpeedometer Parms{};
 
@@ -297,10 +252,7 @@ void UFortAthenaVehicleFuelWidget::UpdateSpeedometer(float NormalizedSpeed)
 
 class AFortDagwoodVehicle* UFortAthenaVehicleFuelWidget::GetDagwoodVehicle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "GetDagwoodVehicle");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "GetDagwoodVehicle");
 
 	Params::FortAthenaVehicleFuelWidget_GetDagwoodVehicle Parms{};
 
@@ -322,10 +274,7 @@ class AFortDagwoodVehicle* UFortAthenaVehicleFuelWidget::GetDagwoodVehicle() con
 
 class AActor* UFortAthenaVehicleFuelWidget::GetVehicle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "GetVehicle");
+	class UFunction* Func = Class->GetFunction("FortAthenaVehicleFuelWidget", "GetVehicle");
 
 	Params::FortAthenaVehicleFuelWidget_GetVehicle Parms{};
 

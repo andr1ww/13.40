@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreativeLobbyAdSpace_C::ExecuteUbergraph_CreativeLobbyAdSpace(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeLobbyAdSpace_C", "ExecuteUbergraph_CreativeLobbyAdSpace");
+	class UFunction* Func = Class->GetFunction("CreativeLobbyAdSpace_C", "ExecuteUbergraph_CreativeLobbyAdSpace");
 
 	Params::CreativeLobbyAdSpace_C_ExecuteUbergraph_CreativeLobbyAdSpace Parms{};
 
@@ -41,10 +38,7 @@ void UCreativeLobbyAdSpace_C::ExecuteUbergraph_CreativeLobbyAdSpace(int32 EntryP
 
 void UCreativeLobbyAdSpace_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeLobbyAdSpace_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CreativeLobbyAdSpace_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

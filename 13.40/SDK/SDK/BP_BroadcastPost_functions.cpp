@@ -20,10 +20,7 @@ SDK_NAMESPACE_START
 
 void ABP_BroadcastPost_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BroadcastPost_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_BroadcastPost_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

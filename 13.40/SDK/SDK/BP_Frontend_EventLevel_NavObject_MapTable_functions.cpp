@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Frontend_EventLevel_NavObject_MapTable_C::ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_MapTable(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_MapTable");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_MapTable");
 
 	Params::BP_Frontend_EventLevel_NavObject_MapTable_C_ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_MapTable Parms{};
 
@@ -41,10 +38,7 @@ void ABP_Frontend_EventLevel_NavObject_MapTable_C::ExecuteUbergraph_BP_Frontend_
 
 void ABP_Frontend_EventLevel_NavObject_MapTable_C::OnActiveEventsChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "OnActiveEventsChanged");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "OnActiveEventsChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_Frontend_EventLevel_NavObject_MapTable_C::OnActiveEventsChanged()
 
 void ABP_Frontend_EventLevel_NavObject_MapTable_C::ApplyMinimapTextures()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "ApplyMinimapTextures");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "ApplyMinimapTextures");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_Frontend_EventLevel_NavObject_MapTable_C::ApplyMinimapTextures()
 
 void ABP_Frontend_EventLevel_NavObject_MapTable_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void ABP_Frontend_EventLevel_NavObject_MapTable_C::ReceiveBeginPlay()
 
 void ABP_Frontend_EventLevel_NavObject_MapTable_C::OnLoaded_A68B6D734D1ACDA59664A699214A131F(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "OnLoaded_A68B6D734D1ACDA59664A699214A131F");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "OnLoaded_A68B6D734D1ACDA59664A699214A131F");
 
 	Params::BP_Frontend_EventLevel_NavObject_MapTable_C_OnLoaded_A68B6D734D1ACDA59664A699214A131F Parms{};
 
@@ -105,10 +90,7 @@ void ABP_Frontend_EventLevel_NavObject_MapTable_C::OnLoaded_A68B6D734D1ACDA59664
 
 void ABP_Frontend_EventLevel_NavObject_MapTable_C::OnLoaded_F6AE426C44DA5A3F148FEB87D7046DD0(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "OnLoaded_F6AE426C44DA5A3F148FEB87D7046DD0");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "OnLoaded_F6AE426C44DA5A3F148FEB87D7046DD0");
 
 	Params::BP_Frontend_EventLevel_NavObject_MapTable_C_OnLoaded_F6AE426C44DA5A3F148FEB87D7046DD0 Parms{};
 
@@ -127,10 +109,7 @@ void ABP_Frontend_EventLevel_NavObject_MapTable_C::OnLoaded_F6AE426C44DA5A3F148F
 
 void ABP_Frontend_EventLevel_NavObject_MapTable_C::GetMinimapTextures(TSoftObjectPtr<class UTexture2D>* MinimapTexture, TSoftObjectPtr<class UTexture2D>* MinimapDiscoveryMask, int32* MinimapIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "GetMinimapTextures");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "GetMinimapTextures");
 
 	Params::BP_Frontend_EventLevel_NavObject_MapTable_C_GetMinimapTextures Parms{};
 
@@ -154,10 +133,7 @@ void ABP_Frontend_EventLevel_NavObject_MapTable_C::GetMinimapTextures(TSoftObjec
 
 void ABP_Frontend_EventLevel_NavObject_MapTable_C::GetMinimapIndex(int32* Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "GetMinimapIndex");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "GetMinimapIndex");
 
 	Params::BP_Frontend_EventLevel_NavObject_MapTable_C_GetMinimapIndex Parms{};
 
@@ -173,10 +149,7 @@ void ABP_Frontend_EventLevel_NavObject_MapTable_C::GetMinimapIndex(int32* Index_
 
 void ABP_Frontend_EventLevel_NavObject_MapTable_C::Update_Water_Level()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "Update Water Level");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_MapTable_C", "Update Water Level");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

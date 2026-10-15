@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Petrol_C::ExecuteUbergraph_B_Prj_Petrol(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Petrol_C", "ExecuteUbergraph_B_Prj_Petrol");
+	class UFunction* Func = Class->GetFunction("B_Prj_Petrol_C", "ExecuteUbergraph_B_Prj_Petrol");
 
 	Params::B_Prj_Petrol_C_ExecuteUbergraph_B_Prj_Petrol Parms{};
 
@@ -50,10 +47,7 @@ void AB_Prj_Petrol_C::ExecuteUbergraph_B_Prj_Petrol(int32 EntryPoint)
 
 void AB_Prj_Petrol_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Petrol_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("B_Prj_Petrol_C", "ReceiveHit");
 
 	Params::B_Prj_Petrol_C_ReceiveHit Parms{};
 
@@ -75,10 +69,7 @@ void AB_Prj_Petrol_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor
 
 void AB_Prj_Petrol_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Petrol_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("B_Prj_Petrol_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -92,10 +83,7 @@ void AB_Prj_Petrol_C::ReceiveDestroyed()
 
 void AB_Prj_Petrol_C::OnExploded(const TArray<class AActor*>& HitActors_0, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Petrol_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Petrol_C", "OnExploded");
 
 	Params::B_Prj_Petrol_C_OnExploded Parms{};
 
@@ -111,10 +99,7 @@ void AB_Prj_Petrol_C::OnExploded(const TArray<class AActor*>& HitActors_0, const
 
 void AB_Prj_Petrol_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Petrol_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Petrol_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +112,7 @@ void AB_Prj_Petrol_C::ReceiveBeginPlay()
 
 void AB_Prj_Petrol_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Petrol_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Petrol_C", "OnStop");
 
 	Params::B_Prj_Petrol_C_OnStop Parms{};
 
@@ -145,10 +127,7 @@ void AB_Prj_Petrol_C::OnStop(const struct FHitResult& Hit)
 
 void AB_Prj_Petrol_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Petrol_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_Petrol_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

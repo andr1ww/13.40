@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBladeMenu_SocialPanel_C::ExecuteUbergraph_BladeMenu_SocialPanel(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "ExecuteUbergraph_BladeMenu_SocialPanel");
+	class UFunction* Func = Class->GetFunction("BladeMenu_SocialPanel_C", "ExecuteUbergraph_BladeMenu_SocialPanel");
 
 	Params::BladeMenu_SocialPanel_C_ExecuteUbergraph_BladeMenu_SocialPanel Parms{};
 
@@ -41,10 +38,7 @@ void UBladeMenu_SocialPanel_C::ExecuteUbergraph_BladeMenu_SocialPanel(int32 Entr
 
 void UBladeMenu_SocialPanel_C::OnCloseAnimationFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnCloseAnimationFinished");
+	class UFunction* Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnCloseAnimationFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UBladeMenu_SocialPanel_C::OnCloseAnimationFinished()
 
 void UBladeMenu_SocialPanel_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UBladeMenu_SocialPanel_C::OnInitialized()
 
 void UBladeMenu_SocialPanel_C::OnClosed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnClosed");
+	class UFunction* Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnClosed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UBladeMenu_SocialPanel_C::OnClosed()
 
 void UBladeMenu_SocialPanel_C::OnOpened()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnOpened");
+	class UFunction* Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnOpened");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

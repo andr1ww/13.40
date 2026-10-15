@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAB_CarryPlayer_C::ExecuteUbergraph_GAB_CarryPlayer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_CarryPlayer_C", "ExecuteUbergraph_GAB_CarryPlayer");
+	class UFunction* Func = Class->GetFunction("GAB_CarryPlayer_C", "ExecuteUbergraph_GAB_CarryPlayer");
 
 	Params::GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer Parms{};
 
@@ -43,10 +40,7 @@ void UGAB_CarryPlayer_C::ExecuteUbergraph_GAB_CarryPlayer(int32 EntryPoint)
 
 void UGAB_CarryPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_CarryPlayer_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GAB_CarryPlayer_C", "K2_OnEndAbility");
 
 	Params::GAB_CarryPlayer_C_K2_OnEndAbility Parms{};
 
@@ -61,10 +55,7 @@ void UGAB_CarryPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_CarryPlayer_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_CarryPlayer_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GAB_CarryPlayer_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UGAB_CarryPlayer_C::K2_ActivateAbility()
 
 void UGAB_CarryPlayer_C::OnCompleted_C4440F1640E9A8D79E44FD8C23525824()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_CarryPlayer_C", "OnCompleted_C4440F1640E9A8D79E44FD8C23525824");
+	class UFunction* Func = Class->GetFunction("GAB_CarryPlayer_C", "OnCompleted_C4440F1640E9A8D79E44FD8C23525824");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UGAB_CarryPlayer_C::OnCompleted_C4440F1640E9A8D79E44FD8C23525824()
 
 void UGAB_CarryPlayer_C::OnBlendOut_C4440F1640E9A8D79E44FD8C23525824()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_CarryPlayer_C", "OnBlendOut_C4440F1640E9A8D79E44FD8C23525824");
+	class UFunction* Func = Class->GetFunction("GAB_CarryPlayer_C", "OnBlendOut_C4440F1640E9A8D79E44FD8C23525824");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UGAB_CarryPlayer_C::OnBlendOut_C4440F1640E9A8D79E44FD8C23525824()
 
 void UGAB_CarryPlayer_C::OnInterrupted_C4440F1640E9A8D79E44FD8C23525824()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_CarryPlayer_C", "OnInterrupted_C4440F1640E9A8D79E44FD8C23525824");
+	class UFunction* Func = Class->GetFunction("GAB_CarryPlayer_C", "OnInterrupted_C4440F1640E9A8D79E44FD8C23525824");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UGAB_CarryPlayer_C::OnInterrupted_C4440F1640E9A8D79E44FD8C23525824()
 
 void UGAB_CarryPlayer_C::OnCancelled_C4440F1640E9A8D79E44FD8C23525824()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_CarryPlayer_C", "OnCancelled_C4440F1640E9A8D79E44FD8C23525824");
+	class UFunction* Func = Class->GetFunction("GAB_CarryPlayer_C", "OnCancelled_C4440F1640E9A8D79E44FD8C23525824");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

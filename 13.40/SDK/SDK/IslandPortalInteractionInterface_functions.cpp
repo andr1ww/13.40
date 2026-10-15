@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void IIslandPortalInteractionInterface_C::BroadcastIsBeingInteractedWith(bool IsInteracting)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("IslandPortalInteractionInterface_C", "BroadcastIsBeingInteractedWith");
+	class UFunction* Func = AsUObject()->Class->GetFunction("IslandPortalInteractionInterface_C", "BroadcastIsBeingInteractedWith");
 
 	Params::IslandPortalInteractionInterface_C_BroadcastIsBeingInteractedWith Parms{};
 

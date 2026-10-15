@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerBannedModal_C::ExecuteUbergraph_PlayerBannedModal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "ExecuteUbergraph_PlayerBannedModal");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "ExecuteUbergraph_PlayerBannedModal");
 
 	Params::PlayerBannedModal_C_ExecuteUbergraph_PlayerBannedModal Parms{};
 
@@ -41,10 +38,7 @@ void UPlayerBannedModal_C::ExecuteUbergraph_PlayerBannedModal(int32 EntryPoint)
 
 void UPlayerBannedModal_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UPlayerBannedModal_C::BP_OnActivated()
 
 void UPlayerBannedModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
 
 	Params::PlayerBannedModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -78,10 +69,7 @@ void UPlayerBannedModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_16_Com
 
 void UPlayerBannedModal_C::UpdateText(const class FText& Title_0, const class FText& Content)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "UpdateText");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "UpdateText");
 
 	Params::PlayerBannedModal_C_UpdateText Parms{};
 
@@ -99,10 +87,7 @@ void UPlayerBannedModal_C::UpdateText(const class FText& Title_0, const class FT
 
 void UPlayerBannedModal_C::DisableButton(bool DisableButton_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "DisableButton");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "DisableButton");
 
 	Params::PlayerBannedModal_C_DisableButton Parms{};
 
@@ -119,10 +104,7 @@ void UPlayerBannedModal_C::DisableButton(bool DisableButton_0)
 
 void UPlayerBannedModal_C::UpdateTimeRemaining(const class FText& Time)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "UpdateTimeRemaining");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "UpdateTimeRemaining");
 
 	Params::PlayerBannedModal_C_UpdateTimeRemaining Parms{};
 
@@ -139,10 +121,7 @@ void UPlayerBannedModal_C::UpdateTimeRemaining(const class FText& Time)
 
 void UPlayerBannedModal_C::OnBanAck(bool Success)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "OnBanAck");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "OnBanAck");
 
 	Params::PlayerBannedModal_C_OnBanAck Parms{};
 
@@ -163,10 +142,7 @@ void UPlayerBannedModal_C::OnBanAck(bool Success)
 
 class FText UPlayerBannedModal_C::BanEnumToText(EPlayerBanReasons Index_0, const class FString& ExploitProgramName, EPlayerCompetitiveBanReasons Competitive_Ban_Reason, bool bIsCompetitiveBan_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "BanEnumToText");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "BanEnumToText");
 
 	Params::PlayerBannedModal_C_BanEnumToText Parms{};
 
@@ -186,10 +162,7 @@ class FText UPlayerBannedModal_C::BanEnumToText(EPlayerBanReasons Index_0, const
 
 void UPlayerBannedModal_C::RemoveModal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "RemoveModal");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "RemoveModal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -200,10 +173,7 @@ void UPlayerBannedModal_C::RemoveModal()
 
 void UPlayerBannedModal_C::HandleCloseAttempted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBannedModal_C", "HandleCloseAttempted");
+	class UFunction* Func = Class->GetFunction("PlayerBannedModal_C", "HandleCloseAttempted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaItemCustomizationSelector_C::ExecuteUbergraph_AthenaItemCustomizationSelector(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ExecuteUbergraph_AthenaItemCustomizationSelector");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ExecuteUbergraph_AthenaItemCustomizationSelector");
 
 	Params::AthenaItemCustomizationSelector_C_ExecuteUbergraph_AthenaItemCustomizationSelector Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaItemCustomizationSelector_C::ExecuteUbergraph_AthenaItemCustomizatio
 
 void UAthenaItemCustomizationSelector_C::OnHideItemInfoHeader(bool bShouldHide)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnHideItemInfoHeader");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnHideItemInfoHeader");
 
 	Params::AthenaItemCustomizationSelector_C_OnHideItemInfoHeader Parms{};
 
@@ -63,10 +57,7 @@ void UAthenaItemCustomizationSelector_C::OnHideItemInfoHeader(bool bShouldHide)
 
 void UAthenaItemCustomizationSelector_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaItemCustomizationSelector_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -83,10 +74,7 @@ void UAthenaItemCustomizationSelector_C::BndEvt__CloseButton_K2Node_ComponentBou
 
 void UAthenaItemCustomizationSelector_C::HandleTextChanged(const class FText& NewText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleTextChanged");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleTextChanged");
 
 	Params::AthenaItemCustomizationSelector_C_HandleTextChanged Parms{};
 
@@ -103,10 +91,7 @@ void UAthenaItemCustomizationSelector_C::HandleTextChanged(const class FText& Ne
 
 void UAthenaItemCustomizationSelector_C::HandleTextSearchSelectedChanged(bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleTextSearchSelectedChanged");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleTextSearchSelectedChanged");
 
 	Params::AthenaItemCustomizationSelector_C_HandleTextSearchSelectedChanged Parms{};
 
@@ -126,10 +111,7 @@ void UAthenaItemCustomizationSelector_C::HandleTextSearchSelectedChanged(bool bI
 
 void UAthenaItemCustomizationSelector_C::OnFinishedItemSetup(const class FText& CategoryDisplayName, const class FText& ItemDisplayTypeName, EAthenaCustomizationCategory SelectedCategory, class UMaterialInstance* OverrideSlotImage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnFinishedItemSetup");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnFinishedItemSetup");
 
 	Params::AthenaItemCustomizationSelector_C_OnFinishedItemSetup Parms{};
 
@@ -147,10 +129,7 @@ void UAthenaItemCustomizationSelector_C::OnFinishedItemSetup(const class FText& 
 
 void UAthenaItemCustomizationSelector_C::HideInfoPanel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HideInfoPanel");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HideInfoPanel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +140,7 @@ void UAthenaItemCustomizationSelector_C::HideInfoPanel()
 
 void UAthenaItemCustomizationSelector_C::BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_2_OnUpdateSaveButtonVisuals__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_2_OnUpdateSaveButtonVisuals__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_2_OnUpdateSaveButtonVisuals__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +151,7 @@ void UAthenaItemCustomizationSelector_C::BndEvt__Picker_ItemSelector_K2Node_Comp
 
 void UAthenaItemCustomizationSelector_C::BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_1_OnUpdateSaveButtonVisuals__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_1_OnUpdateSaveButtonVisuals__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_1_OnUpdateSaveButtonVisuals__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +164,7 @@ void UAthenaItemCustomizationSelector_C::BndEvt__Picker_ItemSelector_K2Node_Comp
 
 void UAthenaItemCustomizationSelector_C::OnCurrentItemChanged(class UFortItem* SelectedItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnCurrentItemChanged");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnCurrentItemChanged");
 
 	Params::AthenaItemCustomizationSelector_C_OnCurrentItemChanged Parms{};
 
@@ -211,10 +181,7 @@ void UAthenaItemCustomizationSelector_C::OnCurrentItemChanged(class UFortItem* S
 
 void UAthenaItemCustomizationSelector_C::OnTabSelectionChanged(bool bShowingVariants)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnTabSelectionChanged");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnTabSelectionChanged");
 
 	Params::AthenaItemCustomizationSelector_C_OnTabSelectionChanged Parms{};
 
@@ -229,10 +196,7 @@ void UAthenaItemCustomizationSelector_C::OnTabSelectionChanged(bool bShowingVari
 
 void UAthenaItemCustomizationSelector_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,10 +207,7 @@ void UAthenaItemCustomizationSelector_C::BP_OnActivated()
 
 void UAthenaItemCustomizationSelector_C::OnSavingItemStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnSavingItemStarted");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnSavingItemStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +218,7 @@ void UAthenaItemCustomizationSelector_C::OnSavingItemStarted()
 
 void UAthenaItemCustomizationSelector_C::OnFinsihedItemSave()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnFinsihedItemSave");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnFinsihedItemSave");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -274,10 +232,7 @@ void UAthenaItemCustomizationSelector_C::OnFinsihedItemSave()
 
 void UAthenaItemCustomizationSelector_C::BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_44_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_44_OnTabButtonCreated__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_44_OnTabButtonCreated__DelegateSignature");
 
 	Params::AthenaItemCustomizationSelector_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_44_OnTabButtonCreated__DelegateSignature Parms{};
 
@@ -293,10 +248,7 @@ void UAthenaItemCustomizationSelector_C::BndEvt__HorizontalTabList_K2Node_Compon
 
 void UAthenaItemCustomizationSelector_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -309,10 +261,7 @@ void UAthenaItemCustomizationSelector_C::Construct()
 
 void UAthenaItemCustomizationSelector_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleBack");
 
 	Params::AthenaItemCustomizationSelector_C_HandleBack Parms{};
 
@@ -330,10 +279,7 @@ void UAthenaItemCustomizationSelector_C::HandleBack(bool* PassThrough)
 
 class UWidget* UAthenaItemCustomizationSelector_C::GetWidgetForFramingViewedItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetWidgetForFramingViewedItem");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetWidgetForFramingViewedItem");
 
 	Params::AthenaItemCustomizationSelector_C_GetWidgetForFramingViewedItem Parms{};
 
@@ -348,10 +294,7 @@ class UWidget* UAthenaItemCustomizationSelector_C::GetWidgetForFramingViewedItem
 
 void UAthenaItemCustomizationSelector_C::ShowSavingModal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ShowSavingModal");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ShowSavingModal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -364,10 +307,7 @@ void UAthenaItemCustomizationSelector_C::ShowSavingModal()
 
 void UAthenaItemCustomizationSelector_C::GetCurrentItemCosmeticDefinition(class UAthenaCosmeticItemDefinition** Cosmetic_Item_Definition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCurrentItemCosmeticDefinition");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCurrentItemCosmeticDefinition");
 
 	Params::AthenaItemCustomizationSelector_C_GetCurrentItemCosmeticDefinition Parms{};
 
@@ -387,10 +327,7 @@ void UAthenaItemCustomizationSelector_C::GetCurrentItemCosmeticDefinition(class 
 
 void UAthenaItemCustomizationSelector_C::HandleItemSetupFinished(const class FText& InText, EAthenaCustomizationCategory Category, class UMaterialInstance* OverrideImage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleItemSetupFinished");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleItemSetupFinished");
 
 	Params::AthenaItemCustomizationSelector_C_HandleItemSetupFinished Parms{};
 
@@ -411,10 +348,7 @@ void UAthenaItemCustomizationSelector_C::HandleItemSetupFinished(const class FTe
 
 class UMaterialInstance* UAthenaItemCustomizationSelector_C::GetCategoryImage(EAthenaCustomizationCategory Index_0, class UMaterialInstance* OverrideImage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCategoryImage");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCategoryImage");
 
 	Params::AthenaItemCustomizationSelector_C_GetCategoryImage Parms{};
 
@@ -432,10 +366,7 @@ class UMaterialInstance* UAthenaItemCustomizationSelector_C::GetCategoryImage(EA
 
 void UAthenaItemCustomizationSelector_C::UpdateSeasonButtonEnabledState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateSeasonButtonEnabledState");
+	class UFunction* Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateSeasonButtonEnabledState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

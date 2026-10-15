@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTournamentDetails_C::ExecuteUbergraph_TournamentDetails(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "ExecuteUbergraph_TournamentDetails");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "ExecuteUbergraph_TournamentDetails");
 
 	Params::TournamentDetails_C_ExecuteUbergraph_TournamentDetails Parms{};
 
@@ -43,10 +40,7 @@ void UTournamentDetails_C::ExecuteUbergraph_TournamentDetails(int32 EntryPoint)
 
 void UTournamentDetails_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
 
 	Params::TournamentDetails_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -61,10 +55,7 @@ void UTournamentDetails_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_6_Comm
 
 void UTournamentDetails_C::EventFullScreenAnimOutFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventFullScreenAnimOutFinished");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventFullScreenAnimOutFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UTournamentDetails_C::EventFullScreenAnimOutFinished()
 
 void UTournamentDetails_C::EventBackoutLiveGames()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventBackoutLiveGames");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventBackoutLiveGames");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UTournamentDetails_C::EventBackoutLiveGames()
 
 void UTournamentDetails_C::EventviewLiveGames()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventviewLiveGames");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventviewLiveGames");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UTournamentDetails_C::EventviewLiveGames()
 
 void UTournamentDetails_C::OnActivateScreen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "OnActivateScreen");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "OnActivateScreen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UTournamentDetails_C::OnActivateScreen()
 
 void UTournamentDetails_C::No_payouts()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "No payouts");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "No payouts");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void UTournamentDetails_C::No_payouts()
 
 void UTournamentDetails_C::EventclosePayout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventclosePayout");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventclosePayout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -148,10 +124,7 @@ void UTournamentDetails_C::EventclosePayout()
 
 void UTournamentDetails_C::EventViewPayout(const class FString& EventWindowId, const class FString& EventId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventViewPayout");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventViewPayout");
 
 	Params::TournamentDetails_C_EventViewPayout Parms{};
 
@@ -169,10 +142,7 @@ void UTournamentDetails_C::EventViewPayout(const class FString& EventWindowId, c
 
 void UTournamentDetails_C::BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
 
 	Params::TournamentDetails_C_BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -187,10 +157,7 @@ void UTournamentDetails_C::BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4
 
 void UTournamentDetails_C::EventCloseLeaderboard()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventCloseLeaderboard");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventCloseLeaderboard");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +170,7 @@ void UTournamentDetails_C::EventCloseLeaderboard()
 
 void UTournamentDetails_C::EventToggleFullScreenContent(bool In)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventToggleFullScreenContent");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventToggleFullScreenContent");
 
 	Params::TournamentDetails_C_EventToggleFullScreenContent Parms{};
 
@@ -224,10 +188,7 @@ void UTournamentDetails_C::EventToggleFullScreenContent(bool In)
 
 void UTournamentDetails_C::EventViewFullLeaderboard(const class FString& TournamentId, const class FString& EventId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventViewFullLeaderboard");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventViewFullLeaderboard");
 
 	Params::TournamentDetails_C_EventViewFullLeaderboard Parms{};
 
@@ -245,10 +206,7 @@ void UTournamentDetails_C::EventViewFullLeaderboard(const class FString& Tournam
 
 void UTournamentDetails_C::BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::TournamentDetails_C_BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -265,10 +223,7 @@ void UTournamentDetails_C::BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundE
 
 void UTournamentDetails_C::BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
 
 	Params::TournamentDetails_C_BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -285,10 +240,7 @@ void UTournamentDetails_C::BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEve
 
 void UTournamentDetails_C::BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::TournamentDetails_C_BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -305,10 +257,7 @@ void UTournamentDetails_C::BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEven
 
 void UTournamentDetails_C::BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::TournamentDetails_C_BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -323,10 +272,7 @@ void UTournamentDetails_C::BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_Comm
 
 void UTournamentDetails_C::EventStopCentering()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventStopCentering");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventStopCentering");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -337,10 +283,7 @@ void UTournamentDetails_C::EventStopCentering()
 
 void UTournamentDetails_C::EventStartCentering()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventStartCentering");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventStartCentering");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -354,10 +297,7 @@ void UTournamentDetails_C::EventStartCentering()
 
 void UTournamentDetails_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "Tick");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "Tick");
 
 	Params::TournamentDetails_C_Tick Parms{};
 
@@ -375,10 +315,7 @@ void UTournamentDetails_C::Tick(const struct FGeometry& MyGeometry, float InDelt
 
 void UTournamentDetails_C::EventCenterEventWindow(class UWidget* Widget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventCenterEventWindow");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventCenterEventWindow");
 
 	Params::TournamentDetails_C_EventCenterEventWindow Parms{};
 
@@ -395,10 +332,7 @@ void UTournamentDetails_C::EventCenterEventWindow(class UWidget* Widget)
 
 void UTournamentDetails_C::EventDeselectWindows(class UWidget* SelectedWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventDeselectWindows");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventDeselectWindows");
 
 	Params::TournamentDetails_C_EventDeselectWindows Parms{};
 
@@ -413,10 +347,7 @@ void UTournamentDetails_C::EventDeselectWindows(class UWidget* SelectedWidget)
 
 void UTournamentDetails_C::CloseEventWindowDetails()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "CloseEventWindowDetails");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "CloseEventWindowDetails");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -427,10 +358,7 @@ void UTournamentDetails_C::CloseEventWindowDetails()
 
 void UTournamentDetails_C::CloseTournamentDetails()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "CloseTournamentDetails");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "CloseTournamentDetails");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -441,10 +369,7 @@ void UTournamentDetails_C::CloseTournamentDetails()
 
 void UTournamentDetails_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "Construct");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -459,10 +384,7 @@ void UTournamentDetails_C::Construct()
 
 void UTournamentDetails_C::AnimTransition(bool In, class UWidgetAnimation* Animation, float PlaySpeed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "AnimTransition");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "AnimTransition");
 
 	Params::TournamentDetails_C_AnimTransition Parms{};
 
@@ -481,10 +403,7 @@ void UTournamentDetails_C::AnimTransition(bool In, class UWidgetAnimation* Anima
 
 void UTournamentDetails_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "PreConstruct");
 
 	Params::TournamentDetails_C_PreConstruct Parms{};
 
@@ -501,10 +420,7 @@ void UTournamentDetails_C::PreConstruct(bool IsDesignTime)
 
 void UTournamentDetails_C::EventShowWindowDetails(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "EventShowWindowDetails");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "EventShowWindowDetails");
 
 	Params::TournamentDetails_C_EventShowWindowDetails Parms{};
 
@@ -519,10 +435,7 @@ void UTournamentDetails_C::EventShowWindowDetails(class UCommonButton* Button)
 
 void UTournamentDetails_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -533,10 +446,7 @@ void UTournamentDetails_C::RefreshDataBP()
 
 void UTournamentDetails_C::Refresh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "Refresh");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -547,10 +457,7 @@ void UTournamentDetails_C::Refresh()
 
 void UTournamentDetails_C::RefreshEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "RefreshEvents");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "RefreshEvents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -561,10 +468,7 @@ void UTournamentDetails_C::RefreshEvents()
 
 void UTournamentDetails_C::RefreshScoringRules()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "RefreshScoringRules");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "RefreshScoringRules");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -575,10 +479,7 @@ void UTournamentDetails_C::RefreshScoringRules()
 
 void UTournamentDetails_C::RefreshOverviewPanel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "RefreshOverviewPanel");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "RefreshOverviewPanel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -589,10 +490,7 @@ void UTournamentDetails_C::RefreshOverviewPanel()
 
 void UTournamentDetails_C::RefreshDetailsPanel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "RefreshDetailsPanel");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "RefreshDetailsPanel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -605,10 +503,7 @@ void UTournamentDetails_C::RefreshDetailsPanel()
 
 void UTournamentDetails_C::Handle_Back(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "Handle_Back");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "Handle_Back");
 
 	Params::TournamentDetails_C_Handle_Back Parms{};
 
@@ -624,10 +519,7 @@ void UTournamentDetails_C::Handle_Back(bool* PassThrough)
 
 void UTournamentDetails_C::RefreshViolators()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "RefreshViolators");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "RefreshViolators");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -640,10 +532,7 @@ void UTournamentDetails_C::RefreshViolators()
 
 void UTournamentDetails_C::OnHandleBack(bool* bResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "OnHandleBack");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "OnHandleBack");
 
 	Params::TournamentDetails_C_OnHandleBack Parms{};
 
@@ -662,10 +551,7 @@ void UTournamentDetails_C::OnHandleBack(bool* bResult)
 
 void UTournamentDetails_C::CreateScoringWidgets(const class FString& TournamentSeriesId, const class FString& TournamentId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDetails_C", "CreateScoringWidgets");
+	class UFunction* Func = Class->GetFunction("TournamentDetails_C", "CreateScoringWidgets");
 
 	Params::TournamentDetails_C_CreateScoringWidgets Parms{};
 

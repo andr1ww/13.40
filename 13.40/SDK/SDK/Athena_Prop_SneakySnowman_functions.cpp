@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AAthena_Prop_SneakySnowman_C::ExecuteUbergraph_Athena_Prop_SneakySnowman(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ExecuteUbergraph_Athena_Prop_SneakySnowman");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ExecuteUbergraph_Athena_Prop_SneakySnowman");
 
 	Params::Athena_Prop_SneakySnowman_C_ExecuteUbergraph_Athena_Prop_SneakySnowman Parms{};
 
@@ -41,10 +38,7 @@ void AAthena_Prop_SneakySnowman_C::ExecuteUbergraph_Athena_Prop_SneakySnowman(in
 
 void AAthena_Prop_SneakySnowman_C::ResetDistanceCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ResetDistanceCheck");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ResetDistanceCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -64,10 +58,7 @@ void AAthena_Prop_SneakySnowman_C::ResetDistanceCheck()
 
 void AAthena_Prop_SneakySnowman_C::WorldPropSupportDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "WorldPropSupportDied");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "WorldPropSupportDied");
 
 	Params::Athena_Prop_SneakySnowman_C_WorldPropSupportDied Parms{};
 
@@ -89,10 +80,7 @@ void AAthena_Prop_SneakySnowman_C::WorldPropSupportDied(class AActor* DamagedAct
 
 void AAthena_Prop_SneakySnowman_C::WobbleAnims()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "WobbleAnims");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "WobbleAnims");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -106,10 +94,7 @@ void AAthena_Prop_SneakySnowman_C::WobbleAnims()
 
 void AAthena_Prop_SneakySnowman_C::PlaylistLoaded(class FName PlaylistName, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "PlaylistLoaded");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "PlaylistLoaded");
 
 	Params::Athena_Prop_SneakySnowman_C_PlaylistLoaded Parms{};
 
@@ -127,10 +112,7 @@ void AAthena_Prop_SneakySnowman_C::PlaylistLoaded(class FName PlaylistName, cons
 
 void AAthena_Prop_SneakySnowman_C::PreFinishSpawning(class AFortVolume* VolumeSpawnedWithin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "PreFinishSpawning");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "PreFinishSpawning");
 
 	Params::Athena_Prop_SneakySnowman_C_PreFinishSpawning Parms{};
 
@@ -152,10 +134,7 @@ void AAthena_Prop_SneakySnowman_C::PreFinishSpawning(class AFortVolume* VolumeSp
 
 void AAthena_Prop_SneakySnowman_C::BndEvt__OverlapCheck_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BndEvt__OverlapCheck_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BndEvt__OverlapCheck_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::Athena_Prop_SneakySnowman_C_BndEvt__OverlapCheck_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -183,10 +162,7 @@ void AAthena_Prop_SneakySnowman_C::BndEvt__OverlapCheck_K2Node_ComponentBoundEve
 
 void AAthena_Prop_SneakySnowman_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnDamagePlayEffects");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnDamagePlayEffects");
 
 	Params::Athena_Prop_SneakySnowman_C_OnDamagePlayEffects Parms{};
 
@@ -207,10 +183,7 @@ void AAthena_Prop_SneakySnowman_C::OnDamagePlayEffects(float Damage, const struc
 
 void AAthena_Prop_SneakySnowman_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +194,7 @@ void AAthena_Prop_SneakySnowman_C::ReceiveBeginPlay()
 
 void AAthena_Prop_SneakySnowman_C::RestartSimulating()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "RestartSimulating");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "RestartSimulating");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -244,10 +214,7 @@ void AAthena_Prop_SneakySnowman_C::RestartSimulating()
 
 void AAthena_Prop_SneakySnowman_C::BuildingActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BuildingActorDied");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BuildingActorDied");
 
 	Params::Athena_Prop_SneakySnowman_C_BuildingActorDied Parms{};
 
@@ -271,10 +238,7 @@ void AAthena_Prop_SneakySnowman_C::BuildingActorDied(class AActor* DamagedActor,
 
 void AAthena_Prop_SneakySnowman_C::BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature");
 
 	Params::Athena_Prop_SneakySnowman_C_BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature Parms{};
 
@@ -289,10 +253,7 @@ void AAthena_Prop_SneakySnowman_C::BndEvt__ProjectileMovementComponent_K2Node_Co
 
 void AAthena_Prop_SneakySnowman_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -303,10 +264,7 @@ void AAthena_Prop_SneakySnowman_C::UserConstructionScript()
 
 void AAthena_Prop_SneakySnowman_C::ResetSimulatedComponents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ResetSimulatedComponents");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ResetSimulatedComponents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -317,10 +275,7 @@ void AAthena_Prop_SneakySnowman_C::ResetSimulatedComponents()
 
 void AAthena_Prop_SneakySnowman_C::OnRep_bSimulationRunning()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnRep_bSimulationRunning");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnRep_bSimulationRunning");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -331,10 +286,7 @@ void AAthena_Prop_SneakySnowman_C::OnRep_bSimulationRunning()
 
 void AAthena_Prop_SneakySnowman_C::OnRep_LandedLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnRep_LandedLocation");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnRep_LandedLocation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -345,10 +297,7 @@ void AAthena_Prop_SneakySnowman_C::OnRep_LandedLocation()
 
 void AAthena_Prop_SneakySnowman_C::ForceSetLocationOnLanding()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ForceSetLocationOnLanding");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ForceSetLocationOnLanding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -362,10 +311,7 @@ void AAthena_Prop_SneakySnowman_C::ForceSetLocationOnLanding()
 
 void AAthena_Prop_SneakySnowman_C::TraceStartAndEnd(struct FVector* Start, struct FVector* End)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "TraceStartAndEnd");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "TraceStartAndEnd");
 
 	Params::Athena_Prop_SneakySnowman_C_TraceStartAndEnd Parms{};
 

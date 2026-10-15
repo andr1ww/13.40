@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ExecuteUbergraph_BP_ProjectileTrajectory_AthenaRed_Playset(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ExecuteUbergraph_BP_ProjectileTrajectory_AthenaRed_Playset");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ExecuteUbergraph_BP_ProjectileTrajectory_AthenaRed_Playset");
 
 	Params::BP_ProjectileTrajectory_AthenaRed_Playset_C_ExecuteUbergraph_BP_ProjectileTrajectory_AthenaRed_Playset Parms{};
 
@@ -41,10 +38,7 @@ void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ExecuteUbergraph_BP_Projectil
 
 void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ReceiveDestroyed()
 
 void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

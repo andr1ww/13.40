@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_FloorPad_C::ExecuteUbergraph_BP_FloorPad(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FloorPad_C", "ExecuteUbergraph_BP_FloorPad");
+	class UFunction* Func = Class->GetFunction("BP_FloorPad_C", "ExecuteUbergraph_BP_FloorPad");
 
 	Params::BP_FloorPad_C_ExecuteUbergraph_BP_FloorPad Parms{};
 
@@ -43,10 +40,7 @@ void ABP_FloorPad_C::ExecuteUbergraph_BP_FloorPad(int32 EntryPoint)
 
 void ABP_FloorPad_C::On_Item_Spawned(bool Should_Show_Floor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FloorPad_C", "On Item Spawned");
+	class UFunction* Func = Class->GetFunction("BP_FloorPad_C", "On Item Spawned");
 
 	Params::BP_FloorPad_C_On_Item_Spawned Parms{};
 
@@ -61,10 +55,7 @@ void ABP_FloorPad_C::On_Item_Spawned(bool Should_Show_Floor)
 
 void ABP_FloorPad_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FloorPad_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_FloorPad_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void ABP_FloorPad_C::ReceiveBeginPlay()
 
 void ABP_FloorPad_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FloorPad_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_FloorPad_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void ABP_FloorPad_C::Timeline_0__UpdateFunc()
 
 void ABP_FloorPad_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FloorPad_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_FloorPad_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void ABP_FloorPad_C::Timeline_0__FinishedFunc()
 
 void ABP_FloorPad_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FloorPad_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_FloorPad_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

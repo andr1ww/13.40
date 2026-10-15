@@ -33,10 +33,7 @@ SDK_NAMESPACE_START
 
 void UGlider_AnimBP_Functions_C::ForwardBack_Value_Interp(float Time, float Currnet_Value, float Idle_Value, float Idle_InterpSpeed, float Forward_Value, float Forward_InterpSpeed, float Back_Value, float Back_InterpSpeed, float LocalAccelForward, class UObject* __WorldContext, float* New_Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Glider_AnimBP_Functions_C", "ForwardBack_Value_Interp");
+	class UFunction* Func = StaticClass()->GetFunction("Glider_AnimBP_Functions_C", "ForwardBack_Value_Interp");
 
 	Params::Glider_AnimBP_Functions_C_ForwardBack_Value_Interp Parms{};
 

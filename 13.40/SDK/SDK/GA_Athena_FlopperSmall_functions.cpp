@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_FlopperSmall_C::ExecuteUbergraph_GA_Athena_FlopperSmall(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FlopperSmall_C", "ExecuteUbergraph_GA_Athena_FlopperSmall");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FlopperSmall_C", "ExecuteUbergraph_GA_Athena_FlopperSmall");
 
 	Params::GA_Athena_FlopperSmall_C_ExecuteUbergraph_GA_Athena_FlopperSmall Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_FlopperSmall_C::ExecuteUbergraph_GA_Athena_FlopperSmall(int32 En
 
 void UGA_Athena_FlopperSmall_C::K2_CommitExecute()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FlopperSmall_C", "K2_CommitExecute");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FlopperSmall_C", "K2_CommitExecute");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

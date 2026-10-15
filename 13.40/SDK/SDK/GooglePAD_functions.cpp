@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::CancelDownload(const TArray<class FString>& AssetPacks)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "CancelDownload");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "CancelDownload");
 
 	Params::GooglePADFunctionLibrary_CancelDownload Parms{};
 
@@ -53,10 +50,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::CancelDownload(const TArray<class
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::GetAssetPackLocation(const class FString& Name_0, int32* Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetAssetPackLocation");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetAssetPackLocation");
 
 	Params::GooglePADFunctionLibrary_GetAssetPackLocation Parms{};
 
@@ -84,10 +78,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::GetAssetPackLocation(const class 
 
 class FString UGooglePADFunctionLibrary::GetAssetsPath(const int32 Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetAssetsPath");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetAssetsPath");
 
 	Params::GooglePADFunctionLibrary_GetAssetsPath Parms{};
 
@@ -112,10 +103,7 @@ class FString UGooglePADFunctionLibrary::GetAssetsPath(const int32 Location)
 
 int32 UGooglePADFunctionLibrary::GetBytesDownloaded(const int32 State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetBytesDownloaded");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetBytesDownloaded");
 
 	Params::GooglePADFunctionLibrary_GetBytesDownloaded Parms{};
 
@@ -141,10 +129,7 @@ int32 UGooglePADFunctionLibrary::GetBytesDownloaded(const int32 State)
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::GetDownloadState(const class FString& Name_0, int32* State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetDownloadState");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetDownloadState");
 
 	Params::GooglePADFunctionLibrary_GetDownloadState Parms{};
 
@@ -172,10 +157,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::GetDownloadState(const class FStr
 
 EGooglePADDownloadStatus UGooglePADFunctionLibrary::GetDownloadStatus(const int32 State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetDownloadStatus");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetDownloadStatus");
 
 	Params::GooglePADFunctionLibrary_GetDownloadStatus Parms{};
 
@@ -200,10 +182,7 @@ EGooglePADDownloadStatus UGooglePADFunctionLibrary::GetDownloadStatus(const int3
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::GetShowCellularDataConfirmationStatus(EGooglePADCellularDataConfirmStatus* Status)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetShowCellularDataConfirmationStatus");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetShowCellularDataConfirmationStatus");
 
 	Params::GooglePADFunctionLibrary_GetShowCellularDataConfirmationStatus Parms{};
 
@@ -229,10 +208,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::GetShowCellularDataConfirmationSt
 
 EGooglePADStorageMethod UGooglePADFunctionLibrary::GetStorageMethod(const int32 Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetStorageMethod");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetStorageMethod");
 
 	Params::GooglePADFunctionLibrary_GetStorageMethod Parms{};
 
@@ -257,10 +233,7 @@ EGooglePADStorageMethod UGooglePADFunctionLibrary::GetStorageMethod(const int32 
 
 int32 UGooglePADFunctionLibrary::GetTotalBytesToDownload(const int32 State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetTotalBytesToDownload");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "GetTotalBytesToDownload");
 
 	Params::GooglePADFunctionLibrary_GetTotalBytesToDownload Parms{};
 
@@ -284,10 +257,7 @@ int32 UGooglePADFunctionLibrary::GetTotalBytesToDownload(const int32 State)
 
 void UGooglePADFunctionLibrary::ReleaseAssetPackLocation(const int32 Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "ReleaseAssetPackLocation");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "ReleaseAssetPackLocation");
 
 	Params::GooglePADFunctionLibrary_ReleaseAssetPackLocation Parms{};
 
@@ -309,10 +279,7 @@ void UGooglePADFunctionLibrary::ReleaseAssetPackLocation(const int32 Location)
 
 void UGooglePADFunctionLibrary::ReleaseDownloadState(const int32 State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "ReleaseDownloadState");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "ReleaseDownloadState");
 
 	Params::GooglePADFunctionLibrary_ReleaseDownloadState Parms{};
 
@@ -335,10 +302,7 @@ void UGooglePADFunctionLibrary::ReleaseDownloadState(const int32 State)
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::RequestDownload(const TArray<class FString>& AssetPacks)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "RequestDownload");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "RequestDownload");
 
 	Params::GooglePADFunctionLibrary_RequestDownload Parms{};
 
@@ -363,10 +327,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::RequestDownload(const TArray<clas
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::RequestInfo(const TArray<class FString>& AssetPacks)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "RequestInfo");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "RequestInfo");
 
 	Params::GooglePADFunctionLibrary_RequestInfo Parms{};
 
@@ -391,10 +352,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::RequestInfo(const TArray<class FS
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::RequestRemoval(const class FString& Name_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "RequestRemoval");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "RequestRemoval");
 
 	Params::GooglePADFunctionLibrary_RequestRemoval Parms{};
 
@@ -418,10 +376,7 @@ EGooglePADErrorCode UGooglePADFunctionLibrary::RequestRemoval(const class FStrin
 
 EGooglePADErrorCode UGooglePADFunctionLibrary::ShowCellularDataConfirmation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "ShowCellularDataConfirmation");
+	class UFunction* Func = StaticClass()->GetFunction("GooglePADFunctionLibrary", "ShowCellularDataConfirmation");
 
 	Params::GooglePADFunctionLibrary_ShowCellularDataConfirmation Parms{};
 

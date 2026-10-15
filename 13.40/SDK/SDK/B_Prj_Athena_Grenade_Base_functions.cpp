@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_Grenade_Base_C::ExecuteUbergraph_B_Prj_Athena_Grenade_Base(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "ExecuteUbergraph_B_Prj_Athena_Grenade_Base");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "ExecuteUbergraph_B_Prj_Athena_Grenade_Base");
 
 	Params::B_Prj_Athena_Grenade_Base_C_ExecuteUbergraph_B_Prj_Athena_Grenade_Base Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_Athena_Grenade_Base_C::ExecuteUbergraph_B_Prj_Athena_Grenade_Base(in
 
 void AB_Prj_Athena_Grenade_Base_C::ShowFuseIndicator()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "ShowFuseIndicator");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "ShowFuseIndicator");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Prj_Athena_Grenade_Base_C::ShowFuseIndicator()
 
 void AB_Prj_Athena_Grenade_Base_C::Held_Water_Impact()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "Held Water Impact");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "Held Water Impact");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,10 +64,7 @@ void AB_Prj_Athena_Grenade_Base_C::Held_Water_Impact()
 
 void AB_Prj_Athena_Grenade_Base_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Athena_Grenade_Base_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -97,10 +85,7 @@ void AB_Prj_Athena_Grenade_Base_C::BndEvt__WaterInteractionComponent_K2Node_Comp
 
 void AB_Prj_Athena_Grenade_Base_C::Splash(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "Splash");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "Splash");
 
 	Params::B_Prj_Athena_Grenade_Base_C_Splash Parms{};
 
@@ -124,10 +109,7 @@ void AB_Prj_Athena_Grenade_Base_C::Splash(class AFortWaterBodyActor* WaterBody, 
 
 void AB_Prj_Athena_Grenade_Base_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::B_Prj_Athena_Grenade_Base_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -147,10 +129,7 @@ void AB_Prj_Athena_Grenade_Base_C::BndEvt__CapsuleComponent_K2Node_ComponentBoun
 
 void AB_Prj_Athena_Grenade_Base_C::OnResumeSimulation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "OnResumeSimulation");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "OnResumeSimulation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -166,10 +145,7 @@ void AB_Prj_Athena_Grenade_Base_C::OnResumeSimulation()
 
 void AB_Prj_Athena_Grenade_Base_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "ReceiveAnyDamage");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "ReceiveAnyDamage");
 
 	Params::B_Prj_Athena_Grenade_Base_C_ReceiveAnyDamage Parms{};
 
@@ -189,10 +165,7 @@ void AB_Prj_Athena_Grenade_Base_C::ReceiveAnyDamage(float Damage, const class UD
 
 void AB_Prj_Athena_Grenade_Base_C::OnBounce(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "OnBounce");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "OnBounce");
 
 	Params::B_Prj_Athena_Grenade_Base_C_OnBounce Parms{};
 
@@ -210,10 +183,7 @@ void AB_Prj_Athena_Grenade_Base_C::OnBounce(const struct FHitResult& Hit)
 
 void AB_Prj_Athena_Grenade_Base_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "OnExploded");
 
 	Params::B_Prj_Athena_Grenade_Base_C_OnExploded Parms{};
 
@@ -229,10 +199,7 @@ void AB_Prj_Athena_Grenade_Base_C::OnExploded(const TArray<class AActor*>& HitAc
 
 void AB_Prj_Athena_Grenade_Base_C::Stop_Rotation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "Stop_Rotation");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "Stop_Rotation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -245,10 +212,7 @@ void AB_Prj_Athena_Grenade_Base_C::Stop_Rotation()
 
 void AB_Prj_Athena_Grenade_Base_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "OnStop");
 
 	Params::B_Prj_Athena_Grenade_Base_C_OnStop Parms{};
 
@@ -263,10 +227,7 @@ void AB_Prj_Athena_Grenade_Base_C::OnStop(const struct FHitResult& Hit)
 
 void AB_Prj_Athena_Grenade_Base_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -277,10 +238,7 @@ void AB_Prj_Athena_Grenade_Base_C::ReceiveBeginPlay()
 
 void AB_Prj_Athena_Grenade_Base_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -291,10 +249,7 @@ void AB_Prj_Athena_Grenade_Base_C::UserConstructionScript()
 
 void AB_Prj_Athena_Grenade_Base_C::FuseEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "FuseEnded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_Base_C", "FuseEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

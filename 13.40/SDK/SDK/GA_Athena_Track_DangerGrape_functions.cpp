@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_Track_DangerGrape_C::ExecuteUbergraph_GA_Athena_Track_DangerGrape(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "ExecuteUbergraph_GA_Athena_Track_DangerGrape");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "ExecuteUbergraph_GA_Athena_Track_DangerGrape");
 
 	Params::GA_Athena_Track_DangerGrape_C_ExecuteUbergraph_GA_Athena_Track_DangerGrape Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_Track_DangerGrape_C::ExecuteUbergraph_GA_Athena_Track_DangerGrap
 
 void UGA_Athena_Track_DangerGrape_C::On_Possesed_Pawn_Died()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "On Possesed Pawn Died");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "On Possesed Pawn Died");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGA_Athena_Track_DangerGrape_C::On_Possesed_Pawn_Died()
 
 void UGA_Athena_Track_DangerGrape_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_Track_DangerGrape_C_K2_OnEndAbility Parms{};
 
@@ -75,10 +66,7 @@ void UGA_Athena_Track_DangerGrape_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_Track_DangerGrape_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UGA_Athena_Track_DangerGrape_C::K2_ActivateAbility()
 
 void UGA_Athena_Track_DangerGrape_C::EventReceived_13B4A7014CFACBC3914C3BA737F355B3(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "EventReceived_13B4A7014CFACBC3914C3BA737F355B3");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "EventReceived_13B4A7014CFACBC3914C3BA737F355B3");
 
 	Params::GA_Athena_Track_DangerGrape_C_EventReceived_13B4A7014CFACBC3914C3BA737F355B3 Parms{};
 
@@ -111,10 +96,7 @@ void UGA_Athena_Track_DangerGrape_C::EventReceived_13B4A7014CFACBC3914C3BA737F35
 
 void UGA_Athena_Track_DangerGrape_C::EventReceived_CECFA813476EFF4163BB1EAFBFD4E985(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "EventReceived_CECFA813476EFF4163BB1EAFBFD4E985");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "EventReceived_CECFA813476EFF4163BB1EAFBFD4E985");
 
 	Params::GA_Athena_Track_DangerGrape_C_EventReceived_CECFA813476EFF4163BB1EAFBFD4E985 Parms{};
 
@@ -129,10 +111,7 @@ void UGA_Athena_Track_DangerGrape_C::EventReceived_CECFA813476EFF4163BB1EAFBFD4E
 
 void UGA_Athena_Track_DangerGrape_C::OnRep_SnowmenActors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "OnRep_SnowmenActors");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_DangerGrape_C", "OnRep_SnowmenActors");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

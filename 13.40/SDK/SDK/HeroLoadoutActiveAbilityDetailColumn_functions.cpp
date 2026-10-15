@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::SetAbilityKit(class UFortAbilityKit* AbilityKit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "SetAbilityKit");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "SetAbilityKit");
 
 	Params::HeroLoadoutActiveAbilityDetailColumn_C_SetAbilityKit Parms{};
 
@@ -43,10 +40,7 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::SetAbilityKit(class UFortAbilityKi
 
 bool UHeroLoadoutActiveAbilityDetailColumn_C::IsAbilityUnlocked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "IsAbilityUnlocked");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "IsAbilityUnlocked");
 
 	Params::HeroLoadoutActiveAbilityDetailColumn_C_IsAbilityUnlocked Parms{};
 
@@ -63,10 +57,7 @@ bool UHeroLoadoutActiveAbilityDetailColumn_C::IsAbilityUnlocked()
 
 class UFortAbilityKit* UHeroLoadoutActiveAbilityDetailColumn_C::GetAbilityKit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "GetAbilityKit");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "GetAbilityKit");
 
 	Params::HeroLoadoutActiveAbilityDetailColumn_C_GetAbilityKit Parms{};
 
@@ -83,10 +74,7 @@ class UFortAbilityKit* UHeroLoadoutActiveAbilityDetailColumn_C::GetAbilityKit()
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::SetHero(class UFortHero* Hero)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "SetHero");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "SetHero");
 
 	Params::HeroLoadoutActiveAbilityDetailColumn_C_SetHero Parms{};
 
@@ -101,10 +89,7 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::SetHero(class UFortHero* Hero)
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::UpdateFromState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "UpdateFromState");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "UpdateFromState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +100,7 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::UpdateFromState()
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::UpdateFromStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "UpdateFromStyle");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "UpdateFromStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +113,7 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::UpdateFromStyle()
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "PreConstruct");
 
 	Params::HeroLoadoutActiveAbilityDetailColumn_C_PreConstruct Parms{};
 
@@ -149,10 +128,7 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::PreConstruct(bool IsDesignTime_Pre
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "Construct");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +141,7 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::Construct()
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::ExecuteUbergraph_HeroLoadoutActiveAbilityDetailColumn(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "ExecuteUbergraph_HeroLoadoutActiveAbilityDetailColumn");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "ExecuteUbergraph_HeroLoadoutActiveAbilityDetailColumn");
 
 	Params::HeroLoadoutActiveAbilityDetailColumn_C_ExecuteUbergraph_HeroLoadoutActiveAbilityDetailColumn Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_PlayerPawn_Athena_Phoebe_C::ExecuteUbergraph_BP_PlayerPawn_Athena_Phoebe(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerPawn_Athena_Phoebe_C", "ExecuteUbergraph_BP_PlayerPawn_Athena_Phoebe");
+	class UFunction* Func = Class->GetFunction("BP_PlayerPawn_Athena_Phoebe_C", "ExecuteUbergraph_BP_PlayerPawn_Athena_Phoebe");
 
 	Params::BP_PlayerPawn_Athena_Phoebe_C_ExecuteUbergraph_BP_PlayerPawn_Athena_Phoebe Parms{};
 
@@ -45,10 +42,7 @@ void ABP_PlayerPawn_Athena_Phoebe_C::ExecuteUbergraph_BP_PlayerPawn_Athena_Phoeb
 
 void ABP_PlayerPawn_Athena_Phoebe_C::OnLaunched(const struct FVector& LaunchVelocity, bool bXYOverride, bool bZOverride)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerPawn_Athena_Phoebe_C", "OnLaunched");
+	class UFunction* Func = Class->GetFunction("BP_PlayerPawn_Athena_Phoebe_C", "OnLaunched");
 
 	Params::BP_PlayerPawn_Athena_Phoebe_C_OnLaunched Parms{};
 

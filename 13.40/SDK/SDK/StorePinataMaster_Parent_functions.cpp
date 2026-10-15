@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void AStorePinataMaster_Parent_C::InitiatePinata()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StorePinataMaster_Parent_C", "InitiatePinata");
+	class UFunction* Func = Class->GetFunction("StorePinataMaster_Parent_C", "InitiatePinata");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void AStorePinataMaster_Parent_C::InitiatePinata()
 
 void AStorePinataMaster_Parent_C::CameraResetComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StorePinataMaster_Parent_C", "CameraResetComplete");
+	class UFunction* Func = Class->GetFunction("StorePinataMaster_Parent_C", "CameraResetComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void AStorePinataMaster_Parent_C::CameraResetComplete()
 
 void AStorePinataMaster_Parent_C::CameraTransitionComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StorePinataMaster_Parent_C", "CameraTransitionComplete");
+	class UFunction* Func = Class->GetFunction("StorePinataMaster_Parent_C", "CameraTransitionComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,10 +56,7 @@ void AStorePinataMaster_Parent_C::CameraTransitionComplete()
 
 void AStorePinataMaster_Parent_C::ExecuteUbergraph_StorePinataMaster_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StorePinataMaster_Parent_C", "ExecuteUbergraph_StorePinataMaster_Parent");
+	class UFunction* Func = Class->GetFunction("StorePinataMaster_Parent_C", "ExecuteUbergraph_StorePinataMaster_Parent");
 
 	Params::StorePinataMaster_Parent_C_ExecuteUbergraph_StorePinataMaster_Parent Parms{};
 

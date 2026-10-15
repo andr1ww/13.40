@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AVaultRotator_C::PlaySoundWhenEnabled(class USoundBase* Sound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "PlaySoundWhenEnabled");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "PlaySoundWhenEnabled");
 
 	Params::VaultRotator_C_PlaySoundWhenEnabled Parms{};
 
@@ -44,10 +41,7 @@ void AVaultRotator_C::PlaySoundWhenEnabled(class USoundBase* Sound)
 
 void AVaultRotator_C::SetBackgroundColor(const struct FLinearColor& RGBA0, const struct FLinearColor& RGBA1)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "SetBackgroundColor");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "SetBackgroundColor");
 
 	Params::VaultRotator_C_SetBackgroundColor Parms{};
 
@@ -65,10 +59,7 @@ void AVaultRotator_C::SetBackgroundColor(const struct FLinearColor& RGBA0, const
 
 void AVaultRotator_C::ToggleBackgroundText(bool bDisplayText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "ToggleBackgroundText");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "ToggleBackgroundText");
 
 	Params::VaultRotator_C_ToggleBackgroundText Parms{};
 
@@ -85,10 +76,7 @@ void AVaultRotator_C::ToggleBackgroundText(bool bDisplayText)
 
 void AVaultRotator_C::LightControl(bool Active)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "LightControl");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "LightControl");
 
 	Params::VaultRotator_C_LightControl Parms{};
 
@@ -105,10 +93,7 @@ void AVaultRotator_C::LightControl(bool Active)
 
 void AVaultRotator_C::SwitchPCLighting(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "SwitchPCLighting");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "SwitchPCLighting");
 
 	Params::VaultRotator_C_SwitchPCLighting Parms{};
 
@@ -125,10 +110,7 @@ void AVaultRotator_C::SwitchPCLighting(bool Visibility)
 
 void AVaultRotator_C::SwitchPCLighting_LOWDetail(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "SwitchPCLighting_LOWDetail");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "SwitchPCLighting_LOWDetail");
 
 	Params::VaultRotator_C_SwitchPCLighting_LOWDetail Parms{};
 
@@ -145,10 +127,7 @@ void AVaultRotator_C::SwitchPCLighting_LOWDetail(bool Visibility)
 
 void AVaultRotator_C::SwitchMobileLighting(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "SwitchMobileLighting");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "SwitchMobileLighting");
 
 	Params::VaultRotator_C_SwitchMobileLighting Parms{};
 
@@ -165,10 +144,7 @@ void AVaultRotator_C::SwitchMobileLighting(bool Visibility)
 
 void AVaultRotator_C::SetBackgroundString(int32 StringIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "SetBackgroundString");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "SetBackgroundString");
 
 	Params::VaultRotator_C_SetBackgroundString Parms{};
 
@@ -183,10 +159,7 @@ void AVaultRotator_C::SetBackgroundString(int32 StringIndex)
 
 void AVaultRotator_C::CameraTurn_0_to_180__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "CameraTurn_0_to_180__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "CameraTurn_0_to_180__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -197,10 +170,7 @@ void AVaultRotator_C::CameraTurn_0_to_180__FinishedFunc()
 
 void AVaultRotator_C::CameraTurn_0_to_180__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "CameraTurn_0_to_180__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "CameraTurn_0_to_180__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -211,10 +181,7 @@ void AVaultRotator_C::CameraTurn_0_to_180__UpdateFunc()
 
 void AVaultRotator_C::CameraTurn_180_to_360__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "CameraTurn_180_to_360__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "CameraTurn_180_to_360__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,10 +192,7 @@ void AVaultRotator_C::CameraTurn_180_to_360__FinishedFunc()
 
 void AVaultRotator_C::CameraTurn_180_to_360__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "CameraTurn_180_to_360__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "CameraTurn_180_to_360__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -239,10 +203,7 @@ void AVaultRotator_C::CameraTurn_180_to_360__UpdateFunc()
 
 void AVaultRotator_C::Timeline_Zoom__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "Timeline_Zoom__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "Timeline_Zoom__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +214,7 @@ void AVaultRotator_C::Timeline_Zoom__FinishedFunc()
 
 void AVaultRotator_C::Timeline_Zoom__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "Timeline_Zoom__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "Timeline_Zoom__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -267,10 +225,7 @@ void AVaultRotator_C::Timeline_Zoom__UpdateFunc()
 
 void AVaultRotator_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -281,10 +236,7 @@ void AVaultRotator_C::ReceiveBeginPlay()
 
 void AVaultRotator_C::UpdateSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "UpdateSettings");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "UpdateSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -299,10 +251,7 @@ void AVaultRotator_C::UpdateSettings()
 
 void AVaultRotator_C::OnCameraTransitionReady(bool bPrimaryToSecondary_OnCameraTransitionReady, const class UFortAccountItemDefinition* PrimaryRequestedItem_OnCameraTransitionReady, const struct FSceneTransitionOptions& Options_OnCameraTransitionReady)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "OnCameraTransitionReady");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "OnCameraTransitionReady");
 
 	Params::VaultRotator_C_OnCameraTransitionReady Parms{};
 
@@ -321,10 +270,7 @@ void AVaultRotator_C::OnCameraTransitionReady(bool bPrimaryToSecondary_OnCameraT
 
 void AVaultRotator_C::OnTargetZoomLevelSet(float TargetZoomLevel_OnTargetZoomLevelSet)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "OnTargetZoomLevelSet");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "OnTargetZoomLevelSet");
 
 	Params::VaultRotator_C_OnTargetZoomLevelSet Parms{};
 
@@ -341,10 +287,7 @@ void AVaultRotator_C::OnTargetZoomLevelSet(float TargetZoomLevel_OnTargetZoomLev
 
 void AVaultRotator_C::ExecuteUbergraph_VaultRotator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultRotator_C", "ExecuteUbergraph_VaultRotator");
+	class UFunction* Func = Class->GetFunction("VaultRotator_C", "ExecuteUbergraph_VaultRotator");
 
 	Params::VaultRotator_C_ExecuteUbergraph_VaultRotator Parms{};
 

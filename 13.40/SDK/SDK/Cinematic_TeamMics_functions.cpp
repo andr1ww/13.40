@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCinematic_TeamMics_C::ExecuteUbergraph_Cinematic_TeamMics(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic-TeamMics_C", "ExecuteUbergraph_Cinematic-TeamMics");
+	class UFunction* Func = Class->GetFunction("Cinematic-TeamMics_C", "ExecuteUbergraph_Cinematic-TeamMics");
 
 	Params::Cinematic_TeamMics_C_ExecuteUbergraph_Cinematic_TeamMics Parms{};
 
@@ -41,10 +38,7 @@ void UCinematic_TeamMics_C::ExecuteUbergraph_Cinematic_TeamMics(int32 EntryPoint
 
 void UCinematic_TeamMics_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic-TeamMics_C", "Construct");
+	class UFunction* Func = Class->GetFunction("Cinematic-TeamMics_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UCinematic_TeamMics_C::Construct()
 
 void UCinematic_TeamMics_C::Update(const struct FFortTeamMemberInfo& UpdatedMemberInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic-TeamMics_C", "Update");
+	class UFunction* Func = Class->GetFunction("Cinematic-TeamMics_C", "Update");
 
 	Params::Cinematic_TeamMics_C_Update Parms{};
 

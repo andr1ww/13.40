@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AVaultCamera_Blueprint_C::OnActivated(class AFortPlayerController* PlayerController_OnActivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCamera_Blueprint_C", "OnActivated");
+	class UFunction* Func = Class->GetFunction("VaultCamera_Blueprint_C", "OnActivated");
 
 	Params::VaultCamera_Blueprint_C_OnActivated Parms{};
 
@@ -43,10 +40,7 @@ void AVaultCamera_Blueprint_C::OnActivated(class AFortPlayerController* PlayerCo
 
 void AVaultCamera_Blueprint_C::OnDeactivated(class AFortPlayerController* PlayerController_OnDeactivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCamera_Blueprint_C", "OnDeactivated");
+	class UFunction* Func = Class->GetFunction("VaultCamera_Blueprint_C", "OnDeactivated");
 
 	Params::VaultCamera_Blueprint_C_OnDeactivated Parms{};
 
@@ -63,10 +57,7 @@ void AVaultCamera_Blueprint_C::OnDeactivated(class AFortPlayerController* Player
 
 void AVaultCamera_Blueprint_C::ExecuteUbergraph_VaultCamera_Blueprint(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCamera_Blueprint_C", "ExecuteUbergraph_VaultCamera_Blueprint");
+	class UFunction* Func = Class->GetFunction("VaultCamera_Blueprint_C", "ExecuteUbergraph_VaultCamera_Blueprint");
 
 	Params::VaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint Parms{};
 

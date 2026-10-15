@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMiniPartyBar_C::ExecuteUbergraph_MiniPartyBar(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniPartyBar_C", "ExecuteUbergraph_MiniPartyBar");
+	class UFunction* Func = Class->GetFunction("MiniPartyBar_C", "ExecuteUbergraph_MiniPartyBar");
 
 	Params::MiniPartyBar_C_ExecuteUbergraph_MiniPartyBar Parms{};
 
@@ -43,10 +40,7 @@ void UMiniPartyBar_C::ExecuteUbergraph_MiniPartyBar(int32 EntryPoint)
 
 void UMiniPartyBar_C::BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniPartyBar_C", "BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MiniPartyBar_C", "BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature");
 
 	Params::MiniPartyBar_C_BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -61,10 +55,7 @@ void UMiniPartyBar_C::BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_Co
 
 void UMiniPartyBar_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniPartyBar_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MiniPartyBar_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -78,10 +69,7 @@ void UMiniPartyBar_C::Construct()
 
 void UMiniPartyBar_C::HandlePartybarUIFeatureChanged(EFortUIFeature Feature, EFortUIFeatureState FeatureState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniPartyBar_C", "HandlePartybarUIFeatureChanged");
+	class UFunction* Func = Class->GetFunction("MiniPartyBar_C", "HandlePartybarUIFeatureChanged");
 
 	Params::MiniPartyBar_C_HandlePartybarUIFeatureChanged Parms{};
 
@@ -99,10 +87,7 @@ void UMiniPartyBar_C::HandlePartybarUIFeatureChanged(EFortUIFeature Feature, EFo
 
 class UWidget* UMiniPartyBar_C::Get_Banners_Tooltip_Widget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniPartyBar_C", "Get Banners Tooltip Widget");
+	class UFunction* Func = Class->GetFunction("MiniPartyBar_C", "Get Banners Tooltip Widget");
 
 	Params::MiniPartyBar_C_Get_Banners_Tooltip_Widget Parms{};
 

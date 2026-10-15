@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULiveStreamAnimationSubsystem::SetAcceptClientPackets_Private(bool bInShouldAcceptClientPackets)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamAnimationSubsystem", "SetAcceptClientPackets_Private");
+	class UFunction* Func = Class->GetFunction("LiveStreamAnimationSubsystem", "SetAcceptClientPackets_Private");
 
 	Params::LiveStreamAnimationSubsystem_SetAcceptClientPackets_Private Parms{};
 
@@ -48,10 +45,7 @@ void ULiveStreamAnimationSubsystem::SetAcceptClientPackets_Private(bool bInShoul
 
 void ULiveStreamAnimationSubsystem::SetRole(const ELiveStreamAnimationRole NewRole)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamAnimationSubsystem", "SetRole");
+	class UFunction* Func = Class->GetFunction("LiveStreamAnimationSubsystem", "SetRole");
 
 	Params::LiveStreamAnimationSubsystem_SetRole Parms{};
 
@@ -77,10 +71,7 @@ void ULiveStreamAnimationSubsystem::SetRole(const ELiveStreamAnimationRole NewRo
 
 bool ULiveStreamAnimationSubsystem::StartTrackingLiveLinkSubject(const class FName LiveLinkSubject, const struct FLiveStreamAnimationHandleWrapper& RegisteredName, const struct FLiveStreamAnimationLiveLinkSourceOptions& Options, const struct FLiveStreamAnimationHandleWrapper& TranslationProfile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamAnimationSubsystem", "StartTrackingLiveLinkSubject");
+	class UFunction* Func = Class->GetFunction("LiveStreamAnimationSubsystem", "StartTrackingLiveLinkSubject");
 
 	Params::LiveStreamAnimationSubsystem_StartTrackingLiveLinkSubject Parms{};
 
@@ -107,10 +98,7 @@ bool ULiveStreamAnimationSubsystem::StartTrackingLiveLinkSubject(const class FNa
 
 void ULiveStreamAnimationSubsystem::StopTrackingLiveLinkSubject(const struct FLiveStreamAnimationHandleWrapper& RegisteredName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamAnimationSubsystem", "StopTrackingLiveLinkSubject");
+	class UFunction* Func = Class->GetFunction("LiveStreamAnimationSubsystem", "StopTrackingLiveLinkSubject");
 
 	Params::LiveStreamAnimationSubsystem_StopTrackingLiveLinkSubject Parms{};
 
@@ -132,10 +120,7 @@ void ULiveStreamAnimationSubsystem::StopTrackingLiveLinkSubject(const struct FLi
 
 ELiveStreamAnimationRole ULiveStreamAnimationSubsystem::GetRole() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamAnimationSubsystem", "GetRole");
+	class UFunction* Func = Class->GetFunction("LiveStreamAnimationSubsystem", "GetRole");
 
 	Params::LiveStreamAnimationSubsystem_GetRole Parms{};
 
@@ -157,10 +142,7 @@ ELiveStreamAnimationRole ULiveStreamAnimationSubsystem::GetRole() const
 
 void ULiveLinkTestSkelMeshTrackerComponent::StartTrackingSkelMesh(class FName InSubjectName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkTestSkelMeshTrackerComponent", "StartTrackingSkelMesh");
+	class UFunction* Func = Class->GetFunction("LiveLinkTestSkelMeshTrackerComponent", "StartTrackingSkelMesh");
 
 	Params::LiveLinkTestSkelMeshTrackerComponent_StartTrackingSkelMesh Parms{};
 
@@ -180,10 +162,7 @@ void ULiveLinkTestSkelMeshTrackerComponent::StartTrackingSkelMesh(class FName In
 
 void ULiveLinkTestSkelMeshTrackerComponent::StopTrackingSkelMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkTestSkelMeshTrackerComponent", "StopTrackingSkelMesh");
+	class UFunction* Func = Class->GetFunction("LiveLinkTestSkelMeshTrackerComponent", "StopTrackingSkelMesh");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

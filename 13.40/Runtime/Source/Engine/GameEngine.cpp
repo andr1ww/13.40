@@ -14,6 +14,14 @@ void GameEngine::Start(UGameEngine* _this)
 
 	_this->GameInstance->LocalPlayers.Remove(0);
 
+	if (UFortGameInstance* GameInstance = Cast<UFortGameInstance>(_this->GameInstance))
+	{
+		if (GameInstance->SeasonalEventManager)
+			GameInstance->SeasonalEventManager->RefreshCalendar();
+		else
+			UE_LOG(LogFort, Warning, TEXT("GameEngine::Start: No SeasonalEventManager!!!!"));
+	}
+
 	return StartOG(_this);
 }
 

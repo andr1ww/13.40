@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPanelButton_C::ExecuteUbergraph_PanelButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "ExecuteUbergraph_PanelButton");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "ExecuteUbergraph_PanelButton");
 
 	Params::PanelButton_C_ExecuteUbergraph_PanelButton Parms{};
 
@@ -41,10 +38,7 @@ void UPanelButton_C::ExecuteUbergraph_PanelButton(int32 EntryPoint)
 
 void UPanelButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UPanelButton_C::BP_OnUnhovered()
 
 void UPanelButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UPanelButton_C::BP_OnHovered()
 
 void UPanelButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UPanelButton_C::Construct()
 
 void UPanelButton_C::OnActionComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "OnActionComplete");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "OnActionComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UPanelButton_C::OnActionComplete()
 
 void UPanelButton_C::OnActionProgress(float HeldPercent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "OnActionProgress");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "OnActionProgress");
 
 	Params::PanelButton_C_OnActionProgress Parms{};
 
@@ -119,10 +101,7 @@ void UPanelButton_C::OnActionProgress(float HeldPercent)
 
 void UPanelButton_C::OnTriggeredInputActionChanged(const struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "OnTriggeredInputActionChanged");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "OnTriggeredInputActionChanged");
 
 	Params::PanelButton_C_OnTriggeredInputActionChanged Parms{};
 
@@ -139,10 +118,7 @@ void UPanelButton_C::OnTriggeredInputActionChanged(const struct FDataTableRowHan
 
 void UPanelButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
 
 	Params::PanelButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature Parms{};
 
@@ -159,10 +135,7 @@ void UPanelButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent
 
 void UPanelButton_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "PreConstruct");
 
 	Params::PanelButton_C_PreConstruct Parms{};
 
@@ -177,10 +150,7 @@ void UPanelButton_C::PreConstruct(bool IsDesignTime)
 
 void UPanelButton_C::UpdateTextAndStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "UpdateTextAndStyle");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "UpdateTextAndStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +161,7 @@ void UPanelButton_C::UpdateTextAndStyle()
 
 void UPanelButton_C::InitializeButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "InitializeButton");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "InitializeButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +174,7 @@ void UPanelButton_C::InitializeButton()
 
 void UPanelButton_C::UpdateStyle(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "UpdateStyle");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "UpdateStyle");
 
 	Params::PanelButton_C_UpdateStyle Parms{};
 
@@ -225,10 +189,7 @@ void UPanelButton_C::UpdateStyle(bool bUsingGamepad)
 
 void UPanelButton_C::UpdateInputActionLayout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PanelButton_C", "UpdateInputActionLayout");
+	class UFunction* Func = Class->GetFunction("PanelButton_C", "UpdateInputActionLayout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

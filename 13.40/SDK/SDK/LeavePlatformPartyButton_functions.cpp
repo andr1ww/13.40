@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULeavePlatformPartyButton_C::ExecuteUbergraph_LeavePlatformPartyButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeavePlatformPartyButton_C", "ExecuteUbergraph_LeavePlatformPartyButton");
+	class UFunction* Func = Class->GetFunction("LeavePlatformPartyButton_C", "ExecuteUbergraph_LeavePlatformPartyButton");
 
 	Params::LeavePlatformPartyButton_C_ExecuteUbergraph_LeavePlatformPartyButton Parms{};
 
@@ -41,10 +38,7 @@ void ULeavePlatformPartyButton_C::ExecuteUbergraph_LeavePlatformPartyButton(int3
 
 void ULeavePlatformPartyButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeavePlatformPartyButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("LeavePlatformPartyButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ULeavePlatformPartyButton_C::BP_OnUnhovered()
 
 void ULeavePlatformPartyButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeavePlatformPartyButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("LeavePlatformPartyButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void ULeavePlatformPartyButton_C::BP_OnHovered()
 
 void ULeavePlatformPartyButton_C::SetText(const class FText& New_Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeavePlatformPartyButton_C", "SetText");
+	class UFunction* Func = Class->GetFunction("LeavePlatformPartyButton_C", "SetText");
 
 	Params::LeavePlatformPartyButton_C_SetText Parms{};
 

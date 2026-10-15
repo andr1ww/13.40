@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void IPlayerAnimOverrideLayerInterface_C::FullBodyOverride(const struct FPoseLink& PassThroughFullBodyPose, struct FPoseLink* FullBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("PlayerAnimOverrideLayerInterface_C", "FullBodyOverride");
+	class UFunction* Func = AsUObject()->Class->GetFunction("PlayerAnimOverrideLayerInterface_C", "FullBodyOverride");
 
 	Params::PlayerAnimOverrideLayerInterface_C_FullBodyOverride Parms{};
 
@@ -48,10 +45,7 @@ void IPlayerAnimOverrideLayerInterface_C::FullBodyOverride(const struct FPoseLin
 
 void IPlayerAnimOverrideLayerInterface_C::CharacterSkeletalControlPostLegIK(const struct FPoseLink& InPosePostLegIK, struct FPoseLink* CharacterSkeletalControlPostLegIK_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("PlayerAnimOverrideLayerInterface_C", "CharacterSkeletalControlPostLegIK");
+	class UFunction* Func = AsUObject()->Class->GetFunction("PlayerAnimOverrideLayerInterface_C", "CharacterSkeletalControlPostLegIK");
 
 	Params::PlayerAnimOverrideLayerInterface_C_CharacterSkeletalControlPostLegIK Parms{};
 

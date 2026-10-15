@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULiveStreamMenuButtonToggle_C::ExecuteUbergraph_LiveStreamMenuButtonToggle(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "ExecuteUbergraph_LiveStreamMenuButtonToggle");
+	class UFunction* Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "ExecuteUbergraph_LiveStreamMenuButtonToggle");
 
 	Params::LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle Parms{};
 
@@ -43,10 +40,7 @@ void ULiveStreamMenuButtonToggle_C::ExecuteUbergraph_LiveStreamMenuButtonToggle(
 
 void ULiveStreamMenuButtonToggle_C::RefreshButton(bool IsLiveStreamEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "RefreshButton");
+	class UFunction* Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "RefreshButton");
 
 	Params::LiveStreamMenuButtonToggle_C_RefreshButton Parms{};
 
@@ -63,10 +57,7 @@ void ULiveStreamMenuButtonToggle_C::RefreshButton(bool IsLiveStreamEnabled)
 
 void ULiveStreamMenuButtonToggle_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "OnMouseLeave");
 
 	Params::LiveStreamMenuButtonToggle_C_OnMouseLeave Parms{};
 
@@ -84,10 +75,7 @@ void ULiveStreamMenuButtonToggle_C::OnMouseLeave(const struct FPointerEvent& Mou
 
 void ULiveStreamMenuButtonToggle_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "OnMouseEnter");
 
 	Params::LiveStreamMenuButtonToggle_C_OnMouseEnter Parms{};
 

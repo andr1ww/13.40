@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::SetChoiceData(const struct FFortPlayerSurveyQuestionChoice& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("PlayerSurveyMultipleChoiceListItemWidgetInterface_C", "SetChoiceData");
+	class UFunction* Func = AsUObject()->Class->GetFunction("PlayerSurveyMultipleChoiceListItemWidgetInterface_C", "SetChoiceData");
 
 	Params::PlayerSurveyMultipleChoiceListItemWidgetInterface_C_SetChoiceData Parms{};
 
@@ -43,10 +40,7 @@ void IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::SetChoiceData(const s
 
 void IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::SetIndex(int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("PlayerSurveyMultipleChoiceListItemWidgetInterface_C", "SetIndex");
+	class UFunction* Func = AsUObject()->Class->GetFunction("PlayerSurveyMultipleChoiceListItemWidgetInterface_C", "SetIndex");
 
 	Params::PlayerSurveyMultipleChoiceListItemWidgetInterface_C_SetIndex Parms{};
 

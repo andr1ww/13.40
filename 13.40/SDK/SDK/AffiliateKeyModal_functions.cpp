@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAffiliateKeyModal_C::ExecuteUbergraph_AffiliateKeyModal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "ExecuteUbergraph_AffiliateKeyModal");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "ExecuteUbergraph_AffiliateKeyModal");
 
 	Params::AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal Parms{};
 
@@ -41,10 +38,7 @@ void UAffiliateKeyModal_C::ExecuteUbergraph_AffiliateKeyModal(int32 EntryPoint)
 
 void UAffiliateKeyModal_C::WidgetAnimationEvt_SuccessAnim_K2Node_WidgetAnimationEvent_1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "WidgetAnimationEvt_SuccessAnim_K2Node_WidgetAnimationEvent_1");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "WidgetAnimationEvt_SuccessAnim_K2Node_WidgetAnimationEvent_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UAffiliateKeyModal_C::WidgetAnimationEvt_SuccessAnim_K2Node_WidgetAnimation
 
 void UAffiliateKeyModal_C::BndEvt__CloseButton_Mobile_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__CloseButton_Mobile_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__CloseButton_Mobile_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::AffiliateKeyModal_C_BndEvt__CloseButton_Mobile_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -75,10 +66,7 @@ void UAffiliateKeyModal_C::BndEvt__CloseButton_Mobile_K2Node_ComponentBoundEvent
 
 void UAffiliateKeyModal_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UAffiliateKeyModal_C::Construct()
 
 void UAffiliateKeyModal_C::OnInputModeChanged(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "OnInputModeChanged");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "OnInputModeChanged");
 
 	Params::AffiliateKeyModal_C_OnInputModeChanged Parms{};
 
@@ -113,10 +98,7 @@ void UAffiliateKeyModal_C::OnInputModeChanged(bool bUsingGamepad)
 
 void UAffiliateKeyModal_C::OnCheckComplete(bool bSuccess, bool bWasValidAffiliateName, const class FString& AffilateNameChecked)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "OnCheckComplete");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "OnCheckComplete");
 
 	Params::AffiliateKeyModal_C_OnCheckComplete Parms{};
 
@@ -135,10 +117,7 @@ void UAffiliateKeyModal_C::OnCheckComplete(bool bSuccess, bool bWasValidAffiliat
 
 void UAffiliateKeyModal_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::AffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -153,10 +132,7 @@ void UAffiliateKeyModal_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent
 
 void UAffiliateKeyModal_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +145,7 @@ void UAffiliateKeyModal_C::BP_OnActivated()
 
 void UAffiliateKeyModal_C::OnSet(bool bSuccess)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "OnSet");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "OnSet");
 
 	Params::AffiliateKeyModal_C_OnSet Parms{};
 
@@ -189,10 +162,7 @@ void UAffiliateKeyModal_C::OnSet(bool bSuccess)
 
 void UAffiliateKeyModal_C::BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
 
 	Params::AffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -209,10 +179,7 @@ void UAffiliateKeyModal_C::BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_Co
 
 void UAffiliateKeyModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
 
 	Params::AffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -227,10 +194,7 @@ void UAffiliateKeyModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_Com
 
 void UAffiliateKeyModal_C::SetMobileButtons()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "SetMobileButtons");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "SetMobileButtons");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,10 +207,7 @@ void UAffiliateKeyModal_C::SetMobileButtons()
 
 void UAffiliateKeyModal_C::SetupAffiliateField(const class FString& AffilateName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "SetupAffiliateField");
+	class UFunction* Func = Class->GetFunction("AffiliateKeyModal_C", "SetupAffiliateField");
 
 	Params::AffiliateKeyModal_C_SetupAffiliateField Parms{};
 

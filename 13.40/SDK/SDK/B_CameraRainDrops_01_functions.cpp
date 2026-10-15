@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_CameraRainDrops_01_C::ExecuteUbergraph_B_CameraRainDrops_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraRainDrops_01_C", "ExecuteUbergraph_B_CameraRainDrops_01");
+	class UFunction* Func = Class->GetFunction("B_CameraRainDrops_01_C", "ExecuteUbergraph_B_CameraRainDrops_01");
 
 	Params::B_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01 Parms{};
 
@@ -41,10 +38,7 @@ void AB_CameraRainDrops_01_C::ExecuteUbergraph_B_CameraRainDrops_01(int32 EntryP
 
 void AB_CameraRainDrops_01_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraRainDrops_01_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_CameraRainDrops_01_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_CameraRainDrops_01_C::ReceiveBeginPlay()
 
 void AB_CameraRainDrops_01_C::Alpha__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraRainDrops_01_C", "Alpha__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_CameraRainDrops_01_C", "Alpha__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_CameraRainDrops_01_C::Alpha__UpdateFunc()
 
 void AB_CameraRainDrops_01_C::Alpha__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraRainDrops_01_C", "Alpha__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_CameraRainDrops_01_C", "Alpha__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

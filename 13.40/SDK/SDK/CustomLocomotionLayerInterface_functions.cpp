@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void ICustomLocomotionLayerInterface_C::CustomLocomotionFullBodyLayer(const struct FPoseLink& PassThroughCustomFullBody, struct FPoseLink* CustomLocomotionFullBodyLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CustomLocomotionLayerInterface_C", "CustomLocomotionFullBodyLayer");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CustomLocomotionLayerInterface_C", "CustomLocomotionFullBodyLayer");
 
 	Params::CustomLocomotionLayerInterface_C_CustomLocomotionFullBodyLayer Parms{};
 
@@ -48,10 +45,7 @@ void ICustomLocomotionLayerInterface_C::CustomLocomotionFullBodyLayer(const stru
 
 void ICustomLocomotionLayerInterface_C::CustomLocomotionPreIKLayer(const struct FPoseLink& InPosePreIK, struct FPoseLink* CustomLocomotionPreIKLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CustomLocomotionLayerInterface_C", "CustomLocomotionPreIKLayer");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CustomLocomotionLayerInterface_C", "CustomLocomotionPreIKLayer");
 
 	Params::CustomLocomotionLayerInterface_C_CustomLocomotionPreIKLayer Parms{};
 

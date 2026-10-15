@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void AVaultWeaponPlacementHelper_C::GetFrontendAnimInstance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "GetFrontendAnimInstance");
+	class UFunction* Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "GetFrontendAnimInstance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -38,10 +35,7 @@ void AVaultWeaponPlacementHelper_C::GetFrontendAnimInstance()
 
 void AVaultWeaponPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "OnFrontEndCameraChanged");
+	class UFunction* Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "OnFrontEndCameraChanged");
 
 	Params::VaultWeaponPlacementHelper_C_OnFrontEndCameraChanged Parms{};
 
@@ -57,10 +51,7 @@ void AVaultWeaponPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera NewC
 
 void AVaultWeaponPlacementHelper_C::Initialize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "Initialize");
+	class UFunction* Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "Initialize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AVaultWeaponPlacementHelper_C::Initialize()
 
 void AVaultWeaponPlacementHelper_C::InitializeContextEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "InitializeContextEvents");
+	class UFunction* Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "InitializeContextEvents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void AVaultWeaponPlacementHelper_C::InitializeContextEvents()
 
 void AVaultWeaponPlacementHelper_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void AVaultWeaponPlacementHelper_C::ReceiveBeginPlay()
 
 void AVaultWeaponPlacementHelper_C::ItemRez()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ItemRez");
+	class UFunction* Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ItemRez");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +97,7 @@ void AVaultWeaponPlacementHelper_C::ItemRez()
 
 void AVaultWeaponPlacementHelper_C::ExecuteUbergraph_VaultWeaponPlacementHelper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ExecuteUbergraph_VaultWeaponPlacementHelper");
+	class UFunction* Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ExecuteUbergraph_VaultWeaponPlacementHelper");
 
 	Params::VaultWeaponPlacementHelper_C_ExecuteUbergraph_VaultWeaponPlacementHelper Parms{};
 

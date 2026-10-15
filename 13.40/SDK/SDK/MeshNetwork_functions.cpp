@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void AMeshBeaconClient::OnRep_ConnectedToRoot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshBeaconClient", "OnRep_ConnectedToRoot");
+	class UFunction* Func = Class->GetFunction("MeshBeaconClient", "OnRep_ConnectedToRoot");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -40,10 +37,7 @@ void AMeshBeaconClient::OnRep_ConnectedToRoot()
 
 void AMeshBeaconClient::OnRep_MeshPingTime()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshBeaconClient", "OnRep_MeshPingTime");
+	class UFunction* Func = Class->GetFunction("MeshBeaconClient", "OnRep_MeshPingTime");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -59,10 +53,7 @@ void AMeshBeaconClient::OnRep_MeshPingTime()
 
 void AMeshBeaconClient::OnRep_ParentIds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshBeaconClient", "OnRep_ParentIds");
+	class UFunction* Func = Class->GetFunction("MeshBeaconClient", "OnRep_ParentIds");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -80,10 +71,7 @@ void AMeshBeaconClient::OnRep_ParentIds()
 
 void AMeshBeaconClient::ServerUpdateLevelVisibility(const struct FUpdateLevelVisibilityLevelInfo& LevelVisibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshBeaconClient", "ServerUpdateLevelVisibility");
+	class UFunction* Func = Class->GetFunction("MeshBeaconClient", "ServerUpdateLevelVisibility");
 
 	Params::MeshBeaconClient_ServerUpdateLevelVisibility Parms{};
 
@@ -105,10 +93,7 @@ void AMeshBeaconClient::ServerUpdateLevelVisibility(const struct FUpdateLevelVis
 
 void AMeshBeaconClient::ServerUpdateMultipleLevelsVisibility(const TArray<struct FUpdateLevelVisibilityLevelInfo>& LevelVisibilities)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshBeaconClient", "ServerUpdateMultipleLevelsVisibility");
+	class UFunction* Func = Class->GetFunction("MeshBeaconClient", "ServerUpdateMultipleLevelsVisibility");
 
 	Params::MeshBeaconClient_ServerUpdateMultipleLevelsVisibility Parms{};
 
@@ -130,10 +115,7 @@ void AMeshBeaconClient::ServerUpdateMultipleLevelsVisibility(const TArray<struct
 
 EMeshNetworkNodeType UMeshNetworkComponent::GetMeshNetworkNodeType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkComponent", "GetMeshNetworkNodeType");
+	class UFunction* Func = Class->GetFunction("MeshNetworkComponent", "GetMeshNetworkNodeType");
 
 	Params::MeshNetworkComponent_GetMeshNetworkNodeType Parms{};
 
@@ -155,10 +137,7 @@ EMeshNetworkNodeType UMeshNetworkComponent::GetMeshNetworkNodeType() const
 
 void UMeshNetworkSubsystem::DisableMeshReplication(class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkSubsystem", "DisableMeshReplication");
+	class UFunction* Func = Class->GetFunction("MeshNetworkSubsystem", "DisableMeshReplication");
 
 	Params::MeshNetworkSubsystem_DisableMeshReplication Parms{};
 
@@ -181,10 +160,7 @@ void UMeshNetworkSubsystem::DisableMeshReplication(class AActor* Actor)
 
 void UMeshNetworkSubsystem::EnableMeshReplication(class AActor* Actor, TSubclassOf<class UMeshNetworkComponent> MeshComponentClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkSubsystem", "EnableMeshReplication");
+	class UFunction* Func = Class->GetFunction("MeshNetworkSubsystem", "EnableMeshReplication");
 
 	Params::MeshNetworkSubsystem_EnableMeshReplication Parms{};
 
@@ -207,10 +183,7 @@ void UMeshNetworkSubsystem::EnableMeshReplication(class AActor* Actor, TSubclass
 
 void UMeshNetworkSubsystem::GetMetadata(struct FMeshMetaDataStruct& MetaData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkSubsystem", "GetMetadata");
+	class UFunction* Func = Class->GetFunction("MeshNetworkSubsystem", "GetMetadata");
 
 	Params::MeshNetworkSubsystem_GetMetadata Parms{};
 
@@ -236,10 +209,7 @@ void UMeshNetworkSubsystem::GetMetadata(struct FMeshMetaDataStruct& MetaData)
 
 bool UMeshNetworkSubsystem::GetMetaDataWithKey(class FName Key, struct FMeshMetaDataStruct& MetaData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkSubsystem", "GetMetaDataWithKey");
+	class UFunction* Func = Class->GetFunction("MeshNetworkSubsystem", "GetMetaDataWithKey");
 
 	Params::MeshNetworkSubsystem_GetMetaDataWithKey Parms{};
 
@@ -266,10 +236,7 @@ bool UMeshNetworkSubsystem::GetMetaDataWithKey(class FName Key, struct FMeshMeta
 
 void UMeshNetworkSubsystem::SetMetaData(const struct FMeshMetaDataStruct& MetaData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkSubsystem", "SetMetaData");
+	class UFunction* Func = Class->GetFunction("MeshNetworkSubsystem", "SetMetaData");
 
 	Params::MeshNetworkSubsystem_SetMetaData Parms{};
 
@@ -292,10 +259,7 @@ void UMeshNetworkSubsystem::SetMetaData(const struct FMeshMetaDataStruct& MetaDa
 
 void UMeshNetworkSubsystem::SetMetaDataWithKey(class FName Key, const struct FMeshMetaDataStruct& MetaData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkSubsystem", "SetMetaDataWithKey");
+	class UFunction* Func = Class->GetFunction("MeshNetworkSubsystem", "SetMetaDataWithKey");
 
 	Params::MeshNetworkSubsystem_SetMetaDataWithKey Parms{};
 
@@ -318,10 +282,7 @@ void UMeshNetworkSubsystem::SetMetaDataWithKey(class FName Key, const struct FMe
 
 bool UMeshNetworkSubsystem::GetConnectedToRoot() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkSubsystem", "GetConnectedToRoot");
+	class UFunction* Func = Class->GetFunction("MeshNetworkSubsystem", "GetConnectedToRoot");
 
 	Params::MeshNetworkSubsystem_GetConnectedToRoot Parms{};
 
@@ -343,10 +304,7 @@ bool UMeshNetworkSubsystem::GetConnectedToRoot() const
 
 EMeshNetworkNodeType UMeshNetworkSubsystem::GetGameServerNodeType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkSubsystem", "GetGameServerNodeType");
+	class UFunction* Func = Class->GetFunction("MeshNetworkSubsystem", "GetGameServerNodeType");
 
 	Params::MeshNetworkSubsystem_GetGameServerNodeType Parms{};
 
@@ -368,10 +326,7 @@ EMeshNetworkNodeType UMeshNetworkSubsystem::GetGameServerNodeType() const
 
 EMeshNetworkNodeType UMeshNetworkSubsystem::GetMeshNetworkNodeType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshNetworkSubsystem", "GetMeshNetworkNodeType");
+	class UFunction* Func = Class->GetFunction("MeshNetworkSubsystem", "GetMeshNetworkNodeType");
 
 	Params::MeshNetworkSubsystem_GetMeshNetworkNodeType Parms{};
 

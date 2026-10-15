@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ABGA_CurieFireMesh_FringePlank__C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_CurieFireMesh_FringePlank__C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BGA_CurieFireMesh_FringePlank__C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

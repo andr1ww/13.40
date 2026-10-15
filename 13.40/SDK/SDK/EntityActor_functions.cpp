@@ -28,10 +28,7 @@ SDK_NAMESPACE_START
 
 void UEntityActorCollisionComponent::OnNativeComponentBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorCollisionComponent", "OnNativeComponentBeginOverlap");
+	class UFunction* Func = Class->GetFunction("EntityActorCollisionComponent", "OnNativeComponentBeginOverlap");
 
 	Params::EntityActorCollisionComponent_OnNativeComponentBeginOverlap Parms{};
 
@@ -61,10 +58,7 @@ void UEntityActorCollisionComponent::OnNativeComponentBeginOverlap(class UPrimit
 
 void UEntityActorCollisionComponent::OnNativeComponentEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorCollisionComponent", "OnNativeComponentEndOverlap");
+	class UFunction* Func = Class->GetFunction("EntityActorCollisionComponent", "OnNativeComponentEndOverlap");
 
 	Params::EntityActorCollisionComponent_OnNativeComponentEndOverlap Parms{};
 
@@ -93,10 +87,7 @@ void UEntityActorCollisionComponent::OnNativeComponentEndOverlap(class UPrimitiv
 
 void UEntityActorCollisionComponent::OnNativeComponentHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorCollisionComponent", "OnNativeComponentHit");
+	class UFunction* Func = Class->GetFunction("EntityActorCollisionComponent", "OnNativeComponentHit");
 
 	Params::EntityActorCollisionComponent_OnNativeComponentHit Parms{};
 
@@ -123,10 +114,7 @@ void UEntityActorCollisionComponent::OnNativeComponentHit(class UPrimitiveCompon
 
 void UEntityActorPositionComponent::OnRootComponentChanged(class USceneComponent* InRootComponent, bool bIsRootComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorPositionComponent", "OnRootComponentChanged");
+	class UFunction* Func = Class->GetFunction("EntityActorPositionComponent", "OnRootComponentChanged");
 
 	Params::EntityActorPositionComponent_OnRootComponentChanged Parms{};
 
@@ -150,10 +138,7 @@ void UEntityActorPositionComponent::OnRootComponentChanged(class USceneComponent
 
 void UEntityActorRotationComponent::OnRootComponentChanged(class USceneComponent* InRootComponent, bool bIsRootComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorRotationComponent", "OnRootComponentChanged");
+	class UFunction* Func = Class->GetFunction("EntityActorRotationComponent", "OnRootComponentChanged");
 
 	Params::EntityActorRotationComponent_OnRootComponentChanged Parms{};
 
@@ -177,10 +162,7 @@ void UEntityActorRotationComponent::OnRootComponentChanged(class USceneComponent
 
 void UEntityActorScaleComponent::OnRootComponentChanged(class USceneComponent* InRootComponent, bool bIsRootComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorScaleComponent", "OnRootComponentChanged");
+	class UFunction* Func = Class->GetFunction("EntityActorScaleComponent", "OnRootComponentChanged");
 
 	Params::EntityActorScaleComponent_OnRootComponentChanged Parms{};
 
@@ -203,10 +185,7 @@ void UEntityActorScaleComponent::OnRootComponentChanged(class USceneComponent* I
 
 EHorizTextAligment UEntityActorTextDisplayComponent::GetHorizontalAlignment()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetHorizontalAlignment");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetHorizontalAlignment");
 
 	Params::EntityActorTextDisplayComponent_GetHorizontalAlignment Parms{};
 
@@ -228,10 +207,7 @@ EHorizTextAligment UEntityActorTextDisplayComponent::GetHorizontalAlignment()
 
 struct FVector UEntityActorTextDisplayComponent::GetRelativeLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetRelativeLocation");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetRelativeLocation");
 
 	Params::EntityActorTextDisplayComponent_GetRelativeLocation Parms{};
 
@@ -253,10 +229,7 @@ struct FVector UEntityActorTextDisplayComponent::GetRelativeLocation()
 
 EVerticalTextAligment UEntityActorTextDisplayComponent::GetVerticalAlignment()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetVerticalAlignment");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetVerticalAlignment");
 
 	Params::EntityActorTextDisplayComponent_GetVerticalAlignment Parms{};
 
@@ -278,10 +251,7 @@ EVerticalTextAligment UEntityActorTextDisplayComponent::GetVerticalAlignment()
 
 void UEntityActorTextDisplayComponent::SetHorizontalAlignment(EHorizTextAligment Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetHorizontalAlignment");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetHorizontalAlignment");
 
 	Params::EntityActorTextDisplayComponent_SetHorizontalAlignment Parms{};
 
@@ -303,10 +273,7 @@ void UEntityActorTextDisplayComponent::SetHorizontalAlignment(EHorizTextAligment
 
 void UEntityActorTextDisplayComponent::SetRelativeLocation(const struct FVector& RelativeLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetRelativeLocation");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetRelativeLocation");
 
 	Params::EntityActorTextDisplayComponent_SetRelativeLocation Parms{};
 
@@ -328,10 +295,7 @@ void UEntityActorTextDisplayComponent::SetRelativeLocation(const struct FVector&
 
 void UEntityActorTextDisplayComponent::SetRelativeRotation(const struct FRotator& RelativeRotation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetRelativeRotation");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetRelativeRotation");
 
 	Params::EntityActorTextDisplayComponent_SetRelativeRotation Parms{};
 
@@ -353,10 +317,7 @@ void UEntityActorTextDisplayComponent::SetRelativeRotation(const struct FRotator
 
 void UEntityActorTextDisplayComponent::SetRelativeScale(const struct FVector& RelativeScale)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetRelativeScale");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetRelativeScale");
 
 	Params::EntityActorTextDisplayComponent_SetRelativeScale Parms{};
 
@@ -378,10 +339,7 @@ void UEntityActorTextDisplayComponent::SetRelativeScale(const struct FVector& Re
 
 void UEntityActorTextDisplayComponent::SetText(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetText");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetText");
 
 	Params::EntityActorTextDisplayComponent_SetText Parms{};
 
@@ -403,10 +361,7 @@ void UEntityActorTextDisplayComponent::SetText(const class FText& Text)
 
 void UEntityActorTextDisplayComponent::SetTextRenderColor(const struct FColor& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetTextRenderColor");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetTextRenderColor");
 
 	Params::EntityActorTextDisplayComponent_SetTextRenderColor Parms{};
 
@@ -428,10 +383,7 @@ void UEntityActorTextDisplayComponent::SetTextRenderColor(const struct FColor& V
 
 void UEntityActorTextDisplayComponent::SetVerticalAlignment(EVerticalTextAligment Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetVerticalAlignment");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetVerticalAlignment");
 
 	Params::EntityActorTextDisplayComponent_SetVerticalAlignment Parms{};
 
@@ -453,10 +405,7 @@ void UEntityActorTextDisplayComponent::SetVerticalAlignment(EVerticalTextAligmen
 
 void UEntityActorTextDisplayComponent::SetWorldSize(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetWorldSize");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "SetWorldSize");
 
 	Params::EntityActorTextDisplayComponent_SetWorldSize Parms{};
 
@@ -478,10 +427,7 @@ void UEntityActorTextDisplayComponent::SetWorldSize(float Value)
 
 class FText UEntityActorTextDisplayComponent::GetText() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetText");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetText");
 
 	Params::EntityActorTextDisplayComponent_GetText Parms{};
 
@@ -503,10 +449,7 @@ class FText UEntityActorTextDisplayComponent::GetText() const
 
 struct FColor UEntityActorTextDisplayComponent::GetTextRenderColor() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetTextRenderColor");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetTextRenderColor");
 
 	Params::EntityActorTextDisplayComponent_GetTextRenderColor Parms{};
 
@@ -528,10 +471,7 @@ struct FColor UEntityActorTextDisplayComponent::GetTextRenderColor() const
 
 float UEntityActorTextDisplayComponent::GetWorldSize() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetWorldSize");
+	class UFunction* Func = Class->GetFunction("EntityActorTextDisplayComponent", "GetWorldSize");
 
 	Params::EntityActorTextDisplayComponent_GetWorldSize Parms{};
 
@@ -553,10 +493,7 @@ float UEntityActorTextDisplayComponent::GetWorldSize() const
 
 void UEntityDynamicActivationComponent::OnEnabledChanged(bool bIsEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityDynamicActivationComponent", "OnEnabledChanged");
+	class UFunction* Func = Class->GetFunction("EntityDynamicActivationComponent", "OnEnabledChanged");
 
 	Params::EntityDynamicActivationComponent_OnEnabledChanged Parms{};
 
@@ -576,10 +513,7 @@ void UEntityDynamicActivationComponent::OnEnabledChanged(bool bIsEnabled)
 
 void UEntityDynamicActivationComponent::OnRep_TransitionTarget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EntityDynamicActivationComponent", "OnRep_TransitionTarget");
+	class UFunction* Func = Class->GetFunction("EntityDynamicActivationComponent", "OnRep_TransitionTarget");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

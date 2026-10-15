@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Athena_Bush_C::ExecuteUbergraph_GCN_Athena_Bush(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Bush_C", "ExecuteUbergraph_GCN_Athena_Bush");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Bush_C", "ExecuteUbergraph_GCN_Athena_Bush");
 
 	Params::GCN_Athena_Bush_C_ExecuteUbergraph_GCN_Athena_Bush Parms{};
 
@@ -48,10 +45,7 @@ void AGCN_Athena_Bush_C::ExecuteUbergraph_GCN_Athena_Bush(int32 EntryPoint)
 
 void AGCN_Athena_Bush_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Bush_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Bush_C", "OnRemoval");
 
 	Params::GCN_Athena_Bush_C_OnRemoval Parms{};
 
@@ -76,10 +70,7 @@ void AGCN_Athena_Bush_C::OnRemoval(class AActor* MyTarget, const struct FGamepla
 
 void AGCN_Athena_Bush_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Bush_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Bush_C", "OnLoopingStart");
 
 	Params::GCN_Athena_Bush_C_OnLoopingStart Parms{};
 
@@ -97,10 +88,7 @@ void AGCN_Athena_Bush_C::OnLoopingStart(class AActor* MyTarget, const struct FGa
 
 void AGCN_Athena_Bush_C::On_Player_Step()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Bush_C", "On Player Step");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Bush_C", "On Player Step");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +101,7 @@ void AGCN_Athena_Bush_C::On_Player_Step()
 
 void AGCN_Athena_Bush_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Bush_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Bush_C", "ReceiveTick");
 
 	Params::GCN_Athena_Bush_C_ReceiveTick Parms{};
 
@@ -131,10 +116,7 @@ void AGCN_Athena_Bush_C::ReceiveTick(float DeltaSeconds)
 
 void AGCN_Athena_Bush_C::OpacityFade__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Bush_C", "OpacityFade__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Bush_C", "OpacityFade__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +127,7 @@ void AGCN_Athena_Bush_C::OpacityFade__UpdateFunc()
 
 void AGCN_Athena_Bush_C::OpacityFade__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_Bush_C", "OpacityFade__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_Bush_C", "OpacityFade__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

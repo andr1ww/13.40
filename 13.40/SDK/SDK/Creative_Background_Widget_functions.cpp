@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreative_Background_Widget_C::SetText(const class FString& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Background_Widget_C", "SetText");
+	class UFunction* Func = Class->GetFunction("Creative_Background_Widget_C", "SetText");
 
 	Params::Creative_Background_Widget_C_SetText Parms{};
 
@@ -43,10 +40,7 @@ void UCreative_Background_Widget_C::SetText(const class FString& Text)
 
 void UCreative_Background_Widget_C::SetBackgroundColor(const struct FLinearColor& Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Background_Widget_C", "SetBackgroundColor");
+	class UFunction* Func = Class->GetFunction("Creative_Background_Widget_C", "SetBackgroundColor");
 
 	Params::Creative_Background_Widget_C_SetBackgroundColor Parms{};
 
@@ -63,10 +57,7 @@ void UCreative_Background_Widget_C::SetBackgroundColor(const struct FLinearColor
 
 void UCreative_Background_Widget_C::SetTextScale(int32 FontSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Background_Widget_C", "SetTextScale");
+	class UFunction* Func = Class->GetFunction("Creative_Background_Widget_C", "SetTextScale");
 
 	Params::Creative_Background_Widget_C_SetTextScale Parms{};
 
@@ -83,10 +74,7 @@ void UCreative_Background_Widget_C::SetTextScale(int32 FontSize)
 
 void UCreative_Background_Widget_C::SetTextAlignment(ETextJustify Alignment)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Background_Widget_C", "SetTextAlignment");
+	class UFunction* Func = Class->GetFunction("Creative_Background_Widget_C", "SetTextAlignment");
 
 	Params::Creative_Background_Widget_C_SetTextAlignment Parms{};
 
@@ -103,10 +91,7 @@ void UCreative_Background_Widget_C::SetTextAlignment(ETextJustify Alignment)
 
 void UCreative_Background_Widget_C::SetTextColor(const struct FLinearColor& TextColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Background_Widget_C", "SetTextColor");
+	class UFunction* Func = Class->GetFunction("Creative_Background_Widget_C", "SetTextColor");
 
 	Params::Creative_Background_Widget_C_SetTextColor Parms{};
 
@@ -124,10 +109,7 @@ void UCreative_Background_Widget_C::SetTextColor(const struct FLinearColor& Text
 
 void UCreative_Background_Widget_C::SetTextFont(int32 TextFont, int32 OutlineStrength)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Background_Widget_C", "SetTextFont");
+	class UFunction* Func = Class->GetFunction("Creative_Background_Widget_C", "SetTextFont");
 
 	Params::Creative_Background_Widget_C_SetTextFont Parms{};
 
@@ -146,10 +128,7 @@ void UCreative_Background_Widget_C::SetTextFont(int32 TextFont, int32 OutlineStr
 
 void UCreative_Background_Widget_C::SetShadow(EBillboardshadowDirection Shadow, float ShadowScale)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Background_Widget_C", "SetShadow");
+	class UFunction* Func = Class->GetFunction("Creative_Background_Widget_C", "SetShadow");
 
 	Params::Creative_Background_Widget_C_SetShadow Parms{};
 

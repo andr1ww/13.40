@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void URedeemFriendCodeWindow_C::ExecuteUbergraph_RedeemFriendCodeWindow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "ExecuteUbergraph_RedeemFriendCodeWindow");
+	class UFunction* Func = Class->GetFunction("RedeemFriendCodeWindow_C", "ExecuteUbergraph_RedeemFriendCodeWindow");
 
 	Params::RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow Parms{};
 
@@ -43,10 +40,7 @@ void URedeemFriendCodeWindow_C::ExecuteUbergraph_RedeemFriendCodeWindow(int32 En
 
 void URedeemFriendCodeWindow_C::BndEvt__Button_Cancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__Button_Cancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__Button_Cancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::RedeemFriendCodeWindow_C_BndEvt__Button_Cancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -63,10 +57,7 @@ void URedeemFriendCodeWindow_C::BndEvt__Button_Cancel_K2Node_ComponentBoundEvent
 
 void URedeemFriendCodeWindow_C::BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature");
 
 	Params::RedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature Parms{};
 
@@ -81,10 +72,7 @@ void URedeemFriendCodeWindow_C::BndEvt__FriendCodeEntry_K2Node_ComponentBoundEve
 
 void URedeemFriendCodeWindow_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "Construct");
+	class UFunction* Func = Class->GetFunction("RedeemFriendCodeWindow_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -98,10 +86,7 @@ void URedeemFriendCodeWindow_C::Construct()
 
 void URedeemFriendCodeWindow_C::OnRedeemFriendCodeComplete(bool bSuccess, ERedeemCodeFailureReason FailureReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "OnRedeemFriendCodeComplete");
+	class UFunction* Func = Class->GetFunction("RedeemFriendCodeWindow_C", "OnRedeemFriendCodeComplete");
 
 	Params::RedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete Parms{};
 
@@ -119,10 +104,7 @@ void URedeemFriendCodeWindow_C::OnRedeemFriendCodeComplete(bool bSuccess, ERedee
 
 void URedeemFriendCodeWindow_C::BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
 
 	Params::RedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -139,10 +121,7 @@ void URedeemFriendCodeWindow_C::BndEvt__SendButton_K2Node_ComponentBoundEvent_75
 
 void URedeemFriendCodeWindow_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature");
 
 	Params::RedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -157,10 +136,7 @@ void URedeemFriendCodeWindow_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_
 
 void URedeemFriendCodeWindow_C::Close()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "Close");
+	class UFunction* Func = Class->GetFunction("RedeemFriendCodeWindow_C", "Close");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -174,10 +150,7 @@ void URedeemFriendCodeWindow_C::Close()
 
 void URedeemFriendCodeWindow_C::HandleRedeemCodeComplete(bool Success, ERedeemCodeFailureReason FailureReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "HandleRedeemCodeComplete");
+	class UFunction* Func = Class->GetFunction("RedeemFriendCodeWindow_C", "HandleRedeemCodeComplete");
 
 	Params::RedeemFriendCodeWindow_C_HandleRedeemCodeComplete Parms{};
 

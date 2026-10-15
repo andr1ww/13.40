@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UItemCraftingIngredientList_C::RefreshItemToRepresent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshItemToRepresent");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshItemToRepresent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UItemCraftingIngredientList_C::RefreshItemToRepresent()
 
 void UItemCraftingIngredientList_C::SetItemQuantity(int32 ItemQuantity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemQuantity");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemQuantity");
 
 	Params::ItemCraftingIngredientList_C_SetItemQuantity Parms{};
 
@@ -55,10 +49,7 @@ void UItemCraftingIngredientList_C::SetItemQuantity(int32 ItemQuantity)
 
 void UItemCraftingIngredientList_C::Bind_Delegates()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "Bind Delegates");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "Bind Delegates");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UItemCraftingIngredientList_C::Bind_Delegates()
 
 void UItemCraftingIngredientList_C::UnbindDelegates()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "UnbindDelegates");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "UnbindDelegates");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UItemCraftingIngredientList_C::UnbindDelegates()
 
 void UItemCraftingIngredientList_C::HandleCraftItemFailed(EFortCraftFailCause FailCause)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleCraftItemFailed");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleCraftItemFailed");
 
 	Params::ItemCraftingIngredientList_C_HandleCraftItemFailed Parms{};
 
@@ -106,10 +91,7 @@ void UItemCraftingIngredientList_C::HandleCraftItemFailed(EFortCraftFailCause Fa
 
 void UItemCraftingIngredientList_C::GetIngredients(class UObject* Item, TArray<struct FFortItemQuantityPair>* ReturnIngredients)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "GetIngredients");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "GetIngredients");
 
 	Params::ItemCraftingIngredientList_C_GetIngredients Parms{};
 
@@ -129,10 +111,7 @@ void UItemCraftingIngredientList_C::GetIngredients(class UObject* Item, TArray<s
 
 void UItemCraftingIngredientList_C::SetItemToCompare(class UFortItem* ItemToCompare)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemToCompare");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemToCompare");
 
 	Params::ItemCraftingIngredientList_C_SetItemToCompare Parms{};
 
@@ -150,10 +129,7 @@ void UItemCraftingIngredientList_C::SetItemToCompare(class UFortItem* ItemToComp
 
 void UItemCraftingIngredientList_C::ItemNeedsInventoryTracking(class UFortItem* Item, bool* NeedsTracking)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "ItemNeedsInventoryTracking");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "ItemNeedsInventoryTracking");
 
 	Params::ItemCraftingIngredientList_C_ItemNeedsInventoryTracking Parms{};
 
@@ -175,10 +151,7 @@ void UItemCraftingIngredientList_C::ItemNeedsInventoryTracking(class UFortItem* 
 
 void UItemCraftingIngredientList_C::HandleItemChanged(bool ItemChanged, bool AmmoChanged, bool IngredientsChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleItemChanged");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleItemChanged");
 
 	Params::ItemCraftingIngredientList_C_HandleItemChanged Parms{};
 
@@ -195,10 +168,7 @@ void UItemCraftingIngredientList_C::HandleItemChanged(bool ItemChanged, bool Amm
 
 void UItemCraftingIngredientList_C::RefreshInventoryTracking()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshInventoryTracking");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshInventoryTracking");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -212,10 +182,7 @@ void UItemCraftingIngredientList_C::RefreshInventoryTracking()
 
 void UItemCraftingIngredientList_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleWorldItemListChanged");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleWorldItemListChanged");
 
 	Params::ItemCraftingIngredientList_C_HandleWorldItemListChanged Parms{};
 
@@ -234,10 +201,7 @@ void UItemCraftingIngredientList_C::HandleWorldItemListChanged(TArray<class UFor
 
 void UItemCraftingIngredientList_C::Refresh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "Refresh");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -251,10 +215,7 @@ void UItemCraftingIngredientList_C::Refresh()
 
 void UItemCraftingIngredientList_C::SetItemToRepresent(class UFortItem* Item, int32 ItemQuantity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemToRepresent");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemToRepresent");
 
 	Params::ItemCraftingIngredientList_C_SetItemToRepresent Parms{};
 
@@ -272,10 +233,7 @@ void UItemCraftingIngredientList_C::SetItemToRepresent(class UFortItem* Item, in
 
 void UItemCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntryBase* ListEntry_AddListEntry)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "AddListEntry");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "AddListEntry");
 
 	Params::ItemCraftingIngredientList_C_AddListEntry Parms{};
 
@@ -290,10 +248,7 @@ void UItemCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntr
 
 void UItemCraftingIngredientList_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -304,10 +259,7 @@ void UItemCraftingIngredientList_C::Destruct()
 
 void UItemCraftingIngredientList_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -320,10 +272,7 @@ void UItemCraftingIngredientList_C::Construct()
 
 void UItemCraftingIngredientList_C::ExecuteUbergraph_ItemCraftingIngredientList(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "ExecuteUbergraph_ItemCraftingIngredientList");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientList_C", "ExecuteUbergraph_ItemCraftingIngredientList");
 
 	Params::ItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList Parms{};
 

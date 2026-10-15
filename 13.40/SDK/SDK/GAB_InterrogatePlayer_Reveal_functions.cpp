@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAB_InterrogatePlayer_Reveal_C::ExecuteUbergraph_GAB_InterrogatePlayer_Reveal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "ExecuteUbergraph_GAB_InterrogatePlayer_Reveal");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "ExecuteUbergraph_GAB_InterrogatePlayer_Reveal");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_ExecuteUbergraph_GAB_InterrogatePlayer_Reveal Parms{};
 
@@ -43,10 +40,7 @@ void UGAB_InterrogatePlayer_Reveal_C::ExecuteUbergraph_GAB_InterrogatePlayer_Rev
 
 void UGAB_InterrogatePlayer_Reveal_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -61,10 +55,7 @@ void UGAB_InterrogatePlayer_Reveal_C::K2_ActivateAbilityFromEvent(const struct F
 
 void UGAB_InterrogatePlayer_Reveal_C::EndInterrogation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "EndInterrogation");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "EndInterrogation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -84,10 +75,7 @@ void UGAB_InterrogatePlayer_Reveal_C::EndInterrogation()
 
 void UGAB_InterrogatePlayer_Reveal_C::OnDied_Event_1(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "OnDied_Event_1");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "OnDied_Event_1");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_OnDied_Event_1 Parms{};
 
@@ -111,10 +99,7 @@ void UGAB_InterrogatePlayer_Reveal_C::OnDied_Event_1(class AActor* DamagedActor,
 
 void UGAB_InterrogatePlayer_Reveal_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "K2_OnEndAbility");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_K2_OnEndAbility Parms{};
 
@@ -129,10 +114,7 @@ void UGAB_InterrogatePlayer_Reveal_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_InterrogatePlayer_Reveal_C::OnFinish_68B3C6D14B44CCD3170ABDA038C1203E()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "OnFinish_68B3C6D14B44CCD3170ABDA038C1203E");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "OnFinish_68B3C6D14B44CCD3170ABDA038C1203E");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -146,10 +128,7 @@ void UGAB_InterrogatePlayer_Reveal_C::OnFinish_68B3C6D14B44CCD3170ABDA038C1203E(
 
 void UGAB_InterrogatePlayer_Reveal_C::Triggered_3C2C8C224B62B00BDEEAF5AF38A401C1(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Triggered_3C2C8C224B62B00BDEEAF5AF38A401C1");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Triggered_3C2C8C224B62B00BDEEAF5AF38A401C1");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_Triggered_3C2C8C224B62B00BDEEAF5AF38A401C1 Parms{};
 
@@ -168,10 +147,7 @@ void UGAB_InterrogatePlayer_Reveal_C::Triggered_3C2C8C224B62B00BDEEAF5AF38A401C1
 
 void UGAB_InterrogatePlayer_Reveal_C::Cancelled_3C2C8C224B62B00BDEEAF5AF38A401C1(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Cancelled_3C2C8C224B62B00BDEEAF5AF38A401C1");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Cancelled_3C2C8C224B62B00BDEEAF5AF38A401C1");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_Cancelled_3C2C8C224B62B00BDEEAF5AF38A401C1 Parms{};
 
@@ -190,10 +166,7 @@ void UGAB_InterrogatePlayer_Reveal_C::Cancelled_3C2C8C224B62B00BDEEAF5AF38A401C1
 
 void UGAB_InterrogatePlayer_Reveal_C::Completed_3C2C8C224B62B00BDEEAF5AF38A401C1(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Completed_3C2C8C224B62B00BDEEAF5AF38A401C1");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Completed_3C2C8C224B62B00BDEEAF5AF38A401C1");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_Completed_3C2C8C224B62B00BDEEAF5AF38A401C1 Parms{};
 
@@ -212,10 +185,7 @@ void UGAB_InterrogatePlayer_Reveal_C::Completed_3C2C8C224B62B00BDEEAF5AF38A401C1
 
 void UGAB_InterrogatePlayer_Reveal_C::Triggered_23F3C2DB411862D627ACFCA8233F7B33(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Triggered_23F3C2DB411862D627ACFCA8233F7B33");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Triggered_23F3C2DB411862D627ACFCA8233F7B33");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_Triggered_23F3C2DB411862D627ACFCA8233F7B33 Parms{};
 
@@ -234,10 +204,7 @@ void UGAB_InterrogatePlayer_Reveal_C::Triggered_23F3C2DB411862D627ACFCA8233F7B33
 
 void UGAB_InterrogatePlayer_Reveal_C::Cancelled_23F3C2DB411862D627ACFCA8233F7B33(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Cancelled_23F3C2DB411862D627ACFCA8233F7B33");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Cancelled_23F3C2DB411862D627ACFCA8233F7B33");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_Cancelled_23F3C2DB411862D627ACFCA8233F7B33 Parms{};
 
@@ -256,10 +223,7 @@ void UGAB_InterrogatePlayer_Reveal_C::Cancelled_23F3C2DB411862D627ACFCA8233F7B33
 
 void UGAB_InterrogatePlayer_Reveal_C::Completed_23F3C2DB411862D627ACFCA8233F7B33(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Completed_23F3C2DB411862D627ACFCA8233F7B33");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Completed_23F3C2DB411862D627ACFCA8233F7B33");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_Completed_23F3C2DB411862D627ACFCA8233F7B33 Parms{};
 
@@ -275,10 +239,7 @@ void UGAB_InterrogatePlayer_Reveal_C::Completed_23F3C2DB411862D627ACFCA8233F7B33
 
 void UGAB_InterrogatePlayer_Reveal_C::InitAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "InitAbility");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "InitAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -289,10 +250,7 @@ void UGAB_InterrogatePlayer_Reveal_C::InitAbility()
 
 void UGAB_InterrogatePlayer_Reveal_C::EndAbilityCleanup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "EndAbilityCleanup");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "EndAbilityCleanup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -303,10 +261,7 @@ void UGAB_InterrogatePlayer_Reveal_C::EndAbilityCleanup()
 
 void UGAB_InterrogatePlayer_Reveal_C::Reveal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Reveal");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "Reveal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -319,10 +274,7 @@ void UGAB_InterrogatePlayer_Reveal_C::Reveal()
 
 void UGAB_InterrogatePlayer_Reveal_C::ToggleReticleVisibility(bool Hide)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "ToggleReticleVisibility");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Reveal_C", "ToggleReticleVisibility");
 
 	Params::GAB_InterrogatePlayer_Reveal_C_ToggleReticleVisibility Parms{};
 

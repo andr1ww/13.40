@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemAlterationsListDetailWidget_C::SetState(EFortAlterationWidgetState State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "SetState");
+	class UFunction* Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "SetState");
 
 	Params::ItemAlterationsListDetailWidget_C_SetState Parms{};
 
@@ -41,10 +38,7 @@ void UItemAlterationsListDetailWidget_C::SetState(EFortAlterationWidgetState Sta
 
 void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
+	class UFunction* Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToCompareWithSet
 
 void UItemAlterationsListDetailWidget_C::ExecuteUbergraph_ItemAlterationsListDetailWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "ExecuteUbergraph_ItemAlterationsListDetailWidget");
+	class UFunction* Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "ExecuteUbergraph_ItemAlterationsListDetailWidget");
 
 	Params::ItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget Parms{};
 

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void AB_EmotePreviewDisplay_C::CleanupDynamicSounds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_EmotePreviewDisplay_C", "CleanupDynamicSounds");
+	class UFunction* Func = Class->GetFunction("B_EmotePreviewDisplay_C", "CleanupDynamicSounds");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void AB_EmotePreviewDisplay_C::CleanupDynamicSounds()
 
 void AB_EmotePreviewDisplay_C::ApplyEmoteToPet(bool IsRemoval)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_EmotePreviewDisplay_C", "ApplyEmoteToPet");
+	class UFunction* Func = Class->GetFunction("B_EmotePreviewDisplay_C", "ApplyEmoteToPet");
 
 	Params::B_EmotePreviewDisplay_C_ApplyEmoteToPet Parms{};
 
@@ -57,10 +51,7 @@ void AB_EmotePreviewDisplay_C::ApplyEmoteToPet(bool IsRemoval)
 
 void AB_EmotePreviewDisplay_C::OnLoaded_638F148342254A777E929B88915A8958(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_EmotePreviewDisplay_C", "OnLoaded_638F148342254A777E929B88915A8958");
+	class UFunction* Func = Class->GetFunction("B_EmotePreviewDisplay_C", "OnLoaded_638F148342254A777E929B88915A8958");
 
 	Params::B_EmotePreviewDisplay_C_OnLoaded_638F148342254A777E929B88915A8958 Parms{};
 
@@ -77,10 +68,7 @@ void AB_EmotePreviewDisplay_C::OnLoaded_638F148342254A777E929B88915A8958(class U
 
 void AB_EmotePreviewDisplay_C::PreviewEmote(const class UFortMontageItemDefinitionBase* Emote_PreviewEmote)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_EmotePreviewDisplay_C", "PreviewEmote");
+	class UFunction* Func = Class->GetFunction("B_EmotePreviewDisplay_C", "PreviewEmote");
 
 	Params::B_EmotePreviewDisplay_C_PreviewEmote Parms{};
 
@@ -97,10 +85,7 @@ void AB_EmotePreviewDisplay_C::PreviewEmote(const class UFortMontageItemDefiniti
 
 void AB_EmotePreviewDisplay_C::PerformSpecialAction(class FName ActionName_PerformSpecialAction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_EmotePreviewDisplay_C", "PerformSpecialAction");
+	class UFunction* Func = Class->GetFunction("B_EmotePreviewDisplay_C", "PerformSpecialAction");
 
 	Params::B_EmotePreviewDisplay_C_PerformSpecialAction Parms{};
 
@@ -117,10 +102,7 @@ void AB_EmotePreviewDisplay_C::PerformSpecialAction(class FName ActionName_Perfo
 
 void AB_EmotePreviewDisplay_C::ReceiveEndPlay(EEndPlayReason EndPlayReason_ReceiveEndPlay)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_EmotePreviewDisplay_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("B_EmotePreviewDisplay_C", "ReceiveEndPlay");
 
 	Params::B_EmotePreviewDisplay_C_ReceiveEndPlay Parms{};
 
@@ -135,10 +117,7 @@ void AB_EmotePreviewDisplay_C::ReceiveEndPlay(EEndPlayReason EndPlayReason_Recei
 
 void AB_EmotePreviewDisplay_C::SpecialCaseShoutHandler()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_EmotePreviewDisplay_C", "SpecialCaseShoutHandler");
+	class UFunction* Func = Class->GetFunction("B_EmotePreviewDisplay_C", "SpecialCaseShoutHandler");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +130,7 @@ void AB_EmotePreviewDisplay_C::SpecialCaseShoutHandler()
 
 void AB_EmotePreviewDisplay_C::ExecuteUbergraph_B_EmotePreviewDisplay(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_EmotePreviewDisplay_C", "ExecuteUbergraph_B_EmotePreviewDisplay");
+	class UFunction* Func = Class->GetFunction("B_EmotePreviewDisplay_C", "ExecuteUbergraph_B_EmotePreviewDisplay");
 
 	Params::B_EmotePreviewDisplay_C_ExecuteUbergraph_B_EmotePreviewDisplay Parms{};
 

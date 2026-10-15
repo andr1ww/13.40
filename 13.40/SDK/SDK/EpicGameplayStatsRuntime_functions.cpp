@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 bool UBlueprintGameplayStatsLibrary::EqualEqual_GameplayStatTagGameplayStatTag(const struct FGameplayStatTag& A, const struct FGameplayStatTag& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayStatsLibrary", "EqualEqual_GameplayStatTagGameplayStatTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayStatsLibrary", "EqualEqual_GameplayStatTagGameplayStatTag");
 
 	Params::BlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag Parms{};
 
@@ -55,10 +52,7 @@ bool UBlueprintGameplayStatsLibrary::EqualEqual_GameplayStatTagGameplayStatTag(c
 
 bool UBlueprintGameplayStatsLibrary::NotEqual_GameplayStatTagGameplayStatTag(const struct FGameplayStatTag& A, const struct FGameplayStatTag& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayStatsLibrary", "NotEqual_GameplayStatTagGameplayStatTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayStatsLibrary", "NotEqual_GameplayStatTagGameplayStatTag");
 
 	Params::BlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag Parms{};
 

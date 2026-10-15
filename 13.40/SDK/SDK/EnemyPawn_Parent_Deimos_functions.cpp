@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AEnemyPawn_Parent_Deimos_C::ExecuteUbergraph_EnemyPawn_Parent_Deimos(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ExecuteUbergraph_EnemyPawn_Parent_Deimos");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ExecuteUbergraph_EnemyPawn_Parent_Deimos");
 
 	Params::EnemyPawn_Parent_Deimos_C_ExecuteUbergraph_EnemyPawn_Parent_Deimos Parms{};
 
@@ -48,10 +45,7 @@ void AEnemyPawn_Parent_Deimos_C::ExecuteUbergraph_EnemyPawn_Parent_Deimos(int32 
 
 void AEnemyPawn_Parent_Deimos_C::OnBuildingHitPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, const struct FGameplayEffectContextHandle& EffectContext, bool bPlayerPlaced)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnBuildingHitPlayEffects");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnBuildingHitPlayEffects");
 
 	Params::EnemyPawn_Parent_Deimos_C_OnBuildingHitPlayEffects Parms{};
 
@@ -71,10 +65,7 @@ void AEnemyPawn_Parent_Deimos_C::OnBuildingHitPlayEffects(float Damage, const st
 
 void AEnemyPawn_Parent_Deimos_C::DestroyBuildingHitEffect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DestroyBuildingHitEffect");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DestroyBuildingHitEffect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +76,7 @@ void AEnemyPawn_Parent_Deimos_C::DestroyBuildingHitEffect()
 
 void AEnemyPawn_Parent_Deimos_C::AdditiveHitReactDelay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "AdditiveHitReactDelay");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "AdditiveHitReactDelay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,10 +95,7 @@ void AEnemyPawn_Parent_Deimos_C::AdditiveHitReactDelay()
 
 void AEnemyPawn_Parent_Deimos_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnDamagePlayEffects");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnDamagePlayEffects");
 
 	Params::EnemyPawn_Parent_Deimos_C_OnDamagePlayEffects Parms{};
 
@@ -131,10 +116,7 @@ void AEnemyPawn_Parent_Deimos_C::OnDamagePlayEffects(float Damage, const struct 
 
 void AEnemyPawn_Parent_Deimos_C::OnStartedEncounterSpawn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnStartedEncounterSpawn");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnStartedEncounterSpawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +127,7 @@ void AEnemyPawn_Parent_Deimos_C::OnStartedEncounterSpawn()
 
 void AEnemyPawn_Parent_Deimos_C::OnFinishedEncounterSpawn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnFinishedEncounterSpawn");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnFinishedEncounterSpawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +138,7 @@ void AEnemyPawn_Parent_Deimos_C::OnFinishedEncounterSpawn()
 
 void AEnemyPawn_Parent_Deimos_C::DebugEnemySpawnIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DebugEnemySpawnIn");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DebugEnemySpawnIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +151,7 @@ void AEnemyPawn_Parent_Deimos_C::DebugEnemySpawnIn()
 
 void AEnemyPawn_Parent_Deimos_C::DespawnEnemy(const struct FVector& RiftLocationWS)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DespawnEnemy");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DespawnEnemy");
 
 	Params::EnemyPawn_Parent_Deimos_C_DespawnEnemy Parms{};
 
@@ -193,10 +166,7 @@ void AEnemyPawn_Parent_Deimos_C::DespawnEnemy(const struct FVector& RiftLocation
 
 void AEnemyPawn_Parent_Deimos_C::PostSpawnIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "PostSpawnIn");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "PostSpawnIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +177,7 @@ void AEnemyPawn_Parent_Deimos_C::PostSpawnIn()
 
 void AEnemyPawn_Parent_Deimos_C::SpawnInSafetyCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "SpawnInSafetyCheck");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "SpawnInSafetyCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +190,7 @@ void AEnemyPawn_Parent_Deimos_C::SpawnInSafetyCheck()
 
 void AEnemyPawn_Parent_Deimos_C::ManualEnemySpawnIn(const struct FVector& RiftLocationWS)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ManualEnemySpawnIn");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ManualEnemySpawnIn");
 
 	Params::EnemyPawn_Parent_Deimos_C_ManualEnemySpawnIn Parms{};
 
@@ -243,10 +207,7 @@ void AEnemyPawn_Parent_Deimos_C::ManualEnemySpawnIn(const struct FVector& RiftLo
 
 void AEnemyPawn_Parent_Deimos_C::ManualDespawnEnemy(const struct FVector& RiftLocationWS)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ManualDespawnEnemy");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ManualDespawnEnemy");
 
 	Params::EnemyPawn_Parent_Deimos_C_ManualDespawnEnemy Parms{};
 
@@ -269,10 +230,7 @@ void AEnemyPawn_Parent_Deimos_C::ManualDespawnEnemy(const struct FVector& RiftLo
 
 void AEnemyPawn_Parent_Deimos_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnDeathPlayEffects");
 
 	Params::EnemyPawn_Parent_Deimos_C_OnDeathPlayEffects Parms{};
 
@@ -293,10 +251,7 @@ void AEnemyPawn_Parent_Deimos_C::OnDeathPlayEffects(float Damage, const struct F
 
 void AEnemyPawn_Parent_Deimos_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -307,10 +262,7 @@ void AEnemyPawn_Parent_Deimos_C::ReceiveBeginPlay()
 
 void AEnemyPawn_Parent_Deimos_C::OnEndDance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnEndDance");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnEndDance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -321,10 +273,7 @@ void AEnemyPawn_Parent_Deimos_C::OnEndDance()
 
 void AEnemyPawn_Parent_Deimos_C::OnBeginDance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnBeginDance");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "OnBeginDance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -335,10 +284,7 @@ void AEnemyPawn_Parent_Deimos_C::OnBeginDance()
 
 void AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL__Spawn__EventFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "EnemySpawnInTL__Spawn__EventFunc");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "EnemySpawnInTL__Spawn__EventFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -349,10 +295,7 @@ void AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL__Spawn__EventFunc()
 
 void AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "EnemySpawnInTL__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "EnemySpawnInTL__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -363,10 +306,7 @@ void AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL__UpdateFunc()
 
 void AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "EnemySpawnInTL__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "EnemySpawnInTL__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -377,10 +317,7 @@ void AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL__FinishedFunc()
 
 void AEnemyPawn_Parent_Deimos_C::Enemy_Spawn_Out_TL__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "Enemy Spawn Out TL__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "Enemy Spawn Out TL__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -391,10 +328,7 @@ void AEnemyPawn_Parent_Deimos_C::Enemy_Spawn_Out_TL__UpdateFunc()
 
 void AEnemyPawn_Parent_Deimos_C::Enemy_Spawn_Out_TL__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "Enemy Spawn Out TL__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "Enemy Spawn Out TL__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -405,10 +339,7 @@ void AEnemyPawn_Parent_Deimos_C::Enemy_Spawn_Out_TL__FinishedFunc()
 
 void AEnemyPawn_Parent_Deimos_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -423,10 +354,7 @@ void AEnemyPawn_Parent_Deimos_C::UserConstructionScript()
 
 void AEnemyPawn_Parent_Deimos_C::SetVectorParameterOnAllCharacterMIDs(class FName Parameter_Name, const struct FVector& Vector_Value, bool Propagate_to_Auxiliary_Meshes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "SetVectorParameterOnAllCharacterMIDs");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "SetVectorParameterOnAllCharacterMIDs");
 
 	Params::EnemyPawn_Parent_Deimos_C_SetVectorParameterOnAllCharacterMIDs Parms{};
 
@@ -447,10 +375,7 @@ void AEnemyPawn_Parent_Deimos_C::SetVectorParameterOnAllCharacterMIDs(class FNam
 
 void AEnemyPawn_Parent_Deimos_C::SetScalarParameterOnAllCharacterMIDs(class FName Parameter_Name, float Scalar_Value, bool AlsoModifyOriginalMIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "SetScalarParameterOnAllCharacterMIDs");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "SetScalarParameterOnAllCharacterMIDs");
 
 	Params::EnemyPawn_Parent_Deimos_C_SetScalarParameterOnAllCharacterMIDs Parms{};
 
@@ -470,10 +395,7 @@ void AEnemyPawn_Parent_Deimos_C::SetScalarParameterOnAllCharacterMIDs(class FNam
 
 void AEnemyPawn_Parent_Deimos_C::PlayAdditiveHitReacts(const struct FVector& Hit_Direction, class UAnimMontage* Anim_Montage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "PlayAdditiveHitReacts");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "PlayAdditiveHitReacts");
 
 	Params::EnemyPawn_Parent_Deimos_C_PlayAdditiveHitReacts Parms{};
 
@@ -502,10 +424,7 @@ void AEnemyPawn_Parent_Deimos_C::PlayAdditiveHitReacts(const struct FVector& Hit
 
 void AEnemyPawn_Parent_Deimos_C::SpawnParticleSystemOnCharacterMesh(class UParticleSystem* ParticleSystemTemplate, class UParticleSystemComponent* ParticleSystemComponentReferenceVar, class FName AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, TArray<struct FParticleSysParam>& InstanceParameters, bool AutoActivate, bool AutoDestroy, bool AbsoluteLocation, bool AbsoluteRotation, bool AbsoluteScale, class UParticleSystemComponent** PSComponentReference)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "SpawnParticleSystemOnCharacterMesh");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "SpawnParticleSystemOnCharacterMesh");
 
 	Params::EnemyPawn_Parent_Deimos_C_SpawnParticleSystemOnCharacterMesh Parms{};
 
@@ -535,10 +454,7 @@ void AEnemyPawn_Parent_Deimos_C::SpawnParticleSystemOnCharacterMesh(class UParti
 
 void AEnemyPawn_Parent_Deimos_C::CharacterSpawnInSafetyCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "CharacterSpawnInSafetyCheck");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "CharacterSpawnInSafetyCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -551,10 +467,7 @@ void AEnemyPawn_Parent_Deimos_C::CharacterSpawnInSafetyCheck()
 
 void AEnemyPawn_Parent_Deimos_C::ApplyBuildingHitEffectToSkeletalMesh(class USkeletalMeshComponent* Mesh_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ApplyBuildingHitEffectToSkeletalMesh");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ApplyBuildingHitEffectToSkeletalMesh");
 
 	Params::EnemyPawn_Parent_Deimos_C_ApplyBuildingHitEffectToSkeletalMesh Parms{};
 
@@ -571,10 +484,7 @@ void AEnemyPawn_Parent_Deimos_C::ApplyBuildingHitEffectToSkeletalMesh(class USke
 
 void AEnemyPawn_Parent_Deimos_C::ApplyBuildingHitEffectToStaticMesh(class UStaticMeshComponent* Mesh_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ApplyBuildingHitEffectToStaticMesh");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ApplyBuildingHitEffectToStaticMesh");
 
 	Params::EnemyPawn_Parent_Deimos_C_ApplyBuildingHitEffectToStaticMesh Parms{};
 
@@ -591,10 +501,7 @@ void AEnemyPawn_Parent_Deimos_C::ApplyBuildingHitEffectToStaticMesh(class UStati
 
 void AEnemyPawn_Parent_Deimos_C::RegisterEffectSkeletalMesh(class USkeletalMeshComponent* Mesh_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "RegisterEffectSkeletalMesh");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "RegisterEffectSkeletalMesh");
 
 	Params::EnemyPawn_Parent_Deimos_C_RegisterEffectSkeletalMesh Parms{};
 
@@ -611,10 +518,7 @@ void AEnemyPawn_Parent_Deimos_C::RegisterEffectSkeletalMesh(class USkeletalMeshC
 
 void AEnemyPawn_Parent_Deimos_C::RegisterEffectStaticMesh(class UStaticMeshComponent* Mesh_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "RegisterEffectStaticMesh");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "RegisterEffectStaticMesh");
 
 	Params::EnemyPawn_Parent_Deimos_C_RegisterEffectStaticMesh Parms{};
 
@@ -631,10 +535,7 @@ void AEnemyPawn_Parent_Deimos_C::RegisterEffectStaticMesh(class UStaticMeshCompo
 
 void AEnemyPawn_Parent_Deimos_C::ApplyAwakenEffectToSkeletalMesh(class USkeletalMeshComponent* Mesh_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ApplyAwakenEffectToSkeletalMesh");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ApplyAwakenEffectToSkeletalMesh");
 
 	Params::EnemyPawn_Parent_Deimos_C_ApplyAwakenEffectToSkeletalMesh Parms{};
 
@@ -651,10 +552,7 @@ void AEnemyPawn_Parent_Deimos_C::ApplyAwakenEffectToSkeletalMesh(class USkeletal
 
 void AEnemyPawn_Parent_Deimos_C::ApplyAwakenEffectToStaticMesh(class UStaticMeshComponent* Mesh_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ApplyAwakenEffectToStaticMesh");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "ApplyAwakenEffectToStaticMesh");
 
 	Params::EnemyPawn_Parent_Deimos_C_ApplyAwakenEffectToStaticMesh Parms{};
 
@@ -671,10 +569,7 @@ void AEnemyPawn_Parent_Deimos_C::ApplyAwakenEffectToStaticMesh(class UStaticMesh
 
 void AEnemyPawn_Parent_Deimos_C::DeregisterEffectStaticMesh(class UStaticMeshComponent* Mesh_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DeregisterEffectStaticMesh");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DeregisterEffectStaticMesh");
 
 	Params::EnemyPawn_Parent_Deimos_C_DeregisterEffectStaticMesh Parms{};
 
@@ -691,10 +586,7 @@ void AEnemyPawn_Parent_Deimos_C::DeregisterEffectStaticMesh(class UStaticMeshCom
 
 void AEnemyPawn_Parent_Deimos_C::DeregisterEffectSkeletalMesh(class USkeletalMeshComponent* Mesh_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DeregisterEffectSkeletalMesh");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "DeregisterEffectSkeletalMesh");
 
 	Params::EnemyPawn_Parent_Deimos_C_DeregisterEffectSkeletalMesh Parms{};
 
@@ -712,10 +604,7 @@ void AEnemyPawn_Parent_Deimos_C::DeregisterEffectSkeletalMesh(class USkeletalMes
 
 void AEnemyPawn_Parent_Deimos_C::Orphaned(bool* IsOrphaned, class AFortPawn** AttachedPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "Orphaned");
+	class UFunction* Func = Class->GetFunction("EnemyPawn_Parent_Deimos_C", "Orphaned");
 
 	Params::EnemyPawn_Parent_Deimos_C_Orphaned Parms{};
 

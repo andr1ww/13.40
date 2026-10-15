@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UNPCStatusWidget_C::ExecuteUbergraph_NPCStatusWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPCStatusWidget_C", "ExecuteUbergraph_NPCStatusWidget");
+	class UFunction* Func = Class->GetFunction("NPCStatusWidget_C", "ExecuteUbergraph_NPCStatusWidget");
 
 	Params::NPCStatusWidget_C_ExecuteUbergraph_NPCStatusWidget Parms{};
 
@@ -41,10 +38,7 @@ void UNPCStatusWidget_C::ExecuteUbergraph_NPCStatusWidget(int32 EntryPoint)
 
 void UNPCStatusWidget_C::EventHideStatus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPCStatusWidget_C", "EventHideStatus");
+	class UFunction* Func = Class->GetFunction("NPCStatusWidget_C", "EventHideStatus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UNPCStatusWidget_C::EventHideStatus()
 
 void UNPCStatusWidget_C::EventUpdateStatus(float Health)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPCStatusWidget_C", "EventUpdateStatus");
+	class UFunction* Func = Class->GetFunction("NPCStatusWidget_C", "EventUpdateStatus");
 
 	Params::NPCStatusWidget_C_EventUpdateStatus Parms{};
 
@@ -75,10 +66,7 @@ void UNPCStatusWidget_C::EventUpdateStatus(float Health)
 
 void UNPCStatusWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPCStatusWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("NPCStatusWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

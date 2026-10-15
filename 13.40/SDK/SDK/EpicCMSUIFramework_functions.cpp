@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEpicCMSImage::SetMediaURL(const class FString& MediaUrl)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSImage", "SetMediaURL");
+	class UFunction* Func = Class->GetFunction("EpicCMSImage", "SetMediaURL");
 
 	Params::EpicCMSImage_SetMediaURL Parms{};
 
@@ -46,10 +43,7 @@ void UEpicCMSImage::SetMediaURL(const class FString& MediaUrl)
 
 void UEpicCMSTileBase::Launch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileBase", "Launch");
+	class UFunction* Func = Class->GetFunction("EpicCMSTileBase", "Launch");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67,10 +61,7 @@ void UEpicCMSTileBase::Launch()
 
 void UEpicCMSTileCarousel::AddTilePage(class UWidget* TilePageWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileCarousel", "AddTilePage");
+	class UFunction* Func = Class->GetFunction("EpicCMSTileCarousel", "AddTilePage");
 
 	Params::EpicCMSTileCarousel_AddTilePage Parms{};
 
@@ -90,10 +81,7 @@ void UEpicCMSTileCarousel::AddTilePage(class UWidget* TilePageWidget)
 
 void UEpicCMSTileCarousel::BeginAutoScrolling()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileCarousel", "BeginAutoScrolling");
+	class UFunction* Func = Class->GetFunction("EpicCMSTileCarousel", "BeginAutoScrolling");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -111,10 +99,7 @@ void UEpicCMSTileCarousel::BeginAutoScrolling()
 
 void UEpicCMSTileCarousel::HandleTilePageAdded(class UWidget* TileWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileCarousel", "HandleTilePageAdded");
+	class UFunction* Func = Class->GetFunction("EpicCMSTileCarousel", "HandleTilePageAdded");
 
 	Params::EpicCMSTileCarousel_HandleTilePageAdded Parms{};
 
@@ -136,10 +121,7 @@ void UEpicCMSTileCarousel::HandleTilePageAdded(class UWidget* TileWidget)
 
 void UEpicCMSTileCarousel::NavigationVisibilityChanged(bool bShowNavigation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileCarousel", "NavigationVisibilityChanged");
+	class UFunction* Func = Class->GetFunction("EpicCMSTileCarousel", "NavigationVisibilityChanged");
 
 	Params::EpicCMSTileCarousel_NavigationVisibilityChanged Parms{};
 
@@ -154,10 +136,7 @@ void UEpicCMSTileCarousel::NavigationVisibilityChanged(bool bShowNavigation)
 
 void UEpicCMSTileCarousel::NextPage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileCarousel", "NextPage");
+	class UFunction* Func = Class->GetFunction("EpicCMSTileCarousel", "NextPage");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -173,10 +152,7 @@ void UEpicCMSTileCarousel::NextPage()
 
 void UEpicCMSTileCarousel::PreviousPage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileCarousel", "PreviousPage");
+	class UFunction* Func = Class->GetFunction("EpicCMSTileCarousel", "PreviousPage");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -194,10 +170,7 @@ void UEpicCMSTileCarousel::PreviousPage()
 
 void UEpicCMSTileCarousel::SetCurrentPageByIndex(const int32 PageIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileCarousel", "SetCurrentPageByIndex");
+	class UFunction* Func = Class->GetFunction("EpicCMSTileCarousel", "SetCurrentPageByIndex");
 
 	Params::EpicCMSTileCarousel_SetCurrentPageByIndex Parms{};
 
@@ -219,10 +192,7 @@ void UEpicCMSTileCarousel::SetCurrentPageByIndex(const int32 PageIndex)
 
 int32 UEpicCMSTileCarousel::GetCurrentPageIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EpicCMSTileCarousel", "GetCurrentPageIndex");
+	class UFunction* Func = Class->GetFunction("EpicCMSTileCarousel", "GetCurrentPageIndex");
 
 	Params::EpicCMSTileCarousel_GetCurrentPageIndex Parms{};
 

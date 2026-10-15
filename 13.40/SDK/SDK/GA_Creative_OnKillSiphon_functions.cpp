@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Creative_OnKillSiphon_C::ExecuteUbergraph_GA_Creative_OnKillSiphon(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "ExecuteUbergraph_GA_Creative_OnKillSiphon");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "ExecuteUbergraph_GA_Creative_OnKillSiphon");
 
 	Params::GA_Creative_OnKillSiphon_C_ExecuteUbergraph_GA_Creative_OnKillSiphon Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Creative_OnKillSiphon_C::ExecuteUbergraph_GA_Creative_OnKillSiphon(int3
 
 void UGA_Creative_OnKillSiphon_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_Creative_OnKillSiphon_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -66,10 +60,7 @@ void UGA_Creative_OnKillSiphon_C::K2_ActivateAbilityFromEvent(const struct FGame
 
 void UGA_Creative_OnKillSiphon_C::RestoreHealth(bool* Success, float* InitialHealAmount, float* ActualAppliedHeal, float* ExcessHealing)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "RestoreHealth");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "RestoreHealth");
 
 	Params::GA_Creative_OnKillSiphon_C_RestoreHealth Parms{};
 
@@ -99,10 +90,7 @@ void UGA_Creative_OnKillSiphon_C::RestoreHealth(bool* Success, float* InitialHea
 
 void UGA_Creative_OnKillSiphon_C::AddShields(bool bShouldConvertExcessHealthToShields_0, float ShieldToAdd, bool* bAddedShields, float* ShieldAdded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AddShields");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AddShields");
 
 	Params::GA_Creative_OnKillSiphon_C_AddShields Parms{};
 
@@ -130,10 +118,7 @@ void UGA_Creative_OnKillSiphon_C::AddShields(bool bShouldConvertExcessHealthToSh
 
 void UGA_Creative_OnKillSiphon_C::DetermineHealthDelta(float HealingAmount, float* MaxHealth, float* CurrentHealth, float* HealthDelta, float* ExcessHealh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "DetermineHealthDelta");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "DetermineHealthDelta");
 
 	Params::GA_Creative_OnKillSiphon_C_DetermineHealthDelta Parms{};
 
@@ -162,10 +147,7 @@ void UGA_Creative_OnKillSiphon_C::DetermineHealthDelta(float HealingAmount, floa
 
 void UGA_Creative_OnKillSiphon_C::SetupRestoreModes(bool* ShouldContinue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "SetupRestoreModes");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "SetupRestoreModes");
 
 	Params::GA_Creative_OnKillSiphon_C_SetupRestoreModes Parms{};
 
@@ -181,10 +163,7 @@ void UGA_Creative_OnKillSiphon_C::SetupRestoreModes(bool* ShouldContinue)
 
 void UGA_Creative_OnKillSiphon_C::AttemptHeal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AttemptHeal");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AttemptHeal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +174,7 @@ void UGA_Creative_OnKillSiphon_C::AttemptHeal()
 
 void UGA_Creative_OnKillSiphon_C::AttemptMats()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AttemptMats");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AttemptMats");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -214,10 +190,7 @@ void UGA_Creative_OnKillSiphon_C::AttemptMats()
 
 void UGA_Creative_OnKillSiphon_C::CalculateResources(EFortResourceType ResourceGrantType, bool* bSuccess, int32* ResourceToGive, EFortResourceType* ResourceType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "CalculateResources");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "CalculateResources");
 
 	Params::GA_Creative_OnKillSiphon_C_CalculateResources Parms{};
 
@@ -246,10 +219,7 @@ void UGA_Creative_OnKillSiphon_C::CalculateResources(EFortResourceType ResourceG
 
 void UGA_Creative_OnKillSiphon_C::GiveResourcesToPlayer(bool bShouldGrant, int32 GiveAmount, EFortResourceType GiveType, bool* Success)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "GiveResourcesToPlayer");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "GiveResourcesToPlayer");
 
 	Params::GA_Creative_OnKillSiphon_C_GiveResourcesToPlayer Parms{};
 
@@ -273,10 +243,7 @@ void UGA_Creative_OnKillSiphon_C::GiveResourcesToPlayer(bool bShouldGrant, int32
 
 bool UGA_Creative_OnKillSiphon_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "K2_ShouldAbilityRespondToEvent");
+	class UFunction* Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "K2_ShouldAbilityRespondToEvent");
 
 	Params::GA_Creative_OnKillSiphon_C_K2_ShouldAbilityRespondToEvent Parms{};
 

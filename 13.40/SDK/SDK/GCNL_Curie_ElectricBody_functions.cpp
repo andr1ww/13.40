@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Curie_ElectricBody_C::ExecuteUbergraph_GCNL_Curie_ElectricBody(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Curie_ElectricBody_C", "ExecuteUbergraph_GCNL_Curie_ElectricBody");
+	class UFunction* Func = Class->GetFunction("GCNL_Curie_ElectricBody_C", "ExecuteUbergraph_GCNL_Curie_ElectricBody");
 
 	Params::GCNL_Curie_ElectricBody_C_ExecuteUbergraph_GCNL_Curie_ElectricBody Parms{};
 
@@ -41,10 +38,7 @@ void AGCNL_Curie_ElectricBody_C::ExecuteUbergraph_GCNL_Curie_ElectricBody(int32 
 
 void AGCNL_Curie_ElectricBody_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Curie_ElectricBody_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("GCNL_Curie_ElectricBody_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -62,10 +56,7 @@ void AGCNL_Curie_ElectricBody_C::ReceiveDestroyed()
 
 void AGCNL_Curie_ElectricBody_C::OnApplication(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Curie_ElectricBody_C", "OnApplication");
+	class UFunction* Func = Class->GetFunction("GCNL_Curie_ElectricBody_C", "OnApplication");
 
 	Params::GCNL_Curie_ElectricBody_C_OnApplication Parms{};
 
@@ -92,10 +83,7 @@ void AGCNL_Curie_ElectricBody_C::OnApplication(class AActor* MyTarget, const str
 
 void AGCNL_Curie_ElectricBody_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Curie_ElectricBody_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_Curie_ElectricBody_C", "OnRemoval");
 
 	Params::GCNL_Curie_ElectricBody_C_OnRemoval Parms{};
 

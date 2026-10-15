@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFortVolumeActor_Base_C::ExecuteUbergraph_FortVolumeActor_Base(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVolumeActor_Base_C", "ExecuteUbergraph_FortVolumeActor_Base");
+	class UFunction* Func = Class->GetFunction("FortVolumeActor_Base_C", "ExecuteUbergraph_FortVolumeActor_Base");
 
 	Params::FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base Parms{};
 
@@ -49,10 +46,7 @@ void AFortVolumeActor_Base_C::ExecuteUbergraph_FortVolumeActor_Base(int32 EntryP
 
 void AFortVolumeActor_Base_C::OnDeathPlayEffects_1(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVolumeActor_Base_C", "OnDeathPlayEffects_1");
+	class UFunction* Func = Class->GetFunction("FortVolumeActor_Base_C", "OnDeathPlayEffects_1");
 
 	Params::FortVolumeActor_Base_C_OnDeathPlayEffects_1 Parms{};
 
@@ -73,10 +67,7 @@ void AFortVolumeActor_Base_C::OnDeathPlayEffects_1(float Damage, const struct FG
 
 void AFortVolumeActor_Base_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVolumeActor_Base_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("FortVolumeActor_Base_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,10 +78,7 @@ void AFortVolumeActor_Base_C::ReceiveBeginPlay()
 
 void AFortVolumeActor_Base_C::TransitionTL__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVolumeActor_Base_C", "TransitionTL__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("FortVolumeActor_Base_C", "TransitionTL__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -101,10 +89,7 @@ void AFortVolumeActor_Base_C::TransitionTL__UpdateFunc()
 
 void AFortVolumeActor_Base_C::TransitionTL__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVolumeActor_Base_C", "TransitionTL__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("FortVolumeActor_Base_C", "TransitionTL__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +100,7 @@ void AFortVolumeActor_Base_C::TransitionTL__FinishedFunc()
 
 void AFortVolumeActor_Base_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVolumeActor_Base_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("FortVolumeActor_Base_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

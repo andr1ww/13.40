@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_BattleLab_DestroyHeld_C::ExecuteUbergraph_GA_BattleLab_DestroyHeld(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BattleLab_DestroyHeld_C", "ExecuteUbergraph_GA_BattleLab_DestroyHeld");
+	class UFunction* Func = Class->GetFunction("GA_BattleLab_DestroyHeld_C", "ExecuteUbergraph_GA_BattleLab_DestroyHeld");
 
 	Params::GA_BattleLab_DestroyHeld_C_ExecuteUbergraph_GA_BattleLab_DestroyHeld Parms{};
 
@@ -41,10 +38,7 @@ void UGA_BattleLab_DestroyHeld_C::ExecuteUbergraph_GA_BattleLab_DestroyHeld(int3
 
 void UGA_BattleLab_DestroyHeld_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BattleLab_DestroyHeld_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_BattleLab_DestroyHeld_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

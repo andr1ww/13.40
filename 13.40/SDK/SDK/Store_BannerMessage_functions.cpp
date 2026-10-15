@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UStore_BannerMessage_C::Pulse()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Store_BannerMessage_C", "Pulse");
+	class UFunction* Func = Class->GetFunction("Store_BannerMessage_C", "Pulse");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

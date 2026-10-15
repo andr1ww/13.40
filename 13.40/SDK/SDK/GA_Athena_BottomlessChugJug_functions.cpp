@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_BottomlessChugJug_C::MakeCustomMontageInfo()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_BottomlessChugJug_C", "MakeCustomMontageInfo");
+	class UFunction* Func = Class->GetFunction("GA_Athena_BottomlessChugJug_C", "MakeCustomMontageInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UGA_Athena_BottomlessChugJug_C::MakeCustomMontageInfo()
 
 void UGA_Athena_BottomlessChugJug_C::OnMontageTriggered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_BottomlessChugJug_C", "OnMontageTriggered");
+	class UFunction* Func = Class->GetFunction("GA_Athena_BottomlessChugJug_C", "OnMontageTriggered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCinematic_C::ExecuteUbergraph_Cinematic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "ExecuteUbergraph_Cinematic");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "ExecuteUbergraph_Cinematic");
 
 	Params::Cinematic_C_ExecuteUbergraph_Cinematic Parms{};
 
@@ -43,10 +40,7 @@ void UCinematic_C::ExecuteUbergraph_Cinematic(int32 EntryPoint)
 
 void UCinematic_C::OnExitState(EFortUIState NextUIState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "OnExitState");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "OnExitState");
 
 	Params::Cinematic_C_OnExitState Parms{};
 
@@ -63,10 +57,7 @@ void UCinematic_C::OnExitState(EFortUIState NextUIState)
 
 void UCinematic_C::OnEnterState(EFortUIState PreviousUIState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "OnEnterState");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "OnEnterState");
 
 	Params::Cinematic_C_OnEnterState Parms{};
 
@@ -84,10 +75,7 @@ void UCinematic_C::OnEnterState(EFortUIState PreviousUIState)
 
 void UCinematic_C::PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "PushContentWidgetInternal");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "PushContentWidgetInternal");
 
 	Params::Cinematic_C_PushContentWidgetInternal Parms{};
 
@@ -107,10 +95,7 @@ void UCinematic_C::PushContentWidgetInternal(class UWidget* Widget, const struct
 
 void UCinematic_C::HandleClientEvent_SkipCinematic(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "HandleClientEvent_SkipCinematic");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "HandleClientEvent_SkipCinematic");
 
 	Params::Cinematic_C_HandleClientEvent_SkipCinematic Parms{};
 
@@ -127,10 +112,7 @@ void UCinematic_C::HandleClientEvent_SkipCinematic(class UObject* EventSource, c
 
 void UCinematic_C::HandleEndReached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "HandleEndReached");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "HandleEndReached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +123,7 @@ void UCinematic_C::HandleEndReached()
 
 void UCinematic_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +138,7 @@ void UCinematic_C::Destruct()
 
 void UCinematic_C::HandleClientEvent_QueueCinematic(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "HandleClientEvent_QueueCinematic");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "HandleClientEvent_QueueCinematic");
 
 	Params::Cinematic_C_HandleClientEvent_QueueCinematic Parms{};
 
@@ -179,10 +155,7 @@ void UCinematic_C::HandleClientEvent_QueueCinematic(class UObject* EventSource, 
 
 void UCinematic_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "Construct");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -198,10 +171,7 @@ void UCinematic_C::Construct()
 
 void UCinematic_C::ShowMovie(class UMediaPlayer* MediaPlayer, class UMediaSource* MediaSource, class UNamedSlot*& MovieSlot_0, class UMovieWidget_C*& MovieWidget_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "ShowMovie");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "ShowMovie");
 
 	Params::Cinematic_C_ShowMovie Parms{};
 
@@ -222,10 +192,7 @@ void UCinematic_C::ShowMovie(class UMediaPlayer* MediaPlayer, class UMediaSource
 
 void UCinematic_C::ClearMovie()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "ClearMovie");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "ClearMovie");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -236,10 +203,7 @@ void UCinematic_C::ClearMovie()
 
 void UCinematic_C::SkipMovie()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "SkipMovie");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "SkipMovie");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +217,7 @@ void UCinematic_C::SkipMovie()
 
 class UWidget* UCinematic_C::PopContentWidgetInternal(const struct FContentPushState& State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "PopContentWidgetInternal");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "PopContentWidgetInternal");
 
 	Params::Cinematic_C_PopContentWidgetInternal Parms{};
 
@@ -275,10 +236,7 @@ class UWidget* UCinematic_C::PopContentWidgetInternal(const struct FContentPushS
 
 void UCinematic_C::ClearMovieSlot(class UPanelWidget*& MovieSlotToClear)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "ClearMovieSlot");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "ClearMovieSlot");
 
 	Params::Cinematic_C_ClearMovieSlot Parms{};
 
@@ -297,10 +255,7 @@ void UCinematic_C::ClearMovieSlot(class UPanelWidget*& MovieSlotToClear)
 
 void UCinematic_C::ClearMovieWidget(class UFortMovieWidget*& MovieWidgetToClear)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "ClearMovieWidget");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "ClearMovieWidget");
 
 	Params::Cinematic_C_ClearMovieWidget Parms{};
 
@@ -319,10 +274,7 @@ void UCinematic_C::ClearMovieWidget(class UFortMovieWidget*& MovieWidgetToClear)
 
 void UCinematic_C::SetMoviePlaying(bool MoviePlaying)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "SetMoviePlaying");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "SetMoviePlaying");
 
 	Params::Cinematic_C_SetMoviePlaying Parms{};
 
@@ -340,10 +292,7 @@ void UCinematic_C::SetMoviePlaying(bool MoviePlaying)
 
 void UCinematic_C::ClearOldSubtitlesIfNecessary(bool NewSubtitlesExist, class UFortMediaSubtitlesPlayer* NewSubtitles)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "ClearOldSubtitlesIfNecessary");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "ClearOldSubtitlesIfNecessary");
 
 	Params::Cinematic_C_ClearOldSubtitlesIfNecessary Parms{};
 
@@ -359,10 +308,7 @@ void UCinematic_C::ClearOldSubtitlesIfNecessary(bool NewSubtitlesExist, class UF
 
 void UCinematic_C::StopAndClearSubtitles()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "StopAndClearSubtitles");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "StopAndClearSubtitles");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -375,10 +321,7 @@ void UCinematic_C::StopAndClearSubtitles()
 
 void UCinematic_C::GetAudioTrackIndex(int32* AudioTrack)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cinematic_C", "GetAudioTrackIndex");
+	class UFunction* Func = Class->GetFunction("Cinematic_C", "GetAudioTrackIndex");
 
 	Params::Cinematic_C_GetAudioTrackIndex Parms{};
 

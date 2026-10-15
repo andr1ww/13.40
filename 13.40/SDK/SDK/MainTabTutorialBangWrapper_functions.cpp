@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMainTabTutorialBangWrapper_C::SetShouldSuppressBang(bool ShouldSuppressBang)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetShouldSuppressBang");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetShouldSuppressBang");
 
 	Params::MainTabTutorialBangWrapper_C_SetShouldSuppressBang Parms{};
 
@@ -44,10 +41,7 @@ void UMainTabTutorialBangWrapper_C::SetShouldSuppressBang(bool ShouldSuppressBan
 
 void UMainTabTutorialBangWrapper_C::SetUIFeatureRevealData(EFortUIFeature UIFeature, const class FText& RevealText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetUIFeatureRevealData");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetUIFeatureRevealData");
 
 	Params::MainTabTutorialBangWrapper_C_SetUIFeatureRevealData Parms{};
 
@@ -65,10 +59,7 @@ void UMainTabTutorialBangWrapper_C::SetUIFeatureRevealData(EFortUIFeature UIFeat
 
 void UMainTabTutorialBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D& Translation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Adjust Bang Image Translation");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Adjust Bang Image Translation");
 
 	Params::MainTabTutorialBangWrapper_C_Adjust_Bang_Image_Translation Parms{};
 
@@ -85,10 +76,7 @@ void UMainTabTutorialBangWrapper_C::Adjust_Bang_Image_Translation(const struct F
 
 void UMainTabTutorialBangWrapper_C::Update_Bang_Icon_Version(int32 InCount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Update Bang Icon Version");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Update Bang Icon Version");
 
 	Params::MainTabTutorialBangWrapper_C_Update_Bang_Icon_Version Parms{};
 
@@ -105,10 +93,7 @@ void UMainTabTutorialBangWrapper_C::Update_Bang_Icon_Version(int32 InCount)
 
 void UMainTabTutorialBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetTutorialBorderStyle");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetTutorialBorderStyle");
 
 	Params::MainTabTutorialBangWrapper_C_SetTutorialBorderStyle Parms{};
 
@@ -126,10 +111,7 @@ void UMainTabTutorialBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderS
 
 void UMainTabTutorialBangWrapper_C::OnBangStateChanged(bool bEnabled_OnBangStateChanged, int32 Count_OnBangStateChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnBangStateChanged");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnBangStateChanged");
 
 	Params::MainTabTutorialBangWrapper_C_OnBangStateChanged Parms{};
 
@@ -145,10 +127,7 @@ void UMainTabTutorialBangWrapper_C::OnBangStateChanged(bool bEnabled_OnBangState
 
 void UMainTabTutorialBangWrapper_C::OnStopCallout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStopCallout");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStopCallout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -162,10 +141,7 @@ void UMainTabTutorialBangWrapper_C::OnStopCallout()
 
 void UMainTabTutorialBangWrapper_C::OnStartCallout(class FName TutorialObjectiveName_OnStartCallout, ETutorialType TutorialType_OnStartCallout)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStartCallout");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStartCallout");
 
 	Params::MainTabTutorialBangWrapper_C_OnStartCallout Parms{};
 
@@ -183,10 +159,7 @@ void UMainTabTutorialBangWrapper_C::OnStartCallout(class FName TutorialObjective
 
 void UMainTabTutorialBangWrapper_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "PreConstruct");
 
 	Params::MainTabTutorialBangWrapper_C_PreConstruct Parms{};
 
@@ -201,10 +174,7 @@ void UMainTabTutorialBangWrapper_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UMainTabTutorialBangWrapper_C::Tab_Reveal_Message_Closed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Tab Reveal Message Closed");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Tab Reveal Message Closed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -217,10 +187,7 @@ void UMainTabTutorialBangWrapper_C::Tab_Reveal_Message_Closed()
 
 void UMainTabTutorialBangWrapper_C::ExecuteUbergraph_MainTabTutorialBangWrapper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "ExecuteUbergraph_MainTabTutorialBangWrapper");
+	class UFunction* Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "ExecuteUbergraph_MainTabTutorialBangWrapper");
 
 	Params::MainTabTutorialBangWrapper_C_ExecuteUbergraph_MainTabTutorialBangWrapper Parms{};
 

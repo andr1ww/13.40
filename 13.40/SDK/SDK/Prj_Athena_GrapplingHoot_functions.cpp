@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APrj_Athena_GrapplingHoot_C::ExecuteUbergraph_Prj_Athena_GrapplingHoot(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_GrapplingHoot_C", "ExecuteUbergraph_Prj_Athena_GrapplingHoot");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_GrapplingHoot_C", "ExecuteUbergraph_Prj_Athena_GrapplingHoot");
 
 	Params::Prj_Athena_GrapplingHoot_C_ExecuteUbergraph_Prj_Athena_GrapplingHoot Parms{};
 
@@ -41,10 +38,7 @@ void APrj_Athena_GrapplingHoot_C::ExecuteUbergraph_Prj_Athena_GrapplingHoot(int3
 
 void APrj_Athena_GrapplingHoot_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_GrapplingHoot_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_GrapplingHoot_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void APrj_Athena_GrapplingHoot_C::ReceiveBeginPlay()
 
 void APrj_Athena_GrapplingHoot_C::SpawnRope(class AFortPlayerPawn* PlayerPawn_0, class AB_HookGunRope_C** RopeSpawned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_GrapplingHoot_C", "SpawnRope");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_GrapplingHoot_C", "SpawnRope");
 
 	Params::Prj_Athena_GrapplingHoot_C_SpawnRope Parms{};
 

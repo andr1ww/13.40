@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UArenaPersonalView_C::ExecuteUbergraph_ArenaPersonalView(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaPersonalView_C", "ExecuteUbergraph_ArenaPersonalView");
+	class UFunction* Func = Class->GetFunction("ArenaPersonalView_C", "ExecuteUbergraph_ArenaPersonalView");
 
 	Params::ArenaPersonalView_C_ExecuteUbergraph_ArenaPersonalView Parms{};
 
@@ -43,10 +40,7 @@ void UArenaPersonalView_C::ExecuteUbergraph_ArenaPersonalView(int32 EntryPoint)
 
 void UArenaPersonalView_C::Colorize(const struct FFortTournamentDisplayInfo& Color_Info)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArenaPersonalView_C", "Colorize");
+	class UFunction* Func = Class->GetFunction("ArenaPersonalView_C", "Colorize");
 
 	Params::ArenaPersonalView_C_Colorize Parms{};
 

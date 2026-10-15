@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_ExplosiveBow_Athena_C::ExecuteUbergraph_B_ExplosiveBow_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "ExecuteUbergraph_B_ExplosiveBow_Athena");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "ExecuteUbergraph_B_ExplosiveBow_Athena");
 
 	Params::B_ExplosiveBow_Athena_C_ExecuteUbergraph_B_ExplosiveBow_Athena Parms{};
 
@@ -41,10 +38,7 @@ void AB_ExplosiveBow_Athena_C::ExecuteUbergraph_B_ExplosiveBow_Athena(int32 Entr
 
 void AB_ExplosiveBow_Athena_C::OnReachedMaxCharge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnReachedMaxCharge");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnReachedMaxCharge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AB_ExplosiveBow_Athena_C::OnReachedMaxCharge()
 
 void AB_ExplosiveBow_Athena_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "ReceiveTick");
 
 	Params::B_ExplosiveBow_Athena_C_ReceiveTick Parms{};
 
@@ -75,10 +66,7 @@ void AB_ExplosiveBow_Athena_C::ReceiveTick(float DeltaSeconds)
 
 void AB_ExplosiveBow_Athena_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void AB_ExplosiveBow_Athena_C::OnWeaponAttached()
 
 void AB_ExplosiveBow_Athena_C::IncreaseDrawStrength()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "IncreaseDrawStrength");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "IncreaseDrawStrength");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void AB_ExplosiveBow_Athena_C::IncreaseDrawStrength()
 
 void AB_ExplosiveBow_Athena_C::ResetCharge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "ResetCharge");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "ResetCharge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void AB_ExplosiveBow_Athena_C::ResetCharge()
 
 void AB_ExplosiveBow_Athena_C::OnEndCharge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnEndCharge");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnEndCharge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void AB_ExplosiveBow_Athena_C::OnEndCharge()
 
 void AB_ExplosiveBow_Athena_C::OnChargeUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnChargeUp");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnChargeUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void AB_ExplosiveBow_Athena_C::OnChargeUp()
 
 void AB_ExplosiveBow_Athena_C::OnChargeDown()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnChargeDown");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnChargeDown");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +132,7 @@ void AB_ExplosiveBow_Athena_C::OnChargeDown()
 
 void AB_ExplosiveBow_Athena_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +143,7 @@ void AB_ExplosiveBow_Athena_C::K2_OnUnEquip()
 
 void AB_ExplosiveBow_Athena_C::EndOfCharge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "EndOfCharge");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "EndOfCharge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -190,10 +157,7 @@ void AB_ExplosiveBow_Athena_C::EndOfCharge()
 
 void AB_ExplosiveBow_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnPlayWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnPlayWeaponFireFX");
 
 	Params::B_ExplosiveBow_Athena_C_OnPlayWeaponFireFX Parms{};
 
@@ -209,10 +173,7 @@ void AB_ExplosiveBow_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSe
 
 void AB_ExplosiveBow_Athena_C::OnStartCharge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnStartCharge");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnStartCharge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +184,7 @@ void AB_ExplosiveBow_Athena_C::OnStartCharge()
 
 void AB_ExplosiveBow_Athena_C::OnReachedMinCharge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnReachedMinCharge");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "OnReachedMinCharge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +195,7 @@ void AB_ExplosiveBow_Athena_C::OnReachedMinCharge()
 
 void AB_ExplosiveBow_Athena_C::SetupTrajectoryProjectile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "SetupTrajectoryProjectile");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "SetupTrajectoryProjectile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -251,10 +206,7 @@ void AB_ExplosiveBow_Athena_C::SetupTrajectoryProjectile()
 
 void AB_ExplosiveBow_Athena_C::SetDummyVariables()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "SetDummyVariables");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "SetDummyVariables");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +217,7 @@ void AB_ExplosiveBow_Athena_C::SetDummyVariables()
 
 void AB_ExplosiveBow_Athena_C::CalculateTrajectorySpline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "CalculateTrajectorySpline");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "CalculateTrajectorySpline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +228,7 @@ void AB_ExplosiveBow_Athena_C::CalculateTrajectorySpline()
 
 void AB_ExplosiveBow_Athena_C::StartDrawAudio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "StartDrawAudio");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "StartDrawAudio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -293,10 +239,7 @@ void AB_ExplosiveBow_Athena_C::StartDrawAudio()
 
 void AB_ExplosiveBow_Athena_C::StopDrawAudio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "StopDrawAudio");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "StopDrawAudio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -309,10 +252,7 @@ void AB_ExplosiveBow_Athena_C::StopDrawAudio()
 
 void AB_ExplosiveBow_Athena_C::CalculateVelocity(float* Velocity) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "CalculateVelocity");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "CalculateVelocity");
 
 	Params::B_ExplosiveBow_Athena_C_CalculateVelocity Parms{};
 
@@ -333,10 +273,7 @@ void AB_ExplosiveBow_Athena_C::CalculateVelocity(float* Velocity) const
 
 void AB_ExplosiveBow_Athena_C::SetupProjectileVariables(struct FVector* StartLocation, struct FVector* InitialVelocity, float* ProjectileVelocity_0, struct FRotator* OutRotation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "SetupProjectileVariables");
+	class UFunction* Func = Class->GetFunction("B_ExplosiveBow_Athena_C", "SetupProjectileVariables");
 
 	Params::B_ExplosiveBow_Athena_C_SetupProjectileVariables Parms{};
 

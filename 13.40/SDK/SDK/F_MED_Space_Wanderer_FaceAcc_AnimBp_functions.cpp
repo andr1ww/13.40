@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UF_MED_Space_Wanderer_FaceAcc_AnimBp_C::ExecuteUbergraph_F_MED_Space_Wanderer_FaceAcc_AnimBp(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Space_Wanderer_FaceAcc_AnimBp_C", "ExecuteUbergraph_F_MED_Space_Wanderer_FaceAcc_AnimBp");
+	class UFunction* Func = Class->GetFunction("F_MED_Space_Wanderer_FaceAcc_AnimBp_C", "ExecuteUbergraph_F_MED_Space_Wanderer_FaceAcc_AnimBp");
 
 	Params::F_MED_Space_Wanderer_FaceAcc_AnimBp_C_ExecuteUbergraph_F_MED_Space_Wanderer_FaceAcc_AnimBp Parms{};
 
@@ -43,10 +40,7 @@ void UF_MED_Space_Wanderer_FaceAcc_AnimBp_C::ExecuteUbergraph_F_MED_Space_Wander
 
 void UF_MED_Space_Wanderer_FaceAcc_AnimBp_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Space_Wanderer_FaceAcc_AnimBp_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("F_MED_Space_Wanderer_FaceAcc_AnimBp_C", "AnimGraph");
 
 	Params::F_MED_Space_Wanderer_FaceAcc_AnimBp_C_AnimGraph Parms{};
 

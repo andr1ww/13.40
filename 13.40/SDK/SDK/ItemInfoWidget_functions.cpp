@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemInfoWidget_C::ExecuteUbergraph_ItemInfoWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoWidget_C", "ExecuteUbergraph_ItemInfoWidget");
+	class UFunction* Func = Class->GetFunction("ItemInfoWidget_C", "ExecuteUbergraph_ItemInfoWidget");
 
 	Params::ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget Parms{};
 
@@ -43,10 +40,7 @@ void UItemInfoWidget_C::ExecuteUbergraph_ItemInfoWidget(int32 EntryPoint)
 
 void UItemInfoWidget_C::SetRarityMaterialValues(class UFortItemDefinition* ItemDefinition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoWidget_C", "SetRarityMaterialValues");
+	class UFunction* Func = Class->GetFunction("ItemInfoWidget_C", "SetRarityMaterialValues");
 
 	Params::ItemInfoWidget_C_SetRarityMaterialValues Parms{};
 

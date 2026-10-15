@@ -20,10 +20,7 @@ SDK_NAMESPACE_START
 
 void IBPI_Building_Actor_Destroyed_C::Event_Building_Actor_Destroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_Building_Actor_Destroyed_C", "Event_Building_Actor_Destroyed");
+	class UFunction* Func = AsUObject()->Class->GetFunction("BPI_Building_Actor_Destroyed_C", "Event_Building_Actor_Destroyed");
 
 	AsUObject()->ProcessEvent(Func, nullptr);
 }

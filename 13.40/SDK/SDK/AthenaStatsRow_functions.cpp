@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaStatsRow_C::ExecuteUbergraph_AthenaStatsRow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsRow_C", "ExecuteUbergraph_AthenaStatsRow");
+	class UFunction* Func = Class->GetFunction("AthenaStatsRow_C", "ExecuteUbergraph_AthenaStatsRow");
 
 	Params::AthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaStatsRow_C::ExecuteUbergraph_AthenaStatsRow(int32 EntryPoint)
 
 void UAthenaStatsRow_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsRow_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AthenaStatsRow_C", "PreConstruct");
 
 	Params::AthenaStatsRow_C_PreConstruct Parms{};
 
@@ -63,10 +57,7 @@ void UAthenaStatsRow_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaStatsRow_C::SetStatValueAsText(const class FText& StatValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsRow_C", "SetStatValueAsText");
+	class UFunction* Func = Class->GetFunction("AthenaStatsRow_C", "SetStatValueAsText");
 
 	Params::AthenaStatsRow_C_SetStatValueAsText Parms{};
 

@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UCreative_Radio_AudioToMPC_C::OnGatheredFFTData(TArray<struct FChannelData>& FFTData, float& OutAmplitudeAverage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Radio_AudioToMPC_C", "OnGatheredFFTData");
+	class UFunction* Func = Class->GetFunction("Creative_Radio_AudioToMPC_C", "OnGatheredFFTData");
 
 	Params::Creative_Radio_AudioToMPC_C_OnGatheredFFTData Parms{};
 

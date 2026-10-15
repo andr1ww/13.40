@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UWB_AudioAnalysis_UI_C::ExecuteUbergraph_WB_AudioAnalysis_UI(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_UI_C", "ExecuteUbergraph_WB_AudioAnalysis_UI");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_UI_C", "ExecuteUbergraph_WB_AudioAnalysis_UI");
 
 	Params::WB_AudioAnalysis_UI_C_ExecuteUbergraph_WB_AudioAnalysis_UI Parms{};
 
@@ -45,10 +42,7 @@ void UWB_AudioAnalysis_UI_C::ExecuteUbergraph_WB_AudioAnalysis_UI(int32 EntryPoi
 
 void UWB_AudioAnalysis_UI_C::AddMPCParameter(class FName ParamName, class UMaterialParameterCollection* Collection, int32 Vec4Index)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WB_AudioAnalysis_UI_C", "AddMPCParameter");
+	class UFunction* Func = Class->GetFunction("WB_AudioAnalysis_UI_C", "AddMPCParameter");
 
 	Params::WB_AudioAnalysis_UI_C_AddMPCParameter Parms{};
 

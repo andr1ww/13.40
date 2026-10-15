@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ExecuteUbergraph_BP_ProjectileTrajectory_Athena_SnapBoxToGrid(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ExecuteUbergraph_BP_ProjectileTrajectory_Athena_SnapBoxToGrid");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ExecuteUbergraph_BP_ProjectileTrajectory_Athena_SnapBoxToGrid");
 
 	Params::BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_ExecuteUbergraph_BP_ProjectileTrajectory_Athena_SnapBoxToGrid Parms{};
 
@@ -44,10 +41,7 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ExecuteUbergraph_BP_Projec
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::SetTrajectorySpline(const TArray<struct FVector>& SplinePoints, const TArray<struct FVector>& SplineTangents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "SetTrajectorySpline");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "SetTrajectorySpline");
 
 	Params::BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_SetTrajectorySpline Parms{};
 
@@ -65,10 +59,7 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::SetTrajectorySpline(const 
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ReceiveActorBeginOverlap");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ReceiveActorBeginOverlap");
 
 	Params::BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_ReceiveActorBeginOverlap Parms{};
 
@@ -83,10 +74,7 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ReceiveActorBeginOverlap(c
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ReceiveBeginPlay()
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +98,7 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::UserConstructionScript()
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::HandleGridSnapUpdates(const struct FVector& NewLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "HandleGridSnapUpdates");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "HandleGridSnapUpdates");
 
 	Params::BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_HandleGridSnapUpdates Parms{};
 
@@ -131,10 +113,7 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::HandleGridSnapUpdates(cons
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::UpdateScaleForPlayset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "UpdateScaleForPlayset");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "UpdateScaleForPlayset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +126,7 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::UpdateScaleForPlayset()
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GetPlaysetFromController(bool* bSuccess)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "GetPlaysetFromController");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "GetPlaysetFromController");
 
 	Params::BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_GetPlaysetFromController Parms{};
 

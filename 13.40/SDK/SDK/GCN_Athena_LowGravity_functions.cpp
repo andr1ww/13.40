@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Athena_LowGravity_C::ExecuteUbergraph_GCN_Athena_LowGravity(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ExecuteUbergraph_GCN_Athena_LowGravity");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ExecuteUbergraph_GCN_Athena_LowGravity");
 
 	Params::GCN_Athena_LowGravity_C_ExecuteUbergraph_GCN_Athena_LowGravity Parms{};
 
@@ -41,10 +38,7 @@ void AGCN_Athena_LowGravity_C::ExecuteUbergraph_GCN_Athena_LowGravity(int32 Entr
 
 void AGCN_Athena_LowGravity_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AGCN_Athena_LowGravity_C::ReceiveBeginPlay()
 
 void AGCN_Athena_LowGravity_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ReceiveTick");
 
 	Params::GCN_Athena_LowGravity_C_ReceiveTick Parms{};
 
@@ -75,10 +66,7 @@ void AGCN_Athena_LowGravity_C::ReceiveTick(float DeltaSeconds)
 
 void AGCN_Athena_LowGravity_C::PlayExpirationSound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "PlayExpirationSound");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "PlayExpirationSound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,10 +81,7 @@ void AGCN_Athena_LowGravity_C::PlayExpirationSound()
 
 void AGCN_Athena_LowGravity_C::K2_HandleGameplayCue(class AActor* MyTarget, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "K2_HandleGameplayCue");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "K2_HandleGameplayCue");
 
 	Params::GCN_Athena_LowGravity_C_K2_HandleGameplayCue Parms{};
 
@@ -113,10 +98,7 @@ void AGCN_Athena_LowGravity_C::K2_HandleGameplayCue(class AActor* MyTarget, EGam
 
 void AGCN_Athena_LowGravity_C::ClearExpireTell()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ClearExpireTell");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ClearExpireTell");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void AGCN_Athena_LowGravity_C::ClearExpireTell()
 
 void AGCN_Athena_LowGravity_C::ExpireTell()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ExpireTell");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ExpireTell");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +124,7 @@ void AGCN_Athena_LowGravity_C::ExpireTell()
 
 bool AGCN_Athena_LowGravity_C::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "WhileActive");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "WhileActive");
 
 	Params::GCN_Athena_LowGravity_C_WhileActive Parms{};
 
@@ -168,10 +144,7 @@ bool AGCN_Athena_LowGravity_C::WhileActive(class AActor* MyTarget, const struct 
 
 void AGCN_Athena_LowGravity_C::Activated(class AActor* PlayerPawn_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "Activated");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "Activated");
 
 	Params::GCN_Athena_LowGravity_C_Activated Parms{};
 
@@ -190,10 +163,7 @@ void AGCN_Athena_LowGravity_C::Activated(class AActor* PlayerPawn_0)
 
 bool AGCN_Athena_LowGravity_C::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "OnRemove");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_C", "OnRemove");
 
 	Params::GCN_Athena_LowGravity_C_OnRemove Parms{};
 

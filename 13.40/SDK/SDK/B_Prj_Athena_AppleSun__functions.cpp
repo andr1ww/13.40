@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_AppleSun__C::ExecuteUbergraph_B_Prj_Athena_AppleSun_(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_AppleSun__C", "ExecuteUbergraph_B_Prj_Athena_AppleSun_");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_AppleSun__C", "ExecuteUbergraph_B_Prj_Athena_AppleSun_");
 
 	Params::B_Prj_Athena_AppleSun__C_ExecuteUbergraph_B_Prj_Athena_AppleSun_ Parms{};
 
@@ -43,10 +40,7 @@ void AB_Prj_Athena_AppleSun__C::ExecuteUbergraph_B_Prj_Athena_AppleSun_(int32 En
 
 void AB_Prj_Athena_AppleSun__C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_AppleSun__C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_AppleSun__C", "OnStop");
 
 	Params::B_Prj_Athena_AppleSun__C_OnStop Parms{};
 
@@ -67,10 +61,7 @@ void AB_Prj_Athena_AppleSun__C::OnStop(const struct FHitResult& Hit)
 
 void AB_Prj_Athena_AppleSun__C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_AppleSun__C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_AppleSun__C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
 
 	Params::B_Prj_Athena_AppleSun__C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature Parms{};
 
@@ -89,10 +80,7 @@ void AB_Prj_Athena_AppleSun__C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEv
 
 void AB_Prj_Athena_AppleSun__C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_AppleSun__C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_AppleSun__C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

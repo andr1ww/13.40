@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFortnitePartyBackdrop_Camera_C::OnActivated(class AFortPlayerController* PlayerController_OnActivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "OnActivated");
+	class UFunction* Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "OnActivated");
 
 	Params::FortnitePartyBackdrop_Camera_C_OnActivated Parms{};
 
@@ -43,10 +40,7 @@ void AFortnitePartyBackdrop_Camera_C::OnActivated(class AFortPlayerController* P
 
 void AFortnitePartyBackdrop_Camera_C::OnDeactivated(class AFortPlayerController* PlayerController_OnDeactivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "OnDeactivated");
+	class UFunction* Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "OnDeactivated");
 
 	Params::FortnitePartyBackdrop_Camera_C_OnDeactivated Parms{};
 
@@ -61,10 +55,7 @@ void AFortnitePartyBackdrop_Camera_C::OnDeactivated(class AFortPlayerController*
 
 void AFortnitePartyBackdrop_Camera_C::Reset_Location()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "Reset Location");
+	class UFunction* Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "Reset Location");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void AFortnitePartyBackdrop_Camera_C::Reset_Location()
 
 void AFortnitePartyBackdrop_Camera_C::ManualActivate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "ManualActivate");
+	class UFunction* Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "ManualActivate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void AFortnitePartyBackdrop_Camera_C::ManualActivate()
 
 void AFortnitePartyBackdrop_Camera_C::ExecuteUbergraph_FortnitePartyBackdrop_Camera(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "ExecuteUbergraph_FortnitePartyBackdrop_Camera");
+	class UFunction* Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "ExecuteUbergraph_FortnitePartyBackdrop_Camera");
 
 	Params::FortnitePartyBackdrop_Camera_C_ExecuteUbergraph_FortnitePartyBackdrop_Camera Parms{};
 

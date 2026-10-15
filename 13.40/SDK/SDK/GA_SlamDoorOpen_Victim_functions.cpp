@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_SlamDoorOpen_Victim_C::ExecuteUbergraph_GA_SlamDoorOpen_Victim(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_SlamDoorOpen_Victim_C", "ExecuteUbergraph_GA_SlamDoorOpen_Victim");
+	class UFunction* Func = Class->GetFunction("GA_SlamDoorOpen_Victim_C", "ExecuteUbergraph_GA_SlamDoorOpen_Victim");
 
 	Params::GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim Parms{};
 
@@ -43,10 +40,7 @@ void UGA_SlamDoorOpen_Victim_C::ExecuteUbergraph_GA_SlamDoorOpen_Victim(int32 En
 
 void UGA_SlamDoorOpen_Victim_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_SlamDoorOpen_Victim_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_SlamDoorOpen_Victim_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent Parms{};
 

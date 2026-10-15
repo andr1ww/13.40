@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ExecuteUbergraph_PlayerPawn_Athena");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ExecuteUbergraph_PlayerPawn_Athena");
 
 	Params::PlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena Parms{};
 
@@ -43,10 +40,7 @@ void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint)
 
 void APlayerPawn_Athena_C::OnTetherEnded(class APawn* LastTetherPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnTetherEnded");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnTetherEnded");
 
 	Params::PlayerPawn_Athena_C_OnTetherEnded Parms{};
 
@@ -63,10 +57,7 @@ void APlayerPawn_Athena_C::OnTetherEnded(class APawn* LastTetherPawn)
 
 void APlayerPawn_Athena_C::OnTetherStarted(class APawn* LastTetherPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnTetherStarted");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnTetherStarted");
 
 	Params::PlayerPawn_Athena_C_OnTetherStarted Parms{};
 
@@ -81,10 +72,7 @@ void APlayerPawn_Athena_C::OnTetherStarted(class APawn* LastTetherPawn)
 
 void APlayerPawn_Athena_C::OnTetheredExitReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnTetheredExitReleased");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnTetheredExitReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +83,7 @@ void APlayerPawn_Athena_C::OnTetheredExitReleased()
 
 void APlayerPawn_Athena_C::OnTetheredExitPressed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnTetheredExitPressed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnTetheredExitPressed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void APlayerPawn_Athena_C::OnTetheredExitPressed()
 
 void APlayerPawn_Athena_C::ScalePlayerDown()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ScalePlayerDown");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ScalePlayerDown");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void APlayerPawn_Athena_C::ScalePlayerDown()
 
 void APlayerPawn_Athena_C::ScalePlayerUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ScalePlayerUp");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ScalePlayerUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void APlayerPawn_Athena_C::ScalePlayerUp()
 
 void APlayerPawn_Athena_C::OnLandscapeCheckFailedAndTeleported()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLandscapeCheckFailedAndTeleported");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLandscapeCheckFailedAndTeleported");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -154,10 +130,7 @@ void APlayerPawn_Athena_C::OnLandscapeCheckFailedAndTeleported()
 
 void APlayerPawn_Athena_C::ToggleRes(float Delay, bool ResIn_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ToggleRes");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ToggleRes");
 
 	Params::PlayerPawn_Athena_C_ToggleRes Parms{};
 
@@ -176,10 +149,7 @@ void APlayerPawn_Athena_C::ToggleRes(float Delay, bool ResIn_0)
 
 void APlayerPawn_Athena_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnWeaponEquipped");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnWeaponEquipped");
 
 	Params::PlayerPawn_Athena_C_OnWeaponEquipped Parms{};
 
@@ -197,10 +167,7 @@ void APlayerPawn_Athena_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class 
 
 void APlayerPawn_Athena_C::ServerSetCreativeEffectColorIndex(const struct FFCreativeEffectColorIndex& Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ServerSetCreativeEffectColorIndex");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ServerSetCreativeEffectColorIndex");
 
 	Params::PlayerPawn_Athena_C_ServerSetCreativeEffectColorIndex Parms{};
 
@@ -217,10 +184,7 @@ void APlayerPawn_Athena_C::ServerSetCreativeEffectColorIndex(const struct FFCrea
 
 void APlayerPawn_Athena_C::isHiddingInProp(bool IsHidden)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "isHiddingInProp");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "isHiddingInProp");
 
 	Params::PlayerPawn_Athena_C_isHiddingInProp Parms{};
 
@@ -235,10 +199,7 @@ void APlayerPawn_Athena_C::isHiddingInProp(bool IsHidden)
 
 void APlayerPawn_Athena_C::OnBeginWaterSprintBoost()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnBeginWaterSprintBoost");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnBeginWaterSprintBoost");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +210,7 @@ void APlayerPawn_Athena_C::OnBeginWaterSprintBoost()
 
 void APlayerPawn_Athena_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -263,10 +221,7 @@ void APlayerPawn_Athena_C::ReceiveDestroyed()
 
 void APlayerPawn_Athena_C::SafeZoneStatusChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SafeZoneStatusChanged");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "SafeZoneStatusChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -282,10 +237,7 @@ void APlayerPawn_Athena_C::SafeZoneStatusChanged()
 
 void APlayerPawn_Athena_C::K2_OnMovementModeChanged(EMovementMode PrevMovementMode, EMovementMode NewMovementMode, uint8 PrevCustomMode, uint8 NewCustomMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "K2_OnMovementModeChanged");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "K2_OnMovementModeChanged");
 
 	Params::PlayerPawn_Athena_C_K2_OnMovementModeChanged Parms{};
 
@@ -306,10 +258,7 @@ void APlayerPawn_Athena_C::K2_OnMovementModeChanged(EMovementMode PrevMovementMo
 
 void APlayerPawn_Athena_C::OnExitedWaterBody(class AFortWaterBodyActor* WaterBody, bool bIsLastBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnExitedWaterBody");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnExitedWaterBody");
 
 	Params::PlayerPawn_Athena_C_OnExitedWaterBody Parms{};
 
@@ -328,10 +277,7 @@ void APlayerPawn_Athena_C::OnExitedWaterBody(class AFortWaterBodyActor* WaterBod
 
 void APlayerPawn_Athena_C::OnEnteredWaterBody(class AFortWaterBodyActor* WaterBody, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredWaterBody");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredWaterBody");
 
 	Params::PlayerPawn_Athena_C_OnEnteredWaterBody Parms{};
 
@@ -347,10 +293,7 @@ void APlayerPawn_Athena_C::OnEnteredWaterBody(class AFortWaterBodyActor* WaterBo
 
 void APlayerPawn_Athena_C::OnSpawnImmunityTimeReset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnSpawnImmunityTimeReset");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnSpawnImmunityTimeReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -361,10 +304,7 @@ void APlayerPawn_Athena_C::OnSpawnImmunityTimeReset()
 
 void APlayerPawn_Athena_C::Play_Respawn_FX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "Play Respawn FX");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "Play Respawn FX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -375,10 +315,7 @@ void APlayerPawn_Athena_C::Play_Respawn_FX()
 
 void APlayerPawn_Athena_C::OnSuccessfulBuildingEdit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnSuccessfulBuildingEdit");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnSuccessfulBuildingEdit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -389,10 +326,7 @@ void APlayerPawn_Athena_C::OnSuccessfulBuildingEdit()
 
 void APlayerPawn_Athena_C::RemoveSafeZoneGameplayCueServerToClient()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSafeZoneGameplayCueServerToClient");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSafeZoneGameplayCueServerToClient");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -403,10 +337,7 @@ void APlayerPawn_Athena_C::RemoveSafeZoneGameplayCueServerToClient()
 
 void APlayerPawn_Athena_C::AddSafeZoneGameplayCue()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "AddSafeZoneGameplayCue");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "AddSafeZoneGameplayCue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -417,10 +348,7 @@ void APlayerPawn_Athena_C::AddSafeZoneGameplayCue()
 
 void APlayerPawn_Athena_C::OnCreativeStartGhost()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCreativeStartGhost");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCreativeStartGhost");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -431,10 +359,7 @@ void APlayerPawn_Athena_C::OnCreativeStartGhost()
 
 void APlayerPawn_Athena_C::MeleeSwingRight_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingRight_End");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingRight_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -445,10 +370,7 @@ void APlayerPawn_Athena_C::MeleeSwingRight_End()
 
 void APlayerPawn_Athena_C::MeleeSwingLeft_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingLeft_End");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingLeft_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -459,10 +381,7 @@ void APlayerPawn_Athena_C::MeleeSwingLeft_End()
 
 void APlayerPawn_Athena_C::OnCreativeStopGhost()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCreativeStopGhost");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCreativeStopGhost");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -476,10 +395,7 @@ void APlayerPawn_Athena_C::OnCreativeStopGhost()
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Boost(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Boost");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Boost");
 
 	Params::PlayerPawn_Athena_C_GameplayCue_Athena_Boost Parms{};
 
@@ -500,10 +416,7 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Boost(EGameplayCueEvent EventType,
 
 void APlayerPawn_Athena_C::WhiteoutAndTeleport(const struct FVector& DestLocation, const struct FRotator& DestRotation, bool Instant, float Gravity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "WhiteoutAndTeleport");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "WhiteoutAndTeleport");
 
 	Params::PlayerPawn_Athena_C_WhiteoutAndTeleport Parms{};
 
@@ -523,10 +436,7 @@ void APlayerPawn_Athena_C::WhiteoutAndTeleport(const struct FVector& DestLocatio
 
 void APlayerPawn_Athena_C::ClientRunSnowGC(bool Instant)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ClientRunSnowGC");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ClientRunSnowGC");
 
 	Params::PlayerPawn_Athena_C_ClientRunSnowGC Parms{};
 
@@ -545,10 +455,7 @@ void APlayerPawn_Athena_C::ClientRunSnowGC(bool Instant)
 
 void APlayerPawn_Athena_C::TeleportInNSeconds(float SecondsTillTeleport, const struct FVector& DestLocation, const struct FRotator& DestRotation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "TeleportInNSeconds");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "TeleportInNSeconds");
 
 	Params::PlayerPawn_Athena_C_TeleportInNSeconds Parms{};
 
@@ -568,10 +475,7 @@ void APlayerPawn_Athena_C::TeleportInNSeconds(float SecondsTillTeleport, const s
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Reloading(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Reloading");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Reloading");
 
 	Params::PlayerPawn_Athena_C_GameplayCue_Athena_Reloading Parms{};
 
@@ -589,10 +493,7 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Reloading(EGameplayCueEvent EventT
 
 void APlayerPawn_Athena_C::ActivateInvincibleVisuals(float Duration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ActivateInvincibleVisuals");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ActivateInvincibleVisuals");
 
 	Params::PlayerPawn_Athena_C_ActivateInvincibleVisuals Parms{};
 
@@ -610,10 +511,7 @@ void APlayerPawn_Athena_C::ActivateInvincibleVisuals(float Duration)
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_DBNOEnter(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.DBNOEnter");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.DBNOEnter");
 
 	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_DBNOEnter Parms{};
 
@@ -629,10 +527,7 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_DBNOEnter(EGameplayC
 
 void APlayerPawn_Athena_C::ReTrySetupDissolveFx()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReTrySetupDissolveFx");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ReTrySetupDissolveFx");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -646,10 +541,7 @@ void APlayerPawn_Athena_C::ReTrySetupDissolveFx()
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
 
 	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1 Parms{};
 
@@ -667,10 +559,7 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_
 
 void APlayerPawn_Athena_C::MeleeSwingRight(bool First_Right)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingRight");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingRight");
 
 	Params::PlayerPawn_Athena_C_MeleeSwingRight Parms{};
 
@@ -687,10 +576,7 @@ void APlayerPawn_Athena_C::MeleeSwingRight(bool First_Right)
 
 void APlayerPawn_Athena_C::MeleeSwingLeft(bool First_Left)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingLeft");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingLeft");
 
 	Params::PlayerPawn_Athena_C_MeleeSwingLeft Parms{};
 
@@ -705,10 +591,7 @@ void APlayerPawn_Athena_C::MeleeSwingLeft(bool First_Left)
 
 void APlayerPawn_Athena_C::OnReceivedStormSurgeDamage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnReceivedStormSurgeDamage");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnReceivedStormSurgeDamage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -719,10 +602,7 @@ void APlayerPawn_Athena_C::OnReceivedStormSurgeDamage()
 
 void APlayerPawn_Athena_C::RemoveSafeZoneGameplayCue()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSafeZoneGameplayCue");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSafeZoneGameplayCue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -735,10 +615,7 @@ void APlayerPawn_Athena_C::RemoveSafeZoneGameplayCue()
 
 void APlayerPawn_Athena_C::OnOutsideSafeZonePhaseChanged(int32 SafeZonePhase_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnOutsideSafeZonePhaseChanged");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnOutsideSafeZonePhaseChanged");
 
 	Params::PlayerPawn_Athena_C_OnOutsideSafeZonePhaseChanged Parms{};
 
@@ -757,10 +634,7 @@ void APlayerPawn_Athena_C::OnOutsideSafeZonePhaseChanged(int32 SafeZonePhase_0)
 
 void APlayerPawn_Athena_C::SetSafeZoneTagWhenChanged(int32 NewWhichSafeZoneTag, const struct FGameplayTag& GameplayTag, bool bSpawnGameplayCue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZoneTagWhenChanged");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZoneTagWhenChanged");
 
 	Params::PlayerPawn_Athena_C_SetSafeZoneTagWhenChanged Parms{};
 
@@ -780,10 +654,7 @@ void APlayerPawn_Athena_C::SetSafeZoneTagWhenChanged(int32 NewWhichSafeZoneTag, 
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
 
 	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2 Parms{};
 
@@ -802,10 +673,7 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_
 
 void APlayerPawn_Athena_C::SetSafeZonePhaseAndGameplayCueTag(int32 InSafeZonePhase, bool bSpawnGameplayCue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZonePhaseAndGameplayCueTag");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZonePhaseAndGameplayCueTag");
 
 	Params::PlayerPawn_Athena_C_SetSafeZonePhaseAndGameplayCueTag Parms{};
 
@@ -821,10 +689,7 @@ void APlayerPawn_Athena_C::SetSafeZonePhaseAndGameplayCueTag(int32 InSafeZonePha
 
 void APlayerPawn_Athena_C::AddStormFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "AddStormFX");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "AddStormFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -835,10 +700,7 @@ void APlayerPawn_Athena_C::AddStormFX()
 
 void APlayerPawn_Athena_C::PlayResOutFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOutFX");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOutFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -849,10 +711,7 @@ void APlayerPawn_Athena_C::PlayResOutFX()
 
 void APlayerPawn_Athena_C::PlayResInFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResInFX");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResInFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -863,10 +722,7 @@ void APlayerPawn_Athena_C::PlayResInFX()
 
 void APlayerPawn_Athena_C::OnResInDuringWarmup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnResInDuringWarmup");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnResInDuringWarmup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -877,10 +733,7 @@ void APlayerPawn_Athena_C::OnResInDuringWarmup()
 
 void APlayerPawn_Athena_C::PlayResOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOut");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -893,10 +746,7 @@ void APlayerPawn_Athena_C::PlayResOut()
 
 void APlayerPawn_Athena_C::OnCharacterCustomizationCompleted(class AFortPlayerPawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCharacterCustomizationCompleted");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCharacterCustomizationCompleted");
 
 	Params::PlayerPawn_Athena_C_OnCharacterCustomizationCompleted Parms{};
 
@@ -911,10 +761,7 @@ void APlayerPawn_Athena_C::OnCharacterCustomizationCompleted(class AFortPlayerPa
 
 void APlayerPawn_Athena_C::OnEnteredReplayRelevancy()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredReplayRelevancy");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredReplayRelevancy");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -925,10 +772,7 @@ void APlayerPawn_Athena_C::OnEnteredReplayRelevancy()
 
 void APlayerPawn_Athena_C::OnLeftReplayRelevancy()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLeftReplayRelevancy");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLeftReplayRelevancy");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -941,10 +785,7 @@ void APlayerPawn_Athena_C::OnLeftReplayRelevancy()
 
 void APlayerPawn_Athena_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveEndPlay");
 
 	Params::PlayerPawn_Athena_C_ReceiveEndPlay Parms{};
 
@@ -961,10 +802,7 @@ void APlayerPawn_Athena_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 
 void APlayerPawn_Athena_C::ReceivePossessed(class AController* NewController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceivePossessed");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceivePossessed");
 
 	Params::PlayerPawn_Athena_C_ReceivePossessed Parms{};
 
@@ -979,10 +817,7 @@ void APlayerPawn_Athena_C::ReceivePossessed(class AController* NewController)
 
 void APlayerPawn_Athena_C::NotifyTeammateSkydivedFromBus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "NotifyTeammateSkydivedFromBus");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "NotifyTeammateSkydivedFromBus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -993,10 +828,7 @@ void APlayerPawn_Athena_C::NotifyTeammateSkydivedFromBus()
 
 void APlayerPawn_Athena_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1007,10 +839,7 @@ void APlayerPawn_Athena_C::ReceiveBeginPlay()
 
 void APlayerPawn_Athena_C::OnExitedWaterVolume()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnExitedWaterVolume");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnExitedWaterVolume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1021,10 +850,7 @@ void APlayerPawn_Athena_C::OnExitedWaterVolume()
 
 void APlayerPawn_Athena_C::OnEnteredWaterVolume()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredWaterVolume");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredWaterVolume");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1038,10 +864,7 @@ void APlayerPawn_Athena_C::OnEnteredWaterVolume()
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_DBNOResurrect(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.DBNOResurrect");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.DBNOResurrect");
 
 	Params::PlayerPawn_Athena_C_GameplayCue_Abilities_Activation_DBNOResurrect Parms{};
 
@@ -1057,10 +880,7 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_DBNOResurrect(EGamep
 
 void APlayerPawn_Athena_C::RemoveStormFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveStormFX");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveStormFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1074,10 +894,7 @@ void APlayerPawn_Athena_C::RemoveStormFX()
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Player.BeingRevivedFromDBNO");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Player.BeingRevivedFromDBNO");
 
 	Params::PlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO Parms{};
 
@@ -1101,10 +918,7 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(EGamep
 
 void APlayerPawn_Athena_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnDeathPlayEffects");
 
 	Params::PlayerPawn_Athena_C_OnDeathPlayEffects Parms{};
 
@@ -1128,10 +942,7 @@ void APlayerPawn_Athena_C::OnDeathPlayEffects(float Damage, const struct FGamepl
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Equipping(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Equipping");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Equipping");
 
 	Params::PlayerPawn_Athena_C_GameplayCue_Athena_Equipping Parms{};
 
@@ -1147,10 +958,7 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Equipping(EGameplayCueEvent EventT
 
 void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1161,10 +969,7 @@ void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__UpdateFunc()
 
 void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1175,10 +980,7 @@ void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__FinishedFunc()
 
 void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1189,10 +991,7 @@ void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__UpdateFunc()
 
 void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1203,10 +1002,7 @@ void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__FinishedFunc()
 
 void APlayerPawn_Athena_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1217,10 +1013,7 @@ void APlayerPawn_Athena_C::Timeline_0__UpdateFunc()
 
 void APlayerPawn_Athena_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1231,10 +1024,7 @@ void APlayerPawn_Athena_C::Timeline_0__FinishedFunc()
 
 void APlayerPawn_Athena_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1245,10 +1035,7 @@ void APlayerPawn_Athena_C::UserConstructionScript()
 
 void APlayerPawn_Athena_C::InitAthenaFoleyAudio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "InitAthenaFoleyAudio");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "InitAthenaFoleyAudio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1261,10 +1048,7 @@ void APlayerPawn_Athena_C::InitAthenaFoleyAudio()
 
 void APlayerPawn_Athena_C::GetLocationInCircle_XY(struct FVector* LocationLocalSpace)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GetLocationInCircle_XY");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GetLocationInCircle_XY");
 
 	Params::PlayerPawn_Athena_C_GetLocationInCircle_XY Parms{};
 
@@ -1282,10 +1066,7 @@ void APlayerPawn_Athena_C::GetLocationInCircle_XY(struct FVector* LocationLocalS
 
 void APlayerPawn_Athena_C::EnableWaterAudio(bool Is_Entering_Water)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "EnableWaterAudio");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "EnableWaterAudio");
 
 	Params::PlayerPawn_Athena_C_EnableWaterAudio Parms{};
 
@@ -1300,10 +1081,7 @@ void APlayerPawn_Athena_C::EnableWaterAudio(bool Is_Entering_Water)
 
 void APlayerPawn_Athena_C::StopLoopingAudio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "StopLoopingAudio");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "StopLoopingAudio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1316,10 +1094,7 @@ void APlayerPawn_Athena_C::StopLoopingAudio()
 
 void APlayerPawn_Athena_C::InWarmup(bool* bInWarmup)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "InWarmup");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "InWarmup");
 
 	Params::PlayerPawn_Athena_C_InWarmup Parms{};
 
@@ -1341,10 +1116,7 @@ void APlayerPawn_Athena_C::InWarmup(bool* bInWarmup)
 
 void APlayerPawn_Athena_C::OnStartLongInteract(class AActor* ReceivingActor, bool* Out_bConsumeEvent, bool* Out_bSkipSetInteractDuration, bool* Out_bSkipStartAnimation, EItemInteractionType* Out_ItemInteractionType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnStartLongInteract");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnStartLongInteract");
 
 	Params::PlayerPawn_Athena_C_OnStartLongInteract Parms{};
 
@@ -1371,10 +1143,7 @@ void APlayerPawn_Athena_C::OnStartLongInteract(class AActor* ReceivingActor, boo
 
 void APlayerPawn_Athena_C::QueueTeleportIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportIn");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1385,10 +1154,7 @@ void APlayerPawn_Athena_C::QueueTeleportIn()
 
 void APlayerPawn_Athena_C::QueueTeleportOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportOut");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1399,10 +1165,7 @@ void APlayerPawn_Athena_C::QueueTeleportOut()
 
 void APlayerPawn_Athena_C::FindBounds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "FindBounds");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "FindBounds");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1413,10 +1176,7 @@ void APlayerPawn_Athena_C::FindBounds()
 
 void APlayerPawn_Athena_C::SpawnTeleportationLight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SpawnTeleportationLight");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "SpawnTeleportationLight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1431,10 +1191,7 @@ void APlayerPawn_Athena_C::SpawnTeleportationLight()
 
 void APlayerPawn_Athena_C::UpdateDissolveFx(float Scalar_Transition, float Scalar_ZHeight, float Scalar_LightIntensity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "UpdateDissolveFx");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "UpdateDissolveFx");
 
 	Params::PlayerPawn_Athena_C_UpdateDissolveFx Parms{};
 
@@ -1451,10 +1208,7 @@ void APlayerPawn_Athena_C::UpdateDissolveFx(float Scalar_Transition, float Scala
 
 void APlayerPawn_Athena_C::CleanupDissolveFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "CleanupDissolveFX");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "CleanupDissolveFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1465,10 +1219,7 @@ void APlayerPawn_Athena_C::CleanupDissolveFX()
 
 void APlayerPawn_Athena_C::SetupDissolveFx()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetupDissolveFx");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "SetupDissolveFx");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1481,10 +1232,7 @@ void APlayerPawn_Athena_C::SetupDissolveFx()
 
 void APlayerPawn_Athena_C::SetPetHidden(bool NewHidden)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPetHidden");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPetHidden");
 
 	Params::PlayerPawn_Athena_C_SetPetHidden Parms{};
 
@@ -1501,10 +1249,7 @@ void APlayerPawn_Athena_C::SetPetHidden(bool NewHidden)
 
 void APlayerPawn_Athena_C::RestoreCharacterMats(bool* bFullyCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "RestoreCharacterMats");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "RestoreCharacterMats");
 
 	Params::PlayerPawn_Athena_C_RestoreCharacterMats Parms{};
 
@@ -1520,10 +1265,7 @@ void APlayerPawn_Athena_C::RestoreCharacterMats(bool* bFullyCompleted)
 
 void APlayerPawn_Athena_C::CleanUpTeleportationFXLight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "CleanUpTeleportationFXLight");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "CleanUpTeleportationFXLight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1536,10 +1278,7 @@ void APlayerPawn_Athena_C::CleanUpTeleportationFXLight()
 
 void APlayerPawn_Athena_C::SetPartyInProgress(bool bIsPartyInProgress)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPartyInProgress");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPartyInProgress");
 
 	Params::PlayerPawn_Athena_C_SetPartyInProgress Parms{};
 
@@ -1556,10 +1295,7 @@ void APlayerPawn_Athena_C::SetPartyInProgress(bool bIsPartyInProgress)
 
 void APlayerPawn_Athena_C::OnLockOnSearchCompleted(bool* bConsumeEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLockOnSearchCompleted");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLockOnSearchCompleted");
 
 	Params::PlayerPawn_Athena_C_OnLockOnSearchCompleted Parms{};
 
@@ -1575,10 +1311,7 @@ void APlayerPawn_Athena_C::OnLockOnSearchCompleted(bool* bConsumeEvent)
 
 void APlayerPawn_Athena_C::LockonSearchCompleteTimedOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "LockonSearchCompleteTimedOut");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "LockonSearchCompleteTimedOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1589,10 +1322,7 @@ void APlayerPawn_Athena_C::LockonSearchCompleteTimedOut()
 
 void APlayerPawn_Athena_C::OnRep_PlayRespawnFXOnSpawn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnRep_PlayRespawnFXOnSpawn");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "OnRep_PlayRespawnFXOnSpawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1606,10 +1336,7 @@ void APlayerPawn_Athena_C::OnRep_PlayRespawnFXOnSpawn()
 
 void APlayerPawn_Athena_C::ApplyPawnHighlight(class UObject* Source, const struct FPawnHighlight& HitGlow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "ApplyPawnHighlight");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "ApplyPawnHighlight");
 
 	Params::PlayerPawn_Athena_C_ApplyPawnHighlight Parms{};
 
@@ -1627,10 +1354,7 @@ void APlayerPawn_Athena_C::ApplyPawnHighlight(class UObject* Source, const struc
 
 void APlayerPawn_Athena_C::Remove_Pawn_Highlight_from_Source(class UObject* Source)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "Remove Pawn Highlight from Source");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "Remove Pawn Highlight from Source");
 
 	Params::PlayerPawn_Athena_C_Remove_Pawn_Highlight_from_Source Parms{};
 
@@ -1649,10 +1373,7 @@ void APlayerPawn_Athena_C::Remove_Pawn_Highlight_from_Source(class UObject* Sour
 
 void APlayerPawn_Athena_C::Highlight_Pawn_from_Source(class UObject* Source, const struct FPawnHighlight& Highlight, bool Only_Update_If_Current)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "Highlight Pawn from Source");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "Highlight Pawn from Source");
 
 	Params::PlayerPawn_Athena_C_Highlight_Pawn_from_Source Parms{};
 
@@ -1672,10 +1393,7 @@ void APlayerPawn_Athena_C::Highlight_Pawn_from_Source(class UObject* Source, con
 
 void APlayerPawn_Athena_C::Get_Highest_Priority_Highlight(class UObject** Source, struct FPawnHighlight* Top_Priority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "Get Highest Priority Highlight");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "Get Highest Priority Highlight");
 
 	Params::PlayerPawn_Athena_C_Get_Highest_Priority_Highlight Parms{};
 
@@ -1694,10 +1412,7 @@ void APlayerPawn_Athena_C::Get_Highest_Priority_Highlight(class UObject** Source
 
 void APlayerPawn_Athena_C::GalileoMaterialSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "GalileoMaterialSetup");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "GalileoMaterialSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1710,10 +1425,7 @@ void APlayerPawn_Athena_C::GalileoMaterialSetup()
 
 void APlayerPawn_Athena_C::AddSkeletalMeshComponentsFromWeaponObject(class AFortWeapon* WeaponObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "AddSkeletalMeshComponentsFromWeaponObject");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "AddSkeletalMeshComponentsFromWeaponObject");
 
 	Params::PlayerPawn_Athena_C_AddSkeletalMeshComponentsFromWeaponObject Parms{};
 
@@ -1730,10 +1442,7 @@ void APlayerPawn_Athena_C::AddSkeletalMeshComponentsFromWeaponObject(class AFort
 
 void APlayerPawn_Athena_C::RemoveSkeletalMeshComponentsFromWeaponObject(class AFortWeapon* WeaponObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSkeletalMeshComponentsFromWeaponObject");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSkeletalMeshComponentsFromWeaponObject");
 
 	Params::PlayerPawn_Athena_C_RemoveSkeletalMeshComponentsFromWeaponObject Parms{};
 
@@ -1750,10 +1459,7 @@ void APlayerPawn_Athena_C::RemoveSkeletalMeshComponentsFromWeaponObject(class AF
 
 bool APlayerPawn_Athena_C::PawnIsNPC()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "PawnIsNPC");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "PawnIsNPC");
 
 	Params::PlayerPawn_Athena_C_PawnIsNPC Parms{};
 
@@ -1770,10 +1476,7 @@ bool APlayerPawn_Athena_C::PawnIsNPC()
 
 bool APlayerPawn_Athena_C::PawnIsDecoy()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "PawnIsDecoy");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "PawnIsDecoy");
 
 	Params::PlayerPawn_Athena_C_PawnIsDecoy Parms{};
 
@@ -1790,10 +1493,7 @@ bool APlayerPawn_Athena_C::PawnIsDecoy()
 
 void APlayerPawn_Athena_C::Get_Creative_Effect_Data(struct FFCreativeEffectColorIndex* Effect_Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerPawn_Athena_C", "Get Creative Effect Data");
+	class UFunction* Func = Class->GetFunction("PlayerPawn_Athena_C", "Get Creative Effect Data");
 
 	Params::PlayerPawn_Athena_C_Get_Creative_Effect_Data Parms{};
 

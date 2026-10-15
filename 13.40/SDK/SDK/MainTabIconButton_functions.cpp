@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMainTabIconButton_C::SetBangType(EFortBangType NewBangType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "SetBangType");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "SetBangType");
 
 	Params::MainTabIconButton_C_SetBangType Parms{};
 
@@ -41,10 +38,7 @@ void UMainTabIconButton_C::SetBangType(EFortBangType NewBangType)
 
 void UMainTabIconButton_C::StopTabCallout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "StopTabCallout");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "StopTabCallout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UMainTabIconButton_C::StopTabCallout()
 
 void UMainTabIconButton_C::TabAdded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "TabAdded");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "TabAdded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UMainTabIconButton_C::TabAdded()
 
 void UMainTabIconButton_C::TabDialogClosed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "TabDialogClosed");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "TabDialogClosed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UMainTabIconButton_C::TabDialogClosed()
 
 void UMainTabIconButton_C::TabAnimateInFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "TabAnimateInFinished");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "TabAnimateInFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -100,10 +85,7 @@ void UMainTabIconButton_C::TabAnimateInFinished()
 
 void UMainTabIconButton_C::SetWrapperNameIDs(class FName InTutorialNameID, class FName InBangNameID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "SetWrapperNameIDs");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "SetWrapperNameIDs");
 
 	Params::MainTabIconButton_C_SetWrapperNameIDs Parms{};
 
@@ -123,10 +105,7 @@ void UMainTabIconButton_C::SetWrapperNameIDs(class FName InTutorialNameID, class
 
 void UMainTabIconButton_C::Update_Bang_State(bool bBangEnabled, EFortUIFeature UIFeature, const class FText& UIFeatureRevealText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "Update Bang State");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "Update Bang State");
 
 	Params::MainTabIconButton_C_Update_Bang_State Parms{};
 
@@ -145,10 +124,7 @@ void UMainTabIconButton_C::Update_Bang_State(bool bBangEnabled, EFortUIFeature U
 
 void UMainTabIconButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "SetTutorialBorderStyle");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "SetTutorialBorderStyle");
 
 	Params::MainTabIconButton_C_SetTutorialBorderStyle Parms{};
 
@@ -163,10 +139,7 @@ void UMainTabIconButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 
 void UMainTabIconButton_C::ShowText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "ShowText");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "ShowText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +152,7 @@ void UMainTabIconButton_C::ShowText()
 
 void UMainTabIconButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "Set Icon");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "Set Icon");
 
 	Params::MainTabIconButton_C_Set_Icon Parms{};
 
@@ -199,10 +169,7 @@ void UMainTabIconButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UMainTabIconButton_C::Set_Text(const class FText& ButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "Set Text");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "Set Text");
 
 	Params::MainTabIconButton_C_Set_Text Parms{};
 
@@ -219,10 +186,7 @@ void UMainTabIconButton_C::Set_Text(const class FText& ButtonText)
 
 void UMainTabIconButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "PreConstruct");
 
 	Params::MainTabIconButton_C_PreConstruct Parms{};
 
@@ -239,10 +203,7 @@ void UMainTabIconButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UMainTabIconButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "SetTabLabelInfo");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "SetTabLabelInfo");
 
 	Params::MainTabIconButton_C_SetTabLabelInfo Parms{};
 
@@ -257,10 +218,7 @@ void UMainTabIconButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo&
 
 void UMainTabIconButton_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -271,10 +229,7 @@ void UMainTabIconButton_C::BP_OnSelected()
 
 void UMainTabIconButton_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -285,10 +240,7 @@ void UMainTabIconButton_C::BP_OnDeselected()
 
 void UMainTabIconButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -299,10 +251,7 @@ void UMainTabIconButton_C::Construct()
 
 void UMainTabIconButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -313,10 +262,7 @@ void UMainTabIconButton_C::BP_OnHovered()
 
 void UMainTabIconButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -327,10 +273,7 @@ void UMainTabIconButton_C::BP_OnUnhovered()
 
 void UMainTabIconButton_C::OnCurrentTextStyleChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "OnCurrentTextStyleChanged");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "OnCurrentTextStyleChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -341,10 +284,7 @@ void UMainTabIconButton_C::OnCurrentTextStyleChanged()
 
 void UMainTabIconButton_C::HandleTabAdded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "HandleTabAdded");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "HandleTabAdded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -355,10 +295,7 @@ void UMainTabIconButton_C::HandleTabAdded()
 
 void UMainTabIconButton_C::HandleTabAnimateInFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "HandleTabAnimateInFinished");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "HandleTabAnimateInFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -369,10 +306,7 @@ void UMainTabIconButton_C::HandleTabAnimateInFinished()
 
 void UMainTabIconButton_C::HandleTabDialogCLosed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "HandleTabDialogCLosed");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "HandleTabDialogCLosed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -383,10 +317,7 @@ void UMainTabIconButton_C::HandleTabDialogCLosed()
 
 void UMainTabIconButton_C::Handle_StopTabCallout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "Handle StopTabCallout");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "Handle StopTabCallout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -397,10 +328,7 @@ void UMainTabIconButton_C::Handle_StopTabCallout()
 
 void UMainTabIconButton_C::BP_OnDisabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "BP_OnDisabled");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "BP_OnDisabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -411,10 +339,7 @@ void UMainTabIconButton_C::BP_OnDisabled()
 
 void UMainTabIconButton_C::BP_OnEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "BP_OnEnabled");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "BP_OnEnabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -427,10 +352,7 @@ void UMainTabIconButton_C::BP_OnEnabled()
 
 void UMainTabIconButton_C::ExecuteUbergraph_MainTabIconButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabIconButton_C", "ExecuteUbergraph_MainTabIconButton");
+	class UFunction* Func = Class->GetFunction("MainTabIconButton_C", "ExecuteUbergraph_MainTabIconButton");
 
 	Params::MainTabIconButton_C_ExecuteUbergraph_MainTabIconButton Parms{};
 

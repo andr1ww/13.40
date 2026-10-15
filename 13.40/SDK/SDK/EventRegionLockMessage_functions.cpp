@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UEventRegionLockMessage_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventRegionLockMessage_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("EventRegionLockMessage_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UEventRegionLockMessage_C::RefreshDataBP()
 
 void UEventRegionLockMessage_C::ExecuteUbergraph_EventRegionLockMessage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventRegionLockMessage_C", "ExecuteUbergraph_EventRegionLockMessage");
+	class UFunction* Func = Class->GetFunction("EventRegionLockMessage_C", "ExecuteUbergraph_EventRegionLockMessage");
 
 	Params::EventRegionLockMessage_C_ExecuteUbergraph_EventRegionLockMessage Parms{};
 

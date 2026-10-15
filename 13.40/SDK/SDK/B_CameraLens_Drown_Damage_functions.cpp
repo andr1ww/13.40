@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_CameraLens_Drown_Damage_C::ExecuteUbergraph_B_CameraLens_Drown_Damage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_Drown_Damage_C", "ExecuteUbergraph_B_CameraLens_Drown_Damage");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_Drown_Damage_C", "ExecuteUbergraph_B_CameraLens_Drown_Damage");
 
 	Params::B_CameraLens_Drown_Damage_C_ExecuteUbergraph_B_CameraLens_Drown_Damage Parms{};
 
@@ -41,10 +38,7 @@ void AB_CameraLens_Drown_Damage_C::ExecuteUbergraph_B_CameraLens_Drown_Damage(in
 
 void AB_CameraLens_Drown_Damage_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_Drown_Damage_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_Drown_Damage_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

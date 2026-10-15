@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULetoBorder_C::UpdateBorderWidth(float HalfBorderWidth_UpdateBorderWidth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LetoBorder_C", "UpdateBorderWidth");
+	class UFunction* Func = Class->GetFunction("LetoBorder_C", "UpdateBorderWidth");
 
 	Params::LetoBorder_C_UpdateBorderWidth Parms{};
 
@@ -43,10 +40,7 @@ void ULetoBorder_C::UpdateBorderWidth(float HalfBorderWidth_UpdateBorderWidth)
 
 void ULetoBorder_C::ExecuteUbergraph_LetoBorder(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LetoBorder_C", "ExecuteUbergraph_LetoBorder");
+	class UFunction* Func = Class->GetFunction("LetoBorder_C", "ExecuteUbergraph_LetoBorder");
 
 	Params::LetoBorder_C_ExecuteUbergraph_LetoBorder Parms{};
 

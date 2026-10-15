@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGC_Outlander_Phaseshift_PhaseSiphon_Dash_C::ExecuteUbergraph_GC_Outlander_Phaseshift_PhaseSiphon_Dash(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_PhaseSiphon_Dash_C", "ExecuteUbergraph_GC_Outlander_Phaseshift_PhaseSiphon_Dash");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_PhaseSiphon_Dash_C", "ExecuteUbergraph_GC_Outlander_Phaseshift_PhaseSiphon_Dash");
 
 	Params::GC_Outlander_Phaseshift_PhaseSiphon_Dash_C_ExecuteUbergraph_GC_Outlander_Phaseshift_PhaseSiphon_Dash Parms{};
 
@@ -41,10 +38,7 @@ void AGC_Outlander_Phaseshift_PhaseSiphon_Dash_C::ExecuteUbergraph_GC_Outlander_
 
 void AGC_Outlander_Phaseshift_PhaseSiphon_Dash_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_PhaseSiphon_Dash_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_PhaseSiphon_Dash_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

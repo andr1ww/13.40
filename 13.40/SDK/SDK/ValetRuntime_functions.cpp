@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortDagwoodVehicleManager::CustomHandleActorStreamedInEditor(class AActor* SourceActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicleManager", "CustomHandleActorStreamedInEditor");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicleManager", "CustomHandleActorStreamedInEditor");
 
 	Params::FortDagwoodVehicleManager_CustomHandleActorStreamedInEditor Parms{};
 
@@ -48,10 +45,7 @@ void UFortDagwoodVehicleManager::CustomHandleActorStreamedInEditor(class AActor*
 
 void UFortDagwoodVehicleManager::OnVehicleSpawned(class AFortAthenaVehicle* Vehicle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicleManager", "OnVehicleSpawned");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicleManager", "OnVehicleSpawned");
 
 	Params::FortDagwoodVehicleManager_OnVehicleSpawned Parms{};
 
@@ -75,10 +69,7 @@ void UFortDagwoodVehicleManager::OnVehicleSpawned(class AFortAthenaVehicle* Vehi
 
 void UFortDagwoodVehicleManager::OnVehicleSpawnsUpdated(class UFortVehicleItemDefinition* VehicleItemDef, TArray<class AActor*>* SpawnedVehicles, int32 NewVehicleCount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicleManager", "OnVehicleSpawnsUpdated");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicleManager", "OnVehicleSpawnsUpdated");
 
 	Params::FortDagwoodVehicleManager_OnVehicleSpawnsUpdated Parms{};
 
@@ -104,10 +95,7 @@ void UFortDagwoodVehicleManager::OnVehicleSpawnsUpdated(class UFortVehicleItemDe
 
 void UFortDagwoodVehicleManager::ServerSetVehicleFuel(float NewFuel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicleManager", "ServerSetVehicleFuel");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicleManager", "ServerSetVehicleFuel");
 
 	Params::FortDagwoodVehicleManager_ServerSetVehicleFuel Parms{};
 
@@ -129,10 +117,7 @@ void UFortDagwoodVehicleManager::ServerSetVehicleFuel(float NewFuel)
 
 void UFortDagwoodVehicleManager::SetVehicleFuel(float NewFuel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicleManager", "SetVehicleFuel");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicleManager", "SetVehicleFuel");
 
 	Params::FortDagwoodVehicleManager_SetVehicleFuel Parms{};
 
@@ -152,10 +137,7 @@ void UFortDagwoodVehicleManager::SetVehicleFuel(float NewFuel)
 
 void UFortDagwoodVehicleManager::UpdatePropReplacement()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicleManager", "UpdatePropReplacement");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicleManager", "UpdatePropReplacement");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -171,10 +153,7 @@ void UFortDagwoodVehicleManager::UpdatePropReplacement()
 
 void UFortContextualTutorial_VehicleValetLowFuel::HandleStartSkydivingForActivation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortContextualTutorial_VehicleValetLowFuel", "HandleStartSkydivingForActivation");
+	class UFunction* Func = Class->GetFunction("FortContextualTutorial_VehicleValetLowFuel", "HandleStartSkydivingForActivation");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -194,10 +173,7 @@ void UFortContextualTutorial_VehicleValetLowFuel::HandleStartSkydivingForActivat
 
 void UFortContextualTutorial_VehicleValetLowFuel::HandleVehicleStateChanged(class AFortPlayerPawn* PlayerPawn, class AActor* NewVehicle, class AActor* OldVehicle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortContextualTutorial_VehicleValetLowFuel", "HandleVehicleStateChanged");
+	class UFunction* Func = Class->GetFunction("FortContextualTutorial_VehicleValetLowFuel", "HandleVehicleStateChanged");
 
 	Params::FortContextualTutorial_VehicleValetLowFuel_HandleVehicleStateChanged Parms{};
 
@@ -219,10 +195,7 @@ void UFortContextualTutorial_VehicleValetLowFuel::HandleVehicleStateChanged(clas
 
 void AFortDagwoodVehicle::BP_OnBoostFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "BP_OnBoostFinished");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "BP_OnBoostFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -233,10 +206,7 @@ void AFortDagwoodVehicle::BP_OnBoostFinished()
 
 void AFortDagwoodVehicle::BP_OnBoostStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "BP_OnBoostStarted");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "BP_OnBoostStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -247,10 +217,7 @@ void AFortDagwoodVehicle::BP_OnBoostStarted()
 
 void AFortDagwoodVehicle::CleanupLoopingPooledFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "CleanupLoopingPooledFX");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "CleanupLoopingPooledFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -261,10 +228,7 @@ void AFortDagwoodVehicle::CleanupLoopingPooledFX()
 
 void AFortDagwoodVehicle::MakeInoperable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "MakeInoperable");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "MakeInoperable");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -282,10 +246,7 @@ void AFortDagwoodVehicle::MakeInoperable()
 
 void AFortDagwoodVehicle::MakeOperable(bool bAddGas)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "MakeOperable");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "MakeOperable");
 
 	Params::FortDagwoodVehicle_MakeOperable Parms{};
 
@@ -305,10 +266,7 @@ void AFortDagwoodVehicle::MakeOperable(bool bAddGas)
 
 void AFortDagwoodVehicle::OnBoostFailed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnBoostFailed");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnBoostFailed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -319,10 +277,7 @@ void AFortDagwoodVehicle::OnBoostFailed()
 
 void AFortDagwoodVehicle::OnBoostReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnBoostReady");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnBoostReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -335,10 +290,7 @@ void AFortDagwoodVehicle::OnBoostReady()
 
 void AFortDagwoodVehicle::OnClientBeginAltInteract(class AFortPawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnClientBeginAltInteract");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnClientBeginAltInteract");
 
 	Params::FortDagwoodVehicle_OnClientBeginAltInteract Parms{};
 
@@ -355,10 +307,7 @@ void AFortDagwoodVehicle::OnClientBeginAltInteract(class AFortPawn* Pawn)
 
 void AFortDagwoodVehicle::OnDestroyedPropFromCollision(const class ABuildingActor* BuildingHitActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnDestroyedPropFromCollision");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnDestroyedPropFromCollision");
 
 	Params::FortDagwoodVehicle_OnDestroyedPropFromCollision Parms{};
 
@@ -373,10 +322,7 @@ void AFortDagwoodVehicle::OnDestroyedPropFromCollision(const class ABuildingActo
 
 void AFortDagwoodVehicle::OnEmptyFuel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnEmptyFuel");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnEmptyFuel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -387,10 +333,7 @@ void AFortDagwoodVehicle::OnEmptyFuel()
 
 void AFortDagwoodVehicle::OnEnteredRoad()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnEnteredRoad");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnEnteredRoad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -401,10 +344,7 @@ void AFortDagwoodVehicle::OnEnteredRoad()
 
 void AFortDagwoodVehicle::OnEnterLandscape()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnEnterLandscape");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnEnterLandscape");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -415,10 +355,7 @@ void AFortDagwoodVehicle::OnEnterLandscape()
 
 void AFortDagwoodVehicle::OnExitLandscape()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnExitLandscape");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnExitLandscape");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -429,10 +366,7 @@ void AFortDagwoodVehicle::OnExitLandscape()
 
 void AFortDagwoodVehicle::OnExitRoad()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnExitRoad");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnExitRoad");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -443,10 +377,7 @@ void AFortDagwoodVehicle::OnExitRoad()
 
 void AFortDagwoodVehicle::OnExplode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnExplode");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnExplode");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -457,10 +388,7 @@ void AFortDagwoodVehicle::OnExplode()
 
 void AFortDagwoodVehicle::OnFireStart()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnFireStart");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnFireStart");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -471,10 +399,7 @@ void AFortDagwoodVehicle::OnFireStart()
 
 void AFortDagwoodVehicle::OnFireStop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnFireStop");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnFireStop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -485,10 +410,7 @@ void AFortDagwoodVehicle::OnFireStop()
 
 void AFortDagwoodVehicle::OnFlipImpactDamage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnFlipImpactDamage");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnFlipImpactDamage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -501,10 +423,7 @@ void AFortDagwoodVehicle::OnFlipImpactDamage()
 
 void AFortDagwoodVehicle::OnGainedFuel(float NewPercent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnGainedFuel");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnGainedFuel");
 
 	Params::FortDagwoodVehicle_OnGainedFuel Parms{};
 
@@ -521,10 +440,7 @@ void AFortDagwoodVehicle::OnGainedFuel(float NewPercent)
 
 void AFortDagwoodVehicle::OnInoperableChanged(bool bInoperable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnInoperableChanged");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnInoperableChanged");
 
 	Params::FortDagwoodVehicle_OnInoperableChanged Parms{};
 
@@ -539,10 +455,7 @@ void AFortDagwoodVehicle::OnInoperableChanged(bool bInoperable)
 
 void AFortDagwoodVehicle::OnLeakingFuelStart()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnLeakingFuelStart");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnLeakingFuelStart");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -553,10 +466,7 @@ void AFortDagwoodVehicle::OnLeakingFuelStart()
 
 void AFortDagwoodVehicle::OnLeakingFuelStop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnLeakingFuelStop");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnLeakingFuelStop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -567,10 +477,7 @@ void AFortDagwoodVehicle::OnLeakingFuelStop()
 
 void AFortDagwoodVehicle::OnLowFuel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnLowFuel");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnLowFuel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -583,10 +490,7 @@ void AFortDagwoodVehicle::OnLowFuel()
 
 void AFortDagwoodVehicle::OnPoppedTire(int32 TireIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnPoppedTire");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnPoppedTire");
 
 	Params::FortDagwoodVehicle_OnPoppedTire Parms{};
 
@@ -606,10 +510,7 @@ void AFortDagwoodVehicle::OnPoppedTire(int32 TireIndex)
 
 void AFortDagwoodVehicle::OnRep_Exploded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_Exploded");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_Exploded");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -625,10 +526,7 @@ void AFortDagwoodVehicle::OnRep_Exploded()
 
 void AFortDagwoodVehicle::OnRep_IsInoperable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_IsInoperable");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_IsInoperable");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -644,10 +542,7 @@ void AFortDagwoodVehicle::OnRep_IsInoperable()
 
 void AFortDagwoodVehicle::OnRep_PoppedTireReaction()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_PoppedTireReaction");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_PoppedTireReaction");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -663,10 +558,7 @@ void AFortDagwoodVehicle::OnRep_PoppedTireReaction()
 
 void AFortDagwoodVehicle::OnRep_RandSeed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_RandSeed");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_RandSeed");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -682,10 +574,7 @@ void AFortDagwoodVehicle::OnRep_RandSeed()
 
 void AFortDagwoodVehicle::OnRep_ServerFuel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_ServerFuel");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_ServerFuel");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -703,10 +592,7 @@ void AFortDagwoodVehicle::OnRep_ServerFuel()
 
 void AFortDagwoodVehicle::OnRep_Tires(const TArray<ETireStates>& PrevTireStates)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_Tires");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnRep_Tires");
 
 	Params::FortDagwoodVehicle_OnRep_Tires Parms{};
 
@@ -728,10 +614,7 @@ void AFortDagwoodVehicle::OnRep_Tires(const TArray<ETireStates>& PrevTireStates)
 
 void AFortDagwoodVehicle::OnRimScrapeDamage(int32 TireIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnRimScrapeDamage");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnRimScrapeDamage");
 
 	Params::FortDagwoodVehicle_OnRimScrapeDamage Parms{};
 
@@ -748,10 +631,7 @@ void AFortDagwoodVehicle::OnRimScrapeDamage(int32 TireIndex)
 
 void AFortDagwoodVehicle::OnServerAltInteract(class AFortPawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnServerAltInteract");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnServerAltInteract");
 
 	Params::FortDagwoodVehicle_OnServerAltInteract Parms{};
 
@@ -768,10 +648,7 @@ void AFortDagwoodVehicle::OnServerAltInteract(class AFortPawn* Pawn)
 
 void AFortDagwoodVehicle::OnSpawnLeakProjectile(class AFortProjectileBase* SpawnProjectile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnSpawnLeakProjectile");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnSpawnLeakProjectile");
 
 	Params::FortDagwoodVehicle_OnSpawnLeakProjectile Parms{};
 
@@ -786,10 +663,7 @@ void AFortDagwoodVehicle::OnSpawnLeakProjectile(class AFortProjectileBase* Spawn
 
 void AFortDagwoodVehicle::OnStartCriticalHealth()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnStartCriticalHealth");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnStartCriticalHealth");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -800,10 +674,7 @@ void AFortDagwoodVehicle::OnStartCriticalHealth()
 
 void AFortDagwoodVehicle::OnStartHandbrake()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnStartHandbrake");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnStartHandbrake");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -814,10 +685,7 @@ void AFortDagwoodVehicle::OnStartHandbrake()
 
 void AFortDagwoodVehicle::OnStopHandbrake()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnStopHandbrake");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnStopHandbrake");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -830,10 +698,7 @@ void AFortDagwoodVehicle::OnStopHandbrake()
 
 void AFortDagwoodVehicle::OnTickAudioController(float DeltaTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "OnTickAudioController");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "OnTickAudioController");
 
 	Params::FortDagwoodVehicle_OnTickAudioController Parms{};
 
@@ -850,10 +715,7 @@ void AFortDagwoodVehicle::OnTickAudioController(float DeltaTime)
 
 void AFortDagwoodVehicle::SetFuel(float NewFuel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "SetFuel");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "SetFuel");
 
 	Params::FortDagwoodVehicle_SetFuel Parms{};
 
@@ -875,10 +737,7 @@ void AFortDagwoodVehicle::SetFuel(float NewFuel)
 
 void AFortDagwoodVehicle::SetNormalizedAudioRPM(float InRPM)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "SetNormalizedAudioRPM");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "SetNormalizedAudioRPM");
 
 	Params::FortDagwoodVehicle_SetNormalizedAudioRPM Parms{};
 
@@ -900,10 +759,7 @@ void AFortDagwoodVehicle::SetNormalizedAudioRPM(float InRPM)
 
 void AFortDagwoodVehicle::SetOnFire(bool bNewFire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "SetOnFire");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "SetOnFire");
 
 	Params::FortDagwoodVehicle_SetOnFire Parms{};
 
@@ -923,10 +779,7 @@ void AFortDagwoodVehicle::SetOnFire(bool bNewFire)
 
 void AFortDagwoodVehicle::UpdateVehicleFuelLeak()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "UpdateVehicleFuelLeak");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "UpdateVehicleFuelLeak");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -944,10 +797,7 @@ void AFortDagwoodVehicle::UpdateVehicleFuelLeak()
 
 bool AFortDagwoodVehicle::AreAnyTiresPopped() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "AreAnyTiresPopped");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "AreAnyTiresPopped");
 
 	Params::FortDagwoodVehicle_AreAnyTiresPopped Parms{};
 
@@ -969,10 +819,7 @@ bool AFortDagwoodVehicle::AreAnyTiresPopped() const
 
 bool AFortDagwoodVehicle::ForwardOrReverseInputPressed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "ForwardOrReverseInputPressed");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "ForwardOrReverseInputPressed");
 
 	Params::FortDagwoodVehicle_ForwardOrReverseInputPressed Parms{};
 
@@ -994,10 +841,7 @@ bool AFortDagwoodVehicle::ForwardOrReverseInputPressed() const
 
 float AFortDagwoodVehicle::GetBumpiness() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetBumpiness");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetBumpiness");
 
 	Params::FortDagwoodVehicle_GetBumpiness Parms{};
 
@@ -1019,10 +863,7 @@ float AFortDagwoodVehicle::GetBumpiness() const
 
 float AFortDagwoodVehicle::GetFuel() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetFuel");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetFuel");
 
 	Params::FortDagwoodVehicle_GetFuel Parms{};
 
@@ -1044,10 +885,7 @@ float AFortDagwoodVehicle::GetFuel() const
 
 float AFortDagwoodVehicle::GetFuelCapacity() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetFuelCapacity");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetFuelCapacity");
 
 	Params::FortDagwoodVehicle_GetFuelCapacity Parms{};
 
@@ -1069,10 +907,7 @@ float AFortDagwoodVehicle::GetFuelCapacity() const
 
 float AFortDagwoodVehicle::GetHUDTopSpeed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetHUDTopSpeed");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetHUDTopSpeed");
 
 	Params::FortDagwoodVehicle_GetHUDTopSpeed Parms{};
 
@@ -1094,10 +929,7 @@ float AFortDagwoodVehicle::GetHUDTopSpeed() const
 
 float AFortDagwoodVehicle::GetNormalizedAudioRPM() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetNormalizedAudioRPM");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetNormalizedAudioRPM");
 
 	Params::FortDagwoodVehicle_GetNormalizedAudioRPM Parms{};
 
@@ -1119,10 +951,7 @@ float AFortDagwoodVehicle::GetNormalizedAudioRPM() const
 
 bool AFortDagwoodVehicle::GetOnFire() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetOnFire");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetOnFire");
 
 	Params::FortDagwoodVehicle_GetOnFire Parms{};
 
@@ -1144,10 +973,7 @@ bool AFortDagwoodVehicle::GetOnFire() const
 
 class FString AFortDagwoodVehicle::GetPlayerFacingName() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetPlayerFacingName");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetPlayerFacingName");
 
 	Params::FortDagwoodVehicle_GetPlayerFacingName Parms{};
 
@@ -1170,10 +996,7 @@ class FString AFortDagwoodVehicle::GetPlayerFacingName() const
 
 float AFortDagwoodVehicle::GetTireHealthPercent(ETireLocations TireIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetTireHealthPercent");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetTireHealthPercent");
 
 	Params::FortDagwoodVehicle_GetTireHealthPercent Parms{};
 
@@ -1198,10 +1021,7 @@ float AFortDagwoodVehicle::GetTireHealthPercent(ETireLocations TireIndex) const
 
 bool AFortDagwoodVehicle::GetTireState(int32 TireIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetTireState");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetTireState");
 
 	Params::FortDagwoodVehicle_GetTireState Parms{};
 
@@ -1226,10 +1046,7 @@ bool AFortDagwoodVehicle::GetTireState(int32 TireIndex) const
 
 ETireSurfaces AFortDagwoodVehicle::GetTireSurface(ETireLocations TireIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "GetTireSurface");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "GetTireSurface");
 
 	Params::FortDagwoodVehicle_GetTireSurface Parms{};
 
@@ -1253,10 +1070,7 @@ ETireSurfaces AFortDagwoodVehicle::GetTireSurface(ETireLocations TireIndex) cons
 
 bool AFortDagwoodVehicle::IsInoperable() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "IsInoperable");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "IsInoperable");
 
 	Params::FortDagwoodVehicle_IsInoperable Parms{};
 
@@ -1278,10 +1092,7 @@ bool AFortDagwoodVehicle::IsInoperable() const
 
 bool AFortDagwoodVehicle::IsNativeBPTickEnabled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "IsNativeBPTickEnabled");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "IsNativeBPTickEnabled");
 
 	Params::FortDagwoodVehicle_IsNativeBPTickEnabled Parms{};
 
@@ -1303,10 +1114,7 @@ bool AFortDagwoodVehicle::IsNativeBPTickEnabled() const
 
 bool AFortDagwoodVehicle::IsOffroad() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "IsOffroad");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "IsOffroad");
 
 	Params::FortDagwoodVehicle_IsOffroad Parms{};
 
@@ -1328,10 +1136,7 @@ bool AFortDagwoodVehicle::IsOffroad() const
 
 bool AFortDagwoodVehicle::IsOnDirt() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "IsOnDirt");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "IsOnDirt");
 
 	Params::FortDagwoodVehicle_IsOnDirt Parms{};
 
@@ -1353,10 +1158,7 @@ bool AFortDagwoodVehicle::IsOnDirt() const
 
 bool AFortDagwoodVehicle::IsOnLandscape() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "IsOnLandscape");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "IsOnLandscape");
 
 	Params::FortDagwoodVehicle_IsOnLandscape Parms{};
 
@@ -1378,10 +1180,7 @@ bool AFortDagwoodVehicle::IsOnLandscape() const
 
 bool AFortDagwoodVehicle::IsOnRoad() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "IsOnRoad");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "IsOnRoad");
 
 	Params::FortDagwoodVehicle_IsOnRoad Parms{};
 
@@ -1407,10 +1206,7 @@ bool AFortDagwoodVehicle::IsOnRoad() const
 
 bool AFortDagwoodVehicle::IsTireSkidding(const float MinSpeedForSkid, const float AngleForSkid, const float SpeedForPeelout, const float SpeedForBraking) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "IsTireSkidding");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "IsTireSkidding");
 
 	Params::FortDagwoodVehicle_IsTireSkidding Parms{};
 
@@ -1438,10 +1234,7 @@ bool AFortDagwoodVehicle::IsTireSkidding(const float MinSpeedForSkid, const floa
 
 bool AFortDagwoodVehicle::IsVehicleAcceleratingWithSpeedThreshold(float SpeedThreshold) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "IsVehicleAcceleratingWithSpeedThreshold");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "IsVehicleAcceleratingWithSpeedThreshold");
 
 	Params::FortDagwoodVehicle_IsVehicleAcceleratingWithSpeedThreshold Parms{};
 
@@ -1466,10 +1259,7 @@ bool AFortDagwoodVehicle::IsVehicleAcceleratingWithSpeedThreshold(float SpeedThr
 
 float AFortDagwoodVehicle::NativeCalculateAccelRumbleIntensity(float MaxIntensity) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortDagwoodVehicle", "NativeCalculateAccelRumbleIntensity");
+	class UFunction* Func = Class->GetFunction("FortDagwoodVehicle", "NativeCalculateAccelRumbleIntensity");
 
 	Params::FortDagwoodVehicle_NativeCalculateAccelRumbleIntensity Parms{};
 
@@ -1493,10 +1283,7 @@ float AFortDagwoodVehicle::NativeCalculateAccelRumbleIntensity(float MaxIntensit
 
 void AFortValetAudioController::CacheValetVehicle(class AFortDagwoodVehicle* InVehicle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortValetAudioController", "CacheValetVehicle");
+	class UFunction* Func = Class->GetFunction("FortValetAudioController", "CacheValetVehicle");
 
 	Params::FortValetAudioController_CacheValetVehicle Parms{};
 
@@ -1519,10 +1306,7 @@ void AFortValetAudioController::CacheValetVehicle(class AFortDagwoodVehicle* InV
 
 void AFortValetAudioController::OnSuspensionCollision_Native(bool* OutResult, float* OutMagnitude)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortValetAudioController", "OnSuspensionCollision_Native");
+	class UFunction* Func = Class->GetFunction("FortValetAudioController", "OnSuspensionCollision_Native");
 
 	Params::FortValetAudioController_OnSuspensionCollision_Native Parms{};
 
@@ -1546,10 +1330,7 @@ void AFortValetAudioController::OnSuspensionCollision_Native(bool* OutResult, fl
 
 void AFortValetAudioController::Update_Native()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortValetAudioController", "Update_Native");
+	class UFunction* Func = Class->GetFunction("FortValetAudioController", "Update_Native");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

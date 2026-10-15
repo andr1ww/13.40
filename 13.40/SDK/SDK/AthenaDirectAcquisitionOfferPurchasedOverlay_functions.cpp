@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::ExecuteUbergraph_AthenaDirectAcquisitionOfferPurchasedOverlay(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "ExecuteUbergraph_AthenaDirectAcquisitionOfferPurchasedOverlay");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "ExecuteUbergraph_AthenaDirectAcquisitionOfferPurchasedOverlay");
 
 	Params::AthenaDirectAcquisitionOfferPurchasedOverlay_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferPurchasedOverlay Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::ExecuteUbergraph_AthenaDir
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Destruct()
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::OnOfferSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "OnOfferSet");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "OnOfferSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::OnOfferSet()
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::InitBundleLayout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "InitBundleLayout");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "InitBundleLayout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::InitBundleLayout()
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::WidgetAnimationEvt_Refunded_K2Node_WidgetAnimationEvent_3()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "WidgetAnimationEvt_Refunded_K2Node_WidgetAnimationEvent_3");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "WidgetAnimationEvt_Refunded_K2Node_WidgetAnimationEvent_3");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::WidgetAnimationEvt_Refunde
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Show_Bundle_Mini_Item_Card()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Show Bundle Mini Item Card");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Show Bundle Mini Item Card");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Show_Bundle_Mini_Item_Card
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Populate_Bundle_Mini_Cards()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Populate Bundle Mini-Cards");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Populate Bundle Mini-Cards");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Populate_Bundle_Mini_Cards
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::WidgetAnimationEvt_Purchased___Bundle_Item____FAST_K2Node_WidgetAnimationEvent_1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "WidgetAnimationEvt_Purchased! (Bundle Item) - FAST_K2Node_WidgetAnimationEvent_1");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "WidgetAnimationEvt_Purchased! (Bundle Item) - FAST_K2Node_WidgetAnimationEvent_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +115,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::WidgetAnimationEvt_Purchas
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::WidgetAnimationEvt_Purchased___Bundle_Item__K2Node_WidgetAnimationEvent_2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "WidgetAnimationEvt_Purchased! (Bundle Item)_K2Node_WidgetAnimationEvent_2");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "WidgetAnimationEvt_Purchased! (Bundle Item)_K2Node_WidgetAnimationEvent_2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +126,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::WidgetAnimationEvt_Purchas
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::BundleBlurOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "BundleBlurOut");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "BundleBlurOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +137,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::BundleBlurOut()
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Show_Next_Item()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Show Next Item");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Show Next Item");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +148,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Show_Next_Item()
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::WidgetAnimationEvt_Purchased__K2Node_WidgetAnimationEvent_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "WidgetAnimationEvt_Purchased!_K2Node_WidgetAnimationEvent_0");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "WidgetAnimationEvt_Purchased!_K2Node_WidgetAnimationEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -197,10 +161,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::WidgetAnimationEvt_Purchas
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::UpdateFromOffer(class UFortAccountItemDefinition* Item_Definition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "UpdateFromOffer");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "UpdateFromOffer");
 
 	Params::AthenaDirectAcquisitionOfferPurchasedOverlay_C_UpdateFromOffer Parms{};
 
@@ -217,10 +178,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::UpdateFromOffer(class UFor
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "HandleBack");
 
 	Params::AthenaDirectAcquisitionOfferPurchasedOverlay_C_HandleBack Parms{};
 
@@ -240,10 +198,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::HandleBack(bool* PassThrou
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Get_Bundle_Info_from_Item_Def(class UFortAccountItemDefinition* Item_Definition, struct FBundledItemInfo* Bundled_Item_Info, bool* bFoundItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Get Bundle Info from Item Def");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Get Bundle Info from Item Def");
 
 	Params::AthenaDirectAcquisitionOfferPurchasedOverlay_C_Get_Bundle_Info_from_Item_Def Parms{};
 
@@ -266,10 +221,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Get_Bundle_Info_from_Item_
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Bundle_Item_Anim_Speed(float* Speed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Bundle Item Anim Speed");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Bundle Item Anim Speed");
 
 	Params::AthenaDirectAcquisitionOfferPurchasedOverlay_C_Bundle_Item_Anim_Speed Parms{};
 
@@ -288,10 +240,7 @@ void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Bundle_Item_Anim_Speed(flo
 
 void UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Mini_Bundle_Item_Location(int32 Bundle_Item_Index_0, class UHorizontalBox** HBox_Row)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Mini Bundle Item Location");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferPurchasedOverlay_C", "Mini Bundle Item Location");
 
 	Params::AthenaDirectAcquisitionOfferPurchasedOverlay_C_Mini_Bundle_Item_Location Parms{};
 

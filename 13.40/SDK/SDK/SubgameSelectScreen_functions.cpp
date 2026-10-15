@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USubgameSelectScreen_C::ExecuteUbergraph_SubgameSelectScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameSelectScreen_C", "ExecuteUbergraph_SubgameSelectScreen");
+	class UFunction* Func = Class->GetFunction("SubgameSelectScreen_C", "ExecuteUbergraph_SubgameSelectScreen");
 
 	Params::SubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen Parms{};
 
@@ -41,10 +38,7 @@ void USubgameSelectScreen_C::ExecuteUbergraph_SubgameSelectScreen(int32 EntryPoi
 
 void USubgameSelectScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameSelectScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("SubgameSelectScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void USubgameSelectScreen_C::BP_OnActivated()
 
 void USubgameSelectScreen_C::BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature");
 
 	Params::SubgameSelectScreen_C_BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -78,10 +69,7 @@ void USubgameSelectScreen_C::BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_C
 
 void USubgameSelectScreen_C::DialogResult_FE9F49084346A08B6F02BA99FB50F5CD(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameSelectScreen_C", "DialogResult_FE9F49084346A08B6F02BA99FB50F5CD");
+	class UFunction* Func = Class->GetFunction("SubgameSelectScreen_C", "DialogResult_FE9F49084346A08B6F02BA99FB50F5CD");
 
 	Params::SubgameSelectScreen_C_DialogResult_FE9F49084346A08B6F02BA99FB50F5CD Parms{};
 
@@ -97,10 +85,7 @@ void USubgameSelectScreen_C::DialogResult_FE9F49084346A08B6F02BA99FB50F5CD(EFort
 
 void USubgameSelectScreen_C::InitializeTextureCycle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameSelectScreen_C", "InitializeTextureCycle");
+	class UFunction* Func = Class->GetFunction("SubgameSelectScreen_C", "InitializeTextureCycle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void USubgameSelectScreen_C::InitializeTextureCycle()
 
 void USubgameSelectScreen_C::AdvanceTextureCycle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameSelectScreen_C", "AdvanceTextureCycle");
+	class UFunction* Func = Class->GetFunction("SubgameSelectScreen_C", "AdvanceTextureCycle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void USubgameSelectScreen_C::AdvanceTextureCycle()
 
 bool USubgameSelectScreen_C::IsBusyMatchmaking()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameSelectScreen_C", "IsBusyMatchmaking");
+	class UFunction* Func = Class->GetFunction("SubgameSelectScreen_C", "IsBusyMatchmaking");
 
 	Params::SubgameSelectScreen_C_IsBusyMatchmaking Parms{};
 
@@ -147,10 +126,7 @@ bool USubgameSelectScreen_C::IsBusyMatchmaking()
 
 void USubgameSelectScreen_C::IsMinorShutdownWarningEnabled(bool* Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubgameSelectScreen_C", "IsMinorShutdownWarningEnabled");
+	class UFunction* Func = Class->GetFunction("SubgameSelectScreen_C", "IsMinorShutdownWarningEnabled");
 
 	Params::SubgameSelectScreen_C_IsMinorShutdownWarningEnabled Parms{};
 

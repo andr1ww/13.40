@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AParent_Tree_C::RemoveTestWind(float BlendTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Parent_Tree_C", "RemoveTestWind");
+	class UFunction* Func = Class->GetFunction("Parent_Tree_C", "RemoveTestWind");
 
 	Params::Parent_Tree_C_RemoveTestWind Parms{};
 
@@ -41,10 +38,7 @@ void AParent_Tree_C::RemoveTestWind(float BlendTime)
 
 void AParent_Tree_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Parent_Tree_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("Parent_Tree_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void AParent_Tree_C::UserConstructionScript()
 
 void AParent_Tree_C::ChangeWindIntensity(float Intensity, float Time_It_Takes_To_Reach_New_Intensity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Parent_Tree_C", "ChangeWindIntensity");
+	class UFunction* Func = Class->GetFunction("Parent_Tree_C", "ChangeWindIntensity");
 
 	Params::Parent_Tree_C_ChangeWindIntensity Parms{};
 
@@ -77,10 +68,7 @@ void AParent_Tree_C::ChangeWindIntensity(float Intensity, float Time_It_Takes_To
 
 void AParent_Tree_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Parent_Tree_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("Parent_Tree_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void AParent_Tree_C::ReceiveDestroyed()
 
 void AParent_Tree_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Parent_Tree_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Parent_Tree_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,10 +92,7 @@ void AParent_Tree_C::ReceiveBeginPlay()
 
 void AParent_Tree_C::ExecuteUbergraph_Parent_Tree(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Parent_Tree_C", "ExecuteUbergraph_Parent_Tree");
+	class UFunction* Func = Class->GetFunction("Parent_Tree_C", "ExecuteUbergraph_Parent_Tree");
 
 	Params::Parent_Tree_C_ExecuteUbergraph_Parent_Tree Parms{};
 

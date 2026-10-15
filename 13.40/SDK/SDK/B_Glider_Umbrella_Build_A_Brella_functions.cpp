@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Glider_Umbrella_Build_A_Brella_C::ExecuteUbergraph_B_Glider_Umbrella_Build_A_Brella(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "ExecuteUbergraph_B_Glider_Umbrella_Build_A_Brella");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "ExecuteUbergraph_B_Glider_Umbrella_Build_A_Brella");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_ExecuteUbergraph_B_Glider_Umbrella_Build_A_Brella Parms{};
 
@@ -41,10 +38,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::ExecuteUbergraph_B_Glider_Umbrella_Bui
 
 void AB_Glider_Umbrella_Build_A_Brella_C::Alpha_Timeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "Alpha_Timeline__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "Alpha_Timeline__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::Alpha_Timeline__UpdateFunc()
 
 void AB_Glider_Umbrella_Build_A_Brella_C::Alpha_Timeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "Alpha_Timeline__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "Alpha_Timeline__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::Alpha_Timeline__FinishedFunc()
 
 void AB_Glider_Umbrella_Build_A_Brella_C::OnGliderFullyDeployed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "OnGliderFullyDeployed");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "OnGliderFullyDeployed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -86,10 +74,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::OnGliderFullyDeployed()
 
 void AB_Glider_Umbrella_Build_A_Brella_C::Audio_Update(float ForwardDot, float RightDot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "Audio Update");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "Audio Update");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_Audio_Update Parms{};
 
@@ -109,10 +94,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::Audio_Update(float ForwardDot, float R
 
 void AB_Glider_Umbrella_Build_A_Brella_C::OnDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "OnDayPhaseChanged");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "OnDayPhaseChanged");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_OnDayPhaseChanged Parms{};
 
@@ -134,10 +116,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::OnDayPhaseChanged(EFortDayPhase Curren
 
 void AB_Glider_Umbrella_Build_A_Brella_C::OnParachuteTrailUpdated(float MovementLengthSquared, float ForwardDot, float RightDot, float RotationalMovementAcceleration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "OnParachuteTrailUpdated");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "OnParachuteTrailUpdated");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_OnParachuteTrailUpdated Parms{};
 
@@ -157,10 +136,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::OnParachuteTrailUpdated(float Movement
 
 void AB_Glider_Umbrella_Build_A_Brella_C::K2_SetChuteMeshVisibility(bool bParachuteVisibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "K2_SetChuteMeshVisibility");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "K2_SetChuteMeshVisibility");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_K2_SetChuteMeshVisibility Parms{};
 
@@ -175,10 +151,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::K2_SetChuteMeshVisibility(bool bParach
 
 void AB_Glider_Umbrella_Build_A_Brella_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +164,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::UserConstructionScript()
 
 void AB_Glider_Umbrella_Build_A_Brella_C::get_Niagara_Particles__Gameplay_Tag_Array_(struct FGameplayTagContainer* Gameplay_Tag_Container)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "get Niagara Particles (Gameplay Tag Array)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "get Niagara Particles (Gameplay Tag Array)");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_get_Niagara_Particles__Gameplay_Tag_Array_ Parms{};
 
@@ -213,10 +183,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::get_Niagara_Particles__Gameplay_Tag_Ar
 
 void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Float_(class FName Name_0, float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Float)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Float)");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_set_Niagara_System_User_Variable__Float_ Parms{};
 
@@ -235,10 +202,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Floa
 
 void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Vector_(class FName Name_0, const struct FVector& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Vector)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Vector)");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_set_Niagara_System_User_Variable__Vector_ Parms{};
 
@@ -257,10 +221,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Vect
 
 void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Int_(class FName Name_0, int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Int)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Int)");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_set_Niagara_System_User_Variable__Int_ Parms{};
 
@@ -279,10 +240,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Int_
 
 void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Bool_(class FName Name_0, bool Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Bool)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Bool)");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_set_Niagara_System_User_Variable__Bool_ Parms{};
 
@@ -301,10 +259,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Bool
 
 void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Color_(class FName Name_0, const struct FLinearColor& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Color)");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "set Niagara System User Variable (Color)");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_set_Niagara_System_User_Variable__Color_ Parms{};
 
@@ -322,10 +277,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::set_Niagara_System_User_Variable__Colo
 
 void AB_Glider_Umbrella_Build_A_Brella_C::activate_Niagara_System(bool Reset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "activate Niagara System");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "activate Niagara System");
 
 	Params::B_Glider_Umbrella_Build_A_Brella_C_activate_Niagara_System Parms{};
 
@@ -340,10 +292,7 @@ void AB_Glider_Umbrella_Build_A_Brella_C::activate_Niagara_System(bool Reset)
 
 void AB_Glider_Umbrella_Build_A_Brella_C::deactivate_Niagara_System()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "deactivate Niagara System");
+	class UFunction* Func = Class->GetFunction("B_Glider_Umbrella_Build_A_Brella_C", "deactivate Niagara System");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

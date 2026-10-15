@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Gerstner_Wave_Controller_C::ExecuteUbergraph_BP_Gerstner_Wave_Controller(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "ExecuteUbergraph_BP_Gerstner_Wave_Controller");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "ExecuteUbergraph_BP_Gerstner_Wave_Controller");
 
 	Params::BP_Gerstner_Wave_Controller_C_ExecuteUbergraph_BP_Gerstner_Wave_Controller Parms{};
 
@@ -41,10 +38,7 @@ void ABP_Gerstner_Wave_Controller_C::ExecuteUbergraph_BP_Gerstner_Wave_Controlle
 
 void ABP_Gerstner_Wave_Controller_C::Spawn_Grid()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Spawn Grid");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Spawn Grid");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_Gerstner_Wave_Controller_C::Spawn_Grid()
 
 void ABP_Gerstner_Wave_Controller_C::Harvest_Material_Params()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Harvest Material Params");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Harvest Material Params");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void ABP_Gerstner_Wave_Controller_C::Harvest_Material_Params()
 
 void ABP_Gerstner_Wave_Controller_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "ReceiveTick");
 
 	Params::BP_Gerstner_Wave_Controller_C_ReceiveTick Parms{};
 
@@ -89,10 +77,7 @@ void ABP_Gerstner_Wave_Controller_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_Gerstner_Wave_Controller_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void ABP_Gerstner_Wave_Controller_C::ReceiveBeginPlay()
 
 void ABP_Gerstner_Wave_Controller_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void ABP_Gerstner_Wave_Controller_C::UserConstructionScript()
 
 void ABP_Gerstner_Wave_Controller_C::Set_All_Wave_MPC_Params()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Set All Wave MPC Params");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Set All Wave MPC Params");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void ABP_Gerstner_Wave_Controller_C::Set_All_Wave_MPC_Params()
 
 void ABP_Gerstner_Wave_Controller_C::Manual_Parameter_Overrides()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Manual Parameter Overrides");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Manual Parameter Overrides");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void ABP_Gerstner_Wave_Controller_C::Manual_Parameter_Overrides()
 
 void ABP_Gerstner_Wave_Controller_C::General_MPC_Params()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "General MPC Params");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "General MPC Params");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -162,10 +135,7 @@ void ABP_Gerstner_Wave_Controller_C::General_MPC_Params()
 
 void ABP_Gerstner_Wave_Controller_C::Set_Single_Wave_MPC_Parameters(const struct FWaveParams& WaveParams, int32 idx)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Set Single Wave MPC Parameters");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Set Single Wave MPC Parameters");
 
 	Params::BP_Gerstner_Wave_Controller_C_Set_Single_Wave_MPC_Parameters Parms{};
 
@@ -183,10 +153,7 @@ void ABP_Gerstner_Wave_Controller_C::Set_Single_Wave_MPC_Parameters(const struct
 
 void ABP_Gerstner_Wave_Controller_C::Set_Distance_Field(class UTexture* rt)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Set Distance Field");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Set Distance Field");
 
 	Params::BP_Gerstner_Wave_Controller_C_Set_Distance_Field Parms{};
 
@@ -204,10 +171,7 @@ void ABP_Gerstner_Wave_Controller_C::Set_Distance_Field(class UTexture* rt)
 
 void ABP_Gerstner_Wave_Controller_C::GetWaterWaves(TArray<struct FWaterWaveParams>* WaterWaveParams, float* BigWaveDepth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "GetWaterWaves");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "GetWaterWaves");
 
 	Params::BP_Gerstner_Wave_Controller_C_GetWaterWaves Parms{};
 
@@ -226,10 +190,7 @@ void ABP_Gerstner_Wave_Controller_C::GetWaterWaves(TArray<struct FWaterWaveParam
 
 void ABP_Gerstner_Wave_Controller_C::RenderWaveTextureData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "RenderWaveTextureData");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "RenderWaveTextureData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -240,10 +201,7 @@ void ABP_Gerstner_Wave_Controller_C::RenderWaveTextureData()
 
 void ABP_Gerstner_Wave_Controller_C::Set_Waves_On_WaterBodies()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Set Waves On WaterBodies");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Set Waves On WaterBodies");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +215,7 @@ void ABP_Gerstner_Wave_Controller_C::Set_Waves_On_WaterBodies()
 
 void ABP_Gerstner_Wave_Controller_C::Generate_Spectrum(const struct FWaveSpectrumSettings& Spectrum, TArray<struct FWaterWaveParams>* Waves_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Generate Spectrum");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Generate Spectrum");
 
 	Params::BP_Gerstner_Wave_Controller_C_Generate_Spectrum Parms{};
 
@@ -278,10 +233,7 @@ void ABP_Gerstner_Wave_Controller_C::Generate_Spectrum(const struct FWaveSpectru
 
 void ABP_Gerstner_Wave_Controller_C::Render_Standalone_Waves()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Render Standalone Waves");
+	class UFunction* Func = Class->GetFunction("BP_Gerstner_Wave_Controller_C", "Render Standalone Waves");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

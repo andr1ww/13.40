@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UHalfShieldPotion_Prop_AnimBP_C::ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HalfShieldPotion_Prop_AnimBP_C", "ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP");
+	class UFunction* Func = Class->GetFunction("HalfShieldPotion_Prop_AnimBP_C", "ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP");
 
 	Params::HalfShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UHalfShieldPotion_Prop_AnimBP_C::ExecuteUbergraph_HalfShieldPotion_Prop_Ani
 
 void UHalfShieldPotion_Prop_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HalfShieldPotion_Prop_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("HalfShieldPotion_Prop_AnimBP_C", "AnimGraph");
 
 	Params::HalfShieldPotion_Prop_AnimBP_C_AnimGraph Parms{};
 

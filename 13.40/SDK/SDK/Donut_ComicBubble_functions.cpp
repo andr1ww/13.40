@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UDonut_ComicBubble_C::ExecuteUbergraph_Donut_ComicBubble(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Donut_ComicBubble_C", "ExecuteUbergraph_Donut_ComicBubble");
+	class UFunction* Func = Class->GetFunction("Donut_ComicBubble_C", "ExecuteUbergraph_Donut_ComicBubble");
 
 	Params::Donut_ComicBubble_C_ExecuteUbergraph_Donut_ComicBubble Parms{};
 
@@ -43,10 +40,7 @@ void UDonut_ComicBubble_C::ExecuteUbergraph_Donut_ComicBubble(int32 EntryPoint)
 
 void UDonut_ComicBubble_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Donut_ComicBubble_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("Donut_ComicBubble_C", "PreConstruct");
 
 	Params::Donut_ComicBubble_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UDonut_ComicBubble_C::PreConstruct(bool IsDesignTime)
 
 void UDonut_ComicBubble_C::StartDialogueSequence()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Donut_ComicBubble_C", "StartDialogueSequence");
+	class UFunction* Func = Class->GetFunction("Donut_ComicBubble_C", "StartDialogueSequence");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UDonut_ComicBubble_C::StartDialogueSequence()
 
 void UDonut_ComicBubble_C::OnDialogueFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Donut_ComicBubble_C", "OnDialogueFinished");
+	class UFunction* Func = Class->GetFunction("Donut_ComicBubble_C", "OnDialogueFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UDonut_ComicBubble_C::OnDialogueFinished()
 
 void UDonut_ComicBubble_C::DialogueTimeOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Donut_ComicBubble_C", "DialogueTimeOut");
+	class UFunction* Func = Class->GetFunction("Donut_ComicBubble_C", "DialogueTimeOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UDonut_ComicBubble_C::DialogueTimeOut()
 
 void UDonut_ComicBubble_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Donut_ComicBubble_C", "Construct");
+	class UFunction* Func = Class->GetFunction("Donut_ComicBubble_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UDonut_ComicBubble_C::Construct()
 
 void UDonut_ComicBubble_C::IntroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Donut_ComicBubble_C", "IntroFinished");
+	class UFunction* Func = Class->GetFunction("Donut_ComicBubble_C", "IntroFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -134,10 +113,7 @@ void UDonut_ComicBubble_C::IntroFinished()
 
 void UDonut_ComicBubble_C::SetNewDialogue(const class FText& NewText, float DisplayTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Donut_ComicBubble_C", "SetNewDialogue");
+	class UFunction* Func = Class->GetFunction("Donut_ComicBubble_C", "SetNewDialogue");
 
 	Params::Donut_ComicBubble_C_SetNewDialogue Parms{};
 
@@ -153,10 +129,7 @@ void UDonut_ComicBubble_C::SetNewDialogue(const class FText& NewText, float Disp
 
 void UDonut_ComicBubble_C::StartExistingDialogue()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Donut_ComicBubble_C", "StartExistingDialogue");
+	class UFunction* Func = Class->GetFunction("Donut_ComicBubble_C", "StartExistingDialogue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

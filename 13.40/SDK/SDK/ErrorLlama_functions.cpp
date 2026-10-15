@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UErrorLlama_C::HandleInputTypeChanged(ECommonInputType NewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ErrorLlama_C", "HandleInputTypeChanged");
+	class UFunction* Func = Class->GetFunction("ErrorLlama_C", "HandleInputTypeChanged");
 
 	Params::ErrorLlama_C_HandleInputTypeChanged Parms{};
 
@@ -41,10 +38,7 @@ void UErrorLlama_C::HandleInputTypeChanged(ECommonInputType NewInputType)
 
 void UErrorLlama_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ErrorLlama_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ErrorLlama_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UErrorLlama_C::Construct()
 
 void UErrorLlama_C::Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ErrorLlama_C", "Tick");
+	class UFunction* Func = Class->GetFunction("ErrorLlama_C", "Tick");
 
 	Params::ErrorLlama_C_Tick Parms{};
 
@@ -77,10 +68,7 @@ void UErrorLlama_C::Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaT
 
 void UErrorLlama_C::RandomizeColor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ErrorLlama_C", "RandomizeColor");
+	class UFunction* Func = Class->GetFunction("ErrorLlama_C", "RandomizeColor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,10 +81,7 @@ void UErrorLlama_C::RandomizeColor()
 
 void UErrorLlama_C::HandleNormalizedInputDirection(const struct FVector2D& TwoDInputVec)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ErrorLlama_C", "HandleNormalizedInputDirection");
+	class UFunction* Func = Class->GetFunction("ErrorLlama_C", "HandleNormalizedInputDirection");
 
 	Params::ErrorLlama_C_HandleNormalizedInputDirection Parms{};
 
@@ -113,10 +98,7 @@ void UErrorLlama_C::HandleNormalizedInputDirection(const struct FVector2D& TwoDI
 
 void UErrorLlama_C::ExecuteUbergraph_ErrorLlama(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ErrorLlama_C", "ExecuteUbergraph_ErrorLlama");
+	class UFunction* Func = Class->GetFunction("ErrorLlama_C", "ExecuteUbergraph_ErrorLlama");
 
 	Params::ErrorLlama_C_ExecuteUbergraph_ErrorLlama Parms{};
 

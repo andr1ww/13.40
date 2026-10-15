@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBattlePassPurchaseButton_Preview_C::ExecuteUbergraph_BattlePassPurchaseButton_Preview(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "ExecuteUbergraph_BattlePassPurchaseButton_Preview");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "ExecuteUbergraph_BattlePassPurchaseButton_Preview");
 
 	Params::BattlePassPurchaseButton_Preview_C_ExecuteUbergraph_BattlePassPurchaseButton_Preview Parms{};
 
@@ -43,10 +40,7 @@ void UBattlePassPurchaseButton_Preview_C::ExecuteUbergraph_BattlePassPurchaseBut
 
 void UBattlePassPurchaseButton_Preview_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "PreConstruct");
 
 	Params::BattlePassPurchaseButton_Preview_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UBattlePassPurchaseButton_Preview_C::PreConstruct(bool IsDesignTime)
 
 void UBattlePassPurchaseButton_Preview_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UBattlePassPurchaseButton_Preview_C::BP_OnUnhovered()
 
 void UBattlePassPurchaseButton_Preview_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UBattlePassPurchaseButton_Preview_C::BP_OnHovered()
 
 void UBattlePassPurchaseButton_Preview_C::OnSetData(EBattlePassPurchaseButtonLayout LayoutType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "OnSetData");
+	class UFunction* Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "OnSetData");
 
 	Params::BattlePassPurchaseButton_Preview_C_OnSetData Parms{};
 

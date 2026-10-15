@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UVBucksStoreScreen_C::ExecuteUbergraph_VBucksStoreScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "ExecuteUbergraph_VBucksStoreScreen");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "ExecuteUbergraph_VBucksStoreScreen");
 
 	Params::VBucksStoreScreen_C_ExecuteUbergraph_VBucksStoreScreen Parms{};
 
@@ -43,10 +40,7 @@ void UVBucksStoreScreen_C::ExecuteUbergraph_VBucksStoreScreen(int32 EntryPoint)
 
 void UVBucksStoreScreen_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "PreConstruct");
 
 	Params::VBucksStoreScreen_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UVBucksStoreScreen_C::PreConstruct(bool IsDesignTime)
 
 void UVBucksStoreScreen_C::OnStartReadingOffers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "OnStartReadingOffers");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "OnStartReadingOffers");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UVBucksStoreScreen_C::OnStartReadingOffers()
 
 void UVBucksStoreScreen_C::OnTransitionedBySwitcher()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "OnTransitionedBySwitcher");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "OnTransitionedBySwitcher");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UVBucksStoreScreen_C::OnTransitionedBySwitcher()
 
 void UVBucksStoreScreen_C::OnPurchasingDisabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "OnPurchasingDisabled");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "OnPurchasingDisabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -106,10 +91,7 @@ void UVBucksStoreScreen_C::OnPurchasingDisabled()
 
 void UVBucksStoreScreen_C::OnUpdateOtherPlatformMTXMessage(bool HasOtherPlatformCurrency, const class FText& CurrencyMessageLocText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "OnUpdateOtherPlatformMTXMessage");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "OnUpdateOtherPlatformMTXMessage");
 
 	Params::VBucksStoreScreen_C_OnUpdateOtherPlatformMTXMessage Parms{};
 
@@ -125,10 +107,7 @@ void UVBucksStoreScreen_C::OnUpdateOtherPlatformMTXMessage(bool HasOtherPlatform
 
 void UVBucksStoreScreen_C::OnRemovedFromActivationStack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "OnRemovedFromActivationStack");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "OnRemovedFromActivationStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +118,7 @@ void UVBucksStoreScreen_C::OnRemovedFromActivationStack()
 
 void UVBucksStoreScreen_C::OnAddedToActivationStack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "OnAddedToActivationStack");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "OnAddedToActivationStack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void UVBucksStoreScreen_C::OnAddedToActivationStack()
 
 void UVBucksStoreScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +140,7 @@ void UVBucksStoreScreen_C::BP_OnActivated()
 
 void UVBucksStoreScreen_C::OnOffersGenerated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "OnOffersGenerated");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "OnOffersGenerated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +151,7 @@ void UVBucksStoreScreen_C::OnOffersGenerated()
 
 void UVBucksStoreScreen_C::NoOffersAvailable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "NoOffersAvailable");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "NoOffersAvailable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +162,7 @@ void UVBucksStoreScreen_C::NoOffersAvailable()
 
 void UVBucksStoreScreen_C::UpdateCurrencyNotification()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "UpdateCurrencyNotification");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "UpdateCurrencyNotification");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -211,10 +175,7 @@ void UVBucksStoreScreen_C::UpdateCurrencyNotification()
 
 void UVBucksStoreScreen_C::HandleRedeem(bool* bPassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "HandleRedeem");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "HandleRedeem");
 
 	Params::VBucksStoreScreen_C_HandleRedeem Parms{};
 
@@ -232,10 +193,7 @@ void UVBucksStoreScreen_C::HandleRedeem(bool* bPassThrough)
 
 void UVBucksStoreScreen_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "HandleBack");
 
 	Params::VBucksStoreScreen_C_HandleBack Parms{};
 
@@ -251,10 +209,7 @@ void UVBucksStoreScreen_C::HandleBack(bool* PassThrough)
 
 void UVBucksStoreScreen_C::PlayEquippedLockerMusic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "PlayEquippedLockerMusic");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "PlayEquippedLockerMusic");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +220,7 @@ void UVBucksStoreScreen_C::PlayEquippedLockerMusic()
 
 void UVBucksStoreScreen_C::HandleAllOffersGenerated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "HandleAllOffersGenerated");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "HandleAllOffersGenerated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -282,10 +234,7 @@ void UVBucksStoreScreen_C::HandleAllOffersGenerated()
 
 void UVBucksStoreScreen_C::GetVisibilityByChildrenPresence(class UPanelWidget* Panel, ESlateVisibility* NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "GetVisibilityByChildrenPresence");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "GetVisibilityByChildrenPresence");
 
 	Params::VBucksStoreScreen_C_GetVisibilityByChildrenPresence Parms{};
 
@@ -303,10 +252,7 @@ void UVBucksStoreScreen_C::GetVisibilityByChildrenPresence(class UPanelWidget* P
 
 void UVBucksStoreScreen_C::ApplyMobileLayout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "ApplyMobileLayout");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "ApplyMobileLayout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -319,10 +265,7 @@ void UVBucksStoreScreen_C::ApplyMobileLayout()
 
 class UWidget* UVBucksStoreScreen_C::BP_GetDesiredFocusTarget() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VBucksStoreScreen_C", "BP_GetDesiredFocusTarget");
+	class UFunction* Func = Class->GetFunction("VBucksStoreScreen_C", "BP_GetDesiredFocusTarget");
 
 	Params::VBucksStoreScreen_C_BP_GetDesiredFocusTarget Parms{};
 

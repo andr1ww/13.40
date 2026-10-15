@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULiveLinkDebuggerBlueprintLibrary::DisplayLiveLinkDebugger(const class FString& SubjectName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkDebuggerBlueprintLibrary", "DisplayLiveLinkDebugger");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkDebuggerBlueprintLibrary", "DisplayLiveLinkDebugger");
 
 	Params::LiveLinkDebuggerBlueprintLibrary_DisplayLiveLinkDebugger Parms{};
 
@@ -46,10 +43,7 @@ void ULiveLinkDebuggerBlueprintLibrary::DisplayLiveLinkDebugger(const class FStr
 
 void ULiveLinkDebuggerBlueprintLibrary::HideLiveLinkDebugger()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LiveLinkDebuggerBlueprintLibrary", "HideLiveLinkDebugger");
+	class UFunction* Func = StaticClass()->GetFunction("LiveLinkDebuggerBlueprintLibrary", "HideLiveLinkDebugger");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -68,10 +62,7 @@ void ULiveLinkDebuggerBlueprintLibrary::HideLiveLinkDebugger()
 
 struct FSlateColor ULiveLinkDebuggerSettings::GetBarColorForCurveValue(float CurveValue) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkDebuggerSettings", "GetBarColorForCurveValue");
+	class UFunction* Func = Class->GetFunction("LiveLinkDebuggerSettings", "GetBarColorForCurveValue");
 
 	Params::LiveLinkDebuggerSettings_GetBarColorForCurveValue Parms{};
 
@@ -96,10 +87,7 @@ struct FSlateColor ULiveLinkDebuggerSettings::GetBarColorForCurveValue(float Cur
 
 float ULiveLinkDebuggerSettings::GetDPIScaleBasedOnSize(const struct FIntPoint& Size) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveLinkDebuggerSettings", "GetDPIScaleBasedOnSize");
+	class UFunction* Func = Class->GetFunction("LiveLinkDebuggerSettings", "GetDPIScaleBasedOnSize");
 
 	Params::LiveLinkDebuggerSettings_GetDPIScaleBasedOnSize Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APrj_Athena_GliderGrappler_Parent_C::ExecuteUbergraph_Prj_Athena_GliderGrappler_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "ExecuteUbergraph_Prj_Athena_GliderGrappler_Parent");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "ExecuteUbergraph_Prj_Athena_GliderGrappler_Parent");
 
 	Params::Prj_Athena_GliderGrappler_Parent_C_ExecuteUbergraph_Prj_Athena_GliderGrappler_Parent Parms{};
 
@@ -43,10 +40,7 @@ void APrj_Athena_GliderGrappler_Parent_C::ExecuteUbergraph_Prj_Athena_GliderGrap
 
 void APrj_Athena_GliderGrappler_Parent_C::Teleported___Return_abilities_and_stop(class AFortPawn* FortPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "Teleported - Return abilities and stop");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "Teleported - Return abilities and stop");
 
 	Params::Prj_Athena_GliderGrappler_Parent_C_Teleported___Return_abilities_and_stop Parms{};
 
@@ -61,10 +55,7 @@ void APrj_Athena_GliderGrappler_Parent_C::Teleported___Return_abilities_and_stop
 
 void APrj_Athena_GliderGrappler_Parent_C::Jump_Apex_Reached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "Jump Apex Reached");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "Jump Apex Reached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void APrj_Athena_GliderGrappler_Parent_C::Jump_Apex_Reached()
 
 void APrj_Athena_GliderGrappler_Parent_C::Grapple()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "Grapple");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "Grapple");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void APrj_Athena_GliderGrappler_Parent_C::Grapple()
 
 void APrj_Athena_GliderGrappler_Parent_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_GliderGrappler_Parent_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

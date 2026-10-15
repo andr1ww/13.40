@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UNormalBangWrapper_C::ExecuteUbergraph_NormalBangWrapper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "ExecuteUbergraph_NormalBangWrapper");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "ExecuteUbergraph_NormalBangWrapper");
 
 	Params::NormalBangWrapper_C_ExecuteUbergraph_NormalBangWrapper Parms{};
 
@@ -44,10 +41,7 @@ void UNormalBangWrapper_C::ExecuteUbergraph_NormalBangWrapper(int32 EntryPoint)
 
 void UNormalBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Count_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "OnBangStateChanged");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "OnBangStateChanged");
 
 	Params::NormalBangWrapper_C_OnBangStateChanged Parms{};
 
@@ -65,10 +59,7 @@ void UNormalBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Count_0)
 
 void UNormalBangWrapper_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "PreConstruct");
 
 	Params::NormalBangWrapper_C_PreConstruct Parms{};
 
@@ -86,10 +77,7 @@ void UNormalBangWrapper_C::PreConstruct(bool IsDesignTime)
 
 void UNormalBangWrapper_C::OnStartCallout(class FName TutorialObjectiveName, ETutorialType TutorialType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "OnStartCallout");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "OnStartCallout");
 
 	Params::NormalBangWrapper_C_OnStartCallout Parms{};
 
@@ -105,10 +93,7 @@ void UNormalBangWrapper_C::OnStartCallout(class FName TutorialObjectiveName, ETu
 
 void UNormalBangWrapper_C::OnStopCallout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "OnStopCallout");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "OnStopCallout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,10 +106,7 @@ void UNormalBangWrapper_C::OnStopCallout()
 
 void UNormalBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "SetTutorialBorderStyle");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "SetTutorialBorderStyle");
 
 	Params::NormalBangWrapper_C_SetTutorialBorderStyle Parms{};
 
@@ -141,10 +123,7 @@ void UNormalBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 
 void UNormalBangWrapper_C::Update_Bang_Icon_Version(int32 InCount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "Update Bang Icon Version");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "Update Bang Icon Version");
 
 	Params::NormalBangWrapper_C_Update_Bang_Icon_Version Parms{};
 
@@ -161,10 +140,7 @@ void UNormalBangWrapper_C::Update_Bang_Icon_Version(int32 InCount)
 
 void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D& Translation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "Adjust Bang Image Translation");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "Adjust Bang Image Translation");
 
 	Params::NormalBangWrapper_C_Adjust_Bang_Image_Translation Parms{};
 
@@ -179,10 +155,7 @@ void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D&
 
 void UNormalBangWrapper_C::TriggerIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "TriggerIntro");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "TriggerIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -193,10 +166,7 @@ void UNormalBangWrapper_C::TriggerIntro()
 
 void UNormalBangWrapper_C::TriggerReset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "TriggerReset");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "TriggerReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +177,7 @@ void UNormalBangWrapper_C::TriggerReset()
 
 void UNormalBangWrapper_C::InitialReset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "InitialReset");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "InitialReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +190,7 @@ void UNormalBangWrapper_C::InitialReset()
 
 void UNormalBangWrapper_C::SetShouldSuppressBang(bool ShouldSuppressBang_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NormalBangWrapper_C", "SetShouldSuppressBang");
+	class UFunction* Func = Class->GetFunction("NormalBangWrapper_C", "SetShouldSuppressBang");
 
 	Params::NormalBangWrapper_C_SetShouldSuppressBang Parms{};
 

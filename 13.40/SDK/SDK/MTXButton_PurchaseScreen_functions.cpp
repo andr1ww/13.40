@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMTXButton_PurchaseScreen_C::ExecuteUbergraph_MTXButton_PurchaseScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MTXButton_PurchaseScreen_C", "ExecuteUbergraph_MTXButton_PurchaseScreen");
+	class UFunction* Func = Class->GetFunction("MTXButton_PurchaseScreen_C", "ExecuteUbergraph_MTXButton_PurchaseScreen");
 
 	Params::MTXButton_PurchaseScreen_C_ExecuteUbergraph_MTXButton_PurchaseScreen Parms{};
 
@@ -41,10 +38,7 @@ void UMTXButton_PurchaseScreen_C::ExecuteUbergraph_MTXButton_PurchaseScreen(int3
 
 void UMTXButton_PurchaseScreen_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MTXButton_PurchaseScreen_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("MTXButton_PurchaseScreen_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UMTXButton_PurchaseScreen_C::BP_OnUnhovered()
 
 void UMTXButton_PurchaseScreen_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MTXButton_PurchaseScreen_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("MTXButton_PurchaseScreen_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UMTXButton_PurchaseScreen_C::BP_OnHovered()
 
 void UMTXButton_PurchaseScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MTXButton_PurchaseScreen_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MTXButton_PurchaseScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Athena_DangerGrape_C::ExecuteUbergraph_B_Athena_DangerGrape(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_DangerGrape_C", "ExecuteUbergraph_B_Athena_DangerGrape");
+	class UFunction* Func = Class->GetFunction("B_Athena_DangerGrape_C", "ExecuteUbergraph_B_Athena_DangerGrape");
 
 	Params::B_Athena_DangerGrape_C_ExecuteUbergraph_B_Athena_DangerGrape Parms{};
 
@@ -50,10 +47,7 @@ void AB_Athena_DangerGrape_C::ExecuteUbergraph_B_Athena_DangerGrape(int32 EntryP
 
 void AB_Athena_DangerGrape_C::PawnDamaged(class AActor* DamagedActor, float Damage_0, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_DangerGrape_C", "PawnDamaged");
+	class UFunction* Func = Class->GetFunction("B_Athena_DangerGrape_C", "PawnDamaged");
 
 	Params::B_Athena_DangerGrape_C_PawnDamaged Parms{};
 
@@ -81,10 +75,7 @@ void AB_Athena_DangerGrape_C::PawnDamaged(class AActor* DamagedActor, float Dama
 
 void AB_Athena_DangerGrape_C::PawnDied(class AActor* DeadActor, float Damage_0, class AFortPawn* InstigatedBy, const struct FVector& HitLocation, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_DangerGrape_C", "PawnDied");
+	class UFunction* Func = Class->GetFunction("B_Athena_DangerGrape_C", "PawnDied");
 
 	Params::B_Athena_DangerGrape_C_PawnDied Parms{};
 
@@ -103,10 +94,7 @@ void AB_Athena_DangerGrape_C::PawnDied(class AActor* DeadActor, float Damage_0, 
 
 void AB_Athena_DangerGrape_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_DangerGrape_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Athena_DangerGrape_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +105,7 @@ void AB_Athena_DangerGrape_C::ReceiveBeginPlay()
 
 void AB_Athena_DangerGrape_C::UpdateLeashLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_DangerGrape_C", "UpdateLeashLocation");
+	class UFunction* Func = Class->GetFunction("B_Athena_DangerGrape_C", "UpdateLeashLocation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +116,7 @@ void AB_Athena_DangerGrape_C::UpdateLeashLocation()
 
 void AB_Athena_DangerGrape_C::RemoveDecoy()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_DangerGrape_C", "RemoveDecoy");
+	class UFunction* Func = Class->GetFunction("B_Athena_DangerGrape_C", "RemoveDecoy");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ExecuteUbergraph_B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ExecuteUbergraph_B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena");
+	class UFunction* Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ExecuteUbergraph_B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena");
 
 	Params::B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C_ExecuteUbergraph_B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena Parms{};
 
@@ -41,10 +38,7 @@ void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ExecuteUbergraph_
 
 void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ScalePlayerThermal__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ScalePlayerThermal__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ScalePlayerThermal__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ScalePlayerTherma
 
 void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ScalePlayerThermal__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ScalePlayerThermal__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ScalePlayerThermal__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ScalePlayerTherma
 
 void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ForceScopeBackImmediatly()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ForceScopeBackImmediatly");
+	class UFunction* Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ForceScopeBackImmediatly");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ForceScopeBackImm
 
 void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ReverseScopePP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ReverseScopePP");
+	class UFunction* Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "ReverseScopePP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::ReverseScopePP()
 
 void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::PlayScopePP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "PlayScopePP");
+	class UFunction* Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "PlayScopePP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +95,7 @@ void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::PlayScopePP()
 
 void AB_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C::OnSetTargeting(bool bNewIsTargeting)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "OnSetTargeting");
+	class UFunction* Func = Class->GetFunction("B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C", "OnSetTargeting");
 
 	Params::B_Rifle_Sniper_Suppressed_ThermalScope_SpyTech_Athena_C_OnSetTargeting Parms{};
 

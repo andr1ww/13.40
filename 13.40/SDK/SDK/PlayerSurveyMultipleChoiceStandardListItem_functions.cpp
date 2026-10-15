@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem");
 
 	Params::PlayerSurveyMultipleChoiceStandardListItem_C_ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem Parms{};
 
@@ -41,10 +38,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::ExecuteUbergraph_PlayerSurve
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::OnCurrentTextStyleChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "OnCurrentTextStyleChanged");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "OnCurrentTextStyleChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::OnCurrentTextStyleChanged()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::SetIndex(int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "SetIndex");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "SetIndex");
 
 	Params::PlayerSurveyMultipleChoiceStandardListItem_C_SetIndex Parms{};
 
@@ -77,10 +68,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::SetIndex(int32 Value)
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::SetChoiceData(const struct FFortPlayerSurveyQuestionChoice& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "SetChoiceData");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "SetChoiceData");
 
 	Params::PlayerSurveyMultipleChoiceStandardListItem_C_SetChoiceData Parms{};
 
@@ -95,10 +83,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::SetChoiceData(const struct F
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::BP_OnDeselected()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::BP_OnSelected()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::Construct()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateChoiceText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateChoiceText");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateChoiceText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +127,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateChoiceText()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateChoiceIndexText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateChoiceIndexText");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateChoiceIndexText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +138,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateChoiceIndexText()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateCheckBox()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateCheckBox");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateCheckBox");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +149,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateCheckBox()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateTextStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateTextStyle");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateTextStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -196,10 +163,7 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateTextStyle()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::MakeChoiceIndexText(int32 Index_0, class FText* Text) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "MakeChoiceIndexText");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "MakeChoiceIndexText");
 
 	Params::PlayerSurveyMultipleChoiceStandardListItem_C_MakeChoiceIndexText Parms{};
 

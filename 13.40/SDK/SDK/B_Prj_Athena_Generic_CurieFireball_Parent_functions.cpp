@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_Generic_CurieFireball_Parent_C::ExecuteUbergraph_B_Prj_Athena_Generic_CurieFireball_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "ExecuteUbergraph_B_Prj_Athena_Generic_CurieFireball_Parent");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "ExecuteUbergraph_B_Prj_Athena_Generic_CurieFireball_Parent");
 
 	Params::B_Prj_Athena_Generic_CurieFireball_Parent_C_ExecuteUbergraph_B_Prj_Athena_Generic_CurieFireball_Parent Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_Athena_Generic_CurieFireball_Parent_C::ExecuteUbergraph_B_Prj_Athena
 
 void AB_Prj_Athena_Generic_CurieFireball_Parent_C::Landed_In_Water()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "Landed In Water");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "Landed In Water");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -64,10 +58,7 @@ void AB_Prj_Athena_Generic_CurieFireball_Parent_C::Landed_In_Water()
 
 void AB_Prj_Athena_Generic_CurieFireball_Parent_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "ReceiveHit");
 
 	Params::B_Prj_Athena_Generic_CurieFireball_Parent_C_ReceiveHit Parms{};
 
@@ -89,10 +80,7 @@ void AB_Prj_Athena_Generic_CurieFireball_Parent_C::ReceiveHit(class UPrimitiveCo
 
 void AB_Prj_Athena_Generic_CurieFireball_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +93,7 @@ void AB_Prj_Athena_Generic_CurieFireball_Parent_C::ReceiveBeginPlay()
 
 struct FTransform AB_Prj_Athena_Generic_CurieFireball_Parent_C::Line_Trace_for_Mesh_Angle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "Line Trace for Mesh Angle");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Generic_CurieFireball_Parent_C", "Line Trace for Mesh Angle");
 
 	Params::B_Prj_Athena_Generic_CurieFireball_Parent_C_Line_Trace_for_Mesh_Angle Parms{};
 

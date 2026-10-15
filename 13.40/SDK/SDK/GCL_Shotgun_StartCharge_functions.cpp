@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCL_Shotgun_StartCharge_C::ExecuteUbergraph_GCL_Shotgun_StartCharge(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Shotgun_StartCharge_C", "ExecuteUbergraph_GCL_Shotgun_StartCharge");
+	class UFunction* Func = Class->GetFunction("GCL_Shotgun_StartCharge_C", "ExecuteUbergraph_GCL_Shotgun_StartCharge");
 
 	Params::GCL_Shotgun_StartCharge_C_ExecuteUbergraph_GCL_Shotgun_StartCharge Parms{};
 
@@ -48,10 +45,7 @@ void AGCL_Shotgun_StartCharge_C::ExecuteUbergraph_GCL_Shotgun_StartCharge(int32 
 
 void AGCL_Shotgun_StartCharge_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Shotgun_StartCharge_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCL_Shotgun_StartCharge_C", "OnRemoval");
 
 	Params::GCL_Shotgun_StartCharge_C_OnRemoval Parms{};
 
@@ -78,10 +72,7 @@ void AGCL_Shotgun_StartCharge_C::OnRemoval(class AActor* MyTarget, const struct 
 
 void AGCL_Shotgun_StartCharge_C::OnApplication(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Shotgun_StartCharge_C", "OnApplication");
+	class UFunction* Func = Class->GetFunction("GCL_Shotgun_StartCharge_C", "OnApplication");
 
 	Params::GCL_Shotgun_StartCharge_C_OnApplication Parms{};
 
@@ -103,10 +94,7 @@ void AGCL_Shotgun_StartCharge_C::OnApplication(class AActor* MyTarget, const str
 
 void AGCL_Shotgun_StartCharge_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_Shotgun_StartCharge_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("GCL_Shotgun_StartCharge_C", "ReceiveTick");
 
 	Params::GCL_Shotgun_StartCharge_C_ReceiveTick Parms{};
 

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UComicBook::CopyToClipboardForCMS()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ComicBook", "CopyToClipboardForCMS");
+	class UFunction* Func = Class->GetFunction("ComicBook", "CopyToClipboardForCMS");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -40,10 +37,7 @@ void UComicBook::CopyToClipboardForCMS()
 
 void UFortComicReader::Next()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "Next");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "Next");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -59,10 +53,7 @@ void UFortComicReader::Next()
 
 void UFortComicReader::Previous()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "Previous");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "Previous");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -80,10 +71,7 @@ void UFortComicReader::Previous()
 
 void UFortComicReader::SetCurrentPage(int32 InPageIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "SetCurrentPage");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "SetCurrentPage");
 
 	Params::FortComicReader_SetCurrentPage Parms{};
 
@@ -103,10 +91,7 @@ void UFortComicReader::SetCurrentPage(int32 InPageIndex)
 
 void UFortComicReader::ToggleViewMode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "ToggleViewMode");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "ToggleViewMode");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -124,10 +109,7 @@ void UFortComicReader::ToggleViewMode()
 
 int32 UFortComicReader::GetCurrentPageIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "GetCurrentPageIndex");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "GetCurrentPageIndex");
 
 	Params::FortComicReader_GetCurrentPageIndex Parms{};
 
@@ -149,10 +131,7 @@ int32 UFortComicReader::GetCurrentPageIndex() const
 
 int32 UFortComicReader::GetCurrentPageNumber() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "GetCurrentPageNumber");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "GetCurrentPageNumber");
 
 	Params::FortComicReader_GetCurrentPageNumber Parms{};
 
@@ -174,10 +153,7 @@ int32 UFortComicReader::GetCurrentPageNumber() const
 
 int32 UFortComicReader::GetCurrentPanelIndex() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "GetCurrentPanelIndex");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "GetCurrentPanelIndex");
 
 	Params::FortComicReader_GetCurrentPanelIndex Parms{};
 
@@ -200,10 +176,7 @@ int32 UFortComicReader::GetCurrentPanelIndex() const
 
 int32 UFortComicReader::GetNumPanelsOnPage(int32 InPageNum) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "GetNumPanelsOnPage");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "GetNumPanelsOnPage");
 
 	Params::FortComicReader_GetNumPanelsOnPage Parms{};
 
@@ -227,10 +200,7 @@ int32 UFortComicReader::GetNumPanelsOnPage(int32 InPageNum) const
 
 int32 UFortComicReader::GetTotalPageNumber() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "GetTotalPageNumber");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "GetTotalPageNumber");
 
 	Params::FortComicReader_GetTotalPageNumber Parms{};
 
@@ -252,10 +222,7 @@ int32 UFortComicReader::GetTotalPageNumber() const
 
 EFortComicViewMode UFortComicReader::GetViewMode() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicReader", "GetViewMode");
+	class UFunction* Func = Class->GetFunction("FortComicReader", "GetViewMode");
 
 	Params::FortComicReader_GetViewMode Parms{};
 
@@ -277,10 +244,7 @@ EFortComicViewMode UFortComicReader::GetViewMode() const
 
 void UFortComicScreen::HandlePreprocessorNavInput(EUINavigation InNavDirection)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicScreen", "HandlePreprocessorNavInput");
+	class UFunction* Func = Class->GetFunction("FortComicScreen", "HandlePreprocessorNavInput");
 
 	Params::FortComicScreen_HandlePreprocessorNavInput Parms{};
 
@@ -302,10 +266,7 @@ void UFortComicScreen::HandlePreprocessorNavInput(EUINavigation InNavDirection)
 
 void UFortComicScreen::OnPreProcessedNavInput(EUINavigation NavInput)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicScreen", "OnPreProcessedNavInput");
+	class UFunction* Func = Class->GetFunction("FortComicScreen", "OnPreProcessedNavInput");
 
 	Params::FortComicScreen_OnPreProcessedNavInput Parms{};
 
@@ -322,10 +283,7 @@ void UFortComicScreen::OnPreProcessedNavInput(EUINavigation NavInput)
 
 void UFortComicScreen::UpdateComicTitle(const class FString& InComicTitle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicScreen", "UpdateComicTitle");
+	class UFunction* Func = Class->GetFunction("FortComicScreen", "UpdateComicTitle");
 
 	Params::FortComicScreen_UpdateComicTitle Parms{};
 
@@ -342,10 +300,7 @@ void UFortComicScreen::UpdateComicTitle(const class FString& InComicTitle)
 
 void UFortComicScreen::UpdateShowContinueOnLastPage(bool InShowContinue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortComicScreen", "UpdateShowContinueOnLastPage");
+	class UFunction* Func = Class->GetFunction("FortComicScreen", "UpdateShowContinueOnLastPage");
 
 	Params::FortComicScreen_UpdateShowContinueOnLastPage Parms{};
 

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UControlRigComponent::OnPostEvaluate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigComponent", "OnPostEvaluate");
+	class UFunction* Func = Class->GetFunction("ControlRigComponent", "OnPostEvaluate");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -40,10 +37,7 @@ void UControlRigComponent::OnPostEvaluate()
 
 void UControlRigComponent::OnPostInitialize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigComponent", "OnPostInitialize");
+	class UFunction* Func = Class->GetFunction("ControlRigComponent", "OnPostInitialize");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -59,10 +53,7 @@ void UControlRigComponent::OnPostInitialize()
 
 void UControlRigComponent::OnPreEvaluate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigComponent", "OnPreEvaluate");
+	class UFunction* Func = Class->GetFunction("ControlRigComponent", "OnPreEvaluate");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -78,10 +69,7 @@ void UControlRigComponent::OnPreEvaluate()
 
 void UControlRigComponent::OnPreInitialize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigComponent", "OnPreInitialize");
+	class UFunction* Func = Class->GetFunction("ControlRigComponent", "OnPreInitialize");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -99,10 +87,7 @@ void UControlRigComponent::OnPreInitialize()
 
 class UControlRig* UControlRigComponent::BP_GetControlRig() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ControlRigComponent", "BP_GetControlRig");
+	class UFunction* Func = Class->GetFunction("ControlRigComponent", "BP_GetControlRig");
 
 	Params::ControlRigComponent_BP_GetControlRig Parms{};
 

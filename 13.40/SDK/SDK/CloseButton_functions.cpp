@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCloseButton_C::ExecuteUbergraph_CloseButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CloseButton_C", "ExecuteUbergraph_CloseButton");
+	class UFunction* Func = Class->GetFunction("CloseButton_C", "ExecuteUbergraph_CloseButton");
 
 	Params::CloseButton_C_ExecuteUbergraph_CloseButton Parms{};
 
@@ -41,10 +38,7 @@ void UCloseButton_C::ExecuteUbergraph_CloseButton(int32 EntryPoint)
 
 void UCloseButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CloseButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CloseButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UCloseButton_C::Construct()
 
 void UCloseButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CloseButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("CloseButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UCloseButton_C::BP_OnHovered()
 
 void UCloseButton_C::HandleSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CloseButton_C", "HandleSize");
+	class UFunction* Func = Class->GetFunction("CloseButton_C", "HandleSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UCloseButton_C::HandleSize()
 
 void UCloseButton_C::SetText(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CloseButton_C", "SetText");
+	class UFunction* Func = Class->GetFunction("CloseButton_C", "SetText");
 
 	Params::CloseButton_C_SetText Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USocialPanelTab_C::ExecuteUbergraph_SocialPanelTab(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelTab_C", "ExecuteUbergraph_SocialPanelTab");
+	class UFunction* Func = Class->GetFunction("SocialPanelTab_C", "ExecuteUbergraph_SocialPanelTab");
 
 	Params::SocialPanelTab_C_ExecuteUbergraph_SocialPanelTab Parms{};
 
@@ -41,10 +38,7 @@ void USocialPanelTab_C::ExecuteUbergraph_SocialPanelTab(int32 EntryPoint)
 
 void USocialPanelTab_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelTab_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("SocialPanelTab_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USocialPanelTab_C::BP_OnDeselected()
 
 void USocialPanelTab_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelTab_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("SocialPanelTab_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void USocialPanelTab_C::BP_OnSelected()
 
 void USocialPanelTab_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelTab_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SocialPanelTab_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void USocialPanelTab_C::BP_OnUnhovered()
 
 void USocialPanelTab_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanelTab_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SocialPanelTab_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

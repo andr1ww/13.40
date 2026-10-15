@@ -27,10 +27,7 @@ SDK_NAMESPACE_START
 
 void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int32 CurrentGear)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "ServerUpdateState");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "ServerUpdateState");
 
 	Params::WheeledVehicleMovementComponent_ServerUpdateState Parms{};
 
@@ -56,10 +53,7 @@ void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, 
 
 void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceEnabled");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceEnabled");
 
 	Params::WheeledVehicleMovementComponent_SetAvoidanceEnabled Parms{};
 
@@ -81,10 +75,7 @@ void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int32 GroupFlags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceGroup");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceGroup");
 
 	Params::WheeledVehicleMovementComponent_SetAvoidanceGroup Parms{};
 
@@ -106,10 +97,7 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int32 GroupFlags)
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(const struct FNavAvoidanceMask& GroupMask)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceGroupMask");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceGroupMask");
 
 	Params::WheeledVehicleMovementComponent_SetAvoidanceGroupMask Parms{};
 
@@ -131,10 +119,7 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(const struct FNavAv
 
 void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetBrakeInput");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetBrakeInput");
 
 	Params::WheeledVehicleMovementComponent_SetBrakeInput Parms{};
 
@@ -156,10 +141,7 @@ void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 
 void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGearDown");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGearDown");
 
 	Params::WheeledVehicleMovementComponent_SetGearDown Parms{};
 
@@ -181,10 +163,7 @@ void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
 
 void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGearUp");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGearUp");
 
 	Params::WheeledVehicleMovementComponent_SetGearUp Parms{};
 
@@ -206,10 +185,7 @@ void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int32 GroupFlags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToAvoid");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToAvoid");
 
 	Params::WheeledVehicleMovementComponent_SetGroupsToAvoid Parms{};
 
@@ -231,10 +207,7 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int32 GroupFlags)
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(const struct FNavAvoidanceMask& GroupMask)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToAvoidMask");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToAvoidMask");
 
 	Params::WheeledVehicleMovementComponent_SetGroupsToAvoidMask Parms{};
 
@@ -256,10 +229,7 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(const struct FNavAvo
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int32 GroupFlags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToIgnore");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToIgnore");
 
 	Params::WheeledVehicleMovementComponent_SetGroupsToIgnore Parms{};
 
@@ -281,10 +251,7 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int32 GroupFlags)
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(const struct FNavAvoidanceMask& GroupMask)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToIgnoreMask");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToIgnoreMask");
 
 	Params::WheeledVehicleMovementComponent_SetGroupsToIgnoreMask Parms{};
 
@@ -306,10 +273,7 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(const struct FNavAv
 
 void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetHandbrakeInput");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetHandbrakeInput");
 
 	Params::WheeledVehicleMovementComponent_SetHandbrakeInput Parms{};
 
@@ -331,10 +295,7 @@ void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 
 void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetSteeringInput");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetSteeringInput");
 
 	Params::WheeledVehicleMovementComponent_SetSteeringInput Parms{};
 
@@ -357,10 +318,7 @@ void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
 
 void UWheeledVehicleMovementComponent::SetTargetGear(int32 GearNum, bool bImmediate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetTargetGear");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetTargetGear");
 
 	Params::WheeledVehicleMovementComponent_SetTargetGear Parms{};
 
@@ -383,10 +341,7 @@ void UWheeledVehicleMovementComponent::SetTargetGear(int32 GearNum, bool bImmedi
 
 void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetThrottleInput");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetThrottleInput");
 
 	Params::WheeledVehicleMovementComponent_SetThrottleInput Parms{};
 
@@ -408,10 +363,7 @@ void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
 
 void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetUseAutoGears");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetUseAutoGears");
 
 	Params::WheeledVehicleMovementComponent_SetUseAutoGears Parms{};
 
@@ -433,10 +385,7 @@ void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
 
 int32 UWheeledVehicleMovementComponent::GetCurrentGear() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetCurrentGear");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetCurrentGear");
 
 	Params::WheeledVehicleMovementComponent_GetCurrentGear Parms{};
 
@@ -458,10 +407,7 @@ int32 UWheeledVehicleMovementComponent::GetCurrentGear() const
 
 float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetEngineMaxRotationSpeed");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetEngineMaxRotationSpeed");
 
 	Params::WheeledVehicleMovementComponent_GetEngineMaxRotationSpeed Parms{};
 
@@ -483,10 +429,7 @@ float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed() const
 
 float UWheeledVehicleMovementComponent::GetEngineRotationSpeed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetEngineRotationSpeed");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetEngineRotationSpeed");
 
 	Params::WheeledVehicleMovementComponent_GetEngineRotationSpeed Parms{};
 
@@ -508,10 +451,7 @@ float UWheeledVehicleMovementComponent::GetEngineRotationSpeed() const
 
 float UWheeledVehicleMovementComponent::GetForwardSpeed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetForwardSpeed");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetForwardSpeed");
 
 	Params::WheeledVehicleMovementComponent_GetForwardSpeed Parms{};
 
@@ -533,10 +473,7 @@ float UWheeledVehicleMovementComponent::GetForwardSpeed() const
 
 int32 UWheeledVehicleMovementComponent::GetTargetGear() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetTargetGear");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetTargetGear");
 
 	Params::WheeledVehicleMovementComponent_GetTargetGear Parms{};
 
@@ -558,10 +495,7 @@ int32 UWheeledVehicleMovementComponent::GetTargetGear() const
 
 bool UWheeledVehicleMovementComponent::GetUseAutoGears() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetUseAutoGears");
+	class UFunction* Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetUseAutoGears");
 
 	Params::WheeledVehicleMovementComponent_GetUseAutoGears Parms{};
 
@@ -584,10 +518,7 @@ bool UWheeledVehicleMovementComponent::GetUseAutoGears() const
 
 void USimpleWheeledVehicleMovementComponent::SetBrakeTorque(float BrakeTorque, int32 WheelIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetBrakeTorque");
+	class UFunction* Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetBrakeTorque");
 
 	Params::SimpleWheeledVehicleMovementComponent_SetBrakeTorque Parms{};
 
@@ -611,10 +542,7 @@ void USimpleWheeledVehicleMovementComponent::SetBrakeTorque(float BrakeTorque, i
 
 void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, int32 WheelIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetDriveTorque");
+	class UFunction* Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetDriveTorque");
 
 	Params::SimpleWheeledVehicleMovementComponent_SetDriveTorque Parms{};
 
@@ -638,10 +566,7 @@ void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, i
 
 void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int32 WheelIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetSteerAngle");
+	class UFunction* Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetSteerAngle");
 
 	Params::SimpleWheeledVehicleMovementComponent_SetSteerAngle Parms{};
 
@@ -664,10 +589,7 @@ void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int
 
 class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleAnimInstance", "GetVehicle");
+	class UFunction* Func = Class->GetFunction("VehicleAnimInstance", "GetVehicle");
 
 	Params::VehicleAnimInstance_GetVehicle Parms{};
 
@@ -689,10 +611,7 @@ class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
 
 float UVehicleWheel::GetRotationAngle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleWheel", "GetRotationAngle");
+	class UFunction* Func = Class->GetFunction("VehicleWheel", "GetRotationAngle");
 
 	Params::VehicleWheel_GetRotationAngle Parms{};
 
@@ -714,10 +633,7 @@ float UVehicleWheel::GetRotationAngle() const
 
 float UVehicleWheel::GetSteerAngle() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleWheel", "GetSteerAngle");
+	class UFunction* Func = Class->GetFunction("VehicleWheel", "GetSteerAngle");
 
 	Params::VehicleWheel_GetSteerAngle Parms{};
 
@@ -739,10 +655,7 @@ float UVehicleWheel::GetSteerAngle() const
 
 float UVehicleWheel::GetSuspensionOffset() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleWheel", "GetSuspensionOffset");
+	class UFunction* Func = Class->GetFunction("VehicleWheel", "GetSuspensionOffset");
 
 	Params::VehicleWheel_GetSuspensionOffset Parms{};
 
@@ -764,10 +677,7 @@ float UVehicleWheel::GetSuspensionOffset() const
 
 bool UVehicleWheel::IsInAir() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleWheel", "IsInAir");
+	class UFunction* Func = Class->GetFunction("VehicleWheel", "IsInAir");
 
 	Params::VehicleWheel_IsInAir Parms{};
 

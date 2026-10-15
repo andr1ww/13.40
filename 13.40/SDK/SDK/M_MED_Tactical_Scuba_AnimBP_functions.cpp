@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UM_MED_Tactical_Scuba_AnimBP_C::ExecuteUbergraph_M_MED_Tactical_Scuba_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Tactical_Scuba_AnimBP_C", "ExecuteUbergraph_M_MED_Tactical_Scuba_AnimBP");
+	class UFunction* Func = Class->GetFunction("M_MED_Tactical_Scuba_AnimBP_C", "ExecuteUbergraph_M_MED_Tactical_Scuba_AnimBP");
 
 	Params::M_MED_Tactical_Scuba_AnimBP_C_ExecuteUbergraph_M_MED_Tactical_Scuba_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UM_MED_Tactical_Scuba_AnimBP_C::ExecuteUbergraph_M_MED_Tactical_Scuba_AnimB
 
 void UM_MED_Tactical_Scuba_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Tactical_Scuba_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("M_MED_Tactical_Scuba_AnimBP_C", "AnimGraph");
 
 	Params::M_MED_Tactical_Scuba_AnimBP_C_AnimGraph Parms{};
 

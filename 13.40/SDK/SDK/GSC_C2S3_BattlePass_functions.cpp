@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UGSC_C2S3_BattlePass_C::OnNavActorSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GSC_C2S3_BattlePass_C", "OnNavActorSelected");
+	class UFunction* Func = Class->GetFunction("GSC_C2S3_BattlePass_C", "OnNavActorSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UGSC_C2S3_BattlePass_C::OnNavActorSelected()
 
 void UGSC_C2S3_BattlePass_C::OnNavActorHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GSC_C2S3_BattlePass_C", "OnNavActorHovered");
+	class UFunction* Func = Class->GetFunction("GSC_C2S3_BattlePass_C", "OnNavActorHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +45,7 @@ void UGSC_C2S3_BattlePass_C::OnNavActorHovered()
 
 void UGSC_C2S3_BattlePass_C::ExecuteUbergraph_GSC_C2S3_BattlePass(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GSC_C2S3_BattlePass_C", "ExecuteUbergraph_GSC_C2S3_BattlePass");
+	class UFunction* Func = Class->GetFunction("GSC_C2S3_BattlePass_C", "ExecuteUbergraph_GSC_C2S3_BattlePass");
 
 	Params::GSC_C2S3_BattlePass_C_ExecuteUbergraph_GSC_C2S3_BattlePass Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AS12BP_MusicController_C::ExecuteUbergraph_S12BP_MusicController(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("S12BP_MusicController_C", "ExecuteUbergraph_S12BP_MusicController");
+	class UFunction* Func = Class->GetFunction("S12BP_MusicController_C", "ExecuteUbergraph_S12BP_MusicController");
 
 	Params::S12BP_MusicController_C_ExecuteUbergraph_S12BP_MusicController Parms{};
 
@@ -41,10 +38,7 @@ void AS12BP_MusicController_C::ExecuteUbergraph_S12BP_MusicController(int32 Entr
 
 void AS12BP_MusicController_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("S12BP_MusicController_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("S12BP_MusicController_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

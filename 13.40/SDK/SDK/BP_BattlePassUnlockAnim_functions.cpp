@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_BattlePassUnlockAnim_C::ExecuteUbergraph_BP_BattlePassUnlockAnim(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "ExecuteUbergraph_BP_BattlePassUnlockAnim");
+	class UFunction* Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "ExecuteUbergraph_BP_BattlePassUnlockAnim");
 
 	Params::BP_BattlePassUnlockAnim_C_ExecuteUbergraph_BP_BattlePassUnlockAnim Parms{};
 
@@ -41,10 +38,7 @@ void UBP_BattlePassUnlockAnim_C::ExecuteUbergraph_BP_BattlePassUnlockAnim(int32 
 
 void UBP_BattlePassUnlockAnim_C::PlayIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "PlayIntro");
+	class UFunction* Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "PlayIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UBP_BattlePassUnlockAnim_C::PlayIntro()
 
 void UBP_BattlePassUnlockAnim_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UBP_BattlePassUnlockAnim_C::BP_OnActivated()
 
 void UBP_BattlePassUnlockAnim_C::CustomEvent_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "CustomEvent_0");
+	class UFunction* Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "CustomEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UBP_BattlePassUnlockAnim_C::CustomEvent_0()
 
 void UBP_BattlePassUnlockAnim_C::AnimComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "AnimComplete");
+	class UFunction* Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "AnimComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UBP_BattlePassUnlockAnim_C::AnimComplete()
 
 void UBP_BattlePassUnlockAnim_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "PreConstruct");
 
 	Params::BP_BattlePassUnlockAnim_C_PreConstruct Parms{};
 
@@ -119,10 +101,7 @@ void UBP_BattlePassUnlockAnim_C::PreConstruct(bool IsDesignTime)
 
 class UWidget* UBP_BattlePassUnlockAnim_C::GetWidgetForFramingViewedItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "GetWidgetForFramingViewedItem");
+	class UFunction* Func = Class->GetFunction("BP_BattlePassUnlockAnim_C", "GetWidgetForFramingViewedItem");
 
 	Params::BP_BattlePassUnlockAnim_C_GetWidgetForFramingViewedItem Parms{};
 

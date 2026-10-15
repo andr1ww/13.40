@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_CameraLens_Splash_Water_Droplets_C::ExecuteUbergraph_B_CameraLens_Splash_Water_Droplets(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_Splash_Water_Droplets_C", "ExecuteUbergraph_B_CameraLens_Splash_Water_Droplets");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_Splash_Water_Droplets_C", "ExecuteUbergraph_B_CameraLens_Splash_Water_Droplets");
 
 	Params::B_CameraLens_Splash_Water_Droplets_C_ExecuteUbergraph_B_CameraLens_Splash_Water_Droplets Parms{};
 
@@ -41,10 +38,7 @@ void AB_CameraLens_Splash_Water_Droplets_C::ExecuteUbergraph_B_CameraLens_Splash
 
 void AB_CameraLens_Splash_Water_Droplets_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_Splash_Water_Droplets_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_Splash_Water_Droplets_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

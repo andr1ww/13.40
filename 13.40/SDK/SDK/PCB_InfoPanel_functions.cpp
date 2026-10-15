@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPCB_InfoPanel_C::ExecuteUbergraph_PCB_InfoPanel(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PCB_InfoPanel_C", "ExecuteUbergraph_PCB_InfoPanel");
+	class UFunction* Func = Class->GetFunction("PCB_InfoPanel_C", "ExecuteUbergraph_PCB_InfoPanel");
 
 	Params::PCB_InfoPanel_C_ExecuteUbergraph_PCB_InfoPanel Parms{};
 
@@ -41,10 +38,7 @@ void UPCB_InfoPanel_C::ExecuteUbergraph_PCB_InfoPanel(int32 EntryPoint)
 
 void UPCB_InfoPanel_C::CmsDataRead()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PCB_InfoPanel_C", "CmsDataRead");
+	class UFunction* Func = Class->GetFunction("PCB_InfoPanel_C", "CmsDataRead");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

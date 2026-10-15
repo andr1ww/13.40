@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerBattlePassXpAndReward_C::ExecuteUbergraph_PlayerBattlePassXpAndReward(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "ExecuteUbergraph_PlayerBattlePassXpAndReward");
+	class UFunction* Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "ExecuteUbergraph_PlayerBattlePassXpAndReward");
 
 	Params::PlayerBattlePassXpAndReward_C_ExecuteUbergraph_PlayerBattlePassXpAndReward Parms{};
 
@@ -43,10 +40,7 @@ void UPlayerBattlePassXpAndReward_C::ExecuteUbergraph_PlayerBattlePassXpAndRewar
 
 void UPlayerBattlePassXpAndReward_C::OnAccountInfoChanged(const struct FFortPublicAccountInfo& Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "OnAccountInfoChanged");
+	class UFunction* Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "OnAccountInfoChanged");
 
 	Params::PlayerBattlePassXpAndReward_C_OnAccountInfoChanged Parms{};
 
@@ -63,10 +57,7 @@ void UPlayerBattlePassXpAndReward_C::OnAccountInfoChanged(const struct FFortPubl
 
 void UPlayerBattlePassXpAndReward_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "PreConstruct");
 
 	Params::PlayerBattlePassXpAndReward_C_PreConstruct Parms{};
 
@@ -83,10 +74,7 @@ void UPlayerBattlePassXpAndReward_C::PreConstruct(bool IsDesignTime)
 
 void UPlayerBattlePassXpAndReward_C::Refresh(struct FFortPublicAccountInfo& FortPublicAccountInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "Refresh");
+	class UFunction* Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "Refresh");
 
 	Params::PlayerBattlePassXpAndReward_C_Refresh Parms{};
 
@@ -110,10 +98,7 @@ void UPlayerBattlePassXpAndReward_C::Refresh(struct FFortPublicAccountInfo& Fort
 
 void UPlayerBattlePassXpAndReward_C::SetupReward(class UWidget* Container, class UTextBlock* RewardText, class UDailyQuestRewardInfo_C* RewardInfoWidget, bool HasReward, const struct FFortItemQuantityPair& RewardItem, int32 LevelRewarded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "SetupReward");
+	class UFunction* Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "SetupReward");
 
 	Params::PlayerBattlePassXpAndReward_C_SetupReward Parms{};
 

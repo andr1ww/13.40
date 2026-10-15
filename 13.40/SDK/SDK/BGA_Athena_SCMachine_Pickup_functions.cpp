@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_Athena_SCMachine_Pickup_C::ExecuteUbergraph_BGA_Athena_SCMachine_Pickup(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ExecuteUbergraph_BGA_Athena_SCMachine_Pickup");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ExecuteUbergraph_BGA_Athena_SCMachine_Pickup");
 
 	Params::BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup Parms{};
 
@@ -41,10 +38,7 @@ void ABGA_Athena_SCMachine_Pickup_C::ExecuteUbergraph_BGA_Athena_SCMachine_Picku
 
 void ABGA_Athena_SCMachine_Pickup_C::HideAndKillPickup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "HideAndKillPickup");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "HideAndKillPickup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -63,10 +57,7 @@ void ABGA_Athena_SCMachine_Pickup_C::HideAndKillPickup()
 
 void ABGA_Athena_SCMachine_Pickup_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnDeathServer");
 
 	Params::BGA_Athena_SCMachine_Pickup_C_OnDeathServer Parms{};
 
@@ -87,10 +78,7 @@ void ABGA_Athena_SCMachine_Pickup_C::OnDeathServer(float Damage, const struct FG
 
 void ABGA_Athena_SCMachine_Pickup_C::SpawnSound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "SpawnSound");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "SpawnSound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -101,10 +89,7 @@ void ABGA_Athena_SCMachine_Pickup_C::SpawnSound()
 
 void ABGA_Athena_SCMachine_Pickup_C::OnDestroyPickup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnDestroyPickup");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnDestroyPickup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +100,7 @@ void ABGA_Athena_SCMachine_Pickup_C::OnDestroyPickup()
 
 void ABGA_Athena_SCMachine_Pickup_C::CollectPickup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "CollectPickup");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "CollectPickup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -132,10 +114,7 @@ void ABGA_Athena_SCMachine_Pickup_C::CollectPickup()
 
 void ABGA_Athena_SCMachine_Pickup_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintOnInteract");
 
 	Params::BGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract Parms{};
 
@@ -151,10 +130,7 @@ void ABGA_Athena_SCMachine_Pickup_C::BlueprintOnInteract(const class AFortPawn* 
 
 void ABGA_Athena_SCMachine_Pickup_C::DestroyPickup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "DestroyPickup");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "DestroyPickup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +141,7 @@ void ABGA_Athena_SCMachine_Pickup_C::DestroyPickup()
 
 void ABGA_Athena_SCMachine_Pickup_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +152,7 @@ void ABGA_Athena_SCMachine_Pickup_C::ReceiveBeginPlay()
 
 void ABGA_Athena_SCMachine_Pickup_C::OnRep_UnHide()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnRep_UnHide");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnRep_UnHide");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -198,10 +168,7 @@ void ABGA_Athena_SCMachine_Pickup_C::OnRep_UnHide()
 
 bool ABGA_Athena_SCMachine_Pickup_C::ShouldDie(float Damage, class AController* EventInstigator, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ShouldDie");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ShouldDie");
 
 	Params::BGA_Athena_SCMachine_Pickup_C_ShouldDie Parms{};
 
@@ -220,10 +187,7 @@ bool ABGA_Athena_SCMachine_Pickup_C::ShouldDie(float Damage, class AController* 
 
 void ABGA_Athena_SCMachine_Pickup_C::DetermineStopLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "DetermineStopLocation");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "DetermineStopLocation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -234,10 +198,7 @@ void ABGA_Athena_SCMachine_Pickup_C::DetermineStopLocation()
 
 void ABGA_Athena_SCMachine_Pickup_C::ConsiderPositionCorrection()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ConsiderPositionCorrection");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ConsiderPositionCorrection");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -248,10 +209,7 @@ void ABGA_Athena_SCMachine_Pickup_C::ConsiderPositionCorrection()
 
 void ABGA_Athena_SCMachine_Pickup_C::OnRep_HideAndKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnRep_HideAndKill");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnRep_HideAndKill");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -267,10 +225,7 @@ void ABGA_Athena_SCMachine_Pickup_C::OnRep_HideAndKill()
 
 bool ABGA_Athena_SCMachine_Pickup_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintCanInteract");
 
 	Params::BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract Parms{};
 
@@ -293,10 +248,7 @@ bool ABGA_Athena_SCMachine_Pickup_C::BlueprintCanInteract(const class AFortPawn*
 
 class FText ABGA_Athena_SCMachine_Pickup_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintGetInteractionString");
 
 	Params::BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::ExecuteUbergraph_GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "ExecuteUbergraph_GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "ExecuteUbergraph_GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_ExecuteUbergraph_GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::ExecuteU
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::SendGameplayEventsAndQuestUpdate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SendGameplayEventsAndQuestUpdate");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SendGameplayEventsAndQuestUpdate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::SendGame
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::UpdateDummyProjectileBGA()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "UpdateDummyProjectileBGA");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "UpdateDummyProjectileBGA");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::UpdateDu
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::RemoveItemFromQuickBar()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "RemoveItemFromQuickBar");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "RemoveItemFromQuickBar");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::RemoveIt
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::SpawnBGA_ServerOnly_()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SpawnBGA(ServerOnly)");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SpawnBGA(ServerOnly)");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::SpawnBGA
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::UpdateSpawnedBGA_ServerOnly_()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "UpdateSpawnedBGA(ServerOnly)");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "UpdateSpawnedBGA(ServerOnly)");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::UpdateSp
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::UpdateTrajectory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "UpdateTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "UpdateTrajectory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::UpdateTr
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::Cleanup_Trajectory_Display_On_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "Cleanup Trajectory Display On End");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "Cleanup Trajectory Display On End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +115,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::Cleanup_
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::CleanupTrajectoryIndicatorOnUnequip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "CleanupTrajectoryIndicatorOnUnequip");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "CleanupTrajectoryIndicatorOnUnequip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +126,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::CleanupT
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::InitTrajectoryVariables()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "InitTrajectoryVariables");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "InitTrajectoryVariables");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +137,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::InitTraj
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::ThrowConsumable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "ThrowConsumable");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "ThrowConsumable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +148,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::ThrowCon
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::CleanupTrajectoryDisplay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "CleanupTrajectoryDisplay");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "CleanupTrajectoryDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -197,10 +161,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::CleanupT
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_K2_OnEndAbility Parms{};
 
@@ -215,10 +176,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::K2_OnEnd
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnAbilityInputReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnAbilityInputReleased");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnAbilityInputReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -229,10 +187,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnAbilit
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -245,10 +200,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::K2_Activ
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::EventReceived_526561A640EC49D3EEBA449BC71450EF(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "EventReceived_526561A640EC49D3EEBA449BC71450EF");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "EventReceived_526561A640EC49D3EEBA449BC71450EF");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_EventReceived_526561A640EC49D3EEBA449BC71450EF Parms{};
 
@@ -263,10 +215,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::EventRec
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnSync_9DBAE13E407ED891AB4EECA2ADF75C8D()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnSync_9DBAE13E407ED891AB4EECA2ADF75C8D");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnSync_9DBAE13E407ED891AB4EECA2ADF75C8D");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +228,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnSync_9
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::EventReceived_37ED270D4E5065DF6944ECB72BFD05A2(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "EventReceived_37ED270D4E5065DF6944ECB72BFD05A2");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "EventReceived_37ED270D4E5065DF6944ECB72BFD05A2");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_EventReceived_37ED270D4E5065DF6944ECB72BFD05A2 Parms{};
 
@@ -297,10 +243,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::EventRec
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnFinish_4303A6684F8456517B7D258D8BA1CE9B()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnFinish_4303A6684F8456517B7D258D8BA1CE9B");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnFinish_4303A6684F8456517B7D258D8BA1CE9B");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -311,10 +254,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnFinish
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnCompleted_D12FE2DE4501EC495B89AAA1271D8CC2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnCompleted_D12FE2DE4501EC495B89AAA1271D8CC2");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnCompleted_D12FE2DE4501EC495B89AAA1271D8CC2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -325,10 +265,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnComple
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnBlendOut_D12FE2DE4501EC495B89AAA1271D8CC2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnBlendOut_D12FE2DE4501EC495B89AAA1271D8CC2");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnBlendOut_D12FE2DE4501EC495B89AAA1271D8CC2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -339,10 +276,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnBlendO
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnInterrupted_D12FE2DE4501EC495B89AAA1271D8CC2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnInterrupted_D12FE2DE4501EC495B89AAA1271D8CC2");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnInterrupted_D12FE2DE4501EC495B89AAA1271D8CC2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -353,10 +287,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnInterr
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnCancelled_D12FE2DE4501EC495B89AAA1271D8CC2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnCancelled_D12FE2DE4501EC495B89AAA1271D8CC2");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "OnCancelled_D12FE2DE4501EC495B89AAA1271D8CC2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -370,10 +301,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::OnCancel
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::Triggered_11EB7D0B4C52CC25C785B3A1EA90B008(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "Triggered_11EB7D0B4C52CC25C785B3A1EA90B008");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "Triggered_11EB7D0B4C52CC25C785B3A1EA90B008");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_Triggered_11EB7D0B4C52CC25C785B3A1EA90B008 Parms{};
 
@@ -392,10 +320,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::Triggere
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::Cancelled_11EB7D0B4C52CC25C785B3A1EA90B008(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "Cancelled_11EB7D0B4C52CC25C785B3A1EA90B008");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "Cancelled_11EB7D0B4C52CC25C785B3A1EA90B008");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_Cancelled_11EB7D0B4C52CC25C785B3A1EA90B008 Parms{};
 
@@ -414,10 +339,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::Cancelle
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::Completed_11EB7D0B4C52CC25C785B3A1EA90B008(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "Completed_11EB7D0B4C52CC25C785B3A1EA90B008");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "Completed_11EB7D0B4C52CC25C785B3A1EA90B008");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_Completed_11EB7D0B4C52CC25C785B3A1EA90B008 Parms{};
 
@@ -433,10 +355,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::Complete
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::SetupDummyProjectile()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SetupDummyProjectile");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SetupDummyProjectile");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -447,10 +366,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::SetupDum
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::UpdateTrajectorySpline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "UpdateTrajectorySpline");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "UpdateTrajectorySpline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -463,10 +379,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::UpdateTr
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::CanBeDropped(bool* Yes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "CanBeDropped");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "CanBeDropped");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_CanBeDropped Parms{};
 
@@ -486,10 +399,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::CanBeDro
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::GetProjectileTrajectoryPoints(TArray<struct FVector>* OutSplinePoints, TArray<struct FVector>* OutSplineTangents, struct FHitResult* OutHitResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "GetProjectileTrajectoryPoints");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "GetProjectileTrajectoryPoints");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_GetProjectileTrajectoryPoints Parms{};
 
@@ -514,10 +424,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::GetProje
 
 class AFortProjectileTrajectory* UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::SpawnTrajectoryIndicator(bool bSpawnOnEquip)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SpawnTrajectoryIndicator");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SpawnTrajectoryIndicator");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_SpawnTrajectoryIndicator Parms{};
 
@@ -537,10 +444,7 @@ class AFortProjectileTrajectory* UGA_Athena_Consumable_ThrowWithTrajectoryAsHeld
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::SpawnLocationAndRotation(struct FVector* OutLoc, struct FRotator* OutRot) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SpawnLocationAndRotation");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "SpawnLocationAndRotation");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_SpawnLocationAndRotation Parms{};
 
@@ -562,10 +466,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::SpawnLoc
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::CalcProjectileSpeedFromPitch(float AimPitch, float* GrenadeSpeed) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "CalcProjectileSpeedFromPitch");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "CalcProjectileSpeedFromPitch");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_CalcProjectileSpeedFromPitch Parms{};
 
@@ -585,10 +486,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::CalcProj
 
 void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::GetOwningPlayer(class AFortPlayerPawn** Player_Pawn) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "GetOwningPlayer");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "GetOwningPlayer");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_GetOwningPlayer Parms{};
 
@@ -606,10 +504,7 @@ void UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::GetOwnin
 
 TSubclassOf<class AFortProjectileTrajectory> UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::GetProjectileTrajectoryActor() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "GetProjectileTrajectoryActor");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "GetProjectileTrajectoryActor");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_GetProjectileTrajectoryActor Parms{};
 
@@ -626,10 +521,7 @@ TSubclassOf<class AFortProjectileTrajectory> UGA_Athena_Consumable_ThrowWithTraj
 
 bool UGA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C::ShouldOnlyShowTrajectoryOnUse() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "ShouldOnlyShowTrajectoryOnUse");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C", "ShouldOnlyShowTrajectoryOnUse");
 
 	Params::GA_Athena_Consumable_ThrowWithTrajectoryAsHeldObjectBGA_Parent_C_ShouldOnlyShowTrajectoryOnUse Parms{};
 

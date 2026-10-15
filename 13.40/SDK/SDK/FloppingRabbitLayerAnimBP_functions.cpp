@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFloppingRabbitLayerAnimBP_C::ExecuteUbergraph_FloppingRabbitLayerAnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ExecuteUbergraph_FloppingRabbitLayerAnimBP");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ExecuteUbergraph_FloppingRabbitLayerAnimBP");
 
 	Params::FloppingRabbitLayerAnimBP_C_ExecuteUbergraph_FloppingRabbitLayerAnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UFloppingRabbitLayerAnimBP_C::ExecuteUbergraph_FloppingRabbitLayerAnimBP(in
 
 void UFloppingRabbitLayerAnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "BlueprintUpdateAnimation");
 
 	Params::FloppingRabbitLayerAnimBP_C_BlueprintUpdateAnimation Parms{};
 
@@ -63,10 +57,7 @@ void UFloppingRabbitLayerAnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UFloppingRabbitLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "AnimGraph");
 
 	Params::FloppingRabbitLayerAnimBP_C_AnimGraph Parms{};
 
@@ -84,10 +75,7 @@ void UFloppingRabbitLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 void UFloppingRabbitLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJumpStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpStart");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpStart");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemSwimJumpStart Parms{};
 
@@ -106,10 +94,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJ
 
 void UFloppingRabbitLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRelaxedEntry, struct FPoseLink* ItemRelaxedEntry_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemRelaxedEntry");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemRelaxedEntry");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemRelaxedEntry Parms{};
 
@@ -130,10 +115,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPo
 
 void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& InPoseLowerBodyJogPostPivot, struct FPoseLink* ItemLowerBodyJogPostPivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemLowerBodyJogPostPivot Parms{};
 
@@ -154,10 +136,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseL
 
 void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& InPoseLowerBodyJogPrePivot, struct FPoseLink* ItemLowerBodyJogPrePivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemLowerBodyJogPrePivot Parms{};
 
@@ -178,10 +157,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLi
 
 void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InPoseLowerBodyJogStop, struct FPoseLink* ItemLowerBodyJogStop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyJogStop");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyJogStop");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemLowerBodyJogStop Parms{};
 
@@ -202,10 +178,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& 
 
 void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& InPoseLowerBodyJogStart, struct FPoseLink* ItemLowerBodyJogStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyJogStart");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyJogStart");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemLowerBodyJogStart Parms{};
 
@@ -226,10 +199,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink&
 
 void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLink& InPoseLowerBodyLeanAdditive, struct FPoseLink* ItemLowerBodyLeanAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemLowerBodyLeanAdditive Parms{};
 
@@ -250,10 +220,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseL
 
 void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& InPoseLowerBodyMovement, struct FPoseLink* ItemLowerBodyMovement_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyMovement");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemLowerBodyMovement");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemLowerBodyMovement Parms{};
 
@@ -274,10 +241,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink&
 
 void UFloppingRabbitLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink& InPosePostPivotAdditive, struct FPoseLink* ItemJogPostPivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJogPostPivotAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJogPostPivotAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemJogPostPivotAdditive Parms{};
 
@@ -298,10 +262,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLi
 
 void UFloppingRabbitLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& InPosePrePivotAdditive, struct FPoseLink* ItemJogPrePivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJogPrePivotAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJogPrePivotAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemJogPrePivotAdditive Parms{};
 
@@ -322,10 +283,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLin
 
 void UFloppingRabbitLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPoseJogStopAdditive, struct FPoseLink* ItemJogStopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJogStopAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJogStopAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemJogStopAdditive Parms{};
 
@@ -346,10 +304,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& I
 
 void UFloppingRabbitLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InPoseJogStartAdditive, struct FPoseLink* ItemJogStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJogStartAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJogStartAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemJogStartAdditive Parms{};
 
@@ -369,10 +324,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& 
 
 void UFloppingRabbitLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyModeLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFlyModeLoopAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFlyModeLoopAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemFlyModeLoopAdditive Parms{};
 
@@ -390,10 +342,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* Ite
 
 void UFloppingRabbitLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFlyModeStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFlyModeStartAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFlyModeStartAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemFlyModeStartAdditive Parms{};
 
@@ -411,10 +360,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* It
 
 void UFloppingRabbitLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZipLineStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemZipLineStartAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemZipLineStartAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemZipLineStartAdditive Parms{};
 
@@ -432,10 +378,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* It
 
 void UFloppingRabbitLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetPackJumpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJetPackJumpAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJetPackJumpAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemJetPackJumpAdditive Parms{};
 
@@ -453,10 +396,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* Ite
 
 void UFloppingRabbitLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJetPackStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJetPackStartAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJetPackStartAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemJetPackStartAdditive Parms{};
 
@@ -474,10 +414,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* It
 
 void UFloppingRabbitLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLandAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFallLandAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFallLandAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemFallLandAdditive Parms{};
 
@@ -495,10 +432,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFa
 
 void UFloppingRabbitLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFallAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFallAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemFallAdditive Parms{};
 
@@ -516,10 +450,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAd
 
 void UFloppingRabbitLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJumpLoopAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJumpLoopAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemJumpLoopAdditive Parms{};
 
@@ -537,10 +468,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJu
 
 void UFloppingRabbitLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJumpUpAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemJumpUpAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemJumpUpAdditive Parms{};
 
@@ -558,10 +486,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJump
 
 void UFloppingRabbitLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSliding_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSlopeSliding");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSlopeSliding");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemSlopeSliding Parms{};
 
@@ -579,10 +504,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeS
 
 void UFloppingRabbitLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCrouchTurningAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemCrouchTurningAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemCrouchTurningAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemCrouchTurningAdditive Parms{};
 
@@ -601,10 +523,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* I
 
 void UFloppingRabbitLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdleAdditive, struct FPoseLink* ItemIdleAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemIdleAdditive");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemIdleAdditive");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemIdleAdditive Parms{};
 
@@ -625,10 +544,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPo
 
 void UFloppingRabbitLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPoseSprint, struct FPoseLink* ItemFullBodySprint_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFullBodySprint");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemFullBodySprint");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemFullBodySprint Parms{};
 
@@ -650,10 +566,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& In
 
 void UFloppingRabbitLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam_0, struct FPoseLink* ItemUpperBody_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemUpperBody");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemUpperBody");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemUpperBody Parms{};
 
@@ -674,10 +587,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseU
 
 void UFloppingRabbitLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwimJumpStartLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpStartLoop");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpStartLoop");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemSwimJumpStartLoop Parms{};
 
@@ -695,10 +605,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemS
 
 void UFloppingRabbitLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJumpFallLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpFallLoop");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpFallLoop");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemSwimJumpFallLoop Parms{};
 
@@ -716,10 +623,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSw
 
 void UFloppingRabbitLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSwimJumpSurfaceLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemSwimJumpSurfaceLoop Parms{};
 
@@ -737,10 +641,7 @@ void UFloppingRabbitLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* Ite
 
 void UFloppingRabbitLayerAnimBP_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwimJumpSurfaceEnd_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
+	class UFunction* Func = Class->GetFunction("FloppingRabbitLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
 
 	Params::FloppingRabbitLayerAnimBP_C_ItemSwimJumpSurfaceEnd Parms{};
 

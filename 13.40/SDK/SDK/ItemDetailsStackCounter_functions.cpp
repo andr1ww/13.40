@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UItemDetailsStackCounter_C::Refresh_Visibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsStackCounter_C", "Refresh Visibility");
+	class UFunction* Func = Class->GetFunction("ItemDetailsStackCounter_C", "Refresh Visibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UItemDetailsStackCounter_C::Refresh_Visibility()
 
 void UItemDetailsStackCounter_C::Update_Stack_Count()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsStackCounter_C", "Update Stack Count");
+	class UFunction* Func = Class->GetFunction("ItemDetailsStackCounter_C", "Update Stack Count");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +45,7 @@ void UItemDetailsStackCounter_C::Update_Stack_Count()
 
 void UItemDetailsStackCounter_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsStackCounter_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ItemDetailsStackCounter_C", "PreConstruct");
 
 	Params::ItemDetailsStackCounter_C_PreConstruct Parms{};
 
@@ -69,10 +60,7 @@ void UItemDetailsStackCounter_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UItemDetailsStackCounter_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsStackCounter_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ItemDetailsStackCounter_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UItemDetailsStackCounter_C::Construct()
 
 void UItemDetailsStackCounter_C::HandlePreDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsStackCounter_C", "HandlePreDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsStackCounter_C", "HandlePreDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UItemDetailsStackCounter_C::HandlePreDifferentItemToDetailSet()
 
 void UItemDetailsStackCounter_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsStackCounter_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsStackCounter_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +97,7 @@ void UItemDetailsStackCounter_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsStackCounter_C::HandleOnItemChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsStackCounter_C", "HandleOnItemChanged");
+	class UFunction* Func = Class->GetFunction("ItemDetailsStackCounter_C", "HandleOnItemChanged");
 
 	Params::ItemDetailsStackCounter_C_HandleOnItemChanged Parms{};
 
@@ -135,10 +114,7 @@ void UItemDetailsStackCounter_C::HandleOnItemChanged(bool bItemChanged, bool bAm
 
 void UItemDetailsStackCounter_C::HandleQuantityOverrideChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsStackCounter_C", "HandleQuantityOverrideChanged");
+	class UFunction* Func = Class->GetFunction("ItemDetailsStackCounter_C", "HandleQuantityOverrideChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +127,7 @@ void UItemDetailsStackCounter_C::HandleQuantityOverrideChanged()
 
 void UItemDetailsStackCounter_C::ExecuteUbergraph_ItemDetailsStackCounter(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsStackCounter_C", "ExecuteUbergraph_ItemDetailsStackCounter");
+	class UFunction* Func = Class->GetFunction("ItemDetailsStackCounter_C", "ExecuteUbergraph_ItemDetailsStackCounter");
 
 	Params::ItemDetailsStackCounter_C_ExecuteUbergraph_ItemDetailsStackCounter Parms{};
 

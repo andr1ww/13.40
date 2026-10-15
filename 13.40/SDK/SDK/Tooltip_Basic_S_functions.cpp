@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTooltip_Basic_S_C::ExecuteUbergraph_Tooltip_Basic_S(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Tooltip-Basic-S_C", "ExecuteUbergraph_Tooltip-Basic-S");
+	class UFunction* Func = Class->GetFunction("Tooltip-Basic-S_C", "ExecuteUbergraph_Tooltip-Basic-S");
 
 	Params::Tooltip_Basic_S_C_ExecuteUbergraph_Tooltip_Basic_S Parms{};
 
@@ -41,10 +38,7 @@ void UTooltip_Basic_S_C::ExecuteUbergraph_Tooltip_Basic_S(int32 EntryPoint)
 
 void UTooltip_Basic_S_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Tooltip-Basic-S_C", "Construct");
+	class UFunction* Func = Class->GetFunction("Tooltip-Basic-S_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UTooltip_Basic_S_C::Construct()
 
 class FText UTooltip_Basic_S_C::Get_Body_Text()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Body Text");
+	class UFunction* Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Body Text");
 
 	Params::Tooltip_Basic_S_C_Get_Body_Text Parms{};
 
@@ -77,10 +68,7 @@ class FText UTooltip_Basic_S_C::Get_Body_Text()
 
 class FText UTooltip_Basic_S_C::Get_Header_Text()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Header Text");
+	class UFunction* Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Header Text");
 
 	Params::Tooltip_Basic_S_C_Get_Header_Text Parms{};
 
@@ -97,10 +85,7 @@ class FText UTooltip_Basic_S_C::Get_Header_Text()
 
 struct FSlateBrush UTooltip_Basic_S_C::Get_Icon_Brush()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Icon Brush");
+	class UFunction* Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Icon Brush");
 
 	Params::Tooltip_Basic_S_C_Get_Icon_Brush Parms{};
 

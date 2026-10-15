@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UGA_Ranged_GenericDamage_C::K2_CommitExecute()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ranged_GenericDamage_C", "K2_CommitExecute");
+	class UFunction* Func = Class->GetFunction("GA_Ranged_GenericDamage_C", "K2_CommitExecute");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -38,10 +35,7 @@ void UGA_Ranged_GenericDamage_C::K2_CommitExecute()
 
 void UGA_Ranged_GenericDamage_C::GetEventData(const struct FGameplayTag& EventTag, struct FGameplayEventData* GameplayEventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ranged_GenericDamage_C", "GetEventData");
+	class UFunction* Func = Class->GetFunction("GA_Ranged_GenericDamage_C", "GetEventData");
 
 	Params::GA_Ranged_GenericDamage_C_GetEventData Parms{};
 

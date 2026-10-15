@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 bool UARBlueprintLibrary::AddManualEnvironmentCaptureProbe(const struct FVector& Location, const struct FVector& Extent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "AddManualEnvironmentCaptureProbe");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "AddManualEnvironmentCaptureProbe");
 
 	Params::ARBlueprintLibrary_AddManualEnvironmentCaptureProbe Parms{};
 
@@ -57,10 +54,7 @@ bool UARBlueprintLibrary::AddManualEnvironmentCaptureProbe(const struct FVector&
 
 class UARCandidateImage* UARBlueprintLibrary::AddRuntimeCandidateImage(class UARSessionConfig* SessionConfig, class UTexture2D* CandidateTexture, const class FString& FriendlyName, float PhysicalWidth)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "AddRuntimeCandidateImage");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "AddRuntimeCandidateImage");
 
 	Params::ARBlueprintLibrary_AddRuntimeCandidateImage Parms{};
 
@@ -91,10 +85,7 @@ class UARCandidateImage* UARBlueprintLibrary::AddRuntimeCandidateImage(class UAR
 
 void UARBlueprintLibrary::DebugDrawPin(class UARPin* ARPin, class UObject* WorldContextObject, const struct FLinearColor& Color, float Scale, float PersistForSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "DebugDrawPin");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "DebugDrawPin");
 
 	Params::ARBlueprintLibrary_DebugDrawPin Parms{};
 
@@ -124,10 +115,7 @@ void UARBlueprintLibrary::DebugDrawPin(class UARPin* ARPin, class UObject* World
 
 void UARBlueprintLibrary::DebugDrawTrackedGeometry(class UARTrackedGeometry* TrackedGeometry, class UObject* WorldContextObject, const struct FLinearColor& Color, float OutlineThickness, float PersistForSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "DebugDrawTrackedGeometry");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "DebugDrawTrackedGeometry");
 
 	Params::ARBlueprintLibrary_DebugDrawTrackedGeometry Parms{};
 
@@ -153,10 +141,7 @@ void UARBlueprintLibrary::DebugDrawTrackedGeometry(class UARTrackedGeometry* Tra
 
 TArray<class UARTrackedGeometry*> UARBlueprintLibrary::GetAllGeometries()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllGeometries");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllGeometries");
 
 	Params::ARBlueprintLibrary_GetAllGeometries Parms{};
 
@@ -178,10 +163,7 @@ TArray<class UARTrackedGeometry*> UARBlueprintLibrary::GetAllGeometries()
 
 TArray<class UARPin*> UARBlueprintLibrary::GetAllPins()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllPins");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllPins");
 
 	Params::ARBlueprintLibrary_GetAllPins Parms{};
 
@@ -203,10 +185,7 @@ TArray<class UARPin*> UARBlueprintLibrary::GetAllPins()
 
 TArray<struct FARPose2D> UARBlueprintLibrary::GetAllTracked2DPoses()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTracked2DPoses");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTracked2DPoses");
 
 	Params::ARBlueprintLibrary_GetAllTracked2DPoses Parms{};
 
@@ -228,10 +207,7 @@ TArray<struct FARPose2D> UARBlueprintLibrary::GetAllTracked2DPoses()
 
 TArray<class UAREnvironmentCaptureProbe*> UARBlueprintLibrary::GetAllTrackedEnvironmentCaptureProbes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedEnvironmentCaptureProbes");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedEnvironmentCaptureProbes");
 
 	Params::ARBlueprintLibrary_GetAllTrackedEnvironmentCaptureProbes Parms{};
 
@@ -253,10 +229,7 @@ TArray<class UAREnvironmentCaptureProbe*> UARBlueprintLibrary::GetAllTrackedEnvi
 
 TArray<class UARTrackedImage*> UARBlueprintLibrary::GetAllTrackedImages()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedImages");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedImages");
 
 	Params::ARBlueprintLibrary_GetAllTrackedImages Parms{};
 
@@ -278,10 +251,7 @@ TArray<class UARTrackedImage*> UARBlueprintLibrary::GetAllTrackedImages()
 
 TArray<class UARPlaneGeometry*> UARBlueprintLibrary::GetAllTrackedPlanes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedPlanes");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedPlanes");
 
 	Params::ARBlueprintLibrary_GetAllTrackedPlanes Parms{};
 
@@ -303,10 +273,7 @@ TArray<class UARPlaneGeometry*> UARBlueprintLibrary::GetAllTrackedPlanes()
 
 TArray<class UARTrackedPoint*> UARBlueprintLibrary::GetAllTrackedPoints()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedPoints");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedPoints");
 
 	Params::ARBlueprintLibrary_GetAllTrackedPoints Parms{};
 
@@ -328,10 +295,7 @@ TArray<class UARTrackedPoint*> UARBlueprintLibrary::GetAllTrackedPoints()
 
 TArray<class UARTrackedPose*> UARBlueprintLibrary::GetAllTrackedPoses()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedPoses");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetAllTrackedPoses");
 
 	Params::ARBlueprintLibrary_GetAllTrackedPoses Parms{};
 
@@ -353,10 +317,7 @@ TArray<class UARTrackedPose*> UARBlueprintLibrary::GetAllTrackedPoses()
 
 struct FARSessionStatus UARBlueprintLibrary::GetARSessionStatus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetARSessionStatus");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetARSessionStatus");
 
 	Params::ARBlueprintLibrary_GetARSessionStatus Parms{};
 
@@ -378,10 +339,7 @@ struct FARSessionStatus UARBlueprintLibrary::GetARSessionStatus()
 
 class UARTextureCameraDepth* UARBlueprintLibrary::GetCameraDepth()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetCameraDepth");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetCameraDepth");
 
 	Params::ARBlueprintLibrary_GetCameraDepth Parms{};
 
@@ -403,10 +361,7 @@ class UARTextureCameraDepth* UARBlueprintLibrary::GetCameraDepth()
 
 class UARTextureCameraImage* UARBlueprintLibrary::GetCameraImage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetCameraImage");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetCameraImage");
 
 	Params::ARBlueprintLibrary_GetCameraImage Parms{};
 
@@ -428,10 +383,7 @@ class UARTextureCameraImage* UARBlueprintLibrary::GetCameraImage()
 
 class UARLightEstimate* UARBlueprintLibrary::GetCurrentLightEstimate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetCurrentLightEstimate");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetCurrentLightEstimate");
 
 	Params::ARBlueprintLibrary_GetCurrentLightEstimate Parms{};
 
@@ -453,10 +405,7 @@ class UARLightEstimate* UARBlueprintLibrary::GetCurrentLightEstimate()
 
 class UARTextureCameraImage* UARBlueprintLibrary::GetPersonSegmentationDepthImage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetPersonSegmentationDepthImage");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetPersonSegmentationDepthImage");
 
 	Params::ARBlueprintLibrary_GetPersonSegmentationDepthImage Parms{};
 
@@ -478,10 +427,7 @@ class UARTextureCameraImage* UARBlueprintLibrary::GetPersonSegmentationDepthImag
 
 class UARTextureCameraImage* UARBlueprintLibrary::GetPersonSegmentationImage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetPersonSegmentationImage");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetPersonSegmentationImage");
 
 	Params::ARBlueprintLibrary_GetPersonSegmentationImage Parms{};
 
@@ -503,10 +449,7 @@ class UARTextureCameraImage* UARBlueprintLibrary::GetPersonSegmentationImage()
 
 TArray<struct FVector> UARBlueprintLibrary::GetPointCloud()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetPointCloud");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetPointCloud");
 
 	Params::ARBlueprintLibrary_GetPointCloud Parms{};
 
@@ -528,10 +471,7 @@ TArray<struct FVector> UARBlueprintLibrary::GetPointCloud()
 
 class UARSessionConfig* UARBlueprintLibrary::GetSessionConfig()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetSessionConfig");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetSessionConfig");
 
 	Params::ARBlueprintLibrary_GetSessionConfig Parms{};
 
@@ -554,10 +494,7 @@ class UARSessionConfig* UARBlueprintLibrary::GetSessionConfig()
 
 TArray<struct FARVideoFormat> UARBlueprintLibrary::GetSupportedVideoFormats(EARSessionType SessionType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetSupportedVideoFormats");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetSupportedVideoFormats");
 
 	Params::ARBlueprintLibrary_GetSupportedVideoFormats Parms{};
 
@@ -581,10 +518,7 @@ TArray<struct FARVideoFormat> UARBlueprintLibrary::GetSupportedVideoFormats(EARS
 
 EARTrackingQuality UARBlueprintLibrary::GetTrackingQuality()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetTrackingQuality");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetTrackingQuality");
 
 	Params::ARBlueprintLibrary_GetTrackingQuality Parms{};
 
@@ -606,10 +540,7 @@ EARTrackingQuality UARBlueprintLibrary::GetTrackingQuality()
 
 EARTrackingQualityReason UARBlueprintLibrary::GetTrackingQualityReason()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetTrackingQualityReason");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetTrackingQualityReason");
 
 	Params::ARBlueprintLibrary_GetTrackingQualityReason Parms{};
 
@@ -631,10 +562,7 @@ EARTrackingQualityReason UARBlueprintLibrary::GetTrackingQualityReason()
 
 EARWorldMappingState UARBlueprintLibrary::GetWorldMappingStatus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetWorldMappingStatus");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "GetWorldMappingStatus");
 
 	Params::ARBlueprintLibrary_GetWorldMappingStatus Parms{};
 
@@ -656,10 +584,7 @@ EARWorldMappingState UARBlueprintLibrary::GetWorldMappingStatus()
 
 bool UARBlueprintLibrary::IsARSupported()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "IsARSupported");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "IsARSupported");
 
 	Params::ARBlueprintLibrary_IsARSupported Parms{};
 
@@ -683,10 +608,7 @@ bool UARBlueprintLibrary::IsARSupported()
 
 bool UARBlueprintLibrary::IsSessionTrackingFeatureSupported(EARSessionType SessionType, EARSessionTrackingFeature SessionTrackingFeature)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "IsSessionTrackingFeatureSupported");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "IsSessionTrackingFeatureSupported");
 
 	Params::ARBlueprintLibrary_IsSessionTrackingFeatureSupported Parms{};
 
@@ -712,10 +634,7 @@ bool UARBlueprintLibrary::IsSessionTrackingFeatureSupported(EARSessionType Sessi
 
 bool UARBlueprintLibrary::IsSessionTypeSupported(EARSessionType SessionType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "IsSessionTypeSupported");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "IsSessionTypeSupported");
 
 	Params::ARBlueprintLibrary_IsSessionTypeSupported Parms{};
 
@@ -744,10 +663,7 @@ bool UARBlueprintLibrary::IsSessionTypeSupported(EARSessionType SessionType)
 
 TArray<struct FARTraceResult> UARBlueprintLibrary::LineTraceTrackedObjects(const struct FVector2D& ScreenCoord, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "LineTraceTrackedObjects");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "LineTraceTrackedObjects");
 
 	Params::ARBlueprintLibrary_LineTraceTrackedObjects Parms{};
 
@@ -781,10 +697,7 @@ TArray<struct FARTraceResult> UARBlueprintLibrary::LineTraceTrackedObjects(const
 
 TArray<struct FARTraceResult> UARBlueprintLibrary::LineTraceTrackedObjects3D(const struct FVector& Start, const struct FVector& End, bool bTestFeaturePoints, bool bTestGroundPlane, bool bTestPlaneExtents, bool bTestPlaneBoundaryPolygon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "LineTraceTrackedObjects3D");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "LineTraceTrackedObjects3D");
 
 	Params::ARBlueprintLibrary_LineTraceTrackedObjects3D Parms{};
 
@@ -811,10 +724,7 @@ TArray<struct FARTraceResult> UARBlueprintLibrary::LineTraceTrackedObjects3D(con
 
 void UARBlueprintLibrary::PauseARSession()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "PauseARSession");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "PauseARSession");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -836,10 +746,7 @@ void UARBlueprintLibrary::PauseARSession()
 
 class UARPin* UARBlueprintLibrary::PinComponent(class USceneComponent* ComponentToPin, const struct FTransform& PinToWorldTransform, class UARTrackedGeometry* TrackedGeometry, const class FName DebugName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "PinComponent");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "PinComponent");
 
 	Params::ARBlueprintLibrary_PinComponent Parms{};
 
@@ -869,10 +776,7 @@ class UARPin* UARBlueprintLibrary::PinComponent(class USceneComponent* Component
 
 class UARPin* UARBlueprintLibrary::PinComponentToTraceResult(class USceneComponent* ComponentToPin, const struct FARTraceResult& TraceResult, const class FName DebugName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "PinComponentToTraceResult");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "PinComponentToTraceResult");
 
 	Params::ARBlueprintLibrary_PinComponentToTraceResult Parms{};
 
@@ -898,10 +802,7 @@ class UARPin* UARBlueprintLibrary::PinComponentToTraceResult(class USceneCompone
 
 void UARBlueprintLibrary::RemovePin(class UARPin* PinToRemove)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "RemovePin");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "RemovePin");
 
 	Params::ARBlueprintLibrary_RemovePin Parms{};
 
@@ -923,10 +824,7 @@ void UARBlueprintLibrary::RemovePin(class UARPin* PinToRemove)
 
 void UARBlueprintLibrary::SetAlignmentTransform(const struct FTransform& InAlignmentTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "SetAlignmentTransform");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "SetAlignmentTransform");
 
 	Params::ARBlueprintLibrary_SetAlignmentTransform Parms{};
 
@@ -948,10 +846,7 @@ void UARBlueprintLibrary::SetAlignmentTransform(const struct FTransform& InAlign
 
 void UARBlueprintLibrary::StartARSession(class UARSessionConfig* SessionConfig)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "StartARSession");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "StartARSession");
 
 	Params::ARBlueprintLibrary_StartARSession Parms{};
 
@@ -971,10 +866,7 @@ void UARBlueprintLibrary::StartARSession(class UARSessionConfig* SessionConfig)
 
 void UARBlueprintLibrary::StopARSession()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "StopARSession");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "StopARSession");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -992,10 +884,7 @@ void UARBlueprintLibrary::StopARSession()
 
 void UARBlueprintLibrary::UnpinComponent(class USceneComponent* ComponentToUnpin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARBlueprintLibrary", "UnpinComponent");
+	class UFunction* Func = StaticClass()->GetFunction("ARBlueprintLibrary", "UnpinComponent");
 
 	Params::ARBlueprintLibrary_UnpinComponent Parms{};
 
@@ -1018,10 +907,7 @@ void UARBlueprintLibrary::UnpinComponent(class USceneComponent* ComponentToUnpin
 
 float UARTraceResultLibrary::GetDistanceFromCamera(const struct FARTraceResult& TraceResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetDistanceFromCamera");
+	class UFunction* Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetDistanceFromCamera");
 
 	Params::ARTraceResultLibrary_GetDistanceFromCamera Parms{};
 
@@ -1046,10 +932,7 @@ float UARTraceResultLibrary::GetDistanceFromCamera(const struct FARTraceResult& 
 
 struct FTransform UARTraceResultLibrary::GetLocalToTrackingTransform(const struct FARTraceResult& TraceResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetLocalToTrackingTransform");
+	class UFunction* Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetLocalToTrackingTransform");
 
 	Params::ARTraceResultLibrary_GetLocalToTrackingTransform Parms{};
 
@@ -1074,10 +957,7 @@ struct FTransform UARTraceResultLibrary::GetLocalToTrackingTransform(const struc
 
 struct FTransform UARTraceResultLibrary::GetLocalToWorldTransform(const struct FARTraceResult& TraceResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetLocalToWorldTransform");
+	class UFunction* Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetLocalToWorldTransform");
 
 	Params::ARTraceResultLibrary_GetLocalToWorldTransform Parms{};
 
@@ -1102,10 +982,7 @@ struct FTransform UARTraceResultLibrary::GetLocalToWorldTransform(const struct F
 
 EARLineTraceChannels UARTraceResultLibrary::GetTraceChannel(const struct FARTraceResult& TraceResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetTraceChannel");
+	class UFunction* Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetTraceChannel");
 
 	Params::ARTraceResultLibrary_GetTraceChannel Parms{};
 
@@ -1130,10 +1007,7 @@ EARLineTraceChannels UARTraceResultLibrary::GetTraceChannel(const struct FARTrac
 
 class UARTrackedGeometry* UARTraceResultLibrary::GetTrackedGeometry(const struct FARTraceResult& TraceResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetTrackedGeometry");
+	class UFunction* Func = StaticClass()->GetFunction("ARTraceResultLibrary", "GetTrackedGeometry");
 
 	Params::ARTraceResultLibrary_GetTrackedGeometry Parms{};
 
@@ -1158,10 +1032,7 @@ class UARTrackedGeometry* UARTraceResultLibrary::GetTrackedGeometry(const struct
 
 class UARSaveWorldAsyncTaskBlueprintProxy* UARSaveWorldAsyncTaskBlueprintProxy::ARSaveWorld(class UObject* WorldContextObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARSaveWorldAsyncTaskBlueprintProxy", "ARSaveWorld");
+	class UFunction* Func = StaticClass()->GetFunction("ARSaveWorldAsyncTaskBlueprintProxy", "ARSaveWorld");
 
 	Params::ARSaveWorldAsyncTaskBlueprintProxy_ARSaveWorld Parms{};
 
@@ -1188,10 +1059,7 @@ class UARSaveWorldAsyncTaskBlueprintProxy* UARSaveWorldAsyncTaskBlueprintProxy::
 
 class UARGetCandidateObjectAsyncTaskBlueprintProxy* UARGetCandidateObjectAsyncTaskBlueprintProxy::ARGetCandidateObject(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ARGetCandidateObjectAsyncTaskBlueprintProxy", "ARGetCandidateObject");
+	class UFunction* Func = StaticClass()->GetFunction("ARGetCandidateObjectAsyncTaskBlueprintProxy", "ARGetCandidateObject");
 
 	Params::ARGetCandidateObjectAsyncTaskBlueprintProxy_ARGetCandidateObject Parms{};
 
@@ -1217,10 +1085,7 @@ class UARGetCandidateObjectAsyncTaskBlueprintProxy* UARGetCandidateObjectAsyncTa
 
 struct FLinearColor UARBasicLightEstimate::GetAmbientColor() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARBasicLightEstimate", "GetAmbientColor");
+	class UFunction* Func = Class->GetFunction("ARBasicLightEstimate", "GetAmbientColor");
 
 	Params::ARBasicLightEstimate_GetAmbientColor Parms{};
 
@@ -1242,10 +1107,7 @@ struct FLinearColor UARBasicLightEstimate::GetAmbientColor() const
 
 float UARBasicLightEstimate::GetAmbientColorTemperatureKelvin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARBasicLightEstimate", "GetAmbientColorTemperatureKelvin");
+	class UFunction* Func = Class->GetFunction("ARBasicLightEstimate", "GetAmbientColorTemperatureKelvin");
 
 	Params::ARBasicLightEstimate_GetAmbientColorTemperatureKelvin Parms{};
 
@@ -1267,10 +1129,7 @@ float UARBasicLightEstimate::GetAmbientColorTemperatureKelvin() const
 
 float UARBasicLightEstimate::GetAmbientIntensityLumens() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARBasicLightEstimate", "GetAmbientIntensityLumens");
+	class UFunction* Func = Class->GetFunction("ARBasicLightEstimate", "GetAmbientIntensityLumens");
 
 	Params::ARBasicLightEstimate_GetAmbientIntensityLumens Parms{};
 
@@ -1295,10 +1154,7 @@ float UARBasicLightEstimate::GetAmbientIntensityLumens() const
 
 void UARPin::DebugDraw(class UWorld* World, const struct FLinearColor& Color, float Scale, float PersistForSeconds) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPin", "DebugDraw");
+	class UFunction* Func = Class->GetFunction("ARPin", "DebugDraw");
 
 	Params::ARPin_DebugDraw Parms{};
 
@@ -1323,10 +1179,7 @@ void UARPin::DebugDraw(class UWorld* World, const struct FLinearColor& Color, fl
 
 class FName UARPin::GetDebugName() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPin", "GetDebugName");
+	class UFunction* Func = Class->GetFunction("ARPin", "GetDebugName");
 
 	Params::ARPin_GetDebugName Parms{};
 
@@ -1348,10 +1201,7 @@ class FName UARPin::GetDebugName() const
 
 struct FTransform UARPin::GetLocalToTrackingTransform() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPin", "GetLocalToTrackingTransform");
+	class UFunction* Func = Class->GetFunction("ARPin", "GetLocalToTrackingTransform");
 
 	Params::ARPin_GetLocalToTrackingTransform Parms{};
 
@@ -1373,10 +1223,7 @@ struct FTransform UARPin::GetLocalToTrackingTransform() const
 
 struct FTransform UARPin::GetLocalToWorldTransform() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPin", "GetLocalToWorldTransform");
+	class UFunction* Func = Class->GetFunction("ARPin", "GetLocalToWorldTransform");
 
 	Params::ARPin_GetLocalToWorldTransform Parms{};
 
@@ -1398,10 +1245,7 @@ struct FTransform UARPin::GetLocalToWorldTransform() const
 
 class USceneComponent* UARPin::GetPinnedComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPin", "GetPinnedComponent");
+	class UFunction* Func = Class->GetFunction("ARPin", "GetPinnedComponent");
 
 	Params::ARPin_GetPinnedComponent Parms{};
 
@@ -1423,10 +1267,7 @@ class USceneComponent* UARPin::GetPinnedComponent() const
 
 class UARTrackedGeometry* UARPin::GetTrackedGeometry() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPin", "GetTrackedGeometry");
+	class UFunction* Func = Class->GetFunction("ARPin", "GetTrackedGeometry");
 
 	Params::ARPin_GetTrackedGeometry Parms{};
 
@@ -1448,10 +1289,7 @@ class UARTrackedGeometry* UARPin::GetTrackedGeometry() const
 
 EARTrackingState UARPin::GetTrackingState() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPin", "GetTrackingState");
+	class UFunction* Func = Class->GetFunction("ARPin", "GetTrackingState");
 
 	Params::ARPin_GetTrackingState Parms{};
 
@@ -1473,10 +1311,7 @@ EARTrackingState UARPin::GetTrackingState() const
 
 void UARSessionConfig::AddCandidateImage(class UARCandidateImage* NewCandidateImage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "AddCandidateImage");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "AddCandidateImage");
 
 	Params::ARSessionConfig_AddCandidateImage Parms{};
 
@@ -1498,10 +1333,7 @@ void UARSessionConfig::AddCandidateImage(class UARCandidateImage* NewCandidateIm
 
 void UARSessionConfig::AddCandidateObject(class UARCandidateObject* CandidateObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "AddCandidateObject");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "AddCandidateObject");
 
 	Params::ARSessionConfig_AddCandidateObject Parms{};
 
@@ -1523,10 +1355,7 @@ void UARSessionConfig::AddCandidateObject(class UARCandidateObject* CandidateObj
 
 void UARSessionConfig::SetCandidateObjectList(const TArray<class UARCandidateObject*>& InCandidateObjects)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "SetCandidateObjectList");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "SetCandidateObjectList");
 
 	Params::ARSessionConfig_SetCandidateObjectList Parms{};
 
@@ -1548,10 +1377,7 @@ void UARSessionConfig::SetCandidateObjectList(const TArray<class UARCandidateObj
 
 void UARSessionConfig::SetDesiredVideoFormat(const struct FARVideoFormat& NewFormat)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "SetDesiredVideoFormat");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "SetDesiredVideoFormat");
 
 	Params::ARSessionConfig_SetDesiredVideoFormat Parms{};
 
@@ -1573,10 +1399,7 @@ void UARSessionConfig::SetDesiredVideoFormat(const struct FARVideoFormat& NewFor
 
 void UARSessionConfig::SetEnableAutoFocus(bool bNewValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "SetEnableAutoFocus");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "SetEnableAutoFocus");
 
 	Params::ARSessionConfig_SetEnableAutoFocus Parms{};
 
@@ -1598,10 +1421,7 @@ void UARSessionConfig::SetEnableAutoFocus(bool bNewValue)
 
 void UARSessionConfig::SetFaceTrackingDirection(EARFaceTrackingDirection InDirection)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "SetFaceTrackingDirection");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "SetFaceTrackingDirection");
 
 	Params::ARSessionConfig_SetFaceTrackingDirection Parms{};
 
@@ -1623,10 +1443,7 @@ void UARSessionConfig::SetFaceTrackingDirection(EARFaceTrackingDirection InDirec
 
 void UARSessionConfig::SetFaceTrackingUpdate(EARFaceTrackingUpdate InUpdate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "SetFaceTrackingUpdate");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "SetFaceTrackingUpdate");
 
 	Params::ARSessionConfig_SetFaceTrackingUpdate Parms{};
 
@@ -1648,10 +1465,7 @@ void UARSessionConfig::SetFaceTrackingUpdate(EARFaceTrackingUpdate InUpdate)
 
 void UARSessionConfig::SetResetCameraTracking(bool bNewValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "SetResetCameraTracking");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "SetResetCameraTracking");
 
 	Params::ARSessionConfig_SetResetCameraTracking Parms{};
 
@@ -1673,10 +1487,7 @@ void UARSessionConfig::SetResetCameraTracking(bool bNewValue)
 
 void UARSessionConfig::SetResetTrackedObjects(bool bNewValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "SetResetTrackedObjects");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "SetResetTrackedObjects");
 
 	Params::ARSessionConfig_SetResetTrackedObjects Parms{};
 
@@ -1698,10 +1509,7 @@ void UARSessionConfig::SetResetTrackedObjects(bool bNewValue)
 
 void UARSessionConfig::SetSessionTrackingFeatureToEnable(EARSessionTrackingFeature InSessionTrackingFeature)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "SetSessionTrackingFeatureToEnable");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "SetSessionTrackingFeatureToEnable");
 
 	Params::ARSessionConfig_SetSessionTrackingFeatureToEnable Parms{};
 
@@ -1723,10 +1531,7 @@ void UARSessionConfig::SetSessionTrackingFeatureToEnable(EARSessionTrackingFeatu
 
 void UARSessionConfig::SetWorldMapData(const TArray<uint8>& WorldMapData_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "SetWorldMapData");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "SetWorldMapData");
 
 	Params::ARSessionConfig_SetWorldMapData Parms{};
 
@@ -1748,10 +1553,7 @@ void UARSessionConfig::SetWorldMapData(const TArray<uint8>& WorldMapData_0)
 
 const TArray<class UARCandidateImage*> UARSessionConfig::GetCandidateImageList() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetCandidateImageList");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetCandidateImageList");
 
 	Params::ARSessionConfig_GetCandidateImageList Parms{};
 
@@ -1773,10 +1575,7 @@ const TArray<class UARCandidateImage*> UARSessionConfig::GetCandidateImageList()
 
 const TArray<class UARCandidateObject*> UARSessionConfig::GetCandidateObjectList() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetCandidateObjectList");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetCandidateObjectList");
 
 	Params::ARSessionConfig_GetCandidateObjectList Parms{};
 
@@ -1798,10 +1597,7 @@ const TArray<class UARCandidateObject*> UARSessionConfig::GetCandidateObjectList
 
 struct FARVideoFormat UARSessionConfig::GetDesiredVideoFormat() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetDesiredVideoFormat");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetDesiredVideoFormat");
 
 	Params::ARSessionConfig_GetDesiredVideoFormat Parms{};
 
@@ -1823,10 +1619,7 @@ struct FARVideoFormat UARSessionConfig::GetDesiredVideoFormat() const
 
 EARSessionTrackingFeature UARSessionConfig::GetEnabledSessionTrackingFeature() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetEnabledSessionTrackingFeature");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetEnabledSessionTrackingFeature");
 
 	Params::ARSessionConfig_GetEnabledSessionTrackingFeature Parms{};
 
@@ -1848,10 +1641,7 @@ EARSessionTrackingFeature UARSessionConfig::GetEnabledSessionTrackingFeature() c
 
 EAREnvironmentCaptureProbeType UARSessionConfig::GetEnvironmentCaptureProbeType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetEnvironmentCaptureProbeType");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetEnvironmentCaptureProbeType");
 
 	Params::ARSessionConfig_GetEnvironmentCaptureProbeType Parms{};
 
@@ -1873,10 +1663,7 @@ EAREnvironmentCaptureProbeType UARSessionConfig::GetEnvironmentCaptureProbeType(
 
 EARFaceTrackingDirection UARSessionConfig::GetFaceTrackingDirection() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetFaceTrackingDirection");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetFaceTrackingDirection");
 
 	Params::ARSessionConfig_GetFaceTrackingDirection Parms{};
 
@@ -1898,10 +1685,7 @@ EARFaceTrackingDirection UARSessionConfig::GetFaceTrackingDirection() const
 
 EARFaceTrackingUpdate UARSessionConfig::GetFaceTrackingUpdate() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetFaceTrackingUpdate");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetFaceTrackingUpdate");
 
 	Params::ARSessionConfig_GetFaceTrackingUpdate Parms{};
 
@@ -1923,10 +1707,7 @@ EARFaceTrackingUpdate UARSessionConfig::GetFaceTrackingUpdate() const
 
 EARFrameSyncMode UARSessionConfig::GetFrameSyncMode() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetFrameSyncMode");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetFrameSyncMode");
 
 	Params::ARSessionConfig_GetFrameSyncMode Parms{};
 
@@ -1948,10 +1729,7 @@ EARFrameSyncMode UARSessionConfig::GetFrameSyncMode() const
 
 EARLightEstimationMode UARSessionConfig::GetLightEstimationMode() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetLightEstimationMode");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetLightEstimationMode");
 
 	Params::ARSessionConfig_GetLightEstimationMode Parms{};
 
@@ -1973,10 +1751,7 @@ EARLightEstimationMode UARSessionConfig::GetLightEstimationMode() const
 
 int32 UARSessionConfig::GetMaxNumSimultaneousImagesTracked() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetMaxNumSimultaneousImagesTracked");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetMaxNumSimultaneousImagesTracked");
 
 	Params::ARSessionConfig_GetMaxNumSimultaneousImagesTracked Parms{};
 
@@ -1998,10 +1773,7 @@ int32 UARSessionConfig::GetMaxNumSimultaneousImagesTracked() const
 
 EARPlaneDetectionMode UARSessionConfig::GetPlaneDetectionMode() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetPlaneDetectionMode");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetPlaneDetectionMode");
 
 	Params::ARSessionConfig_GetPlaneDetectionMode Parms{};
 
@@ -2023,10 +1795,7 @@ EARPlaneDetectionMode UARSessionConfig::GetPlaneDetectionMode() const
 
 EARSessionType UARSessionConfig::GetSessionType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetSessionType");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetSessionType");
 
 	Params::ARSessionConfig_GetSessionType Parms{};
 
@@ -2048,10 +1817,7 @@ EARSessionType UARSessionConfig::GetSessionType() const
 
 EARWorldAlignment UARSessionConfig::GetWorldAlignment() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetWorldAlignment");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetWorldAlignment");
 
 	Params::ARSessionConfig_GetWorldAlignment Parms{};
 
@@ -2073,10 +1839,7 @@ EARWorldAlignment UARSessionConfig::GetWorldAlignment() const
 
 const TArray<uint8> UARSessionConfig::GetWorldMapData() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "GetWorldMapData");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "GetWorldMapData");
 
 	Params::ARSessionConfig_GetWorldMapData Parms{};
 
@@ -2098,10 +1861,7 @@ const TArray<uint8> UARSessionConfig::GetWorldMapData() const
 
 bool UARSessionConfig::ShouldEnableAutoFocus() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "ShouldEnableAutoFocus");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "ShouldEnableAutoFocus");
 
 	Params::ARSessionConfig_ShouldEnableAutoFocus Parms{};
 
@@ -2123,10 +1883,7 @@ bool UARSessionConfig::ShouldEnableAutoFocus() const
 
 bool UARSessionConfig::ShouldEnableCameraTracking() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "ShouldEnableCameraTracking");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "ShouldEnableCameraTracking");
 
 	Params::ARSessionConfig_ShouldEnableCameraTracking Parms{};
 
@@ -2148,10 +1905,7 @@ bool UARSessionConfig::ShouldEnableCameraTracking() const
 
 bool UARSessionConfig::ShouldRenderCameraOverlay() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "ShouldRenderCameraOverlay");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "ShouldRenderCameraOverlay");
 
 	Params::ARSessionConfig_ShouldRenderCameraOverlay Parms{};
 
@@ -2173,10 +1927,7 @@ bool UARSessionConfig::ShouldRenderCameraOverlay() const
 
 bool UARSessionConfig::ShouldResetCameraTracking() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "ShouldResetCameraTracking");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "ShouldResetCameraTracking");
 
 	Params::ARSessionConfig_ShouldResetCameraTracking Parms{};
 
@@ -2198,10 +1949,7 @@ bool UARSessionConfig::ShouldResetCameraTracking() const
 
 bool UARSessionConfig::ShouldResetTrackedObjects() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSessionConfig", "ShouldResetTrackedObjects");
+	class UFunction* Func = Class->GetFunction("ARSessionConfig", "ShouldResetTrackedObjects");
 
 	Params::ARSessionConfig_ShouldResetTrackedObjects Parms{};
 
@@ -2223,10 +1971,7 @@ bool UARSessionConfig::ShouldResetTrackedObjects() const
 
 class AARSharedWorldGameState* AARSharedWorldGameMode::GetARSharedWorldGameState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "GetARSharedWorldGameState");
+	class UFunction* Func = Class->GetFunction("ARSharedWorldGameMode", "GetARSharedWorldGameState");
 
 	Params::ARSharedWorldGameMode_GetARSharedWorldGameState Parms{};
 
@@ -2248,10 +1993,7 @@ class AARSharedWorldGameState* AARSharedWorldGameMode::GetARSharedWorldGameState
 
 void AARSharedWorldGameMode::SetARSharedWorldData(const TArray<uint8>& ARWorldData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARSharedWorldData");
+	class UFunction* Func = Class->GetFunction("ARSharedWorldGameMode", "SetARSharedWorldData");
 
 	Params::ARSharedWorldGameMode_SetARSharedWorldData Parms{};
 
@@ -2271,10 +2013,7 @@ void AARSharedWorldGameMode::SetARSharedWorldData(const TArray<uint8>& ARWorldDa
 
 void AARSharedWorldGameMode::SetARWorldSharingIsReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "SetARWorldSharingIsReady");
+	class UFunction* Func = Class->GetFunction("ARSharedWorldGameMode", "SetARWorldSharingIsReady");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2292,10 +2031,7 @@ void AARSharedWorldGameMode::SetARWorldSharingIsReady()
 
 void AARSharedWorldGameMode::SetPreviewImageData(const TArray<uint8>& ImageData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameMode", "SetPreviewImageData");
+	class UFunction* Func = Class->GetFunction("ARSharedWorldGameMode", "SetPreviewImageData");
 
 	Params::ARSharedWorldGameMode_SetPreviewImageData Parms{};
 
@@ -2315,10 +2051,7 @@ void AARSharedWorldGameMode::SetPreviewImageData(const TArray<uint8>& ImageData)
 
 void AARSharedWorldGameState::K2_OnARWorldMapIsReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldGameState", "K2_OnARWorldMapIsReady");
+	class UFunction* Func = Class->GetFunction("ARSharedWorldGameState", "K2_OnARWorldMapIsReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2332,10 +2065,7 @@ void AARSharedWorldGameState::K2_OnARWorldMapIsReady()
 
 void AARSharedWorldPlayerController::ClientInitSharedWorld(int32 PreviewImageSize, int32 ARWorldDataSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldPlayerController", "ClientInitSharedWorld");
+	class UFunction* Func = Class->GetFunction("ARSharedWorldPlayerController", "ClientInitSharedWorld");
 
 	Params::ARSharedWorldPlayerController_ClientInitSharedWorld Parms{};
 
@@ -2359,10 +2089,7 @@ void AARSharedWorldPlayerController::ClientInitSharedWorld(int32 PreviewImageSiz
 
 void AARSharedWorldPlayerController::ClientUpdateARWorldData(int32 Offset, const TArray<uint8>& Buffer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldPlayerController", "ClientUpdateARWorldData");
+	class UFunction* Func = Class->GetFunction("ARSharedWorldPlayerController", "ClientUpdateARWorldData");
 
 	Params::ARSharedWorldPlayerController_ClientUpdateARWorldData Parms{};
 
@@ -2386,10 +2113,7 @@ void AARSharedWorldPlayerController::ClientUpdateARWorldData(int32 Offset, const
 
 void AARSharedWorldPlayerController::ClientUpdatePreviewImageData(int32 Offset, const TArray<uint8>& Buffer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldPlayerController", "ClientUpdatePreviewImageData");
+	class UFunction* Func = Class->GetFunction("ARSharedWorldPlayerController", "ClientUpdatePreviewImageData");
 
 	Params::ARSharedWorldPlayerController_ClientUpdatePreviewImageData Parms{};
 
@@ -2410,10 +2134,7 @@ void AARSharedWorldPlayerController::ClientUpdatePreviewImageData(int32 Offset, 
 
 void AARSharedWorldPlayerController::ServerMarkReadyForReceiving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSharedWorldPlayerController", "ServerMarkReadyForReceiving");
+	class UFunction* Func = Class->GetFunction("ARSharedWorldPlayerController", "ServerMarkReadyForReceiving");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -2431,10 +2152,7 @@ void AARSharedWorldPlayerController::ServerMarkReadyForReceiving()
 
 void AARSkyLight::SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARSkyLight", "SetEnvironmentCaptureProbe");
+	class UFunction* Func = Class->GetFunction("ARSkyLight", "SetEnvironmentCaptureProbe");
 
 	Params::ARSkyLight_SetEnvironmentCaptureProbe Parms{};
 
@@ -2456,10 +2174,7 @@ void AARSkyLight::SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* I
 
 class UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedGeometry", "GetUnderlyingMesh");
+	class UFunction* Func = Class->GetFunction("ARTrackedGeometry", "GetUnderlyingMesh");
 
 	Params::ARTrackedGeometry_GetUnderlyingMesh Parms{};
 
@@ -2481,10 +2196,7 @@ class UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 class FName UARTrackedGeometry::GetDebugName() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedGeometry", "GetDebugName");
+	class UFunction* Func = Class->GetFunction("ARTrackedGeometry", "GetDebugName");
 
 	Params::ARTrackedGeometry_GetDebugName Parms{};
 
@@ -2506,10 +2218,7 @@ class FName UARTrackedGeometry::GetDebugName() const
 
 int32 UARTrackedGeometry::GetLastUpdateFrameNumber() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedGeometry", "GetLastUpdateFrameNumber");
+	class UFunction* Func = Class->GetFunction("ARTrackedGeometry", "GetLastUpdateFrameNumber");
 
 	Params::ARTrackedGeometry_GetLastUpdateFrameNumber Parms{};
 
@@ -2531,10 +2240,7 @@ int32 UARTrackedGeometry::GetLastUpdateFrameNumber() const
 
 float UARTrackedGeometry::GetLastUpdateTimestamp() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedGeometry", "GetLastUpdateTimestamp");
+	class UFunction* Func = Class->GetFunction("ARTrackedGeometry", "GetLastUpdateTimestamp");
 
 	Params::ARTrackedGeometry_GetLastUpdateTimestamp Parms{};
 
@@ -2556,10 +2262,7 @@ float UARTrackedGeometry::GetLastUpdateTimestamp() const
 
 struct FTransform UARTrackedGeometry::GetLocalToTrackingTransform() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedGeometry", "GetLocalToTrackingTransform");
+	class UFunction* Func = Class->GetFunction("ARTrackedGeometry", "GetLocalToTrackingTransform");
 
 	Params::ARTrackedGeometry_GetLocalToTrackingTransform Parms{};
 
@@ -2581,10 +2284,7 @@ struct FTransform UARTrackedGeometry::GetLocalToTrackingTransform() const
 
 struct FTransform UARTrackedGeometry::GetLocalToWorldTransform() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedGeometry", "GetLocalToWorldTransform");
+	class UFunction* Func = Class->GetFunction("ARTrackedGeometry", "GetLocalToWorldTransform");
 
 	Params::ARTrackedGeometry_GetLocalToWorldTransform Parms{};
 
@@ -2606,10 +2306,7 @@ struct FTransform UARTrackedGeometry::GetLocalToWorldTransform() const
 
 EARObjectClassification UARTrackedGeometry::GetObjectClassification() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedGeometry", "GetObjectClassification");
+	class UFunction* Func = Class->GetFunction("ARTrackedGeometry", "GetObjectClassification");
 
 	Params::ARTrackedGeometry_GetObjectClassification Parms{};
 
@@ -2631,10 +2328,7 @@ EARObjectClassification UARTrackedGeometry::GetObjectClassification() const
 
 EARTrackingState UARTrackedGeometry::GetTrackingState() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedGeometry", "GetTrackingState");
+	class UFunction* Func = Class->GetFunction("ARTrackedGeometry", "GetTrackingState");
 
 	Params::ARTrackedGeometry_GetTrackingState Parms{};
 
@@ -2656,10 +2350,7 @@ EARTrackingState UARTrackedGeometry::GetTrackingState() const
 
 bool UARTrackedGeometry::IsTracked() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedGeometry", "IsTracked");
+	class UFunction* Func = Class->GetFunction("ARTrackedGeometry", "IsTracked");
 
 	Params::ARTrackedGeometry_IsTracked Parms{};
 
@@ -2681,10 +2372,7 @@ bool UARTrackedGeometry::IsTracked() const
 
 TArray<struct FVector> UARPlaneGeometry::GetBoundaryPolygonInLocalSpace() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPlaneGeometry", "GetBoundaryPolygonInLocalSpace");
+	class UFunction* Func = Class->GetFunction("ARPlaneGeometry", "GetBoundaryPolygonInLocalSpace");
 
 	Params::ARPlaneGeometry_GetBoundaryPolygonInLocalSpace Parms{};
 
@@ -2706,10 +2394,7 @@ TArray<struct FVector> UARPlaneGeometry::GetBoundaryPolygonInLocalSpace() const
 
 struct FVector UARPlaneGeometry::GetCenter() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPlaneGeometry", "GetCenter");
+	class UFunction* Func = Class->GetFunction("ARPlaneGeometry", "GetCenter");
 
 	Params::ARPlaneGeometry_GetCenter Parms{};
 
@@ -2731,10 +2416,7 @@ struct FVector UARPlaneGeometry::GetCenter() const
 
 struct FVector UARPlaneGeometry::GetExtent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPlaneGeometry", "GetExtent");
+	class UFunction* Func = Class->GetFunction("ARPlaneGeometry", "GetExtent");
 
 	Params::ARPlaneGeometry_GetExtent Parms{};
 
@@ -2756,10 +2438,7 @@ struct FVector UARPlaneGeometry::GetExtent() const
 
 EARPlaneOrientation UARPlaneGeometry::GetOrientation() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPlaneGeometry", "GetOrientation");
+	class UFunction* Func = Class->GetFunction("ARPlaneGeometry", "GetOrientation");
 
 	Params::ARPlaneGeometry_GetOrientation Parms{};
 
@@ -2781,10 +2460,7 @@ EARPlaneOrientation UARPlaneGeometry::GetOrientation() const
 
 class UARPlaneGeometry* UARPlaneGeometry::GetSubsumedBy() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARPlaneGeometry", "GetSubsumedBy");
+	class UFunction* Func = Class->GetFunction("ARPlaneGeometry", "GetSubsumedBy");
 
 	Params::ARPlaneGeometry_GetSubsumedBy Parms{};
 
@@ -2806,10 +2482,7 @@ class UARPlaneGeometry* UARPlaneGeometry::GetSubsumedBy() const
 
 struct FVector2D UARTrackedImage::GetEstimateSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedImage", "GetEstimateSize");
+	class UFunction* Func = Class->GetFunction("ARTrackedImage", "GetEstimateSize");
 
 	Params::ARTrackedImage_GetEstimateSize Parms{};
 
@@ -2831,10 +2504,7 @@ struct FVector2D UARTrackedImage::GetEstimateSize()
 
 class UARCandidateImage* UARTrackedImage::GetDetectedImage() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedImage", "GetDetectedImage");
+	class UFunction* Func = Class->GetFunction("ARTrackedImage", "GetDetectedImage");
 
 	Params::ARTrackedImage_GetDetectedImage Parms{};
 
@@ -2856,10 +2526,7 @@ class UARCandidateImage* UARTrackedImage::GetDetectedImage() const
 
 const TMap<EARFaceBlendShape, float> UARFaceGeometry::GetBlendShapes() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARFaceGeometry", "GetBlendShapes");
+	class UFunction* Func = Class->GetFunction("ARFaceGeometry", "GetBlendShapes");
 
 	Params::ARFaceGeometry_GetBlendShapes Parms{};
 
@@ -2882,10 +2549,7 @@ const TMap<EARFaceBlendShape, float> UARFaceGeometry::GetBlendShapes() const
 
 float UARFaceGeometry::GetBlendShapeValue(EARFaceBlendShape BlendShape) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARFaceGeometry", "GetBlendShapeValue");
+	class UFunction* Func = Class->GetFunction("ARFaceGeometry", "GetBlendShapeValue");
 
 	Params::ARFaceGeometry_GetBlendShapeValue Parms{};
 
@@ -2910,10 +2574,7 @@ float UARFaceGeometry::GetBlendShapeValue(EARFaceBlendShape BlendShape) const
 
 const struct FTransform UARFaceGeometry::GetLocalSpaceEyeTransform(EAREye Eye) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARFaceGeometry", "GetLocalSpaceEyeTransform");
+	class UFunction* Func = Class->GetFunction("ARFaceGeometry", "GetLocalSpaceEyeTransform");
 
 	Params::ARFaceGeometry_GetLocalSpaceEyeTransform Parms{};
 
@@ -2938,10 +2599,7 @@ const struct FTransform UARFaceGeometry::GetLocalSpaceEyeTransform(EAREye Eye) c
 
 struct FTransform UARFaceGeometry::GetWorldSpaceEyeTransform(EAREye Eye) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARFaceGeometry", "GetWorldSpaceEyeTransform");
+	class UFunction* Func = Class->GetFunction("ARFaceGeometry", "GetWorldSpaceEyeTransform");
 
 	Params::ARFaceGeometry_GetWorldSpaceEyeTransform Parms{};
 
@@ -2965,10 +2623,7 @@ struct FTransform UARFaceGeometry::GetWorldSpaceEyeTransform(EAREye Eye) const
 
 class UAREnvironmentCaptureProbeTexture* UAREnvironmentCaptureProbe::GetEnvironmentCaptureTexture()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AREnvironmentCaptureProbe", "GetEnvironmentCaptureTexture");
+	class UFunction* Func = Class->GetFunction("AREnvironmentCaptureProbe", "GetEnvironmentCaptureTexture");
 
 	Params::AREnvironmentCaptureProbe_GetEnvironmentCaptureTexture Parms{};
 
@@ -2990,10 +2645,7 @@ class UAREnvironmentCaptureProbeTexture* UAREnvironmentCaptureProbe::GetEnvironm
 
 struct FVector UAREnvironmentCaptureProbe::GetExtent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AREnvironmentCaptureProbe", "GetExtent");
+	class UFunction* Func = Class->GetFunction("AREnvironmentCaptureProbe", "GetExtent");
 
 	Params::AREnvironmentCaptureProbe_GetExtent Parms{};
 
@@ -3015,10 +2667,7 @@ struct FVector UAREnvironmentCaptureProbe::GetExtent() const
 
 class UARCandidateObject* UARTrackedObject::GetDetectedObject() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedObject", "GetDetectedObject");
+	class UFunction* Func = Class->GetFunction("ARTrackedObject", "GetDetectedObject");
 
 	Params::ARTrackedObject_GetDetectedObject Parms{};
 
@@ -3040,10 +2689,7 @@ class UARCandidateObject* UARTrackedObject::GetDetectedObject() const
 
 const struct FARPose3D UARTrackedPose::GetTrackedPoseData() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARTrackedPose", "GetTrackedPoseData");
+	class UFunction* Func = Class->GetFunction("ARTrackedPose", "GetTrackedPoseData");
 
 	Params::ARTrackedPose_GetTrackedPoseData Parms{};
 
@@ -3065,10 +2711,7 @@ const struct FARPose3D UARTrackedPose::GetTrackedPoseData() const
 
 class UTexture2D* UARCandidateImage::GetCandidateTexture() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateImage", "GetCandidateTexture");
+	class UFunction* Func = Class->GetFunction("ARCandidateImage", "GetCandidateTexture");
 
 	Params::ARCandidateImage_GetCandidateTexture Parms{};
 
@@ -3090,10 +2733,7 @@ class UTexture2D* UARCandidateImage::GetCandidateTexture() const
 
 class FString UARCandidateImage::GetFriendlyName() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateImage", "GetFriendlyName");
+	class UFunction* Func = Class->GetFunction("ARCandidateImage", "GetFriendlyName");
 
 	Params::ARCandidateImage_GetFriendlyName Parms{};
 
@@ -3115,10 +2755,7 @@ class FString UARCandidateImage::GetFriendlyName() const
 
 EARCandidateImageOrientation UARCandidateImage::GetOrientation() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateImage", "GetOrientation");
+	class UFunction* Func = Class->GetFunction("ARCandidateImage", "GetOrientation");
 
 	Params::ARCandidateImage_GetOrientation Parms{};
 
@@ -3140,10 +2777,7 @@ EARCandidateImageOrientation UARCandidateImage::GetOrientation() const
 
 float UARCandidateImage::GetPhysicalHeight() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateImage", "GetPhysicalHeight");
+	class UFunction* Func = Class->GetFunction("ARCandidateImage", "GetPhysicalHeight");
 
 	Params::ARCandidateImage_GetPhysicalHeight Parms{};
 
@@ -3165,10 +2799,7 @@ float UARCandidateImage::GetPhysicalHeight() const
 
 float UARCandidateImage::GetPhysicalWidth() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateImage", "GetPhysicalWidth");
+	class UFunction* Func = Class->GetFunction("ARCandidateImage", "GetPhysicalWidth");
 
 	Params::ARCandidateImage_GetPhysicalWidth Parms{};
 
@@ -3190,10 +2821,7 @@ float UARCandidateImage::GetPhysicalWidth() const
 
 void UARCandidateObject::SetBoundingBox(const struct FBox& InBoundingBox)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateObject", "SetBoundingBox");
+	class UFunction* Func = Class->GetFunction("ARCandidateObject", "SetBoundingBox");
 
 	Params::ARCandidateObject_SetBoundingBox Parms{};
 
@@ -3215,10 +2843,7 @@ void UARCandidateObject::SetBoundingBox(const struct FBox& InBoundingBox)
 
 void UARCandidateObject::SetCandidateObjectData(const TArray<uint8>& InCandidateObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateObject", "SetCandidateObjectData");
+	class UFunction* Func = Class->GetFunction("ARCandidateObject", "SetCandidateObjectData");
 
 	Params::ARCandidateObject_SetCandidateObjectData Parms{};
 
@@ -3240,10 +2865,7 @@ void UARCandidateObject::SetCandidateObjectData(const TArray<uint8>& InCandidate
 
 void UARCandidateObject::SetFriendlyName(const class FString& NewName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateObject", "SetFriendlyName");
+	class UFunction* Func = Class->GetFunction("ARCandidateObject", "SetFriendlyName");
 
 	Params::ARCandidateObject_SetFriendlyName Parms{};
 
@@ -3265,10 +2887,7 @@ void UARCandidateObject::SetFriendlyName(const class FString& NewName)
 
 const struct FBox UARCandidateObject::GetBoundingBox() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateObject", "GetBoundingBox");
+	class UFunction* Func = Class->GetFunction("ARCandidateObject", "GetBoundingBox");
 
 	Params::ARCandidateObject_GetBoundingBox Parms{};
 
@@ -3290,10 +2909,7 @@ const struct FBox UARCandidateObject::GetBoundingBox() const
 
 const TArray<uint8> UARCandidateObject::GetCandidateObjectData() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateObject", "GetCandidateObjectData");
+	class UFunction* Func = Class->GetFunction("ARCandidateObject", "GetCandidateObjectData");
 
 	Params::ARCandidateObject_GetCandidateObjectData Parms{};
 
@@ -3315,10 +2931,7 @@ const TArray<uint8> UARCandidateObject::GetCandidateObjectData() const
 
 class FString UARCandidateObject::GetFriendlyName() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ARCandidateObject", "GetFriendlyName");
+	class UFunction* Func = Class->GetFunction("ARCandidateObject", "GetFriendlyName");
 
 	Params::ARCandidateObject_GetFriendlyName Parms{};
 

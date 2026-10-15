@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ATrap_Floor_Player_Launch_Pad_C::ExecuteUbergraph_Trap_Floor_Player_Launch_Pad(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "ExecuteUbergraph_Trap_Floor_Player_Launch_Pad");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "ExecuteUbergraph_Trap_Floor_Player_Launch_Pad");
 
 	Params::Trap_Floor_Player_Launch_Pad_C_ExecuteUbergraph_Trap_Floor_Player_Launch_Pad Parms{};
 
@@ -49,10 +46,7 @@ void ATrap_Floor_Player_Launch_Pad_C::ExecuteUbergraph_Trap_Floor_Player_Launch_
 
 void ATrap_Floor_Player_Launch_Pad_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnDeathServer");
 
 	Params::Trap_Floor_Player_Launch_Pad_C_OnDeathServer Parms{};
 
@@ -75,10 +69,7 @@ void ATrap_Floor_Player_Launch_Pad_C::OnDeathServer(float Damage, const struct F
 
 void ATrap_Floor_Player_Launch_Pad_C::TriggerLaunchEffects(class AFortPlayerPawnAthena* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "TriggerLaunchEffects");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "TriggerLaunchEffects");
 
 	Params::Trap_Floor_Player_Launch_Pad_C_TriggerLaunchEffects Parms{};
 
@@ -93,10 +84,7 @@ void ATrap_Floor_Player_Launch_Pad_C::TriggerLaunchEffects(class AFortPlayerPawn
 
 void ATrap_Floor_Player_Launch_Pad_C::OnOutOfDurability()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnOutOfDurability");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnOutOfDurability");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -110,10 +98,7 @@ void ATrap_Floor_Player_Launch_Pad_C::OnOutOfDurability()
 
 void ATrap_Floor_Player_Launch_Pad_C::GameplayCue_Abilities_Activation_Traps_ActivateTrap(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
 
 	Params::Trap_Floor_Player_Launch_Pad_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap Parms{};
 
@@ -132,10 +117,7 @@ void ATrap_Floor_Player_Launch_Pad_C::GameplayCue_Abilities_Activation_Traps_Act
 
 void ATrap_Floor_Player_Launch_Pad_C::GameplayCue_Abilities_Activation_Traps_ReloadBegin(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
 
 	Params::Trap_Floor_Player_Launch_Pad_C_GameplayCue_Abilities_Activation_Traps_ReloadBegin Parms{};
 
@@ -151,10 +133,7 @@ void ATrap_Floor_Player_Launch_Pad_C::GameplayCue_Abilities_Activation_Traps_Rel
 
 void ATrap_Floor_Player_Launch_Pad_C::OnFinishedBuilding()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnFinishedBuilding");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnFinishedBuilding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +144,7 @@ void ATrap_Floor_Player_Launch_Pad_C::OnFinishedBuilding()
 
 void ATrap_Floor_Player_Launch_Pad_C::OnPlaced()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnPlaced");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnPlaced");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +155,7 @@ void ATrap_Floor_Player_Launch_Pad_C::OnPlaced()
 
 void ATrap_Floor_Player_Launch_Pad_C::OnReloadEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnReloadEnd");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Launch_Pad_C", "OnReloadEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

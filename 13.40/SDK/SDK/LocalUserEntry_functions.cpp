@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULocalUserEntry_C::ExecuteUbergraph_LocalUserEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserEntry_C", "ExecuteUbergraph_LocalUserEntry");
+	class UFunction* Func = Class->GetFunction("LocalUserEntry_C", "ExecuteUbergraph_LocalUserEntry");
 
 	Params::LocalUserEntry_C_ExecuteUbergraph_LocalUserEntry Parms{};
 
@@ -43,10 +40,7 @@ void ULocalUserEntry_C::ExecuteUbergraph_LocalUserEntry(int32 EntryPoint)
 
 void ULocalUserEntry_C::OnOnlineStatusChanged(ELocalUserOnlineStatus OnlineStatus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserEntry_C", "OnOnlineStatusChanged");
+	class UFunction* Func = Class->GetFunction("LocalUserEntry_C", "OnOnlineStatusChanged");
 
 	Params::LocalUserEntry_C_OnOnlineStatusChanged Parms{};
 
@@ -61,10 +55,7 @@ void ULocalUserEntry_C::OnOnlineStatusChanged(ELocalUserOnlineStatus OnlineStatu
 
 void ULocalUserEntry_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserEntry_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("LocalUserEntry_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void ULocalUserEntry_C::BP_OnUnhovered()
 
 void ULocalUserEntry_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserEntry_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("LocalUserEntry_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void ULocalUserEntry_C::BP_OnHovered()
 
 void ULocalUserEntry_C::HandleOnlineIndicatorView(ELocalUserOnlineStatus InLocalUserOnlineStatus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LocalUserEntry_C", "HandleOnlineIndicatorView");
+	class UFunction* Func = Class->GetFunction("LocalUserEntry_C", "HandleOnlineIndicatorView");
 
 	Params::LocalUserEntry_C_HandleOnlineIndicatorView Parms{};
 

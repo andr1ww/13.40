@@ -32,10 +32,7 @@ SDK_NAMESPACE_START
 
 void UBPWaveLIbrary_C::Gerstner_Wave(const struct FVector& Pos, const struct FVector2D& K, float W, float A, float Steepness, float Phase_Offset, class UObject* __WorldContext, struct FVector2D* XY, float* Z, struct FVector* Normal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Gerstner Wave");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Gerstner Wave");
 
 	Params::BPWaveLIbrary_C_Gerstner_Wave Parms{};
 
@@ -77,10 +74,7 @@ void UBPWaveLIbrary_C::Gerstner_Wave(const struct FVector& Pos, const struct FVe
 
 void UBPWaveLIbrary_C::Gerstner_Wave_MPC_Deep(const struct FVector& Pos, const struct FWaveParams& Wave_Params, float Time, float Phase_Offset, class UObject* __WorldContext, struct FVector2D* XY, float* Z, struct FVector* Normal, float* Wave_Pos, float* Wave_Time, float* Wave_Sine)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Gerstner Wave_MPC_Deep");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Gerstner Wave_MPC_Deep");
 
 	Params::BPWaveLIbrary_C_Gerstner_Wave_MPC_Deep Parms{};
 
@@ -122,10 +116,7 @@ void UBPWaveLIbrary_C::Gerstner_Wave_MPC_Deep(const struct FVector& Pos, const s
 
 void UBPWaveLIbrary_C::Exp2(float Depth, float Density, class UObject* __WorldContext, float* NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Exp2");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Exp2");
 
 	Params::BPWaveLIbrary_C_Exp2 Parms{};
 
@@ -149,10 +140,7 @@ void UBPWaveLIbrary_C::Exp2(float Depth, float Density, class UObject* __WorldCo
 
 void UBPWaveLIbrary_C::Wavelength_to_Wavespeed(float Wavelength, class UObject* __WorldContext, float* s)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Wavelength to Wavespeed");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Wavelength to Wavespeed");
 
 	Params::BPWaveLIbrary_C_Wavelength_to_Wavespeed Parms{};
 
@@ -189,10 +177,7 @@ void UBPWaveLIbrary_C::Wavelength_to_Wavespeed(float Wavelength, class UObject* 
 
 void UBPWaveLIbrary_C::Wave_Rotation_Setup(float Wave_Pos, float Wave_Time, float Crash_Offset, float Wavelength, const struct FVector& Wave_Direction, const struct FVector& Local_Pivot, float Beach_X_Pos, float Break_Distance, float Wave_Sine, float Crest_Power, float Start_Crash_Power, float End_Crash_Power, float MaxRotation, class UObject* __WorldContext, float* Rotation_Angle, struct FVector* World_Pivot, float* Raw_Shore_Mask)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Wave Rotation Setup");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Wave Rotation Setup");
 
 	Params::BPWaveLIbrary_C_Wave_Rotation_Setup Parms{};
 
@@ -233,10 +218,7 @@ void UBPWaveLIbrary_C::Wave_Rotation_Setup(float Wave_Pos, float Wave_Time, floa
 
 void UBPWaveLIbrary_C::Finalize_Gerstner_Normal(const struct FVector& N, class UObject* __WorldContext, struct FVector* N_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Finalize Gerstner Normal");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Finalize Gerstner Normal");
 
 	Params::BPWaveLIbrary_C_Finalize_Gerstner_Normal Parms{};
 
@@ -262,10 +244,7 @@ void UBPWaveLIbrary_C::Finalize_Gerstner_Normal(const struct FVector& N, class U
 
 void UBPWaveLIbrary_C::Rotation_from_Normal(const struct FVector& X_Vector, const struct FVector& Z_Vector__Normal_, float Additional_Tilt, float Additional_Pitch, class UObject* __WorldContext, struct FRotator* Rotator)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Rotation from Normal");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Rotation from Normal");
 
 	Params::BPWaveLIbrary_C_Rotation_from_Normal Parms{};
 
@@ -302,10 +281,7 @@ void UBPWaveLIbrary_C::Rotation_from_Normal(const struct FVector& X_Vector, cons
 
 void UBPWaveLIbrary_C::Gerstner_3_Waves(const struct FVector& Pos, int32 Num_Waves, TArray<struct FWaveParams>& Wave_Array, float Time, float Water_Depth, float Break_Tangent, float Break_Cos, class UObject* __WorldContext, struct FVector2D* XY, float* Z, struct FVector* Normal, float* Wave_0_Pos, float* Wave_0_Time, float* Wave_0_Sine)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Gerstner 3 Waves");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Gerstner 3 Waves");
 
 	Params::BPWaveLIbrary_C_Gerstner_3_Waves Parms{};
 
@@ -360,10 +336,7 @@ void UBPWaveLIbrary_C::Gerstner_3_Waves(const struct FVector& Pos, int32 Num_Wav
 
 void UBPWaveLIbrary_C::Gerstner_Wave_MPC_Shallow(const struct FVector& Pos, const struct FWaveParams& Wave_Params, float Time, float Phase_Offset, float Water_Depth__wave0_only_, class UObject* __WorldContext, struct FVector2D* XY, float* Z, struct FVector* Normal, float* Wave_Pos, float* Wave_Time, float* Wave_Sine)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Gerstner Wave_MPC_Shallow");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Gerstner Wave_MPC_Shallow");
 
 	Params::BPWaveLIbrary_C_Gerstner_Wave_MPC_Shallow Parms{};
 
@@ -405,10 +378,7 @@ void UBPWaveLIbrary_C::Gerstner_Wave_MPC_Shallow(const struct FVector& Pos, cons
 
 void UBPWaveLIbrary_C::Water_Depth_to_Wavespeed(float Water_Depth, class UObject* __WorldContext, float* s)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Water Depth to Wavespeed");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Water Depth to Wavespeed");
 
 	Params::BPWaveLIbrary_C_Water_Depth_to_Wavespeed Parms{};
 
@@ -429,10 +399,7 @@ void UBPWaveLIbrary_C::Water_Depth_to_Wavespeed(float Water_Depth, class UObject
 
 void UBPWaveLIbrary_C::Harvest_Wave_Params(class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Harvest Wave Params");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Harvest Wave Params");
 
 	Params::BPWaveLIbrary_C_Harvest_Wave_Params Parms{};
 
@@ -451,10 +418,7 @@ void UBPWaveLIbrary_C::Harvest_Wave_Params(class UObject* __WorldContext)
 
 void UBPWaveLIbrary_C::Generate_Wave_Spectrum(struct FWaveSpectrumSettings& Spectrum, class UObject* __WorldContext, TArray<struct FWaterWaveParams>* Waves)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Generate Wave Spectrum");
+	class UFunction* Func = StaticClass()->GetFunction("BPWaveLIbrary_C", "Generate Wave Spectrum");
 
 	Params::BPWaveLIbrary_C_Generate_Wave_Spectrum Parms{};
 

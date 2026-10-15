@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMeshDescriptionBase::ComputePolygonTriangulation(const struct FPolygonID& PolygonID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "ComputePolygonTriangulation");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "ComputePolygonTriangulation");
 
 	Params::MeshDescriptionBase_ComputePolygonTriangulation Parms{};
 
@@ -50,10 +47,7 @@ void UMeshDescriptionBase::ComputePolygonTriangulation(const struct FPolygonID& 
 
 struct FEdgeID UMeshDescriptionBase::CreateEdge(const struct FVertexID& VertexID0, const struct FVertexID& VertexID1)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreateEdge");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreateEdge");
 
 	Params::MeshDescriptionBase_CreateEdge Parms{};
 
@@ -80,10 +74,7 @@ struct FEdgeID UMeshDescriptionBase::CreateEdge(const struct FVertexID& VertexID
 
 void UMeshDescriptionBase::CreateEdgeWithID(const struct FEdgeID& EdgeID, const struct FVertexID& VertexID0, const struct FVertexID& VertexID1)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreateEdgeWithID");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreateEdgeWithID");
 
 	Params::MeshDescriptionBase_CreateEdgeWithID Parms{};
 
@@ -110,10 +101,7 @@ void UMeshDescriptionBase::CreateEdgeWithID(const struct FEdgeID& EdgeID, const 
 
 struct FPolygonID UMeshDescriptionBase::CreatePolygon(const struct FPolygonGroupID& PolygonGroupID, TArray<struct FVertexInstanceID>* VertexInstanceIDs, TArray<struct FEdgeID>* NewEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreatePolygon");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreatePolygon");
 
 	Params::MeshDescriptionBase_CreatePolygon Parms{};
 
@@ -143,10 +131,7 @@ struct FPolygonID UMeshDescriptionBase::CreatePolygon(const struct FPolygonGroup
 
 struct FPolygonGroupID UMeshDescriptionBase::CreatePolygonGroup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreatePolygonGroup");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreatePolygonGroup");
 
 	Params::MeshDescriptionBase_CreatePolygonGroup Parms{};
 
@@ -168,10 +153,7 @@ struct FPolygonGroupID UMeshDescriptionBase::CreatePolygonGroup()
 
 void UMeshDescriptionBase::CreatePolygonGroupWithID(const struct FPolygonGroupID& PolygonGroupID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreatePolygonGroupWithID");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreatePolygonGroupWithID");
 
 	Params::MeshDescriptionBase_CreatePolygonGroupWithID Parms{};
 
@@ -196,10 +178,7 @@ void UMeshDescriptionBase::CreatePolygonGroupWithID(const struct FPolygonGroupID
 
 void UMeshDescriptionBase::CreatePolygonWithID(const struct FPolygonID& PolygonID, const struct FPolygonGroupID& PolygonGroupID, TArray<struct FVertexInstanceID>* VertexInstanceIDs, TArray<struct FEdgeID>* NewEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreatePolygonWithID");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreatePolygonWithID");
 
 	Params::MeshDescriptionBase_CreatePolygonWithID Parms{};
 
@@ -231,10 +210,7 @@ void UMeshDescriptionBase::CreatePolygonWithID(const struct FPolygonID& PolygonI
 
 struct FTriangleID UMeshDescriptionBase::CreateTriangle(const struct FPolygonGroupID& PolygonGroupID, const TArray<struct FVertexInstanceID>& VertexInstanceIDs, TArray<struct FEdgeID>* NewEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreateTriangle");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreateTriangle");
 
 	Params::MeshDescriptionBase_CreateTriangle Parms{};
 
@@ -265,10 +241,7 @@ struct FTriangleID UMeshDescriptionBase::CreateTriangle(const struct FPolygonGro
 
 void UMeshDescriptionBase::CreateTriangleWithID(const struct FTriangleID& TriangleID, const struct FPolygonGroupID& PolygonGroupID, const TArray<struct FVertexInstanceID>& VertexInstanceIDs, TArray<struct FEdgeID>* NewEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreateTriangleWithID");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreateTriangleWithID");
 
 	Params::MeshDescriptionBase_CreateTriangleWithID Parms{};
 
@@ -295,10 +268,7 @@ void UMeshDescriptionBase::CreateTriangleWithID(const struct FTriangleID& Triang
 
 struct FVertexID UMeshDescriptionBase::CreateVertex()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreateVertex");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreateVertex");
 
 	Params::MeshDescriptionBase_CreateVertex Parms{};
 
@@ -321,10 +291,7 @@ struct FVertexID UMeshDescriptionBase::CreateVertex()
 
 struct FVertexInstanceID UMeshDescriptionBase::CreateVertexInstance(const struct FVertexID& VertexID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreateVertexInstance");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreateVertexInstance");
 
 	Params::MeshDescriptionBase_CreateVertexInstance Parms{};
 
@@ -349,10 +316,7 @@ struct FVertexInstanceID UMeshDescriptionBase::CreateVertexInstance(const struct
 
 void UMeshDescriptionBase::CreateVertexInstanceWithID(const struct FVertexInstanceID& VertexInstanceID, const struct FVertexID& VertexID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreateVertexInstanceWithID");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreateVertexInstanceWithID");
 
 	Params::MeshDescriptionBase_CreateVertexInstanceWithID Parms{};
 
@@ -375,10 +339,7 @@ void UMeshDescriptionBase::CreateVertexInstanceWithID(const struct FVertexInstan
 
 void UMeshDescriptionBase::CreateVertexWithID(const struct FVertexID& VertexID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "CreateVertexWithID");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "CreateVertexWithID");
 
 	Params::MeshDescriptionBase_CreateVertexWithID Parms{};
 
@@ -401,10 +362,7 @@ void UMeshDescriptionBase::CreateVertexWithID(const struct FVertexID& VertexID)
 
 void UMeshDescriptionBase::DeleteEdge(const struct FEdgeID& EdgeID, TArray<struct FVertexID>* OrphanedVertices)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "DeleteEdge");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "DeleteEdge");
 
 	Params::MeshDescriptionBase_DeleteEdge Parms{};
 
@@ -432,10 +390,7 @@ void UMeshDescriptionBase::DeleteEdge(const struct FEdgeID& EdgeID, TArray<struc
 
 void UMeshDescriptionBase::DeletePolygon(const struct FPolygonID& PolygonID, TArray<struct FEdgeID>* OrphanedEdges, TArray<struct FVertexInstanceID>* OrphanedVertexInstances, TArray<struct FPolygonGroupID>* OrphanedPolygonGroups)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "DeletePolygon");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "DeletePolygon");
 
 	Params::MeshDescriptionBase_DeletePolygon Parms{};
 
@@ -466,10 +421,7 @@ void UMeshDescriptionBase::DeletePolygon(const struct FPolygonID& PolygonID, TAr
 
 void UMeshDescriptionBase::DeletePolygonGroup(const struct FPolygonGroupID& PolygonGroupID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "DeletePolygonGroup");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "DeletePolygonGroup");
 
 	Params::MeshDescriptionBase_DeletePolygonGroup Parms{};
 
@@ -494,10 +446,7 @@ void UMeshDescriptionBase::DeletePolygonGroup(const struct FPolygonGroupID& Poly
 
 void UMeshDescriptionBase::DeleteTriangle(const struct FTriangleID& TriangleID, TArray<struct FEdgeID>* OrphanedEdges, TArray<struct FVertexInstanceID>* OrphanedVertexInstances, TArray<struct FPolygonGroupID>* OrphanedPolygonGroupsPtr)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "DeleteTriangle");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "DeleteTriangle");
 
 	Params::MeshDescriptionBase_DeleteTriangle Parms{};
 
@@ -528,10 +477,7 @@ void UMeshDescriptionBase::DeleteTriangle(const struct FTriangleID& TriangleID, 
 
 void UMeshDescriptionBase::DeleteVertex(const struct FVertexID& VertexID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "DeleteVertex");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "DeleteVertex");
 
 	Params::MeshDescriptionBase_DeleteVertex Parms{};
 
@@ -554,10 +500,7 @@ void UMeshDescriptionBase::DeleteVertex(const struct FVertexID& VertexID)
 
 void UMeshDescriptionBase::DeleteVertexInstance(const struct FVertexInstanceID& VertexInstanceID, TArray<struct FVertexID>* OrphanedVertices)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "DeleteVertexInstance");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "DeleteVertexInstance");
 
 	Params::MeshDescriptionBase_DeleteVertexInstance Parms{};
 
@@ -580,10 +523,7 @@ void UMeshDescriptionBase::DeleteVertexInstance(const struct FVertexInstanceID& 
 
 void UMeshDescriptionBase::Empty()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "Empty");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "Empty");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -601,10 +541,7 @@ void UMeshDescriptionBase::Empty()
 
 void UMeshDescriptionBase::ReserveNewEdges(int32 NumberOfNewEdges)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewEdges");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewEdges");
 
 	Params::MeshDescriptionBase_ReserveNewEdges Parms{};
 
@@ -626,10 +563,7 @@ void UMeshDescriptionBase::ReserveNewEdges(int32 NumberOfNewEdges)
 
 void UMeshDescriptionBase::ReserveNewPolygonGroups(int32 NumberOfNewPolygonGroups)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewPolygonGroups");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewPolygonGroups");
 
 	Params::MeshDescriptionBase_ReserveNewPolygonGroups Parms{};
 
@@ -651,10 +585,7 @@ void UMeshDescriptionBase::ReserveNewPolygonGroups(int32 NumberOfNewPolygonGroup
 
 void UMeshDescriptionBase::ReserveNewPolygons(const int32 NumberOfNewPolygons)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewPolygons");
 
 	Params::MeshDescriptionBase_ReserveNewPolygons Parms{};
 
@@ -676,10 +607,7 @@ void UMeshDescriptionBase::ReserveNewPolygons(const int32 NumberOfNewPolygons)
 
 void UMeshDescriptionBase::ReserveNewTriangles(int32 NumberOfNewTriangles)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewTriangles");
 
 	Params::MeshDescriptionBase_ReserveNewTriangles Parms{};
 
@@ -701,10 +629,7 @@ void UMeshDescriptionBase::ReserveNewTriangles(int32 NumberOfNewTriangles)
 
 void UMeshDescriptionBase::ReserveNewVertexInstances(int32 NumberOfNewVertexInstances)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewVertexInstances");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewVertexInstances");
 
 	Params::MeshDescriptionBase_ReserveNewVertexInstances Parms{};
 
@@ -726,10 +651,7 @@ void UMeshDescriptionBase::ReserveNewVertexInstances(int32 NumberOfNewVertexInst
 
 void UMeshDescriptionBase::ReserveNewVertices(int32 NumberOfNewVertices)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewVertices");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "ReserveNewVertices");
 
 	Params::MeshDescriptionBase_ReserveNewVertices Parms{};
 
@@ -751,10 +673,7 @@ void UMeshDescriptionBase::ReserveNewVertices(int32 NumberOfNewVertices)
 
 void UMeshDescriptionBase::ReversePolygonFacing(const struct FPolygonID& PolygonID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "ReversePolygonFacing");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "ReversePolygonFacing");
 
 	Params::MeshDescriptionBase_ReversePolygonFacing Parms{};
 
@@ -777,10 +696,7 @@ void UMeshDescriptionBase::ReversePolygonFacing(const struct FPolygonID& Polygon
 
 void UMeshDescriptionBase::SetPolygonPolygonGroup(const struct FPolygonID& PolygonID, const struct FPolygonGroupID& PolygonGroupID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "SetPolygonPolygonGroup");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "SetPolygonPolygonGroup");
 
 	Params::MeshDescriptionBase_SetPolygonPolygonGroup Parms{};
 
@@ -805,10 +721,7 @@ void UMeshDescriptionBase::SetPolygonPolygonGroup(const struct FPolygonID& Polyg
 
 void UMeshDescriptionBase::SetPolygonVertexInstance(const struct FPolygonID& PolygonID, int32 PerimeterIndex, const struct FVertexInstanceID& VertexInstanceID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "SetPolygonVertexInstance");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "SetPolygonVertexInstance");
 
 	Params::MeshDescriptionBase_SetPolygonVertexInstance Parms{};
 
@@ -833,10 +746,7 @@ void UMeshDescriptionBase::SetPolygonVertexInstance(const struct FPolygonID& Pol
 
 void UMeshDescriptionBase::SetVertexPosition(const struct FVertexID& VertexID, const struct FVector& position)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "SetVertexPosition");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "SetVertexPosition");
 
 	Params::MeshDescriptionBase_SetVertexPosition Parms{};
 
@@ -860,10 +770,7 @@ void UMeshDescriptionBase::SetVertexPosition(const struct FVertexID& VertexID, c
 
 void UMeshDescriptionBase::GetEdgeConnectedPolygons(const struct FEdgeID& EdgeID, TArray<struct FPolygonID>* OutConnectedPolygonIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetEdgeConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetEdgeConnectedPolygons");
 
 	Params::MeshDescriptionBase_GetEdgeConnectedPolygons Parms{};
 
@@ -889,10 +796,7 @@ void UMeshDescriptionBase::GetEdgeConnectedPolygons(const struct FEdgeID& EdgeID
 
 void UMeshDescriptionBase::GetEdgeConnectedTriangles(const struct FEdgeID& EdgeID, TArray<struct FTriangleID>* OutConnectedTriangleIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetEdgeConnectedTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetEdgeConnectedTriangles");
 
 	Params::MeshDescriptionBase_GetEdgeConnectedTriangles Parms{};
 
@@ -919,10 +823,7 @@ void UMeshDescriptionBase::GetEdgeConnectedTriangles(const struct FEdgeID& EdgeI
 
 struct FVertexID UMeshDescriptionBase::GetEdgeVertex(const struct FEdgeID& EdgeID, int32 VertexNumber) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetEdgeVertex");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetEdgeVertex");
 
 	Params::MeshDescriptionBase_GetEdgeVertex Parms{};
 
@@ -948,10 +849,7 @@ struct FVertexID UMeshDescriptionBase::GetEdgeVertex(const struct FEdgeID& EdgeI
 
 void UMeshDescriptionBase::GetEdgeVertices(const struct FEdgeID& EdgeID, TArray<struct FVertexID>* OutVertexIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetEdgeVertices");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetEdgeVertices");
 
 	Params::MeshDescriptionBase_GetEdgeVertices Parms{};
 
@@ -977,10 +875,7 @@ void UMeshDescriptionBase::GetEdgeVertices(const struct FEdgeID& EdgeID, TArray<
 
 int32 UMeshDescriptionBase::GetNumEdgeConnectedPolygons(const struct FEdgeID& EdgeID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumEdgeConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumEdgeConnectedPolygons");
 
 	Params::MeshDescriptionBase_GetNumEdgeConnectedPolygons Parms{};
 
@@ -1005,10 +900,7 @@ int32 UMeshDescriptionBase::GetNumEdgeConnectedPolygons(const struct FEdgeID& Ed
 
 int32 UMeshDescriptionBase::GetNumEdgeConnectedTriangles(const struct FEdgeID& EdgeID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumEdgeConnectedTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumEdgeConnectedTriangles");
 
 	Params::MeshDescriptionBase_GetNumEdgeConnectedTriangles Parms{};
 
@@ -1033,10 +925,7 @@ int32 UMeshDescriptionBase::GetNumEdgeConnectedTriangles(const struct FEdgeID& E
 
 int32 UMeshDescriptionBase::GetNumPolygonGroupPolygons(const struct FPolygonGroupID& PolygonGroupID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumPolygonGroupPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumPolygonGroupPolygons");
 
 	Params::MeshDescriptionBase_GetNumPolygonGroupPolygons Parms{};
 
@@ -1061,10 +950,7 @@ int32 UMeshDescriptionBase::GetNumPolygonGroupPolygons(const struct FPolygonGrou
 
 int32 UMeshDescriptionBase::GetNumPolygonInternalEdges(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumPolygonInternalEdges");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumPolygonInternalEdges");
 
 	Params::MeshDescriptionBase_GetNumPolygonInternalEdges Parms{};
 
@@ -1089,10 +975,7 @@ int32 UMeshDescriptionBase::GetNumPolygonInternalEdges(const struct FPolygonID& 
 
 int32 UMeshDescriptionBase::GetNumPolygonTriangles(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumPolygonTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumPolygonTriangles");
 
 	Params::MeshDescriptionBase_GetNumPolygonTriangles Parms{};
 
@@ -1117,10 +1000,7 @@ int32 UMeshDescriptionBase::GetNumPolygonTriangles(const struct FPolygonID& Poly
 
 int32 UMeshDescriptionBase::GetNumPolygonVertices(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumPolygonVertices");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumPolygonVertices");
 
 	Params::MeshDescriptionBase_GetNumPolygonVertices Parms{};
 
@@ -1145,10 +1025,7 @@ int32 UMeshDescriptionBase::GetNumPolygonVertices(const struct FPolygonID& Polyg
 
 int32 UMeshDescriptionBase::GetNumVertexConnectedEdges(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexConnectedEdges");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexConnectedEdges");
 
 	Params::MeshDescriptionBase_GetNumVertexConnectedEdges Parms{};
 
@@ -1173,10 +1050,7 @@ int32 UMeshDescriptionBase::GetNumVertexConnectedEdges(const struct FVertexID& V
 
 int32 UMeshDescriptionBase::GetNumVertexConnectedPolygons(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexConnectedPolygons");
 
 	Params::MeshDescriptionBase_GetNumVertexConnectedPolygons Parms{};
 
@@ -1201,10 +1075,7 @@ int32 UMeshDescriptionBase::GetNumVertexConnectedPolygons(const struct FVertexID
 
 int32 UMeshDescriptionBase::GetNumVertexConnectedTriangles(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexConnectedTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexConnectedTriangles");
 
 	Params::MeshDescriptionBase_GetNumVertexConnectedTriangles Parms{};
 
@@ -1229,10 +1100,7 @@ int32 UMeshDescriptionBase::GetNumVertexConnectedTriangles(const struct FVertexI
 
 int32 UMeshDescriptionBase::GetNumVertexInstanceConnectedPolygons(const struct FVertexInstanceID& VertexInstanceID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexInstanceConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexInstanceConnectedPolygons");
 
 	Params::MeshDescriptionBase_GetNumVertexInstanceConnectedPolygons Parms{};
 
@@ -1257,10 +1125,7 @@ int32 UMeshDescriptionBase::GetNumVertexInstanceConnectedPolygons(const struct F
 
 int32 UMeshDescriptionBase::GetNumVertexInstanceConnectedTriangles(const struct FVertexInstanceID& VertexInstanceID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexInstanceConnectedTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexInstanceConnectedTriangles");
 
 	Params::MeshDescriptionBase_GetNumVertexInstanceConnectedTriangles Parms{};
 
@@ -1285,10 +1150,7 @@ int32 UMeshDescriptionBase::GetNumVertexInstanceConnectedTriangles(const struct 
 
 int32 UMeshDescriptionBase::GetNumVertexVertexInstances(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexVertexInstances");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetNumVertexVertexInstances");
 
 	Params::MeshDescriptionBase_GetNumVertexVertexInstances Parms{};
 
@@ -1313,10 +1175,7 @@ int32 UMeshDescriptionBase::GetNumVertexVertexInstances(const struct FVertexID& 
 
 void UMeshDescriptionBase::GetPolygonAdjacentPolygons(const struct FPolygonID& PolygonID, TArray<struct FPolygonID>* OutPolygonIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonAdjacentPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonAdjacentPolygons");
 
 	Params::MeshDescriptionBase_GetPolygonAdjacentPolygons Parms{};
 
@@ -1342,10 +1201,7 @@ void UMeshDescriptionBase::GetPolygonAdjacentPolygons(const struct FPolygonID& P
 
 void UMeshDescriptionBase::GetPolygonGroupPolygons(const struct FPolygonGroupID& PolygonGroupID, TArray<struct FPolygonID>* OutPolygonIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonGroupPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonGroupPolygons");
 
 	Params::MeshDescriptionBase_GetPolygonGroupPolygons Parms{};
 
@@ -1371,10 +1227,7 @@ void UMeshDescriptionBase::GetPolygonGroupPolygons(const struct FPolygonGroupID&
 
 void UMeshDescriptionBase::GetPolygonInternalEdges(const struct FPolygonID& PolygonID, TArray<struct FEdgeID>* OutEdgeIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonInternalEdges");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonInternalEdges");
 
 	Params::MeshDescriptionBase_GetPolygonInternalEdges Parms{};
 
@@ -1400,10 +1253,7 @@ void UMeshDescriptionBase::GetPolygonInternalEdges(const struct FPolygonID& Poly
 
 void UMeshDescriptionBase::GetPolygonPerimeterEdges(const struct FPolygonID& PolygonID, TArray<struct FEdgeID>* OutEdgeIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonPerimeterEdges");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonPerimeterEdges");
 
 	Params::MeshDescriptionBase_GetPolygonPerimeterEdges Parms{};
 
@@ -1429,10 +1279,7 @@ void UMeshDescriptionBase::GetPolygonPerimeterEdges(const struct FPolygonID& Pol
 
 struct FPolygonGroupID UMeshDescriptionBase::GetPolygonPolygonGroup(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonPolygonGroup");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonPolygonGroup");
 
 	Params::MeshDescriptionBase_GetPolygonPolygonGroup Parms{};
 
@@ -1457,10 +1304,7 @@ struct FPolygonGroupID UMeshDescriptionBase::GetPolygonPolygonGroup(const struct
 
 void UMeshDescriptionBase::GetPolygonTriangles(const struct FPolygonID& PolygonID, TArray<struct FTriangleID>* OutTriangleIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonTriangles");
 
 	Params::MeshDescriptionBase_GetPolygonTriangles Parms{};
 
@@ -1486,10 +1330,7 @@ void UMeshDescriptionBase::GetPolygonTriangles(const struct FPolygonID& PolygonI
 
 void UMeshDescriptionBase::GetPolygonVertexInstances(const struct FPolygonID& PolygonID, TArray<struct FVertexInstanceID>* OutVertexInstanceIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonVertexInstances");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonVertexInstances");
 
 	Params::MeshDescriptionBase_GetPolygonVertexInstances Parms{};
 
@@ -1515,10 +1356,7 @@ void UMeshDescriptionBase::GetPolygonVertexInstances(const struct FPolygonID& Po
 
 void UMeshDescriptionBase::GetPolygonVertices(const struct FPolygonID& PolygonID, TArray<struct FVertexID>* OutVertexIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonVertices");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetPolygonVertices");
 
 	Params::MeshDescriptionBase_GetPolygonVertices Parms{};
 
@@ -1544,10 +1382,7 @@ void UMeshDescriptionBase::GetPolygonVertices(const struct FPolygonID& PolygonID
 
 void UMeshDescriptionBase::GetTriangleAdjacentTriangles(const struct FTriangleID& TriangleID, TArray<struct FTriangleID>* OutTriangleIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleAdjacentTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleAdjacentTriangles");
 
 	Params::MeshDescriptionBase_GetTriangleAdjacentTriangles Parms{};
 
@@ -1573,10 +1408,7 @@ void UMeshDescriptionBase::GetTriangleAdjacentTriangles(const struct FTriangleID
 
 void UMeshDescriptionBase::GetTriangleEdges(const struct FTriangleID& TriangleID, TArray<struct FEdgeID>* OutEdgeIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleEdges");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleEdges");
 
 	Params::MeshDescriptionBase_GetTriangleEdges Parms{};
 
@@ -1602,10 +1434,7 @@ void UMeshDescriptionBase::GetTriangleEdges(const struct FTriangleID& TriangleID
 
 struct FPolygonID UMeshDescriptionBase::GetTrianglePolygon(const struct FTriangleID& TriangleID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetTrianglePolygon");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetTrianglePolygon");
 
 	Params::MeshDescriptionBase_GetTrianglePolygon Parms{};
 
@@ -1630,10 +1459,7 @@ struct FPolygonID UMeshDescriptionBase::GetTrianglePolygon(const struct FTriangl
 
 struct FPolygonGroupID UMeshDescriptionBase::GetTrianglePolygonGroup(const struct FTriangleID& TriangleID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetTrianglePolygonGroup");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetTrianglePolygonGroup");
 
 	Params::MeshDescriptionBase_GetTrianglePolygonGroup Parms{};
 
@@ -1659,10 +1485,7 @@ struct FPolygonGroupID UMeshDescriptionBase::GetTrianglePolygonGroup(const struc
 
 struct FVertexInstanceID UMeshDescriptionBase::GetTriangleVertexInstance(const struct FTriangleID& TriangleID, int32 Index_0) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleVertexInstance");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleVertexInstance");
 
 	Params::MeshDescriptionBase_GetTriangleVertexInstance Parms{};
 
@@ -1688,10 +1511,7 @@ struct FVertexInstanceID UMeshDescriptionBase::GetTriangleVertexInstance(const s
 
 void UMeshDescriptionBase::GetTriangleVertexInstances(const struct FTriangleID& TriangleID, TArray<struct FVertexInstanceID>* OutVertexInstanceIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleVertexInstances");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleVertexInstances");
 
 	Params::MeshDescriptionBase_GetTriangleVertexInstances Parms{};
 
@@ -1717,10 +1537,7 @@ void UMeshDescriptionBase::GetTriangleVertexInstances(const struct FTriangleID& 
 
 void UMeshDescriptionBase::GetTriangleVertices(const struct FTriangleID& TriangleID, TArray<struct FVertexID>* OutVertexIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleVertices");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetTriangleVertices");
 
 	Params::MeshDescriptionBase_GetTriangleVertices Parms{};
 
@@ -1746,10 +1563,7 @@ void UMeshDescriptionBase::GetTriangleVertices(const struct FTriangleID& Triangl
 
 void UMeshDescriptionBase::GetVertexAdjacentVertices(const struct FVertexID& VertexID, TArray<struct FVertexID>* OutAdjacentVertexIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexAdjacentVertices");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexAdjacentVertices");
 
 	Params::MeshDescriptionBase_GetVertexAdjacentVertices Parms{};
 
@@ -1775,10 +1589,7 @@ void UMeshDescriptionBase::GetVertexAdjacentVertices(const struct FVertexID& Ver
 
 void UMeshDescriptionBase::GetVertexConnectedEdges(const struct FVertexID& VertexID, TArray<struct FEdgeID>* OutEdgeIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexConnectedEdges");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexConnectedEdges");
 
 	Params::MeshDescriptionBase_GetVertexConnectedEdges Parms{};
 
@@ -1804,10 +1615,7 @@ void UMeshDescriptionBase::GetVertexConnectedEdges(const struct FVertexID& Verte
 
 void UMeshDescriptionBase::GetVertexConnectedPolygons(const struct FVertexID& VertexID, TArray<struct FPolygonID>* OutConnectedPolygonIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexConnectedPolygons");
 
 	Params::MeshDescriptionBase_GetVertexConnectedPolygons Parms{};
 
@@ -1833,10 +1641,7 @@ void UMeshDescriptionBase::GetVertexConnectedPolygons(const struct FVertexID& Ve
 
 void UMeshDescriptionBase::GetVertexConnectedTriangles(const struct FVertexID& VertexID, TArray<struct FTriangleID>* OutConnectedTriangleIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexConnectedTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexConnectedTriangles");
 
 	Params::MeshDescriptionBase_GetVertexConnectedTriangles Parms{};
 
@@ -1862,10 +1667,7 @@ void UMeshDescriptionBase::GetVertexConnectedTriangles(const struct FVertexID& V
 
 void UMeshDescriptionBase::GetVertexInstanceConnectedPolygons(const struct FVertexInstanceID& VertexInstanceID, TArray<struct FPolygonID>* OutConnectedPolygonIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceConnectedPolygons");
 
 	Params::MeshDescriptionBase_GetVertexInstanceConnectedPolygons Parms{};
 
@@ -1891,10 +1693,7 @@ void UMeshDescriptionBase::GetVertexInstanceConnectedPolygons(const struct FVert
 
 void UMeshDescriptionBase::GetVertexInstanceConnectedTriangles(const struct FVertexInstanceID& VertexInstanceID, TArray<struct FTriangleID>* OutConnectedTriangleIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceConnectedTriangles");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceConnectedTriangles");
 
 	Params::MeshDescriptionBase_GetVertexInstanceConnectedTriangles Parms{};
 
@@ -1921,10 +1720,7 @@ void UMeshDescriptionBase::GetVertexInstanceConnectedTriangles(const struct FVer
 
 struct FVertexInstanceID UMeshDescriptionBase::GetVertexInstanceForPolygonVertex(const struct FPolygonID& PolygonID, const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceForPolygonVertex");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceForPolygonVertex");
 
 	Params::MeshDescriptionBase_GetVertexInstanceForPolygonVertex Parms{};
 
@@ -1951,10 +1747,7 @@ struct FVertexInstanceID UMeshDescriptionBase::GetVertexInstanceForPolygonVertex
 
 struct FVertexInstanceID UMeshDescriptionBase::GetVertexInstanceForTriangleVertex(const struct FTriangleID& TriangleID, const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceForTriangleVertex");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceForTriangleVertex");
 
 	Params::MeshDescriptionBase_GetVertexInstanceForTriangleVertex Parms{};
 
@@ -1981,10 +1774,7 @@ struct FVertexInstanceID UMeshDescriptionBase::GetVertexInstanceForTriangleVerte
 
 struct FEdgeID UMeshDescriptionBase::GetVertexInstancePairEdge(const struct FVertexInstanceID& VertexInstanceID0, const struct FVertexInstanceID& VertexInstanceID1) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstancePairEdge");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstancePairEdge");
 
 	Params::MeshDescriptionBase_GetVertexInstancePairEdge Parms{};
 
@@ -2010,10 +1800,7 @@ struct FEdgeID UMeshDescriptionBase::GetVertexInstancePairEdge(const struct FVer
 
 struct FVertexID UMeshDescriptionBase::GetVertexInstanceVertex(const struct FVertexInstanceID& VertexInstanceID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceVertex");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexInstanceVertex");
 
 	Params::MeshDescriptionBase_GetVertexInstanceVertex Parms{};
 
@@ -2039,10 +1826,7 @@ struct FVertexID UMeshDescriptionBase::GetVertexInstanceVertex(const struct FVer
 
 struct FEdgeID UMeshDescriptionBase::GetVertexPairEdge(const struct FVertexID& VertexID0, const struct FVertexID& VertexID1) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexPairEdge");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexPairEdge");
 
 	Params::MeshDescriptionBase_GetVertexPairEdge Parms{};
 
@@ -2068,10 +1852,7 @@ struct FEdgeID UMeshDescriptionBase::GetVertexPairEdge(const struct FVertexID& V
 
 struct FVector UMeshDescriptionBase::GetVertexPosition(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexPosition");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexPosition");
 
 	Params::MeshDescriptionBase_GetVertexPosition Parms{};
 
@@ -2096,10 +1877,7 @@ struct FVector UMeshDescriptionBase::GetVertexPosition(const struct FVertexID& V
 
 void UMeshDescriptionBase::GetVertexVertexInstances(const struct FVertexID& VertexID, TArray<struct FVertexInstanceID>* OutVertexInstanceIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "GetVertexVertexInstances");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "GetVertexVertexInstances");
 
 	Params::MeshDescriptionBase_GetVertexVertexInstances Parms{};
 
@@ -2125,10 +1903,7 @@ void UMeshDescriptionBase::GetVertexVertexInstances(const struct FVertexID& Vert
 
 bool UMeshDescriptionBase::IsEdgeInternal(const struct FEdgeID& EdgeID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsEdgeInternal");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsEdgeInternal");
 
 	Params::MeshDescriptionBase_IsEdgeInternal Parms{};
 
@@ -2154,10 +1929,7 @@ bool UMeshDescriptionBase::IsEdgeInternal(const struct FEdgeID& EdgeID) const
 
 bool UMeshDescriptionBase::IsEdgeInternalToPolygon(const struct FEdgeID& EdgeID, const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsEdgeInternalToPolygon");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsEdgeInternalToPolygon");
 
 	Params::MeshDescriptionBase_IsEdgeInternalToPolygon Parms{};
 
@@ -2183,10 +1955,7 @@ bool UMeshDescriptionBase::IsEdgeInternalToPolygon(const struct FEdgeID& EdgeID,
 
 bool UMeshDescriptionBase::IsEdgeValid(const struct FEdgeID& EdgeID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsEdgeValid");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsEdgeValid");
 
 	Params::MeshDescriptionBase_IsEdgeValid Parms{};
 
@@ -2210,10 +1979,7 @@ bool UMeshDescriptionBase::IsEdgeValid(const struct FEdgeID& EdgeID) const
 
 bool UMeshDescriptionBase::IsEmpty() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsEmpty");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsEmpty");
 
 	Params::MeshDescriptionBase_IsEmpty Parms{};
 
@@ -2236,10 +2002,7 @@ bool UMeshDescriptionBase::IsEmpty() const
 
 bool UMeshDescriptionBase::IsPolygonGroupValid(const struct FPolygonGroupID& PolygonGroupID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsPolygonGroupValid");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsPolygonGroupValid");
 
 	Params::MeshDescriptionBase_IsPolygonGroupValid Parms{};
 
@@ -2264,10 +2027,7 @@ bool UMeshDescriptionBase::IsPolygonGroupValid(const struct FPolygonGroupID& Pol
 
 bool UMeshDescriptionBase::IsPolygonValid(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsPolygonValid");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsPolygonValid");
 
 	Params::MeshDescriptionBase_IsPolygonValid Parms{};
 
@@ -2292,10 +2052,7 @@ bool UMeshDescriptionBase::IsPolygonValid(const struct FPolygonID& PolygonID) co
 
 bool UMeshDescriptionBase::IsTrianglePartOfNgon(const struct FTriangleID& TriangleID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsTrianglePartOfNgon");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsTrianglePartOfNgon");
 
 	Params::MeshDescriptionBase_IsTrianglePartOfNgon Parms{};
 
@@ -2320,10 +2077,7 @@ bool UMeshDescriptionBase::IsTrianglePartOfNgon(const struct FTriangleID& Triang
 
 bool UMeshDescriptionBase::IsTriangleValid(const struct FTriangleID& TriangleID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsTriangleValid");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsTriangleValid");
 
 	Params::MeshDescriptionBase_IsTriangleValid Parms{};
 
@@ -2348,10 +2102,7 @@ bool UMeshDescriptionBase::IsTriangleValid(const struct FTriangleID& TriangleID)
 
 bool UMeshDescriptionBase::IsVertexInstanceValid(const struct FVertexInstanceID& VertexInstanceID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsVertexInstanceValid");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsVertexInstanceValid");
 
 	Params::MeshDescriptionBase_IsVertexInstanceValid Parms{};
 
@@ -2376,10 +2127,7 @@ bool UMeshDescriptionBase::IsVertexInstanceValid(const struct FVertexInstanceID&
 
 bool UMeshDescriptionBase::IsVertexOrphaned(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsVertexOrphaned");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsVertexOrphaned");
 
 	Params::MeshDescriptionBase_IsVertexOrphaned Parms{};
 
@@ -2404,10 +2152,7 @@ bool UMeshDescriptionBase::IsVertexOrphaned(const struct FVertexID& VertexID) co
 
 bool UMeshDescriptionBase::IsVertexValid(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MeshDescriptionBase", "IsVertexValid");
+	class UFunction* Func = Class->GetFunction("MeshDescriptionBase", "IsVertexValid");
 
 	Params::MeshDescriptionBase_IsVertexValid Parms{};
 

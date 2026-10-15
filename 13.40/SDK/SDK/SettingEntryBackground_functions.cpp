@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingEntryBackground_C::ExecuteUbergraph_SettingEntryBackground(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingEntryBackground_C", "ExecuteUbergraph_SettingEntryBackground");
+	class UFunction* Func = Class->GetFunction("SettingEntryBackground_C", "ExecuteUbergraph_SettingEntryBackground");
 
 	Params::SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground Parms{};
 
@@ -43,10 +40,7 @@ void USettingEntryBackground_C::ExecuteUbergraph_SettingEntryBackground(int32 En
 
 void USettingEntryBackground_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseLeave");
 
 	Params::SettingEntryBackground_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void USettingEntryBackground_C::OnMouseLeave(const struct FPointerEvent& MouseEv
 
 void USettingEntryBackground_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseEnter");
 
 	Params::SettingEntryBackground_C_OnMouseEnter Parms{};
 

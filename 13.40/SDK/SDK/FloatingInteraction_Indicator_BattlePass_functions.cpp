@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFloatingInteraction_Indicator_BattlePass_C::ExecuteUbergraph_FloatingInteraction_Indicator_BattlePass(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "ExecuteUbergraph_FloatingInteraction_Indicator_BattlePass");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "ExecuteUbergraph_FloatingInteraction_Indicator_BattlePass");
 
 	Params::FloatingInteraction_Indicator_BattlePass_C_ExecuteUbergraph_FloatingInteraction_Indicator_BattlePass Parms{};
 
@@ -41,10 +38,7 @@ void UFloatingInteraction_Indicator_BattlePass_C::ExecuteUbergraph_FloatingInter
 
 void UFloatingInteraction_Indicator_BattlePass_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "Construct");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UFloatingInteraction_Indicator_BattlePass_C::Construct()
 
 void UFloatingInteraction_Indicator_BattlePass_C::TriggerLoopingHoverStateAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "TriggerLoopingHoverStateAnim");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "TriggerLoopingHoverStateAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UFloatingInteraction_Indicator_BattlePass_C::TriggerLoopingHoverStateAnim()
 
 void UFloatingInteraction_Indicator_BattlePass_C::OnObjectHoverEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "OnObjectHoverEnd");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "OnObjectHoverEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UFloatingInteraction_Indicator_BattlePass_C::OnObjectHoverEnd()
 
 void UFloatingInteraction_Indicator_BattlePass_C::OnObjectHoverBegin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "OnObjectHoverBegin");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "OnObjectHoverBegin");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UFloatingInteraction_Indicator_BattlePass_C::OnObjectHoverBegin()
 
 void UFloatingInteraction_Indicator_BattlePass_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_BattlePass_C", "PreConstruct");
 
 	Params::FloatingInteraction_Indicator_BattlePass_C_PreConstruct Parms{};
 

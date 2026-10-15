@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 bool USmartObjectBlueprintFunctionLibrary::K2_AddLooseGameplayTags(class AActor* Actor, const struct FGameplayTagContainer& GameplayTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SmartObjectBlueprintFunctionLibrary", "K2_AddLooseGameplayTags");
+	class UFunction* Func = StaticClass()->GetFunction("SmartObjectBlueprintFunctionLibrary", "K2_AddLooseGameplayTags");
 
 	Params::SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags Parms{};
 
@@ -55,10 +52,7 @@ bool USmartObjectBlueprintFunctionLibrary::K2_AddLooseGameplayTags(class AActor*
 
 bool USmartObjectBlueprintFunctionLibrary::K2_RemoveLooseGameplayTags(class AActor* Actor, const struct FGameplayTagContainer& GameplayTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SmartObjectBlueprintFunctionLibrary", "K2_RemoveLooseGameplayTags");
+	class UFunction* Func = StaticClass()->GetFunction("SmartObjectBlueprintFunctionLibrary", "K2_RemoveLooseGameplayTags");
 
 	Params::SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags Parms{};
 
@@ -85,10 +79,7 @@ bool USmartObjectBlueprintFunctionLibrary::K2_RemoveLooseGameplayTags(class AAct
 
 bool USmartObjectBlueprintFunctionLibrary::K2_SetSmartObjectEnabled(class AActor* SmartObject, const bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SmartObjectBlueprintFunctionLibrary", "K2_SetSmartObjectEnabled");
+	class UFunction* Func = StaticClass()->GetFunction("SmartObjectBlueprintFunctionLibrary", "K2_SetSmartObjectEnabled");
 
 	Params::SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled Parms{};
 
@@ -115,10 +106,7 @@ bool USmartObjectBlueprintFunctionLibrary::K2_SetSmartObjectEnabled(class AActor
 
 bool USmartObjectBlueprintFunctionLibrary::K2_UseSmartObject(class AActor* Avatar, class AActor* SmartObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SmartObjectBlueprintFunctionLibrary", "K2_UseSmartObject");
+	class UFunction* Func = StaticClass()->GetFunction("SmartObjectBlueprintFunctionLibrary", "K2_UseSmartObject");
 
 	Params::SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject Parms{};
 
@@ -147,10 +135,7 @@ bool USmartObjectBlueprintFunctionLibrary::K2_UseSmartObject(class AActor* Avata
 
 class UAITask_UseSmartObject* UAITask_UseSmartObject::UseSmartObject(class AAIController* Controller, class AActor* SmartObjectActor, class USmartObjectComponent* SmartObjectComponent, bool bLockAILogic)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AITask_UseSmartObject", "UseSmartObject");
+	class UFunction* Func = StaticClass()->GetFunction("AITask_UseSmartObject", "UseSmartObject");
 
 	Params::AITask_UseSmartObject_UseSmartObject Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaLockedStyleNotification_C::OnUnlockingInfoSet(bool bShowProgression_OnUnlockingInfoSet)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "OnUnlockingInfoSet");
+	class UFunction* Func = Class->GetFunction("AthenaLockedStyleNotification_C", "OnUnlockingInfoSet");
 
 	Params::AthenaLockedStyleNotification_C_OnUnlockingInfoSet Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaLockedStyleNotification_C::OnUnlockingInfoSet(bool bShowProgression_
 
 void UAthenaLockedStyleNotification_C::RequestUpdateAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestUpdateAnim");
+	class UFunction* Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestUpdateAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UAthenaLockedStyleNotification_C::RequestUpdateAnim()
 
 void UAthenaLockedStyleNotification_C::RequestIntroAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestIntroAnim");
+	class UFunction* Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestIntroAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UAthenaLockedStyleNotification_C::RequestIntroAnim()
 
 void UAthenaLockedStyleNotification_C::RequestOutroAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestOutroAnim");
+	class UFunction* Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestOutroAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UAthenaLockedStyleNotification_C::RequestOutroAnim()
 
 void UAthenaLockedStyleNotification_C::OutroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "OutroFinished");
+	class UFunction* Func = Class->GetFunction("AthenaLockedStyleNotification_C", "OutroFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UAthenaLockedStyleNotification_C::OutroFinished()
 
 void UAthenaLockedStyleNotification_C::ExecuteUbergraph_AthenaLockedStyleNotification(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "ExecuteUbergraph_AthenaLockedStyleNotification");
+	class UFunction* Func = Class->GetFunction("AthenaLockedStyleNotification_C", "ExecuteUbergraph_AthenaLockedStyleNotification");
 
 	Params::AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification Parms{};
 

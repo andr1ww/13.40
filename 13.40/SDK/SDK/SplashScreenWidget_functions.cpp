@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void USplashScreenWidget_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SplashScreenWidget_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("SplashScreenWidget_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void USplashScreenWidget_C::BP_OnActivated()
 
 void USplashScreenWidget_C::OnInputMethodChanged(ECommonInputType InputType_OnInputMethodChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SplashScreenWidget_C", "OnInputMethodChanged");
+	class UFunction* Func = Class->GetFunction("SplashScreenWidget_C", "OnInputMethodChanged");
 
 	Params::SplashScreenWidget_C_OnInputMethodChanged Parms{};
 
@@ -57,10 +51,7 @@ void USplashScreenWidget_C::OnInputMethodChanged(ECommonInputType InputType_OnIn
 
 void USplashScreenWidget_C::ExecuteUbergraph_SplashScreenWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SplashScreenWidget_C", "ExecuteUbergraph_SplashScreenWidget");
+	class UFunction* Func = Class->GetFunction("SplashScreenWidget_C", "ExecuteUbergraph_SplashScreenWidget");
 
 	Params::SplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget Parms{};
 

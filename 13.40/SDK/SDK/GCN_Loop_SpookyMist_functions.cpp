@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Loop_SpookyMist_C::ExecuteUbergraph_GCN_Loop_SpookyMist(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ExecuteUbergraph_GCN_Loop_SpookyMist");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ExecuteUbergraph_GCN_Loop_SpookyMist");
 
 	Params::GCN_Loop_SpookyMist_C_ExecuteUbergraph_GCN_Loop_SpookyMist Parms{};
 
@@ -41,10 +38,7 @@ void AGCN_Loop_SpookyMist_C::ExecuteUbergraph_GCN_Loop_SpookyMist(int32 EntryPoi
 
 void AGCN_Loop_SpookyMist_C::EndedInteract()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "EndedInteract");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "EndedInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AGCN_Loop_SpookyMist_C::EndedInteract()
 
 void AGCN_Loop_SpookyMist_C::StartedInteract()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "StartedInteract");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "StartedInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AGCN_Loop_SpookyMist_C::StartedInteract()
 
 void AGCN_Loop_SpookyMist_C::Audio_Tick(float Velocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "Audio Tick");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "Audio Tick");
 
 	Params::GCN_Loop_SpookyMist_C_Audio_Tick Parms{};
 
@@ -89,10 +77,7 @@ void AGCN_Loop_SpookyMist_C::Audio_Tick(float Velocity)
 
 void AGCN_Loop_SpookyMist_C::UpdateTeamVisbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "UpdateTeamVisbility");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "UpdateTeamVisbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void AGCN_Loop_SpookyMist_C::UpdateTeamVisbility()
 
 void AGCN_Loop_SpookyMist_C::ExpireWarningTick()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ExpireWarningTick");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ExpireWarningTick");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void AGCN_Loop_SpookyMist_C::ExpireWarningTick()
 
 void AGCN_Loop_SpookyMist_C::ClearExpireTell()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ClearExpireTell");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ClearExpireTell");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void AGCN_Loop_SpookyMist_C::ClearExpireTell()
 
 void AGCN_Loop_SpookyMist_C::BeginExpireTell()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "BeginExpireTell");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "BeginExpireTell");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +123,7 @@ void AGCN_Loop_SpookyMist_C::BeginExpireTell()
 
 void AGCN_Loop_SpookyMist_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ReceiveTick");
 
 	Params::GCN_Loop_SpookyMist_C_ReceiveTick Parms{};
 
@@ -172,10 +145,7 @@ void AGCN_Loop_SpookyMist_C::ReceiveTick(float DeltaSeconds)
 
 void AGCN_Loop_SpookyMist_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "OnRemoval");
 
 	Params::GCN_Loop_SpookyMist_C_OnRemoval Parms{};
 
@@ -200,10 +170,7 @@ void AGCN_Loop_SpookyMist_C::OnRemoval(class AActor* MyTarget, const struct FGam
 
 void AGCN_Loop_SpookyMist_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "OnLoopingStart");
 
 	Params::GCN_Loop_SpookyMist_C_OnLoopingStart Parms{};
 
@@ -221,10 +188,7 @@ void AGCN_Loop_SpookyMist_C::OnLoopingStart(class AActor* MyTarget, const struct
 
 void AGCN_Loop_SpookyMist_C::FadeinOut__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "FadeinOut__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "FadeinOut__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,10 +199,7 @@ void AGCN_Loop_SpookyMist_C::FadeinOut__UpdateFunc()
 
 void AGCN_Loop_SpookyMist_C::FadeinOut__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "FadeinOut__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "FadeinOut__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +210,7 @@ void AGCN_Loop_SpookyMist_C::FadeinOut__FinishedFunc()
 
 void AGCN_Loop_SpookyMist_C::GetSkeletalMeshes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "GetSkeletalMeshes");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "GetSkeletalMeshes");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

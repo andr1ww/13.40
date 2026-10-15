@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AVaultCharacterLightingBP_C::SwitchPCLighting_LOWDetail(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "SwitchPCLighting_LOWDetail");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "SwitchPCLighting_LOWDetail");
 
 	Params::VaultCharacterLightingBP_C_SwitchPCLighting_LOWDetail Parms{};
 
@@ -43,10 +40,7 @@ void AVaultCharacterLightingBP_C::SwitchPCLighting_LOWDetail(bool Visibility)
 
 void AVaultCharacterLightingBP_C::SwitchPCLighting(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "SwitchPCLighting");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "SwitchPCLighting");
 
 	Params::VaultCharacterLightingBP_C_SwitchPCLighting Parms{};
 
@@ -63,10 +57,7 @@ void AVaultCharacterLightingBP_C::SwitchPCLighting(bool Visibility)
 
 void AVaultCharacterLightingBP_C::SwitchMobileLighting(bool Visibilty)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "SwitchMobileLighting");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "SwitchMobileLighting");
 
 	Params::VaultCharacterLightingBP_C_SwitchMobileLighting Parms{};
 
@@ -81,10 +72,7 @@ void AVaultCharacterLightingBP_C::SwitchMobileLighting(bool Visibilty)
 
 void AVaultCharacterLightingBP_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +83,7 @@ void AVaultCharacterLightingBP_C::UserConstructionScript()
 
 void AVaultCharacterLightingBP_C::UpdateSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "UpdateSettings");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "UpdateSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void AVaultCharacterLightingBP_C::UpdateSettings()
 
 void AVaultCharacterLightingBP_C::ToggleLighting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "ToggleLighting");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "ToggleLighting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void AVaultCharacterLightingBP_C::ToggleLighting()
 
 void AVaultCharacterLightingBP_C::OVERRIDELIGHTING()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "OVERRIDELIGHTING");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "OVERRIDELIGHTING");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +118,7 @@ void AVaultCharacterLightingBP_C::OVERRIDELIGHTING()
 
 void AVaultCharacterLightingBP_C::LightControl(bool NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "LightControl");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "LightControl");
 
 	Params::VaultCharacterLightingBP_C_LightControl Parms{};
 
@@ -157,10 +133,7 @@ void AVaultCharacterLightingBP_C::LightControl(bool NewParam)
 
 void AVaultCharacterLightingBP_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +146,7 @@ void AVaultCharacterLightingBP_C::ReceiveBeginPlay()
 
 void AVaultCharacterLightingBP_C::ExecuteUbergraph_VaultCharacterLightingBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VaultCharacterLightingBP_C", "ExecuteUbergraph_VaultCharacterLightingBP");
+	class UFunction* Func = Class->GetFunction("VaultCharacterLightingBP_C", "ExecuteUbergraph_VaultCharacterLightingBP");
 
 	Params::VaultCharacterLightingBP_C_ExecuteUbergraph_VaultCharacterLightingBP Parms{};
 

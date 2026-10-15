@@ -8181,6 +8181,28 @@ public:
 		return InSDKUtils::CallGameFunction(reinterpret_cast<struct FLevelCollection*(*)(UWorld*, ELevelCollectionType)>(InSDKUtils::GetImageBase() + 0x4E147B0), this, InType);
 	}
 
+	class AActor* SpawnActor(class UClass* Class, const struct FTransform& Transform, const struct FActorSpawnParameters& SpawnParameters = FActorSpawnParameters())
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class AActor*(*)(UWorld*, class UClass*, const struct FTransform*, const struct FActorSpawnParameters&)>(InSDKUtils::GetImageBase() + 0x4A91050), this, Class, &Transform, SpawnParameters);
+	}
+
+	class AActor* SpawnActor(class UClass* Class, const struct FVector& Location, const struct FRotator& Rotation, const struct FActorSpawnParameters& SpawnParameters = FActorSpawnParameters())
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class AActor*(*)(UWorld*, class UClass*, const struct FVector*, const struct FRotator*, const struct FActorSpawnParameters&)>(InSDKUtils::GetImageBase() + 0x4A92070), this, Class, &Location, &Rotation, SpawnParameters);
+	}
+
+	template<typename T>
+	T* SpawnActor(const struct FTransform& Transform, const struct FActorSpawnParameters& SpawnParameters = FActorSpawnParameters())
+	{
+		return static_cast<T*>(SpawnActor(T::StaticClass(), Transform, SpawnParameters));
+	}
+
+	template<typename T>
+	T* SpawnActor(const struct FVector& Location, const struct FRotator& Rotation, const struct FActorSpawnParameters& SpawnParameters = FActorSpawnParameters())
+	{
+		return static_cast<T*>(SpawnActor(T::StaticClass(), Location, Rotation, SpawnParameters));
+	}
+
 	void HandleTimelineScrubbed();
 	class AWorldSettings* K2_GetWorldSettings();
 

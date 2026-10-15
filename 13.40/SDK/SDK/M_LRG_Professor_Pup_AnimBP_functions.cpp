@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UM_LRG_Professor_Pup_AnimBP_C::ExecuteUbergraph_M_LRG_Professor_Pup_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_LRG_Professor_Pup_AnimBP_C", "ExecuteUbergraph_M_LRG_Professor_Pup_AnimBP");
+	class UFunction* Func = Class->GetFunction("M_LRG_Professor_Pup_AnimBP_C", "ExecuteUbergraph_M_LRG_Professor_Pup_AnimBP");
 
 	Params::M_LRG_Professor_Pup_AnimBP_C_ExecuteUbergraph_M_LRG_Professor_Pup_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UM_LRG_Professor_Pup_AnimBP_C::ExecuteUbergraph_M_LRG_Professor_Pup_AnimBP(
 
 void UM_LRG_Professor_Pup_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_LRG_Professor_Pup_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("M_LRG_Professor_Pup_AnimBP_C", "AnimGraph");
 
 	Params::M_LRG_Professor_Pup_AnimBP_C_AnimGraph Parms{};
 

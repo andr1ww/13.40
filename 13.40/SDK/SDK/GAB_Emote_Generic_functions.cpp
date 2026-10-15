@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAB_Emote_Generic_C::ExecuteUbergraph_GAB_Emote_Generic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "ExecuteUbergraph_GAB_Emote_Generic");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "ExecuteUbergraph_GAB_Emote_Generic");
 
 	Params::GAB_Emote_Generic_C_ExecuteUbergraph_GAB_Emote_Generic Parms{};
 
@@ -41,10 +38,7 @@ void UGAB_Emote_Generic_C::ExecuteUbergraph_GAB_Emote_Generic(int32 EntryPoint)
 
 void UGAB_Emote_Generic_C::NonMontageAsyncAssetsReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "NonMontageAsyncAssetsReady");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "NonMontageAsyncAssetsReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGAB_Emote_Generic_C::NonMontageAsyncAssetsReady()
 
 void UGAB_Emote_Generic_C::PlayInitialEmoteMontage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "PlayInitialEmoteMontage");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "PlayInitialEmoteMontage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGAB_Emote_Generic_C::PlayInitialEmoteMontage()
 
 void UGAB_Emote_Generic_C::OnMontageStartedPlaying()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "OnMontageStartedPlaying");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "OnMontageStartedPlaying");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UGAB_Emote_Generic_C::OnMontageStartedPlaying()
 
 void UGAB_Emote_Generic_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UGAB_Emote_Generic_C::K2_ActivateAbility()
 
 void UGAB_Emote_Generic_C::OnLoaded_DA96775D40CD998BF2FF0085FE5AB126(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "OnLoaded_DA96775D40CD998BF2FF0085FE5AB126");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "OnLoaded_DA96775D40CD998BF2FF0085FE5AB126");
 
 	Params::GAB_Emote_Generic_C_OnLoaded_DA96775D40CD998BF2FF0085FE5AB126 Parms{};
 
@@ -119,10 +101,7 @@ void UGAB_Emote_Generic_C::OnLoaded_DA96775D40CD998BF2FF0085FE5AB126(class UObje
 
 void UGAB_Emote_Generic_C::OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D");
 
 	Params::GAB_Emote_Generic_C_OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D Parms{};
 
@@ -140,10 +119,7 @@ void UGAB_Emote_Generic_C::OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D(class UObje
 
 void UGAB_Emote_Generic_C::Triggered_DE7019AA4E006879EDD264899869FEE2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "Triggered_DE7019AA4E006879EDD264899869FEE2");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "Triggered_DE7019AA4E006879EDD264899869FEE2");
 
 	Params::GAB_Emote_Generic_C_Triggered_DE7019AA4E006879EDD264899869FEE2 Parms{};
 
@@ -162,10 +138,7 @@ void UGAB_Emote_Generic_C::Triggered_DE7019AA4E006879EDD264899869FEE2(const stru
 
 void UGAB_Emote_Generic_C::Cancelled_DE7019AA4E006879EDD264899869FEE2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "Cancelled_DE7019AA4E006879EDD264899869FEE2");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "Cancelled_DE7019AA4E006879EDD264899869FEE2");
 
 	Params::GAB_Emote_Generic_C_Cancelled_DE7019AA4E006879EDD264899869FEE2 Parms{};
 
@@ -184,10 +157,7 @@ void UGAB_Emote_Generic_C::Cancelled_DE7019AA4E006879EDD264899869FEE2(const stru
 
 void UGAB_Emote_Generic_C::Completed_DE7019AA4E006879EDD264899869FEE2(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "Completed_DE7019AA4E006879EDD264899869FEE2");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "Completed_DE7019AA4E006879EDD264899869FEE2");
 
 	Params::GAB_Emote_Generic_C_Completed_DE7019AA4E006879EDD264899869FEE2 Parms{};
 
@@ -205,10 +175,7 @@ void UGAB_Emote_Generic_C::Completed_DE7019AA4E006879EDD264899869FEE2(const stru
 
 void UGAB_Emote_Generic_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "K2_OnEndAbility");
 
 	Params::GAB_Emote_Generic_C_K2_OnEndAbility Parms{};
 
@@ -226,10 +193,7 @@ void UGAB_Emote_Generic_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_Emote_Generic_C::GetBodyTypeAndGender(EFortCustomBodyType* BodyType, EFortCustomGender* Gender)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "GetBodyTypeAndGender");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "GetBodyTypeAndGender");
 
 	Params::GAB_Emote_Generic_C_GetBodyTypeAndGender Parms{};
 
@@ -253,10 +217,7 @@ void UGAB_Emote_Generic_C::GetBodyTypeAndGender(EFortCustomBodyType* BodyType, E
 
 TSoftObjectPtr<class UAnimMontage> UGAB_Emote_Generic_C::GetMontageToPlay(class UFortMontageItemDefinitionBase* EmoteAsset, EFortCustomBodyType BodyType, EFortCustomGender Gender)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "GetMontageToPlay");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "GetMontageToPlay");
 
 	Params::GAB_Emote_Generic_C_GetMontageToPlay Parms{};
 
@@ -277,10 +238,7 @@ TSoftObjectPtr<class UAnimMontage> UGAB_Emote_Generic_C::GetMontageToPlay(class 
 
 void UGAB_Emote_Generic_C::SetReticleVisibility(bool ShouldHide)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "SetReticleVisibility");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "SetReticleVisibility");
 
 	Params::GAB_Emote_Generic_C_SetReticleVisibility Parms{};
 
@@ -295,10 +253,7 @@ void UGAB_Emote_Generic_C::SetReticleVisibility(bool ShouldHide)
 
 void UGAB_Emote_Generic_C::ForceStopMontage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "ForceStopMontage");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "ForceStopMontage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -312,10 +267,7 @@ void UGAB_Emote_Generic_C::ForceStopMontage()
 
 void UGAB_Emote_Generic_C::IsMontagePlaying(class UAnimMontage* Montage, bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Emote_Generic_C", "IsMontagePlaying");
+	class UFunction* Func = Class->GetFunction("GAB_Emote_Generic_C", "IsMontagePlaying");
 
 	Params::GAB_Emote_Generic_C_IsMontagePlaying Parms{};
 

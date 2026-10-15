@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_FloppingRabbit_Weap_Athena_C::ExecuteUbergraph_B_FloppingRabbit_Weap_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ExecuteUbergraph_B_FloppingRabbit_Weap_Athena");
+	class UFunction* Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ExecuteUbergraph_B_FloppingRabbit_Weap_Athena");
 
 	Params::B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena Parms{};
 
@@ -41,10 +38,7 @@ void AB_FloppingRabbit_Weap_Athena_C::ExecuteUbergraph_B_FloppingRabbit_Weap_Ath
 
 void AB_FloppingRabbit_Weap_Athena_C::OnTetherDetached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnTetherDetached");
+	class UFunction* Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnTetherDetached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_FloppingRabbit_Weap_Athena_C::OnTetherDetached()
 
 void AB_FloppingRabbit_Weap_Athena_C::ForceKillFishing()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ForceKillFishing");
+	class UFunction* Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ForceKillFishing");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_FloppingRabbit_Weap_Athena_C::ForceKillFishing()
 
 void AB_FloppingRabbit_Weap_Athena_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_FloppingRabbit_Weap_Athena_C::OnWeaponAttached()
 
 void AB_FloppingRabbit_Weap_Athena_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AB_FloppingRabbit_Weap_Athena_C::K2_OnUnEquip()
 
 void AB_FloppingRabbit_Weap_Athena_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void AB_FloppingRabbit_Weap_Athena_C::ReceiveBeginPlay()
 
 void AB_FloppingRabbit_Weap_Athena_C::OnRep_HideBobber()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnRep_HideBobber");
+	class UFunction* Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnRep_HideBobber");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void AB_FloppingRabbit_Weap_Athena_C::OnRep_HideBobber()
 
 void AB_FloppingRabbit_Weap_Athena_C::OnRep_OneHandGrip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnRep_OneHandGrip");
+	class UFunction* Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnRep_OneHandGrip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -142,10 +118,7 @@ void AB_FloppingRabbit_Weap_Athena_C::OnRep_OneHandGrip()
 
 class FName AB_FloppingRabbit_Weap_Athena_C::DetermineFishLootTierNameAndSetLootForSpawner(bool bIsExplosion)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "DetermineFishLootTierNameAndSetLootForSpawner");
+	class UFunction* Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "DetermineFishLootTierNameAndSetLootForSpawner");
 
 	Params::B_FloppingRabbit_Weap_Athena_C_DetermineFishLootTierNameAndSetLootForSpawner Parms{};
 

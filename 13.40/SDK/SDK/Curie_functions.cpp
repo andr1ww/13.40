@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCurieComponent::HandleOwningActorDestroyed(class AActor* Owner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieComponent", "HandleOwningActorDestroyed");
+	class UFunction* Func = Class->GetFunction("CurieComponent", "HandleOwningActorDestroyed");
 
 	Params::CurieComponent_HandleOwningActorDestroyed Parms{};
 
@@ -49,10 +46,7 @@ void UCurieComponent::HandleOwningActorDestroyed(class AActor* Owner)
 
 bool UCurieComponent::HasAnyElementAttached(const struct FGameplayTagContainer& ElementIdentifiers) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieComponent", "HasAnyElementAttached");
+	class UFunction* Func = Class->GetFunction("CurieComponent", "HasAnyElementAttached");
 
 	Params::CurieComponent_HasAnyElementAttached Parms{};
 
@@ -77,10 +71,7 @@ bool UCurieComponent::HasAnyElementAttached(const struct FGameplayTagContainer& 
 
 bool UCurieComponent::HasElementAttached(const struct FGameplayTag& ElementIdentifier) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieComponent", "HasElementAttached");
+	class UFunction* Func = Class->GetFunction("CurieComponent", "HasElementAttached");
 
 	Params::CurieComponent_HasElementAttached Parms{};
 
@@ -105,10 +96,7 @@ bool UCurieComponent::HasElementAttached(const struct FGameplayTag& ElementIdent
 
 bool UCurieComponent::HasStateAttached(const struct FGameplayTag& StateIdentifier) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieComponent", "HasStateAttached");
+	class UFunction* Func = Class->GetFunction("CurieComponent", "HasStateAttached");
 
 	Params::CurieComponent_HasStateAttached Parms{};
 
@@ -133,10 +121,7 @@ bool UCurieComponent::HasStateAttached(const struct FGameplayTag& StateIdentifie
 
 bool UCurieComponent::IsInteractingWithElement(const struct FGameplayTag& Element) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieComponent", "IsInteractingWithElement");
+	class UFunction* Func = Class->GetFunction("CurieComponent", "IsInteractingWithElement");
 
 	Params::CurieComponent_IsInteractingWithElement Parms{};
 
@@ -160,10 +145,7 @@ bool UCurieComponent::IsInteractingWithElement(const struct FGameplayTag& Elemen
 
 void ICurieInterface::OnCurieContainerInitialized_BP(const struct FCurieContainerHandle& CurieContainerHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieContainerInitialized_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieContainerInitialized_BP");
 
 	Params::CurieInterface_OnCurieContainerInitialized_BP Parms{};
 
@@ -180,10 +162,7 @@ void ICurieInterface::OnCurieContainerInitialized_BP(const struct FCurieContaine
 
 void ICurieInterface::OnCurieContainerShutdown_BP(const struct FCurieContainerHandle& CurieContainerHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieContainerShutdown_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieContainerShutdown_BP");
 
 	Params::CurieInterface_OnCurieContainerShutdown_BP Parms{};
 
@@ -201,10 +180,7 @@ void ICurieInterface::OnCurieContainerShutdown_BP(const struct FCurieContainerHa
 
 void ICurieInterface::OnCurieElementAttached_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementAttached_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementAttached_BP");
 
 	Params::CurieInterface_OnCurieElementAttached_BP Parms{};
 
@@ -223,10 +199,7 @@ void ICurieInterface::OnCurieElementAttached_BP(const struct FCurieContainerHand
 
 void ICurieInterface::OnCurieElementDetached_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementDetached_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementDetached_BP");
 
 	Params::CurieInterface_OnCurieElementDetached_BP Parms{};
 
@@ -246,10 +219,7 @@ void ICurieInterface::OnCurieElementDetached_BP(const struct FCurieContainerHand
 
 void ICurieInterface::OnCurieElementInteract_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag, const struct FCurieInteractParamsHandle& InteractParamsHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementInteract_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementInteract_BP");
 
 	Params::CurieInterface_OnCurieElementInteract_BP Parms{};
 
@@ -270,10 +240,7 @@ void ICurieInterface::OnCurieElementInteract_BP(const struct FCurieContainerHand
 
 void ICurieInterface::OnCurieElementInteractBegun_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag, const struct FCurieInteractParamsHandle& InteractParamsHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementInteractBegun_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementInteractBegun_BP");
 
 	Params::CurieInterface_OnCurieElementInteractBegun_BP Parms{};
 
@@ -294,10 +261,7 @@ void ICurieInterface::OnCurieElementInteractBegun_BP(const struct FCurieContaine
 
 void ICurieInterface::OnCurieElementInteractEnded_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag, const struct FCurieInteractParamsHandle& InteractParamsHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementInteractEnded_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieElementInteractEnded_BP");
 
 	Params::CurieInterface_OnCurieElementInteractEnded_BP Parms{};
 
@@ -317,10 +281,7 @@ void ICurieInterface::OnCurieElementInteractEnded_BP(const struct FCurieContaine
 
 void ICurieInterface::OnCurieStateAttached_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& StateTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieStateAttached_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieStateAttached_BP");
 
 	Params::CurieInterface_OnCurieStateAttached_BP Parms{};
 
@@ -339,10 +300,7 @@ void ICurieInterface::OnCurieStateAttached_BP(const struct FCurieContainerHandle
 
 void ICurieInterface::OnCurieStateConsumed_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& StateTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieStateConsumed_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieStateConsumed_BP");
 
 	Params::CurieInterface_OnCurieStateConsumed_BP Parms{};
 
@@ -361,10 +319,7 @@ void ICurieInterface::OnCurieStateConsumed_BP(const struct FCurieContainerHandle
 
 void ICurieInterface::OnCurieStateDetached_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& StateTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieStateDetached_BP");
+	class UFunction* Func = AsUObject()->Class->GetFunction("CurieInterface", "OnCurieStateDetached_BP");
 
 	Params::CurieInterface_OnCurieStateDetached_BP Parms{};
 
@@ -383,10 +338,7 @@ void ICurieInterface::OnCurieStateDetached_BP(const struct FCurieContainerHandle
 
 void UCurieManager::BindDelegateForCurieElementAttached(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementAttached");
+	class UFunction* Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementAttached");
 
 	Params::CurieManager_BindDelegateForCurieElementAttached Parms{};
 
@@ -410,10 +362,7 @@ void UCurieManager::BindDelegateForCurieElementAttached(class UObject* CurieOwne
 
 void UCurieManager::BindDelegateForCurieElementBeginInteract(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementBeginInteract");
+	class UFunction* Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementBeginInteract");
 
 	Params::CurieManager_BindDelegateForCurieElementBeginInteract Parms{};
 
@@ -437,10 +386,7 @@ void UCurieManager::BindDelegateForCurieElementBeginInteract(class UObject* Curi
 
 void UCurieManager::BindDelegateForCurieElementDetached(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementDetached");
+	class UFunction* Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementDetached");
 
 	Params::CurieManager_BindDelegateForCurieElementDetached Parms{};
 
@@ -464,10 +410,7 @@ void UCurieManager::BindDelegateForCurieElementDetached(class UObject* CurieOwne
 
 void UCurieManager::BindDelegateForCurieElementEndInteract(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementEndInteract");
+	class UFunction* Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementEndInteract");
 
 	Params::CurieManager_BindDelegateForCurieElementEndInteract Parms{};
 
@@ -491,10 +434,7 @@ void UCurieManager::BindDelegateForCurieElementEndInteract(class UObject* CurieO
 
 void UCurieManager::BindDelegateForCurieElementInteract(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementInteract");
+	class UFunction* Func = Class->GetFunction("CurieManager", "BindDelegateForCurieElementInteract");
 
 	Params::CurieManager_BindDelegateForCurieElementInteract Parms{};
 
@@ -518,10 +458,7 @@ void UCurieManager::BindDelegateForCurieElementInteract(class UObject* CurieOwne
 
 void UCurieManager::BindDelegateForCurieStateAttached(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& StateIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "BindDelegateForCurieStateAttached");
+	class UFunction* Func = Class->GetFunction("CurieManager", "BindDelegateForCurieStateAttached");
 
 	Params::CurieManager_BindDelegateForCurieStateAttached Parms{};
 
@@ -545,10 +482,7 @@ void UCurieManager::BindDelegateForCurieStateAttached(class UObject* CurieOwner,
 
 void UCurieManager::BindDelegateForCurieStateDetached(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& StateIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "BindDelegateForCurieStateDetached");
+	class UFunction* Func = Class->GetFunction("CurieManager", "BindDelegateForCurieStateDetached");
 
 	Params::CurieManager_BindDelegateForCurieStateDetached Parms{};
 
@@ -572,10 +506,7 @@ void UCurieManager::BindDelegateForCurieStateDetached(class UObject* CurieOwner,
 
 void UCurieManager::UnbindDelegateForCurieElementAttached(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementAttached");
+	class UFunction* Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementAttached");
 
 	Params::CurieManager_UnbindDelegateForCurieElementAttached Parms{};
 
@@ -599,10 +530,7 @@ void UCurieManager::UnbindDelegateForCurieElementAttached(class UObject* CurieOw
 
 void UCurieManager::UnbindDelegateForCurieElementBeginInteract(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementBeginInteract");
+	class UFunction* Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementBeginInteract");
 
 	Params::CurieManager_UnbindDelegateForCurieElementBeginInteract Parms{};
 
@@ -626,10 +554,7 @@ void UCurieManager::UnbindDelegateForCurieElementBeginInteract(class UObject* Cu
 
 void UCurieManager::UnbindDelegateForCurieElementDetached(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementDetached");
+	class UFunction* Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementDetached");
 
 	Params::CurieManager_UnbindDelegateForCurieElementDetached Parms{};
 
@@ -653,10 +578,7 @@ void UCurieManager::UnbindDelegateForCurieElementDetached(class UObject* CurieOw
 
 void UCurieManager::UnbindDelegateForCurieElementEndInteract(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementEndInteract");
+	class UFunction* Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementEndInteract");
 
 	Params::CurieManager_UnbindDelegateForCurieElementEndInteract Parms{};
 
@@ -680,10 +602,7 @@ void UCurieManager::UnbindDelegateForCurieElementEndInteract(class UObject* Curi
 
 void UCurieManager::UnbindDelegateForCurieElementInteract(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& ElementIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementInteract");
+	class UFunction* Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieElementInteract");
 
 	Params::CurieManager_UnbindDelegateForCurieElementInteract Parms{};
 
@@ -707,10 +626,7 @@ void UCurieManager::UnbindDelegateForCurieElementInteract(class UObject* CurieOw
 
 void UCurieManager::UnbindDelegateForCurieStateAttached(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& StateIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieStateAttached");
+	class UFunction* Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieStateAttached");
 
 	Params::CurieManager_UnbindDelegateForCurieStateAttached Parms{};
 
@@ -734,10 +650,7 @@ void UCurieManager::UnbindDelegateForCurieStateAttached(class UObject* CurieOwne
 
 void UCurieManager::UnbindDelegateForCurieStateDetached(class UObject* CurieOwner, const TDelegate<void(class UObject* Owner, const struct FCurieContainerHandle& ContainerHandle, const struct FGameplayTag& StateIdentifier)>& Delegate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieStateDetached");
+	class UFunction* Func = Class->GetFunction("CurieManager", "UnbindDelegateForCurieStateDetached");
 
 	Params::CurieManager_UnbindDelegateForCurieStateDetached Parms{};
 

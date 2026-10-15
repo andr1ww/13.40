@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 class AKairosSceneManagerActor* UKairosCaptureStatics::GetSceneManager(const class UObject* WorldContextObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KairosCaptureStatics", "GetSceneManager");
+	class UFunction* Func = StaticClass()->GetFunction("KairosCaptureStatics", "GetSceneManager");
 
 	Params::KairosCaptureStatics_GetSceneManager Parms{};
 
@@ -51,10 +48,7 @@ class AKairosSceneManagerActor* UKairosCaptureStatics::GetSceneManager(const cla
 
 void UKairosCaptureStatics::ToggleAutoRotate(bool bIsAutoRotateAllowed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KairosCaptureStatics", "ToggleAutoRotate");
+	class UFunction* Func = StaticClass()->GetFunction("KairosCaptureStatics", "ToggleAutoRotate");
 
 	Params::KairosCaptureStatics_ToggleAutoRotate Parms{};
 
@@ -77,10 +71,7 @@ void UKairosCaptureStatics::ToggleAutoRotate(bool bIsAutoRotateAllowed)
 
 void UKairosCaptureStatics::PauseOrResumeSnippet(const struct FKairosSnippetParams& Params_0, const struct FWebJSResponse& Response)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KairosCaptureStatics", "PauseOrResumeSnippet");
+	class UFunction* Func = Class->GetFunction("KairosCaptureStatics", "PauseOrResumeSnippet");
 
 	Params::KairosCaptureStatics_PauseOrResumeSnippet Parms{};
 
@@ -103,10 +94,7 @@ void UKairosCaptureStatics::PauseOrResumeSnippet(const struct FKairosSnippetPara
 
 class UKairosConfig* AKairosGameModeBase::GetDefaultConfig()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KairosGameModeBase", "GetDefaultConfig");
+	class UFunction* Func = Class->GetFunction("KairosGameModeBase", "GetDefaultConfig");
 
 	Params::KairosGameModeBase_GetDefaultConfig Parms{};
 
@@ -130,10 +118,7 @@ class UKairosConfig* AKairosGameModeBase::GetDefaultConfig()
 
 bool AKairosHeroBase::BeginCapture(const struct FKairosAnimationFramingInfo& FramingInfo, const struct FKairosCaptureParams& CaptureParams)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KairosHeroBase", "BeginCapture");
+	class UFunction* Func = Class->GetFunction("KairosHeroBase", "BeginCapture");
 
 	Params::KairosHeroBase_BeginCapture Parms{};
 
@@ -158,10 +143,7 @@ bool AKairosHeroBase::BeginCapture(const struct FKairosAnimationFramingInfo& Fra
 
 bool AKairosHeroBase::EndCapture()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KairosHeroBase", "EndCapture");
+	class UFunction* Func = Class->GetFunction("KairosHeroBase", "EndCapture");
 
 	Params::KairosHeroBase_EndCapture Parms{};
 
@@ -184,10 +166,7 @@ bool AKairosHeroBase::EndCapture()
 
 void AKairosSceneManagerActor::BeginEmotePlaybackForPlayer(const class FString& PlayerID, const class FString& EmoteId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KairosSceneManagerActor", "BeginEmotePlaybackForPlayer");
+	class UFunction* Func = Class->GetFunction("KairosSceneManagerActor", "BeginEmotePlaybackForPlayer");
 
 	Params::KairosSceneManagerActor_BeginEmotePlaybackForPlayer Parms{};
 
@@ -210,10 +189,7 @@ void AKairosSceneManagerActor::BeginEmotePlaybackForPlayer(const class FString& 
 
 const struct FKairosSceneInfo AKairosSceneManagerActor::GetSceneInfo()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KairosSceneManagerActor", "GetSceneInfo");
+	class UFunction* Func = Class->GetFunction("KairosSceneManagerActor", "GetSceneInfo");
 
 	Params::KairosSceneManagerActor_GetSceneInfo Parms{};
 
@@ -235,10 +211,7 @@ const struct FKairosSceneInfo AKairosSceneManagerActor::GetSceneInfo()
 
 void AKairosSceneManagerActor::OLD_OnSceneSetupComplete(const struct FKairosSceneInfo& CompleteSceneInfoCopy)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KairosSceneManagerActor", "OLD_OnSceneSetupComplete");
+	class UFunction* Func = Class->GetFunction("KairosSceneManagerActor", "OLD_OnSceneSetupComplete");
 
 	Params::KairosSceneManagerActor_OLD_OnSceneSetupComplete Parms{};
 
@@ -256,10 +229,7 @@ void AKairosSceneManagerActor::OLD_OnSceneSetupComplete(const struct FKairosScen
 
 void AKairosSceneManagerActor::PauseOrResumeSnippet(const class FString& PlayerID, bool bShouldPase)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KairosSceneManagerActor", "PauseOrResumeSnippet");
+	class UFunction* Func = Class->GetFunction("KairosSceneManagerActor", "PauseOrResumeSnippet");
 
 	Params::KairosSceneManagerActor_PauseOrResumeSnippet Parms{};
 
@@ -280,10 +250,7 @@ void AKairosSceneManagerActor::PauseOrResumeSnippet(const class FString& PlayerI
 
 void AKairosSceneManagerActor::StopAR()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("KairosSceneManagerActor", "StopAR");
+	class UFunction* Func = Class->GetFunction("KairosSceneManagerActor", "StopAR");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

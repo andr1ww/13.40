@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTabMouseAndKeyboardOptions_New_C::ExecuteUbergraph_TabMouseAndKeyboardOptions_New(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabMouseAndKeyboardOptions_New_C", "ExecuteUbergraph_TabMouseAndKeyboardOptions_New");
+	class UFunction* Func = Class->GetFunction("TabMouseAndKeyboardOptions_New_C", "ExecuteUbergraph_TabMouseAndKeyboardOptions_New");
 
 	Params::TabMouseAndKeyboardOptions_New_C_ExecuteUbergraph_TabMouseAndKeyboardOptions_New Parms{};
 
@@ -41,10 +38,7 @@ void UTabMouseAndKeyboardOptions_New_C::ExecuteUbergraph_TabMouseAndKeyboardOpti
 
 void UTabMouseAndKeyboardOptions_New_C::CenterOnTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabMouseAndKeyboardOptions_New_C", "CenterOnTab");
+	class UFunction* Func = Class->GetFunction("TabMouseAndKeyboardOptions_New_C", "CenterOnTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UTabMouseAndKeyboardOptions_New_C::CenterOnTab()
 
 void UTabMouseAndKeyboardOptions_New_C::SettingValueChanged(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabMouseAndKeyboardOptions_New_C", "SettingValueChanged");
+	class UFunction* Func = Class->GetFunction("TabMouseAndKeyboardOptions_New_C", "SettingValueChanged");
 
 	Params::TabMouseAndKeyboardOptions_New_C_SettingValueChanged Parms{};
 

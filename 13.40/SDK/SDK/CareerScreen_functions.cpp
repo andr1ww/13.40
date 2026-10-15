@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCareerScreen_C::ExecuteUbergraph_CareerScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CareerScreen_C", "ExecuteUbergraph_CareerScreen");
+	class UFunction* Func = Class->GetFunction("CareerScreen_C", "ExecuteUbergraph_CareerScreen");
 
 	Params::CareerScreen_C_ExecuteUbergraph_CareerScreen Parms{};
 
@@ -41,10 +38,7 @@ void UCareerScreen_C::ExecuteUbergraph_CareerScreen(int32 EntryPoint)
 
 void UCareerScreen_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CareerScreen_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("CareerScreen_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UCareerScreen_C::OnInitialized()
 
 void UCareerScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CareerScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("CareerScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UCareerScreen_C::BP_OnActivated()
 
 void UCareerScreen_C::ShowFeats(bool bHasCompletedFeats)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CareerScreen_C", "ShowFeats");
+	class UFunction* Func = Class->GetFunction("CareerScreen_C", "ShowFeats");
 
 	Params::CareerScreen_C_ShowFeats Parms{};
 
@@ -89,10 +77,7 @@ void UCareerScreen_C::ShowFeats(bool bHasCompletedFeats)
 
 void UCareerScreen_C::PlayCinematic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CareerScreen_C", "PlayCinematic");
+	class UFunction* Func = Class->GetFunction("CareerScreen_C", "PlayCinematic");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UCareerScreen_C::PlayCinematic()
 
 void UCareerScreen_C::ReplayCinematic(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CareerScreen_C", "ReplayCinematic");
+	class UFunction* Func = Class->GetFunction("CareerScreen_C", "ReplayCinematic");
 
 	Params::CareerScreen_C_ReplayCinematic Parms{};
 

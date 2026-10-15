@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UExplosiveBowLayerAnimBP_C::ExecuteUbergraph_ExplosiveBowLayerAnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ExecuteUbergraph_ExplosiveBowLayerAnimBP");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ExecuteUbergraph_ExplosiveBowLayerAnimBP");
 
 	Params::ExplosiveBowLayerAnimBP_C_ExecuteUbergraph_ExplosiveBowLayerAnimBP Parms{};
 
@@ -41,10 +38,7 @@ void UExplosiveBowLayerAnimBP_C::ExecuteUbergraph_ExplosiveBowLayerAnimBP(int32 
 
 void UExplosiveBowLayerAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosiveBowLayerAnimBP_AnimGraphNode_BlendSpacePlayer_11A315AA4DFC9DAEFD15619E18677637()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosiveBowLayerAnimBP_AnimGraphNode_BlendSpacePlayer_11A315AA4DFC9DAEFD15619E18677637");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosiveBowLayerAnimBP_AnimGraphNode_BlendSpacePlayer_11A315AA4DFC9DAEFD15619E18677637");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UExplosiveBowLayerAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Exp
 
 void UExplosiveBowLayerAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosiveBowLayerAnimBP_AnimGraphNode_RotationOffsetBlendSpace_4FE1ED204DA63B600CCE7AB1BB6028C4()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosiveBowLayerAnimBP_AnimGraphNode_RotationOffsetBlendSpace_4FE1ED204DA63B600CCE7AB1BB6028C4");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosiveBowLayerAnimBP_AnimGraphNode_RotationOffsetBlendSpace_4FE1ED204DA63B600CCE7AB1BB6028C4");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UExplosiveBowLayerAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Exp
 
 void UExplosiveBowLayerAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosiveBowLayerAnimBP_AnimGraphNode_BlendSpacePlayer_EDF172954C1F699670096999A0687B8B()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosiveBowLayerAnimBP_AnimGraphNode_BlendSpacePlayer_EDF172954C1F699670096999A0687B8B");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_ExplosiveBowLayerAnimBP_AnimGraphNode_BlendSpacePlayer_EDF172954C1F699670096999A0687B8B");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UExplosiveBowLayerAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_Exp
 
 void UExplosiveBowLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "AnimGraph");
 
 	Params::ExplosiveBowLayerAnimBP_C_AnimGraph Parms{};
 
@@ -107,10 +92,7 @@ void UExplosiveBowLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 void UExplosiveBowLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRelaxedEntry, struct FPoseLink* ItemRelaxedEntry_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemRelaxedEntry");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemRelaxedEntry");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemRelaxedEntry Parms{};
 
@@ -131,10 +113,7 @@ void UExplosiveBowLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPose
 
 void UExplosiveBowLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& InPoseLowerBodyJogPostPivot, struct FPoseLink* ItemLowerBodyJogPostPivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemLowerBodyJogPostPivot Parms{};
 
@@ -155,10 +134,7 @@ void UExplosiveBowLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLin
 
 void UExplosiveBowLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& InPoseLowerBodyJogPrePivot, struct FPoseLink* ItemLowerBodyJogPrePivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemLowerBodyJogPrePivot Parms{};
 
@@ -179,10 +155,7 @@ void UExplosiveBowLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink
 
 void UExplosiveBowLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InPoseLowerBodyJogStop, struct FPoseLink* ItemLowerBodyJogStop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyJogStop");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyJogStop");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemLowerBodyJogStop Parms{};
 
@@ -203,10 +176,7 @@ void UExplosiveBowLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& In
 
 void UExplosiveBowLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& InPoseLowerBodyJogStart, struct FPoseLink* ItemLowerBodyJogStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyJogStart");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyJogStart");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemLowerBodyJogStart Parms{};
 
@@ -227,10 +197,7 @@ void UExplosiveBowLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& I
 
 void UExplosiveBowLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLink& InPoseLowerBodyLeanAdditive, struct FPoseLink* ItemLowerBodyLeanAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemLowerBodyLeanAdditive Parms{};
 
@@ -251,10 +218,7 @@ void UExplosiveBowLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLin
 
 void UExplosiveBowLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& InPoseLowerBodyMovement, struct FPoseLink* ItemLowerBodyMovement_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyMovement");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemLowerBodyMovement");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemLowerBodyMovement Parms{};
 
@@ -275,10 +239,7 @@ void UExplosiveBowLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& I
 
 void UExplosiveBowLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink& InPosePostPivotAdditive, struct FPoseLink* ItemJogPostPivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJogPostPivotAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJogPostPivotAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemJogPostPivotAdditive Parms{};
 
@@ -299,10 +260,7 @@ void UExplosiveBowLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink
 
 void UExplosiveBowLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& InPosePrePivotAdditive, struct FPoseLink* ItemJogPrePivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJogPrePivotAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJogPrePivotAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemJogPrePivotAdditive Parms{};
 
@@ -323,10 +281,7 @@ void UExplosiveBowLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink&
 
 void UExplosiveBowLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPoseJogStopAdditive, struct FPoseLink* ItemJogStopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJogStopAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJogStopAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemJogStopAdditive Parms{};
 
@@ -347,10 +302,7 @@ void UExplosiveBowLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InP
 
 void UExplosiveBowLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InPoseJogStartAdditive, struct FPoseLink* ItemJogStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJogStartAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJogStartAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemJogStartAdditive Parms{};
 
@@ -370,10 +322,7 @@ void UExplosiveBowLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& In
 
 void UExplosiveBowLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyModeLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFlyModeLoopAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFlyModeLoopAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemFlyModeLoopAdditive Parms{};
 
@@ -391,10 +340,7 @@ void UExplosiveBowLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemF
 
 void UExplosiveBowLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFlyModeStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFlyModeStartAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFlyModeStartAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemFlyModeStartAdditive Parms{};
 
@@ -412,10 +358,7 @@ void UExplosiveBowLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* Item
 
 void UExplosiveBowLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZipLineStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemZipLineStartAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemZipLineStartAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemZipLineStartAdditive Parms{};
 
@@ -433,10 +376,7 @@ void UExplosiveBowLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* Item
 
 void UExplosiveBowLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetPackJumpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJetPackJumpAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJetPackJumpAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemJetPackJumpAdditive Parms{};
 
@@ -454,10 +394,7 @@ void UExplosiveBowLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJ
 
 void UExplosiveBowLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJetPackStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJetPackStartAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJetPackStartAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemJetPackStartAdditive Parms{};
 
@@ -475,10 +412,7 @@ void UExplosiveBowLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* Item
 
 void UExplosiveBowLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLandAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFallLandAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFallLandAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemFallLandAdditive Parms{};
 
@@ -496,10 +430,7 @@ void UExplosiveBowLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFall
 
 void UExplosiveBowLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFallAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFallAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemFallAdditive Parms{};
 
@@ -517,10 +448,7 @@ void UExplosiveBowLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAddi
 
 void UExplosiveBowLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJumpLoopAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJumpLoopAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemJumpLoopAdditive Parms{};
 
@@ -538,10 +466,7 @@ void UExplosiveBowLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJump
 
 void UExplosiveBowLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJumpUpAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemJumpUpAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemJumpUpAdditive Parms{};
 
@@ -559,10 +484,7 @@ void UExplosiveBowLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUp
 
 void UExplosiveBowLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSliding_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemSlopeSliding");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemSlopeSliding");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemSlopeSliding Parms{};
 
@@ -580,10 +502,7 @@ void UExplosiveBowLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSli
 
 void UExplosiveBowLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCrouchTurningAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemCrouchTurningAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemCrouchTurningAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemCrouchTurningAdditive Parms{};
 
@@ -602,10 +521,7 @@ void UExplosiveBowLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* Ite
 
 void UExplosiveBowLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdleAdditive, struct FPoseLink* ItemIdleAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemIdleAdditive");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemIdleAdditive");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemIdleAdditive Parms{};
 
@@ -626,10 +542,7 @@ void UExplosiveBowLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPose
 
 void UExplosiveBowLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPoseSprint, struct FPoseLink* ItemFullBodySprint_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFullBodySprint");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemFullBodySprint");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemFullBodySprint Parms{};
 
@@ -651,10 +564,7 @@ void UExplosiveBowLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPo
 
 void UExplosiveBowLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam_0, struct FPoseLink* ItemUpperBody_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemUpperBody");
+	class UFunction* Func = Class->GetFunction("ExplosiveBowLayerAnimBP_C", "ItemUpperBody");
 
 	Params::ExplosiveBowLayerAnimBP_C_ItemUpperBody Parms{};
 

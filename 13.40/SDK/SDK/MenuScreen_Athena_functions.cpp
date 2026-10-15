@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMenuScreen_Athena_C::ExecuteUbergraph_MenuScreen_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "ExecuteUbergraph_MenuScreen_Athena");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "ExecuteUbergraph_MenuScreen_Athena");
 
 	Params::MenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena Parms{};
 
@@ -44,10 +41,7 @@ void UMenuScreen_Athena_C::ExecuteUbergraph_MenuScreen_Athena(int32 EntryPoint)
 
 void UMenuScreen_Athena_C::OnMontageBlendingOut_Event_HideProps(class UAnimMontage* Montage, bool bInterrupted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "OnMontageBlendingOut_Event_HideProps");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "OnMontageBlendingOut_Event_HideProps");
 
 	Params::MenuScreen_Athena_C_OnMontageBlendingOut_Event_HideProps Parms{};
 
@@ -65,10 +59,7 @@ void UMenuScreen_Athena_C::OnMontageBlendingOut_Event_HideProps(class UAnimMonta
 
 void UMenuScreen_Athena_C::OnMontageStarted_Event_HideProps(class UAnimMontage* Montage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "OnMontageStarted_Event_HideProps");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "OnMontageStarted_Event_HideProps");
 
 	Params::MenuScreen_Athena_C_OnMontageStarted_Event_HideProps Parms{};
 
@@ -83,10 +74,7 @@ void UMenuScreen_Athena_C::OnMontageStarted_Event_HideProps(class UAnimMontage* 
 
 void UMenuScreen_Athena_C::AnimNotify_LobbySkydive_Gliding()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LobbySkydive_Gliding");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LobbySkydive_Gliding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void UMenuScreen_Athena_C::AnimNotify_LobbySkydive_Gliding()
 
 void UMenuScreen_Athena_C::AnimNotify_LobbySkydive_Diving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LobbySkydive_Diving");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LobbySkydive_Diving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void UMenuScreen_Athena_C::AnimNotify_LobbySkydive_Diving()
 
 void UMenuScreen_Athena_C::BlueprintInitializeAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintInitializeAnimation");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintInitializeAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void UMenuScreen_Athena_C::BlueprintInitializeAnimation()
 
 void UMenuScreen_Athena_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintUpdateAnimation");
 
 	Params::MenuScreen_Athena_C_BlueprintUpdateAnimation Parms{};
 
@@ -145,10 +124,7 @@ void UMenuScreen_Athena_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UMenuScreen_Athena_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Athena_AnimGraphNode_LayeredBoneBlend_8D2B60D44BBADFD01AC9A6BF39472D0B()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Athena_AnimGraphNode_LayeredBoneBlend_8D2B60D44BBADFD01AC9A6BF39472D0B");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Athena_AnimGraphNode_LayeredBoneBlend_8D2B60D44BBADFD01AC9A6BF39472D0B");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +135,7 @@ void UMenuScreen_Athena_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScree
 
 void UMenuScreen_Athena_C::AnimNotify_LeftB()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LeftB");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LeftB");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +146,7 @@ void UMenuScreen_Athena_C::AnimNotify_LeftB()
 
 void UMenuScreen_Athena_C::UserFocus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "UserFocus");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "UserFocus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +157,7 @@ void UMenuScreen_Athena_C::UserFocus()
 
 void UMenuScreen_Athena_C::AnimNotify_playFacialAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_playFacialAnim");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_playFacialAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +170,7 @@ void UMenuScreen_Athena_C::AnimNotify_playFacialAnim()
 
 void UMenuScreen_Athena_C::HidePropsForBlend(class UAnimMontage* NewMontage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "HidePropsForBlend");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "HidePropsForBlend");
 
 	Params::MenuScreen_Athena_C_HidePropsForBlend Parms{};
 
@@ -223,10 +187,7 @@ void UMenuScreen_Athena_C::HidePropsForBlend(class UAnimMontage* NewMontage)
 
 void UMenuScreen_Athena_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("MenuScreen_Athena_C", "AnimGraph");
 
 	Params::MenuScreen_Athena_C_AnimGraph Parms{};
 

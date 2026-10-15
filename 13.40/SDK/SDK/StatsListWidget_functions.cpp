@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UStatsListWidget_C::Trigger_Initial_Reset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListWidget_C", "Trigger Initial Reset");
+	class UFunction* Func = Class->GetFunction("StatsListWidget_C", "Trigger Initial Reset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UStatsListWidget_C::Trigger_Initial_Reset()
 
 void UStatsListWidget_C::Trigger_Update_Anim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListWidget_C", "Trigger Update Anim");
+	class UFunction* Func = Class->GetFunction("StatsListWidget_C", "Trigger Update Anim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void UStatsListWidget_C::Trigger_Update_Anim()
 
 void UStatsListWidget_C::Update()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListWidget_C", "Update");
+	class UFunction* Func = Class->GetFunction("StatsListWidget_C", "Update");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -66,10 +57,7 @@ void UStatsListWidget_C::Update()
 
 void UStatsListWidget_C::AdjustClampCount(class UFortAttributeListItem_NUI* Widget, bool Add)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListWidget_C", "AdjustClampCount");
+	class UFunction* Func = Class->GetFunction("StatsListWidget_C", "AdjustClampCount");
 
 	Params::StatsListWidget_C_AdjustClampCount Parms{};
 
@@ -87,10 +75,7 @@ void UStatsListWidget_C::AdjustClampCount(class UFortAttributeListItem_NUI* Widg
 
 void UStatsListWidget_C::ToggleClampedValueMessage(bool inShow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListWidget_C", "ToggleClampedValueMessage");
+	class UFunction* Func = Class->GetFunction("StatsListWidget_C", "ToggleClampedValueMessage");
 
 	Params::StatsListWidget_C_ToggleClampedValueMessage Parms{};
 
@@ -105,10 +90,7 @@ void UStatsListWidget_C::ToggleClampedValueMessage(bool inShow)
 
 void UStatsListWidget_C::OnClearShownAttributes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListWidget_C", "OnClearShownAttributes");
+	class UFunction* Func = Class->GetFunction("StatsListWidget_C", "OnClearShownAttributes");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,10 +103,7 @@ void UStatsListWidget_C::OnClearShownAttributes()
 
 void UStatsListWidget_C::OnAddShownAttributeListItem(class UFortAttributeListItem_NUI* AttributeListItemWidget_OnAddShownAttributeListItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListWidget_C", "OnAddShownAttributeListItem");
+	class UFunction* Func = Class->GetFunction("StatsListWidget_C", "OnAddShownAttributeListItem");
 
 	Params::StatsListWidget_C_OnAddShownAttributeListItem Parms{};
 
@@ -142,10 +121,7 @@ void UStatsListWidget_C::OnAddShownAttributeListItem(class UFortAttributeListIte
 
 void UStatsListWidget_C::OnRemoveShownAttributeListItem(class UFortAttributeListItem_NUI* AttributeListItemWidget_OnRemoveShownAttributeListItem, int32 AtIndex_OnRemoveShownAttributeListItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListWidget_C", "OnRemoveShownAttributeListItem");
+	class UFunction* Func = Class->GetFunction("StatsListWidget_C", "OnRemoveShownAttributeListItem");
 
 	Params::StatsListWidget_C_OnRemoveShownAttributeListItem Parms{};
 
@@ -163,10 +139,7 @@ void UStatsListWidget_C::OnRemoveShownAttributeListItem(class UFortAttributeList
 
 void UStatsListWidget_C::ExecuteUbergraph_StatsListWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StatsListWidget_C", "ExecuteUbergraph_StatsListWidget");
+	class UFunction* Func = Class->GetFunction("StatsListWidget_C", "ExecuteUbergraph_StatsListWidget");
 
 	Params::StatsListWidget_C_ExecuteUbergraph_StatsListWidget Parms{};
 

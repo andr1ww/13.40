@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UVinderTech_Umbrella_AnimBP_C::ExecuteUbergraph_VinderTech_Umbrella_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "ExecuteUbergraph_VinderTech_Umbrella_AnimBP");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "ExecuteUbergraph_VinderTech_Umbrella_AnimBP");
 
 	Params::VinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_Umbrella_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UVinderTech_Umbrella_AnimBP_C::ExecuteUbergraph_VinderTech_Umbrella_AnimBP(
 
 void UVinderTech_Umbrella_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "BlueprintUpdateAnimation");
 
 	Params::VinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation Parms{};
 
@@ -61,10 +55,7 @@ void UVinderTech_Umbrella_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_BlendListByBool_6E25E86B49086C247283E0BD414A5F46()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_BlendListByBool_6E25E86B49086C247283E0BD414A5F46");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_BlendListByBool_6E25E86B49086C247283E0BD414A5F46");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_A4C79B0744EAA44255B619BF2E55F049()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_A4C79B0744EAA44255B619BF2E55F049");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_A4C79B0744EAA44255B619BF2E55F049");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_BlendListByBool_FF5C9E4A4E523D9BC0DE218B061F3A68()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_BlendListByBool_FF5C9E4A4E523D9BC0DE218B061F3A68");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_BlendListByBool_FF5C9E4A4E523D9BC0DE218B061F3A68");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_BlendListByBool_070EBE2148852F54BDEBB1BAAD64918B()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_BlendListByBool_070EBE2148852F54BDEBB1BAAD64918B");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_BlendListByBool_070EBE2148852F54BDEBB1BAAD64918B");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_4E700B8041542EE7BBE7DF9BCE0A5DEE()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_4E700B8041542EE7BBE7DF9BCE0A5DEE");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_4E700B8041542EE7BBE7DF9BCE0A5DEE");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +132,7 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +145,7 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("VinderTech_Umbrella_AnimBP_C", "AnimGraph");
 
 	Params::VinderTech_Umbrella_AnimBP_C_AnimGraph Parms{};
 

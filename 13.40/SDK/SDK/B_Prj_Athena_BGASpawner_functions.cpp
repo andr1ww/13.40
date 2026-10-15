@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_BGASpawner_C::ExecuteUbergraph_B_Prj_Athena_BGASpawner(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "ExecuteUbergraph_B_Prj_Athena_BGASpawner");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "ExecuteUbergraph_B_Prj_Athena_BGASpawner");
 
 	Params::B_Prj_Athena_BGASpawner_C_ExecuteUbergraph_B_Prj_Athena_BGASpawner Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_Athena_BGASpawner_C::ExecuteUbergraph_B_Prj_Athena_BGASpawner(int32 
 
 void AB_Prj_Athena_BGASpawner_C::Held_Water_Impact()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "Held Water Impact");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "Held Water Impact");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void AB_Prj_Athena_BGASpawner_C::Held_Water_Impact()
 
 void AB_Prj_Athena_BGASpawner_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_1_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_1_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_1_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Athena_BGASpawner_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_1_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -88,10 +79,7 @@ void AB_Prj_Athena_BGASpawner_C::BndEvt__WaterInteractionComponent_K2Node_Compon
 
 void AB_Prj_Athena_BGASpawner_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "ReceiveHit");
 
 	Params::B_Prj_Athena_BGASpawner_C_ReceiveHit Parms{};
 
@@ -116,10 +104,7 @@ void AB_Prj_Athena_BGASpawner_C::ReceiveHit(class UPrimitiveComponent* MyComp, c
 
 bool AB_Prj_Athena_BGASpawner_C::WillBounceOffTarget(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "WillBounceOffTarget");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "WillBounceOffTarget");
 
 	Params::B_Prj_Athena_BGASpawner_C_WillBounceOffTarget Parms{};
 
@@ -143,10 +128,7 @@ bool AB_Prj_Athena_BGASpawner_C::WillBounceOffTarget(const struct FHitResult& Hi
 
 class AActor* AB_Prj_Athena_BGASpawner_C::SpawnBGA_(const struct FVector& Normal, class AActor* HitActor, class UPrimitiveComponent* HitComp, const struct FVector& Pos, bool FromWater)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "SpawnBGA_");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "SpawnBGA_");
 
 	Params::B_Prj_Athena_BGASpawner_C_SpawnBGA_ Parms{};
 
@@ -171,10 +153,7 @@ class AActor* AB_Prj_Athena_BGASpawner_C::SpawnBGA_(const struct FVector& Normal
 
 void AB_Prj_Athena_BGASpawner_C::GetClosestPoint(class UPrimitiveComponent* Component, const struct FVector& StartingPoint, struct FVector* Point)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "GetClosestPoint");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "GetClosestPoint");
 
 	Params::B_Prj_Athena_BGASpawner_C_GetClosestPoint Parms{};
 
@@ -197,10 +176,7 @@ void AB_Prj_Athena_BGASpawner_C::GetClosestPoint(class UPrimitiveComponent* Comp
 
 void AB_Prj_Athena_BGASpawner_C::CheckForWater_(const struct FVector& CurrPos, class AActor* HitActor, struct FVector* PosAboveWater)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "CheckForWater_");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_BGASpawner_C", "CheckForWater_");
 
 	Params::B_Prj_Athena_BGASpawner_C_CheckForWater_ Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Athena_UnderwaterDamage_C::ExecuteUbergraph_GCNL_Athena_UnderwaterDamage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "ExecuteUbergraph_GCNL_Athena_UnderwaterDamage");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "ExecuteUbergraph_GCNL_Athena_UnderwaterDamage");
 
 	Params::GCNL_Athena_UnderwaterDamage_C_ExecuteUbergraph_GCNL_Athena_UnderwaterDamage Parms{};
 
@@ -46,10 +43,7 @@ void AGCNL_Athena_UnderwaterDamage_C::ExecuteUbergraph_GCNL_Athena_UnderwaterDam
 
 void AGCNL_Athena_UnderwaterDamage_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnLoopingStart");
 
 	Params::GCNL_Athena_UnderwaterDamage_C_OnLoopingStart Parms{};
 
@@ -74,10 +68,7 @@ void AGCNL_Athena_UnderwaterDamage_C::OnLoopingStart(class AActor* MyTarget, con
 
 void AGCNL_Athena_UnderwaterDamage_C::OnRecurring(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnRecurring");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnRecurring");
 
 	Params::GCNL_Athena_UnderwaterDamage_C_OnRecurring Parms{};
 
@@ -104,10 +95,7 @@ void AGCNL_Athena_UnderwaterDamage_C::OnRecurring(class AActor* MyTarget, const 
 
 void AGCNL_Athena_UnderwaterDamage_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnRemoval");
 
 	Params::GCNL_Athena_UnderwaterDamage_C_OnRemoval Parms{};
 

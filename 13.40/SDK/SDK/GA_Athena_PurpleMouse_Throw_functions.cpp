@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_PurpleMouse_Throw_C::ExecuteUbergraph_GA_Athena_PurpleMouse_Throw(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PurpleMouse_Throw_C", "ExecuteUbergraph_GA_Athena_PurpleMouse_Throw");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PurpleMouse_Throw_C", "ExecuteUbergraph_GA_Athena_PurpleMouse_Throw");
 
 	Params::GA_Athena_PurpleMouse_Throw_C_ExecuteUbergraph_GA_Athena_PurpleMouse_Throw Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Athena_PurpleMouse_Throw_C::ExecuteUbergraph_GA_Athena_PurpleMouse_Thro
 
 void UGA_Athena_PurpleMouse_Throw_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PurpleMouse_Throw_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PurpleMouse_Throw_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_PurpleMouse_Throw_C_K2_OnEndAbility Parms{};
 
@@ -61,10 +55,7 @@ void UGA_Athena_PurpleMouse_Throw_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_PurpleMouse_Throw_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PurpleMouse_Throw_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PurpleMouse_Throw_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -78,10 +69,7 @@ void UGA_Athena_PurpleMouse_Throw_C::K2_ActivateAbility()
 
 void UGA_Athena_PurpleMouse_Throw_C::GetPlayer(class AActor* PlayerOrVehicle, class AActor** Player)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_PurpleMouse_Throw_C", "GetPlayer");
+	class UFunction* Func = Class->GetFunction("GA_Athena_PurpleMouse_Throw_C", "GetPlayer");
 
 	Params::GA_Athena_PurpleMouse_Throw_C_GetPlayer Parms{};
 

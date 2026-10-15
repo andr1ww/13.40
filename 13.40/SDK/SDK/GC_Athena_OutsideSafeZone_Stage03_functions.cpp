@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGC_Athena_OutsideSafeZone_Stage03_C::ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03");
 
 	Params::GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03 Parms{};
 
@@ -46,10 +43,7 @@ void AGC_Athena_OutsideSafeZone_Stage03_C::ExecuteUbergraph_GC_Athena_OutsideSaf
 
 void AGC_Athena_OutsideSafeZone_Stage03_C::On_Distant_Lightning_Spawn(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "On Distant Lightning Spawn");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "On Distant Lightning Spawn");
 
 	Params::GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn Parms{};
 
@@ -72,10 +66,7 @@ void AGC_Athena_OutsideSafeZone_Stage03_C::On_Distant_Lightning_Spawn(class FNam
 
 void AGC_Athena_OutsideSafeZone_Stage03_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "OnLoopingStart");
 
 	Params::GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart Parms{};
 

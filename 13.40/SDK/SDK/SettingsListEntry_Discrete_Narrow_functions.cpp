@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingsListEntry_Discrete_Narrow_C::ExecuteUbergraph_SettingsListEntry_Discrete_Narrow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Discrete_Narrow_C", "ExecuteUbergraph_SettingsListEntry_Discrete_Narrow");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Discrete_Narrow_C", "ExecuteUbergraph_SettingsListEntry_Discrete_Narrow");
 
 	Params::SettingsListEntry_Discrete_Narrow_C_ExecuteUbergraph_SettingsListEntry_Discrete_Narrow Parms{};
 
@@ -43,10 +40,7 @@ void USettingsListEntry_Discrete_Narrow_C::ExecuteUbergraph_SettingsListEntry_Di
 
 void USettingsListEntry_Discrete_Narrow_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Discrete_Narrow_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Discrete_Narrow_C", "OnMouseLeave");
 
 	Params::SettingsListEntry_Discrete_Narrow_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void USettingsListEntry_Discrete_Narrow_C::OnMouseLeave(const struct FPointerEve
 
 void USettingsListEntry_Discrete_Narrow_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Discrete_Narrow_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Discrete_Narrow_C", "OnMouseEnter");
 
 	Params::SettingsListEntry_Discrete_Narrow_C_OnMouseEnter Parms{};
 
@@ -85,10 +76,7 @@ void USettingsListEntry_Discrete_Narrow_C::OnMouseEnter(const struct FGeometry& 
 
 class UWidget* USettingsListEntry_Discrete_Narrow_C::GetPrimaryGamepadFocusWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_Discrete_Narrow_C", "GetPrimaryGamepadFocusWidget");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_Discrete_Narrow_C", "GetPrimaryGamepadFocusWidget");
 
 	Params::SettingsListEntry_Discrete_Narrow_C_GetPrimaryGamepadFocusWidget Parms{};
 

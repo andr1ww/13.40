@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemInfoHeaderWidget_C::ExecuteUbergraph_ItemInfoHeaderWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "ExecuteUbergraph_ItemInfoHeaderWidget");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "ExecuteUbergraph_ItemInfoHeaderWidget");
 
 	Params::ItemInfoHeaderWidget_C_ExecuteUbergraph_ItemInfoHeaderWidget Parms{};
 
@@ -41,10 +38,7 @@ void UItemInfoHeaderWidget_C::ExecuteUbergraph_ItemInfoHeaderWidget(int32 EntryP
 
 void UItemInfoHeaderWidget_C::OnItemDefinitionChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "OnItemDefinitionChanged");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "OnItemDefinitionChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UItemInfoHeaderWidget_C::OnItemDefinitionChanged()
 
 void UItemInfoHeaderWidget_C::Update(class UFortItemDefinition* ItemDefinition_0, int32 Quantity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "Update");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "Update");
 
 	Params::ItemInfoHeaderWidget_C_Update Parms{};
 
@@ -80,10 +71,7 @@ void UItemInfoHeaderWidget_C::Update(class UFortItemDefinition* ItemDefinition_0
 
 void UItemInfoHeaderWidget_C::UpdateNameText(class UFortItemDefinition* ItemDefinition_0, int32 Quantity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateNameText");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateNameText");
 
 	Params::ItemInfoHeaderWidget_C_UpdateNameText Parms{};
 
@@ -104,10 +92,7 @@ void UItemInfoHeaderWidget_C::UpdateNameText(class UFortItemDefinition* ItemDefi
 
 void UItemInfoHeaderWidget_C::Setup(bool ShouldShowCard, EFortItemCardSize CardSize_0, bool ShouldShowDetails, bool ShouldShowDescription)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "Setup");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "Setup");
 
 	Params::ItemInfoHeaderWidget_C_Setup Parms{};
 
@@ -125,10 +110,7 @@ void UItemInfoHeaderWidget_C::Setup(bool ShouldShowCard, EFortItemCardSize CardS
 
 void UItemInfoHeaderWidget_C::UpdateCard()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateCard");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateCard");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +121,7 @@ void UItemInfoHeaderWidget_C::UpdateCard()
 
 void UItemInfoHeaderWidget_C::UpdateRemainingQuantity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateRemainingQuantity");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateRemainingQuantity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -156,10 +135,7 @@ void UItemInfoHeaderWidget_C::UpdateRemainingQuantity()
 
 void UItemInfoHeaderWidget_C::SetRemainingQuantity(bool ShouldShowRemainingQuantity, int32 NewRemainingQuantity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetRemainingQuantity");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetRemainingQuantity");
 
 	Params::ItemInfoHeaderWidget_C_SetRemainingQuantity Parms{};
 
@@ -178,10 +154,7 @@ void UItemInfoHeaderWidget_C::SetRemainingQuantity(bool ShouldShowRemainingQuant
 
 void UItemInfoHeaderWidget_C::SetLocked(bool ShouldShowLocked, const class FText& LockReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetLocked");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetLocked");
 
 	Params::ItemInfoHeaderWidget_C_SetLocked Parms{};
 
@@ -197,10 +170,7 @@ void UItemInfoHeaderWidget_C::SetLocked(bool ShouldShowLocked, const class FText
 
 void UItemInfoHeaderWidget_C::UpdateLocked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateLocked");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateLocked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -211,10 +181,7 @@ void UItemInfoHeaderWidget_C::UpdateLocked()
 
 void UItemInfoHeaderWidget_C::SetScrollWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetScrollWidget");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetScrollWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,10 +192,7 @@ void UItemInfoHeaderWidget_C::SetScrollWidget()
 
 void UItemInfoHeaderWidget_C::UpdateDetailVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateDetailVisibility");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateDetailVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -245,10 +209,7 @@ void UItemInfoHeaderWidget_C::UpdateDetailVisibility()
 
 void UItemInfoHeaderWidget_C::OverrideHeaderAndDescription(const class FText& Header, const class FText& Description, const class FText& ItemType, bool bUseAlternateHeaderBG, EFortRarity Rarity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "OverrideHeaderAndDescription");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "OverrideHeaderAndDescription");
 
 	Params::ItemInfoHeaderWidget_C_OverrideHeaderAndDescription Parms{};
 
@@ -269,10 +230,7 @@ void UItemInfoHeaderWidget_C::OverrideHeaderAndDescription(const class FText& He
 
 void UItemInfoHeaderWidget_C::UpdateColorRarity(const struct FFortColorPalette& Colors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateColorRarity");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateColorRarity");
 
 	Params::ItemInfoHeaderWidget_C_UpdateColorRarity Parms{};
 
@@ -289,10 +247,7 @@ void UItemInfoHeaderWidget_C::UpdateColorRarity(const struct FFortColorPalette& 
 
 void UItemInfoHeaderWidget_C::HasValidItemDefinition(bool* HasValidDescription)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "HasValidItemDefinition");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "HasValidItemDefinition");
 
 	Params::ItemInfoHeaderWidget_C_HasValidItemDefinition Parms{};
 
@@ -311,10 +266,7 @@ void UItemInfoHeaderWidget_C::HasValidItemDefinition(bool* HasValidDescription)
 
 class FText UItemInfoHeaderWidget_C::GetAlternateNameForItem(class UFortItemDefinition* ItemDef)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "GetAlternateNameForItem");
+	class UFunction* Func = Class->GetFunction("ItemInfoHeaderWidget_C", "GetAlternateNameForItem");
 
 	Params::ItemInfoHeaderWidget_C_GetAlternateNameForItem Parms{};
 

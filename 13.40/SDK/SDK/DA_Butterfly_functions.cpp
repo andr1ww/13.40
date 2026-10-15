@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ADA_Butterfly_C::ExecuteUbergraph_DA_Butterfly(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_Butterfly_C", "ExecuteUbergraph_DA_Butterfly");
+	class UFunction* Func = Class->GetFunction("DA_Butterfly_C", "ExecuteUbergraph_DA_Butterfly");
 
 	Params::DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly Parms{};
 
@@ -43,10 +40,7 @@ void ADA_Butterfly_C::ExecuteUbergraph_DA_Butterfly(int32 EntryPoint)
 
 void ADA_Butterfly_C::BPReleaseSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_Butterfly_C", "BPReleaseSecondaryFire");
+	class UFunction* Func = Class->GetFunction("DA_Butterfly_C", "BPReleaseSecondaryFire");
 
 	Params::DA_Butterfly_C_BPReleaseSecondaryFire Parms{};
 
@@ -61,10 +55,7 @@ void ADA_Butterfly_C::BPReleaseSecondaryFire(class AFortDecoHelper* FortDecoHelp
 
 void ADA_Butterfly_C::BPOnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_Butterfly_C", "BPOnUnEquip");
+	class UFunction* Func = Class->GetFunction("DA_Butterfly_C", "BPOnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void ADA_Butterfly_C::BPOnUnEquip()
 
 void ADA_Butterfly_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_Butterfly_C", "BPPressTrigger");
+	class UFunction* Func = Class->GetFunction("DA_Butterfly_C", "BPPressTrigger");
 
 	Params::DA_Butterfly_C_BPPressTrigger Parms{};
 
@@ -97,10 +85,7 @@ void ADA_Butterfly_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 
 void ADA_Butterfly_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_Butterfly_C", "BPPressSecondaryFire");
+	class UFunction* Func = Class->GetFunction("DA_Butterfly_C", "BPPressSecondaryFire");
 
 	Params::DA_Butterfly_C_BPPressSecondaryFire Parms{};
 

@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UTT_Constructor_HammerHitsHeal_C::InitializeAbilityInstanceInternal(const class UGameplayAbility* AbilityInstance, const class UFortTooltipContext* Context) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TT_Constructor_HammerHitsHeal_C", "InitializeAbilityInstanceInternal");
+	class UFunction* Func = Class->GetFunction("TT_Constructor_HammerHitsHeal_C", "InitializeAbilityInstanceInternal");
 
 	Params::TT_Constructor_HammerHitsHeal_C_InitializeAbilityInstanceInternal Parms{};
 
@@ -50,10 +47,7 @@ void UTT_Constructor_HammerHitsHeal_C::InitializeAbilityInstanceInternal(const c
 
 bool UTT_Constructor_HammerHitsHeal_C::GetTextForTokenFromAbilityInstanceInternal(const class UGameplayAbility* AbilityInstance, const struct FGameplayTag& Tag, const class UFortTooltipContext* Context, const struct FGameplayTag& Token, class FText* OutText) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TT_Constructor_HammerHitsHeal_C", "GetTextForTokenFromAbilityInstanceInternal");
+	class UFunction* Func = Class->GetFunction("TT_Constructor_HammerHitsHeal_C", "GetTextForTokenFromAbilityInstanceInternal");
 
 	Params::TT_Constructor_HammerHitsHeal_C_GetTextForTokenFromAbilityInstanceInternal Parms{};
 

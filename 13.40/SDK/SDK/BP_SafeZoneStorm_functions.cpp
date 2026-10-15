@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_SafeZoneStorm_C::ExecuteUbergraph_BP_SafeZoneStorm(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SafeZoneStorm_C", "ExecuteUbergraph_BP_SafeZoneStorm");
+	class UFunction* Func = Class->GetFunction("BP_SafeZoneStorm_C", "ExecuteUbergraph_BP_SafeZoneStorm");
 
 	Params::BP_SafeZoneStorm_C_ExecuteUbergraph_BP_SafeZoneStorm Parms{};
 
@@ -43,10 +40,7 @@ void ABP_SafeZoneStorm_C::ExecuteUbergraph_BP_SafeZoneStorm(int32 EntryPoint)
 
 void ABP_SafeZoneStorm_C::ShowStormScreenEffect(bool Show)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SafeZoneStorm_C", "ShowStormScreenEffect");
+	class UFunction* Func = Class->GetFunction("BP_SafeZoneStorm_C", "ShowStormScreenEffect");
 
 	Params::BP_SafeZoneStorm_C_ShowStormScreenEffect Parms{};
 
@@ -63,10 +57,7 @@ void ABP_SafeZoneStorm_C::ShowStormScreenEffect(bool Show)
 
 void ABP_SafeZoneStorm_C::ShowClouds(float Amount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SafeZoneStorm_C", "ShowClouds");
+	class UFunction* Func = Class->GetFunction("BP_SafeZoneStorm_C", "ShowClouds");
 
 	Params::BP_SafeZoneStorm_C_ShowClouds Parms{};
 
@@ -83,10 +74,7 @@ void ABP_SafeZoneStorm_C::ShowClouds(float Amount)
 
 void ABP_SafeZoneStorm_C::MobileClouds(bool Mobile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SafeZoneStorm_C", "MobileClouds");
+	class UFunction* Func = Class->GetFunction("BP_SafeZoneStorm_C", "MobileClouds");
 
 	Params::BP_SafeZoneStorm_C_MobileClouds Parms{};
 
@@ -101,10 +89,7 @@ void ABP_SafeZoneStorm_C::MobileClouds(bool Mobile)
 
 void ABP_SafeZoneStorm_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SafeZoneStorm_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_SafeZoneStorm_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +100,7 @@ void ABP_SafeZoneStorm_C::ReceiveBeginPlay()
 
 void ABP_SafeZoneStorm_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SafeZoneStorm_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_SafeZoneStorm_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ALoginCamera_Blueprint_C::OnActivated(class AFortPlayerController* PlayerController_OnActivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoginCamera_Blueprint_C", "OnActivated");
+	class UFunction* Func = Class->GetFunction("LoginCamera_Blueprint_C", "OnActivated");
 
 	Params::LoginCamera_Blueprint_C_OnActivated Parms{};
 
@@ -43,10 +40,7 @@ void ALoginCamera_Blueprint_C::OnActivated(class AFortPlayerController* PlayerCo
 
 void ALoginCamera_Blueprint_C::ExecuteUbergraph_LoginCamera_Blueprint(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LoginCamera_Blueprint_C", "ExecuteUbergraph_LoginCamera_Blueprint");
+	class UFunction* Func = Class->GetFunction("LoginCamera_Blueprint_C", "ExecuteUbergraph_LoginCamera_Blueprint");
 
 	Params::LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint Parms{};
 

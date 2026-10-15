@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UStoreMain_OfferDetailsAttribute_C::ExecuteUbergraph_StoreMain_OfferDetailsAttribute(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetailsAttribute_C", "ExecuteUbergraph_StoreMain_OfferDetailsAttribute");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetailsAttribute_C", "ExecuteUbergraph_StoreMain_OfferDetailsAttribute");
 
 	Params::StoreMain_OfferDetailsAttribute_C_ExecuteUbergraph_StoreMain_OfferDetailsAttribute Parms{};
 
@@ -41,10 +38,7 @@ void UStoreMain_OfferDetailsAttribute_C::ExecuteUbergraph_StoreMain_OfferDetails
 
 void UStoreMain_OfferDetailsAttribute_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetailsAttribute_C", "Construct");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetailsAttribute_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

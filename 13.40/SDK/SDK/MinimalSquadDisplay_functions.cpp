@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMinimalSquadDisplay_C::OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadDisplay_C", "OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB");
+	class UFunction* Func = Class->GetFunction("MinimalSquadDisplay_C", "OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB");
 
 	Params::MinimalSquadDisplay_C_OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB Parms{};
 
@@ -43,10 +40,7 @@ void UMinimalSquadDisplay_C::OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB(class UOb
 
 void UMinimalSquadDisplay_C::OnLoaded_86B795124D19C878C8559FA7E78726E0(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadDisplay_C", "OnLoaded_86B795124D19C878C8559FA7E78726E0");
+	class UFunction* Func = Class->GetFunction("MinimalSquadDisplay_C", "OnLoaded_86B795124D19C878C8559FA7E78726E0");
 
 	Params::MinimalSquadDisplay_C_OnLoaded_86B795124D19C878C8559FA7E78726E0 Parms{};
 
@@ -63,10 +57,7 @@ void UMinimalSquadDisplay_C::OnLoaded_86B795124D19C878C8559FA7E78726E0(class UOb
 
 void UMinimalSquadDisplay_C::OnSquadAssigned(const struct FAthenaTeamDisplayInfo& SquadStyle_OnSquadAssigned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadDisplay_C", "OnSquadAssigned");
+	class UFunction* Func = Class->GetFunction("MinimalSquadDisplay_C", "OnSquadAssigned");
 
 	Params::MinimalSquadDisplay_C_OnSquadAssigned Parms{};
 
@@ -84,10 +75,7 @@ void UMinimalSquadDisplay_C::OnSquadAssigned(const struct FAthenaTeamDisplayInfo
 
 void UMinimalSquadDisplay_C::OnSquadIsEmptyChanged(bool bSquadIsEmpty_OnSquadIsEmptyChanged, bool bMultipleSquadsPopulated_OnSquadIsEmptyChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadDisplay_C", "OnSquadIsEmptyChanged");
+	class UFunction* Func = Class->GetFunction("MinimalSquadDisplay_C", "OnSquadIsEmptyChanged");
 
 	Params::MinimalSquadDisplay_C_OnSquadIsEmptyChanged Parms{};
 
@@ -105,10 +93,7 @@ void UMinimalSquadDisplay_C::OnSquadIsEmptyChanged(bool bSquadIsEmpty_OnSquadIsE
 
 void UMinimalSquadDisplay_C::ExecuteUbergraph_MinimalSquadDisplay(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinimalSquadDisplay_C", "ExecuteUbergraph_MinimalSquadDisplay");
+	class UFunction* Func = Class->GetFunction("MinimalSquadDisplay_C", "ExecuteUbergraph_MinimalSquadDisplay");
 
 	Params::MinimalSquadDisplay_C_ExecuteUbergraph_MinimalSquadDisplay Parms{};
 

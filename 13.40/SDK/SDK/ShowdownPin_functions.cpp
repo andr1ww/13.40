@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UShowdownPin_C::ExecuteUbergraph_ShowdownPin(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPin_C", "ExecuteUbergraph_ShowdownPin");
+	class UFunction* Func = Class->GetFunction("ShowdownPin_C", "ExecuteUbergraph_ShowdownPin");
 
 	Params::ShowdownPin_C_ExecuteUbergraph_ShowdownPin Parms{};
 
@@ -41,10 +38,7 @@ void UShowdownPin_C::ExecuteUbergraph_ShowdownPin(int32 EntryPoint)
 
 void UShowdownPin_C::EventRevealAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPin_C", "EventRevealAnim");
+	class UFunction* Func = Class->GetFunction("ShowdownPin_C", "EventRevealAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UShowdownPin_C::EventRevealAnim()
 
 void UShowdownPin_C::EventColorize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPin_C", "EventColorize");
+	class UFunction* Func = Class->GetFunction("ShowdownPin_C", "EventColorize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UShowdownPin_C::EventColorize()
 
 void UShowdownPin_C::EventFixPts(int32 Points)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPin_C", "EventFixPts");
+	class UFunction* Func = Class->GetFunction("ShowdownPin_C", "EventFixPts");
 
 	Params::ShowdownPin_C_EventFixPts Parms{};
 
@@ -91,10 +79,7 @@ void UShowdownPin_C::EventFixPts(int32 Points)
 
 void UShowdownPin_C::EventSetTier(int32 Score)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPin_C", "EventSetTier");
+	class UFunction* Func = Class->GetFunction("ShowdownPin_C", "EventSetTier");
 
 	Params::ShowdownPin_C_EventSetTier Parms{};
 
@@ -111,10 +96,7 @@ void UShowdownPin_C::EventSetTier(int32 Score)
 
 void UShowdownPin_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPin_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ShowdownPin_C", "PreConstruct");
 
 	Params::ShowdownPin_C_PreConstruct Parms{};
 
@@ -129,10 +111,7 @@ void UShowdownPin_C::PreConstruct(bool IsDesignTime)
 
 void UShowdownPin_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPin_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("ShowdownPin_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,10 +122,7 @@ void UShowdownPin_C::RefreshDataBP()
 
 void UShowdownPin_C::Refresh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPin_C", "Refresh");
+	class UFunction* Func = Class->GetFunction("ShowdownPin_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

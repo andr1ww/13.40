@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::ExecuteUbergraph_PlayerSurveyPanelContentsAnswerRatingWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerRatingWidget");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerRatingWidget");
 
 	Params::PlayerSurveyPanelContentsAnswerRatingWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerRatingWidget Parms{};
 
@@ -41,10 +38,7 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::ExecuteUbergraph_PlayerSurv
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleQuestionChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleQuestionChanged");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleQuestionChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleQuestionChanged()
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleCommitCurrentAnswer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleCommitCurrentAnswer");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleCommitCurrentAnswer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleCommitCurrentAnswer()
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleButtonFocused(int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleButtonFocused");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleButtonFocused");
 
 	Params::PlayerSurveyPanelContentsAnswerRatingWidget_C_HandleButtonFocused Parms{};
 
@@ -91,10 +79,7 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleButtonFocused(int32 B
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleButtonClicked(int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleButtonClicked");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleButtonClicked");
 
 	Params::PlayerSurveyPanelContentsAnswerRatingWidget_C_HandleButtonClicked Parms{};
 
@@ -109,10 +94,7 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleButtonClicked(int32 B
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -126,10 +108,7 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::OnInitialized()
 
 class UWidget* UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetDefaultFocusedWidgetPostDummy(EUINavigation Navigation_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetDefaultFocusedWidgetPostDummy");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetDefaultFocusedWidgetPostDummy");
 
 	Params::PlayerSurveyPanelContentsAnswerRatingWidget_C_GetDefaultFocusedWidgetPostDummy Parms{};
 
@@ -148,10 +127,7 @@ class UWidget* UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetDefaultFocused
 
 class UWidget* UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetDefaultFocusedWidget() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetDefaultFocusedWidget");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetDefaultFocusedWidget");
 
 	Params::PlayerSurveyPanelContentsAnswerRatingWidget_C_GetDefaultFocusedWidget Parms{};
 
@@ -168,10 +144,7 @@ class UWidget* UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetDefaultFocused
 
 class FText UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetSubtitleText() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetSubtitleText");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetSubtitleText");
 
 	Params::PlayerSurveyPanelContentsAnswerRatingWidget_C_GetSubtitleText Parms{};
 

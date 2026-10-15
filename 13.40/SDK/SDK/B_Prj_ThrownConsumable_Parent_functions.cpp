@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_ThrownConsumable_Parent_C::ExecuteUbergraph_B_Prj_ThrownConsumable_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ExecuteUbergraph_B_Prj_ThrownConsumable_Parent");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ExecuteUbergraph_B_Prj_ThrownConsumable_Parent");
 
 	Params::B_Prj_ThrownConsumable_Parent_C_ExecuteUbergraph_B_Prj_ThrownConsumable_Parent Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_ThrownConsumable_Parent_C::ExecuteUbergraph_B_Prj_ThrownConsumable_P
 
 void AB_Prj_ThrownConsumable_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void AB_Prj_ThrownConsumable_Parent_C::ReceiveBeginPlay()
 
 void AB_Prj_ThrownConsumable_Parent_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnExploded");
 
 	Params::B_Prj_ThrownConsumable_Parent_C_OnExploded Parms{};
 
@@ -79,10 +70,7 @@ void AB_Prj_ThrownConsumable_Parent_C::OnExploded(const TArray<class AActor*>& H
 
 void AB_Prj_ThrownConsumable_Parent_C::OnBounce(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnBounce");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnBounce");
 
 	Params::B_Prj_ThrownConsumable_Parent_C_OnBounce Parms{};
 
@@ -97,10 +85,7 @@ void AB_Prj_ThrownConsumable_Parent_C::OnBounce(const struct FHitResult& Hit)
 
 void AB_Prj_ThrownConsumable_Parent_C::RestartSimulating()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "RestartSimulating");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "RestartSimulating");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +98,7 @@ void AB_Prj_ThrownConsumable_Parent_C::RestartSimulating()
 
 void AB_Prj_ThrownConsumable_Parent_C::Event_OnVehicleDestroyed(class AActor* DestroyedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "Event_OnVehicleDestroyed");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "Event_OnVehicleDestroyed");
 
 	Params::B_Prj_ThrownConsumable_Parent_C_Event_OnVehicleDestroyed Parms{};
 
@@ -140,10 +122,7 @@ void AB_Prj_ThrownConsumable_Parent_C::Event_OnVehicleDestroyed(class AActor* De
 
 void AB_Prj_ThrownConsumable_Parent_C::Event_BuildingActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "Event_BuildingActorDied");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "Event_BuildingActorDied");
 
 	Params::B_Prj_ThrownConsumable_Parent_C_Event_BuildingActorDied Parms{};
 
@@ -167,10 +146,7 @@ void AB_Prj_ThrownConsumable_Parent_C::Event_BuildingActorDied(class AActor* Dam
 
 void AB_Prj_ThrownConsumable_Parent_C::BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature");
 
 	Params::B_Prj_ThrownConsumable_Parent_C_BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature Parms{};
 
@@ -192,10 +168,7 @@ void AB_Prj_ThrownConsumable_Parent_C::BndEvt__ProjectileMovementComponent_K2Nod
 
 void AB_Prj_ThrownConsumable_Parent_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::B_Prj_ThrownConsumable_Parent_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -220,10 +193,7 @@ void AB_Prj_ThrownConsumable_Parent_C::BndEvt__CapsuleComponent_K2Node_Component
 
 void AB_Prj_ThrownConsumable_Parent_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ReceiveAnyDamage");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ReceiveAnyDamage");
 
 	Params::B_Prj_ThrownConsumable_Parent_C_ReceiveAnyDamage Parms{};
 
@@ -241,10 +211,7 @@ void AB_Prj_ThrownConsumable_Parent_C::ReceiveAnyDamage(float Damage, const clas
 
 void AB_Prj_ThrownConsumable_Parent_C::FuseEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "FuseEnded");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "FuseEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -255,10 +222,7 @@ void AB_Prj_ThrownConsumable_Parent_C::FuseEnded()
 
 void AB_Prj_ThrownConsumable_Parent_C::SetBounceVelocity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "SetBounceVelocity");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "SetBounceVelocity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -269,10 +233,7 @@ void AB_Prj_ThrownConsumable_Parent_C::SetBounceVelocity()
 
 void AB_Prj_ThrownConsumable_Parent_C::SetBounceVelocityPawn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "SetBounceVelocityPawn");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "SetBounceVelocityPawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -283,10 +244,7 @@ void AB_Prj_ThrownConsumable_Parent_C::SetBounceVelocityPawn()
 
 void AB_Prj_ThrownConsumable_Parent_C::OnRep_bSimulationRunning()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnRep_bSimulationRunning");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnRep_bSimulationRunning");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -297,10 +255,7 @@ void AB_Prj_ThrownConsumable_Parent_C::OnRep_bSimulationRunning()
 
 void AB_Prj_ThrownConsumable_Parent_C::ResetSimulatedComponents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ResetSimulatedComponents");
+	class UFunction* Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ResetSimulatedComponents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

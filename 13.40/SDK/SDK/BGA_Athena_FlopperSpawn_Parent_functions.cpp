@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_Athena_FlopperSpawn_Parent_C::ExecuteUbergraph_BGA_Athena_FlopperSpawn_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "ExecuteUbergraph_BGA_Athena_FlopperSpawn_Parent");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "ExecuteUbergraph_BGA_Athena_FlopperSpawn_Parent");
 
 	Params::BGA_Athena_FlopperSpawn_Parent_C_ExecuteUbergraph_BGA_Athena_FlopperSpawn_Parent Parms{};
 
@@ -47,10 +44,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::ExecuteUbergraph_BGA_Athena_FlopperSpawn
 
 void ABGA_Athena_FlopperSpawn_Parent_C::UpdateCollectionsComponent(bool bCaughtFish, class AActor* Player, class UFortItemDefinition* ItemDefinition, class AFortPickup* Pickup, float Length)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "UpdateCollectionsComponent");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "UpdateCollectionsComponent");
 
 	Params::BGA_Athena_FlopperSpawn_Parent_C_UpdateCollectionsComponent Parms{};
 
@@ -81,10 +75,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::UpdateCollectionsComponent(bool bCaughtF
 
 void ABGA_Athena_FlopperSpawn_Parent_C::SpawnItem(class AActor* Target, bool Hooked, class USceneComponent* HookComponent, const struct FVector& SpawnLoc, class AActor* Player, float ItemSpawnDelay, bool CaughtWithFishingRod, bool CaughtWithHappyGhost, class AActor* ItemUsedToFish, class APrj_Athena_FloppingRabbit_C* Projectile_0, const struct FGameplayTagContainer& Required_Tags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "SpawnItem");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "SpawnItem");
 
 	Params::BGA_Athena_FlopperSpawn_Parent_C_SpawnItem Parms{};
 
@@ -109,10 +100,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::SpawnItem(class AActor* Target, bool Hoo
 
 void ABGA_Athena_FlopperSpawn_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +111,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::ReceiveBeginPlay()
 
 void ABGA_Athena_FlopperSpawn_Parent_C::HideAndKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "HideAndKill");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "HideAndKill");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +122,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::HideAndKill()
 
 void ABGA_Athena_FlopperSpawn_Parent_C::FishingComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "FishingComplete");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "FishingComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +135,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::FishingComplete()
 
 void ABGA_Athena_FlopperSpawn_Parent_C::PlaySpawnItemHightier(const struct FVector& Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "PlaySpawnItemHightier");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "PlaySpawnItemHightier");
 
 	Params::BGA_Athena_FlopperSpawn_Parent_C_PlaySpawnItemHightier Parms{};
 
@@ -178,10 +157,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::PlaySpawnItemHightier(const struct FVect
 
 void ABGA_Athena_FlopperSpawn_Parent_C::BndEvt__OverlapVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "BndEvt__OverlapVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "BndEvt__OverlapVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::BGA_Athena_FlopperSpawn_Parent_C_BndEvt__OverlapVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -205,10 +181,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::BndEvt__OverlapVolume_K2Node_ComponentBo
 
 void ABGA_Athena_FlopperSpawn_Parent_C::OnReady_5804F209455A50B3EE64E3AED087DE64(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "OnReady_5804F209455A50B3EE64E3AED087DE64");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "OnReady_5804F209455A50B3EE64E3AED087DE64");
 
 	Params::BGA_Athena_FlopperSpawn_Parent_C_OnReady_5804F209455A50B3EE64E3AED087DE64 Parms{};
 
@@ -225,10 +198,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::OnReady_5804F209455A50B3EE64E3AED087DE64
 
 void ABGA_Athena_FlopperSpawn_Parent_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -239,10 +209,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::UserConstructionScript()
 
 void ABGA_Athena_FlopperSpawn_Parent_C::SetBalanceValues()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "SetBalanceValues");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "SetBalanceValues");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +220,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::SetBalanceValues()
 
 void ABGA_Athena_FlopperSpawn_Parent_C::HandleUseTracking()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "HandleUseTracking");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "HandleUseTracking");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -267,10 +231,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::HandleUseTracking()
 
 void ABGA_Athena_FlopperSpawn_Parent_C::ShouldKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "ShouldKill");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "ShouldKill");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -285,10 +246,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::ShouldKill()
 
 void ABGA_Athena_FlopperSpawn_Parent_C::GetLootTier(bool IsExplosion, bool IsProFishingRod, class FName* Output_Get)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "GetLootTier");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "GetLootTier");
 
 	Params::BGA_Athena_FlopperSpawn_Parent_C_GetLootTier Parms{};
 
@@ -312,10 +270,7 @@ void ABGA_Athena_FlopperSpawn_Parent_C::GetLootTier(bool IsExplosion, bool IsPro
 
 bool ABGA_Athena_FlopperSpawn_Parent_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_FlopperSpawn_Parent_C", "BlueprintCanInteract");
 
 	Params::BGA_Athena_FlopperSpawn_Parent_C_BlueprintCanInteract Parms{};
 

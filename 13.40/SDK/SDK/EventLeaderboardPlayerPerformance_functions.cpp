@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEventLeaderboardPlayerPerformance_C::ExecuteUbergraph_EventLeaderboardPlayerPerformance(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardPlayerPerformance_C", "ExecuteUbergraph_EventLeaderboardPlayerPerformance");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardPlayerPerformance_C", "ExecuteUbergraph_EventLeaderboardPlayerPerformance");
 
 	Params::EventLeaderboardPlayerPerformance_C_ExecuteUbergraph_EventLeaderboardPlayerPerformance Parms{};
 
@@ -41,10 +38,7 @@ void UEventLeaderboardPlayerPerformance_C::ExecuteUbergraph_EventLeaderboardPlay
 
 void UEventLeaderboardPlayerPerformance_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardPlayerPerformance_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardPlayerPerformance_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

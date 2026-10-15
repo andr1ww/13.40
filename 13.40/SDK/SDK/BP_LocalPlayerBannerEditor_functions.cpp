@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_LocalPlayerBannerEditor_C::ExecuteUbergraph_BP_LocalPlayerBannerEditor(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "ExecuteUbergraph_BP_LocalPlayerBannerEditor");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "ExecuteUbergraph_BP_LocalPlayerBannerEditor");
 
 	Params::BP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor Parms{};
 
@@ -43,10 +40,7 @@ void UBP_LocalPlayerBannerEditor_C::ExecuteUbergraph_BP_LocalPlayerBannerEditor(
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__Button_CloseEditorButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__Button_CloseEditorButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__Button_CloseEditorButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__Button_CloseEditorButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -63,10 +57,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__Button_CloseEditorButton_K2Node_Comp
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__CloseButton_97_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CloseButton_97_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CloseButton_97_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__CloseButton_97_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -81,10 +72,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__CloseButton_97_K2Node_ComponentBound
 
 void UBP_LocalPlayerBannerEditor_C::OnShowNextCategory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnShowNextCategory");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnShowNextCategory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +83,7 @@ void UBP_LocalPlayerBannerEditor_C::OnShowNextCategory()
 
 void UBP_LocalPlayerBannerEditor_C::OnShowPreviousCategory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnShowPreviousCategory");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnShowPreviousCategory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void UBP_LocalPlayerBannerEditor_C::OnShowPreviousCategory()
 
 void UBP_LocalPlayerBannerEditor_C::Handle_Bang_State_Changed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Handle Bang State Changed");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Handle Bang State Changed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UBP_LocalPlayerBannerEditor_C::Handle_Bang_State_Changed()
 
 void UBP_LocalPlayerBannerEditor_C::BannerTileBangUpdated_Event_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BannerTileBangUpdated_Event_0");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BannerTileBangUpdated_Event_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +118,7 @@ void UBP_LocalPlayerBannerEditor_C::BannerTileBangUpdated_Event_0()
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature Parms{};
 
@@ -159,10 +135,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBou
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_888_OnListViewItemClicked__DelegateSignature(class UObject* Item)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_888_OnListViewItemClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_888_OnListViewItemClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_888_OnListViewItemClicked__DelegateSignature Parms{};
 
@@ -179,10 +152,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBou
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__ApplyButton_K2Node_ComponentBoundEvent_363_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__ApplyButton_K2Node_ComponentBoundEvent_363_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__ApplyButton_K2Node_ComponentBoundEvent_363_CommonButtonClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__ApplyButton_K2Node_ComponentBoundEvent_363_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -199,10 +169,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__ApplyButton_K2Node_ComponentBoundEve
 
 void UBP_LocalPlayerBannerEditor_C::HandleInputMethodChanged(ECommonInputType InputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "HandleInputMethodChanged");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "HandleInputMethodChanged");
 
 	Params::BP_LocalPlayerBannerEditor_C_HandleInputMethodChanged Parms{};
 
@@ -220,10 +187,7 @@ void UBP_LocalPlayerBannerEditor_C::HandleInputMethodChanged(ECommonInputType In
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_66_OnListViewItemSelected__DelegateSignature(class UObject* Item, bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_66_OnListViewItemSelected__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_66_OnListViewItemSelected__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_66_OnListViewItemSelected__DelegateSignature Parms{};
 
@@ -241,10 +205,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBou
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__RightArrowButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__RightArrowButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__RightArrowButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__RightArrowButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -261,10 +222,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__RightArrowButton_K2Node_ComponentBou
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__LeftArrowButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__LeftArrowButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__LeftArrowButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__LeftArrowButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -279,10 +237,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__LeftArrowButton_K2Node_ComponentBoun
 
 void UBP_LocalPlayerBannerEditor_C::RefreshBannerEditor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "RefreshBannerEditor");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "RefreshBannerEditor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -295,10 +250,7 @@ void UBP_LocalPlayerBannerEditor_C::RefreshBannerEditor()
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__EditColorButton_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditColorButton_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditColorButton_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__EditColorButton_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -315,10 +267,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__EditColorButton_K2Node_ComponentBoun
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__EditIconButton_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditIconButton_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditIconButton_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__EditIconButton_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -335,10 +284,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__EditIconButton_K2Node_ComponentBound
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__EditColorButton_K2Node_ComponentBoundEvent_319_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditColorButton_K2Node_ComponentBoundEvent_319_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditColorButton_K2Node_ComponentBoundEvent_319_CommonButtonClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__EditColorButton_K2Node_ComponentBoundEvent_319_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -355,10 +301,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__EditColorButton_K2Node_ComponentBoun
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__EditIconButton_K2Node_ComponentBoundEvent_302_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditIconButton_K2Node_ComponentBoundEvent_302_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditIconButton_K2Node_ComponentBoundEvent_302_CommonButtonClicked__DelegateSignature");
 
 	Params::BP_LocalPlayerBannerEditor_C_BndEvt__EditIconButton_K2Node_ComponentBoundEvent_302_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -373,10 +316,7 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__EditIconButton_K2Node_ComponentBound
 
 void UBP_LocalPlayerBannerEditor_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Construct");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -387,10 +327,7 @@ void UBP_LocalPlayerBannerEditor_C::Construct()
 
 void UBP_LocalPlayerBannerEditor_C::OnWidgetActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnWidgetActivated");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnWidgetActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -403,10 +340,7 @@ void UBP_LocalPlayerBannerEditor_C::OnWidgetActivated()
 
 void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Icons(class FName CategoryRowName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Setup Tileview For Icons");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Setup Tileview For Icons");
 
 	Params::BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons Parms{};
 
@@ -423,10 +357,7 @@ void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Icons(class FName Categor
 
 void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Colorswatches(class FName& CategoryRowName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Setup Tileview For Colorswatches");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Setup Tileview For Colorswatches");
 
 	Params::BP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches Parms{};
 
@@ -445,10 +376,7 @@ void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Colorswatches(class FName
 
 void UBP_LocalPlayerBannerEditor_C::Set_Current_Category(class FName CurrentCategory_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Set Current Category");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Set Current Category");
 
 	Params::BP_LocalPlayerBannerEditor_C_Set_Current_Category Parms{};
 
@@ -463,10 +391,7 @@ void UBP_LocalPlayerBannerEditor_C::Set_Current_Category(class FName CurrentCate
 
 void UBP_LocalPlayerBannerEditor_C::Next_Category()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Next Category");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Next Category");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -477,10 +402,7 @@ void UBP_LocalPlayerBannerEditor_C::Next_Category()
 
 void UBP_LocalPlayerBannerEditor_C::Previous_Category()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Previous Category");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Previous Category");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -491,10 +413,7 @@ void UBP_LocalPlayerBannerEditor_C::Previous_Category()
 
 void UBP_LocalPlayerBannerEditor_C::Decrement_Icon_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Decrement Icon Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Decrement Icon Category Index");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -505,10 +424,7 @@ void UBP_LocalPlayerBannerEditor_C::Decrement_Icon_Category_Index()
 
 void UBP_LocalPlayerBannerEditor_C::Decrement_Color_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Decrement Color Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Decrement Color Category Index");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -519,10 +435,7 @@ void UBP_LocalPlayerBannerEditor_C::Decrement_Color_Category_Index()
 
 void UBP_LocalPlayerBannerEditor_C::Increment_Icon_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Increment Icon Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Increment Icon Category Index");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -533,10 +446,7 @@ void UBP_LocalPlayerBannerEditor_C::Increment_Icon_Category_Index()
 
 void UBP_LocalPlayerBannerEditor_C::Increment_Color_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Increment Color Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Increment Color Category Index");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -549,10 +459,7 @@ void UBP_LocalPlayerBannerEditor_C::Increment_Color_Category_Index()
 
 void UBP_LocalPlayerBannerEditor_C::Update_Banner_Color_Tileview(class FName CurrentCategory_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Banner Color Tileview");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Banner Color Tileview");
 
 	Params::BP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview Parms{};
 
@@ -569,10 +476,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Banner_Color_Tileview(class FName Cur
 
 void UBP_LocalPlayerBannerEditor_C::Update_Banner_Icon_Tileview(class FName CurrentCategory_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Banner Icon Tileview");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Banner Icon Tileview");
 
 	Params::BP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview Parms{};
 
@@ -587,10 +491,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Banner_Icon_Tileview(class FName Curr
 
 void UBP_LocalPlayerBannerEditor_C::OnWidgetDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnWidgetDeactivated");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnWidgetDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -601,10 +502,7 @@ void UBP_LocalPlayerBannerEditor_C::OnWidgetDeactivated()
 
 void UBP_LocalPlayerBannerEditor_C::Navigate_to_Chosen_Icon()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Navigate to Chosen Icon");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Navigate to Chosen Icon");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -615,10 +513,7 @@ void UBP_LocalPlayerBannerEditor_C::Navigate_to_Chosen_Icon()
 
 void UBP_LocalPlayerBannerEditor_C::Navigate_to_Chosen_Color()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Navigate to Chosen Color");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Navigate to Chosen Color");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -631,10 +526,7 @@ void UBP_LocalPlayerBannerEditor_C::Navigate_to_Chosen_Color()
 
 void UBP_LocalPlayerBannerEditor_C::Attempt_Leave_Picker(bool* Left)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Attempt Leave Picker");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Attempt Leave Picker");
 
 	Params::BP_LocalPlayerBannerEditor_C_Attempt_Leave_Picker Parms{};
 
@@ -652,10 +544,7 @@ void UBP_LocalPlayerBannerEditor_C::Attempt_Leave_Picker(bool* Left)
 
 void UBP_LocalPlayerBannerEditor_C::Set_Picking_Tile_State(bool bPickingTile_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Set Picking Tile State");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Set Picking Tile State");
 
 	Params::BP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State Parms{};
 
@@ -670,10 +559,7 @@ void UBP_LocalPlayerBannerEditor_C::Set_Picking_Tile_State(bool bPickingTile_0)
 
 void UBP_LocalPlayerBannerEditor_C::Apply_Chosen_Item()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Apply Chosen Item");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Apply Chosen Item");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -684,10 +570,7 @@ void UBP_LocalPlayerBannerEditor_C::Apply_Chosen_Item()
 
 void UBP_LocalPlayerBannerEditor_C::Refresh_Apply_Button_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Refresh Apply Button State");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Refresh Apply Button State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -700,10 +583,7 @@ void UBP_LocalPlayerBannerEditor_C::Refresh_Apply_Button_State()
 
 void UBP_LocalPlayerBannerEditor_C::Update_Temp_State_On_Item_Selected(class UObject* Item)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Temp State On Item Selected");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Temp State On Item Selected");
 
 	Params::BP_LocalPlayerBannerEditor_C_Update_Temp_State_On_Item_Selected Parms{};
 
@@ -718,10 +598,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Temp_State_On_Item_Selected(class UOb
 
 void UBP_LocalPlayerBannerEditor_C::Reset_for_Keyboard_and_Mouse()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset for Keyboard and Mouse");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset for Keyboard and Mouse");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -732,10 +609,7 @@ void UBP_LocalPlayerBannerEditor_C::Reset_for_Keyboard_and_Mouse()
 
 void UBP_LocalPlayerBannerEditor_C::Reset_Pickers_and_Views()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Pickers and Views");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Pickers and Views");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -746,10 +620,7 @@ void UBP_LocalPlayerBannerEditor_C::Reset_Pickers_and_Views()
 
 void UBP_LocalPlayerBannerEditor_C::FoundsPackTextUpdate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "FoundsPackTextUpdate");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "FoundsPackTextUpdate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -760,10 +631,7 @@ void UBP_LocalPlayerBannerEditor_C::FoundsPackTextUpdate()
 
 void UBP_LocalPlayerBannerEditor_C::Update_Bang_States()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Bang States");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Bang States");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -774,10 +642,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Bang_States()
 
 void UBP_LocalPlayerBannerEditor_C::Update_Icon_Button_Bang_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Icon Button Bang State");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Icon Button Bang State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -788,10 +653,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Icon_Button_Bang_State()
 
 void UBP_LocalPlayerBannerEditor_C::Update_Color_Button_Bang_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Color Button Bang State");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Color Button Bang State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -804,10 +666,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Color_Button_Bang_State()
 
 int32 UBP_LocalPlayerBannerEditor_C::Get_Next_Icon_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Next Icon Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Next Icon Category Index");
 
 	Params::BP_LocalPlayerBannerEditor_C_Get_Next_Icon_Category_Index Parms{};
 
@@ -824,10 +683,7 @@ int32 UBP_LocalPlayerBannerEditor_C::Get_Next_Icon_Category_Index()
 
 int32 UBP_LocalPlayerBannerEditor_C::Get_Prev_Icon_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Prev Icon Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Prev Icon Category Index");
 
 	Params::BP_LocalPlayerBannerEditor_C_Get_Prev_Icon_Category_Index Parms{};
 
@@ -844,10 +700,7 @@ int32 UBP_LocalPlayerBannerEditor_C::Get_Prev_Icon_Category_Index()
 
 int32 UBP_LocalPlayerBannerEditor_C::Get_Next_Color_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Next Color Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Next Color Category Index");
 
 	Params::BP_LocalPlayerBannerEditor_C_Get_Next_Color_Category_Index Parms{};
 
@@ -864,10 +717,7 @@ int32 UBP_LocalPlayerBannerEditor_C::Get_Next_Color_Category_Index()
 
 int32 UBP_LocalPlayerBannerEditor_C::Get_Prev_Color_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Prev Color Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Prev Color Category Index");
 
 	Params::BP_LocalPlayerBannerEditor_C_Get_Prev_Color_Category_Index Parms{};
 
@@ -882,10 +732,7 @@ int32 UBP_LocalPlayerBannerEditor_C::Get_Prev_Color_Category_Index()
 
 void UBP_LocalPlayerBannerEditor_C::Update_Left_Icon_Category_Button_Bang_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Left Icon Category Button Bang State");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Left Icon Category Button Bang State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -896,10 +743,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Left_Icon_Category_Button_Bang_State(
 
 void UBP_LocalPlayerBannerEditor_C::Update_Right_Icon_Category_Button_Bang_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Right Icon Category Button Bang State");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Right Icon Category Button Bang State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -910,10 +754,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Right_Icon_Category_Button_Bang_State
 
 void UBP_LocalPlayerBannerEditor_C::Update_Left_Color_Category_Button_Bang_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Left Color Category Button Bang State");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Left Color Category Button Bang State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -924,10 +765,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Left_Color_Category_Button_Bang_State
 
 void UBP_LocalPlayerBannerEditor_C::Update_Right_Color_Category_Button_Bang_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Right Color Category Button Bang State");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Right Color Category Button Bang State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -938,10 +776,7 @@ void UBP_LocalPlayerBannerEditor_C::Update_Right_Color_Category_Button_Bang_Stat
 
 void UBP_LocalPlayerBannerEditor_C::Reset_Icon_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Icon Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Icon Category Index");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -952,10 +787,7 @@ void UBP_LocalPlayerBannerEditor_C::Reset_Icon_Category_Index()
 
 void UBP_LocalPlayerBannerEditor_C::Reset_Color_Category_Index()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Color Category Index");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Color Category Index");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -966,10 +798,7 @@ void UBP_LocalPlayerBannerEditor_C::Reset_Color_Category_Index()
 
 void UBP_LocalPlayerBannerEditor_C::Update_Category_Navigation_Visibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Category Navigation Visibility");
+	class UFunction* Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Category Navigation Visibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

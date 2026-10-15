@@ -27,10 +27,7 @@ SDK_NAMESPACE_START
 
 void UAthenaPlayerLevelCompact_C::OnUpdateRewardIcon(const class UFortItem* RewardItem_OnUpdateRewardIcon, const TSoftObjectPtr<class UTexture2D>& RewardTexture_OnUpdateRewardIcon, bool bHasAdditionalStylesToDisplay_OnUpdateRewardIcon, int32 RewardLevel_OnUpdateRewardIcon, bool bRequiresBattlePass_OnUpdateRewardIcon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaPlayerLevelCompact_C", "OnUpdateRewardIcon");
+	class UFunction* Func = Class->GetFunction("AthenaPlayerLevelCompact_C", "OnUpdateRewardIcon");
 
 	Params::AthenaPlayerLevelCompact_C_OnUpdateRewardIcon Parms{};
 
@@ -52,10 +49,7 @@ void UAthenaPlayerLevelCompact_C::OnUpdateRewardIcon(const class UFortItem* Rewa
 
 void UAthenaPlayerLevelCompact_C::OnUpdateXpBar(float Progress_OnUpdateXpBar, bool bIsMaxLevel_OnUpdateXpBar)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaPlayerLevelCompact_C", "OnUpdateXpBar");
+	class UFunction* Func = Class->GetFunction("AthenaPlayerLevelCompact_C", "OnUpdateXpBar");
 
 	Params::AthenaPlayerLevelCompact_C_OnUpdateXpBar Parms{};
 
@@ -73,10 +67,7 @@ void UAthenaPlayerLevelCompact_C::OnUpdateXpBar(float Progress_OnUpdateXpBar, bo
 
 void UAthenaPlayerLevelCompact_C::ExecuteUbergraph_AthenaPlayerLevelCompact(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaPlayerLevelCompact_C", "ExecuteUbergraph_AthenaPlayerLevelCompact");
+	class UFunction* Func = Class->GetFunction("AthenaPlayerLevelCompact_C", "ExecuteUbergraph_AthenaPlayerLevelCompact");
 
 	Params::AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact Parms{};
 

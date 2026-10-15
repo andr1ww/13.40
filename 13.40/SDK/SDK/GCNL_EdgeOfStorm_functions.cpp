@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_EdgeOfStorm_C::ExecuteUbergraph_GCNL_EdgeOfStorm(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "ExecuteUbergraph_GCNL_EdgeOfStorm");
+	class UFunction* Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "ExecuteUbergraph_GCNL_EdgeOfStorm");
 
 	Params::GCNL_EdgeOfStorm_C_ExecuteUbergraph_GCNL_EdgeOfStorm Parms{};
 
@@ -41,10 +38,7 @@ void AGCNL_EdgeOfStorm_C::ExecuteUbergraph_GCNL_EdgeOfStorm(int32 EntryPoint)
 
 void AGCNL_EdgeOfStorm_C::Deactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "Deactivated");
+	class UFunction* Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "Deactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AGCNL_EdgeOfStorm_C::Deactivated()
 
 void AGCNL_EdgeOfStorm_C::Activated(const struct FVector& EdgeOfStorm)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "Activated");
+	class UFunction* Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "Activated");
 
 	Params::GCNL_EdgeOfStorm_C_Activated Parms{};
 
@@ -79,10 +70,7 @@ void AGCNL_EdgeOfStorm_C::Activated(const struct FVector& EdgeOfStorm)
 
 bool AGCNL_EdgeOfStorm_C::OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnActive");
+	class UFunction* Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnActive");
 
 	Params::GCNL_EdgeOfStorm_C_OnActive Parms{};
 
@@ -104,10 +92,7 @@ bool AGCNL_EdgeOfStorm_C::OnActive(class AActor* MyTarget, const struct FGamepla
 
 bool AGCNL_EdgeOfStorm_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnExecute");
+	class UFunction* Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnExecute");
 
 	Params::GCNL_EdgeOfStorm_C_OnExecute Parms{};
 
@@ -129,10 +114,7 @@ bool AGCNL_EdgeOfStorm_C::OnExecute(class AActor* MyTarget, const struct FGamepl
 
 bool AGCNL_EdgeOfStorm_C::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnRemove");
+	class UFunction* Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnRemove");
 
 	Params::GCNL_EdgeOfStorm_C_OnRemove Parms{};
 

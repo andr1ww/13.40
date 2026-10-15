@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UVoiceChannelHeader_C::ExecuteUbergraph_VoiceChannelHeader(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelHeader_C", "ExecuteUbergraph_VoiceChannelHeader");
+	class UFunction* Func = Class->GetFunction("VoiceChannelHeader_C", "ExecuteUbergraph_VoiceChannelHeader");
 
 	Params::VoiceChannelHeader_C_ExecuteUbergraph_VoiceChannelHeader Parms{};
 
@@ -43,10 +40,7 @@ void UVoiceChannelHeader_C::ExecuteUbergraph_VoiceChannelHeader(int32 EntryPoint
 
 void UVoiceChannelHeader_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelHeader_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("VoiceChannelHeader_C", "PreConstruct");
 
 	Params::VoiceChannelHeader_C_PreConstruct Parms{};
 

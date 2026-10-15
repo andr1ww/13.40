@@ -20,10 +20,7 @@ SDK_NAMESPACE_START
 
 void UOnlineHotfixManager::StartHotfixProcess()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OnlineHotfixManager", "StartHotfixProcess");
+	class UFunction* Func = Class->GetFunction("OnlineHotfixManager", "StartHotfixProcess");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

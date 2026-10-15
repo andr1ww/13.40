@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGrapplingHookGun_AnimBP_C::ExecuteUbergraph_GrapplingHookGun_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GrapplingHookGun_AnimBP_C", "ExecuteUbergraph_GrapplingHookGun_AnimBP");
+	class UFunction* Func = Class->GetFunction("GrapplingHookGun_AnimBP_C", "ExecuteUbergraph_GrapplingHookGun_AnimBP");
 
 	Params::GrapplingHookGun_AnimBP_C_ExecuteUbergraph_GrapplingHookGun_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UGrapplingHookGun_AnimBP_C::ExecuteUbergraph_GrapplingHookGun_AnimBP(int32 
 
 void UGrapplingHookGun_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GrapplingHookGun_AnimBP_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("GrapplingHookGun_AnimBP_C", "BlueprintUpdateAnimation");
 
 	Params::GrapplingHookGun_AnimBP_C_BlueprintUpdateAnimation Parms{};
 
@@ -63,10 +57,7 @@ void UGrapplingHookGun_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UGrapplingHookGun_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GrapplingHookGun_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("GrapplingHookGun_AnimBP_C", "AnimGraph");
 
 	Params::GrapplingHookGun_AnimBP_C_AnimGraph Parms{};
 

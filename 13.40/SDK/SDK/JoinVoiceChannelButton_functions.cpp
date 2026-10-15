@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UJoinVoiceChannelButton_C::ExecuteUbergraph_JoinVoiceChannelButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JoinVoiceChannelButton_C", "ExecuteUbergraph_JoinVoiceChannelButton");
+	class UFunction* Func = Class->GetFunction("JoinVoiceChannelButton_C", "ExecuteUbergraph_JoinVoiceChannelButton");
 
 	Params::JoinVoiceChannelButton_C_ExecuteUbergraph_JoinVoiceChannelButton Parms{};
 
@@ -41,10 +38,7 @@ void UJoinVoiceChannelButton_C::ExecuteUbergraph_JoinVoiceChannelButton(int32 En
 
 void UJoinVoiceChannelButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JoinVoiceChannelButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("JoinVoiceChannelButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UJoinVoiceChannelButton_C::BP_OnUnhovered()
 
 void UJoinVoiceChannelButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JoinVoiceChannelButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("JoinVoiceChannelButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

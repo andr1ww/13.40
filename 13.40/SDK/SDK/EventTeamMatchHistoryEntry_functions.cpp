@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEventTeamMatchHistoryEntry_C::ExecuteUbergraph_EventTeamMatchHistoryEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "ExecuteUbergraph_EventTeamMatchHistoryEntry");
+	class UFunction* Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "ExecuteUbergraph_EventTeamMatchHistoryEntry");
 
 	Params::EventTeamMatchHistoryEntry_C_ExecuteUbergraph_EventTeamMatchHistoryEntry Parms{};
 
@@ -43,10 +40,7 @@ void UEventTeamMatchHistoryEntry_C::ExecuteUbergraph_EventTeamMatchHistoryEntry(
 
 void UEventTeamMatchHistoryEntry_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "OnListItemObjectSet");
+	class UFunction* Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "OnListItemObjectSet");
 
 	Params::EventTeamMatchHistoryEntry_C_OnListItemObjectSet Parms{};
 
@@ -61,10 +55,7 @@ void UEventTeamMatchHistoryEntry_C::OnListItemObjectSet(class UObject* ListItemO
 
 void UEventTeamMatchHistoryEntry_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UEventTeamMatchHistoryEntry_C::BP_OnUnhovered()
 
 void UEventTeamMatchHistoryEntry_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

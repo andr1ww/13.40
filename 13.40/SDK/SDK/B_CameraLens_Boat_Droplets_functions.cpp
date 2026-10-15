@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_CameraLens_Boat_Droplets_C::ExecuteUbergraph_B_CameraLens_Boat_Droplets(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "ExecuteUbergraph_B_CameraLens_Boat_Droplets");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "ExecuteUbergraph_B_CameraLens_Boat_Droplets");
 
 	Params::B_CameraLens_Boat_Droplets_C_ExecuteUbergraph_B_CameraLens_Boat_Droplets Parms{};
 
@@ -41,10 +38,7 @@ void AB_CameraLens_Boat_Droplets_C::ExecuteUbergraph_B_CameraLens_Boat_Droplets(
 
 void AB_CameraLens_Boat_Droplets_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_CameraLens_Boat_Droplets_C::ReceiveDestroyed()
 
 void AB_CameraLens_Boat_Droplets_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_CameraLens_Boat_Droplets_C::ReceiveBeginPlay()
 
 void AB_CameraLens_Boat_Droplets_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_CameraLens_Boat_Droplets_C::Timeline_0__UpdateFunc()
 
 void AB_CameraLens_Boat_Droplets_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_CameraLens_Boat_Droplets_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

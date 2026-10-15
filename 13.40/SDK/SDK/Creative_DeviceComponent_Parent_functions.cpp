@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreative_DeviceComponent_Parent_C::ExecuteUbergraph_Creative_DeviceComponent_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_DeviceComponent_Parent_C", "ExecuteUbergraph_Creative_DeviceComponent_Parent");
+	class UFunction* Func = Class->GetFunction("Creative_DeviceComponent_Parent_C", "ExecuteUbergraph_Creative_DeviceComponent_Parent");
 
 	Params::Creative_DeviceComponent_Parent_C_ExecuteUbergraph_Creative_DeviceComponent_Parent Parms{};
 
@@ -41,10 +38,7 @@ void UCreative_DeviceComponent_Parent_C::ExecuteUbergraph_Creative_DeviceCompone
 
 void UCreative_DeviceComponent_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_DeviceComponent_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Creative_DeviceComponent_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UCreative_DeviceComponent_Parent_C::ReceiveBeginPlay()
 
 void UCreative_DeviceComponent_Parent_C::Owning_Actor_Initialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_DeviceComponent_Parent_C", "Owning Actor Initialized");
+	class UFunction* Func = Class->GetFunction("Creative_DeviceComponent_Parent_C", "Owning Actor Initialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UCreative_DeviceComponent_Parent_C::Owning_Actor_Initialized()
 
 void UCreative_DeviceComponent_Parent_C::Owning_Actor_Activated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_DeviceComponent_Parent_C", "Owning Actor Activated");
+	class UFunction* Func = Class->GetFunction("Creative_DeviceComponent_Parent_C", "Owning Actor Activated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

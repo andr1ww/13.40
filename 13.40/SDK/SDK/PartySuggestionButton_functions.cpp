@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPartySuggestionButton_C::ExecuteUbergraph_PartySuggestionButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "ExecuteUbergraph_PartySuggestionButton");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "ExecuteUbergraph_PartySuggestionButton");
 
 	Params::PartySuggestionButton_C_ExecuteUbergraph_PartySuggestionButton Parms{};
 
@@ -41,10 +38,7 @@ void UPartySuggestionButton_C::ExecuteUbergraph_PartySuggestionButton(int32 Entr
 
 void UPartySuggestionButton_C::OnSuggestionChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "OnSuggestionChanged");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "OnSuggestionChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UPartySuggestionButton_C::OnSuggestionChanged()
 
 void UPartySuggestionButton_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UPartySuggestionButton_C::OnInitialized()
 
 void UPartySuggestionButton_C::PlayOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "PlayOutro");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "PlayOutro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UPartySuggestionButton_C::PlayOutro()
 
 void UPartySuggestionButton_C::OnNewSuggestionAdded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "OnNewSuggestionAdded");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "OnNewSuggestionAdded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UPartySuggestionButton_C::OnNewSuggestionAdded()
 
 void UPartySuggestionButton_C::OnDismissSuggestion()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "OnDismissSuggestion");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "OnDismissSuggestion");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void UPartySuggestionButton_C::OnDismissSuggestion()
 
 void UPartySuggestionButton_C::OnSuggestionAccepted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "OnSuggestionAccepted");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "OnSuggestionAccepted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -128,10 +107,7 @@ void UPartySuggestionButton_C::OnSuggestionAccepted()
 
 void UPartySuggestionButton_C::OnDisplayInfoUpdated(bool bIsInvited, bool bIsPlaying)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "OnDisplayInfoUpdated");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "OnDisplayInfoUpdated");
 
 	Params::PartySuggestionButton_C_OnDisplayInfoUpdated Parms{};
 
@@ -147,10 +123,7 @@ void UPartySuggestionButton_C::OnDisplayInfoUpdated(bool bIsInvited, bool bIsPla
 
 void UPartySuggestionButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +134,7 @@ void UPartySuggestionButton_C::BP_OnUnhovered()
 
 void UPartySuggestionButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +145,7 @@ void UPartySuggestionButton_C::BP_OnHovered()
 
 void UPartySuggestionButton_C::PlayIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "PlayIntro");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "PlayIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -192,10 +159,7 @@ void UPartySuggestionButton_C::PlayIntro()
 
 void UPartySuggestionButton_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "Tick");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "Tick");
 
 	Params::PartySuggestionButton_C_Tick Parms{};
 
@@ -211,10 +175,7 @@ void UPartySuggestionButton_C::Tick(const struct FGeometry& MyGeometry, float In
 
 void UPartySuggestionButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,10 +186,7 @@ void UPartySuggestionButton_C::Construct()
 
 void UPartySuggestionButton_C::HandleOutroAnimationFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "HandleOutroAnimationFinished");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "HandleOutroAnimationFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -239,10 +197,7 @@ void UPartySuggestionButton_C::HandleOutroAnimationFinished()
 
 void UPartySuggestionButton_C::InitMIDs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "InitMIDs");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "InitMIDs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +208,7 @@ void UPartySuggestionButton_C::InitMIDs()
 
 void UPartySuggestionButton_C::InitPhysAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "InitPhysAnim");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "InitPhysAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -271,10 +223,7 @@ void UPartySuggestionButton_C::InitPhysAnim()
 
 void UPartySuggestionButton_C::SetMainMIDs(class UMaterialInstanceDynamic* BorderMID, class UMaterialInstanceDynamic* TailMID, class UMaterialInstanceDynamic* SparklesMID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "SetMainMIDs");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "SetMainMIDs");
 
 	Params::PartySuggestionButton_C_SetMainMIDs Parms{};
 
@@ -291,10 +240,7 @@ void UPartySuggestionButton_C::SetMainMIDs(class UMaterialInstanceDynamic* Borde
 
 void UPartySuggestionButton_C::SetupMIDReferences()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartySuggestionButton_C", "SetupMIDReferences");
+	class UFunction* Func = Class->GetFunction("PartySuggestionButton_C", "SetupMIDReferences");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

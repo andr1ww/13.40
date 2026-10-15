@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_ShockGrenade_C::ExecuteUbergraph_B_Prj_Athena_ShockGrenade(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "ExecuteUbergraph_B_Prj_Athena_ShockGrenade");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "ExecuteUbergraph_B_Prj_Athena_ShockGrenade");
 
 	Params::B_Prj_Athena_ShockGrenade_C_ExecuteUbergraph_B_Prj_Athena_ShockGrenade Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_Athena_ShockGrenade_C::ExecuteUbergraph_B_Prj_Athena_ShockGrenade(in
 
 void AB_Prj_Athena_ShockGrenade_C::LaunchPlayerVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "LaunchPlayerVehicle");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "LaunchPlayerVehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void AB_Prj_Athena_ShockGrenade_C::LaunchPlayerVehicle()
 
 void AB_Prj_Athena_ShockGrenade_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Athena_ShockGrenade_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -82,10 +73,7 @@ void AB_Prj_Athena_ShockGrenade_C::BndEvt__WaterInteractionComponent_K2Node_Comp
 
 void AB_Prj_Athena_ShockGrenade_C::BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature");
 
 	Params::B_Prj_Athena_ShockGrenade_C_BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
@@ -106,10 +94,7 @@ void AB_Prj_Athena_ShockGrenade_C::BndEvt__ProjectileMovementComponent_K2Node_Co
 
 void AB_Prj_Athena_ShockGrenade_C::OnTouched(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& HitResult, bool bIsOverlap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "OnTouched");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "OnTouched");
 
 	Params::B_Prj_Athena_ShockGrenade_C_OnTouched Parms{};
 
@@ -127,10 +112,7 @@ void AB_Prj_Athena_ShockGrenade_C::OnTouched(class AActor* OtherActor, class UPr
 
 void AB_Prj_Athena_ShockGrenade_C::LaunchDeimos()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "LaunchDeimos");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "LaunchDeimos");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -148,10 +130,7 @@ void AB_Prj_Athena_ShockGrenade_C::LaunchDeimos()
 
 void AB_Prj_Athena_ShockGrenade_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::B_Prj_Athena_ShockGrenade_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -174,10 +153,7 @@ void AB_Prj_Athena_ShockGrenade_C::BndEvt__CapsuleComponent_K2Node_ComponentBoun
 
 void AB_Prj_Athena_ShockGrenade_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "OnExploded");
 
 	Params::B_Prj_Athena_ShockGrenade_C_OnExploded Parms{};
 
@@ -193,10 +169,7 @@ void AB_Prj_Athena_ShockGrenade_C::OnExploded(const TArray<class AActor*>& HitAc
 
 void AB_Prj_Athena_ShockGrenade_C::Stop_Rotation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "Stop_Rotation");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "Stop_Rotation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +182,7 @@ void AB_Prj_Athena_ShockGrenade_C::Stop_Rotation()
 
 void AB_Prj_Athena_ShockGrenade_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "OnStop");
 
 	Params::B_Prj_Athena_ShockGrenade_C_OnStop Parms{};
 
@@ -227,10 +197,7 @@ void AB_Prj_Athena_ShockGrenade_C::OnStop(const struct FHitResult& Hit)
 
 void AB_Prj_Athena_ShockGrenade_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -241,10 +208,7 @@ void AB_Prj_Athena_ShockGrenade_C::ReceiveBeginPlay()
 
 void AB_Prj_Athena_ShockGrenade_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -255,10 +219,7 @@ void AB_Prj_Athena_ShockGrenade_C::UserConstructionScript()
 
 void AB_Prj_Athena_ShockGrenade_C::Handle_Pawn_Detach_RC()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "Handle Pawn Detach RC");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_ShockGrenade_C", "Handle Pawn Detach RC");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

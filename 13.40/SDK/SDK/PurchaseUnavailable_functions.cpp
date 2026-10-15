@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPurchaseUnavailable_C::ExecuteUbergraph_PurchaseUnavailable(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseUnavailable_C", "ExecuteUbergraph_PurchaseUnavailable");
+	class UFunction* Func = Class->GetFunction("PurchaseUnavailable_C", "ExecuteUbergraph_PurchaseUnavailable");
 
 	Params::PurchaseUnavailable_C_ExecuteUbergraph_PurchaseUnavailable Parms{};
 
@@ -43,10 +40,7 @@ void UPurchaseUnavailable_C::ExecuteUbergraph_PurchaseUnavailable(int32 EntryPoi
 
 void UPurchaseUnavailable_C::OnUpdateTextStyle(const class FText& OfferDisplayName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PurchaseUnavailable_C", "OnUpdateTextStyle");
+	class UFunction* Func = Class->GetFunction("PurchaseUnavailable_C", "OnUpdateTextStyle");
 
 	Params::PurchaseUnavailable_C_OnUpdateTextStyle Parms{};
 

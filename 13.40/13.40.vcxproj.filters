@@ -15,6 +15,75 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Runtime\Headers\Actors\BuildingActor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Headers\Player\FortPlayerController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Headers\Items\FortLootTier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Headers\Items\FortLootPackage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Headers\FortAthenaMapInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Actors\BuildingActor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Player\FortPlayerController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Items\FortLootTier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Items\FortLootPackage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\FortAthenaMapInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_Aircraft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="Core\Headers\Unreal\Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Headers\Actors\BuildingFoundation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Actors\BuildingFoundation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="Runtime\Headers\Engine\Components\AbilitySystemComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Headers\Player\FortPlayerPawn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Engine\Components\AbilitySystemComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Player\FortPlayerPawn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="Runtime\Headers\Player\FortPlayerControllerAthena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Headers\FortInventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Player\FortPlayerControllerAthena.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\FortInventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClInclude Include="Core\Headers\Unreal\UObjectGlobals.h">
       <Filter>Header Files</Filter>
     </ClInclude>

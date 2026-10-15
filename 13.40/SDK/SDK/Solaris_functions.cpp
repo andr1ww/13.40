@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 int32 USolarisArrayLibrary::Add(const TArray<int32>& Array, const int32& new_item)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Add");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Add");
 
 	Params::SolarisArrayLibrary_Add Parms{};
 
@@ -55,10 +52,7 @@ int32 USolarisArrayLibrary::Add(const TArray<int32>& Array, const int32& new_ite
 
 TArray<int32> USolarisArrayLibrary::Concat(const TArray<int32>& Lhs, const TArray<int32>& Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Concat");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Concat");
 
 	Params::SolarisArrayLibrary_Concat Parms{};
 
@@ -85,10 +79,7 @@ TArray<int32> USolarisArrayLibrary::Concat(const TArray<int32>& Lhs, const TArra
 
 bool USolarisArrayLibrary::Contains(const TArray<int32>& Array, const int32& search_item)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Contains");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Contains");
 
 	Params::SolarisArrayLibrary_Contains Parms{};
 
@@ -113,10 +104,7 @@ bool USolarisArrayLibrary::Contains(const TArray<int32>& Array, const int32& sea
 
 void USolarisArrayLibrary::Empty(const TArray<int32>& Array)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Empty");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Empty");
 
 	Params::SolarisArrayLibrary_Empty Parms{};
 
@@ -140,10 +128,7 @@ void USolarisArrayLibrary::Empty(const TArray<int32>& Array)
 
 bool USolarisArrayLibrary::IsValidIndex(const TArray<int32>& Array, int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisArrayLibrary", "IsValidIndex");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisArrayLibrary", "IsValidIndex");
 
 	Params::SolarisArrayLibrary_IsValidIndex Parms{};
 
@@ -169,10 +154,7 @@ bool USolarisArrayLibrary::IsValidIndex(const TArray<int32>& Array, int32 Index_
 
 void USolarisArrayLibrary::Move(const TArray<int32>& Target, const TArray<int32>& Source)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Move");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Move");
 
 	Params::SolarisArrayLibrary_Move Parms{};
 
@@ -196,10 +178,7 @@ void USolarisArrayLibrary::Move(const TArray<int32>& Target, const TArray<int32>
 
 int32 USolarisArrayLibrary::Num(const TArray<int32>& Array)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Num");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisArrayLibrary", "Num");
 
 	Params::SolarisArrayLibrary_Num Parms{};
 
@@ -225,10 +204,7 @@ int32 USolarisArrayLibrary::Num(const TArray<int32>& Array)
 
 bool USolarisMathLibrary_Bool::equal(bool Lhs, bool Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Bool", "equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Bool", "equal");
 
 	Params::SolarisMathLibrary_Bool_equal Parms{};
 
@@ -255,10 +231,7 @@ bool USolarisMathLibrary_Bool::equal(bool Lhs, bool Rhs)
 
 bool USolarisMathLibrary_Bool::logical_xor(bool Lhs, bool Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Bool", "logical_xor");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Bool", "logical_xor");
 
 	Params::SolarisMathLibrary_Bool_logical_xor Parms{};
 
@@ -284,10 +257,7 @@ bool USolarisMathLibrary_Bool::logical_xor(bool Lhs, bool Rhs)
 
 int32 USolarisMathLibrary_Int::abs(int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "abs");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "abs");
 
 	Params::SolarisMathLibrary_Int_abs Parms{};
 
@@ -313,10 +283,7 @@ int32 USolarisMathLibrary_Int::abs(int32 Value)
 
 int32 USolarisMathLibrary_Int::Add(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "Add");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "Add");
 
 	Params::SolarisMathLibrary_Int_Add Parms{};
 
@@ -343,10 +310,7 @@ int32 USolarisMathLibrary_Int::Add(int32 Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::add_equals(int32* Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "add_equals");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "add_equals");
 
 	Params::SolarisMathLibrary_Int_add_equals Parms{};
 
@@ -375,10 +339,7 @@ int32 USolarisMathLibrary_Int::add_equals(int32* Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::Divide(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "Divide");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "Divide");
 
 	Params::SolarisMathLibrary_Int_Divide Parms{};
 
@@ -405,10 +366,7 @@ int32 USolarisMathLibrary_Int::Divide(int32 Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::divide_equals(int32* Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "divide_equals");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "divide_equals");
 
 	Params::SolarisMathLibrary_Int_divide_equals Parms{};
 
@@ -437,10 +395,7 @@ int32 USolarisMathLibrary_Int::divide_equals(int32* Lhs, int32 Rhs)
 
 bool USolarisMathLibrary_Int::equal(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "equal");
 
 	Params::SolarisMathLibrary_Int_equal Parms{};
 
@@ -467,10 +422,7 @@ bool USolarisMathLibrary_Int::equal(int32 Lhs, int32 Rhs)
 
 bool USolarisMathLibrary_Int::greater(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "greater");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "greater");
 
 	Params::SolarisMathLibrary_Int_greater Parms{};
 
@@ -497,10 +449,7 @@ bool USolarisMathLibrary_Int::greater(int32 Lhs, int32 Rhs)
 
 bool USolarisMathLibrary_Int::greater_equal(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "greater_equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "greater_equal");
 
 	Params::SolarisMathLibrary_Int_greater_equal Parms{};
 
@@ -527,10 +476,7 @@ bool USolarisMathLibrary_Int::greater_equal(int32 Lhs, int32 Rhs)
 
 bool USolarisMathLibrary_Int::less(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "less");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "less");
 
 	Params::SolarisMathLibrary_Int_less Parms{};
 
@@ -557,10 +503,7 @@ bool USolarisMathLibrary_Int::less(int32 Lhs, int32 Rhs)
 
 bool USolarisMathLibrary_Int::less_equal(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "less_equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "less_equal");
 
 	Params::SolarisMathLibrary_Int_less_equal Parms{};
 
@@ -587,10 +530,7 @@ bool USolarisMathLibrary_Int::less_equal(int32 Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::max_0(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "max");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "max");
 
 	Params::SolarisMathLibrary_Int_max_0 Parms{};
 
@@ -617,10 +557,7 @@ int32 USolarisMathLibrary_Int::max_0(int32 Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::min_0(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "min");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "min");
 
 	Params::SolarisMathLibrary_Int_min_0 Parms{};
 
@@ -647,10 +584,7 @@ int32 USolarisMathLibrary_Int::min_0(int32 Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::Multiply(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "Multiply");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "Multiply");
 
 	Params::SolarisMathLibrary_Int_Multiply Parms{};
 
@@ -677,10 +611,7 @@ int32 USolarisMathLibrary_Int::Multiply(int32 Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::multiply_equals(int32* Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "multiply_equals");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "multiply_equals");
 
 	Params::SolarisMathLibrary_Int_multiply_equals Parms{};
 
@@ -708,10 +639,7 @@ int32 USolarisMathLibrary_Int::multiply_equals(int32* Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::negate(int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "negate");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "negate");
 
 	Params::SolarisMathLibrary_Int_negate Parms{};
 
@@ -737,10 +665,7 @@ int32 USolarisMathLibrary_Int::negate(int32 Value)
 
 bool USolarisMathLibrary_Int::not_equal(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "not_equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "not_equal");
 
 	Params::SolarisMathLibrary_Int_not_equal Parms{};
 
@@ -767,10 +692,7 @@ bool USolarisMathLibrary_Int::not_equal(int32 Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::Subtract(int32 Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "Subtract");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "Subtract");
 
 	Params::SolarisMathLibrary_Int_Subtract Parms{};
 
@@ -797,10 +719,7 @@ int32 USolarisMathLibrary_Int::Subtract(int32 Lhs, int32 Rhs)
 
 int32 USolarisMathLibrary_Int::subtract_equals(int32* Lhs, int32 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "subtract_equals");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Int", "subtract_equals");
 
 	Params::SolarisMathLibrary_Int_subtract_equals Parms{};
 
@@ -828,10 +747,7 @@ int32 USolarisMathLibrary_Int::subtract_equals(int32* Lhs, int32 Rhs)
 
 float USolarisMathLibrary_Float::abs(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "abs");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "abs");
 
 	Params::SolarisMathLibrary_Float_abs Parms{};
 
@@ -857,10 +773,7 @@ float USolarisMathLibrary_Float::abs(float Value)
 
 float USolarisMathLibrary_Float::Add(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "Add");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "Add");
 
 	Params::SolarisMathLibrary_Float_Add Parms{};
 
@@ -887,10 +800,7 @@ float USolarisMathLibrary_Float::Add(float Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::add_equals(float* Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "add_equals");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "add_equals");
 
 	Params::SolarisMathLibrary_Float_add_equals Parms{};
 
@@ -919,10 +829,7 @@ float USolarisMathLibrary_Float::add_equals(float* Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::assign(float* Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "assign");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "assign");
 
 	Params::SolarisMathLibrary_Float_assign Parms{};
 
@@ -951,10 +858,7 @@ float USolarisMathLibrary_Float::assign(float* Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::Divide(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "Divide");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "Divide");
 
 	Params::SolarisMathLibrary_Float_Divide Parms{};
 
@@ -981,10 +885,7 @@ float USolarisMathLibrary_Float::Divide(float Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::divide_equals(float* Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "divide_equals");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "divide_equals");
 
 	Params::SolarisMathLibrary_Float_divide_equals Parms{};
 
@@ -1013,10 +914,7 @@ float USolarisMathLibrary_Float::divide_equals(float* Lhs, float Rhs)
 
 bool USolarisMathLibrary_Float::equal(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "equal");
 
 	Params::SolarisMathLibrary_Float_equal Parms{};
 
@@ -1043,10 +941,7 @@ bool USolarisMathLibrary_Float::equal(float Lhs, float Rhs)
 
 bool USolarisMathLibrary_Float::greater(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "greater");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "greater");
 
 	Params::SolarisMathLibrary_Float_greater Parms{};
 
@@ -1073,10 +968,7 @@ bool USolarisMathLibrary_Float::greater(float Lhs, float Rhs)
 
 bool USolarisMathLibrary_Float::greater_equal(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "greater_equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "greater_equal");
 
 	Params::SolarisMathLibrary_Float_greater_equal Parms{};
 
@@ -1103,10 +995,7 @@ bool USolarisMathLibrary_Float::greater_equal(float Lhs, float Rhs)
 
 bool USolarisMathLibrary_Float::less(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "less");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "less");
 
 	Params::SolarisMathLibrary_Float_less Parms{};
 
@@ -1133,10 +1022,7 @@ bool USolarisMathLibrary_Float::less(float Lhs, float Rhs)
 
 bool USolarisMathLibrary_Float::less_equal(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "less_equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "less_equal");
 
 	Params::SolarisMathLibrary_Float_less_equal Parms{};
 
@@ -1163,10 +1049,7 @@ bool USolarisMathLibrary_Float::less_equal(float Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::max_0(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "max");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "max");
 
 	Params::SolarisMathLibrary_Float_max_0 Parms{};
 
@@ -1193,10 +1076,7 @@ float USolarisMathLibrary_Float::max_0(float Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::min_0(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "min");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "min");
 
 	Params::SolarisMathLibrary_Float_min_0 Parms{};
 
@@ -1223,10 +1103,7 @@ float USolarisMathLibrary_Float::min_0(float Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::Multiply(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "Multiply");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "Multiply");
 
 	Params::SolarisMathLibrary_Float_Multiply Parms{};
 
@@ -1253,10 +1130,7 @@ float USolarisMathLibrary_Float::Multiply(float Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::multiply_equals(float* Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "multiply_equals");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "multiply_equals");
 
 	Params::SolarisMathLibrary_Float_multiply_equals Parms{};
 
@@ -1284,10 +1158,7 @@ float USolarisMathLibrary_Float::multiply_equals(float* Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::negate(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "negate");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "negate");
 
 	Params::SolarisMathLibrary_Float_negate Parms{};
 
@@ -1313,10 +1184,7 @@ float USolarisMathLibrary_Float::negate(float Value)
 
 bool USolarisMathLibrary_Float::not_equal(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "not_equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "not_equal");
 
 	Params::SolarisMathLibrary_Float_not_equal Parms{};
 
@@ -1343,10 +1211,7 @@ bool USolarisMathLibrary_Float::not_equal(float Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::Subtract(float Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "Subtract");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "Subtract");
 
 	Params::SolarisMathLibrary_Float_Subtract Parms{};
 
@@ -1373,10 +1238,7 @@ float USolarisMathLibrary_Float::Subtract(float Lhs, float Rhs)
 
 float USolarisMathLibrary_Float::subtract_equals(float* Lhs, float Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "subtract_equals");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Float", "subtract_equals");
 
 	Params::SolarisMathLibrary_Float_subtract_equals Parms{};
 
@@ -1405,10 +1267,7 @@ float USolarisMathLibrary_Float::subtract_equals(float* Lhs, float Rhs)
 
 bool USolarisMathLibrary_String::equal(const class FString& Lhs, const class FString& Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_String", "equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_String", "equal");
 
 	Params::SolarisMathLibrary_String_equal Parms{};
 
@@ -1435,10 +1294,7 @@ bool USolarisMathLibrary_String::equal(const class FString& Lhs, const class FSt
 
 bool USolarisMathLibrary_String::not_equal(const class FString& Lhs, const class FString& Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_String", "not_equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_String", "not_equal");
 
 	Params::SolarisMathLibrary_String_not_equal Parms{};
 
@@ -1465,10 +1321,7 @@ bool USolarisMathLibrary_String::not_equal(const class FString& Lhs, const class
 
 bool USolarisMathLibrary_Object::equal(class UObject* Lhs, class UObject* Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Object", "equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Object", "equal");
 
 	Params::SolarisMathLibrary_Object_equal Parms{};
 
@@ -1495,10 +1348,7 @@ bool USolarisMathLibrary_Object::equal(class UObject* Lhs, class UObject* Rhs)
 
 bool USolarisMathLibrary_Object::not_equal(class UObject* Lhs, class UObject* Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Object", "not_equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Object", "not_equal");
 
 	Params::SolarisMathLibrary_Object_not_equal Parms{};
 
@@ -1525,10 +1375,7 @@ bool USolarisMathLibrary_Object::not_equal(class UObject* Lhs, class UObject* Rh
 
 bool USolarisMathLibrary_Enum::equal(uint8 Lhs, uint8 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Enum", "equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Enum", "equal");
 
 	Params::SolarisMathLibrary_Enum_equal Parms{};
 
@@ -1555,10 +1402,7 @@ bool USolarisMathLibrary_Enum::equal(uint8 Lhs, uint8 Rhs)
 
 bool USolarisMathLibrary_Enum::not_equal(uint8 Lhs, uint8 Rhs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisMathLibrary_Enum", "not_equal");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisMathLibrary_Enum", "not_equal");
 
 	Params::SolarisMathLibrary_Enum_not_equal Parms{};
 
@@ -1584,10 +1428,7 @@ bool USolarisMathLibrary_Enum::not_equal(uint8 Lhs, uint8 Rhs)
 
 class UClass* USolarisUtilLibrary::GetClass(class UObject* Object)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisUtilLibrary", "GetClass");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisUtilLibrary", "GetClass");
 
 	Params::SolarisUtilLibrary_GetClass Parms{};
 
@@ -1613,10 +1454,7 @@ class UClass* USolarisUtilLibrary::GetClass(class UObject* Object)
 
 int32 USolarisUtilLibrary::GetOptionalValue(class UObject* Property, int32 Optional)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisUtilLibrary", "GetOptionalValue");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisUtilLibrary", "GetOptionalValue");
 
 	Params::SolarisUtilLibrary_GetOptionalValue Parms{};
 
@@ -1643,10 +1481,7 @@ int32 USolarisUtilLibrary::GetOptionalValue(class UObject* Property, int32 Optio
 
 bool USolarisUtilLibrary::HasTrait(class UObject* Object, class UClass* TraitClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisUtilLibrary", "HasTrait");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisUtilLibrary", "HasTrait");
 
 	Params::SolarisUtilLibrary_HasTrait Parms{};
 
@@ -1672,10 +1507,7 @@ bool USolarisUtilLibrary::HasTrait(class UObject* Object, class UClass* TraitCla
 
 class UObject* USolarisUtilLibrary::InstantiateObject(class UClass* Type)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisUtilLibrary", "InstantiateObject");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisUtilLibrary", "InstantiateObject");
 
 	Params::SolarisUtilLibrary_InstantiateObject Parms{};
 
@@ -1700,10 +1532,7 @@ class UObject* USolarisUtilLibrary::InstantiateObject(class UClass* Type)
 
 bool USolarisUtilLibrary::IsNonNullObject(class UObject* Object)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisUtilLibrary", "IsNonNullObject");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisUtilLibrary", "IsNonNullObject");
 
 	Params::SolarisUtilLibrary_IsNonNullObject Parms{};
 
@@ -1729,10 +1558,7 @@ bool USolarisUtilLibrary::IsNonNullObject(class UObject* Object)
 
 bool USolarisUtilLibrary::IsOptionalSet(class UObject* Property, int32 Optional)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisUtilLibrary", "IsOptionalSet");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisUtilLibrary", "IsOptionalSet");
 
 	Params::SolarisUtilLibrary_IsOptionalSet Parms{};
 
@@ -1759,10 +1585,7 @@ bool USolarisUtilLibrary::IsOptionalSet(class UObject* Property, int32 Optional)
 
 bool USolarisUtilLibrary::MakeOptionalFromValue(class UObject* Property, int32 Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisUtilLibrary", "MakeOptionalFromValue");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisUtilLibrary", "MakeOptionalFromValue");
 
 	Params::SolarisUtilLibrary_MakeOptionalFromValue Parms{};
 
@@ -1788,10 +1611,7 @@ bool USolarisUtilLibrary::MakeOptionalFromValue(class UObject* Property, int32 V
 
 int32 USolarisUtilLibrary::MakeUnsetOptional(class UObject* Property)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("SolarisUtilLibrary", "MakeUnsetOptional");
+	class UFunction* Func = StaticClass()->GetFunction("SolarisUtilLibrary", "MakeUnsetOptional");
 
 	Params::SolarisUtilLibrary_MakeUnsetOptional Parms{};
 

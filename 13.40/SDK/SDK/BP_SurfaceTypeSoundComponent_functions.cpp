@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_SurfaceTypeSoundComponent_C::ExecuteUbergraph_BP_SurfaceTypeSoundComponent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "ExecuteUbergraph_BP_SurfaceTypeSoundComponent");
+	class UFunction* Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "ExecuteUbergraph_BP_SurfaceTypeSoundComponent");
 
 	Params::BP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundComponent Parms{};
 
@@ -41,10 +38,7 @@ void UBP_SurfaceTypeSoundComponent_C::ExecuteUbergraph_BP_SurfaceTypeSoundCompon
 
 void UBP_SurfaceTypeSoundComponent_C::Test_Delay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "Test Delay");
+	class UFunction* Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "Test Delay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UBP_SurfaceTypeSoundComponent_C::Test_Delay()
 
 void UBP_SurfaceTypeSoundComponent_C::PlaySound(const struct FVector& Location_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "PlaySound");
+	class UFunction* Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "PlaySound");
 
 	Params::BP_SurfaceTypeSoundComponent_C_PlaySound Parms{};
 
@@ -78,10 +69,7 @@ void UBP_SurfaceTypeSoundComponent_C::PlaySound(const struct FVector& Location_0
 
 void UBP_SurfaceTypeSoundComponent_C::SetSurfaceType(EPhysicalSurface SurfaceType_0, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "SetSurfaceType");
+	class UFunction* Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "SetSurfaceType");
 
 	Params::BP_SurfaceTypeSoundComponent_C_SetSurfaceType Parms{};
 
@@ -97,10 +85,7 @@ void UBP_SurfaceTypeSoundComponent_C::SetSurfaceType(EPhysicalSurface SurfaceTyp
 
 void UBP_SurfaceTypeSoundComponent_C::ActuallyPlaySound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "ActuallyPlaySound");
+	class UFunction* Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "ActuallyPlaySound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

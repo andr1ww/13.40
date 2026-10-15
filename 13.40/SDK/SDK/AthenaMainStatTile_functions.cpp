@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaMainStatTile_C::SetStatValue(const class FText& StatValueAsText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMainStatTile_C", "SetStatValue");
+	class UFunction* Func = Class->GetFunction("AthenaMainStatTile_C", "SetStatValue");
 
 	Params::AthenaMainStatTile_C_SetStatValue Parms{};
 

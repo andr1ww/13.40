@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_BGA_Athena_CampFire_Trap_C::ExecuteUbergraph_B_BGA_Athena_CampFire_Trap(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_CampFire_Trap_C", "ExecuteUbergraph_B_BGA_Athena_CampFire_Trap");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_CampFire_Trap_C", "ExecuteUbergraph_B_BGA_Athena_CampFire_Trap");
 
 	Params::B_BGA_Athena_CampFire_Trap_C_ExecuteUbergraph_B_BGA_Athena_CampFire_Trap Parms{};
 
@@ -44,10 +41,7 @@ void AB_BGA_Athena_CampFire_Trap_C::ExecuteUbergraph_B_BGA_Athena_CampFire_Trap(
 
 void AB_BGA_Athena_CampFire_Trap_C::OnBuildingActorInitialized(EFortBuildingInitializationReason InitializationReason, EFortBuildingPersistentState BuildingPersistentState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_CampFire_Trap_C", "OnBuildingActorInitialized");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_CampFire_Trap_C", "OnBuildingActorInitialized");
 
 	Params::B_BGA_Athena_CampFire_Trap_C_OnBuildingActorInitialized Parms{};
 

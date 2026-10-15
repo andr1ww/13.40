@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGCN_Athena_ChillBronco_Explode_C::ExecuteUbergraph_GCN_Athena_ChillBronco_Explode(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_ChillBronco_Explode_C", "ExecuteUbergraph_GCN_Athena_ChillBronco_Explode");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_ChillBronco_Explode_C", "ExecuteUbergraph_GCN_Athena_ChillBronco_Explode");
 
 	Params::GCN_Athena_ChillBronco_Explode_C_ExecuteUbergraph_GCN_Athena_ChillBronco_Explode Parms{};
 
@@ -48,10 +45,7 @@ void UGCN_Athena_ChillBronco_Explode_C::ExecuteUbergraph_GCN_Athena_ChillBronco_
 
 void UGCN_Athena_ChillBronco_Explode_C::OnBurst(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_ChillBronco_Explode_C", "OnBurst");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_ChillBronco_Explode_C", "OnBurst");
 
 	Params::GCN_Athena_ChillBronco_Explode_C_OnBurst Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UStoreMain_OfferDetails_C::ExecuteUbergraph_StoreMain_OfferDetails(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "ExecuteUbergraph_StoreMain_OfferDetails");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "ExecuteUbergraph_StoreMain_OfferDetails");
 
 	Params::StoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails Parms{};
 
@@ -41,10 +38,7 @@ void UStoreMain_OfferDetails_C::ExecuteUbergraph_StoreMain_OfferDetails(int32 En
 
 void UStoreMain_OfferDetails_C::OnOfferSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnOfferSet");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnOfferSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UStoreMain_OfferDetails_C::OnOfferSet()
 
 void UStoreMain_OfferDetails_C::OnPurchasingStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnPurchasingStarted");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnPurchasingStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UStoreMain_OfferDetails_C::OnPurchasingStarted()
 
 void UStoreMain_OfferDetails_C::ResetPurchaseButtonText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "ResetPurchaseButtonText");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "ResetPurchaseButtonText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UStoreMain_OfferDetails_C::ResetPurchaseButtonText()
 
 void UStoreMain_OfferDetails_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "HandleBack");
 
 	Params::StoreMain_OfferDetails_C_HandleBack Parms{};
 
@@ -104,10 +89,7 @@ void UStoreMain_OfferDetails_C::HandleBack(bool* PassThrough)
 
 void UStoreMain_OfferDetails_C::Init()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "Init");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "Init");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -118,10 +100,7 @@ void UStoreMain_OfferDetails_C::Init()
 
 void UStoreMain_OfferDetails_C::PopDetails()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "PopDetails");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "PopDetails");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -132,10 +111,7 @@ void UStoreMain_OfferDetails_C::PopDetails()
 
 void UStoreMain_OfferDetails_C::RegisterInput()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "RegisterInput");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "RegisterInput");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -146,10 +122,7 @@ void UStoreMain_OfferDetails_C::RegisterInput()
 
 void UStoreMain_OfferDetails_C::UnregisterInput()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "UnregisterInput");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "UnregisterInput");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -160,10 +133,7 @@ void UStoreMain_OfferDetails_C::UnregisterInput()
 
 void UStoreMain_OfferDetails_C::InitStoreTypeVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitStoreTypeVisuals");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitStoreTypeVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -174,10 +144,7 @@ void UStoreMain_OfferDetails_C::InitStoreTypeVisuals()
 
 void UStoreMain_OfferDetails_C::InitCurrency()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitCurrency");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitCurrency");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +158,7 @@ void UStoreMain_OfferDetails_C::InitCurrency()
 
 void UStoreMain_OfferDetails_C::GetCurrencyABAssetFromQuantity(int32 Quantity, class UFortMtxOfferData** DataAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "GetCurrencyABAssetFromQuantity");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "GetCurrencyABAssetFromQuantity");
 
 	Params::StoreMain_OfferDetails_C_GetCurrencyABAssetFromQuantity Parms{};
 
@@ -214,10 +178,7 @@ void UStoreMain_OfferDetails_C::GetCurrencyABAssetFromQuantity(int32 Quantity, c
 
 bool UStoreMain_OfferDetails_C::IsGiftingStorefrontOffer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "IsGiftingStorefrontOffer");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "IsGiftingStorefrontOffer");
 
 	Params::StoreMain_OfferDetails_C_IsGiftingStorefrontOffer Parms{};
 
@@ -234,10 +195,7 @@ bool UStoreMain_OfferDetails_C::IsGiftingStorefrontOffer()
 
 void UStoreMain_OfferDetails_C::SetPurchaseButtonText(const class FText& ButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "SetPurchaseButtonText");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "SetPurchaseButtonText");
 
 	Params::StoreMain_OfferDetails_C_SetPurchaseButtonText Parms{};
 
@@ -252,10 +210,7 @@ void UStoreMain_OfferDetails_C::SetPurchaseButtonText(const class FText& ButtonT
 
 void UStoreMain_OfferDetails_C::InitDetailAttributes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitDetailAttributes");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitDetailAttributes");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -266,10 +221,7 @@ void UStoreMain_OfferDetails_C::InitDetailAttributes()
 
 void UStoreMain_OfferDetails_C::UpdatePurchaseButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "UpdatePurchaseButton");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "UpdatePurchaseButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -280,10 +232,7 @@ void UStoreMain_OfferDetails_C::UpdatePurchaseButton()
 
 void UStoreMain_OfferDetails_C::SetupCurrencyImage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_OfferDetails_C", "SetupCurrencyImage");
+	class UFunction* Func = Class->GetFunction("StoreMain_OfferDetails_C", "SetupCurrencyImage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

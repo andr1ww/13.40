@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_BP12_TransitionDoor_C::ExecuteUbergraph_BP_BP12_TransitionDoor(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "ExecuteUbergraph_BP_BP12_TransitionDoor");
+	class UFunction* Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "ExecuteUbergraph_BP_BP12_TransitionDoor");
 
 	Params::BP_BP12_TransitionDoor_C_ExecuteUbergraph_BP_BP12_TransitionDoor Parms{};
 
@@ -41,10 +38,7 @@ void ABP_BP12_TransitionDoor_C::ExecuteUbergraph_BP_BP12_TransitionDoor(int32 En
 
 void ABP_BP12_TransitionDoor_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_BP12_TransitionDoor_C::ReceiveBeginPlay()
 
 void ABP_BP12_TransitionDoor_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_BP12_TransitionDoor_C::Timeline_0__UpdateFunc()
 
 void ABP_BP12_TransitionDoor_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_BP12_TransitionDoor_C::Timeline_0__FinishedFunc()
 
 void ABP_BP12_TransitionDoor_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_BP12_TransitionDoor_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

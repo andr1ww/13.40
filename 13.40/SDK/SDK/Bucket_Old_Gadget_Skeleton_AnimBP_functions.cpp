@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBucket_Old_Gadget_Skeleton_AnimBP_C::ExecuteUbergraph_Bucket_Old_Gadget_Skeleton_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Bucket_Old_Gadget_Skeleton_AnimBP_C", "ExecuteUbergraph_Bucket_Old_Gadget_Skeleton_AnimBP");
+	class UFunction* Func = Class->GetFunction("Bucket_Old_Gadget_Skeleton_AnimBP_C", "ExecuteUbergraph_Bucket_Old_Gadget_Skeleton_AnimBP");
 
 	Params::Bucket_Old_Gadget_Skeleton_AnimBP_C_ExecuteUbergraph_Bucket_Old_Gadget_Skeleton_AnimBP Parms{};
 
@@ -44,10 +41,7 @@ void UBucket_Old_Gadget_Skeleton_AnimBP_C::ExecuteUbergraph_Bucket_Old_Gadget_Sk
 
 void UBucket_Old_Gadget_Skeleton_AnimBP_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Bucket_Old_Gadget_Skeleton_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("Bucket_Old_Gadget_Skeleton_AnimBP_C", "AnimGraph");
 
 	Params::Bucket_Old_Gadget_Skeleton_AnimBP_C_AnimGraph Parms{};
 

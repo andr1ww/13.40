@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Athena_LowGravity_ZipLine_C::ExecuteUbergraph_GCN_Athena_LowGravity_ZipLine(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_ZipLine_C", "ExecuteUbergraph_GCN_Athena_LowGravity_ZipLine");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_ZipLine_C", "ExecuteUbergraph_GCN_Athena_LowGravity_ZipLine");
 
 	Params::GCN_Athena_LowGravity_ZipLine_C_ExecuteUbergraph_GCN_Athena_LowGravity_ZipLine Parms{};
 
@@ -43,10 +40,7 @@ void AGCN_Athena_LowGravity_ZipLine_C::ExecuteUbergraph_GCN_Athena_LowGravity_Zi
 
 void AGCN_Athena_LowGravity_ZipLine_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_LowGravity_ZipLine_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_LowGravity_ZipLine_C", "ReceiveTick");
 
 	Params::GCN_Athena_LowGravity_ZipLine_C_ReceiveTick Parms{};
 

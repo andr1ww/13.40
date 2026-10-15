@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UStreamingRadioPlayerComponent_Valet::ValetVehicleExploded(class AFortDagwoodVehicle* Veh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent_Valet", "ValetVehicleExploded");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent_Valet", "ValetVehicleExploded");
 
 	Params::StreamingRadioPlayerComponent_Valet_ValetVehicleExploded Parms{};
 

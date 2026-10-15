@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ULiveStreamVoiceSubsystem::ClearVoiceSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamVoiceSubsystem", "ClearVoiceSettings");
+	class UFunction* Func = Class->GetFunction("LiveStreamVoiceSubsystem", "ClearVoiceSettings");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -43,10 +40,7 @@ void ULiveStreamVoiceSubsystem::ClearVoiceSettings()
 
 void ULiveStreamVoiceSubsystem::EnableLocalVoiceProcessing(uint8 LocalUserNum, bool bEnable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamVoiceSubsystem", "EnableLocalVoiceProcessing");
+	class UFunction* Func = Class->GetFunction("LiveStreamVoiceSubsystem", "EnableLocalVoiceProcessing");
 
 	Params::LiveStreamVoiceSubsystem_EnableLocalVoiceProcessing Parms{};
 
@@ -69,10 +63,7 @@ void ULiveStreamVoiceSubsystem::EnableLocalVoiceProcessing(uint8 LocalUserNum, b
 
 void ULiveStreamVoiceSubsystem::SetVoiceSettings(const struct FVoiceSettings& InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LiveStreamVoiceSubsystem", "SetVoiceSettings");
+	class UFunction* Func = Class->GetFunction("LiveStreamVoiceSubsystem", "SetVoiceSettings");
 
 	Params::LiveStreamVoiceSubsystem_SetVoiceSettings Parms{};
 

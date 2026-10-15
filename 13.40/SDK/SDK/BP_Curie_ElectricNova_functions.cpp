@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Curie_ElectricNova_C::ExecuteUbergraph_BP_Curie_ElectricNova(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_ElectricNova_C", "ExecuteUbergraph_BP_Curie_ElectricNova");
+	class UFunction* Func = Class->GetFunction("BP_Curie_ElectricNova_C", "ExecuteUbergraph_BP_Curie_ElectricNova");
 
 	Params::BP_Curie_ElectricNova_C_ExecuteUbergraph_BP_Curie_ElectricNova Parms{};
 
@@ -49,10 +46,7 @@ void ABP_Curie_ElectricNova_C::ExecuteUbergraph_BP_Curie_ElectricNova(int32 Entr
 
 void ABP_Curie_ElectricNova_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_ElectricNova_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("BP_Curie_ElectricNova_C", "OnDeathPlayEffects");
 
 	Params::BP_Curie_ElectricNova_C_OnDeathPlayEffects Parms{};
 
@@ -73,10 +67,7 @@ void ABP_Curie_ElectricNova_C::OnDeathPlayEffects(float Damage, const struct FGa
 
 void ABP_Curie_ElectricNova_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_ElectricNova_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Curie_ElectricNova_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,10 +78,7 @@ void ABP_Curie_ElectricNova_C::ReceiveBeginPlay()
 
 void ABP_Curie_ElectricNova_C::ScaleTimeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_ElectricNova_C", "ScaleTimeline__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_Curie_ElectricNova_C", "ScaleTimeline__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -101,10 +89,7 @@ void ABP_Curie_ElectricNova_C::ScaleTimeline__UpdateFunc()
 
 void ABP_Curie_ElectricNova_C::ScaleTimeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_ElectricNova_C", "ScaleTimeline__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_Curie_ElectricNova_C", "ScaleTimeline__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +100,7 @@ void ABP_Curie_ElectricNova_C::ScaleTimeline__FinishedFunc()
 
 void ABP_Curie_ElectricNova_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Curie_ElectricNova_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_Curie_ElectricNova_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

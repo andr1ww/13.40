@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UTT_Ninja_Tactical_MeleeHitsHeal_C::InitializeAbilityInstanceInternal(const class UGameplayAbility* AbilityInstance, const class UFortTooltipContext* Context) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TT_Ninja_Tactical_MeleeHitsHeal_C", "InitializeAbilityInstanceInternal");
+	class UFunction* Func = Class->GetFunction("TT_Ninja_Tactical_MeleeHitsHeal_C", "InitializeAbilityInstanceInternal");
 
 	Params::TT_Ninja_Tactical_MeleeHitsHeal_C_InitializeAbilityInstanceInternal Parms{};
 
@@ -50,10 +47,7 @@ void UTT_Ninja_Tactical_MeleeHitsHeal_C::InitializeAbilityInstanceInternal(const
 
 bool UTT_Ninja_Tactical_MeleeHitsHeal_C::GetTextForTokenFromAbilityInstanceInternal(const class UGameplayAbility* AbilityInstance, const struct FGameplayTag& Tag, const class UFortTooltipContext* Context, const struct FGameplayTag& Token, class FText* OutText) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TT_Ninja_Tactical_MeleeHitsHeal_C", "GetTextForTokenFromAbilityInstanceInternal");
+	class UFunction* Func = Class->GetFunction("TT_Ninja_Tactical_MeleeHitsHeal_C", "GetTextForTokenFromAbilityInstanceInternal");
 
 	Params::TT_Ninja_Tactical_MeleeHitsHeal_C_GetTextForTokenFromAbilityInstanceInternal Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ATrap_Floor_Player_Campfire_C::ExecuteUbergraph_Trap_Floor_Player_Campfire(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "ExecuteUbergraph_Trap_Floor_Player_Campfire");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "ExecuteUbergraph_Trap_Floor_Player_Campfire");
 
 	Params::Trap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire Parms{};
 
@@ -49,10 +46,7 @@ void ATrap_Floor_Player_Campfire_C::ExecuteUbergraph_Trap_Floor_Player_Campfire(
 
 void ATrap_Floor_Player_Campfire_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnDeathServer");
 
 	Params::Trap_Floor_Player_Campfire_C_OnDeathServer Parms{};
 
@@ -81,10 +75,7 @@ void ATrap_Floor_Player_Campfire_C::OnDeathServer(float Damage, const struct FGa
 
 void ATrap_Floor_Player_Campfire_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnDeathPlayEffects");
 
 	Params::Trap_Floor_Player_Campfire_C_OnDeathPlayEffects Parms{};
 
@@ -105,10 +96,7 @@ void ATrap_Floor_Player_Campfire_C::OnDeathPlayEffects(float Damage, const struc
 
 void ATrap_Floor_Player_Campfire_C::CharLogs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "CharLogs");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "CharLogs");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +107,7 @@ void ATrap_Floor_Player_Campfire_C::CharLogs()
 
 void ATrap_Floor_Player_Campfire_C::DousedTime()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DousedTime");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DousedTime");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -135,10 +120,7 @@ void ATrap_Floor_Player_Campfire_C::DousedTime()
 
 void ATrap_Floor_Player_Campfire_C::TriggerLaunchEffects(class AFortPlayerPawnAthena* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "TriggerLaunchEffects");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "TriggerLaunchEffects");
 
 	Params::Trap_Floor_Player_Campfire_C_TriggerLaunchEffects Parms{};
 
@@ -153,10 +135,7 @@ void ATrap_Floor_Player_Campfire_C::TriggerLaunchEffects(class AFortPlayerPawnAt
 
 void ATrap_Floor_Player_Campfire_C::OnOutOfDurability()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnOutOfDurability");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnOutOfDurability");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -170,10 +149,7 @@ void ATrap_Floor_Player_Campfire_C::OnOutOfDurability()
 
 void ATrap_Floor_Player_Campfire_C::GameplayCue_Abilities_Activation_Traps_ActivateTrap(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
 
 	Params::Trap_Floor_Player_Campfire_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap Parms{};
 
@@ -192,10 +168,7 @@ void ATrap_Floor_Player_Campfire_C::GameplayCue_Abilities_Activation_Traps_Activ
 
 void ATrap_Floor_Player_Campfire_C::GameplayCue_Abilities_Activation_Traps_ReloadBegin(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
 
 	Params::Trap_Floor_Player_Campfire_C_GameplayCue_Abilities_Activation_Traps_ReloadBegin Parms{};
 
@@ -211,10 +184,7 @@ void ATrap_Floor_Player_Campfire_C::GameplayCue_Abilities_Activation_Traps_Reloa
 
 void ATrap_Floor_Player_Campfire_C::OnFinishedBuilding()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnFinishedBuilding");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnFinishedBuilding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,10 +195,7 @@ void ATrap_Floor_Player_Campfire_C::OnFinishedBuilding()
 
 void ATrap_Floor_Player_Campfire_C::OnPlaced()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnPlaced");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnPlaced");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -239,10 +206,7 @@ void ATrap_Floor_Player_Campfire_C::OnPlaced()
 
 void ATrap_Floor_Player_Campfire_C::OnReloadEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnReloadEnd");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnReloadEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +217,7 @@ void ATrap_Floor_Player_Campfire_C::OnReloadEnd()
 
 void ATrap_Floor_Player_Campfire_C::DarkenLogs__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DarkenLogs__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DarkenLogs__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -267,10 +228,7 @@ void ATrap_Floor_Player_Campfire_C::DarkenLogs__UpdateFunc()
 
 void ATrap_Floor_Player_Campfire_C::DarkenLogs__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DarkenLogs__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DarkenLogs__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -281,10 +239,7 @@ void ATrap_Floor_Player_Campfire_C::DarkenLogs__FinishedFunc()
 
 void ATrap_Floor_Player_Campfire_C::FadeDoused__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "FadeDoused__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "FadeDoused__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -295,10 +250,7 @@ void ATrap_Floor_Player_Campfire_C::FadeDoused__UpdateFunc()
 
 void ATrap_Floor_Player_Campfire_C::FadeDoused__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "FadeDoused__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "FadeDoused__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -309,10 +261,7 @@ void ATrap_Floor_Player_Campfire_C::FadeDoused__FinishedFunc()
 
 void ATrap_Floor_Player_Campfire_C::OnRep_IsActive()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnRep_IsActive");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnRep_IsActive");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -323,10 +272,7 @@ void ATrap_Floor_Player_Campfire_C::OnRep_IsActive()
 
 void ATrap_Floor_Player_Campfire_C::HealTicks()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "HealTicks");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "HealTicks");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -337,10 +283,7 @@ void ATrap_Floor_Player_Campfire_C::HealTicks()
 
 void ATrap_Floor_Player_Campfire_C::InitCampfireEffects()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "InitCampfireEffects");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "InitCampfireEffects");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -353,10 +296,7 @@ void ATrap_Floor_Player_Campfire_C::InitCampfireEffects()
 
 void ATrap_Floor_Player_Campfire_C::CheckIfTargetIsSquadmate(class AFortPlayerPawn* Target_Player)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "CheckIfTargetIsSquadmate");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "CheckIfTargetIsSquadmate");
 
 	Params::Trap_Floor_Player_Campfire_C_CheckIfTargetIsSquadmate Parms{};
 
@@ -373,10 +313,7 @@ void ATrap_Floor_Player_Campfire_C::CheckIfTargetIsSquadmate(class AFortPlayerPa
 
 class AActor* ATrap_Floor_Player_Campfire_C::GetCampFireTrapInstigator()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GetCampFireTrapInstigator");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GetCampFireTrapInstigator");
 
 	Params::Trap_Floor_Player_Campfire_C_GetCampFireTrapInstigator Parms{};
 

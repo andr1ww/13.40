@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAT_ActiveAbility_Hero_C::ExecuteUbergraph_GAT_ActiveAbility_Hero(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "ExecuteUbergraph_GAT_ActiveAbility_Hero");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "ExecuteUbergraph_GAT_ActiveAbility_Hero");
 
 	Params::GAT_ActiveAbility_Hero_C_ExecuteUbergraph_GAT_ActiveAbility_Hero Parms{};
 
@@ -41,10 +38,7 @@ void UGAT_ActiveAbility_Hero_C::ExecuteUbergraph_GAT_ActiveAbility_Hero(int32 En
 
 void UGAT_ActiveAbility_Hero_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGAT_ActiveAbility_Hero_C::K2_ActivateAbility()
 
 void UGAT_ActiveAbility_Hero_C::CommitAbilityWithEvent(bool* Passed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "CommitAbilityWithEvent");
+	class UFunction* Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "CommitAbilityWithEvent");
 
 	Params::GAT_ActiveAbility_Hero_C_CommitAbilityWithEvent Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_WilliePete_WaterBodyChild_C::ExecuteUbergraph_B_WilliePete_WaterBodyChild(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_WilliePete_WaterBodyChild_C", "ExecuteUbergraph_B_WilliePete_WaterBodyChild");
+	class UFunction* Func = Class->GetFunction("B_WilliePete_WaterBodyChild_C", "ExecuteUbergraph_B_WilliePete_WaterBodyChild");
 
 	Params::B_WilliePete_WaterBodyChild_C_ExecuteUbergraph_B_WilliePete_WaterBodyChild Parms{};
 
@@ -41,10 +38,7 @@ void AB_WilliePete_WaterBodyChild_C::ExecuteUbergraph_B_WilliePete_WaterBodyChil
 
 void AB_WilliePete_WaterBodyChild_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_WilliePete_WaterBodyChild_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_WilliePete_WaterBodyChild_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

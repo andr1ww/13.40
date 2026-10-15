@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Loop_Snow_Whiteout_C::ExecuteUbergraph_GCN_Loop_Snow_Whiteout(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ExecuteUbergraph_GCN_Loop_Snow_Whiteout");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ExecuteUbergraph_GCN_Loop_Snow_Whiteout");
 
 	Params::GCN_Loop_Snow_Whiteout_C_ExecuteUbergraph_GCN_Loop_Snow_Whiteout Parms{};
 
@@ -46,10 +43,7 @@ void AGCN_Loop_Snow_Whiteout_C::ExecuteUbergraph_GCN_Loop_Snow_Whiteout(int32 En
 
 void AGCN_Loop_Snow_Whiteout_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "OnLoopingStart");
 
 	Params::GCN_Loop_Snow_Whiteout_C_OnLoopingStart Parms{};
 
@@ -74,10 +68,7 @@ void AGCN_Loop_Snow_Whiteout_C::OnLoopingStart(class AActor* MyTarget, const str
 
 void AGCN_Loop_Snow_Whiteout_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "OnRemoval");
 
 	Params::GCN_Loop_Snow_Whiteout_C_OnRemoval Parms{};
 
@@ -97,10 +88,7 @@ void AGCN_Loop_Snow_Whiteout_C::OnRemoval(class AActor* MyTarget, const struct F
 
 void AGCN_Loop_Snow_Whiteout_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +99,7 @@ void AGCN_Loop_Snow_Whiteout_C::ReceiveDestroyed()
 
 void AGCN_Loop_Snow_Whiteout_C::FadeinOut__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +110,7 @@ void AGCN_Loop_Snow_Whiteout_C::FadeinOut__UpdateFunc()
 
 void AGCN_Loop_Snow_Whiteout_C::FadeinOut__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

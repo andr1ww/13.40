@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPerkWidgetNew_C::SetDescriptionWraptTextAt(float WrapTextAt)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "SetDescriptionWraptTextAt");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "SetDescriptionWraptTextAt");
 
 	Params::PerkWidgetNew_C_SetDescriptionWraptTextAt Parms{};
 
@@ -41,10 +38,7 @@ void UPerkWidgetNew_C::SetDescriptionWraptTextAt(float WrapTextAt)
 
 void UPerkWidgetNew_C::UpdatePerk()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "UpdatePerk");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "UpdatePerk");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UPerkWidgetNew_C::UpdatePerk()
 
 class UWidget* UPerkWidgetNew_C::Get_OverlayAbilityPerk_ToolTipWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "Get_OverlayAbilityPerk_ToolTipWidget");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "Get_OverlayAbilityPerk_ToolTipWidget");
 
 	Params::PerkWidgetNew_C_Get_OverlayAbilityPerk_ToolTipWidget Parms{};
 
@@ -85,10 +76,7 @@ class UWidget* UPerkWidgetNew_C::Get_OverlayAbilityPerk_ToolTipWidget()
 
 void UPerkWidgetNew_C::InitializeSettings(bool bIncludeName, bool bIncludeDescription, bool bUseLegacyFixedSizeIcons, EFortBrushSize IconSize, bool bUseLargeFormatName, const struct FFortUIPerk& Perk, bool ShowMouseTooltips, bool bInShowBadges, float WrapTextAt)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "InitializeSettings");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "InitializeSettings");
 
 	Params::PerkWidgetNew_C_InitializeSettings Parms{};
 
@@ -111,10 +99,7 @@ void UPerkWidgetNew_C::InitializeSettings(bool bIncludeName, bool bIncludeDescri
 
 void UPerkWidgetNew_C::HighlightBadge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "HighlightBadge");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "HighlightBadge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +112,7 @@ void UPerkWidgetNew_C::HighlightBadge()
 
 void UPerkWidgetNew_C::GetPerkStat(struct FTooltipStat* TooltipStat)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "GetPerkStat");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "GetPerkStat");
 
 	Params::PerkWidgetNew_C_GetPerkStat Parms{};
 
@@ -146,10 +128,7 @@ void UPerkWidgetNew_C::GetPerkStat(struct FTooltipStat* TooltipStat)
 
 void UPerkWidgetNew_C::ShowTierImage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "ShowTierImage");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "ShowTierImage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -160,10 +139,7 @@ void UPerkWidgetNew_C::ShowTierImage()
 
 void UPerkWidgetNew_C::SetupBadge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "SetupBadge");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "SetupBadge");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -174,10 +150,7 @@ void UPerkWidgetNew_C::SetupBadge()
 
 void UPerkWidgetNew_C::InitializeHeroBonusIcon()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "InitializeHeroBonusIcon");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "InitializeHeroBonusIcon");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -188,10 +161,7 @@ void UPerkWidgetNew_C::InitializeHeroBonusIcon()
 
 void UPerkWidgetNew_C::InitializeText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "InitializeText");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "InitializeText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -204,10 +174,7 @@ void UPerkWidgetNew_C::InitializeText()
 
 void UPerkWidgetNew_C::ShouldFadePerk(bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "ShouldFadePerk");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "ShouldFadePerk");
 
 	Params::PerkWidgetNew_C_ShouldFadePerk Parms{};
 
@@ -225,10 +192,7 @@ void UPerkWidgetNew_C::ShouldFadePerk(bool* Result)
 
 void UPerkWidgetNew_C::GetHighlightColor(struct FLinearColor* Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "GetHighlightColor");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "GetHighlightColor");
 
 	Params::PerkWidgetNew_C_GetHighlightColor Parms{};
 
@@ -246,10 +210,7 @@ void UPerkWidgetNew_C::GetHighlightColor(struct FLinearColor* Color)
 
 void UPerkWidgetNew_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "GetTierAbilityBrush");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "GetTierAbilityBrush");
 
 	Params::PerkWidgetNew_C_GetTierAbilityBrush Parms{};
 
@@ -265,10 +226,7 @@ void UPerkWidgetNew_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 
 void UPerkWidgetNew_C::InitializeAbilityPerk()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "InitializeAbilityPerk");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "InitializeAbilityPerk");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +237,7 @@ void UPerkWidgetNew_C::InitializeAbilityPerk()
 
 void UPerkWidgetNew_C::InitializeBasicPerk()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "InitializeBasicPerk");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "InitializeBasicPerk");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -295,10 +250,7 @@ void UPerkWidgetNew_C::InitializeBasicPerk()
 
 void UPerkWidgetNew_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "PreConstruct");
 
 	Params::PerkWidgetNew_C_PreConstruct Parms{};
 
@@ -315,10 +267,7 @@ void UPerkWidgetNew_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UPerkWidgetNew_C::OnCombinedTooltipDescriptionReady(const class FText& Description_OnCombinedTooltipDescriptionReady)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "OnCombinedTooltipDescriptionReady");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "OnCombinedTooltipDescriptionReady");
 
 	Params::PerkWidgetNew_C_OnCombinedTooltipDescriptionReady Parms{};
 
@@ -335,10 +284,7 @@ void UPerkWidgetNew_C::OnCombinedTooltipDescriptionReady(const class FText& Desc
 
 void UPerkWidgetNew_C::ExecuteUbergraph_PerkWidgetNew(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "ExecuteUbergraph_PerkWidgetNew");
+	class UFunction* Func = Class->GetFunction("PerkWidgetNew_C", "ExecuteUbergraph_PerkWidgetNew");
 
 	Params::PerkWidgetNew_C_ExecuteUbergraph_PerkWidgetNew Parms{};
 

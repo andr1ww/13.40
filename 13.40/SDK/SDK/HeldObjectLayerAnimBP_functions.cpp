@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UHeldObjectLayerAnimBP_C::ExecuteUbergraph_HeldObjectLayerAnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ExecuteUbergraph_HeldObjectLayerAnimBP");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ExecuteUbergraph_HeldObjectLayerAnimBP");
 
 	Params::HeldObjectLayerAnimBP_C_ExecuteUbergraph_HeldObjectLayerAnimBP Parms{};
 
@@ -41,10 +38,7 @@ void UHeldObjectLayerAnimBP_C::ExecuteUbergraph_HeldObjectLayerAnimBP(int32 Entr
 
 void UHeldObjectLayerAnimBP_C::BlueprintInitializeAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "BlueprintInitializeAnimation");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "BlueprintInitializeAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UHeldObjectLayerAnimBP_C::BlueprintInitializeAnimation()
 
 void UHeldObjectLayerAnimBP_C::AnimNotify_HeldObjectPickUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "AnimNotify_HeldObjectPickUp");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "AnimNotify_HeldObjectPickUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UHeldObjectLayerAnimBP_C::AnimNotify_HeldObjectPickUp()
 
 void UHeldObjectLayerAnimBP_C::AnimNotify_HeldObjectPlace()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "AnimNotify_HeldObjectPlace");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "AnimNotify_HeldObjectPlace");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UHeldObjectLayerAnimBP_C::AnimNotify_HeldObjectPlace()
 
 void UHeldObjectLayerAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_HeldObjectLayerAnimBP_AnimGraphNode_RotationOffsetBlendSpace_C2A887E04220180AB9CD6384FDB74E4E()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_HeldObjectLayerAnimBP_AnimGraphNode_RotationOffsetBlendSpace_C2A887E04220180AB9CD6384FDB74E4E");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_HeldObjectLayerAnimBP_AnimGraphNode_RotationOffsetBlendSpace_C2A887E04220180AB9CD6384FDB74E4E");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UHeldObjectLayerAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_HeldO
 
 void UHeldObjectLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "AnimGraph");
 
 	Params::HeldObjectLayerAnimBP_C_AnimGraph Parms{};
 
@@ -121,10 +103,7 @@ void UHeldObjectLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 void UHeldObjectLayerAnimBP_C::ItemSkeletalControl(const struct FPoseLink& InPose, struct FPoseLink* ItemSkeletalControl_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSkeletalControl");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSkeletalControl");
 
 	Params::HeldObjectLayerAnimBP_C_ItemSkeletalControl Parms{};
 
@@ -144,10 +123,7 @@ void UHeldObjectLayerAnimBP_C::ItemSkeletalControl(const struct FPoseLink& InPos
 
 void UHeldObjectLayerAnimBP_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwimJumpSurfaceEnd_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
 
 	Params::HeldObjectLayerAnimBP_C_ItemSwimJumpSurfaceEnd Parms{};
 
@@ -165,10 +141,7 @@ void UHeldObjectLayerAnimBP_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwim
 
 void UHeldObjectLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSwimJumpSurfaceLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
 
 	Params::HeldObjectLayerAnimBP_C_ItemSwimJumpSurfaceLoop Parms{};
 
@@ -186,10 +159,7 @@ void UHeldObjectLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSwi
 
 void UHeldObjectLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJumpFallLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpFallLoop");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpFallLoop");
 
 	Params::HeldObjectLayerAnimBP_C_ItemSwimJumpFallLoop Parms{};
 
@@ -207,10 +177,7 @@ void UHeldObjectLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJu
 
 void UHeldObjectLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwimJumpStartLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpStartLoop");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpStartLoop");
 
 	Params::HeldObjectLayerAnimBP_C_ItemSwimJumpStartLoop Parms{};
 
@@ -228,10 +195,7 @@ void UHeldObjectLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwimJ
 
 void UHeldObjectLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJumpStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpStart");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSwimJumpStart");
 
 	Params::HeldObjectLayerAnimBP_C_ItemSwimJumpStart Parms{};
 
@@ -250,10 +214,7 @@ void UHeldObjectLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJumpS
 
 void UHeldObjectLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRelaxedEntry, struct FPoseLink* ItemRelaxedEntry_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemRelaxedEntry");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemRelaxedEntry");
 
 	Params::HeldObjectLayerAnimBP_C_ItemRelaxedEntry Parms{};
 
@@ -274,10 +235,7 @@ void UHeldObjectLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRe
 
 void UHeldObjectLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& InPoseLowerBodyJogPostPivot, struct FPoseLink* ItemLowerBodyJogPostPivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
 
 	Params::HeldObjectLayerAnimBP_C_ItemLowerBodyJogPostPivot Parms{};
 
@@ -298,10 +256,7 @@ void UHeldObjectLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink&
 
 void UHeldObjectLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& InPoseLowerBodyJogPrePivot, struct FPoseLink* ItemLowerBodyJogPrePivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
 
 	Params::HeldObjectLayerAnimBP_C_ItemLowerBodyJogPrePivot Parms{};
 
@@ -322,10 +277,7 @@ void UHeldObjectLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& 
 
 void UHeldObjectLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InPoseLowerBodyJogStop, struct FPoseLink* ItemLowerBodyJogStop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyJogStop");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyJogStop");
 
 	Params::HeldObjectLayerAnimBP_C_ItemLowerBodyJogStop Parms{};
 
@@ -346,10 +298,7 @@ void UHeldObjectLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InPo
 
 void UHeldObjectLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& InPoseLowerBodyJogStart, struct FPoseLink* ItemLowerBodyJogStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyJogStart");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyJogStart");
 
 	Params::HeldObjectLayerAnimBP_C_ItemLowerBodyJogStart Parms{};
 
@@ -370,10 +319,7 @@ void UHeldObjectLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& InP
 
 void UHeldObjectLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLink& InPoseLowerBodyLeanAdditive, struct FPoseLink* ItemLowerBodyLeanAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemLowerBodyLeanAdditive Parms{};
 
@@ -394,10 +340,7 @@ void UHeldObjectLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLink&
 
 void UHeldObjectLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& InPoseLowerBodyMovement, struct FPoseLink* ItemLowerBodyMovement_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyMovement");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemLowerBodyMovement");
 
 	Params::HeldObjectLayerAnimBP_C_ItemLowerBodyMovement Parms{};
 
@@ -418,10 +361,7 @@ void UHeldObjectLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& InP
 
 void UHeldObjectLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink& InPosePostPivotAdditive, struct FPoseLink* ItemJogPostPivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJogPostPivotAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJogPostPivotAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemJogPostPivotAdditive Parms{};
 
@@ -442,10 +382,7 @@ void UHeldObjectLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink& 
 
 void UHeldObjectLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& InPosePrePivotAdditive, struct FPoseLink* ItemJogPrePivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJogPrePivotAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJogPrePivotAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemJogPrePivotAdditive Parms{};
 
@@ -466,10 +403,7 @@ void UHeldObjectLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& I
 
 void UHeldObjectLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPoseJogStopAdditive, struct FPoseLink* ItemJogStopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJogStopAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJogStopAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemJogStopAdditive Parms{};
 
@@ -490,10 +424,7 @@ void UHeldObjectLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPos
 
 void UHeldObjectLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InPoseJogStartAdditive, struct FPoseLink* ItemJogStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJogStartAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJogStartAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemJogStartAdditive Parms{};
 
@@ -513,10 +444,7 @@ void UHeldObjectLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InPo
 
 void UHeldObjectLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyModeLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFlyModeLoopAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFlyModeLoopAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemFlyModeLoopAdditive Parms{};
 
@@ -534,10 +462,7 @@ void UHeldObjectLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFly
 
 void UHeldObjectLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFlyModeStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFlyModeStartAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFlyModeStartAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemFlyModeStartAdditive Parms{};
 
@@ -555,10 +480,7 @@ void UHeldObjectLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFl
 
 void UHeldObjectLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZipLineStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemZipLineStartAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemZipLineStartAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemZipLineStartAdditive Parms{};
 
@@ -576,10 +498,7 @@ void UHeldObjectLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZi
 
 void UHeldObjectLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetPackJumpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJetPackJumpAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJetPackJumpAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemJetPackJumpAdditive Parms{};
 
@@ -597,10 +516,7 @@ void UHeldObjectLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJet
 
 void UHeldObjectLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJetPackStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJetPackStartAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJetPackStartAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemJetPackStartAdditive Parms{};
 
@@ -618,10 +534,7 @@ void UHeldObjectLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJe
 
 void UHeldObjectLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLandAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFallLandAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFallLandAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemFallLandAdditive Parms{};
 
@@ -639,10 +552,7 @@ void UHeldObjectLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLa
 
 void UHeldObjectLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFallAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFallAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemFallAdditive Parms{};
 
@@ -660,10 +570,7 @@ void UHeldObjectLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditi
 
 void UHeldObjectLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJumpLoopAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJumpLoopAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemJumpLoopAdditive Parms{};
 
@@ -681,10 +588,7 @@ void UHeldObjectLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLo
 
 void UHeldObjectLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJumpUpAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemJumpUpAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemJumpUpAdditive Parms{};
 
@@ -702,10 +606,7 @@ void UHeldObjectLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAd
 
 void UHeldObjectLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSliding_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSlopeSliding");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemSlopeSliding");
 
 	Params::HeldObjectLayerAnimBP_C_ItemSlopeSliding Parms{};
 
@@ -723,10 +624,7 @@ void UHeldObjectLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSlidi
 
 void UHeldObjectLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCrouchTurningAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemCrouchTurningAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemCrouchTurningAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemCrouchTurningAdditive Parms{};
 
@@ -745,10 +643,7 @@ void UHeldObjectLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemC
 
 void UHeldObjectLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdleAdditive, struct FPoseLink* ItemIdleAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemIdleAdditive");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemIdleAdditive");
 
 	Params::HeldObjectLayerAnimBP_C_ItemIdleAdditive Parms{};
 
@@ -769,10 +664,7 @@ void UHeldObjectLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseId
 
 void UHeldObjectLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPoseSprint, struct FPoseLink* ItemFullBodySprint_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFullBodySprint");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFullBodySprint");
 
 	Params::HeldObjectLayerAnimBP_C_ItemFullBodySprint Parms{};
 
@@ -794,10 +686,7 @@ void UHeldObjectLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPose
 
 void UHeldObjectLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam_0, struct FPoseLink* ItemUpperBody_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemUpperBody");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemUpperBody");
 
 	Params::HeldObjectLayerAnimBP_C_ItemUpperBody Parms{};
 
@@ -823,10 +712,7 @@ void UHeldObjectLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUpper
 
 void UHeldObjectLayerAnimBP_C::ItemAimOffset(const struct FPoseLink& InPose_AimOffset, float AimOffsetAlpha_0, float Yaw_0, float Pitch_0, const struct FPoseLink& InPose_UpperLowerPreMeleeAO, struct FPoseLink* ItemAimOffset_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemAimOffset");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemAimOffset");
 
 	Params::HeldObjectLayerAnimBP_C_ItemAimOffset Parms{};
 
@@ -851,10 +737,7 @@ void UHeldObjectLayerAnimBP_C::ItemAimOffset(const struct FPoseLink& InPose_AimO
 
 void UHeldObjectLayerAnimBP_C::ItemFullBodyOverride(const struct FPoseLink& InPoseFullBody, struct FPoseLink* ItemFullBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFullBodyOverride");
+	class UFunction* Func = Class->GetFunction("HeldObjectLayerAnimBP_C", "ItemFullBodyOverride");
 
 	Params::HeldObjectLayerAnimBP_C_ItemFullBodyOverride Parms{};
 

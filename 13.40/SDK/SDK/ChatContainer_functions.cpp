@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UChatContainer_C::Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "Tick");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "Tick");
 
 	Params::ChatContainer_C_Tick Parms{};
 
@@ -45,10 +42,7 @@ void UChatContainer_C::Tick(const struct FGeometry& MyGeometry_Tick, float InDel
 
 void UChatContainer_C::ExecuteUbergraph_ChatContainer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "ExecuteUbergraph_ChatContainer");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "ExecuteUbergraph_ChatContainer");
 
 	Params::ChatContainer_C_ExecuteUbergraph_ChatContainer Parms{};
 
@@ -63,10 +57,7 @@ void UChatContainer_C::ExecuteUbergraph_ChatContainer(int32 EntryPoint)
 
 void UChatContainer_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void UChatContainer_C::Destruct()
 
 void UChatContainer_C::BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::ChatContainer_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -97,10 +85,7 @@ void UChatContainer_C::BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_
 
 void UChatContainer_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +98,7 @@ void UChatContainer_C::Construct()
 
 void UChatContainer_C::OnSendButtonDisplayChanged(bool bShowSendButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "OnSendButtonDisplayChanged");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "OnSendButtonDisplayChanged");
 
 	Params::ChatContainer_C_OnSendButtonDisplayChanged Parms{};
 
@@ -133,10 +115,7 @@ void UChatContainer_C::OnSendButtonDisplayChanged(bool bShowSendButton)
 
 void UChatContainer_C::OnChatOpenChanged(bool bShouldBeOpen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "OnChatOpenChanged");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "OnChatOpenChanged");
 
 	Params::ChatContainer_C_OnChatOpenChanged Parms{};
 
@@ -155,10 +134,7 @@ void UChatContainer_C::OnChatOpenChanged(bool bShouldBeOpen)
 
 void UChatContainer_C::HandleCursorModeChanged(bool bEnabled, class FName ActionName, class UUserWidget* Widget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "HandleCursorModeChanged");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "HandleCursorModeChanged");
 
 	Params::ChatContainer_C_HandleCursorModeChanged Parms{};
 
@@ -175,10 +151,7 @@ void UChatContainer_C::HandleCursorModeChanged(bool bEnabled, class FName Action
 
 void UChatContainer_C::OnSizeAnimationComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "OnSizeAnimationComplete");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "OnSizeAnimationComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +164,7 @@ void UChatContainer_C::OnSizeAnimationComplete()
 
 void UChatContainer_C::HandleChatOpenChanged(bool bChatShouldBeOpen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "HandleChatOpenChanged");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "HandleChatOpenChanged");
 
 	Params::ChatContainer_C_HandleChatOpenChanged Parms{};
 
@@ -213,10 +183,7 @@ void UChatContainer_C::HandleChatOpenChanged(bool bChatShouldBeOpen)
 
 struct FEventReply UChatContainer_C::OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "OnKeyDown");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "OnKeyDown");
 
 	Params::ChatContainer_C_OnKeyDown Parms{};
 
@@ -234,10 +201,7 @@ struct FEventReply UChatContainer_C::OnKeyDown(const struct FGeometry& MyGeometr
 
 void UChatContainer_C::SetChatBoxStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChatContainer_C", "SetChatBoxStyle");
+	class UFunction* Func = Class->GetFunction("ChatContainer_C", "SetChatBoxStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

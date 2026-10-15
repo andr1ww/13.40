@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USpatialFrontend_C::ExecuteUbergraph_SpatialFrontend(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpatialFrontend_C", "ExecuteUbergraph_SpatialFrontend");
+	class UFunction* Func = Class->GetFunction("SpatialFrontend_C", "ExecuteUbergraph_SpatialFrontend");
 
 	Params::SpatialFrontend_C_ExecuteUbergraph_SpatialFrontend Parms{};
 
@@ -44,10 +41,7 @@ void USpatialFrontend_C::ExecuteUbergraph_SpatialFrontend(int32 EntryPoint)
 
 void USpatialFrontend_C::OnEventLevelTransitionBegin(const struct FGameplayTag& TargetCamera, const class AFortEventLevelNavigationActor* TargetNavActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpatialFrontend_C", "OnEventLevelTransitionBegin");
+	class UFunction* Func = Class->GetFunction("SpatialFrontend_C", "OnEventLevelTransitionBegin");
 
 	Params::SpatialFrontend_C_OnEventLevelTransitionBegin Parms{};
 

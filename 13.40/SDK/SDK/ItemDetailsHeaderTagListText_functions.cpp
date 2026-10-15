@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemDetailsHeaderTagListText_C::ExecuteUbergraph_ItemDetailsHeaderTagListText(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "ExecuteUbergraph_ItemDetailsHeaderTagListText");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "ExecuteUbergraph_ItemDetailsHeaderTagListText");
 
 	Params::ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText Parms{};
 
@@ -41,10 +38,7 @@ void UItemDetailsHeaderTagListText_C::ExecuteUbergraph_ItemDetailsHeaderTagListT
 
 void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "HandlePostDifferentItemToCompareWithSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "HandlePostDifferentItemToCompareWithSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToCompareWithSet()
 
 void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -72,10 +63,7 @@ void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsHeaderTagListText_C::FormatItemDisplayTags(TArray<class FText>& TagTexts, class FText* FormatedText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "FormatItemDisplayTags");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "FormatItemDisplayTags");
 
 	Params::ItemDetailsHeaderTagListText_C_FormatItemDisplayTags Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_SwitchPlatformLIghtOptimization_C::ExecuteUbergraph_BP_SwitchPlatformLIghtOptimization(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwitchPlatformLIghtOptimization_C", "ExecuteUbergraph_BP_SwitchPlatformLIghtOptimization");
+	class UFunction* Func = Class->GetFunction("BP_SwitchPlatformLIghtOptimization_C", "ExecuteUbergraph_BP_SwitchPlatformLIghtOptimization");
 
 	Params::BP_SwitchPlatformLIghtOptimization_C_ExecuteUbergraph_BP_SwitchPlatformLIghtOptimization Parms{};
 
@@ -41,10 +38,7 @@ void ABP_SwitchPlatformLIghtOptimization_C::ExecuteUbergraph_BP_SwitchPlatformLI
 
 void ABP_SwitchPlatformLIghtOptimization_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwitchPlatformLIghtOptimization_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_SwitchPlatformLIghtOptimization_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_SwitchPlatformLIghtOptimization_C::ReceiveBeginPlay()
 
 void ABP_SwitchPlatformLIghtOptimization_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwitchPlatformLIghtOptimization_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_SwitchPlatformLIghtOptimization_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void ABP_SwitchPlatformLIghtOptimization_C::UserConstructionScript()
 
 void ABP_SwitchPlatformLIghtOptimization_C::SwitchLights(bool EnableSwitchPlatform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwitchPlatformLIghtOptimization_C", "SwitchLights");
+	class UFunction* Func = Class->GetFunction("BP_SwitchPlatformLIghtOptimization_C", "SwitchLights");
 
 	Params::BP_SwitchPlatformLIghtOptimization_C_SwitchLights Parms{};
 

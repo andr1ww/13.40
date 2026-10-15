@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_BGA_Athena_EnvCampFire_C::ExecuteUbergraph_B_BGA_Athena_EnvCampFire(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ExecuteUbergraph_B_BGA_Athena_EnvCampFire");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ExecuteUbergraph_B_BGA_Athena_EnvCampFire");
 
 	Params::B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire Parms{};
 
@@ -41,10 +38,7 @@ void AB_BGA_Athena_EnvCampFire_C::ExecuteUbergraph_B_BGA_Athena_EnvCampFire(int3
 
 void AB_BGA_Athena_EnvCampFire_C::CheckInitialOverlappingActors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckInitialOverlappingActors");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckInitialOverlappingActors");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_BGA_Athena_EnvCampFire_C::CheckInitialOverlappingActors()
 
 void AB_BGA_Athena_EnvCampFire_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -72,10 +63,7 @@ void AB_BGA_Athena_EnvCampFire_C::ReceiveDestroyed()
 
 void AB_BGA_Athena_EnvCampFire_C::OnCurieElementDetached_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnCurieElementDetached_BP");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnCurieElementDetached_BP");
 
 	Params::B_BGA_Athena_EnvCampFire_C_OnCurieElementDetached_BP Parms{};
 
@@ -94,10 +82,7 @@ void AB_BGA_Athena_EnvCampFire_C::OnCurieElementDetached_BP(const struct FCurieC
 
 void AB_BGA_Athena_EnvCampFire_C::OnCurieElementAttached_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnCurieElementAttached_BP");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnCurieElementAttached_BP");
 
 	Params::B_BGA_Athena_EnvCampFire_C_OnCurieElementAttached_BP Parms{};
 
@@ -113,10 +98,7 @@ void AB_BGA_Athena_EnvCampFire_C::OnCurieElementAttached_BP(const struct FCurieC
 
 void AB_BGA_Athena_EnvCampFire_C::EndFireInteract()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "EndFireInteract");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "EndFireInteract");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -132,10 +114,7 @@ void AB_BGA_Athena_EnvCampFire_C::EndFireInteract()
 
 void AB_BGA_Athena_EnvCampFire_C::BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::B_BGA_Athena_EnvCampFire_C_BndEvt__Sphere_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -160,10 +139,7 @@ void AB_BGA_Athena_EnvCampFire_C::BndEvt__Sphere_K2Node_ComponentBoundEvent_1_Co
 
 void AB_BGA_Athena_EnvCampFire_C::BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::B_BGA_Athena_EnvCampFire_C_BndEvt__Sphere_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -183,10 +159,7 @@ void AB_BGA_Athena_EnvCampFire_C::BndEvt__Sphere_K2Node_ComponentBoundEvent_0_Co
 
 void AB_BGA_Athena_EnvCampFire_C::CheckReplaceCampfire()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckReplaceCampfire");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckReplaceCampfire");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,10 +172,7 @@ void AB_BGA_Athena_EnvCampFire_C::CheckReplaceCampfire()
 
 void AB_BGA_Athena_EnvCampFire_C::PayStokeCost(class AFortPawn* InteractingPawn_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "PayStokeCost");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "PayStokeCost");
 
 	Params::B_BGA_Athena_EnvCampFire_C_PayStokeCost Parms{};
 
@@ -219,10 +189,7 @@ void AB_BGA_Athena_EnvCampFire_C::PayStokeCost(class AFortPawn* InteractingPawn_
 
 void AB_BGA_Athena_EnvCampFire_C::PayLightCost(class AFortPawn* InteractingPawn_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "PayLightCost");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "PayLightCost");
 
 	Params::B_BGA_Athena_EnvCampFire_C_PayLightCost Parms{};
 
@@ -239,10 +206,7 @@ void AB_BGA_Athena_EnvCampFire_C::PayLightCost(class AFortPawn* InteractingPawn_
 
 void AB_BGA_Athena_EnvCampFire_C::HandleCharacterVariantTransition(class AFortPawn* TransitioningPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HandleCharacterVariantTransition");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HandleCharacterVariantTransition");
 
 	Params::B_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition Parms{};
 
@@ -264,10 +228,7 @@ void AB_BGA_Athena_EnvCampFire_C::HandleCharacterVariantTransition(class AFortPa
 
 void AB_BGA_Athena_EnvCampFire_C::Server_QuestObjectiveUpdated(class AFortPlayerController* Controller, const class UFortQuestItemDefinition* QuestDef, class FName BackendName, int32 CompletionCount, bool ObjectiveCompleted, bool QuestCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Server_QuestObjectiveUpdated");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Server_QuestObjectiveUpdated");
 
 	Params::B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated Parms{};
 
@@ -287,10 +248,7 @@ void AB_BGA_Athena_EnvCampFire_C::Server_QuestObjectiveUpdated(class AFortPlayer
 
 void AB_BGA_Athena_EnvCampFire_C::KillDouseSmokeWisp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "KillDouseSmokeWisp");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "KillDouseSmokeWisp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -301,10 +259,7 @@ void AB_BGA_Athena_EnvCampFire_C::KillDouseSmokeWisp()
 
 void AB_BGA_Athena_EnvCampFire_C::SpecialS7LightsFireAfterOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "SpecialS7LightsFireAfterOut");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "SpecialS7LightsFireAfterOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -315,10 +270,7 @@ void AB_BGA_Athena_EnvCampFire_C::SpecialS7LightsFireAfterOut()
 
 void AB_BGA_Athena_EnvCampFire_C::CheckDestroyDisabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckDestroyDisabled");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckDestroyDisabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -329,10 +281,7 @@ void AB_BGA_Athena_EnvCampFire_C::CheckDestroyDisabled()
 
 void AB_BGA_Athena_EnvCampFire_C::HandleBoundDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HandleBoundDestroyed");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HandleBoundDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -343,10 +292,7 @@ void AB_BGA_Athena_EnvCampFire_C::HandleBoundDestroyed()
 
 void AB_BGA_Athena_EnvCampFire_C::BindToFloor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BindToFloor");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BindToFloor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -366,10 +312,7 @@ void AB_BGA_Athena_EnvCampFire_C::BindToFloor()
 
 void AB_BGA_Athena_EnvCampFire_C::BuildingActorDestroyedCleanUp(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BuildingActorDestroyedCleanUp");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BuildingActorDestroyedCleanUp");
 
 	Params::B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp Parms{};
 
@@ -391,10 +334,7 @@ void AB_BGA_Athena_EnvCampFire_C::BuildingActorDestroyedCleanUp(class AActor* Da
 
 void AB_BGA_Athena_EnvCampFire_C::Start()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Start");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Start");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -405,10 +345,7 @@ void AB_BGA_Athena_EnvCampFire_C::Start()
 
 void AB_BGA_Athena_EnvCampFire_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -419,10 +356,7 @@ void AB_BGA_Athena_EnvCampFire_C::ReceiveBeginPlay()
 
 void AB_BGA_Athena_EnvCampFire_C::GoOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "GoOut");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "GoOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -433,10 +367,7 @@ void AB_BGA_Athena_EnvCampFire_C::GoOut()
 
 void AB_BGA_Athena_EnvCampFire_C::Light()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Light");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Light");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -450,10 +381,7 @@ void AB_BGA_Athena_EnvCampFire_C::Light()
 
 void AB_BGA_Athena_EnvCampFire_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn_0, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintOnInteract");
 
 	Params::B_BGA_Athena_EnvCampFire_C_BlueprintOnInteract Parms{};
 
@@ -469,10 +397,7 @@ void AB_BGA_Athena_EnvCampFire_C::BlueprintOnInteract(const class AFortPawn* Int
 
 void AB_BGA_Athena_EnvCampFire_C::OnCurieActive_A24E3C804D14344FC0E5E0B5CDB4FF55()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnCurieActive_A24E3C804D14344FC0E5E0B5CDB4FF55");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnCurieActive_A24E3C804D14344FC0E5E0B5CDB4FF55");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -487,10 +412,7 @@ void AB_BGA_Athena_EnvCampFire_C::OnCurieActive_A24E3C804D14344FC0E5E0B5CDB4FF55
 
 void AB_BGA_Athena_EnvCampFire_C::OnReady_9F4554BE40FCB41157835B9AD897EE69(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnReady_9F4554BE40FCB41157835B9AD897EE69");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnReady_9F4554BE40FCB41157835B9AD897EE69");
 
 	Params::B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69 Parms{};
 
@@ -507,10 +429,7 @@ void AB_BGA_Athena_EnvCampFire_C::OnReady_9F4554BE40FCB41157835B9AD897EE69(class
 
 void AB_BGA_Athena_EnvCampFire_C::SetSheetValues()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "SetSheetValues");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "SetSheetValues");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -524,10 +443,7 @@ void AB_BGA_Athena_EnvCampFire_C::SetSheetValues()
 
 bool AB_BGA_Athena_EnvCampFire_C::RowToBool(const struct FScalableFloat& Input)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "RowToBool");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "RowToBool");
 
 	Params::B_BGA_Athena_EnvCampFire_C_RowToBool Parms{};
 
@@ -547,10 +463,7 @@ bool AB_BGA_Athena_EnvCampFire_C::RowToBool(const struct FScalableFloat& Input)
 
 void AB_BGA_Athena_EnvCampFire_C::CheckIfUserIsSpecialS7(class AFortPawn* PawnWhoLitFire, bool* UserIsSpecial)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckIfUserIsSpecialS7");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckIfUserIsSpecialS7");
 
 	Params::B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7 Parms{};
 
@@ -568,10 +481,7 @@ void AB_BGA_Athena_EnvCampFire_C::CheckIfUserIsSpecialS7(class AFortPawn* PawnWh
 
 void AB_BGA_Athena_EnvCampFire_C::OnRep_Destroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_Destroyed");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_Destroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -582,10 +492,7 @@ void AB_BGA_Athena_EnvCampFire_C::OnRep_Destroyed()
 
 void AB_BGA_Athena_EnvCampFire_C::OnRep_LitRepBool()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_LitRepBool");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_LitRepBool");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -598,10 +505,7 @@ void AB_BGA_Athena_EnvCampFire_C::OnRep_LitRepBool()
 
 int32 AB_BGA_Athena_EnvCampFire_C::GetCostReActivate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "GetCostReActivate");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "GetCostReActivate");
 
 	Params::B_BGA_Athena_EnvCampFire_C_GetCostReActivate Parms{};
 
@@ -616,10 +520,7 @@ int32 AB_BGA_Athena_EnvCampFire_C::GetCostReActivate()
 
 void AB_BGA_Athena_EnvCampFire_C::OnRep_Stoked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_Stoked");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_Stoked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -630,10 +531,7 @@ void AB_BGA_Athena_EnvCampFire_C::OnRep_Stoked()
 
 void AB_BGA_Athena_EnvCampFire_C::DisableIfBelowFlood()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "DisableIfBelowFlood");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "DisableIfBelowFlood");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -649,10 +547,7 @@ void AB_BGA_Athena_EnvCampFire_C::DisableIfBelowFlood()
 
 bool AB_BGA_Athena_EnvCampFire_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn_0, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintCanInteract");
 
 	Params::B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract Parms{};
 
@@ -675,10 +570,7 @@ bool AB_BGA_Athena_EnvCampFire_C::BlueprintCanInteract(const class AFortPawn* In
 
 class FText AB_BGA_Athena_EnvCampFire_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn_0, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintGetInteractionString");
 
 	Params::B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString Parms{};
 
@@ -700,10 +592,7 @@ class FText AB_BGA_Athena_EnvCampFire_C::BlueprintGetInteractionString(const cla
 
 class FText AB_BGA_Athena_EnvCampFire_C::BlueprintGetFailedInteractionString(const class AFortPawn* InteractingPawn_0, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintGetFailedInteractionString");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintGetFailedInteractionString");
 
 	Params::B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString Parms{};
 
@@ -724,10 +613,7 @@ class FText AB_BGA_Athena_EnvCampFire_C::BlueprintGetFailedInteractionString(con
 
 void AB_BGA_Athena_EnvCampFire_C::HasInfiniteResources(class APawn* Pawn, bool* HasInfiniteResources_0) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HasInfiniteResources");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HasInfiniteResources");
 
 	Params::B_BGA_Athena_EnvCampFire_C_HasInfiniteResources Parms{};
 
@@ -748,10 +634,7 @@ void AB_BGA_Athena_EnvCampFire_C::HasInfiniteResources(class APawn* Pawn, bool* 
 
 void AB_BGA_Athena_EnvCampFire_C::ShouldPlayNativeCurieFX(EFortCurieNativeFXType FXType, struct FFortNativeCurieFXResponse* OutResponse) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ShouldPlayNativeCurieFX");
+	class UFunction* Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ShouldPlayNativeCurieFX");
 
 	Params::B_BGA_Athena_EnvCampFire_C_ShouldPlayNativeCurieFX Parms{};
 

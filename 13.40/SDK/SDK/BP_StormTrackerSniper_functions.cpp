@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_StormTrackerSniper_C::ExecuteUbergraph_BP_StormTrackerSniper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StormTrackerSniper_C", "ExecuteUbergraph_BP_StormTrackerSniper");
+	class UFunction* Func = Class->GetFunction("BP_StormTrackerSniper_C", "ExecuteUbergraph_BP_StormTrackerSniper");
 
 	Params::BP_StormTrackerSniper_C_ExecuteUbergraph_BP_StormTrackerSniper Parms{};
 
@@ -43,10 +40,7 @@ void UBP_StormTrackerSniper_C::ExecuteUbergraph_BP_StormTrackerSniper(int32 Entr
 
 void UBP_StormTrackerSniper_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StormTrackerSniper_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("BP_StormTrackerSniper_C", "AnimGraph");
 
 	Params::BP_StormTrackerSniper_C_AnimGraph Parms{};
 

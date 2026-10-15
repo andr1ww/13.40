@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTabAccountOptions_New_C::ExecuteUbergraph_TabAccountOptions_New(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccountOptions_New_C", "ExecuteUbergraph_TabAccountOptions_New");
+	class UFunction* Func = Class->GetFunction("TabAccountOptions_New_C", "ExecuteUbergraph_TabAccountOptions_New");
 
 	Params::TabAccountOptions_New_C_ExecuteUbergraph_TabAccountOptions_New Parms{};
 
@@ -44,10 +41,7 @@ void UTabAccountOptions_New_C::ExecuteUbergraph_TabAccountOptions_New(int32 Entr
 
 void UTabAccountOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature(class UFortSetting* Setting, class FName Action)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccountOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TabAccountOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
 
 	Params::TabAccountOptions_New_C_BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature Parms{};
 
@@ -65,10 +59,7 @@ void UTabAccountOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent
 
 void UTabAccountOptions_New_C::SettingValueChanged(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccountOptions_New_C", "SettingValueChanged");
+	class UFunction* Func = Class->GetFunction("TabAccountOptions_New_C", "SettingValueChanged");
 
 	Params::TabAccountOptions_New_C_SettingValueChanged Parms{};
 
@@ -83,10 +74,7 @@ void UTabAccountOptions_New_C::SettingValueChanged(float Value)
 
 void UTabAccountOptions_New_C::CenterOnTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccountOptions_New_C", "CenterOnTab");
+	class UFunction* Func = Class->GetFunction("TabAccountOptions_New_C", "CenterOnTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +87,7 @@ void UTabAccountOptions_New_C::CenterOnTab()
 
 void UTabAccountOptions_New_C::OnComplete_E454F9624DC58E051C39D9813595C807(class UUserWidget* UserWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccountOptions_New_C", "OnComplete_E454F9624DC58E051C39D9813595C807");
+	class UFunction* Func = Class->GetFunction("TabAccountOptions_New_C", "OnComplete_E454F9624DC58E051C39D9813595C807");
 
 	Params::TabAccountOptions_New_C_OnComplete_E454F9624DC58E051C39D9813595C807 Parms{};
 
@@ -119,10 +104,7 @@ void UTabAccountOptions_New_C::OnComplete_E454F9624DC58E051C39D9813595C807(class
 
 void UTabAccountOptions_New_C::OnComplete_1192BA0E41F4707FF3E3A4A4C72B2024(class UUserWidget* UserWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccountOptions_New_C", "OnComplete_1192BA0E41F4707FF3E3A4A4C72B2024");
+	class UFunction* Func = Class->GetFunction("TabAccountOptions_New_C", "OnComplete_1192BA0E41F4707FF3E3A4A4C72B2024");
 
 	Params::TabAccountOptions_New_C_OnComplete_1192BA0E41F4707FF3E3A4A4C72B2024 Parms{};
 
@@ -139,10 +121,7 @@ void UTabAccountOptions_New_C::OnComplete_1192BA0E41F4707FF3E3A4A4C72B2024(class
 
 void UTabAccountOptions_New_C::OnComplete_DB10A9674F5CF800B883C79A4229D87C(class UUserWidget* UserWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAccountOptions_New_C", "OnComplete_DB10A9674F5CF800B883C79A4229D87C");
+	class UFunction* Func = Class->GetFunction("TabAccountOptions_New_C", "OnComplete_DB10A9674F5CF800B883C79A4229D87C");
 
 	Params::TabAccountOptions_New_C_OnComplete_DB10A9674F5CF800B883C79A4229D87C Parms{};
 

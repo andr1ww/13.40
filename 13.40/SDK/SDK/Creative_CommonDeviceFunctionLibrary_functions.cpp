@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsOnUnpublishedIsland(const class AActor* Actor, class UObject* __WorldContext, bool* Edit_Mode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsOnUnpublishedIsland");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsOnUnpublishedIsland");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_IsOnUnpublishedIsland Parms{};
 
@@ -55,10 +52,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsOnUnpublishedIsland(const class 
 
 void UCreative_CommonDeviceFunctionLibrary_C::AwardScore(class AActor* Actor, int32 Score, EAwardScoreType Type, class AController* Controller, class UFortMinigameLogicComponent* Minigame_Logic, const struct FGameplayTagContainer& TargetTags, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "AwardScore");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "AwardScore");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_AwardScore Parms{};
 
@@ -84,10 +78,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::AwardScore(class AActor* Actor, in
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsValidTeam(int32 Team_to_Check, const class AActor* Actor_To_Check, class UObject* __WorldContext, bool* Valid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsValidTeam");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsValidTeam");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_IsValidTeam Parms{};
 
@@ -113,10 +104,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsValidTeam(int32 Team_to_Check, c
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsEnabledPhaseMatch(EFortMinigameState State, int32 PhaseIndex, const class AActor* Actor, class UObject* __WorldContext, bool* Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsEnabledPhaseMatch");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsEnabledPhaseMatch");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_IsEnabledPhaseMatch Parms{};
 
@@ -143,10 +131,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsEnabledPhaseMatch(EFortMinigameS
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsActivatedOnPhase(EFortMinigameState State, int32 PhaseIndex, const class AActor* Actor, class UObject* __WorldContext, bool* Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsActivatedOnPhase");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsActivatedOnPhase");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_IsActivatedOnPhase Parms{};
 
@@ -173,10 +158,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsActivatedOnPhase(EFortMinigameSt
 
 void UCreative_CommonDeviceFunctionLibrary_C::ActorCanTrigger(class AActor* Actor_To_Check, class UPrimitiveComponent* Overlap_Component, class UObject* __WorldContext, bool* CanTrigger, class AController** Controller)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "ActorCanTrigger");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "ActorCanTrigger");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_ActorCanTrigger Parms{};
 
@@ -203,10 +185,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::ActorCanTrigger(class AActor* Acto
 
 void UCreative_CommonDeviceFunctionLibrary_C::GetMID(class UPrimitiveComponent* Target, class UObject* __WorldContext, class UMaterialInstanceDynamic** Mid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMID");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMID");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_GetMID Parms{};
 
@@ -230,10 +209,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::GetMID(class UPrimitiveComponent* 
 
 void UCreative_CommonDeviceFunctionLibrary_C::Update_Team_Color(class UFortMinigameLogicComponent* Minigame_Logic, class UPrimitiveComponent* Mesh, int32 Team, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Update Team Color");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Update Team Color");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_Update_Team_Color Parms{};
 
@@ -256,10 +232,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::Update_Team_Color(class UFortMinig
 
 void UCreative_CommonDeviceFunctionLibrary_C::Refresh_Team_Change_Binding(class UFortMinigameLogicComponent* Minigame_Logic, bool Unbind, const TDelegate<void()>& Event, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Refresh Team Change Binding");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Refresh Team Change Binding");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_Refresh_Team_Change_Binding Parms{};
 
@@ -283,10 +256,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::Refresh_Team_Change_Binding(class 
 
 void UCreative_CommonDeviceFunctionLibrary_C::GetMID_FromMaterial(class UPrimitiveComponent* Target, int32 Index_0, class UMaterialInterface* SourceMaterial, class UObject* __WorldContext, class UMaterialInstanceDynamic** Mid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMID_FromMaterial");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMID_FromMaterial");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_GetMID_FromMaterial Parms{};
 
@@ -312,10 +282,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::GetMID_FromMaterial(class UPrimiti
 
 void UCreative_CommonDeviceFunctionLibrary_C::Get_Driver_or_Pawn_Controller(class AActor* Actor_To_Check, class UObject* __WorldContext, bool* Valid_Controller, class AController** Controller)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Driver or Pawn Controller");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Driver or Pawn Controller");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_Get_Driver_or_Pawn_Controller Parms{};
 
@@ -341,10 +308,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::Get_Driver_or_Pawn_Controller(clas
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsInPlayMode(const class AActor*& Actor, class UObject* __WorldContext, bool* Play_Mode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsInPlayMode");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsInPlayMode");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_IsInPlayMode Parms{};
 
@@ -367,10 +331,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsInPlayMode(const class AActor*& 
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsLocalPawn(class AActor* Actor, class UObject* __WorldContext, bool* IsLocalPawn_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsLocalPawn");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsLocalPawn");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_IsLocalPawn Parms{};
 
@@ -394,10 +355,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsLocalPawn(class AActor* Actor, c
 
 int32 UCreative_CommonDeviceFunctionLibrary_C::Get_Team_Color_Index_or_Team_Index(class UFortMinigameLogicComponent* Minigame_Logic, int32 Team_Index, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Team Color Index or Team Index");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Team Color Index or Team Index");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_Get_Team_Color_Index_or_Team_Index Parms{};
 
@@ -422,10 +380,7 @@ int32 UCreative_CommonDeviceFunctionLibrary_C::Get_Team_Color_Index_or_Team_Inde
 
 void UCreative_CommonDeviceFunctionLibrary_C::Get_Team_Color_Index_from_Tag(class AActor* Actor_with_Tag, class AFortMinigame* Minigame, class UObject* __WorldContext, int32* Array_Index, ECreativeColorSetType* Color_Type_Out)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Team Color Index from Tag");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Team Color Index from Tag");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_Get_Team_Color_Index_from_Tag Parms{};
 
@@ -454,10 +409,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::Get_Team_Color_Index_from_Tag(clas
 
 void UCreative_CommonDeviceFunctionLibrary_C::Get_Dynamic_Team_Color(class AActor* Actor, class AFortMinigame* Minigame, ECreativeColorSetType Color_Type, class UObject* __WorldContext, int32* Array_Index)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Dynamic Team Color");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Dynamic Team Color");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_Get_Dynamic_Team_Color Parms{};
 
@@ -482,10 +434,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::Get_Dynamic_Team_Color(class AActo
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsLogicInPlayMode(const class UFortMinigameLogicComponent*& Logic, class UObject* __WorldContext, bool* Play_Mode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsLogicInPlayMode");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsLogicInPlayMode");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_IsLogicInPlayMode Parms{};
 
@@ -508,10 +457,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsLogicInPlayMode(const class UFor
 
 void UCreative_CommonDeviceFunctionLibrary_C::IndexToTeam(int32 Index_0, class UObject* __WorldContext, uint8* Team)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IndexToTeam");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IndexToTeam");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_IndexToTeam Parms{};
 
@@ -534,10 +480,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::IndexToTeam(int32 Index_0, class U
 
 void UCreative_CommonDeviceFunctionLibrary_C::TeamToIndex(uint8 Team, class UObject* __WorldContext, int32* Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "TeamToIndex");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "TeamToIndex");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_TeamToIndex Parms{};
 
@@ -565,10 +508,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::TeamToIndex(uint8 Team, class UObj
 
 void UCreative_CommonDeviceFunctionLibrary_C::Animate_Float_Curve(float Delta_Time, float& Current_Time, class UCurveFloat* fCurve, float Animation_Time, bool Invert_Time, class UObject* __WorldContext, float* Value, bool* bIsComplete)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Animate Float Curve");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Animate Float Curve");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_Animate_Float_Curve Parms{};
 
@@ -601,10 +541,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::Animate_Float_Curve(float Delta_Ti
 
 void UCreative_CommonDeviceFunctionLibrary_C::Wrapping_Modulo(int32 A, int32 B, class UObject* __WorldContext, int32* Out)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Wrapping Modulo");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Wrapping Modulo");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_Wrapping_Modulo Parms{};
 
@@ -629,10 +566,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::Wrapping_Modulo(int32 A, int32 B, 
 
 void UCreative_CommonDeviceFunctionLibrary_C::Reattach_or_Create_MID(class UPrimitiveComponent* Mesh, class UMaterialInstanceDynamic*& Target_MID, int32 MatId, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Reattach or Create MID");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Reattach or Create MID");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_Reattach_or_Create_MID Parms{};
 
@@ -656,10 +590,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::Reattach_or_Create_MID(class UPrim
 
 void UCreative_CommonDeviceFunctionLibrary_C::GetMinigameSettingsMachineForMinigame(class AFortMinigame* Minigame, class UObject* __WorldContext, class AMinigameSettingsMachine_C** MinigameSettingsMachine)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMinigameSettingsMachineForMinigame");
+	class UFunction* Func = StaticClass()->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMinigameSettingsMachineForMinigame");
 
 	Params::Creative_CommonDeviceFunctionLibrary_C_GetMinigameSettingsMachineForMinigame Parms{};
 

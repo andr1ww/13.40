@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UShowdownLobbyViolator_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyViolator_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyViolator_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UShowdownLobbyViolator_C::RefreshDataBP()
 
 void UShowdownLobbyViolator_C::ExecuteUbergraph_ShowdownLobbyViolator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownLobbyViolator_C", "ExecuteUbergraph_ShowdownLobbyViolator");
+	class UFunction* Func = Class->GetFunction("ShowdownLobbyViolator_C", "ExecuteUbergraph_ShowdownLobbyViolator");
 
 	Params::ShowdownLobbyViolator_C_ExecuteUbergraph_ShowdownLobbyViolator Parms{};
 

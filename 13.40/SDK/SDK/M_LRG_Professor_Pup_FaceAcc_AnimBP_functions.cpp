@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UM_LRG_Professor_Pup_FaceAcc_AnimBP_C::ExecuteUbergraph_M_LRG_Professor_Pup_FaceAcc_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_LRG_Professor_Pup_FaceAcc_AnimBP_C", "ExecuteUbergraph_M_LRG_Professor_Pup_FaceAcc_AnimBP");
+	class UFunction* Func = Class->GetFunction("M_LRG_Professor_Pup_FaceAcc_AnimBP_C", "ExecuteUbergraph_M_LRG_Professor_Pup_FaceAcc_AnimBP");
 
 	Params::M_LRG_Professor_Pup_FaceAcc_AnimBP_C_ExecuteUbergraph_M_LRG_Professor_Pup_FaceAcc_AnimBP Parms{};
 
@@ -41,10 +38,7 @@ void UM_LRG_Professor_Pup_FaceAcc_AnimBP_C::ExecuteUbergraph_M_LRG_Professor_Pup
 
 void UM_LRG_Professor_Pup_FaceAcc_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M_LRG_Professor_Pup_FaceAcc_AnimBP_AnimGraphNode_LayeredBoneBlend_60AC983B43BA86BFC0695FB524784DCB()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_LRG_Professor_Pup_FaceAcc_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_M_LRG_Professor_Pup_FaceAcc_AnimBP_AnimGraphNode_LayeredBoneBlend_60AC983B43BA86BFC0695FB524784DCB");
+	class UFunction* Func = Class->GetFunction("M_LRG_Professor_Pup_FaceAcc_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_M_LRG_Professor_Pup_FaceAcc_AnimBP_AnimGraphNode_LayeredBoneBlend_60AC983B43BA86BFC0695FB524784DCB");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UM_LRG_Professor_Pup_FaceAcc_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUb
 
 void UM_LRG_Professor_Pup_FaceAcc_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_LRG_Professor_Pup_FaceAcc_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("M_LRG_Professor_Pup_FaceAcc_AnimBP_C", "AnimGraph");
 
 	Params::M_LRG_Professor_Pup_FaceAcc_AnimBP_C_AnimGraph Parms{};
 

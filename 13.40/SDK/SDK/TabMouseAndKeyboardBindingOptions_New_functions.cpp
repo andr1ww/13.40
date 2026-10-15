@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTabMouseAndKeyboardBindingOptions_New_C::ExecuteUbergraph_TabMouseAndKeyboardBindingOptions_New(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "ExecuteUbergraph_TabMouseAndKeyboardBindingOptions_New");
+	class UFunction* Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "ExecuteUbergraph_TabMouseAndKeyboardBindingOptions_New");
 
 	Params::TabMouseAndKeyboardBindingOptions_New_C_ExecuteUbergraph_TabMouseAndKeyboardBindingOptions_New Parms{};
 
@@ -44,10 +41,7 @@ void UTabMouseAndKeyboardBindingOptions_New_C::ExecuteUbergraph_TabMouseAndKeybo
 
 void UTabMouseAndKeyboardBindingOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature(class UFortSetting* Setting, class FName Action)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
 
 	Params::TabMouseAndKeyboardBindingOptions_New_C_BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature Parms{};
 
@@ -65,10 +59,7 @@ void UTabMouseAndKeyboardBindingOptions_New_C::BndEvt__Settings_Panel_K2Node_Com
 
 void UTabMouseAndKeyboardBindingOptions_New_C::SettingValueChanged(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "SettingValueChanged");
+	class UFunction* Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "SettingValueChanged");
 
 	Params::TabMouseAndKeyboardBindingOptions_New_C_SettingValueChanged Parms{};
 
@@ -83,10 +74,7 @@ void UTabMouseAndKeyboardBindingOptions_New_C::SettingValueChanged(float Value)
 
 void UTabMouseAndKeyboardBindingOptions_New_C::CenterOnTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "CenterOnTab");
+	class UFunction* Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "CenterOnTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -100,10 +88,7 @@ void UTabMouseAndKeyboardBindingOptions_New_C::CenterOnTab()
 
 void UTabMouseAndKeyboardBindingOptions_New_C::DialogResult_686847584DA2D10A8A0FBD8D84ED21B2(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "DialogResult_686847584DA2D10A8A0FBD8D84ED21B2");
+	class UFunction* Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "DialogResult_686847584DA2D10A8A0FBD8D84ED21B2");
 
 	Params::TabMouseAndKeyboardBindingOptions_New_C_DialogResult_686847584DA2D10A8A0FBD8D84ED21B2 Parms{};
 
@@ -121,10 +106,7 @@ void UTabMouseAndKeyboardBindingOptions_New_C::DialogResult_686847584DA2D10A8A0F
 
 void UTabMouseAndKeyboardBindingOptions_New_C::OnComplete_CABEB38E4A74A3AE7304669F10DD9A94(class UUserWidget* UserWidget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "OnComplete_CABEB38E4A74A3AE7304669F10DD9A94");
+	class UFunction* Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "OnComplete_CABEB38E4A74A3AE7304669F10DD9A94");
 
 	Params::TabMouseAndKeyboardBindingOptions_New_C_OnComplete_CABEB38E4A74A3AE7304669F10DD9A94 Parms{};
 

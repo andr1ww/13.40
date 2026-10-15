@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTournamentLiveGamesEntry_C::ExecuteUbergraph_TournamentLiveGamesEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentLiveGamesEntry_C", "ExecuteUbergraph_TournamentLiveGamesEntry");
+	class UFunction* Func = Class->GetFunction("TournamentLiveGamesEntry_C", "ExecuteUbergraph_TournamentLiveGamesEntry");
 
 	Params::TournamentLiveGamesEntry_C_ExecuteUbergraph_TournamentLiveGamesEntry Parms{};
 
@@ -41,10 +38,7 @@ void UTournamentLiveGamesEntry_C::ExecuteUbergraph_TournamentLiveGamesEntry(int3
 
 void UTournamentLiveGamesEntry_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentLiveGamesEntry_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("TournamentLiveGamesEntry_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UTournamentLiveGamesEntry_C::BP_OnDeselected()
 
 void UTournamentLiveGamesEntry_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentLiveGamesEntry_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("TournamentLiveGamesEntry_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UTournamentLiveGamesEntry_C::BP_OnSelected()
 
 void UTournamentLiveGamesEntry_C::OnEntrySet(int32 EntryIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentLiveGamesEntry_C", "OnEntrySet");
+	class UFunction* Func = Class->GetFunction("TournamentLiveGamesEntry_C", "OnEntrySet");
 
 	Params::TournamentLiveGamesEntry_C_OnEntrySet Parms{};
 

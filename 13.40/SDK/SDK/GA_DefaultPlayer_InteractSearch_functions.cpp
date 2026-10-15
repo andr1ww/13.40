@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_DefaultPlayer_InteractSearch_C::ExecuteUbergraph_GA_DefaultPlayer_InteractSearch(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "ExecuteUbergraph_GA_DefaultPlayer_InteractSearch");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "ExecuteUbergraph_GA_DefaultPlayer_InteractSearch");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_ExecuteUbergraph_GA_DefaultPlayer_InteractSearch Parms{};
 
@@ -41,10 +38,7 @@ void UGA_DefaultPlayer_InteractSearch_C::ExecuteUbergraph_GA_DefaultPlayer_Inter
 
 void UGA_DefaultPlayer_InteractSearch_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UGA_DefaultPlayer_InteractSearch_C::K2_ActivateAbility()
 
 void UGA_DefaultPlayer_InteractSearch_C::Triggered_5EB1B64344DD00ABFE41E2857DC3FB38(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Triggered_5EB1B64344DD00ABFE41E2857DC3FB38");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Triggered_5EB1B64344DD00ABFE41E2857DC3FB38");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Triggered_5EB1B64344DD00ABFE41E2857DC3FB38 Parms{};
 
@@ -80,10 +71,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Triggered_5EB1B64344DD00ABFE41E2857DC3F
 
 void UGA_DefaultPlayer_InteractSearch_C::Cancelled_5EB1B64344DD00ABFE41E2857DC3FB38(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Cancelled_5EB1B64344DD00ABFE41E2857DC3FB38");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Cancelled_5EB1B64344DD00ABFE41E2857DC3FB38");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Cancelled_5EB1B64344DD00ABFE41E2857DC3FB38 Parms{};
 
@@ -102,10 +90,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Cancelled_5EB1B64344DD00ABFE41E2857DC3F
 
 void UGA_DefaultPlayer_InteractSearch_C::Completed_5EB1B64344DD00ABFE41E2857DC3FB38(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Completed_5EB1B64344DD00ABFE41E2857DC3FB38");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Completed_5EB1B64344DD00ABFE41E2857DC3FB38");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Completed_5EB1B64344DD00ABFE41E2857DC3FB38 Parms{};
 
@@ -124,10 +109,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Completed_5EB1B64344DD00ABFE41E2857DC3F
 
 void UGA_DefaultPlayer_InteractSearch_C::Triggered_6A38D93A428260E68695388965BFA176(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Triggered_6A38D93A428260E68695388965BFA176");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Triggered_6A38D93A428260E68695388965BFA176");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Triggered_6A38D93A428260E68695388965BFA176 Parms{};
 
@@ -146,10 +128,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Triggered_6A38D93A428260E68695388965BFA
 
 void UGA_DefaultPlayer_InteractSearch_C::Cancelled_6A38D93A428260E68695388965BFA176(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Cancelled_6A38D93A428260E68695388965BFA176");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Cancelled_6A38D93A428260E68695388965BFA176");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Cancelled_6A38D93A428260E68695388965BFA176 Parms{};
 
@@ -168,10 +147,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Cancelled_6A38D93A428260E68695388965BFA
 
 void UGA_DefaultPlayer_InteractSearch_C::Completed_6A38D93A428260E68695388965BFA176(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Completed_6A38D93A428260E68695388965BFA176");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Completed_6A38D93A428260E68695388965BFA176");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Completed_6A38D93A428260E68695388965BFA176 Parms{};
 
@@ -190,10 +166,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Completed_6A38D93A428260E68695388965BFA
 
 void UGA_DefaultPlayer_InteractSearch_C::Triggered_72217B3542CE776DEDDBB3A7B5D6D343(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Triggered_72217B3542CE776DEDDBB3A7B5D6D343");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Triggered_72217B3542CE776DEDDBB3A7B5D6D343");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Triggered_72217B3542CE776DEDDBB3A7B5D6D343 Parms{};
 
@@ -212,10 +185,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Triggered_72217B3542CE776DEDDBB3A7B5D6D
 
 void UGA_DefaultPlayer_InteractSearch_C::Cancelled_72217B3542CE776DEDDBB3A7B5D6D343(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Cancelled_72217B3542CE776DEDDBB3A7B5D6D343");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Cancelled_72217B3542CE776DEDDBB3A7B5D6D343");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Cancelled_72217B3542CE776DEDDBB3A7B5D6D343 Parms{};
 
@@ -234,10 +204,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Cancelled_72217B3542CE776DEDDBB3A7B5D6D
 
 void UGA_DefaultPlayer_InteractSearch_C::Completed_72217B3542CE776DEDDBB3A7B5D6D343(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Completed_72217B3542CE776DEDDBB3A7B5D6D343");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Completed_72217B3542CE776DEDDBB3A7B5D6D343");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Completed_72217B3542CE776DEDDBB3A7B5D6D343 Parms{};
 
@@ -256,10 +223,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Completed_72217B3542CE776DEDDBB3A7B5D6D
 
 void UGA_DefaultPlayer_InteractSearch_C::Triggered_B697D9B445CA2BFDB1328D93C33FBCF3(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Triggered_B697D9B445CA2BFDB1328D93C33FBCF3");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Triggered_B697D9B445CA2BFDB1328D93C33FBCF3");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Triggered_B697D9B445CA2BFDB1328D93C33FBCF3 Parms{};
 
@@ -278,10 +242,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Triggered_B697D9B445CA2BFDB1328D93C33FB
 
 void UGA_DefaultPlayer_InteractSearch_C::Cancelled_B697D9B445CA2BFDB1328D93C33FBCF3(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Cancelled_B697D9B445CA2BFDB1328D93C33FBCF3");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Cancelled_B697D9B445CA2BFDB1328D93C33FBCF3");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Cancelled_B697D9B445CA2BFDB1328D93C33FBCF3 Parms{};
 
@@ -300,10 +261,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Cancelled_B697D9B445CA2BFDB1328D93C33FB
 
 void UGA_DefaultPlayer_InteractSearch_C::Completed_B697D9B445CA2BFDB1328D93C33FBCF3(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Completed_B697D9B445CA2BFDB1328D93C33FBCF3");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "Completed_B697D9B445CA2BFDB1328D93C33FBCF3");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_Completed_B697D9B445CA2BFDB1328D93C33FBCF3 Parms{};
 
@@ -321,10 +279,7 @@ void UGA_DefaultPlayer_InteractSearch_C::Completed_B697D9B445CA2BFDB1328D93C33FB
 
 void UGA_DefaultPlayer_InteractSearch_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "K2_OnEndAbility");
 
 	Params::GA_DefaultPlayer_InteractSearch_C_K2_OnEndAbility Parms{};
 
@@ -339,10 +294,7 @@ void UGA_DefaultPlayer_InteractSearch_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_DefaultPlayer_InteractSearch_C::StartInteractSearch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "StartInteractSearch");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "StartInteractSearch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -353,10 +305,7 @@ void UGA_DefaultPlayer_InteractSearch_C::StartInteractSearch()
 
 void UGA_DefaultPlayer_InteractSearch_C::EndInteractSearch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "EndInteractSearch");
+	class UFunction* Func = Class->GetFunction("GA_DefaultPlayer_InteractSearch_C", "EndInteractSearch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

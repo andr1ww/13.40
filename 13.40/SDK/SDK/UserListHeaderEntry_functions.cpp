@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UUserListHeaderEntry_C::ExecuteUbergraph_UserListHeaderEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserListHeaderEntry_C", "ExecuteUbergraph_UserListHeaderEntry");
+	class UFunction* Func = Class->GetFunction("UserListHeaderEntry_C", "ExecuteUbergraph_UserListHeaderEntry");
 
 	Params::UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry Parms{};
 
@@ -43,10 +40,7 @@ void UUserListHeaderEntry_C::ExecuteUbergraph_UserListHeaderEntry(int32 EntryPoi
 
 void UUserListHeaderEntry_C::OnListItemObjectSet_1(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserListHeaderEntry_C", "OnListItemObjectSet_1");
+	class UFunction* Func = Class->GetFunction("UserListHeaderEntry_C", "OnListItemObjectSet_1");
 
 	Params::UserListHeaderEntry_C_OnListItemObjectSet_1 Parms{};
 
@@ -61,10 +55,7 @@ void UUserListHeaderEntry_C::OnListItemObjectSet_1(class UObject* ListItemObject
 
 void UUserListHeaderEntry_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UUserListHeaderEntry_C::BP_OnHovered()
 
 void UUserListHeaderEntry_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnItemExpansionChanged");
+	class UFunction* Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnItemExpansionChanged");
 
 	Params::UserListHeaderEntry_C_BP_OnItemExpansionChanged Parms{};
 
@@ -95,10 +83,7 @@ void UUserListHeaderEntry_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UUserListHeaderEntry_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

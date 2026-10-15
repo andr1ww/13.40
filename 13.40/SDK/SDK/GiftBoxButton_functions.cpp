@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGiftBoxButton_C::ExecuteUbergraph_GiftBoxButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftBoxButton_C", "ExecuteUbergraph_GiftBoxButton");
+	class UFunction* Func = Class->GetFunction("GiftBoxButton_C", "ExecuteUbergraph_GiftBoxButton");
 
 	Params::GiftBoxButton_C_ExecuteUbergraph_GiftBoxButton Parms{};
 
@@ -43,10 +40,7 @@ void UGiftBoxButton_C::ExecuteUbergraph_GiftBoxButton(int32 EntryPoint)
 
 void UGiftBoxButton_C::PlayGiftSelectedAnimation(bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftBoxButton_C", "PlayGiftSelectedAnimation");
+	class UFunction* Func = Class->GetFunction("GiftBoxButton_C", "PlayGiftSelectedAnimation");
 
 	Params::GiftBoxButton_C_PlayGiftSelectedAnimation Parms{};
 
@@ -61,10 +55,7 @@ void UGiftBoxButton_C::PlayGiftSelectedAnimation(bool bIsSelected)
 
 void UGiftBoxButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftBoxButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("GiftBoxButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

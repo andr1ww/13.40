@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemRatingIndicator_C::ExecuteUbergraph_ItemRatingIndicator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemRatingIndicator_C", "ExecuteUbergraph_ItemRatingIndicator");
+	class UFunction* Func = Class->GetFunction("ItemRatingIndicator_C", "ExecuteUbergraph_ItemRatingIndicator");
 
 	Params::ItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator Parms{};
 
@@ -41,10 +38,7 @@ void UItemRatingIndicator_C::ExecuteUbergraph_ItemRatingIndicator(int32 EntryPoi
 
 void UItemRatingIndicator_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemRatingIndicator_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ItemRatingIndicator_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UItemRatingIndicator_C::Construct()
 
 void UItemRatingIndicator_C::HandleViewModelChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemRatingIndicator_C", "HandleViewModelChanged");
+	class UFunction* Func = Class->GetFunction("ItemRatingIndicator_C", "HandleViewModelChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::ExecuteUbergraph_B_Athena_Pickaxe_DualWield_Generic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "ExecuteUbergraph_B_Athena_Pickaxe_DualWield_Generic");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "ExecuteUbergraph_B_Athena_Pickaxe_DualWield_Generic");
 
 	Params::B_Athena_Pickaxe_DualWield_Generic_C_ExecuteUbergraph_B_Athena_Pickaxe_DualWield_Generic Parms{};
 
@@ -41,10 +38,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::ExecuteUbergraph_B_Athena_Pickaxe_Du
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Anim_Trails_Disable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Anim Trails Disable");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Anim Trails Disable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Anim_Trails_Disable()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Anim_Trails_Notify(bool bActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Anim Trails Notify");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Anim Trails Notify");
 
 	Params::B_Athena_Pickaxe_DualWield_Generic_C_Anim_Trails_Notify Parms{};
 
@@ -75,10 +66,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Anim_Trails_Notify(bool bActive)
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right_2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right 2");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right 2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right_2()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left_2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left 2");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left 2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left_2()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::SwingLeft_Common()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "SwingLeft_Common");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "SwingLeft_Common");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::SwingLeft_Common()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::SwingRight_Common()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "SwingRight_Common");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "SwingRight_Common");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +132,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::SwingRight_Common()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +143,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::K2_OnUnEquip()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnInstigatorSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInstigatorSet");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInstigatorSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +154,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnInstigatorSet()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right End");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -201,10 +165,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right_End()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left End");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +176,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left_End()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnInitWeaponCosmetics()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInitWeaponCosmetics");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInitWeaponCosmetics");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -229,10 +187,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnInitWeaponCosmetics()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponDetached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponDetached");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponDetached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -246,10 +201,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponDetached()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLocalControllerOnly)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponVisibilityChanged");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponVisibilityChanged");
 
 	Params::B_Athena_Pickaxe_DualWield_Generic_C_OnWeaponVisibilityChanged Parms{};
 
@@ -267,10 +219,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponVisibilityChanged(bool bVisi
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnInitCosmeticAlterations(const struct FFortCosmeticModification& CosmeticMod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInitCosmeticAlterations");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInitCosmeticAlterations");
 
 	Params::B_Athena_Pickaxe_DualWield_Generic_C_OnInitCosmeticAlterations Parms{};
 
@@ -285,10 +234,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnInitCosmeticAlterations(const stru
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -299,10 +245,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponAttached()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnEquippedWeaponDestory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnEquippedWeaponDestory");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnEquippedWeaponDestory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -313,10 +256,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnEquippedWeaponDestory()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::PlayRClickImpacts()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "PlayRClickImpacts");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "PlayRClickImpacts");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -330,10 +270,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::PlayRClickImpacts()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnPlayWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnPlayWeaponFireFX");
 
 	Params::B_Athena_Pickaxe_DualWield_Generic_C_OnPlayWeaponFireFX Parms{};
 
@@ -351,10 +288,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnPlayWeaponFireFX(bool bPersistentF
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnLoaded_F1C7B8E24518F4F2DE2C8DBABB95E06D(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnLoaded_F1C7B8E24518F4F2DE2C8DBABB95E06D");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnLoaded_F1C7B8E24518F4F2DE2C8DBABB95E06D");
 
 	Params::B_Athena_Pickaxe_DualWield_Generic_C_OnLoaded_F1C7B8E24518F4F2DE2C8DBABB95E06D Parms{};
 
@@ -369,10 +303,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnLoaded_F1C7B8E24518F4F2DE2C8DBABB9
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -386,10 +317,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::UserConstructionScript()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Set_Active_Alteration_Idle_Particles(bool Active, bool Reset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Set Active Alteration Idle Particles");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Set Active Alteration Idle Particles");
 
 	Params::B_Athena_Pickaxe_DualWield_Generic_C_Set_Active_Alteration_Idle_Particles Parms{};
 
@@ -405,10 +333,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Set_Active_Alteration_Idle_Particles
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Bind_Dual_Melee_Swing_Events()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Bind Dual Melee Swing Events");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Bind Dual Melee Swing Events");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -419,10 +344,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Bind_Dual_Melee_Swing_Events()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Unbind_Dual_Melee_Swing_Events()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Unbind Dual Melee Swing Events");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Unbind Dual Melee Swing Events");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -433,10 +355,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Unbind_Dual_Melee_Swing_Events()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::SetWpnRarity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "SetWpnRarity");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "SetWpnRarity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

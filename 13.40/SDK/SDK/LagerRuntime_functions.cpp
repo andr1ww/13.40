@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortAthenaLivingWorldManager::LivingWorldManagerRegisterPointProvider(class AActor* PointProvider)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerRegisterPointProvider");
+	class UFunction* Func = StaticClass()->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerRegisterPointProvider");
 
 	Params::FortAthenaLivingWorldManager_LivingWorldManagerRegisterPointProvider Parms{};
 
@@ -48,10 +45,7 @@ void UFortAthenaLivingWorldManager::LivingWorldManagerRegisterPointProvider(clas
 
 void UFortAthenaLivingWorldManager::LivingWorldManagerUnregisterPointProvider(class AActor* PointProvider)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerUnregisterPointProvider");
+	class UFunction* Func = StaticClass()->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerUnregisterPointProvider");
 
 	Params::FortAthenaLivingWorldManager_LivingWorldManagerUnregisterPointProvider Parms{};
 
@@ -71,10 +65,7 @@ void UFortAthenaLivingWorldManager::LivingWorldManagerUnregisterPointProvider(cl
 
 void UFortAthenaLivingWorldManager::LivingWorldManagerFlush()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerFlush");
+	class UFunction* Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerFlush");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -90,10 +81,7 @@ void UFortAthenaLivingWorldManager::LivingWorldManagerFlush()
 
 void UFortAthenaLivingWorldManager::LivingWorldManagerGenerateEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerGenerateEvents");
+	class UFunction* Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerGenerateEvents");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -111,10 +99,7 @@ void UFortAthenaLivingWorldManager::LivingWorldManagerGenerateEvents()
 
 void UFortAthenaLivingWorldManager::LivingWorldManagerProviderDebugActor(int32 ProviderIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerProviderDebugActor");
+	class UFunction* Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerProviderDebugActor");
 
 	Params::FortAthenaLivingWorldManager_LivingWorldManagerProviderDebugActor Parms{};
 
@@ -134,10 +119,7 @@ void UFortAthenaLivingWorldManager::LivingWorldManagerProviderDebugActor(int32 P
 
 void UFortAthenaLivingWorldManager::LivingWorldManagerToggleActorMinimap()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerToggleActorMinimap");
+	class UFunction* Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerToggleActorMinimap");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -153,10 +135,7 @@ void UFortAthenaLivingWorldManager::LivingWorldManagerToggleActorMinimap()
 
 void UFortAthenaLivingWorldManager::LivingWorldManagerToggleGenerateEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerToggleGenerateEvents");
+	class UFunction* Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerToggleGenerateEvents");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -172,10 +151,7 @@ void UFortAthenaLivingWorldManager::LivingWorldManagerToggleGenerateEvents()
 
 void UFortAthenaLivingWorldManager::LivingWorldManagerToggleVerboseLogging()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerToggleVerboseLogging");
+	class UFunction* Func = Class->GetFunction("FortAthenaLivingWorldManager", "LivingWorldManagerToggleVerboseLogging");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -194,10 +170,7 @@ void UFortAthenaLivingWorldManager::LivingWorldManagerToggleVerboseLogging()
 
 void UFortAthenaLivingWorldManager::OnCurrentPlaylistLoaded(class FName PlaylistName, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaLivingWorldManager", "OnCurrentPlaylistLoaded");
+	class UFunction* Func = Class->GetFunction("FortAthenaLivingWorldManager", "OnCurrentPlaylistLoaded");
 
 	Params::FortAthenaLivingWorldManager_OnCurrentPlaylistLoaded Parms{};
 
@@ -220,10 +193,7 @@ void UFortAthenaLivingWorldManager::OnCurrentPlaylistLoaded(class FName Playlist
 
 void UFortAthenaLivingWorldManager::OnSpawnedActorDestroy(class AActor* DestroyedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaLivingWorldManager", "OnSpawnedActorDestroy");
+	class UFunction* Func = Class->GetFunction("FortAthenaLivingWorldManager", "OnSpawnedActorDestroy");
 
 	Params::FortAthenaLivingWorldManager_OnSpawnedActorDestroy Parms{};
 
@@ -245,10 +215,7 @@ void UFortAthenaLivingWorldManager::OnSpawnedActorDestroy(class AActor* Destroye
 
 void IFortAthenaLivingWorldPointProviderInterface::GetFiltersTags(struct FGameplayTagContainer* FilterTags) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("FortAthenaLivingWorldPointProviderInterface", "GetFiltersTags");
+	class UFunction* Func = AsUObject()->Class->GetFunction("FortAthenaLivingWorldPointProviderInterface", "GetFiltersTags");
 
 	Params::FortAthenaLivingWorldPointProviderInterface_GetFiltersTags Parms{};
 
@@ -273,10 +240,7 @@ void IFortAthenaLivingWorldPointProviderInterface::GetFiltersTags(struct FGamepl
 
 bool IFortAthenaLivingWorldPointProviderInterface::GetValidLocation(struct FVector* OutPosition, struct FRotator* OutRotation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("FortAthenaLivingWorldPointProviderInterface", "GetValidLocation");
+	class UFunction* Func = AsUObject()->Class->GetFunction("FortAthenaLivingWorldPointProviderInterface", "GetValidLocation");
 
 	Params::FortAthenaLivingWorldPointProviderInterface_GetValidLocation Parms{};
 
@@ -305,10 +269,7 @@ bool IFortAthenaLivingWorldPointProviderInterface::GetValidLocation(struct FVect
 
 void AFortAthenaLivingWorldVolume::OnCurrentPlaylistLoaded(class FName PlaylistName, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaLivingWorldVolume", "OnCurrentPlaylistLoaded");
+	class UFunction* Func = Class->GetFunction("FortAthenaLivingWorldVolume", "OnCurrentPlaylistLoaded");
 
 	Params::FortAthenaLivingWorldVolume_OnCurrentPlaylistLoaded Parms{};
 
@@ -331,10 +292,7 @@ void AFortAthenaLivingWorldVolume::OnCurrentPlaylistLoaded(class FName PlaylistN
 
 void UFortCheatManager_LivingWorldManager::LivingWorldManagerSpawn(const class FString& EventDataName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheatManager_LivingWorldManager", "LivingWorldManagerSpawn");
+	class UFunction* Func = Class->GetFunction("FortCheatManager_LivingWorldManager", "LivingWorldManagerSpawn");
 
 	Params::FortCheatManager_LivingWorldManager_LivingWorldManagerSpawn Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 EMovieSceneCaptureProtocolState UMovieSceneCaptureProtocolBase::GetState() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCaptureProtocolBase", "GetState");
+	class UFunction* Func = Class->GetFunction("MovieSceneCaptureProtocolBase", "GetState");
 
 	Params::MovieSceneCaptureProtocolBase_GetState Parms{};
 
@@ -48,10 +45,7 @@ EMovieSceneCaptureProtocolState UMovieSceneCaptureProtocolBase::GetState() const
 
 bool UMovieSceneCaptureProtocolBase::IsCapturing() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCaptureProtocolBase", "IsCapturing");
+	class UFunction* Func = Class->GetFunction("MovieSceneCaptureProtocolBase", "IsCapturing");
 
 	Params::MovieSceneCaptureProtocolBase_IsCapturing Parms{};
 
@@ -73,10 +67,7 @@ bool UMovieSceneCaptureProtocolBase::IsCapturing() const
 
 class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetAudioCaptureProtocol()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCapture", "GetAudioCaptureProtocol");
+	class UFunction* Func = Class->GetFunction("MovieSceneCapture", "GetAudioCaptureProtocol");
 
 	Params::MovieSceneCapture_GetAudioCaptureProtocol Parms{};
 
@@ -98,10 +89,7 @@ class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetAudioCaptureProtoco
 
 class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetImageCaptureProtocol()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCapture", "GetImageCaptureProtocol");
+	class UFunction* Func = Class->GetFunction("MovieSceneCapture", "GetImageCaptureProtocol");
 
 	Params::MovieSceneCapture_GetImageCaptureProtocol Parms{};
 
@@ -123,10 +111,7 @@ class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetImageCaptureProtoco
 
 void UMovieSceneCapture::SetAudioCaptureProtocolType(TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCapture", "SetAudioCaptureProtocolType");
+	class UFunction* Func = Class->GetFunction("MovieSceneCapture", "SetAudioCaptureProtocolType");
 
 	Params::MovieSceneCapture_SetAudioCaptureProtocolType Parms{};
 
@@ -148,10 +133,7 @@ void UMovieSceneCapture::SetAudioCaptureProtocolType(TSubclassOf<class UMovieSce
 
 void UMovieSceneCapture::SetImageCaptureProtocolType(TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCapture", "SetImageCaptureProtocolType");
+	class UFunction* Func = Class->GetFunction("MovieSceneCapture", "SetImageCaptureProtocolType");
 
 	Params::MovieSceneCapture_SetImageCaptureProtocolType Parms{};
 
@@ -173,10 +155,7 @@ void UMovieSceneCapture::SetImageCaptureProtocolType(TSubclassOf<class UMovieSce
 
 class UMovieSceneAudioCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindAudioCaptureProtocol()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "FindAudioCaptureProtocol");
+	class UFunction* Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "FindAudioCaptureProtocol");
 
 	Params::MovieSceneCaptureEnvironment_FindAudioCaptureProtocol Parms{};
 
@@ -198,10 +177,7 @@ class UMovieSceneAudioCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindAu
 
 class UMovieSceneImageCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindImageCaptureProtocol()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "FindImageCaptureProtocol");
+	class UFunction* Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "FindImageCaptureProtocol");
 
 	Params::MovieSceneCaptureEnvironment_FindImageCaptureProtocol Parms{};
 
@@ -223,10 +199,7 @@ class UMovieSceneImageCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindIm
 
 float UMovieSceneCaptureEnvironment::GetCaptureElapsedTime()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "GetCaptureElapsedTime");
+	class UFunction* Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "GetCaptureElapsedTime");
 
 	Params::MovieSceneCaptureEnvironment_GetCaptureElapsedTime Parms{};
 
@@ -248,10 +221,7 @@ float UMovieSceneCaptureEnvironment::GetCaptureElapsedTime()
 
 int32 UMovieSceneCaptureEnvironment::GetCaptureFrameNumber()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "GetCaptureFrameNumber");
+	class UFunction* Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "GetCaptureFrameNumber");
 
 	Params::MovieSceneCaptureEnvironment_GetCaptureFrameNumber Parms{};
 
@@ -273,10 +243,7 @@ int32 UMovieSceneCaptureEnvironment::GetCaptureFrameNumber()
 
 bool UMovieSceneCaptureEnvironment::IsCaptureInProgress()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "IsCaptureInProgress");
+	class UFunction* Func = StaticClass()->GetFunction("MovieSceneCaptureEnvironment", "IsCaptureInProgress");
 
 	Params::MovieSceneCaptureEnvironment_IsCaptureInProgress Parms{};
 
@@ -296,10 +263,7 @@ bool UMovieSceneCaptureEnvironment::IsCaptureInProgress()
 
 void UUserDefinedCaptureProtocol::OnBeginFinalize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnBeginFinalize");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnBeginFinalize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -310,10 +274,7 @@ void UUserDefinedCaptureProtocol::OnBeginFinalize()
 
 void UUserDefinedCaptureProtocol::OnCaptureFrame()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnCaptureFrame");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnCaptureFrame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -324,10 +285,7 @@ void UUserDefinedCaptureProtocol::OnCaptureFrame()
 
 void UUserDefinedCaptureProtocol::OnFinalize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnFinalize");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnFinalize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -338,10 +296,7 @@ void UUserDefinedCaptureProtocol::OnFinalize()
 
 void UUserDefinedCaptureProtocol::OnPauseCapture()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPauseCapture");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPauseCapture");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -356,10 +311,7 @@ void UUserDefinedCaptureProtocol::OnPauseCapture()
 
 void UUserDefinedCaptureProtocol::OnPixelsReceived(const struct FCapturedPixels& Pixels, const struct FCapturedPixelsID& ID, const struct FFrameMetrics& FrameMetrics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPixelsReceived");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPixelsReceived");
 
 	Params::UserDefinedCaptureProtocol_OnPixelsReceived Parms{};
 
@@ -376,10 +328,7 @@ void UUserDefinedCaptureProtocol::OnPixelsReceived(const struct FCapturedPixels&
 
 void UUserDefinedCaptureProtocol::OnPreTick()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPreTick");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPreTick");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -392,10 +341,7 @@ void UUserDefinedCaptureProtocol::OnPreTick()
 
 bool UUserDefinedCaptureProtocol::OnSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnSetup");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnSetup");
 
 	Params::UserDefinedCaptureProtocol_OnSetup Parms{};
 
@@ -415,10 +361,7 @@ bool UUserDefinedCaptureProtocol::OnSetup()
 
 void UUserDefinedCaptureProtocol::OnStartCapture()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnStartCapture");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnStartCapture");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -429,10 +372,7 @@ void UUserDefinedCaptureProtocol::OnStartCapture()
 
 void UUserDefinedCaptureProtocol::OnTick()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnTick");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnTick");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -443,10 +383,7 @@ void UUserDefinedCaptureProtocol::OnTick()
 
 void UUserDefinedCaptureProtocol::OnWarmUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnWarmUp");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnWarmUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -460,10 +397,7 @@ void UUserDefinedCaptureProtocol::OnWarmUp()
 
 void UUserDefinedCaptureProtocol::ResolveBuffer(class UTexture* Buffer, const struct FCapturedPixelsID& BufferID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "ResolveBuffer");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "ResolveBuffer");
 
 	Params::UserDefinedCaptureProtocol_ResolveBuffer Parms{};
 
@@ -486,10 +420,7 @@ void UUserDefinedCaptureProtocol::ResolveBuffer(class UTexture* Buffer, const st
 
 void UUserDefinedCaptureProtocol::StartCapturingFinalPixels(const struct FCapturedPixelsID& StreamID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "StartCapturingFinalPixels");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "StartCapturingFinalPixels");
 
 	Params::UserDefinedCaptureProtocol_StartCapturingFinalPixels Parms{};
 
@@ -509,10 +440,7 @@ void UUserDefinedCaptureProtocol::StartCapturingFinalPixels(const struct FCaptur
 
 void UUserDefinedCaptureProtocol::StopCapturingFinalPixels()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "StopCapturingFinalPixels");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "StopCapturingFinalPixels");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -531,10 +459,7 @@ void UUserDefinedCaptureProtocol::StopCapturingFinalPixels()
 
 class FString UUserDefinedCaptureProtocol::GenerateFilename(const struct FFrameMetrics& InFrameMetrics) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "GenerateFilename");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "GenerateFilename");
 
 	Params::UserDefinedCaptureProtocol_GenerateFilename Parms{};
 
@@ -558,10 +483,7 @@ class FString UUserDefinedCaptureProtocol::GenerateFilename(const struct FFrameM
 
 struct FFrameMetrics UUserDefinedCaptureProtocol::GetCurrentFrameMetrics() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "GetCurrentFrameMetrics");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "GetCurrentFrameMetrics");
 
 	Params::UserDefinedCaptureProtocol_GetCurrentFrameMetrics Parms{};
 
@@ -583,10 +505,7 @@ struct FFrameMetrics UUserDefinedCaptureProtocol::GetCurrentFrameMetrics() const
 
 bool UUserDefinedCaptureProtocol::OnCanFinalize() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnCanFinalize");
+	class UFunction* Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnCanFinalize");
 
 	Params::UserDefinedCaptureProtocol_OnCanFinalize Parms{};
 
@@ -610,10 +529,7 @@ bool UUserDefinedCaptureProtocol::OnCanFinalize() const
 
 class FString UUserDefinedImageCaptureProtocol::GenerateFilenameForBuffer(class UTexture* Buffer, const struct FCapturedPixelsID& StreamID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "GenerateFilenameForBuffer");
+	class UFunction* Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "GenerateFilenameForBuffer");
 
 	Params::UserDefinedImageCaptureProtocol_GenerateFilenameForBuffer Parms{};
 
@@ -638,10 +554,7 @@ class FString UUserDefinedImageCaptureProtocol::GenerateFilenameForBuffer(class 
 
 class FString UUserDefinedImageCaptureProtocol::GenerateFilenameForCurrentFrame()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "GenerateFilenameForCurrentFrame");
+	class UFunction* Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "GenerateFilenameForCurrentFrame");
 
 	Params::UserDefinedImageCaptureProtocol_GenerateFilenameForCurrentFrame Parms{};
 
@@ -666,10 +579,7 @@ class FString UUserDefinedImageCaptureProtocol::GenerateFilenameForCurrentFrame(
 
 void UUserDefinedImageCaptureProtocol::WriteImageToDisk(const struct FCapturedPixels& PixelData, const struct FCapturedPixelsID& StreamID, const struct FFrameMetrics& FrameMetrics, bool bCopyImageData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "WriteImageToDisk");
+	class UFunction* Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "WriteImageToDisk");
 
 	Params::UserDefinedImageCaptureProtocol_WriteImageToDisk Parms{};
 

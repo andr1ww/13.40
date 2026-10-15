@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTabAudioOptions_New_C::ExecuteUbergraph_TabAudioOptions_New(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_New_C", "ExecuteUbergraph_TabAudioOptions_New");
+	class UFunction* Func = Class->GetFunction("TabAudioOptions_New_C", "ExecuteUbergraph_TabAudioOptions_New");
 
 	Params::TabAudioOptions_New_C_ExecuteUbergraph_TabAudioOptions_New Parms{};
 
@@ -41,10 +38,7 @@ void UTabAudioOptions_New_C::ExecuteUbergraph_TabAudioOptions_New(int32 EntryPoi
 
 void UTabAudioOptions_New_C::CenterOnTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_New_C", "CenterOnTab");
+	class UFunction* Func = Class->GetFunction("TabAudioOptions_New_C", "CenterOnTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UTabAudioOptions_New_C::CenterOnTab()
 
 void UTabAudioOptions_New_C::SettingValueChanged(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabAudioOptions_New_C", "SettingValueChanged");
+	class UFunction* Func = Class->GetFunction("TabAudioOptions_New_C", "SettingValueChanged");
 
 	Params::TabAudioOptions_New_C_SettingValueChanged Parms{};
 

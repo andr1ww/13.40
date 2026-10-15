@@ -278,6 +278,7 @@ namespace UC
 
 	public:
 		void Reserve(int32 Num);
+		void Free();
 
 		inline ArrayElementType& Add(ArrayElementType&& Element)
 		{
@@ -312,7 +313,44 @@ namespace UC
 				Data[i] = Data[i + 1];
 			}
 
+			Data[NumElements].~ArrayElementType();
+
 			return true;
+		}
+
+		inline bool Remove(const ArrayElementType& Item)
+		{
+			for (int32 Idx = 0; Idx < NumElements; Idx++)
+			{
+				if (Data[Idx] == Item)
+					return Remove(Idx);
+			}
+
+			return false;
+		}
+
+		template <class PT>
+		inline ArrayElementType* Search(PT Predicate)
+		{
+			for (int32 i = 0; i < NumElements; i++)
+			{
+				if (Predicate(Data[i]))
+					return &Data[i];
+			}
+
+			return nullptr;
+		}
+
+		template <class PT>
+		inline int32 SearchIndex(PT Predicate)
+		{
+			for (int32 i = 0; i < NumElements; i++)
+			{
+				if (Predicate(Data[i]))
+					return i;
+			}
+
+			return -1;
 		}
 
 		inline void Clear()

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_HidingProp_BlockMovement_C::ExecuteUbergraph_GA_Athena_HidingProp_BlockMovement(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_BlockMovement_C", "ExecuteUbergraph_GA_Athena_HidingProp_BlockMovement");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_BlockMovement_C", "ExecuteUbergraph_GA_Athena_HidingProp_BlockMovement");
 
 	Params::GA_Athena_HidingProp_BlockMovement_C_ExecuteUbergraph_GA_Athena_HidingProp_BlockMovement Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_HidingProp_BlockMovement_C::ExecuteUbergraph_GA_Athena_HidingPro
 
 void UGA_Athena_HidingProp_BlockMovement_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_BlockMovement_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_BlockMovement_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

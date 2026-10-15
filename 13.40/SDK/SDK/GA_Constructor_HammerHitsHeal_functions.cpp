@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Constructor_HammerHitsHeal_C::ExecuteUbergraph_GA_Constructor_HammerHitsHeal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "ExecuteUbergraph_GA_Constructor_HammerHitsHeal");
+	class UFunction* Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "ExecuteUbergraph_GA_Constructor_HammerHitsHeal");
 
 	Params::GA_Constructor_HammerHitsHeal_C_ExecuteUbergraph_GA_Constructor_HammerHitsHeal Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Constructor_HammerHitsHeal_C::ExecuteUbergraph_GA_Constructor_HammerHit
 
 void UGA_Constructor_HammerHitsHeal_C::SetupAbility(class UAbilitySystemComponent* AbilitySystem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "SetupAbility");
+	class UFunction* Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "SetupAbility");
 
 	Params::GA_Constructor_HammerHitsHeal_C_SetupAbility Parms{};
 
@@ -63,10 +57,7 @@ void UGA_Constructor_HammerHitsHeal_C::SetupAbility(class UAbilitySystemComponen
 
 void UGA_Constructor_HammerHitsHeal_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -85,10 +76,7 @@ void UGA_Constructor_HammerHitsHeal_C::K2_ActivateAbilityFromEvent(const struct 
 
 bool UGA_Constructor_HammerHitsHeal_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+	class UFunction* Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
 
 	Params::GA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondToEvent Parms{};
 

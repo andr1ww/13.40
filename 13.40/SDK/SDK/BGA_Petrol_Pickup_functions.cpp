@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_Petrol_Pickup_C::ExecuteUbergraph_BGA_Petrol_Pickup(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ExecuteUbergraph_BGA_Petrol_Pickup");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ExecuteUbergraph_BGA_Petrol_Pickup");
 
 	Params::BGA_Petrol_Pickup_C_ExecuteUbergraph_BGA_Petrol_Pickup Parms{};
 
@@ -45,10 +42,7 @@ void ABGA_Petrol_Pickup_C::ExecuteUbergraph_BGA_Petrol_Pickup(int32 EntryPoint)
 
 void ABGA_Petrol_Pickup_C::OnCurieElementInteractBegun_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag, const struct FCurieInteractParamsHandle& InteractParamsHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnCurieElementInteractBegun_BP");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnCurieElementInteractBegun_BP");
 
 	Params::BGA_Petrol_Pickup_C_OnCurieElementInteractBegun_BP Parms{};
 
@@ -69,10 +63,7 @@ void ABGA_Petrol_Pickup_C::OnCurieElementInteractBegun_BP(const struct FCurieCon
 
 void ABGA_Petrol_Pickup_C::OnCurieElementInteract_BP(const struct FCurieContainerHandle& CurieContainerHandle, const struct FGameplayTag& ElementTag, const struct FCurieInteractParamsHandle& InteractParamsHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnCurieElementInteract_BP");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnCurieElementInteract_BP");
 
 	Params::BGA_Petrol_Pickup_C_OnCurieElementInteract_BP Parms{};
 
@@ -92,10 +83,7 @@ void ABGA_Petrol_Pickup_C::OnCurieElementInteract_BP(const struct FCurieContaine
 
 void ABGA_Petrol_Pickup_C::BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
 
 	Params::BGA_Petrol_Pickup_C_BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
@@ -111,10 +99,7 @@ void ABGA_Petrol_Pickup_C::BndEvt__FortProjectileMovement_K2Node_ComponentBoundE
 
 void ABGA_Petrol_Pickup_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +112,7 @@ void ABGA_Petrol_Pickup_C::ReceiveBeginPlay()
 
 void ABGA_Petrol_Pickup_C::Refuel(int32 FuelToAdd)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "Refuel");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "Refuel");
 
 	Params::BGA_Petrol_Pickup_C_Refuel Parms{};
 
@@ -145,10 +127,7 @@ void ABGA_Petrol_Pickup_C::Refuel(int32 FuelToAdd)
 
 void ABGA_Petrol_Pickup_C::_ServerOnly_HideAndDestroy()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "(ServerOnly)HideAndDestroy");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "(ServerOnly)HideAndDestroy");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +138,7 @@ void ABGA_Petrol_Pickup_C::_ServerOnly_HideAndDestroy()
 
 void ABGA_Petrol_Pickup_C::HideAndDestroy()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "HideAndDestroy");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "HideAndDestroy");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +149,7 @@ void ABGA_Petrol_Pickup_C::HideAndDestroy()
 
 void ABGA_Petrol_Pickup_C::DropHeldItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "DropHeldItem");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "DropHeldItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +164,7 @@ void ABGA_Petrol_Pickup_C::DropHeldItem()
 
 void ABGA_Petrol_Pickup_C::SetHeldItemInfo(TScriptInterface<class IFortInventoryOwnerInterface> InventoryInterface, const struct FGuid& Guid, class AFortWeapon* WeaponAttachedTo_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "SetHeldItemInfo");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "SetHeldItemInfo");
 
 	Params::BGA_Petrol_Pickup_C_SetHeldItemInfo Parms{};
 
@@ -211,10 +181,7 @@ void ABGA_Petrol_Pickup_C::SetHeldItemInfo(TScriptInterface<class IFortInventory
 
 void ABGA_Petrol_Pickup_C::ExplodeAndDie()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ExplodeAndDie");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ExplodeAndDie");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,10 +192,7 @@ void ABGA_Petrol_Pickup_C::ExplodeAndDie()
 
 void ABGA_Petrol_Pickup_C::SpawnFireBallsExplodeAndDie()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "SpawnFireBallsExplodeAndDie");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "SpawnFireBallsExplodeAndDie");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -239,10 +203,7 @@ void ABGA_Petrol_Pickup_C::SpawnFireBallsExplodeAndDie()
 
 void ABGA_Petrol_Pickup_C::SetFuseAndDrop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "SetFuseAndDrop");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "SetFuseAndDrop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -261,10 +222,7 @@ void ABGA_Petrol_Pickup_C::SetFuseAndDrop()
 
 void ABGA_Petrol_Pickup_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnDeathServer");
 
 	Params::BGA_Petrol_Pickup_C_OnDeathServer Parms{};
 
@@ -287,10 +245,7 @@ void ABGA_Petrol_Pickup_C::OnDeathServer(float Damage, const struct FGameplayTag
 
 void ABGA_Petrol_Pickup_C::SpawnCurieFireballs(class AFortPawn* ExplodeInstigator_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "SpawnCurieFireballs");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "SpawnCurieFireballs");
 
 	Params::BGA_Petrol_Pickup_C_SpawnCurieFireballs Parms{};
 
@@ -313,10 +268,7 @@ void ABGA_Petrol_Pickup_C::SpawnCurieFireballs(class AFortPawn* ExplodeInstigato
 
 void ABGA_Petrol_Pickup_C::OnDamageServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnDamageServer");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnDamageServer");
 
 	Params::BGA_Petrol_Pickup_C_OnDamageServer Parms{};
 
@@ -337,10 +289,7 @@ void ABGA_Petrol_Pickup_C::OnDamageServer(float Damage, const struct FGameplayTa
 
 void ABGA_Petrol_Pickup_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -354,10 +303,7 @@ void ABGA_Petrol_Pickup_C::ReceiveDestroyed()
 
 void ABGA_Petrol_Pickup_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintOnInteract");
 
 	Params::BGA_Petrol_Pickup_C_BlueprintOnInteract Parms{};
 
@@ -373,10 +319,7 @@ void ABGA_Petrol_Pickup_C::BlueprintOnInteract(const class AFortPawn* Interactin
 
 void ABGA_Petrol_Pickup_C::OnRep_ShouldExplode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnRep_ShouldExplode");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnRep_ShouldExplode");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -387,10 +330,7 @@ void ABGA_Petrol_Pickup_C::OnRep_ShouldExplode()
 
 void ABGA_Petrol_Pickup_C::OnRep_LastHit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnRep_LastHit");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "OnRep_LastHit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -406,10 +346,7 @@ void ABGA_Petrol_Pickup_C::OnRep_LastHit()
 
 bool ABGA_Petrol_Pickup_C::ShouldDie(float Damage, class AController* EventInstigator, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ShouldDie");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "ShouldDie");
 
 	Params::BGA_Petrol_Pickup_C_ShouldDie Parms{};
 
@@ -432,10 +369,7 @@ bool ABGA_Petrol_Pickup_C::ShouldDie(float Damage, class AController* EventInsti
 
 void ABGA_Petrol_Pickup_C::CalcVehicleImpulse(class AActor* Vehicle, float Magnitude, struct FVector* Vector)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "CalcVehicleImpulse");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "CalcVehicleImpulse");
 
 	Params::BGA_Petrol_Pickup_C_CalcVehicleImpulse Parms{};
 
@@ -457,10 +391,7 @@ void ABGA_Petrol_Pickup_C::CalcVehicleImpulse(class AActor* Vehicle, float Magni
 
 bool ABGA_Petrol_Pickup_C::BlueprintOnLocalInteract(class AFortPlayerPawn* InteractingPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintOnLocalInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintOnLocalInteract");
 
 	Params::BGA_Petrol_Pickup_C_BlueprintOnLocalInteract Parms{};
 
@@ -482,10 +413,7 @@ bool ABGA_Petrol_Pickup_C::BlueprintOnLocalInteract(class AFortPlayerPawn* Inter
 
 bool ABGA_Petrol_Pickup_C::BlueprintGetInteractionTime(const class AFortPawn* InteractingPawn, float* OutInteractionTime, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintGetInteractionTime");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintGetInteractionTime");
 
 	Params::BGA_Petrol_Pickup_C_BlueprintGetInteractionTime Parms{};
 
@@ -510,10 +438,7 @@ bool ABGA_Petrol_Pickup_C::BlueprintGetInteractionTime(const class AFortPawn* In
 
 class FText ABGA_Petrol_Pickup_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintGetInteractionString");
 
 	Params::BGA_Petrol_Pickup_C_BlueprintGetInteractionString Parms{};
 
@@ -536,10 +461,7 @@ class FText ABGA_Petrol_Pickup_C::BlueprintGetInteractionString(const class AFor
 
 bool ABGA_Petrol_Pickup_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Petrol_Pickup_C", "BlueprintCanInteract");
 
 	Params::BGA_Petrol_Pickup_C_BlueprintCanInteract Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 class UWidget* UMiniCraftingIngredientListEntry_C::Get_ItemCountWidget_ToolTipWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "Get_ItemCountWidget_ToolTipWidget");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "Get_ItemCountWidget_ToolTipWidget");
 
 	Params::MiniCraftingIngredientListEntry_C_Get_ItemCountWidget_ToolTipWidget Parms{};
 
@@ -41,10 +38,7 @@ class UWidget* UMiniCraftingIngredientListEntry_C::Get_ItemCountWidget_ToolTipWi
 
 void UMiniCraftingIngredientListEntry_C::RefreshBeingPreviewed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "RefreshBeingPreviewed");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "RefreshBeingPreviewed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UMiniCraftingIngredientListEntry_C::RefreshBeingPreviewed()
 
 void UMiniCraftingIngredientListEntry_C::Refresh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "Refresh");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UMiniCraftingIngredientListEntry_C::Refresh()
 
 void UMiniCraftingIngredientListEntry_C::HandleDifferentItemOrQuantitySetBP(const bool IsBeingReset_HandleDifferentItemOrQuantitySetBP)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "HandleDifferentItemOrQuantitySetBP");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "HandleDifferentItemOrQuantitySetBP");
 
 	Params::MiniCraftingIngredientListEntry_C_HandleDifferentItemOrQuantitySetBP Parms{};
 
@@ -89,10 +77,7 @@ void UMiniCraftingIngredientListEntry_C::HandleDifferentItemOrQuantitySetBP(cons
 
 void UMiniCraftingIngredientListEntry_C::PreviewStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "PreviewStarted");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "PreviewStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UMiniCraftingIngredientListEntry_C::PreviewStarted()
 
 void UMiniCraftingIngredientListEntry_C::PreviewEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "PreviewEnded");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "PreviewEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void UMiniCraftingIngredientListEntry_C::PreviewEnded()
 
 void UMiniCraftingIngredientListEntry_C::RefreshListEntry()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "RefreshListEntry");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "RefreshListEntry");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +112,7 @@ void UMiniCraftingIngredientListEntry_C::RefreshListEntry()
 
 void UMiniCraftingIngredientListEntry_C::ExecuteUbergraph_MiniCraftingIngredientListEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "ExecuteUbergraph_MiniCraftingIngredientListEntry");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "ExecuteUbergraph_MiniCraftingIngredientListEntry");
 
 	Params::MiniCraftingIngredientListEntry_C_ExecuteUbergraph_MiniCraftingIngredientListEntry Parms{};
 

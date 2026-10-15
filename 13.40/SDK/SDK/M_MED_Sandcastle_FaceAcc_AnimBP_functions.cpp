@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UM_MED_Sandcastle_FaceAcc_AnimBP_C::ExecuteUbergraph_M_MED_Sandcastle_FaceAcc_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "ExecuteUbergraph_M_MED_Sandcastle_FaceAcc_AnimBP");
+	class UFunction* Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "ExecuteUbergraph_M_MED_Sandcastle_FaceAcc_AnimBP");
 
 	Params::M_MED_Sandcastle_FaceAcc_AnimBP_C_ExecuteUbergraph_M_MED_Sandcastle_FaceAcc_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UM_MED_Sandcastle_FaceAcc_AnimBP_C::ExecuteUbergraph_M_MED_Sandcastle_FaceA
 
 void UM_MED_Sandcastle_FaceAcc_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "BlueprintUpdateAnimation");
 
 	Params::M_MED_Sandcastle_FaceAcc_AnimBP_C_BlueprintUpdateAnimation Parms{};
 
@@ -61,10 +55,7 @@ void UM_MED_Sandcastle_FaceAcc_AnimBP_C::BlueprintUpdateAnimation(float DeltaTim
 
 void UM_MED_Sandcastle_FaceAcc_AnimBP_C::OnEndSkydiving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "OnEndSkydiving");
+	class UFunction* Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "OnEndSkydiving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UM_MED_Sandcastle_FaceAcc_AnimBP_C::OnEndSkydiving()
 
 void UM_MED_Sandcastle_FaceAcc_AnimBP_C::OnEndTargeting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "OnEndTargeting");
+	class UFunction* Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "OnEndTargeting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UM_MED_Sandcastle_FaceAcc_AnimBP_C::OnEndTargeting()
 
 void UM_MED_Sandcastle_FaceAcc_AnimBP_C::OnBeginTargeting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "OnBeginTargeting");
+	class UFunction* Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "OnBeginTargeting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UM_MED_Sandcastle_FaceAcc_AnimBP_C::OnBeginTargeting()
 
 void UM_MED_Sandcastle_FaceAcc_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("M_MED_Sandcastle_FaceAcc_AnimBP_C", "AnimGraph");
 
 	Params::M_MED_Sandcastle_FaceAcc_AnimBP_C_AnimGraph Parms{};
 

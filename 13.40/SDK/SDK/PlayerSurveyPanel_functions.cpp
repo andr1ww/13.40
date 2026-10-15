@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerSurveyPanel_C::ExecuteUbergraph_PlayerSurveyPanel(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanel_C", "ExecuteUbergraph_PlayerSurveyPanel");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanel_C", "ExecuteUbergraph_PlayerSurveyPanel");
 
 	Params::PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel Parms{};
 
@@ -41,10 +38,7 @@ void UPlayerSurveyPanel_C::ExecuteUbergraph_PlayerSurveyPanel(int32 EntryPoint)
 
 void UPlayerSurveyPanel_C::OnPlayerSurveyEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanel_C", "OnPlayerSurveyEnded");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanel_C", "OnPlayerSurveyEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UPlayerSurveyPanel_C::OnPlayerSurveyEnded()
 
 void UPlayerSurveyPanel_C::StartIntro_BP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanel_C", "StartIntro_BP");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanel_C", "StartIntro_BP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UPlayerSurveyPanel_C::StartIntro_BP()
 
 void UPlayerSurveyPanel_C::StartIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanel_C", "StartIntro");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanel_C", "StartIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UPlayerSurveyPanel_C::StartIntro()
 
 void UPlayerSurveyPanel_C::OutroDone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanel_C", "OutroDone");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanel_C", "OutroDone");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UPlayerSurveyPanel_C::OutroDone()
 
 void UPlayerSurveyPanel_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerSurveyPanel_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PlayerSurveyPanel_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

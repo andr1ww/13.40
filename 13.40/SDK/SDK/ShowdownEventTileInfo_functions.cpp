@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UShowdownEventTileInfo_C::ExecuteUbergraph_ShowdownEventTileInfo(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileInfo_C", "ExecuteUbergraph_ShowdownEventTileInfo");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileInfo_C", "ExecuteUbergraph_ShowdownEventTileInfo");
 
 	Params::ShowdownEventTileInfo_C_ExecuteUbergraph_ShowdownEventTileInfo Parms{};
 
@@ -41,10 +38,7 @@ void UShowdownEventTileInfo_C::ExecuteUbergraph_ShowdownEventTileInfo(int32 Entr
 
 void UShowdownEventTileInfo_C::EventColorize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventColorize");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventColorize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UShowdownEventTileInfo_C::EventColorize()
 
 void UShowdownEventTileInfo_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileInfo_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileInfo_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UShowdownEventTileInfo_C::Construct()
 
 void UShowdownEventTileInfo_C::EventAnimHover(bool In)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventAnimHover");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventAnimHover");
 
 	Params::ShowdownEventTileInfo_C_EventAnimHover Parms{};
 
@@ -89,10 +77,7 @@ void UShowdownEventTileInfo_C::EventAnimHover(bool In)
 
 void UShowdownEventTileInfo_C::EventStyleSocket()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventStyleSocket");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventStyleSocket");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UShowdownEventTileInfo_C::EventStyleSocket()
 
 void UShowdownEventTileInfo_C::EventAnimFocus(bool In)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventAnimFocus");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventAnimFocus");
 
 	Params::ShowdownEventTileInfo_C_EventAnimFocus Parms{};
 
@@ -123,10 +105,7 @@ void UShowdownEventTileInfo_C::EventAnimFocus(bool In)
 
 void UShowdownEventTileInfo_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTileInfo_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("ShowdownEventTileInfo_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

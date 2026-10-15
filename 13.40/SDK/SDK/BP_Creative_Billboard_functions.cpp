@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Creative_Billboard_C::ExecuteUbergraph_BP_Creative_Billboard(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "ExecuteUbergraph_BP_Creative_Billboard");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "ExecuteUbergraph_BP_Creative_Billboard");
 
 	Params::BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard Parms{};
 
@@ -43,10 +40,7 @@ void ABP_Creative_Billboard_C::ExecuteUbergraph_BP_Creative_Billboard(int32 Entr
 
 void ABP_Creative_Billboard_C::Initialize_Minigame_Options(class AFortMinigame* Minigame)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "Initialize Minigame Options");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "Initialize Minigame Options");
 
 	Params::BP_Creative_Billboard_C_Initialize_Minigame_Options Parms{};
 
@@ -64,10 +58,7 @@ void ABP_Creative_Billboard_C::Initialize_Minigame_Options(class AFortMinigame* 
 
 void ABP_Creative_Billboard_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature(class AFortMinigame* Minigame, EFortMinigameState NewMinigameState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature");
 
 	Params::BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature Parms{};
 
@@ -83,10 +74,7 @@ void ABP_Creative_Billboard_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEv
 
 void ABP_Creative_Billboard_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +87,7 @@ void ABP_Creative_Billboard_C::ReceiveBeginPlay()
 
 void ABP_Creative_Billboard_C::BndEvt__Creative_Enabled_Component_K2Node_ComponentBoundEvent_7_On_Enabled_State_Changed__DelegateSignature(bool Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__Creative_Enabled_Component_K2Node_ComponentBoundEvent_7_On Enabled State Changed__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__Creative_Enabled_Component_K2Node_ComponentBoundEvent_7_On Enabled State Changed__DelegateSignature");
 
 	Params::BP_Creative_Billboard_C_BndEvt__Creative_Enabled_Component_K2Node_ComponentBoundEvent_7_On_Enabled_State_Changed__DelegateSignature Parms{};
 
@@ -117,10 +102,7 @@ void ABP_Creative_Billboard_C::BndEvt__Creative_Enabled_Component_K2Node_Compone
 
 void ABP_Creative_Billboard_C::Initialize_Device()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "Initialize Device");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "Initialize Device");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +113,7 @@ void ABP_Creative_Billboard_C::Initialize_Device()
 
 void ABP_Creative_Billboard_C::OnWorldReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "OnWorldReady");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "OnWorldReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +126,7 @@ void ABP_Creative_Billboard_C::OnWorldReady()
 
 void ABP_Creative_Billboard_C::BndEvt__VisibleInGameComponent_K2Node_ComponentBoundEvent_6_On_Visibility_Changed__DelegateSignature(bool Visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__VisibleInGameComponent_K2Node_ComponentBoundEvent_6_On Visibility Changed__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__VisibleInGameComponent_K2Node_ComponentBoundEvent_6_On Visibility Changed__DelegateSignature");
 
 	Params::BP_Creative_Billboard_C_BndEvt__VisibleInGameComponent_K2Node_ComponentBoundEvent_6_On_Visibility_Changed__DelegateSignature Parms{};
 
@@ -165,10 +141,7 @@ void ABP_Creative_Billboard_C::BndEvt__VisibleInGameComponent_K2Node_ComponentBo
 
 void ABP_Creative_Billboard_C::Update_Static_Mesh_Component_Visibility_Options()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "Update Static Mesh Component Visibility Options");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "Update Static Mesh Component Visibility Options");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -182,10 +155,7 @@ void ABP_Creative_Billboard_C::Update_Static_Mesh_Component_Visibility_Options()
 
 void ABP_Creative_Billboard_C::Play_Mode_Changed(class AFortMinigame* Minigame, bool bIsInPlayMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "Play Mode Changed");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "Play Mode Changed");
 
 	Params::BP_Creative_Billboard_C_Play_Mode_Changed Parms{};
 
@@ -203,10 +173,7 @@ void ABP_Creative_Billboard_C::Play_Mode_Changed(class AFortMinigame* Minigame, 
 
 void ABP_Creative_Billboard_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_5_OnMinigameAssignmentChanged__DelegateSignature(class AFortMinigame* Minigame)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_5_OnMinigameAssignmentChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_5_OnMinigameAssignmentChanged__DelegateSignature");
 
 	Params::BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_5_OnMinigameAssignmentChanged__DelegateSignature Parms{};
 
@@ -223,10 +190,7 @@ void ABP_Creative_Billboard_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEv
 
 void ABP_Creative_Billboard_C::BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature");
 
 	Params::BP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature Parms{};
 
@@ -243,10 +207,7 @@ void ABP_Creative_Billboard_C::BndEvt__HideTextReceiverComponent_K2Node_Componen
 
 void ABP_Creative_Billboard_C::BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature");
 
 	Params::BP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature Parms{};
 
@@ -261,10 +222,7 @@ void ABP_Creative_Billboard_C::BndEvt__ShowTextReceiverComponent_K2Node_Componen
 
 void ABP_Creative_Billboard_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -275,10 +233,7 @@ void ABP_Creative_Billboard_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBound
 
 void ABP_Creative_Billboard_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -289,10 +244,7 @@ void ABP_Creative_Billboard_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBound
 
 void ABP_Creative_Billboard_C::PostUpdateProperties()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "PostUpdateProperties");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "PostUpdateProperties");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -303,10 +255,7 @@ void ABP_Creative_Billboard_C::PostUpdateProperties()
 
 void ABP_Creative_Billboard_C::SetBackgroundColor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetBackgroundColor");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "SetBackgroundColor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -317,10 +266,7 @@ void ABP_Creative_Billboard_C::SetBackgroundColor()
 
 void ABP_Creative_Billboard_C::SetTextSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextSize");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -331,10 +277,7 @@ void ABP_Creative_Billboard_C::SetTextSize()
 
 void ABP_Creative_Billboard_C::SetTextAlignment()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextAlignment");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextAlignment");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -345,10 +288,7 @@ void ABP_Creative_Billboard_C::SetTextAlignment()
 
 void ABP_Creative_Billboard_C::SetDisplayText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetDisplayText");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "SetDisplayText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -359,10 +299,7 @@ void ABP_Creative_Billboard_C::SetDisplayText()
 
 void ABP_Creative_Billboard_C::UpdateProperties()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "UpdateProperties");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "UpdateProperties");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -373,10 +310,7 @@ void ABP_Creative_Billboard_C::UpdateProperties()
 
 void ABP_Creative_Billboard_C::SetTextColor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextColor");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextColor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -387,10 +321,7 @@ void ABP_Creative_Billboard_C::SetTextColor()
 
 void ABP_Creative_Billboard_C::SetViewDistance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetViewDistance");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "SetViewDistance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -401,10 +332,7 @@ void ABP_Creative_Billboard_C::SetViewDistance()
 
 void ABP_Creative_Billboard_C::SetTextFont()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextFont");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextFont");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -415,10 +343,7 @@ void ABP_Creative_Billboard_C::SetTextFont()
 
 void ABP_Creative_Billboard_C::SetShadow()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetShadow");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "SetShadow");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -429,10 +354,7 @@ void ABP_Creative_Billboard_C::SetShadow()
 
 void ABP_Creative_Billboard_C::Create_Widget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "Create Widget");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "Create Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -445,10 +367,7 @@ void ABP_Creative_Billboard_C::Create_Widget()
 
 void ABP_Creative_Billboard_C::Text_Visibility_On_Game_State(EFortMinigameState New_State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "Text Visibility On Game State");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "Text Visibility On Game State");
 
 	Params::BP_Creative_Billboard_C_Text_Visibility_On_Game_State Parms{};
 
@@ -463,10 +382,7 @@ void ABP_Creative_Billboard_C::Text_Visibility_On_Game_State(EFortMinigameState 
 
 void ABP_Creative_Billboard_C::Update_Last_Game_State_Enable_Changed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "Update Last Game State Enable Changed");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "Update Last Game State Enable Changed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -480,10 +396,7 @@ void ABP_Creative_Billboard_C::Update_Last_Game_State_Enable_Changed()
 
 void ABP_Creative_Billboard_C::GetCreativeActorBounds(bool* Override_Bounds, struct FVector* Bounds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "GetCreativeActorBounds");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "GetCreativeActorBounds");
 
 	Params::BP_Creative_Billboard_C_GetCreativeActorBounds Parms{};
 
@@ -505,10 +418,7 @@ void ABP_Creative_Billboard_C::GetCreativeActorBounds(bool* Override_Bounds, str
 
 void ABP_Creative_Billboard_C::GetCreativeActorOrigin(bool* Override, struct FVector* Center)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "GetCreativeActorOrigin");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "GetCreativeActorOrigin");
 
 	Params::BP_Creative_Billboard_C_GetCreativeActorOrigin Parms{};
 
@@ -529,10 +439,7 @@ void ABP_Creative_Billboard_C::GetCreativeActorOrigin(bool* Override, struct FVe
 
 TArray<class UMeshComponent*> ABP_Creative_Billboard_C::GetMeshComponents() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "GetMeshComponents");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "GetMeshComponents");
 
 	Params::BP_Creative_Billboard_C_GetMeshComponents Parms{};
 
@@ -549,10 +456,7 @@ TArray<class UMeshComponent*> ABP_Creative_Billboard_C::GetMeshComponents() cons
 
 class UStaticMesh* ABP_Creative_Billboard_C::GetCollisionStaticMesh() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Creative_Billboard_C", "GetCollisionStaticMesh");
+	class UFunction* Func = Class->GetFunction("BP_Creative_Billboard_C", "GetCollisionStaticMesh");
 
 	Params::BP_Creative_Billboard_C_GetCollisionStaticMesh Parms{};
 

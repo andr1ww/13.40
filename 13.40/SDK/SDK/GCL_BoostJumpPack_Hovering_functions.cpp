@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCL_BoostJumpPack_Hovering_C::ExecuteUbergraph_GCL_BoostJumpPack_Hovering(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ExecuteUbergraph_GCL_BoostJumpPack_Hovering");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ExecuteUbergraph_GCL_BoostJumpPack_Hovering");
 
 	Params::GCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering Parms{};
 
@@ -41,10 +38,7 @@ void AGCL_BoostJumpPack_Hovering_C::ExecuteUbergraph_GCL_BoostJumpPack_Hovering(
 
 void AGCL_BoostJumpPack_Hovering_C::TryToPlayGroundEffects()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "TryToPlayGroundEffects");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "TryToPlayGroundEffects");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AGCL_BoostJumpPack_Hovering_C::TryToPlayGroundEffects()
 
 void AGCL_BoostJumpPack_Hovering_C::PlayLowFuelWarning()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "PlayLowFuelWarning");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "PlayLowFuelWarning");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AGCL_BoostJumpPack_Hovering_C::PlayLowFuelWarning()
 
 void AGCL_BoostJumpPack_Hovering_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,10 +75,7 @@ void AGCL_BoostJumpPack_Hovering_C::ReceiveDestroyed()
 
 void AGCL_BoostJumpPack_Hovering_C::K2_HandleGameplayCue(class AActor* MyTarget, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "K2_HandleGameplayCue");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "K2_HandleGameplayCue");
 
 	Params::GCL_BoostJumpPack_Hovering_C_K2_HandleGameplayCue Parms{};
 
@@ -107,10 +92,7 @@ void AGCL_BoostJumpPack_Hovering_C::K2_HandleGameplayCue(class AActor* MyTarget,
 
 void AGCL_BoostJumpPack_Hovering_C::ResetFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ResetFX");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ResetFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void AGCL_BoostJumpPack_Hovering_C::ResetFX()
 
 void AGCL_BoostJumpPack_Hovering_C::On_Pawn_Landed(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "On Pawn Landed");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "On Pawn Landed");
 
 	Params::GCL_BoostJumpPack_Hovering_C_On_Pawn_Landed Parms{};
 
@@ -145,10 +124,7 @@ void AGCL_BoostJumpPack_Hovering_C::On_Pawn_Landed(const struct FHitResult& Hit)
 
 bool AGCL_BoostJumpPack_Hovering_C::OnActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "OnActive");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "OnActive");
 
 	Params::GCL_BoostJumpPack_Hovering_C_OnActive Parms{};
 
@@ -170,10 +146,7 @@ bool AGCL_BoostJumpPack_Hovering_C::OnActive(class AActor* MyTarget, const struc
 
 bool AGCL_BoostJumpPack_Hovering_C::OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "OnRemove");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "OnRemove");
 
 	Params::GCL_BoostJumpPack_Hovering_C_OnRemove Parms{};
 
@@ -193,10 +166,7 @@ bool AGCL_BoostJumpPack_Hovering_C::OnRemove(class AActor* MyTarget, const struc
 
 void AGCL_BoostJumpPack_Hovering_C::SetJetpackAudioEnabled(bool Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "SetJetpackAudioEnabled");
+	class UFunction* Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "SetJetpackAudioEnabled");
 
 	Params::GCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled Parms{};
 

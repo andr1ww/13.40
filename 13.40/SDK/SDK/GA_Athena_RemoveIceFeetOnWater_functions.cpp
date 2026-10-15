@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_RemoveIceFeetOnWater_C::ExecuteUbergraph_GA_Athena_RemoveIceFeetOnWater(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_RemoveIceFeetOnWater_C", "ExecuteUbergraph_GA_Athena_RemoveIceFeetOnWater");
+	class UFunction* Func = Class->GetFunction("GA_Athena_RemoveIceFeetOnWater_C", "ExecuteUbergraph_GA_Athena_RemoveIceFeetOnWater");
 
 	Params::GA_Athena_RemoveIceFeetOnWater_C_ExecuteUbergraph_GA_Athena_RemoveIceFeetOnWater Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_RemoveIceFeetOnWater_C::ExecuteUbergraph_GA_Athena_RemoveIceFeet
 
 void UGA_Athena_RemoveIceFeetOnWater_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_RemoveIceFeetOnWater_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_RemoveIceFeetOnWater_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Athena_RemoveIceFeetOnWater_C::K2_ActivateAbility()
 
 void UGA_Athena_RemoveIceFeetOnWater_C::Added_ABAD1DEE46A337533ED461815C2B7BED()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_RemoveIceFeetOnWater_C", "Added_ABAD1DEE46A337533ED461815C2B7BED");
+	class UFunction* Func = Class->GetFunction("GA_Athena_RemoveIceFeetOnWater_C", "Added_ABAD1DEE46A337533ED461815C2B7BED");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

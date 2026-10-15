@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AImpactNumbers_C::ExecuteUbergraph_ImpactNumbers(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImpactNumbers_C", "ExecuteUbergraph_ImpactNumbers");
+	class UFunction* Func = Class->GetFunction("ImpactNumbers_C", "ExecuteUbergraph_ImpactNumbers");
 
 	Params::ImpactNumbers_C_ExecuteUbergraph_ImpactNumbers Parms{};
 
@@ -43,10 +40,7 @@ void AImpactNumbers_C::ExecuteUbergraph_ImpactNumbers(int32 EntryPoint)
 
 void AImpactNumbers_C::OnNewDamageNumber(const struct FFortDamageNumberInfo& NewDamageNumberInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImpactNumbers_C", "OnNewDamageNumber");
+	class UFunction* Func = Class->GetFunction("ImpactNumbers_C", "OnNewDamageNumber");
 
 	Params::ImpactNumbers_C_OnNewDamageNumber Parms{};
 
@@ -65,10 +59,7 @@ void AImpactNumbers_C::OnNewDamageNumber(const struct FFortDamageNumberInfo& New
 
 void AImpactNumbers_C::init_a_new_number_set(struct FFortDamageNumberInfo& NewDamageHitInfoStruct, struct FTransform* OutCameraTransform, struct FVector* OutNumberLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ImpactNumbers_C", "init a new number set");
+	class UFunction* Func = Class->GetFunction("ImpactNumbers_C", "init a new number set");
 
 	Params::ImpactNumbers_C_init_a_new_number_set Parms{};
 

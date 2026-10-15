@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFeatTimelineListEntry_C::ExecuteUbergraph_FeatTimelineListEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "ExecuteUbergraph_FeatTimelineListEntry");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "ExecuteUbergraph_FeatTimelineListEntry");
 
 	Params::FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry Parms{};
 
@@ -41,10 +38,7 @@ void UFeatTimelineListEntry_C::ExecuteUbergraph_FeatTimelineListEntry(int32 Entr
 
 void UFeatTimelineListEntry_C::UnHoverFeat()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "UnHoverFeat");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "UnHoverFeat");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UFeatTimelineListEntry_C::UnHoverFeat()
 
 void UFeatTimelineListEntry_C::HoverFeat()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "HoverFeat");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "HoverFeat");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UFeatTimelineListEntry_C::HoverFeat()
 
 void UFeatTimelineListEntry_C::BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
 
 	Params::FeatTimelineListEntry_C_BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -91,10 +79,7 @@ void UFeatTimelineListEntry_C::BndEvt__SimpleButton_ClickArea_K2Node_ComponentBo
 
 void UFeatTimelineListEntry_C::BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::FeatTimelineListEntry_C_BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -109,10 +94,7 @@ void UFeatTimelineListEntry_C::BndEvt__SimpleButton_ClickArea_K2Node_ComponentBo
 
 void UFeatTimelineListEntry_C::OnWaitingForCompletedTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "OnWaitingForCompletedTimer");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "OnWaitingForCompletedTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UFeatTimelineListEntry_C::OnWaitingForCompletedTimer()
 
 void UFeatTimelineListEntry_C::WidgetAnimationEvt_OnShowCompleted_K2Node_WidgetAnimationEvent_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "WidgetAnimationEvt_OnShowCompleted_K2Node_WidgetAnimationEvent_0");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "WidgetAnimationEvt_OnShowCompleted_K2Node_WidgetAnimationEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void UFeatTimelineListEntry_C::WidgetAnimationEvt_OnShowCompleted_K2Node_WidgetA
 
 void UFeatTimelineListEntry_C::OnFeatCompletedThisSession()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "OnFeatCompletedThisSession");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "OnFeatCompletedThisSession");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void UFeatTimelineListEntry_C::OnFeatCompletedThisSession()
 
 void UFeatTimelineListEntry_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "PreConstruct");
 
 	Params::FeatTimelineListEntry_C_PreConstruct Parms{};
 
@@ -173,10 +146,7 @@ void UFeatTimelineListEntry_C::PreConstruct(bool IsDesignTime)
 
 void UFeatTimelineListEntry_C::OnTimespanInfoSet(int32 NumDays)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "OnTimespanInfoSet");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "OnTimespanInfoSet");
 
 	Params::FeatTimelineListEntry_C_OnTimespanInfoSet Parms{};
 
@@ -194,10 +164,7 @@ void UFeatTimelineListEntry_C::OnTimespanInfoSet(int32 NumDays)
 
 void UFeatTimelineListEntry_C::OnFeatInfoSet(int32 NumFeatsOnDay, int32 IdxOnDay)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "OnFeatInfoSet");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "OnFeatInfoSet");
 
 	Params::FeatTimelineListEntry_C_OnFeatInfoSet Parms{};
 
@@ -213,10 +180,7 @@ void UFeatTimelineListEntry_C::OnFeatInfoSet(int32 NumFeatsOnDay, int32 IdxOnDay
 
 void UFeatTimelineListEntry_C::SetSeasonStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FeatTimelineListEntry_C", "SetSeasonStyle");
+	class UFunction* Func = Class->GetFunction("FeatTimelineListEntry_C", "SetSeasonStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

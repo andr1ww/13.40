@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_UtilityItem_Generic_Athena_C::ExecuteUbergraph_B_UtilityItem_Generic_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_UtilityItem_Generic_Athena_C", "ExecuteUbergraph_B_UtilityItem_Generic_Athena");
+	class UFunction* Func = Class->GetFunction("B_UtilityItem_Generic_Athena_C", "ExecuteUbergraph_B_UtilityItem_Generic_Athena");
 
 	Params::B_UtilityItem_Generic_Athena_C_ExecuteUbergraph_B_UtilityItem_Generic_Athena Parms{};
 
@@ -43,10 +40,7 @@ void AB_UtilityItem_Generic_Athena_C::ExecuteUbergraph_B_UtilityItem_Generic_Ath
 
 void AB_UtilityItem_Generic_Athena_C::ThrowConsumableHudActionKey_Visible(bool Visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_UtilityItem_Generic_Athena_C", "ThrowConsumableHudActionKey_Visible");
+	class UFunction* Func = Class->GetFunction("B_UtilityItem_Generic_Athena_C", "ThrowConsumableHudActionKey_Visible");
 
 	Params::B_UtilityItem_Generic_Athena_C_ThrowConsumableHudActionKey_Visible Parms{};
 
@@ -63,10 +57,7 @@ void AB_UtilityItem_Generic_Athena_C::ThrowConsumableHudActionKey_Visible(bool V
 
 void AB_UtilityItem_Generic_Athena_C::ThrowConsumableHudActionKey_Targeting(bool Targeting)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_UtilityItem_Generic_Athena_C", "ThrowConsumableHudActionKey_Targeting");
+	class UFunction* Func = Class->GetFunction("B_UtilityItem_Generic_Athena_C", "ThrowConsumableHudActionKey_Targeting");
 
 	Params::B_UtilityItem_Generic_Athena_C_ThrowConsumableHudActionKey_Targeting Parms{};
 
@@ -81,10 +72,7 @@ void AB_UtilityItem_Generic_Athena_C::ThrowConsumableHudActionKey_Targeting(bool
 
 void AB_UtilityItem_Generic_Athena_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_UtilityItem_Generic_Athena_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_UtilityItem_Generic_Athena_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

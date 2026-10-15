@@ -26,10 +26,7 @@ SDK_NAMESPACE_START
 
 void UAutomationUtilsBlueprintLibrary::TakeGameplayAutomationScreenshot(const class FString& ScreenshotName, float MaxGlobalError, float MaxLocalError, const class FString& MapNameOverride)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AutomationUtilsBlueprintLibrary", "TakeGameplayAutomationScreenshot");
+	class UFunction* Func = StaticClass()->GetFunction("AutomationUtilsBlueprintLibrary", "TakeGameplayAutomationScreenshot");
 
 	Params::AutomationUtilsBlueprintLibrary_TakeGameplayAutomationScreenshot Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreativeServerPipButton_C::ExecuteUbergraph_CreativeServerPipButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "ExecuteUbergraph_CreativeServerPipButton");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "ExecuteUbergraph_CreativeServerPipButton");
 
 	Params::CreativeServerPipButton_C_ExecuteUbergraph_CreativeServerPipButton Parms{};
 
@@ -41,10 +38,7 @@ void UCreativeServerPipButton_C::ExecuteUbergraph_CreativeServerPipButton(int32 
 
 void UCreativeServerPipButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UCreativeServerPipButton_C::BP_OnUnhovered()
 
 void UCreativeServerPipButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UCreativeServerPipButton_C::BP_OnHovered()
 
 void UCreativeServerPipButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UCreativeServerPipButton_C::Construct()
 
 void UCreativeServerPipButton_C::OnActionComplete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "OnActionComplete");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "OnActionComplete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UCreativeServerPipButton_C::OnActionComplete()
 
 void UCreativeServerPipButton_C::OnActionProgress(float HeldPercent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "OnActionProgress");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "OnActionProgress");
 
 	Params::CreativeServerPipButton_C_OnActionProgress Parms{};
 
@@ -119,10 +101,7 @@ void UCreativeServerPipButton_C::OnActionProgress(float HeldPercent)
 
 void UCreativeServerPipButton_C::OnTriggeredInputActionChanged(const struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "OnTriggeredInputActionChanged");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "OnTriggeredInputActionChanged");
 
 	Params::CreativeServerPipButton_C_OnTriggeredInputActionChanged Parms{};
 
@@ -139,10 +118,7 @@ void UCreativeServerPipButton_C::OnTriggeredInputActionChanged(const struct FDat
 
 void UCreativeServerPipButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
 
 	Params::CreativeServerPipButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature Parms{};
 
@@ -159,10 +135,7 @@ void UCreativeServerPipButton_C::BndEvt__CommonActionWidgetAction_K2Node_Compone
 
 void UCreativeServerPipButton_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "PreConstruct");
 
 	Params::CreativeServerPipButton_C_PreConstruct Parms{};
 
@@ -177,10 +150,7 @@ void UCreativeServerPipButton_C::PreConstruct(bool IsDesignTime)
 
 void UCreativeServerPipButton_C::UpdateTextAndStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateTextAndStyle");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateTextAndStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +161,7 @@ void UCreativeServerPipButton_C::UpdateTextAndStyle()
 
 void UCreativeServerPipButton_C::InitializeButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "InitializeButton");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "InitializeButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +174,7 @@ void UCreativeServerPipButton_C::InitializeButton()
 
 void UCreativeServerPipButton_C::UpdateStyle(bool bUsingGamepad)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateStyle");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateStyle");
 
 	Params::CreativeServerPipButton_C_UpdateStyle Parms{};
 
@@ -225,10 +189,7 @@ void UCreativeServerPipButton_C::UpdateStyle(bool bUsingGamepad)
 
 void UCreativeServerPipButton_C::UpdateInputActionLayout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateInputActionLayout");
+	class UFunction* Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateInputActionLayout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

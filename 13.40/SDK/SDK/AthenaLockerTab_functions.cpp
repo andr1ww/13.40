@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaLockerTab_C::ExecuteUbergraph_AthenaLockerTab(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "ExecuteUbergraph_AthenaLockerTab");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "ExecuteUbergraph_AthenaLockerTab");
 
 	Params::AthenaLockerTab_C_ExecuteUbergraph_AthenaLockerTab Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaLockerTab_C::ExecuteUbergraph_AthenaLockerTab(int32 EntryPoint)
 
 void UAthenaLockerTab_C::TriggerRandomLoopingAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "TriggerRandomLoopingAnim");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "TriggerRandomLoopingAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UAthenaLockerTab_C::TriggerRandomLoopingAnim()
 
 void UAthenaLockerTab_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -72,10 +63,7 @@ void UAthenaLockerTab_C::BP_OnActivated()
 
 void UAthenaLockerTab_C::OnRefreshForNewLoadout(const class FString& LoadoutName, bool bIsShuffleTile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "OnRefreshForNewLoadout");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "OnRefreshForNewLoadout");
 
 	Params::AthenaLockerTab_C_OnRefreshForNewLoadout Parms{};
 
@@ -91,10 +79,7 @@ void UAthenaLockerTab_C::OnRefreshForNewLoadout(const class FString& LoadoutName
 
 void UAthenaLockerTab_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,10 +92,7 @@ void UAthenaLockerTab_C::BP_OnDeactivated()
 
 void UAthenaLockerTab_C::OnInputMethodChanged_Event_0(ECommonInputType bNewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "OnInputMethodChanged_Event_0");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "OnInputMethodChanged_Event_0");
 
 	Params::AthenaLockerTab_C_OnInputMethodChanged_Event_0 Parms{};
 
@@ -125,10 +107,7 @@ void UAthenaLockerTab_C::OnInputMethodChanged_Event_0(ECommonInputType bNewInput
 
 void UAthenaLockerTab_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +118,7 @@ void UAthenaLockerTab_C::Construct()
 
 void UAthenaLockerTab_C::OnBeginPickingLoadouts()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "OnBeginPickingLoadouts");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "OnBeginPickingLoadouts");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void UAthenaLockerTab_C::OnBeginPickingLoadouts()
 
 void UAthenaLockerTab_C::OnBeginSavingLoadouts()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "OnBeginSavingLoadouts");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "OnBeginSavingLoadouts");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +142,7 @@ void UAthenaLockerTab_C::OnBeginSavingLoadouts()
 
 void UAthenaLockerTab_C::OnBeginPickingCustomizationSlot(class UAthenaCustomizationSlotSelectorButton* SlotButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "OnBeginPickingCustomizationSlot");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "OnBeginPickingCustomizationSlot");
 
 	Params::AthenaLockerTab_C_OnBeginPickingCustomizationSlot Parms{};
 
@@ -190,10 +160,7 @@ void UAthenaLockerTab_C::OnBeginPickingCustomizationSlot(class UAthenaCustomizat
 
 void UAthenaLockerTab_C::BeginPickingCustomization(class UCommonButton* WidgetToReturnFocusTo, const struct FAthenaCustomizationParams& CustomizationParams_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "BeginPickingCustomization");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "BeginPickingCustomization");
 
 	Params::AthenaLockerTab_C_BeginPickingCustomization Parms{};
 
@@ -211,10 +178,7 @@ void UAthenaLockerTab_C::BeginPickingCustomization(class UCommonButton* WidgetTo
 
 void UAthenaLockerTab_C::PlaySlotClickedAnimation(class UAthenaCustomizationSlotButton_C* SlotToPlayAnimOn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "PlaySlotClickedAnimation");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "PlaySlotClickedAnimation");
 
 	Params::AthenaLockerTab_C_PlaySlotClickedAnimation Parms{};
 
@@ -229,10 +193,7 @@ void UAthenaLockerTab_C::PlaySlotClickedAnimation(class UAthenaCustomizationSlot
 
 void UAthenaLockerTab_C::PlayEquippedLockerMusic_STW()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "PlayEquippedLockerMusic_STW");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "PlayEquippedLockerMusic_STW");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,10 +204,7 @@ void UAthenaLockerTab_C::PlayEquippedLockerMusic_STW()
 
 void UAthenaLockerTab_C::PlaySlotAnimationAndCenterSlot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "PlaySlotAnimationAndCenterSlot");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "PlaySlotAnimationAndCenterSlot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -259,10 +217,7 @@ void UAthenaLockerTab_C::PlaySlotAnimationAndCenterSlot()
 
 void UAthenaLockerTab_C::UpdatePresetButtonStyles(ECommonInputType InputPin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "UpdatePresetButtonStyles");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "UpdatePresetButtonStyles");
 
 	Params::AthenaLockerTab_C_UpdatePresetButtonStyles Parms{};
 
@@ -279,10 +234,7 @@ void UAthenaLockerTab_C::UpdatePresetButtonStyles(ECommonInputType InputPin)
 
 void UAthenaLockerTab_C::AnimShowRandomDisclaimerEnabled(bool Show)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLockerTab_C", "AnimShowRandomDisclaimerEnabled");
+	class UFunction* Func = Class->GetFunction("AthenaLockerTab_C", "AnimShowRandomDisclaimerEnabled");
 
 	Params::AthenaLockerTab_C_AnimShowRandomDisclaimerEnabled Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAT_Athena_Enemy_SneakySnowman_C::ExecuteUbergraph_GAT_Athena_Enemy_SneakySnowman(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "ExecuteUbergraph_GAT_Athena_Enemy_SneakySnowman");
+	class UFunction* Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "ExecuteUbergraph_GAT_Athena_Enemy_SneakySnowman");
 
 	Params::GAT_Athena_Enemy_SneakySnowman_C_ExecuteUbergraph_GAT_Athena_Enemy_SneakySnowman Parms{};
 
@@ -41,10 +38,7 @@ void UGAT_Athena_Enemy_SneakySnowman_C::ExecuteUbergraph_GAT_Athena_Enemy_Sneaky
 
 void UGAT_Athena_Enemy_SneakySnowman_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGAT_Athena_Enemy_SneakySnowman_C::K2_ActivateAbility()
 
 void UGAT_Athena_Enemy_SneakySnowman_C::Remove_Snowman(class AFortPlayerPawn* PlayerPawn_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "Remove Snowman");
+	class UFunction* Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "Remove Snowman");
 
 	Params::GAT_Athena_Enemy_SneakySnowman_C_Remove_Snowman Parms{};
 

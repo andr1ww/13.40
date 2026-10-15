@@ -165,6 +165,18 @@
     <ClInclude Include="Runtime\Headers\Engine\World.h" />
     <ClInclude Include="Core\Headers\Unreal\UnrealNames.h" />
     <ClInclude Include="Core\Headers\Unreal\UObjectGlobals.h" />
+    <ClInclude Include="Core\Headers\Unreal\Stack.h" />
+    <ClInclude Include="Runtime\Headers\Actors\BuildingFoundation.h" />
+    <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_Aircraft.h" />
+    <ClInclude Include="Runtime\Headers\Actors\BuildingActor.h" />
+    <ClInclude Include="Runtime\Headers\Player\FortPlayerController.h" />
+    <ClInclude Include="Runtime\Headers\Items\FortLootTier.h" />
+    <ClInclude Include="Runtime\Headers\Items\FortLootPackage.h" />
+    <ClInclude Include="Runtime\Headers\FortAthenaMapInfo.h" />
+    <ClInclude Include="Runtime\Headers\Engine\Components\AbilitySystemComponent.h" />
+    <ClInclude Include="Runtime\Headers\Player\FortPlayerPawn.h" />
+    <ClInclude Include="Runtime\Headers\Player\FortPlayerControllerAthena.h" />
+    <ClInclude Include="Runtime\Headers\FortInventory.h" />
     <ClInclude Include="Runtime\Headers\Engine\Settings\GameMapsSettings.h" />
     <ClInclude Include="Runtime\Headers\GameModes\FortGameMode.h" />
     <ClInclude Include="ThirdParty\Hooking\hde64.hpp" />
@@ -186,6 +198,17 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Runtime\Source\Actors\BuildingFoundation.cpp" />
+    <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp" />
+    <ClCompile Include="Runtime\Source\Actors\BuildingActor.cpp" />
+    <ClCompile Include="Runtime\Source\Player\FortPlayerController.cpp" />
+    <ClCompile Include="Runtime\Source\Items\FortLootTier.cpp" />
+    <ClCompile Include="Runtime\Source\Items\FortLootPackage.cpp" />
+    <ClCompile Include="Runtime\Source\FortAthenaMapInfo.cpp" />
+    <ClCompile Include="Runtime\Source\Engine\Components\AbilitySystemComponent.cpp" />
+    <ClCompile Include="Runtime\Source\Player\FortPlayerPawn.cpp" />
+    <ClCompile Include="Runtime\Source\Player\FortPlayerControllerAthena.cpp" />
+    <ClCompile Include="Runtime\Source\FortInventory.cpp" />
     <ClCompile Include="Runtime\Source\Engine\GameEngine.cpp" />
     <ClCompile Include="Runtime\Source\Engine\NetDriver.cpp" />
     <ClCompile Include="Runtime\Source\Engine\World.cpp" />

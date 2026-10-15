@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UAthenaMOTDTile_C::UpdateDisplay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTile_C", "UpdateDisplay");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTile_C", "UpdateDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UAthenaMOTDTile_C::UpdateDisplay()
 
 void UAthenaMOTDTile_C::ShowImageOnly()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTile_C", "ShowImageOnly");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTile_C", "ShowImageOnly");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -52,10 +46,7 @@ void UAthenaMOTDTile_C::ShowImageOnly()
 
 void UAthenaMOTDTile_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseEnter, const struct FPointerEvent& MouseEvent_OnMouseEnter)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTile_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTile_C", "OnMouseEnter");
 
 	Params::AthenaMOTDTile_C_OnMouseEnter Parms{};
 
@@ -73,10 +64,7 @@ void UAthenaMOTDTile_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseE
 
 void UAthenaMOTDTile_C::OnMouseLeave(const struct FPointerEvent& MouseEvent_OnMouseLeave)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTile_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTile_C", "OnMouseLeave");
 
 	Params::AthenaMOTDTile_C_OnMouseLeave Parms{};
 
@@ -93,10 +81,7 @@ void UAthenaMOTDTile_C::OnMouseLeave(const struct FPointerEvent& MouseEvent_OnMo
 
 void UAthenaMOTDTile_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTile_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTile_C", "PreConstruct");
 
 	Params::AthenaMOTDTile_C_PreConstruct Parms{};
 
@@ -113,10 +98,7 @@ void UAthenaMOTDTile_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UAthenaMOTDTile_C::ExecuteUbergraph_AthenaMOTDTile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDTile_C", "ExecuteUbergraph_AthenaMOTDTile");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDTile_C", "ExecuteUbergraph_AthenaMOTDTile");
 
 	Params::AthenaMOTDTile_C_ExecuteUbergraph_AthenaMOTDTile Parms{};
 

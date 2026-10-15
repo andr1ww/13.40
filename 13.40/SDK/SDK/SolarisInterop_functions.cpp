@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UVerseCoroutineLib::Abort(class UObject* Context, bool bAbortCallers)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("VerseCoroutineLib", "Abort");
+	class UFunction* Func = StaticClass()->GetFunction("VerseCoroutineLib", "Abort");
 
 	Params::VerseCoroutineLib_Abort Parms{};
 
@@ -53,10 +50,7 @@ void UVerseCoroutineLib::Abort(class UObject* Context, bool bAbortCallers)
 
 class UObject* UVerseCoroutineLib::Allocate(class UClass* Type, class UObject* Caller, int32 CallerResumeState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("VerseCoroutineLib", "Allocate");
+	class UFunction* Func = StaticClass()->GetFunction("VerseCoroutineLib", "Allocate");
 
 	Params::VerseCoroutineLib_Allocate Parms{};
 
@@ -82,10 +76,7 @@ class UObject* UVerseCoroutineLib::Allocate(class UClass* Type, class UObject* C
 
 void UVerseCoroutineLib::Deallocate(class UObject* Context)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("VerseCoroutineLib", "Deallocate");
+	class UFunction* Func = StaticClass()->GetFunction("VerseCoroutineLib", "Deallocate");
 
 	Params::VerseCoroutineLib_Deallocate Parms{};
 
@@ -108,10 +99,7 @@ void UVerseCoroutineLib::Deallocate(class UObject* Context)
 
 int32 UVerseCoroutineLib::GetState(class UObject* Context)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("VerseCoroutineLib", "GetState");
+	class UFunction* Func = StaticClass()->GetFunction("VerseCoroutineLib", "GetState");
 
 	Params::VerseCoroutineLib_GetState Parms{};
 

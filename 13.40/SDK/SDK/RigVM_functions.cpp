@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 int32 URigVM::AddRigVMFunction(class UScriptStruct* InRigVMStruct, const class FName& InMethodName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "AddRigVMFunction");
+	class UFunction* Func = Class->GetFunction("RigVM", "AddRigVMFunction");
 
 	Params::RigVM_AddRigVMFunction Parms{};
 
@@ -53,10 +50,7 @@ int32 URigVM::AddRigVMFunction(class UScriptStruct* InRigVMStruct, const class F
 
 bool URigVM::Execute()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "Execute");
+	class UFunction* Func = Class->GetFunction("RigVM", "Execute");
 
 	Params::RigVM_Execute Parms{};
 
@@ -80,10 +74,7 @@ bool URigVM::Execute()
 
 bool URigVM::GetParameterValueBool(const class FName& InParameterName, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterValueBool");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterValueBool");
 
 	Params::RigVM_GetParameterValueBool Parms{};
 
@@ -110,10 +101,7 @@ bool URigVM::GetParameterValueBool(const class FName& InParameterName, int32 InA
 
 float URigVM::GetParameterValueFloat(const class FName& InParameterName, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterValueFloat");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterValueFloat");
 
 	Params::RigVM_GetParameterValueFloat Parms{};
 
@@ -140,10 +128,7 @@ float URigVM::GetParameterValueFloat(const class FName& InParameterName, int32 I
 
 int32 URigVM::GetParameterValueInt(const class FName& InParameterName, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterValueInt");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterValueInt");
 
 	Params::RigVM_GetParameterValueInt Parms{};
 
@@ -170,10 +155,7 @@ int32 URigVM::GetParameterValueInt(const class FName& InParameterName, int32 InA
 
 class FName URigVM::GetParameterValueName(const class FName& InParameterName, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterValueName");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterValueName");
 
 	Params::RigVM_GetParameterValueName Parms{};
 
@@ -200,10 +182,7 @@ class FName URigVM::GetParameterValueName(const class FName& InParameterName, in
 
 struct FQuat URigVM::GetParameterValueQuat(const class FName& InParameterName, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterValueQuat");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterValueQuat");
 
 	Params::RigVM_GetParameterValueQuat Parms{};
 
@@ -230,10 +209,7 @@ struct FQuat URigVM::GetParameterValueQuat(const class FName& InParameterName, i
 
 class FString URigVM::GetParameterValueString(const class FName& InParameterName, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterValueString");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterValueString");
 
 	Params::RigVM_GetParameterValueString Parms{};
 
@@ -260,10 +236,7 @@ class FString URigVM::GetParameterValueString(const class FName& InParameterName
 
 struct FTransform URigVM::GetParameterValueTransform(const class FName& InParameterName, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterValueTransform");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterValueTransform");
 
 	Params::RigVM_GetParameterValueTransform Parms{};
 
@@ -290,10 +263,7 @@ struct FTransform URigVM::GetParameterValueTransform(const class FName& InParame
 
 struct FVector URigVM::GetParameterValueVector(const class FName& InParameterName, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterValueVector");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterValueVector");
 
 	Params::RigVM_GetParameterValueVector Parms{};
 
@@ -320,10 +290,7 @@ struct FVector URigVM::GetParameterValueVector(const class FName& InParameterNam
 
 struct FVector2D URigVM::GetParameterValueVector2D(const class FName& InParameterName, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterValueVector2D");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterValueVector2D");
 
 	Params::RigVM_GetParameterValueVector2D Parms{};
 
@@ -350,10 +317,7 @@ struct FVector2D URigVM::GetParameterValueVector2D(const class FName& InParamete
 
 void URigVM::SetParameterValueBool(const class FName& InParameterName, bool InValue, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "SetParameterValueBool");
+	class UFunction* Func = Class->GetFunction("RigVM", "SetParameterValueBool");
 
 	Params::RigVM_SetParameterValueBool Parms{};
 
@@ -379,10 +343,7 @@ void URigVM::SetParameterValueBool(const class FName& InParameterName, bool InVa
 
 void URigVM::SetParameterValueFloat(const class FName& InParameterName, float InValue, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "SetParameterValueFloat");
+	class UFunction* Func = Class->GetFunction("RigVM", "SetParameterValueFloat");
 
 	Params::RigVM_SetParameterValueFloat Parms{};
 
@@ -408,10 +369,7 @@ void URigVM::SetParameterValueFloat(const class FName& InParameterName, float In
 
 void URigVM::SetParameterValueInt(const class FName& InParameterName, int32 InValue, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "SetParameterValueInt");
+	class UFunction* Func = Class->GetFunction("RigVM", "SetParameterValueInt");
 
 	Params::RigVM_SetParameterValueInt Parms{};
 
@@ -437,10 +395,7 @@ void URigVM::SetParameterValueInt(const class FName& InParameterName, int32 InVa
 
 void URigVM::SetParameterValueName(const class FName& InParameterName, const class FName& InValue, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "SetParameterValueName");
+	class UFunction* Func = Class->GetFunction("RigVM", "SetParameterValueName");
 
 	Params::RigVM_SetParameterValueName Parms{};
 
@@ -466,10 +421,7 @@ void URigVM::SetParameterValueName(const class FName& InParameterName, const cla
 
 void URigVM::SetParameterValueQuat(const class FName& InParameterName, const struct FQuat& InValue, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "SetParameterValueQuat");
+	class UFunction* Func = Class->GetFunction("RigVM", "SetParameterValueQuat");
 
 	Params::RigVM_SetParameterValueQuat Parms{};
 
@@ -495,10 +447,7 @@ void URigVM::SetParameterValueQuat(const class FName& InParameterName, const str
 
 void URigVM::SetParameterValueString(const class FName& InParameterName, const class FString& InValue, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "SetParameterValueString");
+	class UFunction* Func = Class->GetFunction("RigVM", "SetParameterValueString");
 
 	Params::RigVM_SetParameterValueString Parms{};
 
@@ -524,10 +473,7 @@ void URigVM::SetParameterValueString(const class FName& InParameterName, const c
 
 void URigVM::SetParameterValueTransform(const class FName& InParameterName, const struct FTransform& InValue, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "SetParameterValueTransform");
+	class UFunction* Func = Class->GetFunction("RigVM", "SetParameterValueTransform");
 
 	Params::RigVM_SetParameterValueTransform Parms{};
 
@@ -553,10 +499,7 @@ void URigVM::SetParameterValueTransform(const class FName& InParameterName, cons
 
 void URigVM::SetParameterValueVector(const class FName& InParameterName, const struct FVector& InValue, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "SetParameterValueVector");
+	class UFunction* Func = Class->GetFunction("RigVM", "SetParameterValueVector");
 
 	Params::RigVM_SetParameterValueVector Parms{};
 
@@ -582,10 +525,7 @@ void URigVM::SetParameterValueVector(const class FName& InParameterName, const s
 
 void URigVM::SetParameterValueVector2D(const class FName& InParameterName, const struct FVector2D& InValue, int32 InArrayIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "SetParameterValueVector2D");
+	class UFunction* Func = Class->GetFunction("RigVM", "SetParameterValueVector2D");
 
 	Params::RigVM_SetParameterValueVector2D Parms{};
 
@@ -610,10 +550,7 @@ void URigVM::SetParameterValueVector2D(const class FName& InParameterName, const
 
 int32 URigVM::GetParameterArraySize(const class FName& InParameterName) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetParameterArraySize");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetParameterArraySize");
 
 	Params::RigVM_GetParameterArraySize Parms{};
 
@@ -638,10 +575,7 @@ int32 URigVM::GetParameterArraySize(const class FName& InParameterName) const
 
 class FString URigVM::GetRigVMFunctionName(int32 InFunctionIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RigVM", "GetRigVMFunctionName");
+	class UFunction* Func = Class->GetFunction("RigVM", "GetRigVMFunctionName");
 
 	Params::RigVM_GetRigVMFunctionName Parms{};
 

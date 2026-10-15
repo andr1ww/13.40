@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::ExecuteUbergraph_AthenaDirectAcquisitionOfferDetailsWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ExecuteUbergraph_AthenaDirectAcquisitionOfferDetailsWidget");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ExecuteUbergraph_AthenaDirectAcquisitionOfferDetailsWidget");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferDetailsWidget Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::ExecuteUbergraph_AthenaDirect
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::OnPurchasingStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "OnPurchasingStarted");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "OnPurchasingStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::OnPurchasingStarted()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -77,10 +68,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__CloseButton_K2Node_Co
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__ItemRewardsTIleView2_K2Node_ComponentBoundEvent_8_OnListEntryGeneratedDynamic__DelegateSignature(class UUserWidget* Widget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__ItemRewardsTIleView2_K2Node_ComponentBoundEvent_8_OnListEntryGeneratedDynamic__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__ItemRewardsTIleView2_K2Node_ComponentBoundEvent_8_OnListEntryGeneratedDynamic__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__ItemRewardsTIleView2_K2Node_ComponentBoundEvent_8_OnListEntryGeneratedDynamic__DelegateSignature Parms{};
 
@@ -95,10 +83,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__ItemRewardsTIleView2_
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::HideUndoInBottomBar()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HideUndoInBottomBar");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HideUndoInBottomBar");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::HideUndoInBottomBar()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShowUndoInBottomBar()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShowUndoInBottomBar");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShowUndoInBottomBar");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +107,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShowUndoInBottomBar()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__UndoButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__UndoButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__UndoButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__UndoButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -143,10 +122,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__UndoButton_K2Node_Com
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::OnOfferSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "OnOfferSet");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "OnOfferSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +135,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::OnOfferSet()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -179,10 +152,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__PageLeftBtn_K2Node_Co
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -197,10 +167,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__PageRightBtn_K2Node_C
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::DelayGiftTimerUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "DelayGiftTimerUp");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "DelayGiftTimerUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -211,10 +178,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::DelayGiftTimerUp()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateItemViewModeBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateItemViewModeBP");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateItemViewModeBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,10 +189,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateItemViewModeBP()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -241,10 +202,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BP_OnDeactivated()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__PreviewStylesButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__PreviewStylesButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__PreviewStylesButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__PreviewStylesButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -259,10 +217,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__PreviewStylesButton_K
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateCenterandBinding()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateCenterandBinding");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateCenterandBinding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -275,10 +230,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateCenterandBinding()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleVaultViewItem(const class UFortItem* Item)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleVaultViewItem");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleVaultViewItem");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_HandleVaultViewItem Parms{};
 
@@ -293,10 +245,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleVaultViewItem(const cla
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::OnBeginIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "OnBeginIntro");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "OnBeginIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -307,10 +256,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::OnBeginIntro()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_29_OnFortSwipeEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_29_OnFortSwipeEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_29_OnFortSwipeEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -321,10 +267,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__SwipePanel_K2Node_Com
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_11_OnFortSwipeEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_11_OnFortSwipeEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_11_OnFortSwipeEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -337,10 +280,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__SwipePanel_K2Node_Com
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__GiftButton_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__GiftButton_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__GiftButton_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__GiftButton_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -357,10 +297,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__GiftButton_K2Node_Com
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__Button_Previous_K2Node_ComponentBoundEvent_83_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__Button_Previous_K2Node_ComponentBoundEvent_83_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__Button_Previous_K2Node_ComponentBoundEvent_83_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__Button_Previous_K2Node_ComponentBoundEvent_83_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -377,10 +314,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__Button_Previous_K2Nod
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__Button_Next_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__Button_Next_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__Button_Next_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__Button_Next_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -395,10 +329,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__Button_Next_K2Node_Co
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::PurchaseAmountRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "PurchaseAmountRight");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "PurchaseAmountRight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -409,10 +340,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::PurchaseAmountRight()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::PurchaseAmountLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "PurchaseAmountLeft");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "PurchaseAmountLeft");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -423,10 +351,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::PurchaseAmountLeft()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::OnUpdateStatus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "OnUpdateStatus");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "OnUpdateStatus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -437,10 +362,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::OnUpdateStatus()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -453,10 +375,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::Construct()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -471,10 +390,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BndEvt__PurchaseButton_K2Node
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -485,10 +401,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::BP_OnActivated()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateFromOffer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateFromOffer");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateFromOffer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -501,10 +414,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateFromOffer()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleBack");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_HandleBack Parms{};
 
@@ -520,10 +430,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleBack(bool* PassThrough)
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::PopDetails()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "PopDetails");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "PopDetails");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -540,10 +447,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::PopDetails()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupPrice(class UWidget* PriceContainer, class UTextBlock* NormalPriceText, class UWidget* SalePriceContainer, class UTextBlock* SalePriceText, class UImage* CurrencyImage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupPrice");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupPrice");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_SetupPrice Parms{};
 
@@ -566,10 +470,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupPrice(class UWidget* Pri
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandlePurchaseOfferComplete(bool Success, TArray<struct FPurchasedItemInfo>& PurchasedItems, const class FString& OfferId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandlePurchaseOfferComplete");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandlePurchaseOfferComplete");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_HandlePurchaseOfferComplete Parms{};
 
@@ -588,10 +489,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandlePurchaseOfferComplete(b
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::AttemptPurchase()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "AttemptPurchase");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "AttemptPurchase");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -602,10 +500,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::AttemptPurchase()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::Update_Locked_Information()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "Update Locked Information");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "Update Locked Information");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -616,10 +511,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::Update_Locked_Information()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateAvailability()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateAvailability");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateAvailability");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -630,10 +522,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateAvailability()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdatePurchaseQuantity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdatePurchaseQuantity");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdatePurchaseQuantity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -644,10 +533,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdatePurchaseQuantity()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateSaleStatus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateSaleStatus");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateSaleStatus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -664,10 +550,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateSaleStatus()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupSaleInfo(bool bHasSale, const class FString& BannerOverrideTag, const class FText& NormalPrice, bool bHasBattlePassStars, int32 NumOfBattlePassStars)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupSaleInfo");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupSaleInfo");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_SetupSaleInfo Parms{};
 
@@ -686,10 +569,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupSaleInfo(bool bHasSale, 
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateItemList()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateItemList");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateItemList");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -700,10 +580,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateItemList()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateCatalogOfferName()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateCatalogOfferName");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateCatalogOfferName");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -714,10 +591,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateCatalogOfferName()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::ExecutePurchase()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ExecutePurchase");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ExecutePurchase");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -728,10 +602,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::ExecutePurchase()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::DeclinePurchase()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "DeclinePurchase");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "DeclinePurchase");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -744,10 +615,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::DeclinePurchase()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateViewedItem(class UFortItem* ViewedItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateViewedItem");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateViewedItem");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_UpdateViewedItem Parms{};
 
@@ -762,10 +630,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateViewedItem(class UFortI
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdatePreviewButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdatePreviewButton");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdatePreviewButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -776,10 +641,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdatePreviewButton()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateCamera()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateCamera");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateCamera");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -792,10 +654,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateCamera()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::CanGiftOffer(EOfferPurchaseError* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "CanGiftOffer");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "CanGiftOffer");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_CanGiftOffer Parms{};
 
@@ -811,10 +670,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::CanGiftOffer(EOfferPurchaseEr
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateFromOffer_RefreshButtons()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateFromOffer_RefreshButtons");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateFromOffer_RefreshButtons");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -830,10 +686,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateFromOffer_RefreshButton
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::Owned_Bundle_Item_Count(int32* Owned_Items, int32* UnOwned_Items, bool* bNoneOwned, bool* bAllOwned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "Owned Bundle Item Count");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "Owned Bundle Item Count");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_Owned_Bundle_Item_Count Parms{};
 
@@ -860,10 +713,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::Owned_Bundle_Item_Count(int32
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::IsSingleGrantedItem(bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "IsSingleGrantedItem");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "IsSingleGrantedItem");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_IsSingleGrantedItem Parms{};
 
@@ -881,10 +731,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::IsSingleGrantedItem(bool* Res
 
 EFortItemCardSize UAthenaDirectAcquisitionOfferDetailsWidget_C::GetCardSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetCardSize");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetCardSize");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetCardSize Parms{};
 
@@ -901,10 +748,7 @@ EFortItemCardSize UAthenaDirectAcquisitionOfferDetailsWidget_C::GetCardSize()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::GetShowCard(bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetShowCard");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetShowCard");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetShowCard Parms{};
 
@@ -922,10 +766,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::GetShowCard(bool* Result)
 
 bool UAthenaDirectAcquisitionOfferDetailsWidget_C::GetShowDetails()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetShowDetails");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetShowDetails");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetShowDetails Parms{};
 
@@ -942,10 +783,7 @@ bool UAthenaDirectAcquisitionOfferDetailsWidget_C::GetShowDetails()
 
 bool UAthenaDirectAcquisitionOfferDetailsWidget_C::GetShowDescription()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetShowDescription");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetShowDescription");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetShowDescription Parms{};
 
@@ -964,10 +802,7 @@ bool UAthenaDirectAcquisitionOfferDetailsWidget_C::GetShowDescription()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::CreateAndAddRewardItem(const struct FFortItemQuantityPair& ItemQuantity, int32 ItemIndex, bool PreviewPlaceholder)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "CreateAndAddRewardItem");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "CreateAndAddRewardItem");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_CreateAndAddRewardItem Parms{};
 
@@ -986,10 +821,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::CreateAndAddRewardItem(const 
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::GetOfferDetailsSlotMargin(struct FMargin* Margin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetOfferDetailsSlotMargin");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetOfferDetailsSlotMargin");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetOfferDetailsSlotMargin Parms{};
 
@@ -1007,10 +839,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::GetOfferDetailsSlotMargin(str
 
 ESlateVisibility UAthenaDirectAcquisitionOfferDetailsWidget_C::GetPagingVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetPagingVisibility");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetPagingVisibility");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetPagingVisibility Parms{};
 
@@ -1027,10 +856,7 @@ ESlateVisibility UAthenaDirectAcquisitionOfferDetailsWidget_C::GetPagingVisibili
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateDetails(class UFortItem* Reward)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateDetails");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateDetails");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_UpdateDetails Parms{};
 
@@ -1048,10 +874,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateDetails(class UFortItem
 
 bool UAthenaDirectAcquisitionOfferDetailsWidget_C::IsItemDefOwned(const class UFortItemDefinition* ItemDef)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "IsItemDefOwned");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "IsItemDefOwned");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_IsItemDefOwned Parms{};
 
@@ -1070,10 +893,7 @@ bool UAthenaDirectAcquisitionOfferDetailsWidget_C::IsItemDefOwned(const class UF
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::GetSortedItems(TArray<struct FFortItemQuantityPair>* ItemQuantityPairs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetSortedItems");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetSortedItems");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetSortedItems Parms{};
 
@@ -1092,10 +912,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::GetSortedItems(TArray<struct 
 
 class FText UAthenaDirectAcquisitionOfferDetailsWidget_C::GetDisplayName(const struct FFortItemQuantityPair& ItemQuantityPair)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetDisplayName");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetDisplayName");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetDisplayName Parms{};
 
@@ -1112,10 +929,7 @@ class FText UAthenaDirectAcquisitionOfferDetailsWidget_C::GetDisplayName(const s
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupPrerollItemHeaderInfo()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupPrerollItemHeaderInfo");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupPrerollItemHeaderInfo");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1128,10 +942,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupPrerollItemHeaderInfo()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::GetSalesText(class FText* NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetSalesText");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetSalesText");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetSalesText Parms{};
 
@@ -1147,10 +958,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::GetSalesText(class FText* New
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupDynamicBundle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupDynamicBundle");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupDynamicBundle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1161,10 +969,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupDynamicBundle()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupPurchaseButtonStateAndText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupPurchaseButtonStateAndText");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupPurchaseButtonStateAndText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1177,10 +982,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupPurchaseButtonStateAndTe
 
 bool UAthenaDirectAcquisitionOfferDetailsWidget_C::DoesOfferAllowQuantity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "DoesOfferAllowQuantity");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "DoesOfferAllowQuantity");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_DoesOfferAllowQuantity Parms{};
 
@@ -1197,10 +999,7 @@ bool UAthenaDirectAcquisitionOfferDetailsWidget_C::DoesOfferAllowQuantity()
 
 bool UAthenaDirectAcquisitionOfferDetailsWidget_C::IsDynamicBundle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "IsDynamicBundle");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "IsDynamicBundle");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_IsDynamicBundle Parms{};
 
@@ -1215,10 +1014,7 @@ bool UAthenaDirectAcquisitionOfferDetailsWidget_C::IsDynamicBundle()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::EnableGiftButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "EnableGiftButton");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "EnableGiftButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1229,10 +1025,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::EnableGiftButton()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::DisableGiftButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "DisableGiftButton");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "DisableGiftButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1245,10 +1038,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::DisableGiftButton()
 
 bool UAthenaDirectAcquisitionOfferDetailsWidget_C::IsNonRefundable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "IsNonRefundable");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "IsNonRefundable");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_IsNonRefundable Parms{};
 
@@ -1265,10 +1055,7 @@ bool UAthenaDirectAcquisitionOfferDetailsWidget_C::IsNonRefundable()
 
 int32 UAthenaDirectAcquisitionOfferDetailsWidget_C::GetOwnedIndex()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetOwnedIndex");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetOwnedIndex");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetOwnedIndex Parms{};
 
@@ -1283,10 +1070,7 @@ int32 UAthenaDirectAcquisitionOfferDetailsWidget_C::GetOwnedIndex()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShowHideGiftingButton()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShowHideGiftingButton");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShowHideGiftingButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1299,10 +1083,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShowHideGiftingButton()
 
 bool UAthenaDirectAcquisitionOfferDetailsWidget_C::GetHasBattlepassStars()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetHasBattlepassStars");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetHasBattlepassStars");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetHasBattlepassStars Parms{};
 
@@ -1319,10 +1100,7 @@ bool UAthenaDirectAcquisitionOfferDetailsWidget_C::GetHasBattlepassStars()
 
 int32 UAthenaDirectAcquisitionOfferDetailsWidget_C::GetNumBattlepassStars()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetNumBattlepassStars");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetNumBattlepassStars");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetNumBattlepassStars Parms{};
 
@@ -1337,10 +1115,7 @@ int32 UAthenaDirectAcquisitionOfferDetailsWidget_C::GetNumBattlepassStars()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupPurchaseButtonForQuantity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupPurchaseButtonForQuantity");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupPurchaseButtonForQuantity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1351,10 +1126,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupPurchaseButtonForQuantit
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShopVariantPreviewInfoUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShopVariantPreviewInfoUpdated");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShopVariantPreviewInfoUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1367,10 +1139,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShopVariantPreviewInfoUpdated
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleUndoAction(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleUndoAction");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleUndoAction");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_HandleUndoAction Parms{};
 
@@ -1392,10 +1161,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleUndoAction(bool* PassTh
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupRewardItem(class UAthenaStoreReward_C* RewardItem, class UFortItemDefinition* ItemDefinition, TArray<struct FFortItemQuantityPair>& SortedItemQuantity, bool PreviewPlaceholder, const struct FFortItemQuantityPair& ItemQuantity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupRewardItem");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupRewardItem");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_SetupRewardItem Parms{};
 
@@ -1418,10 +1184,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupRewardItem(class UAthena
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleRewardItemGenerated(class UUserWidget* RewardItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleRewardItemGenerated");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleRewardItemGenerated");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_HandleRewardItemGenerated Parms{};
 
@@ -1438,10 +1201,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleRewardItemGenerated(cla
 
 class UWidget* UAthenaDirectAcquisitionOfferDetailsWidget_C::GetWidgetForFramingViewedItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetWidgetForFramingViewedItem");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "GetWidgetForFramingViewedItem");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_GetWidgetForFramingViewedItem Parms{};
 
@@ -1458,10 +1218,7 @@ class UWidget* UAthenaDirectAcquisitionOfferDetailsWidget_C::GetWidgetForFraming
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::CreateDirectAcquisitionStyleScreenWidget(class UAthenaDirectAquisitionStyleScreen_C** Instance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "CreateDirectAcquisitionStyleScreenWidget");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "CreateDirectAcquisitionStyleScreenWidget");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_CreateDirectAcquisitionStyleScreenWidget Parms{};
 
@@ -1479,10 +1236,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::CreateDirectAcquisitionStyleS
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::CreateGiftingScreenWidget(class UGiftingScreen_C** Instance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "CreateGiftingScreenWidget");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "CreateGiftingScreenWidget");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_CreateGiftingScreenWidget Parms{};
 
@@ -1500,10 +1254,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::CreateGiftingScreenWidget(cla
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::Create2FAWidget(class UEnableMultiFactorAuthModalBP_C** Instance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "Create2FAWidget");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "Create2FAWidget");
 
 	Params::AthenaDirectAcquisitionOfferDetailsWidget_C_Create2FAWidget Parms{};
 
@@ -1519,10 +1270,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::Create2FAWidget(class UEnable
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShowDetailsFrame()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShowDetailsFrame");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShowDetailsFrame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1533,10 +1281,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShowDetailsFrame()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::HideDetailsFrame()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HideDetailsFrame");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HideDetailsFrame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1547,10 +1292,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::HideDetailsFrame()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShowSwipeButtons()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShowSwipeButtons");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "ShowSwipeButtons");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1561,10 +1303,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::ShowSwipeButtons()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleButtonsIntroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleButtonsIntroFinished");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "HandleButtonsIntroFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1575,10 +1314,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::HandleButtonsIntroFinished()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupAffiliate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupAffiliate");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "SetupAffiliate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1589,10 +1325,7 @@ void UAthenaDirectAcquisitionOfferDetailsWidget_C::SetupAffiliate()
 
 void UAthenaDirectAcquisitionOfferDetailsWidget_C::UpdateTileViewSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateTileViewSize");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionOfferDetailsWidget_C", "UpdateTileViewSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

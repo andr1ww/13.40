@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_SCMachine_Passive_C::ExecuteUbergraph_GA_Athena_SCMachine_Passive(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "ExecuteUbergraph_GA_Athena_SCMachine_Passive");
+	class UFunction* Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "ExecuteUbergraph_GA_Athena_SCMachine_Passive");
 
 	Params::GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_SCMachine_Passive_C::ExecuteUbergraph_GA_Athena_SCMachine_Passiv
 
 void UGA_Athena_SCMachine_Passive_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGA_Athena_SCMachine_Passive_C::K2_ActivateAbility()
 
 void UGA_Athena_SCMachine_Passive_C::HandleOnFortPlayerDied(class AFortPlayerPawnAthena* FortPlayerPawnAthena)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "HandleOnFortPlayerDied");
+	class UFunction* Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "HandleOnFortPlayerDied");
 
 	Params::GA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied Parms{};
 
@@ -75,10 +66,7 @@ void UGA_Athena_SCMachine_Passive_C::HandleOnFortPlayerDied(class AFortPlayerPaw
 
 void UGA_Athena_SCMachine_Passive_C::Spawn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "Spawn");
+	class UFunction* Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "Spawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UGA_Athena_SCMachine_Passive_C::Spawn()
 
 void UGA_Athena_SCMachine_Passive_C::SaveOutPlayer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "SaveOutPlayer");
+	class UFunction* Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "SaveOutPlayer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UGA_Athena_SCMachine_Passive_C::SaveOutPlayer()
 
 void UGA_Athena_SCMachine_Passive_C::Check_Resurrection_Active(bool* bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "Check Resurrection Active");
+	class UFunction* Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "Check Resurrection Active");
 
 	Params::GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGamepadKeyTextButton_C::ExecuteUbergraph_GamepadKeyTextButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "ExecuteUbergraph_GamepadKeyTextButton");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "ExecuteUbergraph_GamepadKeyTextButton");
 
 	Params::GamepadKeyTextButton_C_ExecuteUbergraph_GamepadKeyTextButton Parms{};
 
@@ -43,10 +40,7 @@ void UGamepadKeyTextButton_C::ExecuteUbergraph_GamepadKeyTextButton(int32 EntryP
 
 void UGamepadKeyTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetTabLabelInfo");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "SetTabLabelInfo");
 
 	Params::GamepadKeyTextButton_C_SetTabLabelInfo Parms{};
 
@@ -63,10 +57,7 @@ void UGamepadKeyTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelIn
 
 void UGamepadKeyTextButton_C::UpdateButton(class UGamepadKeyTextButton_C* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "UpdateButton");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "UpdateButton");
 
 	Params::GamepadKeyTextButton_C_UpdateButton Parms{};
 
@@ -85,10 +76,7 @@ void UGamepadKeyTextButton_C::UpdateButton(class UGamepadKeyTextButton_C* Button
 
 void UGamepadKeyTextButton_C::SetDataAndUpdateButton(const struct FKey& Key, const class FText& DescText, class FName ActionName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetDataAndUpdateButton");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "SetDataAndUpdateButton");
 
 	Params::GamepadKeyTextButton_C_SetDataAndUpdateButton Parms{};
 
@@ -107,10 +95,7 @@ void UGamepadKeyTextButton_C::SetDataAndUpdateButton(const struct FKey& Key, con
 
 void UGamepadKeyTextButton_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "PreConstruct");
 
 	Params::GamepadKeyTextButton_C_PreConstruct Parms{};
 
@@ -129,10 +114,7 @@ void UGamepadKeyTextButton_C::PreConstruct(bool IsDesignTime)
 
 void UGamepadKeyTextButton_C::SetData(const struct FKey& Key, const class FText& DescText, class FName ActionName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetData");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "SetData");
 
 	Params::GamepadKeyTextButton_C_SetData Parms{};
 
@@ -151,10 +133,7 @@ void UGamepadKeyTextButton_C::SetData(const struct FKey& Key, const class FText&
 
 void UGamepadKeyTextButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "OnListItemObjectSet");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "OnListItemObjectSet");
 
 	Params::GamepadKeyTextButton_C_OnListItemObjectSet Parms{};
 
@@ -169,10 +148,7 @@ void UGamepadKeyTextButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UGamepadKeyTextButton_C::UpdateContentAlignment()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "UpdateContentAlignment");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "UpdateContentAlignment");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -185,10 +161,7 @@ void UGamepadKeyTextButton_C::UpdateContentAlignment()
 
 void UGamepadKeyTextButton_C::SetContentAlignment(EHorizontalAlignment ContentAlignment_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetContentAlignment");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "SetContentAlignment");
 
 	Params::GamepadKeyTextButton_C_SetContentAlignment Parms{};
 
@@ -203,10 +176,7 @@ void UGamepadKeyTextButton_C::SetContentAlignment(EHorizontalAlignment ContentAl
 
 void UGamepadKeyTextButton_C::SetNonInteractableStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetNonInteractableStyle");
+	class UFunction* Func = Class->GetFunction("GamepadKeyTextButton_C", "SetNonInteractableStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

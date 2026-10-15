@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFrontend_BP13_Room_A_Art_C::ExecuteUbergraph_Frontend_BP13_Room_A_Art(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_BP13_Room_A_Art_C", "ExecuteUbergraph_Frontend_BP13_Room_A_Art");
+	class UFunction* Func = Class->GetFunction("Frontend_BP13_Room_A_Art_C", "ExecuteUbergraph_Frontend_BP13_Room_A_Art");
 
 	Params::Frontend_BP13_Room_A_Art_C_ExecuteUbergraph_Frontend_BP13_Room_A_Art Parms{};
 
@@ -41,10 +38,7 @@ void AFrontend_BP13_Room_A_Art_C::ExecuteUbergraph_Frontend_BP13_Room_A_Art(int3
 
 void AFrontend_BP13_Room_A_Art_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_BP13_Room_A_Art_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Frontend_BP13_Room_A_Art_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

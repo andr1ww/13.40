@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ABP_Frontend_ShopBG_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void ABP_Frontend_ShopBG_C::ReceiveBeginPlay()
 
 void ABP_Frontend_ShopBG_C::SetDynamicBG(class UTexture* InTexture)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetDynamicBG");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetDynamicBG");
 
 	Params::BP_Frontend_ShopBG_C_SetDynamicBG Parms{};
 
@@ -55,10 +49,7 @@ void ABP_Frontend_ShopBG_C::SetDynamicBG(class UTexture* InTexture)
 
 void ABP_Frontend_ShopBG_C::EnableDynamicShopBG()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "EnableDynamicShopBG");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "EnableDynamicShopBG");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void ABP_Frontend_ShopBG_C::EnableDynamicShopBG()
 
 void ABP_Frontend_ShopBG_C::SetDynamicEnvironmentEvent(const class FString& InPresetEnvName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetDynamicEnvironmentEvent");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetDynamicEnvironmentEvent");
 
 	Params::BP_Frontend_ShopBG_C_SetDynamicEnvironmentEvent Parms{};
 
@@ -89,10 +77,7 @@ void ABP_Frontend_ShopBG_C::SetDynamicEnvironmentEvent(const class FString& InPr
 
 void ABP_Frontend_ShopBG_C::DebugShopBG()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "DebugShopBG");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "DebugShopBG");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void ABP_Frontend_ShopBG_C::DebugShopBG()
 
 void ABP_Frontend_ShopBG_C::HandleRequestHide()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "HandleRequestHide");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "HandleRequestHide");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void ABP_Frontend_ShopBG_C::HandleRequestHide()
 
 void ABP_Frontend_ShopBG_C::HandleItemShopEntered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "HandleItemShopEntered");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "HandleItemShopEntered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void ABP_Frontend_ShopBG_C::HandleItemShopEntered()
 
 void ABP_Frontend_ShopBG_C::HandleStoreEntered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "HandleStoreEntered");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "HandleStoreEntered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void ABP_Frontend_ShopBG_C::HandleStoreEntered()
 
 void ABP_Frontend_ShopBG_C::ResetDonut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ResetDonut");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ResetDonut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +134,7 @@ void ABP_Frontend_ShopBG_C::ResetDonut()
 
 void ABP_Frontend_ShopBG_C::ExecuteUbergraph_BP_Frontend_ShopBG(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ExecuteUbergraph_BP_Frontend_ShopBG");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ExecuteUbergraph_BP_Frontend_ShopBG");
 
 	Params::BP_Frontend_ShopBG_C_ExecuteUbergraph_BP_Frontend_ShopBG Parms{};
 

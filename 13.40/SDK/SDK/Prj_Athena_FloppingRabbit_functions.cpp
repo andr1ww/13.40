@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APrj_Athena_FloppingRabbit_C::ExecuteUbergraph_Prj_Athena_FloppingRabbit(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ExecuteUbergraph_Prj_Athena_FloppingRabbit");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ExecuteUbergraph_Prj_Athena_FloppingRabbit");
 
 	Params::Prj_Athena_FloppingRabbit_C_ExecuteUbergraph_Prj_Athena_FloppingRabbit Parms{};
 
@@ -43,10 +40,7 @@ void APrj_Athena_FloppingRabbit_C::ExecuteUbergraph_Prj_Athena_FloppingRabbit(in
 
 void APrj_Athena_FloppingRabbit_C::ToggleMiniGameSplashLoop(bool On)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ToggleMiniGameSplashLoop");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ToggleMiniGameSplashLoop");
 
 	Params::Prj_Athena_FloppingRabbit_C_ToggleMiniGameSplashLoop Parms{};
 
@@ -61,10 +55,7 @@ void APrj_Athena_FloppingRabbit_C::ToggleMiniGameSplashLoop(bool On)
 
 void APrj_Athena_FloppingRabbit_C::ClientReelIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ClientReelIn");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ClientReelIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void APrj_Athena_FloppingRabbit_C::ClientReelIn()
 
 void APrj_Athena_FloppingRabbit_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveTick");
 
 	Params::Prj_Athena_FloppingRabbit_C_ReceiveTick Parms{};
 
@@ -95,10 +83,7 @@ void APrj_Athena_FloppingRabbit_C::ReceiveTick(float DeltaSeconds)
 
 void APrj_Athena_FloppingRabbit_C::DipFx()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "DipFx");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "DipFx");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void APrj_Athena_FloppingRabbit_C::DipFx()
 
 void APrj_Athena_FloppingRabbit_C::Minigame_MoveBobber()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "Minigame_MoveBobber");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "Minigame_MoveBobber");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +107,7 @@ void APrj_Athena_FloppingRabbit_C::Minigame_MoveBobber()
 
 void APrj_Athena_FloppingRabbit_C::ServerAttemptTether(class APawn* TetherActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ServerAttemptTether");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ServerAttemptTether");
 
 	Params::Prj_Athena_FloppingRabbit_C_ServerAttemptTether Parms{};
 
@@ -143,10 +122,7 @@ void APrj_Athena_FloppingRabbit_C::ServerAttemptTether(class APawn* TetherActor)
 
 void APrj_Athena_FloppingRabbit_C::ReelIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReelIn");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReelIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +137,7 @@ void APrj_Athena_FloppingRabbit_C::ReelIn()
 
 void APrj_Athena_FloppingRabbit_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnExitWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsLastBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnExitWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnExitWater__DelegateSignature");
 
 	Params::Prj_Athena_FloppingRabbit_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnExitWater__DelegateSignature Parms{};
 
@@ -181,10 +154,7 @@ void APrj_Athena_FloppingRabbit_C::BndEvt__WaterInteractionComponent_K2Node_Comp
 
 void APrj_Athena_FloppingRabbit_C::WriteNothingCaughtFishingAnalytic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "WriteNothingCaughtFishingAnalytic");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "WriteNothingCaughtFishingAnalytic");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -197,10 +167,7 @@ void APrj_Athena_FloppingRabbit_C::WriteNothingCaughtFishingAnalytic()
 
 void APrj_Athena_FloppingRabbit_C::CustomPickupAttach(class AFortPickup* FortPickup)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CustomPickupAttach");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CustomPickupAttach");
 
 	Params::Prj_Athena_FloppingRabbit_C_CustomPickupAttach Parms{};
 
@@ -215,10 +182,7 @@ void APrj_Athena_FloppingRabbit_C::CustomPickupAttach(class AFortPickup* FortPic
 
 void APrj_Athena_FloppingRabbit_C::SpawnItemsFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "SpawnItemsFX");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "SpawnItemsFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -229,10 +193,7 @@ void APrj_Athena_FloppingRabbit_C::SpawnItemsFX()
 
 void APrj_Athena_FloppingRabbit_C::CheckForHighTierSpawner()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CheckForHighTierSpawner");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CheckForHighTierSpawner");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,10 +204,7 @@ void APrj_Athena_FloppingRabbit_C::CheckForHighTierSpawner()
 
 void APrj_Athena_FloppingRabbit_C::CheckForDip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CheckForDip");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CheckForDip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +215,7 @@ void APrj_Athena_FloppingRabbit_C::CheckForDip()
 
 void APrj_Athena_FloppingRabbit_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -273,10 +228,7 @@ void APrj_Athena_FloppingRabbit_C::ReceiveDestroyed()
 
 void APrj_Athena_FloppingRabbit_C::HitWater(bool FishSpawner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "HitWater");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "HitWater");
 
 	Params::Prj_Athena_FloppingRabbit_C_HitWater Parms{};
 
@@ -294,10 +246,7 @@ void APrj_Athena_FloppingRabbit_C::HitWater(bool FishSpawner)
 
 void APrj_Athena_FloppingRabbit_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "OnExploded");
 
 	Params::Prj_Athena_FloppingRabbit_C_OnExploded Parms{};
 
@@ -313,10 +262,7 @@ void APrj_Athena_FloppingRabbit_C::OnExploded(const TArray<class AActor*>& HitAc
 
 void APrj_Athena_FloppingRabbit_C::ForceKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ForceKill");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ForceKill");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -327,10 +273,7 @@ void APrj_Athena_FloppingRabbit_C::ForceKill()
 
 void APrj_Athena_FloppingRabbit_C::DistanceCheck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "DistanceCheck");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "DistanceCheck");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -341,10 +284,7 @@ void APrj_Athena_FloppingRabbit_C::DistanceCheck()
 
 void APrj_Athena_FloppingRabbit_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -355,10 +295,7 @@ void APrj_Athena_FloppingRabbit_C::ReceiveBeginPlay()
 
 void APrj_Athena_FloppingRabbit_C::HideAndKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "HideAndKill");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "HideAndKill");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -369,10 +306,7 @@ void APrj_Athena_FloppingRabbit_C::HideAndKill()
 
 void APrj_Athena_FloppingRabbit_C::TryCatch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "TryCatch");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "TryCatch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -383,10 +317,7 @@ void APrj_Athena_FloppingRabbit_C::TryCatch()
 
 void APrj_Athena_FloppingRabbit_C::CatchWindow()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CatchWindow");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CatchWindow");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -399,10 +330,7 @@ void APrj_Athena_FloppingRabbit_C::CatchWindow()
 
 void APrj_Athena_FloppingRabbit_C::FullDip(bool InWorldSpawner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "FullDip");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "FullDip");
 
 	Params::Prj_Athena_FloppingRabbit_C_FullDip Parms{};
 
@@ -424,10 +352,7 @@ void APrj_Athena_FloppingRabbit_C::FullDip(bool InWorldSpawner)
 
 void APrj_Athena_FloppingRabbit_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::Prj_Athena_FloppingRabbit_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -456,10 +381,7 @@ void APrj_Athena_FloppingRabbit_C::BndEvt__CapsuleComponent_K2Node_ComponentBoun
 
 void APrj_Athena_FloppingRabbit_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveHit");
 
 	Params::Prj_Athena_FloppingRabbit_C_ReceiveHit Parms{};
 
@@ -481,10 +403,7 @@ void APrj_Athena_FloppingRabbit_C::ReceiveHit(class UPrimitiveComponent* MyComp,
 
 void APrj_Athena_FloppingRabbit_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -495,10 +414,7 @@ void APrj_Athena_FloppingRabbit_C::Timeline_0__UpdateFunc()
 
 void APrj_Athena_FloppingRabbit_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -509,10 +425,7 @@ void APrj_Athena_FloppingRabbit_C::Timeline_0__FinishedFunc()
 
 void APrj_Athena_FloppingRabbit_C::BigBob__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BigBob__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BigBob__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -523,10 +436,7 @@ void APrj_Athena_FloppingRabbit_C::BigBob__UpdateFunc()
 
 void APrj_Athena_FloppingRabbit_C::BigBob__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BigBob__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BigBob__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -537,10 +447,7 @@ void APrj_Athena_FloppingRabbit_C::BigBob__FinishedFunc()
 
 void APrj_Athena_FloppingRabbit_C::GetSheetVals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "GetSheetVals");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "GetSheetVals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -554,10 +461,7 @@ void APrj_Athena_FloppingRabbit_C::GetSheetVals()
 
 void APrj_Athena_FloppingRabbit_C::AttemptTether(class AActor* HitActor, bool* bTethered)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "AttemptTether");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "AttemptTether");
 
 	Params::Prj_Athena_FloppingRabbit_C_AttemptTether Parms{};
 
@@ -575,10 +479,7 @@ void APrj_Athena_FloppingRabbit_C::AttemptTether(class AActor* HitActor, bool* b
 
 void APrj_Athena_FloppingRabbit_C::RegisterWithGoalManager()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "RegisterWithGoalManager");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "RegisterWithGoalManager");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -589,10 +490,7 @@ void APrj_Athena_FloppingRabbit_C::RegisterWithGoalManager()
 
 void APrj_Athena_FloppingRabbit_C::UnRegisterWithGoalManager()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "UnRegisterWithGoalManager");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "UnRegisterWithGoalManager");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -606,10 +504,7 @@ void APrj_Athena_FloppingRabbit_C::UnRegisterWithGoalManager()
 
 void APrj_Athena_FloppingRabbit_C::IgnoreTetherablePawn(class AActor* HitActor, bool* isIgnored)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "IgnoreTetherablePawn");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "IgnoreTetherablePawn");
 
 	Params::Prj_Athena_FloppingRabbit_C_IgnoreTetherablePawn Parms{};
 
@@ -630,10 +525,7 @@ void APrj_Athena_FloppingRabbit_C::IgnoreTetherablePawn(class AActor* HitActor, 
 
 class FName APrj_Athena_FloppingRabbit_C::DetermineFishLootTierNameAndSetLootForSpawner(bool bIsExplosion)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "DetermineFishLootTierNameAndSetLootForSpawner");
+	class UFunction* Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "DetermineFishLootTierNameAndSetLootForSpawner");
 
 	Params::Prj_Athena_FloppingRabbit_C_DetermineFishLootTierNameAndSetLootForSpawner Parms{};
 

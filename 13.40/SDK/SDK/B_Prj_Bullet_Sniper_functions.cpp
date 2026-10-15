@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Bullet_Sniper_C::ExecuteUbergraph_B_Prj_Bullet_Sniper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "ExecuteUbergraph_B_Prj_Bullet_Sniper");
+	class UFunction* Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "ExecuteUbergraph_B_Prj_Bullet_Sniper");
 
 	Params::B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper Parms{};
 
@@ -44,10 +41,7 @@ void AB_Prj_Bullet_Sniper_C::ExecuteUbergraph_B_Prj_Bullet_Sniper(int32 EntryPoi
 
 void AB_Prj_Bullet_Sniper_C::OnSniperTraceWaterHit(const struct FHitResult& WaterHit_0, class AFortWaterBodyActor* WaterBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnSniperTraceWaterHit");
+	class UFunction* Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnSniperTraceWaterHit");
 
 	Params::B_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit Parms{};
 
@@ -68,10 +62,7 @@ void AB_Prj_Bullet_Sniper_C::OnSniperTraceWaterHit(const struct FHitResult& Wate
 
 void AB_Prj_Bullet_Sniper_C::OnTouched(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FHitResult& HitResult, bool bIsOverlap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnTouched");
+	class UFunction* Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnTouched");
 
 	Params::B_Prj_Bullet_Sniper_C_OnTouched Parms{};
 
@@ -89,10 +80,7 @@ void AB_Prj_Bullet_Sniper_C::OnTouched(class AActor* OtherActor, class UPrimitiv
 
 void AB_Prj_Bullet_Sniper_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +93,7 @@ void AB_Prj_Bullet_Sniper_C::ReceiveBeginPlay()
 
 void AB_Prj_Bullet_Sniper_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnStop");
 
 	Params::B_Prj_Bullet_Sniper_C_OnStop Parms{};
 
@@ -123,10 +108,7 @@ void AB_Prj_Bullet_Sniper_C::OnStop(const struct FHitResult& Hit)
 
 void AB_Prj_Bullet_Sniper_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -140,10 +122,7 @@ void AB_Prj_Bullet_Sniper_C::UserConstructionScript()
 
 void AB_Prj_Bullet_Sniper_C::PlayImpactSFX(bool IsPlayer, bool IsWater)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "PlayImpactSFX");
+	class UFunction* Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "PlayImpactSFX");
 
 	Params::B_Prj_Bullet_Sniper_C_PlayImpactSFX Parms{};
 

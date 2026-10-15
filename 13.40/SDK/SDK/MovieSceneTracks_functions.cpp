@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMovieScene3DConstraintSection::SetConstraintBindingID(const struct FMovieSceneObjectBindingID& InConstraintBindingID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieScene3DConstraintSection", "SetConstraintBindingID");
+	class UFunction* Func = Class->GetFunction("MovieScene3DConstraintSection", "SetConstraintBindingID");
 
 	Params::MovieScene3DConstraintSection_SetConstraintBindingID Parms{};
 
@@ -48,10 +45,7 @@ void UMovieScene3DConstraintSection::SetConstraintBindingID(const struct FMovieS
 
 const struct FMovieSceneObjectBindingID UMovieScene3DConstraintSection::GetConstraintBindingID() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieScene3DConstraintSection", "GetConstraintBindingID");
+	class UFunction* Func = Class->GetFunction("MovieScene3DConstraintSection", "GetConstraintBindingID");
 
 	Params::MovieScene3DConstraintSection_GetConstraintBindingID Parms{};
 
@@ -73,10 +67,7 @@ const struct FMovieSceneObjectBindingID UMovieScene3DConstraintSection::GetConst
 
 struct FTransform IMovieSceneTransformOrigin::BP_GetTransformOrigin() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("MovieSceneTransformOrigin", "BP_GetTransformOrigin");
+	class UFunction* Func = AsUObject()->Class->GetFunction("MovieSceneTransformOrigin", "BP_GetTransformOrigin");
 
 	Params::MovieSceneTransformOrigin_BP_GetTransformOrigin Parms{};
 
@@ -93,10 +84,7 @@ struct FTransform IMovieSceneTransformOrigin::BP_GetTransformOrigin() const
 
 void UMovieSceneAudioSection::SetSound(class USoundBase* InSound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneAudioSection", "SetSound");
+	class UFunction* Func = Class->GetFunction("MovieSceneAudioSection", "SetSound");
 
 	Params::MovieSceneAudioSection_SetSound Parms{};
 
@@ -118,10 +106,7 @@ void UMovieSceneAudioSection::SetSound(class USoundBase* InSound)
 
 void UMovieSceneAudioSection::SetStartOffset(const struct FFrameNumber& InStartOffset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneAudioSection", "SetStartOffset");
+	class UFunction* Func = Class->GetFunction("MovieSceneAudioSection", "SetStartOffset");
 
 	Params::MovieSceneAudioSection_SetStartOffset Parms{};
 
@@ -143,10 +128,7 @@ void UMovieSceneAudioSection::SetStartOffset(const struct FFrameNumber& InStartO
 
 class USoundBase* UMovieSceneAudioSection::GetSound() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneAudioSection", "GetSound");
+	class UFunction* Func = Class->GetFunction("MovieSceneAudioSection", "GetSound");
 
 	Params::MovieSceneAudioSection_GetSound Parms{};
 
@@ -168,10 +150,7 @@ class USoundBase* UMovieSceneAudioSection::GetSound() const
 
 struct FFrameNumber UMovieSceneAudioSection::GetStartOffset() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneAudioSection", "GetStartOffset");
+	class UFunction* Func = Class->GetFunction("MovieSceneAudioSection", "GetStartOffset");
 
 	Params::MovieSceneAudioSection_GetStartOffset Parms{};
 
@@ -193,10 +172,7 @@ struct FFrameNumber UMovieSceneAudioSection::GetStartOffset() const
 
 void UMovieSceneCameraCutSection::SetCameraBindingID(const struct FMovieSceneObjectBindingID& InCameraBindingID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCameraCutSection", "SetCameraBindingID");
+	class UFunction* Func = Class->GetFunction("MovieSceneCameraCutSection", "SetCameraBindingID");
 
 	Params::MovieSceneCameraCutSection_SetCameraBindingID Parms{};
 
@@ -218,10 +194,7 @@ void UMovieSceneCameraCutSection::SetCameraBindingID(const struct FMovieSceneObj
 
 const struct FMovieSceneObjectBindingID UMovieSceneCameraCutSection::GetCameraBindingID() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCameraCutSection", "GetCameraBindingID");
+	class UFunction* Func = Class->GetFunction("MovieSceneCameraCutSection", "GetCameraBindingID");
 
 	Params::MovieSceneCameraCutSection_GetCameraBindingID Parms{};
 
@@ -243,10 +216,7 @@ const struct FMovieSceneObjectBindingID UMovieSceneCameraCutSection::GetCameraBi
 
 void UMovieSceneCinematicShotSection::SetShotDisplayName(const class FString& InShotDisplayName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCinematicShotSection", "SetShotDisplayName");
+	class UFunction* Func = Class->GetFunction("MovieSceneCinematicShotSection", "SetShotDisplayName");
 
 	Params::MovieSceneCinematicShotSection_SetShotDisplayName Parms{};
 
@@ -268,10 +238,7 @@ void UMovieSceneCinematicShotSection::SetShotDisplayName(const class FString& In
 
 class FString UMovieSceneCinematicShotSection::GetShotDisplayName() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneCinematicShotSection", "GetShotDisplayName");
+	class UFunction* Func = Class->GetFunction("MovieSceneCinematicShotSection", "GetShotDisplayName");
 
 	Params::MovieSceneCinematicShotSection_GetShotDisplayName Parms{};
 
@@ -293,10 +260,7 @@ class FString UMovieSceneCinematicShotSection::GetShotDisplayName() const
 
 void UMovieSceneLevelVisibilitySection::SetLevelNames(const TArray<class FName>& InLevelNames)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "SetLevelNames");
+	class UFunction* Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "SetLevelNames");
 
 	Params::MovieSceneLevelVisibilitySection_SetLevelNames Parms{};
 
@@ -318,10 +282,7 @@ void UMovieSceneLevelVisibilitySection::SetLevelNames(const TArray<class FName>&
 
 void UMovieSceneLevelVisibilitySection::SetVisibility(ELevelVisibility InVisibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "SetVisibility");
+	class UFunction* Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "SetVisibility");
 
 	Params::MovieSceneLevelVisibilitySection_SetVisibility Parms{};
 
@@ -343,10 +304,7 @@ void UMovieSceneLevelVisibilitySection::SetVisibility(ELevelVisibility InVisibil
 
 const TArray<class FName> UMovieSceneLevelVisibilitySection::GetLevelNames() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "GetLevelNames");
+	class UFunction* Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "GetLevelNames");
 
 	Params::MovieSceneLevelVisibilitySection_GetLevelNames Parms{};
 
@@ -368,10 +326,7 @@ const TArray<class FName> UMovieSceneLevelVisibilitySection::GetLevelNames() con
 
 ELevelVisibility UMovieSceneLevelVisibilitySection::GetVisibility() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "GetVisibility");
+	class UFunction* Func = Class->GetFunction("MovieSceneLevelVisibilitySection", "GetVisibility");
 
 	Params::MovieSceneLevelVisibilitySection_GetVisibility Parms{};
 

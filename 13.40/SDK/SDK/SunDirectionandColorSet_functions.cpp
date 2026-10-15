@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ASunDirectionandColorSet_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SunDirectionandColorSet_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("SunDirectionandColorSet_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void ASunDirectionandColorSet_C::UserConstructionScript()
 
 void ASunDirectionandColorSet_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SunDirectionandColorSet_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("SunDirectionandColorSet_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +45,7 @@ void ASunDirectionandColorSet_C::ReceiveBeginPlay()
 
 void ASunDirectionandColorSet_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SunDirectionandColorSet_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("SunDirectionandColorSet_C", "ReceiveTick");
 
 	Params::SunDirectionandColorSet_C_ReceiveTick Parms{};
 
@@ -71,10 +62,7 @@ void ASunDirectionandColorSet_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 
 void ASunDirectionandColorSet_C::ExecuteUbergraph_SunDirectionandColorSet(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SunDirectionandColorSet_C", "ExecuteUbergraph_SunDirectionandColorSet");
+	class UFunction* Func = Class->GetFunction("SunDirectionandColorSet_C", "ExecuteUbergraph_SunDirectionandColorSet");
 
 	Params::SunDirectionandColorSet_C_ExecuteUbergraph_SunDirectionandColorSet Parms{};
 

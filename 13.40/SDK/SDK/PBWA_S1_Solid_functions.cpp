@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APBWA_S1_Solid_C::ExecuteUbergraph_PBWA_S1_Solid(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PBWA_S1_Solid_C", "ExecuteUbergraph_PBWA_S1_Solid");
+	class UFunction* Func = Class->GetFunction("PBWA_S1_Solid_C", "ExecuteUbergraph_PBWA_S1_Solid");
 
 	Params::PBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid Parms{};
 
@@ -41,10 +38,7 @@ void APBWA_S1_Solid_C::ExecuteUbergraph_PBWA_S1_Solid(int32 EntryPoint)
 
 void APBWA_S1_Solid_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PBWA_S1_Solid_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("PBWA_S1_Solid_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void APBWA_S1_Solid_C::ReceiveBeginPlay()
 
 void APBWA_S1_Solid_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PBWA_S1_Solid_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("PBWA_S1_Solid_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

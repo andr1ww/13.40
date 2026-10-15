@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void APBW_BP_Parent_C::ExecuteUbergraph_PBW_BP_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PBW_BP_Parent_C", "ExecuteUbergraph_PBW_BP_Parent");
+	class UFunction* Func = Class->GetFunction("PBW_BP_Parent_C", "ExecuteUbergraph_PBW_BP_Parent");
 
 	Params::PBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent Parms{};
 
@@ -41,10 +38,7 @@ void APBW_BP_Parent_C::ExecuteUbergraph_PBW_BP_Parent(int32 EntryPoint)
 
 void APBW_BP_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PBW_BP_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("PBW_BP_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void APBW_BP_Parent_C::ReceiveBeginPlay()
 
 void APBW_BP_Parent_C::OnRep_Random_Chance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PBW_BP_Parent_C", "OnRep_Random Chance");
+	class UFunction* Func = Class->GetFunction("PBW_BP_Parent_C", "OnRep_Random Chance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

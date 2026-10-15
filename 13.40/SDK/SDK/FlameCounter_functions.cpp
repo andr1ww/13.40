@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFlameCounter_C::ExecuteUbergraph_FlameCounter(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlameCounter_C", "ExecuteUbergraph_FlameCounter");
+	class UFunction* Func = Class->GetFunction("FlameCounter_C", "ExecuteUbergraph_FlameCounter");
 
 	Params::FlameCounter_C_ExecuteUbergraph_FlameCounter Parms{};
 
@@ -41,10 +38,7 @@ void UFlameCounter_C::ExecuteUbergraph_FlameCounter(int32 EntryPoint)
 
 void UFlameCounter_C::PlayFadeIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlameCounter_C", "PlayFadeIn");
+	class UFunction* Func = Class->GetFunction("FlameCounter_C", "PlayFadeIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UFlameCounter_C::PlayFadeIn()
 
 void UFlameCounter_C::PlayFadeOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlameCounter_C", "PlayFadeOut");
+	class UFunction* Func = Class->GetFunction("FlameCounter_C", "PlayFadeOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UFlameCounter_C::PlayFadeOut()
 
 void UFlameCounter_C::PlayIdle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlameCounter_C", "PlayIdle");
+	class UFunction* Func = Class->GetFunction("FlameCounter_C", "PlayIdle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UFlameCounter_C::PlayIdle()
 
 void UFlameCounter_C::PlayIncreaseVote()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FlameCounter_C", "PlayIncreaseVote");
+	class UFunction* Func = Class->GetFunction("FlameCounter_C", "PlayIncreaseVote");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

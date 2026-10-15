@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPistol_FlareGun_Sk_animBP_C::ExecuteUbergraph_Pistol_FlareGun_Sk_animBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Pistol_FlareGun_Sk_animBP_C", "ExecuteUbergraph_Pistol_FlareGun_Sk_animBP");
+	class UFunction* Func = Class->GetFunction("Pistol_FlareGun_Sk_animBP_C", "ExecuteUbergraph_Pistol_FlareGun_Sk_animBP");
 
 	Params::Pistol_FlareGun_Sk_animBP_C_ExecuteUbergraph_Pistol_FlareGun_Sk_animBP Parms{};
 
@@ -43,10 +40,7 @@ void UPistol_FlareGun_Sk_animBP_C::ExecuteUbergraph_Pistol_FlareGun_Sk_animBP(in
 
 void UPistol_FlareGun_Sk_animBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Pistol_FlareGun_Sk_animBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("Pistol_FlareGun_Sk_animBP_C", "AnimGraph");
 
 	Params::Pistol_FlareGun_Sk_animBP_C_AnimGraph Parms{};
 

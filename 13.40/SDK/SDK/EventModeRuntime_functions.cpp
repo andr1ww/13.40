@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UFortGameFrameworkComponent_EventMode::OnEnterVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "OnEnterVehicle");
+	class UFunction* Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "OnEnterVehicle");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -40,10 +37,7 @@ void UFortGameFrameworkComponent_EventMode::OnEnterVehicle()
 
 void UFortGameFrameworkComponent_EventMode::OnExitVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "OnExitVehicle");
+	class UFunction* Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "OnExitVehicle");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -61,10 +55,7 @@ void UFortGameFrameworkComponent_EventMode::OnExitVehicle()
 
 void UFortGameFrameworkComponent_EventMode::OnPlayerPawnPossessed(class APawn* PossessedPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "OnPlayerPawnPossessed");
+	class UFunction* Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "OnPlayerPawnPossessed");
 
 	Params::FortGameFrameworkComponent_EventMode_OnPlayerPawnPossessed Parms{};
 
@@ -86,10 +77,7 @@ void UFortGameFrameworkComponent_EventMode::OnPlayerPawnPossessed(class APawn* P
 
 bool UFortGameFrameworkComponent_EventMode::GetIsEventModeActive() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "GetIsEventModeActive");
+	class UFunction* Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "GetIsEventModeActive");
 
 	Params::FortGameFrameworkComponent_EventMode_GetIsEventModeActive Parms{};
 
@@ -111,10 +99,7 @@ bool UFortGameFrameworkComponent_EventMode::GetIsEventModeActive() const
 
 bool UFortGameFrameworkComponent_EventMode::GetIsFocusAvailable() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "GetIsFocusAvailable");
+	class UFunction* Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "GetIsFocusAvailable");
 
 	Params::FortGameFrameworkComponent_EventMode_GetIsFocusAvailable Parms{};
 
@@ -136,10 +121,7 @@ bool UFortGameFrameworkComponent_EventMode::GetIsFocusAvailable() const
 
 bool UFortGameFrameworkComponent_EventMode::GetIsFocusing() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "GetIsFocusing");
+	class UFunction* Func = Class->GetFunction("FortGameFrameworkComponent_EventMode", "GetIsFocusing");
 
 	Params::FortGameFrameworkComponent_EventMode_GetIsFocusing Parms{};
 

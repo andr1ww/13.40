@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_PetrolWeapon_C::ExecuteUbergraph_B_PetrolWeapon(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "ExecuteUbergraph_B_PetrolWeapon");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "ExecuteUbergraph_B_PetrolWeapon");
 
 	Params::B_PetrolWeapon_C_ExecuteUbergraph_B_PetrolWeapon Parms{};
 
@@ -41,10 +38,7 @@ void AB_PetrolWeapon_C::ExecuteUbergraph_B_PetrolWeapon(int32 EntryPoint)
 
 void AB_PetrolWeapon_C::ReplicateOnHolstered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "ReplicateOnHolstered");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "ReplicateOnHolstered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_PetrolWeapon_C::ReplicateOnHolstered()
 
 void AB_PetrolWeapon_C::ReplicateOnUnholstered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "ReplicateOnUnholstered");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "ReplicateOnUnholstered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_PetrolWeapon_C::ReplicateOnUnholstered()
 
 void AB_PetrolWeapon_C::BGADestroyedWhileHeld()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "BGADestroyedWhileHeld");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "BGADestroyedWhileHeld");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_PetrolWeapon_C::BGADestroyedWhileHeld()
 
 void AB_PetrolWeapon_C::UnbindHolsterEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "UnbindHolsterEvents");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "UnbindHolsterEvents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AB_PetrolWeapon_C::UnbindHolsterEvents()
 
 void AB_PetrolWeapon_C::BindHolsterEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "BindHolsterEvents");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "BindHolsterEvents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void AB_PetrolWeapon_C::BindHolsterEvents()
 
 void AB_PetrolWeapon_C::OnUnholstered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "OnUnholstered");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "OnUnholstered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void AB_PetrolWeapon_C::OnUnholstered()
 
 void AB_PetrolWeapon_C::OnHolstered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "OnHolstered");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "OnHolstered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +117,7 @@ void AB_PetrolWeapon_C::OnHolstered()
 
 void AB_PetrolWeapon_C::HUDKeyAction_Targeting(bool IsTargeting)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "HUDKeyAction_Targeting");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "HUDKeyAction_Targeting");
 
 	Params::B_PetrolWeapon_C_HUDKeyAction_Targeting Parms{};
 
@@ -159,10 +132,7 @@ void AB_PetrolWeapon_C::HUDKeyAction_Targeting(bool IsTargeting)
 
 void AB_PetrolWeapon_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +143,7 @@ void AB_PetrolWeapon_C::ReceiveBeginPlay()
 
 void AB_PetrolWeapon_C::OnUnEquip_Copy_()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "OnUnEquip(Copy)");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "OnUnEquip(Copy)");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +154,7 @@ void AB_PetrolWeapon_C::OnUnEquip_Copy_()
 
 void AB_PetrolWeapon_C::OnStopWeaponFireFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "OnStopWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "OnStopWeaponFireFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -201,10 +165,7 @@ void AB_PetrolWeapon_C::OnStopWeaponFireFX()
 
 void AB_PetrolWeapon_C::OnEquip_Copy_()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "OnEquip(Copy)");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "OnEquip(Copy)");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -218,10 +179,7 @@ void AB_PetrolWeapon_C::OnEquip_Copy_()
 
 void AB_PetrolWeapon_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "OnPlayWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "OnPlayWeaponFireFX");
 
 	Params::B_PetrolWeapon_C_OnPlayWeaponFireFX Parms{};
 
@@ -237,10 +195,7 @@ void AB_PetrolWeapon_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondary
 
 void AB_PetrolWeapon_C::UpdateAndAttachBGA()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "UpdateAndAttachBGA");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "UpdateAndAttachBGA");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -251,10 +206,7 @@ void AB_PetrolWeapon_C::UpdateAndAttachBGA()
 
 void AB_PetrolWeapon_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +217,7 @@ void AB_PetrolWeapon_C::K2_OnUnEquip()
 
 void AB_PetrolWeapon_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -281,10 +230,7 @@ void AB_PetrolWeapon_C::OnWeaponAttached()
 
 void AB_PetrolWeapon_C::OnSpawnProjectile(class AFortProjectileBase* SpawnProjectile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "OnSpawnProjectile");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "OnSpawnProjectile");
 
 	Params::B_PetrolWeapon_C_OnSpawnProjectile Parms{};
 
@@ -299,10 +245,7 @@ void AB_PetrolWeapon_C::OnSpawnProjectile(class AFortProjectileBase* SpawnProjec
 
 void AB_PetrolWeapon_C::OnRep_AttachedBGAActor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_PetrolWeapon_C", "OnRep_AttachedBGAActor");
+	class UFunction* Func = Class->GetFunction("B_PetrolWeapon_C", "OnRep_AttachedBGAActor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

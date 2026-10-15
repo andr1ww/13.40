@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTeamMemberBanner_C::ExecuteUbergraph_TeamMemberBanner(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberBanner_C", "ExecuteUbergraph_TeamMemberBanner");
+	class UFunction* Func = Class->GetFunction("TeamMemberBanner_C", "ExecuteUbergraph_TeamMemberBanner");
 
 	Params::TeamMemberBanner_C_ExecuteUbergraph_TeamMemberBanner Parms{};
 
@@ -43,10 +40,7 @@ void UTeamMemberBanner_C::ExecuteUbergraph_TeamMemberBanner(int32 EntryPoint)
 
 void UTeamMemberBanner_C::OnTeamMemberConnectionStateChanged(EFortMemberConnectionState NewConnectionState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberBanner_C", "OnTeamMemberConnectionStateChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberBanner_C", "OnTeamMemberConnectionStateChanged");
 
 	Params::TeamMemberBanner_C_OnTeamMemberConnectionStateChanged Parms{};
 
@@ -63,10 +57,7 @@ void UTeamMemberBanner_C::OnTeamMemberConnectionStateChanged(EFortMemberConnecti
 
 void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
 
 	Params::TeamMemberBanner_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -83,10 +74,7 @@ void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3
 
 void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::TeamMemberBanner_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -103,10 +91,7 @@ void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1
 
 void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::TeamMemberBanner_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -123,10 +108,7 @@ void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0
 
 void UTeamMemberBanner_C::HandleMouseHoverVisualState(bool Hover)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberBanner_C", "HandleMouseHoverVisualState");
+	class UFunction* Func = Class->GetFunction("TeamMemberBanner_C", "HandleMouseHoverVisualState");
 
 	Params::TeamMemberBanner_C_HandleMouseHoverVisualState Parms{};
 
@@ -141,10 +123,7 @@ void UTeamMemberBanner_C::HandleMouseHoverVisualState(bool Hover)
 
 void UTeamMemberBanner_C::OpenPartyFinder()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberBanner_C", "OpenPartyFinder");
+	class UFunction* Func = Class->GetFunction("TeamMemberBanner_C", "OpenPartyFinder");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

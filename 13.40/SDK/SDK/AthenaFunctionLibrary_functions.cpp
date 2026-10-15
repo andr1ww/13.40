@@ -29,10 +29,7 @@ SDK_NAMESPACE_START
 
 void UAthenaFunctionLibrary_C::CreateEnvironmentalKnockbackExplosion(const struct FVector& ExplosionSourcePoint, float ExplosionRadius, float Intensity, float MinKnockbackAngle, bool Reverse, class AActor* SpecificActor, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaFunctionLibrary_C", "CreateEnvironmentalKnockbackExplosion");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaFunctionLibrary_C", "CreateEnvironmentalKnockbackExplosion");
 
 	Params::AthenaFunctionLibrary_C_CreateEnvironmentalKnockbackExplosion Parms{};
 
@@ -58,10 +55,7 @@ void UAthenaFunctionLibrary_C::CreateEnvironmentalKnockbackExplosion(const struc
 
 void UAthenaFunctionLibrary_C::AllOnSameTeam(const class AActor* Actor, const TArray<class AActor*>& ActorArray, class UObject* __WorldContext, bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaFunctionLibrary_C", "AllOnSameTeam");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaFunctionLibrary_C", "AllOnSameTeam");
 
 	Params::AthenaFunctionLibrary_C_AllOnSameTeam Parms{};
 
@@ -86,10 +80,7 @@ void UAthenaFunctionLibrary_C::AllOnSameTeam(const class AActor* Actor, const TA
 
 bool UAthenaFunctionLibrary_C::RowToBool(const struct FScalableFloat& Input, float Level, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaFunctionLibrary_C", "RowToBool");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaFunctionLibrary_C", "RowToBool");
 
 	Params::AthenaFunctionLibrary_C_RowToBool Parms{};
 
@@ -125,10 +116,7 @@ bool UAthenaFunctionLibrary_C::RowToBool(const struct FScalableFloat& Input, flo
 
 void UAthenaFunctionLibrary_C::SpawnLootFromTable(const class FName TierGroupName, const int32 WorldLevel, const int32 ForcedLootTier, const struct FVector& position, const struct FVector& Direction, int32 OverrideMaxStackCount, bool bToss, bool bRandomRotation, bool bBlockedFromAutoPickup, int32 PickupInstigatorHandle, EFortPickupSourceTypeFlag SourceType, EFortPickupSpawnSource Source, class AFortPlayerController* OptionalOwnerPC, bool bPickupOnlyRelevantToOwner, class UObject* __WorldContext, TArray<class AFortPickup*>* ItemPickupsSpawned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AthenaFunctionLibrary_C", "SpawnLootFromTable");
+	class UFunction* Func = StaticClass()->GetFunction("AthenaFunctionLibrary_C", "SpawnLootFromTable");
 
 	Params::AthenaFunctionLibrary_C_SpawnLootFromTable Parms{};
 

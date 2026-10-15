@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AMilitaryBase_Door_01_C::ExecuteUbergraph_MilitaryBase_Door_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "ExecuteUbergraph_MilitaryBase_Door_01");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "ExecuteUbergraph_MilitaryBase_Door_01");
 
 	Params::MilitaryBase_Door_01_C_ExecuteUbergraph_MilitaryBase_Door_01 Parms{};
 
@@ -41,10 +38,7 @@ void AMilitaryBase_Door_01_C::ExecuteUbergraph_MilitaryBase_Door_01(int32 EntryP
 
 void AMilitaryBase_Door_01_C::OnLocked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "OnLocked");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "OnLocked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AMilitaryBase_Door_01_C::OnLocked()
 
 void AMilitaryBase_Door_01_C::OnUnLocked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "OnUnLocked");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "OnUnLocked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AMilitaryBase_Door_01_C::OnUnLocked()
 
 void AMilitaryBase_Door_01_C::Close(class AController* ControllerInstigator)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "Close");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "Close");
 
 	Params::MilitaryBase_Door_01_C_Close Parms{};
 
@@ -91,10 +79,7 @@ void AMilitaryBase_Door_01_C::Close(class AController* ControllerInstigator)
 
 void AMilitaryBase_Door_01_C::Open(class AController* ControllerInstigator)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "Open");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "Open");
 
 	Params::MilitaryBase_Door_01_C_Open Parms{};
 
@@ -109,10 +94,7 @@ void AMilitaryBase_Door_01_C::Open(class AController* ControllerInstigator)
 
 void AMilitaryBase_Door_01_C::CloseDoor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "CloseDoor");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "CloseDoor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void AMilitaryBase_Door_01_C::CloseDoor()
 
 void AMilitaryBase_Door_01_C::OpenDoor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "OpenDoor");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "OpenDoor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -142,10 +121,7 @@ void AMilitaryBase_Door_01_C::OpenDoor()
 
 void AMilitaryBase_Door_01_C::BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::MilitaryBase_Door_01_C_BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -170,10 +146,7 @@ void AMilitaryBase_Door_01_C::BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBou
 
 void AMilitaryBase_Door_01_C::BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::MilitaryBase_Door_01_C_BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -193,10 +166,7 @@ void AMilitaryBase_Door_01_C::BndEvt__DoorSlideOverlapVolume_K2Node_ComponentBou
 
 void AMilitaryBase_Door_01_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +177,7 @@ void AMilitaryBase_Door_01_C::Timeline_0__UpdateFunc()
 
 void AMilitaryBase_Door_01_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +188,7 @@ void AMilitaryBase_Door_01_C::Timeline_0__FinishedFunc()
 
 void AMilitaryBase_Door_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,10 +199,7 @@ void AMilitaryBase_Door_01_C::UserConstructionScript()
 
 void AMilitaryBase_Door_01_C::GetDoorMID()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "GetDoorMID");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "GetDoorMID");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +210,7 @@ void AMilitaryBase_Door_01_C::GetDoorMID()
 
 void AMilitaryBase_Door_01_C::OnRep_DoorOpen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "OnRep_DoorOpen");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "OnRep_DoorOpen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +223,7 @@ void AMilitaryBase_Door_01_C::OnRep_DoorOpen()
 
 TArray<class UPrimitiveComponent*> AMilitaryBase_Door_01_C::GetComponentToLock()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "GetComponentToLock");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "GetComponentToLock");
 
 	Params::MilitaryBase_Door_01_C_GetComponentToLock Parms{};
 
@@ -285,10 +240,7 @@ TArray<class UPrimitiveComponent*> AMilitaryBase_Door_01_C::GetComponentToLock()
 
 bool AMilitaryBase_Door_01_C::IsOpen() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MilitaryBase_Door_01_C", "IsOpen");
+	class UFunction* Func = Class->GetFunction("MilitaryBase_Door_01_C", "IsOpen");
 
 	Params::MilitaryBase_Door_01_C_IsOpen Parms{};
 

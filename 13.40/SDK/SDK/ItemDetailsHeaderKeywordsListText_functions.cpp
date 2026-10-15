@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UItemDetailsHeaderKeywordsListText_C::FormatItemDisplayTags(TArray<class FText>& TagTexts, class FText* FormatedText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "FormatItemDisplayTags");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "FormatItemDisplayTags");
 
 	Params::ItemDetailsHeaderKeywordsListText_C_FormatItemDisplayTags Parms{};
 
@@ -47,10 +44,7 @@ void UItemDetailsHeaderKeywordsListText_C::FormatItemDisplayTags(TArray<class FT
 
 void UItemDetailsHeaderKeywordsListText_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -61,10 +55,7 @@ void UItemDetailsHeaderKeywordsListText_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsHeaderKeywordsListText_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "HandlePostDifferentItemToCompareWithSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "HandlePostDifferentItemToCompareWithSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UItemDetailsHeaderKeywordsListText_C::HandlePostDifferentItemToCompareWithS
 
 void UItemDetailsHeaderKeywordsListText_C::ExecuteUbergraph_ItemDetailsHeaderKeywordsListText(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "ExecuteUbergraph_ItemDetailsHeaderKeywordsListText");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "ExecuteUbergraph_ItemDetailsHeaderKeywordsListText");
 
 	Params::ItemDetailsHeaderKeywordsListText_C_ExecuteUbergraph_ItemDetailsHeaderKeywordsListText Parms{};
 

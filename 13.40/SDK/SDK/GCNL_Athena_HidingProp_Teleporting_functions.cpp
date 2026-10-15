@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Athena_HidingProp_Teleporting_C::ExecuteUbergraph_GCNL_Athena_HidingProp_Teleporting(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "ExecuteUbergraph_GCNL_Athena_HidingProp_Teleporting");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "ExecuteUbergraph_GCNL_Athena_HidingProp_Teleporting");
 
 	Params::GCNL_Athena_HidingProp_Teleporting_C_ExecuteUbergraph_GCNL_Athena_HidingProp_Teleporting Parms{};
 
@@ -48,10 +45,7 @@ void AGCNL_Athena_HidingProp_Teleporting_C::ExecuteUbergraph_GCNL_Athena_HidingP
 
 void AGCNL_Athena_HidingProp_Teleporting_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "OnRemoval");
 
 	Params::GCNL_Athena_HidingProp_Teleporting_C_OnRemoval Parms{};
 
@@ -76,10 +70,7 @@ void AGCNL_Athena_HidingProp_Teleporting_C::OnRemoval(class AActor* MyTarget, co
 
 void AGCNL_Athena_HidingProp_Teleporting_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "OnLoopingStart");
 
 	Params::GCNL_Athena_HidingProp_Teleporting_C_OnLoopingStart Parms{};
 
@@ -97,10 +88,7 @@ void AGCNL_Athena_HidingProp_Teleporting_C::OnLoopingStart(class AActor* MyTarge
 
 void AGCNL_Athena_HidingProp_Teleporting_C::Timeline_0__DoFlash__EventFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "Timeline_0__DoFlash__EventFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "Timeline_0__DoFlash__EventFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +99,7 @@ void AGCNL_Athena_HidingProp_Teleporting_C::Timeline_0__DoFlash__EventFunc()
 
 void AGCNL_Athena_HidingProp_Teleporting_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +110,7 @@ void AGCNL_Athena_HidingProp_Teleporting_C::Timeline_0__UpdateFunc()
 
 void AGCNL_Athena_HidingProp_Teleporting_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_HidingProp_Teleporting_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

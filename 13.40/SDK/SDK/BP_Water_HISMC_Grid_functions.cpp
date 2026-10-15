@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ABP_Water_HISMC_Grid_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Water_HISMC_Grid_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_Water_HISMC_Grid_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

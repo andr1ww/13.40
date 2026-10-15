@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTournamentDateEntry_C::ExecuteUbergraph_TournamentDateEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDateEntry_C", "ExecuteUbergraph_TournamentDateEntry");
+	class UFunction* Func = Class->GetFunction("TournamentDateEntry_C", "ExecuteUbergraph_TournamentDateEntry");
 
 	Params::TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry Parms{};
 
@@ -41,10 +38,7 @@ void UTournamentDateEntry_C::ExecuteUbergraph_TournamentDateEntry(int32 EntryPoi
 
 void UTournamentDateEntry_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDateEntry_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("TournamentDateEntry_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UTournamentDateEntry_C::RefreshDataBP()
 
 void UTournamentDateEntry_C::EventColor(const struct FFortTournamentDisplayInfo& showdownData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDateEntry_C", "EventColor");
+	class UFunction* Func = Class->GetFunction("TournamentDateEntry_C", "EventColor");
 
 	Params::TournamentDateEntry_C_EventColor Parms{};
 
@@ -77,10 +68,7 @@ void UTournamentDateEntry_C::EventColor(const struct FFortTournamentDisplayInfo&
 
 void UTournamentDateEntry_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TournamentDateEntry_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("TournamentDateEntry_C", "PreConstruct");
 
 	Params::TournamentDateEntry_C_PreConstruct Parms{};
 

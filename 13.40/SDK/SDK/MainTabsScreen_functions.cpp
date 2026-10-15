@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "ExecuteUbergraph_MainTabsScreen");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "ExecuteUbergraph_MainTabsScreen");
 
 	Params::MainTabsScreen_C_ExecuteUbergraph_MainTabsScreen Parms{};
 
@@ -44,10 +41,7 @@ void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int32 EntryPoint)
 
 void UMainTabsScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Tick");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Tick");
 
 	Params::MainTabsScreen_C_Tick Parms{};
 
@@ -66,10 +60,7 @@ void UMainTabsScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTi
 
 void UMainTabsScreen_C::HandleMainTabCreated(class FName TabNameID, class UCommonButton* TabButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabCreated");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabCreated");
 
 	Params::MainTabsScreen_C_HandleMainTabCreated Parms{};
 
@@ -87,10 +78,7 @@ void UMainTabsScreen_C::HandleMainTabCreated(class FName TabNameID, class UCommo
 
 void UMainTabsScreen_C::HandleMainTabSelected(class FName TabNameID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabSelected");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabSelected");
 
 	Params::MainTabsScreen_C_HandleMainTabSelected Parms{};
 
@@ -105,10 +93,7 @@ void UMainTabsScreen_C::HandleMainTabSelected(class FName TabNameID)
 
 void UMainTabsScreen_C::SquadSlotMarkedAsSeen_Event_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "SquadSlotMarkedAsSeen_Event_0");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "SquadSlotMarkedAsSeen_Event_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,10 +106,7 @@ void UMainTabsScreen_C::SquadSlotMarkedAsSeen_Event_0()
 
 void UMainTabsScreen_C::OnQuestSeen_Event_0(class UFortQuestItem* Quest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "OnQuestSeen_Event_0");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "OnQuestSeen_Event_0");
 
 	Params::MainTabsScreen_C_OnQuestSeen_Event_0 Parms{};
 
@@ -139,10 +121,7 @@ void UMainTabsScreen_C::OnQuestSeen_Event_0(class UFortQuestItem* Quest)
 
 void UMainTabsScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +132,7 @@ void UMainTabsScreen_C::Construct()
 
 void UMainTabsScreen_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +143,7 @@ void UMainTabsScreen_C::Destruct()
 
 void UMainTabsScreen_C::OnHomebaseInventoryUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "OnHomebaseInventoryUpdated");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "OnHomebaseInventoryUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -184,10 +157,7 @@ void UMainTabsScreen_C::OnHomebaseInventoryUpdated()
 
 void UMainTabsScreen_C::CustomEvent(class FName TabId, class UCommonButton* TabButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "CustomEvent");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "CustomEvent");
 
 	Params::MainTabsScreen_C_CustomEvent Parms{};
 
@@ -203,10 +173,7 @@ void UMainTabsScreen_C::CustomEvent(class FName TabId, class UCommonButton* TabB
 
 void UMainTabsScreen_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -220,10 +187,7 @@ void UMainTabsScreen_C::BP_OnActivated()
 
 void UMainTabsScreen_C::HandleTabCreated(class FName TabId, class UCommonButton* TabButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleTabCreated");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "HandleTabCreated");
 
 	Params::MainTabsScreen_C_HandleTabCreated Parms{};
 
@@ -241,10 +205,7 @@ void UMainTabsScreen_C::HandleTabCreated(class FName TabId, class UCommonButton*
 
 void UMainTabsScreen_C::HandleTabSelected(class FName TabName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleTabSelected");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "HandleTabSelected");
 
 	Params::MainTabsScreen_C_HandleTabSelected Parms{};
 
@@ -261,10 +222,7 @@ void UMainTabsScreen_C::HandleTabSelected(class FName TabName)
 
 void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(class FName Tab)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Update Squad Tab Button Bang");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Update Squad Tab Button Bang");
 
 	Params::MainTabsScreen_C_Update_Squad_Tab_Button_Bang Parms{};
 
@@ -281,10 +239,7 @@ void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(class FName Tab)
 
 void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Update Hero Tab Button Bang");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Update Hero Tab Button Bang");
 
 	Params::MainTabsScreen_C_Update_Hero_Tab_Button_Bang Parms{};
 
@@ -301,10 +256,7 @@ void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab)
 
 void UMainTabsScreen_C::Update_Tab_Button_Bangs(class FName InTab)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Update Tab Button Bangs");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Update Tab Button Bangs");
 
 	Params::MainTabsScreen_C_Update_Tab_Button_Bangs Parms{};
 
@@ -321,10 +273,7 @@ void UMainTabsScreen_C::Update_Tab_Button_Bangs(class FName InTab)
 
 void UMainTabsScreen_C::Update_Quest_Tab_Button_Bang(class FName Tab)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Update Quest Tab Button Bang");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Update Quest Tab Button Bang");
 
 	Params::MainTabsScreen_C_Update_Quest_Tab_Button_Bang Parms{};
 
@@ -342,10 +291,7 @@ void UMainTabsScreen_C::Update_Quest_Tab_Button_Bang(class FName Tab)
 
 void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountItem* TransformKey, class UFortAccountItem** OutItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Get Item from Transform Seen State");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Get Item from Transform Seen State");
 
 	Params::MainTabsScreen_C_Get_Item_from_Transform_Seen_State Parms{};
 
@@ -365,10 +311,7 @@ void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountIte
 
 void UMainTabsScreen_C::Get_FortPC(class AFortPlayerController** FortPC)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Get FortPC");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Get FortPC");
 
 	Params::MainTabsScreen_C_Get_FortPC Parms{};
 
@@ -386,10 +329,7 @@ void UMainTabsScreen_C::Get_FortPC(class AFortPlayerController** FortPC)
 
 void UMainTabsScreen_C::Are_Any_Transform_Keys_Unseen(bool* Unseen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Are Any Transform Keys Unseen");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Are Any Transform Keys Unseen");
 
 	Params::MainTabsScreen_C_Are_Any_Transform_Keys_Unseen Parms{};
 
@@ -407,10 +347,7 @@ void UMainTabsScreen_C::Are_Any_Transform_Keys_Unseen(bool* Unseen)
 
 void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Are Any Inventory Items Unseen");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Are Any Inventory Items Unseen");
 
 	Params::MainTabsScreen_C_Are_Any_Inventory_Items_Unseen Parms{};
 
@@ -428,10 +365,7 @@ void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen)
 
 void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(class FName Tab)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Update Store Tab Button Bang");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Update Store Tab Button Bang");
 
 	Params::MainTabsScreen_C_Update_Store_Tab_Button_Bang Parms{};
 
@@ -448,10 +382,7 @@ void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(class FName Tab)
 
 void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Determine Unclaimed Resources at Threshold");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Determine Unclaimed Resources at Threshold");
 
 	Params::MainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold Parms{};
 
@@ -469,10 +400,7 @@ void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result)
 
 void UMainTabsScreen_C::Toggle_Unclaimed_Research_Timer(bool Enable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Toggle Unclaimed Research Timer");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Toggle Unclaimed Research Timer");
 
 	Params::MainTabsScreen_C_Toggle_Unclaimed_Research_Timer Parms{};
 
@@ -487,10 +415,7 @@ void UMainTabsScreen_C::Toggle_Unclaimed_Research_Timer(bool Enable)
 
 void UMainTabsScreen_C::Handle_Unclaimed_Resources_Updated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Handle Unclaimed Resources Updated");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Handle Unclaimed Resources Updated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -503,10 +428,7 @@ void UMainTabsScreen_C::Handle_Unclaimed_Resources_Updated()
 
 void UMainTabsScreen_C::HandleMtxStore(class FName Tab_ID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleMtxStore");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "HandleMtxStore");
 
 	Params::MainTabsScreen_C_HandleMtxStore Parms{};
 
@@ -523,10 +445,7 @@ void UMainTabsScreen_C::HandleMtxStore(class FName Tab_ID)
 
 void UMainTabsScreen_C::HandleCardPackStore(class FName TabId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleCardPackStore");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "HandleCardPackStore");
 
 	Params::MainTabsScreen_C_HandleCardPackStore Parms{};
 
@@ -543,10 +462,7 @@ void UMainTabsScreen_C::HandleCardPackStore(class FName TabId)
 
 bool UMainTabsScreen_C::Is_Transform_Feature_Unlocked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Is Transform Feature Unlocked");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Is Transform Feature Unlocked");
 
 	Params::MainTabsScreen_C_Is_Transform_Feature_Unlocked Parms{};
 
@@ -563,10 +479,7 @@ bool UMainTabsScreen_C::Is_Transform_Feature_Unlocked()
 
 void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Get Valid Offers");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Get Valid Offers");
 
 	Params::MainTabsScreen_C_Get_Valid_Offers Parms{};
 
@@ -586,10 +499,7 @@ void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers)
 
 void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>& inOfferArray, struct FCardPackOffer* outPriorityOffer, bool* FoundOffer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "CheckHighestPriorityOffer");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "CheckHighestPriorityOffer");
 
 	Params::MainTabsScreen_C_CheckHighestPriorityOffer Parms{};
 
@@ -615,10 +525,7 @@ void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>&
 
 void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InCardPackOffer, EStoreOfferCosts* OutCustomStoreOfferCost)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "GetCustomStoreOfferCost");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "GetCustomStoreOfferCost");
 
 	Params::MainTabsScreen_C_GetCustomStoreOfferCost Parms{};
 
@@ -640,10 +547,7 @@ void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InC
 
 void UMainTabsScreen_C::CheckDisplayCriteria(EStoreOfferCosts InCustomStoreOfferCost, const struct FCardPackOffer& InCardPackOffer, bool* bPassedDisplayCriteria)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "CheckDisplayCriteria");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "CheckDisplayCriteria");
 
 	Params::MainTabsScreen_C_CheckDisplayCriteria Parms{};
 
@@ -664,10 +568,7 @@ void UMainTabsScreen_C::CheckDisplayCriteria(EStoreOfferCosts InCustomStoreOffer
 
 void UMainTabsScreen_C::Determine_If_Any_non_MTX_offers_are_purchasable(bool* ShowBang)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Determine If Any non-MTX offers are purchasable");
+	class UFunction* Func = Class->GetFunction("MainTabsScreen_C", "Determine If Any non-MTX offers are purchasable");
 
 	Params::MainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable Parms{};
 

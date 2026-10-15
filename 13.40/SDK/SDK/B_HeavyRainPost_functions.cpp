@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_HeavyRainPost_C::ExecuteUbergraph_B_HeavyRainPost(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeavyRainPost_C", "ExecuteUbergraph_B_HeavyRainPost");
+	class UFunction* Func = Class->GetFunction("B_HeavyRainPost_C", "ExecuteUbergraph_B_HeavyRainPost");
 
 	Params::B_HeavyRainPost_C_ExecuteUbergraph_B_HeavyRainPost Parms{};
 
@@ -41,10 +38,7 @@ void AB_HeavyRainPost_C::ExecuteUbergraph_B_HeavyRainPost(int32 EntryPoint)
 
 void AB_HeavyRainPost_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeavyRainPost_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_HeavyRainPost_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_HeavyRainPost_C::ReceiveBeginPlay()
 
 void AB_HeavyRainPost_C::CE_Deactivate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeavyRainPost_C", "CE_Deactivate");
+	class UFunction* Func = Class->GetFunction("B_HeavyRainPost_C", "CE_Deactivate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_HeavyRainPost_C::CE_Deactivate()
 
 void AB_HeavyRainPost_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeavyRainPost_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_HeavyRainPost_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_HeavyRainPost_C::Timeline_0__UpdateFunc()
 
 void AB_HeavyRainPost_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeavyRainPost_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_HeavyRainPost_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AB_HeavyRainPost_C::Timeline_0__FinishedFunc()
 
 void AB_HeavyRainPost_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeavyRainPost_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_HeavyRainPost_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

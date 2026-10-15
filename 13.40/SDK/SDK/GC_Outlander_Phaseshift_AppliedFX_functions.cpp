@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::ExecuteUbergraph_GC_Outlander_Phaseshift_AppliedFX(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "ExecuteUbergraph_GC_Outlander_Phaseshift_AppliedFX");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "ExecuteUbergraph_GC_Outlander_Phaseshift_AppliedFX");
 
 	Params::GC_Outlander_Phaseshift_AppliedFX_C_ExecuteUbergraph_GC_Outlander_Phaseshift_AppliedFX Parms{};
 
@@ -41,10 +38,7 @@ void AGC_Outlander_Phaseshift_AppliedFX_C::ExecuteUbergraph_GC_Outlander_Phasesh
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::Stop_Splines_if_Valid()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Stop Splines if Valid");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Stop Splines if Valid");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AGC_Outlander_Phaseshift_AppliedFX_C::Stop_Splines_if_Valid()
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::Spawn_Spline_Actor(class AFortPlayerPawn* Player_Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Spawn Spline Actor");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Spawn Spline Actor");
 
 	Params::GC_Outlander_Phaseshift_AppliedFX_C_Spawn_Spline_Actor Parms{};
 
@@ -75,10 +66,7 @@ void AGC_Outlander_Phaseshift_AppliedFX_C::Spawn_Spline_Actor(class AFortPlayerP
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::Remove_PP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Remove PP");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Remove PP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void AGC_Outlander_Phaseshift_AppliedFX_C::Remove_PP()
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::Activate_PP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Activate PP");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Activate PP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -108,10 +93,7 @@ void AGC_Outlander_Phaseshift_AppliedFX_C::Activate_PP()
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "OnLoopingStart");
 
 	Params::GC_Outlander_Phaseshift_AppliedFX_C_OnLoopingStart Parms{};
 
@@ -136,10 +118,7 @@ void AGC_Outlander_Phaseshift_AppliedFX_C::OnLoopingStart(class AActor* MyTarget
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "OnRemoval");
 
 	Params::GC_Outlander_Phaseshift_AppliedFX_C_OnRemoval Parms{};
 
@@ -166,10 +145,7 @@ void AGC_Outlander_Phaseshift_AppliedFX_C::OnRemoval(class AActor* MyTarget, con
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::OnApplication(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "OnApplication");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "OnApplication");
 
 	Params::GC_Outlander_Phaseshift_AppliedFX_C_OnApplication Parms{};
 
@@ -189,10 +165,7 @@ void AGC_Outlander_Phaseshift_AppliedFX_C::OnApplication(class AActor* MyTarget,
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::Teleport_PP_TL__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Teleport PP TL__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Teleport PP TL__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +176,7 @@ void AGC_Outlander_Phaseshift_AppliedFX_C::Teleport_PP_TL__UpdateFunc()
 
 void AGC_Outlander_Phaseshift_AppliedFX_C::Teleport_PP_TL__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Teleport PP TL__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GC_Outlander_Phaseshift_AppliedFX_C", "Teleport PP TL__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

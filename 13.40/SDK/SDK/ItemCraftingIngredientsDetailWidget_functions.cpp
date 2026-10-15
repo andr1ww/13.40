@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet(
 
 void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +45,7 @@ void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompareWit
 
 void UItemCraftingIngredientsDetailWidget_C::ExecuteUbergraph_ItemCraftingIngredientsDetailWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "ExecuteUbergraph_ItemCraftingIngredientsDetailWidget");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "ExecuteUbergraph_ItemCraftingIngredientsDetailWidget");
 
 	Params::ItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_ItemCraftingIngredientsDetailWidget Parms{};
 

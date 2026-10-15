@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USocialPanel_FriendSearchBar_C::ExecuteUbergraph_SocialPanel_FriendSearchBar(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanel_FriendSearchBar_C", "ExecuteUbergraph_SocialPanel_FriendSearchBar");
+	class UFunction* Func = Class->GetFunction("SocialPanel_FriendSearchBar_C", "ExecuteUbergraph_SocialPanel_FriendSearchBar");
 
 	Params::SocialPanel_FriendSearchBar_C_ExecuteUbergraph_SocialPanel_FriendSearchBar Parms{};
 
@@ -41,10 +38,7 @@ void USocialPanel_FriendSearchBar_C::ExecuteUbergraph_SocialPanel_FriendSearchBa
 
 void USocialPanel_FriendSearchBar_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanel_FriendSearchBar_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SocialPanel_FriendSearchBar_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USocialPanel_FriendSearchBar_C::BP_OnUnhovered()
 
 void USocialPanel_FriendSearchBar_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanel_FriendSearchBar_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SocialPanel_FriendSearchBar_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,10 +64,7 @@ void USocialPanel_FriendSearchBar_C::BP_OnHovered()
 
 struct FEventReply USocialPanel_FriendSearchBar_C::On_ClickCapture_MouseButtonDown_0(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialPanel_FriendSearchBar_C", "On_ClickCapture_MouseButtonDown_0");
+	class UFunction* Func = Class->GetFunction("SocialPanel_FriendSearchBar_C", "On_ClickCapture_MouseButtonDown_0");
 
 	Params::SocialPanel_FriendSearchBar_C_On_ClickCapture_MouseButtonDown_0 Parms{};
 

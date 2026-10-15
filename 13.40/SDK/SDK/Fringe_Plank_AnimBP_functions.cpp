@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFringe_Plank_AnimBP_C::ExecuteUbergraph_Fringe_Plank_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fringe_Plank_AnimBP_C", "ExecuteUbergraph_Fringe_Plank_AnimBP");
+	class UFunction* Func = Class->GetFunction("Fringe_Plank_AnimBP_C", "ExecuteUbergraph_Fringe_Plank_AnimBP");
 
 	Params::Fringe_Plank_AnimBP_C_ExecuteUbergraph_Fringe_Plank_AnimBP Parms{};
 
@@ -44,10 +41,7 @@ void UFringe_Plank_AnimBP_C::ExecuteUbergraph_Fringe_Plank_AnimBP(int32 EntryPoi
 
 void UFringe_Plank_AnimBP_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Fringe_Plank_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("Fringe_Plank_AnimBP_C", "AnimGraph");
 
 	Params::Fringe_Plank_AnimBP_C_AnimGraph Parms{};
 

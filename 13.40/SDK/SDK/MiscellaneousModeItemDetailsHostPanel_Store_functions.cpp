@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UMiscellaneousModeItemDetailsHostPanel_Store_C::HandleHasItemMarkedForMulchingChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiscellaneousModeItemDetailsHostPanel_Store_C", "HandleHasItemMarkedForMulchingChanged");
+	class UFunction* Func = Class->GetFunction("MiscellaneousModeItemDetailsHostPanel_Store_C", "HandleHasItemMarkedForMulchingChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UMiscellaneousModeItemDetailsHostPanel_Store_C::HandleHasItemMarkedForMulch
 
 void UMiscellaneousModeItemDetailsHostPanel_Store_C::ExecuteUbergraph_MiscellaneousModeItemDetailsHostPanel_Store(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiscellaneousModeItemDetailsHostPanel_Store_C", "ExecuteUbergraph_MiscellaneousModeItemDetailsHostPanel_Store");
+	class UFunction* Func = Class->GetFunction("MiscellaneousModeItemDetailsHostPanel_Store_C", "ExecuteUbergraph_MiscellaneousModeItemDetailsHostPanel_Store");
 
 	Params::MiscellaneousModeItemDetailsHostPanel_Store_C_ExecuteUbergraph_MiscellaneousModeItemDetailsHostPanel_Store Parms{};
 

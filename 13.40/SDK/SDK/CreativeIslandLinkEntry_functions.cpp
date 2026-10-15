@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreativeIslandLinkEntry_C::ExecuteUbergraph_CreativeIslandLinkEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "ExecuteUbergraph_CreativeIslandLinkEntry");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkEntry_C", "ExecuteUbergraph_CreativeIslandLinkEntry");
 
 	Params::CreativeIslandLinkEntry_C_ExecuteUbergraph_CreativeIslandLinkEntry Parms{};
 
@@ -43,10 +40,7 @@ void UCreativeIslandLinkEntry_C::ExecuteUbergraph_CreativeIslandLinkEntry(int32 
 
 void UCreativeIslandLinkEntry_C::BndEvt__SimplePipButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BndEvt__SimplePipButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BndEvt__SimplePipButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::CreativeIslandLinkEntry_C_BndEvt__SimplePipButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -63,10 +57,7 @@ void UCreativeIslandLinkEntry_C::BndEvt__SimplePipButton_K2Node_ComponentBoundEv
 
 void UCreativeIslandLinkEntry_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "OnListItemObjectSet");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkEntry_C", "OnListItemObjectSet");
 
 	Params::CreativeIslandLinkEntry_C_OnListItemObjectSet Parms{};
 
@@ -81,10 +72,7 @@ void UCreativeIslandLinkEntry_C::OnListItemObjectSet(class UObject* ListItemObje
 
 void UCreativeIslandLinkEntry_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +83,7 @@ void UCreativeIslandLinkEntry_C::BP_OnDeselected()
 
 void UCreativeIslandLinkEntry_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

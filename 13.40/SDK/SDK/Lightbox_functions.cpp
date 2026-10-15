@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULightbox_C::ExecuteUbergraph_Lightbox(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "ExecuteUbergraph_Lightbox");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "ExecuteUbergraph_Lightbox");
 
 	Params::Lightbox_C_ExecuteUbergraph_Lightbox Parms{};
 
@@ -41,10 +38,7 @@ void ULightbox_C::ExecuteUbergraph_Lightbox(int32 EntryPoint)
 
 void ULightbox_C::WidgetAnimationEvt_FadeOut_K2Node_WidgetAnimationEvent_1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "WidgetAnimationEvt_FadeOut_K2Node_WidgetAnimationEvent_1");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "WidgetAnimationEvt_FadeOut_K2Node_WidgetAnimationEvent_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ULightbox_C::WidgetAnimationEvt_FadeOut_K2Node_WidgetAnimationEvent_1()
 
 void ULightbox_C::WidgetAnimationEvt_FadeIn_K2Node_WidgetAnimationEvent_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "WidgetAnimationEvt_FadeIn_K2Node_WidgetAnimationEvent_0");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "WidgetAnimationEvt_FadeIn_K2Node_WidgetAnimationEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void ULightbox_C::WidgetAnimationEvt_FadeIn_K2Node_WidgetAnimationEvent_0()
 
 void ULightbox_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "PreConstruct");
 
 	Params::Lightbox_C_PreConstruct Parms{};
 
@@ -89,10 +77,7 @@ void ULightbox_C::PreConstruct(bool IsDesignTime)
 
 void ULightbox_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "Construct");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void ULightbox_C::Construct()
 
 void ULightbox_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +99,7 @@ void ULightbox_C::Destruct()
 
 void ULightbox_C::Intro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "Intro");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "Intro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void ULightbox_C::Intro()
 
 void ULightbox_C::Outro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "Outro");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "Outro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +123,7 @@ void ULightbox_C::Outro()
 
 void ULightbox_C::AddContent(class UCommonUserWidget* Content_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "AddContent");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "AddContent");
 
 	Params::Lightbox_C_AddContent Parms{};
 
@@ -165,10 +138,7 @@ void ULightbox_C::AddContent(class UCommonUserWidget* Content_0)
 
 void ULightbox_C::RemoveContent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lightbox_C", "RemoveContent");
+	class UFunction* Func = Class->GetFunction("Lightbox_C", "RemoveContent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

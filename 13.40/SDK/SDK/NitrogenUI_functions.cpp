@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UNitrogenWidgetBase::HandleNitrogenGamePhaseChanged(ENitrogenGamePhase NewGamePhase)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenWidgetBase", "HandleNitrogenGamePhaseChanged");
+	class UFunction* Func = Class->GetFunction("NitrogenWidgetBase", "HandleNitrogenGamePhaseChanged");
 
 	Params::NitrogenWidgetBase_HandleNitrogenGamePhaseChanged Parms{};
 
@@ -46,10 +43,7 @@ void UNitrogenWidgetBase::HandleNitrogenGamePhaseChanged(ENitrogenGamePhase NewG
 
 void UNitrogenWidgetBase::OnEnterVehicleDriver()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenWidgetBase", "OnEnterVehicleDriver");
+	class UFunction* Func = Class->GetFunction("NitrogenWidgetBase", "OnEnterVehicleDriver");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -60,10 +54,7 @@ void UNitrogenWidgetBase::OnEnterVehicleDriver()
 
 void UNitrogenWidgetBase::OnExitVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenWidgetBase", "OnExitVehicle");
+	class UFunction* Func = Class->GetFunction("NitrogenWidgetBase", "OnExitVehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -74,10 +65,7 @@ void UNitrogenWidgetBase::OnExitVehicle()
 
 void UNitrogenFareBonusWidget::HideBonus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareBonusWidget", "HideBonus");
+	class UFunction* Func = Class->GetFunction("NitrogenFareBonusWidget", "HideBonus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -92,10 +80,7 @@ void UNitrogenFareBonusWidget::HideBonus()
 
 void UNitrogenFareBonusWidget::OnActiveBonusUpdated(struct FNitrogenBonusStat* BonusStat, float Value, bool ShouldAwardBonus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareBonusWidget", "OnActiveBonusUpdated");
+	class UFunction* Func = Class->GetFunction("NitrogenFareBonusWidget", "OnActiveBonusUpdated");
 
 	Params::NitrogenFareBonusWidget_OnActiveBonusUpdated Parms{};
 
@@ -119,10 +104,7 @@ void UNitrogenFareBonusWidget::OnActiveBonusUpdated(struct FNitrogenBonusStat* B
 
 void UNitrogenFareBonusWidget::OnBeginFare()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareBonusWidget", "OnBeginFare");
+	class UFunction* Func = Class->GetFunction("NitrogenFareBonusWidget", "OnBeginFare");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -140,10 +122,7 @@ void UNitrogenFareBonusWidget::OnBeginFare()
 
 void UNitrogenFareBonusWidget::OnEndFare(bool bFareCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareBonusWidget", "OnEndFare");
+	class UFunction* Func = Class->GetFunction("NitrogenFareBonusWidget", "OnEndFare");
 
 	Params::NitrogenFareBonusWidget_OnEndFare Parms{};
 
@@ -163,10 +142,7 @@ void UNitrogenFareBonusWidget::OnEndFare(bool bFareCompleted)
 
 void UNitrogenFareBonusWidget::ShowBonus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareBonusWidget", "ShowBonus");
+	class UFunction* Func = Class->GetFunction("NitrogenFareBonusWidget", "ShowBonus");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -184,10 +160,7 @@ void UNitrogenFareBonusWidget::ShowBonus()
 
 void UNitrogenFareMeterWidget::BonusProgressUpdate(float BonusProgressRatio)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareMeterWidget", "BonusProgressUpdate");
+	class UFunction* Func = Class->GetFunction("NitrogenFareMeterWidget", "BonusProgressUpdate");
 
 	Params::NitrogenFareMeterWidget_BonusProgressUpdate Parms{};
 
@@ -204,10 +177,7 @@ void UNitrogenFareMeterWidget::BonusProgressUpdate(float BonusProgressRatio)
 
 void UNitrogenFareMeterWidget::FastDeliveryTimeUpdate(float RemainingTimeRatio)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareMeterWidget", "FastDeliveryTimeUpdate");
+	class UFunction* Func = Class->GetFunction("NitrogenFareMeterWidget", "FastDeliveryTimeUpdate");
 
 	Params::NitrogenFareMeterWidget_FastDeliveryTimeUpdate Parms{};
 
@@ -226,10 +196,7 @@ void UNitrogenFareMeterWidget::FastDeliveryTimeUpdate(float RemainingTimeRatio)
 
 void UNitrogenFareMeterWidget::OnActiveBonusUpdated(struct FNitrogenBonusStat* BonusStat, float Value, bool bShouldAwardBonus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareMeterWidget", "OnActiveBonusUpdated");
+	class UFunction* Func = Class->GetFunction("NitrogenFareMeterWidget", "OnActiveBonusUpdated");
 
 	Params::NitrogenFareMeterWidget_OnActiveBonusUpdated Parms{};
 
@@ -253,10 +220,7 @@ void UNitrogenFareMeterWidget::OnActiveBonusUpdated(struct FNitrogenBonusStat* B
 
 void UNitrogenFareMeterWidget::OnBeginFare()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareMeterWidget", "OnBeginFare");
+	class UFunction* Func = Class->GetFunction("NitrogenFareMeterWidget", "OnBeginFare");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -274,10 +238,7 @@ void UNitrogenFareMeterWidget::OnBeginFare()
 
 void UNitrogenFareMeterWidget::OnEndFare(bool bFareCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareMeterWidget", "OnEndFare");
+	class UFunction* Func = Class->GetFunction("NitrogenFareMeterWidget", "OnEndFare");
 
 	Params::NitrogenFareMeterWidget_OnEndFare Parms{};
 
@@ -299,10 +260,7 @@ void UNitrogenFareMeterWidget::OnEndFare(bool bFareCompleted)
 
 void UNitrogenFareMeterWidget::OnFareBonusFinshed(bool BonusCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareMeterWidget", "OnFareBonusFinshed");
+	class UFunction* Func = Class->GetFunction("NitrogenFareMeterWidget", "OnFareBonusFinshed");
 
 	Params::NitrogenFareMeterWidget_OnFareBonusFinshed Parms{};
 
@@ -319,10 +277,7 @@ void UNitrogenFareMeterWidget::OnFareBonusFinshed(bool BonusCompleted)
 
 void UNitrogenFareMeterWidget::SetCurrentFareBaseRewardValue(const int32 Num)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareMeterWidget", "SetCurrentFareBaseRewardValue");
+	class UFunction* Func = Class->GetFunction("NitrogenFareMeterWidget", "SetCurrentFareBaseRewardValue");
 
 	Params::NitrogenFareMeterWidget_SetCurrentFareBaseRewardValue Parms{};
 
@@ -340,10 +295,7 @@ void UNitrogenFareMeterWidget::SetCurrentFareBaseRewardValue(const int32 Num)
 
 void UNitrogenFareMeterWidget::SetCurrentFareBonusObjectiveState(const ENitrogenFareObjectiveDisplayState DisplayState, const bool bPlayAnimation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareMeterWidget", "SetCurrentFareBonusObjectiveState");
+	class UFunction* Func = Class->GetFunction("NitrogenFareMeterWidget", "SetCurrentFareBonusObjectiveState");
 
 	Params::NitrogenFareMeterWidget_SetCurrentFareBonusObjectiveState Parms{};
 
@@ -362,10 +314,7 @@ void UNitrogenFareMeterWidget::SetCurrentFareBonusObjectiveState(const ENitrogen
 
 void UNitrogenFareMeterWidget::SetCurrentFareTimedDeliveryObjectiveState(const ENitrogenFareObjectiveDisplayState DisplayState, const bool bPlayAnimation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenFareMeterWidget", "SetCurrentFareTimedDeliveryObjectiveState");
+	class UFunction* Func = Class->GetFunction("NitrogenFareMeterWidget", "SetCurrentFareTimedDeliveryObjectiveState");
 
 	Params::NitrogenFareMeterWidget_SetCurrentFareTimedDeliveryObjectiveState Parms{};
 
@@ -384,10 +333,7 @@ void UNitrogenFareMeterWidget::SetCurrentFareTimedDeliveryObjectiveState(const E
 
 void UNitrogenLeaderboardWidget::UpdateLeaderboardUI(const TArray<struct FNitrogenLeaderboardData>& LeaderboardInfo, const int32 GoalScore)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenLeaderboardWidget", "UpdateLeaderboardUI");
+	class UFunction* Func = Class->GetFunction("NitrogenLeaderboardWidget", "UpdateLeaderboardUI");
 
 	Params::NitrogenLeaderboardWidget_UpdateLeaderboardUI Parms{};
 
@@ -403,10 +349,7 @@ void UNitrogenLeaderboardWidget::UpdateLeaderboardUI(const TArray<struct FNitrog
 
 void UNitrogenMatchNearEndWidget::HandleTopScoreUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenMatchNearEndWidget", "HandleTopScoreUpdated");
+	class UFunction* Func = Class->GetFunction("NitrogenMatchNearEndWidget", "HandleTopScoreUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -417,10 +360,7 @@ void UNitrogenMatchNearEndWidget::HandleTopScoreUpdated()
 
 void UNitrogenMatchNearEndWidget::OnMatchNearEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenMatchNearEndWidget", "OnMatchNearEnd");
+	class UFunction* Func = Class->GetFunction("NitrogenMatchNearEndWidget", "OnMatchNearEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -433,10 +373,7 @@ void UNitrogenMatchNearEndWidget::OnMatchNearEnd()
 
 void UNitrogenObjectiveWidget::HandleVehicleEntered(class AFortAthenaVehicle* NewVehicle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenObjectiveWidget", "HandleVehicleEntered");
+	class UFunction* Func = Class->GetFunction("NitrogenObjectiveWidget", "HandleVehicleEntered");
 
 	Params::NitrogenObjectiveWidget_HandleVehicleEntered Parms{};
 
@@ -456,10 +393,7 @@ void UNitrogenObjectiveWidget::HandleVehicleEntered(class AFortAthenaVehicle* Ne
 
 void UNitrogenObjectiveWidget::HandleVehicleExited()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenObjectiveWidget", "HandleVehicleExited");
+	class UFunction* Func = Class->GetFunction("NitrogenObjectiveWidget", "HandleVehicleExited");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -475,10 +409,7 @@ void UNitrogenObjectiveWidget::HandleVehicleExited()
 
 void UNitrogenObjectiveWidget::OnBeginFare()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenObjectiveWidget", "OnBeginFare");
+	class UFunction* Func = Class->GetFunction("NitrogenObjectiveWidget", "OnBeginFare");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -496,10 +427,7 @@ void UNitrogenObjectiveWidget::OnBeginFare()
 
 void UNitrogenObjectiveWidget::OnEndFare(bool bFareCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenObjectiveWidget", "OnEndFare");
+	class UFunction* Func = Class->GetFunction("NitrogenObjectiveWidget", "OnEndFare");
 
 	Params::NitrogenObjectiveWidget_OnEndFare Parms{};
 
@@ -521,10 +449,7 @@ void UNitrogenObjectiveWidget::OnEndFare(bool bFareCompleted)
 
 void UNitrogenObjectiveWidget::SetShouldBeHidden(bool bInShouldBeHidden)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenObjectiveWidget", "SetShouldBeHidden");
+	class UFunction* Func = Class->GetFunction("NitrogenObjectiveWidget", "SetShouldBeHidden");
 
 	Params::NitrogenObjectiveWidget_SetShouldBeHidden Parms{};
 
@@ -546,10 +471,7 @@ void UNitrogenObjectiveWidget::SetShouldBeHidden(bool bInShouldBeHidden)
 
 void UNitrogenObjectiveWidget::UpdateWidgetState(ENitrogenObjectiveWidgetState NewObjectiveWidgetState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenObjectiveWidget", "UpdateWidgetState");
+	class UFunction* Func = Class->GetFunction("NitrogenObjectiveWidget", "UpdateWidgetState");
 
 	Params::NitrogenObjectiveWidget_UpdateWidgetState Parms{};
 
@@ -566,10 +488,7 @@ void UNitrogenObjectiveWidget::UpdateWidgetState(ENitrogenObjectiveWidgetState N
 
 void UNitrogenPlacementWidget::HandleScoreChanged(int32 Score)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlacementWidget", "HandleScoreChanged");
+	class UFunction* Func = Class->GetFunction("NitrogenPlacementWidget", "HandleScoreChanged");
 
 	Params::NitrogenPlacementWidget_HandleScoreChanged Parms{};
 
@@ -591,10 +510,7 @@ void UNitrogenPlacementWidget::HandleScoreChanged(int32 Score)
 
 void UNitrogenPlacementWidget::OnEndFare(bool bFareCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlacementWidget", "OnEndFare");
+	class UFunction* Func = Class->GetFunction("NitrogenPlacementWidget", "OnEndFare");
 
 	Params::NitrogenPlacementWidget_OnEndFare Parms{};
 
@@ -616,10 +532,7 @@ void UNitrogenPlacementWidget::OnEndFare(bool bFareCompleted)
 
 void UNitrogenPlacementWidget::OnPlayerFareComplete(int32 StarsGained)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlacementWidget", "OnPlayerFareComplete");
+	class UFunction* Func = Class->GetFunction("NitrogenPlacementWidget", "OnPlayerFareComplete");
 
 	Params::NitrogenPlacementWidget_OnPlayerFareComplete Parms{};
 
@@ -637,10 +550,7 @@ void UNitrogenPlacementWidget::OnPlayerFareComplete(int32 StarsGained)
 
 void UNitrogenPlacementWidget::OnPlayerPlacementChanged(int32 NewPlacement, int32 OldPlacement)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlacementWidget", "OnPlayerPlacementChanged");
+	class UFunction* Func = Class->GetFunction("NitrogenPlacementWidget", "OnPlayerPlacementChanged");
 
 	Params::NitrogenPlacementWidget_OnPlayerPlacementChanged Parms{};
 
@@ -658,10 +568,7 @@ void UNitrogenPlacementWidget::OnPlayerPlacementChanged(int32 NewPlacement, int3
 
 void UNitrogenPlacementWidget::OnPlayerScoreChanged(int32 NewScore)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlacementWidget", "OnPlayerScoreChanged");
+	class UFunction* Func = Class->GetFunction("NitrogenPlacementWidget", "OnPlayerScoreChanged");
 
 	Params::NitrogenPlacementWidget_OnPlayerScoreChanged Parms{};
 
@@ -681,10 +588,7 @@ void UNitrogenPlacementWidget::OnPlayerScoreChanged(int32 NewScore)
 
 void UNitrogenPlacementWidget::OnPlayerScoringUpdate(const int32 CurrentPlayerTeamScore, const int32 CurrentPlayerTeamPlacement, const int32 GoalScore, const TArray<uint8>& SortedTeamScores)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenPlacementWidget", "OnPlayerScoringUpdate");
+	class UFunction* Func = Class->GetFunction("NitrogenPlacementWidget", "OnPlayerScoringUpdate");
 
 	Params::NitrogenPlacementWidget_OnPlayerScoringUpdate Parms{};
 
@@ -704,10 +608,7 @@ void UNitrogenPlacementWidget::OnPlayerScoringUpdate(const int32 CurrentPlayerTe
 
 void UNitrogenScoreEventWidget::DisplayLeadChangedEvent(bool bInLead)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenScoreEventWidget", "DisplayLeadChangedEvent");
+	class UFunction* Func = Class->GetFunction("NitrogenScoreEventWidget", "DisplayLeadChangedEvent");
 
 	Params::NitrogenScoreEventWidget_DisplayLeadChangedEvent Parms{};
 
@@ -724,10 +625,7 @@ void UNitrogenScoreEventWidget::DisplayLeadChangedEvent(bool bInLead)
 
 void UNitrogenScoreEventWidget::DisplayScoreEvent(ENitrogenScoreReason ScoreReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NitrogenScoreEventWidget", "DisplayScoreEvent");
+	class UFunction* Func = Class->GetFunction("NitrogenScoreEventWidget", "DisplayScoreEvent");
 
 	Params::NitrogenScoreEventWidget_DisplayScoreEvent Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ShowHaveNeed(bool* HaveNeed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "ShowHaveNeed");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "ShowHaveNeed");
 
 	Params::ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_ShowHaveNeed Parms{};
 
@@ -42,10 +39,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ShowHaveNeed(bool*
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshPreviewData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshPreviewData");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshPreviewData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -56,10 +50,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshPreviewData
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshVisibility");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -70,10 +61,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshVisibility(
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::Refresh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "Refresh");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -84,10 +72,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::Refresh()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::DoDesignTimeRandomization()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "DoDesignTimeRandomization");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "DoDesignTimeRandomization");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -100,10 +85,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::DoDesignTimeRandom
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreConstruct");
 
 	Params::ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_PreConstruct Parms{};
 
@@ -120,10 +102,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreConstruct(bool 
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::HandleDifferentItemOrQuantitySetBP(const bool IsBeingReset_HandleDifferentItemOrQuantitySetBP)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "HandleDifferentItemOrQuantitySetBP");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "HandleDifferentItemOrQuantitySetBP");
 
 	Params::ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_HandleDifferentItemOrQuantitySetBP Parms{};
 
@@ -138,10 +117,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::HandleDifferentIte
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreviewStarted");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreviewStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -152,10 +128,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewStarted()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreviewEnded");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreviewEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -166,10 +139,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewEnded()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshListEntry()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshListEntry");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshListEntry");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -182,10 +152,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshListEntry()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK");
+	class UFunction* Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK");
 
 	Params::ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTeamMemberManage_C::ExecuteUbergraph_TeamMemberManage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberManage_C", "ExecuteUbergraph_TeamMemberManage");
+	class UFunction* Func = Class->GetFunction("TeamMemberManage_C", "ExecuteUbergraph_TeamMemberManage");
 
 	Params::TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage Parms{};
 
@@ -41,10 +38,7 @@ void UTeamMemberManage_C::ExecuteUbergraph_TeamMemberManage(int32 EntryPoint)
 
 void UTeamMemberManage_C::OpenBannerEditor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberManage_C", "OpenBannerEditor");
+	class UFunction* Func = Class->GetFunction("TeamMemberManage_C", "OpenBannerEditor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UTeamMemberManage_C::OpenBannerEditor()
 
 void UTeamMemberManage_C::BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature");
 
 	Params::TeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature Parms{};
 
@@ -77,10 +68,7 @@ void UTeamMemberManage_C::BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_O
 
 void UTeamMemberManage_C::BP_OnDeactivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberManage_C", "BP_OnDeactivated");
+	class UFunction* Func = Class->GetFunction("TeamMemberManage_C", "BP_OnDeactivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -94,10 +82,7 @@ void UTeamMemberManage_C::BP_OnDeactivated()
 
 void UTeamMemberManage_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature(class FName IconId, class FName ColorId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature");
 
 	Params::TeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature Parms{};
 
@@ -113,10 +98,7 @@ void UTeamMemberManage_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBou
 
 void UTeamMemberManage_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberManage_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("TeamMemberManage_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -129,10 +111,7 @@ void UTeamMemberManage_C::BP_OnActivated()
 
 void UTeamMemberManage_C::OnParticipationChanged(bool bIsParticipating)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberManage_C", "OnParticipationChanged");
+	class UFunction* Func = Class->GetFunction("TeamMemberManage_C", "OnParticipationChanged");
 
 	Params::TeamMemberManage_C_OnParticipationChanged Parms{};
 
@@ -149,10 +128,7 @@ void UTeamMemberManage_C::OnParticipationChanged(bool bIsParticipating)
 
 void UTeamMemberManage_C::BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::TeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 

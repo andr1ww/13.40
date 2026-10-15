@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_Track_PurpleMouse_C::ExecuteUbergraph_GA_Athena_Track_PurpleMouse(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "ExecuteUbergraph_GA_Athena_Track_PurpleMouse");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "ExecuteUbergraph_GA_Athena_Track_PurpleMouse");
 
 	Params::GA_Athena_Track_PurpleMouse_C_ExecuteUbergraph_GA_Athena_Track_PurpleMouse Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_Track_PurpleMouse_C::ExecuteUbergraph_GA_Athena_Track_PurpleMous
 
 void UGA_Athena_Track_PurpleMouse_C::OnMinigameChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "OnMinigameChanged");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "OnMinigameChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -64,10 +58,7 @@ void UGA_Athena_Track_PurpleMouse_C::OnMinigameChanged()
 
 void UGA_Athena_Track_PurpleMouse_C::OnPlayerDeath(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "OnPlayerDeath");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "OnPlayerDeath");
 
 	Params::GA_Athena_Track_PurpleMouse_C_OnPlayerDeath Parms{};
 
@@ -91,10 +82,7 @@ void UGA_Athena_Track_PurpleMouse_C::OnPlayerDeath(class AActor* DamagedActor, f
 
 void UGA_Athena_Track_PurpleMouse_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_Track_PurpleMouse_C_K2_OnEndAbility Parms{};
 
@@ -109,10 +97,7 @@ void UGA_Athena_Track_PurpleMouse_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_Track_PurpleMouse_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +110,7 @@ void UGA_Athena_Track_PurpleMouse_C::K2_ActivateAbility()
 
 void UGA_Athena_Track_PurpleMouse_C::EventReceived_739900834D974D726220CC9B70F2219C(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "EventReceived_739900834D974D726220CC9B70F2219C");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Track_PurpleMouse_C", "EventReceived_739900834D974D726220CC9B70F2219C");
 
 	Params::GA_Athena_Track_PurpleMouse_C_EventReceived_739900834D974D726220CC9B70F2219C Parms{};
 

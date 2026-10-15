@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Ranged_FringePlankSecondary_Athena_C::ExecuteUbergraph_B_Prj_Ranged_FringePlankSecondary_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "ExecuteUbergraph_B_Prj_Ranged_FringePlankSecondary_Athena");
+	class UFunction* Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "ExecuteUbergraph_B_Prj_Ranged_FringePlankSecondary_Athena");
 
 	Params::B_Prj_Ranged_FringePlankSecondary_Athena_C_ExecuteUbergraph_B_Prj_Ranged_FringePlankSecondary_Athena Parms{};
 
@@ -41,10 +38,7 @@ void AB_Prj_Ranged_FringePlankSecondary_Athena_C::ExecuteUbergraph_B_Prj_Ranged_
 
 void AB_Prj_Ranged_FringePlankSecondary_Athena_C::Play_Impact_Sound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "Play Impact Sound");
+	class UFunction* Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "Play Impact Sound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Prj_Ranged_FringePlankSecondary_Athena_C::Play_Impact_Sound()
 
 void AB_Prj_Ranged_FringePlankSecondary_Athena_C::Burnout()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "Burnout");
+	class UFunction* Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "Burnout");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_Prj_Ranged_FringePlankSecondary_Athena_C::Burnout()
 
 void AB_Prj_Ranged_FringePlankSecondary_Athena_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,10 +75,7 @@ void AB_Prj_Ranged_FringePlankSecondary_Athena_C::ReceiveBeginPlay()
 
 void AB_Prj_Ranged_FringePlankSecondary_Athena_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Ranged_FringePlankSecondary_Athena_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -110,10 +95,7 @@ void AB_Prj_Ranged_FringePlankSecondary_Athena_C::BndEvt__WaterInteractionCompon
 
 void AB_Prj_Ranged_FringePlankSecondary_Athena_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "OnExploded");
 
 	Params::B_Prj_Ranged_FringePlankSecondary_Athena_C_OnExploded Parms{};
 
@@ -131,10 +113,7 @@ void AB_Prj_Ranged_FringePlankSecondary_Athena_C::OnExploded(const TArray<class 
 
 void AB_Prj_Ranged_FringePlankSecondary_Athena_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "OnStop");
 
 	Params::B_Prj_Ranged_FringePlankSecondary_Athena_C_OnStop Parms{};
 
@@ -149,10 +128,7 @@ void AB_Prj_Ranged_FringePlankSecondary_Athena_C::OnStop(const struct FHitResult
 
 void AB_Prj_Ranged_FringePlankSecondary_Athena_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_Ranged_FringePlankSecondary_Athena_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

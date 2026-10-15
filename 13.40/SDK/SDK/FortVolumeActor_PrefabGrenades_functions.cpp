@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFortVolumeActor_PrefabGrenades_C::ExecuteUbergraph_FortVolumeActor_PrefabGrenades(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVolumeActor_PrefabGrenades_C", "ExecuteUbergraph_FortVolumeActor_PrefabGrenades");
+	class UFunction* Func = Class->GetFunction("FortVolumeActor_PrefabGrenades_C", "ExecuteUbergraph_FortVolumeActor_PrefabGrenades");
 
 	Params::FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades Parms{};
 
@@ -49,10 +46,7 @@ void AFortVolumeActor_PrefabGrenades_C::ExecuteUbergraph_FortVolumeActor_PrefabG
 
 void AFortVolumeActor_PrefabGrenades_C::OnDeathPlayEffects_2(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortVolumeActor_PrefabGrenades_C", "OnDeathPlayEffects_2");
+	class UFunction* Func = Class->GetFunction("FortVolumeActor_PrefabGrenades_C", "OnDeathPlayEffects_2");
 
 	Params::FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects_2 Parms{};
 

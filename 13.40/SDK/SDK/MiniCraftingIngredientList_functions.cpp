@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMiniCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntryBase* ListEntry_AddListEntry)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientList_C", "AddListEntry");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientList_C", "AddListEntry");
 
 	Params::MiniCraftingIngredientList_C_AddListEntry Parms{};
 
@@ -43,10 +40,7 @@ void UMiniCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntr
 
 void UMiniCraftingIngredientList_C::ExecuteUbergraph_MiniCraftingIngredientList(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniCraftingIngredientList_C", "ExecuteUbergraph_MiniCraftingIngredientList");
+	class UFunction* Func = Class->GetFunction("MiniCraftingIngredientList_C", "ExecuteUbergraph_MiniCraftingIngredientList");
 
 	Params::MiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaDirectAcquisitionConfirmation_C::ExecuteUbergraph_AthenaDirectAcquisitionConfirmation(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "ExecuteUbergraph_AthenaDirectAcquisitionConfirmation");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "ExecuteUbergraph_AthenaDirectAcquisitionConfirmation");
 
 	Params::AthenaDirectAcquisitionConfirmation_C_ExecuteUbergraph_AthenaDirectAcquisitionConfirmation Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaDirectAcquisitionConfirmation_C::ExecuteUbergraph_AthenaDirectAcquis
 
 void UAthenaDirectAcquisitionConfirmation_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_171_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_171_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_171_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionConfirmation_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_171_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -61,10 +55,7 @@ void UAthenaDirectAcquisitionConfirmation_C::BndEvt__CancelButton_K2Node_Compone
 
 void UAthenaDirectAcquisitionConfirmation_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UAthenaDirectAcquisitionConfirmation_C::Construct()
 
 void UAthenaDirectAcquisitionConfirmation_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaDirectAcquisitionConfirmation_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -95,10 +83,7 @@ void UAthenaDirectAcquisitionConfirmation_C::BndEvt__PurchaseButton_K2Node_Compo
 
 void UAthenaDirectAcquisitionConfirmation_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void UAthenaDirectAcquisitionConfirmation_C::BP_OnActivated()
 
 void UAthenaDirectAcquisitionConfirmation_C::OnOfferSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "OnOfferSet");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "OnOfferSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UAthenaDirectAcquisitionConfirmation_C::OnOfferSet()
 
 void UAthenaDirectAcquisitionConfirmation_C::UpdateFromOffer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateFromOffer");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateFromOffer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,10 +122,7 @@ void UAthenaDirectAcquisitionConfirmation_C::UpdateFromOffer()
 
 void UAthenaDirectAcquisitionConfirmation_C::SetupPrice(class UWidget* PriceContainer, class UTextBlock* NormalPriceText, class UWidget* SalePriceContainer, class UTextBlock* SalePriceText, class UImage* CurrencyImage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "SetupPrice");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "SetupPrice");
 
 	Params::AthenaDirectAcquisitionConfirmation_C_SetupPrice Parms{};
 
@@ -165,10 +141,7 @@ void UAthenaDirectAcquisitionConfirmation_C::SetupPrice(class UWidget* PriceCont
 
 void UAthenaDirectAcquisitionConfirmation_C::UpdateItemList()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateItemList");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateItemList");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +152,7 @@ void UAthenaDirectAcquisitionConfirmation_C::UpdateItemList()
 
 void UAthenaDirectAcquisitionConfirmation_C::UpdateCatalogOfferName()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateCatalogOfferName");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateCatalogOfferName");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +165,7 @@ void UAthenaDirectAcquisitionConfirmation_C::UpdateCatalogOfferName()
 
 void UAthenaDirectAcquisitionConfirmation_C::SetPurchaseNumber(int32 InNumToPurchse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "SetPurchaseNumber");
+	class UFunction* Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "SetPurchaseNumber");
 
 	Params::AthenaDirectAcquisitionConfirmation_C_SetPurchaseNumber Parms{};
 

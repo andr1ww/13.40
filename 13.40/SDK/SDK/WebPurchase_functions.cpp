@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UWebPurchase_C::HandleBack(bool* bPassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WebPurchase_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("WebPurchase_C", "HandleBack");
 
 	Params::WebPurchase_C_HandleBack Parms{};
 
@@ -42,10 +39,7 @@ void UWebPurchase_C::HandleBack(bool* bPassThrough)
 
 void UWebPurchase_C::BindDelegates()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WebPurchase_C", "BindDelegates");
+	class UFunction* Func = Class->GetFunction("WebPurchase_C", "BindDelegates");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -56,10 +50,7 @@ void UWebPurchase_C::BindDelegates()
 
 void UWebPurchase_C::BP_OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WebPurchase_C", "BP_OnActivated");
+	class UFunction* Func = Class->GetFunction("WebPurchase_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -72,10 +63,7 @@ void UWebPurchase_C::BP_OnActivated()
 
 void UWebPurchase_C::ExecuteUbergraph_WebPurchase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WebPurchase_C", "ExecuteUbergraph_WebPurchase");
+	class UFunction* Func = Class->GetFunction("WebPurchase_C", "ExecuteUbergraph_WebPurchase");
 
 	Params::WebPurchase_C_ExecuteUbergraph_WebPurchase Parms{};
 

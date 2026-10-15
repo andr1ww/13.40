@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UAlterationWidgetButton_C::Setup_Triangles()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidgetButton_C", "Setup Triangles");
+	class UFunction* Func = Class->GetFunction("AlterationWidgetButton_C", "Setup Triangles");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UAlterationWidgetButton_C::Setup_Triangles()
 
 void UAlterationWidgetButton_C::Update_Colors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidgetButton_C", "Update Colors");
+	class UFunction* Func = Class->GetFunction("AlterationWidgetButton_C", "Update Colors");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void UAlterationWidgetButton_C::Update_Colors()
 
 void UAlterationWidgetButton_C::IntroStart()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidgetButton_C", "IntroStart");
+	class UFunction* Func = Class->GetFunction("AlterationWidgetButton_C", "IntroStart");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -63,10 +54,7 @@ void UAlterationWidgetButton_C::IntroStart()
 
 void UAlterationWidgetButton_C::IntroReset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidgetButton_C", "IntroReset");
+	class UFunction* Func = Class->GetFunction("AlterationWidgetButton_C", "IntroReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +65,7 @@ void UAlterationWidgetButton_C::IntroReset()
 
 void UAlterationWidgetButton_C::TriggerModificationAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidgetButton_C", "TriggerModificationAnimation");
+	class UFunction* Func = Class->GetFunction("AlterationWidgetButton_C", "TriggerModificationAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +76,7 @@ void UAlterationWidgetButton_C::TriggerModificationAnimation()
 
 void UAlterationWidgetButton_C::OnSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidgetButton_C", "OnSetup");
+	class UFunction* Func = Class->GetFunction("AlterationWidgetButton_C", "OnSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +87,7 @@ void UAlterationWidgetButton_C::OnSetup()
 
 void UAlterationWidgetButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidgetButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AlterationWidgetButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,10 +100,7 @@ void UAlterationWidgetButton_C::Construct()
 
 void UAlterationWidgetButton_C::ExecuteUbergraph_AlterationWidgetButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidgetButton_C", "ExecuteUbergraph_AlterationWidgetButton");
+	class UFunction* Func = Class->GetFunction("AlterationWidgetButton_C", "ExecuteUbergraph_AlterationWidgetButton");
 
 	Params::AlterationWidgetButton_C_ExecuteUbergraph_AlterationWidgetButton Parms{};
 

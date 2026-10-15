@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 struct FEventReply UItemCardWidget_C::OnFocusReceived(const struct FGeometry& MyGeometry_OnFocusReceived, const struct FFocusEvent& InFocusEvent_OnFocusReceived)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCardWidget_C", "OnFocusReceived");
+	class UFunction* Func = Class->GetFunction("ItemCardWidget_C", "OnFocusReceived");
 
 	Params::ItemCardWidget_C_OnFocusReceived Parms{};
 
@@ -46,10 +43,7 @@ struct FEventReply UItemCardWidget_C::OnFocusReceived(const struct FGeometry& My
 
 void UItemCardWidget_C::OnCentered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCardWidget_C", "OnCentered");
+	class UFunction* Func = Class->GetFunction("ItemCardWidget_C", "OnCentered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -62,10 +56,7 @@ void UItemCardWidget_C::OnCentered()
 
 void UItemCardWidget_C::PlayShow(int32 idx)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCardWidget_C", "PlayShow");
+	class UFunction* Func = Class->GetFunction("ItemCardWidget_C", "PlayShow");
 
 	Params::ItemCardWidget_C_PlayShow Parms{};
 
@@ -82,10 +73,7 @@ void UItemCardWidget_C::PlayShow(int32 idx)
 
 void UItemCardWidget_C::OnFocusLost(const struct FFocusEvent& InFocusEvent_OnFocusLost)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCardWidget_C", "OnFocusLost");
+	class UFunction* Func = Class->GetFunction("ItemCardWidget_C", "OnFocusLost");
 
 	Params::ItemCardWidget_C_OnFocusLost Parms{};
 
@@ -100,10 +88,7 @@ void UItemCardWidget_C::OnFocusLost(const struct FFocusEvent& InFocusEvent_OnFoc
 
 void UItemCardWidget_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCardWidget_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("ItemCardWidget_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -114,10 +99,7 @@ void UItemCardWidget_C::BP_OnHovered()
 
 void UItemCardWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCardWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ItemCardWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -130,10 +112,7 @@ void UItemCardWidget_C::Construct()
 
 void UItemCardWidget_C::ExecuteUbergraph_ItemCardWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCardWidget_C", "ExecuteUbergraph_ItemCardWidget");
+	class UFunction* Func = Class->GetFunction("ItemCardWidget_C", "ExecuteUbergraph_ItemCardWidget");
 
 	Params::ItemCardWidget_C_ExecuteUbergraph_ItemCardWidget Parms{};
 

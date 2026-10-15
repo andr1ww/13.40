@@ -29,10 +29,7 @@ SDK_NAMESPACE_START
 
 float UKismetAnimationLibrary::K2_CalculateVelocityFromPositionHistory(float DeltaSeconds, const struct FVector& position, struct FPositionHistory& History, int32 NumberOfSamples, float VelocityMin, float VelocityMax)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_CalculateVelocityFromPositionHistory");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_CalculateVelocityFromPositionHistory");
 
 	Params::KismetAnimationLibrary_K2_CalculateVelocityFromPositionHistory Parms{};
 
@@ -75,10 +72,7 @@ float UKismetAnimationLibrary::K2_CalculateVelocityFromPositionHistory(float Del
 
 float UKismetAnimationLibrary::K2_CalculateVelocityFromSockets(float DeltaSeconds, class USkeletalMeshComponent* Component, const class FName SocketOrBoneName, const class FName ReferenceSocketOrBone, ERelativeTransformSpace SocketSpace, const struct FVector& OffsetInBoneSpace, struct FPositionHistory& History, int32 NumberOfSamples, float VelocityMin, float VelocityMax, EEasingFuncType EasingType, const struct FRuntimeFloatCurve& CustomCurve)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_CalculateVelocityFromSockets");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_CalculateVelocityFromSockets");
 
 	Params::KismetAnimationLibrary_K2_CalculateVelocityFromSockets Parms{};
 
@@ -118,10 +112,7 @@ float UKismetAnimationLibrary::K2_CalculateVelocityFromSockets(float DeltaSecond
 
 struct FVector UKismetAnimationLibrary::K2_DirectionBetweenSockets(const class USkeletalMeshComponent* Component, const class FName SocketOrBoneNameFrom, const class FName SocketOrBoneNameTo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_DirectionBetweenSockets");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_DirectionBetweenSockets");
 
 	Params::KismetAnimationLibrary_K2_DirectionBetweenSockets Parms{};
 
@@ -157,10 +148,7 @@ struct FVector UKismetAnimationLibrary::K2_DirectionBetweenSockets(const class U
 
 float UKismetAnimationLibrary::K2_DistanceBetweenTwoSocketsAndMapRange(const class USkeletalMeshComponent* Component, const class FName SocketOrBoneNameA, ERelativeTransformSpace SocketSpaceA, const class FName SocketOrBoneNameB, ERelativeTransformSpace SocketSpaceB, bool bRemapRange, float InRangeMin, float InRangeMax, float OutRangeMin, float OutRangeMax)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_DistanceBetweenTwoSocketsAndMapRange");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_DistanceBetweenTwoSocketsAndMapRange");
 
 	Params::KismetAnimationLibrary_K2_DistanceBetweenTwoSocketsAndMapRange Parms{};
 
@@ -195,10 +183,7 @@ float UKismetAnimationLibrary::K2_DistanceBetweenTwoSocketsAndMapRange(const cla
 
 float UKismetAnimationLibrary::K2_EndProfilingTimer(bool bLog, const class FString& LogPrefix)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_EndProfilingTimer");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_EndProfilingTimer");
 
 	Params::KismetAnimationLibrary_K2_EndProfilingTimer Parms{};
 
@@ -229,10 +214,7 @@ float UKismetAnimationLibrary::K2_EndProfilingTimer(bool bLog, const class FStri
 
 struct FTransform UKismetAnimationLibrary::K2_LookAt(const struct FTransform& CurrentTransform, const struct FVector& TargetPosition, const struct FVector& LookAtVector, bool bUseUpVector, const struct FVector& UpVector, float ClampConeInDegree)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_LookAt");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_LookAt");
 
 	Params::KismetAnimationLibrary_K2_LookAt Parms{};
 
@@ -264,10 +246,7 @@ struct FTransform UKismetAnimationLibrary::K2_LookAt(const struct FTransform& Cu
 
 float UKismetAnimationLibrary::K2_MakePerlinNoiseAndRemap(float Value, float RangeOutMin, float RangeOutMax)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_MakePerlinNoiseAndRemap");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_MakePerlinNoiseAndRemap");
 
 	Params::KismetAnimationLibrary_K2_MakePerlinNoiseAndRemap Parms{};
 
@@ -302,10 +281,7 @@ float UKismetAnimationLibrary::K2_MakePerlinNoiseAndRemap(float Value, float Ran
 
 struct FVector UKismetAnimationLibrary::K2_MakePerlinNoiseVectorAndRemap(float X, float Y, float Z, float RangeOutMinX, float RangeOutMaxX, float RangeOutMinY, float RangeOutMaxY, float RangeOutMinZ, float RangeOutMaxZ)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_MakePerlinNoiseVectorAndRemap");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_MakePerlinNoiseVectorAndRemap");
 
 	Params::KismetAnimationLibrary_K2_MakePerlinNoiseVectorAndRemap Parms{};
 
@@ -335,10 +311,7 @@ struct FVector UKismetAnimationLibrary::K2_MakePerlinNoiseVectorAndRemap(float X
 
 void UKismetAnimationLibrary::K2_StartProfilingTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_StartProfilingTimer");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_StartProfilingTimer");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -365,10 +338,7 @@ void UKismetAnimationLibrary::K2_StartProfilingTimer()
 
 void UKismetAnimationLibrary::K2_TwoBoneIK(const struct FVector& RootPos, const struct FVector& JointPos, const struct FVector& EndPos, const struct FVector& JointTarget, const struct FVector& Effector, struct FVector* OutJointPos, struct FVector* OutEndPos, bool bAllowStretching, float StartStretchRatio, float MaxStretchScale)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_TwoBoneIK");
+	class UFunction* Func = StaticClass()->GetFunction("KismetAnimationLibrary", "K2_TwoBoneIK");
 
 	Params::KismetAnimationLibrary_K2_TwoBoneIK Parms{};
 
@@ -408,10 +378,7 @@ void UKismetAnimationLibrary::K2_TwoBoneIK(const struct FVector& RootPos, const 
 
 class UPlayMontageCallbackProxy* UPlayMontageCallbackProxy::CreateProxyObjectForPlayMontage(class USkeletalMeshComponent* InSkeletalMeshComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, class FName StartingSection)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("PlayMontageCallbackProxy", "CreateProxyObjectForPlayMontage");
+	class UFunction* Func = StaticClass()->GetFunction("PlayMontageCallbackProxy", "CreateProxyObjectForPlayMontage");
 
 	Params::PlayMontageCallbackProxy_CreateProxyObjectForPlayMontage Parms{};
 
@@ -440,10 +407,7 @@ class UPlayMontageCallbackProxy* UPlayMontageCallbackProxy::CreateProxyObjectFor
 
 void UPlayMontageCallbackProxy::OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayMontageCallbackProxy", "OnMontageBlendingOut");
+	class UFunction* Func = Class->GetFunction("PlayMontageCallbackProxy", "OnMontageBlendingOut");
 
 	Params::PlayMontageCallbackProxy_OnMontageBlendingOut Parms{};
 
@@ -467,10 +431,7 @@ void UPlayMontageCallbackProxy::OnMontageBlendingOut(class UAnimMontage* Montage
 
 void UPlayMontageCallbackProxy::OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayMontageCallbackProxy", "OnMontageEnded");
+	class UFunction* Func = Class->GetFunction("PlayMontageCallbackProxy", "OnMontageEnded");
 
 	Params::PlayMontageCallbackProxy_OnMontageEnded Parms{};
 
@@ -494,10 +455,7 @@ void UPlayMontageCallbackProxy::OnMontageEnded(class UAnimMontage* Montage, bool
 
 void UPlayMontageCallbackProxy::OnNotifyBeginReceived(class FName NotifyName, const struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayMontageCallbackProxy", "OnNotifyBeginReceived");
+	class UFunction* Func = Class->GetFunction("PlayMontageCallbackProxy", "OnNotifyBeginReceived");
 
 	Params::PlayMontageCallbackProxy_OnNotifyBeginReceived Parms{};
 
@@ -521,10 +479,7 @@ void UPlayMontageCallbackProxy::OnNotifyBeginReceived(class FName NotifyName, co
 
 void UPlayMontageCallbackProxy::OnNotifyEndReceived(class FName NotifyName, const struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayMontageCallbackProxy", "OnNotifyEndReceived");
+	class UFunction* Func = Class->GetFunction("PlayMontageCallbackProxy", "OnNotifyEndReceived");
 
 	Params::PlayMontageCallbackProxy_OnNotifyEndReceived Parms{};
 

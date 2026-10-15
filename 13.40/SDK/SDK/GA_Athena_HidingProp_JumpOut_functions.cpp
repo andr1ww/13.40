@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_HidingProp_JumpOut_C::ExecuteUbergraph_GA_Athena_HidingProp_JumpOut(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_JumpOut_C", "ExecuteUbergraph_GA_Athena_HidingProp_JumpOut");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_JumpOut_C", "ExecuteUbergraph_GA_Athena_HidingProp_JumpOut");
 
 	Params::GA_Athena_HidingProp_JumpOut_C_ExecuteUbergraph_GA_Athena_HidingProp_JumpOut Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_HidingProp_JumpOut_C::ExecuteUbergraph_GA_Athena_HidingProp_Jump
 
 void UGA_Athena_HidingProp_JumpOut_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_JumpOut_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_JumpOut_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void UGA_Athena_HidingProp_JumpOut_C::K2_ActivateAbility()
 
 bool UGA_Athena_HidingProp_JumpOut_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_HidingProp_JumpOut_C", "K2_CanActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_HidingProp_JumpOut_C", "K2_CanActivateAbility");
 
 	Params::GA_Athena_HidingProp_JumpOut_C_K2_CanActivateAbility Parms{};
 

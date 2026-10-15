@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFrontend_Lobby_Background_C::ExecuteUbergraph_Frontend_Lobby_Background(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "ExecuteUbergraph_Frontend_Lobby_Background");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "ExecuteUbergraph_Frontend_Lobby_Background");
 
 	Params::Frontend_Lobby_Background_C_ExecuteUbergraph_Frontend_Lobby_Background Parms{};
 
@@ -41,10 +38,7 @@ void AFrontend_Lobby_Background_C::ExecuteUbergraph_Frontend_Lobby_Background(in
 
 void AFrontend_Lobby_Background_C::TestDynColor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "TestDynColor");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "TestDynColor");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AFrontend_Lobby_Background_C::TestDynColor()
 
 void AFrontend_Lobby_Background_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AFrontend_Lobby_Background_C::ReceiveBeginPlay()
 
 void AFrontend_Lobby_Background_C::BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundEvent_1_OnEnvironmentBackgroundTextureChangedDynamic__DelegateSignature(class UTexture* BackgroundImage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundEvent_1_OnEnvironmentBackgroundTextureChangedDynamic__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundEvent_1_OnEnvironmentBackgroundTextureChangedDynamic__DelegateSignature");
 
 	Params::Frontend_Lobby_Background_C_BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundEvent_1_OnEnvironmentBackgroundTextureChangedDynamic__DelegateSignature Parms{};
 
@@ -91,10 +79,7 @@ void AFrontend_Lobby_Background_C::BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundE
 
 void AFrontend_Lobby_Background_C::BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundEvent_0_OnEnvironmentChangedDynamic__DelegateSignature(const class FString& PresetEnvironmentName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundEvent_0_OnEnvironmentChangedDynamic__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundEvent_0_OnEnvironmentChangedDynamic__DelegateSignature");
 
 	Params::Frontend_Lobby_Background_C_BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundEvent_0_OnEnvironmentChangedDynamic__DelegateSignature Parms{};
 
@@ -109,10 +94,7 @@ void AFrontend_Lobby_Background_C::BndEvt__CMSLobbyDirector_3_K2Node_ActorBoundE
 
 void AFrontend_Lobby_Background_C::FadeOut__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "FadeOut__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "FadeOut__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void AFrontend_Lobby_Background_C::FadeOut__UpdateFunc()
 
 void AFrontend_Lobby_Background_C::FadeOut__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "FadeOut__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "FadeOut__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void AFrontend_Lobby_Background_C::FadeOut__FinishedFunc()
 
 void AFrontend_Lobby_Background_C::FadeIn__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "FadeIn__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "FadeIn__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +127,7 @@ void AFrontend_Lobby_Background_C::FadeIn__UpdateFunc()
 
 void AFrontend_Lobby_Background_C::FadeIn__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "FadeIn__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "FadeIn__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +142,7 @@ void AFrontend_Lobby_Background_C::FadeIn__FinishedFunc()
 
 void AFrontend_Lobby_Background_C::UpdateFade(float FadeValue, float FadeFloorToBlack, float InFadeGrid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "UpdateFade");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "UpdateFade");
 
 	Params::Frontend_Lobby_Background_C_UpdateFade Parms{};
 
@@ -191,10 +161,7 @@ void AFrontend_Lobby_Background_C::UpdateFade(float FadeValue, float FadeFloorTo
 
 void AFrontend_Lobby_Background_C::SetShowPedestalSparkles(bool Show)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_Lobby_Background_C", "SetShowPedestalSparkles");
+	class UFunction* Func = Class->GetFunction("Frontend_Lobby_Background_C", "SetShowPedestalSparkles");
 
 	Params::Frontend_Lobby_Background_C_SetShowPedestalSparkles Parms{};
 

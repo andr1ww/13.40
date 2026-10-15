@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 struct FHitResult UChaosSolverEngineBlueprintLibrary::ConvertPhysicsCollisionToHitResult(const struct FChaosPhysicsCollisionInfo& PhysicsCollision)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ChaosSolverEngineBlueprintLibrary", "ConvertPhysicsCollisionToHitResult");
+	class UFunction* Func = StaticClass()->GetFunction("ChaosSolverEngineBlueprintLibrary", "ConvertPhysicsCollisionToHitResult");
 
 	Params::ChaosSolverEngineBlueprintLibrary_ConvertPhysicsCollisionToHitResult Parms{};
 
@@ -49,10 +46,7 @@ struct FHitResult UChaosSolverEngineBlueprintLibrary::ConvertPhysicsCollisionToH
 
 void AChaosSolverActor::SetAsCurrentWorldSolver()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosSolverActor", "SetAsCurrentWorldSolver");
+	class UFunction* Func = Class->GetFunction("ChaosSolverActor", "SetAsCurrentWorldSolver");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -70,10 +64,7 @@ void AChaosSolverActor::SetAsCurrentWorldSolver()
 
 void AChaosSolverActor::SetSolverActive(bool bActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChaosSolverActor", "SetSolverActive");
+	class UFunction* Func = Class->GetFunction("ChaosSolverActor", "SetSolverActive");
 
 	Params::ChaosSolverActor_SetSolverActive Parms{};
 

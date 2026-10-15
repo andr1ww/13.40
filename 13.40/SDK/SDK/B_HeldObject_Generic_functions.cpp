@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_HeldObject_Generic_C::ExecuteUbergraph_B_HeldObject_Generic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Generic_C", "ExecuteUbergraph_B_HeldObject_Generic");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Generic_C", "ExecuteUbergraph_B_HeldObject_Generic");
 
 	Params::B_HeldObject_Generic_C_ExecuteUbergraph_B_HeldObject_Generic Parms{};
 
@@ -41,10 +38,7 @@ void AB_HeldObject_Generic_C::ExecuteUbergraph_B_HeldObject_Generic(int32 EntryP
 
 void AB_HeldObject_Generic_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Generic_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Generic_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AAthena_PlayerController_C::ExecuteUbergraph_Athena_PlayerController(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "ExecuteUbergraph_Athena_PlayerController");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "ExecuteUbergraph_Athena_PlayerController");
 
 	Params::Athena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController Parms{};
 
@@ -41,10 +38,7 @@ void AAthena_PlayerController_C::ExecuteUbergraph_Athena_PlayerController(int32 
 
 void AAthena_PlayerController_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AAthena_PlayerController_C::ReceiveBeginPlay()
 
 void AAthena_PlayerController_C::Handle_Victory_Royale_Audio(bool Audio_Only)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "Handle Victory Royale Audio");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "Handle Victory Royale Audio");
 
 	Params::Athena_PlayerController_C_Handle_Victory_Royale_Audio Parms{};
 
@@ -77,10 +68,7 @@ void AAthena_PlayerController_C::Handle_Victory_Royale_Audio(bool Audio_Only)
 
 void AAthena_PlayerController_C::K2_OnEnterVolume(class AFortVolume* Volume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "K2_OnEnterVolume");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "K2_OnEnterVolume");
 
 	Params::Athena_PlayerController_C_K2_OnEnterVolume Parms{};
 
@@ -97,10 +85,7 @@ void AAthena_PlayerController_C::K2_OnEnterVolume(class AFortVolume* Volume)
 
 void AAthena_PlayerController_C::K2_OnLeaveVolume(class AFortVolume* Volume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "K2_OnLeaveVolume");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "K2_OnLeaveVolume");
 
 	Params::Athena_PlayerController_C_K2_OnLeaveVolume Parms{};
 
@@ -120,10 +105,7 @@ void AAthena_PlayerController_C::K2_OnLeaveVolume(class AFortVolume* Volume)
 
 void AAthena_PlayerController_C::PlayWinEffects(class APawn* FinisherPawn, const class UFortWeaponItemDefinition* FinishingWeapon, EDeathCause DeathCause, bool bAudioOnly)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "PlayWinEffects");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "PlayWinEffects");
 
 	Params::Athena_PlayerController_C_PlayWinEffects Parms{};
 
@@ -141,10 +123,7 @@ void AAthena_PlayerController_C::PlayWinEffects(class APawn* FinisherPawn, const
 
 void AAthena_PlayerController_C::ReplicateRotationScaleReset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "ReplicateRotationScaleReset");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "ReplicateRotationScaleReset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +136,7 @@ void AAthena_PlayerController_C::ReplicateRotationScaleReset()
 
 void AAthena_PlayerController_C::ReactToPawnPossession(class APawn* PossessedPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "ReactToPawnPossession");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "ReactToPawnPossession");
 
 	Params::Athena_PlayerController_C_ReactToPawnPossession Parms{};
 
@@ -177,10 +153,7 @@ void AAthena_PlayerController_C::ReactToPawnPossession(class APawn* PossessedPaw
 
 void AAthena_PlayerController_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "ReceiveEndPlay");
 
 	Params::Athena_PlayerController_C_ReceiveEndPlay Parms{};
 
@@ -195,10 +168,7 @@ void AAthena_PlayerController_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 
 void AAthena_PlayerController_C::RemoveItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "RemoveItem");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "RemoveItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -211,10 +181,7 @@ void AAthena_PlayerController_C::RemoveItem()
 
 void AAthena_PlayerController_C::OnLocalInteraction(class AActor* ReceivingActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "OnLocalInteraction");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "OnLocalInteraction");
 
 	Params::Athena_PlayerController_C_OnLocalInteraction Parms{};
 
@@ -231,10 +198,7 @@ void AAthena_PlayerController_C::OnLocalInteraction(class AActor* ReceivingActor
 
 void AAthena_PlayerController_C::RevokeItem(TSoftObjectPtr<class UFortWorldItemDefinition> Item)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "RevokeItem");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "RevokeItem");
 
 	Params::Athena_PlayerController_C_RevokeItem Parms{};
 
@@ -251,10 +215,7 @@ void AAthena_PlayerController_C::RevokeItem(TSoftObjectPtr<class UFortWorldItemD
 
 void AAthena_PlayerController_C::GrantItem(TSoftObjectPtr<class UFortWorldItemDefinition> Item)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "GrantItem");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "GrantItem");
 
 	Params::Athena_PlayerController_C_GrantItem Parms{};
 
@@ -271,10 +232,7 @@ void AAthena_PlayerController_C::GrantItem(TSoftObjectPtr<class UFortWorldItemDe
 
 void AAthena_PlayerController_C::OnMusicPackLoaded(const class UAthenaMusicPackItemDefinition* NewMusicPack)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "OnMusicPackLoaded");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "OnMusicPackLoaded");
 
 	Params::Athena_PlayerController_C_OnMusicPackLoaded Parms{};
 
@@ -289,10 +247,7 @@ void AAthena_PlayerController_C::OnMusicPackLoaded(const class UAthenaMusicPackI
 
 void AAthena_PlayerController_C::Start_Victory_Royale_Music()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "Start Victory Royale Music");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "Start Victory Royale Music");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -307,10 +262,7 @@ void AAthena_PlayerController_C::Start_Victory_Royale_Music()
 
 void AAthena_PlayerController_C::OnReady_B4409EAB4038578B1EBA9DB1586489B9(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "OnReady_B4409EAB4038578B1EBA9DB1586489B9");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "OnReady_B4409EAB4038578B1EBA9DB1586489B9");
 
 	Params::Athena_PlayerController_C_OnReady_B4409EAB4038578B1EBA9DB1586489B9 Parms{};
 
@@ -329,10 +281,7 @@ void AAthena_PlayerController_C::OnReady_B4409EAB4038578B1EBA9DB1586489B9(class 
 
 void AAthena_PlayerController_C::OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D");
 
 	Params::Athena_PlayerController_C_OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D Parms{};
 
@@ -347,10 +296,7 @@ void AAthena_PlayerController_C::OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D(class
 
 void AAthena_PlayerController_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -363,10 +309,7 @@ void AAthena_PlayerController_C::UserConstructionScript()
 
 void AAthena_PlayerController_C::LeftAllVolumes(bool* bLeftVolumes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "LeftAllVolumes");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "LeftAllVolumes");
 
 	Params::Athena_PlayerController_C_LeftAllVolumes Parms{};
 
@@ -382,10 +325,7 @@ void AAthena_PlayerController_C::LeftAllVolumes(bool* bLeftVolumes)
 
 void AAthena_PlayerController_C::SetupPermissionRecheckTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "SetupPermissionRecheckTimer");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "SetupPermissionRecheckTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -398,10 +338,7 @@ void AAthena_PlayerController_C::SetupPermissionRecheckTimer()
 
 bool AAthena_PlayerController_C::Is_Creative_Mode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_PlayerController_C", "Is Creative Mode");
+	class UFunction* Func = Class->GetFunction("Athena_PlayerController_C", "Is Creative Mode");
 
 	Params::Athena_PlayerController_C_Is_Creative_Mode Parms{};
 

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UAthenaBottomBarWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBottomBarWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaBottomBarWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UAthenaBottomBarWidget_C::Construct()
 
 void UAthenaBottomBarWidget_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBottomBarWidget_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AthenaBottomBarWidget_C", "PreConstruct");
 
 	Params::AthenaBottomBarWidget_C_PreConstruct Parms{};
 
@@ -57,10 +51,7 @@ void UAthenaBottomBarWidget_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UAthenaBottomBarWidget_C::ExecuteUbergraph_AthenaBottomBarWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaBottomBarWidget_C", "ExecuteUbergraph_AthenaBottomBarWidget");
+	class UFunction* Func = Class->GetFunction("AthenaBottomBarWidget_C", "ExecuteUbergraph_AthenaBottomBarWidget");
 
 	Params::AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget Parms{};
 

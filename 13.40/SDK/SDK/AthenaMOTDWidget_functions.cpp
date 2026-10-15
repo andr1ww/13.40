@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaMOTDWidget_C::ExecuteUbergraph_AthenaMOTDWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "ExecuteUbergraph_AthenaMOTDWidget");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "ExecuteUbergraph_AthenaMOTDWidget");
 
 	Params::AthenaMOTDWidget_C_ExecuteUbergraph_AthenaMOTDWidget Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaMOTDWidget_C::ExecuteUbergraph_AthenaMOTDWidget(int32 EntryPoint)
 
 void UAthenaMOTDWidget_C::PlayIntroAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "PlayIntroAnimation");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "PlayIntroAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UAthenaMOTDWidget_C::PlayIntroAnimation()
 
 void UAthenaMOTDWidget_C::SetNormalButtonText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "SetNormalButtonText");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "SetNormalButtonText");
 
 	Params::AthenaMOTDWidget_C_SetNormalButtonText Parms{};
 
@@ -77,10 +68,7 @@ void UAthenaMOTDWidget_C::SetNormalButtonText(const class FText& InText)
 
 void UAthenaMOTDWidget_C::SetSpecialButtonText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "SetSpecialButtonText");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "SetSpecialButtonText");
 
 	Params::AthenaMOTDWidget_C_SetSpecialButtonText Parms{};
 
@@ -95,10 +83,7 @@ void UAthenaMOTDWidget_C::SetSpecialButtonText(const class FText& InText)
 
 void UAthenaMOTDWidget_C::StartSTWUpsell()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "StartSTWUpsell");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "StartSTWUpsell");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void UAthenaMOTDWidget_C::StartSTWUpsell()
 
 void UAthenaMOTDWidget_C::BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaMOTDWidget_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -131,10 +113,7 @@ void UAthenaMOTDWidget_C::BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEv
 
 void UAthenaMOTDWidget_C::BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaMOTDWidget_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -151,10 +130,7 @@ void UAthenaMOTDWidget_C::BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundE
 
 void UAthenaMOTDWidget_C::OnSelectedNews(const struct FAthenaNewsEntry& NewsEntry)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "OnSelectedNews");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "OnSelectedNews");
 
 	Params::AthenaMOTDWidget_C_OnSelectedNews Parms{};
 
@@ -172,10 +148,7 @@ void UAthenaMOTDWidget_C::OnSelectedNews(const struct FAthenaNewsEntry& NewsEntr
 
 void UAthenaMOTDWidget_C::DialogResult_B7839D98483DEF9593D448BA28AE74F7(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "DialogResult_B7839D98483DEF9593D448BA28AE74F7");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "DialogResult_B7839D98483DEF9593D448BA28AE74F7");
 
 	Params::AthenaMOTDWidget_C_DialogResult_B7839D98483DEF9593D448BA28AE74F7 Parms{};
 
@@ -195,10 +168,7 @@ void UAthenaMOTDWidget_C::DialogResult_B7839D98483DEF9593D448BA28AE74F7(EFortDia
 
 void UAthenaMOTDWidget_C::UpdateCustomColorStyle(bool bHasCustomColor, const struct FColor& CustomDarkColor, const struct FColor& CustomLightColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "UpdateCustomColorStyle");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "UpdateCustomColorStyle");
 
 	Params::AthenaMOTDWidget_C_UpdateCustomColorStyle Parms{};
 
@@ -219,10 +189,7 @@ void UAthenaMOTDWidget_C::UpdateCustomColorStyle(bool bHasCustomColor, const str
 
 struct FEventReply UAthenaMOTDWidget_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "OnFocusReceived");
+	class UFunction* Func = Class->GetFunction("AthenaMOTDWidget_C", "OnFocusReceived");
 
 	Params::AthenaMOTDWidget_C_OnFocusReceived Parms{};
 

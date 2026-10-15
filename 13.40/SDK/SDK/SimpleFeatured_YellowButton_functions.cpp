@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USimpleFeatured_YellowButton_C::ExecuteUbergraph_SimpleFeatured_YellowButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "ExecuteUbergraph_SimpleFeatured_YellowButton");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "ExecuteUbergraph_SimpleFeatured_YellowButton");
 
 	Params::SimpleFeatured_YellowButton_C_ExecuteUbergraph_SimpleFeatured_YellowButton Parms{};
 
@@ -41,10 +38,7 @@ void USimpleFeatured_YellowButton_C::ExecuteUbergraph_SimpleFeatured_YellowButto
 
 void USimpleFeatured_YellowButton_C::RefreshUI()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "RefreshUI");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "RefreshUI");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void USimpleFeatured_YellowButton_C::RefreshUI()
 
 void USimpleFeatured_YellowButton_C::ChangeSecondaryText(const class FText& NewText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "ChangeSecondaryText");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "ChangeSecondaryText");
 
 	Params::SimpleFeatured_YellowButton_C_ChangeSecondaryText Parms{};
 
@@ -77,10 +68,7 @@ void USimpleFeatured_YellowButton_C::ChangeSecondaryText(const class FText& NewT
 
 void USimpleFeatured_YellowButton_C::SetText(const class FText& NewText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "SetText");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "SetText");
 
 	Params::SimpleFeatured_YellowButton_C_SetText Parms{};
 
@@ -95,10 +83,7 @@ void USimpleFeatured_YellowButton_C::SetText(const class FText& NewText)
 
 void USimpleFeatured_YellowButton_C::BP_OnClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "BP_OnClicked");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "BP_OnClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +94,7 @@ void USimpleFeatured_YellowButton_C::BP_OnClicked()
 
 void USimpleFeatured_YellowButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void USimpleFeatured_YellowButton_C::BP_OnUnhovered()
 
 void USimpleFeatured_YellowButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void USimpleFeatured_YellowButton_C::BP_OnHovered()
 
 void USimpleFeatured_YellowButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void USimpleFeatured_YellowButton_C::Construct()
 
 void USimpleFeatured_YellowButton_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "PreConstruct");
 
 	Params::SimpleFeatured_YellowButton_C_PreConstruct Parms{};
 
@@ -171,10 +144,7 @@ void USimpleFeatured_YellowButton_C::PreConstruct(bool IsDesignTime)
 
 void USimpleFeatured_YellowButton_C::HandleSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "HandleSize");
+	class UFunction* Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "HandleSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Athena_FringePlank_Reveal_C::ExecuteUbergraph_GCN_Athena_FringePlank_Reveal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "ExecuteUbergraph_GCN_Athena_FringePlank_Reveal");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "ExecuteUbergraph_GCN_Athena_FringePlank_Reveal");
 
 	Params::GCN_Athena_FringePlank_Reveal_C_ExecuteUbergraph_GCN_Athena_FringePlank_Reveal Parms{};
 
@@ -41,10 +38,7 @@ void AGCN_Athena_FringePlank_Reveal_C::ExecuteUbergraph_GCN_Athena_FringePlank_R
 
 void AGCN_Athena_FringePlank_Reveal_C::PlayWorldSweep()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "PlayWorldSweep");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "PlayWorldSweep");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AGCN_Athena_FringePlank_Reveal_C::PlayWorldSweep()
 
 void AGCN_Athena_FringePlank_Reveal_C::BeginSweepFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "BeginSweepFX");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "BeginSweepFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AGCN_Athena_FringePlank_Reveal_C::BeginSweepFX()
 
 void AGCN_Athena_FringePlank_Reveal_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "ReceiveEndPlay");
 
 	Params::GCN_Athena_FringePlank_Reveal_C_ReceiveEndPlay Parms{};
 
@@ -89,10 +77,7 @@ void AGCN_Athena_FringePlank_Reveal_C::ReceiveEndPlay(EEndPlayReason EndPlayReas
 
 void AGCN_Athena_FringePlank_Reveal_C::EndSweepFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "EndSweepFX");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "EndSweepFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,10 +92,7 @@ void AGCN_Athena_FringePlank_Reveal_C::EndSweepFX()
 
 bool AGCN_Athena_FringePlank_Reveal_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "OnExecute");
+	class UFunction* Func = Class->GetFunction("GCN_Athena_FringePlank_Reveal_C", "OnExecute");
 
 	Params::GCN_Athena_FringePlank_Reveal_C_OnExecute Parms{};
 

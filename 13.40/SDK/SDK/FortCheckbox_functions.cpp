@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortCheckbox_C::ExecuteUbergraph_FortCheckbox(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheckbox_C", "ExecuteUbergraph_FortCheckbox");
+	class UFunction* Func = Class->GetFunction("FortCheckbox_C", "ExecuteUbergraph_FortCheckbox");
 
 	Params::FortCheckbox_C_ExecuteUbergraph_FortCheckbox Parms{};
 
@@ -41,10 +38,7 @@ void UFortCheckbox_C::ExecuteUbergraph_FortCheckbox(int32 EntryPoint)
 
 void UFortCheckbox_C::BndEvt__CheckButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheckbox_C", "BndEvt__CheckButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FortCheckbox_C", "BndEvt__CheckButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UFortCheckbox_C::BndEvt__CheckButton_K2Node_ComponentBoundEvent_0_OnButtonC
 
 void UFortCheckbox_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheckbox_C", "Construct");
+	class UFunction* Func = Class->GetFunction("FortCheckbox_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UFortCheckbox_C::Construct()
 
 void UFortCheckbox_C::ToggleCheckbox()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheckbox_C", "ToggleCheckbox");
+	class UFunction* Func = Class->GetFunction("FortCheckbox_C", "ToggleCheckbox");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void UFortCheckbox_C::ToggleCheckbox()
 
 void UFortCheckbox_C::SetSelected(bool NewSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheckbox_C", "SetSelected");
+	class UFunction* Func = Class->GetFunction("FortCheckbox_C", "SetSelected");
 
 	Params::FortCheckbox_C_SetSelected Parms{};
 
@@ -103,10 +88,7 @@ void UFortCheckbox_C::SetSelected(bool NewSelected)
 
 void UFortCheckbox_C::Refresh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCheckbox_C", "Refresh");
+	class UFunction* Func = Class->GetFunction("FortCheckbox_C", "Refresh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

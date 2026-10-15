@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ATrap_Athena_WallSpikes_C::ExecuteUbergraph_Trap_Athena_WallSpikes(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Athena_WallSpikes_C", "ExecuteUbergraph_Trap_Athena_WallSpikes");
+	class UFunction* Func = Class->GetFunction("Trap_Athena_WallSpikes_C", "ExecuteUbergraph_Trap_Athena_WallSpikes");
 
 	Params::Trap_Athena_WallSpikes_C_ExecuteUbergraph_Trap_Athena_WallSpikes Parms{};
 
@@ -43,10 +40,7 @@ void ATrap_Athena_WallSpikes_C::ExecuteUbergraph_Trap_Athena_WallSpikes(int32 En
 
 void ATrap_Athena_WallSpikes_C::SetSpikePosition(float NewSpikePosition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Athena_WallSpikes_C", "SetSpikePosition");
+	class UFunction* Func = Class->GetFunction("Trap_Athena_WallSpikes_C", "SetSpikePosition");
 
 	Params::Trap_Athena_WallSpikes_C_SetSpikePosition Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaSeasonItemRewardIcon_C::ExecuteUbergraph_AthenaSeasonItemRewardIcon(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "ExecuteUbergraph_AthenaSeasonItemRewardIcon");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "ExecuteUbergraph_AthenaSeasonItemRewardIcon");
 
 	Params::AthenaSeasonItemRewardIcon_C_ExecuteUbergraph_AthenaSeasonItemRewardIcon Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaSeasonItemRewardIcon_C::ExecuteUbergraph_AthenaSeasonItemRewardIcon(
 
 void UAthenaSeasonItemRewardIcon_C::OnInitializeSeriesReward(const class UFortItemSeriesDefinition* SeriesData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "OnInitializeSeriesReward");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "OnInitializeSeriesReward");
 
 	Params::AthenaSeasonItemRewardIcon_C_OnInitializeSeriesReward Parms{};
 
@@ -67,10 +61,7 @@ void UAthenaSeasonItemRewardIcon_C::OnInitializeSeriesReward(const class UFortIt
 
 void UAthenaSeasonItemRewardIcon_C::OnInitializeReward(const class UFortItem* RewardItem_0, const TSoftObjectPtr<class UTexture2D>& RewardTexture, bool bHasAdditionalStylesToDisplay, int32 RewardLevel, bool bRequiresBattlePass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "OnInitializeReward");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "OnInitializeReward");
 
 	Params::AthenaSeasonItemRewardIcon_C_OnInitializeReward Parms{};
 
@@ -91,10 +82,7 @@ void UAthenaSeasonItemRewardIcon_C::OnInitializeReward(const class UFortItem* Re
 
 void UAthenaSeasonItemRewardIcon_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "PreConstruct");
 
 	Params::AthenaSeasonItemRewardIcon_C_PreConstruct Parms{};
 
@@ -109,10 +97,7 @@ void UAthenaSeasonItemRewardIcon_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaSeasonItemRewardIcon_C::Hover()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "Hover");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "Hover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +108,7 @@ void UAthenaSeasonItemRewardIcon_C::Hover()
 
 void UAthenaSeasonItemRewardIcon_C::Unhover()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "Unhover");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "Unhover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +121,7 @@ void UAthenaSeasonItemRewardIcon_C::Unhover()
 
 void UAthenaSeasonItemRewardIcon_C::SetupItemCardStyle(class UFortItem* RewardItem_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "SetupItemCardStyle");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "SetupItemCardStyle");
 
 	Params::AthenaSeasonItemRewardIcon_C_SetupItemCardStyle Parms{};
 
@@ -157,10 +136,7 @@ void UAthenaSeasonItemRewardIcon_C::SetupItemCardStyle(class UFortItem* RewardIt
 
 void UAthenaSeasonItemRewardIcon_C::SelectedAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "SelectedAnim");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "SelectedAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +147,7 @@ void UAthenaSeasonItemRewardIcon_C::SelectedAnim()
 
 void UAthenaSeasonItemRewardIcon_C::DeselectedAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "DeselectedAnim");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "DeselectedAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +160,7 @@ void UAthenaSeasonItemRewardIcon_C::DeselectedAnim()
 
 void UAthenaSeasonItemRewardIcon_C::HandleMultipleRewardSelctedAnim(bool bLeftRewardSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "HandleMultipleRewardSelctedAnim");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "HandleMultipleRewardSelctedAnim");
 
 	Params::AthenaSeasonItemRewardIcon_C_HandleMultipleRewardSelctedAnim Parms{};
 
@@ -211,10 +181,7 @@ void UAthenaSeasonItemRewardIcon_C::HandleMultipleRewardSelctedAnim(bool bLeftRe
 
 void UAthenaSeasonItemRewardIcon_C::SetRarityColors(const struct FLinearColor& Color1, const struct FLinearColor& Color2, const struct FLinearColor& Color3, const struct FLinearColor& Color4, const struct FLinearColor& Color5)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "SetRarityColors");
+	class UFunction* Func = Class->GetFunction("AthenaSeasonItemRewardIcon_C", "SetRarityColors");
 
 	Params::AthenaSeasonItemRewardIcon_C_SetRarityColors Parms{};
 

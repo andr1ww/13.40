@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGC_Athena_OutsideSafeZone_C::ExecuteUbergraph_GC_Athena_OutsideSafeZone(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "ExecuteUbergraph_GC_Athena_OutsideSafeZone");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "ExecuteUbergraph_GC_Athena_OutsideSafeZone");
 
 	Params::GC_Athena_OutsideSafeZone_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone Parms{};
 
@@ -41,10 +38,7 @@ void AGC_Athena_OutsideSafeZone_C::ExecuteUbergraph_GC_Athena_OutsideSafeZone(in
 
 void AGC_Athena_OutsideSafeZone_C::FlashTimeline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "FlashTimeline");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "FlashTimeline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -62,10 +56,7 @@ void AGC_Athena_OutsideSafeZone_C::FlashTimeline()
 
 void AGC_Athena_OutsideSafeZone_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "OnRemoval");
 
 	Params::GC_Athena_OutsideSafeZone_C_OnRemoval Parms{};
 
@@ -90,10 +81,7 @@ void AGC_Athena_OutsideSafeZone_C::OnRemoval(class AActor* MyTarget, const struc
 
 void AGC_Athena_OutsideSafeZone_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "OnLoopingStart");
 
 	Params::GC_Athena_OutsideSafeZone_C_OnLoopingStart Parms{};
 
@@ -111,10 +99,7 @@ void AGC_Athena_OutsideSafeZone_C::OnLoopingStart(class AActor* MyTarget, const 
 
 void AGC_Athena_OutsideSafeZone_C::LightningFlashTL__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "LightningFlashTL__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "LightningFlashTL__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +110,7 @@ void AGC_Athena_OutsideSafeZone_C::LightningFlashTL__UpdateFunc()
 
 void AGC_Athena_OutsideSafeZone_C::LightningFlashTL__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "LightningFlashTL__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "LightningFlashTL__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +123,7 @@ void AGC_Athena_OutsideSafeZone_C::LightningFlashTL__FinishedFunc()
 
 void AGC_Athena_OutsideSafeZone_C::AddStormAudio(class APlayerPawn_Athena_C* PlayerPawnAthena)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "AddStormAudio");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "AddStormAudio");
 
 	Params::GC_Athena_OutsideSafeZone_C_AddStormAudio Parms{};
 
@@ -161,10 +140,7 @@ void AGC_Athena_OutsideSafeZone_C::AddStormAudio(class APlayerPawn_Athena_C* Pla
 
 void AGC_Athena_OutsideSafeZone_C::RemoveStormAudio(class APlayerPawn_Athena_C* PlayerPawnAthena)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "RemoveStormAudio");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "RemoveStormAudio");
 
 	Params::GC_Athena_OutsideSafeZone_C_RemoveStormAudio Parms{};
 
@@ -181,10 +157,7 @@ void AGC_Athena_OutsideSafeZone_C::RemoveStormAudio(class APlayerPawn_Athena_C* 
 
 void AGC_Athena_OutsideSafeZone_C::Get_Location_in_Circle_XY(struct FVector* Location_Local_Space)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Get Location in Circle XY");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Get Location in Circle XY");
 
 	Params::GC_Athena_OutsideSafeZone_C_Get_Location_in_Circle_XY Parms{};
 
@@ -200,10 +173,7 @@ void AGC_Athena_OutsideSafeZone_C::Get_Location_in_Circle_XY(struct FVector* Loc
 
 void AGC_Athena_OutsideSafeZone_C::Random_Lighting_Flashes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Random Lighting Flashes");
+	class UFunction* Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Random Lighting Flashes");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

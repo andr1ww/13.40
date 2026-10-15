@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AAthena_Prop_ParentBuildingContainerBlueprint_C::ExecuteUbergraph_Athena_Prop_ParentBuildingContainerBlueprint(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "ExecuteUbergraph_Athena_Prop_ParentBuildingContainerBlueprint");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "ExecuteUbergraph_Athena_Prop_ParentBuildingContainerBlueprint");
 
 	Params::Athena_Prop_ParentBuildingContainerBlueprint_C_ExecuteUbergraph_Athena_Prop_ParentBuildingContainerBlueprint Parms{};
 
@@ -41,10 +38,7 @@ void AAthena_Prop_ParentBuildingContainerBlueprint_C::ExecuteUbergraph_Athena_Pr
 
 void AAthena_Prop_ParentBuildingContainerBlueprint_C::OnSetSearched()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "OnSetSearched");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "OnSetSearched");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void AAthena_Prop_ParentBuildingContainerBlueprint_C::OnSetSearched()
 
 void AAthena_Prop_ParentBuildingContainerBlueprint_C::OnBounceAnimationUpdate(const struct FFortBounceData& Data)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "OnBounceAnimationUpdate");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "OnBounceAnimationUpdate");
 
 	Params::Athena_Prop_ParentBuildingContainerBlueprint_C_OnBounceAnimationUpdate Parms{};
 
@@ -75,10 +66,7 @@ void AAthena_Prop_ParentBuildingContainerBlueprint_C::OnBounceAnimationUpdate(co
 
 void AAthena_Prop_ParentBuildingContainerBlueprint_C::Loop_Animation_Curve()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "Loop Animation Curve");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "Loop Animation Curve");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,10 +81,7 @@ void AAthena_Prop_ParentBuildingContainerBlueprint_C::Loop_Animation_Curve()
 
 void AAthena_Prop_ParentBuildingContainerBlueprint_C::OnDayPhaseChanged(EFortDayPhase CurrentDayPhase, EFortDayPhase PreviousDayPhase, bool bAtCreation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "OnDayPhaseChanged");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "OnDayPhaseChanged");
 
 	Params::Athena_Prop_ParentBuildingContainerBlueprint_C_OnDayPhaseChanged Parms{};
 
@@ -113,10 +98,7 @@ void AAthena_Prop_ParentBuildingContainerBlueprint_C::OnDayPhaseChanged(EFortDay
 
 void AAthena_Prop_ParentBuildingContainerBlueprint_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void AAthena_Prop_ParentBuildingContainerBlueprint_C::ReceiveBeginPlay()
 
 void AAthena_Prop_ParentBuildingContainerBlueprint_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,10 +122,7 @@ void AAthena_Prop_ParentBuildingContainerBlueprint_C::UserConstructionScript()
 
 void AAthena_Prop_ParentBuildingContainerBlueprint_C::GetTimeOfDayBlueprintDefaultVariables(struct FTimeOfDayBlueprintDefaultVariables* OutVariables)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "GetTimeOfDayBlueprintDefaultVariables");
+	class UFunction* Func = Class->GetFunction("Athena_Prop_ParentBuildingContainerBlueprint_C", "GetTimeOfDayBlueprintDefaultVariables");
 
 	Params::Athena_Prop_ParentBuildingContainerBlueprint_C_GetTimeOfDayBlueprintDefaultVariables Parms{};
 

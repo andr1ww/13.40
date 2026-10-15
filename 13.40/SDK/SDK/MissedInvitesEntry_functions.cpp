@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMissedInvitesEntry_C::ExecuteUbergraph_MissedInvitesEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissedInvitesEntry_C", "ExecuteUbergraph_MissedInvitesEntry");
+	class UFunction* Func = Class->GetFunction("MissedInvitesEntry_C", "ExecuteUbergraph_MissedInvitesEntry");
 
 	Params::MissedInvitesEntry_C_ExecuteUbergraph_MissedInvitesEntry Parms{};
 
@@ -41,10 +38,7 @@ void UMissedInvitesEntry_C::ExecuteUbergraph_MissedInvitesEntry(int32 EntryPoint
 
 void UMissedInvitesEntry_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissedInvitesEntry_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("MissedInvitesEntry_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UMissedInvitesEntry_C::BP_OnHovered()
 
 void UMissedInvitesEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissedInvitesEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("MissedInvitesEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
 
 	Params::MissedInvitesEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature Parms{};
 
@@ -75,10 +66,7 @@ void UMissedInvitesEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEven
 
 void UMissedInvitesEntry_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissedInvitesEntry_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("MissedInvitesEntry_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP13_BuildABrella_C::ExecuteUbergraph_BP13_BuildABrella(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_BuildABrella_C", "ExecuteUbergraph_BP13_BuildABrella");
+	class UFunction* Func = Class->GetFunction("BP13_BuildABrella_C", "ExecuteUbergraph_BP13_BuildABrella");
 
 	Params::BP13_BuildABrella_C_ExecuteUbergraph_BP13_BuildABrella Parms{};
 
@@ -45,10 +42,7 @@ void ABP13_BuildABrella_C::ExecuteUbergraph_BP13_BuildABrella(int32 EntryPoint)
 
 void ABP13_BuildABrella_C::OnVariantChanged(const struct FGameplayTag& VariantChannel, const struct FGameplayTag& OldVariantTag, const struct FGameplayTag& NewVariantTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_BuildABrella_C", "OnVariantChanged");
+	class UFunction* Func = Class->GetFunction("BP13_BuildABrella_C", "OnVariantChanged");
 
 	Params::BP13_BuildABrella_C_OnVariantChanged Parms{};
 
@@ -65,10 +59,7 @@ void ABP13_BuildABrella_C::OnVariantChanged(const struct FGameplayTag& VariantCh
 
 void ABP13_BuildABrella_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_BuildABrella_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP13_BuildABrella_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -81,10 +72,7 @@ void ABP13_BuildABrella_C::ReceiveBeginPlay()
 
 void ABP13_BuildABrella_C::UpdateAudio(const struct FGameplayTag& Variant_Channel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_BuildABrella_C", "UpdateAudio");
+	class UFunction* Func = Class->GetFunction("BP13_BuildABrella_C", "UpdateAudio");
 
 	Params::BP13_BuildABrella_C_UpdateAudio Parms{};
 
@@ -101,10 +89,7 @@ void ABP13_BuildABrella_C::UpdateAudio(const struct FGameplayTag& Variant_Channe
 
 void ABP13_BuildABrella_C::UpdateTransitionVFX(const struct FGameplayTag& Variant_Channel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_BuildABrella_C", "UpdateTransitionVFX");
+	class UFunction* Func = Class->GetFunction("BP13_BuildABrella_C", "UpdateTransitionVFX");
 
 	Params::BP13_BuildABrella_C_UpdateTransitionVFX Parms{};
 

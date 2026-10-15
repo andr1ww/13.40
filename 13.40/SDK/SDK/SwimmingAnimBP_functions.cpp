@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USwimmingAnimBP_C::ExecuteUbergraph_SwimmingAnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "ExecuteUbergraph_SwimmingAnimBP");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "ExecuteUbergraph_SwimmingAnimBP");
 
 	Params::SwimmingAnimBP_C_ExecuteUbergraph_SwimmingAnimBP Parms{};
 
@@ -41,10 +38,7 @@ void USwimmingAnimBP_C::ExecuteUbergraph_SwimmingAnimBP(int32 EntryPoint)
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TwoWayBlend_9A20F4564EAD615E503C6F9118FBEE57()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TwoWayBlend_9A20F4564EAD615E503C6F9118FBEE57");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TwoWayBlend_9A20F4564EAD615E503C6F9118FBEE57");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::AnimNotify_SwimMovementAccelAdditive_Exited_Layer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimMovementAccelAdditive_Exited_Layer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimMovementAccelAdditive_Exited_Layer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void USwimmingAnimBP_C::AnimNotify_SwimMovementAccelAdditive_Exited_Layer()
 
 void USwimmingAnimBP_C::AnimNotify_SwimStartAdditive_Entered_Layer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimStartAdditive_Entered_Layer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimStartAdditive_Entered_Layer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void USwimmingAnimBP_C::AnimNotify_SwimStartAdditive_Entered_Layer()
 
 void USwimmingAnimBP_C::AnimNotify_SwimSprintSlow_Entered_Layer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimSprintSlow_Entered_Layer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimSprintSlow_Entered_Layer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void USwimmingAnimBP_C::AnimNotify_SwimSprintSlow_Entered_Layer()
 
 void USwimmingAnimBP_C::AnimNotify_SwimSprint_Entered_Layer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimSprint_Entered_Layer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimSprint_Entered_Layer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void USwimmingAnimBP_C::AnimNotify_SwimSprint_Entered_Layer()
 
 void USwimmingAnimBP_C::AnimNotify_SwimSprintStart_Exited_Layer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimSprintStart_Exited_Layer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimSprintStart_Exited_Layer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void USwimmingAnimBP_C::AnimNotify_SwimSprintStart_Exited_Layer()
 
 void USwimmingAnimBP_C::AnimNotify_SwimSprintStart_Entered_Layer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimSprintStart_Entered_Layer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "AnimNotify_SwimSprintStart_Entered_Layer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +115,7 @@ void USwimmingAnimBP_C::AnimNotify_SwimSprintStart_Entered_Layer()
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TransitionResult_5830B69443C9B79B5F980CAE5DEC8E36()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TransitionResult_5830B69443C9B79B5F980CAE5DEC8E36");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TransitionResult_5830B69443C9B79B5F980CAE5DEC8E36");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +126,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_ApplyAdditive_D15630094D91FB09EC4581BBC47EFBF5()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_ApplyAdditive_D15630094D91FB09EC4581BBC47EFBF5");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_ApplyAdditive_D15630094D91FB09EC4581BBC47EFBF5");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +137,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_LayeredBoneBlend_2035F1904C072BE5887B8D9A25E4BE52()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_LayeredBoneBlend_2035F1904C072BE5887B8D9A25E4BE52");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_LayeredBoneBlend_2035F1904C072BE5887B8D9A25E4BE52");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +148,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_LayeredBoneBlend_C388B2744DEBBC320E1531A5C9E40B17()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_LayeredBoneBlend_C388B2744DEBBC320E1531A5C9E40B17");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_LayeredBoneBlend_C388B2744DEBBC320E1531A5C9E40B17");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +159,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_BlendListByBool_AA47084445E70A3E11A826864AB2B47C()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_BlendListByBool_AA47084445E70A3E11A826864AB2B47C");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_BlendListByBool_AA47084445E70A3E11A826864AB2B47C");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +170,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_BlendListByBool_BC6595924B39D86BBB429B983FEC9301()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_BlendListByBool_BC6595924B39D86BBB429B983FEC9301");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_BlendListByBool_BC6595924B39D86BBB429B983FEC9301");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +181,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TwoWayBlend_A3561BB7441E2419F698A6B2E1226C55()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TwoWayBlend_A3561BB7441E2419F698A6B2E1226C55");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TwoWayBlend_A3561BB7441E2419F698A6B2E1226C55");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +192,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_BlendListByEnum_62DA298F4BECE0A69BA36EADBC78BCB2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_BlendListByEnum_62DA298F4BECE0A69BA36EADBC78BCB2");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_BlendListByEnum_62DA298F4BECE0A69BA36EADBC78BCB2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -251,10 +203,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TransitionResult_E6B49F01423E469AF176989D25F6BA2A()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TransitionResult_E6B49F01423E469AF176989D25F6BA2A");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnimBP_AnimGraphNode_TransitionResult_E6B49F01423E469AF176989D25F6BA2A");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -267,10 +216,7 @@ void USwimmingAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SwimmingAnim
 
 void USwimmingAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "AnimGraph");
 
 	Params::SwimmingAnimBP_C_AnimGraph Parms{};
 
@@ -289,10 +235,7 @@ void USwimmingAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 void USwimmingAnimBP_C::SwimmingLayer(const struct FPoseLink& MainPlayerAnimBP, struct FPoseLink* SwimmingLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingLayer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingLayer");
 
 	Params::SwimmingAnimBP_C_SwimmingLayer Parms{};
 
@@ -314,10 +257,7 @@ void USwimmingAnimBP_C::SwimmingLayer(const struct FPoseLink& MainPlayerAnimBP, 
 
 void USwimmingAnimBP_C::SwimmingSprintLayer(const struct FPoseLink& PassThroughSwimmingSprint, bool IsHidingInPropLayer_0, struct FPoseLink* SwimmingSprintLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingSprintLayer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingSprintLayer");
 
 	Params::SwimmingAnimBP_C_SwimmingSprintLayer Parms{};
 
@@ -339,10 +279,7 @@ void USwimmingAnimBP_C::SwimmingSprintLayer(const struct FPoseLink& PassThroughS
 
 void USwimmingAnimBP_C::SwimmingMovementAdditiveLayerPose(const struct FPoseLink& PassThroughSwimmingMovementAdditive, struct FPoseLink* SwimmingMovementAdditiveLayerPose_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingMovementAdditiveLayerPose");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingMovementAdditiveLayerPose");
 
 	Params::SwimmingAnimBP_C_SwimmingMovementAdditiveLayerPose Parms{};
 
@@ -363,10 +300,7 @@ void USwimmingAnimBP_C::SwimmingMovementAdditiveLayerPose(const struct FPoseLink
 
 void USwimmingAnimBP_C::SwimmingUpperBodyPoseTargetingLayer(const struct FPoseLink& PassThroughSwimmingUpperBodyPoseTargeting, struct FPoseLink* SwimmingUpperBodyPoseTargetingLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingUpperBodyPoseTargetingLayer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingUpperBodyPoseTargetingLayer");
 
 	Params::SwimmingAnimBP_C_SwimmingUpperBodyPoseTargetingLayer Parms{};
 
@@ -387,10 +321,7 @@ void USwimmingAnimBP_C::SwimmingUpperBodyPoseTargetingLayer(const struct FPoseLi
 
 void USwimmingAnimBP_C::SwimmingUpperBodyPoseNonTargetingLayer(const struct FPoseLink& PassThroughSwimmingUpperBodyPoseNonTargeting, struct FPoseLink* SwimmingUpperBodyPoseNonTargetingLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingUpperBodyPoseNonTargetingLayer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingUpperBodyPoseNonTargetingLayer");
 
 	Params::SwimmingAnimBP_C_SwimmingUpperBodyPoseNonTargetingLayer Parms{};
 
@@ -413,10 +344,7 @@ void USwimmingAnimBP_C::SwimmingUpperBodyPoseNonTargetingLayer(const struct FPos
 
 void USwimmingAnimBP_C::SwimmingLowerBodyLayer(const struct FPoseLink& UpperBody_Cache, const struct FPoseLink& PreUpperBodySlot_Cache, const struct FPoseLink& PassThroughSwimmingLowerBody, struct FPoseLink* SwimmingLowerBodyLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingLowerBodyLayer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingLowerBodyLayer");
 
 	Params::SwimmingAnimBP_C_SwimmingLowerBodyLayer Parms{};
 
@@ -448,10 +376,7 @@ void USwimmingAnimBP_C::SwimmingLowerBodyLayer(const struct FPoseLink& UpperBody
 
 void USwimmingAnimBP_C::SwimmingAdditiveLayer(const struct FPoseLink& IdleAdditive_Cache, const struct FPoseLink& MovementAdditiveLayerPose_Cache, const struct FPoseLink& FullBody, float PlayMeleeAttackAOLayer_0, float DisableArmsHeadAdditiveCurveAlphaLayer_0, float DisableIKRootAdditiveCurveAlphaLayer_0, float LocomotionAdditiveAlphaLayer_0, float MainInstanceAdditiveLayerAlpha_0, const struct FPoseLink& UpperAndLowerBody_Cache, const struct FPoseLink& SprintingPose_PostMask_Cache, struct FPoseLink* SwimmingAdditiveLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingAdditiveLayer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingAdditiveLayer");
 
 	Params::SwimmingAnimBP_C_SwimmingAdditiveLayer Parms{};
 
@@ -481,10 +406,7 @@ void USwimmingAnimBP_C::SwimmingAdditiveLayer(const struct FPoseLink& IdleAdditi
 
 void USwimmingAnimBP_C::SwimmingFullBodyAdditiveLayer(const struct FPoseLink& PassThroughFullBodyAdditive, struct FPoseLink* SwimmingFullBodyAdditiveLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingFullBodyAdditiveLayer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingFullBodyAdditiveLayer");
 
 	Params::SwimmingAnimBP_C_SwimmingFullBodyAdditiveLayer Parms{};
 
@@ -508,10 +430,7 @@ void USwimmingAnimBP_C::SwimmingFullBodyAdditiveLayer(const struct FPoseLink& Pa
 
 void USwimmingAnimBP_C::SwimmingDiveJumpingLayer(const struct FPoseLink& PassThroughSwimmingDiveJumping, bool IsHidingInPropLayer2_0, float MainInstanceDiveJumpLayerAlpha_0, EFortPlayerAnimBodyType AnimBodyTypePassThrough_0, struct FPoseLink* SwimmingDiveJumpingLayer_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingDiveJumpingLayer");
+	class UFunction* Func = Class->GetFunction("SwimmingAnimBP_C", "SwimmingDiveJumpingLayer");
 
 	Params::SwimmingAnimBP_C_SwimmingDiveJumpingLayer Parms{};
 

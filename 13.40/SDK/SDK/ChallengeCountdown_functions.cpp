@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UChallengeCountdown_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeCountdown_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ChallengeCountdown_C", "PreConstruct");
 
 	Params::ChallengeCountdown_C_PreConstruct Parms{};
 
@@ -41,10 +38,7 @@ void UChallengeCountdown_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UChallengeCountdown_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeCountdown_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ChallengeCountdown_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UChallengeCountdown_C::Construct()
 
 void UChallengeCountdown_C::OnChallengeSet(const struct FTimerDisplayData& DisplayStyle_OnChallengeSet)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeCountdown_C", "OnChallengeSet");
+	class UFunction* Func = Class->GetFunction("ChallengeCountdown_C", "OnChallengeSet");
 
 	Params::ChallengeCountdown_C_OnChallengeSet Parms{};
 
@@ -77,10 +68,7 @@ void UChallengeCountdown_C::OnChallengeSet(const struct FTimerDisplayData& Displ
 
 void UChallengeCountdown_C::ExecuteUbergraph_ChallengeCountdown(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeCountdown_C", "ExecuteUbergraph_ChallengeCountdown");
+	class UFunction* Func = Class->GetFunction("ChallengeCountdown_C", "ExecuteUbergraph_ChallengeCountdown");
 
 	Params::ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown Parms{};
 

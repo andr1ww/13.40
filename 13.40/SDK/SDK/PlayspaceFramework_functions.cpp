@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGameplayVolume::UpdateSize(const struct FVector& NewScale)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayVolume", "UpdateSize");
+	class UFunction* Func = Class->GetFunction("GameplayVolume", "UpdateSize");
 
 	Params::GameplayVolume_UpdateSize Parms{};
 
@@ -53,10 +50,7 @@ void AGameplayVolume::UpdateSize(const struct FVector& NewScale)
 
 void UOverlapComponent::OnBeginActorOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OverlapComponent", "OnBeginActorOverlap");
+	class UFunction* Func = Class->GetFunction("OverlapComponent", "OnBeginActorOverlap");
 
 	Params::OverlapComponent_OnBeginActorOverlap Parms{};
 
@@ -86,10 +80,7 @@ void UOverlapComponent::OnBeginActorOverlap(class UPrimitiveComponent* Overlappe
 
 void UOverlapComponent::OnEndActorOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OverlapComponent", "OnEndActorOverlap");
+	class UFunction* Func = Class->GetFunction("OverlapComponent", "OnEndActorOverlap");
 
 	Params::OverlapComponent_OnEndActorOverlap Parms{};
 
@@ -112,10 +103,7 @@ void UOverlapComponent::OnEndActorOverlap(class UPrimitiveComponent* OverlappedC
 
 void APlayspace::OnRep_PlayspaceLogic()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Playspace", "OnRep_PlayspaceLogic");
+	class UFunction* Func = Class->GetFunction("Playspace", "OnRep_PlayspaceLogic");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -131,10 +119,7 @@ void APlayspace::OnRep_PlayspaceLogic()
 
 void APlayspace::OnRep_PlayspaceUsers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Playspace", "OnRep_PlayspaceUsers");
+	class UFunction* Func = Class->GetFunction("Playspace", "OnRep_PlayspaceUsers");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -150,10 +135,7 @@ void APlayspace::OnRep_PlayspaceUsers()
 
 void UPlayspaceControllerComponent_PlayerSpawning::OnRep_ReplicatedSpawnInfo()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayspaceControllerComponent_PlayerSpawning", "OnRep_ReplicatedSpawnInfo");
+	class UFunction* Func = Class->GetFunction("PlayspaceControllerComponent_PlayerSpawning", "OnRep_ReplicatedSpawnInfo");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -169,10 +151,7 @@ void UPlayspaceControllerComponent_PlayerSpawning::OnRep_ReplicatedSpawnInfo()
 
 void UPlayspaceControllerComponent_PlayerSpawning::ServerMarkReadyForSpawning()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayspaceControllerComponent_PlayerSpawning", "ServerMarkReadyForSpawning");
+	class UFunction* Func = Class->GetFunction("PlayspaceControllerComponent_PlayerSpawning", "ServerMarkReadyForSpawning");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -190,10 +169,7 @@ void UPlayspaceControllerComponent_PlayerSpawning::ServerMarkReadyForSpawning()
 
 const struct FReplicatedSpawnInfo UPlayspaceControllerComponent_PlayerSpawning::GetSpawnInfo() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayspaceControllerComponent_PlayerSpawning", "GetSpawnInfo");
+	class UFunction* Func = Class->GetFunction("PlayspaceControllerComponent_PlayerSpawning", "GetSpawnInfo");
 
 	Params::PlayspaceControllerComponent_PlayerSpawning_GetSpawnInfo Parms{};
 
@@ -213,10 +189,7 @@ const struct FReplicatedSpawnInfo UPlayspaceControllerComponent_PlayerSpawning::
 
 void APlayspaceLogic::OnRep_bMatchHasEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayspaceLogic", "OnRep_bMatchHasEnded");
+	class UFunction* Func = Class->GetFunction("PlayspaceLogic", "OnRep_bMatchHasEnded");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -232,10 +205,7 @@ void APlayspaceLogic::OnRep_bMatchHasEnded()
 
 void APlayspaceLogic::OnRep_MatchStartTime()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayspaceLogic", "OnRep_MatchStartTime");
+	class UFunction* Func = Class->GetFunction("PlayspaceLogic", "OnRep_MatchStartTime");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -254,10 +224,7 @@ void APlayspaceLogic::OnRep_MatchStartTime()
 
 void UPlayspaceManagerComponent::OnPlayerBeginOverlapGameplayVolume(class APlayerState* PlayerState, class AGameplayVolume* Volume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayspaceManagerComponent", "OnPlayerBeginOverlapGameplayVolume");
+	class UFunction* Func = Class->GetFunction("PlayspaceManagerComponent", "OnPlayerBeginOverlapGameplayVolume");
 
 	Params::PlayspaceManagerComponent_OnPlayerBeginOverlapGameplayVolume Parms{};
 
@@ -281,10 +248,7 @@ void UPlayspaceManagerComponent::OnPlayerBeginOverlapGameplayVolume(class APlaye
 
 void UPlayspaceManagerComponent::OnPlayerEndOverlapGameplayVolume(class APlayerState* PlayerState, class AGameplayVolume* Volume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayspaceManagerComponent", "OnPlayerEndOverlapGameplayVolume");
+	class UFunction* Func = Class->GetFunction("PlayspaceManagerComponent", "OnPlayerEndOverlapGameplayVolume");
 
 	Params::PlayspaceManagerComponent_OnPlayerEndOverlapGameplayVolume Parms{};
 
@@ -308,10 +272,7 @@ void UPlayspaceManagerComponent::OnPlayerEndOverlapGameplayVolume(class APlayerS
 
 bool UPlayspaceManagerComponent::ProcessOverlapEvents(float DeltaTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayspaceManagerComponent", "ProcessOverlapEvents");
+	class UFunction* Func = Class->GetFunction("PlayspaceManagerComponent", "ProcessOverlapEvents");
 
 	Params::PlayspaceManagerComponent_ProcessOverlapEvents Parms{};
 

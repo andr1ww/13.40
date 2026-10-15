@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UHeroLoadoutPerkDetailRow_C::SetRawAbilityKit(class UFortAbilityKit* Ability_Kit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetRawAbilityKit");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetRawAbilityKit");
 
 	Params::HeroLoadoutPerkDetailRow_C_SetRawAbilityKit Parms{};
 
@@ -43,10 +40,7 @@ void UHeroLoadoutPerkDetailRow_C::SetRawAbilityKit(class UFortAbilityKit* Abilit
 
 void UHeroLoadoutPerkDetailRow_C::SetTeamPerk(class UFortTeamPerkItem* Team_Perk)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetTeamPerk");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetTeamPerk");
 
 	Params::HeroLoadoutPerkDetailRow_C_SetTeamPerk Parms{};
 
@@ -61,10 +55,7 @@ void UHeroLoadoutPerkDetailRow_C::SetTeamPerk(class UFortTeamPerkItem* Team_Perk
 
 void UHeroLoadoutPerkDetailRow_C::PlayUnHover()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayUnHover");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayUnHover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UHeroLoadoutPerkDetailRow_C::PlayUnHover()
 
 void UHeroLoadoutPerkDetailRow_C::PlayHover()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayHover");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayHover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UHeroLoadoutPerkDetailRow_C::PlayHover()
 
 void UHeroLoadoutPerkDetailRow_C::SetShouldDisplayWarning(bool InShouldDisplayWarning)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetShouldDisplayWarning");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetShouldDisplayWarning");
 
 	Params::HeroLoadoutPerkDetailRow_C_SetShouldDisplayWarning Parms{};
 
@@ -109,10 +94,7 @@ void UHeroLoadoutPerkDetailRow_C::SetShouldDisplayWarning(bool InShouldDisplayWa
 
 void UHeroLoadoutPerkDetailRow_C::UpdateLockedImage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateLockedImage");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateLockedImage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -123,10 +105,7 @@ void UHeroLoadoutPerkDetailRow_C::UpdateLockedImage()
 
 void UHeroLoadoutPerkDetailRow_C::PlayUnhoverCue()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayUnhoverCue");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayUnhoverCue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -137,10 +116,7 @@ void UHeroLoadoutPerkDetailRow_C::PlayUnhoverCue()
 
 void UHeroLoadoutPerkDetailRow_C::PlayHoverCue()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayHoverCue");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayHoverCue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void UHeroLoadoutPerkDetailRow_C::PlayHoverCue()
 
 void UHeroLoadoutPerkDetailRow_C::SetShouldDisplayAsIgnored(bool InShouldDisplayAsIgnored)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetShouldDisplayAsIgnored");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetShouldDisplayAsIgnored");
 
 	Params::HeroLoadoutPerkDetailRow_C_SetShouldDisplayAsIgnored Parms{};
 
@@ -173,10 +146,7 @@ void UHeroLoadoutPerkDetailRow_C::SetShouldDisplayAsIgnored(bool InShouldDisplay
 
 void UHeroLoadoutPerkDetailRow_C::SetPerkTypeToRepresent(EFortHeroLoadoutPerkType Perk_Type)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetPerkTypeToRepresent");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetPerkTypeToRepresent");
 
 	Params::HeroLoadoutPerkDetailRow_C_SetPerkTypeToRepresent Parms{};
 
@@ -193,10 +163,7 @@ void UHeroLoadoutPerkDetailRow_C::SetPerkTypeToRepresent(EFortHeroLoadoutPerkTyp
 
 bool UHeroLoadoutPerkDetailRow_C::IsPerkUnlocked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "IsPerkUnlocked");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "IsPerkUnlocked");
 
 	Params::HeroLoadoutPerkDetailRow_C_IsPerkUnlocked Parms{};
 
@@ -213,10 +180,7 @@ bool UHeroLoadoutPerkDetailRow_C::IsPerkUnlocked()
 
 class UFortAbilityKit* UHeroLoadoutPerkDetailRow_C::GetPerkAbilityKit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "GetPerkAbilityKit");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "GetPerkAbilityKit");
 
 	Params::HeroLoadoutPerkDetailRow_C_GetPerkAbilityKit Parms{};
 
@@ -233,10 +197,7 @@ class UFortAbilityKit* UHeroLoadoutPerkDetailRow_C::GetPerkAbilityKit()
 
 void UHeroLoadoutPerkDetailRow_C::SetHero(class UFortHero* Hero)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHero");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHero");
 
 	Params::HeroLoadoutPerkDetailRow_C_SetHero Parms{};
 
@@ -251,10 +212,7 @@ void UHeroLoadoutPerkDetailRow_C::SetHero(class UFortHero* Hero)
 
 void UHeroLoadoutPerkDetailRow_C::UpdateTextStyles()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateTextStyles");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateTextStyles");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +223,7 @@ void UHeroLoadoutPerkDetailRow_C::UpdateTextStyles()
 
 void UHeroLoadoutPerkDetailRow_C::UpdateFromState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromState");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +234,7 @@ void UHeroLoadoutPerkDetailRow_C::UpdateFromState()
 
 void UHeroLoadoutPerkDetailRow_C::UpdateFromStyle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromStyle");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromStyle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -295,10 +247,7 @@ void UHeroLoadoutPerkDetailRow_C::UpdateFromStyle()
 
 void UHeroLoadoutPerkDetailRow_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PreConstruct");
 
 	Params::HeroLoadoutPerkDetailRow_C_PreConstruct Parms{};
 
@@ -315,10 +264,7 @@ void UHeroLoadoutPerkDetailRow_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UHeroLoadoutPerkDetailRow_C::SetHoverAlphaValue(float NewValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverAlphaValue");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverAlphaValue");
 
 	Params::HeroLoadoutPerkDetailRow_C_SetHoverAlphaValue Parms{};
 
@@ -335,10 +281,7 @@ void UHeroLoadoutPerkDetailRow_C::SetHoverAlphaValue(float NewValue)
 
 void UHeroLoadoutPerkDetailRow_C::SetHoverHorizontalOffset(float NewValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverHorizontalOffset");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverHorizontalOffset");
 
 	Params::HeroLoadoutPerkDetailRow_C_SetHoverHorizontalOffset Parms{};
 
@@ -355,10 +298,7 @@ void UHeroLoadoutPerkDetailRow_C::SetHoverHorizontalOffset(float NewValue)
 
 void UHeroLoadoutPerkDetailRow_C::ExecuteUbergraph_HeroLoadoutPerkDetailRow(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "ExecuteUbergraph_HeroLoadoutPerkDetailRow");
+	class UFunction* Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "ExecuteUbergraph_HeroLoadoutPerkDetailRow");
 
 	Params::HeroLoadoutPerkDetailRow_C_ExecuteUbergraph_HeroLoadoutPerkDetailRow Parms{};
 

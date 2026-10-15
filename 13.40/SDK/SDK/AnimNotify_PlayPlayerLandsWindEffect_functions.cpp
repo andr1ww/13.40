@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 bool UAnimNotify_PlayPlayerLandsWindEffect_C::Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AnimNotify_PlayPlayerLandsWindEffect_C", "Received_Notify");
+	class UFunction* Func = Class->GetFunction("AnimNotify_PlayPlayerLandsWindEffect_C", "Received_Notify");
 
 	Params::AnimNotify_PlayPlayerLandsWindEffect_C_Received_Notify Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ATrap_Floor_Spikes_C::ExecuteUbergraph_Trap_Floor_Spikes(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "ExecuteUbergraph_Trap_Floor_Spikes");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "ExecuteUbergraph_Trap_Floor_Spikes");
 
 	Params::Trap_Floor_Spikes_C_ExecuteUbergraph_Trap_Floor_Spikes Parms{};
 
@@ -41,10 +38,7 @@ void ATrap_Floor_Spikes_C::ExecuteUbergraph_Trap_Floor_Spikes(int32 EntryPoint)
 
 void ATrap_Floor_Spikes_C::SwitchToAlternateMaterial()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "SwitchToAlternateMaterial");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "SwitchToAlternateMaterial");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ATrap_Floor_Spikes_C::SwitchToAlternateMaterial()
 
 void ATrap_Floor_Spikes_C::OnInitTeam()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnInitTeam");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnInitTeam");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ATrap_Floor_Spikes_C::OnInitTeam()
 
 void ATrap_Floor_Spikes_C::OnWorldReady()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnWorldReady");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnWorldReady");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ATrap_Floor_Spikes_C::OnWorldReady()
 
 void ATrap_Floor_Spikes_C::OnOutOfDurability()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnOutOfDurability");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnOutOfDurability");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -100,10 +85,7 @@ void ATrap_Floor_Spikes_C::OnOutOfDurability()
 
 void ATrap_Floor_Spikes_C::GameplayCue_Abilities_Activation_Traps_ActivateTrap(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
 
 	Params::Trap_Floor_Spikes_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap Parms{};
 
@@ -119,10 +101,7 @@ void ATrap_Floor_Spikes_C::GameplayCue_Abilities_Activation_Traps_ActivateTrap(E
 
 void ATrap_Floor_Spikes_C::OnFinishedBuilding()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnFinishedBuilding");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnFinishedBuilding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +112,7 @@ void ATrap_Floor_Spikes_C::OnFinishedBuilding()
 
 void ATrap_Floor_Spikes_C::OnPlaced()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnPlaced");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnPlaced");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +123,7 @@ void ATrap_Floor_Spikes_C::OnPlaced()
 
 void ATrap_Floor_Spikes_C::OnReloadEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnReloadEnd");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "OnReloadEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +134,7 @@ void ATrap_Floor_Spikes_C::OnReloadEnd()
 
 void ATrap_Floor_Spikes_C::ResetSpikes__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "ResetSpikes__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "ResetSpikes__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +145,7 @@ void ATrap_Floor_Spikes_C::ResetSpikes__UpdateFunc()
 
 void ATrap_Floor_Spikes_C::ResetSpikes__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "ResetSpikes__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "ResetSpikes__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -189,10 +156,7 @@ void ATrap_Floor_Spikes_C::ResetSpikes__FinishedFunc()
 
 void ATrap_Floor_Spikes_C::Retract__Sounds__EventFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "Retract__Sounds__EventFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "Retract__Sounds__EventFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -203,10 +167,7 @@ void ATrap_Floor_Spikes_C::Retract__Sounds__EventFunc()
 
 void ATrap_Floor_Spikes_C::Retract__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "Retract__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "Retract__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -217,10 +178,7 @@ void ATrap_Floor_Spikes_C::Retract__UpdateFunc()
 
 void ATrap_Floor_Spikes_C::Retract__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "Retract__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "Retract__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -231,10 +189,7 @@ void ATrap_Floor_Spikes_C::Retract__FinishedFunc()
 
 void ATrap_Floor_Spikes_C::Fire__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "Fire__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "Fire__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -245,10 +200,7 @@ void ATrap_Floor_Spikes_C::Fire__UpdateFunc()
 
 void ATrap_Floor_Spikes_C::Fire__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "Fire__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "Fire__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -259,10 +211,7 @@ void ATrap_Floor_Spikes_C::Fire__FinishedFunc()
 
 void ATrap_Floor_Spikes_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -275,10 +224,7 @@ void ATrap_Floor_Spikes_C::UserConstructionScript()
 
 void ATrap_Floor_Spikes_C::SetSpikePosition(float NewSpikePosition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "SetSpikePosition");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "SetSpikePosition");
 
 	Params::Trap_Floor_Spikes_C_SetSpikePosition Parms{};
 
@@ -297,10 +243,7 @@ void ATrap_Floor_Spikes_C::SetSpikePosition(float NewSpikePosition)
 
 void ATrap_Floor_Spikes_C::MaterialSweepOnSpikes(float SweepSpeed_0, const struct FLinearColor& SweepColor_0, float SweepExponent_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "MaterialSweepOnSpikes");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "MaterialSweepOnSpikes");
 
 	Params::Trap_Floor_Spikes_C_MaterialSweepOnSpikes Parms{};
 
@@ -317,10 +260,7 @@ void ATrap_Floor_Spikes_C::MaterialSweepOnSpikes(float SweepSpeed_0, const struc
 
 void ATrap_Floor_Spikes_C::_ChangeToFriendlyMaterial()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", " ChangeToFriendlyMaterial");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", " ChangeToFriendlyMaterial");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -331,10 +271,7 @@ void ATrap_Floor_Spikes_C::_ChangeToFriendlyMaterial()
 
 void ATrap_Floor_Spikes_C::ChangeToNormalMaterial()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Spikes_C", "ChangeToNormalMaterial");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Spikes_C", "ChangeToNormalMaterial");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

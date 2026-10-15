@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 bool URootLayout_Athena_C::IsConsole()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RootLayout_Athena_C", "IsConsole");
+	class UFunction* Func = Class->GetFunction("RootLayout_Athena_C", "IsConsole");
 
 	Params::RootLayout_Athena_C_IsConsole Parms{};
 
@@ -44,10 +41,7 @@ bool URootLayout_Athena_C::IsConsole()
 
 void URootLayout_Athena_C::DialogResult_0099D78247C40A9775C753A2024EA419(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RootLayout_Athena_C", "DialogResult_0099D78247C40A9775C753A2024EA419");
+	class UFunction* Func = Class->GetFunction("RootLayout_Athena_C", "DialogResult_0099D78247C40A9775C753A2024EA419");
 
 	Params::RootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419 Parms{};
 
@@ -63,10 +57,7 @@ void URootLayout_Athena_C::DialogResult_0099D78247C40A9775C753A2024EA419(EFortDi
 
 void URootLayout_Athena_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RootLayout_Athena_C", "Construct");
+	class UFunction* Func = Class->GetFunction("RootLayout_Athena_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void URootLayout_Athena_C::Construct()
 
 void URootLayout_Athena_C::OnGameWindowCloseButtonClicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RootLayout_Athena_C", "OnGameWindowCloseButtonClicked");
+	class UFunction* Func = Class->GetFunction("RootLayout_Athena_C", "OnGameWindowCloseButtonClicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void URootLayout_Athena_C::OnGameWindowCloseButtonClicked()
 
 void URootLayout_Athena_C::OnModalQueueEmptied_1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RootLayout_Athena_C", "OnModalQueueEmptied_1");
+	class UFunction* Func = Class->GetFunction("RootLayout_Athena_C", "OnModalQueueEmptied_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -107,10 +92,7 @@ void URootLayout_Athena_C::OnModalQueueEmptied_1()
 
 void URootLayout_Athena_C::ExecuteUbergraph_RootLayout_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RootLayout_Athena_C", "ExecuteUbergraph_RootLayout_Athena");
+	class UFunction* Func = Class->GetFunction("RootLayout_Athena_C", "ExecuteUbergraph_RootLayout_Athena");
 
 	Params::RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena Parms{};
 

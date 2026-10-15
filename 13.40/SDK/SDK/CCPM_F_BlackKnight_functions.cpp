@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ACCPM_F_BlackKnight_C::ExecuteUbergraph_CCPM_F_BlackKnight(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "ExecuteUbergraph_CCPM_F_BlackKnight");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "ExecuteUbergraph_CCPM_F_BlackKnight");
 
 	Params::CCPM_F_BlackKnight_C_ExecuteUbergraph_CCPM_F_BlackKnight Parms{};
 
@@ -41,10 +38,7 @@ void ACCPM_F_BlackKnight_C::ExecuteUbergraph_CCPM_F_BlackKnight(int32 EntryPoint
 
 void ACCPM_F_BlackKnight_C::Open_Niagara_Gate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "Open Niagara Gate");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "Open Niagara Gate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ACCPM_F_BlackKnight_C::Open_Niagara_Gate()
 
 void ACCPM_F_BlackKnight_C::InitializeVariabels()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "InitializeVariabels");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "InitializeVariabels");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ACCPM_F_BlackKnight_C::InitializeVariabels()
 
 void ACCPM_F_BlackKnight_C::ResetSafetyGate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "ResetSafetyGate");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "ResetSafetyGate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ACCPM_F_BlackKnight_C::ResetSafetyGate()
 
 void ACCPM_F_BlackKnight_C::OnPostResIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "OnPostResIn");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "OnPostResIn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ACCPM_F_BlackKnight_C::OnPostResIn()
 
 void ACCPM_F_BlackKnight_C::HackyWorkaroundRefreshTimerGuy()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "HackyWorkaroundRefreshTimerGuy");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "HackyWorkaroundRefreshTimerGuy");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void ACCPM_F_BlackKnight_C::HackyWorkaroundRefreshTimerGuy()
 
 void ACCPM_F_BlackKnight_C::OnActualStatChange()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "OnActualStatChange");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "OnActualStatChange");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void ACCPM_F_BlackKnight_C::OnActualStatChange()
 
 void ACCPM_F_BlackKnight_C::OnPawnAndPartChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "OnPawnAndPartChanged");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "OnPawnAndPartChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -142,10 +118,7 @@ void ACCPM_F_BlackKnight_C::OnPawnAndPartChanged()
 
 void ACCPM_F_BlackKnight_C::OnStatChanged_3C7EC5CC4132EA954E634EB904347363(class FName StatName, int32 StatValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "OnStatChanged_3C7EC5CC4132EA954E634EB904347363");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "OnStatChanged_3C7EC5CC4132EA954E634EB904347363");
 
 	Params::CCPM_F_BlackKnight_C_OnStatChanged_3C7EC5CC4132EA954E634EB904347363 Parms{};
 
@@ -161,10 +134,7 @@ void ACCPM_F_BlackKnight_C::OnStatChanged_3C7EC5CC4132EA954E634EB904347363(class
 
 void ACCPM_F_BlackKnight_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +145,7 @@ void ACCPM_F_BlackKnight_C::UserConstructionScript()
 
 void ACCPM_F_BlackKnight_C::Death_Check()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "Death Check");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "Death Check");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +158,7 @@ void ACCPM_F_BlackKnight_C::Death_Check()
 
 void ACCPM_F_BlackKnight_C::GetAssociatedAthenaController(class AFortPlayerControllerAthena** AsFort_Player_Controller_Athena)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "GetAssociatedAthenaController");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "GetAssociatedAthenaController");
 
 	Params::CCPM_F_BlackKnight_C_GetAssociatedAthenaController Parms{};
 
@@ -212,10 +176,7 @@ void ACCPM_F_BlackKnight_C::GetAssociatedAthenaController(class AFortPlayerContr
 
 void ACCPM_F_BlackKnight_C::ApplyLevelParam(int32 Level)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CCPM_F_BlackKnight_C", "ApplyLevelParam");
+	class UFunction* Func = Class->GetFunction("CCPM_F_BlackKnight_C", "ApplyLevelParam");
 
 	Params::CCPM_F_BlackKnight_C_ApplyLevelParam Parms{};
 

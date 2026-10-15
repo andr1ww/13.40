@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaLobbyMatchmakingPlay_C::ExecuteUbergraph_AthenaLobbyMatchmakingPlay(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ExecuteUbergraph_AthenaLobbyMatchmakingPlay");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ExecuteUbergraph_AthenaLobbyMatchmakingPlay");
 
 	Params::AthenaLobbyMatchmakingPlay_C_ExecuteUbergraph_AthenaLobbyMatchmakingPlay Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaLobbyMatchmakingPlay_C::ExecuteUbergraph_AthenaLobbyMatchmakingPlay(
 
 void UAthenaLobbyMatchmakingPlay_C::ShouldShowMatchmakingDetails(bool bShow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ShouldShowMatchmakingDetails");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ShouldShowMatchmakingDetails");
 
 	Params::AthenaLobbyMatchmakingPlay_C_ShouldShowMatchmakingDetails Parms{};
 
@@ -63,10 +57,7 @@ void UAthenaLobbyMatchmakingPlay_C::ShouldShowMatchmakingDetails(bool bShow)
 
 void UAthenaLobbyMatchmakingPlay_C::OnCrossplayPreferencesChanged(bool IsCrossplayEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnCrossplayPreferencesChanged");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnCrossplayPreferencesChanged");
 
 	Params::AthenaLobbyMatchmakingPlay_C_OnCrossplayPreferencesChanged Parms{};
 
@@ -81,10 +72,7 @@ void UAthenaLobbyMatchmakingPlay_C::OnCrossplayPreferencesChanged(bool IsCrosspl
 
 void UAthenaLobbyMatchmakingPlay_C::OnInitialized()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnInitialized");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnInitialized");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -98,10 +86,7 @@ void UAthenaLobbyMatchmakingPlay_C::OnInitialized()
 
 void UAthenaLobbyMatchmakingPlay_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Tick");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Tick");
 
 	Params::AthenaLobbyMatchmakingPlay_C_Tick Parms{};
 
@@ -119,10 +104,7 @@ void UAthenaLobbyMatchmakingPlay_C::Tick(const struct FGeometry& MyGeometry, flo
 
 void UAthenaLobbyMatchmakingPlay_C::BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
 
 	Params::AthenaLobbyMatchmakingPlay_C_BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -140,10 +122,7 @@ void UAthenaLobbyMatchmakingPlay_C::BndEvt__PlayButton_K2Node_ComponentBoundEven
 
 void UAthenaLobbyMatchmakingPlay_C::OnMatchmakingFinishedBlueprint(bool bSuccess, class UFortPlaylistAthena* Playlist)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnMatchmakingFinishedBlueprint");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnMatchmakingFinishedBlueprint");
 
 	Params::AthenaLobbyMatchmakingPlay_C_OnMatchmakingFinishedBlueprint Parms{};
 
@@ -159,10 +138,7 @@ void UAthenaLobbyMatchmakingPlay_C::OnMatchmakingFinishedBlueprint(bool bSuccess
 
 void UAthenaLobbyMatchmakingPlay_C::Animate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Animate");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Animate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -176,10 +152,7 @@ void UAthenaLobbyMatchmakingPlay_C::Animate()
 
 void UAthenaLobbyMatchmakingPlay_C::UpdateCustomViolatorText(const class FText& ModeName, const class FText& SubText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "UpdateCustomViolatorText");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "UpdateCustomViolatorText");
 
 	Params::AthenaLobbyMatchmakingPlay_C_UpdateCustomViolatorText Parms{};
 
@@ -197,10 +170,7 @@ void UAthenaLobbyMatchmakingPlay_C::UpdateCustomViolatorText(const class FText& 
 
 void UAthenaLobbyMatchmakingPlay_C::OnNewModeViolatorUpdated(bool bShouldShow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnNewModeViolatorUpdated");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnNewModeViolatorUpdated");
 
 	Params::AthenaLobbyMatchmakingPlay_C_OnNewModeViolatorUpdated Parms{};
 
@@ -217,10 +187,7 @@ void UAthenaLobbyMatchmakingPlay_C::OnNewModeViolatorUpdated(bool bShouldShow)
 
 void UAthenaLobbyMatchmakingPlay_C::SetSquadFillText(bool InCurrentSquadFill)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "SetSquadFillText");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "SetSquadFillText");
 
 	Params::AthenaLobbyMatchmakingPlay_C_SetSquadFillText Parms{};
 
@@ -239,10 +206,7 @@ void UAthenaLobbyMatchmakingPlay_C::SetSquadFillText(bool InCurrentSquadFill)
 
 void UAthenaLobbyMatchmakingPlay_C::PlaylistChanged(const struct FPlaylistFrontEndData& NewPlaylist, const class FText& PlaylistCMSOverrideName, EFortLobbyType LobbyType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "PlaylistChanged");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "PlaylistChanged");
 
 	Params::AthenaLobbyMatchmakingPlay_C_PlaylistChanged Parms{};
 
@@ -261,10 +225,7 @@ void UAthenaLobbyMatchmakingPlay_C::PlaylistChanged(const struct FPlaylistFrontE
 
 void UAthenaLobbyMatchmakingPlay_C::OnSetCancelButtonText(const class FText& CancelButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnSetCancelButtonText");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnSetCancelButtonText");
 
 	Params::AthenaLobbyMatchmakingPlay_C_OnSetCancelButtonText Parms{};
 
@@ -281,10 +242,7 @@ void UAthenaLobbyMatchmakingPlay_C::OnSetCancelButtonText(const class FText& Can
 
 void UAthenaLobbyMatchmakingPlay_C::OnSetPlayButtonText(const class FText& PlayButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnSetPlayButtonText");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnSetPlayButtonText");
 
 	Params::AthenaLobbyMatchmakingPlay_C_OnSetPlayButtonText Parms{};
 
@@ -299,10 +257,7 @@ void UAthenaLobbyMatchmakingPlay_C::OnSetPlayButtonText(const class FText& PlayB
 
 void UAthenaLobbyMatchmakingPlay_C::OnAvailablePlaylistsUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnAvailablePlaylistsUpdated");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnAvailablePlaylistsUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -313,10 +268,7 @@ void UAthenaLobbyMatchmakingPlay_C::OnAvailablePlaylistsUpdated()
 
 void UAthenaLobbyMatchmakingPlay_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -329,10 +281,7 @@ void UAthenaLobbyMatchmakingPlay_C::Construct()
 
 void UAthenaLobbyMatchmakingPlay_C::OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43(class UClass* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43");
 
 	Params::AthenaLobbyMatchmakingPlay_C_OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43 Parms{};
 
@@ -347,10 +296,7 @@ void UAthenaLobbyMatchmakingPlay_C::OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43(cl
 
 void UAthenaLobbyMatchmakingPlay_C::RefreshFillText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "RefreshFillText");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "RefreshFillText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -363,10 +309,7 @@ void UAthenaLobbyMatchmakingPlay_C::RefreshFillText()
 
 void UAthenaLobbyMatchmakingPlay_C::SetBasePanelColor(const struct FLinearColor& NewColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "SetBasePanelColor");
+	class UFunction* Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "SetBasePanelColor");
 
 	Params::AthenaLobbyMatchmakingPlay_C_SetBasePanelColor Parms{};
 

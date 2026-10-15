@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_HookGunRope_C::ExecuteUbergraph_B_HookGunRope(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HookGunRope_C", "ExecuteUbergraph_B_HookGunRope");
+	class UFunction* Func = Class->GetFunction("B_HookGunRope_C", "ExecuteUbergraph_B_HookGunRope");
 
 	Params::B_HookGunRope_C_ExecuteUbergraph_B_HookGunRope Parms{};
 
@@ -41,10 +38,7 @@ void AB_HookGunRope_C::ExecuteUbergraph_B_HookGunRope(int32 EntryPoint)
 
 void AB_HookGunRope_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HookGunRope_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("B_HookGunRope_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_HookGunRope_C::ReceiveDestroyed()
 
 void AB_HookGunRope_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HookGunRope_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_HookGunRope_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_HookGunRope_C::ReceiveBeginPlay()
 
 void AB_HookGunRope_C::TightenRope()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HookGunRope_C", "TightenRope");
+	class UFunction* Func = Class->GetFunction("B_HookGunRope_C", "TightenRope");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_HookGunRope_C::TightenRope()
 
 void AB_HookGunRope_C::End_Reel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HookGunRope_C", "End Reel");
+	class UFunction* Func = Class->GetFunction("B_HookGunRope_C", "End Reel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AB_HookGunRope_C::End_Reel()
 
 void AB_HookGunRope_C::Tight__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HookGunRope_C", "Tight__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_HookGunRope_C", "Tight__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void AB_HookGunRope_C::Tight__UpdateFunc()
 
 void AB_HookGunRope_C::Tight__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HookGunRope_C", "Tight__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_HookGunRope_C", "Tight__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void AB_HookGunRope_C::Tight__FinishedFunc()
 
 void AB_HookGunRope_C::Reel_In__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HookGunRope_C", "Reel In__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_HookGunRope_C", "Reel In__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +115,7 @@ void AB_HookGunRope_C::Reel_In__UpdateFunc()
 
 void AB_HookGunRope_C::Reel_In__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HookGunRope_C", "Reel In__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_HookGunRope_C", "Reel In__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

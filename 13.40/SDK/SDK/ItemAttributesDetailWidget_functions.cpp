@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UItemAttributesDetailWidget_C::UpdateItemsForWidgets()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "UpdateItemsForWidgets");
+	class UFunction* Func = Class->GetFunction("ItemAttributesDetailWidget_C", "UpdateItemsForWidgets");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UItemAttributesDetailWidget_C::UpdateItemsForWidgets()
 
 void UItemAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void UItemAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemAttributesDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
+	class UFunction* Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -63,10 +54,7 @@ void UItemAttributesDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 
 void UItemAttributesDetailWidget_C::HandleShouldPreviewUpgradingItemChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleShouldPreviewUpgradingItemChanged");
+	class UFunction* Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleShouldPreviewUpgradingItemChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +65,7 @@ void UItemAttributesDetailWidget_C::HandleShouldPreviewUpgradingItemChanged()
 
 void UItemAttributesDetailWidget_C::HandleItemToDetailChangedBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleItemToDetailChangedBP");
+	class UFunction* Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleItemToDetailChangedBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +76,7 @@ void UItemAttributesDetailWidget_C::HandleItemToDetailChangedBP()
 
 void UItemAttributesDetailWidget_C::HandleItemToCompareWithChangedBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleItemToCompareWithChangedBP");
+	class UFunction* Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleItemToCompareWithChangedBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +87,7 @@ void UItemAttributesDetailWidget_C::HandleItemToCompareWithChangedBP()
 
 void UItemAttributesDetailWidget_C::HandleUpgradeLevelDeltaChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleUpgradeLevelDeltaChanged");
+	class UFunction* Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleUpgradeLevelDeltaChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,10 +100,7 @@ void UItemAttributesDetailWidget_C::HandleUpgradeLevelDeltaChanged()
 
 void UItemAttributesDetailWidget_C::ExecuteUbergraph_ItemAttributesDetailWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "ExecuteUbergraph_ItemAttributesDetailWidget");
+	class UFunction* Func = Class->GetFunction("ItemAttributesDetailWidget_C", "ExecuteUbergraph_ItemAttributesDetailWidget");
 
 	Params::ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget Parms{};
 

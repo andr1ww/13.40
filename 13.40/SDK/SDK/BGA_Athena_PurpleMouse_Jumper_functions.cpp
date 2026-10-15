@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_Athena_PurpleMouse_Jumper_C::ExecuteUbergraph_BGA_Athena_PurpleMouse_Jumper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "ExecuteUbergraph_BGA_Athena_PurpleMouse_Jumper");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "ExecuteUbergraph_BGA_Athena_PurpleMouse_Jumper");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_ExecuteUbergraph_BGA_Athena_PurpleMouse_Jumper Parms{};
 
@@ -43,10 +40,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::ExecuteUbergraph_BGA_Athena_PurpleMouse_J
 
 void ABGA_Athena_PurpleMouse_Jumper_C::SetMyTeam(uint8 Team_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "SetMyTeam");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "SetMyTeam");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_SetMyTeam Parms{};
 
@@ -70,10 +64,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::SetMyTeam(uint8 Team_0)
 
 void ABGA_Athena_PurpleMouse_Jumper_C::OnInstigatorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "OnInstigatorDied");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "OnInstigatorDied");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_OnInstigatorDied Parms{};
 
@@ -97,10 +88,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::OnInstigatorDied(class AActor* DamagedAct
 
 void ABGA_Athena_PurpleMouse_Jumper_C::Pushback(const struct FVector& V)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Pushback");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Pushback");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_Pushback Parms{};
 
@@ -117,10 +105,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::Pushback(const struct FVector& V)
 
 void ABGA_Athena_PurpleMouse_Jumper_C::StopSim(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "StopSim");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "StopSim");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_StopSim Parms{};
 
@@ -139,10 +124,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::StopSim(const struct FHitResult& Hit)
 
 void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_4_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_4_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_4_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_4_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -159,10 +141,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__FortWaterInteraction_K2Node_Compo
 
 void ABGA_Athena_PurpleMouse_Jumper_C::ResetExplosionTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "ResetExplosionTimer");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "ResetExplosionTimer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -182,10 +161,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::ResetExplosionTimer()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::Damaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Damaged");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Damaged");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_Damaged Parms{};
 
@@ -207,10 +183,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::Damaged(class AActor* DamagedActor, float
 
 void ABGA_Athena_PurpleMouse_Jumper_C::StopBeep()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "StopBeep");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "StopBeep");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -226,10 +199,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::StopBeep()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__BeepBlinkTrigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__BeepBlinkTrigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__BeepBlinkTrigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_BndEvt__BeepBlinkTrigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -254,10 +224,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__BeepBlinkTrigger_K2Node_Component
 
 void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__BeepBlinkTrigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__BeepBlinkTrigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__BeepBlinkTrigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_BndEvt__BeepBlinkTrigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -286,10 +253,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__BeepBlinkTrigger_K2Node_Component
 
 void ABGA_Athena_PurpleMouse_Jumper_C::Destroyed(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Destroyed");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Destroyed");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_Destroyed Parms{};
 
@@ -311,10 +275,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::Destroyed(class AActor* DamagedActor, flo
 
 void ABGA_Athena_PurpleMouse_Jumper_C::TriggerJumpTimeline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "TriggerJumpTimeline");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "TriggerJumpTimeline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -325,10 +286,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::TriggerJumpTimeline()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::Explode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Explode");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Explode");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -339,10 +297,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::Explode()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::DetachAndLaunch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "DetachAndLaunch");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "DetachAndLaunch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -353,10 +308,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::DetachAndLaunch()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::TriggerBeep()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "TriggerBeep");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "TriggerBeep");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -372,10 +324,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::TriggerBeep()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::Beep(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Beep");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Beep");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_Beep Parms{};
 
@@ -398,10 +347,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::Beep(class FName EventName, float Emitter
 
 void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__ExplosionTrigger_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__ExplosionTrigger_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__ExplosionTrigger_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_BndEvt__ExplosionTrigger_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -419,10 +365,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__ExplosionTrigger_K2Node_Component
 
 void ABGA_Athena_PurpleMouse_Jumper_C::SpawnFXSounds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "SpawnFXSounds");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "SpawnFXSounds");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -436,10 +379,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::SpawnFXSounds()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BlueprintOnInteract");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_BlueprintOnInteract Parms{};
 
@@ -463,10 +403,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::BlueprintOnInteract(const class AFortPawn
 
 void ABGA_Athena_PurpleMouse_Jumper_C::OnDamageServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "OnDamageServer");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "OnDamageServer");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_OnDamageServer Parms{};
 
@@ -487,10 +424,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::OnDamageServer(float Damage, const struct
 
 void ABGA_Athena_PurpleMouse_Jumper_C::JumpIntoExplosion()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "JumpIntoExplosion");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "JumpIntoExplosion");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -508,10 +442,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::JumpIntoExplosion()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__ExplosionTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__ExplosionTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BndEvt__ExplosionTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_BndEvt__ExplosionTrigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -531,10 +462,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::BndEvt__ExplosionTrigger_K2Node_Component
 
 void ABGA_Athena_PurpleMouse_Jumper_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -545,10 +473,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::ReceiveBeginPlay()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::JumpOut__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "JumpOut__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "JumpOut__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -559,10 +484,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::JumpOut__UpdateFunc()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::JumpOut__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "JumpOut__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "JumpOut__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -573,10 +495,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::JumpOut__FinishedFunc()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -590,10 +509,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::UserConstructionScript()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::Launch(const struct FVector& LaunchSource, float Amount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Launch");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Launch");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_Launch Parms{};
 
@@ -611,10 +527,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::Launch(const struct FVector& LaunchSource
 
 void ABGA_Athena_PurpleMouse_Jumper_C::CheckLOSAgain(class AActor* ActorToCheckLOSAgainst)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "CheckLOSAgain");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "CheckLOSAgain");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_CheckLOSAgain Parms{};
 
@@ -632,10 +545,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::CheckLOSAgain(class AActor* ActorToCheckL
 
 void ABGA_Athena_PurpleMouse_Jumper_C::FilterByLOS(TArray<class AActor*>& _Array, TArray<class AActor*>* _Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "FilterByLOS");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "FilterByLOS");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_FilterByLOS Parms{};
 
@@ -657,10 +567,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::FilterByLOS(TArray<class AActor*>& _Array
 
 void ABGA_Athena_PurpleMouse_Jumper_C::Init(const struct FVector& GravHitNormal_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Init");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Init");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_Init Parms{};
 
@@ -677,10 +584,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::Init(const struct FVector& GravHitNormal_
 
 bool ABGA_Athena_PurpleMouse_Jumper_C::Is_in_Infiltration_Mode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Is in Infiltration Mode");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "Is in Infiltration Mode");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_Is_in_Infiltration_Mode Parms{};
 
@@ -698,10 +602,7 @@ bool ABGA_Athena_PurpleMouse_Jumper_C::Is_in_Infiltration_Mode()
 
 void ABGA_Athena_PurpleMouse_Jumper_C::GetAllPawns(TArray<class AActor*>& _Array, TArray<class AActor*>* _Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "GetAllPawns");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "GetAllPawns");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_GetAllPawns Parms{};
 
@@ -726,10 +627,7 @@ void ABGA_Athena_PurpleMouse_Jumper_C::GetAllPawns(TArray<class AActor*>& _Array
 
 bool ABGA_Athena_PurpleMouse_Jumper_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BlueprintCanInteract");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_BlueprintCanInteract Parms{};
 
@@ -752,10 +650,7 @@ bool ABGA_Athena_PurpleMouse_Jumper_C::BlueprintCanInteract(const class AFortPaw
 
 class FText ABGA_Athena_PurpleMouse_Jumper_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BlueprintGetInteractionString");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_BlueprintGetInteractionString Parms{};
 
@@ -778,10 +673,7 @@ class FText ABGA_Athena_PurpleMouse_Jumper_C::BlueprintGetInteractionString(cons
 
 bool ABGA_Athena_PurpleMouse_Jumper_C::BlueprintGetInteractionTime(const class AFortPawn* InteractingPawn, float* OutInteractionTime, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BlueprintGetInteractionTime");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "BlueprintGetInteractionTime");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_BlueprintGetInteractionTime Parms{};
 
@@ -804,10 +696,7 @@ bool ABGA_Athena_PurpleMouse_Jumper_C::BlueprintGetInteractionTime(const class A
 
 bool ABGA_Athena_PurpleMouse_Jumper_C::CanBeSavedToCreativeVolume() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "CanBeSavedToCreativeVolume");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "CanBeSavedToCreativeVolume");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_CanBeSavedToCreativeVolume Parms{};
 
@@ -824,10 +713,7 @@ bool ABGA_Athena_PurpleMouse_Jumper_C::CanBeSavedToCreativeVolume() const
 
 struct FVector ABGA_Athena_PurpleMouse_Jumper_C::GetFocusedSocketLocation() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "GetFocusedSocketLocation");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_PurpleMouse_Jumper_C", "GetFocusedSocketLocation");
 
 	Params::BGA_Athena_PurpleMouse_Jumper_C_GetFocusedSocketLocation Parms{};
 

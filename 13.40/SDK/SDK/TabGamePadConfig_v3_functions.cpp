@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTabGamePadConfig_v3_C::ExecuteUbergraph_TabGamePadConfig_v3(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "ExecuteUbergraph_TabGamePadConfig_v3");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "ExecuteUbergraph_TabGamePadConfig_v3");
 
 	Params::TabGamePadConfig_v3_C_ExecuteUbergraph_TabGamePadConfig_v3 Parms{};
 
@@ -43,10 +40,7 @@ void UTabGamePadConfig_v3_C::ExecuteUbergraph_TabGamePadConfig_v3(int32 EntryPoi
 
 void UTabGamePadConfig_v3_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "PreConstruct");
 
 	Params::TabGamePadConfig_v3_C_PreConstruct Parms{};
 
@@ -63,10 +57,7 @@ void UTabGamePadConfig_v3_C::PreConstruct(bool IsDesignTime)
 
 void UTabGamePadConfig_v3_C::DeadZoneMoveSettingValueChanged_Bind(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "DeadZoneMoveSettingValueChanged_Bind");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "DeadZoneMoveSettingValueChanged_Bind");
 
 	Params::TabGamePadConfig_v3_C_DeadZoneMoveSettingValueChanged_Bind Parms{};
 
@@ -83,10 +74,7 @@ void UTabGamePadConfig_v3_C::DeadZoneMoveSettingValueChanged_Bind(float Value)
 
 void UTabGamePadConfig_v3_C::DeadZoneLookSettingValueChanged_Bind(float Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "DeadZoneLookSettingValueChanged_Bind");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "DeadZoneLookSettingValueChanged_Bind");
 
 	Params::TabGamePadConfig_v3_C_DeadZoneLookSettingValueChanged_Bind Parms{};
 
@@ -101,10 +89,7 @@ void UTabGamePadConfig_v3_C::DeadZoneLookSettingValueChanged_Bind(float Value)
 
 void UTabGamePadConfig_v3_C::OnTabActivated_Bind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "OnTabActivated_Bind");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "OnTabActivated_Bind");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +100,7 @@ void UTabGamePadConfig_v3_C::OnTabActivated_Bind()
 
 void UTabGamePadConfig_v3_C::OnTabDeactivated_Bind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "OnTabDeactivated_Bind");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "OnTabDeactivated_Bind");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +113,7 @@ void UTabGamePadConfig_v3_C::OnTabDeactivated_Bind()
 
 void UTabGamePadConfig_v3_C::HandleUsingGamepadChanged(ECommonInputType NewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleUsingGamepadChanged");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleUsingGamepadChanged");
 
 	Params::TabGamePadConfig_v3_C_HandleUsingGamepadChanged Parms{};
 
@@ -149,10 +128,7 @@ void UTabGamePadConfig_v3_C::HandleUsingGamepadChanged(ECommonInputType NewInput
 
 void UTabGamePadConfig_v3_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "Construct");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +141,7 @@ void UTabGamePadConfig_v3_C::Construct()
 
 void UTabGamePadConfig_v3_C::ModesTabSelected_Bind(class FName TabId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "ModesTabSelected_Bind");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "ModesTabSelected_Bind");
 
 	Params::TabGamePadConfig_v3_C_ModesTabSelected_Bind Parms{};
 
@@ -183,10 +156,7 @@ void UTabGamePadConfig_v3_C::ModesTabSelected_Bind(class FName TabId)
 
 void UTabGamePadConfig_v3_C::CustomClearButton_Bind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomClearButton_Bind");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomClearButton_Bind");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -197,10 +167,7 @@ void UTabGamePadConfig_v3_C::CustomClearButton_Bind()
 
 void UTabGamePadConfig_v3_C::CustomClosedUsingBack_Bind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomClosedUsingBack_Bind");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomClosedUsingBack_Bind");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -214,10 +181,7 @@ void UTabGamePadConfig_v3_C::CustomClosedUsingBack_Bind()
 
 void UTabGamePadConfig_v3_C::CustomActionSelected_Bind(int32 SelectedIndex, class FName ActionName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomActionSelected_Bind");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomActionSelected_Bind");
 
 	Params::TabGamePadConfig_v3_C_CustomActionSelected_Bind Parms{};
 
@@ -235,10 +199,7 @@ void UTabGamePadConfig_v3_C::CustomActionSelected_Bind(int32 SelectedIndex, clas
 
 void UTabGamePadConfig_v3_C::CustomKeySelected_Bind(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomKeySelected_Bind");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomKeySelected_Bind");
 
 	Params::TabGamePadConfig_v3_C_CustomKeySelected_Bind Parms{};
 
@@ -253,10 +214,7 @@ void UTabGamePadConfig_v3_C::CustomKeySelected_Bind(const struct FKey& Key)
 
 void UTabGamePadConfig_v3_C::CustomDoResetToDefault()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomDoResetToDefault");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "CustomDoResetToDefault");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -267,10 +225,7 @@ void UTabGamePadConfig_v3_C::CustomDoResetToDefault()
 
 void UTabGamePadConfig_v3_C::UpdateOptionsTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "UpdateOptionsTab");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "UpdateOptionsTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -281,10 +236,7 @@ void UTabGamePadConfig_v3_C::UpdateOptionsTab()
 
 void UTabGamePadConfig_v3_C::CenterOnTab()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "CenterOnTab");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "CenterOnTab");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -298,10 +250,7 @@ void UTabGamePadConfig_v3_C::CenterOnTab()
 
 void UTabGamePadConfig_v3_C::GamepadPlatformConfigChanged(class UCommonButton* AssociatedButton, int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "GamepadPlatformConfigChanged");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "GamepadPlatformConfigChanged");
 
 	Params::TabGamePadConfig_v3_C_GamepadPlatformConfigChanged Parms{};
 
@@ -320,10 +269,7 @@ void UTabGamePadConfig_v3_C::GamepadPlatformConfigChanged(class UCommonButton* A
 
 void UTabGamePadConfig_v3_C::Gamepad_Config_Changed(class UCommonButton* AssociatedButton, int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "Gamepad Config Changed");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "Gamepad Config Changed");
 
 	Params::TabGamePadConfig_v3_C_Gamepad_Config_Changed Parms{};
 
@@ -342,10 +288,7 @@ void UTabGamePadConfig_v3_C::Gamepad_Config_Changed(class UCommonButton* Associa
 
 void UTabGamePadConfig_v3_C::DialogResult_7D7E06D747FFEF9849D3CAA2D3D91717(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "DialogResult_7D7E06D747FFEF9849D3CAA2D3D91717");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "DialogResult_7D7E06D747FFEF9849D3CAA2D3D91717");
 
 	Params::TabGamePadConfig_v3_C_DialogResult_7D7E06D747FFEF9849D3CAA2D3D91717 Parms{};
 
@@ -364,10 +307,7 @@ void UTabGamePadConfig_v3_C::DialogResult_7D7E06D747FFEF9849D3CAA2D3D91717(EFort
 
 void UTabGamePadConfig_v3_C::DialogResult_017CD690454514A07B4DE5BE109AEC6E(EFortDialogResult Result, class FName ResultName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "DialogResult_017CD690454514A07B4DE5BE109AEC6E");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "DialogResult_017CD690454514A07B4DE5BE109AEC6E");
 
 	Params::TabGamePadConfig_v3_C_DialogResult_017CD690454514A07B4DE5BE109AEC6E Parms{};
 
@@ -383,10 +323,7 @@ void UTabGamePadConfig_v3_C::DialogResult_017CD690454514A07B4DE5BE109AEC6E(EFort
 
 void UTabGamePadConfig_v3_C::InitializeData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "InitializeData");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "InitializeData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -397,10 +334,7 @@ void UTabGamePadConfig_v3_C::InitializeData()
 
 void UTabGamePadConfig_v3_C::PreConstructData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "PreConstructData");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "PreConstructData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -411,10 +345,7 @@ void UTabGamePadConfig_v3_C::PreConstructData()
 
 void UTabGamePadConfig_v3_C::UpdateData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "UpdateData");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "UpdateData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -427,10 +358,7 @@ void UTabGamePadConfig_v3_C::UpdateData()
 
 void UTabGamePadConfig_v3_C::GetCurrentPlatformIndex(int32* PlatformIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "GetCurrentPlatformIndex");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "GetCurrentPlatformIndex");
 
 	Params::TabGamePadConfig_v3_C_GetCurrentPlatformIndex Parms{};
 
@@ -446,10 +374,7 @@ void UTabGamePadConfig_v3_C::GetCurrentPlatformIndex(int32* PlatformIndex)
 
 void UTabGamePadConfig_v3_C::HandleGamepadMappingInfoChange()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleGamepadMappingInfoChange");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleGamepadMappingInfoChange");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -462,10 +387,7 @@ void UTabGamePadConfig_v3_C::HandleGamepadMappingInfoChange()
 
 bool UTabGamePadConfig_v3_C::IsConsole()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "IsConsole");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "IsConsole");
 
 	Params::TabGamePadConfig_v3_C_IsConsole Parms{};
 
@@ -483,10 +405,7 @@ bool UTabGamePadConfig_v3_C::IsConsole()
 
 bool UTabGamePadConfig_v3_C::IsCustomConfig(int32 PresetIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "IsCustomConfig");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "IsCustomConfig");
 
 	Params::TabGamePadConfig_v3_C_IsCustomConfig Parms{};
 
@@ -507,10 +426,7 @@ bool UTabGamePadConfig_v3_C::IsCustomConfig(int32 PresetIndex)
 
 void UTabGamePadConfig_v3_C::SetupDisplayObject(class FName ActionName, const struct FKey& Key, class UGamepadKeyTextButton_C** DisplayObject_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "SetupDisplayObject");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "SetupDisplayObject");
 
 	Params::TabGamePadConfig_v3_C_SetupDisplayObject Parms{};
 
@@ -529,10 +445,7 @@ void UTabGamePadConfig_v3_C::SetupDisplayObject(class FName ActionName, const st
 
 void UTabGamePadConfig_v3_C::SelectSameItemInActionsList()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "SelectSameItemInActionsList");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "SelectSameItemInActionsList");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -545,10 +458,7 @@ void UTabGamePadConfig_v3_C::SelectSameItemInActionsList()
 
 void UTabGamePadConfig_v3_C::CloseCustomActionsPanel(bool FocusLastButton)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "CloseCustomActionsPanel");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "CloseCustomActionsPanel");
 
 	Params::TabGamePadConfig_v3_C_CloseCustomActionsPanel Parms{};
 
@@ -565,10 +475,7 @@ void UTabGamePadConfig_v3_C::CloseCustomActionsPanel(bool FocusLastButton)
 
 TArray<struct FConfirmationDialogAction> UTabGamePadConfig_v3_C::CreateCustomResetToDefaultList()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "CreateCustomResetToDefaultList");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "CreateCustomResetToDefaultList");
 
 	Params::TabGamePadConfig_v3_C_CreateCustomResetToDefaultList Parms{};
 
@@ -585,10 +492,7 @@ TArray<struct FConfirmationDialogAction> UTabGamePadConfig_v3_C::CreateCustomRes
 
 void UTabGamePadConfig_v3_C::ChangeCustomTabListVisibilityForInputType(ECommonInputType Selection)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "ChangeCustomTabListVisibilityForInputType");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "ChangeCustomTabListVisibilityForInputType");
 
 	Params::TabGamePadConfig_v3_C_ChangeCustomTabListVisibilityForInputType Parms{};
 
@@ -603,10 +507,7 @@ void UTabGamePadConfig_v3_C::ChangeCustomTabListVisibilityForInputType(ECommonIn
 
 void UTabGamePadConfig_v3_C::HandleGamepadInfoSelectorBack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleGamepadInfoSelectorBack");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleGamepadInfoSelectorBack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -617,10 +518,7 @@ void UTabGamePadConfig_v3_C::HandleGamepadInfoSelectorBack()
 
 void UTabGamePadConfig_v3_C::HandleGamepadInfoSelectorApply()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleGamepadInfoSelectorApply");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleGamepadInfoSelectorApply");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -633,10 +531,7 @@ void UTabGamePadConfig_v3_C::HandleGamepadInfoSelectorApply()
 
 void UTabGamePadConfig_v3_C::ChangeCustomResetVisibilityForInputType(ECommonInputType InputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "ChangeCustomResetVisibilityForInputType");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "ChangeCustomResetVisibilityForInputType");
 
 	Params::TabGamePadConfig_v3_C_ChangeCustomResetVisibilityForInputType Parms{};
 
@@ -653,10 +548,7 @@ void UTabGamePadConfig_v3_C::ChangeCustomResetVisibilityForInputType(ECommonInpu
 
 void UTabGamePadConfig_v3_C::ChangeCustomClearVisibilityForInputType(ECommonInputType InputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "ChangeCustomClearVisibilityForInputType");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "ChangeCustomClearVisibilityForInputType");
 
 	Params::TabGamePadConfig_v3_C_ChangeCustomClearVisibilityForInputType Parms{};
 
@@ -671,10 +563,7 @@ void UTabGamePadConfig_v3_C::ChangeCustomClearVisibilityForInputType(ECommonInpu
 
 void UTabGamePadConfig_v3_C::NavigateToSelectedConfig()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "NavigateToSelectedConfig");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "NavigateToSelectedConfig");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -685,10 +574,7 @@ void UTabGamePadConfig_v3_C::NavigateToSelectedConfig()
 
 void UTabGamePadConfig_v3_C::HandleGamepadInfoSelectorFocus()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleGamepadInfoSelectorFocus");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "HandleGamepadInfoSelectorFocus");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -703,10 +589,7 @@ void UTabGamePadConfig_v3_C::HandleGamepadInfoSelectorFocus()
 
 void UTabGamePadConfig_v3_C::AreWeOkayWithThisChange(class FName ActionName, const struct FKey& Key, bool* IsOkay)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "AreWeOkayWithThisChange");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "AreWeOkayWithThisChange");
 
 	Params::TabGamePadConfig_v3_C_AreWeOkayWithThisChange Parms{};
 
@@ -725,10 +608,7 @@ void UTabGamePadConfig_v3_C::AreWeOkayWithThisChange(class FName ActionName, con
 
 void UTabGamePadConfig_v3_C::GamepadInfoSelectorNavRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TabGamePadConfig_v3_C", "GamepadInfoSelectorNavRight");
+	class UFunction* Func = Class->GetFunction("TabGamePadConfig_v3_C", "GamepadInfoSelectorNavRight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

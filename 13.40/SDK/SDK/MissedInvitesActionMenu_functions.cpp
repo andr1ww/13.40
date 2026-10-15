@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMissedInvitesActionMenu_C::ExecuteUbergraph_MissedInvitesActionMenu(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissedInvitesActionMenu_C", "ExecuteUbergraph_MissedInvitesActionMenu");
+	class UFunction* Func = Class->GetFunction("MissedInvitesActionMenu_C", "ExecuteUbergraph_MissedInvitesActionMenu");
 
 	Params::MissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu Parms{};
 
@@ -41,10 +38,7 @@ void UMissedInvitesActionMenu_C::ExecuteUbergraph_MissedInvitesActionMenu(int32 
 
 void UMissedInvitesActionMenu_C::OnOpened()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissedInvitesActionMenu_C", "OnOpened");
+	class UFunction* Func = Class->GetFunction("MissedInvitesActionMenu_C", "OnOpened");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void UMissedInvitesActionMenu_C::OnOpened()
 
 struct FEventReply UMissedInvitesActionMenu_C::OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MissedInvitesActionMenu_C", "OnKeyUp");
+	class UFunction* Func = Class->GetFunction("MissedInvitesActionMenu_C", "OnKeyUp");
 
 	Params::MissedInvitesActionMenu_C_OnKeyUp Parms{};
 

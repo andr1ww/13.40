@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UQuestsCountIconTabButton_C::BP_OnDisabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDisabled");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDisabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UQuestsCountIconTabButton_C::BP_OnDisabled()
 
 void UQuestsCountIconTabButton_C::ExecuteUbergraph_QuestsCountIconTabButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "ExecuteUbergraph_QuestsCountIconTabButton");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "ExecuteUbergraph_QuestsCountIconTabButton");
 
 	Params::QuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton Parms{};
 
@@ -55,10 +49,7 @@ void UQuestsCountIconTabButton_C::ExecuteUbergraph_QuestsCountIconTabButton(int3
 
 void UQuestsCountIconTabButton_C::BP_OnEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnEnabled");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnEnabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UQuestsCountIconTabButton_C::BP_OnEnabled()
 
 void UQuestsCountIconTabButton_C::Handle_Quest_Count_Updated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Handle Quest Count Updated");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "Handle Quest Count Updated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UQuestsCountIconTabButton_C::Handle_Quest_Count_Updated()
 
 void UQuestsCountIconTabButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UQuestsCountIconTabButton_C::BP_OnUnhovered()
 
 void UQuestsCountIconTabButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void UQuestsCountIconTabButton_C::BP_OnHovered()
 
 void UQuestsCountIconTabButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void UQuestsCountIconTabButton_C::Construct()
 
 void UQuestsCountIconTabButton_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +115,7 @@ void UQuestsCountIconTabButton_C::BP_OnDeselected()
 
 void UQuestsCountIconTabButton_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,10 +128,7 @@ void UQuestsCountIconTabButton_C::BP_OnSelected()
 
 void UQuestsCountIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTabLabelInfo");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTabLabelInfo");
 
 	Params::QuestsCountIconTabButton_C_SetTabLabelInfo Parms{};
 
@@ -175,10 +145,7 @@ void UQuestsCountIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLab
 
 void UQuestsCountIconTabButton_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "PreConstruct");
 
 	Params::QuestsCountIconTabButton_C_PreConstruct Parms{};
 
@@ -193,10 +160,7 @@ void UQuestsCountIconTabButton_C::PreConstruct(bool IsDesignTime)
 
 void UQuestsCountIconTabButton_C::OnCurrentTextStyleChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnCurrentTextStyleChanged");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnCurrentTextStyleChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +173,7 @@ void UQuestsCountIconTabButton_C::OnCurrentTextStyleChanged()
 
 void UQuestsCountIconTabButton_C::Set_Text(const class FText& ButtonText_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Set Text");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "Set Text");
 
 	Params::QuestsCountIconTabButton_C_Set_Text Parms{};
 
@@ -229,10 +190,7 @@ void UQuestsCountIconTabButton_C::Set_Text(const class FText& ButtonText_0)
 
 void UQuestsCountIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Set Icon");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "Set Icon");
 
 	Params::QuestsCountIconTabButton_C_Set_Icon Parms{};
 
@@ -247,10 +205,7 @@ void UQuestsCountIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0
 
 void UQuestsCountIconTabButton_C::ShowText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "ShowText");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "ShowText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -263,10 +218,7 @@ void UQuestsCountIconTabButton_C::ShowText()
 
 void UQuestsCountIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTutorialBorderStyle");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTutorialBorderStyle");
 
 	Params::QuestsCountIconTabButton_C_SetTutorialBorderStyle Parms{};
 
@@ -281,10 +233,7 @@ void UQuestsCountIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderSty
 
 void UQuestsCountIconTabButton_C::Update_Text()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Update Text");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "Update Text");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -298,10 +247,7 @@ void UQuestsCountIconTabButton_C::Update_Text()
 
 void UQuestsCountIconTabButton_C::Update_Bang_State(bool bBangEnabled_0, int32 Count)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Update Bang State");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "Update Bang State");
 
 	Params::QuestsCountIconTabButton_C_Update_Bang_State Parms{};
 
@@ -319,10 +265,7 @@ void UQuestsCountIconTabButton_C::Update_Bang_State(bool bBangEnabled_0, int32 C
 
 void UQuestsCountIconTabButton_C::SetTutorialNameID(class FName InTutorialBangID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTutorialNameID");
+	class UFunction* Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTutorialNameID");
 
 	Params::QuestsCountIconTabButton_C_SetTutorialNameID Parms{};
 

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UBP_TimeSynthTrackComponent_Gibson_C::OnDataTrackerUpdate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_Gibson_C", "OnDataTrackerUpdate");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_Gibson_C", "OnDataTrackerUpdate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UBP_TimeSynthTrackComponent_Gibson_C::OnDataTrackerUpdate()
 
 void UBP_TimeSynthTrackComponent_Gibson_C::GetRemainingEventCooldown(float* Cooldown)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_Gibson_C", "GetRemainingEventCooldown");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_Gibson_C", "GetRemainingEventCooldown");
 
 	Params::BP_TimeSynthTrackComponent_Gibson_C_GetRemainingEventCooldown Parms{};
 
@@ -56,10 +50,7 @@ void UBP_TimeSynthTrackComponent_Gibson_C::GetRemainingEventCooldown(float* Cool
 
 void UBP_TimeSynthTrackComponent_Gibson_C::HandleMixState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_Gibson_C", "HandleMixState");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_Gibson_C", "HandleMixState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

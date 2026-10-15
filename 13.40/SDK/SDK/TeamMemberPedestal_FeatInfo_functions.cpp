@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTeamMemberPedestal_FeatInfo_C::ExecuteUbergraph_TeamMemberPedestal_FeatInfo(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "ExecuteUbergraph_TeamMemberPedestal_FeatInfo");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "ExecuteUbergraph_TeamMemberPedestal_FeatInfo");
 
 	Params::TeamMemberPedestal_FeatInfo_C_ExecuteUbergraph_TeamMemberPedestal_FeatInfo Parms{};
 
@@ -41,10 +38,7 @@ void UTeamMemberPedestal_FeatInfo_C::ExecuteUbergraph_TeamMemberPedestal_FeatInf
 
 void UTeamMemberPedestal_FeatInfo_C::OnFeatDefinitionSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "OnFeatDefinitionSet");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "OnFeatDefinitionSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UTeamMemberPedestal_FeatInfo_C::OnFeatDefinitionSet()
 
 void UTeamMemberPedestal_FeatInfo_C::OnAnimationFinished(const class UWidgetAnimation* Animation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "OnAnimationFinished");
+	class UFunction* Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "OnAnimationFinished");
 
 	Params::TeamMemberPedestal_FeatInfo_C_OnAnimationFinished Parms{};
 

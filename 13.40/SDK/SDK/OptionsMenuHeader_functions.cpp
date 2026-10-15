@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UOptionsMenuHeader_C::ExecuteUbergraph_OptionsMenuHeader(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "ExecuteUbergraph_OptionsMenuHeader");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "ExecuteUbergraph_OptionsMenuHeader");
 
 	Params::OptionsMenuHeader_C_ExecuteUbergraph_OptionsMenuHeader Parms{};
 
@@ -41,10 +38,7 @@ void UOptionsMenuHeader_C::ExecuteUbergraph_OptionsMenuHeader(int32 EntryPoint)
 
 void UOptionsMenuHeader_C::BP_OnEntryReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnEntryReleased");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnEntryReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UOptionsMenuHeader_C::BP_OnEntryReleased()
 
 void UOptionsMenuHeader_C::CenterOnWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "CenterOnWidget");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "CenterOnWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UOptionsMenuHeader_C::CenterOnWidget()
 
 void UOptionsMenuHeader_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnItemExpansionChanged");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnItemExpansionChanged");
 
 	Params::OptionsMenuHeader_C_BP_OnItemExpansionChanged Parms{};
 
@@ -91,10 +79,7 @@ void UOptionsMenuHeader_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UOptionsMenuHeader_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "OnListItemObjectSet");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "OnListItemObjectSet");
 
 	Params::OptionsMenuHeader_C_OnListItemObjectSet Parms{};
 
@@ -112,10 +97,7 @@ void UOptionsMenuHeader_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UOptionsMenuHeader_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "OnMouseEnter");
 
 	Params::OptionsMenuHeader_C_OnMouseEnter Parms{};
 
@@ -133,10 +115,7 @@ void UOptionsMenuHeader_C::OnMouseEnter(const struct FGeometry& MyGeometry, cons
 
 void UOptionsMenuHeader_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "OnMouseLeave");
 
 	Params::OptionsMenuHeader_C_OnMouseLeave Parms{};
 
@@ -151,10 +130,7 @@ void UOptionsMenuHeader_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 
 void UOptionsMenuHeader_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "Construct");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +143,7 @@ void UOptionsMenuHeader_C::Construct()
 
 void UOptionsMenuHeader_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnItemSelectionChanged");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnItemSelectionChanged");
 
 	Params::OptionsMenuHeader_C_BP_OnItemSelectionChanged Parms{};
 
@@ -185,10 +158,7 @@ void UOptionsMenuHeader_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UOptionsMenuHeader_C::Center_On_Widget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "Center On Widget");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "Center On Widget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -199,10 +169,7 @@ void UOptionsMenuHeader_C::Center_On_Widget()
 
 void UOptionsMenuHeader_C::UpdateSize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "UpdateSize");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "UpdateSize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -213,10 +180,7 @@ void UOptionsMenuHeader_C::UpdateSize()
 
 void UOptionsMenuHeader_C::HandlePawnSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "HandlePawnSet");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "HandlePawnSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -231,10 +195,7 @@ void UOptionsMenuHeader_C::HandlePawnSet()
 
 void UOptionsMenuHeader_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaultSize, int32 MobileSize)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OptionsMenuHeader_C", "SetFontSize");
+	class UFunction* Func = Class->GetFunction("OptionsMenuHeader_C", "SetFontSize");
 
 	Params::OptionsMenuHeader_C_SetFontSize Parms{};
 

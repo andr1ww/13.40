@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void ABarrel_FishingRod_Container_Athena_C::OnReady_5F66F6674FD9971E925E779E105FEA16(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Barrel_FishingRod_Container_Athena_C", "OnReady_5F66F6674FD9971E925E779E105FEA16");
+	class UFunction* Func = Class->GetFunction("Barrel_FishingRod_Container_Athena_C", "OnReady_5F66F6674FD9971E925E779E105FEA16");
 
 	Params::Barrel_FishingRod_Container_Athena_C_OnReady_5F66F6674FD9971E925E779E105FEA16 Parms{};
 
@@ -45,10 +42,7 @@ void ABarrel_FishingRod_Container_Athena_C::OnReady_5F66F6674FD9971E925E779E105F
 
 void ABarrel_FishingRod_Container_Athena_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Barrel_FishingRod_Container_Athena_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Barrel_FishingRod_Container_Athena_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void ABarrel_FishingRod_Container_Athena_C::ReceiveBeginPlay()
 
 void ABarrel_FishingRod_Container_Athena_C::OnLoot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Barrel_FishingRod_Container_Athena_C", "OnLoot");
+	class UFunction* Func = Class->GetFunction("Barrel_FishingRod_Container_Athena_C", "OnLoot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void ABarrel_FishingRod_Container_Athena_C::OnLoot()
 
 void ABarrel_FishingRod_Container_Athena_C::ExecuteUbergraph_Barrel_FishingRod_Container_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Barrel_FishingRod_Container_Athena_C", "ExecuteUbergraph_Barrel_FishingRod_Container_Athena");
+	class UFunction* Func = Class->GetFunction("Barrel_FishingRod_Container_Athena_C", "ExecuteUbergraph_Barrel_FishingRod_Container_Athena");
 
 	Params::Barrel_FishingRod_Container_Athena_C_ExecuteUbergraph_Barrel_FishingRod_Container_Athena Parms{};
 

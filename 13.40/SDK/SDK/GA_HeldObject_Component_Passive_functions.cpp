@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_HeldObject_Component_Passive_C::ExecuteUbergraph_GA_HeldObject_Component_Passive(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "ExecuteUbergraph_GA_HeldObject_Component_Passive");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "ExecuteUbergraph_GA_HeldObject_Component_Passive");
 
 	Params::GA_HeldObject_Component_Passive_C_ExecuteUbergraph_GA_HeldObject_Component_Passive Parms{};
 
@@ -41,10 +38,7 @@ void UGA_HeldObject_Component_Passive_C::ExecuteUbergraph_GA_HeldObject_Componen
 
 void UGA_HeldObject_Component_Passive_C::DropHeldObject()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "DropHeldObject");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "DropHeldObject");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_HeldObject_Component_Passive_C::DropHeldObject()
 
 void UGA_HeldObject_Component_Passive_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UGA_HeldObject_Component_Passive_C::K2_ActivateAbility()
 
 void UGA_HeldObject_Component_Passive_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "K2_OnEndAbility");
 
 	Params::GA_HeldObject_Component_Passive_C_K2_OnEndAbility Parms{};
 
@@ -91,10 +79,7 @@ void UGA_HeldObject_Component_Passive_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_HeldObject_Component_Passive_C::EventReceived_DD24550D4856E973AC41D9BDAECD0498(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "EventReceived_DD24550D4856E973AC41D9BDAECD0498");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "EventReceived_DD24550D4856E973AC41D9BDAECD0498");
 
 	Params::GA_HeldObject_Component_Passive_C_EventReceived_DD24550D4856E973AC41D9BDAECD0498 Parms{};
 
@@ -109,10 +94,7 @@ void UGA_HeldObject_Component_Passive_C::EventReceived_DD24550D4856E973AC41D9BDA
 
 void UGA_HeldObject_Component_Passive_C::Added_EB79E5C3467383D5FAE134978A7BDE59()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "Added_EB79E5C3467383D5FAE134978A7BDE59");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Component_Passive_C", "Added_EB79E5C3467383D5FAE134978A7BDE59");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

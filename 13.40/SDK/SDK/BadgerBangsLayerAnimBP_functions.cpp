@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBadgerBangsLayerAnimBP_C::ExecuteUbergraph_BadgerBangsLayerAnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ExecuteUbergraph_BadgerBangsLayerAnimBP");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ExecuteUbergraph_BadgerBangsLayerAnimBP");
 
 	Params::BadgerBangsLayerAnimBP_C_ExecuteUbergraph_BadgerBangsLayerAnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UBadgerBangsLayerAnimBP_C::ExecuteUbergraph_BadgerBangsLayerAnimBP(int32 En
 
 void UBadgerBangsLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "AnimGraph");
 
 	Params::BadgerBangsLayerAnimBP_C_AnimGraph Parms{};
 
@@ -64,10 +58,7 @@ void UBadgerBangsLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 void UBadgerBangsLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJumpStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpStart");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpStart");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemSwimJumpStart Parms{};
 
@@ -86,10 +77,7 @@ void UBadgerBangsLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJump
 
 void UBadgerBangsLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRelaxedEntry, struct FPoseLink* ItemRelaxedEntry_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemRelaxedEntry");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemRelaxedEntry");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemRelaxedEntry Parms{};
 
@@ -110,10 +98,7 @@ void UBadgerBangsLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseR
 
 void UBadgerBangsLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& InPoseLowerBodyJogPostPivot, struct FPoseLink* ItemLowerBodyJogPostPivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemLowerBodyJogPostPivot Parms{};
 
@@ -134,10 +119,7 @@ void UBadgerBangsLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink
 
 void UBadgerBangsLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& InPoseLowerBodyJogPrePivot, struct FPoseLink* ItemLowerBodyJogPrePivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemLowerBodyJogPrePivot Parms{};
 
@@ -158,10 +140,7 @@ void UBadgerBangsLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink&
 
 void UBadgerBangsLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InPoseLowerBodyJogStop, struct FPoseLink* ItemLowerBodyJogStop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyJogStop");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyJogStop");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemLowerBodyJogStop Parms{};
 
@@ -182,10 +161,7 @@ void UBadgerBangsLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InP
 
 void UBadgerBangsLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& InPoseLowerBodyJogStart, struct FPoseLink* ItemLowerBodyJogStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyJogStart");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyJogStart");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemLowerBodyJogStart Parms{};
 
@@ -206,10 +182,7 @@ void UBadgerBangsLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& In
 
 void UBadgerBangsLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLink& InPoseLowerBodyLeanAdditive, struct FPoseLink* ItemLowerBodyLeanAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemLowerBodyLeanAdditive Parms{};
 
@@ -230,10 +203,7 @@ void UBadgerBangsLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLink
 
 void UBadgerBangsLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& InPoseLowerBodyMovement, struct FPoseLink* ItemLowerBodyMovement_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyMovement");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemLowerBodyMovement");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemLowerBodyMovement Parms{};
 
@@ -254,10 +224,7 @@ void UBadgerBangsLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& In
 
 void UBadgerBangsLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink& InPosePostPivotAdditive, struct FPoseLink* ItemJogPostPivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJogPostPivotAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJogPostPivotAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemJogPostPivotAdditive Parms{};
 
@@ -278,10 +245,7 @@ void UBadgerBangsLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink&
 
 void UBadgerBangsLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& InPosePrePivotAdditive, struct FPoseLink* ItemJogPrePivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJogPrePivotAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJogPrePivotAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemJogPrePivotAdditive Parms{};
 
@@ -302,10 +266,7 @@ void UBadgerBangsLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& 
 
 void UBadgerBangsLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPoseJogStopAdditive, struct FPoseLink* ItemJogStopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJogStopAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJogStopAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemJogStopAdditive Parms{};
 
@@ -326,10 +287,7 @@ void UBadgerBangsLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPo
 
 void UBadgerBangsLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InPoseJogStartAdditive, struct FPoseLink* ItemJogStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJogStartAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJogStartAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemJogStartAdditive Parms{};
 
@@ -349,10 +307,7 @@ void UBadgerBangsLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InP
 
 void UBadgerBangsLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyModeLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFlyModeLoopAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFlyModeLoopAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemFlyModeLoopAdditive Parms{};
 
@@ -370,10 +325,7 @@ void UBadgerBangsLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFl
 
 void UBadgerBangsLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFlyModeStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFlyModeStartAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFlyModeStartAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemFlyModeStartAdditive Parms{};
 
@@ -391,10 +343,7 @@ void UBadgerBangsLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemF
 
 void UBadgerBangsLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZipLineStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemZipLineStartAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemZipLineStartAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemZipLineStartAdditive Parms{};
 
@@ -412,10 +361,7 @@ void UBadgerBangsLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZ
 
 void UBadgerBangsLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetPackJumpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJetPackJumpAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJetPackJumpAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemJetPackJumpAdditive Parms{};
 
@@ -433,10 +379,7 @@ void UBadgerBangsLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJe
 
 void UBadgerBangsLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJetPackStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJetPackStartAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJetPackStartAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemJetPackStartAdditive Parms{};
 
@@ -454,10 +397,7 @@ void UBadgerBangsLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJ
 
 void UBadgerBangsLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLandAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFallLandAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFallLandAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemFallLandAdditive Parms{};
 
@@ -475,10 +415,7 @@ void UBadgerBangsLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallL
 
 void UBadgerBangsLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFallAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFallAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemFallAdditive Parms{};
 
@@ -496,10 +433,7 @@ void UBadgerBangsLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAddit
 
 void UBadgerBangsLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJumpLoopAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJumpLoopAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemJumpLoopAdditive Parms{};
 
@@ -517,10 +451,7 @@ void UBadgerBangsLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpL
 
 void UBadgerBangsLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJumpUpAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemJumpUpAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemJumpUpAdditive Parms{};
 
@@ -538,10 +469,7 @@ void UBadgerBangsLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpA
 
 void UBadgerBangsLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSliding_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSlopeSliding");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSlopeSliding");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemSlopeSliding Parms{};
 
@@ -559,10 +487,7 @@ void UBadgerBangsLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSlid
 
 void UBadgerBangsLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCrouchTurningAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemCrouchTurningAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemCrouchTurningAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemCrouchTurningAdditive Parms{};
 
@@ -581,10 +506,7 @@ void UBadgerBangsLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* Item
 
 void UBadgerBangsLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdleAdditive, struct FPoseLink* ItemIdleAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemIdleAdditive");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemIdleAdditive");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemIdleAdditive Parms{};
 
@@ -605,10 +527,7 @@ void UBadgerBangsLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseI
 
 void UBadgerBangsLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPoseSprint, struct FPoseLink* ItemFullBodySprint_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFullBodySprint");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemFullBodySprint");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemFullBodySprint Parms{};
 
@@ -630,10 +549,7 @@ void UBadgerBangsLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPos
 
 void UBadgerBangsLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam_0, struct FPoseLink* ItemUpperBody_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemUpperBody");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemUpperBody");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemUpperBody Parms{};
 
@@ -654,10 +570,7 @@ void UBadgerBangsLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUppe
 
 void UBadgerBangsLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwimJumpStartLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpStartLoop");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpStartLoop");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemSwimJumpStartLoop Parms{};
 
@@ -675,10 +588,7 @@ void UBadgerBangsLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwim
 
 void UBadgerBangsLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJumpFallLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpFallLoop");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpFallLoop");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemSwimJumpFallLoop Parms{};
 
@@ -696,10 +606,7 @@ void UBadgerBangsLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJ
 
 void UBadgerBangsLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSwimJumpSurfaceLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemSwimJumpSurfaceLoop Parms{};
 
@@ -717,10 +624,7 @@ void UBadgerBangsLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSw
 
 void UBadgerBangsLayerAnimBP_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwimJumpSurfaceEnd_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
+	class UFunction* Func = Class->GetFunction("BadgerBangsLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
 
 	Params::BadgerBangsLayerAnimBP_C_ItemSwimJumpSurfaceEnd Parms{};
 

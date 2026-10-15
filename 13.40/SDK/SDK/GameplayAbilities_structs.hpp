@@ -452,6 +452,12 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FCurveTableRowHandle                   Curve;                                             // 0x0008(0x0010)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	float Evaluate(float Level, const class FString* ContextString = nullptr)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<float(*)(FScalableFloat*, float, const class FString*)>(InSDKUtils::GetImageBase() + 0x9A5CB0), this, Level, ContextString);
+	}
 };
 DUMPER7_ASSERTS_FScalableFloat;
 

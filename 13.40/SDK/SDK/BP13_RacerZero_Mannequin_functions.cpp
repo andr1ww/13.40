@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP13_RacerZero_Mannequin_C::ExecuteUbergraph_BP13_RacerZero_Mannequin(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_RacerZero_Mannequin_C", "ExecuteUbergraph_BP13_RacerZero_Mannequin");
+	class UFunction* Func = Class->GetFunction("BP13_RacerZero_Mannequin_C", "ExecuteUbergraph_BP13_RacerZero_Mannequin");
 
 	Params::BP13_RacerZero_Mannequin_C_ExecuteUbergraph_BP13_RacerZero_Mannequin Parms{};
 
@@ -45,10 +42,7 @@ void ABP13_RacerZero_Mannequin_C::ExecuteUbergraph_BP13_RacerZero_Mannequin(int3
 
 void ABP13_RacerZero_Mannequin_C::OnVariantChanged(const struct FGameplayTag& VariantChannel, const struct FGameplayTag& OldVariantTag, const struct FGameplayTag& NewVariantTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_RacerZero_Mannequin_C", "OnVariantChanged");
+	class UFunction* Func = Class->GetFunction("BP13_RacerZero_Mannequin_C", "OnVariantChanged");
 
 	Params::BP13_RacerZero_Mannequin_C_OnVariantChanged Parms{};
 
@@ -69,10 +63,7 @@ void ABP13_RacerZero_Mannequin_C::OnVariantChanged(const struct FGameplayTag& Va
 
 void ABP13_RacerZero_Mannequin_C::OnPartChanged(const class UCustomCharacterPart* OldPart, const class UCustomCharacterPart* NewPart, EFortCustomPartType PartType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_RacerZero_Mannequin_C", "OnPartChanged");
+	class UFunction* Func = Class->GetFunction("BP13_RacerZero_Mannequin_C", "OnPartChanged");
 
 	Params::BP13_RacerZero_Mannequin_C_OnPartChanged Parms{};
 

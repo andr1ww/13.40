@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 struct FEventReply UTutorialToastWidget_C::OnMouseButtonUp(const struct FGeometry& MyGeometry_OnMouseButtonUp, const struct FPointerEvent& MouseEvent_OnMouseButtonUp)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "OnMouseButtonUp");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "OnMouseButtonUp");
 
 	Params::TutorialToastWidget_C_OnMouseButtonUp Parms{};
 
@@ -50,10 +47,7 @@ struct FEventReply UTutorialToastWidget_C::OnMouseButtonUp(const struct FGeometr
 
 struct FEventReply UTutorialToastWidget_C::OnMouseButtonDown(const struct FGeometry& MyGeometry_OnMouseButtonDown, const struct FPointerEvent& MouseEvent_OnMouseButtonDown)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "OnMouseButtonDown");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "OnMouseButtonDown");
 
 	Params::TutorialToastWidget_C_OnMouseButtonDown Parms{};
 
@@ -74,10 +68,7 @@ struct FEventReply UTutorialToastWidget_C::OnMouseButtonDown(const struct FGeome
 
 void UTutorialToastWidget_C::SetAndShowText(const class FText& Text, class UCommonTextBlock* TextBlock)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "SetAndShowText");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "SetAndShowText");
 
 	Params::TutorialToastWidget_C_SetAndShowText Parms{};
 
@@ -95,10 +86,7 @@ void UTutorialToastWidget_C::SetAndShowText(const class FText& Text, class UComm
 
 void UTutorialToastWidget_C::ShowToast(const struct FFortToastDisplayInfo& DisplayInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "ShowToast");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "ShowToast");
 
 	Params::TutorialToastWidget_C_ShowToast Parms{};
 
@@ -115,10 +103,7 @@ void UTutorialToastWidget_C::ShowToast(const struct FFortToastDisplayInfo& Displ
 
 void UTutorialToastWidget_C::OnLoaded_3011ADA2432D60D311EC38ADECCDDF44(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "OnLoaded_3011ADA2432D60D311EC38ADECCDDF44");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "OnLoaded_3011ADA2432D60D311EC38ADECCDDF44");
 
 	Params::TutorialToastWidget_C_OnLoaded_3011ADA2432D60D311EC38ADECCDDF44 Parms{};
 
@@ -135,10 +120,7 @@ void UTutorialToastWidget_C::OnLoaded_3011ADA2432D60D311EC38ADECCDDF44(class UOb
 
 void UTutorialToastWidget_C::OnShowToast(const struct FFortToastDisplayInfo& DispalyInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "OnShowToast");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "OnShowToast");
 
 	Params::TutorialToastWidget_C_OnShowToast Parms{};
 
@@ -153,10 +135,7 @@ void UTutorialToastWidget_C::OnShowToast(const struct FFortToastDisplayInfo& Dis
 
 void UTutorialToastWidget_C::Start_Toast_Animation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "Start Toast Animation");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "Start Toast Animation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -167,10 +146,7 @@ void UTutorialToastWidget_C::Start_Toast_Animation()
 
 void UTutorialToastWidget_C::On_Idle_Finished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "On Idle Finished");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "On Idle Finished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +157,7 @@ void UTutorialToastWidget_C::On_Idle_Finished()
 
 void UTutorialToastWidget_C::SimulateAthenaStoreToast()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "SimulateAthenaStoreToast");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "SimulateAthenaStoreToast");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +168,7 @@ void UTutorialToastWidget_C::SimulateAthenaStoreToast()
 
 void UTutorialToastWidget_C::Clicked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "Clicked");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "Clicked");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +179,7 @@ void UTutorialToastWidget_C::Clicked()
 
 void UTutorialToastWidget_C::RemoveWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "RemoveWidget");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "RemoveWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +190,7 @@ void UTutorialToastWidget_C::RemoveWidget()
 
 void UTutorialToastWidget_C::WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +201,7 @@ void UTutorialToastWidget_C::WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEven
 
 void UTutorialToastWidget_C::WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +214,7 @@ void UTutorialToastWidget_C::WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEven
 
 void UTutorialToastWidget_C::ExecuteUbergraph_TutorialToastWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TutorialToastWidget_C", "ExecuteUbergraph_TutorialToastWidget");
+	class UFunction* Func = Class->GetFunction("TutorialToastWidget_C", "ExecuteUbergraph_TutorialToastWidget");
 
 	Params::TutorialToastWidget_C_ExecuteUbergraph_TutorialToastWidget Parms{};
 

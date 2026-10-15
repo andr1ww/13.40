@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UShowdownPosterViolator_C::ExecuteUbergraph_ShowdownPosterViolator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPosterViolator_C", "ExecuteUbergraph_ShowdownPosterViolator");
+	class UFunction* Func = Class->GetFunction("ShowdownPosterViolator_C", "ExecuteUbergraph_ShowdownPosterViolator");
 
 	Params::ShowdownPosterViolator_C_ExecuteUbergraph_ShowdownPosterViolator Parms{};
 
@@ -43,10 +40,7 @@ void UShowdownPosterViolator_C::ExecuteUbergraph_ShowdownPosterViolator(int32 En
 
 void UShowdownPosterViolator_C::OnViolatorStateRefreshed(EEventTimeState NewTimeState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownPosterViolator_C", "OnViolatorStateRefreshed");
+	class UFunction* Func = Class->GetFunction("ShowdownPosterViolator_C", "OnViolatorStateRefreshed");
 
 	Params::ShowdownPosterViolator_C_OnViolatorStateRefreshed Parms{};
 

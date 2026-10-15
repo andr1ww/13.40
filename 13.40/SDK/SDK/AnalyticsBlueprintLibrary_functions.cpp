@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UAnalyticsBlueprintLibrary::EndSession()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "EndSession");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "EndSession");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -40,10 +37,7 @@ void UAnalyticsBlueprintLibrary::EndSession()
 
 void UAnalyticsBlueprintLibrary::FlushEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "FlushEvents");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "FlushEvents");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -61,10 +55,7 @@ void UAnalyticsBlueprintLibrary::FlushEvents()
 
 class FString UAnalyticsBlueprintLibrary::GetSessionId()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "GetSessionId");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "GetSessionId");
 
 	Params::AnalyticsBlueprintLibrary_GetSessionId Parms{};
 
@@ -86,10 +77,7 @@ class FString UAnalyticsBlueprintLibrary::GetSessionId()
 
 class FString UAnalyticsBlueprintLibrary::GetUserId()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "GetUserId");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "GetUserId");
 
 	Params::AnalyticsBlueprintLibrary_GetUserId Parms{};
 
@@ -113,10 +101,7 @@ class FString UAnalyticsBlueprintLibrary::GetUserId()
 
 struct FAnalyticsEventAttr UAnalyticsBlueprintLibrary::MakeEventAttribute(const class FString& AttributeName, const class FString& AttributeValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "MakeEventAttribute");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "MakeEventAttribute");
 
 	Params::AnalyticsBlueprintLibrary_MakeEventAttribute Parms{};
 
@@ -142,10 +127,7 @@ struct FAnalyticsEventAttr UAnalyticsBlueprintLibrary::MakeEventAttribute(const 
 
 void UAnalyticsBlueprintLibrary::RecordCurrencyGiven(const class FString& GameCurrencyType, int32 GameCurrencyAmount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordCurrencyGiven");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordCurrencyGiven");
 
 	Params::AnalyticsBlueprintLibrary_RecordCurrencyGiven Parms{};
 
@@ -170,10 +152,7 @@ void UAnalyticsBlueprintLibrary::RecordCurrencyGiven(const class FString& GameCu
 
 void UAnalyticsBlueprintLibrary::RecordCurrencyGivenWithAttributes(const class FString& GameCurrencyType, int32 GameCurrencyAmount, const TArray<struct FAnalyticsEventAttr>& Attributes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordCurrencyGivenWithAttributes");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordCurrencyGivenWithAttributes");
 
 	Params::AnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes Parms{};
 
@@ -201,10 +180,7 @@ void UAnalyticsBlueprintLibrary::RecordCurrencyGivenWithAttributes(const class F
 
 void UAnalyticsBlueprintLibrary::RecordCurrencyPurchase(const class FString& GameCurrencyType, int32 GameCurrencyAmount, const class FString& RealCurrencyType, float RealMoneyCost, const class FString& PaymentProvider)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordCurrencyPurchase");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordCurrencyPurchase");
 
 	Params::AnalyticsBlueprintLibrary_RecordCurrencyPurchase Parms{};
 
@@ -230,10 +206,7 @@ void UAnalyticsBlueprintLibrary::RecordCurrencyPurchase(const class FString& Gam
 
 void UAnalyticsBlueprintLibrary::RecordError(const class FString& Error)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordError");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordError");
 
 	Params::AnalyticsBlueprintLibrary_RecordError Parms{};
 
@@ -256,10 +229,7 @@ void UAnalyticsBlueprintLibrary::RecordError(const class FString& Error)
 
 void UAnalyticsBlueprintLibrary::RecordErrorWithAttributes(const class FString& Error, const TArray<struct FAnalyticsEventAttr>& Attributes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordErrorWithAttributes");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordErrorWithAttributes");
 
 	Params::AnalyticsBlueprintLibrary_RecordErrorWithAttributes Parms{};
 
@@ -282,10 +252,7 @@ void UAnalyticsBlueprintLibrary::RecordErrorWithAttributes(const class FString& 
 
 void UAnalyticsBlueprintLibrary::RecordEvent(const class FString& EventName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordEvent");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordEvent");
 
 	Params::AnalyticsBlueprintLibrary_RecordEvent Parms{};
 
@@ -309,10 +276,7 @@ void UAnalyticsBlueprintLibrary::RecordEvent(const class FString& EventName)
 
 void UAnalyticsBlueprintLibrary::RecordEventWithAttribute(const class FString& EventName, const class FString& AttributeName, const class FString& AttributeValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordEventWithAttribute");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordEventWithAttribute");
 
 	Params::AnalyticsBlueprintLibrary_RecordEventWithAttribute Parms{};
 
@@ -337,10 +301,7 @@ void UAnalyticsBlueprintLibrary::RecordEventWithAttribute(const class FString& E
 
 void UAnalyticsBlueprintLibrary::RecordEventWithAttributes(const class FString& EventName, const TArray<struct FAnalyticsEventAttr>& Attributes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordEventWithAttributes");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordEventWithAttributes");
 
 	Params::AnalyticsBlueprintLibrary_RecordEventWithAttributes Parms{};
 
@@ -366,10 +327,7 @@ void UAnalyticsBlueprintLibrary::RecordEventWithAttributes(const class FString& 
 
 void UAnalyticsBlueprintLibrary::RecordItemPurchase(const class FString& ItemId, const class FString& Currency, int32 PerItemCost, int32 ItemQuantity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordItemPurchase");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordItemPurchase");
 
 	Params::AnalyticsBlueprintLibrary_RecordItemPurchase Parms{};
 
@@ -395,10 +353,7 @@ void UAnalyticsBlueprintLibrary::RecordItemPurchase(const class FString& ItemId,
 
 void UAnalyticsBlueprintLibrary::RecordProgress(const class FString& ProgressType, const class FString& ProgressName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordProgress");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordProgress");
 
 	Params::AnalyticsBlueprintLibrary_RecordProgress Parms{};
 
@@ -423,10 +378,7 @@ void UAnalyticsBlueprintLibrary::RecordProgress(const class FString& ProgressTyp
 
 void UAnalyticsBlueprintLibrary::RecordProgressWithAttributes(const class FString& ProgressType, const class FString& ProgressName, const TArray<struct FAnalyticsEventAttr>& Attributes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordProgressWithAttributes");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordProgressWithAttributes");
 
 	Params::AnalyticsBlueprintLibrary_RecordProgressWithAttributes Parms{};
 
@@ -452,10 +404,7 @@ void UAnalyticsBlueprintLibrary::RecordProgressWithAttributes(const class FStrin
 
 void UAnalyticsBlueprintLibrary::RecordProgressWithFullHierarchyAndAttributes(const class FString& ProgressType, const TArray<class FString>& ProgressNames, const TArray<struct FAnalyticsEventAttr>& Attributes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordProgressWithFullHierarchyAndAttributes");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordProgressWithFullHierarchyAndAttributes");
 
 	Params::AnalyticsBlueprintLibrary_RecordProgressWithFullHierarchyAndAttributes Parms{};
 
@@ -480,10 +429,7 @@ void UAnalyticsBlueprintLibrary::RecordProgressWithFullHierarchyAndAttributes(co
 
 void UAnalyticsBlueprintLibrary::RecordSimpleCurrencyPurchase(const class FString& GameCurrencyType, int32 GameCurrencyAmount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordSimpleCurrencyPurchase");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordSimpleCurrencyPurchase");
 
 	Params::AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase Parms{};
 
@@ -508,10 +454,7 @@ void UAnalyticsBlueprintLibrary::RecordSimpleCurrencyPurchase(const class FStrin
 
 void UAnalyticsBlueprintLibrary::RecordSimpleCurrencyPurchaseWithAttributes(const class FString& GameCurrencyType, int32 GameCurrencyAmount, const TArray<struct FAnalyticsEventAttr>& Attributes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordSimpleCurrencyPurchaseWithAttributes");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordSimpleCurrencyPurchaseWithAttributes");
 
 	Params::AnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes Parms{};
 
@@ -536,10 +479,7 @@ void UAnalyticsBlueprintLibrary::RecordSimpleCurrencyPurchaseWithAttributes(cons
 
 void UAnalyticsBlueprintLibrary::RecordSimpleItemPurchase(const class FString& ItemId, int32 ItemQuantity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordSimpleItemPurchase");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordSimpleItemPurchase");
 
 	Params::AnalyticsBlueprintLibrary_RecordSimpleItemPurchase Parms{};
 
@@ -564,10 +504,7 @@ void UAnalyticsBlueprintLibrary::RecordSimpleItemPurchase(const class FString& I
 
 void UAnalyticsBlueprintLibrary::RecordSimpleItemPurchaseWithAttributes(const class FString& ItemId, int32 ItemQuantity, const TArray<struct FAnalyticsEventAttr>& Attributes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordSimpleItemPurchaseWithAttributes");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "RecordSimpleItemPurchaseWithAttributes");
 
 	Params::AnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes Parms{};
 
@@ -591,10 +528,7 @@ void UAnalyticsBlueprintLibrary::RecordSimpleItemPurchaseWithAttributes(const cl
 
 void UAnalyticsBlueprintLibrary::SetAge(int32 Age)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetAge");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetAge");
 
 	Params::AnalyticsBlueprintLibrary_SetAge Parms{};
 
@@ -616,10 +550,7 @@ void UAnalyticsBlueprintLibrary::SetAge(int32 Age)
 
 void UAnalyticsBlueprintLibrary::SetBuildInfo(const class FString& BuildInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetBuildInfo");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetBuildInfo");
 
 	Params::AnalyticsBlueprintLibrary_SetBuildInfo Parms{};
 
@@ -641,10 +572,7 @@ void UAnalyticsBlueprintLibrary::SetBuildInfo(const class FString& BuildInfo)
 
 void UAnalyticsBlueprintLibrary::SetGender(const class FString& Gender)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetGender");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetGender");
 
 	Params::AnalyticsBlueprintLibrary_SetGender Parms{};
 
@@ -666,10 +594,7 @@ void UAnalyticsBlueprintLibrary::SetGender(const class FString& Gender)
 
 void UAnalyticsBlueprintLibrary::SetLocation(const class FString& Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetLocation");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetLocation");
 
 	Params::AnalyticsBlueprintLibrary_SetLocation Parms{};
 
@@ -691,10 +616,7 @@ void UAnalyticsBlueprintLibrary::SetLocation(const class FString& Location)
 
 void UAnalyticsBlueprintLibrary::SetSessionId(const class FString& SessionId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetSessionId");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetSessionId");
 
 	Params::AnalyticsBlueprintLibrary_SetSessionId Parms{};
 
@@ -716,10 +638,7 @@ void UAnalyticsBlueprintLibrary::SetSessionId(const class FString& SessionId)
 
 void UAnalyticsBlueprintLibrary::SetUserId(const class FString& UserId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetUserId");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "SetUserId");
 
 	Params::AnalyticsBlueprintLibrary_SetUserId Parms{};
 
@@ -741,10 +660,7 @@ void UAnalyticsBlueprintLibrary::SetUserId(const class FString& UserId)
 
 bool UAnalyticsBlueprintLibrary::StartSession()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "StartSession");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "StartSession");
 
 	Params::AnalyticsBlueprintLibrary_StartSession Parms{};
 
@@ -767,10 +683,7 @@ bool UAnalyticsBlueprintLibrary::StartSession()
 
 bool UAnalyticsBlueprintLibrary::StartSessionWithAttributes(const TArray<struct FAnalyticsEventAttr>& Attributes)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "StartSessionWithAttributes");
+	class UFunction* Func = StaticClass()->GetFunction("AnalyticsBlueprintLibrary", "StartSessionWithAttributes");
 
 	Params::AnalyticsBlueprintLibrary_StartSessionWithAttributes Parms{};
 

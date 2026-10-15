@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_PurpleMouse_C::ExecuteUbergraph_B_Prj_Athena_PurpleMouse(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PurpleMouse_C", "ExecuteUbergraph_B_Prj_Athena_PurpleMouse");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PurpleMouse_C", "ExecuteUbergraph_B_Prj_Athena_PurpleMouse");
 
 	Params::B_Prj_Athena_PurpleMouse_C_ExecuteUbergraph_B_Prj_Athena_PurpleMouse Parms{};
 
@@ -43,10 +40,7 @@ void AB_Prj_Athena_PurpleMouse_C::ExecuteUbergraph_B_Prj_Athena_PurpleMouse(int3
 
 void AB_Prj_Athena_PurpleMouse_C::SetTeam(uint8 Team_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PurpleMouse_C", "SetTeam");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PurpleMouse_C", "SetTeam");
 
 	Params::B_Prj_Athena_PurpleMouse_C_SetTeam Parms{};
 
@@ -61,10 +55,7 @@ void AB_Prj_Athena_PurpleMouse_C::SetTeam(uint8 Team_0)
 
 void AB_Prj_Athena_PurpleMouse_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PurpleMouse_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PurpleMouse_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -82,10 +73,7 @@ void AB_Prj_Athena_PurpleMouse_C::ReceiveBeginPlay()
 
 class AActor* AB_Prj_Athena_PurpleMouse_C::SpawnBGA_(const struct FVector& Normal, class AActor* HitActor, class UPrimitiveComponent* HitComp, const struct FVector& Pos, bool FromWater)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PurpleMouse_C", "SpawnBGA_");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PurpleMouse_C", "SpawnBGA_");
 
 	Params::B_Prj_Athena_PurpleMouse_C_SpawnBGA_ Parms{};
 

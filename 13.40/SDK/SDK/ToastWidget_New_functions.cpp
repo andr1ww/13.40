@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UToastWidget_New_C::SetupAnimBindings(bool Unbind)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "SetupAnimBindings");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "SetupAnimBindings");
 
 	Params::ToastWidget_New_C_SetupAnimBindings Parms{};
 
@@ -41,10 +38,7 @@ void UToastWidget_New_C::SetupAnimBindings(bool Unbind)
 
 void UToastWidget_New_C::ApplyAdditionalStyling()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "ApplyAdditionalStyling");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "ApplyAdditionalStyling");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UToastWidget_New_C::ApplyAdditionalStyling()
 
 void UToastWidget_New_C::SetImage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "SetImage");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "SetImage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UToastWidget_New_C::SetImage()
 
 ESlateVisibility UToastWidget_New_C::GetOpenButtonVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "GetOpenButtonVisibility");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "GetOpenButtonVisibility");
 
 	Params::ToastWidget_New_C_GetOpenButtonVisibility Parms{};
 
@@ -89,10 +77,7 @@ ESlateVisibility UToastWidget_New_C::GetOpenButtonVisibility()
 
 void UToastWidget_New_C::StartIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "StartIntro");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "StartIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -106,10 +91,7 @@ void UToastWidget_New_C::StartIntro()
 
 void UToastWidget_New_C::ShowText(const class FText& Text, class UCommonTextBlock* TextBlock)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "ShowText");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "ShowText");
 
 	Params::ToastWidget_New_C_ShowText Parms{};
 
@@ -127,10 +109,7 @@ void UToastWidget_New_C::ShowText(const class FText& Text, class UCommonTextBloc
 
 void UToastWidget_New_C::SetToast(class UFortUINotification* Toast)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "SetToast");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "SetToast");
 
 	Params::ToastWidget_New_C_SetToast Parms{};
 
@@ -145,10 +124,7 @@ void UToastWidget_New_C::SetToast(class UFortUINotification* Toast)
 
 void UToastWidget_New_C::PlayOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "PlayOutro");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "PlayOutro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -162,10 +138,7 @@ void UToastWidget_New_C::PlayOutro()
 
 void UToastWidget_New_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseEnter, const struct FPointerEvent& MouseEvent_OnMouseEnter)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "OnMouseEnter");
 
 	Params::ToastWidget_New_C_OnMouseEnter Parms{};
 
@@ -183,10 +156,7 @@ void UToastWidget_New_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMouse
 
 void UToastWidget_New_C::OnMouseLeave(const struct FPointerEvent& MouseEvent_OnMouseLeave)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "OnMouseLeave");
 
 	Params::ToastWidget_New_C_OnMouseLeave Parms{};
 
@@ -203,10 +173,7 @@ void UToastWidget_New_C::OnMouseLeave(const struct FPointerEvent& MouseEvent_OnM
 
 void UToastWidget_New_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
 
 	Params::ToastWidget_New_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -221,10 +188,7 @@ void UToastWidget_New_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonB
 
 void UToastWidget_New_C::HandleOutroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "HandleOutroFinished");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "HandleOutroFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -235,10 +199,7 @@ void UToastWidget_New_C::HandleOutroFinished()
 
 void UToastWidget_New_C::HandleIntroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "HandleIntroFinished");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "HandleIntroFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -249,10 +210,7 @@ void UToastWidget_New_C::HandleIntroFinished()
 
 void UToastWidget_New_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -263,10 +221,7 @@ void UToastWidget_New_C::Construct()
 
 void UToastWidget_New_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +234,7 @@ void UToastWidget_New_C::Destruct()
 
 void UToastWidget_New_C::OnSetToast(class UFortUINotification* ToastNotification_OnSetToast)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "OnSetToast");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "OnSetToast");
 
 	Params::ToastWidget_New_C_OnSetToast Parms{};
 
@@ -297,10 +249,7 @@ void UToastWidget_New_C::OnSetToast(class UFortUINotification* ToastNotification
 
 void UToastWidget_New_C::OnPlayOpenAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "OnPlayOpenAnimation");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "OnPlayOpenAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -313,10 +262,7 @@ void UToastWidget_New_C::OnPlayOpenAnimation()
 
 void UToastWidget_New_C::ExecuteUbergraph_ToastWidget_New(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ToastWidget_New_C", "ExecuteUbergraph_ToastWidget_New");
+	class UFunction* Func = Class->GetFunction("ToastWidget_New_C", "ExecuteUbergraph_ToastWidget_New");
 
 	Params::ToastWidget_New_C_ExecuteUbergraph_ToastWidget_New Parms{};
 

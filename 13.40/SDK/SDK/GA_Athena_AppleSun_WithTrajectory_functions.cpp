@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_AppleSun_WithTrajectory_C::ExecuteUbergraph_GA_Athena_AppleSun_WithTrajectory(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_WithTrajectory_C", "ExecuteUbergraph_GA_Athena_AppleSun_WithTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_WithTrajectory_C", "ExecuteUbergraph_GA_Athena_AppleSun_WithTrajectory");
 
 	Params::GA_Athena_AppleSun_WithTrajectory_C_ExecuteUbergraph_GA_Athena_AppleSun_WithTrajectory Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_AppleSun_WithTrajectory_C::ExecuteUbergraph_GA_Athena_AppleSun_W
 
 void UGA_Athena_AppleSun_WithTrajectory_C::Remove_Item_()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_WithTrajectory_C", "Remove Item?");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_WithTrajectory_C", "Remove Item?");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Athena_AppleSun_WithTrajectory_C::Remove_Item_()
 
 void UGA_Athena_AppleSun_WithTrajectory_C::UpdateTrajectory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_WithTrajectory_C", "UpdateTrajectory");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_WithTrajectory_C", "UpdateTrajectory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UGA_Athena_AppleSun_WithTrajectory_C::UpdateTrajectory()
 
 void UGA_Athena_AppleSun_WithTrajectory_C::K2_CommitExecute()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_AppleSun_WithTrajectory_C", "K2_CommitExecute");
+	class UFunction* Func = Class->GetFunction("GA_Athena_AppleSun_WithTrajectory_C", "K2_CommitExecute");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

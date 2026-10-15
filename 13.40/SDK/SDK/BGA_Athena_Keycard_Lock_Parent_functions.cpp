@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABGA_Athena_Keycard_Lock_Parent_C::ExecuteUbergraph_BGA_Athena_Keycard_Lock_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ExecuteUbergraph_BGA_Athena_Keycard_Lock_Parent");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ExecuteUbergraph_BGA_Athena_Keycard_Lock_Parent");
 
 	Params::BGA_Athena_Keycard_Lock_Parent_C_ExecuteUbergraph_BGA_Athena_Keycard_Lock_Parent Parms{};
 
@@ -43,10 +40,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::ExecuteUbergraph_BGA_Athena_Keycard_Lock
 
 void ABGA_Athena_Keycard_Lock_Parent_C::SetLock(Enum_Athena_Lock LockState_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "SetLock");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "SetLock");
 
 	Params::BGA_Athena_Keycard_Lock_Parent_C_SetLock Parms{};
 
@@ -61,10 +55,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::SetLock(Enum_Athena_Lock LockState_0)
 
 void ABGA_Athena_Keycard_Lock_Parent_C::HideAndKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "HideAndKill");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "HideAndKill");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::HideAndKill()
 
 void ABGA_Athena_Keycard_Lock_Parent_C::ShowFailScreen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ShowFailScreen");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ShowFailScreen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::ShowFailScreen()
 
 void ABGA_Athena_Keycard_Lock_Parent_C::ShowSuccessScreen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ShowSuccessScreen");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ShowSuccessScreen");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::ShowSuccessScreen()
 
 void ABGA_Athena_Keycard_Lock_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -120,10 +102,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::ReceiveBeginPlay()
 
 void ABGA_Athena_Keycard_Lock_Parent_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "BlueprintOnInteract");
 
 	Params::BGA_Athena_Keycard_Lock_Parent_C_BlueprintOnInteract Parms{};
 
@@ -139,10 +118,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::BlueprintOnInteract(const class AFortPaw
 
 void ABGA_Athena_Keycard_Lock_Parent_C::CallOpenVault()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "CallOpenVault");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "CallOpenVault");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::CallOpenVault()
 
 void ABGA_Athena_Keycard_Lock_Parent_C::ApplyFailCheckEffect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ApplyFailCheckEffect");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "ApplyFailCheckEffect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +144,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::ApplyFailCheckEffect()
 
 void ABGA_Athena_Keycard_Lock_Parent_C::LockCheck(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, bool* CheckPassed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "LockCheck");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "LockCheck");
 
 	Params::BGA_Athena_Keycard_Lock_Parent_C_LockCheck Parms{};
 
@@ -198,10 +168,7 @@ void ABGA_Athena_Keycard_Lock_Parent_C::LockCheck(const class AFortPawn* Interac
 
 bool ABGA_Athena_Keycard_Lock_Parent_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "BlueprintCanInteract");
 
 	Params::BGA_Athena_Keycard_Lock_Parent_C_BlueprintCanInteract Parms{};
 
@@ -224,10 +191,7 @@ bool ABGA_Athena_Keycard_Lock_Parent_C::BlueprintCanInteract(const class AFortPa
 
 class FText ABGA_Athena_Keycard_Lock_Parent_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("BGA_Athena_Keycard_Lock_Parent_C", "BlueprintGetInteractionString");
 
 	Params::BGA_Athena_Keycard_Lock_Parent_C_BlueprintGetInteractionString Parms{};
 

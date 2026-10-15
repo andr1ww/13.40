@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_HeldObject_Generic_Component_C::ExecuteUbergraph_B_HeldObject_Generic_Component(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Generic_Component_C", "ExecuteUbergraph_B_HeldObject_Generic_Component");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Generic_Component_C", "ExecuteUbergraph_B_HeldObject_Generic_Component");
 
 	Params::B_HeldObject_Generic_Component_C_ExecuteUbergraph_B_HeldObject_Generic_Component Parms{};
 
@@ -41,10 +38,7 @@ void AB_HeldObject_Generic_Component_C::ExecuteUbergraph_B_HeldObject_Generic_Co
 
 void AB_HeldObject_Generic_Component_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Generic_Component_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Generic_Component_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_HeldObject_Generic_Component_C::OnWeaponAttached()
 
 void AB_HeldObject_Generic_Component_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Generic_Component_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Generic_Component_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

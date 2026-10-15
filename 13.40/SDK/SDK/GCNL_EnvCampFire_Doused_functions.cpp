@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_EnvCampFire_Doused_C::ExecuteUbergraph_GCNL_EnvCampFire_Doused(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "ExecuteUbergraph_GCNL_EnvCampFire_Doused");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "ExecuteUbergraph_GCNL_EnvCampFire_Doused");
 
 	Params::GCNL_EnvCampFire_Doused_C_ExecuteUbergraph_GCNL_EnvCampFire_Doused Parms{};
 
@@ -43,10 +40,7 @@ void AGCNL_EnvCampFire_Doused_C::ExecuteUbergraph_GCNL_EnvCampFire_Doused(int32 
 
 void AGCNL_EnvCampFire_Doused_C::DestroyOnDestroy(class AActor* DestroyedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "DestroyOnDestroy");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "DestroyOnDestroy");
 
 	Params::GCNL_EnvCampFire_Doused_C_DestroyOnDestroy Parms{};
 
@@ -68,10 +62,7 @@ void AGCNL_EnvCampFire_Doused_C::DestroyOnDestroy(class AActor* DestroyedActor)
 
 void AGCNL_EnvCampFire_Doused_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "OnRemoval");
 
 	Params::GCNL_EnvCampFire_Doused_C_OnRemoval Parms{};
 
@@ -96,10 +87,7 @@ void AGCNL_EnvCampFire_Doused_C::OnRemoval(class AActor* MyTarget, const struct 
 
 void AGCNL_EnvCampFire_Doused_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "OnLoopingStart");
 
 	Params::GCNL_EnvCampFire_Doused_C_OnLoopingStart Parms{};
 
@@ -117,10 +105,7 @@ void AGCNL_EnvCampFire_Doused_C::OnLoopingStart(class AActor* MyTarget, const st
 
 void AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +116,7 @@ void AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__UpdateFunc()
 
 void AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ANPC_Pawn_Parent_C::ExecuteUbergraph_NPC_Pawn_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "ExecuteUbergraph_NPC_Pawn_Parent");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "ExecuteUbergraph_NPC_Pawn_Parent");
 
 	Params::NPC_Pawn_Parent_C_ExecuteUbergraph_NPC_Pawn_Parent Parms{};
 
@@ -41,10 +38,7 @@ void ANPC_Pawn_Parent_C::ExecuteUbergraph_NPC_Pawn_Parent(int32 EntryPoint)
 
 void ANPC_Pawn_Parent_C::TestLoot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "TestLoot");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "TestLoot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void ANPC_Pawn_Parent_C::TestLoot()
 
 void ANPC_Pawn_Parent_C::NPC_ParentLaunchVehicle(class AActor* Vehicle, const struct FVector& Velocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC ParentLaunchVehicle");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC ParentLaunchVehicle");
 
 	Params::NPC_Pawn_Parent_C_NPC_ParentLaunchVehicle Parms{};
 
@@ -79,10 +70,7 @@ void ANPC_Pawn_Parent_C::NPC_ParentLaunchVehicle(class AActor* Vehicle, const st
 
 void ANPC_Pawn_Parent_C::WidgetVisibilityChanged(bool bVisible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "WidgetVisibilityChanged");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "WidgetVisibilityChanged");
 
 	Params::NPC_Pawn_Parent_C_WidgetVisibilityChanged Parms{};
 
@@ -99,10 +87,7 @@ void ANPC_Pawn_Parent_C::WidgetVisibilityChanged(bool bVisible)
 
 void ANPC_Pawn_Parent_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "ReceiveEndPlay");
 
 	Params::NPC_Pawn_Parent_C_ReceiveEndPlay Parms{};
 
@@ -117,10 +102,7 @@ void ANPC_Pawn_Parent_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 
 void ANPC_Pawn_Parent_C::GrantStartingItems()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "GrantStartingItems");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "GrantStartingItems");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +113,7 @@ void ANPC_Pawn_Parent_C::GrantStartingItems()
 
 void ANPC_Pawn_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +132,7 @@ void ANPC_Pawn_Parent_C::ReceiveBeginPlay()
 
 void ANPC_Pawn_Parent_C::OnDamagePlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "OnDamagePlayEffects");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "OnDamagePlayEffects");
 
 	Params::NPC_Pawn_Parent_C_OnDamagePlayEffects Parms{};
 
@@ -185,10 +161,7 @@ void ANPC_Pawn_Parent_C::OnDamagePlayEffects(float Damage, const struct FGamepla
 
 void ANPC_Pawn_Parent_C::OnDamageServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "OnDamageServer");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "OnDamageServer");
 
 	Params::NPC_Pawn_Parent_C_OnDamageServer Parms{};
 
@@ -211,10 +184,7 @@ void ANPC_Pawn_Parent_C::OnDamageServer(float Damage, const struct FGameplayTagC
 
 bool ANPC_Pawn_Parent_C::ShouldUpdateSkeletalMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "ShouldUpdateSkeletalMesh");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "ShouldUpdateSkeletalMesh");
 
 	Params::NPC_Pawn_Parent_C_ShouldUpdateSkeletalMesh Parms{};
 
@@ -231,10 +201,7 @@ bool ANPC_Pawn_Parent_C::ShouldUpdateSkeletalMesh()
 
 void ANPC_Pawn_Parent_C::NPC_ApplyRecentlyDamagedTag(class UClass* RecentlyDamagedOverride)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC ApplyRecentlyDamagedTag");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC ApplyRecentlyDamagedTag");
 
 	Params::NPC_Pawn_Parent_C_NPC_ApplyRecentlyDamagedTag Parms{};
 
@@ -253,10 +220,7 @@ void ANPC_Pawn_Parent_C::NPC_ApplyRecentlyDamagedTag(class UClass* RecentlyDamag
 
 void ANPC_Pawn_Parent_C::NPC_GetAlertLevelInfo(Enum_NPC_AlertLevel* AlertLevel, struct FGameplayTag* AlertLevelTag, bool* ValidDataFound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC GetAlertLevelInfo");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC GetAlertLevelInfo");
 
 	Params::NPC_Pawn_Parent_C_NPC_GetAlertLevelInfo Parms{};
 
@@ -278,10 +242,7 @@ void ANPC_Pawn_Parent_C::NPC_GetAlertLevelInfo(Enum_NPC_AlertLevel* AlertLevel, 
 
 void ANPC_Pawn_Parent_C::OnRep_NPC_AlertLevel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "OnRep_NPC_AlertLevel");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "OnRep_NPC_AlertLevel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -294,10 +255,7 @@ void ANPC_Pawn_Parent_C::OnRep_NPC_AlertLevel()
 
 void ANPC_Pawn_Parent_C::NPC_SetBestLootRarityInInventory(EFortRarity* NPC_BestLootRarityInInventory_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC SetBestLootRarityInInventory");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC SetBestLootRarityInInventory");
 
 	Params::NPC_Pawn_Parent_C_NPC_SetBestLootRarityInInventory Parms{};
 
@@ -316,10 +274,7 @@ void ANPC_Pawn_Parent_C::NPC_SetBestLootRarityInInventory(EFortRarity* NPC_BestL
 
 void ANPC_Pawn_Parent_C::NPC_PawnDebugMessage(const class FString& String, bool OnlyWhenDebug)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC PawnDebugMessage");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC PawnDebugMessage");
 
 	Params::NPC_Pawn_Parent_C_NPC_PawnDebugMessage Parms{};
 
@@ -335,10 +290,7 @@ void ANPC_Pawn_Parent_C::NPC_PawnDebugMessage(const class FString& String, bool 
 
 void ANPC_Pawn_Parent_C::NPC_SendGameplayCuePickupGrabbed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC SendGameplayCuePickupGrabbed");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "NPC SendGameplayCuePickupGrabbed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -349,10 +301,7 @@ void ANPC_Pawn_Parent_C::NPC_SendGameplayCuePickupGrabbed()
 
 void ANPC_Pawn_Parent_C::OnRep_NPC_BestLootRarityInInventory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NPC_Pawn_Parent_C", "OnRep_NPC BestLootRarityInInventory");
+	class UFunction* Func = Class->GetFunction("NPC_Pawn_Parent_C", "OnRep_NPC BestLootRarityInInventory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

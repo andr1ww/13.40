@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UEmergencyNoticeWidget_C::Show_Notice()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EmergencyNoticeWidget_C", "Show Notice");
+	class UFunction* Func = Class->GetFunction("EmergencyNoticeWidget_C", "Show Notice");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -38,10 +35,7 @@ void UEmergencyNoticeWidget_C::Show_Notice()
 
 void UEmergencyNoticeWidget_C::ShowNotice(const class FText& Title_ShowNotice, const class FText& Body_ShowNotice)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EmergencyNoticeWidget_C", "ShowNotice");
+	class UFunction* Func = Class->GetFunction("EmergencyNoticeWidget_C", "ShowNotice");
 
 	Params::EmergencyNoticeWidget_C_ShowNotice Parms{};
 
@@ -57,10 +51,7 @@ void UEmergencyNoticeWidget_C::ShowNotice(const class FText& Title_ShowNotice, c
 
 void UEmergencyNoticeWidget_C::HideNotice()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EmergencyNoticeWidget_C", "HideNotice");
+	class UFunction* Func = Class->GetFunction("EmergencyNoticeWidget_C", "HideNotice");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,10 +64,7 @@ void UEmergencyNoticeWidget_C::HideNotice()
 
 void UEmergencyNoticeWidget_C::ExecuteUbergraph_EmergencyNoticeWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EmergencyNoticeWidget_C", "ExecuteUbergraph_EmergencyNoticeWidget");
+	class UFunction* Func = Class->GetFunction("EmergencyNoticeWidget_C", "ExecuteUbergraph_EmergencyNoticeWidget");
 
 	Params::EmergencyNoticeWidget_C_ExecuteUbergraph_EmergencyNoticeWidget Parms{};
 

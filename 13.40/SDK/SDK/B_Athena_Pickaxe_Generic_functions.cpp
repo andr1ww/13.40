@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Athena_Pickaxe_Generic_C::ExecuteUbergraph_B_Athena_Pickaxe_Generic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "ExecuteUbergraph_B_Athena_Pickaxe_Generic");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "ExecuteUbergraph_B_Athena_Pickaxe_Generic");
 
 	Params::B_Athena_Pickaxe_Generic_C_ExecuteUbergraph_B_Athena_Pickaxe_Generic Parms{};
 
@@ -41,10 +38,7 @@ void AB_Athena_Pickaxe_Generic_C::ExecuteUbergraph_B_Athena_Pickaxe_Generic(int3
 
 void AB_Athena_Pickaxe_Generic_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Athena_Pickaxe_Generic_C::K2_OnUnEquip()
 
 void AB_Athena_Pickaxe_Generic_C::OnInstigatorSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnInstigatorSet");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnInstigatorSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_Athena_Pickaxe_Generic_C::OnInstigatorSet()
 
 void AB_Athena_Pickaxe_Generic_C::SwingLeftEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SwingLeftEnd");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SwingLeftEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_Athena_Pickaxe_Generic_C::SwingLeftEnd()
 
 void AB_Athena_Pickaxe_Generic_C::SwingRightEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SwingRightEnd");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SwingRightEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void AB_Athena_Pickaxe_Generic_C::SwingRightEnd()
 
 void AB_Athena_Pickaxe_Generic_C::SwingLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SwingLeft");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SwingLeft");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void AB_Athena_Pickaxe_Generic_C::SwingLeft()
 
 void AB_Athena_Pickaxe_Generic_C::SwingRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SwingRight");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SwingRight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void AB_Athena_Pickaxe_Generic_C::SwingRight()
 
 void AB_Athena_Pickaxe_Generic_C::Anim_Trails_Disable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "Anim Trails Disable");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "Anim Trails Disable");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +117,7 @@ void AB_Athena_Pickaxe_Generic_C::Anim_Trails_Disable()
 
 void AB_Athena_Pickaxe_Generic_C::Anim_Trails_Notify(bool bActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "Anim Trails Notify");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "Anim Trails Notify");
 
 	Params::B_Athena_Pickaxe_Generic_C_Anim_Trails_Notify Parms{};
 
@@ -159,10 +132,7 @@ void AB_Athena_Pickaxe_Generic_C::Anim_Trails_Notify(bool bActive)
 
 void AB_Athena_Pickaxe_Generic_C::CandyCaneUpdate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "CandyCaneUpdate");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "CandyCaneUpdate");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +143,7 @@ void AB_Athena_Pickaxe_Generic_C::CandyCaneUpdate()
 
 void AB_Athena_Pickaxe_Generic_C::UpdateBasedOnKills()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "UpdateBasedOnKills");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "UpdateBasedOnKills");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +154,7 @@ void AB_Athena_Pickaxe_Generic_C::UpdateBasedOnKills()
 
 void AB_Athena_Pickaxe_Generic_C::HandleKillWatch()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "HandleKillWatch");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "HandleKillWatch");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -201,10 +165,7 @@ void AB_Athena_Pickaxe_Generic_C::HandleKillWatch()
 
 void AB_Athena_Pickaxe_Generic_C::OnInitWeaponCosmetics()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnInitWeaponCosmetics");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnInitWeaponCosmetics");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +176,7 @@ void AB_Athena_Pickaxe_Generic_C::OnInitWeaponCosmetics()
 
 void AB_Athena_Pickaxe_Generic_C::OnWeaponDetached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnWeaponDetached");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnWeaponDetached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -232,10 +190,7 @@ void AB_Athena_Pickaxe_Generic_C::OnWeaponDetached()
 
 void AB_Athena_Pickaxe_Generic_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLocalControllerOnly)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnWeaponVisibilityChanged");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnWeaponVisibilityChanged");
 
 	Params::B_Athena_Pickaxe_Generic_C_OnWeaponVisibilityChanged Parms{};
 
@@ -253,10 +208,7 @@ void AB_Athena_Pickaxe_Generic_C::OnWeaponVisibilityChanged(bool bVisible, bool 
 
 void AB_Athena_Pickaxe_Generic_C::OnInitCosmeticAlterations(const struct FFortCosmeticModification& CosmeticMod)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnInitCosmeticAlterations");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnInitCosmeticAlterations");
 
 	Params::B_Athena_Pickaxe_Generic_C_OnInitCosmeticAlterations Parms{};
 
@@ -271,10 +223,7 @@ void AB_Athena_Pickaxe_Generic_C::OnInitCosmeticAlterations(const struct FFortCo
 
 void AB_Athena_Pickaxe_Generic_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -285,10 +234,7 @@ void AB_Athena_Pickaxe_Generic_C::OnWeaponAttached()
 
 void AB_Athena_Pickaxe_Generic_C::OnEquippedWeaponDestory()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnEquippedWeaponDestory");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnEquippedWeaponDestory");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -299,10 +245,7 @@ void AB_Athena_Pickaxe_Generic_C::OnEquippedWeaponDestory()
 
 void AB_Athena_Pickaxe_Generic_C::PlayRClickImpacts()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "PlayRClickImpacts");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "PlayRClickImpacts");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -316,10 +259,7 @@ void AB_Athena_Pickaxe_Generic_C::PlayRClickImpacts()
 
 void AB_Athena_Pickaxe_Generic_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnPlayWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnPlayWeaponFireFX");
 
 	Params::B_Athena_Pickaxe_Generic_C_OnPlayWeaponFireFX Parms{};
 
@@ -335,10 +275,7 @@ void AB_Athena_Pickaxe_Generic_C::OnPlayWeaponFireFX(bool bPersistentFire, bool 
 
 void AB_Athena_Pickaxe_Generic_C::MeleeSwingLeft_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "MeleeSwingLeft_End");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "MeleeSwingLeft_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -349,10 +286,7 @@ void AB_Athena_Pickaxe_Generic_C::MeleeSwingLeft_End()
 
 void AB_Athena_Pickaxe_Generic_C::MeleeSwingRight_End()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "MeleeSwingRight_End");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "MeleeSwingRight_End");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -363,10 +297,7 @@ void AB_Athena_Pickaxe_Generic_C::MeleeSwingRight_End()
 
 void AB_Athena_Pickaxe_Generic_C::FootStepRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "FootStepRight");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "FootStepRight");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -377,10 +308,7 @@ void AB_Athena_Pickaxe_Generic_C::FootStepRight()
 
 void AB_Athena_Pickaxe_Generic_C::FootStepLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "FootStepLeft");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "FootStepLeft");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -393,10 +321,7 @@ void AB_Athena_Pickaxe_Generic_C::FootStepLeft()
 
 void AB_Athena_Pickaxe_Generic_C::MeleeSwingLeft(bool First_Left)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "MeleeSwingLeft");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "MeleeSwingLeft");
 
 	Params::B_Athena_Pickaxe_Generic_C_MeleeSwingLeft Parms{};
 
@@ -413,10 +338,7 @@ void AB_Athena_Pickaxe_Generic_C::MeleeSwingLeft(bool First_Left)
 
 void AB_Athena_Pickaxe_Generic_C::MeleeSwingRight(bool First_Right)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "MeleeSwingRight");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "MeleeSwingRight");
 
 	Params::B_Athena_Pickaxe_Generic_C_MeleeSwingRight Parms{};
 
@@ -433,10 +355,7 @@ void AB_Athena_Pickaxe_Generic_C::MeleeSwingRight(bool First_Right)
 
 void AB_Athena_Pickaxe_Generic_C::OnLoaded_5BC5DA3B4E308BE7A188FBB2571333D2(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnLoaded_5BC5DA3B4E308BE7A188FBB2571333D2");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnLoaded_5BC5DA3B4E308BE7A188FBB2571333D2");
 
 	Params::B_Athena_Pickaxe_Generic_C_OnLoaded_5BC5DA3B4E308BE7A188FBB2571333D2 Parms{};
 
@@ -454,10 +373,7 @@ void AB_Athena_Pickaxe_Generic_C::OnLoaded_5BC5DA3B4E308BE7A188FBB2571333D2(clas
 
 void AB_Athena_Pickaxe_Generic_C::OnStatChanged_F171C56748FEA3E19F93088E968D3E21(class FName StatName, int32 StatValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnStatChanged_F171C56748FEA3E19F93088E968D3E21");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "OnStatChanged_F171C56748FEA3E19F93088E968D3E21");
 
 	Params::B_Athena_Pickaxe_Generic_C_OnStatChanged_F171C56748FEA3E19F93088E968D3E21 Parms{};
 
@@ -473,10 +389,7 @@ void AB_Athena_Pickaxe_Generic_C::OnStatChanged_F171C56748FEA3E19F93088E968D3E21
 
 void AB_Athena_Pickaxe_Generic_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -487,10 +400,7 @@ void AB_Athena_Pickaxe_Generic_C::UserConstructionScript()
 
 void AB_Athena_Pickaxe_Generic_C::SetWpnRarity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SetWpnRarity");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SetWpnRarity");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -504,10 +414,7 @@ void AB_Athena_Pickaxe_Generic_C::SetWpnRarity()
 
 void AB_Athena_Pickaxe_Generic_C::SetActiveAlterationIdleParticles(bool Active, bool Reset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SetActiveAlterationIdleParticles");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "SetActiveAlterationIdleParticles");
 
 	Params::B_Athena_Pickaxe_Generic_C_SetActiveAlterationIdleParticles Parms{};
 
@@ -525,10 +432,7 @@ void AB_Athena_Pickaxe_Generic_C::SetActiveAlterationIdleParticles(bool Active, 
 
 void AB_Athena_Pickaxe_Generic_C::PlayCQCPickaxeEnemyAudio(const struct FHitResult& Hit_Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "PlayCQCPickaxeEnemyAudio");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "PlayCQCPickaxeEnemyAudio");
 
 	Params::B_Athena_Pickaxe_Generic_C_PlayCQCPickaxeEnemyAudio Parms{};
 
@@ -543,10 +447,7 @@ void AB_Athena_Pickaxe_Generic_C::PlayCQCPickaxeEnemyAudio(const struct FHitResu
 
 void AB_Athena_Pickaxe_Generic_C::BindSwingAnimTrailEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "BindSwingAnimTrailEvents");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "BindSwingAnimTrailEvents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -557,10 +458,7 @@ void AB_Athena_Pickaxe_Generic_C::BindSwingAnimTrailEvents()
 
 void AB_Athena_Pickaxe_Generic_C::UnbindSwingAnimTrailEvents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "UnbindSwingAnimTrailEvents");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "UnbindSwingAnimTrailEvents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -573,10 +471,7 @@ void AB_Athena_Pickaxe_Generic_C::UnbindSwingAnimTrailEvents()
 
 void AB_Athena_Pickaxe_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "Melee_Effect_Color");
+	class UFunction* Func = Class->GetFunction("B_Athena_Pickaxe_Generic_C", "Melee_Effect_Color");
 
 	Params::B_Athena_Pickaxe_Generic_C_Melee_Effect_Color Parms{};
 

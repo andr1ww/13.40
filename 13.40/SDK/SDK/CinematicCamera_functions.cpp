@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineCameraActor", "GetCineCameraComponent");
+	class UFunction* Func = Class->GetFunction("CineCameraActor", "GetCineCameraComponent");
 
 	Params::CineCameraActor_GetCineCameraComponent Parms{};
 
@@ -48,10 +45,7 @@ class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent() const
 
 TArray<struct FNamedLensPreset> UCineCameraComponent::GetLensPresetsCopy()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CineCameraComponent", "GetLensPresetsCopy");
+	class UFunction* Func = StaticClass()->GetFunction("CineCameraComponent", "GetLensPresetsCopy");
 
 	Params::CineCameraComponent_GetLensPresetsCopy Parms{};
 
@@ -73,10 +67,7 @@ TArray<struct FNamedLensPreset> UCineCameraComponent::GetLensPresetsCopy()
 
 void UCineCameraComponent::SetCurrentFocalLength(const float& InFocalLength)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineCameraComponent", "SetCurrentFocalLength");
+	class UFunction* Func = Class->GetFunction("CineCameraComponent", "SetCurrentFocalLength");
 
 	Params::CineCameraComponent_SetCurrentFocalLength Parms{};
 
@@ -98,10 +89,7 @@ void UCineCameraComponent::SetCurrentFocalLength(const float& InFocalLength)
 
 void UCineCameraComponent::SetFilmbackPresetByName(const class FString& InPresetName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineCameraComponent", "SetFilmbackPresetByName");
+	class UFunction* Func = Class->GetFunction("CineCameraComponent", "SetFilmbackPresetByName");
 
 	Params::CineCameraComponent_SetFilmbackPresetByName Parms{};
 
@@ -123,10 +111,7 @@ void UCineCameraComponent::SetFilmbackPresetByName(const class FString& InPreset
 
 void UCineCameraComponent::SetLensPresetByName(const class FString& InPresetName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineCameraComponent", "SetLensPresetByName");
+	class UFunction* Func = Class->GetFunction("CineCameraComponent", "SetLensPresetByName");
 
 	Params::CineCameraComponent_SetLensPresetByName Parms{};
 
@@ -148,10 +133,7 @@ void UCineCameraComponent::SetLensPresetByName(const class FString& InPresetName
 
 class FString UCineCameraComponent::GetDefaultFilmbackPresetName() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineCameraComponent", "GetDefaultFilmbackPresetName");
+	class UFunction* Func = Class->GetFunction("CineCameraComponent", "GetDefaultFilmbackPresetName");
 
 	Params::CineCameraComponent_GetDefaultFilmbackPresetName Parms{};
 
@@ -173,10 +155,7 @@ class FString UCineCameraComponent::GetDefaultFilmbackPresetName() const
 
 class FString UCineCameraComponent::GetFilmbackPresetName() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineCameraComponent", "GetFilmbackPresetName");
+	class UFunction* Func = Class->GetFunction("CineCameraComponent", "GetFilmbackPresetName");
 
 	Params::CineCameraComponent_GetFilmbackPresetName Parms{};
 
@@ -198,10 +177,7 @@ class FString UCineCameraComponent::GetFilmbackPresetName() const
 
 float UCineCameraComponent::GetHorizontalFieldOfView() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineCameraComponent", "GetHorizontalFieldOfView");
+	class UFunction* Func = Class->GetFunction("CineCameraComponent", "GetHorizontalFieldOfView");
 
 	Params::CineCameraComponent_GetHorizontalFieldOfView Parms{};
 
@@ -223,10 +199,7 @@ float UCineCameraComponent::GetHorizontalFieldOfView() const
 
 class FString UCineCameraComponent::GetLensPresetName() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineCameraComponent", "GetLensPresetName");
+	class UFunction* Func = Class->GetFunction("CineCameraComponent", "GetLensPresetName");
 
 	Params::CineCameraComponent_GetLensPresetName Parms{};
 
@@ -248,10 +221,7 @@ class FString UCineCameraComponent::GetLensPresetName() const
 
 float UCineCameraComponent::GetVerticalFieldOfView() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CineCameraComponent", "GetVerticalFieldOfView");
+	class UFunction* Func = Class->GetFunction("CineCameraComponent", "GetVerticalFieldOfView");
 
 	Params::CineCameraComponent_GetVerticalFieldOfView Parms{};
 
@@ -273,10 +243,7 @@ float UCineCameraComponent::GetVerticalFieldOfView() const
 
 class USplineComponent* ACameraRig_Rail::GetRailSplineComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CameraRig_Rail", "GetRailSplineComponent");
+	class UFunction* Func = Class->GetFunction("CameraRig_Rail", "GetRailSplineComponent");
 
 	Params::CameraRig_Rail_GetRailSplineComponent Parms{};
 

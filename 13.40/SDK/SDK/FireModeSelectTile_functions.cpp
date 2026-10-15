@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFireModeSelectTile_C::ExecuteUbergraph_FireModeSelectTile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "ExecuteUbergraph_FireModeSelectTile");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "ExecuteUbergraph_FireModeSelectTile");
 
 	Params::FireModeSelectTile_C_ExecuteUbergraph_FireModeSelectTile Parms{};
 
@@ -41,10 +38,7 @@ void UFireModeSelectTile_C::ExecuteUbergraph_FireModeSelectTile(int32 EntryPoint
 
 void UFireModeSelectTile_C::SelectFireMode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "SelectFireMode");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "SelectFireMode");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UFireModeSelectTile_C::SelectFireMode()
 
 void UFireModeSelectTile_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "Construct");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UFireModeSelectTile_C::Construct()
 
 void UFireModeSelectTile_C::BndEvt__SelectionButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "BndEvt__SelectionButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "BndEvt__SelectionButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::FireModeSelectTile_C_BndEvt__SelectionButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -89,10 +77,7 @@ void UFireModeSelectTile_C::BndEvt__SelectionButton_K2Node_ComponentBoundEvent_2
 
 void UFireModeSelectTile_C::OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "OnDeselected");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UFireModeSelectTile_C::OnDeselected()
 
 void UFireModeSelectTile_C::OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "OnSelected");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void UFireModeSelectTile_C::OnSelected()
 
 void UFireModeSelectTile_C::BndEvt__SelectionButton_K2Node_ComponentBoundEvent_91_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "BndEvt__SelectionButton_K2Node_ComponentBoundEvent_91_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "BndEvt__SelectionButton_K2Node_ComponentBoundEvent_91_CommonButtonClicked__DelegateSignature");
 
 	Params::FireModeSelectTile_C_BndEvt__SelectionButton_K2Node_ComponentBoundEvent_91_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -139,10 +118,7 @@ void UFireModeSelectTile_C::BndEvt__SelectionButton_K2Node_ComponentBoundEvent_9
 
 void UFireModeSelectTile_C::BndEvt__SelectionButton_K2Node_ComponentBoundEvent_63_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "BndEvt__SelectionButton_K2Node_ComponentBoundEvent_63_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "BndEvt__SelectionButton_K2Node_ComponentBoundEvent_63_CommonButtonClicked__DelegateSignature");
 
 	Params::FireModeSelectTile_C_BndEvt__SelectionButton_K2Node_ComponentBoundEvent_63_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -157,10 +133,7 @@ void UFireModeSelectTile_C::BndEvt__SelectionButton_K2Node_ComponentBoundEvent_6
 
 void UFireModeSelectTile_C::Save_and_Exit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "Save and Exit");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "Save and Exit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +146,7 @@ void UFireModeSelectTile_C::Save_and_Exit()
 
 void UFireModeSelectTile_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "PreConstruct");
 
 	Params::FireModeSelectTile_C_PreConstruct Parms{};
 
@@ -193,10 +163,7 @@ void UFireModeSelectTile_C::PreConstruct(bool IsDesignTime)
 
 void UFireModeSelectTile_C::PlayIntroOrOutro(bool PlayIntro)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "PlayIntroOrOutro");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "PlayIntroOrOutro");
 
 	Params::FireModeSelectTile_C_PlayIntroOrOutro Parms{};
 
@@ -211,10 +178,7 @@ void UFireModeSelectTile_C::PlayIntroOrOutro(bool PlayIntro)
 
 void UFireModeSelectTile_C::Mark_Selected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "Mark Selected");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "Mark Selected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -225,10 +189,7 @@ void UFireModeSelectTile_C::Mark_Selected()
 
 void UFireModeSelectTile_C::Setup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "Setup");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "Setup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -239,10 +200,7 @@ void UFireModeSelectTile_C::Setup()
 
 void UFireModeSelectTile_C::PlayMovie()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "PlayMovie");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "PlayMovie");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +211,7 @@ void UFireModeSelectTile_C::PlayMovie()
 
 void UFireModeSelectTile_C::StopMovie()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "StopMovie");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "StopMovie");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -270,10 +225,7 @@ void UFireModeSelectTile_C::StopMovie()
 
 void UFireModeSelectTile_C::HandleSelectionBorderFeedback(bool bIsSelected_0, bool bIsHovered)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FireModeSelectTile_C", "HandleSelectionBorderFeedback");
+	class UFunction* Func = Class->GetFunction("FireModeSelectTile_C", "HandleSelectionBorderFeedback");
 
 	Params::FireModeSelectTile_C_HandleSelectionBorderFeedback Parms{};
 

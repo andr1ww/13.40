@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UGCN_BoostJumpPack_Boost_C::OnStartParticleSystemSpawned(class UParticleSystemComponent* SpawnedParticleSysComponent, const struct FGameplayCueParameters& Parameters) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_BoostJumpPack_Boost_C", "OnStartParticleSystemSpawned");
+	class UFunction* Func = Class->GetFunction("GCN_BoostJumpPack_Boost_C", "OnStartParticleSystemSpawned");
 
 	Params::GCN_BoostJumpPack_Boost_C_OnStartParticleSystemSpawned Parms{};
 

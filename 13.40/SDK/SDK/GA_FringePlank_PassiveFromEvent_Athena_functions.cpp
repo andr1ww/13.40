@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_FringePlank_PassiveFromEvent_Athena_C::ExecuteUbergraph_GA_FringePlank_PassiveFromEvent_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "ExecuteUbergraph_GA_FringePlank_PassiveFromEvent_Athena");
+	class UFunction* Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "ExecuteUbergraph_GA_FringePlank_PassiveFromEvent_Athena");
 
 	Params::GA_FringePlank_PassiveFromEvent_Athena_C_ExecuteUbergraph_GA_FringePlank_PassiveFromEvent_Athena Parms{};
 
@@ -43,10 +40,7 @@ void UGA_FringePlank_PassiveFromEvent_Athena_C::ExecuteUbergraph_GA_FringePlank_
 
 void UGA_FringePlank_PassiveFromEvent_Athena_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_FringePlank_PassiveFromEvent_Athena_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -63,10 +57,7 @@ void UGA_FringePlank_PassiveFromEvent_Athena_C::K2_ActivateAbilityFromEvent(cons
 
 void UGA_FringePlank_PassiveFromEvent_Athena_C::OnCompleted_4979E8004A3CAF88A4C44F903E62D3DC(const struct FGameplayTag& NotifyTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnCompleted_4979E8004A3CAF88A4C44F903E62D3DC");
+	class UFunction* Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnCompleted_4979E8004A3CAF88A4C44F903E62D3DC");
 
 	Params::GA_FringePlank_PassiveFromEvent_Athena_C_OnCompleted_4979E8004A3CAF88A4C44F903E62D3DC Parms{};
 
@@ -83,10 +74,7 @@ void UGA_FringePlank_PassiveFromEvent_Athena_C::OnCompleted_4979E8004A3CAF88A4C4
 
 void UGA_FringePlank_PassiveFromEvent_Athena_C::OnBlendOut_4979E8004A3CAF88A4C44F903E62D3DC(const struct FGameplayTag& NotifyTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnBlendOut_4979E8004A3CAF88A4C44F903E62D3DC");
+	class UFunction* Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnBlendOut_4979E8004A3CAF88A4C44F903E62D3DC");
 
 	Params::GA_FringePlank_PassiveFromEvent_Athena_C_OnBlendOut_4979E8004A3CAF88A4C44F903E62D3DC Parms{};
 
@@ -103,10 +91,7 @@ void UGA_FringePlank_PassiveFromEvent_Athena_C::OnBlendOut_4979E8004A3CAF88A4C44
 
 void UGA_FringePlank_PassiveFromEvent_Athena_C::OnInterrupted_4979E8004A3CAF88A4C44F903E62D3DC(const struct FGameplayTag& NotifyTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnInterrupted_4979E8004A3CAF88A4C44F903E62D3DC");
+	class UFunction* Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnInterrupted_4979E8004A3CAF88A4C44F903E62D3DC");
 
 	Params::GA_FringePlank_PassiveFromEvent_Athena_C_OnInterrupted_4979E8004A3CAF88A4C44F903E62D3DC Parms{};
 
@@ -123,10 +108,7 @@ void UGA_FringePlank_PassiveFromEvent_Athena_C::OnInterrupted_4979E8004A3CAF88A4
 
 void UGA_FringePlank_PassiveFromEvent_Athena_C::OnCancelled_4979E8004A3CAF88A4C44F903E62D3DC(const struct FGameplayTag& NotifyTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnCancelled_4979E8004A3CAF88A4C44F903E62D3DC");
+	class UFunction* Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnCancelled_4979E8004A3CAF88A4C44F903E62D3DC");
 
 	Params::GA_FringePlank_PassiveFromEvent_Athena_C_OnCancelled_4979E8004A3CAF88A4C44F903E62D3DC Parms{};
 
@@ -143,10 +125,7 @@ void UGA_FringePlank_PassiveFromEvent_Athena_C::OnCancelled_4979E8004A3CAF88A4C4
 
 void UGA_FringePlank_PassiveFromEvent_Athena_C::OnNotifyBegin_4979E8004A3CAF88A4C44F903E62D3DC(const struct FGameplayTag& NotifyTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnNotifyBegin_4979E8004A3CAF88A4C44F903E62D3DC");
+	class UFunction* Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnNotifyBegin_4979E8004A3CAF88A4C44F903E62D3DC");
 
 	Params::GA_FringePlank_PassiveFromEvent_Athena_C_OnNotifyBegin_4979E8004A3CAF88A4C44F903E62D3DC Parms{};
 
@@ -163,10 +142,7 @@ void UGA_FringePlank_PassiveFromEvent_Athena_C::OnNotifyBegin_4979E8004A3CAF88A4
 
 void UGA_FringePlank_PassiveFromEvent_Athena_C::OnNotifyEnd_4979E8004A3CAF88A4C44F903E62D3DC(const struct FGameplayTag& NotifyTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnNotifyEnd_4979E8004A3CAF88A4C44F903E62D3DC");
+	class UFunction* Func = Class->GetFunction("GA_FringePlank_PassiveFromEvent_Athena_C", "OnNotifyEnd_4979E8004A3CAF88A4C44F903E62D3DC");
 
 	Params::GA_FringePlank_PassiveFromEvent_Athena_C_OnNotifyEnd_4979E8004A3CAF88A4C44F903E62D3DC Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_BoostJumpPack_C::ExecuteUbergraph_GA_BoostJumpPack(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "ExecuteUbergraph_GA_BoostJumpPack");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "ExecuteUbergraph_GA_BoostJumpPack");
 
 	Params::GA_BoostJumpPack_C_ExecuteUbergraph_GA_BoostJumpPack Parms{};
 
@@ -41,10 +38,7 @@ void UGA_BoostJumpPack_C::ExecuteUbergraph_GA_BoostJumpPack(int32 EntryPoint)
 
 void UGA_BoostJumpPack_C::OnEnterVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnEnterVehicle");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "OnEnterVehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UGA_BoostJumpPack_C::OnEnterVehicle()
 
 void UGA_BoostJumpPack_C::OnSavedPawnChanged(class AFortPlayerPawn* PreviousPawn, class AFortPlayerPawn* NewPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnSavedPawnChanged");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "OnSavedPawnChanged");
 
 	Params::GA_BoostJumpPack_C_OnSavedPawnChanged Parms{};
 
@@ -77,10 +68,7 @@ void UGA_BoostJumpPack_C::OnSavedPawnChanged(class AFortPlayerPawn* PreviousPawn
 
 void UGA_BoostJumpPack_C::Delay_ProcessAbilityStateMachine()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Delay_ProcessAbilityStateMachine");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Delay_ProcessAbilityStateMachine");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -94,10 +82,7 @@ void UGA_BoostJumpPack_C::Delay_ProcessAbilityStateMachine()
 
 void UGA_BoostJumpPack_C::OnCurrentStateChanged(EJumpBoostPackState InPreviousState, EJumpBoostPackState InCurrentState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnCurrentStateChanged");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "OnCurrentStateChanged");
 
 	Params::GA_BoostJumpPack_C_OnCurrentStateChanged Parms{};
 
@@ -115,10 +100,7 @@ void UGA_BoostJumpPack_C::OnCurrentStateChanged(EJumpBoostPackState InPreviousSt
 
 void UGA_BoostJumpPack_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_BoostJumpPack_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -135,10 +117,7 @@ void UGA_BoostJumpPack_C::K2_ActivateAbilityFromEvent(const struct FGameplayEven
 
 void UGA_BoostJumpPack_C::OnPawnLanded(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnPawnLanded");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "OnPawnLanded");
 
 	Params::GA_BoostJumpPack_C_OnPawnLanded Parms{};
 
@@ -153,10 +132,7 @@ void UGA_BoostJumpPack_C::OnPawnLanded(const struct FHitResult& Hit)
 
 void UGA_BoostJumpPack_C::On_Reached_Jump_Apex()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "On Reached Jump Apex");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "On Reached Jump Apex");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -171,10 +147,7 @@ void UGA_BoostJumpPack_C::On_Reached_Jump_Apex()
 
 void UGA_BoostJumpPack_C::SetJumpHeight(class AFortPlayerPawn* Pawn, class AFortPlayerPawn** Pawn_Out, struct FVector* Jump_Height)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "SetJumpHeight");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "SetJumpHeight");
 
 	Params::GA_BoostJumpPack_C_SetJumpHeight Parms{};
 
@@ -195,10 +168,7 @@ void UGA_BoostJumpPack_C::SetJumpHeight(class AFortPlayerPawn* Pawn, class AFort
 
 void UGA_BoostJumpPack_C::HandleBoostJump()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleBoostJump");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleBoostJump");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -211,10 +181,7 @@ void UGA_BoostJumpPack_C::HandleBoostJump()
 
 void UGA_BoostJumpPack_C::SetupTransitionVariables(const struct FGameplayTag& Tag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "SetupTransitionVariables");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "SetupTransitionVariables");
 
 	Params::GA_BoostJumpPack_C_SetupTransitionVariables Parms{};
 
@@ -231,10 +198,7 @@ void UGA_BoostJumpPack_C::SetupTransitionVariables(const struct FGameplayTag& Ta
 
 void UGA_BoostJumpPack_C::DetermineStateToTransitionTo(Enum_BoostJumpStates* BoostState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "DetermineStateToTransitionTo");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "DetermineStateToTransitionTo");
 
 	Params::GA_BoostJumpPack_C_DetermineStateToTransitionTo Parms{};
 
@@ -250,10 +214,7 @@ void UGA_BoostJumpPack_C::DetermineStateToTransitionTo(Enum_BoostJumpStates* Boo
 
 void UGA_BoostJumpPack_C::ProcessAbilityStateMachine()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "ProcessAbilityStateMachine");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "ProcessAbilityStateMachine");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -266,10 +227,7 @@ void UGA_BoostJumpPack_C::ProcessAbilityStateMachine()
 
 void UGA_BoostJumpPack_C::TransitionFromBoost(Enum_BoostJumpStates* TargetBoostState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromBoost");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromBoost");
 
 	Params::GA_BoostJumpPack_C_TransitionFromBoost Parms{};
 
@@ -287,10 +245,7 @@ void UGA_BoostJumpPack_C::TransitionFromBoost(Enum_BoostJumpStates* TargetBoostS
 
 void UGA_BoostJumpPack_C::TransitionFromHovering(Enum_BoostJumpStates* TargetBoostState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromHovering");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromHovering");
 
 	Params::GA_BoostJumpPack_C_TransitionFromHovering Parms{};
 
@@ -308,10 +263,7 @@ void UGA_BoostJumpPack_C::TransitionFromHovering(Enum_BoostJumpStates* TargetBoo
 
 void UGA_BoostJumpPack_C::TransitionFromFalling(Enum_BoostJumpStates* TargetBoostState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromFalling");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromFalling");
 
 	Params::GA_BoostJumpPack_C_TransitionFromFalling Parms{};
 
@@ -329,10 +281,7 @@ void UGA_BoostJumpPack_C::TransitionFromFalling(Enum_BoostJumpStates* TargetBoos
 
 void UGA_BoostJumpPack_C::ResetTransitionVariables(bool bForceEndHovering)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "ResetTransitionVariables");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "ResetTransitionVariables");
 
 	Params::GA_BoostJumpPack_C_ResetTransitionVariables Parms{};
 
@@ -347,10 +296,7 @@ void UGA_BoostJumpPack_C::ResetTransitionVariables(bool bForceEndHovering)
 
 void UGA_BoostJumpPack_C::HandleHovering()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleHovering");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleHovering");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -361,10 +307,7 @@ void UGA_BoostJumpPack_C::HandleHovering()
 
 void UGA_BoostJumpPack_C::HandleFalling()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleFalling");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleFalling");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -377,10 +320,7 @@ void UGA_BoostJumpPack_C::HandleFalling()
 
 void UGA_BoostJumpPack_C::HandleIdle(bool bForceEndHovering)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleIdle");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleIdle");
 
 	Params::GA_BoostJumpPack_C_HandleIdle Parms{};
 
@@ -397,10 +337,7 @@ void UGA_BoostJumpPack_C::HandleIdle(bool bForceEndHovering)
 
 void UGA_BoostJumpPack_C::Setup_Notify_at_Apex(bool bNotifyApex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Setup Notify at Apex");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Setup Notify at Apex");
 
 	Params::GA_BoostJumpPack_C_Setup_Notify_at_Apex Parms{};
 
@@ -417,10 +354,7 @@ void UGA_BoostJumpPack_C::Setup_Notify_at_Apex(bool bNotifyApex)
 
 void UGA_BoostJumpPack_C::PotentiallyEndHovering(bool bForceEndHovering)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "PotentiallyEndHovering");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "PotentiallyEndHovering");
 
 	Params::GA_BoostJumpPack_C_PotentiallyEndHovering Parms{};
 
@@ -437,10 +371,7 @@ void UGA_BoostJumpPack_C::PotentiallyEndHovering(bool bForceEndHovering)
 
 void UGA_BoostJumpPack_C::SetCurrentBoostState(EJumpBoostPackState NewState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "SetCurrentBoostState");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "SetCurrentBoostState");
 
 	Params::GA_BoostJumpPack_C_SetCurrentBoostState Parms{};
 
@@ -458,10 +389,7 @@ void UGA_BoostJumpPack_C::SetCurrentBoostState(EJumpBoostPackState NewState)
 
 void UGA_BoostJumpPack_C::HandleCurrentBoostStateChanged(EJumpBoostPackState PreviousState, EJumpBoostPackState CurrentState_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleCurrentBoostStateChanged");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleCurrentBoostStateChanged");
 
 	Params::GA_BoostJumpPack_C_HandleCurrentBoostStateChanged Parms{};
 
@@ -479,10 +407,7 @@ void UGA_BoostJumpPack_C::HandleCurrentBoostStateChanged(EJumpBoostPackState Pre
 
 bool UGA_BoostJumpPack_C::IsUsingJetpackEffectActive()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "IsUsingJetpackEffectActive");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "IsUsingJetpackEffectActive");
 
 	Params::GA_BoostJumpPack_C_IsUsingJetpackEffectActive Parms{};
 
@@ -497,10 +422,7 @@ bool UGA_BoostJumpPack_C::IsUsingJetpackEffectActive()
 
 void UGA_BoostJumpPack_C::Setup_PlayerPawn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Setup PlayerPawn");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Setup PlayerPawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -513,10 +435,7 @@ void UGA_BoostJumpPack_C::Setup_PlayerPawn()
 
 void UGA_BoostJumpPack_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_OnEndAbility");
 
 	Params::GA_BoostJumpPack_C_K2_OnEndAbility Parms{};
 
@@ -531,10 +450,7 @@ void UGA_BoostJumpPack_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_BoostJumpPack_C::Consider_Starting_Regen_Effect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Consider Starting Regen Effect");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Consider Starting Regen Effect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -545,10 +461,7 @@ void UGA_BoostJumpPack_C::Consider_Starting_Regen_Effect()
 
 void UGA_BoostJumpPack_C::Consider_Stopping_Regen_Effect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Consider Stopping Regen Effect");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Consider Stopping Regen Effect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -559,10 +472,7 @@ void UGA_BoostJumpPack_C::Consider_Stopping_Regen_Effect()
 
 void UGA_BoostJumpPack_C::Start_Regen_Effect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Start Regen Effect");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Start Regen Effect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -573,10 +483,7 @@ void UGA_BoostJumpPack_C::Start_Regen_Effect()
 
 void UGA_BoostJumpPack_C::Stop_Regen_Effect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Stop Regen Effect");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Stop Regen Effect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -589,10 +496,7 @@ void UGA_BoostJumpPack_C::Stop_Regen_Effect()
 
 void UGA_BoostJumpPack_C::ProcessTriggerData(const struct FGameplayTag& TagOne)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "ProcessTriggerData");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "ProcessTriggerData");
 
 	Params::GA_BoostJumpPack_C_ProcessTriggerData Parms{};
 
@@ -607,10 +511,7 @@ void UGA_BoostJumpPack_C::ProcessTriggerData(const struct FGameplayTag& TagOne)
 
 void UGA_BoostJumpPack_C::Reset_Toggle_Input_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reset Toggle Input State");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Reset Toggle Input State");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -621,10 +522,7 @@ void UGA_BoostJumpPack_C::Reset_Toggle_Input_State()
 
 void UGA_BoostJumpPack_C::OnFuelIsFull()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnFuelIsFull");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "OnFuelIsFull");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -635,10 +533,7 @@ void UGA_BoostJumpPack_C::OnFuelIsFull()
 
 void UGA_BoostJumpPack_C::OnFuelIsEmpty()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnFuelIsEmpty");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "OnFuelIsEmpty");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -649,10 +544,7 @@ void UGA_BoostJumpPack_C::OnFuelIsEmpty()
 
 void UGA_BoostJumpPack_C::OnAbilityCanceled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnAbilityCanceled");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "OnAbilityCanceled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -663,10 +555,7 @@ void UGA_BoostJumpPack_C::OnAbilityCanceled()
 
 void UGA_BoostJumpPack_C::SavePlayerPawn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "SavePlayerPawn");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "SavePlayerPawn");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -677,10 +566,7 @@ void UGA_BoostJumpPack_C::SavePlayerPawn()
 
 void UGA_BoostJumpPack_C::Reengage_Hovering_Movement()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Hovering Movement");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Hovering Movement");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -691,10 +577,7 @@ void UGA_BoostJumpPack_C::Reengage_Hovering_Movement()
 
 void UGA_BoostJumpPack_C::Reengage_Falling_Movement()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Falling Movement");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Falling Movement");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -705,10 +588,7 @@ void UGA_BoostJumpPack_C::Reengage_Falling_Movement()
 
 void UGA_BoostJumpPack_C::Handle_Jetpack_Equipped()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Handle Jetpack Equipped");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Handle Jetpack Equipped");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -721,10 +601,7 @@ void UGA_BoostJumpPack_C::Handle_Jetpack_Equipped()
 
 void UGA_BoostJumpPack_C::TransitionFromIdle(Enum_BoostJumpStates* TargetBoostState) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromIdle");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromIdle");
 
 	Params::GA_BoostJumpPack_C_TransitionFromIdle Parms{};
 
@@ -742,10 +619,7 @@ void UGA_BoostJumpPack_C::TransitionFromIdle(Enum_BoostJumpStates* TargetBoostSt
 
 void UGA_BoostJumpPack_C::GetFuel(float* Fuel) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "GetFuel");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "GetFuel");
 
 	Params::GA_BoostJumpPack_C_GetFuel Parms{};
 
@@ -763,10 +637,7 @@ void UGA_BoostJumpPack_C::GetFuel(float* Fuel) const
 
 void UGA_BoostJumpPack_C::GetMaxFuel(float* MaxFuel) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "GetMaxFuel");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "GetMaxFuel");
 
 	Params::GA_BoostJumpPack_C_GetMaxFuel Parms{};
 
@@ -786,10 +657,7 @@ void UGA_BoostJumpPack_C::GetMaxFuel(float* MaxFuel) const
 
 bool UGA_BoostJumpPack_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_ShouldAbilityRespondToEvent");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_ShouldAbilityRespondToEvent");
 
 	Params::GA_BoostJumpPack_C_K2_ShouldAbilityRespondToEvent Parms{};
 
@@ -809,10 +677,7 @@ bool UGA_BoostJumpPack_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayA
 
 bool UGA_BoostJumpPack_C::IsBoostAllowed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "IsBoostAllowed");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "IsBoostAllowed");
 
 	Params::GA_BoostJumpPack_C_IsBoostAllowed Parms{};
 
@@ -830,10 +695,7 @@ bool UGA_BoostJumpPack_C::IsBoostAllowed() const
 
 bool UGA_BoostJumpPack_C::IsCurrentlyDead(const struct FGameplayTag& TagOne) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "IsCurrentlyDead");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "IsCurrentlyDead");
 
 	Params::GA_BoostJumpPack_C_IsCurrentlyDead Parms{};
 
@@ -853,10 +715,7 @@ bool UGA_BoostJumpPack_C::IsCurrentlyDead(const struct FGameplayTag& TagOne) con
 
 class AFortPlayerPawn* UGA_BoostJumpPack_C::Get_Player_Pawn(class UObject* Object) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Get Player Pawn");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Get Player Pawn");
 
 	Params::GA_BoostJumpPack_C_Get_Player_Pawn Parms{};
 
@@ -876,10 +735,7 @@ class AFortPlayerPawn* UGA_BoostJumpPack_C::Get_Player_Pawn(class UObject* Objec
 
 bool UGA_BoostJumpPack_C::Reasons_To_Reset_on_Transition(const struct FGameplayTag& Tag) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reasons To Reset on Transition");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "Reasons To Reset on Transition");
 
 	Params::GA_BoostJumpPack_C_Reasons_To_Reset_on_Transition Parms{};
 
@@ -900,10 +756,7 @@ bool UGA_BoostJumpPack_C::Reasons_To_Reset_on_Transition(const struct FGameplayT
 
 bool UGA_BoostJumpPack_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_CanActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_CanActivateAbility");
 
 	Params::GA_BoostJumpPack_C_K2_CanActivateAbility Parms{};
 
@@ -925,10 +778,7 @@ bool UGA_BoostJumpPack_C::K2_CanActivateAbility(const struct FGameplayAbilityAct
 
 bool UGA_BoostJumpPack_C::NotInHidingSpot() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_BoostJumpPack_C", "NotInHidingSpot");
+	class UFunction* Func = Class->GetFunction("GA_BoostJumpPack_C", "NotInHidingSpot");
 
 	Params::GA_BoostJumpPack_C_NotInHidingSpot Parms{};
 

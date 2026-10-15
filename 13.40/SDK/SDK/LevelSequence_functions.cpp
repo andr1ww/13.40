@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor, bool bAllowBindingsFromAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "AddBinding");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "AddBinding");
 
 	Params::LevelSequenceActor_AddBinding Parms{};
 
@@ -54,10 +51,7 @@ void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingID& Bi
 
 void ALevelSequenceActor::AddBindingByTag(class FName BindingTag, class AActor* Actor, bool bAllowBindingsFromAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "AddBindingByTag");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "AddBindingByTag");
 
 	Params::LevelSequenceActor_AddBindingByTag Parms{};
 
@@ -79,10 +73,7 @@ void ALevelSequenceActor::AddBindingByTag(class FName BindingTag, class AActor* 
 
 void ALevelSequenceActor::HideBurnin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "HideBurnin");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "HideBurnin");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -101,10 +92,7 @@ void ALevelSequenceActor::HideBurnin()
 
 void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "RemoveBinding");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "RemoveBinding");
 
 	Params::LevelSequenceActor_RemoveBinding Parms{};
 
@@ -128,10 +116,7 @@ void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingID&
 
 void ALevelSequenceActor::RemoveBindingByTag(class FName Tag, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "RemoveBindingByTag");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "RemoveBindingByTag");
 
 	Params::LevelSequenceActor_RemoveBindingByTag Parms{};
 
@@ -154,10 +139,7 @@ void ALevelSequenceActor::RemoveBindingByTag(class FName Tag, class AActor* Acto
 
 void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingID& Binding)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "ResetBinding");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "ResetBinding");
 
 	Params::LevelSequenceActor_ResetBinding Parms{};
 
@@ -177,10 +159,7 @@ void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingID& 
 
 void ALevelSequenceActor::ResetBindings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "ResetBindings");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "ResetBindings");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -200,10 +179,7 @@ void ALevelSequenceActor::ResetBindings()
 
 void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingID& Binding, const TArray<class AActor*>& Actors, bool bAllowBindingsFromAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "SetBinding");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "SetBinding");
 
 	Params::LevelSequenceActor_SetBinding Parms{};
 
@@ -229,10 +205,7 @@ void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingID& Bi
 
 void ALevelSequenceActor::SetBindingByTag(class FName BindingTag, const TArray<class AActor*>& Actors, bool bAllowBindingsFromAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "SetBindingByTag");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "SetBindingByTag");
 
 	Params::LevelSequenceActor_SetBindingByTag Parms{};
 
@@ -256,10 +229,7 @@ void ALevelSequenceActor::SetBindingByTag(class FName BindingTag, const TArray<c
 
 void ALevelSequenceActor::SetEventReceivers(const TArray<class AActor*>& AdditionalReceivers)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "SetEventReceivers");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "SetEventReceivers");
 
 	Params::LevelSequenceActor_SetEventReceivers Parms{};
 
@@ -281,10 +251,7 @@ void ALevelSequenceActor::SetEventReceivers(const TArray<class AActor*>& Additio
 
 void ALevelSequenceActor::SetReplicatePlayback(bool ReplicatePlayback)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "SetReplicatePlayback");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "SetReplicatePlayback");
 
 	Params::LevelSequenceActor_SetReplicatePlayback Parms{};
 
@@ -306,10 +273,7 @@ void ALevelSequenceActor::SetReplicatePlayback(bool ReplicatePlayback)
 
 void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "SetSequence");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "SetSequence");
 
 	Params::LevelSequenceActor_SetSequence Parms{};
 
@@ -329,10 +293,7 @@ void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence)
 
 void ALevelSequenceActor::ShowBurnin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "ShowBurnin");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "ShowBurnin");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -351,10 +312,7 @@ void ALevelSequenceActor::ShowBurnin()
 
 struct FMovieSceneObjectBindingID ALevelSequenceActor::FindNamedBinding(class FName Tag) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "FindNamedBinding");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "FindNamedBinding");
 
 	Params::LevelSequenceActor_FindNamedBinding Parms{};
 
@@ -379,10 +337,7 @@ struct FMovieSceneObjectBindingID ALevelSequenceActor::FindNamedBinding(class FN
 
 const TArray<struct FMovieSceneObjectBindingID> ALevelSequenceActor::FindNamedBindings(class FName Tag) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "FindNamedBindings");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "FindNamedBindings");
 
 	Params::LevelSequenceActor_FindNamedBindings Parms{};
 
@@ -406,10 +361,7 @@ const TArray<struct FMovieSceneObjectBindingID> ALevelSequenceActor::FindNamedBi
 
 class ULevelSequence* ALevelSequenceActor::GetSequence() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "GetSequence");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "GetSequence");
 
 	Params::LevelSequenceActor_GetSequence Parms{};
 
@@ -431,10 +383,7 @@ class ULevelSequence* ALevelSequenceActor::GetSequence() const
 
 class ULevelSequencePlayer* ALevelSequenceActor::GetSequencePlayer() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "GetSequencePlayer");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "GetSequencePlayer");
 
 	Params::LevelSequenceActor_GetSequencePlayer Parms{};
 
@@ -456,10 +405,7 @@ class ULevelSequencePlayer* ALevelSequenceActor::GetSequencePlayer() const
 
 class ULevelSequence* ALevelSequenceActor::LoadSequence() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceActor", "LoadSequence");
+	class UFunction* Func = Class->GetFunction("LevelSequenceActor", "LoadSequence");
 
 	Params::LevelSequenceActor_LoadSequence Parms{};
 
@@ -482,10 +428,7 @@ class ULevelSequence* ALevelSequenceActor::LoadSequence() const
 
 class UObject* ULevelSequence::CopyMetaData(class UObject* InMetaData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequence", "CopyMetaData");
+	class UFunction* Func = Class->GetFunction("LevelSequence", "CopyMetaData");
 
 	Params::LevelSequence_CopyMetaData Parms{};
 
@@ -510,10 +453,7 @@ class UObject* ULevelSequence::CopyMetaData(class UObject* InMetaData)
 
 class UObject* ULevelSequence::FindOrAddMetaDataByClass(TSubclassOf<class UObject> InClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequence", "FindOrAddMetaDataByClass");
+	class UFunction* Func = Class->GetFunction("LevelSequence", "FindOrAddMetaDataByClass");
 
 	Params::LevelSequence_FindOrAddMetaDataByClass Parms{};
 
@@ -537,10 +477,7 @@ class UObject* ULevelSequence::FindOrAddMetaDataByClass(TSubclassOf<class UObjec
 
 void ULevelSequence::RemoveMetaDataByClass(TSubclassOf<class UObject> InClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequence", "RemoveMetaDataByClass");
+	class UFunction* Func = Class->GetFunction("LevelSequence", "RemoveMetaDataByClass");
 
 	Params::LevelSequence_RemoveMetaDataByClass Parms{};
 
@@ -563,10 +500,7 @@ void ULevelSequence::RemoveMetaDataByClass(TSubclassOf<class UObject> InClass)
 
 class UObject* ULevelSequence::FindMetaDataByClass(TSubclassOf<class UObject> InClass) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequence", "FindMetaDataByClass");
+	class UFunction* Func = Class->GetFunction("LevelSequence", "FindMetaDataByClass");
 
 	Params::LevelSequence_FindMetaDataByClass Parms{};
 
@@ -590,10 +524,7 @@ class UObject* ULevelSequence::FindMetaDataByClass(TSubclassOf<class UObject> In
 
 void ULevelSequenceBurnInOptions::SetBurnIn(const struct FSoftClassPath& InBurnInClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceBurnInOptions", "SetBurnIn");
+	class UFunction* Func = Class->GetFunction("LevelSequenceBurnInOptions", "SetBurnIn");
 
 	Params::LevelSequenceBurnInOptions_SetBurnIn Parms{};
 
@@ -615,10 +546,7 @@ void ULevelSequenceBurnInOptions::SetBurnIn(const struct FSoftClassPath& InBurnI
 
 void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceBurnIn", "SetSettings");
+	class UFunction* Func = Class->GetFunction("LevelSequenceBurnIn", "SetSettings");
 
 	Params::LevelSequenceBurnIn_SetSettings Parms{};
 
@@ -635,10 +563,7 @@ void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 
 TSubclassOf<class ULevelSequenceBurnInInitSettings> ULevelSequenceBurnIn::GetSettingsClass() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceBurnIn", "GetSettingsClass");
+	class UFunction* Func = Class->GetFunction("LevelSequenceBurnIn", "GetSettingsClass");
 
 	Params::LevelSequenceBurnIn_GetSettingsClass Parms{};
 
@@ -658,10 +583,7 @@ TSubclassOf<class ULevelSequenceBurnInInitSettings> ULevelSequenceBurnIn::GetSet
 
 void ULevelSequenceDirector::OnCreated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceDirector", "OnCreated");
+	class UFunction* Func = Class->GetFunction("LevelSequenceDirector", "OnCreated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -678,10 +600,7 @@ void ULevelSequenceDirector::OnCreated()
 
 class ULevelSequencePlayer* ULevelSequencePlayer::CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings, class ALevelSequenceActor** OutActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LevelSequencePlayer", "CreateLevelSequencePlayer");
+	class UFunction* Func = StaticClass()->GetFunction("LevelSequencePlayer", "CreateLevelSequencePlayer");
 
 	Params::LevelSequencePlayer_CreateLevelSequencePlayer Parms{};
 
@@ -710,10 +629,7 @@ class ULevelSequencePlayer* ULevelSequencePlayer::CreateLevelSequencePlayer(clas
 
 class UCameraComponent* ULevelSequencePlayer::GetActiveCameraComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequencePlayer", "GetActiveCameraComponent");
+	class UFunction* Func = Class->GetFunction("LevelSequencePlayer", "GetActiveCameraComponent");
 
 	Params::LevelSequencePlayer_GetActiveCameraComponent Parms{};
 
@@ -733,10 +649,7 @@ class UCameraComponent* ULevelSequencePlayer::GetActiveCameraComponent() const
 
 void ALevelSequenceMediaController::OnRep_ServerStartTimeSeconds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceMediaController", "OnRep_ServerStartTimeSeconds");
+	class UFunction* Func = Class->GetFunction("LevelSequenceMediaController", "OnRep_ServerStartTimeSeconds");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -752,10 +665,7 @@ void ALevelSequenceMediaController::OnRep_ServerStartTimeSeconds()
 
 void ALevelSequenceMediaController::Play()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceMediaController", "Play");
+	class UFunction* Func = Class->GetFunction("LevelSequenceMediaController", "Play");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -773,10 +683,7 @@ void ALevelSequenceMediaController::Play()
 
 void ALevelSequenceMediaController::SynchronizeToServer(float DesyncThresholdSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceMediaController", "SynchronizeToServer");
+	class UFunction* Func = Class->GetFunction("LevelSequenceMediaController", "SynchronizeToServer");
 
 	Params::LevelSequenceMediaController_SynchronizeToServer Parms{};
 
@@ -798,10 +705,7 @@ void ALevelSequenceMediaController::SynchronizeToServer(float DesyncThresholdSec
 
 class UMediaComponent* ALevelSequenceMediaController::GetMediaComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceMediaController", "GetMediaComponent");
+	class UFunction* Func = Class->GetFunction("LevelSequenceMediaController", "GetMediaComponent");
 
 	Params::LevelSequenceMediaController_GetMediaComponent Parms{};
 
@@ -823,10 +727,7 @@ class UMediaComponent* ALevelSequenceMediaController::GetMediaComponent() const
 
 class ALevelSequenceActor* ALevelSequenceMediaController::GetSequence() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSequenceMediaController", "GetSequence");
+	class UFunction* Func = Class->GetFunction("LevelSequenceMediaController", "GetSequence");
 
 	Params::LevelSequenceMediaController_GetSequence Parms{};
 

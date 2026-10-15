@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP13_Sandcastle_Mannequin_C::ExecuteUbergraph_BP13_Sandcastle_Mannequin(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_Sandcastle_Mannequin_C", "ExecuteUbergraph_BP13_Sandcastle_Mannequin");
+	class UFunction* Func = Class->GetFunction("BP13_Sandcastle_Mannequin_C", "ExecuteUbergraph_BP13_Sandcastle_Mannequin");
 
 	Params::BP13_Sandcastle_Mannequin_C_ExecuteUbergraph_BP13_Sandcastle_Mannequin Parms{};
 
@@ -45,10 +42,7 @@ void ABP13_Sandcastle_Mannequin_C::ExecuteUbergraph_BP13_Sandcastle_Mannequin(in
 
 void ABP13_Sandcastle_Mannequin_C::OnPartChanged(const class UCustomCharacterPart* OldPart, const class UCustomCharacterPart* NewPart, EFortCustomPartType PartType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_Sandcastle_Mannequin_C", "OnPartChanged");
+	class UFunction* Func = Class->GetFunction("BP13_Sandcastle_Mannequin_C", "OnPartChanged");
 
 	Params::BP13_Sandcastle_Mannequin_C_OnPartChanged Parms{};
 
@@ -65,10 +59,7 @@ void ABP13_Sandcastle_Mannequin_C::OnPartChanged(const class UCustomCharacterPar
 
 void ABP13_Sandcastle_Mannequin_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_Sandcastle_Mannequin_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP13_Sandcastle_Mannequin_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +74,7 @@ void ABP13_Sandcastle_Mannequin_C::ReceiveBeginPlay()
 
 void ABP13_Sandcastle_Mannequin_C::OnVariantChanged(const struct FGameplayTag& VariantChannel, const struct FGameplayTag& OldVariantTag, const struct FGameplayTag& NewVariantTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_Sandcastle_Mannequin_C", "OnVariantChanged");
+	class UFunction* Func = Class->GetFunction("BP13_Sandcastle_Mannequin_C", "OnVariantChanged");
 
 	Params::BP13_Sandcastle_Mannequin_C_OnVariantChanged Parms{};
 

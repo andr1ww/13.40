@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_BPFlag(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_BPFlag");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_BPFlag");
 
 	Params::BP_Frontend_EventLevel_NavObject_BPFlag_C_ExecuteUbergraph_BP_Frontend_EventLevel_NavObject_BPFlag Parms{};
 
@@ -41,10 +38,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ExecuteUbergraph_BP_Frontend_Ev
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::OnInitializeForPlayer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "OnInitializeForPlayer");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "OnInitializeForPlayer");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::OnInitializeForPlayer()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ReceiveBeginPlay()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ReceiveActorBeginCursorOver()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ReceiveActorBeginCursorOver");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ReceiveActorBeginCursorOver");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ReceiveActorBeginCursorOver()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::Close_Door_Sound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "Close Door Sound");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "Close Door Sound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::Close_Door_Sound()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::Open_Door_Sound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "Open Door Sound");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "Open Door Sound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::Open_Door_Sound()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ReceiveActorEndCursorOver()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ReceiveActorEndCursorOver");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ReceiveActorEndCursorOver");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ReceiveActorEndCursorOver()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::UpdateVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "UpdateVisuals");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "UpdateVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +117,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::UpdateVisuals()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ReceiveActorOnClicked(const struct FKey& ButtonPressed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ReceiveActorOnClicked");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "ReceiveActorOnClicked");
 
 	Params::BP_Frontend_EventLevel_NavObject_BPFlag_C_ReceiveActorOnClicked Parms{};
 
@@ -159,10 +132,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::ReceiveActorOnClicked(const str
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::FadeGlint__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "FadeGlint__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "FadeGlint__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -173,10 +143,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::FadeGlint__UpdateFunc()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::FadeGlint__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "FadeGlint__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "FadeGlint__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -187,10 +154,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::FadeGlint__FinishedFunc()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "Timeline_0__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -201,10 +165,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::Timeline_0__UpdateFunc()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "Timeline_0__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +176,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::Timeline_0__FinishedFunc()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -231,10 +189,7 @@ void ABP_Frontend_EventLevel_NavObject_BPFlag_C::UserConstructionScript()
 
 void ABP_Frontend_EventLevel_NavObject_BPFlag_C::SetBattlePassVisualState(bool Purchased)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "SetBattlePassVisualState");
+	class UFunction* Func = Class->GetFunction("BP_Frontend_EventLevel_NavObject_BPFlag_C", "SetBattlePassVisualState");
 
 	Params::BP_Frontend_EventLevel_NavObject_BPFlag_C_SetBattlePassVisualState Parms{};
 

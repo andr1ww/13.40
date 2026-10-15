@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP13_StyleChallenge_Mannequin_C::ExecuteUbergraph_BP13_StyleChallenge_Mannequin(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "ExecuteUbergraph_BP13_StyleChallenge_Mannequin");
+	class UFunction* Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "ExecuteUbergraph_BP13_StyleChallenge_Mannequin");
 
 	Params::BP13_StyleChallenge_Mannequin_C_ExecuteUbergraph_BP13_StyleChallenge_Mannequin Parms{};
 
@@ -45,10 +42,7 @@ void ABP13_StyleChallenge_Mannequin_C::ExecuteUbergraph_BP13_StyleChallenge_Mann
 
 void ABP13_StyleChallenge_Mannequin_C::OnPartChanged(const class UCustomCharacterPart* OldPart, const class UCustomCharacterPart* NewPart_0, EFortCustomPartType PartType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "OnPartChanged");
+	class UFunction* Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "OnPartChanged");
 
 	Params::BP13_StyleChallenge_Mannequin_C_OnPartChanged Parms{};
 
@@ -69,10 +63,7 @@ void ABP13_StyleChallenge_Mannequin_C::OnPartChanged(const class UCustomCharacte
 
 void ABP13_StyleChallenge_Mannequin_C::OnVariantChanged(const struct FGameplayTag& VariantChannel, const struct FGameplayTag& OldVariantTag, const struct FGameplayTag& NewVariantTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "OnVariantChanged");
+	class UFunction* Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "OnVariantChanged");
 
 	Params::BP13_StyleChallenge_Mannequin_C_OnVariantChanged Parms{};
 
@@ -89,10 +80,7 @@ void ABP13_StyleChallenge_Mannequin_C::OnVariantChanged(const struct FGameplayTa
 
 void ABP13_StyleChallenge_Mannequin_C::ProfPupSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "ProfPupSetup");
+	class UFunction* Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "ProfPupSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +91,7 @@ void ABP13_StyleChallenge_Mannequin_C::ProfPupSetup()
 
 void ABP13_StyleChallenge_Mannequin_C::RacerZeroSetup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "RacerZeroSetup");
+	class UFunction* Func = Class->GetFunction("BP13_StyleChallenge_Mannequin_C", "RacerZeroSetup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

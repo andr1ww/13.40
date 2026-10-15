@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UCableComponent::SetAttachEndTo(class AActor* Actor, class FName ComponentProperty, class FName SocketName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CableComponent", "SetAttachEndTo");
+	class UFunction* Func = Class->GetFunction("CableComponent", "SetAttachEndTo");
 
 	Params::CableComponent_SetAttachEndTo Parms{};
 
@@ -53,10 +50,7 @@ void UCableComponent::SetAttachEndTo(class AActor* Actor, class FName ComponentP
 
 void UCableComponent::SetAttachEndToComponent(class USceneComponent* Component, class FName SocketName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CableComponent", "SetAttachEndToComponent");
+	class UFunction* Func = Class->GetFunction("CableComponent", "SetAttachEndToComponent");
 
 	Params::CableComponent_SetAttachEndToComponent Parms{};
 
@@ -79,10 +73,7 @@ void UCableComponent::SetAttachEndToComponent(class USceneComponent* Component, 
 
 class AActor* UCableComponent::GetAttachedActor() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CableComponent", "GetAttachedActor");
+	class UFunction* Func = Class->GetFunction("CableComponent", "GetAttachedActor");
 
 	Params::CableComponent_GetAttachedActor Parms{};
 
@@ -104,10 +95,7 @@ class AActor* UCableComponent::GetAttachedActor() const
 
 class USceneComponent* UCableComponent::GetAttachedComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CableComponent", "GetAttachedComponent");
+	class UFunction* Func = Class->GetFunction("CableComponent", "GetAttachedComponent");
 
 	Params::CableComponent_GetAttachedComponent Parms{};
 
@@ -129,10 +117,7 @@ class USceneComponent* UCableComponent::GetAttachedComponent() const
 
 void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Locations) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CableComponent", "GetCableParticleLocations");
+	class UFunction* Func = Class->GetFunction("CableComponent", "GetCableParticleLocations");
 
 	Params::CableComponent_GetCableParticleLocations Parms{};
 

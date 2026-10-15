@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_EnvCampFire_Fire_C::ExecuteUbergraph_GCNL_EnvCampFire_Fire(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "ExecuteUbergraph_GCNL_EnvCampFire_Fire");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "ExecuteUbergraph_GCNL_EnvCampFire_Fire");
 
 	Params::GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire Parms{};
 
@@ -48,10 +45,7 @@ void AGCNL_EnvCampFire_Fire_C::ExecuteUbergraph_GCNL_EnvCampFire_Fire(int32 Entr
 
 void AGCNL_EnvCampFire_Fire_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "OnRemoval");
 
 	Params::GCNL_EnvCampFire_Fire_C_OnRemoval Parms{};
 
@@ -76,10 +70,7 @@ void AGCNL_EnvCampFire_Fire_C::OnRemoval(class AActor* MyTarget, const struct FG
 
 void AGCNL_EnvCampFire_Fire_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "OnLoopingStart");
 
 	Params::GCNL_EnvCampFire_Fire_C_OnLoopingStart Parms{};
 
@@ -97,10 +88,7 @@ void AGCNL_EnvCampFire_Fire_C::OnLoopingStart(class AActor* MyTarget, const stru
 
 void AGCNL_EnvCampFire_Fire_C::Darken_Logs__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +99,7 @@ void AGCNL_EnvCampFire_Fire_C::Darken_Logs__UpdateFunc()
 
 void AGCNL_EnvCampFire_Fire_C::Darken_Logs__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

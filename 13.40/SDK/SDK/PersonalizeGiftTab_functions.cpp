@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPersonalizeGiftTab_C::ExecuteUbergraph_PersonalizeGiftTab(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PersonalizeGiftTab_C", "ExecuteUbergraph_PersonalizeGiftTab");
+	class UFunction* Func = Class->GetFunction("PersonalizeGiftTab_C", "ExecuteUbergraph_PersonalizeGiftTab");
 
 	Params::PersonalizeGiftTab_C_ExecuteUbergraph_PersonalizeGiftTab Parms{};
 
@@ -44,10 +41,7 @@ void UPersonalizeGiftTab_C::ExecuteUbergraph_PersonalizeGiftTab(int32 EntryPoint
 
 void UPersonalizeGiftTab_C::BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PersonalizeGiftTab_C", "BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("PersonalizeGiftTab_C", "BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature");
 
 	Params::PersonalizeGiftTab_C_BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature Parms{};
 
@@ -66,10 +60,7 @@ void UPersonalizeGiftTab_C::BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEven
 
 void UPersonalizeGiftTab_C::BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_OnItemIsHoveredChangedDynamic__DelegateSignature(class UObject* Item, bool bIsHovered)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PersonalizeGiftTab_C", "BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_OnItemIsHoveredChangedDynamic__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("PersonalizeGiftTab_C", "BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_OnItemIsHoveredChangedDynamic__DelegateSignature");
 
 	Params::PersonalizeGiftTab_C_BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_OnItemIsHoveredChangedDynamic__DelegateSignature Parms{};
 

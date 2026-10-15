@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UIconTabButton_C::Play_Hover_Sound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "Play Hover Sound");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "Play Hover Sound");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -39,10 +36,7 @@ void UIconTabButton_C::Play_Hover_Sound()
 
 void UIconTabButton_C::SetChangeIconColorWhenSelected(bool ChangeColorWhenSelected, const struct FSlateColor& SelectedColor, const struct FSlateColor& UnselectedColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "SetChangeIconColorWhenSelected");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "SetChangeIconColorWhenSelected");
 
 	Params::IconTabButton_C_SetChangeIconColorWhenSelected Parms{};
 
@@ -62,10 +56,7 @@ void UIconTabButton_C::SetChangeIconColorWhenSelected(bool ChangeColorWhenSelect
 
 void UIconTabButton_C::Update_Bang_State(bool bBangEnabled, int32 Count)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "Update Bang State");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "Update Bang State");
 
 	Params::IconTabButton_C_Update_Bang_State Parms{};
 
@@ -83,10 +74,7 @@ void UIconTabButton_C::Update_Bang_State(bool bBangEnabled, int32 Count)
 
 void UIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "SetTutorialBorderStyle");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "SetTutorialBorderStyle");
 
 	Params::IconTabButton_C_SetTutorialBorderStyle Parms{};
 
@@ -101,10 +89,7 @@ void UIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 
 void UIconTabButton_C::ShowText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "ShowText");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "ShowText");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +102,7 @@ void UIconTabButton_C::ShowText()
 
 void UIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "Set Icon");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "Set Icon");
 
 	Params::IconTabButton_C_Set_Icon Parms{};
 
@@ -137,10 +119,7 @@ void UIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UIconTabButton_C::Set_Text(const class FText& ButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "Set Text");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "Set Text");
 
 	Params::IconTabButton_C_Set_Text Parms{};
 
@@ -157,10 +136,7 @@ void UIconTabButton_C::Set_Text(const class FText& ButtonText)
 
 void UIconTabButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "PreConstruct");
 
 	Params::IconTabButton_C_PreConstruct Parms{};
 
@@ -177,10 +153,7 @@ void UIconTabButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "SetTabLabelInfo");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "SetTabLabelInfo");
 
 	Params::IconTabButton_C_SetTabLabelInfo Parms{};
 
@@ -195,10 +168,7 @@ void UIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& Tab
 
 void UIconTabButton_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -209,10 +179,7 @@ void UIconTabButton_C::BP_OnSelected()
 
 void UIconTabButton_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +190,7 @@ void UIconTabButton_C::BP_OnDeselected()
 
 void UIconTabButton_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "Construct");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +201,7 @@ void UIconTabButton_C::Construct()
 
 void UIconTabButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -251,10 +212,7 @@ void UIconTabButton_C::BP_OnHovered()
 
 void UIconTabButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +223,7 @@ void UIconTabButton_C::BP_OnUnhovered()
 
 void UIconTabButton_C::BP_OnEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "BP_OnEnabled");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "BP_OnEnabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +234,7 @@ void UIconTabButton_C::BP_OnEnabled()
 
 void UIconTabButton_C::BP_OnDisabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "BP_OnDisabled");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "BP_OnDisabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -293,10 +245,7 @@ void UIconTabButton_C::BP_OnDisabled()
 
 void UIconTabButton_C::OnCurrentTextStyleChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "OnCurrentTextStyleChanged");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "OnCurrentTextStyleChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -309,10 +258,7 @@ void UIconTabButton_C::OnCurrentTextStyleChanged()
 
 void UIconTabButton_C::ExecuteUbergraph_IconTabButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "ExecuteUbergraph_IconTabButton");
+	class UFunction* Func = Class->GetFunction("IconTabButton_C", "ExecuteUbergraph_IconTabButton");
 
 	Params::IconTabButton_C_ExecuteUbergraph_IconTabButton Parms{};
 

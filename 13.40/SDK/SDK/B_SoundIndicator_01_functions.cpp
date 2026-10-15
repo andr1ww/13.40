@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_SoundIndicator_01_C::ExecuteUbergraph_B_SoundIndicator_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_SoundIndicator_01_C", "ExecuteUbergraph_B_SoundIndicator_01");
+	class UFunction* Func = Class->GetFunction("B_SoundIndicator_01_C", "ExecuteUbergraph_B_SoundIndicator_01");
 
 	Params::B_SoundIndicator_01_C_ExecuteUbergraph_B_SoundIndicator_01 Parms{};
 
@@ -43,10 +40,7 @@ void AB_SoundIndicator_01_C::ExecuteUbergraph_B_SoundIndicator_01(int32 EntryPoi
 
 class UTexture* AB_SoundIndicator_01_C::GetDefaultIcon()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_SoundIndicator_01_C", "GetDefaultIcon");
+	class UFunction* Func = Class->GetFunction("B_SoundIndicator_01_C", "GetDefaultIcon");
 
 	Params::B_SoundIndicator_01_C_GetDefaultIcon Parms{};
 
@@ -63,10 +57,7 @@ class UTexture* AB_SoundIndicator_01_C::GetDefaultIcon()
 
 struct FLinearColor AB_SoundIndicator_01_C::GetDefaultTint()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_SoundIndicator_01_C", "GetDefaultTint");
+	class UFunction* Func = Class->GetFunction("B_SoundIndicator_01_C", "GetDefaultTint");
 
 	Params::B_SoundIndicator_01_C_GetDefaultTint Parms{};
 
@@ -83,10 +74,7 @@ struct FLinearColor AB_SoundIndicator_01_C::GetDefaultTint()
 
 struct FRuntimeFloatCurve AB_SoundIndicator_01_C::GetWeaponCurve() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_SoundIndicator_01_C", "GetWeaponCurve");
+	class UFunction* Func = Class->GetFunction("B_SoundIndicator_01_C", "GetWeaponCurve");
 
 	Params::B_SoundIndicator_01_C_GetWeaponCurve Parms{};
 
@@ -103,10 +91,7 @@ struct FRuntimeFloatCurve AB_SoundIndicator_01_C::GetWeaponCurve() const
 
 struct FRuntimeFloatCurve AB_SoundIndicator_01_C::GetStrengthCurveForActiveType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_SoundIndicator_01_C", "GetStrengthCurveForActiveType");
+	class UFunction* Func = Class->GetFunction("B_SoundIndicator_01_C", "GetStrengthCurveForActiveType");
 
 	Params::B_SoundIndicator_01_C_GetStrengthCurveForActiveType Parms{};
 

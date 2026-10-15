@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEventLeaderboardEntry_C::ExecuteUbergraph_EventLeaderboardEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "ExecuteUbergraph_EventLeaderboardEntry");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "ExecuteUbergraph_EventLeaderboardEntry");
 
 	Params::EventLeaderboardEntry_C_ExecuteUbergraph_EventLeaderboardEntry Parms{};
 
@@ -43,10 +40,7 @@ void UEventLeaderboardEntry_C::ExecuteUbergraph_EventLeaderboardEntry(int32 Entr
 
 void UEventLeaderboardEntry_C::OnTeammateDisplayNameAdded(const class UFortEventLeaderboardEntryData* LeaderboardEntryData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "OnTeammateDisplayNameAdded");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "OnTeammateDisplayNameAdded");
 
 	Params::EventLeaderboardEntry_C_OnTeammateDisplayNameAdded Parms{};
 
@@ -61,10 +55,7 @@ void UEventLeaderboardEntry_C::OnTeammateDisplayNameAdded(const class UFortEvent
 
 void UEventLeaderboardEntry_C::EventColorize()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "EventColorize");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "EventColorize");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UEventLeaderboardEntry_C::EventColorize()
 
 void UEventLeaderboardEntry_C::EventStyleEntry()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "EventStyleEntry");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "EventStyleEntry");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UEventLeaderboardEntry_C::EventStyleEntry()
 
 void UEventLeaderboardEntry_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void UEventLeaderboardEntry_C::BP_OnDeselected()
 
 void UEventLeaderboardEntry_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void UEventLeaderboardEntry_C::BP_OnSelected()
 
 void UEventLeaderboardEntry_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "OnListItemObjectSet");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "OnListItemObjectSet");
 
 	Params::EventLeaderboardEntry_C_OnListItemObjectSet Parms{};
 
@@ -139,10 +118,7 @@ void UEventLeaderboardEntry_C::OnListItemObjectSet(class UObject* ListItemObject
 
 void UEventLeaderboardEntry_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "PreConstruct");
 
 	Params::EventLeaderboardEntry_C_PreConstruct Parms{};
 
@@ -159,10 +135,7 @@ void UEventLeaderboardEntry_C::PreConstruct(bool IsDesignTime)
 
 void UEventLeaderboardEntry_C::SetEntryDetails(class UFortEventLeaderboardEntryData* EntryData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "SetEntryDetails");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "SetEntryDetails");
 
 	Params::EventLeaderboardEntry_C_SetEntryDetails Parms{};
 
@@ -179,10 +152,7 @@ void UEventLeaderboardEntry_C::SetEntryDetails(class UFortEventLeaderboardEntryD
 
 void UEventLeaderboardEntry_C::SetTeamDisplayNames(class UFortEventLeaderboardEntryData* Entry_Data)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEntry_C", "SetTeamDisplayNames");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEntry_C", "SetTeamDisplayNames");
 
 	Params::EventLeaderboardEntry_C_SetTeamDisplayNames Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_Pistol_Grip_Clip_TopAction_C::ExecuteUbergraph_BP_Pistol_Grip_Clip_TopAction(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Pistol_Grip_Clip_TopAction_C", "ExecuteUbergraph_BP_Pistol_Grip_Clip_TopAction");
+	class UFunction* Func = Class->GetFunction("BP_Pistol_Grip_Clip_TopAction_C", "ExecuteUbergraph_BP_Pistol_Grip_Clip_TopAction");
 
 	Params::BP_Pistol_Grip_Clip_TopAction_C_ExecuteUbergraph_BP_Pistol_Grip_Clip_TopAction Parms{};
 
@@ -43,10 +40,7 @@ void UBP_Pistol_Grip_Clip_TopAction_C::ExecuteUbergraph_BP_Pistol_Grip_Clip_TopA
 
 void UBP_Pistol_Grip_Clip_TopAction_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Pistol_Grip_Clip_TopAction_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("BP_Pistol_Grip_Clip_TopAction_C", "AnimGraph");
 
 	Params::BP_Pistol_Grip_Clip_TopAction_C_AnimGraph Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_DudeBro_Vent_C::ExecuteUbergraph_GA_DudeBro_Vent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DudeBro_Vent_C", "ExecuteUbergraph_GA_DudeBro_Vent");
+	class UFunction* Func = Class->GetFunction("GA_DudeBro_Vent_C", "ExecuteUbergraph_GA_DudeBro_Vent");
 
 	Params::GA_DudeBro_Vent_C_ExecuteUbergraph_GA_DudeBro_Vent Parms{};
 
@@ -43,10 +40,7 @@ void UGA_DudeBro_Vent_C::ExecuteUbergraph_GA_DudeBro_Vent(int32 EntryPoint)
 
 void UGA_DudeBro_Vent_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DudeBro_Vent_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_DudeBro_Vent_C", "K2_OnEndAbility");
 
 	Params::GA_DudeBro_Vent_C_K2_OnEndAbility Parms{};
 
@@ -65,10 +59,7 @@ void UGA_DudeBro_Vent_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_DudeBro_Vent_C::MovementModeChangedDelegate_Event_0(class ACharacter* Character, EMovementMode PrevMovementMode, uint8 PreviousCustomMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DudeBro_Vent_C", "MovementModeChangedDelegate_Event_0");
+	class UFunction* Func = Class->GetFunction("GA_DudeBro_Vent_C", "MovementModeChangedDelegate_Event_0");
 
 	Params::GA_DudeBro_Vent_C_MovementModeChangedDelegate_Event_0 Parms{};
 
@@ -87,10 +78,7 @@ void UGA_DudeBro_Vent_C::MovementModeChangedDelegate_Event_0(class ACharacter* C
 
 void UGA_DudeBro_Vent_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DudeBro_Vent_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_DudeBro_Vent_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_DudeBro_Vent_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -111,10 +99,7 @@ void UGA_DudeBro_Vent_C::K2_ActivateAbilityFromEvent(const struct FGameplayEvent
 
 void UGA_DudeBro_Vent_C::PlayerCapsuleHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DudeBro_Vent_C", "PlayerCapsuleHit");
+	class UFunction* Func = Class->GetFunction("GA_DudeBro_Vent_C", "PlayerCapsuleHit");
 
 	Params::GA_DudeBro_Vent_C_PlayerCapsuleHit Parms{};
 
@@ -133,10 +118,7 @@ void UGA_DudeBro_Vent_C::PlayerCapsuleHit(class UPrimitiveComponent* HitComponen
 
 void UGA_DudeBro_Vent_C::ActuallyCleanPlayerUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_DudeBro_Vent_C", "ActuallyCleanPlayerUp");
+	class UFunction* Func = Class->GetFunction("GA_DudeBro_Vent_C", "ActuallyCleanPlayerUp");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

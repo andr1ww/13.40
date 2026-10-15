@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::ExecuteUbergraph_GC_Abilities_Death_FadeCapsule_Athena(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "ExecuteUbergraph_GC_Abilities_Death_FadeCapsule_Athena");
+	class UFunction* Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "ExecuteUbergraph_GC_Abilities_Death_FadeCapsule_Athena");
 
 	Params::GC_Abilities_Death_FadeCapsule_Athena_C_ExecuteUbergraph_GC_Abilities_Death_FadeCapsule_Athena Parms{};
 
@@ -45,10 +42,7 @@ void AGC_Abilities_Death_FadeCapsule_Athena_C::ExecuteUbergraph_GC_Abilities_Dea
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::K2_HandleGameplayCue(class AActor* MyTarget, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "K2_HandleGameplayCue");
+	class UFunction* Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "K2_HandleGameplayCue");
 
 	Params::GC_Abilities_Death_FadeCapsule_Athena_C_K2_HandleGameplayCue Parms{};
 
@@ -65,10 +59,7 @@ void AGC_Abilities_Death_FadeCapsule_Athena_C::K2_HandleGameplayCue(class AActor
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::CapsuleFadeTL__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "CapsuleFadeTL__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "CapsuleFadeTL__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void AGC_Abilities_Death_FadeCapsule_Athena_C::CapsuleFadeTL__UpdateFunc()
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::CapsuleFadeTL__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "CapsuleFadeTL__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "CapsuleFadeTL__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +83,7 @@ void AGC_Abilities_Death_FadeCapsule_Athena_C::CapsuleFadeTL__FinishedFunc()
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::SkeletalMeshSetup(class AFortPlayerPawnAthena* FortPawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "SkeletalMeshSetup");
+	class UFunction* Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "SkeletalMeshSetup");
 
 	Params::GC_Abilities_Death_FadeCapsule_Athena_C_SkeletalMeshSetup Parms{};
 

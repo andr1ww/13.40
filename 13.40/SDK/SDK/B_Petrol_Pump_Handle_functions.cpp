@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Petrol_Pump_Handle_C::ExecuteUbergraph_B_Petrol_Pump_Handle(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "ExecuteUbergraph_B_Petrol_Pump_Handle");
+	class UFunction* Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "ExecuteUbergraph_B_Petrol_Pump_Handle");
 
 	Params::B_Petrol_Pump_Handle_C_ExecuteUbergraph_B_Petrol_Pump_Handle Parms{};
 
@@ -41,10 +38,7 @@ void AB_Petrol_Pump_Handle_C::ExecuteUbergraph_B_Petrol_Pump_Handle(int32 EntryP
 
 void AB_Petrol_Pump_Handle_C::K2_OnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "K2_OnUnEquip");
+	class UFunction* Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "K2_OnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Petrol_Pump_Handle_C::K2_OnUnEquip()
 
 void AB_Petrol_Pump_Handle_C::OnWeaponAttached()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "OnWeaponAttached");
+	class UFunction* Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "OnWeaponAttached");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_Petrol_Pump_Handle_C::OnWeaponAttached()
 
 void AB_Petrol_Pump_Handle_C::OnStopWeaponFireFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "OnStopWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "OnStopWeaponFireFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -86,10 +74,7 @@ void AB_Petrol_Pump_Handle_C::OnStopWeaponFireFX()
 
 void AB_Petrol_Pump_Handle_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "OnPlayWeaponFireFX");
+	class UFunction* Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "OnPlayWeaponFireFX");
 
 	Params::B_Petrol_Pump_Handle_C_OnPlayWeaponFireFX Parms{};
 
@@ -107,10 +92,7 @@ void AB_Petrol_Pump_Handle_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSec
 
 void AB_Petrol_Pump_Handle_C::OnSpawnProjectile(class AFortProjectileBase* SpawnProjectile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "OnSpawnProjectile");
+	class UFunction* Func = Class->GetFunction("B_Petrol_Pump_Handle_C", "OnSpawnProjectile");
 
 	Params::B_Petrol_Pump_Handle_C_OnSpawnProjectile Parms{};
 

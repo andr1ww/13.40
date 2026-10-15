@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::CacheAchievementDescriptions(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AchievementQueryCallbackProxy", "CacheAchievementDescriptions");
+	class UFunction* Func = StaticClass()->GetFunction("AchievementQueryCallbackProxy", "CacheAchievementDescriptions");
 
 	Params::AchievementQueryCallbackProxy_CacheAchievementDescriptions Parms{};
 
@@ -55,10 +52,7 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::CacheAchie
 
 class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::CacheAchievements(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AchievementQueryCallbackProxy", "CacheAchievements");
+	class UFunction* Func = StaticClass()->GetFunction("AchievementQueryCallbackProxy", "CacheAchievements");
 
 	Params::AchievementQueryCallbackProxy_CacheAchievements Parms{};
 
@@ -81,10 +75,7 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::CacheAchie
 
 void AOnlineBeaconClient::ClientOnConnected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("OnlineBeaconClient", "ClientOnConnected");
+	class UFunction* Func = Class->GetFunction("OnlineBeaconClient", "ClientOnConnected");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -106,10 +97,7 @@ void AOnlineBeaconClient::ClientOnConnected()
 
 class UCreateSessionCallbackProxy* UCreateSessionCallbackProxy::CreateSession(class UObject* WorldContextObject, class APlayerController* PlayerController, int32 PublicConnections, bool bUseLAN)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("CreateSessionCallbackProxy", "CreateSession");
+	class UFunction* Func = StaticClass()->GetFunction("CreateSessionCallbackProxy", "CreateSession");
 
 	Params::CreateSessionCallbackProxy_CreateSession Parms{};
 
@@ -143,10 +131,7 @@ class UCreateSessionCallbackProxy* UCreateSessionCallbackProxy::CreateSession(cl
 
 void UAchievementBlueprintLibrary::GetCachedAchievementDescription(class UObject* WorldContextObject, class APlayerController* PlayerController, class FName AchievementID, bool* bFoundID, class FText* Title, class FText* LockedDescription, class FText* UnlockedDescription, bool* bHidden)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AchievementBlueprintLibrary", "GetCachedAchievementDescription");
+	class UFunction* Func = StaticClass()->GetFunction("AchievementBlueprintLibrary", "GetCachedAchievementDescription");
 
 	Params::AchievementBlueprintLibrary_GetCachedAchievementDescription Parms{};
 
@@ -189,10 +174,7 @@ void UAchievementBlueprintLibrary::GetCachedAchievementDescription(class UObject
 
 void UAchievementBlueprintLibrary::GetCachedAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, class FName AchievementID, bool* bFoundID, float* Progress)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AchievementBlueprintLibrary", "GetCachedAchievementProgress");
+	class UFunction* Func = StaticClass()->GetFunction("AchievementBlueprintLibrary", "GetCachedAchievementProgress");
 
 	Params::AchievementBlueprintLibrary_GetCachedAchievementProgress Parms{};
 
@@ -229,10 +211,7 @@ void UAchievementBlueprintLibrary::GetCachedAchievementProgress(class UObject* W
 
 class UFindTurnBasedMatchCallbackProxy* UFindTurnBasedMatchCallbackProxy::FindTurnBasedMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<class ITurnBasedMatchInterface> MatchActor, int32 MinPlayers, int32 MaxPlayers, int32 PlayerGroup, bool ShowExistingMatches)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FindTurnBasedMatchCallbackProxy", "FindTurnBasedMatch");
+	class UFunction* Func = StaticClass()->GetFunction("FindTurnBasedMatchCallbackProxy", "FindTurnBasedMatch");
 
 	Params::FindTurnBasedMatchCallbackProxy_FindTurnBasedMatch Parms{};
 
@@ -267,10 +246,7 @@ class UFindTurnBasedMatchCallbackProxy* UFindTurnBasedMatchCallbackProxy::FindTu
 
 class UAchievementWriteCallbackProxy* UAchievementWriteCallbackProxy::WriteAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, class FName AchievementName, float Progress, int32 UserTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AchievementWriteCallbackProxy", "WriteAchievementProgress");
+	class UFunction* Func = StaticClass()->GetFunction("AchievementWriteCallbackProxy", "WriteAchievementProgress");
 
 	Params::AchievementWriteCallbackProxy_WriteAchievementProgress Parms{};
 
@@ -300,10 +276,7 @@ class UAchievementWriteCallbackProxy* UAchievementWriteCallbackProxy::WriteAchie
 
 class UConnectionCallbackProxy* UConnectionCallbackProxy::ConnectToService(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ConnectionCallbackProxy", "ConnectToService");
+	class UFunction* Func = StaticClass()->GetFunction("ConnectionCallbackProxy", "ConnectToService");
 
 	Params::ConnectionCallbackProxy_ConnectToService Parms{};
 
@@ -330,10 +303,7 @@ class UConnectionCallbackProxy* UConnectionCallbackProxy::ConnectToService(class
 
 class UDestroySessionCallbackProxy* UDestroySessionCallbackProxy::DestroySession(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("DestroySessionCallbackProxy", "DestroySession");
+	class UFunction* Func = StaticClass()->GetFunction("DestroySessionCallbackProxy", "DestroySession");
 
 	Params::DestroySessionCallbackProxy_DestroySession Parms{};
 
@@ -360,10 +330,7 @@ class UDestroySessionCallbackProxy* UDestroySessionCallbackProxy::DestroySession
 
 class UInAppPurchaseQueryCallbackProxy2* UInAppPurchaseQueryCallbackProxy2::CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, const TArray<class FString>& ProductIdentifiers)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("InAppPurchaseQueryCallbackProxy2", "CreateProxyObjectForInAppPurchaseQuery");
+	class UFunction* Func = StaticClass()->GetFunction("InAppPurchaseQueryCallbackProxy2", "CreateProxyObjectForInAppPurchaseQuery");
 
 	Params::InAppPurchaseQueryCallbackProxy2_CreateProxyObjectForInAppPurchaseQuery Parms{};
 
@@ -394,10 +361,7 @@ class UInAppPurchaseQueryCallbackProxy2* UInAppPurchaseQueryCallbackProxy2::Crea
 
 class UEndMatchCallbackProxy* UEndMatchCallbackProxy::EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<class ITurnBasedMatchInterface> MatchActor, const class FString& MatchID, EMPMatchOutcome LocalPlayerOutcome, EMPMatchOutcome OtherPlayersOutcome)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EndMatchCallbackProxy", "EndMatch");
+	class UFunction* Func = StaticClass()->GetFunction("EndMatchCallbackProxy", "EndMatch");
 
 	Params::EndMatchCallbackProxy_EndMatch Parms{};
 
@@ -430,10 +394,7 @@ class UEndMatchCallbackProxy* UEndMatchCallbackProxy::EndMatch(class UObject* Wo
 
 class UEndTurnCallbackProxy* UEndTurnCallbackProxy::EndTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, TScriptInterface<class ITurnBasedMatchInterface> TurnBasedMatchInterface)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EndTurnCallbackProxy", "EndTurn");
+	class UFunction* Func = StaticClass()->GetFunction("EndTurnCallbackProxy", "EndTurn");
 
 	Params::EndTurnCallbackProxy_EndTurn Parms{};
 
@@ -464,10 +425,7 @@ class UEndTurnCallbackProxy* UEndTurnCallbackProxy::EndTurn(class UObject* World
 
 class UFindSessionsCallbackProxy* UFindSessionsCallbackProxy::FindSessions(class UObject* WorldContextObject, class APlayerController* PlayerController, int32 MaxResults, bool bUseLAN)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "FindSessions");
+	class UFunction* Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "FindSessions");
 
 	Params::FindSessionsCallbackProxy_FindSessions Parms{};
 
@@ -495,10 +453,7 @@ class UFindSessionsCallbackProxy* UFindSessionsCallbackProxy::FindSessions(class
 
 int32 UFindSessionsCallbackProxy::GetCurrentPlayers(const struct FBlueprintSessionResult& Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "GetCurrentPlayers");
+	class UFunction* Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "GetCurrentPlayers");
 
 	Params::FindSessionsCallbackProxy_GetCurrentPlayers Parms{};
 
@@ -523,10 +478,7 @@ int32 UFindSessionsCallbackProxy::GetCurrentPlayers(const struct FBlueprintSessi
 
 int32 UFindSessionsCallbackProxy::GetMaxPlayers(const struct FBlueprintSessionResult& Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "GetMaxPlayers");
+	class UFunction* Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "GetMaxPlayers");
 
 	Params::FindSessionsCallbackProxy_GetMaxPlayers Parms{};
 
@@ -551,10 +503,7 @@ int32 UFindSessionsCallbackProxy::GetMaxPlayers(const struct FBlueprintSessionRe
 
 int32 UFindSessionsCallbackProxy::GetPingInMs(const struct FBlueprintSessionResult& Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "GetPingInMs");
+	class UFunction* Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "GetPingInMs");
 
 	Params::FindSessionsCallbackProxy_GetPingInMs Parms{};
 
@@ -579,10 +528,7 @@ int32 UFindSessionsCallbackProxy::GetPingInMs(const struct FBlueprintSessionResu
 
 class FString UFindSessionsCallbackProxy::GetServerName(const struct FBlueprintSessionResult& Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "GetServerName");
+	class UFunction* Func = StaticClass()->GetFunction("FindSessionsCallbackProxy", "GetServerName");
 
 	Params::FindSessionsCallbackProxy_GetServerName Parms{};
 
@@ -608,10 +554,7 @@ class FString UFindSessionsCallbackProxy::GetServerName(const struct FBlueprintS
 
 class UInAppPurchaseCallbackProxy* UInAppPurchaseCallbackProxy::CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, const struct FInAppPurchaseProductRequest& ProductRequest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("InAppPurchaseCallbackProxy", "CreateProxyObjectForInAppPurchase");
+	class UFunction* Func = StaticClass()->GetFunction("InAppPurchaseCallbackProxy", "CreateProxyObjectForInAppPurchase");
 
 	Params::InAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase Parms{};
 
@@ -638,10 +581,7 @@ class UInAppPurchaseCallbackProxy* UInAppPurchaseCallbackProxy::CreateProxyObjec
 
 class UInAppPurchaseCallbackProxy2* UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, const struct FInAppPurchaseProductRequest2& ProductRequest)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("InAppPurchaseCallbackProxy2", "CreateProxyObjectForInAppPurchase");
+	class UFunction* Func = StaticClass()->GetFunction("InAppPurchaseCallbackProxy2", "CreateProxyObjectForInAppPurchase");
 
 	Params::InAppPurchaseCallbackProxy2_CreateProxyObjectForInAppPurchase Parms{};
 
@@ -667,10 +607,7 @@ class UInAppPurchaseCallbackProxy2* UInAppPurchaseCallbackProxy2::CreateProxyObj
 
 class UInAppPurchaseCallbackProxy2* UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchaseQueryOwned(class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("InAppPurchaseCallbackProxy2", "CreateProxyObjectForInAppPurchaseQueryOwned");
+	class UFunction* Func = StaticClass()->GetFunction("InAppPurchaseCallbackProxy2", "CreateProxyObjectForInAppPurchaseQueryOwned");
 
 	Params::InAppPurchaseCallbackProxy2_CreateProxyObjectForInAppPurchaseQueryOwned Parms{};
 
@@ -695,10 +632,7 @@ class UInAppPurchaseCallbackProxy2* UInAppPurchaseCallbackProxy2::CreateProxyObj
 
 class UInAppPurchaseCallbackProxy2* UInAppPurchaseCallbackProxy2::CreateProxyObjectForInAppPurchaseUnprocessedPurchases(class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("InAppPurchaseCallbackProxy2", "CreateProxyObjectForInAppPurchaseUnprocessedPurchases");
+	class UFunction* Func = StaticClass()->GetFunction("InAppPurchaseCallbackProxy2", "CreateProxyObjectForInAppPurchaseUnprocessedPurchases");
 
 	Params::InAppPurchaseCallbackProxy2_CreateProxyObjectForInAppPurchaseUnprocessedPurchases Parms{};
 
@@ -724,10 +658,7 @@ class UInAppPurchaseCallbackProxy2* UInAppPurchaseCallbackProxy2::CreateProxyObj
 
 class UInAppPurchaseQueryCallbackProxy* UInAppPurchaseQueryCallbackProxy::CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, const TArray<class FString>& ProductIdentifiers)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("InAppPurchaseQueryCallbackProxy", "CreateProxyObjectForInAppPurchaseQuery");
+	class UFunction* Func = StaticClass()->GetFunction("InAppPurchaseQueryCallbackProxy", "CreateProxyObjectForInAppPurchaseQuery");
 
 	Params::InAppPurchaseQueryCallbackProxy_CreateProxyObjectForInAppPurchaseQuery Parms{};
 
@@ -754,10 +685,7 @@ class UInAppPurchaseQueryCallbackProxy* UInAppPurchaseQueryCallbackProxy::Create
 
 class UInAppPurchaseRestoreCallbackProxy* UInAppPurchaseRestoreCallbackProxy::CreateProxyObjectForInAppPurchaseRestore(const TArray<struct FInAppPurchaseProductRequest>& ConsumableProductFlags, class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("InAppPurchaseRestoreCallbackProxy", "CreateProxyObjectForInAppPurchaseRestore");
+	class UFunction* Func = StaticClass()->GetFunction("InAppPurchaseRestoreCallbackProxy", "CreateProxyObjectForInAppPurchaseRestore");
 
 	Params::InAppPurchaseRestoreCallbackProxy_CreateProxyObjectForInAppPurchaseRestore Parms{};
 
@@ -784,10 +712,7 @@ class UInAppPurchaseRestoreCallbackProxy* UInAppPurchaseRestoreCallbackProxy::Cr
 
 class UInAppPurchaseRestoreCallbackProxy2* UInAppPurchaseRestoreCallbackProxy2::CreateProxyObjectForInAppPurchaseRestore(const TArray<struct FInAppPurchaseProductRequest2>& ConsumableProductFlags, class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("InAppPurchaseRestoreCallbackProxy2", "CreateProxyObjectForInAppPurchaseRestore");
+	class UFunction* Func = StaticClass()->GetFunction("InAppPurchaseRestoreCallbackProxy2", "CreateProxyObjectForInAppPurchaseRestore");
 
 	Params::InAppPurchaseRestoreCallbackProxy2_CreateProxyObjectForInAppPurchaseRestore Parms{};
 
@@ -815,10 +740,7 @@ class UInAppPurchaseRestoreCallbackProxy2* UInAppPurchaseRestoreCallbackProxy2::
 
 class UJoinSessionCallbackProxy* UJoinSessionCallbackProxy::JoinSession(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FBlueprintSessionResult& SearchResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("JoinSessionCallbackProxy", "JoinSession");
+	class UFunction* Func = StaticClass()->GetFunction("JoinSessionCallbackProxy", "JoinSession");
 
 	Params::JoinSessionCallbackProxy_JoinSession Parms{};
 
@@ -847,10 +769,7 @@ class UJoinSessionCallbackProxy* UJoinSessionCallbackProxy::JoinSession(class UO
 
 bool ULeaderboardBlueprintLibrary::WriteLeaderboardInteger(class APlayerController* PlayerController, class FName StatName, int32 StatValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LeaderboardBlueprintLibrary", "WriteLeaderboardInteger");
+	class UFunction* Func = StaticClass()->GetFunction("LeaderboardBlueprintLibrary", "WriteLeaderboardInteger");
 
 	Params::LeaderboardBlueprintLibrary_WriteLeaderboardInteger Parms{};
 
@@ -878,10 +797,7 @@ bool ULeaderboardBlueprintLibrary::WriteLeaderboardInteger(class APlayerControll
 
 class ULeaderboardFlushCallbackProxy* ULeaderboardFlushCallbackProxy::CreateProxyObjectForFlush(class APlayerController* PlayerController, class FName SessionName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LeaderboardFlushCallbackProxy", "CreateProxyObjectForFlush");
+	class UFunction* Func = StaticClass()->GetFunction("LeaderboardFlushCallbackProxy", "CreateProxyObjectForFlush");
 
 	Params::LeaderboardFlushCallbackProxy_CreateProxyObjectForFlush Parms{};
 
@@ -908,10 +824,7 @@ class ULeaderboardFlushCallbackProxy* ULeaderboardFlushCallbackProxy::CreateProx
 
 class ULeaderboardQueryCallbackProxy* ULeaderboardQueryCallbackProxy::CreateProxyObjectForIntQuery(class APlayerController* PlayerController, class FName StatName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LeaderboardQueryCallbackProxy", "CreateProxyObjectForIntQuery");
+	class UFunction* Func = StaticClass()->GetFunction("LeaderboardQueryCallbackProxy", "CreateProxyObjectForIntQuery");
 
 	Params::LeaderboardQueryCallbackProxy_CreateProxyObjectForIntQuery Parms{};
 
@@ -938,10 +851,7 @@ class ULeaderboardQueryCallbackProxy* ULeaderboardQueryCallbackProxy::CreateProx
 
 class ULogoutCallbackProxy* ULogoutCallbackProxy::Logout(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("LogoutCallbackProxy", "Logout");
+	class UFunction* Func = StaticClass()->GetFunction("LogoutCallbackProxy", "Logout");
 
 	Params::LogoutCallbackProxy_Logout Parms{};
 
@@ -966,10 +876,7 @@ class ULogoutCallbackProxy* ULogoutCallbackProxy::Logout(class UObject* WorldCon
 
 void APartyBeaconClient::ClientCancelReservationResponse(EPartyReservationResult ReservationResponse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyBeaconClient", "ClientCancelReservationResponse");
+	class UFunction* Func = Class->GetFunction("PartyBeaconClient", "ClientCancelReservationResponse");
 
 	Params::PartyBeaconClient_ClientCancelReservationResponse Parms{};
 
@@ -991,10 +898,7 @@ void APartyBeaconClient::ClientCancelReservationResponse(EPartyReservationResult
 
 void APartyBeaconClient::ClientReservationResponse(EPartyReservationResult ReservationResponse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyBeaconClient", "ClientReservationResponse");
+	class UFunction* Func = Class->GetFunction("PartyBeaconClient", "ClientReservationResponse");
 
 	Params::PartyBeaconClient_ClientReservationResponse Parms{};
 
@@ -1014,10 +918,7 @@ void APartyBeaconClient::ClientReservationResponse(EPartyReservationResult Reser
 
 void APartyBeaconClient::ClientSendReservationFull()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyBeaconClient", "ClientSendReservationFull");
+	class UFunction* Func = Class->GetFunction("PartyBeaconClient", "ClientSendReservationFull");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1035,10 +936,7 @@ void APartyBeaconClient::ClientSendReservationFull()
 
 void APartyBeaconClient::ClientSendReservationUpdates(int32 NumRemainingReservations)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyBeaconClient", "ClientSendReservationUpdates");
+	class UFunction* Func = Class->GetFunction("PartyBeaconClient", "ClientSendReservationUpdates");
 
 	Params::PartyBeaconClient_ClientSendReservationUpdates Parms{};
 
@@ -1060,10 +958,7 @@ void APartyBeaconClient::ClientSendReservationUpdates(int32 NumRemainingReservat
 
 void APartyBeaconClient::ServerCancelReservationRequest(const struct FUniqueNetIdRepl& PartyLeader)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyBeaconClient", "ServerCancelReservationRequest");
+	class UFunction* Func = Class->GetFunction("PartyBeaconClient", "ServerCancelReservationRequest");
 
 	Params::PartyBeaconClient_ServerCancelReservationRequest Parms{};
 
@@ -1086,10 +981,7 @@ void APartyBeaconClient::ServerCancelReservationRequest(const struct FUniqueNetI
 
 void APartyBeaconClient::ServerRemoveMemberFromReservationRequest(const class FString& SessionId, const struct FPartyReservation& ReservationUpdate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyBeaconClient", "ServerRemoveMemberFromReservationRequest");
+	class UFunction* Func = Class->GetFunction("PartyBeaconClient", "ServerRemoveMemberFromReservationRequest");
 
 	Params::PartyBeaconClient_ServerRemoveMemberFromReservationRequest Parms{};
 
@@ -1113,10 +1005,7 @@ void APartyBeaconClient::ServerRemoveMemberFromReservationRequest(const class FS
 
 void APartyBeaconClient::ServerReservationRequest(const class FString& SessionId, const struct FPartyReservation& Reservation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyBeaconClient", "ServerReservationRequest");
+	class UFunction* Func = Class->GetFunction("PartyBeaconClient", "ServerReservationRequest");
 
 	Params::PartyBeaconClient_ServerReservationRequest Parms{};
 
@@ -1140,10 +1029,7 @@ void APartyBeaconClient::ServerReservationRequest(const class FString& SessionId
 
 void APartyBeaconClient::ServerUpdateReservationRequest(const class FString& SessionId, const struct FPartyReservation& ReservationUpdate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyBeaconClient", "ServerUpdateReservationRequest");
+	class UFunction* Func = Class->GetFunction("PartyBeaconClient", "ServerUpdateReservationRequest");
 
 	Params::PartyBeaconClient_ServerUpdateReservationRequest Parms{};
 
@@ -1171,10 +1057,7 @@ void APartyBeaconClient::ServerUpdateReservationRequest(const class FString& Ses
 
 class UQuitMatchCallbackProxy* UQuitMatchCallbackProxy::QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, EMPMatchOutcome Outcome, int32 TurnTimeoutInSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("QuitMatchCallbackProxy", "QuitMatch");
+	class UFunction* Func = StaticClass()->GetFunction("QuitMatchCallbackProxy", "QuitMatch");
 
 	Params::QuitMatchCallbackProxy_QuitMatch Parms{};
 
@@ -1204,10 +1087,7 @@ class UQuitMatchCallbackProxy* UQuitMatchCallbackProxy::QuitMatch(class UObject*
 
 class UShowLoginUICallbackProxy* UShowLoginUICallbackProxy::ShowExternalLoginUI(class UObject* WorldContextObject, class APlayerController* InPlayerController)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("ShowLoginUICallbackProxy", "ShowExternalLoginUI");
+	class UFunction* Func = StaticClass()->GetFunction("ShowLoginUICallbackProxy", "ShowExternalLoginUI");
 
 	Params::ShowLoginUICallbackProxy_ShowExternalLoginUI Parms{};
 
@@ -1232,10 +1112,7 @@ class UShowLoginUICallbackProxy* UShowLoginUICallbackProxy::ShowExternalLoginUI(
 
 void ASpectatorBeaconClient::ClientCancelReservationResponse(ESpectatorReservationResult ReservationResponse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpectatorBeaconClient", "ClientCancelReservationResponse");
+	class UFunction* Func = Class->GetFunction("SpectatorBeaconClient", "ClientCancelReservationResponse");
 
 	Params::SpectatorBeaconClient_ClientCancelReservationResponse Parms{};
 
@@ -1257,10 +1134,7 @@ void ASpectatorBeaconClient::ClientCancelReservationResponse(ESpectatorReservati
 
 void ASpectatorBeaconClient::ClientReservationResponse(ESpectatorReservationResult ReservationResponse)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpectatorBeaconClient", "ClientReservationResponse");
+	class UFunction* Func = Class->GetFunction("SpectatorBeaconClient", "ClientReservationResponse");
 
 	Params::SpectatorBeaconClient_ClientReservationResponse Parms{};
 
@@ -1280,10 +1154,7 @@ void ASpectatorBeaconClient::ClientReservationResponse(ESpectatorReservationResu
 
 void ASpectatorBeaconClient::ClientSendReservationFull()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpectatorBeaconClient", "ClientSendReservationFull");
+	class UFunction* Func = Class->GetFunction("SpectatorBeaconClient", "ClientSendReservationFull");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1301,10 +1172,7 @@ void ASpectatorBeaconClient::ClientSendReservationFull()
 
 void ASpectatorBeaconClient::ClientSendReservationUpdates(int32 NumRemainingReservations)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpectatorBeaconClient", "ClientSendReservationUpdates");
+	class UFunction* Func = Class->GetFunction("SpectatorBeaconClient", "ClientSendReservationUpdates");
 
 	Params::SpectatorBeaconClient_ClientSendReservationUpdates Parms{};
 
@@ -1326,10 +1194,7 @@ void ASpectatorBeaconClient::ClientSendReservationUpdates(int32 NumRemainingRese
 
 void ASpectatorBeaconClient::ServerCancelReservationRequest(const struct FUniqueNetIdRepl& Spectator)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpectatorBeaconClient", "ServerCancelReservationRequest");
+	class UFunction* Func = Class->GetFunction("SpectatorBeaconClient", "ServerCancelReservationRequest");
 
 	Params::SpectatorBeaconClient_ServerCancelReservationRequest Parms{};
 
@@ -1352,10 +1217,7 @@ void ASpectatorBeaconClient::ServerCancelReservationRequest(const struct FUnique
 
 void ASpectatorBeaconClient::ServerReservationRequest(const class FString& SessionId, const struct FSpectatorReservation& Reservation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SpectatorBeaconClient", "ServerReservationRequest");
+	class UFunction* Func = Class->GetFunction("SpectatorBeaconClient", "ServerReservationRequest");
 
 	Params::SpectatorBeaconClient_ServerReservationRequest Parms{};
 
@@ -1376,10 +1238,7 @@ void ASpectatorBeaconClient::ServerReservationRequest(const class FString& Sessi
 
 void ATestBeaconClient::ClientPing()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TestBeaconClient", "ClientPing");
+	class UFunction* Func = Class->GetFunction("TestBeaconClient", "ClientPing");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1395,10 +1254,7 @@ void ATestBeaconClient::ClientPing()
 
 void ATestBeaconClient::ServerPong()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TestBeaconClient", "ServerPong");
+	class UFunction* Func = Class->GetFunction("TestBeaconClient", "ServerPong");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1419,10 +1275,7 @@ void ATestBeaconClient::ServerPong()
 
 void UTurnBasedBlueprintLibrary::GetIsMyTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, bool* bIsMyTurn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TurnBasedBlueprintLibrary", "GetIsMyTurn");
+	class UFunction* Func = StaticClass()->GetFunction("TurnBasedBlueprintLibrary", "GetIsMyTurn");
 
 	Params::TurnBasedBlueprintLibrary_GetIsMyTurn Parms{};
 
@@ -1452,10 +1305,7 @@ void UTurnBasedBlueprintLibrary::GetIsMyTurn(class UObject* WorldContextObject, 
 
 void UTurnBasedBlueprintLibrary::GetMyPlayerIndex(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, int32* PlayerIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TurnBasedBlueprintLibrary", "GetMyPlayerIndex");
+	class UFunction* Func = StaticClass()->GetFunction("TurnBasedBlueprintLibrary", "GetMyPlayerIndex");
 
 	Params::TurnBasedBlueprintLibrary_GetMyPlayerIndex Parms{};
 
@@ -1486,10 +1336,7 @@ void UTurnBasedBlueprintLibrary::GetMyPlayerIndex(class UObject* WorldContextObj
 
 void UTurnBasedBlueprintLibrary::GetPlayerDisplayName(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, int32 PlayerIndex, class FString* PlayerDisplayName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TurnBasedBlueprintLibrary", "GetPlayerDisplayName");
+	class UFunction* Func = StaticClass()->GetFunction("TurnBasedBlueprintLibrary", "GetPlayerDisplayName");
 
 	Params::TurnBasedBlueprintLibrary_GetPlayerDisplayName Parms{};
 
@@ -1519,10 +1366,7 @@ void UTurnBasedBlueprintLibrary::GetPlayerDisplayName(class UObject* WorldContex
 
 void UTurnBasedBlueprintLibrary::RegisterTurnBasedMatchInterfaceObject(class UObject* WorldContextObject, class APlayerController* PlayerController, class UObject* Object)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TurnBasedBlueprintLibrary", "RegisterTurnBasedMatchInterfaceObject");
+	class UFunction* Func = StaticClass()->GetFunction("TurnBasedBlueprintLibrary", "RegisterTurnBasedMatchInterfaceObject");
 
 	Params::TurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject Parms{};
 
@@ -1546,10 +1390,7 @@ void UTurnBasedBlueprintLibrary::RegisterTurnBasedMatchInterfaceObject(class UOb
 
 bool UVoipListenerSynthComponent::IsIdling()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoipListenerSynthComponent", "IsIdling");
+	class UFunction* Func = Class->GetFunction("VoipListenerSynthComponent", "IsIdling");
 
 	Params::VoipListenerSynthComponent_IsIdling Parms{};
 

@@ -28,10 +28,7 @@ SDK_NAMESPACE_START
 
 EGameplayTaskRunResult UGameplayTasksComponent::K2_RunGameplayTask(TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner, class UGameplayTask* Task, uint8 Priority, const TArray<TSubclassOf<class UGameplayTaskResource>>& AdditionalRequiredResources, const TArray<TSubclassOf<class UGameplayTaskResource>>& AdditionalClaimedResources)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GameplayTasksComponent", "K2_RunGameplayTask");
+	class UFunction* Func = StaticClass()->GetFunction("GameplayTasksComponent", "K2_RunGameplayTask");
 
 	Params::GameplayTasksComponent_K2_RunGameplayTask Parms{};
 
@@ -57,10 +54,7 @@ EGameplayTaskRunResult UGameplayTasksComponent::K2_RunGameplayTask(TScriptInterf
 
 void UGameplayTasksComponent::OnRep_SimulatedTasks()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTasksComponent", "OnRep_SimulatedTasks");
+	class UFunction* Func = Class->GetFunction("GameplayTasksComponent", "OnRep_SimulatedTasks");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -76,10 +70,7 @@ void UGameplayTasksComponent::OnRep_SimulatedTasks()
 
 void UGameplayTask::EndTask()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTask", "EndTask");
+	class UFunction* Func = Class->GetFunction("GameplayTask", "EndTask");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -95,10 +86,7 @@ void UGameplayTask::EndTask()
 
 void UGameplayTask::ReadyForActivation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTask", "ReadyForActivation");
+	class UFunction* Func = Class->GetFunction("GameplayTask", "ReadyForActivation");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -120,10 +108,7 @@ void UGameplayTask::ReadyForActivation()
 
 class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResource(TScriptInterface<class IGameplayTaskOwnerInterface> InTaskOwner, TSubclassOf<class UGameplayTaskResource> ResourceClass, const uint8 Priority, const class FName TaskInstanceName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GameplayTask_ClaimResource", "ClaimResource");
+	class UFunction* Func = StaticClass()->GetFunction("GameplayTask_ClaimResource", "ClaimResource");
 
 	Params::GameplayTask_ClaimResource_ClaimResource Parms{};
 
@@ -154,10 +139,7 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResource(TS
 
 class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResources(TScriptInterface<class IGameplayTaskOwnerInterface> InTaskOwner, const TArray<TSubclassOf<class UGameplayTaskResource>>& ResourceClasses, const uint8 Priority, const class FName TaskInstanceName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GameplayTask_ClaimResource", "ClaimResources");
+	class UFunction* Func = StaticClass()->GetFunction("GameplayTask_ClaimResource", "ClaimResources");
 
 	Params::GameplayTask_ClaimResource_ClaimResources Parms{};
 
@@ -189,10 +171,7 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResources(T
 
 class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::SpawnActor(TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner, const struct FVector& SpawnLocation, const struct FRotator& SpawnRotation, TSubclassOf<class AActor> Class_0, bool bSpawnOnlyOnAuthority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GameplayTask_SpawnActor", "SpawnActor");
+	class UFunction* Func = StaticClass()->GetFunction("GameplayTask_SpawnActor", "SpawnActor");
 
 	Params::GameplayTask_SpawnActor_SpawnActor Parms{};
 
@@ -222,10 +201,7 @@ class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::SpawnActor(TScriptInte
 
 bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObject, class AActor** SpawnedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTask_SpawnActor", "BeginSpawningActor");
+	class UFunction* Func = Class->GetFunction("GameplayTask_SpawnActor", "BeginSpawningActor");
 
 	Params::GameplayTask_SpawnActor_BeginSpawningActor Parms{};
 
@@ -253,10 +229,7 @@ bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObj
 
 void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextObject, class AActor* SpawnedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTask_SpawnActor", "FinishSpawningActor");
+	class UFunction* Func = Class->GetFunction("GameplayTask_SpawnActor", "FinishSpawningActor");
 
 	Params::GameplayTask_SpawnActor_FinishSpawningActor Parms{};
 
@@ -282,10 +255,7 @@ void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextOb
 
 class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::TaskWaitDelay(TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner, float Time, const uint8 Priority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GameplayTask_WaitDelay", "TaskWaitDelay");
+	class UFunction* Func = StaticClass()->GetFunction("GameplayTask_WaitDelay", "TaskWaitDelay");
 
 	Params::GameplayTask_WaitDelay_TaskWaitDelay Parms{};
 

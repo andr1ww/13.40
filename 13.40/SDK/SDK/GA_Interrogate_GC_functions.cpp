@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Interrogate_GC_C::ExecuteUbergraph_GA_Interrogate_GC(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Interrogate_GC_C", "ExecuteUbergraph_GA_Interrogate_GC");
+	class UFunction* Func = Class->GetFunction("GA_Interrogate_GC_C", "ExecuteUbergraph_GA_Interrogate_GC");
 
 	Params::GA_Interrogate_GC_C_ExecuteUbergraph_GA_Interrogate_GC Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Interrogate_GC_C::ExecuteUbergraph_GA_Interrogate_GC(int32 EntryPoint)
 
 void UGA_Interrogate_GC_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Interrogate_GC_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Interrogate_GC_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

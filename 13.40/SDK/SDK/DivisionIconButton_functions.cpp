@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UDivisionIconButton_C::OnRankButtonSelected(bool bIsSelected_OnRankButtonSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionIconButton_C", "OnRankButtonSelected");
+	class UFunction* Func = Class->GetFunction("DivisionIconButton_C", "OnRankButtonSelected");
 
 	Params::DivisionIconButton_C_OnRankButtonSelected Parms{};
 
@@ -41,10 +38,7 @@ void UDivisionIconButton_C::OnRankButtonSelected(bool bIsSelected_OnRankButtonSe
 
 void UDivisionIconButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionIconButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("DivisionIconButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UDivisionIconButton_C::BP_OnHovered()
 
 void UDivisionIconButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionIconButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("DivisionIconButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UDivisionIconButton_C::BP_OnUnhovered()
 
 void UDivisionIconButton_C::ExecuteUbergraph_DivisionIconButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DivisionIconButton_C", "ExecuteUbergraph_DivisionIconButton");
+	class UFunction* Func = Class->GetFunction("DivisionIconButton_C", "ExecuteUbergraph_DivisionIconButton");
 
 	Params::DivisionIconButton_C_ExecuteUbergraph_DivisionIconButton Parms{};
 

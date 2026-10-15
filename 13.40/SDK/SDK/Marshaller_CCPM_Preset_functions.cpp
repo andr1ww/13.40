@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMarshaller_CCPM_Preset_C::ExecuteUbergraph_Marshaller_CCPM_Preset(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Marshaller_CCPM_Preset_C", "ExecuteUbergraph_Marshaller_CCPM_Preset");
+	class UFunction* Func = Class->GetFunction("Marshaller_CCPM_Preset_C", "ExecuteUbergraph_Marshaller_CCPM_Preset");
 
 	Params::Marshaller_CCPM_Preset_C_ExecuteUbergraph_Marshaller_CCPM_Preset Parms{};
 

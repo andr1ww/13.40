@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void AFrontend_C::PlaySpeech(const class FString& Filename, int32 SampleRate, class USoundWave* AssetFile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_C", "PlaySpeech");
+	class UFunction* Func = Class->GetFunction("Frontend_C", "PlaySpeech");
 
 	Params::Frontend_C_PlaySpeech Parms{};
 
@@ -45,10 +42,7 @@ void AFrontend_C::PlaySpeech(const class FString& Filename, int32 SampleRate, cl
 
 void AFrontend_C::OnMatchStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_C", "OnMatchStarted");
+	class UFunction* Func = Class->GetFunction("Frontend_C", "OnMatchStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void AFrontend_C::OnMatchStarted()
 
 void AFrontend_C::EnableTutorial()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_C", "EnableTutorial");
+	class UFunction* Func = Class->GetFunction("Frontend_C", "EnableTutorial");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void AFrontend_C::EnableTutorial()
 
 void AFrontend_C::ExecuteUbergraph_Frontend(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Frontend_C", "ExecuteUbergraph_Frontend");
+	class UFunction* Func = Class->GetFunction("Frontend_C", "ExecuteUbergraph_Frontend");
 
 	Params::Frontend_C_ExecuteUbergraph_Frontend Parms{};
 

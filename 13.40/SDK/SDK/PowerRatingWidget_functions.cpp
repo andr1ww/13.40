@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPowerRatingWidget_C::ExecuteUbergraph_PowerRatingWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerRatingWidget_C", "ExecuteUbergraph_PowerRatingWidget");
+	class UFunction* Func = Class->GetFunction("PowerRatingWidget_C", "ExecuteUbergraph_PowerRatingWidget");
 
 	Params::PowerRatingWidget_C_ExecuteUbergraph_PowerRatingWidget Parms{};
 
@@ -41,10 +38,7 @@ void UPowerRatingWidget_C::ExecuteUbergraph_PowerRatingWidget(int32 EntryPoint)
 
 void UPowerRatingWidget_C::OnTeamMembershipChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerRatingWidget_C", "OnTeamMembershipChanged");
+	class UFunction* Func = Class->GetFunction("PowerRatingWidget_C", "OnTeamMembershipChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UPowerRatingWidget_C::OnTeamMembershipChanged()
 
 void UPowerRatingWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerRatingWidget_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("PowerRatingWidget_C", "PreConstruct");
 
 	Params::PowerRatingWidget_C_PreConstruct Parms{};
 
@@ -78,10 +69,7 @@ void UPowerRatingWidget_C::PreConstruct(bool IsDesignTime)
 
 void UPowerRatingWidget_C::OnPowerRatingProgressUpdated(float BaseRatingProgress, float TeamRatingProgress)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerRatingWidget_C", "OnPowerRatingProgressUpdated");
+	class UFunction* Func = Class->GetFunction("PowerRatingWidget_C", "OnPowerRatingProgressUpdated");
 
 	Params::PowerRatingWidget_C_OnPowerRatingProgressUpdated Parms{};
 
@@ -99,10 +87,7 @@ void UPowerRatingWidget_C::OnPowerRatingProgressUpdated(float BaseRatingProgress
 
 void UPowerRatingWidget_C::OnTeamPowerRatingUpdated(int32 TeamPowerRating)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerRatingWidget_C", "OnTeamPowerRatingUpdated");
+	class UFunction* Func = Class->GetFunction("PowerRatingWidget_C", "OnTeamPowerRatingUpdated");
 
 	Params::PowerRatingWidget_C_OnTeamPowerRatingUpdated Parms{};
 
@@ -119,10 +104,7 @@ void UPowerRatingWidget_C::OnTeamPowerRatingUpdated(int32 TeamPowerRating)
 
 void UPowerRatingWidget_C::OnBasePowerRatingUpdated(int32 BasePowerRating)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerRatingWidget_C", "OnBasePowerRatingUpdated");
+	class UFunction* Func = Class->GetFunction("PowerRatingWidget_C", "OnBasePowerRatingUpdated");
 
 	Params::PowerRatingWidget_C_OnBasePowerRatingUpdated Parms{};
 
@@ -137,10 +119,7 @@ void UPowerRatingWidget_C::OnBasePowerRatingUpdated(int32 BasePowerRating)
 
 void UPowerRatingWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerRatingWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PowerRatingWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +130,7 @@ void UPowerRatingWidget_C::Construct()
 
 void UPowerRatingWidget_C::UpdateWidgetState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerRatingWidget_C", "UpdateWidgetState");
+	class UFunction* Func = Class->GetFunction("PowerRatingWidget_C", "UpdateWidgetState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

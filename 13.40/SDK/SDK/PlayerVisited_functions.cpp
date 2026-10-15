@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerVisited_C::ExecuteUbergraph_PlayerVisited(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerVisited_C", "ExecuteUbergraph_PlayerVisited");
+	class UFunction* Func = Class->GetFunction("PlayerVisited_C", "ExecuteUbergraph_PlayerVisited");
 
 	Params::PlayerVisited_C_ExecuteUbergraph_PlayerVisited Parms{};
 
@@ -41,10 +38,7 @@ void UPlayerVisited_C::ExecuteUbergraph_PlayerVisited(int32 EntryPoint)
 
 void UPlayerVisited_C::OnAnimBackupTimerFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerVisited_C", "OnAnimBackupTimerFinished");
+	class UFunction* Func = Class->GetFunction("PlayerVisited_C", "OnAnimBackupTimerFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UPlayerVisited_C::OnAnimBackupTimerFinished()
 
 void UPlayerVisited_C::OnStompedByOtherWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerVisited_C", "OnStompedByOtherWidget");
+	class UFunction* Func = Class->GetFunction("PlayerVisited_C", "OnStompedByOtherWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UPlayerVisited_C::OnStompedByOtherWidget()
 
 void UPlayerVisited_C::OnStompFailed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerVisited_C", "OnStompFailed");
+	class UFunction* Func = Class->GetFunction("PlayerVisited_C", "OnStompFailed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UPlayerVisited_C::OnStompFailed()
 
 void UPlayerVisited_C::Brief_Show_Finished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerVisited_C", "Brief Show Finished");
+	class UFunction* Func = Class->GetFunction("PlayerVisited_C", "Brief Show Finished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UPlayerVisited_C::Brief_Show_Finished()
 
 void UPlayerVisited_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerVisited_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PlayerVisited_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -114,10 +96,7 @@ void UPlayerVisited_C::Construct()
 
 void UPlayerVisited_C::OnNewVisited(const class FText& LocalizedLocationName, bool bIsNamedLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerVisited_C", "OnNewVisited");
+	class UFunction* Func = Class->GetFunction("PlayerVisited_C", "OnNewVisited");
 
 	Params::PlayerVisited_C_OnNewVisited Parms{};
 
@@ -133,10 +112,7 @@ void UPlayerVisited_C::OnNewVisited(const class FText& LocalizedLocationName, bo
 
 void UPlayerVisited_C::EndOfShow()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerVisited_C", "EndOfShow");
+	class UFunction* Func = Class->GetFunction("PlayerVisited_C", "EndOfShow");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

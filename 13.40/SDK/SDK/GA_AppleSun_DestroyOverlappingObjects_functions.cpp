@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_AppleSun_DestroyOverlappingObjects_C::ExecuteUbergraph_GA_AppleSun_DestroyOverlappingObjects(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "ExecuteUbergraph_GA_AppleSun_DestroyOverlappingObjects");
+	class UFunction* Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "ExecuteUbergraph_GA_AppleSun_DestroyOverlappingObjects");
 
 	Params::GA_AppleSun_DestroyOverlappingObjects_C_ExecuteUbergraph_GA_AppleSun_DestroyOverlappingObjects Parms{};
 
@@ -41,10 +38,7 @@ void UGA_AppleSun_DestroyOverlappingObjects_C::ExecuteUbergraph_GA_AppleSun_Dest
 
 void UGA_AppleSun_DestroyOverlappingObjects_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UGA_AppleSun_DestroyOverlappingObjects_C::K2_ActivateAbility()
 
 void UGA_AppleSun_DestroyOverlappingObjects_C::Targeted_96BA3C644E573EAE0D8760B88ABB3969(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "Targeted_96BA3C644E573EAE0D8760B88ABB3969");
+	class UFunction* Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "Targeted_96BA3C644E573EAE0D8760B88ABB3969");
 
 	Params::GA_AppleSun_DestroyOverlappingObjects_C_Targeted_96BA3C644E573EAE0D8760B88ABB3969 Parms{};
 
@@ -80,10 +71,7 @@ void UGA_AppleSun_DestroyOverlappingObjects_C::Targeted_96BA3C644E573EAE0D8760B8
 
 void UGA_AppleSun_DestroyOverlappingObjects_C::Cancelled_96BA3C644E573EAE0D8760B88ABB3969(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "Cancelled_96BA3C644E573EAE0D8760B88ABB3969");
+	class UFunction* Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "Cancelled_96BA3C644E573EAE0D8760B88ABB3969");
 
 	Params::GA_AppleSun_DestroyOverlappingObjects_C_Cancelled_96BA3C644E573EAE0D8760B88ABB3969 Parms{};
 
@@ -101,10 +89,7 @@ void UGA_AppleSun_DestroyOverlappingObjects_C::Cancelled_96BA3C644E573EAE0D8760B
 
 struct FTransform UGA_AppleSun_DestroyOverlappingObjects_C::GetCustomAbilitySourceTransform() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "GetCustomAbilitySourceTransform");
+	class UFunction* Func = Class->GetFunction("GA_AppleSun_DestroyOverlappingObjects_C", "GetCustomAbilitySourceTransform");
 
 	Params::GA_AppleSun_DestroyOverlappingObjects_C_GetCustomAbilitySourceTransform Parms{};
 

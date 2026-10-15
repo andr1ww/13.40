@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_PlaysetGrenade_C::ExecuteUbergraph_B_Prj_Athena_PlaysetGrenade(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ExecuteUbergraph_B_Prj_Athena_PlaysetGrenade");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ExecuteUbergraph_B_Prj_Athena_PlaysetGrenade");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_ExecuteUbergraph_B_Prj_Athena_PlaysetGrenade Parms{};
 
@@ -43,10 +40,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::ExecuteUbergraph_B_Prj_Athena_PlaysetGrenad
 
 void AB_Prj_Athena_PlaysetGrenade_C::Play_Spawn_Prefab_Sound(const struct FVector& Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "Play Spawn Prefab Sound");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "Play Spawn Prefab Sound");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_Play_Spawn_Prefab_Sound Parms{};
 
@@ -65,10 +59,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::Play_Spawn_Prefab_Sound(const struct FVecto
 
 void AB_Prj_Athena_PlaysetGrenade_C::SpawnPlayspaceServer(class UFortPlaysetItemDefinition* Playset, const struct FVector& Location, const struct FRotator& Rotation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SpawnPlayspaceServer");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SpawnPlayspaceServer");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_SpawnPlayspaceServer Parms{};
 
@@ -87,10 +78,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::SpawnPlayspaceServer(class UFortPlaysetItem
 
 void AB_Prj_Athena_PlaysetGrenade_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveEndPlay");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_ReceiveEndPlay Parms{};
 
@@ -105,10 +93,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::ReceiveEndPlay(EEndPlayReason EndPlayReason
 
 void AB_Prj_Athena_PlaysetGrenade_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -128,10 +113,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::ReceiveBeginPlay()
 
 void AB_Prj_Athena_PlaysetGrenade_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveHit");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_ReceiveHit Parms{};
 
@@ -156,10 +138,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::ReceiveHit(class UPrimitiveComponent* MyCom
 
 void AB_Prj_Athena_PlaysetGrenade_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnExploded");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_OnExploded Parms{};
 
@@ -177,10 +156,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::OnExploded(const TArray<class AActor*>& Hit
 
 void AB_Prj_Athena_PlaysetGrenade_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnStop");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_OnStop Parms{};
 
@@ -197,10 +173,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::OnStop(const struct FHitResult& Hit)
 
 void AB_Prj_Athena_PlaysetGrenade_C::OnLoaded_3645F4484F4ECED813C69D92F55C7A1F(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnLoaded_3645F4484F4ECED813C69D92F55C7A1F");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnLoaded_3645F4484F4ECED813C69D92F55C7A1F");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_OnLoaded_3645F4484F4ECED813C69D92F55C7A1F Parms{};
 
@@ -215,10 +188,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::OnLoaded_3645F4484F4ECED813C69D92F55C7A1F(c
 
 void AB_Prj_Athena_PlaysetGrenade_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -231,10 +201,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::UserConstructionScript()
 
 void AB_Prj_Athena_PlaysetGrenade_C::SetBaseDestination(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SetBaseDestination");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SetBaseDestination");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_SetBaseDestination Parms{};
 
@@ -249,10 +216,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::SetBaseDestination(const struct FHitResult&
 
 void AB_Prj_Athena_PlaysetGrenade_C::CalculateCardinalDirection()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "CalculateCardinalDirection");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "CalculateCardinalDirection");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +229,7 @@ void AB_Prj_Athena_PlaysetGrenade_C::CalculateCardinalDirection()
 
 void AB_Prj_Athena_PlaysetGrenade_C::SetPlaysetData(class UFortPlaysetItemDefinition* NewPlayset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SetPlaysetData");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SetPlaysetData");
 
 	Params::B_Prj_Athena_PlaysetGrenade_C_SetPlaysetData Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortRadioButtonGroup_C::ExecuteUbergraph_FortRadioButtonGroup(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortRadioButtonGroup_C", "ExecuteUbergraph_FortRadioButtonGroup");
+	class UFunction* Func = Class->GetFunction("FortRadioButtonGroup_C", "ExecuteUbergraph_FortRadioButtonGroup");
 
 	Params::FortRadioButtonGroup_C_ExecuteUbergraph_FortRadioButtonGroup Parms{};
 
@@ -41,10 +38,7 @@ void UFortRadioButtonGroup_C::ExecuteUbergraph_FortRadioButtonGroup(int32 EntryP
 
 void UFortRadioButtonGroup_C::UpdateButtons()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortRadioButtonGroup_C", "UpdateButtons");
+	class UFunction* Func = Class->GetFunction("FortRadioButtonGroup_C", "UpdateButtons");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UFortRadioButtonGroup_C::UpdateButtons()
 
 void UFortRadioButtonGroup_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortRadioButtonGroup_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("FortRadioButtonGroup_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -72,10 +63,7 @@ void UFortRadioButtonGroup_C::Destruct()
 
 void UFortRadioButtonGroup_C::OnButtonClicked_Bind(class UCommonButton* AssociatedButton, int32 ButtonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortRadioButtonGroup_C", "OnButtonClicked_Bind");
+	class UFunction* Func = Class->GetFunction("FortRadioButtonGroup_C", "OnButtonClicked_Bind");
 
 	Params::FortRadioButtonGroup_C_OnButtonClicked_Bind Parms{};
 
@@ -91,10 +79,7 @@ void UFortRadioButtonGroup_C::OnButtonClicked_Bind(class UCommonButton* Associat
 
 void UFortRadioButtonGroup_C::CenterOnWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortRadioButtonGroup_C", "CenterOnWidget");
+	class UFunction* Func = Class->GetFunction("FortRadioButtonGroup_C", "CenterOnWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

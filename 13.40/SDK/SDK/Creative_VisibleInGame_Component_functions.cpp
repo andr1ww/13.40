@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreative_VisibleInGame_Component_C::ExecuteUbergraph_Creative_VisibleInGame_Component(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "ExecuteUbergraph_Creative_VisibleInGame_Component");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "ExecuteUbergraph_Creative_VisibleInGame_Component");
 
 	Params::Creative_VisibleInGame_Component_C_ExecuteUbergraph_Creative_VisibleInGame_Component Parms{};
 
@@ -44,10 +41,7 @@ void UCreative_VisibleInGame_Component_C::ExecuteUbergraph_Creative_VisibleInGam
 
 void UCreative_VisibleInGame_Component_C::OnMinigameStateChanged(class AFortMinigame* Minigame, EFortMinigameState MinigameState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "OnMinigameStateChanged");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "OnMinigameStateChanged");
 
 	Params::Creative_VisibleInGame_Component_C_OnMinigameStateChanged Parms{};
 
@@ -63,10 +57,7 @@ void UCreative_VisibleInGame_Component_C::OnMinigameStateChanged(class AFortMini
 
 void UCreative_VisibleInGame_Component_C::Bind_Minigame_Events()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Bind Minigame Events");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Bind Minigame Events");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -80,10 +71,7 @@ void UCreative_VisibleInGame_Component_C::Bind_Minigame_Events()
 
 void UCreative_VisibleInGame_Component_C::OnPlayModeChangedDelegate(class AFortMinigame* Minigame, bool bIsInPlayMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "OnPlayModeChangedDelegate");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "OnPlayModeChangedDelegate");
 
 	Params::Creative_VisibleInGame_Component_C_OnPlayModeChangedDelegate Parms{};
 
@@ -99,10 +87,7 @@ void UCreative_VisibleInGame_Component_C::OnPlayModeChangedDelegate(class AFortM
 
 void UCreative_VisibleInGame_Component_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -115,10 +100,7 @@ void UCreative_VisibleInGame_Component_C::ReceiveBeginPlay()
 
 void UCreative_VisibleInGame_Component_C::Get_Visibility_Components(TArray<class USceneComponent*>* Components)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Get Visibility Components");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Get Visibility Components");
 
 	Params::Creative_VisibleInGame_Component_C_Get_Visibility_Components Parms{};
 
@@ -134,10 +116,7 @@ void UCreative_VisibleInGame_Component_C::Get_Visibility_Components(TArray<class
 
 void UCreative_VisibleInGame_Component_C::Update_Visibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Visibility");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Visibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -150,10 +129,7 @@ void UCreative_VisibleInGame_Component_C::Update_Visibility()
 
 void UCreative_VisibleInGame_Component_C::Set_Visiblity_During_Phase(EVisibleInGameState New_Visible_During_Phase)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Set Visiblity During Phase");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Set Visiblity During Phase");
 
 	Params::Creative_VisibleInGame_Component_C_Set_Visiblity_During_Phase Parms{};
 
@@ -171,10 +147,7 @@ void UCreative_VisibleInGame_Component_C::Set_Visiblity_During_Phase(EVisibleInG
 
 void UCreative_VisibleInGame_Component_C::Update_Component_Visibility(class USceneComponent* Component, bool Visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Component Visibility");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Component Visibility");
 
 	Params::Creative_VisibleInGame_Component_C_Update_Component_Visibility Parms{};
 
@@ -193,10 +166,7 @@ void UCreative_VisibleInGame_Component_C::Update_Component_Visibility(class USce
 
 void UCreative_VisibleInGame_Component_C::Update_Primitive_Component_Collision(class UPrimitiveComponent* Primitive_Component, bool Visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Primitive Component Collision");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Primitive Component Collision");
 
 	Params::Creative_VisibleInGame_Component_C_Update_Primitive_Component_Collision Parms{};
 
@@ -215,10 +185,7 @@ void UCreative_VisibleInGame_Component_C::Update_Primitive_Component_Collision(c
 
 void UCreative_VisibleInGame_Component_C::Update_Audio_Component(class UAudioComponent* Audio_Component, bool Visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Audio Component");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Audio Component");
 
 	Params::Creative_VisibleInGame_Component_C_Update_Audio_Component Parms{};
 
@@ -237,10 +204,7 @@ void UCreative_VisibleInGame_Component_C::Update_Audio_Component(class UAudioCom
 
 void UCreative_VisibleInGame_Component_C::Update_Particle_Component(class UParticleSystemComponent* Particle_Component, bool Visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Particle Component");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Particle Component");
 
 	Params::Creative_VisibleInGame_Component_C_Update_Particle_Component Parms{};
 
@@ -258,10 +222,7 @@ void UCreative_VisibleInGame_Component_C::Update_Particle_Component(class UParti
 
 bool UCreative_VisibleInGame_Component_C::Is_In_Play_Mode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Is In Play Mode");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Is In Play Mode");
 
 	Params::Creative_VisibleInGame_Component_C_Is_In_Play_Mode Parms{};
 
@@ -278,10 +239,7 @@ bool UCreative_VisibleInGame_Component_C::Is_In_Play_Mode()
 
 void UCreative_VisibleInGame_Component_C::Set_Visibility_Components(TArray<class USceneComponent*>& Scene_Components)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Set Visibility Components");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Set Visibility Components");
 
 	Params::Creative_VisibleInGame_Component_C_Set_Visibility_Components Parms{};
 
@@ -298,10 +256,7 @@ void UCreative_VisibleInGame_Component_C::Set_Visibility_Components(TArray<class
 
 void UCreative_VisibleInGame_Component_C::OnRep_VisibleDuringPhase()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "OnRep_VisibleDuringPhase");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "OnRep_VisibleDuringPhase");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -314,10 +269,7 @@ void UCreative_VisibleInGame_Component_C::OnRep_VisibleDuringPhase()
 
 void UCreative_VisibleInGame_Component_C::Should_Be_Visible(bool* Visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Should Be Visible");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Should Be Visible");
 
 	Params::Creative_VisibleInGame_Component_C_Should_Be_Visible Parms{};
 
@@ -335,10 +287,7 @@ void UCreative_VisibleInGame_Component_C::Should_Be_Visible(bool* Visible)
 
 void UCreative_VisibleInGame_Component_C::Set_Visibility_Components_with_Collision(const TMap<class USceneComponent*, ECollisionEnabled>& Collision_Overrides)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Set Visibility Components with Collision");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Set Visibility Components with Collision");
 
 	Params::Creative_VisibleInGame_Component_C_Set_Visibility_Components_with_Collision Parms{};
 
@@ -355,10 +304,7 @@ void UCreative_VisibleInGame_Component_C::Set_Visibility_Components_with_Collisi
 
 void UCreative_VisibleInGame_Component_C::Update_Array_Visibility(TArray<class USceneComponent*>& Array)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Array Visibility");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Array Visibility");
 
 	Params::Creative_VisibleInGame_Component_C_Update_Array_Visibility Parms{};
 
@@ -377,10 +323,7 @@ void UCreative_VisibleInGame_Component_C::Update_Array_Visibility(TArray<class U
 
 void UCreative_VisibleInGame_Component_C::SetForcedVisibilityDuringGame(Enum_ForcedValueDuringGame NewForcedVisibilityDuringGame)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "SetForcedVisibilityDuringGame");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "SetForcedVisibilityDuringGame");
 
 	Params::Creative_VisibleInGame_Component_C_SetForcedVisibilityDuringGame Parms{};
 
@@ -395,10 +338,7 @@ void UCreative_VisibleInGame_Component_C::SetForcedVisibilityDuringGame(Enum_For
 
 void UCreative_VisibleInGame_Component_C::OnRep_ForcedVisibilityDuringGame()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "OnRep_ForcedVisibilityDuringGame");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "OnRep_ForcedVisibilityDuringGame");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -409,10 +349,7 @@ void UCreative_VisibleInGame_Component_C::OnRep_ForcedVisibilityDuringGame()
 
 void UCreative_VisibleInGame_Component_C::Update_Foliage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Foliage");
+	class UFunction* Func = Class->GetFunction("Creative_VisibleInGame_Component_C", "Update Foliage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

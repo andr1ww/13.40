@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortMediaSubtitlesPlayer::BindToMediaPlayer(class UMediaPlayer* InMediaPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "BindToMediaPlayer");
+	class UFunction* Func = Class->GetFunction("FortMediaSubtitlesPlayer", "BindToMediaPlayer");
 
 	Params::FortMediaSubtitlesPlayer_BindToMediaPlayer Parms{};
 
@@ -46,10 +43,7 @@ void UFortMediaSubtitlesPlayer::BindToMediaPlayer(class UMediaPlayer* InMediaPla
 
 void UFortMediaSubtitlesPlayer::Play()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Play");
+	class UFunction* Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Play");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -67,10 +61,7 @@ void UFortMediaSubtitlesPlayer::Play()
 
 void UFortMediaSubtitlesPlayer::SetSubtitles(class UOverlays* Subtitles)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "SetSubtitles");
+	class UFunction* Func = Class->GetFunction("FortMediaSubtitlesPlayer", "SetSubtitles");
 
 	Params::FortMediaSubtitlesPlayer_SetSubtitles Parms{};
 
@@ -90,10 +81,7 @@ void UFortMediaSubtitlesPlayer::SetSubtitles(class UOverlays* Subtitles)
 
 void UFortMediaSubtitlesPlayer::Stop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Stop");
+	class UFunction* Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Stop");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -111,10 +99,7 @@ void UFortMediaSubtitlesPlayer::Stop()
 
 bool USubtitleDisplay::HasSubtitles() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SubtitleDisplay", "HasSubtitles");
+	class UFunction* Func = Class->GetFunction("SubtitleDisplay", "HasSubtitles");
 
 	Params::SubtitleDisplay_HasSubtitles Parms{};
 

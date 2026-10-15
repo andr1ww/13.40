@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::ExecuteUbergraph_GCNL_CurieState_ElementAttached_Electricity(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "ExecuteUbergraph_GCNL_CurieState_ElementAttached_Electricity");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "ExecuteUbergraph_GCNL_CurieState_ElementAttached_Electricity");
 
 	Params::GCNL_CurieState_ElementAttached_Electricity_C_ExecuteUbergraph_GCNL_CurieState_ElementAttached_Electricity Parms{};
 
@@ -41,10 +38,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::ExecuteUbergraph_GCNL_Curie
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::RetriggerPropagationSpline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "RetriggerPropagationSpline");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "RetriggerPropagationSpline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::RetriggerPropagationSpline(
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::HideSplineMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "HideSplineMesh");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "HideSplineMesh");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::HideSplineMesh()
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::DrawPropagationSpline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "DrawPropagationSpline");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "DrawPropagationSpline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -90,10 +78,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::DrawPropagationSpline()
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "OnRemoval");
 
 	Params::GCNL_CurieState_ElementAttached_Electricity_C_OnRemoval Parms{};
 
@@ -115,10 +100,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::OnRemoval(class AActor* MyT
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "ReceiveEndPlay");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "ReceiveEndPlay");
 
 	Params::GCNL_CurieState_ElementAttached_Electricity_C_ReceiveEndPlay Parms{};
 
@@ -138,10 +120,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::ReceiveEndPlay(EEndPlayReas
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "OnLoopingStart");
 
 	Params::GCNL_CurieState_ElementAttached_Electricity_C_OnLoopingStart Parms{};
 
@@ -161,10 +140,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::OnLoopingStart(class AActor
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::FindPropagationParent(bool* Found)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "FindPropagationParent");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "FindPropagationParent");
 
 	Params::GCNL_CurieState_ElementAttached_Electricity_C_FindPropagationParent Parms{};
 
@@ -182,10 +158,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::FindPropagationParent(bool*
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::SetPropagationSplineHiddenInGame(bool NewHidden)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "SetPropagationSplineHiddenInGame");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "SetPropagationSplineHiddenInGame");
 
 	Params::GCNL_CurieState_ElementAttached_Electricity_C_SetPropagationSplineHiddenInGame Parms{};
 
@@ -200,10 +173,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::SetPropagationSplineHiddenI
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::SetPropagationSplineCustomPrimitiveData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "SetPropagationSplineCustomPrimitiveData");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "SetPropagationSplineCustomPrimitiveData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -214,10 +184,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::SetPropagationSplineCustomP
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::GetActorPlaneOrientation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "GetActorPlaneOrientation");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "GetActorPlaneOrientation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -230,10 +197,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::GetActorPlaneOrientation()
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::GetSplineRelativeRotationXOffset(float* X)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "GetSplineRelativeRotationXOffset");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "GetSplineRelativeRotationXOffset");
 
 	Params::GCNL_CurieState_ElementAttached_Electricity_C_GetSplineRelativeRotationXOffset Parms{};
 
@@ -252,10 +216,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::GetSplineRelativeRotationXO
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::GetNiagaraFlippedAxes(const struct FVector& VectorIn, struct FVector* VectorOut)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "GetNiagaraFlippedAxes");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "GetNiagaraFlippedAxes");
 
 	Params::GCNL_CurieState_ElementAttached_Electricity_C_GetNiagaraFlippedAxes Parms{};
 
@@ -275,10 +236,7 @@ void AGCNL_CurieState_ElementAttached_Electricity_C::GetNiagaraFlippedAxes(const
 
 void AGCNL_CurieState_ElementAttached_Electricity_C::GetRandomPropagationArcSpline(class UStaticMesh** Output)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "GetRandomPropagationArcSpline");
+	class UFunction* Func = Class->GetFunction("GCNL_CurieState_ElementAttached_Electricity_C", "GetRandomPropagationArcSpline");
 
 	Params::GCNL_CurieState_ElementAttached_Electricity_C_GetRandomPropagationArcSpline Parms{};
 

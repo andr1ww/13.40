@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UItemInfoPresentationWidget_C::HandleIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoPresentationWidget_C", "HandleIntro");
+	class UFunction* Func = Class->GetFunction("ItemInfoPresentationWidget_C", "HandleIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UItemInfoPresentationWidget_C::HandleIntro()
 
 void UItemInfoPresentationWidget_C::HandleInitialState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoPresentationWidget_C", "HandleInitialState");
+	class UFunction* Func = Class->GetFunction("ItemInfoPresentationWidget_C", "HandleInitialState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void UItemInfoPresentationWidget_C::HandleInitialState()
 
 void UItemInfoPresentationWidget_C::HandleOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemInfoPresentationWidget_C", "HandleOutro");
+	class UFunction* Func = Class->GetFunction("ItemInfoPresentationWidget_C", "HandleOutro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::ExecuteUbergraph_B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "ExecuteUbergraph_B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "ExecuteUbergraph_B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile");
 
 	Params::B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C_ExecuteUbergraph_B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile Parms{};
 
@@ -43,10 +40,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::ExecuteUbergr
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::PlayClientFX(const struct FVector& HitLocationData)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "PlayClientFX");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "PlayClientFX");
 
 	Params::B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C_PlayClientFX Parms{};
 
@@ -61,10 +55,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::PlayClientFX(
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::ReceiveBeginP
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -99,10 +87,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::BndEvt__Water
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::BeginDrunkenMovement()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "BeginDrunkenMovement");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "BeginDrunkenMovement");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +98,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::BeginDrunkenM
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::HasNotLandedFadeOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "HasNotLandedFadeOut");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "HasNotLandedFadeOut");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -136,10 +118,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::HasNotLandedF
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "ReceiveHit");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "ReceiveHit");
 
 	Params::B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C_ReceiveHit Parms{};
 
@@ -161,10 +140,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::ReceiveHit(cl
 
 void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::Landed_In_Water()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "Landed In Water");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "Landed In Water");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +155,7 @@ void AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::Landed_In_Wat
 
 struct FTransform AB_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C::Find_Mesh_Angle(const struct FVector& HitLoc, const struct FVector& HitNotmal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "Find Mesh Angle");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C", "Find Mesh Angle");
 
 	Params::B_Prj_Athena_Grenade_MolotovCocktail_AdditionalProjectile_C_Find_Mesh_Angle Parms{};
 

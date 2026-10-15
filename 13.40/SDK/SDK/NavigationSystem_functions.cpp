@@ -30,10 +30,7 @@ SDK_NAMESPACE_START
 
 class UNavigationPath* UNavigationSystemV1::FindPathToActorSynchronously(class UObject* WorldContextObject, const struct FVector& PathStart, class AActor* GoalActor, float TetherDistance, class AActor* PathfindingContext, TSubclassOf<class UNavigationQueryFilter> FilterClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "FindPathToActorSynchronously");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "FindPathToActorSynchronously");
 
 	Params::NavigationSystemV1_FindPathToActorSynchronously Parms{};
 
@@ -67,10 +64,7 @@ class UNavigationPath* UNavigationSystemV1::FindPathToActorSynchronously(class U
 
 class UNavigationPath* UNavigationSystemV1::FindPathToLocationSynchronously(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, class AActor* PathfindingContext, TSubclassOf<class UNavigationQueryFilter> FilterClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "FindPathToLocationSynchronously");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "FindPathToLocationSynchronously");
 
 	Params::NavigationSystemV1_FindPathToLocationSynchronously Parms{};
 
@@ -99,10 +93,7 @@ class UNavigationPath* UNavigationSystemV1::FindPathToLocationSynchronously(clas
 
 class UNavigationSystemV1* UNavigationSystemV1::GetNavigationSystem(class UObject* WorldContextObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "GetNavigationSystem");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "GetNavigationSystem");
 
 	Params::NavigationSystemV1_GetNavigationSystem Parms{};
 
@@ -132,10 +123,7 @@ class UNavigationSystemV1* UNavigationSystemV1::GetNavigationSystem(class UObjec
 
 ENavigationQueryResult UNavigationSystemV1::GetPathCost(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, float* PathCost, class ANavigationData* NavData, TSubclassOf<class UNavigationQueryFilter> FilterClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "GetPathCost");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "GetPathCost");
 
 	Params::NavigationSystemV1_GetPathCost Parms{};
 
@@ -172,10 +160,7 @@ ENavigationQueryResult UNavigationSystemV1::GetPathCost(class UObject* WorldCont
 
 ENavigationQueryResult UNavigationSystemV1::GetPathLength(class UObject* WorldContextObject, const struct FVector& PathStart, const struct FVector& PathEnd, float* PathLength, class ANavigationData* NavData, TSubclassOf<class UNavigationQueryFilter> FilterClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "GetPathLength");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "GetPathLength");
 
 	Params::NavigationSystemV1_GetPathLength Parms{};
 
@@ -211,10 +196,7 @@ ENavigationQueryResult UNavigationSystemV1::GetPathLength(class UObject* WorldCo
 
 struct FVector UNavigationSystemV1::GetRandomPointInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, TSubclassOf<class UNavigationQueryFilter> FilterClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "GetRandomPointInNavigableRadius");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "GetRandomPointInNavigableRadius");
 
 	Params::NavigationSystemV1_GetRandomPointInNavigableRadius Parms{};
 
@@ -247,10 +229,7 @@ struct FVector UNavigationSystemV1::GetRandomPointInNavigableRadius(class UObjec
 
 struct FVector UNavigationSystemV1::GetRandomReachablePointInRadius(class UObject* WorldContextObject, const struct FVector& Origin, float Radius, class ANavigationData* NavData, TSubclassOf<class UNavigationQueryFilter> FilterClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "GetRandomReachablePointInRadius");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "GetRandomReachablePointInRadius");
 
 	Params::NavigationSystemV1_GetRandomReachablePointInRadius Parms{};
 
@@ -279,10 +258,7 @@ struct FVector UNavigationSystemV1::GetRandomReachablePointInRadius(class UObjec
 
 bool UNavigationSystemV1::IsNavigationBeingBuilt(class UObject* WorldContextObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "IsNavigationBeingBuilt");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "IsNavigationBeingBuilt");
 
 	Params::NavigationSystemV1_IsNavigationBeingBuilt Parms{};
 
@@ -307,10 +283,7 @@ bool UNavigationSystemV1::IsNavigationBeingBuilt(class UObject* WorldContextObje
 
 bool UNavigationSystemV1::IsNavigationBeingBuiltOrLocked(class UObject* WorldContextObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "IsNavigationBeingBuiltOrLocked");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "IsNavigationBeingBuiltOrLocked");
 
 	Params::NavigationSystemV1_IsNavigationBeingBuiltOrLocked Parms{};
 
@@ -340,10 +313,7 @@ bool UNavigationSystemV1::IsNavigationBeingBuiltOrLocked(class UObject* WorldCon
 
 bool UNavigationSystemV1::K2_GetRandomLocationInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, struct FVector* RandomLocation, float Radius, class ANavigationData* NavData, TSubclassOf<class UNavigationQueryFilter> FilterClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "K2_GetRandomLocationInNavigableRadius");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "K2_GetRandomLocationInNavigableRadius");
 
 	Params::NavigationSystemV1_K2_GetRandomLocationInNavigableRadius Parms{};
 
@@ -380,10 +350,7 @@ bool UNavigationSystemV1::K2_GetRandomLocationInNavigableRadius(class UObject* W
 
 bool UNavigationSystemV1::K2_GetRandomPointInNavigableRadius(class UObject* WorldContextObject, const struct FVector& Origin, struct FVector* RandomLocation, float Radius, class ANavigationData* NavData, TSubclassOf<class UNavigationQueryFilter> FilterClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "K2_GetRandomPointInNavigableRadius");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "K2_GetRandomPointInNavigableRadius");
 
 	Params::NavigationSystemV1_K2_GetRandomPointInNavigableRadius Parms{};
 
@@ -420,10 +387,7 @@ bool UNavigationSystemV1::K2_GetRandomPointInNavigableRadius(class UObject* Worl
 
 bool UNavigationSystemV1::K2_GetRandomReachablePointInRadius(class UObject* WorldContextObject, const struct FVector& Origin, struct FVector* RandomLocation, float Radius, class ANavigationData* NavData, TSubclassOf<class UNavigationQueryFilter> FilterClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "K2_GetRandomReachablePointInRadius");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "K2_GetRandomReachablePointInRadius");
 
 	Params::NavigationSystemV1_K2_GetRandomReachablePointInRadius Parms{};
 
@@ -460,10 +424,7 @@ bool UNavigationSystemV1::K2_GetRandomReachablePointInRadius(class UObject* Worl
 
 bool UNavigationSystemV1::K2_ProjectPointToNavigation(class UObject* WorldContextObject, const struct FVector& Point, struct FVector* ProjectedLocation, class ANavigationData* NavData, TSubclassOf<class UNavigationQueryFilter> FilterClass, const struct FVector& QueryExtent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "K2_ProjectPointToNavigation");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "K2_ProjectPointToNavigation");
 
 	Params::NavigationSystemV1_K2_ProjectPointToNavigation Parms{};
 
@@ -500,10 +461,7 @@ bool UNavigationSystemV1::K2_ProjectPointToNavigation(class UObject* WorldContex
 
 bool UNavigationSystemV1::NavigationRaycast(class UObject* WorldContextObject, const struct FVector& RayStart, const struct FVector& RayEnd, struct FVector* HitLocation, TSubclassOf<class UNavigationQueryFilter> FilterClass, class AController* Querier)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "NavigationRaycast");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "NavigationRaycast");
 
 	Params::NavigationSystemV1_NavigationRaycast Parms{};
 
@@ -539,10 +497,7 @@ bool UNavigationSystemV1::NavigationRaycast(class UObject* WorldContextObject, c
 
 struct FVector UNavigationSystemV1::ProjectPointToNavigation(class UObject* WorldContextObject, const struct FVector& Point, class ANavigationData* NavData, TSubclassOf<class UNavigationQueryFilter> FilterClass, const struct FVector& QueryExtent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "ProjectPointToNavigation");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "ProjectPointToNavigation");
 
 	Params::NavigationSystemV1_ProjectPointToNavigation Parms{};
 
@@ -571,10 +526,7 @@ struct FVector UNavigationSystemV1::ProjectPointToNavigation(class UObject* Worl
 
 void UNavigationSystemV1::SimpleMoveToActor(class AController* Controller, const class AActor* Goal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "SimpleMoveToActor");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "SimpleMoveToActor");
 
 	Params::NavigationSystemV1_SimpleMoveToActor Parms{};
 
@@ -598,10 +550,7 @@ void UNavigationSystemV1::SimpleMoveToActor(class AController* Controller, const
 
 void UNavigationSystemV1::SimpleMoveToLocation(class AController* Controller, const struct FVector& Goal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("NavigationSystemV1", "SimpleMoveToLocation");
+	class UFunction* Func = StaticClass()->GetFunction("NavigationSystemV1", "SimpleMoveToLocation");
 
 	Params::NavigationSystemV1_SimpleMoveToLocation Parms{};
 
@@ -627,10 +576,7 @@ void UNavigationSystemV1::SimpleMoveToLocation(class AController* Controller, co
 
 bool UNavigationSystemV1::K2_ReplaceAreaInOctreeData(const class UObject* Object, TSubclassOf<class UNavArea> OldArea, TSubclassOf<class UNavArea> NewArea)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationSystemV1", "K2_ReplaceAreaInOctreeData");
+	class UFunction* Func = Class->GetFunction("NavigationSystemV1", "K2_ReplaceAreaInOctreeData");
 
 	Params::NavigationSystemV1_K2_ReplaceAreaInOctreeData Parms{};
 
@@ -656,10 +602,7 @@ bool UNavigationSystemV1::K2_ReplaceAreaInOctreeData(const class UObject* Object
 
 void UNavigationSystemV1::OnNavigationBoundsUpdated(class ANavMeshBoundsVolume* NavVolume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationSystemV1", "OnNavigationBoundsUpdated");
+	class UFunction* Func = Class->GetFunction("NavigationSystemV1", "OnNavigationBoundsUpdated");
 
 	Params::NavigationSystemV1_OnNavigationBoundsUpdated Parms{};
 
@@ -683,10 +626,7 @@ void UNavigationSystemV1::OnNavigationBoundsUpdated(class ANavMeshBoundsVolume* 
 
 void UNavigationSystemV1::RegisterNavigationInvoker(class AActor* Invoker, float TileGenerationRadius, float TileRemovalRadius)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationSystemV1", "RegisterNavigationInvoker");
+	class UFunction* Func = Class->GetFunction("NavigationSystemV1", "RegisterNavigationInvoker");
 
 	Params::NavigationSystemV1_RegisterNavigationInvoker Parms{};
 
@@ -708,10 +648,7 @@ void UNavigationSystemV1::RegisterNavigationInvoker(class AActor* Invoker, float
 
 void UNavigationSystemV1::ResetMaxSimultaneousTileGenerationJobsCount()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationSystemV1", "ResetMaxSimultaneousTileGenerationJobsCount");
+	class UFunction* Func = Class->GetFunction("NavigationSystemV1", "ResetMaxSimultaneousTileGenerationJobsCount");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -729,10 +666,7 @@ void UNavigationSystemV1::ResetMaxSimultaneousTileGenerationJobsCount()
 
 void UNavigationSystemV1::SetGeometryGatheringMode(ENavDataGatheringModeConfig NewMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationSystemV1", "SetGeometryGatheringMode");
+	class UFunction* Func = Class->GetFunction("NavigationSystemV1", "SetGeometryGatheringMode");
 
 	Params::NavigationSystemV1_SetGeometryGatheringMode Parms{};
 
@@ -754,10 +688,7 @@ void UNavigationSystemV1::SetGeometryGatheringMode(ENavDataGatheringModeConfig N
 
 void UNavigationSystemV1::SetMaxSimultaneousTileGenerationJobsCount(int32 MaxNumberOfJobs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationSystemV1", "SetMaxSimultaneousTileGenerationJobsCount");
+	class UFunction* Func = Class->GetFunction("NavigationSystemV1", "SetMaxSimultaneousTileGenerationJobsCount");
 
 	Params::NavigationSystemV1_SetMaxSimultaneousTileGenerationJobsCount Parms{};
 
@@ -779,10 +710,7 @@ void UNavigationSystemV1::SetMaxSimultaneousTileGenerationJobsCount(int32 MaxNum
 
 void UNavigationSystemV1::UnregisterNavigationInvoker(class AActor* Invoker)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationSystemV1", "UnregisterNavigationInvoker");
+	class UFunction* Func = Class->GetFunction("NavigationSystemV1", "UnregisterNavigationInvoker");
 
 	Params::NavigationSystemV1_UnregisterNavigationInvoker Parms{};
 
@@ -804,10 +732,7 @@ void UNavigationSystemV1::UnregisterNavigationInvoker(class AActor* Invoker)
 
 void ANavModifierVolume::SetAreaClass(TSubclassOf<class UNavArea> NewAreaClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavModifierVolume", "SetAreaClass");
+	class UFunction* Func = Class->GetFunction("NavModifierVolume", "SetAreaClass");
 
 	Params::NavModifierVolume_SetAreaClass Parms{};
 
@@ -833,10 +758,7 @@ void ANavModifierVolume::SetAreaClass(TSubclassOf<class UNavArea> NewAreaClass)
 
 bool ARecastNavMesh::K2_ReplaceAreaInTileBounds(const struct FBox& Bounds, TSubclassOf<class UNavArea> OldArea, TSubclassOf<class UNavArea> NewArea, bool ReplaceLinks)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RecastNavMesh", "K2_ReplaceAreaInTileBounds");
+	class UFunction* Func = Class->GetFunction("RecastNavMesh", "K2_ReplaceAreaInTileBounds");
 
 	Params::RecastNavMesh_K2_ReplaceAreaInTileBounds Parms{};
 
@@ -863,10 +785,7 @@ bool ARecastNavMesh::K2_ReplaceAreaInTileBounds(const struct FBox& Bounds, TSubc
 
 void UNavRelevantComponent::SetNavigationRelevancy(bool bRelevant)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavRelevantComponent", "SetNavigationRelevancy");
+	class UFunction* Func = Class->GetFunction("NavRelevantComponent", "SetNavigationRelevancy");
 
 	Params::NavRelevantComponent_SetNavigationRelevancy Parms{};
 
@@ -889,10 +808,7 @@ void UNavRelevantComponent::SetNavigationRelevancy(bool bRelevant)
 
 void UNavigationPath::EnableDebugDrawing(bool bShouldDrawDebugData, const struct FLinearColor& PathColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationPath", "EnableDebugDrawing");
+	class UFunction* Func = Class->GetFunction("NavigationPath", "EnableDebugDrawing");
 
 	Params::NavigationPath_EnableDebugDrawing Parms{};
 
@@ -915,10 +831,7 @@ void UNavigationPath::EnableDebugDrawing(bool bShouldDrawDebugData, const struct
 
 void UNavigationPath::EnableRecalculationOnInvalidation(ENavigationOptionFlag DoRecalculation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationPath", "EnableRecalculationOnInvalidation");
+	class UFunction* Func = Class->GetFunction("NavigationPath", "EnableRecalculationOnInvalidation");
 
 	Params::NavigationPath_EnableRecalculationOnInvalidation Parms{};
 
@@ -940,10 +853,7 @@ void UNavigationPath::EnableRecalculationOnInvalidation(ENavigationOptionFlag Do
 
 class FString UNavigationPath::GetDebugString() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationPath", "GetDebugString");
+	class UFunction* Func = Class->GetFunction("NavigationPath", "GetDebugString");
 
 	Params::NavigationPath_GetDebugString Parms{};
 
@@ -965,10 +875,7 @@ class FString UNavigationPath::GetDebugString() const
 
 float UNavigationPath::GetPathCost() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationPath", "GetPathCost");
+	class UFunction* Func = Class->GetFunction("NavigationPath", "GetPathCost");
 
 	Params::NavigationPath_GetPathCost Parms{};
 
@@ -990,10 +897,7 @@ float UNavigationPath::GetPathCost() const
 
 float UNavigationPath::GetPathLength() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationPath", "GetPathLength");
+	class UFunction* Func = Class->GetFunction("NavigationPath", "GetPathLength");
 
 	Params::NavigationPath_GetPathLength Parms{};
 
@@ -1015,10 +919,7 @@ float UNavigationPath::GetPathLength() const
 
 bool UNavigationPath::IsPartial() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationPath", "IsPartial");
+	class UFunction* Func = Class->GetFunction("NavigationPath", "IsPartial");
 
 	Params::NavigationPath_IsPartial Parms{};
 
@@ -1040,10 +941,7 @@ bool UNavigationPath::IsPartial() const
 
 bool UNavigationPath::IsStringPulled() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationPath", "IsStringPulled");
+	class UFunction* Func = Class->GetFunction("NavigationPath", "IsStringPulled");
 
 	Params::NavigationPath_IsStringPulled Parms{};
 
@@ -1065,10 +963,7 @@ bool UNavigationPath::IsStringPulled() const
 
 bool UNavigationPath::IsValid() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavigationPath", "IsValid");
+	class UFunction* Func = Class->GetFunction("NavigationPath", "IsValid");
 
 	Params::NavigationPath_IsValid Parms{};
 
@@ -1090,10 +985,7 @@ bool UNavigationPath::IsValid() const
 
 void UNavModifierComponent::SetAreaClass(TSubclassOf<class UNavArea> NewAreaClass)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NavModifierComponent", "SetAreaClass");
+	class UFunction* Func = Class->GetFunction("NavModifierComponent", "SetAreaClass");
 
 	Params::NavModifierComponent_SetAreaClass Parms{};
 

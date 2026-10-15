@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 struct FEdgeID UEditableMesh::InvalidEdgeID()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EditableMesh", "InvalidEdgeID");
+	class UFunction* Func = StaticClass()->GetFunction("EditableMesh", "InvalidEdgeID");
 
 	Params::EditableMesh_InvalidEdgeID Parms{};
 
@@ -48,10 +45,7 @@ struct FEdgeID UEditableMesh::InvalidEdgeID()
 
 struct FPolygonGroupID UEditableMesh::InvalidPolygonGroupID()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EditableMesh", "InvalidPolygonGroupID");
+	class UFunction* Func = StaticClass()->GetFunction("EditableMesh", "InvalidPolygonGroupID");
 
 	Params::EditableMesh_InvalidPolygonGroupID Parms{};
 
@@ -73,10 +67,7 @@ struct FPolygonGroupID UEditableMesh::InvalidPolygonGroupID()
 
 struct FPolygonID UEditableMesh::InvalidPolygonID()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EditableMesh", "InvalidPolygonID");
+	class UFunction* Func = StaticClass()->GetFunction("EditableMesh", "InvalidPolygonID");
 
 	Params::EditableMesh_InvalidPolygonID Parms{};
 
@@ -98,10 +89,7 @@ struct FPolygonID UEditableMesh::InvalidPolygonID()
 
 struct FVertexID UEditableMesh::InvalidVertexID()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EditableMesh", "InvalidVertexID");
+	class UFunction* Func = StaticClass()->GetFunction("EditableMesh", "InvalidVertexID");
 
 	Params::EditableMesh_InvalidVertexID Parms{};
 
@@ -124,10 +112,7 @@ struct FVertexID UEditableMesh::InvalidVertexID()
 
 struct FEdgeID UEditableMesh::MakeEdgeID(const int32 EdgeIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EditableMesh", "MakeEdgeID");
+	class UFunction* Func = StaticClass()->GetFunction("EditableMesh", "MakeEdgeID");
 
 	Params::EditableMesh_MakeEdgeID Parms{};
 
@@ -152,10 +137,7 @@ struct FEdgeID UEditableMesh::MakeEdgeID(const int32 EdgeIndex)
 
 struct FPolygonGroupID UEditableMesh::MakePolygonGroupID(const int32 PolygonGroupIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EditableMesh", "MakePolygonGroupID");
+	class UFunction* Func = StaticClass()->GetFunction("EditableMesh", "MakePolygonGroupID");
 
 	Params::EditableMesh_MakePolygonGroupID Parms{};
 
@@ -180,10 +162,7 @@ struct FPolygonGroupID UEditableMesh::MakePolygonGroupID(const int32 PolygonGrou
 
 struct FPolygonID UEditableMesh::MakePolygonID(const int32 PolygonIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EditableMesh", "MakePolygonID");
+	class UFunction* Func = StaticClass()->GetFunction("EditableMesh", "MakePolygonID");
 
 	Params::EditableMesh_MakePolygonID Parms{};
 
@@ -208,10 +187,7 @@ struct FPolygonID UEditableMesh::MakePolygonID(const int32 PolygonIndex)
 
 struct FVertexID UEditableMesh::MakeVertexID(const int32 VertexIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EditableMesh", "MakeVertexID");
+	class UFunction* Func = StaticClass()->GetFunction("EditableMesh", "MakeVertexID");
 
 	Params::EditableMesh_MakeVertexID Parms{};
 
@@ -236,10 +212,7 @@ struct FVertexID UEditableMesh::MakeVertexID(const int32 VertexIndex)
 
 void UEditableMesh::AssignPolygonsToPolygonGroups(const TArray<struct FPolygonGroupForPolygon>& PolygonGroupForPolygons, const bool bDeleteOrphanedPolygonGroups)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "AssignPolygonsToPolygonGroups");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "AssignPolygonsToPolygonGroups");
 
 	Params::EditableMesh_AssignPolygonsToPolygonGroups Parms{};
 
@@ -266,10 +239,7 @@ void UEditableMesh::AssignPolygonsToPolygonGroups(const TArray<struct FPolygonGr
 
 void UEditableMesh::BevelPolygons(const TArray<struct FPolygonID>& PolygonIDs, const float BevelFixedDistance, const float BevelProgressTowardCenter, TArray<struct FPolygonID>* OutNewCenterPolygonIDs, TArray<struct FPolygonID>* OutNewSidePolygonIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "BevelPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "BevelPolygons");
 
 	Params::EditableMesh_BevelPolygons Parms{};
 
@@ -299,10 +269,7 @@ void UEditableMesh::BevelPolygons(const TArray<struct FPolygonID>& PolygonIDs, c
 
 void UEditableMesh::ChangePolygonsVertexInstances(const TArray<struct FChangeVertexInstancesForPolygon>& VertexInstancesForPolygons)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ChangePolygonsVertexInstances");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ChangePolygonsVertexInstances");
 
 	Params::EditableMesh_ChangePolygonsVertexInstances Parms{};
 
@@ -322,10 +289,7 @@ void UEditableMesh::ChangePolygonsVertexInstances(const TArray<struct FChangeVer
 
 void UEditableMesh::Commit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "Commit");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "Commit");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -344,10 +308,7 @@ void UEditableMesh::Commit()
 
 class UEditableMesh* UEditableMesh::CommitInstance(class UPrimitiveComponent* ComponentToInstanceTo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "CommitInstance");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "CommitInstance");
 
 	Params::EditableMesh_CommitInstance Parms{};
 
@@ -372,10 +333,7 @@ class UEditableMesh* UEditableMesh::CommitInstance(class UPrimitiveComponent* Co
 
 void UEditableMesh::CreateEdges(const TArray<struct FEdgeToCreate>& EdgesToCreate, TArray<struct FEdgeID>* OutNewEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "CreateEdges");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "CreateEdges");
 
 	Params::EditableMesh_CreateEdges Parms{};
 
@@ -401,10 +359,7 @@ void UEditableMesh::CreateEdges(const TArray<struct FEdgeToCreate>& EdgesToCreat
 
 void UEditableMesh::CreateEmptyVertexRange(const int32 NumVerticesToCreate, TArray<struct FVertexID>* OutNewVertexIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "CreateEmptyVertexRange");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "CreateEmptyVertexRange");
 
 	Params::EditableMesh_CreateEmptyVertexRange Parms{};
 
@@ -430,10 +385,7 @@ void UEditableMesh::CreateEmptyVertexRange(const int32 NumVerticesToCreate, TArr
 
 void UEditableMesh::CreateMissingPolygonPerimeterEdges(const struct FPolygonID& PolygonID, TArray<struct FEdgeID>* OutNewEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "CreateMissingPolygonPerimeterEdges");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "CreateMissingPolygonPerimeterEdges");
 
 	Params::EditableMesh_CreateMissingPolygonPerimeterEdges Parms{};
 
@@ -459,10 +411,7 @@ void UEditableMesh::CreateMissingPolygonPerimeterEdges(const struct FPolygonID& 
 
 void UEditableMesh::CreatePolygonGroups(const TArray<struct FPolygonGroupToCreate>& PolygonGroupsToCreate, TArray<struct FPolygonGroupID>* OutNewPolygonGroupIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "CreatePolygonGroups");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "CreatePolygonGroups");
 
 	Params::EditableMesh_CreatePolygonGroups Parms{};
 
@@ -489,10 +438,7 @@ void UEditableMesh::CreatePolygonGroups(const TArray<struct FPolygonGroupToCreat
 
 void UEditableMesh::CreatePolygons(const TArray<struct FPolygonToCreate>& PolygonsToCreate, TArray<struct FPolygonID>* OutNewPolygonIDs, TArray<struct FEdgeID>* OutNewEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "CreatePolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "CreatePolygons");
 
 	Params::EditableMesh_CreatePolygons Parms{};
 
@@ -521,10 +467,7 @@ void UEditableMesh::CreatePolygons(const TArray<struct FPolygonToCreate>& Polygo
 
 void UEditableMesh::CreateVertexInstances(const TArray<struct FVertexInstanceToCreate>& VertexInstancesToCreate, TArray<struct FVertexInstanceID>* OutNewVertexInstanceIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "CreateVertexInstances");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "CreateVertexInstances");
 
 	Params::EditableMesh_CreateVertexInstances Parms{};
 
@@ -550,10 +493,7 @@ void UEditableMesh::CreateVertexInstances(const TArray<struct FVertexInstanceToC
 
 void UEditableMesh::CreateVertices(const TArray<struct FVertexToCreate>& VerticesToCreate, TArray<struct FVertexID>* OutNewVertexIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "CreateVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "CreateVertices");
 
 	Params::EditableMesh_CreateVertices Parms{};
 
@@ -582,10 +522,7 @@ void UEditableMesh::CreateVertices(const TArray<struct FVertexToCreate>& Vertice
 
 void UEditableMesh::DeleteEdgeAndConnectedPolygons(const struct FEdgeID& EdgeID, const bool bDeleteOrphanedEdges, const bool bDeleteOrphanedVertices, const bool bDeleteOrphanedVertexInstances, const bool bDeleteEmptyPolygonGroups)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "DeleteEdgeAndConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "DeleteEdgeAndConnectedPolygons");
 
 	Params::EditableMesh_DeleteEdgeAndConnectedPolygons Parms{};
 
@@ -612,10 +549,7 @@ void UEditableMesh::DeleteEdgeAndConnectedPolygons(const struct FEdgeID& EdgeID,
 
 void UEditableMesh::DeleteEdges(const TArray<struct FEdgeID>& EdgeIDsToDelete, const bool bDeleteOrphanedVertices)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "DeleteEdges");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "DeleteEdges");
 
 	Params::EditableMesh_DeleteEdges Parms{};
 
@@ -638,10 +572,7 @@ void UEditableMesh::DeleteEdges(const TArray<struct FEdgeID>& EdgeIDsToDelete, c
 
 void UEditableMesh::DeleteOrphanVertices(const TArray<struct FVertexID>& VertexIDsToDelete)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "DeleteOrphanVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "DeleteOrphanVertices");
 
 	Params::EditableMesh_DeleteOrphanVertices Parms{};
 
@@ -663,10 +594,7 @@ void UEditableMesh::DeleteOrphanVertices(const TArray<struct FVertexID>& VertexI
 
 void UEditableMesh::DeletePolygonGroups(const TArray<struct FPolygonGroupID>& PolygonGroupIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "DeletePolygonGroups");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "DeletePolygonGroups");
 
 	Params::EditableMesh_DeletePolygonGroups Parms{};
 
@@ -692,10 +620,7 @@ void UEditableMesh::DeletePolygonGroups(const TArray<struct FPolygonGroupID>& Po
 
 void UEditableMesh::DeletePolygons(const TArray<struct FPolygonID>& PolygonIDsToDelete, const bool bDeleteOrphanedEdges, const bool bDeleteOrphanedVertices, const bool bDeleteOrphanedVertexInstances, const bool bDeleteEmptyPolygonGroups)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "DeletePolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "DeletePolygons");
 
 	Params::EditableMesh_DeletePolygons Parms{};
 
@@ -725,10 +650,7 @@ void UEditableMesh::DeletePolygons(const TArray<struct FPolygonID>& PolygonIDsTo
 
 void UEditableMesh::DeleteVertexAndConnectedEdgesAndPolygons(const struct FVertexID& VertexID, const bool bDeleteOrphanedEdges, const bool bDeleteOrphanedVertices, const bool bDeleteOrphanedVertexInstances, const bool bDeleteEmptyPolygonGroups)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "DeleteVertexAndConnectedEdgesAndPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "DeleteVertexAndConnectedEdgesAndPolygons");
 
 	Params::EditableMesh_DeleteVertexAndConnectedEdgesAndPolygons Parms{};
 
@@ -755,10 +677,7 @@ void UEditableMesh::DeleteVertexAndConnectedEdgesAndPolygons(const struct FVerte
 
 void UEditableMesh::DeleteVertexInstances(const TArray<struct FVertexInstanceID>& VertexInstanceIDsToDelete, const bool bDeleteOrphanedVertices)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "DeleteVertexInstances");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "DeleteVertexInstances");
 
 	Params::EditableMesh_DeleteVertexInstances Parms{};
 
@@ -781,10 +700,7 @@ void UEditableMesh::DeleteVertexInstances(const TArray<struct FVertexInstanceID>
 
 void UEditableMesh::EndModification(const bool bFromUndo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "EndModification");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "EndModification");
 
 	Params::EditableMesh_EndModification Parms{};
 
@@ -808,10 +724,7 @@ void UEditableMesh::EndModification(const bool bFromUndo)
 
 void UEditableMesh::ExtendEdges(const TArray<struct FEdgeID>& EdgeIDs, const bool bWeldNeighbors, TArray<struct FEdgeID>* OutNewExtendedEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ExtendEdges");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ExtendEdges");
 
 	Params::EditableMesh_ExtendEdges Parms{};
 
@@ -840,10 +753,7 @@ void UEditableMesh::ExtendEdges(const TArray<struct FEdgeID>& EdgeIDs, const boo
 
 void UEditableMesh::ExtendVertices(const TArray<struct FVertexID>& VertexIDs, const bool bOnlyExtendClosestEdge, const struct FVector& ReferencePosition, TArray<struct FVertexID>* OutNewExtendedVertexIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ExtendVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ExtendVertices");
 
 	Params::EditableMesh_ExtendVertices Parms{};
 
@@ -873,10 +783,7 @@ void UEditableMesh::ExtendVertices(const TArray<struct FVertexID>& VertexIDs, co
 
 void UEditableMesh::ExtrudePolygons(const TArray<struct FPolygonID>& Polygons, const float ExtrudeDistance, const bool bKeepNeighborsTogether, TArray<struct FPolygonID>* OutNewExtrudedFrontPolygons)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ExtrudePolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ExtrudePolygons");
 
 	Params::EditableMesh_ExtrudePolygons Parms{};
 
@@ -903,10 +810,7 @@ void UEditableMesh::ExtrudePolygons(const TArray<struct FPolygonID>& Polygons, c
 
 void UEditableMesh::FlipPolygons(const TArray<struct FPolygonID>& PolygonIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "FlipPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "FlipPolygons");
 
 	Params::EditableMesh_FlipPolygons Parms{};
 
@@ -928,10 +832,7 @@ void UEditableMesh::FlipPolygons(const TArray<struct FPolygonID>& PolygonIDs)
 
 void UEditableMesh::GeneratePolygonTangentsAndNormals(const TArray<struct FPolygonID>& PolygonIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GeneratePolygonTangentsAndNormals");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GeneratePolygonTangentsAndNormals");
 
 	Params::EditableMesh_GeneratePolygonTangentsAndNormals Parms{};
 
@@ -951,10 +852,7 @@ void UEditableMesh::GeneratePolygonTangentsAndNormals(const TArray<struct FPolyg
 
 void UEditableMesh::InitializeAdapters()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "InitializeAdapters");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "InitializeAdapters");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -974,10 +872,7 @@ void UEditableMesh::InitializeAdapters()
 
 void UEditableMesh::InsertEdgeLoop(const struct FEdgeID& EdgeID, const TArray<float>& Splits, TArray<struct FEdgeID>* OutNewEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "InsertEdgeLoop");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "InsertEdgeLoop");
 
 	Params::EditableMesh_InsertEdgeLoop Parms{};
 
@@ -1008,10 +903,7 @@ void UEditableMesh::InsertEdgeLoop(const struct FEdgeID& EdgeID, const TArray<fl
 
 void UEditableMesh::InsetPolygons(const TArray<struct FPolygonID>& PolygonIDs, const float InsetFixedDistance, const float InsetProgressTowardCenter, const EInsetPolygonsMode Mode, TArray<struct FPolygonID>* OutNewCenterPolygonIDs, TArray<struct FPolygonID>* OutNewSidePolygonIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "InsetPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "InsetPolygons");
 
 	Params::EditableMesh_InsetPolygons Parms{};
 
@@ -1042,10 +934,7 @@ void UEditableMesh::InsetPolygons(const TArray<struct FPolygonID>& PolygonIDs, c
 
 void UEditableMesh::MoveVertices(const TArray<struct FVertexToMove>& VerticesToMove)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "MoveVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "MoveVertices");
 
 	Params::EditableMesh_MoveVertices Parms{};
 
@@ -1065,10 +954,7 @@ void UEditableMesh::MoveVertices(const TArray<struct FVertexToMove>& VerticesToM
 
 void UEditableMesh::PropagateInstanceChanges()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "PropagateInstanceChanges");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "PropagateInstanceChanges");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1086,10 +972,7 @@ void UEditableMesh::PropagateInstanceChanges()
 
 void UEditableMesh::QuadrangulateMesh(TArray<struct FPolygonID>* OutNewPolygonIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "QuadrangulateMesh");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "QuadrangulateMesh");
 
 	Params::EditableMesh_QuadrangulateMesh Parms{};
 
@@ -1110,10 +993,7 @@ void UEditableMesh::QuadrangulateMesh(TArray<struct FPolygonID>* OutNewPolygonID
 
 void UEditableMesh::RebuildRenderMesh()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "RebuildRenderMesh");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "RebuildRenderMesh");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1129,10 +1009,7 @@ void UEditableMesh::RebuildRenderMesh()
 
 void UEditableMesh::Revert()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "Revert");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "Revert");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1150,10 +1027,7 @@ void UEditableMesh::Revert()
 
 class UEditableMesh* UEditableMesh::RevertInstance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "RevertInstance");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "RevertInstance");
 
 	Params::EditableMesh_RevertInstance Parms{};
 
@@ -1175,10 +1049,7 @@ class UEditableMesh* UEditableMesh::RevertInstance()
 
 void UEditableMesh::SetAllowCompact(const bool bInAllowCompact)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetAllowCompact");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetAllowCompact");
 
 	Params::EditableMesh_SetAllowCompact Parms{};
 
@@ -1200,10 +1071,7 @@ void UEditableMesh::SetAllowCompact(const bool bInAllowCompact)
 
 void UEditableMesh::SetAllowSpatialDatabase(const bool bInAllowSpatialDatabase)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetAllowSpatialDatabase");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetAllowSpatialDatabase");
 
 	Params::EditableMesh_SetAllowSpatialDatabase Parms{};
 
@@ -1225,10 +1093,7 @@ void UEditableMesh::SetAllowSpatialDatabase(const bool bInAllowSpatialDatabase)
 
 void UEditableMesh::SetAllowUndo(const bool bInAllowUndo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetAllowUndo");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetAllowUndo");
 
 	Params::EditableMesh_SetAllowUndo Parms{};
 
@@ -1250,10 +1115,7 @@ void UEditableMesh::SetAllowUndo(const bool bInAllowUndo)
 
 void UEditableMesh::SetEdgesAttributes(const TArray<struct FAttributesForEdge>& AttributesForEdges)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetEdgesAttributes");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetEdgesAttributes");
 
 	Params::EditableMesh_SetEdgesAttributes Parms{};
 
@@ -1276,10 +1138,7 @@ void UEditableMesh::SetEdgesAttributes(const TArray<struct FAttributesForEdge>& 
 
 void UEditableMesh::SetEdgesCreaseSharpness(const TArray<struct FEdgeID>& EdgeIDs, const TArray<float>& EdgesNewCreaseSharpness)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetEdgesCreaseSharpness");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetEdgesCreaseSharpness");
 
 	Params::EditableMesh_SetEdgesCreaseSharpness Parms{};
 
@@ -1303,10 +1162,7 @@ void UEditableMesh::SetEdgesCreaseSharpness(const TArray<struct FEdgeID>& EdgeID
 
 void UEditableMesh::SetEdgesHardness(const TArray<struct FEdgeID>& EdgeIDs, const TArray<bool>& EdgesNewIsHard)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetEdgesHardness");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetEdgesHardness");
 
 	Params::EditableMesh_SetEdgesHardness Parms{};
 
@@ -1330,10 +1186,7 @@ void UEditableMesh::SetEdgesHardness(const TArray<struct FEdgeID>& EdgeIDs, cons
 
 void UEditableMesh::SetEdgesHardnessAutomatically(const TArray<struct FEdgeID>& EdgeIDs, const float MaxDotProductForSoftEdge)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetEdgesHardnessAutomatically");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetEdgesHardnessAutomatically");
 
 	Params::EditableMesh_SetEdgesHardnessAutomatically Parms{};
 
@@ -1356,10 +1209,7 @@ void UEditableMesh::SetEdgesHardnessAutomatically(const TArray<struct FEdgeID>& 
 
 void UEditableMesh::SetPolygonsVertexAttributes(const TArray<struct FVertexAttributesForPolygon>& VertexAttributesForPolygons)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetPolygonsVertexAttributes");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetPolygonsVertexAttributes");
 
 	Params::EditableMesh_SetPolygonsVertexAttributes Parms{};
 
@@ -1381,10 +1231,7 @@ void UEditableMesh::SetPolygonsVertexAttributes(const TArray<struct FVertexAttri
 
 void UEditableMesh::SetSubdivisionCount(const int32 NewSubdivisionCount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetSubdivisionCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetSubdivisionCount");
 
 	Params::EditableMesh_SetSubdivisionCount Parms{};
 
@@ -1406,10 +1253,7 @@ void UEditableMesh::SetSubdivisionCount(const int32 NewSubdivisionCount)
 
 void UEditableMesh::SetTextureCoordinateCount(const int32 NumTexCoords)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetTextureCoordinateCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetTextureCoordinateCount");
 
 	Params::EditableMesh_SetTextureCoordinateCount Parms{};
 
@@ -1431,10 +1275,7 @@ void UEditableMesh::SetTextureCoordinateCount(const int32 NumTexCoords)
 
 void UEditableMesh::SetVertexInstancesAttributes(const TArray<struct FAttributesForVertexInstance>& AttributesForVertexInstances)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetVertexInstancesAttributes");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetVertexInstancesAttributes");
 
 	Params::EditableMesh_SetVertexInstancesAttributes Parms{};
 
@@ -1456,10 +1297,7 @@ void UEditableMesh::SetVertexInstancesAttributes(const TArray<struct FAttributes
 
 void UEditableMesh::SetVerticesAttributes(const TArray<struct FAttributesForVertex>& AttributesForVertices)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetVerticesAttributes");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetVerticesAttributes");
 
 	Params::EditableMesh_SetVerticesAttributes Parms{};
 
@@ -1482,10 +1320,7 @@ void UEditableMesh::SetVerticesAttributes(const TArray<struct FAttributesForVert
 
 void UEditableMesh::SetVerticesCornerSharpness(const TArray<struct FVertexID>& VertexIDs, const TArray<float>& VerticesNewCornerSharpness)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SetVerticesCornerSharpness");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SetVerticesCornerSharpness");
 
 	Params::EditableMesh_SetVerticesCornerSharpness Parms{};
 
@@ -1510,10 +1345,7 @@ void UEditableMesh::SetVerticesCornerSharpness(const TArray<struct FVertexID>& V
 
 void UEditableMesh::SplitEdge(const struct FEdgeID& EdgeID, const TArray<float>& Splits, TArray<struct FVertexID>* OutNewVertexIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SplitEdge");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SplitEdge");
 
 	Params::EditableMesh_SplitEdge Parms{};
 
@@ -1542,10 +1374,7 @@ void UEditableMesh::SplitEdge(const struct FEdgeID& EdgeID, const TArray<float>&
 
 void UEditableMesh::SplitPolygonalMesh(const struct FPlane& InPlane, TArray<struct FPolygonID>* PolygonIDs1, TArray<struct FPolygonID>* PolygonIDs2, TArray<struct FEdgeID>* BoundaryIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SplitPolygonalMesh");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SplitPolygonalMesh");
 
 	Params::EditableMesh_SplitPolygonalMesh Parms{};
 
@@ -1577,10 +1406,7 @@ void UEditableMesh::SplitPolygonalMesh(const struct FPlane& InPlane, TArray<stru
 
 void UEditableMesh::SplitPolygons(const TArray<struct FPolygonToSplit>& PolygonsToSplit, TArray<struct FEdgeID>* OutNewEdgeIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SplitPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SplitPolygons");
 
 	Params::EditableMesh_SplitPolygons Parms{};
 
@@ -1606,10 +1432,7 @@ void UEditableMesh::SplitPolygons(const TArray<struct FPolygonToSplit>& Polygons
 
 void UEditableMesh::StartModification(const EMeshModificationType MeshModificationType, const EMeshTopologyChange MeshTopologyChange)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "StartModification");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "StartModification");
 
 	Params::EditableMesh_StartModification Parms{};
 
@@ -1634,10 +1457,7 @@ void UEditableMesh::StartModification(const EMeshModificationType MeshModificati
 
 void UEditableMesh::TessellatePolygons(const TArray<struct FPolygonID>& PolygonIDs, const ETriangleTessellationMode TriangleTessellationMode, TArray<struct FPolygonID>* OutNewPolygonIDs)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "TessellatePolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "TessellatePolygons");
 
 	Params::EditableMesh_TessellatePolygons Parms{};
 
@@ -1664,10 +1484,7 @@ void UEditableMesh::TessellatePolygons(const TArray<struct FPolygonID>& PolygonI
 
 void UEditableMesh::TriangulatePolygons(const TArray<struct FPolygonID>& PolygonIDs, TArray<struct FPolygonID>* OutNewTrianglePolygons)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "TriangulatePolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "TriangulatePolygons");
 
 	Params::EditableMesh_TriangulatePolygons Parms{};
 
@@ -1694,10 +1511,7 @@ void UEditableMesh::TriangulatePolygons(const TArray<struct FPolygonID>& Polygon
 
 void UEditableMesh::TryToRemovePolygonEdge(const struct FEdgeID& EdgeID, bool* bOutWasEdgeRemoved, struct FPolygonID* OutNewPolygonID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "TryToRemovePolygonEdge");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "TryToRemovePolygonEdge");
 
 	Params::EditableMesh_TryToRemovePolygonEdge Parms{};
 
@@ -1727,10 +1541,7 @@ void UEditableMesh::TryToRemovePolygonEdge(const struct FEdgeID& EdgeID, bool* b
 
 void UEditableMesh::TryToRemoveVertex(const struct FVertexID& VertexID, bool* bOutWasVertexRemoved, struct FEdgeID* OutNewEdgeID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "TryToRemoveVertex");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "TryToRemoveVertex");
 
 	Params::EditableMesh_TryToRemoveVertex Parms{};
 
@@ -1759,10 +1570,7 @@ void UEditableMesh::TryToRemoveVertex(const struct FVertexID& VertexID, bool* bO
 
 void UEditableMesh::WeldVertices(const TArray<struct FVertexID>& VertexIDs, struct FVertexID* OutNewVertexID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "WeldVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "WeldVertices");
 
 	Params::EditableMesh_WeldVertices Parms{};
 
@@ -1787,10 +1595,7 @@ void UEditableMesh::WeldVertices(const TArray<struct FVertexID>& VertexIDs, stru
 
 bool UEditableMesh::AnyChangesToUndo() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "AnyChangesToUndo");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "AnyChangesToUndo");
 
 	Params::EditableMesh_AnyChangesToUndo Parms{};
 
@@ -1812,10 +1617,7 @@ bool UEditableMesh::AnyChangesToUndo() const
 
 struct FBox UEditableMesh::ComputeBoundingBox() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ComputeBoundingBox");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ComputeBoundingBox");
 
 	Params::EditableMesh_ComputeBoundingBox Parms{};
 
@@ -1837,10 +1639,7 @@ struct FBox UEditableMesh::ComputeBoundingBox() const
 
 struct FBoxSphereBounds UEditableMesh::ComputeBoundingBoxAndSphere() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ComputeBoundingBoxAndSphere");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ComputeBoundingBoxAndSphere");
 
 	Params::EditableMesh_ComputeBoundingBoxAndSphere Parms{};
 
@@ -1863,10 +1662,7 @@ struct FBoxSphereBounds UEditableMesh::ComputeBoundingBoxAndSphere() const
 
 struct FVector UEditableMesh::ComputePolygonCenter(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ComputePolygonCenter");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ComputePolygonCenter");
 
 	Params::EditableMesh_ComputePolygonCenter Parms{};
 
@@ -1891,10 +1687,7 @@ struct FVector UEditableMesh::ComputePolygonCenter(const struct FPolygonID& Poly
 
 struct FVector UEditableMesh::ComputePolygonNormal(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ComputePolygonNormal");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ComputePolygonNormal");
 
 	Params::EditableMesh_ComputePolygonNormal Parms{};
 
@@ -1919,10 +1712,7 @@ struct FVector UEditableMesh::ComputePolygonNormal(const struct FPolygonID& Poly
 
 struct FPlane UEditableMesh::ComputePolygonPlane(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ComputePolygonPlane");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ComputePolygonPlane");
 
 	Params::EditableMesh_ComputePolygonPlane Parms{};
 
@@ -1947,10 +1737,7 @@ struct FPlane UEditableMesh::ComputePolygonPlane(const struct FPolygonID& Polygo
 
 void UEditableMesh::ComputePolygonsSharedEdges(const TArray<struct FPolygonID>& PolygonIDs, TArray<struct FEdgeID>* OutSharedEdgeIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "ComputePolygonsSharedEdges");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "ComputePolygonsSharedEdges");
 
 	Params::EditableMesh_ComputePolygonsSharedEdges Parms{};
 
@@ -1979,10 +1766,7 @@ void UEditableMesh::ComputePolygonsSharedEdges(const TArray<struct FPolygonID>& 
 
 void UEditableMesh::FindPolygonLoop(const struct FEdgeID& EdgeID, TArray<struct FEdgeID>* OutEdgeLoopEdgeIDs, TArray<struct FEdgeID>* OutFlippedEdgeIDs, TArray<struct FEdgeID>* OutReversedEdgeIDPathToTake, TArray<struct FPolygonID>* OutPolygonIDsToSplit) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "FindPolygonLoop");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "FindPolygonLoop");
 
 	Params::EditableMesh_FindPolygonLoop Parms{};
 
@@ -2019,10 +1803,7 @@ void UEditableMesh::FindPolygonLoop(const struct FEdgeID& EdgeID, TArray<struct 
 
 int32 UEditableMesh::FindPolygonPerimeterEdgeNumberForVertices(const struct FPolygonID& PolygonID, const struct FVertexID& EdgeVertexID0, const struct FVertexID& EdgeVertexID1) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "FindPolygonPerimeterEdgeNumberForVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "FindPolygonPerimeterEdgeNumberForVertices");
 
 	Params::EditableMesh_FindPolygonPerimeterEdgeNumberForVertices Parms{};
 
@@ -2050,10 +1831,7 @@ int32 UEditableMesh::FindPolygonPerimeterEdgeNumberForVertices(const struct FPol
 
 int32 UEditableMesh::FindPolygonPerimeterVertexNumberForVertex(const struct FPolygonID& PolygonID, const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "FindPolygonPerimeterVertexNumberForVertex");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "FindPolygonPerimeterVertexNumberForVertex");
 
 	Params::EditableMesh_FindPolygonPerimeterVertexNumberForVertex Parms{};
 
@@ -2080,10 +1858,7 @@ int32 UEditableMesh::FindPolygonPerimeterVertexNumberForVertex(const struct FPol
 
 struct FPolygonID UEditableMesh::GetEdgeConnectedPolygon(const struct FEdgeID& EdgeID, const int32 ConnectedPolygonNumber) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetEdgeConnectedPolygon");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetEdgeConnectedPolygon");
 
 	Params::EditableMesh_GetEdgeConnectedPolygon Parms{};
 
@@ -2109,10 +1884,7 @@ struct FPolygonID UEditableMesh::GetEdgeConnectedPolygon(const struct FEdgeID& E
 
 int32 UEditableMesh::GetEdgeConnectedPolygonCount(const struct FEdgeID& EdgeID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetEdgeConnectedPolygonCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetEdgeConnectedPolygonCount");
 
 	Params::EditableMesh_GetEdgeConnectedPolygonCount Parms{};
 
@@ -2137,10 +1909,7 @@ int32 UEditableMesh::GetEdgeConnectedPolygonCount(const struct FEdgeID& EdgeID) 
 
 void UEditableMesh::GetEdgeConnectedPolygons(const struct FEdgeID& EdgeID, TArray<struct FPolygonID>* OutConnectedPolygonIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetEdgeConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetEdgeConnectedPolygons");
 
 	Params::EditableMesh_GetEdgeConnectedPolygons Parms{};
 
@@ -2165,10 +1934,7 @@ void UEditableMesh::GetEdgeConnectedPolygons(const struct FEdgeID& EdgeID, TArra
 
 int32 UEditableMesh::GetEdgeCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetEdgeCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetEdgeCount");
 
 	Params::EditableMesh_GetEdgeCount Parms{};
 
@@ -2191,10 +1957,7 @@ int32 UEditableMesh::GetEdgeCount() const
 
 void UEditableMesh::GetEdgeLoopElements(const struct FEdgeID& EdgeID, TArray<struct FEdgeID>* EdgeLoopIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetEdgeLoopElements");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetEdgeLoopElements");
 
 	Params::EditableMesh_GetEdgeLoopElements Parms{};
 
@@ -2221,10 +1984,7 @@ void UEditableMesh::GetEdgeLoopElements(const struct FEdgeID& EdgeID, TArray<str
 
 struct FEdgeID UEditableMesh::GetEdgeThatConnectsVertices(const struct FVertexID& VertexID0, const struct FVertexID& VertexID1) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetEdgeThatConnectsVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetEdgeThatConnectsVertices");
 
 	Params::EditableMesh_GetEdgeThatConnectsVertices Parms{};
 
@@ -2251,10 +2011,7 @@ struct FEdgeID UEditableMesh::GetEdgeThatConnectsVertices(const struct FVertexID
 
 struct FVertexID UEditableMesh::GetEdgeVertex(const struct FEdgeID& EdgeID, const int32 EdgeVertexNumber) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetEdgeVertex");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetEdgeVertex");
 
 	Params::EditableMesh_GetEdgeVertex Parms{};
 
@@ -2281,10 +2038,7 @@ struct FVertexID UEditableMesh::GetEdgeVertex(const struct FEdgeID& EdgeID, cons
 
 void UEditableMesh::GetEdgeVertices(const struct FEdgeID& EdgeID, struct FVertexID* OutEdgeVertexID0, struct FVertexID* OutEdgeVertexID1) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetEdgeVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetEdgeVertices");
 
 	Params::EditableMesh_GetEdgeVertices Parms{};
 
@@ -2312,10 +2066,7 @@ void UEditableMesh::GetEdgeVertices(const struct FEdgeID& EdgeID, struct FVertex
 
 struct FPolygonGroupID UEditableMesh::GetFirstValidPolygonGroup() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetFirstValidPolygonGroup");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetFirstValidPolygonGroup");
 
 	Params::EditableMesh_GetFirstValidPolygonGroup Parms{};
 
@@ -2338,10 +2089,7 @@ struct FPolygonGroupID UEditableMesh::GetFirstValidPolygonGroup() const
 
 struct FPolygonGroupID UEditableMesh::GetGroupForPolygon(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetGroupForPolygon");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetGroupForPolygon");
 
 	Params::EditableMesh_GetGroupForPolygon Parms{};
 
@@ -2366,10 +2114,7 @@ struct FPolygonGroupID UEditableMesh::GetGroupForPolygon(const struct FPolygonID
 
 void UEditableMesh::GetPolygonAdjacentPolygons(const struct FPolygonID& PolygonID, TArray<struct FPolygonID>* OutAdjacentPolygons) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonAdjacentPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonAdjacentPolygons");
 
 	Params::EditableMesh_GetPolygonAdjacentPolygons Parms{};
 
@@ -2394,10 +2139,7 @@ void UEditableMesh::GetPolygonAdjacentPolygons(const struct FPolygonID& PolygonI
 
 int32 UEditableMesh::GetPolygonCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonCount");
 
 	Params::EditableMesh_GetPolygonCount Parms{};
 
@@ -2420,10 +2162,7 @@ int32 UEditableMesh::GetPolygonCount() const
 
 int32 UEditableMesh::GetPolygonCountInGroup(const struct FPolygonGroupID& PolygonGroupID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonCountInGroup");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonCountInGroup");
 
 	Params::EditableMesh_GetPolygonCountInGroup Parms{};
 
@@ -2447,10 +2186,7 @@ int32 UEditableMesh::GetPolygonCountInGroup(const struct FPolygonGroupID& Polygo
 
 int32 UEditableMesh::GetPolygonGroupCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonGroupCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonGroupCount");
 
 	Params::EditableMesh_GetPolygonGroupCount Parms{};
 
@@ -2474,10 +2210,7 @@ int32 UEditableMesh::GetPolygonGroupCount() const
 
 struct FPolygonID UEditableMesh::GetPolygonInGroup(const struct FPolygonGroupID& PolygonGroupID, const int32 PolygonNumber) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonInGroup");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonInGroup");
 
 	Params::EditableMesh_GetPolygonInGroup Parms{};
 
@@ -2505,10 +2238,7 @@ struct FPolygonID UEditableMesh::GetPolygonInGroup(const struct FPolygonGroupID&
 
 struct FEdgeID UEditableMesh::GetPolygonPerimeterEdge(const struct FPolygonID& PolygonID, const int32 PerimeterEdgeNumber, bool* bOutEdgeWindingIsReversedForPolygon) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterEdge");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterEdge");
 
 	Params::EditableMesh_GetPolygonPerimeterEdge Parms{};
 
@@ -2537,10 +2267,7 @@ struct FEdgeID UEditableMesh::GetPolygonPerimeterEdge(const struct FPolygonID& P
 
 int32 UEditableMesh::GetPolygonPerimeterEdgeCount(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterEdgeCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterEdgeCount");
 
 	Params::EditableMesh_GetPolygonPerimeterEdgeCount Parms{};
 
@@ -2565,10 +2292,7 @@ int32 UEditableMesh::GetPolygonPerimeterEdgeCount(const struct FPolygonID& Polyg
 
 void UEditableMesh::GetPolygonPerimeterEdges(const struct FPolygonID& PolygonID, TArray<struct FEdgeID>* OutPolygonPerimeterEdgeIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterEdges");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterEdges");
 
 	Params::EditableMesh_GetPolygonPerimeterEdges Parms{};
 
@@ -2595,10 +2319,7 @@ void UEditableMesh::GetPolygonPerimeterEdges(const struct FPolygonID& PolygonID,
 
 struct FVertexID UEditableMesh::GetPolygonPerimeterVertex(const struct FPolygonID& PolygonID, const int32 PolygonVertexNumber) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertex");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertex");
 
 	Params::EditableMesh_GetPolygonPerimeterVertex Parms{};
 
@@ -2624,10 +2345,7 @@ struct FVertexID UEditableMesh::GetPolygonPerimeterVertex(const struct FPolygonI
 
 int32 UEditableMesh::GetPolygonPerimeterVertexCount(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertexCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertexCount");
 
 	Params::EditableMesh_GetPolygonPerimeterVertexCount Parms{};
 
@@ -2653,10 +2371,7 @@ int32 UEditableMesh::GetPolygonPerimeterVertexCount(const struct FPolygonID& Pol
 
 struct FVertexInstanceID UEditableMesh::GetPolygonPerimeterVertexInstance(const struct FPolygonID& PolygonID, const int32 PolygonVertexNumber) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertexInstance");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertexInstance");
 
 	Params::EditableMesh_GetPolygonPerimeterVertexInstance Parms{};
 
@@ -2682,10 +2397,7 @@ struct FVertexInstanceID UEditableMesh::GetPolygonPerimeterVertexInstance(const 
 
 void UEditableMesh::GetPolygonPerimeterVertexInstances(const struct FPolygonID& PolygonID, TArray<struct FVertexInstanceID>* OutPolygonPerimeterVertexInstanceIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertexInstances");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertexInstances");
 
 	Params::EditableMesh_GetPolygonPerimeterVertexInstances Parms{};
 
@@ -2711,10 +2423,7 @@ void UEditableMesh::GetPolygonPerimeterVertexInstances(const struct FPolygonID& 
 
 void UEditableMesh::GetPolygonPerimeterVertices(const struct FPolygonID& PolygonID, TArray<struct FVertexID>* OutPolygonPerimeterVertexIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonPerimeterVertices");
 
 	Params::EditableMesh_GetPolygonPerimeterVertices Parms{};
 
@@ -2741,10 +2450,7 @@ void UEditableMesh::GetPolygonPerimeterVertices(const struct FPolygonID& Polygon
 
 struct FTriangleID UEditableMesh::GetPolygonTriangulatedTriangle(const struct FPolygonID& PolygonID, int32 PolygonTriangleNumber) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonTriangulatedTriangle");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonTriangulatedTriangle");
 
 	Params::EditableMesh_GetPolygonTriangulatedTriangle Parms{};
 
@@ -2770,10 +2476,7 @@ struct FTriangleID UEditableMesh::GetPolygonTriangulatedTriangle(const struct FP
 
 int32 UEditableMesh::GetPolygonTriangulatedTriangleCount(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetPolygonTriangulatedTriangleCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetPolygonTriangulatedTriangleCount");
 
 	Params::EditableMesh_GetPolygonTriangulatedTriangleCount Parms{};
 
@@ -2797,10 +2500,7 @@ int32 UEditableMesh::GetPolygonTriangulatedTriangleCount(const struct FPolygonID
 
 int32 UEditableMesh::GetSubdivisionCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetSubdivisionCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetSubdivisionCount");
 
 	Params::EditableMesh_GetSubdivisionCount Parms{};
 
@@ -2822,10 +2522,7 @@ int32 UEditableMesh::GetSubdivisionCount() const
 
 const struct FSubdivisionLimitData UEditableMesh::GetSubdivisionLimitData() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetSubdivisionLimitData");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetSubdivisionLimitData");
 
 	Params::EditableMesh_GetSubdivisionLimitData Parms{};
 
@@ -2847,10 +2544,7 @@ const struct FSubdivisionLimitData UEditableMesh::GetSubdivisionLimitData() cons
 
 int32 UEditableMesh::GetTextureCoordinateCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetTextureCoordinateCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetTextureCoordinateCount");
 
 	Params::EditableMesh_GetTextureCoordinateCount Parms{};
 
@@ -2873,10 +2567,7 @@ int32 UEditableMesh::GetTextureCoordinateCount() const
 
 void UEditableMesh::GetVertexAdjacentVertices(const struct FVertexID& VertexID, TArray<struct FVertexID>* OutAdjacentVertexIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexAdjacentVertices");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexAdjacentVertices");
 
 	Params::EditableMesh_GetVertexAdjacentVertices Parms{};
 
@@ -2903,10 +2594,7 @@ void UEditableMesh::GetVertexAdjacentVertices(const struct FVertexID& VertexID, 
 
 struct FEdgeID UEditableMesh::GetVertexConnectedEdge(const struct FVertexID& VertexID, const int32 ConnectedEdgeNumber) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexConnectedEdge");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexConnectedEdge");
 
 	Params::EditableMesh_GetVertexConnectedEdge Parms{};
 
@@ -2932,10 +2620,7 @@ struct FEdgeID UEditableMesh::GetVertexConnectedEdge(const struct FVertexID& Ver
 
 int32 UEditableMesh::GetVertexConnectedEdgeCount(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexConnectedEdgeCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexConnectedEdgeCount");
 
 	Params::EditableMesh_GetVertexConnectedEdgeCount Parms{};
 
@@ -2960,10 +2645,7 @@ int32 UEditableMesh::GetVertexConnectedEdgeCount(const struct FVertexID& VertexI
 
 void UEditableMesh::GetVertexConnectedEdges(const struct FVertexID& VertexID, TArray<struct FEdgeID>* OutConnectedEdgeIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexConnectedEdges");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexConnectedEdges");
 
 	Params::EditableMesh_GetVertexConnectedEdges Parms{};
 
@@ -2989,10 +2671,7 @@ void UEditableMesh::GetVertexConnectedEdges(const struct FVertexID& VertexID, TA
 
 void UEditableMesh::GetVertexConnectedPolygons(const struct FVertexID& VertexID, TArray<struct FPolygonID>* OutConnectedPolygonIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexConnectedPolygons");
 
 	Params::EditableMesh_GetVertexConnectedPolygons Parms{};
 
@@ -3017,10 +2696,7 @@ void UEditableMesh::GetVertexConnectedPolygons(const struct FVertexID& VertexID,
 
 int32 UEditableMesh::GetVertexCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexCount");
 
 	Params::EditableMesh_GetVertexCount Parms{};
 
@@ -3044,10 +2720,7 @@ int32 UEditableMesh::GetVertexCount() const
 
 struct FPolygonID UEditableMesh::GetVertexInstanceConnectedPolygon(const struct FVertexInstanceID& VertexInstanceID, const int32 ConnectedPolygonNumber) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexInstanceConnectedPolygon");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexInstanceConnectedPolygon");
 
 	Params::EditableMesh_GetVertexInstanceConnectedPolygon Parms{};
 
@@ -3073,10 +2746,7 @@ struct FPolygonID UEditableMesh::GetVertexInstanceConnectedPolygon(const struct 
 
 int32 UEditableMesh::GetVertexInstanceConnectedPolygonCount(const struct FVertexInstanceID& VertexInstanceID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexInstanceConnectedPolygonCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexInstanceConnectedPolygonCount");
 
 	Params::EditableMesh_GetVertexInstanceConnectedPolygonCount Parms{};
 
@@ -3101,10 +2771,7 @@ int32 UEditableMesh::GetVertexInstanceConnectedPolygonCount(const struct FVertex
 
 void UEditableMesh::GetVertexInstanceConnectedPolygons(const struct FVertexInstanceID& VertexInstanceID, TArray<struct FPolygonID>* OutConnectedPolygonIDs) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexInstanceConnectedPolygons");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexInstanceConnectedPolygons");
 
 	Params::EditableMesh_GetVertexInstanceConnectedPolygons Parms{};
 
@@ -3129,10 +2796,7 @@ void UEditableMesh::GetVertexInstanceConnectedPolygons(const struct FVertexInsta
 
 int32 UEditableMesh::GetVertexInstanceCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexInstanceCount");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexInstanceCount");
 
 	Params::EditableMesh_GetVertexInstanceCount Parms{};
 
@@ -3155,10 +2819,7 @@ int32 UEditableMesh::GetVertexInstanceCount() const
 
 struct FVertexID UEditableMesh::GetVertexInstanceVertex(const struct FVertexInstanceID& VertexInstanceID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexInstanceVertex");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexInstanceVertex");
 
 	Params::EditableMesh_GetVertexInstanceVertex Parms{};
 
@@ -3185,10 +2846,7 @@ struct FVertexID UEditableMesh::GetVertexInstanceVertex(const struct FVertexInst
 
 struct FEdgeID UEditableMesh::GetVertexPairEdge(const struct FVertexID& VertexID, const struct FVertexID& NextVertexID, bool* bOutEdgeWindingIsReversed) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "GetVertexPairEdge");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "GetVertexPairEdge");
 
 	Params::EditableMesh_GetVertexPairEdge Parms{};
 
@@ -3216,10 +2874,7 @@ struct FEdgeID UEditableMesh::GetVertexPairEdge(const struct FVertexID& VertexID
 
 bool UEditableMesh::IsBeingModified() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsBeingModified");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsBeingModified");
 
 	Params::EditableMesh_IsBeingModified Parms{};
 
@@ -3241,10 +2896,7 @@ bool UEditableMesh::IsBeingModified() const
 
 bool UEditableMesh::IsCommitted() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsCommitted");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsCommitted");
 
 	Params::EditableMesh_IsCommitted Parms{};
 
@@ -3266,10 +2918,7 @@ bool UEditableMesh::IsCommitted() const
 
 bool UEditableMesh::IsCommittedAsInstance() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsCommittedAsInstance");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsCommittedAsInstance");
 
 	Params::EditableMesh_IsCommittedAsInstance Parms{};
 
@@ -3291,10 +2940,7 @@ bool UEditableMesh::IsCommittedAsInstance() const
 
 bool UEditableMesh::IsCompactAllowed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsCompactAllowed");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsCompactAllowed");
 
 	Params::EditableMesh_IsCompactAllowed Parms{};
 
@@ -3317,10 +2963,7 @@ bool UEditableMesh::IsCompactAllowed() const
 
 bool UEditableMesh::IsOrphanedVertex(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsOrphanedVertex");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsOrphanedVertex");
 
 	Params::EditableMesh_IsOrphanedVertex Parms{};
 
@@ -3344,10 +2987,7 @@ bool UEditableMesh::IsOrphanedVertex(const struct FVertexID& VertexID) const
 
 bool UEditableMesh::IsPreviewingSubdivisions() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsPreviewingSubdivisions");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsPreviewingSubdivisions");
 
 	Params::EditableMesh_IsPreviewingSubdivisions Parms{};
 
@@ -3369,10 +3009,7 @@ bool UEditableMesh::IsPreviewingSubdivisions() const
 
 bool UEditableMesh::IsSpatialDatabaseAllowed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsSpatialDatabaseAllowed");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsSpatialDatabaseAllowed");
 
 	Params::EditableMesh_IsSpatialDatabaseAllowed Parms{};
 
@@ -3394,10 +3031,7 @@ bool UEditableMesh::IsSpatialDatabaseAllowed() const
 
 bool UEditableMesh::IsUndoAllowed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsUndoAllowed");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsUndoAllowed");
 
 	Params::EditableMesh_IsUndoAllowed Parms{};
 
@@ -3420,10 +3054,7 @@ bool UEditableMesh::IsUndoAllowed() const
 
 bool UEditableMesh::IsValidEdge(const struct FEdgeID& EdgeID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsValidEdge");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsValidEdge");
 
 	Params::EditableMesh_IsValidEdge Parms{};
 
@@ -3448,10 +3079,7 @@ bool UEditableMesh::IsValidEdge(const struct FEdgeID& EdgeID) const
 
 bool UEditableMesh::IsValidPolygon(const struct FPolygonID& PolygonID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsValidPolygon");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsValidPolygon");
 
 	Params::EditableMesh_IsValidPolygon Parms{};
 
@@ -3476,10 +3104,7 @@ bool UEditableMesh::IsValidPolygon(const struct FPolygonID& PolygonID) const
 
 bool UEditableMesh::IsValidPolygonGroup(const struct FPolygonGroupID& PolygonGroupID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsValidPolygonGroup");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsValidPolygonGroup");
 
 	Params::EditableMesh_IsValidPolygonGroup Parms{};
 
@@ -3504,10 +3129,7 @@ bool UEditableMesh::IsValidPolygonGroup(const struct FPolygonGroupID& PolygonGro
 
 bool UEditableMesh::IsValidVertex(const struct FVertexID& VertexID) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "IsValidVertex");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "IsValidVertex");
 
 	Params::EditableMesh_IsValidVertex Parms{};
 
@@ -3532,10 +3154,7 @@ bool UEditableMesh::IsValidVertex(const struct FVertexID& VertexID) const
 
 void UEditableMesh::SearchSpatialDatabaseForPolygonsInVolume(const TArray<struct FPlane>& Planes, TArray<struct FPolygonID>* OutPolygons) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SearchSpatialDatabaseForPolygonsInVolume");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SearchSpatialDatabaseForPolygonsInVolume");
 
 	Params::EditableMesh_SearchSpatialDatabaseForPolygonsInVolume Parms{};
 
@@ -3562,10 +3181,7 @@ void UEditableMesh::SearchSpatialDatabaseForPolygonsInVolume(const TArray<struct
 
 void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(const struct FVector& LineSegmentStart, const struct FVector& LineSegmentEnd, TArray<struct FPolygonID>* OutPolygons) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment");
 
 	Params::EditableMesh_SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment Parms{};
 
@@ -3592,10 +3208,7 @@ void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineS
 
 void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(const struct FPlane& InPlane, TArray<struct FPolygonID>* OutPolygons) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EditableMesh", "SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane");
+	class UFunction* Func = Class->GetFunction("EditableMesh", "SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane");
 
 	Params::EditableMesh_SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane Parms{};
 
@@ -3622,10 +3235,7 @@ void UEditableMesh::SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane
 
 class UEditableMesh* UEditableMeshFactory::MakeEditableMesh(class UPrimitiveComponent* PrimitiveComponent, const int32 LODIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("EditableMeshFactory", "MakeEditableMesh");
+	class UFunction* Func = StaticClass()->GetFunction("EditableMeshFactory", "MakeEditableMesh");
 
 	Params::EditableMeshFactory_MakeEditableMesh Parms{};
 

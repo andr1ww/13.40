@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Vehicle_ExitHoldEvent_C::ExecuteUbergraph_GA_Vehicle_ExitHoldEvent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "ExecuteUbergraph_GA_Vehicle_ExitHoldEvent");
+	class UFunction* Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "ExecuteUbergraph_GA_Vehicle_ExitHoldEvent");
 
 	Params::GA_Vehicle_ExitHoldEvent_C_ExecuteUbergraph_GA_Vehicle_ExitHoldEvent Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Vehicle_ExitHoldEvent_C::ExecuteUbergraph_GA_Vehicle_ExitHoldEvent(int3
 
 void UGA_Vehicle_ExitHoldEvent_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "K2_OnEndAbility");
 
 	Params::GA_Vehicle_ExitHoldEvent_C_K2_OnEndAbility Parms{};
 
@@ -61,10 +55,7 @@ void UGA_Vehicle_ExitHoldEvent_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Vehicle_ExitHoldEvent_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UGA_Vehicle_ExitHoldEvent_C::K2_ActivateAbility()
 
 void UGA_Vehicle_ExitHoldEvent_C::EventReceived_209BF560404B83EBEAA8DD8090C443AC(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "EventReceived_209BF560404B83EBEAA8DD8090C443AC");
+	class UFunction* Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "EventReceived_209BF560404B83EBEAA8DD8090C443AC");
 
 	Params::GA_Vehicle_ExitHoldEvent_C_EventReceived_209BF560404B83EBEAA8DD8090C443AC Parms{};
 
@@ -97,10 +85,7 @@ void UGA_Vehicle_ExitHoldEvent_C::EventReceived_209BF560404B83EBEAA8DD8090C443AC
 
 void UGA_Vehicle_ExitHoldEvent_C::EventReceived_7AE1D485464AEC7EB429C3877D33AF69(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "EventReceived_7AE1D485464AEC7EB429C3877D33AF69");
+	class UFunction* Func = Class->GetFunction("GA_Vehicle_ExitHoldEvent_C", "EventReceived_7AE1D485464AEC7EB429C3877D33AF69");
 
 	Params::GA_Vehicle_ExitHoldEvent_C_EventReceived_7AE1D485464AEC7EB429C3877D33AF69 Parms{};
 

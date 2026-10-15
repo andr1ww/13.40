@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UPowerToastWidget_C::HandleAnimationDelay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerToastWidget_C", "HandleAnimationDelay");
+	class UFunction* Func = Class->GetFunction("PowerToastWidget_C", "HandleAnimationDelay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -38,10 +35,7 @@ void UPowerToastWidget_C::HandleAnimationDelay()
 
 void UPowerToastWidget_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseEnter, const struct FPointerEvent& MouseEvent_OnMouseEnter)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerToastWidget_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("PowerToastWidget_C", "OnMouseEnter");
 
 	Params::PowerToastWidget_C_OnMouseEnter Parms{};
 
@@ -59,10 +53,7 @@ void UPowerToastWidget_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMous
 
 void UPowerToastWidget_C::OnMouseLeave(const struct FPointerEvent& MouseEvent_OnMouseLeave)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerToastWidget_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("PowerToastWidget_C", "OnMouseLeave");
 
 	Params::PowerToastWidget_C_OnMouseLeave Parms{};
 
@@ -77,10 +68,7 @@ void UPowerToastWidget_C::OnMouseLeave(const struct FPointerEvent& MouseEvent_On
 
 void UPowerToastWidget_C::WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerToastWidget_C", "WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0");
+	class UFunction* Func = Class->GetFunction("PowerToastWidget_C", "WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UPowerToastWidget_C::WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0
 
 void UPowerToastWidget_C::WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerToastWidget_C", "WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_1");
+	class UFunction* Func = Class->GetFunction("PowerToastWidget_C", "WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_1");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void UPowerToastWidget_C::WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_1
 
 void UPowerToastWidget_C::WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerToastWidget_C", "WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2");
+	class UFunction* Func = Class->GetFunction("PowerToastWidget_C", "WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void UPowerToastWidget_C::WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2
 
 void UPowerToastWidget_C::ShowToast()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerToastWidget_C", "ShowToast");
+	class UFunction* Func = Class->GetFunction("PowerToastWidget_C", "ShowToast");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +112,7 @@ void UPowerToastWidget_C::ShowToast()
 
 void UPowerToastWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerToastWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PowerToastWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -149,10 +125,7 @@ void UPowerToastWidget_C::Construct()
 
 void UPowerToastWidget_C::ExecuteUbergraph_PowerToastWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PowerToastWidget_C", "ExecuteUbergraph_PowerToastWidget");
+	class UFunction* Func = Class->GetFunction("PowerToastWidget_C", "ExecuteUbergraph_PowerToastWidget");
 
 	Params::PowerToastWidget_C_ExecuteUbergraph_PowerToastWidget Parms{};
 

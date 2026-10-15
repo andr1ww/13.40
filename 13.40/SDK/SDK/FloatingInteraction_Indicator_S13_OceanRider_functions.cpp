@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFloatingInteraction_Indicator_S13_OceanRider_C::ExecuteUbergraph_FloatingInteraction_Indicator_S13_OceanRider(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "ExecuteUbergraph_FloatingInteraction_Indicator_S13_OceanRider");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "ExecuteUbergraph_FloatingInteraction_Indicator_S13_OceanRider");
 
 	Params::FloatingInteraction_Indicator_S13_OceanRider_C_ExecuteUbergraph_FloatingInteraction_Indicator_S13_OceanRider Parms{};
 
@@ -41,10 +38,7 @@ void UFloatingInteraction_Indicator_S13_OceanRider_C::ExecuteUbergraph_FloatingI
 
 void UFloatingInteraction_Indicator_S13_OceanRider_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "Construct");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UFloatingInteraction_Indicator_S13_OceanRider_C::Construct()
 
 void UFloatingInteraction_Indicator_S13_OceanRider_C::TriggerLoopingHoverStateAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "TriggerLoopingHoverStateAnim");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "TriggerLoopingHoverStateAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UFloatingInteraction_Indicator_S13_OceanRider_C::TriggerLoopingHoverStateAn
 
 void UFloatingInteraction_Indicator_S13_OceanRider_C::OnObjectHoverEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "OnObjectHoverEnd");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "OnObjectHoverEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UFloatingInteraction_Indicator_S13_OceanRider_C::OnObjectHoverEnd()
 
 void UFloatingInteraction_Indicator_S13_OceanRider_C::OnObjectHoverBegin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "OnObjectHoverBegin");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "OnObjectHoverBegin");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UFloatingInteraction_Indicator_S13_OceanRider_C::OnObjectHoverBegin()
 
 void UFloatingInteraction_Indicator_S13_OceanRider_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("FloatingInteraction_Indicator_S13_OceanRider_C", "PreConstruct");
 
 	Params::FloatingInteraction_Indicator_S13_OceanRider_C_PreConstruct Parms{};
 

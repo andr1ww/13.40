@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCosmeticLoadoutCard_C::ExecuteUbergraph_CosmeticLoadoutCard(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "ExecuteUbergraph_CosmeticLoadoutCard");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "ExecuteUbergraph_CosmeticLoadoutCard");
 
 	Params::CosmeticLoadoutCard_C_ExecuteUbergraph_CosmeticLoadoutCard Parms{};
 
@@ -43,10 +40,7 @@ void UCosmeticLoadoutCard_C::ExecuteUbergraph_CosmeticLoadoutCard(int32 EntryPoi
 
 void UCosmeticLoadoutCard_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "PreConstruct");
 
 	Params::CosmeticLoadoutCard_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UCosmeticLoadoutCard_C::PreConstruct(bool IsDesignTime)
 
 void UCosmeticLoadoutCard_C::OnUpdateCard()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnUpdateCard");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnUpdateCard");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UCosmeticLoadoutCard_C::OnUpdateCard()
 
 void UCosmeticLoadoutCard_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UCosmeticLoadoutCard_C::Construct()
 
 void UCosmeticLoadoutCard_C::OnLoaded_1E2615E24358EA93BCC3BBB4925113EE(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_1E2615E24358EA93BCC3BBB4925113EE");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_1E2615E24358EA93BCC3BBB4925113EE");
 
 	Params::CosmeticLoadoutCard_C_OnLoaded_1E2615E24358EA93BCC3BBB4925113EE Parms{};
 
@@ -111,10 +96,7 @@ void UCosmeticLoadoutCard_C::OnLoaded_1E2615E24358EA93BCC3BBB4925113EE(class UOb
 
 void UCosmeticLoadoutCard_C::OnLoaded_B0945C234A1D7EE9DB994DA20F20FC55(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_B0945C234A1D7EE9DB994DA20F20FC55");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_B0945C234A1D7EE9DB994DA20F20FC55");
 
 	Params::CosmeticLoadoutCard_C_OnLoaded_B0945C234A1D7EE9DB994DA20F20FC55 Parms{};
 
@@ -131,10 +113,7 @@ void UCosmeticLoadoutCard_C::OnLoaded_B0945C234A1D7EE9DB994DA20F20FC55(class UOb
 
 void UCosmeticLoadoutCard_C::OnLoaded_9C1753664F831A575C95389EB3050D6D(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_9C1753664F831A575C95389EB3050D6D");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_9C1753664F831A575C95389EB3050D6D");
 
 	Params::CosmeticLoadoutCard_C_OnLoaded_9C1753664F831A575C95389EB3050D6D Parms{};
 
@@ -151,10 +130,7 @@ void UCosmeticLoadoutCard_C::OnLoaded_9C1753664F831A575C95389EB3050D6D(class UOb
 
 void UCosmeticLoadoutCard_C::OnLoaded_720B049647023D90A92C789B29FB1060(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_720B049647023D90A92C789B29FB1060");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_720B049647023D90A92C789B29FB1060");
 
 	Params::CosmeticLoadoutCard_C_OnLoaded_720B049647023D90A92C789B29FB1060 Parms{};
 
@@ -171,10 +147,7 @@ void UCosmeticLoadoutCard_C::OnLoaded_720B049647023D90A92C789B29FB1060(class UOb
 
 void UCosmeticLoadoutCard_C::OnLoaded_C53A1CD444E6E41E6696819693452D69(class UObject* Loaded)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_C53A1CD444E6E41E6696819693452D69");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "OnLoaded_C53A1CD444E6E41E6696819693452D69");
 
 	Params::CosmeticLoadoutCard_C_OnLoaded_C53A1CD444E6E41E6696819693452D69 Parms{};
 
@@ -194,10 +167,7 @@ void UCosmeticLoadoutCard_C::OnLoaded_C53A1CD444E6E41E6696819693452D69(class UOb
 
 void UCosmeticLoadoutCard_C::UpdateLoadoutSlotVisuals(class FName PreviewImageTextureParameterName, class FName DefaultSwitchScalarName, class UObject* Object, class UTexture2D* DefaultTexture)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "UpdateLoadoutSlotVisuals");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "UpdateLoadoutSlotVisuals");
 
 	Params::CosmeticLoadoutCard_C_UpdateLoadoutSlotVisuals Parms{};
 
@@ -215,10 +185,7 @@ void UCosmeticLoadoutCard_C::UpdateLoadoutSlotVisuals(class FName PreviewImageTe
 
 void UCosmeticLoadoutCard_C::PlayHoverForward()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "PlayHoverForward");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "PlayHoverForward");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -229,10 +196,7 @@ void UCosmeticLoadoutCard_C::PlayHoverForward()
 
 void UCosmeticLoadoutCard_C::PlayHoverReverse()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "PlayHoverReverse");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "PlayHoverReverse");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,10 +207,7 @@ void UCosmeticLoadoutCard_C::PlayHoverReverse()
 
 void UCosmeticLoadoutCard_C::PlaySelectedForward()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "PlaySelectedForward");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "PlaySelectedForward");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -257,10 +218,7 @@ void UCosmeticLoadoutCard_C::PlaySelectedForward()
 
 void UCosmeticLoadoutCard_C::PlaySelectedReverse()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "PlaySelectedReverse");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "PlaySelectedReverse");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -274,10 +232,7 @@ void UCosmeticLoadoutCard_C::PlaySelectedReverse()
 
 void UCosmeticLoadoutCard_C::Get_First_Item(TArray<class UFortItemDefinition*>& inArray, class UFortItemDefinition** Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "Get First Item");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "Get First Item");
 
 	Params::CosmeticLoadoutCard_C_Get_First_Item Parms{};
 
@@ -299,10 +254,7 @@ void UCosmeticLoadoutCard_C::Get_First_Item(TArray<class UFortItemDefinition*>& 
 
 void UCosmeticLoadoutCard_C::IsBlank(bool* Blank)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticLoadoutCard_C", "IsBlank");
+	class UFunction* Func = Class->GetFunction("CosmeticLoadoutCard_C", "IsBlank");
 
 	Params::CosmeticLoadoutCard_C_IsBlank Parms{};
 

@@ -30,10 +30,7 @@ SDK_NAMESPACE_START
 
 void UFortSpicySakeComponent_Telemetry::OnPawnDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortSpicySakeComponent_Telemetry", "OnPawnDied");
+	class UFunction* Func = Class->GetFunction("FortSpicySakeComponent_Telemetry", "OnPawnDied");
 
 	Params::FortSpicySakeComponent_Telemetry_OnPawnDied Parms{};
 

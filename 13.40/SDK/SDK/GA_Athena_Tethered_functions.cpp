@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_Tethered_C::ExecuteUbergraph_GA_Athena_Tethered(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Tethered_C", "ExecuteUbergraph_GA_Athena_Tethered");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Tethered_C", "ExecuteUbergraph_GA_Athena_Tethered");
 
 	Params::GA_Athena_Tethered_C_ExecuteUbergraph_GA_Athena_Tethered Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_Tethered_C::ExecuteUbergraph_GA_Athena_Tethered(int32 EntryPoint
 
 void UGA_Athena_Tethered_C::BreakBuildingsAtPlayerInDirectionOfTether()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Tethered_C", "BreakBuildingsAtPlayerInDirectionOfTether");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Tethered_C", "BreakBuildingsAtPlayerInDirectionOfTether");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void UGA_Athena_Tethered_C::BreakBuildingsAtPlayerInDirectionOfTether()
 
 void UGA_Athena_Tethered_C::MovementModeChangedDelegate_Event_0(class ACharacter* Character, EMovementMode PrevMovementMode, uint8 PreviousCustomMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Tethered_C", "MovementModeChangedDelegate_Event_0");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Tethered_C", "MovementModeChangedDelegate_Event_0");
 
 	Params::GA_Athena_Tethered_C_MovementModeChangedDelegate_Event_0 Parms{};
 
@@ -81,10 +72,7 @@ void UGA_Athena_Tethered_C::MovementModeChangedDelegate_Event_0(class ACharacter
 
 void UGA_Athena_Tethered_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Tethered_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Tethered_C", "K2_OnEndAbility");
 
 	Params::GA_Athena_Tethered_C_K2_OnEndAbility Parms{};
 
@@ -99,10 +87,7 @@ void UGA_Athena_Tethered_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_Tethered_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Tethered_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Tethered_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -116,10 +101,7 @@ void UGA_Athena_Tethered_C::K2_ActivateAbility()
 
 void UGA_Athena_Tethered_C::BreakNearbyStructures(const struct FVector& ForwardVector, float OffsetForward)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_Tethered_C", "BreakNearbyStructures");
+	class UFunction* Func = Class->GetFunction("GA_Athena_Tethered_C", "BreakNearbyStructures");
 
 	Params::GA_Athena_Tethered_C_BreakNearbyStructures Parms{};
 

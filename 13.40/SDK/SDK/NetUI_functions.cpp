@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UBadNetworkIndicator::UpdateDisplay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadNetworkIndicator", "UpdateDisplay");
+	class UFunction* Func = Class->GetFunction("BadNetworkIndicator", "UpdateDisplay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UBadNetworkIndicator::UpdateDisplay()
 
 float UBadNetworkIndicator::GetPacketLoss() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadNetworkIndicator", "GetPacketLoss");
+	class UFunction* Func = Class->GetFunction("BadNetworkIndicator", "GetPacketLoss");
 
 	Params::BadNetworkIndicator_GetPacketLoss Parms{};
 
@@ -62,10 +56,7 @@ float UBadNetworkIndicator::GetPacketLoss() const
 
 float UBadNetworkIndicator::GetPing() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadNetworkIndicator", "GetPing");
+	class UFunction* Func = Class->GetFunction("BadNetworkIndicator", "GetPing");
 
 	Params::BadNetworkIndicator_GetPing Parms{};
 
@@ -87,10 +78,7 @@ float UBadNetworkIndicator::GetPing() const
 
 bool UBadNetworkIndicator::HasBadPacketLoss() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadNetworkIndicator", "HasBadPacketLoss");
+	class UFunction* Func = Class->GetFunction("BadNetworkIndicator", "HasBadPacketLoss");
 
 	Params::BadNetworkIndicator_HasBadPacketLoss Parms{};
 
@@ -112,10 +100,7 @@ bool UBadNetworkIndicator::HasBadPacketLoss() const
 
 bool UBadNetworkIndicator::HasBadPing() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadNetworkIndicator", "HasBadPing");
+	class UFunction* Func = Class->GetFunction("BadNetworkIndicator", "HasBadPing");
 
 	Params::BadNetworkIndicator_HasBadPing Parms{};
 
@@ -137,10 +122,7 @@ bool UBadNetworkIndicator::HasBadPing() const
 
 bool UBadNetworkIndicator::HasSeverePacketLoss() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadNetworkIndicator", "HasSeverePacketLoss");
+	class UFunction* Func = Class->GetFunction("BadNetworkIndicator", "HasSeverePacketLoss");
 
 	Params::BadNetworkIndicator_HasSeverePacketLoss Parms{};
 
@@ -162,10 +144,7 @@ bool UBadNetworkIndicator::HasSeverePacketLoss() const
 
 bool UBadNetworkIndicator::HasSeverePing() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadNetworkIndicator", "HasSeverePing");
+	class UFunction* Func = Class->GetFunction("BadNetworkIndicator", "HasSeverePing");
 
 	Params::BadNetworkIndicator_HasSeverePing Parms{};
 
@@ -187,10 +166,7 @@ bool UBadNetworkIndicator::HasSeverePing() const
 
 bool UBadNetworkIndicator::ShouldDisplay() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BadNetworkIndicator", "ShouldDisplay");
+	class UFunction* Func = Class->GetFunction("BadNetworkIndicator", "ShouldDisplay");
 
 	Params::BadNetworkIndicator_ShouldDisplay Parms{};
 
@@ -210,10 +186,7 @@ bool UBadNetworkIndicator::ShouldDisplay() const
 
 void UNetDebugWidget::StartTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NetDebugWidget", "StartTimer");
+	class UFunction* Func = Class->GetFunction("NetDebugWidget", "StartTimer");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -229,10 +202,7 @@ void UNetDebugWidget::StartTimer()
 
 void UNetDebugWidget::StopTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("NetDebugWidget", "StopTimer");
+	class UFunction* Func = Class->GetFunction("NetDebugWidget", "StopTimer");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

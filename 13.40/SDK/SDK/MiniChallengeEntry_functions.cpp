@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMiniChallengeEntry_C::ExecuteUbergraph_MiniChallengeEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "ExecuteUbergraph_MiniChallengeEntry");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "ExecuteUbergraph_MiniChallengeEntry");
 
 	Params::MiniChallengeEntry_C_ExecuteUbergraph_MiniChallengeEntry Parms{};
 
@@ -41,10 +38,7 @@ void UMiniChallengeEntry_C::ExecuteUbergraph_MiniChallengeEntry(int32 EntryPoint
 
 void UMiniChallengeEntry_C::Play_Refresh_to_New()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "Play Refresh to New");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "Play Refresh to New");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UMiniChallengeEntry_C::Play_Refresh_to_New()
 
 void UMiniChallengeEntry_C::Play_Complete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "Play Complete");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "Play Complete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UMiniChallengeEntry_C::Play_Complete()
 
 void UMiniChallengeEntry_C::Play_Fill_to_Complete_Post()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "Play Fill to Complete Post");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "Play Fill to Complete Post");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UMiniChallengeEntry_C::Play_Fill_to_Complete_Post()
 
 void UMiniChallengeEntry_C::ResetProgressData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "ResetProgressData");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "ResetProgressData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UMiniChallengeEntry_C::ResetProgressData()
 
 void UMiniChallengeEntry_C::UpdateQuestDescription(const class FText& Description)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "UpdateQuestDescription");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "UpdateQuestDescription");
 
 	Params::MiniChallengeEntry_C_UpdateQuestDescription Parms{};
 
@@ -117,10 +99,7 @@ void UMiniChallengeEntry_C::UpdateQuestDescription(const class FText& Descriptio
 
 void UMiniChallengeEntry_C::SequenceEvent_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "SequenceEvent_0");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "SequenceEvent_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +110,7 @@ void UMiniChallengeEntry_C::SequenceEvent_0()
 
 void UMiniChallengeEntry_C::FadeToastAway()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "FadeToastAway");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "FadeToastAway");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -145,10 +121,7 @@ void UMiniChallengeEntry_C::FadeToastAway()
 
 void UMiniChallengeEntry_C::OnToastFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "OnToastFinished");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "OnToastFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -159,10 +132,7 @@ void UMiniChallengeEntry_C::OnToastFinished()
 
 void UMiniChallengeEntry_C::CompetionToast()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "CompetionToast");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "CompetionToast");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +145,7 @@ void UMiniChallengeEntry_C::CompetionToast()
 
 void UMiniChallengeEntry_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "PreConstruct");
 
 	Params::MiniChallengeEntry_C_PreConstruct Parms{};
 
@@ -193,10 +160,7 @@ void UMiniChallengeEntry_C::PreConstruct(bool IsDesignTime)
 
 void UMiniChallengeEntry_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -207,10 +171,7 @@ void UMiniChallengeEntry_C::Construct()
 
 void UMiniChallengeEntry_C::OnDeltaProgressToCompleteFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "OnDeltaProgressToCompleteFinished");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "OnDeltaProgressToCompleteFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -221,10 +182,7 @@ void UMiniChallengeEntry_C::OnDeltaProgressToCompleteFinished()
 
 void UMiniChallengeEntry_C::OnDeltaProgressFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "OnDeltaProgressFinished");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "OnDeltaProgressFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +195,7 @@ void UMiniChallengeEntry_C::OnDeltaProgressFinished()
 
 void UMiniChallengeEntry_C::SetXpValue(int32 XpRewardValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "SetXpValue");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "SetXpValue");
 
 	Params::MiniChallengeEntry_C_SetXpValue Parms{};
 
@@ -255,10 +210,7 @@ void UMiniChallengeEntry_C::SetXpValue(int32 XpRewardValue)
 
 void UMiniChallengeEntry_C::TriggerNewQuestGranted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "TriggerNewQuestGranted");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "TriggerNewQuestGranted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -273,10 +225,7 @@ void UMiniChallengeEntry_C::TriggerNewQuestGranted()
 
 void UMiniChallengeEntry_C::UpdateProgressBar(int32 LastKnownCount_0, int32 AchivedCount_0, int32 GoalCount_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "UpdateProgressBar");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "UpdateProgressBar");
 
 	Params::MiniChallengeEntry_C_UpdateProgressBar Parms{};
 
@@ -293,10 +242,7 @@ void UMiniChallengeEntry_C::UpdateProgressBar(int32 LastKnownCount_0, int32 Achi
 
 void UMiniChallengeEntry_C::QuestCompletedFinishFill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "QuestCompletedFinishFill");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "QuestCompletedFinishFill");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -307,10 +253,7 @@ void UMiniChallengeEntry_C::QuestCompletedFinishFill()
 
 void UMiniChallengeEntry_C::StyleAsFirstTimeBoosted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "StyleAsFirstTimeBoosted");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "StyleAsFirstTimeBoosted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -321,10 +264,7 @@ void UMiniChallengeEntry_C::StyleAsFirstTimeBoosted()
 
 void UMiniChallengeEntry_C::StyleAsNormal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "StyleAsNormal");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "StyleAsNormal");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -335,10 +275,7 @@ void UMiniChallengeEntry_C::StyleAsNormal()
 
 void UMiniChallengeEntry_C::SequenceEvent__ENTRYPOINTMiniChallengeEntry_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MiniChallengeEntry_C", "SequenceEvent__ENTRYPOINTMiniChallengeEntry_0");
+	class UFunction* Func = Class->GetFunction("MiniChallengeEntry_C", "SequenceEvent__ENTRYPOINTMiniChallengeEntry_0");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

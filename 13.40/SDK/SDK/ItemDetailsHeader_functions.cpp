@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UItemDetailsHeader_C::SetStyles()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeader_C", "SetStyles");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeader_C", "SetStyles");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UItemDetailsHeader_C::SetStyles()
 
 void UItemDetailsHeader_C::UpdateItemsForWidgets()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeader_C", "UpdateItemsForWidgets");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeader_C", "UpdateItemsForWidgets");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void UItemDetailsHeader_C::UpdateItemsForWidgets()
 
 void UItemDetailsHeader_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeader_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeader_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -63,10 +54,7 @@ void UItemDetailsHeader_C::Construct()
 
 void UItemDetailsHeader_C::HandleDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeader_C", "HandleDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeader_C", "HandleDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +65,7 @@ void UItemDetailsHeader_C::HandleDifferentItemToDetailSet()
 
 void UItemDetailsHeader_C::HandleDifferentItemToCompareSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeader_C", "HandleDifferentItemToCompareSet");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeader_C", "HandleDifferentItemToCompareSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,10 +78,7 @@ void UItemDetailsHeader_C::HandleDifferentItemToCompareSet()
 
 void UItemDetailsHeader_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeader_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeader_C", "PreConstruct");
 
 	Params::ItemDetailsHeader_C_PreConstruct Parms{};
 
@@ -113,10 +95,7 @@ void UItemDetailsHeader_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UItemDetailsHeader_C::ExecuteUbergraph_ItemDetailsHeader(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDetailsHeader_C", "ExecuteUbergraph_ItemDetailsHeader");
+	class UFunction* Func = Class->GetFunction("ItemDetailsHeader_C", "ExecuteUbergraph_ItemDetailsHeader");
 
 	Params::ItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader Parms{};
 

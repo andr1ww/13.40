@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UShowdownTournamentTile_C::ExecuteUbergraph_ShowdownTournamentTile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownTournamentTile_C", "ExecuteUbergraph_ShowdownTournamentTile");
+	class UFunction* Func = Class->GetFunction("ShowdownTournamentTile_C", "ExecuteUbergraph_ShowdownTournamentTile");
 
 	Params::ShowdownTournamentTile_C_ExecuteUbergraph_ShowdownTournamentTile Parms{};
 
@@ -43,10 +40,7 @@ void UShowdownTournamentTile_C::ExecuteUbergraph_ShowdownTournamentTile(int32 En
 
 void UShowdownTournamentTile_C::EventFade(bool FadeOut)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownTournamentTile_C", "EventFade");
+	class UFunction* Func = Class->GetFunction("ShowdownTournamentTile_C", "EventFade");
 
 	Params::ShowdownTournamentTile_C_EventFade Parms{};
 
@@ -61,10 +55,7 @@ void UShowdownTournamentTile_C::EventFade(bool FadeOut)
 
 void UShowdownTournamentTile_C::BP_OnDeselected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownTournamentTile_C", "BP_OnDeselected");
+	class UFunction* Func = Class->GetFunction("ShowdownTournamentTile_C", "BP_OnDeselected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UShowdownTournamentTile_C::BP_OnDeselected()
 
 void UShowdownTournamentTile_C::BP_OnSelected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownTournamentTile_C", "BP_OnSelected");
+	class UFunction* Func = Class->GetFunction("ShowdownTournamentTile_C", "BP_OnSelected");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreativeLobbyAd_C::ExecuteUbergraph_CreativeLobbyAd(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeLobbyAd_C", "ExecuteUbergraph_CreativeLobbyAd");
+	class UFunction* Func = Class->GetFunction("CreativeLobbyAd_C", "ExecuteUbergraph_CreativeLobbyAd");
 
 	Params::CreativeLobbyAd_C_ExecuteUbergraph_CreativeLobbyAd Parms{};
 
@@ -41,10 +38,7 @@ void UCreativeLobbyAd_C::ExecuteUbergraph_CreativeLobbyAd(int32 EntryPoint)
 
 void UCreativeLobbyAd_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeLobbyAd_C", "Construct");
+	class UFunction* Func = Class->GetFunction("CreativeLobbyAd_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UCreativeLobbyAd_C::Construct()
 
 void UCreativeLobbyAd_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeLobbyAd_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("CreativeLobbyAd_C", "PreConstruct");
 
 	Params::CreativeLobbyAd_C_PreConstruct Parms{};
 
@@ -75,10 +66,7 @@ void UCreativeLobbyAd_C::PreConstruct(bool IsDesignTime)
 
 void UCreativeLobbyAd_C::OnCMSDataUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeLobbyAd_C", "OnCMSDataUpdated");
+	class UFunction* Func = Class->GetFunction("CreativeLobbyAd_C", "OnCMSDataUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

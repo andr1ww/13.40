@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void URebootVanIndicator_C::ExecuteUbergraph_RebootVanIndicator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RebootVanIndicator_C", "ExecuteUbergraph_RebootVanIndicator");
+	class UFunction* Func = Class->GetFunction("RebootVanIndicator_C", "ExecuteUbergraph_RebootVanIndicator");
 
 	Params::RebootVanIndicator_C_ExecuteUbergraph_RebootVanIndicator Parms{};
 
@@ -41,10 +38,7 @@ void URebootVanIndicator_C::ExecuteUbergraph_RebootVanIndicator(int32 EntryPoint
 
 void URebootVanIndicator_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RebootVanIndicator_C", "Construct");
+	class UFunction* Func = Class->GetFunction("RebootVanIndicator_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

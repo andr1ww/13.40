@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UInGameChallengeScreen_C::ExecuteUbergraph_InGameChallengeScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InGameChallengeScreen_C", "ExecuteUbergraph_InGameChallengeScreen");
+	class UFunction* Func = Class->GetFunction("InGameChallengeScreen_C", "ExecuteUbergraph_InGameChallengeScreen");
 
 	Params::InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen Parms{};
 
@@ -43,10 +40,7 @@ void UInGameChallengeScreen_C::ExecuteUbergraph_InGameChallengeScreen(int32 Entr
 
 void UInGameChallengeScreen_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InGameChallengeScreen_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("InGameChallengeScreen_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
 
 	Params::InGameChallengeScreen_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
 
@@ -61,10 +55,7 @@ void UInGameChallengeScreen_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_2_
 
 void UInGameChallengeScreen_C::BndEvt__ButtonMobileCloseBackgroundButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InGameChallengeScreen_C", "BndEvt__ButtonMobileCloseBackgroundButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("InGameChallengeScreen_C", "BndEvt__ButtonMobileCloseBackgroundButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UInGameChallengeScreen_C::BndEvt__ButtonMobileCloseBackgroundButton_K2Node_
 
 void UInGameChallengeScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InGameChallengeScreen_C", "Construct");
+	class UFunction* Func = Class->GetFunction("InGameChallengeScreen_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void UInGameChallengeScreen_C::Construct()
 
 void UInGameChallengeScreen_C::HandleBack(bool* PassThrough)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("InGameChallengeScreen_C", "HandleBack");
+	class UFunction* Func = Class->GetFunction("InGameChallengeScreen_C", "HandleBack");
 
 	Params::InGameChallengeScreen_C_HandleBack Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCom_ThanksForVotingMessage_C::ExecuteUbergraph_Com_ThanksForVotingMessage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "ExecuteUbergraph_Com_ThanksForVotingMessage");
+	class UFunction* Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "ExecuteUbergraph_Com_ThanksForVotingMessage");
 
 	Params::Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage Parms{};
 
@@ -41,10 +38,7 @@ void UCom_ThanksForVotingMessage_C::ExecuteUbergraph_Com_ThanksForVotingMessage(
 
 void UCom_ThanksForVotingMessage_C::FadeInPopup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "FadeInPopup");
+	class UFunction* Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "FadeInPopup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UCom_ThanksForVotingMessage_C::FadeInPopup()
 
 void UCom_ThanksForVotingMessage_C::FadeOutPopup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "FadeOutPopup");
+	class UFunction* Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "FadeOutPopup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,10 +64,7 @@ void UCom_ThanksForVotingMessage_C::FadeOutPopup()
 
 struct FEventReply UCom_ThanksForVotingMessage_C::TapToClose(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "TapToClose");
+	class UFunction* Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "TapToClose");
 
 	Params::Com_ThanksForVotingMessage_C_TapToClose Parms{};
 

@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 int32 UMinigameStat_PlayerDeaths_C::Compare(int32 FirstScore, int32 SecondScore) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameStat_PlayerDeaths_C", "Compare");
+	class UFunction* Func = Class->GetFunction("MinigameStat_PlayerDeaths_C", "Compare");
 
 	Params::MinigameStat_PlayerDeaths_C_Compare Parms{};
 

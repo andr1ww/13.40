@@ -348,6 +348,11 @@ public:
 	class UFunction* GetFunction(const FName& FuncName) const;
 	class UFunction* GetFunction(const char* ClassName, const char* FuncName) const;
 
+	class UFunction* FindFunctionByName(FName FuncName, bool bIncludeSuper = true) const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UFunction*(*)(const UClass*, FName, int32)>(InSDKUtils::GetImageBase() + 0x33B0680), this, FuncName, bIncludeSuper ? 1 : 0);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{

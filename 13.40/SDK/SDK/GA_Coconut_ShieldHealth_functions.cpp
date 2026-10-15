@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Coconut_ShieldHealth_C::ExecuteUbergraph_GA_Coconut_ShieldHealth(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Coconut_ShieldHealth_C", "ExecuteUbergraph_GA_Coconut_ShieldHealth");
+	class UFunction* Func = Class->GetFunction("GA_Coconut_ShieldHealth_C", "ExecuteUbergraph_GA_Coconut_ShieldHealth");
 
 	Params::GA_Coconut_ShieldHealth_C_ExecuteUbergraph_GA_Coconut_ShieldHealth Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Coconut_ShieldHealth_C::ExecuteUbergraph_GA_Coconut_ShieldHealth(int32 
 
 void UGA_Coconut_ShieldHealth_C::ApplyEffect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Coconut_ShieldHealth_C", "ApplyEffect");
+	class UFunction* Func = Class->GetFunction("GA_Coconut_ShieldHealth_C", "ApplyEffect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UGA_Coconut_ShieldHealth_C::ApplyEffect()
 
 void UGA_Coconut_ShieldHealth_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Coconut_ShieldHealth_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_Coconut_ShieldHealth_C", "K2_OnEndAbility");
 
 	Params::GA_Coconut_ShieldHealth_C_K2_OnEndAbility Parms{};
 
@@ -75,10 +66,7 @@ void UGA_Coconut_ShieldHealth_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Coconut_ShieldHealth_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Coconut_ShieldHealth_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Coconut_ShieldHealth_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

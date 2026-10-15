@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCN_Loop_ShipCannon_PlayerLaunch_C::ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_ShipCannon_PlayerLaunch_C", "ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_ShipCannon_PlayerLaunch_C", "ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch");
 
 	Params::GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch Parms{};
 
@@ -48,10 +45,7 @@ void AGCN_Loop_ShipCannon_PlayerLaunch_C::ExecuteUbergraph_GCN_Loop_ShipCannon_P
 
 void AGCN_Loop_ShipCannon_PlayerLaunch_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_ShipCannon_PlayerLaunch_C", "OnRemoval");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_ShipCannon_PlayerLaunch_C", "OnRemoval");
 
 	Params::GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval Parms{};
 
@@ -76,10 +70,7 @@ void AGCN_Loop_ShipCannon_PlayerLaunch_C::OnRemoval(class AActor* MyTarget, cons
 
 void AGCN_Loop_ShipCannon_PlayerLaunch_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_ShipCannon_PlayerLaunch_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCN_Loop_ShipCannon_PlayerLaunch_C", "OnLoopingStart");
 
 	Params::GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart Parms{};
 

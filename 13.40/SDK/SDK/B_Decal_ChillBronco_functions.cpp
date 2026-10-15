@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Decal_ChillBronco_C::ExecuteUbergraph_B_Decal_ChillBronco(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Decal_ChillBronco_C", "ExecuteUbergraph_B_Decal_ChillBronco");
+	class UFunction* Func = Class->GetFunction("B_Decal_ChillBronco_C", "ExecuteUbergraph_B_Decal_ChillBronco");
 
 	Params::B_Decal_ChillBronco_C_ExecuteUbergraph_B_Decal_ChillBronco Parms{};
 
@@ -41,10 +38,7 @@ void AB_Decal_ChillBronco_C::ExecuteUbergraph_B_Decal_ChillBronco(int32 EntryPoi
 
 void AB_Decal_ChillBronco_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Decal_ChillBronco_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Decal_ChillBronco_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AB_Decal_ChillBronco_C::ReceiveBeginPlay()
 
 void AB_Decal_ChillBronco_C::FadeIn__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Decal_ChillBronco_C", "FadeIn__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_Decal_ChillBronco_C", "FadeIn__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AB_Decal_ChillBronco_C::FadeIn__UpdateFunc()
 
 void AB_Decal_ChillBronco_C::FadeIn__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Decal_ChillBronco_C", "FadeIn__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_Decal_ChillBronco_C", "FadeIn__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AB_Decal_ChillBronco_C::FadeIn__FinishedFunc()
 
 void AB_Decal_ChillBronco_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Decal_ChillBronco_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("B_Decal_ChillBronco_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_ForagedItemVersion_Consume_Parent_C::ExecuteUbergraph_GA_Athena_ForagedItemVersion_Consume_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ForagedItemVersion_Consume_Parent_C", "ExecuteUbergraph_GA_Athena_ForagedItemVersion_Consume_Parent");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ForagedItemVersion_Consume_Parent_C", "ExecuteUbergraph_GA_Athena_ForagedItemVersion_Consume_Parent");
 
 	Params::GA_Athena_ForagedItemVersion_Consume_Parent_C_ExecuteUbergraph_GA_Athena_ForagedItemVersion_Consume_Parent Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_ForagedItemVersion_Consume_Parent_C::ExecuteUbergraph_GA_Athena_
 
 void UGA_Athena_ForagedItemVersion_Consume_Parent_C::K2_CommitExecute()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_ForagedItemVersion_Consume_Parent_C", "K2_CommitExecute");
+	class UFunction* Func = Class->GetFunction("GA_Athena_ForagedItemVersion_Consume_Parent_C", "K2_CommitExecute");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

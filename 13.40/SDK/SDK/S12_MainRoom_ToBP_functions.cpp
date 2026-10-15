@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void S12_MainRoom_ToBP::USequenceDirector_C::ExecuteUbergraph_SequenceDirector(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "ExecuteUbergraph_SequenceDirector");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "ExecuteUbergraph_SequenceDirector");
 
 	Params::SequenceDirector_C_ExecuteUbergraph_SequenceDirector Parms{};
 
@@ -43,10 +40,7 @@ void S12_MainRoom_ToBP::USequenceDirector_C::ExecuteUbergraph_SequenceDirector(i
 
 void S12_MainRoom_ToBP::USequenceDirector_C::Audio_Camera_Movemt_Event(class USoundBase* Sound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "Audio Camera Movemt Event");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "Audio Camera Movemt Event");
 
 	Params::SequenceDirector_C_Audio_Camera_Movemt_Event Parms{};
 
@@ -63,10 +57,7 @@ void S12_MainRoom_ToBP::USequenceDirector_C::Audio_Camera_Movemt_Event(class USo
 
 void S12_MainRoom_ToBP::USequenceDirector_C::BP_Battlepass_LightSwitcher2_Event_1(class ABP_Battlepass_LightSwitcher_C* BP_Battlepass_LightSwitcher2)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "BP_Battlepass_LightSwitcher2_Event_1");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "BP_Battlepass_LightSwitcher2_Event_1");
 
 	Params::SequenceDirector_C_BP_Battlepass_LightSwitcher2_Event_1 Parms{};
 
@@ -83,10 +74,7 @@ void S12_MainRoom_ToBP::USequenceDirector_C::BP_Battlepass_LightSwitcher2_Event_
 
 void S12_MainRoom_ToBP::USequenceDirector_C::BP_Battlepass_LightSwitcher_Maproom_Event_1(class ABP_Battlepass_LightSwitcher_C* BP_Battlepass_LightSwitcher_Maproom)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "BP_Battlepass_LightSwitcher_Maproom_Event_1");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "BP_Battlepass_LightSwitcher_Maproom_Event_1");
 
 	Params::SequenceDirector_C_BP_Battlepass_LightSwitcher_Maproom_Event_1 Parms{};
 
@@ -103,10 +91,7 @@ void S12_MainRoom_ToBP::USequenceDirector_C::BP_Battlepass_LightSwitcher_Maproom
 
 void S12_MainRoom_ToBP::USequenceDirector_C::BP_Battlepass_LightSwitcher2_Event_0(class ABP_Battlepass_LightSwitcher_C* BP_Battlepass_LightSwitcher2)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "BP_Battlepass_LightSwitcher2_Event_0");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "BP_Battlepass_LightSwitcher2_Event_0");
 
 	Params::SequenceDirector_C_BP_Battlepass_LightSwitcher2_Event_0 Parms{};
 
@@ -123,10 +108,7 @@ void S12_MainRoom_ToBP::USequenceDirector_C::BP_Battlepass_LightSwitcher2_Event_
 
 void S12_MainRoom_ToBP::USequenceDirector_C::BP_Battlepass_LightSwitcher_Maproom_Event_0(class ABP_Battlepass_LightSwitcher_C* BP_Battlepass_LightSwitcher_Maproom)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "BP_Battlepass_LightSwitcher_Maproom_Event_0");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "BP_Battlepass_LightSwitcher_Maproom_Event_0");
 
 	Params::SequenceDirector_C_BP_Battlepass_LightSwitcher_Maproom_Event_0 Parms{};
 
@@ -143,10 +125,7 @@ void S12_MainRoom_ToBP::USequenceDirector_C::BP_Battlepass_LightSwitcher_Maproom
 
 void S12_MainRoom_ToBP::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_0(class ABP_Battlepass_LightSwitcher_C* BP_Battlepass_LightSwitcher_Maproom)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_0");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_0");
 
 	Params::SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_0 Parms{};
 
@@ -163,10 +142,7 @@ void S12_MainRoom_ToBP::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDi
 
 void S12_MainRoom_ToBP::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_1(class ABP_Battlepass_LightSwitcher_C* BP_Battlepass_LightSwitcher2)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_1");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_1");
 
 	Params::SequenceDirector_C_SequenceEvent__ENTRYPOINTSequenceDirector_1 Parms{};
 
@@ -181,10 +157,7 @@ void S12_MainRoom_ToBP::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDi
 
 void S12_MainRoom_ToBP::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_2");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_2");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -195,10 +168,7 @@ void S12_MainRoom_ToBP::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDi
 
 void S12_MainRoom_ToBP::USequenceDirector_C::SequenceEvent__ENTRYPOINTSequenceDirector_3()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_3");
+	class UFunction* Func = Class->GetFunction("SequenceDirector_C", "SequenceEvent__ENTRYPOINTSequenceDirector_3");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

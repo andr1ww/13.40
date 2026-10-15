@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UTeamMemberListEntry_C::ExecuteUbergraph_TeamMemberListEntry(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberListEntry_C", "ExecuteUbergraph_TeamMemberListEntry");
+	class UFunction* Func = Class->GetFunction("TeamMemberListEntry_C", "ExecuteUbergraph_TeamMemberListEntry");
 
 	Params::TeamMemberListEntry_C_ExecuteUbergraph_TeamMemberListEntry Parms{};
 
@@ -41,10 +38,7 @@ void UTeamMemberListEntry_C::ExecuteUbergraph_TeamMemberListEntry(int32 EntryPoi
 
 void UTeamMemberListEntry_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberListEntry_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("TeamMemberListEntry_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UTeamMemberListEntry_C::BP_OnHovered()
 
 void UTeamMemberListEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberListEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("TeamMemberListEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
 
 	Params::TeamMemberListEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature Parms{};
 
@@ -75,10 +66,7 @@ void UTeamMemberListEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEve
 
 void UTeamMemberListEntry_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("TeamMemberListEntry_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("TeamMemberListEntry_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

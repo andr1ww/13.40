@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFocusButton::HandleCanUseEventModeFocusChanged(bool bCanUseEventModeFocus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FocusButton", "HandleCanUseEventModeFocusChanged");
+	class UFunction* Func = Class->GetFunction("FocusButton", "HandleCanUseEventModeFocusChanged");
 
 	Params::FocusButton_HandleCanUseEventModeFocusChanged Parms{};
 
@@ -48,10 +45,7 @@ void UFocusButton::HandleCanUseEventModeFocusChanged(bool bCanUseEventModeFocus)
 
 void UFocusButton::HandleEventModeFocusingChanged(bool bIsEventModeFocusing)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FocusButton", "HandleEventModeFocusingChanged");
+	class UFunction* Func = Class->GetFunction("FocusButton", "HandleEventModeFocusingChanged");
 
 	Params::FocusButton_HandleEventModeFocusingChanged Parms{};
 
@@ -73,10 +67,7 @@ void UFocusButton::HandleEventModeFocusingChanged(bool bIsEventModeFocusing)
 
 void UFortEventModeEmotesWidget::OnFocusAvailableChanged(bool bIsFocusAvailable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortEventModeEmotesWidget", "OnFocusAvailableChanged");
+	class UFunction* Func = Class->GetFunction("FortEventModeEmotesWidget", "OnFocusAvailableChanged");
 
 	Params::FortEventModeEmotesWidget_OnFocusAvailableChanged Parms{};
 
@@ -93,10 +84,7 @@ void UFortEventModeEmotesWidget::OnFocusAvailableChanged(bool bIsFocusAvailable)
 
 void UFortEventModeEmotesWidget::OnFocusStateChanged(bool bIsFocusing)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortEventModeEmotesWidget", "OnFocusStateChanged");
+	class UFunction* Func = Class->GetFunction("FortEventModeEmotesWidget", "OnFocusStateChanged");
 
 	Params::FortEventModeEmotesWidget_OnFocusStateChanged Parms{};
 
@@ -113,10 +101,7 @@ void UFortEventModeEmotesWidget::OnFocusStateChanged(bool bIsFocusing)
 
 void UFortMobileActionButtonBehavior_Focus::HandleCanUseEventModeFocusChanged(bool bCanUseEventModeFocus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMobileActionButtonBehavior_Focus", "HandleCanUseEventModeFocusChanged");
+	class UFunction* Func = Class->GetFunction("FortMobileActionButtonBehavior_Focus", "HandleCanUseEventModeFocusChanged");
 
 	Params::FortMobileActionButtonBehavior_Focus_HandleCanUseEventModeFocusChanged Parms{};
 
@@ -138,10 +123,7 @@ void UFortMobileActionButtonBehavior_Focus::HandleCanUseEventModeFocusChanged(bo
 
 void UFortMobileActionButtonBehavior_Focus::HandleEventModeFocusingChanged(bool bIsEventModeFocusing)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortMobileActionButtonBehavior_Focus", "HandleEventModeFocusingChanged");
+	class UFunction* Func = Class->GetFunction("FortMobileActionButtonBehavior_Focus", "HandleEventModeFocusingChanged");
 
 	Params::FortMobileActionButtonBehavior_Focus_HandleEventModeFocusingChanged Parms{};
 

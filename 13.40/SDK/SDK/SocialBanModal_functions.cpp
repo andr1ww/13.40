@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USocialBanModal_C::ExecuteUbergraph_SocialBanModal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialBanModal_C", "ExecuteUbergraph_SocialBanModal");
+	class UFunction* Func = Class->GetFunction("SocialBanModal_C", "ExecuteUbergraph_SocialBanModal");
 
 	Params::SocialBanModal_C_ExecuteUbergraph_SocialBanModal Parms{};
 
@@ -43,10 +40,7 @@ void USocialBanModal_C::ExecuteUbergraph_SocialBanModal(int32 EntryPoint)
 
 void USocialBanModal_C::OnDisplayModeSet(bool bIsBanned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SocialBanModal_C", "OnDisplayModeSet");
+	class UFunction* Func = Class->GetFunction("SocialBanModal_C", "OnDisplayModeSet");
 
 	Params::SocialBanModal_C_OnDisplayModeSet Parms{};
 

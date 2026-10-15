@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UPlayerRankEmblem_C::ExecuteUbergraph_PlayerRankEmblem(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerRankEmblem_C", "ExecuteUbergraph_PlayerRankEmblem");
+	class UFunction* Func = Class->GetFunction("PlayerRankEmblem_C", "ExecuteUbergraph_PlayerRankEmblem");
 
 	Params::PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem Parms{};
 
@@ -43,10 +40,7 @@ void UPlayerRankEmblem_C::ExecuteUbergraph_PlayerRankEmblem(int32 EntryPoint)
 
 void UPlayerRankEmblem_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerRankEmblem_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("PlayerRankEmblem_C", "PreConstruct");
 
 	Params::PlayerRankEmblem_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UPlayerRankEmblem_C::PreConstruct(bool IsDesignTime)
 
 void UPlayerRankEmblem_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerRankEmblem_C", "Construct");
+	class UFunction* Func = Class->GetFunction("PlayerRankEmblem_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UPlayerRankEmblem_C::Construct()
 
 void UPlayerRankEmblem_C::SetBannerOwner(class AFortPlayerController* Target)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerOwner");
+	class UFunction* Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerOwner");
 
 	Params::PlayerRankEmblem_C_SetBannerOwner Parms{};
 
@@ -98,10 +86,7 @@ void UPlayerRankEmblem_C::SetBannerOwner(class AFortPlayerController* Target)
 
 void UPlayerRankEmblem_C::SetBannerSurroundLevel(int32 Level, bool Animate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerSurroundLevel");
+	class UFunction* Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerSurroundLevel");
 
 	Params::PlayerRankEmblem_C_SetBannerSurroundLevel Parms{};
 
@@ -119,10 +104,7 @@ void UPlayerRankEmblem_C::SetBannerSurroundLevel(int32 Level, bool Animate)
 
 void UPlayerRankEmblem_C::SetBannerInfo(const struct FPlayerBannerInfo& Banner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerInfo");
+	class UFunction* Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerInfo");
 
 	Params::PlayerRankEmblem_C_SetBannerInfo Parms{};
 

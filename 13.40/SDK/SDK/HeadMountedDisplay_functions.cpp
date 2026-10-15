@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UHeadMountedDisplayFunctionLibrary::CalibrateExternalTrackingToHMD(const struct FTransform& ExternalTrackingTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "CalibrateExternalTrackingToHMD");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "CalibrateExternalTrackingToHMD");
 
 	Params::HeadMountedDisplayFunctionLibrary_CalibrateExternalTrackingToHMD Parms{};
 
@@ -49,10 +46,7 @@ void UHeadMountedDisplayFunctionLibrary::CalibrateExternalTrackingToHMD(const st
 
 bool UHeadMountedDisplayFunctionLibrary::EnableHMD(bool bEnable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "EnableHMD");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "EnableHMD");
 
 	Params::HeadMountedDisplayFunctionLibrary_EnableHMD Parms{};
 
@@ -76,10 +70,7 @@ bool UHeadMountedDisplayFunctionLibrary::EnableHMD(bool bEnable)
 
 void UHeadMountedDisplayFunctionLibrary::EnableLowPersistenceMode(bool bEnable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "EnableLowPersistenceMode");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "EnableLowPersistenceMode");
 
 	Params::HeadMountedDisplayFunctionLibrary_EnableLowPersistenceMode Parms{};
 
@@ -103,10 +94,7 @@ void UHeadMountedDisplayFunctionLibrary::EnableLowPersistenceMode(bool bEnable)
 
 TArray<struct FXRDeviceId> UHeadMountedDisplayFunctionLibrary::EnumerateTrackedDevices(const class FName SystemId, EXRTrackedDeviceType DeviceType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "EnumerateTrackedDevices");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "EnumerateTrackedDevices");
 
 	Params::HeadMountedDisplayFunctionLibrary_EnumerateTrackedDevices Parms{};
 
@@ -135,10 +123,7 @@ TArray<struct FXRDeviceId> UHeadMountedDisplayFunctionLibrary::EnumerateTrackedD
 
 void UHeadMountedDisplayFunctionLibrary::GetDevicePose(const struct FXRDeviceId& XRDeviceId, bool* bIsTracked, struct FRotator* Orientation, bool* bHasPositionalTracking, struct FVector* position)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetDevicePose");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetDevicePose");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetDevicePose Parms{};
 
@@ -177,10 +162,7 @@ void UHeadMountedDisplayFunctionLibrary::GetDevicePose(const struct FXRDeviceId&
 
 void UHeadMountedDisplayFunctionLibrary::GetDeviceWorldPose(class UObject* WorldContext, const struct FXRDeviceId& XRDeviceId, bool* bIsTracked, struct FRotator* Orientation, bool* bHasPositionalTracking, struct FVector* position)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetDeviceWorldPose");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetDeviceWorldPose");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetDeviceWorldPose Parms{};
 
@@ -215,10 +197,7 @@ void UHeadMountedDisplayFunctionLibrary::GetDeviceWorldPose(class UObject* World
 
 class FName UHeadMountedDisplayFunctionLibrary::GetHMDDeviceName()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetHMDDeviceName");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetHMDDeviceName");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetHMDDeviceName Parms{};
 
@@ -240,10 +219,7 @@ class FName UHeadMountedDisplayFunctionLibrary::GetHMDDeviceName()
 
 EHMDWornState UHeadMountedDisplayFunctionLibrary::GetHMDWornState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetHMDWornState");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetHMDWornState");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetHMDWornState Parms{};
 
@@ -265,10 +241,7 @@ EHMDWornState UHeadMountedDisplayFunctionLibrary::GetHMDWornState()
 
 int32 UHeadMountedDisplayFunctionLibrary::GetNumOfTrackingSensors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetNumOfTrackingSensors");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetNumOfTrackingSensors");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetNumOfTrackingSensors Parms{};
 
@@ -291,10 +264,7 @@ int32 UHeadMountedDisplayFunctionLibrary::GetNumOfTrackingSensors()
 
 void UHeadMountedDisplayFunctionLibrary::GetOrientationAndPosition(struct FRotator* DeviceRotation, struct FVector* DevicePosition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetOrientationAndPosition");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetOrientationAndPosition");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetOrientationAndPosition Parms{};
 
@@ -320,10 +290,7 @@ void UHeadMountedDisplayFunctionLibrary::GetOrientationAndPosition(struct FRotat
 
 float UHeadMountedDisplayFunctionLibrary::GetPixelDensity()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetPixelDensity");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetPixelDensity");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetPixelDensity Parms{};
 
@@ -351,10 +318,7 @@ float UHeadMountedDisplayFunctionLibrary::GetPixelDensity()
 
 void UHeadMountedDisplayFunctionLibrary::GetPositionalTrackingCameraParameters(struct FVector* CameraOrigin, struct FRotator* CameraRotation, float* HFOV, float* VFOV, float* CameraDistance, float* NearPlane, float* FarPlane)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetPositionalTrackingCameraParameters");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetPositionalTrackingCameraParameters");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetPositionalTrackingCameraParameters Parms{};
 
@@ -395,10 +359,7 @@ void UHeadMountedDisplayFunctionLibrary::GetPositionalTrackingCameraParameters(s
 
 float UHeadMountedDisplayFunctionLibrary::GetScreenPercentage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetScreenPercentage");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetScreenPercentage");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetScreenPercentage Parms{};
 
@@ -420,10 +381,7 @@ float UHeadMountedDisplayFunctionLibrary::GetScreenPercentage()
 
 EHMDTrackingOrigin UHeadMountedDisplayFunctionLibrary::GetTrackingOrigin()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetTrackingOrigin");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetTrackingOrigin");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetTrackingOrigin Parms{};
 
@@ -455,10 +413,7 @@ EHMDTrackingOrigin UHeadMountedDisplayFunctionLibrary::GetTrackingOrigin()
 
 void UHeadMountedDisplayFunctionLibrary::GetTrackingSensorParameters(struct FVector* Origin, struct FRotator* Rotation, float* LeftFOV, float* RightFOV, float* TopFOV, float* BottomFOV, float* Distance, float* NearPlane, float* FarPlane, bool* IsActive, int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetTrackingSensorParameters");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetTrackingSensorParameters");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetTrackingSensorParameters Parms{};
 
@@ -511,10 +466,7 @@ void UHeadMountedDisplayFunctionLibrary::GetTrackingSensorParameters(struct FVec
 
 struct FTransform UHeadMountedDisplayFunctionLibrary::GetTrackingToWorldTransform(class UObject* WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetTrackingToWorldTransform");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetTrackingToWorldTransform");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetTrackingToWorldTransform Parms{};
 
@@ -539,10 +491,7 @@ struct FTransform UHeadMountedDisplayFunctionLibrary::GetTrackingToWorldTransfor
 
 void UHeadMountedDisplayFunctionLibrary::GetVRFocusState(bool* bUseFocus, bool* bHasFocus)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetVRFocusState");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetVRFocusState");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetVRFocusState Parms{};
 
@@ -569,10 +518,7 @@ void UHeadMountedDisplayFunctionLibrary::GetVRFocusState(bool* bUseFocus, bool* 
 
 float UHeadMountedDisplayFunctionLibrary::GetWorldToMetersScale(class UObject* WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetWorldToMetersScale");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "GetWorldToMetersScale");
 
 	Params::HeadMountedDisplayFunctionLibrary_GetWorldToMetersScale Parms{};
 
@@ -596,10 +542,7 @@ float UHeadMountedDisplayFunctionLibrary::GetWorldToMetersScale(class UObject* W
 
 bool UHeadMountedDisplayFunctionLibrary::HasValidTrackingPosition()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "HasValidTrackingPosition");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "HasValidTrackingPosition");
 
 	Params::HeadMountedDisplayFunctionLibrary_HasValidTrackingPosition Parms{};
 
@@ -622,10 +565,7 @@ bool UHeadMountedDisplayFunctionLibrary::HasValidTrackingPosition()
 
 bool UHeadMountedDisplayFunctionLibrary::IsDeviceTracking(const struct FXRDeviceId& XRDeviceId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsDeviceTracking");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsDeviceTracking");
 
 	Params::HeadMountedDisplayFunctionLibrary_IsDeviceTracking Parms{};
 
@@ -649,10 +589,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsDeviceTracking(const struct FXRDevice
 
 bool UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayConnected()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsHeadMountedDisplayConnected");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsHeadMountedDisplayConnected");
 
 	Params::HeadMountedDisplayFunctionLibrary_IsHeadMountedDisplayConnected Parms{};
 
@@ -674,10 +611,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayConnected()
 
 bool UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsHeadMountedDisplayEnabled");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsHeadMountedDisplayEnabled");
 
 	Params::HeadMountedDisplayFunctionLibrary_IsHeadMountedDisplayEnabled Parms{};
 
@@ -699,10 +633,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayEnabled()
 
 bool UHeadMountedDisplayFunctionLibrary::IsInLowPersistenceMode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsInLowPersistenceMode");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsInLowPersistenceMode");
 
 	Params::HeadMountedDisplayFunctionLibrary_IsInLowPersistenceMode Parms{};
 
@@ -724,10 +655,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsInLowPersistenceMode()
 
 bool UHeadMountedDisplayFunctionLibrary::IsSpectatorScreenModeControllable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsSpectatorScreenModeControllable");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "IsSpectatorScreenModeControllable");
 
 	Params::HeadMountedDisplayFunctionLibrary_IsSpectatorScreenModeControllable Parms{};
 
@@ -750,10 +678,7 @@ bool UHeadMountedDisplayFunctionLibrary::IsSpectatorScreenModeControllable()
 
 void UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition(float Yaw, EOrientPositionSelector Options)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "ResetOrientationAndPosition");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "ResetOrientationAndPosition");
 
 	Params::HeadMountedDisplayFunctionLibrary_ResetOrientationAndPosition Parms{};
 
@@ -777,10 +702,7 @@ void UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition(float Yaw, 
 
 void UHeadMountedDisplayFunctionLibrary::SetClippingPlanes(float Near, float Far)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetClippingPlanes");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetClippingPlanes");
 
 	Params::HeadMountedDisplayFunctionLibrary_SetClippingPlanes Parms{};
 
@@ -803,10 +725,7 @@ void UHeadMountedDisplayFunctionLibrary::SetClippingPlanes(float Near, float Far
 
 void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenMode(ESpectatorScreenMode Mode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetSpectatorScreenMode");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetSpectatorScreenMode");
 
 	Params::HeadMountedDisplayFunctionLibrary_SetSpectatorScreenMode Parms{};
 
@@ -834,10 +753,7 @@ void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenMode(ESpectatorScreen
 
 void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenModeTexturePlusEyeLayout(const struct FVector2D& EyeRectMin, const struct FVector2D& EyeRectMax, const struct FVector2D& TextureRectMin, const struct FVector2D& TextureRectMax, bool bDrawEyeFirst, bool bClearBlack, bool bUseAlpha)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetSpectatorScreenModeTexturePlusEyeLayout");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetSpectatorScreenModeTexturePlusEyeLayout");
 
 	Params::HeadMountedDisplayFunctionLibrary_SetSpectatorScreenModeTexturePlusEyeLayout Parms{};
 
@@ -865,10 +781,7 @@ void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenModeTexturePlusEyeLay
 
 void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenTexture(class UTexture* InTexture)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetSpectatorScreenTexture");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetSpectatorScreenTexture");
 
 	Params::HeadMountedDisplayFunctionLibrary_SetSpectatorScreenTexture Parms{};
 
@@ -890,10 +803,7 @@ void UHeadMountedDisplayFunctionLibrary::SetSpectatorScreenTexture(class UTextur
 
 void UHeadMountedDisplayFunctionLibrary::SetTrackingOrigin(EHMDTrackingOrigin Origin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetTrackingOrigin");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetTrackingOrigin");
 
 	Params::HeadMountedDisplayFunctionLibrary_SetTrackingOrigin Parms{};
 
@@ -916,10 +826,7 @@ void UHeadMountedDisplayFunctionLibrary::SetTrackingOrigin(EHMDTrackingOrigin Or
 
 void UHeadMountedDisplayFunctionLibrary::SetWorldToMetersScale(class UObject* WorldContext, float NewScale)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetWorldToMetersScale");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "SetWorldToMetersScale");
 
 	Params::HeadMountedDisplayFunctionLibrary_SetWorldToMetersScale Parms{};
 
@@ -942,10 +849,7 @@ void UHeadMountedDisplayFunctionLibrary::SetWorldToMetersScale(class UObject* Wo
 
 void UHeadMountedDisplayFunctionLibrary::UpdateExternalTrackingHMDPosition(const struct FTransform& ExternalTrackingTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "UpdateExternalTrackingHMDPosition");
+	class UFunction* Func = StaticClass()->GetFunction("HeadMountedDisplayFunctionLibrary", "UpdateExternalTrackingHMDPosition");
 
 	Params::HeadMountedDisplayFunctionLibrary_UpdateExternalTrackingHMDPosition Parms{};
 
@@ -969,10 +873,7 @@ void UHeadMountedDisplayFunctionLibrary::UpdateExternalTrackingHMDPosition(const
 
 struct FVector UMotionControllerComponent::GetHandJointPosition(int32 jointIndex, bool* bValueFound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "GetHandJointPosition");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "GetHandJointPosition");
 
 	Params::MotionControllerComponent_GetHandJointPosition Parms{};
 
@@ -1001,10 +902,7 @@ struct FVector UMotionControllerComponent::GetHandJointPosition(int32 jointIndex
 
 float UMotionControllerComponent::GetParameterValue(class FName InName, bool* bValueFound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "GetParameterValue");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "GetParameterValue");
 
 	Params::MotionControllerComponent_GetParameterValue Parms{};
 
@@ -1029,10 +927,7 @@ float UMotionControllerComponent::GetParameterValue(class FName InName, bool* bV
 
 void UMotionControllerComponent::OnMotionControllerUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "OnMotionControllerUpdated");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "OnMotionControllerUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -1045,10 +940,7 @@ void UMotionControllerComponent::OnMotionControllerUpdated()
 
 void UMotionControllerComponent::SetAssociatedPlayerIndex(const int32 NewPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "SetAssociatedPlayerIndex");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "SetAssociatedPlayerIndex");
 
 	Params::MotionControllerComponent_SetAssociatedPlayerIndex Parms{};
 
@@ -1070,10 +962,7 @@ void UMotionControllerComponent::SetAssociatedPlayerIndex(const int32 NewPlayer)
 
 void UMotionControllerComponent::SetCustomDisplayMesh(class UStaticMesh* NewDisplayMesh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "SetCustomDisplayMesh");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "SetCustomDisplayMesh");
 
 	Params::MotionControllerComponent_SetCustomDisplayMesh Parms{};
 
@@ -1095,10 +984,7 @@ void UMotionControllerComponent::SetCustomDisplayMesh(class UStaticMesh* NewDisp
 
 void UMotionControllerComponent::SetDisplayModelSource(const class FName NewDisplayModelSource)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "SetDisplayModelSource");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "SetDisplayModelSource");
 
 	Params::MotionControllerComponent_SetDisplayModelSource Parms{};
 
@@ -1120,10 +1006,7 @@ void UMotionControllerComponent::SetDisplayModelSource(const class FName NewDisp
 
 void UMotionControllerComponent::SetShowDeviceModel(const bool bShowControllerModel)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "SetShowDeviceModel");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "SetShowDeviceModel");
 
 	Params::MotionControllerComponent_SetShowDeviceModel Parms{};
 
@@ -1145,10 +1028,7 @@ void UMotionControllerComponent::SetShowDeviceModel(const bool bShowControllerMo
 
 void UMotionControllerComponent::SetTrackingMotionSource(const class FName NewSource)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "SetTrackingMotionSource");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "SetTrackingMotionSource");
 
 	Params::MotionControllerComponent_SetTrackingMotionSource Parms{};
 
@@ -1170,10 +1050,7 @@ void UMotionControllerComponent::SetTrackingMotionSource(const class FName NewSo
 
 void UMotionControllerComponent::SetTrackingSource(const EControllerHand NewSource)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "SetTrackingSource");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "SetTrackingSource");
 
 	Params::MotionControllerComponent_SetTrackingSource Parms{};
 
@@ -1195,10 +1072,7 @@ void UMotionControllerComponent::SetTrackingSource(const EControllerHand NewSour
 
 EControllerHand UMotionControllerComponent::GetTrackingSource() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "GetTrackingSource");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "GetTrackingSource");
 
 	Params::MotionControllerComponent_GetTrackingSource Parms{};
 
@@ -1220,10 +1094,7 @@ EControllerHand UMotionControllerComponent::GetTrackingSource() const
 
 bool UMotionControllerComponent::IsTracked() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MotionControllerComponent", "IsTracked");
+	class UFunction* Func = Class->GetFunction("MotionControllerComponent", "IsTracked");
 
 	Params::MotionControllerComponent_IsTracked Parms{};
 
@@ -1245,10 +1116,7 @@ bool UMotionControllerComponent::IsTracked() const
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingForComponent(const class UMotionControllerComponent* MotionControllerComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingForComponent");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingForComponent");
 
 	Params::MotionTrackedDeviceFunctionLibrary_DisableMotionTrackingForComponent Parms{};
 
@@ -1268,10 +1136,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingForComponent(cons
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfAllControllers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingOfAllControllers");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingOfAllControllers");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1289,10 +1154,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfAllControllers(
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfControllersForPlayer(int32 PlayerIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingOfControllersForPlayer");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingOfControllersForPlayer");
 
 	Params::MotionTrackedDeviceFunctionLibrary_DisableMotionTrackingOfControllersForPlayer Parms{};
 
@@ -1315,10 +1177,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfControllersForP
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfDevice(int32 PlayerIndex, EControllerHand Hand)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingOfDevice");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingOfDevice");
 
 	Params::MotionTrackedDeviceFunctionLibrary_DisableMotionTrackingOfDevice Parms{};
 
@@ -1342,10 +1201,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfDevice(int32 Pl
 
 void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfSource(int32 PlayerIndex, class FName SourceName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingOfSource");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "DisableMotionTrackingOfSource");
 
 	Params::MotionTrackedDeviceFunctionLibrary_DisableMotionTrackingOfSource Parms{};
 
@@ -1369,10 +1225,7 @@ void UMotionTrackedDeviceFunctionLibrary::DisableMotionTrackingOfSource(int32 Pl
 
 bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "EnableMotionTrackingForComponent");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "EnableMotionTrackingForComponent");
 
 	Params::MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingForComponent Parms{};
 
@@ -1398,10 +1251,7 @@ bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingForComponent(class
 
 bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingOfDevice(int32 PlayerIndex, EControllerHand Hand)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "EnableMotionTrackingOfDevice");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "EnableMotionTrackingOfDevice");
 
 	Params::MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfDevice Parms{};
 
@@ -1428,10 +1278,7 @@ bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingOfDevice(int32 Pla
 
 bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingOfSource(int32 PlayerIndex, class FName SourceName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "EnableMotionTrackingOfSource");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "EnableMotionTrackingOfSource");
 
 	Params::MotionTrackedDeviceFunctionLibrary_EnableMotionTrackingOfSource Parms{};
 
@@ -1456,10 +1303,7 @@ bool UMotionTrackedDeviceFunctionLibrary::EnableMotionTrackingOfSource(int32 Pla
 
 TArray<class FName> UMotionTrackedDeviceFunctionLibrary::EnumerateMotionSources()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "EnumerateMotionSources");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "EnumerateMotionSources");
 
 	Params::MotionTrackedDeviceFunctionLibrary_EnumerateMotionSources Parms{};
 
@@ -1481,10 +1325,7 @@ TArray<class FName> UMotionTrackedDeviceFunctionLibrary::EnumerateMotionSources(
 
 class FName UMotionTrackedDeviceFunctionLibrary::GetActiveTrackingSystemName()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "GetActiveTrackingSystemName");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "GetActiveTrackingSystemName");
 
 	Params::MotionTrackedDeviceFunctionLibrary_GetActiveTrackingSystemName Parms{};
 
@@ -1506,10 +1347,7 @@ class FName UMotionTrackedDeviceFunctionLibrary::GetActiveTrackingSystemName()
 
 int32 UMotionTrackedDeviceFunctionLibrary::GetMaximumMotionTrackedControllerCount()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "GetMaximumMotionTrackedControllerCount");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "GetMaximumMotionTrackedControllerCount");
 
 	Params::MotionTrackedDeviceFunctionLibrary_GetMaximumMotionTrackedControllerCount Parms{};
 
@@ -1531,10 +1369,7 @@ int32 UMotionTrackedDeviceFunctionLibrary::GetMaximumMotionTrackedControllerCoun
 
 int32 UMotionTrackedDeviceFunctionLibrary::GetMotionTrackingEnabledControllerCount()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "GetMotionTrackingEnabledControllerCount");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "GetMotionTrackingEnabledControllerCount");
 
 	Params::MotionTrackedDeviceFunctionLibrary_GetMotionTrackingEnabledControllerCount Parms{};
 
@@ -1558,10 +1393,7 @@ int32 UMotionTrackedDeviceFunctionLibrary::GetMotionTrackingEnabledControllerCou
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionSourceTracking(int32 PlayerIndex, class FName SourceName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionSourceTracking");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionSourceTracking");
 
 	Params::MotionTrackedDeviceFunctionLibrary_IsMotionSourceTracking Parms{};
 
@@ -1586,10 +1418,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionSourceTracking(int32 PlayerInd
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackedDeviceCountManagementNecessary()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionTrackedDeviceCountManagementNecessary");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionTrackedDeviceCountManagementNecessary");
 
 	Params::MotionTrackedDeviceFunctionLibrary_IsMotionTrackedDeviceCountManagementNecessary Parms{};
 
@@ -1612,10 +1441,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackedDeviceCountManagementNe
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForComponent(const class UMotionControllerComponent* MotionControllerComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionTrackingEnabledForComponent");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionTrackingEnabledForComponent");
 
 	Params::MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForComponent Parms{};
 
@@ -1641,10 +1467,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForComponent(co
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForDevice(int32 PlayerIndex, EControllerHand Hand)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionTrackingEnabledForDevice");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionTrackingEnabledForDevice");
 
 	Params::MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForDevice Parms{};
 
@@ -1671,10 +1494,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForDevice(int32
 
 bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForSource(int32 PlayerIndex, class FName SourceName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionTrackingEnabledForSource");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "IsMotionTrackingEnabledForSource");
 
 	Params::MotionTrackedDeviceFunctionLibrary_IsMotionTrackingEnabledForSource Parms{};
 
@@ -1699,10 +1519,7 @@ bool UMotionTrackedDeviceFunctionLibrary::IsMotionTrackingEnabledForSource(int32
 
 void UMotionTrackedDeviceFunctionLibrary::SetIsControllerMotionTrackingEnabledByDefault(bool Enable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "SetIsControllerMotionTrackingEnabledByDefault");
+	class UFunction* Func = StaticClass()->GetFunction("MotionTrackedDeviceFunctionLibrary", "SetIsControllerMotionTrackingEnabledByDefault");
 
 	Params::MotionTrackedDeviceFunctionLibrary_SetIsControllerMotionTrackingEnabledByDefault Parms{};
 
@@ -1728,10 +1545,7 @@ void UMotionTrackedDeviceFunctionLibrary::SetIsControllerMotionTrackingEnabledBy
 
 class UPrimitiveComponent* UXRAssetFunctionLibrary::AddDeviceVisualizationComponentBlocking(class AActor* Target, const struct FXRDeviceId& XRDeviceId, bool bManualAttachment, const struct FTransform& RelativeTransform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("XRAssetFunctionLibrary", "AddDeviceVisualizationComponentBlocking");
+	class UFunction* Func = StaticClass()->GetFunction("XRAssetFunctionLibrary", "AddDeviceVisualizationComponentBlocking");
 
 	Params::XRAssetFunctionLibrary_AddDeviceVisualizationComponentBlocking Parms{};
 
@@ -1764,10 +1578,7 @@ class UPrimitiveComponent* UXRAssetFunctionLibrary::AddDeviceVisualizationCompon
 
 class UPrimitiveComponent* UXRAssetFunctionLibrary::AddNamedDeviceVisualizationComponentBlocking(class AActor* Target, const class FName SystemName, const class FName DeviceName, bool bManualAttachment, const struct FTransform& RelativeTransform, struct FXRDeviceId* XRDeviceId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("XRAssetFunctionLibrary", "AddNamedDeviceVisualizationComponentBlocking");
+	class UFunction* Func = StaticClass()->GetFunction("XRAssetFunctionLibrary", "AddNamedDeviceVisualizationComponentBlocking");
 
 	Params::XRAssetFunctionLibrary_AddNamedDeviceVisualizationComponentBlocking Parms{};
 
@@ -1803,10 +1614,7 @@ class UPrimitiveComponent* UXRAssetFunctionLibrary::AddNamedDeviceVisualizationC
 
 class UAsyncTask_LoadXRDeviceVisComponent* UAsyncTask_LoadXRDeviceVisComponent::AddDeviceVisualizationComponentAsync(class AActor* Target, const struct FXRDeviceId& XRDeviceId, bool bManualAttachment, const struct FTransform& RelativeTransform, class UPrimitiveComponent** NewComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AsyncTask_LoadXRDeviceVisComponent", "AddDeviceVisualizationComponentAsync");
+	class UFunction* Func = StaticClass()->GetFunction("AsyncTask_LoadXRDeviceVisComponent", "AddDeviceVisualizationComponentAsync");
 
 	Params::AsyncTask_LoadXRDeviceVisComponent_AddDeviceVisualizationComponentAsync Parms{};
 
@@ -1843,10 +1651,7 @@ class UAsyncTask_LoadXRDeviceVisComponent* UAsyncTask_LoadXRDeviceVisComponent::
 
 class UAsyncTask_LoadXRDeviceVisComponent* UAsyncTask_LoadXRDeviceVisComponent::AddNamedDeviceVisualizationComponentAsync(class AActor* Target, const class FName SystemName, const class FName DeviceName, bool bManualAttachment, const struct FTransform& RelativeTransform, struct FXRDeviceId* XRDeviceId, class UPrimitiveComponent** NewComponent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AsyncTask_LoadXRDeviceVisComponent", "AddNamedDeviceVisualizationComponentAsync");
+	class UFunction* Func = StaticClass()->GetFunction("AsyncTask_LoadXRDeviceVisComponent", "AddNamedDeviceVisualizationComponentAsync");
 
 	Params::AsyncTask_LoadXRDeviceVisComponent_AddNamedDeviceVisualizationComponentAsync Parms{};
 
@@ -1885,10 +1690,7 @@ class UAsyncTask_LoadXRDeviceVisComponent* UAsyncTask_LoadXRDeviceVisComponent::
 
 void UXRLoadingScreenFunctionLibrary::AddLoadingScreenSplash(class UTexture* Texture, const struct FVector& Translation, const struct FRotator& Rotation, const struct FVector2D& Size, const struct FRotator& DeltaRotation, bool bClearBeforeAdd)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "AddLoadingScreenSplash");
+	class UFunction* Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "AddLoadingScreenSplash");
 
 	Params::XRLoadingScreenFunctionLibrary_AddLoadingScreenSplash Parms{};
 
@@ -1913,10 +1715,7 @@ void UXRLoadingScreenFunctionLibrary::AddLoadingScreenSplash(class UTexture* Tex
 
 void UXRLoadingScreenFunctionLibrary::ClearLoadingScreenSplashes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "ClearLoadingScreenSplashes");
+	class UFunction* Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "ClearLoadingScreenSplashes");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1932,10 +1731,7 @@ void UXRLoadingScreenFunctionLibrary::ClearLoadingScreenSplashes()
 
 void UXRLoadingScreenFunctionLibrary::HideLoadingScreen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "HideLoadingScreen");
+	class UFunction* Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "HideLoadingScreen");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1957,10 +1753,7 @@ void UXRLoadingScreenFunctionLibrary::HideLoadingScreen()
 
 void UXRLoadingScreenFunctionLibrary::SetLoadingScreen(class UTexture* Texture, const struct FVector2D& Scale, const struct FVector& Offset, bool bShowLoadingMovie, bool bShowOnSet)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "SetLoadingScreen");
+	class UFunction* Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "SetLoadingScreen");
 
 	Params::XRLoadingScreenFunctionLibrary_SetLoadingScreen Parms{};
 
@@ -1984,10 +1777,7 @@ void UXRLoadingScreenFunctionLibrary::SetLoadingScreen(class UTexture* Texture, 
 
 void UXRLoadingScreenFunctionLibrary::ShowLoadingScreen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "ShowLoadingScreen");
+	class UFunction* Func = StaticClass()->GetFunction("XRLoadingScreenFunctionLibrary", "ShowLoadingScreen");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

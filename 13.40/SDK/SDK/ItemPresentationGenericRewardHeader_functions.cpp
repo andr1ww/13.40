@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UItemPresentationGenericRewardHeader_C::HandleIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationGenericRewardHeader_C", "HandleIntro");
+	class UFunction* Func = Class->GetFunction("ItemPresentationGenericRewardHeader_C", "HandleIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UItemPresentationGenericRewardHeader_C::HandleIntro()
 
 void UItemPresentationGenericRewardHeader_C::HandleInitialState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationGenericRewardHeader_C", "HandleInitialState");
+	class UFunction* Func = Class->GetFunction("ItemPresentationGenericRewardHeader_C", "HandleInitialState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void UItemPresentationGenericRewardHeader_C::HandleInitialState()
 
 void UItemPresentationGenericRewardHeader_C::HandleOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPresentationGenericRewardHeader_C", "HandleOutro");
+	class UFunction* Func = Class->GetFunction("ItemPresentationGenericRewardHeader_C", "HandleOutro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

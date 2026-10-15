@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGiftingUserItem_C::ExecuteUbergraph_GiftingUserItem(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingUserItem_C", "ExecuteUbergraph_GiftingUserItem");
+	class UFunction* Func = Class->GetFunction("GiftingUserItem_C", "ExecuteUbergraph_GiftingUserItem");
 
 	Params::GiftingUserItem_C_ExecuteUbergraph_GiftingUserItem Parms{};
 
@@ -43,10 +40,7 @@ void UGiftingUserItem_C::ExecuteUbergraph_GiftingUserItem(int32 EntryPoint)
 
 void UGiftingUserItem_C::UpdateMessageText(const class FText& NewMessage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingUserItem_C", "UpdateMessageText");
+	class UFunction* Func = Class->GetFunction("GiftingUserItem_C", "UpdateMessageText");
 
 	Params::GiftingUserItem_C_UpdateMessageText Parms{};
 
@@ -64,10 +58,7 @@ void UGiftingUserItem_C::UpdateMessageText(const class FText& NewMessage)
 
 void UGiftingUserItem_C::SetSelectionState(ESelectionState NewState, bool bAnimateOnSelect)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GiftingUserItem_C", "SetSelectionState");
+	class UFunction* Func = Class->GetFunction("GiftingUserItem_C", "SetSelectionState");
 
 	Params::GiftingUserItem_C_SetSelectionState Parms{};
 

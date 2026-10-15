@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UChargeWeaponLayerAnimBP_C::ExecuteUbergraph_ChargeWeaponLayerAnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ExecuteUbergraph_ChargeWeaponLayerAnimBP");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ExecuteUbergraph_ChargeWeaponLayerAnimBP");
 
 	Params::ChargeWeaponLayerAnimBP_C_ExecuteUbergraph_ChargeWeaponLayerAnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UChargeWeaponLayerAnimBP_C::ExecuteUbergraph_ChargeWeaponLayerAnimBP(int32 
 
 void UChargeWeaponLayerAnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "BlueprintUpdateAnimation");
 
 	Params::ChargeWeaponLayerAnimBP_C_BlueprintUpdateAnimation Parms{};
 
@@ -63,10 +57,7 @@ void UChargeWeaponLayerAnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UChargeWeaponLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "AnimGraph");
 
 	Params::ChargeWeaponLayerAnimBP_C_AnimGraph Parms{};
 
@@ -85,10 +76,7 @@ void UChargeWeaponLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 void UChargeWeaponLayerAnimBP_C::ItemPreIK(const struct FPoseLink& InPose_PreIK, struct FPoseLink* ItemPreIK_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemPreIK");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemPreIK");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemPreIK Parms{};
 
@@ -109,10 +97,7 @@ void UChargeWeaponLayerAnimBP_C::ItemPreIK(const struct FPoseLink& InPose_PreIK,
 
 void UChargeWeaponLayerAnimBP_C::ItemFullBodyOverride(const struct FPoseLink& InPoseFullBody, struct FPoseLink* ItemFullBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFullBodyOverride");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFullBodyOverride");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemFullBodyOverride Parms{};
 
@@ -137,10 +122,7 @@ void UChargeWeaponLayerAnimBP_C::ItemFullBodyOverride(const struct FPoseLink& In
 
 void UChargeWeaponLayerAnimBP_C::ItemAimOffset(const struct FPoseLink& InPose_AimOffset, float AimOffsetAlpha_0, float Yaw_0, float Pitch_0, const struct FPoseLink& InPose_UpperLowerPreMeleeAO, struct FPoseLink* ItemAimOffset_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemAimOffset");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemAimOffset");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemAimOffset Parms{};
 
@@ -165,10 +147,7 @@ void UChargeWeaponLayerAnimBP_C::ItemAimOffset(const struct FPoseLink& InPose_Ai
 
 void UChargeWeaponLayerAnimBP_C::ItemSkeletalControl(const struct FPoseLink& InPose, struct FPoseLink* ItemSkeletalControl_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSkeletalControl");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSkeletalControl");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemSkeletalControl Parms{};
 
@@ -188,10 +167,7 @@ void UChargeWeaponLayerAnimBP_C::ItemSkeletalControl(const struct FPoseLink& InP
 
 void UChargeWeaponLayerAnimBP_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwimJumpSurfaceEnd_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemSwimJumpSurfaceEnd Parms{};
 
@@ -209,10 +185,7 @@ void UChargeWeaponLayerAnimBP_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSw
 
 void UChargeWeaponLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSwimJumpSurfaceLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemSwimJumpSurfaceLoop Parms{};
 
@@ -230,10 +203,7 @@ void UChargeWeaponLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemS
 
 void UChargeWeaponLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJumpFallLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpFallLoop");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpFallLoop");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemSwimJumpFallLoop Parms{};
 
@@ -251,10 +221,7 @@ void UChargeWeaponLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwim
 
 void UChargeWeaponLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwimJumpStartLoop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpStartLoop");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpStartLoop");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemSwimJumpStartLoop Parms{};
 
@@ -272,10 +239,7 @@ void UChargeWeaponLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwi
 
 void UChargeWeaponLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJumpStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpStart");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSwimJumpStart");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemSwimJumpStart Parms{};
 
@@ -294,10 +258,7 @@ void UChargeWeaponLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJum
 
 void UChargeWeaponLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRelaxedEntry, struct FPoseLink* ItemRelaxedEntry_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemRelaxedEntry");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemRelaxedEntry");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemRelaxedEntry Parms{};
 
@@ -318,10 +279,7 @@ void UChargeWeaponLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPose
 
 void UChargeWeaponLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& InPoseLowerBodyJogPostPivot, struct FPoseLink* ItemLowerBodyJogPostPivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemLowerBodyJogPostPivot Parms{};
 
@@ -342,10 +300,7 @@ void UChargeWeaponLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLin
 
 void UChargeWeaponLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& InPoseLowerBodyJogPrePivot, struct FPoseLink* ItemLowerBodyJogPrePivot_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemLowerBodyJogPrePivot Parms{};
 
@@ -366,10 +321,7 @@ void UChargeWeaponLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink
 
 void UChargeWeaponLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InPoseLowerBodyJogStop, struct FPoseLink* ItemLowerBodyJogStop_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyJogStop");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyJogStop");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemLowerBodyJogStop Parms{};
 
@@ -390,10 +342,7 @@ void UChargeWeaponLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& In
 
 void UChargeWeaponLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& InPoseLowerBodyJogStart, struct FPoseLink* ItemLowerBodyJogStart_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyJogStart");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyJogStart");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemLowerBodyJogStart Parms{};
 
@@ -414,10 +363,7 @@ void UChargeWeaponLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& I
 
 void UChargeWeaponLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLink& InPoseLowerBodyLeanAdditive, struct FPoseLink* ItemLowerBodyLeanAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemLowerBodyLeanAdditive Parms{};
 
@@ -438,10 +384,7 @@ void UChargeWeaponLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLin
 
 void UChargeWeaponLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& InPoseLowerBodyMovement, struct FPoseLink* ItemLowerBodyMovement_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyMovement");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemLowerBodyMovement");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemLowerBodyMovement Parms{};
 
@@ -462,10 +405,7 @@ void UChargeWeaponLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& I
 
 void UChargeWeaponLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink& InPosePostPivotAdditive, struct FPoseLink* ItemJogPostPivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJogPostPivotAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJogPostPivotAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemJogPostPivotAdditive Parms{};
 
@@ -486,10 +426,7 @@ void UChargeWeaponLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink
 
 void UChargeWeaponLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& InPosePrePivotAdditive, struct FPoseLink* ItemJogPrePivotAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJogPrePivotAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJogPrePivotAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemJogPrePivotAdditive Parms{};
 
@@ -510,10 +447,7 @@ void UChargeWeaponLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink&
 
 void UChargeWeaponLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPoseJogStopAdditive, struct FPoseLink* ItemJogStopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJogStopAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJogStopAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemJogStopAdditive Parms{};
 
@@ -534,10 +468,7 @@ void UChargeWeaponLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InP
 
 void UChargeWeaponLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InPoseJogStartAdditive, struct FPoseLink* ItemJogStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJogStartAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJogStartAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemJogStartAdditive Parms{};
 
@@ -557,10 +488,7 @@ void UChargeWeaponLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& In
 
 void UChargeWeaponLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyModeLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFlyModeLoopAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFlyModeLoopAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemFlyModeLoopAdditive Parms{};
 
@@ -578,10 +506,7 @@ void UChargeWeaponLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemF
 
 void UChargeWeaponLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFlyModeStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFlyModeStartAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFlyModeStartAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemFlyModeStartAdditive Parms{};
 
@@ -599,10 +524,7 @@ void UChargeWeaponLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* Item
 
 void UChargeWeaponLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZipLineStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemZipLineStartAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemZipLineStartAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemZipLineStartAdditive Parms{};
 
@@ -620,10 +542,7 @@ void UChargeWeaponLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* Item
 
 void UChargeWeaponLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetPackJumpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJetPackJumpAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJetPackJumpAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemJetPackJumpAdditive Parms{};
 
@@ -641,10 +560,7 @@ void UChargeWeaponLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJ
 
 void UChargeWeaponLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJetPackStartAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJetPackStartAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJetPackStartAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemJetPackStartAdditive Parms{};
 
@@ -662,10 +578,7 @@ void UChargeWeaponLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* Item
 
 void UChargeWeaponLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLandAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFallLandAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFallLandAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemFallLandAdditive Parms{};
 
@@ -683,10 +596,7 @@ void UChargeWeaponLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFall
 
 void UChargeWeaponLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFallAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFallAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemFallAdditive Parms{};
 
@@ -704,10 +614,7 @@ void UChargeWeaponLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAddi
 
 void UChargeWeaponLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoopAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJumpLoopAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJumpLoopAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemJumpLoopAdditive Parms{};
 
@@ -725,10 +632,7 @@ void UChargeWeaponLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJump
 
 void UChargeWeaponLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJumpUpAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemJumpUpAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemJumpUpAdditive Parms{};
 
@@ -746,10 +650,7 @@ void UChargeWeaponLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUp
 
 void UChargeWeaponLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSliding_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSlopeSliding");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemSlopeSliding");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemSlopeSliding Parms{};
 
@@ -767,10 +668,7 @@ void UChargeWeaponLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSli
 
 void UChargeWeaponLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCrouchTurningAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemCrouchTurningAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemCrouchTurningAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemCrouchTurningAdditive Parms{};
 
@@ -789,10 +687,7 @@ void UChargeWeaponLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* Ite
 
 void UChargeWeaponLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdleAdditive, struct FPoseLink* ItemIdleAdditive_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemIdleAdditive");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemIdleAdditive");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemIdleAdditive Parms{};
 
@@ -813,10 +708,7 @@ void UChargeWeaponLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPose
 
 void UChargeWeaponLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPoseSprint, struct FPoseLink* ItemFullBodySprint_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFullBodySprint");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemFullBodySprint");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemFullBodySprint Parms{};
 
@@ -838,10 +730,7 @@ void UChargeWeaponLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPo
 
 void UChargeWeaponLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam_0, struct FPoseLink* ItemUpperBody_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemUpperBody");
+	class UFunction* Func = Class->GetFunction("ChargeWeaponLayerAnimBP_C", "ItemUpperBody");
 
 	Params::ChargeWeaponLayerAnimBP_C_ItemUpperBody Parms{};
 

@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void AWrapPreview_C::UpdateFloorVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "UpdateFloorVisibility");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "UpdateFloorVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void AWrapPreview_C::UpdateFloorVisibility()
 
 void AWrapPreview_C::SwitchErebusLighting(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "SwitchErebusLighting");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "SwitchErebusLighting");
 
 	Params::WrapPreview_C_SwitchErebusLighting Parms{};
 
@@ -55,10 +49,7 @@ void AWrapPreview_C::SwitchErebusLighting(bool Visibility)
 
 void AWrapPreview_C::UpdateLightingScale()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "UpdateLightingScale");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "UpdateLightingScale");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void AWrapPreview_C::UpdateLightingScale()
 
 void AWrapPreview_C::SetFloorEnabled(bool Floor_Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "SetFloorEnabled");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "SetFloorEnabled");
 
 	Params::WrapPreview_C_SetFloorEnabled Parms{};
 
@@ -91,10 +79,7 @@ void AWrapPreview_C::SetFloorEnabled(bool Floor_Enabled)
 
 void AWrapPreview_C::LightControl(bool Active)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "LightControl");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "LightControl");
 
 	Params::WrapPreview_C_LightControl Parms{};
 
@@ -111,10 +96,7 @@ void AWrapPreview_C::LightControl(bool Active)
 
 void AWrapPreview_C::SwitchPCLighting(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "SwitchPCLighting");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "SwitchPCLighting");
 
 	Params::WrapPreview_C_SwitchPCLighting Parms{};
 
@@ -131,10 +113,7 @@ void AWrapPreview_C::SwitchPCLighting(bool Visibility)
 
 void AWrapPreview_C::SwitchMobileLighting(bool NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "SwitchMobileLighting");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "SwitchMobileLighting");
 
 	Params::WrapPreview_C_SwitchMobileLighting Parms{};
 
@@ -149,10 +128,7 @@ void AWrapPreview_C::SwitchMobileLighting(bool NewParam)
 
 void AWrapPreview_C::HandleLightingScale()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "HandleLightingScale");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "HandleLightingScale");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -163,10 +139,7 @@ void AWrapPreview_C::HandleLightingScale()
 
 void AWrapPreview_C::UpdateSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "UpdateSettings");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "UpdateSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -179,10 +152,7 @@ void AWrapPreview_C::UpdateSettings()
 
 void AWrapPreview_C::OnSetFloorMaterial(class UMaterialInterface* InMaterialInstance_OnSetFloorMaterial)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "OnSetFloorMaterial");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "OnSetFloorMaterial");
 
 	Params::WrapPreview_C_OnSetFloorMaterial Parms{};
 
@@ -197,10 +167,7 @@ void AWrapPreview_C::OnSetFloorMaterial(class UMaterialInterface* InMaterialInst
 
 void AWrapPreview_C::OnPreviewVisualsSpawned()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "OnPreviewVisualsSpawned");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "OnPreviewVisualsSpawned");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -213,10 +180,7 @@ void AWrapPreview_C::OnPreviewVisualsSpawned()
 
 void AWrapPreview_C::ExecuteUbergraph_WrapPreview(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WrapPreview_C", "ExecuteUbergraph_WrapPreview");
+	class UFunction* Func = Class->GetFunction("WrapPreview_C", "ExecuteUbergraph_WrapPreview");
 
 	Params::WrapPreview_C_ExecuteUbergraph_WrapPreview Parms{};
 

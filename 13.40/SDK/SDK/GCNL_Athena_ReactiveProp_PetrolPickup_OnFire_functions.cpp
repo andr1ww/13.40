@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AGCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C::ExecuteUbergraph_GCNL_Athena_ReactiveProp_PetrolPickup_OnFire(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C", "ExecuteUbergraph_GCNL_Athena_ReactiveProp_PetrolPickup_OnFire");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C", "ExecuteUbergraph_GCNL_Athena_ReactiveProp_PetrolPickup_OnFire");
 
 	Params::GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C_ExecuteUbergraph_GCNL_Athena_ReactiveProp_PetrolPickup_OnFire Parms{};
 
@@ -41,10 +38,7 @@ void AGCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C::ExecuteUbergraph_GCNL_Athe
 
 void AGCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C::StartLoop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C", "StartLoop");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C", "StartLoop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AGCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C::StartLoop()
 
 void AGCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C::Loop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C", "Loop");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C", "Loop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -74,10 +65,7 @@ void AGCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C::Loop()
 
 void AGCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C::OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C", "OnLoopingStart");
+	class UFunction* Func = Class->GetFunction("GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C", "OnLoopingStart");
 
 	Params::GCNL_Athena_ReactiveProp_PetrolPickup_OnFire_C_OnLoopingStart Parms{};
 

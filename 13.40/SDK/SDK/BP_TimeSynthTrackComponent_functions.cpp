@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UBP_TimeSynthTrackComponent_C::ExecuteUbergraph_BP_TimeSynthTrackComponent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "ExecuteUbergraph_BP_TimeSynthTrackComponent");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "ExecuteUbergraph_BP_TimeSynthTrackComponent");
 
 	Params::BP_TimeSynthTrackComponent_C_ExecuteUbergraph_BP_TimeSynthTrackComponent Parms{};
 
@@ -41,10 +38,7 @@ void UBP_TimeSynthTrackComponent_C::ExecuteUbergraph_BP_TimeSynthTrackComponent(
 
 void UBP_TimeSynthTrackComponent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UBP_TimeSynthTrackComponent_C::ReceiveBeginPlay()
 
 void UBP_TimeSynthTrackComponent_C::SetTimeSynthController(class ABP_TimeSynthController_Base_C* TimeSynthController_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "SetTimeSynthController");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "SetTimeSynthController");
 
 	Params::BP_TimeSynthTrackComponent_C_SetTimeSynthController Parms{};
 
@@ -77,10 +68,7 @@ void UBP_TimeSynthTrackComponent_C::SetTimeSynthController(class ABP_TimeSynthCo
 
 void UBP_TimeSynthTrackComponent_C::QueueTrackStart(bool Is_First_Track)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "QueueTrackStart");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "QueueTrackStart");
 
 	Params::BP_TimeSynthTrackComponent_C_QueueTrackStart Parms{};
 
@@ -97,10 +85,7 @@ void UBP_TimeSynthTrackComponent_C::QueueTrackStart(bool Is_First_Track)
 
 void UBP_TimeSynthTrackComponent_C::QueueTrackStop(bool Play_Outro)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "QueueTrackStop");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "QueueTrackStop");
 
 	Params::BP_TimeSynthTrackComponent_C_QueueTrackStop Parms{};
 
@@ -115,10 +100,7 @@ void UBP_TimeSynthTrackComponent_C::QueueTrackStop(bool Play_Outro)
 
 void UBP_TimeSynthTrackComponent_C::LoopCurrentTrack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "LoopCurrentTrack");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "LoopCurrentTrack");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -132,10 +114,7 @@ void UBP_TimeSynthTrackComponent_C::LoopCurrentTrack()
 
 void UBP_TimeSynthTrackComponent_C::CalculateMaxClipDuration(TArray<struct FTimeSynth_TrackStemData>& Clips_0, int32* Duration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "CalculateMaxClipDuration");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "CalculateMaxClipDuration");
 
 	Params::BP_TimeSynthTrackComponent_C_CalculateMaxClipDuration Parms{};
 
@@ -159,10 +138,7 @@ void UBP_TimeSynthTrackComponent_C::CalculateMaxClipDuration(TArray<struct FTime
 
 void UBP_TimeSynthTrackComponent_C::HasTransitionForTrack(class FName TrackID_0, bool* Transition_Found, struct FTimeSynth_TransitionData* Transition_Data)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "HasTransitionForTrack");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "HasTransitionForTrack");
 
 	Params::BP_TimeSynthTrackComponent_C_HasTransitionForTrack Parms{};
 
@@ -187,10 +163,7 @@ void UBP_TimeSynthTrackComponent_C::HasTransitionForTrack(class FName TrackID_0,
 
 void UBP_TimeSynthTrackComponent_C::OnQuantizationBeat(ETimeSynthEventQuantization QuantizationType, int32 NumBars, float Beat)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "OnQuantizationBeat");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "OnQuantizationBeat");
 
 	Params::BP_TimeSynthTrackComponent_C_OnQuantizationBeat Parms{};
 
@@ -210,10 +183,7 @@ void UBP_TimeSynthTrackComponent_C::OnQuantizationBeat(ETimeSynthEventQuantizati
 
 void UBP_TimeSynthTrackComponent_C::CheckPlaystate(ETimeSynth_TrackPlayStates Is_In_Play_State, bool* Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "CheckPlaystate");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "CheckPlaystate");
 
 	Params::BP_TimeSynthTrackComponent_C_CheckPlaystate Parms{};
 
@@ -233,10 +203,7 @@ void UBP_TimeSynthTrackComponent_C::CheckPlaystate(ETimeSynth_TrackPlayStates Is
 
 void UBP_TimeSynthTrackComponent_C::SetPlaystate(ETimeSynth_TrackPlayStates Is_In_Play_State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "SetPlaystate");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "SetPlaystate");
 
 	Params::BP_TimeSynthTrackComponent_C_SetPlaystate Parms{};
 
@@ -255,10 +222,7 @@ void UBP_TimeSynthTrackComponent_C::SetPlaystate(ETimeSynth_TrackPlayStates Is_I
 
 void UBP_TimeSynthTrackComponent_C::OnQuantizationBar(ETimeSynthEventQuantization QuantizationType, int32 NumBars, float Beat)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "OnQuantizationBar");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "OnQuantizationBar");
 
 	Params::BP_TimeSynthTrackComponent_C_OnQuantizationBar Parms{};
 
@@ -277,10 +241,7 @@ void UBP_TimeSynthTrackComponent_C::OnQuantizationBar(ETimeSynthEventQuantizatio
 
 void UBP_TimeSynthTrackComponent_C::GetTimeSynthController(class ABP_TimeSynthController_Base_C** TimeSynthController_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetTimeSynthController");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetTimeSynthController");
 
 	Params::BP_TimeSynthTrackComponent_C_GetTimeSynthController Parms{};
 
@@ -298,10 +259,7 @@ void UBP_TimeSynthTrackComponent_C::GetTimeSynthController(class ABP_TimeSynthCo
 
 void UBP_TimeSynthTrackComponent_C::GetIsEnabled(bool* Enabled_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetIsEnabled");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetIsEnabled");
 
 	Params::BP_TimeSynthTrackComponent_C_GetIsEnabled Parms{};
 
@@ -319,10 +277,7 @@ void UBP_TimeSynthTrackComponent_C::GetIsEnabled(bool* Enabled_0)
 
 void UBP_TimeSynthTrackComponent_C::GetTrackID(class FName* TrackID_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetTrackID");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetTrackID");
 
 	Params::BP_TimeSynthTrackComponent_C_GetTrackID Parms{};
 
@@ -340,10 +295,7 @@ void UBP_TimeSynthTrackComponent_C::GetTrackID(class FName* TrackID_0)
 
 void UBP_TimeSynthTrackComponent_C::GetQuantizationSettings(struct FTimeSynthQuantizationSettings* QuantizationSettings_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetQuantizationSettings");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetQuantizationSettings");
 
 	Params::BP_TimeSynthTrackComponent_C_GetQuantizationSettings Parms{};
 
@@ -361,10 +313,7 @@ void UBP_TimeSynthTrackComponent_C::GetQuantizationSettings(struct FTimeSynthQua
 
 void UBP_TimeSynthTrackComponent_C::GetMaxClipDuration(int32* MaxClipDuration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetMaxClipDuration");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetMaxClipDuration");
 
 	Params::BP_TimeSynthTrackComponent_C_GetMaxClipDuration Parms{};
 
@@ -383,10 +332,7 @@ void UBP_TimeSynthTrackComponent_C::GetMaxClipDuration(int32* MaxClipDuration)
 
 void UBP_TimeSynthTrackComponent_C::FindMixState(class FName Name_0, int32* Array_Index)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "FindMixState");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "FindMixState");
 
 	Params::BP_TimeSynthTrackComponent_C_FindMixState Parms{};
 
@@ -407,10 +353,7 @@ void UBP_TimeSynthTrackComponent_C::FindMixState(class FName Name_0, int32* Arra
 
 void UBP_TimeSynthTrackComponent_C::SetMixStateVolume(class FName MixStateName, float Volume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "SetMixStateVolume");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "SetMixStateVolume");
 
 	Params::BP_TimeSynthTrackComponent_C_SetMixStateVolume Parms{};
 
@@ -428,10 +371,7 @@ void UBP_TimeSynthTrackComponent_C::SetMixStateVolume(class FName MixStateName, 
 
 void UBP_TimeSynthTrackComponent_C::GetPriority(float* Priority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetPriority");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetPriority");
 
 	Params::BP_TimeSynthTrackComponent_C_GetPriority Parms{};
 
@@ -450,10 +390,7 @@ void UBP_TimeSynthTrackComponent_C::GetPriority(float* Priority)
 
 void UBP_TimeSynthTrackComponent_C::GetMixStateIndexFromName(class FName Name_0, int32* Array_Index)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetMixStateIndexFromName");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "GetMixStateIndexFromName");
 
 	Params::BP_TimeSynthTrackComponent_C_GetMixStateIndexFromName Parms{};
 
@@ -474,10 +411,7 @@ void UBP_TimeSynthTrackComponent_C::GetMixStateIndexFromName(class FName Name_0,
 
 void UBP_TimeSynthTrackComponent_C::SetMixStateVolumeByIndex(int32 Index_0, float Volume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "SetMixStateVolumeByIndex");
+	class UFunction* Func = Class->GetFunction("BP_TimeSynthTrackComponent_C", "SetMixStateVolumeByIndex");
 
 	Params::BP_TimeSynthTrackComponent_C_SetMixStateVolumeByIndex Parms{};
 

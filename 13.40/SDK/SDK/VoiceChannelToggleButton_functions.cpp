@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UVoiceChannelToggleButton_C::ExecuteUbergraph_VoiceChannelToggleButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelToggleButton_C", "ExecuteUbergraph_VoiceChannelToggleButton");
+	class UFunction* Func = Class->GetFunction("VoiceChannelToggleButton_C", "ExecuteUbergraph_VoiceChannelToggleButton");
 
 	Params::VoiceChannelToggleButton_C_ExecuteUbergraph_VoiceChannelToggleButton Parms{};
 
@@ -43,10 +40,7 @@ void UVoiceChannelToggleButton_C::ExecuteUbergraph_VoiceChannelToggleButton(int3
 
 void UVoiceChannelToggleButton_C::OnVoiceChannelSelected(bool bIsPartyChat)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelToggleButton_C", "OnVoiceChannelSelected");
+	class UFunction* Func = Class->GetFunction("VoiceChannelToggleButton_C", "OnVoiceChannelSelected");
 
 	Params::VoiceChannelToggleButton_C_OnVoiceChannelSelected Parms{};
 
@@ -61,10 +55,7 @@ void UVoiceChannelToggleButton_C::OnVoiceChannelSelected(bool bIsPartyChat)
 
 void UVoiceChannelToggleButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelToggleButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("VoiceChannelToggleButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -75,10 +66,7 @@ void UVoiceChannelToggleButton_C::BP_OnUnhovered()
 
 void UVoiceChannelToggleButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("VoiceChannelToggleButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("VoiceChannelToggleButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

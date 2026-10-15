@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UF_MED_Black_Knight_AnimBP_C::ExecuteUbergraph_F_MED_Black_Knight_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "ExecuteUbergraph_F_MED_Black_Knight_AnimBP");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "ExecuteUbergraph_F_MED_Black_Knight_AnimBP");
 
 	Params::F_MED_Black_Knight_AnimBP_C_ExecuteUbergraph_F_MED_Black_Knight_AnimBP Parms{};
 
@@ -41,10 +38,7 @@ void UF_MED_Black_Knight_AnimBP_C::ExecuteUbergraph_F_MED_Black_Knight_AnimBP(in
 
 void UF_MED_Black_Knight_AnimBP_C::OnEndSkydiving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnEndSkydiving");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnEndSkydiving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UF_MED_Black_Knight_AnimBP_C::OnEndSkydiving()
 
 void UF_MED_Black_Knight_AnimBP_C::OnBeginSkydiving()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnBeginSkydiving");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnBeginSkydiving");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UF_MED_Black_Knight_AnimBP_C::OnBeginSkydiving()
 
 void UF_MED_Black_Knight_AnimBP_C::OnCharacterCustomizationLoaded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnCharacterCustomizationLoaded");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnCharacterCustomizationLoaded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UF_MED_Black_Knight_AnimBP_C::OnCharacterCustomizationLoaded()
 
 void UF_MED_Black_Knight_AnimBP_C::BlueprintInitializeAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "BlueprintInitializeAnimation");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "BlueprintInitializeAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void UF_MED_Black_Knight_AnimBP_C::BlueprintInitializeAnimation()
 
 void UF_MED_Black_Knight_AnimBP_C::OnEndPlayingEmote()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnEndPlayingEmote");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnEndPlayingEmote");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void UF_MED_Black_Knight_AnimBP_C::OnEndPlayingEmote()
 
 void UF_MED_Black_Knight_AnimBP_C::OnBeginPlayingEmote()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnBeginPlayingEmote");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnBeginPlayingEmote");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -125,10 +104,7 @@ void UF_MED_Black_Knight_AnimBP_C::OnBeginPlayingEmote()
 
 void UF_MED_Black_Knight_AnimBP_C::OnEndCrouching()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnEndCrouching");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnEndCrouching");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -139,10 +115,7 @@ void UF_MED_Black_Knight_AnimBP_C::OnEndCrouching()
 
 void UF_MED_Black_Knight_AnimBP_C::OnBeginCrouching()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnBeginCrouching");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "OnBeginCrouching");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,10 +128,7 @@ void UF_MED_Black_Knight_AnimBP_C::OnBeginCrouching()
 
 void UF_MED_Black_Knight_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("F_MED_Black_Knight_AnimBP_C", "AnimGraph");
 
 	Params::F_MED_Black_Knight_AnimBP_C_AnimGraph Parms{};
 

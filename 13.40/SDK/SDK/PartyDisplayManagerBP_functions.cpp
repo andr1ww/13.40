@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void APartyDisplayManagerBP_C::ResetPreScaleLocations()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResetPreScaleLocations");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResetPreScaleLocations");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void APartyDisplayManagerBP_C::ResetPreScaleLocations()
 
 void APartyDisplayManagerBP_C::RestoreTeleportMIDsInProgress(const class AFortPlayerPawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "RestoreTeleportMIDsInProgress");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "RestoreTeleportMIDsInProgress");
 
 	Params::PartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress Parms{};
 
@@ -57,10 +51,7 @@ void APartyDisplayManagerBP_C::RestoreTeleportMIDsInProgress(const class AFortPl
 
 void APartyDisplayManagerBP_C::HandlePartyMemberInProgressDisplayChanges(class AFortPlayerPawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "HandlePartyMemberInProgressDisplayChanges");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "HandlePartyMemberInProgressDisplayChanges");
 
 	Params::PartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges Parms{};
 
@@ -77,10 +68,7 @@ void APartyDisplayManagerBP_C::HandlePartyMemberInProgressDisplayChanges(class A
 
 void APartyDisplayManagerBP_C::PartyMemberInProgressCheck(class AFortPlayerPawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PartyMemberInProgressCheck");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "PartyMemberInProgressCheck");
 
 	Params::PartyDisplayManagerBP_C_PartyMemberInProgressCheck Parms{};
 
@@ -95,10 +83,7 @@ void APartyDisplayManagerBP_C::PartyMemberInProgressCheck(class AFortPlayerPawn*
 
 void APartyDisplayManagerBP_C::PostSetupPrefabVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PostSetupPrefabVisuals");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "PostSetupPrefabVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +96,7 @@ void APartyDisplayManagerBP_C::PostSetupPrefabVisuals()
 
 void APartyDisplayManagerBP_C::GetMeshForCurrentDisplayedItem(class UMeshComponent** OutDisplayedMesh_GetMeshForCurrentDisplayedItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetMeshForCurrentDisplayedItem");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetMeshForCurrentDisplayedItem");
 
 	Params::PartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem Parms{};
 
@@ -132,10 +114,7 @@ void APartyDisplayManagerBP_C::GetMeshForCurrentDisplayedItem(class UMeshCompone
 
 void APartyDisplayManagerBP_C::GetItemDefinitionToShow(class UFortItemDefinition** ItemDefinition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetItemDefinitionToShow");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetItemDefinitionToShow");
 
 	Params::PartyDisplayManagerBP_C_GetItemDefinitionToShow Parms{};
 
@@ -155,10 +134,7 @@ void APartyDisplayManagerBP_C::GetItemDefinitionToShow(class UFortItemDefinition
 
 void APartyDisplayManagerBP_C::SetUIOverrideVisuals(class UTexture2D* Large_Texture, class UFortItemDefinition* Item, EFortRarity Rarity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetUIOverrideVisuals");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetUIOverrideVisuals");
 
 	Params::PartyDisplayManagerBP_C_SetUIOverrideVisuals Parms{};
 
@@ -177,10 +153,7 @@ void APartyDisplayManagerBP_C::SetUIOverrideVisuals(class UTexture2D* Large_Text
 
 struct FTransform APartyDisplayManagerBP_C::GetWeaponPlacementTransform()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetWeaponPlacementTransform");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetWeaponPlacementTransform");
 
 	Params::PartyDisplayManagerBP_C_GetWeaponPlacementTransform Parms{};
 
@@ -195,10 +168,7 @@ struct FTransform APartyDisplayManagerBP_C::GetWeaponPlacementTransform()
 
 void APartyDisplayManagerBP_C::UpdatePreviewMeshTransforms()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "UpdatePreviewMeshTransforms");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "UpdatePreviewMeshTransforms");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -212,10 +182,7 @@ void APartyDisplayManagerBP_C::UpdatePreviewMeshTransforms()
 
 struct FTransform APartyDisplayManagerBP_C::GetItemPreviewOffset(class UFortItemDefinition* ItemDefinition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetItemPreviewOffset");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetItemPreviewOffset");
 
 	Params::PartyDisplayManagerBP_C_GetItemPreviewOffset Parms{};
 
@@ -234,10 +201,7 @@ struct FTransform APartyDisplayManagerBP_C::GetItemPreviewOffset(class UFortItem
 
 struct FTransform APartyDisplayManagerBP_C::GetPreviewMeshWorldTransform()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetPreviewMeshWorldTransform");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetPreviewMeshWorldTransform");
 
 	Params::PartyDisplayManagerBP_C_GetPreviewMeshWorldTransform Parms{};
 
@@ -254,10 +218,7 @@ struct FTransform APartyDisplayManagerBP_C::GetPreviewMeshWorldTransform()
 
 void APartyDisplayManagerBP_C::SetupStaticMeshVisuals(class UStaticMesh* NewMesh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupStaticMeshVisuals");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupStaticMeshVisuals");
 
 	Params::PartyDisplayManagerBP_C_SetupStaticMeshVisuals Parms{};
 
@@ -274,10 +235,7 @@ void APartyDisplayManagerBP_C::SetupStaticMeshVisuals(class UStaticMesh* NewMesh
 
 void APartyDisplayManagerBP_C::SetupSkeletalMeshVisuals(class USkeletalMesh* NewMesh)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupSkeletalMeshVisuals");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupSkeletalMeshVisuals");
 
 	Params::PartyDisplayManagerBP_C_SetupSkeletalMeshVisuals Parms{};
 
@@ -292,10 +250,7 @@ void APartyDisplayManagerBP_C::SetupSkeletalMeshVisuals(class USkeletalMesh* New
 
 void APartyDisplayManagerBP_C::ResetVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResetVisuals");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResetVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -306,10 +261,7 @@ void APartyDisplayManagerBP_C::ResetVisuals()
 
 void APartyDisplayManagerBP_C::ScaleAnimLevel__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimLevel__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimLevel__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -320,10 +272,7 @@ void APartyDisplayManagerBP_C::ScaleAnimLevel__FinishedFunc()
 
 void APartyDisplayManagerBP_C::ScaleAnimLevel__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimLevel__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimLevel__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -334,10 +283,7 @@ void APartyDisplayManagerBP_C::ScaleAnimLevel__UpdateFunc()
 
 void APartyDisplayManagerBP_C::ScaleAnimEvolve__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimEvolve__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimEvolve__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -348,10 +294,7 @@ void APartyDisplayManagerBP_C::ScaleAnimEvolve__FinishedFunc()
 
 void APartyDisplayManagerBP_C::ScaleAnimEvolve__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimEvolve__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimEvolve__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -362,10 +305,7 @@ void APartyDisplayManagerBP_C::ScaleAnimEvolve__UpdateFunc()
 
 void APartyDisplayManagerBP_C::HoloMatColorPulse__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "HoloMatColorPulse__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "HoloMatColorPulse__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -376,10 +316,7 @@ void APartyDisplayManagerBP_C::HoloMatColorPulse__FinishedFunc()
 
 void APartyDisplayManagerBP_C::HoloMatColorPulse__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "HoloMatColorPulse__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "HoloMatColorPulse__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -393,10 +330,7 @@ void APartyDisplayManagerBP_C::HoloMatColorPulse__UpdateFunc()
 
 void APartyDisplayManagerBP_C::Completed_01D864884864692DBB7035B0996A5437(class UFortItem* Item, const struct FGuid& RequestID)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "Completed_01D864884864692DBB7035B0996A5437");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "Completed_01D864884864692DBB7035B0996A5437");
 
 	Params::PartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437 Parms{};
 
@@ -415,10 +349,7 @@ void APartyDisplayManagerBP_C::Completed_01D864884864692DBB7035B0996A5437(class 
 
 void APartyDisplayManagerBP_C::ShowItem(const class UFortItem* ItemToView_ShowItem, const struct FGuid& RequestID_ShowItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ShowItem");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ShowItem");
 
 	Params::PartyDisplayManagerBP_C_ShowItem Parms{};
 
@@ -434,10 +365,7 @@ void APartyDisplayManagerBP_C::ShowItem(const class UFortItem* ItemToView_ShowIt
 
 void APartyDisplayManagerBP_C::PlayLevelUpEffect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PlayLevelUpEffect");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "PlayLevelUpEffect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -448,10 +376,7 @@ void APartyDisplayManagerBP_C::PlayLevelUpEffect()
 
 void APartyDisplayManagerBP_C::PlayEvolutionEffect()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PlayEvolutionEffect");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "PlayEvolutionEffect");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -462,10 +387,7 @@ void APartyDisplayManagerBP_C::PlayEvolutionEffect()
 
 void APartyDisplayManagerBP_C::CelebrateWithFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "CelebrateWithFX");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "CelebrateWithFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -476,10 +398,7 @@ void APartyDisplayManagerBP_C::CelebrateWithFX()
 
 void APartyDisplayManagerBP_C::PerformScaleMeshFX()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PerformScaleMeshFX");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "PerformScaleMeshFX");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -494,10 +413,7 @@ void APartyDisplayManagerBP_C::PerformScaleMeshFX()
 
 void APartyDisplayManagerBP_C::HandleLoadingAssetsForItemCompleted(class UFortItem* ItemWhoseAssetsWereLoaded_HandleLoadingAssetsForItemCompleted, const TArray<class UObject*>& LoadedAssets_HandleLoadingAssetsForItemCompleted, const struct FGuid& RequestID_HandleLoadingAssetsForItemCompleted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "HandleLoadingAssetsForItemCompleted");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "HandleLoadingAssetsForItemCompleted");
 
 	Params::PartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted Parms{};
 
@@ -516,10 +432,7 @@ void APartyDisplayManagerBP_C::HandleLoadingAssetsForItemCompleted(class UFortIt
 
 void APartyDisplayManagerBP_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ReceiveTick");
 
 	Params::PartyDisplayManagerBP_C_ReceiveTick Parms{};
 
@@ -536,10 +449,7 @@ void APartyDisplayManagerBP_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 
 void APartyDisplayManagerBP_C::Set_Character_Parts_Visibility(bool NewVisible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "Set Character Parts Visibility");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "Set Character Parts Visibility");
 
 	Params::PartyDisplayManagerBP_C_Set_Character_Parts_Visibility Parms{};
 
@@ -556,10 +466,7 @@ void APartyDisplayManagerBP_C::Set_Character_Parts_Visibility(bool NewVisible)
 
 void APartyDisplayManagerBP_C::CharacterCustomizationFinished(class AFortPlayerPawn* Pawn_CharacterCustomizationFinished)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "CharacterCustomizationFinished");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "CharacterCustomizationFinished");
 
 	Params::PartyDisplayManagerBP_C_CharacterCustomizationFinished Parms{};
 
@@ -574,10 +481,7 @@ void APartyDisplayManagerBP_C::CharacterCustomizationFinished(class AFortPlayerP
 
 void APartyDisplayManagerBP_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -590,10 +494,7 @@ void APartyDisplayManagerBP_C::ReceiveBeginPlay()
 
 void APartyDisplayManagerBP_C::OnPlayerPawnAddedToLobby(class AFortPlayerPawn* Pawn_OnPlayerPawnAddedToLobby)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "OnPlayerPawnAddedToLobby");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "OnPlayerPawnAddedToLobby");
 
 	Params::PartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby Parms{};
 
@@ -611,10 +512,7 @@ void APartyDisplayManagerBP_C::OnPlayerPawnAddedToLobby(class AFortPlayerPawn* P
 
 void APartyDisplayManagerBP_C::ResOutPawnFromLobby(class AFortPlayerPawn* Pawn_ResOutPawnFromLobby, int32 PartyIndex_ResOutPawnFromLobby)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResOutPawnFromLobby");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResOutPawnFromLobby");
 
 	Params::PartyDisplayManagerBP_C_ResOutPawnFromLobby Parms{};
 
@@ -630,10 +528,7 @@ void APartyDisplayManagerBP_C::ResOutPawnFromLobby(class AFortPlayerPawn* Pawn_R
 
 void APartyDisplayManagerBP_C::SetupPrefabVisuals()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupPrefabVisuals");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupPrefabVisuals");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -644,10 +539,7 @@ void APartyDisplayManagerBP_C::SetupPrefabVisuals()
 
 void APartyDisplayManagerBP_C::OnEmoteSetupFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "OnEmoteSetupFinished");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "OnEmoteSetupFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -658,10 +550,7 @@ void APartyDisplayManagerBP_C::OnEmoteSetupFinished()
 
 void APartyDisplayManagerBP_C::OnMeshLODStreamingFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "OnMeshLODStreamingFinished");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "OnMeshLODStreamingFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -674,10 +563,7 @@ void APartyDisplayManagerBP_C::OnMeshLODStreamingFinished()
 
 void APartyDisplayManagerBP_C::ExecuteUbergraph_PartyDisplayManagerBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ExecuteUbergraph_PartyDisplayManagerBP");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "ExecuteUbergraph_PartyDisplayManagerBP");
 
 	Params::PartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP Parms{};
 
@@ -694,10 +580,7 @@ void APartyDisplayManagerBP_C::ExecuteUbergraph_PartyDisplayManagerBP(int32 Entr
 
 class AActor* APartyDisplayManagerBP_C::GetPrefabActorForCurrentDisplayedItem() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetPrefabActorForCurrentDisplayedItem");
+	class UFunction* Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetPrefabActorForCurrentDisplayedItem");
 
 	Params::PartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem Parms{};
 

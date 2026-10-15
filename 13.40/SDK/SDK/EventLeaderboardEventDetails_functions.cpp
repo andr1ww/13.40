@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UEventLeaderboardEventDetails_C::ExecuteUbergraph_EventLeaderboardEventDetails(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEventDetails_C", "ExecuteUbergraph_EventLeaderboardEventDetails");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEventDetails_C", "ExecuteUbergraph_EventLeaderboardEventDetails");
 
 	Params::EventLeaderboardEventDetails_C_ExecuteUbergraph_EventLeaderboardEventDetails Parms{};
 
@@ -41,10 +38,7 @@ void UEventLeaderboardEventDetails_C::ExecuteUbergraph_EventLeaderboardEventDeta
 
 void UEventLeaderboardEventDetails_C::RefreshDataBP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardEventDetails_C", "RefreshDataBP");
+	class UFunction* Func = Class->GetFunction("EventLeaderboardEventDetails_C", "RefreshDataBP");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

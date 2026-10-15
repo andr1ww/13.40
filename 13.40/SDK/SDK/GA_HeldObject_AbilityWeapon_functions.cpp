@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_HeldObject_AbilityWeapon_C::ExecuteUbergraph_GA_HeldObject_AbilityWeapon(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_C", "ExecuteUbergraph_GA_HeldObject_AbilityWeapon");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_C", "ExecuteUbergraph_GA_HeldObject_AbilityWeapon");
 
 	Params::GA_HeldObject_AbilityWeapon_C_ExecuteUbergraph_GA_HeldObject_AbilityWeapon Parms{};
 
@@ -43,10 +40,7 @@ void UGA_HeldObject_AbilityWeapon_C::ExecuteUbergraph_GA_HeldObject_AbilityWeapo
 
 void UGA_HeldObject_AbilityWeapon_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_C", "K2_OnEndAbility");
 
 	Params::GA_HeldObject_AbilityWeapon_C_K2_OnEndAbility Parms{};
 
@@ -61,10 +55,7 @@ void UGA_HeldObject_AbilityWeapon_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_HeldObject_AbilityWeapon_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UGA_HeldObject_AbilityWeapon_C::K2_ActivateAbility()
 
 void UGA_HeldObject_AbilityWeapon_C::EventReceived_701E84994BAF28AF698A42AD84CCF06E(const struct FGameplayEventData& Payload)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_C", "EventReceived_701E84994BAF28AF698A42AD84CCF06E");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_AbilityWeapon_C", "EventReceived_701E84994BAF28AF698A42AD84CCF06E");
 
 	Params::GA_HeldObject_AbilityWeapon_C_EventReceived_701E84994BAF28AF698A42AD84CCF06E Parms{};
 

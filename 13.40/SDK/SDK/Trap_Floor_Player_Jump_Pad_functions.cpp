@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ATrap_Floor_Player_Jump_Pad_C::ExecuteUbergraph_Trap_Floor_Player_Jump_Pad(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "ExecuteUbergraph_Trap_Floor_Player_Jump_Pad");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "ExecuteUbergraph_Trap_Floor_Player_Jump_Pad");
 
 	Params::Trap_Floor_Player_Jump_Pad_C_ExecuteUbergraph_Trap_Floor_Player_Jump_Pad Parms{};
 
@@ -41,10 +38,7 @@ void ATrap_Floor_Player_Jump_Pad_C::ExecuteUbergraph_Trap_Floor_Player_Jump_Pad(
 
 void ATrap_Floor_Player_Jump_Pad_C::OnOutOfDurability()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "OnOutOfDurability");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "OnOutOfDurability");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void ATrap_Floor_Player_Jump_Pad_C::OnOutOfDurability()
 
 void ATrap_Floor_Player_Jump_Pad_C::GameplayCue_Abilities_Activation_Traps_ActivateTrap(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
 
 	Params::Trap_Floor_Player_Jump_Pad_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap Parms{};
 
@@ -80,10 +71,7 @@ void ATrap_Floor_Player_Jump_Pad_C::GameplayCue_Abilities_Activation_Traps_Activ
 
 void ATrap_Floor_Player_Jump_Pad_C::GameplayCue_Abilities_Activation_Traps_ReloadBegin(EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
 
 	Params::Trap_Floor_Player_Jump_Pad_C_GameplayCue_Abilities_Activation_Traps_ReloadBegin Parms{};
 
@@ -99,10 +87,7 @@ void ATrap_Floor_Player_Jump_Pad_C::GameplayCue_Abilities_Activation_Traps_Reloa
 
 void ATrap_Floor_Player_Jump_Pad_C::OnFinishedBuilding()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "OnFinishedBuilding");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "OnFinishedBuilding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +98,7 @@ void ATrap_Floor_Player_Jump_Pad_C::OnFinishedBuilding()
 
 void ATrap_Floor_Player_Jump_Pad_C::OnPlaced()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "OnPlaced");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "OnPlaced");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void ATrap_Floor_Player_Jump_Pad_C::OnPlaced()
 
 void ATrap_Floor_Player_Jump_Pad_C::OnReloadEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "OnReloadEnd");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "OnReloadEnd");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -144,10 +123,7 @@ void ATrap_Floor_Player_Jump_Pad_C::OnReloadEnd()
 
 struct FVector ATrap_Floor_Player_Jump_Pad_C::GetImpulseDirection(class AActor* LaunchingActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "GetImpulseDirection");
+	class UFunction* Func = Class->GetFunction("Trap_Floor_Player_Jump_Pad_C", "GetImpulseDirection");
 
 	Params::Trap_Floor_Player_Jump_Pad_C_GetImpulseDirection Parms{};
 

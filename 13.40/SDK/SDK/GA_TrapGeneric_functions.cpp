@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_TrapGeneric_C::ExecuteUbergraph_GA_TrapGeneric(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_TrapGeneric_C", "ExecuteUbergraph_GA_TrapGeneric");
+	class UFunction* Func = Class->GetFunction("GA_TrapGeneric_C", "ExecuteUbergraph_GA_TrapGeneric");
 
 	Params::GA_TrapGeneric_C_ExecuteUbergraph_GA_TrapGeneric Parms{};
 
@@ -41,10 +38,7 @@ void UGA_TrapGeneric_C::ExecuteUbergraph_GA_TrapGeneric(int32 EntryPoint)
 
 void UGA_TrapGeneric_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_TrapGeneric_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_TrapGeneric_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void UGA_TrapGeneric_C::K2_ActivateAbility()
 
 void UGA_TrapGeneric_C::Targeted_EFEC611E4D988CAA3867F28EE35771B3(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_TrapGeneric_C", "Targeted_EFEC611E4D988CAA3867F28EE35771B3");
+	class UFunction* Func = Class->GetFunction("GA_TrapGeneric_C", "Targeted_EFEC611E4D988CAA3867F28EE35771B3");
 
 	Params::GA_TrapGeneric_C_Targeted_EFEC611E4D988CAA3867F28EE35771B3 Parms{};
 
@@ -80,10 +71,7 @@ void UGA_TrapGeneric_C::Targeted_EFEC611E4D988CAA3867F28EE35771B3(const struct F
 
 void UGA_TrapGeneric_C::Cancelled_EFEC611E4D988CAA3867F28EE35771B3(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_TrapGeneric_C", "Cancelled_EFEC611E4D988CAA3867F28EE35771B3");
+	class UFunction* Func = Class->GetFunction("GA_TrapGeneric_C", "Cancelled_EFEC611E4D988CAA3867F28EE35771B3");
 
 	Params::GA_TrapGeneric_C_Cancelled_EFEC611E4D988CAA3867F28EE35771B3 Parms{};
 

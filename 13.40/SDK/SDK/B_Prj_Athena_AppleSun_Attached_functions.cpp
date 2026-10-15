@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Athena_AppleSun_Attached_C::ExecuteUbergraph_B_Prj_Athena_AppleSun_Attached(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "ExecuteUbergraph_B_Prj_Athena_AppleSun_Attached");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "ExecuteUbergraph_B_Prj_Athena_AppleSun_Attached");
 
 	Params::B_Prj_Athena_AppleSun_Attached_C_ExecuteUbergraph_B_Prj_Athena_AppleSun_Attached Parms{};
 
@@ -45,10 +42,7 @@ void AB_Prj_Athena_AppleSun_Attached_C::ExecuteUbergraph_B_Prj_Athena_AppleSun_A
 
 void AB_Prj_Athena_AppleSun_Attached_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent_0, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::B_Prj_Athena_AppleSun_Attached_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -65,10 +59,7 @@ void AB_Prj_Athena_AppleSun_Attached_C::BndEvt__WaterInteractionComponent_K2Node
 
 void AB_Prj_Athena_AppleSun_Attached_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,10 +70,7 @@ void AB_Prj_Athena_AppleSun_Attached_C::ReceiveBeginPlay()
 
 void AB_Prj_Athena_AppleSun_Attached_C::DistanceFromPlayer__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "DistanceFromPlayer__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "DistanceFromPlayer__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,10 +81,7 @@ void AB_Prj_Athena_AppleSun_Attached_C::DistanceFromPlayer__UpdateFunc()
 
 void AB_Prj_Athena_AppleSun_Attached_C::DistanceFromPlayer__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "DistanceFromPlayer__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("B_Prj_Athena_AppleSun_Attached_C", "DistanceFromPlayer__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

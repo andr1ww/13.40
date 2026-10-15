@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UAlterationsWidget_C::Reset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "Reset");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "Reset");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void UAlterationsWidget_C::Reset()
 
 void UAlterationsWidget_C::CreateAnimations(bool IntroAnims)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "CreateAnimations");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "CreateAnimations");
 
 	Params::AlterationsWidget_C_CreateAnimations Parms{};
 
@@ -55,10 +49,7 @@ void UAlterationsWidget_C::CreateAnimations(bool IntroAnims)
 
 void UAlterationsWidget_C::IntroAnim()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "IntroAnim");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "IntroAnim");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void UAlterationsWidget_C::IntroAnim()
 
 void UAlterationsWidget_C::CenterWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "CenterWidget");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "CenterWidget");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void UAlterationsWidget_C::CenterWidget()
 
 void UAlterationsWidget_C::SetupBorders()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "SetupBorders");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "SetupBorders");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void UAlterationsWidget_C::SetupBorders()
 
 void UAlterationsWidget_C::TriggerModificationAnim(int32 ModifiedSlotIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "TriggerModificationAnim");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "TriggerModificationAnim");
 
 	Params::AlterationsWidget_C_TriggerModificationAnim Parms{};
 
@@ -120,10 +102,7 @@ void UAlterationsWidget_C::TriggerModificationAnim(int32 ModifiedSlotIndex)
 
 void UAlterationsWidget_C::SetupAlteration(class UCommonUserWidget* Alteration, class UFortAlterationInfo* AlterationInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "SetupAlteration");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "SetupAlteration");
 
 	Params::AlterationsWidget_C_SetupAlteration Parms{};
 
@@ -141,10 +120,7 @@ void UAlterationsWidget_C::SetupAlteration(class UCommonUserWidget* Alteration, 
 
 class UCommonUserWidget* UAlterationsWidget_C::CreateAlterationWidget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "CreateAlterationWidget");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "CreateAlterationWidget");
 
 	Params::AlterationsWidget_C_CreateAlterationWidget Parms{};
 
@@ -161,10 +137,7 @@ class UCommonUserWidget* UAlterationsWidget_C::CreateAlterationWidget()
 
 void UAlterationsWidget_C::GenerateAlteration(class UFortAlterationInfo* AlterationInfo)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "GenerateAlteration");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "GenerateAlteration");
 
 	Params::AlterationsWidget_C_GenerateAlteration Parms{};
 
@@ -182,10 +155,7 @@ void UAlterationsWidget_C::GenerateAlteration(class UFortAlterationInfo* Alterat
 
 void UAlterationsWidget_C::AddAlterationToVerticalbox(class UCommonUserWidget* Alteration, bool IsUnlocked)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "AddAlterationToVerticalbox");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "AddAlterationToVerticalbox");
 
 	Params::AlterationsWidget_C_AddAlterationToVerticalbox Parms{};
 
@@ -201,10 +171,7 @@ void UAlterationsWidget_C::AddAlterationToVerticalbox(class UCommonUserWidget* A
 
 void UAlterationsWidget_C::UpdatePerksMessage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "UpdatePerksMessage");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "UpdatePerksMessage");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -215,10 +182,7 @@ void UAlterationsWidget_C::UpdatePerksMessage()
 
 void UAlterationsWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -232,10 +196,7 @@ void UAlterationsWidget_C::Construct()
 
 void UAlterationsWidget_C::OnItemChanged(bool bIntroAlterations_OnItemChanged, bool bWasFavoritedChanged_OnItemChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "OnItemChanged");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "OnItemChanged");
 
 	Params::AlterationsWidget_C_OnItemChanged Parms{};
 
@@ -251,10 +212,7 @@ void UAlterationsWidget_C::OnItemChanged(bool bIntroAlterations_OnItemChanged, b
 
 void UAlterationsWidget_C::OnItemToCompareWithChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "OnItemToCompareWithChanged");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "OnItemToCompareWithChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +223,7 @@ void UAlterationsWidget_C::OnItemToCompareWithChanged()
 
 void UAlterationsWidget_C::OnStateChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "OnStateChanged");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "OnStateChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -281,10 +236,7 @@ void UAlterationsWidget_C::OnStateChanged()
 
 void UAlterationsWidget_C::OnGenerateAlteration(class UFortAlterationInfo* AlterationInfo_OnGenerateAlteration)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "OnGenerateAlteration");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "OnGenerateAlteration");
 
 	Params::AlterationsWidget_C_OnGenerateAlteration Parms{};
 
@@ -299,10 +251,7 @@ void UAlterationsWidget_C::OnGenerateAlteration(class UFortAlterationInfo* Alter
 
 void UAlterationsWidget_C::OnFocusFirstItem()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "OnFocusFirstItem");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "OnFocusFirstItem");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -315,10 +264,7 @@ void UAlterationsWidget_C::OnFocusFirstItem()
 
 void UAlterationsWidget_C::OnAlterationSlotIndexModifiedBP(int32 ModifiedIndex_OnAlterationSlotIndexModifiedBP)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "OnAlterationSlotIndexModifiedBP");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "OnAlterationSlotIndexModifiedBP");
 
 	Params::AlterationsWidget_C_OnAlterationSlotIndexModifiedBP Parms{};
 
@@ -333,10 +279,7 @@ void UAlterationsWidget_C::OnAlterationSlotIndexModifiedBP(int32 ModifiedIndex_O
 
 void UAlterationsWidget_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -349,10 +292,7 @@ void UAlterationsWidget_C::Destruct()
 
 void UAlterationsWidget_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "PreConstruct");
 
 	Params::AlterationsWidget_C_PreConstruct Parms{};
 
@@ -369,10 +309,7 @@ void UAlterationsWidget_C::PreConstruct(bool IsDesignTime_PreConstruct)
 
 void UAlterationsWidget_C::ExecuteUbergraph_AlterationsWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "ExecuteUbergraph_AlterationsWidget");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "ExecuteUbergraph_AlterationsWidget");
 
 	Params::AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget Parms{};
 
@@ -389,10 +326,7 @@ void UAlterationsWidget_C::ExecuteUbergraph_AlterationsWidget(int32 EntryPoint)
 
 void UAlterationsWidget_C::ClearAndInitialize(bool IntroAlterations)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "ClearAndInitialize");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "ClearAndInitialize");
 
 	Params::AlterationsWidget_C_ClearAndInitialize Parms{};
 
@@ -407,10 +341,7 @@ void UAlterationsWidget_C::ClearAndInitialize(bool IntroAlterations)
 
 void UAlterationsWidget_C::Clear()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "Clear");
+	class UFunction* Func = Class->GetFunction("AlterationsWidget_C", "Clear");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

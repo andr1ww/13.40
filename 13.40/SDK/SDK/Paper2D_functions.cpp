@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 int32 UPaperFlipbook::GetKeyFrameIndexAtTime(float Time, bool bClampToEnds) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetKeyFrameIndexAtTime");
+	class UFunction* Func = Class->GetFunction("PaperFlipbook", "GetKeyFrameIndexAtTime");
 
 	Params::PaperFlipbook_GetKeyFrameIndexAtTime Parms{};
 
@@ -53,10 +50,7 @@ int32 UPaperFlipbook::GetKeyFrameIndexAtTime(float Time, bool bClampToEnds) cons
 
 int32 UPaperFlipbook::GetNumFrames() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetNumFrames");
+	class UFunction* Func = Class->GetFunction("PaperFlipbook", "GetNumFrames");
 
 	Params::PaperFlipbook_GetNumFrames Parms{};
 
@@ -78,10 +72,7 @@ int32 UPaperFlipbook::GetNumFrames() const
 
 int32 UPaperFlipbook::GetNumKeyFrames() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetNumKeyFrames");
+	class UFunction* Func = Class->GetFunction("PaperFlipbook", "GetNumKeyFrames");
 
 	Params::PaperFlipbook_GetNumKeyFrames Parms{};
 
@@ -104,10 +95,7 @@ int32 UPaperFlipbook::GetNumKeyFrames() const
 
 class UPaperSprite* UPaperFlipbook::GetSpriteAtFrame(int32 FrameIndex) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtFrame");
+	class UFunction* Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtFrame");
 
 	Params::PaperFlipbook_GetSpriteAtFrame Parms{};
 
@@ -133,10 +121,7 @@ class UPaperSprite* UPaperFlipbook::GetSpriteAtFrame(int32 FrameIndex) const
 
 class UPaperSprite* UPaperFlipbook::GetSpriteAtTime(float Time, bool bClampToEnds) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtTime");
+	class UFunction* Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtTime");
 
 	Params::PaperFlipbook_GetSpriteAtTime Parms{};
 
@@ -161,10 +146,7 @@ class UPaperSprite* UPaperFlipbook::GetSpriteAtTime(float Time, bool bClampToEnd
 
 float UPaperFlipbook::GetTotalDuration() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "GetTotalDuration");
+	class UFunction* Func = Class->GetFunction("PaperFlipbook", "GetTotalDuration");
 
 	Params::PaperFlipbook_GetTotalDuration Parms{};
 
@@ -187,10 +169,7 @@ float UPaperFlipbook::GetTotalDuration() const
 
 bool UPaperFlipbook::IsValidKeyFrameIndex(int32 Index_0) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbook", "IsValidKeyFrameIndex");
+	class UFunction* Func = Class->GetFunction("PaperFlipbook", "IsValidKeyFrameIndex");
 
 	Params::PaperFlipbook_IsValidKeyFrameIndex Parms{};
 
@@ -214,10 +193,7 @@ bool UPaperFlipbook::IsValidKeyFrameIndex(int32 Index_0) const
 
 class UPaperFlipbook* UPaperFlipbookComponent::GetFlipbook()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbook");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbook");
 
 	Params::PaperFlipbookComponent_GetFlipbook Parms{};
 
@@ -239,10 +215,7 @@ class UPaperFlipbook* UPaperFlipbookComponent::GetFlipbook()
 
 void UPaperFlipbookComponent::OnRep_SourceFlipbook(class UPaperFlipbook* OldFlipbook)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "OnRep_SourceFlipbook");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "OnRep_SourceFlipbook");
 
 	Params::PaperFlipbookComponent_OnRep_SourceFlipbook Parms{};
 
@@ -262,10 +235,7 @@ void UPaperFlipbookComponent::OnRep_SourceFlipbook(class UPaperFlipbook* OldFlip
 
 void UPaperFlipbookComponent::Play()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "Play");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "Play");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -281,10 +251,7 @@ void UPaperFlipbookComponent::Play()
 
 void UPaperFlipbookComponent::PlayFromStart()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "PlayFromStart");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "PlayFromStart");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -300,10 +267,7 @@ void UPaperFlipbookComponent::PlayFromStart()
 
 void UPaperFlipbookComponent::Reverse()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "Reverse");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "Reverse");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -319,10 +283,7 @@ void UPaperFlipbookComponent::Reverse()
 
 void UPaperFlipbookComponent::ReverseFromEnd()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "ReverseFromEnd");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "ReverseFromEnd");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -341,10 +302,7 @@ void UPaperFlipbookComponent::ReverseFromEnd()
 
 bool UPaperFlipbookComponent::SetFlipbook(class UPaperFlipbook* NewFlipbook)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "SetFlipbook");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "SetFlipbook");
 
 	Params::PaperFlipbookComponent_SetFlipbook Parms{};
 
@@ -368,10 +326,7 @@ bool UPaperFlipbookComponent::SetFlipbook(class UPaperFlipbook* NewFlipbook)
 
 void UPaperFlipbookComponent::SetLooping(bool bNewLooping)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "SetLooping");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "SetLooping");
 
 	Params::PaperFlipbookComponent_SetLooping Parms{};
 
@@ -393,10 +348,7 @@ void UPaperFlipbookComponent::SetLooping(bool bNewLooping)
 
 void UPaperFlipbookComponent::SetNewTime(float NewTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "SetNewTime");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "SetNewTime");
 
 	Params::PaperFlipbookComponent_SetNewTime Parms{};
 
@@ -419,10 +371,7 @@ void UPaperFlipbookComponent::SetNewTime(float NewTime)
 
 void UPaperFlipbookComponent::SetPlaybackPosition(float NewPosition, bool bFireEvents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "SetPlaybackPosition");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "SetPlaybackPosition");
 
 	Params::PaperFlipbookComponent_SetPlaybackPosition Parms{};
 
@@ -446,10 +395,7 @@ void UPaperFlipbookComponent::SetPlaybackPosition(float NewPosition, bool bFireE
 
 void UPaperFlipbookComponent::SetPlaybackPositionInFrames(int32 NewFramePosition, bool bFireEvents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "SetPlaybackPositionInFrames");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "SetPlaybackPositionInFrames");
 
 	Params::PaperFlipbookComponent_SetPlaybackPositionInFrames Parms{};
 
@@ -472,10 +418,7 @@ void UPaperFlipbookComponent::SetPlaybackPositionInFrames(int32 NewFramePosition
 
 void UPaperFlipbookComponent::SetPlayRate(float NewRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "SetPlayRate");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "SetPlayRate");
 
 	Params::PaperFlipbookComponent_SetPlayRate Parms{};
 
@@ -497,10 +440,7 @@ void UPaperFlipbookComponent::SetPlayRate(float NewRate)
 
 void UPaperFlipbookComponent::SetSpriteColor(const struct FLinearColor& NewColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "SetSpriteColor");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "SetSpriteColor");
 
 	Params::PaperFlipbookComponent_SetSpriteColor Parms{};
 
@@ -520,10 +460,7 @@ void UPaperFlipbookComponent::SetSpriteColor(const struct FLinearColor& NewColor
 
 void UPaperFlipbookComponent::Stop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "Stop");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "Stop");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -541,10 +478,7 @@ void UPaperFlipbookComponent::Stop()
 
 float UPaperFlipbookComponent::GetFlipbookFramerate() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookFramerate");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookFramerate");
 
 	Params::PaperFlipbookComponent_GetFlipbookFramerate Parms{};
 
@@ -566,10 +500,7 @@ float UPaperFlipbookComponent::GetFlipbookFramerate() const
 
 float UPaperFlipbookComponent::GetFlipbookLength() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookLength");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookLength");
 
 	Params::PaperFlipbookComponent_GetFlipbookLength Parms{};
 
@@ -591,10 +522,7 @@ float UPaperFlipbookComponent::GetFlipbookLength() const
 
 int32 UPaperFlipbookComponent::GetFlipbookLengthInFrames() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookLengthInFrames");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookLengthInFrames");
 
 	Params::PaperFlipbookComponent_GetFlipbookLengthInFrames Parms{};
 
@@ -616,10 +544,7 @@ int32 UPaperFlipbookComponent::GetFlipbookLengthInFrames() const
 
 float UPaperFlipbookComponent::GetPlaybackPosition() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "GetPlaybackPosition");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "GetPlaybackPosition");
 
 	Params::PaperFlipbookComponent_GetPlaybackPosition Parms{};
 
@@ -641,10 +566,7 @@ float UPaperFlipbookComponent::GetPlaybackPosition() const
 
 int32 UPaperFlipbookComponent::GetPlaybackPositionInFrames() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "GetPlaybackPositionInFrames");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "GetPlaybackPositionInFrames");
 
 	Params::PaperFlipbookComponent_GetPlaybackPositionInFrames Parms{};
 
@@ -666,10 +588,7 @@ int32 UPaperFlipbookComponent::GetPlaybackPositionInFrames() const
 
 float UPaperFlipbookComponent::GetPlayRate() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "GetPlayRate");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "GetPlayRate");
 
 	Params::PaperFlipbookComponent_GetPlayRate Parms{};
 
@@ -691,10 +610,7 @@ float UPaperFlipbookComponent::GetPlayRate() const
 
 bool UPaperFlipbookComponent::IsLooping() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "IsLooping");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "IsLooping");
 
 	Params::PaperFlipbookComponent_IsLooping Parms{};
 
@@ -716,10 +632,7 @@ bool UPaperFlipbookComponent::IsLooping() const
 
 bool UPaperFlipbookComponent::IsPlaying() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "IsPlaying");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "IsPlaying");
 
 	Params::PaperFlipbookComponent_IsPlaying Parms{};
 
@@ -741,10 +654,7 @@ bool UPaperFlipbookComponent::IsPlaying() const
 
 bool UPaperFlipbookComponent::IsReversing() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperFlipbookComponent", "IsReversing");
+	class UFunction* Func = Class->GetFunction("PaperFlipbookComponent", "IsReversing");
 
 	Params::PaperFlipbookComponent_IsReversing Parms{};
 
@@ -770,10 +680,7 @@ bool UPaperFlipbookComponent::IsReversing() const
 
 int32 UPaperGroupedSpriteComponent::AddInstance(const struct FTransform& Transform, class UPaperSprite* Sprite, bool bWorldSpace, const struct FLinearColor& Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperGroupedSpriteComponent", "AddInstance");
+	class UFunction* Func = Class->GetFunction("PaperGroupedSpriteComponent", "AddInstance");
 
 	Params::PaperGroupedSpriteComponent_AddInstance Parms{};
 
@@ -798,10 +705,7 @@ int32 UPaperGroupedSpriteComponent::AddInstance(const struct FTransform& Transfo
 
 void UPaperGroupedSpriteComponent::ClearInstances()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperGroupedSpriteComponent", "ClearInstances");
+	class UFunction* Func = Class->GetFunction("PaperGroupedSpriteComponent", "ClearInstances");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -820,10 +724,7 @@ void UPaperGroupedSpriteComponent::ClearInstances()
 
 bool UPaperGroupedSpriteComponent::RemoveInstance(int32 InstanceIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperGroupedSpriteComponent", "RemoveInstance");
+	class UFunction* Func = Class->GetFunction("PaperGroupedSpriteComponent", "RemoveInstance");
 
 	Params::PaperGroupedSpriteComponent_RemoveInstance Parms{};
 
@@ -847,10 +748,7 @@ bool UPaperGroupedSpriteComponent::RemoveInstance(int32 InstanceIndex)
 
 void UPaperGroupedSpriteComponent::SortInstancesAlongAxis(const struct FVector& WorldSpaceSortAxis)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperGroupedSpriteComponent", "SortInstancesAlongAxis");
+	class UFunction* Func = Class->GetFunction("PaperGroupedSpriteComponent", "SortInstancesAlongAxis");
 
 	Params::PaperGroupedSpriteComponent_SortInstancesAlongAxis Parms{};
 
@@ -875,10 +773,7 @@ void UPaperGroupedSpriteComponent::SortInstancesAlongAxis(const struct FVector& 
 
 bool UPaperGroupedSpriteComponent::UpdateInstanceColor(int32 InstanceIndex, const struct FLinearColor& NewInstanceColor, bool bMarkRenderStateDirty)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperGroupedSpriteComponent", "UpdateInstanceColor");
+	class UFunction* Func = Class->GetFunction("PaperGroupedSpriteComponent", "UpdateInstanceColor");
 
 	Params::PaperGroupedSpriteComponent_UpdateInstanceColor Parms{};
 
@@ -909,10 +804,7 @@ bool UPaperGroupedSpriteComponent::UpdateInstanceColor(int32 InstanceIndex, cons
 
 bool UPaperGroupedSpriteComponent::UpdateInstanceTransform(int32 InstanceIndex, const struct FTransform& NewInstanceTransform, bool bWorldSpace, bool bMarkRenderStateDirty, bool bTeleport)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperGroupedSpriteComponent", "UpdateInstanceTransform");
+	class UFunction* Func = Class->GetFunction("PaperGroupedSpriteComponent", "UpdateInstanceTransform");
 
 	Params::PaperGroupedSpriteComponent_UpdateInstanceTransform Parms{};
 
@@ -940,10 +832,7 @@ bool UPaperGroupedSpriteComponent::UpdateInstanceTransform(int32 InstanceIndex, 
 
 int32 UPaperGroupedSpriteComponent::GetInstanceCount() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperGroupedSpriteComponent", "GetInstanceCount");
+	class UFunction* Func = Class->GetFunction("PaperGroupedSpriteComponent", "GetInstanceCount");
 
 	Params::PaperGroupedSpriteComponent_GetInstanceCount Parms{};
 
@@ -968,10 +857,7 @@ int32 UPaperGroupedSpriteComponent::GetInstanceCount() const
 
 bool UPaperGroupedSpriteComponent::GetInstanceTransform(int32 InstanceIndex, struct FTransform* OutInstanceTransform, bool bWorldSpace) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperGroupedSpriteComponent", "GetInstanceTransform");
+	class UFunction* Func = Class->GetFunction("PaperGroupedSpriteComponent", "GetInstanceTransform");
 
 	Params::PaperGroupedSpriteComponent_GetInstanceTransform Parms{};
 
@@ -1002,10 +888,7 @@ bool UPaperGroupedSpriteComponent::GetInstanceTransform(int32 InstanceIndex, str
 
 struct FSlateBrush UPaperSpriteBlueprintLibrary::MakeBrushFromSprite(class UPaperSprite* Sprite, int32 Width, int32 Height)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("PaperSpriteBlueprintLibrary", "MakeBrushFromSprite");
+	class UFunction* Func = StaticClass()->GetFunction("PaperSpriteBlueprintLibrary", "MakeBrushFromSprite");
 
 	Params::PaperSpriteBlueprintLibrary_MakeBrushFromSprite Parms{};
 
@@ -1031,10 +914,7 @@ struct FSlateBrush UPaperSpriteBlueprintLibrary::MakeBrushFromSprite(class UPape
 
 class UPaperSprite* UPaperSpriteComponent::GetSprite()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperSpriteComponent", "GetSprite");
+	class UFunction* Func = Class->GetFunction("PaperSpriteComponent", "GetSprite");
 
 	Params::PaperSpriteComponent_GetSprite Parms{};
 
@@ -1057,10 +937,7 @@ class UPaperSprite* UPaperSpriteComponent::GetSprite()
 
 bool UPaperSpriteComponent::SetSprite(class UPaperSprite* NewSprite)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperSpriteComponent", "SetSprite");
+	class UFunction* Func = Class->GetFunction("PaperSpriteComponent", "SetSprite");
 
 	Params::PaperSpriteComponent_SetSprite Parms{};
 
@@ -1084,10 +961,7 @@ bool UPaperSpriteComponent::SetSprite(class UPaperSprite* NewSprite)
 
 void UPaperSpriteComponent::SetSpriteColor(const struct FLinearColor& NewColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperSpriteComponent", "SetSpriteColor");
+	class UFunction* Func = Class->GetFunction("PaperSpriteComponent", "SetSpriteColor");
 
 	Params::PaperSpriteComponent_SetSpriteColor Parms{};
 
@@ -1109,10 +983,7 @@ void UPaperSpriteComponent::SetSpriteColor(const struct FLinearColor& NewColor)
 
 void UPaperTerrainComponent::SetTerrainColor(const struct FLinearColor& NewColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTerrainComponent", "SetTerrainColor");
+	class UFunction* Func = Class->GetFunction("PaperTerrainComponent", "SetTerrainColor");
 
 	Params::PaperTerrainComponent_SetTerrainColor Parms{};
 
@@ -1134,10 +1005,7 @@ void UPaperTerrainComponent::SetTerrainColor(const struct FLinearColor& NewColor
 
 class UPaperTileLayer* UPaperTileMapComponent::AddNewLayer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "AddNewLayer");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "AddNewLayer");
 
 	Params::PaperTileMapComponent_AddNewLayer Parms{};
 
@@ -1164,10 +1032,7 @@ class UPaperTileLayer* UPaperTileMapComponent::AddNewLayer()
 
 void UPaperTileMapComponent::CreateNewTileMap(int32 MapWidth_0, int32 MapHeight_0, int32 TileWidth_0, int32 TileHeight_0, float PixelsPerUnrealUnit, bool bCreateLayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "CreateNewTileMap");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "CreateNewTileMap");
 
 	Params::PaperTileMapComponent_CreateNewTileMap Parms{};
 
@@ -1196,10 +1061,7 @@ void UPaperTileMapComponent::CreateNewTileMap(int32 MapWidth_0, int32 MapHeight_
 
 void UPaperTileMapComponent::GetMapSize(int32* MapWidth_0, int32* MapHeight_0, int32* NumLayers)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "GetMapSize");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "GetMapSize");
 
 	Params::PaperTileMapComponent_GetMapSize Parms{};
 
@@ -1226,10 +1088,7 @@ void UPaperTileMapComponent::GetMapSize(int32* MapWidth_0, int32* MapHeight_0, i
 
 void UPaperTileMapComponent::MakeTileMapEditable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "MakeTileMapEditable");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "MakeTileMapEditable");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1245,10 +1104,7 @@ void UPaperTileMapComponent::MakeTileMapEditable()
 
 void UPaperTileMapComponent::RebuildCollision()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "RebuildCollision");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "RebuildCollision");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -1267,10 +1123,7 @@ void UPaperTileMapComponent::RebuildCollision()
 
 void UPaperTileMapComponent::ResizeMap(int32 NewWidthInTiles, int32 NewHeightInTiles)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "ResizeMap");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "ResizeMap");
 
 	Params::PaperTileMapComponent_ResizeMap Parms{};
 
@@ -1294,10 +1147,7 @@ void UPaperTileMapComponent::ResizeMap(int32 NewWidthInTiles, int32 NewHeightInT
 
 void UPaperTileMapComponent::SetDefaultCollisionThickness(float Thickness, bool bRebuildCollision)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "SetDefaultCollisionThickness");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "SetDefaultCollisionThickness");
 
 	Params::PaperTileMapComponent_SetDefaultCollisionThickness Parms{};
 
@@ -1326,10 +1176,7 @@ void UPaperTileMapComponent::SetDefaultCollisionThickness(float Thickness, bool 
 
 void UPaperTileMapComponent::SetLayerCollision(int32 Layer, bool bHasCollision, bool bOverrideThickness, float CustomThickness, bool bOverrideOffset, float CustomOffset, bool bRebuildCollision)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "SetLayerCollision");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "SetLayerCollision");
 
 	Params::PaperTileMapComponent_SetLayerCollision Parms{};
 
@@ -1358,10 +1205,7 @@ void UPaperTileMapComponent::SetLayerCollision(int32 Layer, bool bHasCollision, 
 
 void UPaperTileMapComponent::SetLayerColor(const struct FLinearColor& NewColor, int32 Layer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "SetLayerColor");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "SetLayerColor");
 
 	Params::PaperTileMapComponent_SetLayerColor Parms{};
 
@@ -1387,10 +1231,7 @@ void UPaperTileMapComponent::SetLayerColor(const struct FLinearColor& NewColor, 
 
 void UPaperTileMapComponent::SetTile(int32 X, int32 Y, int32 Layer, const struct FPaperTileInfo& NewValue)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "SetTile");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "SetTile");
 
 	Params::PaperTileMapComponent_SetTile Parms{};
 
@@ -1416,10 +1257,7 @@ void UPaperTileMapComponent::SetTile(int32 X, int32 Y, int32 Layer, const struct
 
 bool UPaperTileMapComponent::SetTileMap(class UPaperTileMap* NewTileMap)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "SetTileMap");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "SetTileMap");
 
 	Params::PaperTileMapComponent_SetTileMap Parms{};
 
@@ -1443,10 +1281,7 @@ bool UPaperTileMapComponent::SetTileMap(class UPaperTileMap* NewTileMap)
 
 void UPaperTileMapComponent::SetTileMapColor(const struct FLinearColor& NewColor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "SetTileMapColor");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "SetTileMapColor");
 
 	Params::PaperTileMapComponent_SetTileMapColor Parms{};
 
@@ -1469,10 +1304,7 @@ void UPaperTileMapComponent::SetTileMapColor(const struct FLinearColor& NewColor
 
 struct FLinearColor UPaperTileMapComponent::GetLayerColor(int32 Layer) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "GetLayerColor");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "GetLayerColor");
 
 	Params::PaperTileMapComponent_GetLayerColor Parms{};
 
@@ -1499,10 +1331,7 @@ struct FLinearColor UPaperTileMapComponent::GetLayerColor(int32 Layer) const
 
 struct FPaperTileInfo UPaperTileMapComponent::GetTile(int32 X, int32 Y, int32 Layer) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "GetTile");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "GetTile");
 
 	Params::PaperTileMapComponent_GetTile Parms{};
 
@@ -1532,10 +1361,7 @@ struct FPaperTileInfo UPaperTileMapComponent::GetTile(int32 X, int32 Y, int32 La
 
 struct FVector UPaperTileMapComponent::GetTileCenterPosition(int32 TileX, int32 TileY, int32 LayerIndex, bool bWorldSpace) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "GetTileCenterPosition");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "GetTileCenterPosition");
 
 	Params::PaperTileMapComponent_GetTileCenterPosition Parms{};
 
@@ -1566,10 +1392,7 @@ struct FVector UPaperTileMapComponent::GetTileCenterPosition(int32 TileX, int32 
 
 struct FVector UPaperTileMapComponent::GetTileCornerPosition(int32 TileX, int32 TileY, int32 LayerIndex, bool bWorldSpace) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "GetTileCornerPosition");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "GetTileCornerPosition");
 
 	Params::PaperTileMapComponent_GetTileCornerPosition Parms{};
 
@@ -1596,10 +1419,7 @@ struct FVector UPaperTileMapComponent::GetTileCornerPosition(int32 TileX, int32 
 
 struct FLinearColor UPaperTileMapComponent::GetTileMapColor() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "GetTileMapColor");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "GetTileMapColor");
 
 	Params::PaperTileMapComponent_GetTileMapColor Parms{};
 
@@ -1625,10 +1445,7 @@ struct FLinearColor UPaperTileMapComponent::GetTileMapColor() const
 
 void UPaperTileMapComponent::GetTilePolygon(int32 TileX, int32 TileY, TArray<struct FVector>* Points, int32 LayerIndex, bool bWorldSpace) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "GetTilePolygon");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "GetTilePolygon");
 
 	Params::PaperTileMapComponent_GetTilePolygon Parms{};
 
@@ -1656,10 +1473,7 @@ void UPaperTileMapComponent::GetTilePolygon(int32 TileX, int32 TileY, TArray<str
 
 bool UPaperTileMapComponent::OwnsTileMap() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PaperTileMapComponent", "OwnsTileMap");
+	class UFunction* Func = Class->GetFunction("PaperTileMapComponent", "OwnsTileMap");
 
 	Params::PaperTileMapComponent_OwnsTileMap Parms{};
 
@@ -1686,10 +1500,7 @@ bool UPaperTileMapComponent::OwnsTileMap() const
 
 void UTileMapBlueprintLibrary::BreakTile(const struct FPaperTileInfo& Tile, int32* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "BreakTile");
+	class UFunction* Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "BreakTile");
 
 	Params::TileMapBlueprintLibrary_BreakTile Parms{};
 
@@ -1727,10 +1538,7 @@ void UTileMapBlueprintLibrary::BreakTile(const struct FPaperTileInfo& Tile, int3
 
 struct FTransform UTileMapBlueprintLibrary::GetTileTransform(const struct FPaperTileInfo& Tile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "GetTileTransform");
+	class UFunction* Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "GetTileTransform");
 
 	Params::TileMapBlueprintLibrary_GetTileTransform Parms{};
 
@@ -1755,10 +1563,7 @@ struct FTransform UTileMapBlueprintLibrary::GetTileTransform(const struct FPaper
 
 class FName UTileMapBlueprintLibrary::GetTileUserData(const struct FPaperTileInfo& Tile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "GetTileUserData");
+	class UFunction* Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "GetTileUserData");
 
 	Params::TileMapBlueprintLibrary_GetTileUserData Parms{};
 
@@ -1787,10 +1592,7 @@ class FName UTileMapBlueprintLibrary::GetTileUserData(const struct FPaperTileInf
 
 struct FPaperTileInfo UTileMapBlueprintLibrary::MakeTile(int32 TileIndex, class UPaperTileSet* TileSet, bool bFlipH, bool bFlipV, bool bFlipD)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "MakeTile");
+	class UFunction* Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "MakeTile");
 
 	Params::TileMapBlueprintLibrary_MakeTile Parms{};
 

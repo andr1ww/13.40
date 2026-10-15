@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Ninja_SwordHitsHeal_C::ExecuteUbergraph_GA_Ninja_SwordHitsHeal(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "ExecuteUbergraph_GA_Ninja_SwordHitsHeal");
+	class UFunction* Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "ExecuteUbergraph_GA_Ninja_SwordHitsHeal");
 
 	Params::GA_Ninja_SwordHitsHeal_C_ExecuteUbergraph_GA_Ninja_SwordHitsHeal Parms{};
 
@@ -43,10 +40,7 @@ void UGA_Ninja_SwordHitsHeal_C::ExecuteUbergraph_GA_Ninja_SwordHitsHeal(int32 En
 
 void UGA_Ninja_SwordHitsHeal_C::SetupAbility(class UAbilitySystemComponent* AbilitySystem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "SetupAbility");
+	class UFunction* Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "SetupAbility");
 
 	Params::GA_Ninja_SwordHitsHeal_C_SetupAbility Parms{};
 
@@ -63,10 +57,7 @@ void UGA_Ninja_SwordHitsHeal_C::SetupAbility(class UAbilitySystemComponent* Abil
 
 void UGA_Ninja_SwordHitsHeal_C::K2_ActivateAbilityFromEvent(const struct FGameplayEventData& EventData_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ActivateAbilityFromEvent");
+	class UFunction* Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ActivateAbilityFromEvent");
 
 	Params::GA_Ninja_SwordHitsHeal_C_K2_ActivateAbilityFromEvent Parms{};
 
@@ -85,10 +76,7 @@ void UGA_Ninja_SwordHitsHeal_C::K2_ActivateAbilityFromEvent(const struct FGamepl
 
 bool UGA_Ninja_SwordHitsHeal_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+	class UFunction* Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
 
 	Params::GA_Ninja_SwordHitsHeal_C_K2_ShouldAbilityRespondToEvent Parms{};
 

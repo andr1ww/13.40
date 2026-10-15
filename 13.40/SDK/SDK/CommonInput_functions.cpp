@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCommonInputSubsystem::SetCurrentInputType(ECommonInputType NewInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputSubsystem", "SetCurrentInputType");
+	class UFunction* Func = Class->GetFunction("CommonInputSubsystem", "SetCurrentInputType");
 
 	Params::CommonInputSubsystem_SetCurrentInputType Parms{};
 
@@ -48,10 +45,7 @@ void UCommonInputSubsystem::SetCurrentInputType(ECommonInputType NewInputType)
 
 void UCommonInputSubsystem::SetGamepadInputType(ECommonGamepadType InGamepadInputType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputSubsystem", "SetGamepadInputType");
+	class UFunction* Func = Class->GetFunction("CommonInputSubsystem", "SetGamepadInputType");
 
 	Params::CommonInputSubsystem_SetGamepadInputType Parms{};
 
@@ -73,10 +67,7 @@ void UCommonInputSubsystem::SetGamepadInputType(ECommonGamepadType InGamepadInpu
 
 ECommonGamepadType UCommonInputSubsystem::GetCurrentGamepadType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentGamepadType");
+	class UFunction* Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentGamepadType");
 
 	Params::CommonInputSubsystem_GetCurrentGamepadType Parms{};
 
@@ -98,10 +89,7 @@ ECommonGamepadType UCommonInputSubsystem::GetCurrentGamepadType() const
 
 ECommonInputType UCommonInputSubsystem::GetCurrentInputType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentInputType");
+	class UFunction* Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentInputType");
 
 	Params::CommonInputSubsystem_GetCurrentInputType Parms{};
 
@@ -123,10 +111,7 @@ ECommonInputType UCommonInputSubsystem::GetCurrentInputType() const
 
 ECommonInputType UCommonInputSubsystem::GetDefaultInputType() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputSubsystem", "GetDefaultInputType");
+	class UFunction* Func = Class->GetFunction("CommonInputSubsystem", "GetDefaultInputType");
 
 	Params::CommonInputSubsystem_GetDefaultInputType Parms{};
 
@@ -149,10 +134,7 @@ ECommonInputType UCommonInputSubsystem::GetDefaultInputType() const
 
 bool UCommonInputSubsystem::IsInputMethodActive(ECommonInputType InputMethod) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputSubsystem", "IsInputMethodActive");
+	class UFunction* Func = Class->GetFunction("CommonInputSubsystem", "IsInputMethodActive");
 
 	Params::CommonInputSubsystem_IsInputMethodActive Parms{};
 
@@ -176,10 +158,7 @@ bool UCommonInputSubsystem::IsInputMethodActive(ECommonInputType InputMethod) co
 
 bool UCommonInputSubsystem::IsUsingPointerInput() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputSubsystem", "IsUsingPointerInput");
+	class UFunction* Func = Class->GetFunction("CommonInputSubsystem", "IsUsingPointerInput");
 
 	Params::CommonInputSubsystem_IsUsingPointerInput Parms{};
 
@@ -201,10 +180,7 @@ bool UCommonInputSubsystem::IsUsingPointerInput() const
 
 bool UCommonInputSubsystem::ShouldShowInputKeys() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CommonInputSubsystem", "ShouldShowInputKeys");
+	class UFunction* Func = Class->GetFunction("CommonInputSubsystem", "ShouldShowInputKeys");
 
 	Params::CommonInputSubsystem_ShouldShowInputKeys Parms{};
 

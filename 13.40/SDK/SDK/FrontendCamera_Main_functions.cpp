@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AFrontendCamera_Main_C::OnActivated(class AFortPlayerController* PlayerController_OnActivated)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendCamera_Main_C", "OnActivated");
+	class UFunction* Func = Class->GetFunction("FrontendCamera_Main_C", "OnActivated");
 
 	Params::FrontendCamera_Main_C_OnActivated Parms{};
 
@@ -43,10 +40,7 @@ void AFrontendCamera_Main_C::OnActivated(class AFortPlayerController* PlayerCont
 
 void AFrontendCamera_Main_C::ExecuteUbergraph_FrontendCamera_Main(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FrontendCamera_Main_C", "ExecuteUbergraph_FrontendCamera_Main");
+	class UFunction* Func = Class->GetFunction("FrontendCamera_Main_C", "ExecuteUbergraph_FrontendCamera_Main");
 
 	Params::FrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main Parms{};
 

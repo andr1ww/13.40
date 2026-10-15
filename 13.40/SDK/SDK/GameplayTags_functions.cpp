@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UBlueprintGameplayTagLibrary::AddGameplayTag(struct FGameplayTagContainer& TagContainer, const struct FGameplayTag& Tag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "AddGameplayTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "AddGameplayTag");
 
 	Params::BlueprintGameplayTagLibrary_AddGameplayTag Parms{};
 
@@ -54,10 +51,7 @@ void UBlueprintGameplayTagLibrary::AddGameplayTag(struct FGameplayTagContainer& 
 
 void UBlueprintGameplayTagLibrary::AppendGameplayTagContainers(struct FGameplayTagContainer& InOutTagContainer, const struct FGameplayTagContainer& InTagContainer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "AppendGameplayTagContainers");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "AppendGameplayTagContainers");
 
 	Params::BlueprintGameplayTagLibrary_AppendGameplayTagContainers Parms{};
 
@@ -83,10 +77,7 @@ void UBlueprintGameplayTagLibrary::AppendGameplayTagContainers(struct FGameplayT
 
 void UBlueprintGameplayTagLibrary::BreakGameplayTagContainer(const struct FGameplayTagContainer& GameplayTagContainer, TArray<struct FGameplayTag>* GameplayTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "BreakGameplayTagContainer");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "BreakGameplayTagContainer");
 
 	Params::BlueprintGameplayTagLibrary_BreakGameplayTagContainer Parms{};
 
@@ -113,10 +104,7 @@ void UBlueprintGameplayTagLibrary::BreakGameplayTagContainer(const struct FGamep
 
 bool UBlueprintGameplayTagLibrary::DoesContainerMatchTagQuery(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagQuery& TagQuery)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "DoesContainerMatchTagQuery");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "DoesContainerMatchTagQuery");
 
 	Params::BlueprintGameplayTagLibrary_DoesContainerMatchTagQuery Parms{};
 
@@ -143,10 +131,7 @@ bool UBlueprintGameplayTagLibrary::DoesContainerMatchTagQuery(const struct FGame
 
 bool UBlueprintGameplayTagLibrary::DoesTagAssetInterfaceHaveTag(TScriptInterface<class IGameplayTagAssetInterface> TagContainerInterface, const struct FGameplayTag& Tag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "DoesTagAssetInterfaceHaveTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "DoesTagAssetInterfaceHaveTag");
 
 	Params::BlueprintGameplayTagLibrary_DoesTagAssetInterfaceHaveTag Parms{};
 
@@ -173,10 +158,7 @@ bool UBlueprintGameplayTagLibrary::DoesTagAssetInterfaceHaveTag(TScriptInterface
 
 bool UBlueprintGameplayTagLibrary::EqualEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "EqualEqual_GameplayTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "EqualEqual_GameplayTag");
 
 	Params::BlueprintGameplayTagLibrary_EqualEqual_GameplayTag Parms{};
 
@@ -203,10 +185,7 @@ bool UBlueprintGameplayTagLibrary::EqualEqual_GameplayTag(const struct FGameplay
 
 bool UBlueprintGameplayTagLibrary::EqualEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "EqualEqual_GameplayTagContainer");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "EqualEqual_GameplayTagContainer");
 
 	Params::BlueprintGameplayTagLibrary_EqualEqual_GameplayTagContainer Parms{};
 
@@ -234,10 +213,7 @@ bool UBlueprintGameplayTagLibrary::EqualEqual_GameplayTagContainer(const struct 
 
 void UBlueprintGameplayTagLibrary::GetAllActorsOfClassMatchingTagQuery(class UObject* WorldContextObject, TSubclassOf<class AActor> ActorClass, const struct FGameplayTagQuery& GameplayTagQuery, TArray<class AActor*>* OutActors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetAllActorsOfClassMatchingTagQuery");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetAllActorsOfClassMatchingTagQuery");
 
 	Params::BlueprintGameplayTagLibrary_GetAllActorsOfClassMatchingTagQuery Parms{};
 
@@ -265,10 +241,7 @@ void UBlueprintGameplayTagLibrary::GetAllActorsOfClassMatchingTagQuery(class UOb
 
 class FString UBlueprintGameplayTagLibrary::GetDebugStringFromGameplayTag(const struct FGameplayTag& GameplayTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetDebugStringFromGameplayTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetDebugStringFromGameplayTag");
 
 	Params::BlueprintGameplayTagLibrary_GetDebugStringFromGameplayTag Parms{};
 
@@ -293,10 +266,7 @@ class FString UBlueprintGameplayTagLibrary::GetDebugStringFromGameplayTag(const 
 
 class FString UBlueprintGameplayTagLibrary::GetDebugStringFromGameplayTagContainer(const struct FGameplayTagContainer& TagContainer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetDebugStringFromGameplayTagContainer");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetDebugStringFromGameplayTagContainer");
 
 	Params::BlueprintGameplayTagLibrary_GetDebugStringFromGameplayTagContainer Parms{};
 
@@ -321,10 +291,7 @@ class FString UBlueprintGameplayTagLibrary::GetDebugStringFromGameplayTagContain
 
 int32 UBlueprintGameplayTagLibrary::GetNumGameplayTagsInContainer(const struct FGameplayTagContainer& TagContainer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetNumGameplayTagsInContainer");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetNumGameplayTagsInContainer");
 
 	Params::BlueprintGameplayTagLibrary_GetNumGameplayTagsInContainer Parms{};
 
@@ -349,10 +316,7 @@ int32 UBlueprintGameplayTagLibrary::GetNumGameplayTagsInContainer(const struct F
 
 class FName UBlueprintGameplayTagLibrary::GetTagName(const struct FGameplayTag& GameplayTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetTagName");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "GetTagName");
 
 	Params::BlueprintGameplayTagLibrary_GetTagName Parms{};
 
@@ -378,10 +342,7 @@ class FName UBlueprintGameplayTagLibrary::GetTagName(const struct FGameplayTag& 
 
 bool UBlueprintGameplayTagLibrary::HasAllMatchingGameplayTags(TScriptInterface<class IGameplayTagAssetInterface> TagContainerInterface, const struct FGameplayTagContainer& OtherContainer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "HasAllMatchingGameplayTags");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "HasAllMatchingGameplayTags");
 
 	Params::BlueprintGameplayTagLibrary_HasAllMatchingGameplayTags Parms{};
 
@@ -409,10 +370,7 @@ bool UBlueprintGameplayTagLibrary::HasAllMatchingGameplayTags(TScriptInterface<c
 
 bool UBlueprintGameplayTagLibrary::HasAllTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "HasAllTags");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "HasAllTags");
 
 	Params::BlueprintGameplayTagLibrary_HasAllTags Parms{};
 
@@ -441,10 +399,7 @@ bool UBlueprintGameplayTagLibrary::HasAllTags(const struct FGameplayTagContainer
 
 bool UBlueprintGameplayTagLibrary::HasAnyTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "HasAnyTags");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "HasAnyTags");
 
 	Params::BlueprintGameplayTagLibrary_HasAnyTags Parms{};
 
@@ -473,10 +428,7 @@ bool UBlueprintGameplayTagLibrary::HasAnyTags(const struct FGameplayTagContainer
 
 bool UBlueprintGameplayTagLibrary::HasTag(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTag& Tag, bool bExactMatch)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "HasTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "HasTag");
 
 	Params::BlueprintGameplayTagLibrary_HasTag Parms{};
 
@@ -503,10 +455,7 @@ bool UBlueprintGameplayTagLibrary::HasTag(const struct FGameplayTagContainer& Ta
 
 bool UBlueprintGameplayTagLibrary::IsGameplayTagValid(const struct FGameplayTag& GameplayTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "IsGameplayTagValid");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "IsGameplayTagValid");
 
 	Params::BlueprintGameplayTagLibrary_IsGameplayTagValid Parms{};
 
@@ -531,10 +480,7 @@ bool UBlueprintGameplayTagLibrary::IsGameplayTagValid(const struct FGameplayTag&
 
 bool UBlueprintGameplayTagLibrary::IsTagQueryEmpty(const struct FGameplayTagQuery& TagQuery)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "IsTagQueryEmpty");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "IsTagQueryEmpty");
 
 	Params::BlueprintGameplayTagLibrary_IsTagQueryEmpty Parms{};
 
@@ -559,10 +505,7 @@ bool UBlueprintGameplayTagLibrary::IsTagQueryEmpty(const struct FGameplayTagQuer
 
 struct FGameplayTagContainer UBlueprintGameplayTagLibrary::MakeGameplayTagContainerFromArray(const TArray<struct FGameplayTag>& GameplayTags)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeGameplayTagContainerFromArray");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeGameplayTagContainerFromArray");
 
 	Params::BlueprintGameplayTagLibrary_MakeGameplayTagContainerFromArray Parms{};
 
@@ -587,10 +530,7 @@ struct FGameplayTagContainer UBlueprintGameplayTagLibrary::MakeGameplayTagContai
 
 struct FGameplayTagContainer UBlueprintGameplayTagLibrary::MakeGameplayTagContainerFromTag(const struct FGameplayTag& SingleTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeGameplayTagContainerFromTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeGameplayTagContainerFromTag");
 
 	Params::BlueprintGameplayTagLibrary_MakeGameplayTagContainerFromTag Parms{};
 
@@ -615,10 +555,7 @@ struct FGameplayTagContainer UBlueprintGameplayTagLibrary::MakeGameplayTagContai
 
 struct FGameplayTagQuery UBlueprintGameplayTagLibrary::MakeGameplayTagQuery(const struct FGameplayTagQuery& TagQuery)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeGameplayTagQuery");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeGameplayTagQuery");
 
 	Params::BlueprintGameplayTagLibrary_MakeGameplayTagQuery Parms{};
 
@@ -643,10 +580,7 @@ struct FGameplayTagQuery UBlueprintGameplayTagLibrary::MakeGameplayTagQuery(cons
 
 struct FGameplayTag UBlueprintGameplayTagLibrary::MakeLiteralGameplayTag(const struct FGameplayTag& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeLiteralGameplayTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeLiteralGameplayTag");
 
 	Params::BlueprintGameplayTagLibrary_MakeLiteralGameplayTag Parms{};
 
@@ -671,10 +605,7 @@ struct FGameplayTag UBlueprintGameplayTagLibrary::MakeLiteralGameplayTag(const s
 
 struct FGameplayTagContainer UBlueprintGameplayTagLibrary::MakeLiteralGameplayTagContainer(const struct FGameplayTagContainer& Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeLiteralGameplayTagContainer");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MakeLiteralGameplayTagContainer");
 
 	Params::BlueprintGameplayTagLibrary_MakeLiteralGameplayTagContainer Parms{};
 
@@ -701,10 +632,7 @@ struct FGameplayTagContainer UBlueprintGameplayTagLibrary::MakeLiteralGameplayTa
 
 bool UBlueprintGameplayTagLibrary::MatchesAnyTags(const struct FGameplayTag& TagOne, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MatchesAnyTags");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MatchesAnyTags");
 
 	Params::BlueprintGameplayTagLibrary_MatchesAnyTags Parms{};
 
@@ -733,10 +661,7 @@ bool UBlueprintGameplayTagLibrary::MatchesAnyTags(const struct FGameplayTag& Tag
 
 bool UBlueprintGameplayTagLibrary::MatchesTag(const struct FGameplayTag& TagOne, const struct FGameplayTag& TagTwo, bool bExactMatch)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MatchesTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "MatchesTag");
 
 	Params::BlueprintGameplayTagLibrary_MatchesTag Parms{};
 
@@ -764,10 +689,7 @@ bool UBlueprintGameplayTagLibrary::MatchesTag(const struct FGameplayTag& TagOne,
 
 bool UBlueprintGameplayTagLibrary::NotEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "NotEqual_GameplayTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "NotEqual_GameplayTag");
 
 	Params::BlueprintGameplayTagLibrary_NotEqual_GameplayTag Parms{};
 
@@ -794,10 +716,7 @@ bool UBlueprintGameplayTagLibrary::NotEqual_GameplayTag(const struct FGameplayTa
 
 bool UBlueprintGameplayTagLibrary::NotEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "NotEqual_GameplayTagContainer");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "NotEqual_GameplayTagContainer");
 
 	Params::BlueprintGameplayTagLibrary_NotEqual_GameplayTagContainer Parms{};
 
@@ -824,10 +743,7 @@ bool UBlueprintGameplayTagLibrary::NotEqual_GameplayTagContainer(const struct FG
 
 bool UBlueprintGameplayTagLibrary::NotEqual_TagContainerTagContainer(const struct FGameplayTagContainer& A, const class FString& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "NotEqual_TagContainerTagContainer");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "NotEqual_TagContainerTagContainer");
 
 	Params::BlueprintGameplayTagLibrary_NotEqual_TagContainerTagContainer Parms{};
 
@@ -854,10 +770,7 @@ bool UBlueprintGameplayTagLibrary::NotEqual_TagContainerTagContainer(const struc
 
 bool UBlueprintGameplayTagLibrary::NotEqual_TagTag(const struct FGameplayTag& A, const class FString& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "NotEqual_TagTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "NotEqual_TagTag");
 
 	Params::BlueprintGameplayTagLibrary_NotEqual_TagTag Parms{};
 
@@ -884,10 +797,7 @@ bool UBlueprintGameplayTagLibrary::NotEqual_TagTag(const struct FGameplayTag& A,
 
 bool UBlueprintGameplayTagLibrary::RemoveGameplayTag(struct FGameplayTagContainer& TagContainer, const struct FGameplayTag& Tag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "RemoveGameplayTag");
+	class UFunction* Func = StaticClass()->GetFunction("BlueprintGameplayTagLibrary", "RemoveGameplayTag");
 
 	Params::BlueprintGameplayTagLibrary_RemoveGameplayTag Parms{};
 
@@ -914,10 +824,7 @@ bool UBlueprintGameplayTagLibrary::RemoveGameplayTag(struct FGameplayTagContaine
 
 void IGameplayTagAssetInterface::GetOwnedGameplayTags(struct FGameplayTagContainer* TagContainer) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "GetOwnedGameplayTags");
+	class UFunction* Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "GetOwnedGameplayTags");
 
 	Params::GameplayTagAssetInterface_GetOwnedGameplayTags Parms{};
 
@@ -941,10 +848,7 @@ void IGameplayTagAssetInterface::GetOwnedGameplayTags(struct FGameplayTagContain
 
 bool IGameplayTagAssetInterface::HasAllMatchingGameplayTags(const struct FGameplayTagContainer& TagContainer) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "HasAllMatchingGameplayTags");
+	class UFunction* Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "HasAllMatchingGameplayTags");
 
 	Params::GameplayTagAssetInterface_HasAllMatchingGameplayTags Parms{};
 
@@ -969,10 +873,7 @@ bool IGameplayTagAssetInterface::HasAllMatchingGameplayTags(const struct FGamepl
 
 bool IGameplayTagAssetInterface::HasAnyMatchingGameplayTags(const struct FGameplayTagContainer& TagContainer) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "HasAnyMatchingGameplayTags");
+	class UFunction* Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "HasAnyMatchingGameplayTags");
 
 	Params::GameplayTagAssetInterface_HasAnyMatchingGameplayTags Parms{};
 
@@ -997,10 +898,7 @@ bool IGameplayTagAssetInterface::HasAnyMatchingGameplayTags(const struct FGamepl
 
 bool IGameplayTagAssetInterface::HasMatchingGameplayTag(const struct FGameplayTag& TagToCheck) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "HasMatchingGameplayTag");
+	class UFunction* Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "HasMatchingGameplayTag");
 
 	Params::GameplayTagAssetInterface_HasMatchingGameplayTag Parms{};
 

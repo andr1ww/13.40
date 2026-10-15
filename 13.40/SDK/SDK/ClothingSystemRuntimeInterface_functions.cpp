@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UClothingSimulationInteractor::ClothConfigUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "ClothConfigUpdated");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "ClothConfigUpdated");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -40,10 +37,7 @@ void UClothingSimulationInteractor::ClothConfigUpdated()
 
 void UClothingSimulationInteractor::DisableGravityOverride()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "DisableGravityOverride");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "DisableGravityOverride");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -61,10 +55,7 @@ void UClothingSimulationInteractor::DisableGravityOverride()
 
 void UClothingSimulationInteractor::EnableGravityOverride(const struct FVector& InVector)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "EnableGravityOverride");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "EnableGravityOverride");
 
 	Params::ClothingSimulationInteractor_EnableGravityOverride Parms{};
 
@@ -84,10 +75,7 @@ void UClothingSimulationInteractor::EnableGravityOverride(const struct FVector& 
 
 void UClothingSimulationInteractor::PhysicsAssetUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "PhysicsAssetUpdated");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "PhysicsAssetUpdated");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -105,10 +93,7 @@ void UClothingSimulationInteractor::PhysicsAssetUpdated()
 
 void UClothingSimulationInteractor::SetAnimDriveSpringStiffness(float InStiffness)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "SetAnimDriveSpringStiffness");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "SetAnimDriveSpringStiffness");
 
 	Params::ClothingSimulationInteractor_SetAnimDriveSpringStiffness Parms{};
 
@@ -130,10 +115,7 @@ void UClothingSimulationInteractor::SetAnimDriveSpringStiffness(float InStiffnes
 
 int32 UClothingSimulationInteractor::GetNumCloths() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumCloths");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumCloths");
 
 	Params::ClothingSimulationInteractor_GetNumCloths Parms{};
 
@@ -155,10 +137,7 @@ int32 UClothingSimulationInteractor::GetNumCloths() const
 
 int32 UClothingSimulationInteractor::GetNumDynamicParticles() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumDynamicParticles");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumDynamicParticles");
 
 	Params::ClothingSimulationInteractor_GetNumDynamicParticles Parms{};
 
@@ -180,10 +159,7 @@ int32 UClothingSimulationInteractor::GetNumDynamicParticles() const
 
 int32 UClothingSimulationInteractor::GetNumIterations() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumIterations");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumIterations");
 
 	Params::ClothingSimulationInteractor_GetNumIterations Parms{};
 
@@ -205,10 +181,7 @@ int32 UClothingSimulationInteractor::GetNumIterations() const
 
 int32 UClothingSimulationInteractor::GetNumKinematicParticles() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumKinematicParticles");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumKinematicParticles");
 
 	Params::ClothingSimulationInteractor_GetNumKinematicParticles Parms{};
 
@@ -230,10 +203,7 @@ int32 UClothingSimulationInteractor::GetNumKinematicParticles() const
 
 int32 UClothingSimulationInteractor::GetNumSubsteps() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumSubsteps");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "GetNumSubsteps");
 
 	Params::ClothingSimulationInteractor_GetNumSubsteps Parms{};
 
@@ -255,10 +225,7 @@ int32 UClothingSimulationInteractor::GetNumSubsteps() const
 
 float UClothingSimulationInteractor::GetSimulationTime() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ClothingSimulationInteractor", "GetSimulationTime");
+	class UFunction* Func = Class->GetFunction("ClothingSimulationInteractor", "GetSimulationTime");
 
 	Params::ClothingSimulationInteractor_GetSimulationTime Parms{};
 

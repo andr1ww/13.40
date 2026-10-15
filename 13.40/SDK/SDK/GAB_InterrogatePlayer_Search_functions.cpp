@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAB_InterrogatePlayer_Search_C::ExecuteUbergraph_GAB_InterrogatePlayer_Search(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "ExecuteUbergraph_GAB_InterrogatePlayer_Search");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "ExecuteUbergraph_GAB_InterrogatePlayer_Search");
 
 	Params::GAB_InterrogatePlayer_Search_C_ExecuteUbergraph_GAB_InterrogatePlayer_Search Parms{};
 
@@ -50,10 +47,7 @@ void UGAB_InterrogatePlayer_Search_C::ExecuteUbergraph_GAB_InterrogatePlayer_Sea
 
 void UGAB_InterrogatePlayer_Search_C::OnDied_Event_1(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "OnDied_Event_1");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "OnDied_Event_1");
 
 	Params::GAB_InterrogatePlayer_Search_C_OnDied_Event_1 Parms{};
 
@@ -84,10 +78,7 @@ void UGAB_InterrogatePlayer_Search_C::OnDied_Event_1(class AActor* DamagedActor,
 
 void UGAB_InterrogatePlayer_Search_C::OnDied_Event_0(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "OnDied_Event_0");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "OnDied_Event_0");
 
 	Params::GAB_InterrogatePlayer_Search_C_OnDied_Event_0 Parms{};
 
@@ -111,10 +102,7 @@ void UGAB_InterrogatePlayer_Search_C::OnDied_Event_0(class AActor* DamagedActor,
 
 void UGAB_InterrogatePlayer_Search_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "K2_OnEndAbility");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "K2_OnEndAbility");
 
 	Params::GAB_InterrogatePlayer_Search_C_K2_OnEndAbility Parms{};
 
@@ -129,10 +117,7 @@ void UGAB_InterrogatePlayer_Search_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_InterrogatePlayer_Search_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,10 +128,7 @@ void UGAB_InterrogatePlayer_Search_C::K2_ActivateAbility()
 
 void UGAB_InterrogatePlayer_Search_C::Added_9291D75D4A0949E1C5B7E49C1FD11F8B()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "Added_9291D75D4A0949E1C5B7E49C1FD11F8B");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "Added_9291D75D4A0949E1C5B7E49C1FD11F8B");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -160,10 +142,7 @@ void UGAB_InterrogatePlayer_Search_C::Added_9291D75D4A0949E1C5B7E49C1FD11F8B()
 
 void UGAB_InterrogatePlayer_Search_C::Triggered_6BBDC9B445D4280492A25E8E5EA7A53D(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "Triggered_6BBDC9B445D4280492A25E8E5EA7A53D");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "Triggered_6BBDC9B445D4280492A25E8E5EA7A53D");
 
 	Params::GAB_InterrogatePlayer_Search_C_Triggered_6BBDC9B445D4280492A25E8E5EA7A53D Parms{};
 
@@ -182,10 +161,7 @@ void UGAB_InterrogatePlayer_Search_C::Triggered_6BBDC9B445D4280492A25E8E5EA7A53D
 
 void UGAB_InterrogatePlayer_Search_C::Cancelled_6BBDC9B445D4280492A25E8E5EA7A53D(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "Cancelled_6BBDC9B445D4280492A25E8E5EA7A53D");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "Cancelled_6BBDC9B445D4280492A25E8E5EA7A53D");
 
 	Params::GAB_InterrogatePlayer_Search_C_Cancelled_6BBDC9B445D4280492A25E8E5EA7A53D Parms{};
 
@@ -204,10 +180,7 @@ void UGAB_InterrogatePlayer_Search_C::Cancelled_6BBDC9B445D4280492A25E8E5EA7A53D
 
 void UGAB_InterrogatePlayer_Search_C::Completed_6BBDC9B445D4280492A25E8E5EA7A53D(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "Completed_6BBDC9B445D4280492A25E8E5EA7A53D");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "Completed_6BBDC9B445D4280492A25E8E5EA7A53D");
 
 	Params::GAB_InterrogatePlayer_Search_C_Completed_6BBDC9B445D4280492A25E8E5EA7A53D Parms{};
 
@@ -223,10 +196,7 @@ void UGAB_InterrogatePlayer_Search_C::Completed_6BBDC9B445D4280492A25E8E5EA7A53D
 
 void UGAB_InterrogatePlayer_Search_C::InitAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "InitAbility");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "InitAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +207,7 @@ void UGAB_InterrogatePlayer_Search_C::InitAbility()
 
 void UGAB_InterrogatePlayer_Search_C::EndAbilityCleanup()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "EndAbilityCleanup");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "EndAbilityCleanup");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -253,10 +220,7 @@ void UGAB_InterrogatePlayer_Search_C::EndAbilityCleanup()
 
 void UGAB_InterrogatePlayer_Search_C::ToggleReticleVisibility(bool Hide)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "ToggleReticleVisibility");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "ToggleReticleVisibility");
 
 	Params::GAB_InterrogatePlayer_Search_C_ToggleReticleVisibility Parms{};
 
@@ -271,10 +235,7 @@ void UGAB_InterrogatePlayer_Search_C::ToggleReticleVisibility(bool Hide)
 
 void UGAB_InterrogatePlayer_Search_C::DropLoot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "DropLoot");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "DropLoot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -288,10 +249,7 @@ void UGAB_InterrogatePlayer_Search_C::DropLoot()
 
 void UGAB_InterrogatePlayer_Search_C::GetKeycardToDrop(bool* HasKeycard, class UFortWorldItemDefinition** Output)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "GetKeycardToDrop");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "GetKeycardToDrop");
 
 	Params::GAB_InterrogatePlayer_Search_C_GetKeycardToDrop Parms{};
 
@@ -310,10 +268,7 @@ void UGAB_InterrogatePlayer_Search_C::GetKeycardToDrop(bool* HasKeycard, class U
 
 void UGAB_InterrogatePlayer_Search_C::DropKeycard()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "DropKeycard");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "DropKeycard");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -326,10 +281,7 @@ void UGAB_InterrogatePlayer_Search_C::DropKeycard()
 
 void UGAB_InterrogatePlayer_Search_C::ApplyGameplayEffectToHenchman(class UClass* GameplayEffect)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "ApplyGameplayEffectToHenchman");
+	class UFunction* Func = Class->GetFunction("GAB_InterrogatePlayer_Search_C", "ApplyGameplayEffectToHenchman");
 
 	Params::GAB_InterrogatePlayer_Search_C_ApplyGameplayEffectToHenchman Parms{};
 

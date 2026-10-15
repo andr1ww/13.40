@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void ABP_FortniteLobbyLightSwitcher_C::SetVisiblityofDetailSpecificMeshes()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "SetVisiblityofDetailSpecificMeshes");
+	class UFunction* Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "SetVisiblityofDetailSpecificMeshes");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +34,7 @@ void ABP_FortniteLobbyLightSwitcher_C::SetVisiblityofDetailSpecificMeshes()
 
 void ABP_FortniteLobbyLightSwitcher_C::SetVisiblityofSceneLighting(bool Activate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "SetVisiblityofSceneLighting");
+	class UFunction* Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "SetVisiblityofSceneLighting");
 
 	Params::BP_FortniteLobbyLightSwitcher_C_SetVisiblityofSceneLighting Parms{};
 
@@ -55,10 +49,7 @@ void ABP_FortniteLobbyLightSwitcher_C::SetVisiblityofSceneLighting(bool Activate
 
 void ABP_FortniteLobbyLightSwitcher_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ABP_FortniteLobbyLightSwitcher_C::UserConstructionScript()
 
 void ABP_FortniteLobbyLightSwitcher_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void ABP_FortniteLobbyLightSwitcher_C::ReceiveBeginPlay()
 
 void ABP_FortniteLobbyLightSwitcher_C::EnableLobbySetLighting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "EnableLobbySetLighting");
+	class UFunction* Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "EnableLobbySetLighting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +82,7 @@ void ABP_FortniteLobbyLightSwitcher_C::EnableLobbySetLighting()
 
 void ABP_FortniteLobbyLightSwitcher_C::DisableLobbySetLighting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "DisableLobbySetLighting");
+	class UFunction* Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "DisableLobbySetLighting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,10 +93,7 @@ void ABP_FortniteLobbyLightSwitcher_C::DisableLobbySetLighting()
 
 void ABP_FortniteLobbyLightSwitcher_C::UpdateSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "UpdateSettings");
+	class UFunction* Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "UpdateSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +106,7 @@ void ABP_FortniteLobbyLightSwitcher_C::UpdateSettings()
 
 void ABP_FortniteLobbyLightSwitcher_C::ExecuteUbergraph_BP_FortniteLobbyLightSwitcher(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "ExecuteUbergraph_BP_FortniteLobbyLightSwitcher");
+	class UFunction* Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "ExecuteUbergraph_BP_FortniteLobbyLightSwitcher");
 
 	Params::BP_FortniteLobbyLightSwitcher_C_ExecuteUbergraph_BP_FortniteLobbyLightSwitcher Parms{};
 

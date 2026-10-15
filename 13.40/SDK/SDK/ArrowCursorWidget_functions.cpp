@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 struct FSlateBrush UArrowCursorWidget_C::GetBackground_0()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArrowCursorWidget_C", "GetBackground_0");
+	class UFunction* Func = Class->GetFunction("ArrowCursorWidget_C", "GetBackground_0");
 
 	Params::ArrowCursorWidget_C_GetBackground_0 Parms{};
 

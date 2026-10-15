@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster");
+	class UFunction* Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster");
 
 	Params::B_Prj_Commando_FragGrenade_Cluster_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster Parms{};
 
@@ -44,10 +41,7 @@ void AB_Prj_Commando_FragGrenade_Cluster_C::ExecuteUbergraph_B_Prj_Commando_Frag
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::OnExploded(const TArray<class AActor*>& HitActors, const TArray<struct FHitResult>& HitResults)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "OnExploded");
+	class UFunction* Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "OnExploded");
 
 	Params::B_Prj_Commando_FragGrenade_Cluster_C_OnExploded Parms{};
 
@@ -63,10 +57,7 @@ void AB_Prj_Commando_FragGrenade_Cluster_C::OnExploded(const TArray<class AActor
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -82,10 +73,7 @@ void AB_Prj_Commando_FragGrenade_Cluster_C::ReceiveBeginPlay()
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ReceiveAnyDamage");
+	class UFunction* Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ReceiveAnyDamage");
 
 	Params::B_Prj_Commando_FragGrenade_Cluster_C_ReceiveAnyDamage Parms{};
 
@@ -105,10 +93,7 @@ void AB_Prj_Commando_FragGrenade_Cluster_C::ReceiveAnyDamage(float Damage, const
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::OnStop(const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "OnStop");
+	class UFunction* Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "OnStop");
 
 	Params::B_Prj_Commando_FragGrenade_Cluster_C_OnStop Parms{};
 

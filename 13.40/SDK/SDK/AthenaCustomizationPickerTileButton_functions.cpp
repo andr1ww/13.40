@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaCustomizationPickerTileButton_C::ExecuteUbergraph_AthenaCustomizationPickerTileButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "ExecuteUbergraph_AthenaCustomizationPickerTileButton");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "ExecuteUbergraph_AthenaCustomizationPickerTileButton");
 
 	Params::AthenaCustomizationPickerTileButton_C_ExecuteUbergraph_AthenaCustomizationPickerTileButton Parms{};
 
@@ -44,10 +41,7 @@ void UAthenaCustomizationPickerTileButton_C::ExecuteUbergraph_AthenaCustomizatio
 
 void UAthenaCustomizationPickerTileButton_C::OnEquippedStateChanged(bool bEquipped, bool bOnDifferentSlot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "OnEquippedStateChanged");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "OnEquippedStateChanged");
 
 	Params::AthenaCustomizationPickerTileButton_C_OnEquippedStateChanged Parms{};
 
@@ -65,10 +59,7 @@ void UAthenaCustomizationPickerTileButton_C::OnEquippedStateChanged(bool bEquipp
 
 void UAthenaCustomizationPickerTileButton_C::OnChangeOwnedState(bool bOwned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "OnChangeOwnedState");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "OnChangeOwnedState");
 
 	Params::AthenaCustomizationPickerTileButton_C_OnChangeOwnedState Parms{};
 
@@ -83,10 +74,7 @@ void UAthenaCustomizationPickerTileButton_C::OnChangeOwnedState(bool bOwned)
 
 void UAthenaCustomizationPickerTileButton_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void UAthenaCustomizationPickerTileButton_C::BP_OnUnhovered()
 
 void UAthenaCustomizationPickerTileButton_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +98,7 @@ void UAthenaCustomizationPickerTileButton_C::BP_OnHovered()
 
 void UAthenaCustomizationPickerTileButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "OnListItemObjectSet");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "OnListItemObjectSet");
 
 	Params::AthenaCustomizationPickerTileButton_C_OnListItemObjectSet Parms{};
 
@@ -134,10 +116,7 @@ void UAthenaCustomizationPickerTileButton_C::OnListItemObjectSet(class UObject* 
 
 void UAthenaCustomizationPickerTileButton_C::HandleEquippedStateChanged(bool bEquipped, bool bOnDifferentSlot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "HandleEquippedStateChanged");
+	class UFunction* Func = Class->GetFunction("AthenaCustomizationPickerTileButton_C", "HandleEquippedStateChanged");
 
 	Params::AthenaCustomizationPickerTileButton_C_HandleEquippedStateChanged Parms{};
 

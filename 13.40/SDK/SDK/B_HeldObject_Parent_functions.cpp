@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AB_HeldObject_Parent_C::ExecuteUbergraph_B_HeldObject_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Parent_C", "ExecuteUbergraph_B_HeldObject_Parent");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Parent_C", "ExecuteUbergraph_B_HeldObject_Parent");
 
 	Params::B_HeldObject_Parent_C_ExecuteUbergraph_B_HeldObject_Parent Parms{};
 
@@ -41,10 +38,7 @@ void AB_HeldObject_Parent_C::ExecuteUbergraph_B_HeldObject_Parent(int32 EntryPoi
 
 void AB_HeldObject_Parent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Parent_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Parent_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void AB_HeldObject_Parent_C::ReceiveBeginPlay()
 
 void AB_HeldObject_Parent_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Parent_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Parent_C", "BlueprintOnInteract");
 
 	Params::B_HeldObject_Parent_C_BlueprintOnInteract Parms{};
 
@@ -77,10 +68,7 @@ void AB_HeldObject_Parent_C::BlueprintOnInteract(const class AFortPawn* Interact
 
 void AB_HeldObject_Parent_C::OnRep_IsHeld()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Parent_C", "OnRep_IsHeld");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Parent_C", "OnRep_IsHeld");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void AB_HeldObject_Parent_C::OnRep_IsHeld()
 
 void AB_HeldObject_Parent_C::OnRep_IsSocketed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Parent_C", "OnRep_IsSocketed");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Parent_C", "OnRep_IsSocketed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -110,10 +95,7 @@ void AB_HeldObject_Parent_C::OnRep_IsSocketed()
 
 bool AB_HeldObject_Parent_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Parent_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Parent_C", "BlueprintCanInteract");
 
 	Params::B_HeldObject_Parent_C_BlueprintCanInteract Parms{};
 
@@ -136,10 +118,7 @@ bool AB_HeldObject_Parent_C::BlueprintCanInteract(const class AFortPawn* Interac
 
 class FText AB_HeldObject_Parent_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("B_HeldObject_Parent_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("B_HeldObject_Parent_C", "BlueprintGetInteractionString");
 
 	Params::B_HeldObject_Parent_C_BlueprintGetInteractionString Parms{};
 

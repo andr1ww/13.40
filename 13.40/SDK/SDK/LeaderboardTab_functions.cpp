@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULeaderboardTab_C::ExecuteUbergraph_LeaderboardTab(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeaderboardTab_C", "ExecuteUbergraph_LeaderboardTab");
+	class UFunction* Func = Class->GetFunction("LeaderboardTab_C", "ExecuteUbergraph_LeaderboardTab");
 
 	Params::LeaderboardTab_C_ExecuteUbergraph_LeaderboardTab Parms{};
 
@@ -44,10 +41,7 @@ void ULeaderboardTab_C::ExecuteUbergraph_LeaderboardTab(int32 EntryPoint)
 
 void ULeaderboardTab_C::Set_Event(const class FString& EventId, const class FString& EventWindowId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeaderboardTab_C", "Set Event");
+	class UFunction* Func = Class->GetFunction("LeaderboardTab_C", "Set Event");
 
 	Params::LeaderboardTab_C_Set_Event Parms{};
 
@@ -65,10 +59,7 @@ void ULeaderboardTab_C::Set_Event(const class FString& EventId, const class FStr
 
 void ULeaderboardTab_C::Colorize(const struct FFortTournamentDisplayInfo& Color_Info)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeaderboardTab_C", "Colorize");
+	class UFunction* Func = Class->GetFunction("LeaderboardTab_C", "Colorize");
 
 	Params::LeaderboardTab_C_Colorize Parms{};
 

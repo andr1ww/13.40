@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UGCNS_GM_OnDisplayChatEmoji_C::OnStartParticleSystemSpawned(class UParticleSystemComponent* SpawnedParticleSysComponent, const struct FGameplayCueParameters& Parameters) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNS_GM_OnDisplayChatEmoji_C", "OnStartParticleSystemSpawned");
+	class UFunction* Func = Class->GetFunction("GCNS_GM_OnDisplayChatEmoji_C", "OnStartParticleSystemSpawned");
 
 	Params::GCNS_GM_OnDisplayChatEmoji_C_OnStartParticleSystemSpawned Parms{};
 

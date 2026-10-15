@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaLoadoutTile_C::ExecuteUbergraph_AthenaLoadoutTile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLoadoutTile_C", "ExecuteUbergraph_AthenaLoadoutTile");
+	class UFunction* Func = Class->GetFunction("AthenaLoadoutTile_C", "ExecuteUbergraph_AthenaLoadoutTile");
 
 	Params::AthenaLoadoutTile_C_ExecuteUbergraph_AthenaLoadoutTile Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaLoadoutTile_C::ExecuteUbergraph_AthenaLoadoutTile(int32 EntryPoint)
 
 void UAthenaLoadoutTile_C::BP_OnEntryReleased()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLoadoutTile_C", "BP_OnEntryReleased");
+	class UFunction* Func = Class->GetFunction("AthenaLoadoutTile_C", "BP_OnEntryReleased");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UAthenaLoadoutTile_C::BP_OnEntryReleased()
 
 void UAthenaLoadoutTile_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLoadoutTile_C", "BP_OnItemSelectionChanged");
+	class UFunction* Func = Class->GetFunction("AthenaLoadoutTile_C", "BP_OnItemSelectionChanged");
 
 	Params::AthenaLoadoutTile_C_BP_OnItemSelectionChanged Parms{};
 
@@ -75,10 +66,7 @@ void UAthenaLoadoutTile_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UAthenaLoadoutTile_C::BP_OnUnhovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLoadoutTile_C", "BP_OnUnhovered");
+	class UFunction* Func = Class->GetFunction("AthenaLoadoutTile_C", "BP_OnUnhovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -89,10 +77,7 @@ void UAthenaLoadoutTile_C::BP_OnUnhovered()
 
 void UAthenaLoadoutTile_C::BP_OnHovered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLoadoutTile_C", "BP_OnHovered");
+	class UFunction* Func = Class->GetFunction("AthenaLoadoutTile_C", "BP_OnHovered");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

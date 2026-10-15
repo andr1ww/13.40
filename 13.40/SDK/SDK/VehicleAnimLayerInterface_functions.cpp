@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void IVehicleAnimLayerInterface_C::VehicleFullBodyOverride(const struct FPoseLink& InPoseFullBody, const struct FPoseLink& InPoseUpperAndLowerCachePose, struct FPoseLink* VehicleFullBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleFullBodyOverride");
+	class UFunction* Func = AsUObject()->Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleFullBodyOverride");
 
 	Params::VehicleAnimLayerInterface_C_VehicleFullBodyOverride Parms{};
 
@@ -51,10 +48,7 @@ void IVehicleAnimLayerInterface_C::VehicleFullBodyOverride(const struct FPoseLin
 
 void IVehicleAnimLayerInterface_C::VehicleLowerBodyOverride(const struct FPoseLink& InPoseLowerBodyDefault, const struct FPoseLink& InPoseUpperBody, struct FPoseLink* VehicleLowerBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleLowerBodyOverride");
+	class UFunction* Func = AsUObject()->Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleLowerBodyOverride");
 
 	Params::VehicleAnimLayerInterface_C_VehicleLowerBodyOverride Parms{};
 
@@ -79,10 +73,7 @@ void IVehicleAnimLayerInterface_C::VehicleLowerBodyOverride(const struct FPoseLi
 
 void IVehicleAnimLayerInterface_C::VehicleSplitBodyOverride(const struct FPoseLink& InPoseSplitBody, const struct FPoseLink& InPoseUpperAndLowerBody, const struct FFortAnimInput_TurnInPlace& TurnInPlace, const struct FPoseLink& InPoseUpperAndLowerBodyRemoveRoot, struct FPoseLink* VehicleSplitBodyOverride_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleSplitBodyOverride");
+	class UFunction* Func = AsUObject()->Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleSplitBodyOverride");
 
 	Params::VehicleAnimLayerInterface_C_VehicleSplitBodyOverride Parms{};
 

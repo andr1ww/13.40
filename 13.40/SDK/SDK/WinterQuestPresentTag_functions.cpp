@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UWinterQuestPresentTag_C::ExecuteUbergraph_WinterQuestPresentTag(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestPresentTag_C", "ExecuteUbergraph_WinterQuestPresentTag");
+	class UFunction* Func = Class->GetFunction("WinterQuestPresentTag_C", "ExecuteUbergraph_WinterQuestPresentTag");
 
 	Params::WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag Parms{};
 
@@ -43,10 +40,7 @@ void UWinterQuestPresentTag_C::ExecuteUbergraph_WinterQuestPresentTag(int32 Entr
 
 void UWinterQuestPresentTag_C::OnSetupCharacterNameTag(const struct FLinearColor& CharacterName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestPresentTag_C", "OnSetupCharacterNameTag");
+	class UFunction* Func = Class->GetFunction("WinterQuestPresentTag_C", "OnSetupCharacterNameTag");
 
 	Params::WinterQuestPresentTag_C_OnSetupCharacterNameTag Parms{};
 
@@ -61,10 +55,7 @@ void UWinterQuestPresentTag_C::OnSetupCharacterNameTag(const struct FLinearColor
 
 void UWinterQuestPresentTag_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestPresentTag_C", "Construct");
+	class UFunction* Func = Class->GetFunction("WinterQuestPresentTag_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,10 +68,7 @@ void UWinterQuestPresentTag_C::Construct()
 
 void UWinterQuestPresentTag_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestPresentTag_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("WinterQuestPresentTag_C", "PreConstruct");
 
 	Params::WinterQuestPresentTag_C_PreConstruct Parms{};
 

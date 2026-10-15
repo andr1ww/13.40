@@ -27,10 +27,7 @@ SDK_NAMESPACE_START
 
 void UAmbientAudioStatics::AddAmbientEntry(class UObject* WorldContextObject, class FName AmbientName, class UAmbientAudioDataAsset* Asset, int32 Priority, float CrossfadeTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AmbientAudioStatics", "AddAmbientEntry");
+	class UFunction* Func = StaticClass()->GetFunction("AmbientAudioStatics", "AddAmbientEntry");
 
 	Params::AmbientAudioStatics_AddAmbientEntry Parms{};
 
@@ -57,10 +54,7 @@ void UAmbientAudioStatics::AddAmbientEntry(class UObject* WorldContextObject, cl
 
 void UAmbientAudioStatics::AddAmbientGameplayTag(class UObject* WorldContextObject, const struct FGameplayTag& GameplayTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AmbientAudioStatics", "AddAmbientGameplayTag");
+	class UFunction* Func = StaticClass()->GetFunction("AmbientAudioStatics", "AddAmbientGameplayTag");
 
 	Params::AmbientAudioStatics_AddAmbientGameplayTag Parms{};
 
@@ -85,10 +79,7 @@ void UAmbientAudioStatics::AddAmbientGameplayTag(class UObject* WorldContextObje
 
 class UAudioComponent* UAmbientAudioStatics::CreateAudioComponent(class UObject* WorldContextObject, class USoundBase* Sound)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AmbientAudioStatics", "CreateAudioComponent");
+	class UFunction* Func = StaticClass()->GetFunction("AmbientAudioStatics", "CreateAudioComponent");
 
 	Params::AmbientAudioStatics_CreateAudioComponent Parms{};
 
@@ -115,10 +106,7 @@ class UAudioComponent* UAmbientAudioStatics::CreateAudioComponent(class UObject*
 
 void UAmbientAudioStatics::PlaySoundAtLocation(class UObject* WorldContextObject, class USoundBase* Sound, const struct FVector& Location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AmbientAudioStatics", "PlaySoundAtLocation");
+	class UFunction* Func = StaticClass()->GetFunction("AmbientAudioStatics", "PlaySoundAtLocation");
 
 	Params::AmbientAudioStatics_PlaySoundAtLocation Parms{};
 
@@ -143,10 +131,7 @@ void UAmbientAudioStatics::PlaySoundAtLocation(class UObject* WorldContextObject
 
 void UAmbientAudioStatics::RemoveAmbientEntry(class UObject* WorldContextObject, class FName AmbientName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AmbientAudioStatics", "RemoveAmbientEntry");
+	class UFunction* Func = StaticClass()->GetFunction("AmbientAudioStatics", "RemoveAmbientEntry");
 
 	Params::AmbientAudioStatics_RemoveAmbientEntry Parms{};
 
@@ -170,10 +155,7 @@ void UAmbientAudioStatics::RemoveAmbientEntry(class UObject* WorldContextObject,
 
 void UAmbientAudioStatics::RemoveAmbientGameplayTag(class UObject* WorldContextObject, const struct FGameplayTag& GameplayTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AmbientAudioStatics", "RemoveAmbientGameplayTag");
+	class UFunction* Func = StaticClass()->GetFunction("AmbientAudioStatics", "RemoveAmbientGameplayTag");
 
 	Params::AmbientAudioStatics_RemoveAmbientGameplayTag Parms{};
 
@@ -199,10 +181,7 @@ void UAmbientAudioStatics::RemoveAmbientGameplayTag(class UObject* WorldContextO
 
 void UAmbientAudioSubsystem::AddAmbientEntry(class FName AmbientName, class UAmbientAudioDataAsset* Asset, int32 Priority, float CrossfadeTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AmbientAudioSubsystem", "AddAmbientEntry");
+	class UFunction* Func = Class->GetFunction("AmbientAudioSubsystem", "AddAmbientEntry");
 
 	Params::AmbientAudioSubsystem_AddAmbientEntry Parms{};
 
@@ -227,10 +206,7 @@ void UAmbientAudioSubsystem::AddAmbientEntry(class FName AmbientName, class UAmb
 
 void UAmbientAudioSubsystem::AddGameplayTag(const struct FGameplayTag& GameplayTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AmbientAudioSubsystem", "AddGameplayTag");
+	class UFunction* Func = Class->GetFunction("AmbientAudioSubsystem", "AddGameplayTag");
 
 	Params::AmbientAudioSubsystem_AddGameplayTag Parms{};
 
@@ -252,10 +228,7 @@ void UAmbientAudioSubsystem::AddGameplayTag(const struct FGameplayTag& GameplayT
 
 void UAmbientAudioSubsystem::RemoveAmbientEntry(class FName AmbientName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AmbientAudioSubsystem", "RemoveAmbientEntry");
+	class UFunction* Func = Class->GetFunction("AmbientAudioSubsystem", "RemoveAmbientEntry");
 
 	Params::AmbientAudioSubsystem_RemoveAmbientEntry Parms{};
 
@@ -277,10 +250,7 @@ void UAmbientAudioSubsystem::RemoveAmbientEntry(class FName AmbientName)
 
 void UAmbientAudioSubsystem::RemoveGameplayTag(const struct FGameplayTag& GameplayTag)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AmbientAudioSubsystem", "RemoveGameplayTag");
+	class UFunction* Func = Class->GetFunction("AmbientAudioSubsystem", "RemoveGameplayTag");
 
 	Params::AmbientAudioSubsystem_RemoveGameplayTag Parms{};
 
@@ -300,10 +270,7 @@ void UAmbientAudioSubsystem::RemoveGameplayTag(const struct FGameplayTag& Gamepl
 
 void AAmbientVolume::OnRep_bEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AmbientVolume", "OnRep_bEnabled");
+	class UFunction* Func = Class->GetFunction("AmbientVolume", "OnRep_bEnabled");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -321,10 +288,7 @@ void AAmbientVolume::OnRep_bEnabled()
 
 void AAmbientVolume::SetAmbientAsset(class UAmbientAudioDataAsset* NewAmbientAsset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AmbientVolume", "SetAmbientAsset");
+	class UFunction* Func = Class->GetFunction("AmbientVolume", "SetAmbientAsset");
 
 	Params::AmbientVolume_SetAmbientAsset Parms{};
 
@@ -346,10 +310,7 @@ void AAmbientVolume::SetAmbientAsset(class UAmbientAudioDataAsset* NewAmbientAss
 
 void AAmbientVolume::SetCrossfadeTime(float NewCrossfadeTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AmbientVolume", "SetCrossfadeTime");
+	class UFunction* Func = Class->GetFunction("AmbientVolume", "SetCrossfadeTime");
 
 	Params::AmbientVolume_SetCrossfadeTime Parms{};
 
@@ -371,10 +332,7 @@ void AAmbientVolume::SetCrossfadeTime(float NewCrossfadeTime)
 
 void AAmbientVolume::SetEnabled(bool bNewEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AmbientVolume", "SetEnabled");
+	class UFunction* Func = Class->GetFunction("AmbientVolume", "SetEnabled");
 
 	Params::AmbientVolume_SetEnabled Parms{};
 
@@ -396,10 +354,7 @@ void AAmbientVolume::SetEnabled(bool bNewEnabled)
 
 void AAmbientVolume::SetPriority(int32 NewPriority)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AmbientVolume", "SetPriority");
+	class UFunction* Func = Class->GetFunction("AmbientVolume", "SetPriority");
 
 	Params::AmbientVolume_SetPriority Parms{};
 

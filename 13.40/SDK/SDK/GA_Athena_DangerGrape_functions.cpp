@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_DangerGrape_C::ExecuteUbergraph_GA_Athena_DangerGrape(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_DangerGrape_C", "ExecuteUbergraph_GA_Athena_DangerGrape");
+	class UFunction* Func = Class->GetFunction("GA_Athena_DangerGrape_C", "ExecuteUbergraph_GA_Athena_DangerGrape");
 
 	Params::GA_Athena_DangerGrape_C_ExecuteUbergraph_GA_Athena_DangerGrape Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_DangerGrape_C::ExecuteUbergraph_GA_Athena_DangerGrape(int32 Entr
 
 void UGA_Athena_DangerGrape_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_DangerGrape_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_DangerGrape_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UProfessor_Pup_Male_Axe_AnimBP_C::ExecuteUbergraph_Professor_Pup_Male_Axe_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Professor_Pup_Male_Axe_AnimBP_C", "ExecuteUbergraph_Professor_Pup_Male_Axe_AnimBP");
+	class UFunction* Func = Class->GetFunction("Professor_Pup_Male_Axe_AnimBP_C", "ExecuteUbergraph_Professor_Pup_Male_Axe_AnimBP");
 
 	Params::Professor_Pup_Male_Axe_AnimBP_C_ExecuteUbergraph_Professor_Pup_Male_Axe_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UProfessor_Pup_Male_Axe_AnimBP_C::ExecuteUbergraph_Professor_Pup_Male_Axe_A
 
 void UProfessor_Pup_Male_Axe_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Professor_Pup_Male_Axe_AnimBP_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("Professor_Pup_Male_Axe_AnimBP_C", "BlueprintUpdateAnimation");
 
 	Params::Professor_Pup_Male_Axe_AnimBP_C_BlueprintUpdateAnimation Parms{};
 
@@ -65,10 +59,7 @@ void UProfessor_Pup_Male_Axe_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX
 
 void UProfessor_Pup_Male_Axe_AnimBP_C::spinFunction(float Spin, float Speed, float* Output)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Professor_Pup_Male_Axe_AnimBP_C", "spinFunction");
+	class UFunction* Func = Class->GetFunction("Professor_Pup_Male_Axe_AnimBP_C", "spinFunction");
 
 	Params::Professor_Pup_Male_Axe_AnimBP_C_spinFunction Parms{};
 
@@ -90,10 +81,7 @@ void UProfessor_Pup_Male_Axe_AnimBP_C::spinFunction(float Spin, float Speed, flo
 
 void UProfessor_Pup_Male_Axe_AnimBP_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Professor_Pup_Male_Axe_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("Professor_Pup_Male_Axe_AnimBP_C", "AnimGraph");
 
 	Params::Professor_Pup_Male_Axe_AnimBP_C_AnimGraph Parms{};
 

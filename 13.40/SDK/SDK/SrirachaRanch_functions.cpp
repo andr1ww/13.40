@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UStreamingRadioPlayerComponent::AuthPlayIndex(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "AuthPlayIndex");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "AuthPlayIndex");
 
 	Params::StreamingRadioPlayerComponent_AuthPlayIndex Parms{};
 
@@ -48,10 +45,7 @@ void UStreamingRadioPlayerComponent::AuthPlayIndex(int32 Index_0)
 
 void UStreamingRadioPlayerComponent::AuthSavedSource(class URadioContentSourceItemDefinition* Source)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "AuthSavedSource");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "AuthSavedSource");
 
 	Params::StreamingRadioPlayerComponent_AuthSavedSource Parms{};
 
@@ -71,10 +65,7 @@ void UStreamingRadioPlayerComponent::AuthSavedSource(class URadioContentSourceIt
 
 void UStreamingRadioPlayerComponent::AuthStopRadio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "AuthStopRadio");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "AuthStopRadio");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -92,10 +83,7 @@ void UStreamingRadioPlayerComponent::AuthStopRadio()
 
 void UStreamingRadioPlayerComponent::MediaExplicitClose(bool bReallyExplicit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaExplicitClose");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaExplicitClose");
 
 	Params::StreamingRadioPlayerComponent_MediaExplicitClose Parms{};
 
@@ -117,10 +105,7 @@ void UStreamingRadioPlayerComponent::MediaExplicitClose(bool bReallyExplicit)
 
 void UStreamingRadioPlayerComponent::MediaFailedToOpen(const class FString& String)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaFailedToOpen");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaFailedToOpen");
 
 	Params::StreamingRadioPlayerComponent_MediaFailedToOpen Parms{};
 
@@ -140,10 +125,7 @@ void UStreamingRadioPlayerComponent::MediaFailedToOpen(const class FString& Stri
 
 void UStreamingRadioPlayerComponent::MediaFinishedOrClosed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaFinishedOrClosed");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaFinishedOrClosed");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -159,10 +141,7 @@ void UStreamingRadioPlayerComponent::MediaFinishedOrClosed()
 
 void UStreamingRadioPlayerComponent::MediaLoad()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaLoad");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaLoad");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -178,10 +157,7 @@ void UStreamingRadioPlayerComponent::MediaLoad()
 
 void UStreamingRadioPlayerComponent::MediaPlayed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaPlayed");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaPlayed");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -199,10 +175,7 @@ void UStreamingRadioPlayerComponent::MediaPlayed()
 
 void UStreamingRadioPlayerComponent::MediaReady(const class FString& String)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaReady");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "MediaReady");
 
 	Params::StreamingRadioPlayerComponent_MediaReady Parms{};
 
@@ -226,10 +199,7 @@ void UStreamingRadioPlayerComponent::MediaReady(const class FString& String)
 
 void UStreamingRadioPlayerComponent::NativeOnPawnEnterSeat(const TScriptInterface<class IFortVehicleInterface>& Vehicle, class AFortPawn* PlayerPawn, int32 SeatIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "NativeOnPawnEnterSeat");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "NativeOnPawnEnterSeat");
 
 	Params::StreamingRadioPlayerComponent_NativeOnPawnEnterSeat Parms{};
 
@@ -255,10 +225,7 @@ void UStreamingRadioPlayerComponent::NativeOnPawnEnterSeat(const TScriptInterfac
 
 void UStreamingRadioPlayerComponent::NativeOnPawnEnterVehicle(const TScriptInterface<class IFortVehicleInterface>& Vehicle, class AFortPawn* PlayerPawn, int32 SeatIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "NativeOnPawnEnterVehicle");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "NativeOnPawnEnterVehicle");
 
 	Params::StreamingRadioPlayerComponent_NativeOnPawnEnterVehicle Parms{};
 
@@ -284,10 +251,7 @@ void UStreamingRadioPlayerComponent::NativeOnPawnEnterVehicle(const TScriptInter
 
 void UStreamingRadioPlayerComponent::NativeOnPawnExitSeat(const TScriptInterface<class IFortVehicleInterface>& Vehicle, class AFortPawn* PlayerPawn, int32 SeatIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "NativeOnPawnExitSeat");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "NativeOnPawnExitSeat");
 
 	Params::StreamingRadioPlayerComponent_NativeOnPawnExitSeat Parms{};
 
@@ -313,10 +277,7 @@ void UStreamingRadioPlayerComponent::NativeOnPawnExitSeat(const TScriptInterface
 
 void UStreamingRadioPlayerComponent::NativeOnPawnExitVehicle(const TScriptInterface<class IFortVehicleInterface>& Vehicle, class AFortPawn* PlayerPawn, int32 SeatIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "NativeOnPawnExitVehicle");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "NativeOnPawnExitVehicle");
 
 	Params::StreamingRadioPlayerComponent_NativeOnPawnExitVehicle Parms{};
 
@@ -340,10 +301,7 @@ void UStreamingRadioPlayerComponent::NativeOnPawnExitVehicle(const TScriptInterf
 
 void UStreamingRadioPlayerComponent::OnFailedURL(const class FString& URL)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnFailedURL");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnFailedURL");
 
 	Params::StreamingRadioPlayerComponent_OnFailedURL Parms{};
 
@@ -363,10 +321,7 @@ void UStreamingRadioPlayerComponent::OnFailedURL(const class FString& URL)
 
 void UStreamingRadioPlayerComponent::OnOwnerExploded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnOwnerExploded");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnOwnerExploded");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -382,10 +337,7 @@ void UStreamingRadioPlayerComponent::OnOwnerExploded()
 
 void UStreamingRadioPlayerComponent::OnOwnerUnpowered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnOwnerUnpowered");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnOwnerUnpowered");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -406,10 +358,7 @@ void UStreamingRadioPlayerComponent::OnOwnerUnpowered()
 
 void UStreamingRadioPlayerComponent::OnOwningVehicleDied(class AFortAthenaVehicle* DeadVehicle, const struct FGameplayTagContainer& InTags, class AController* EventInstigator, class AActor* DamageCauser)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnOwningVehicleDied");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnOwningVehicleDied");
 
 	Params::StreamingRadioPlayerComponent_OnOwningVehicleDied Parms{};
 
@@ -436,10 +385,7 @@ void UStreamingRadioPlayerComponent::OnOwningVehicleDied(class AFortAthenaVehicl
 
 void UStreamingRadioPlayerComponent::OnPawnEnterSeat(const TScriptInterface<class IFortVehicleInterface>& Vehicle, class AFortPawn* PlayerPawn, int32 SeatIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnPawnEnterSeat");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnPawnEnterSeat");
 
 	Params::StreamingRadioPlayerComponent_OnPawnEnterSeat Parms{};
 
@@ -460,10 +406,7 @@ void UStreamingRadioPlayerComponent::OnPawnEnterSeat(const TScriptInterface<clas
 
 void UStreamingRadioPlayerComponent::OnPawnEnterVehicle(const TScriptInterface<class IFortVehicleInterface>& Vehicle, class AFortPawn* PlayerPawn, int32 SeatIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnPawnEnterVehicle");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnPawnEnterVehicle");
 
 	Params::StreamingRadioPlayerComponent_OnPawnEnterVehicle Parms{};
 
@@ -484,10 +427,7 @@ void UStreamingRadioPlayerComponent::OnPawnEnterVehicle(const TScriptInterface<c
 
 void UStreamingRadioPlayerComponent::OnPawnExitSeat(const TScriptInterface<class IFortVehicleInterface>& Vehicle, class AFortPawn* PlayerPawn, int32 SeatIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnPawnExitSeat");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnPawnExitSeat");
 
 	Params::StreamingRadioPlayerComponent_OnPawnExitSeat Parms{};
 
@@ -508,10 +448,7 @@ void UStreamingRadioPlayerComponent::OnPawnExitSeat(const TScriptInterface<class
 
 void UStreamingRadioPlayerComponent::OnPawnExitVehicle(const TScriptInterface<class IFortVehicleInterface>& Vehicle, class AFortPawn* PlayerPawn, int32 SeatIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnPawnExitVehicle");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnPawnExitVehicle");
 
 	Params::StreamingRadioPlayerComponent_OnPawnExitVehicle Parms{};
 
@@ -528,10 +465,7 @@ void UStreamingRadioPlayerComponent::OnPawnExitVehicle(const TScriptInterface<cl
 
 void UStreamingRadioPlayerComponent::OnRep_RadioSourceData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnRep_RadioSourceData");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnRep_RadioSourceData");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -549,10 +483,7 @@ void UStreamingRadioPlayerComponent::OnRep_RadioSourceData()
 
 void UStreamingRadioPlayerComponent::OnSuccessfulURL(const class FString& URL)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnSuccessfulURL");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "OnSuccessfulURL");
 
 	Params::StreamingRadioPlayerComponent_OnSuccessfulURL Parms{};
 
@@ -572,10 +503,7 @@ void UStreamingRadioPlayerComponent::OnSuccessfulURL(const class FString& URL)
 
 void UStreamingRadioPlayerComponent::PlayDefaultIndex()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "PlayDefaultIndex");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "PlayDefaultIndex");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -591,10 +519,7 @@ void UStreamingRadioPlayerComponent::PlayDefaultIndex()
 
 void UStreamingRadioPlayerComponent::PlayNextIndex()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "PlayNextIndex");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "PlayNextIndex");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -610,10 +535,7 @@ void UStreamingRadioPlayerComponent::PlayNextIndex()
 
 void UStreamingRadioPlayerComponent::PlayPrevIndex()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "PlayPrevIndex");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "PlayPrevIndex");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -632,10 +554,7 @@ void UStreamingRadioPlayerComponent::PlayPrevIndex()
 
 void UStreamingRadioPlayerComponent::StartRadio(int32 IdxToPlay, bool bFallbackOverride)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "StartRadio");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "StartRadio");
 
 	Params::StreamingRadioPlayerComponent_StartRadio Parms{};
 
@@ -656,10 +575,7 @@ void UStreamingRadioPlayerComponent::StartRadio(int32 IdxToPlay, bool bFallbackO
 
 void UStreamingRadioPlayerComponent::StopRadio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "StopRadio");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "StopRadio");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -677,10 +593,7 @@ void UStreamingRadioPlayerComponent::StopRadio()
 
 void UStreamingRadioPlayerComponent::StopRadioWithFadeout(int32 Milliseconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "StopRadioWithFadeout");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "StopRadioWithFadeout");
 
 	Params::StreamingRadioPlayerComponent_StopRadioWithFadeout Parms{};
 
@@ -700,10 +613,7 @@ void UStreamingRadioPlayerComponent::StopRadioWithFadeout(int32 Milliseconds)
 
 void UStreamingRadioPlayerComponent::ToggleRadioActive()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "ToggleRadioActive");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "ToggleRadioActive");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -722,10 +632,7 @@ void UStreamingRadioPlayerComponent::ToggleRadioActive()
 
 class URadioContentSourceItemDefinition* UStreamingRadioPlayerComponent::GetOptionAt(int32 idx) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "GetOptionAt");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "GetOptionAt");
 
 	Params::StreamingRadioPlayerComponent_GetOptionAt Parms{};
 
@@ -750,10 +657,7 @@ class URadioContentSourceItemDefinition* UStreamingRadioPlayerComponent::GetOpti
 
 bool UStreamingRadioPlayerComponent::IsExternalSeat(int32 SeatIdx) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "IsExternalSeat");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "IsExternalSeat");
 
 	Params::StreamingRadioPlayerComponent_IsExternalSeat Parms{};
 
@@ -777,10 +681,7 @@ bool UStreamingRadioPlayerComponent::IsExternalSeat(int32 SeatIdx) const
 
 bool UStreamingRadioPlayerComponent::IsPlayingLiveFeed() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StreamingRadioPlayerComponent", "IsPlayingLiveFeed");
+	class UFunction* Func = Class->GetFunction("StreamingRadioPlayerComponent", "IsPlayingLiveFeed");
 
 	Params::StreamingRadioPlayerComponent_IsPlayingLiveFeed Parms{};
 

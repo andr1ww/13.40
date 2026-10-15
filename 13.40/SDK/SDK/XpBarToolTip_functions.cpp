@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 class FText UXpBarToolTip_C::GetHeaderText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("XpBarToolTip_C", "GetHeaderText");
+	class UFunction* Func = Class->GetFunction("XpBarToolTip_C", "GetHeaderText");
 
 	Params::XpBarToolTip_C_GetHeaderText Parms{};
 
@@ -43,10 +40,7 @@ class FText UXpBarToolTip_C::GetHeaderText()
 
 class FText UXpBarToolTip_C::GetCommanderXPText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("XpBarToolTip_C", "GetCommanderXPText");
+	class UFunction* Func = Class->GetFunction("XpBarToolTip_C", "GetCommanderXPText");
 
 	Params::XpBarToolTip_C_GetCommanderXPText Parms{};
 
@@ -63,10 +57,7 @@ class FText UXpBarToolTip_C::GetCommanderXPText()
 
 class FText UXpBarToolTip_C::GetBoostXPText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("XpBarToolTip_C", "GetBoostXPText");
+	class UFunction* Func = Class->GetFunction("XpBarToolTip_C", "GetBoostXPText");
 
 	Params::XpBarToolTip_C_GetBoostXPText Parms{};
 
@@ -83,10 +74,7 @@ class FText UXpBarToolTip_C::GetBoostXPText()
 
 class FText UXpBarToolTip_C::GetRestedXPText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("XpBarToolTip_C", "GetRestedXPText");
+	class UFunction* Func = Class->GetFunction("XpBarToolTip_C", "GetRestedXPText");
 
 	Params::XpBarToolTip_C_GetRestedXPText Parms{};
 
@@ -103,10 +91,7 @@ class FText UXpBarToolTip_C::GetRestedXPText()
 
 class FText UXpBarToolTip_C::GetBodyText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("XpBarToolTip_C", "GetBodyText");
+	class UFunction* Func = Class->GetFunction("XpBarToolTip_C", "GetBodyText");
 
 	Params::XpBarToolTip_C_GetBodyText Parms{};
 

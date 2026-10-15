@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 struct FEventReply UProgressModalWidget_C::OnAnalogValueChanged(const struct FGeometry& MyGeometry_OnAnalogValueChanged, const struct FAnalogInputEvent& InAnalogInputEvent_OnAnalogValueChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProgressModalWidget_C", "OnAnalogValueChanged");
+	class UFunction* Func = Class->GetFunction("ProgressModalWidget_C", "OnAnalogValueChanged");
 
 	Params::ProgressModalWidget_C_OnAnalogValueChanged Parms{};
 
@@ -46,10 +43,7 @@ struct FEventReply UProgressModalWidget_C::OnAnalogValueChanged(const struct FGe
 
 void UProgressModalWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProgressModalWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ProgressModalWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -60,10 +54,7 @@ void UProgressModalWidget_C::Construct()
 
 void UProgressModalWidget_C::HandleIntroEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProgressModalWidget_C", "HandleIntroEnded");
+	class UFunction* Func = Class->GetFunction("ProgressModalWidget_C", "HandleIntroEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -74,10 +65,7 @@ void UProgressModalWidget_C::HandleIntroEnded()
 
 void UProgressModalWidget_C::HandleOutroEnded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProgressModalWidget_C", "HandleOutroEnded");
+	class UFunction* Func = Class->GetFunction("ProgressModalWidget_C", "HandleOutroEnded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -88,10 +76,7 @@ void UProgressModalWidget_C::HandleOutroEnded()
 
 void UProgressModalWidget_C::OnBeginIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProgressModalWidget_C", "OnBeginIntro");
+	class UFunction* Func = Class->GetFunction("ProgressModalWidget_C", "OnBeginIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -102,10 +87,7 @@ void UProgressModalWidget_C::OnBeginIntro()
 
 void UProgressModalWidget_C::OnBeginOutro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProgressModalWidget_C", "OnBeginOutro");
+	class UFunction* Func = Class->GetFunction("ProgressModalWidget_C", "OnBeginOutro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -116,10 +98,7 @@ void UProgressModalWidget_C::OnBeginOutro()
 
 void UProgressModalWidget_C::Destruct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProgressModalWidget_C", "Destruct");
+	class UFunction* Func = Class->GetFunction("ProgressModalWidget_C", "Destruct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -132,10 +111,7 @@ void UProgressModalWidget_C::Destruct()
 
 void UProgressModalWidget_C::ExecuteUbergraph_ProgressModalWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ProgressModalWidget_C", "ExecuteUbergraph_ProgressModalWidget");
+	class UFunction* Func = Class->GetFunction("ProgressModalWidget_C", "ExecuteUbergraph_ProgressModalWidget");
 
 	Params::ProgressModalWidget_C_ExecuteUbergraph_ProgressModalWidget Parms{};
 

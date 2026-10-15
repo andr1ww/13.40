@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ULeaderboardListViewWrapper_C::ExecuteUbergraph_LeaderboardListViewWrapper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeaderboardListViewWrapper_C", "ExecuteUbergraph_LeaderboardListViewWrapper");
+	class UFunction* Func = Class->GetFunction("LeaderboardListViewWrapper_C", "ExecuteUbergraph_LeaderboardListViewWrapper");
 
 	Params::LeaderboardListViewWrapper_C_ExecuteUbergraph_LeaderboardListViewWrapper Parms{};
 
@@ -44,10 +41,7 @@ void ULeaderboardListViewWrapper_C::ExecuteUbergraph_LeaderboardListViewWrapper(
 
 void ULeaderboardListViewWrapper_C::Set_Event(const class FString& EventId, const class FString& EventWindowId)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeaderboardListViewWrapper_C", "Set Event");
+	class UFunction* Func = Class->GetFunction("LeaderboardListViewWrapper_C", "Set Event");
 
 	Params::LeaderboardListViewWrapper_C_Set_Event Parms{};
 
@@ -65,10 +59,7 @@ void ULeaderboardListViewWrapper_C::Set_Event(const class FString& EventId, cons
 
 void ULeaderboardListViewWrapper_C::Set_Bar_Color(const struct FLinearColor& Color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LeaderboardListViewWrapper_C", "Set Bar Color");
+	class UFunction* Func = Class->GetFunction("LeaderboardListViewWrapper_C", "Set Bar Color");
 
 	Params::LeaderboardListViewWrapper_C_Set_Bar_Color Parms{};
 

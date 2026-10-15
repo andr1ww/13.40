@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ASafeZoneIndicator_C::ExecuteUbergraph_SafeZoneIndicator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "ExecuteUbergraph_SafeZoneIndicator");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "ExecuteUbergraph_SafeZoneIndicator");
 
 	Params::SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator Parms{};
 
@@ -41,10 +38,7 @@ void ASafeZoneIndicator_C::ExecuteUbergraph_SafeZoneIndicator(int32 EntryPoint)
 
 void ASafeZoneIndicator_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -58,10 +52,7 @@ void ASafeZoneIndicator_C::ReceiveBeginPlay()
 
 void ASafeZoneIndicator_C::OnSafeZoneStateChange(EFortSafeZoneState NewState, bool bInitial)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "OnSafeZoneStateChange");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "OnSafeZoneStateChange");
 
 	Params::SafeZoneIndicator_C_OnSafeZoneStateChange Parms{};
 
@@ -77,10 +68,7 @@ void ASafeZoneIndicator_C::OnSafeZoneStateChange(EFortSafeZoneState NewState, bo
 
 void ASafeZoneIndicator_C::ResetSafeZoneScale()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "ResetSafeZoneScale");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "ResetSafeZoneScale");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,10 +79,7 @@ void ASafeZoneIndicator_C::ResetSafeZoneScale()
 
 void ASafeZoneIndicator_C::Stop_Distant_Storm_Oneshots()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "Stop Distant Storm Oneshots");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "Stop Distant Storm Oneshots");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,10 +90,7 @@ void ASafeZoneIndicator_C::Stop_Distant_Storm_Oneshots()
 
 void ASafeZoneIndicator_C::Trigger_Distant_Storm_Oneshot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "Trigger Distant Storm Oneshot");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "Trigger Distant Storm Oneshot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void ASafeZoneIndicator_C::Trigger_Distant_Storm_Oneshot()
 
 void ASafeZoneIndicator_C::Play_Storm_Grow_Audio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "Play Storm Grow Audio");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "Play Storm Grow Audio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -133,10 +112,7 @@ void ASafeZoneIndicator_C::Play_Storm_Grow_Audio()
 
 void ASafeZoneIndicator_C::Start_Megastorm_Audio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "Start Megastorm Audio");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "Start Megastorm Audio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -147,10 +123,7 @@ void ASafeZoneIndicator_C::Start_Megastorm_Audio()
 
 void ASafeZoneIndicator_C::Megastorm_Pre_Damage_Tell()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "Megastorm Pre Damage Tell");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "Megastorm Pre Damage Tell");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -161,10 +134,7 @@ void ASafeZoneIndicator_C::Megastorm_Pre_Damage_Tell()
 
 void ASafeZoneIndicator_C::OnBeginStartingStateEffectsEvent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "OnBeginStartingStateEffectsEvent");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "OnBeginStartingStateEffectsEvent");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -175,10 +145,7 @@ void ASafeZoneIndicator_C::OnBeginStartingStateEffectsEvent()
 
 void ASafeZoneIndicator_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -191,10 +158,7 @@ void ASafeZoneIndicator_C::ReceiveDestroyed()
 
 void ASafeZoneIndicator_C::stormy(float NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "stormy");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "stormy");
 
 	Params::SafeZoneIndicator_C_stormy Parms{};
 
@@ -209,10 +173,7 @@ void ASafeZoneIndicator_C::stormy(float NewParam)
 
 void ASafeZoneIndicator_C::StormFadeTimeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "StormFadeTimeline__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "StormFadeTimeline__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -223,10 +184,7 @@ void ASafeZoneIndicator_C::StormFadeTimeline__UpdateFunc()
 
 void ASafeZoneIndicator_C::StormFadeTimeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "StormFadeTimeline__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "StormFadeTimeline__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -237,10 +195,7 @@ void ASafeZoneIndicator_C::StormFadeTimeline__FinishedFunc()
 
 void ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "Pre Damage Audio Ramp__UpdateFunc");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "Pre Damage Audio Ramp__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -251,10 +206,7 @@ void ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__UpdateFunc()
 
 void ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "Pre Damage Audio Ramp__FinishedFunc");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "Pre Damage Audio Ramp__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -265,10 +217,7 @@ void ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__FinishedFunc()
 
 void ASafeZoneIndicator_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -279,10 +228,7 @@ void ASafeZoneIndicator_C::UserConstructionScript()
 
 void ASafeZoneIndicator_C::InitClosestPointAudio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "InitClosestPointAudio");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "InitClosestPointAudio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -293,10 +239,7 @@ void ASafeZoneIndicator_C::InitClosestPointAudio()
 
 void ASafeZoneIndicator_C::HandleInsideOutsideMix()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "HandleInsideOutsideMix");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "HandleInsideOutsideMix");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -309,10 +252,7 @@ void ASafeZoneIndicator_C::HandleInsideOutsideMix()
 
 void ASafeZoneIndicator_C::GetAthenaGameState(class AAthena_GameState_C** AthenaGS)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "GetAthenaGameState");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "GetAthenaGameState");
 
 	Params::SafeZoneIndicator_C_GetAthenaGameState Parms{};
 
@@ -330,10 +270,7 @@ void ASafeZoneIndicator_C::GetAthenaGameState(class AAthena_GameState_C** Athena
 
 void ASafeZoneIndicator_C::GetRandomPointOnBoundary(struct FVector* position)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "GetRandomPointOnBoundary");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "GetRandomPointOnBoundary");
 
 	Params::SafeZoneIndicator_C_GetRandomPointOnBoundary Parms{};
 
@@ -351,10 +288,7 @@ void ASafeZoneIndicator_C::GetRandomPointOnBoundary(struct FVector* position)
 
 void ASafeZoneIndicator_C::GetRandomPointInPlayerDir(struct FVector* position)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SafeZoneIndicator_C", "GetRandomPointInPlayerDir");
+	class UFunction* Func = Class->GetFunction("SafeZoneIndicator_C", "GetRandomPointInPlayerDir");
 
 	Params::SafeZoneIndicator_C_GetRandomPointInPlayerDir Parms{};
 

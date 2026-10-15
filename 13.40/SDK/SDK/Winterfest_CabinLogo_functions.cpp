@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UWinterfest_CabinLogo_C::ExecuteUbergraph_Winterfest_CabinLogo(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Winterfest_CabinLogo_C", "ExecuteUbergraph_Winterfest_CabinLogo");
+	class UFunction* Func = Class->GetFunction("Winterfest_CabinLogo_C", "ExecuteUbergraph_Winterfest_CabinLogo");
 
 	Params::Winterfest_CabinLogo_C_ExecuteUbergraph_Winterfest_CabinLogo Parms{};
 
@@ -43,10 +40,7 @@ void UWinterfest_CabinLogo_C::ExecuteUbergraph_Winterfest_CabinLogo(int32 EntryP
 
 void UWinterfest_CabinLogo_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Winterfest_CabinLogo_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("Winterfest_CabinLogo_C", "PreConstruct");
 
 	Params::Winterfest_CabinLogo_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UWinterfest_CabinLogo_C::PreConstruct(bool IsDesignTime)
 
 void UWinterfest_CabinLogo_C::LogoIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Winterfest_CabinLogo_C", "LogoIntro");
+	class UFunction* Func = Class->GetFunction("Winterfest_CabinLogo_C", "LogoIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

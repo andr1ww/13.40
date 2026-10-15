@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UFortCosmeticItemCard_C::HandleUpdateRarity(const struct FFortColorPalette& RarityColors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "HandleUpdateRarity");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "HandleUpdateRarity");
 
 	Params::FortCosmeticItemCard_C_HandleUpdateRarity Parms{};
 
@@ -47,10 +44,7 @@ void UFortCosmeticItemCard_C::HandleUpdateRarity(const struct FFortColorPalette&
 
 void UFortCosmeticItemCard_C::HandleUpdateVisuals(bool bIsItem, bool bIsBorderAnimated, bool IsHero, bool IsReward, bool IsShuffleItem)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "HandleUpdateVisuals");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "HandleUpdateVisuals");
 
 	Params::FortCosmeticItemCard_C_HandleUpdateVisuals Parms{};
 
@@ -75,10 +69,7 @@ void UFortCosmeticItemCard_C::HandleUpdateVisuals(bool bIsItem, bool bIsBorderAn
 
 void UFortCosmeticItemCard_C::UpdateVisuals(bool bIsItem_UpdateVisuals, bool bIsBorderAnimated_UpdateVisuals, bool bIsHero_UpdateVisuals, bool bReward_UpdateVisuals, bool bIsShuffleItem_UpdateVisuals)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "UpdateVisuals");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "UpdateVisuals");
 
 	Params::FortCosmeticItemCard_C_UpdateVisuals Parms{};
 
@@ -99,10 +90,7 @@ void UFortCosmeticItemCard_C::UpdateVisuals(bool bIsItem_UpdateVisuals, bool bIs
 
 void UFortCosmeticItemCard_C::OnUpdateEnhanced(bool bEnhanced_OnUpdateEnhanced)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUpdateEnhanced");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUpdateEnhanced");
 
 	Params::FortCosmeticItemCard_C_OnUpdateEnhanced Parms{};
 
@@ -119,10 +107,7 @@ void UFortCosmeticItemCard_C::OnUpdateEnhanced(bool bEnhanced_OnUpdateEnhanced)
 
 void UFortCosmeticItemCard_C::OnUpdateItemCardMaterial(class UMaterialInterface* Material_OnUpdateItemCardMaterial)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUpdateItemCardMaterial");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUpdateItemCardMaterial");
 
 	Params::FortCosmeticItemCard_C_OnUpdateItemCardMaterial Parms{};
 
@@ -139,10 +124,7 @@ void UFortCosmeticItemCard_C::OnUpdateItemCardMaterial(class UMaterialInterface*
 
 void UFortCosmeticItemCard_C::OnUpdateItemCardIcon(class UTexture2D* Icon_OnUpdateItemCardIcon)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUpdateItemCardIcon");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUpdateItemCardIcon");
 
 	Params::FortCosmeticItemCard_C_OnUpdateItemCardIcon Parms{};
 
@@ -159,10 +141,7 @@ void UFortCosmeticItemCard_C::OnUpdateItemCardIcon(class UTexture2D* Icon_OnUpda
 
 void UFortCosmeticItemCard_C::OnUpdateSeriesOrRarityColors(const struct FFortColorPalette& ColorPalette_OnUpdateSeriesOrRarityColors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUpdateSeriesOrRarityColors");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUpdateSeriesOrRarityColors");
 
 	Params::FortCosmeticItemCard_C_OnUpdateSeriesOrRarityColors Parms{};
 
@@ -179,10 +158,7 @@ void UFortCosmeticItemCard_C::OnUpdateSeriesOrRarityColors(const struct FFortCol
 
 void UFortCosmeticItemCard_C::OnSizeChanged(float InCardWidth_OnSizeChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "OnSizeChanged");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "OnSizeChanged");
 
 	Params::FortCosmeticItemCard_C_OnSizeChanged Parms{};
 
@@ -197,10 +173,7 @@ void UFortCosmeticItemCard_C::OnSizeChanged(float InCardWidth_OnSizeChanged)
 
 void UFortCosmeticItemCard_C::OnHover()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "OnHover");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "OnHover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -211,10 +184,7 @@ void UFortCosmeticItemCard_C::OnHover()
 
 void UFortCosmeticItemCard_C::OnUnhover()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUnhover");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "OnUnhover");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -227,10 +197,7 @@ void UFortCosmeticItemCard_C::OnUnhover()
 
 void UFortCosmeticItemCard_C::ExecuteUbergraph_FortCosmeticItemCard(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FortCosmeticItemCard_C", "ExecuteUbergraph_FortCosmeticItemCard");
+	class UFunction* Func = Class->GetFunction("FortCosmeticItemCard_C", "ExecuteUbergraph_FortCosmeticItemCard");
 
 	Params::FortCosmeticItemCard_C_ExecuteUbergraph_FortCosmeticItemCard Parms{};
 

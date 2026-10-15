@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 bool UGCN_BoostJumpPack_Equipped_C::WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "WhileActive");
+	class UFunction* Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "WhileActive");
 
 	Params::GCN_BoostJumpPack_Equipped_C_WhileActive Parms{};
 
@@ -49,10 +46,7 @@ bool UGCN_BoostJumpPack_Equipped_C::WhileActive(class AActor* MyTarget, const st
 
 void UGCN_BoostJumpPack_Equipped_C::GetFuelPercent(class APlayerPawn_Athena_C* PlayerPawn, float* Fuel_Percent) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "GetFuelPercent");
+	class UFunction* Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "GetFuelPercent");
 
 	Params::GCN_BoostJumpPack_Equipped_C_GetFuelPercent Parms{};
 
@@ -73,10 +67,7 @@ void UGCN_BoostJumpPack_Equipped_C::GetFuelPercent(class APlayerPawn_Athena_C* P
 
 float UGCN_BoostJumpPack_Equipped_C::GetFuel(class APlayerPawn_Athena_C* PlayerPawn) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "GetFuel");
+	class UFunction* Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "GetFuel");
 
 	Params::GCN_BoostJumpPack_Equipped_C_GetFuel Parms{};
 
@@ -96,10 +87,7 @@ float UGCN_BoostJumpPack_Equipped_C::GetFuel(class APlayerPawn_Athena_C* PlayerP
 
 float UGCN_BoostJumpPack_Equipped_C::GetMaxFuel(class APlayerPawn_Athena_C* PlayerPawn) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "GetMaxFuel");
+	class UFunction* Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "GetMaxFuel");
 
 	Params::GCN_BoostJumpPack_Equipped_C_GetMaxFuel Parms{};
 
@@ -120,10 +108,7 @@ float UGCN_BoostJumpPack_Equipped_C::GetMaxFuel(class APlayerPawn_Athena_C* Play
 
 bool UGCN_BoostJumpPack_Equipped_C::OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "OnExecute");
+	class UFunction* Func = Class->GetFunction("GCN_BoostJumpPack_Equipped_C", "OnExecute");
 
 	Params::GCN_BoostJumpPack_Equipped_C_OnExecute Parms{};
 

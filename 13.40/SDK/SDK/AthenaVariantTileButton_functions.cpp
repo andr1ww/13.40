@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaVariantTileButton_C::ExecuteUbergraph_AthenaVariantTileButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaVariantTileButton_C", "ExecuteUbergraph_AthenaVariantTileButton");
+	class UFunction* Func = Class->GetFunction("AthenaVariantTileButton_C", "ExecuteUbergraph_AthenaVariantTileButton");
 
 	Params::AthenaVariantTileButton_C_ExecuteUbergraph_AthenaVariantTileButton Parms{};
 
@@ -43,10 +40,7 @@ void UAthenaVariantTileButton_C::ExecuteUbergraph_AthenaVariantTileButton(int32 
 
 void UAthenaVariantTileButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaVariantTileButton_C", "OnListItemObjectSet");
+	class UFunction* Func = Class->GetFunction("AthenaVariantTileButton_C", "OnListItemObjectSet");
 
 	Params::AthenaVariantTileButton_C_OnListItemObjectSet Parms{};
 

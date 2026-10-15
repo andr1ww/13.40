@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UChallengeProgressDisplay_C::ExecuteUbergraph_ChallengeProgressDisplay(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeProgressDisplay_C", "ExecuteUbergraph_ChallengeProgressDisplay");
+	class UFunction* Func = Class->GetFunction("ChallengeProgressDisplay_C", "ExecuteUbergraph_ChallengeProgressDisplay");
 
 	Params::ChallengeProgressDisplay_C_ExecuteUbergraph_ChallengeProgressDisplay Parms{};
 
@@ -43,10 +40,7 @@ void UChallengeProgressDisplay_C::ExecuteUbergraph_ChallengeProgressDisplay(int3
 
 void UChallengeProgressDisplay_C::PreConstruct(bool IsDesignTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeProgressDisplay_C", "PreConstruct");
+	class UFunction* Func = Class->GetFunction("ChallengeProgressDisplay_C", "PreConstruct");
 
 	Params::ChallengeProgressDisplay_C_PreConstruct Parms{};
 
@@ -61,10 +55,7 @@ void UChallengeProgressDisplay_C::PreConstruct(bool IsDesignTime)
 
 void UChallengeProgressDisplay_C::SelectedHoveredFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeProgressDisplay_C", "SelectedHoveredFunc");
+	class UFunction* Func = Class->GetFunction("ChallengeProgressDisplay_C", "SelectedHoveredFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGAB_Spray_Generic_C::ExecuteUbergraph_GAB_Spray_Generic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Spray_Generic_C", "ExecuteUbergraph_GAB_Spray_Generic");
+	class UFunction* Func = Class->GetFunction("GAB_Spray_Generic_C", "ExecuteUbergraph_GAB_Spray_Generic");
 
 	Params::GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic Parms{};
 
@@ -41,10 +38,7 @@ void UGAB_Spray_Generic_C::ExecuteUbergraph_GAB_Spray_Generic(int32 EntryPoint)
 
 void UGAB_Spray_Generic_C::OnMontageStartedPlaying()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Spray_Generic_C", "OnMontageStartedPlaying");
+	class UFunction* Func = Class->GetFunction("GAB_Spray_Generic_C", "OnMontageStartedPlaying");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -60,10 +54,7 @@ void UGAB_Spray_Generic_C::OnMontageStartedPlaying()
 
 void UGAB_Spray_Generic_C::TargetLineTrace(class AFortPawn* ActivatingPawn, bool* HitSomething, struct FVector* Location, struct FVector* Normal)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Spray_Generic_C", "TargetLineTrace");
+	class UFunction* Func = Class->GetFunction("GAB_Spray_Generic_C", "TargetLineTrace");
 
 	Params::GAB_Spray_Generic_C_TargetLineTrace Parms{};
 
@@ -92,10 +83,7 @@ void UGAB_Spray_Generic_C::TargetLineTrace(class AFortPawn* ActivatingPawn, bool
 
 TSoftObjectPtr<class UAnimMontage> UGAB_Spray_Generic_C::GetMontageToPlay(class UFortMontageItemDefinitionBase* EmoteAsset, EFortCustomBodyType BodyType, EFortCustomGender Gender)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GAB_Spray_Generic_C", "GetMontageToPlay");
+	class UFunction* Func = Class->GetFunction("GAB_Spray_Generic_C", "GetMontageToPlay");
 
 	Params::GAB_Spray_Generic_C_GetMontageToPlay Parms{};
 

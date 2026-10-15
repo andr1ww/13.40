@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UAthenaStoreReward_C::ExecuteUbergraph_AthenaStoreReward(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "ExecuteUbergraph_AthenaStoreReward");
+	class UFunction* Func = Class->GetFunction("AthenaStoreReward_C", "ExecuteUbergraph_AthenaStoreReward");
 
 	Params::AthenaStoreReward_C_ExecuteUbergraph_AthenaStoreReward Parms{};
 
@@ -41,10 +38,7 @@ void UAthenaStoreReward_C::ExecuteUbergraph_AthenaStoreReward(int32 EntryPoint)
 
 void UAthenaStoreReward_C::PlayIntro()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "PlayIntro");
+	class UFunction* Func = Class->GetFunction("AthenaStoreReward_C", "PlayIntro");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -63,10 +57,7 @@ void UAthenaStoreReward_C::PlayIntro()
 
 void UAthenaStoreReward_C::Setup(class UFortItem* InItemToRepresent, bool Claimed, bool Locked, bool LevelAchieved, bool bOwned, EFortItemCardSize ItemCardSize, int32 Quantity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "Setup");
+	class UFunction* Func = Class->GetFunction("AthenaStoreReward_C", "Setup");
 
 	Params::AthenaStoreReward_C_Setup Parms{};
 
@@ -92,10 +83,7 @@ void UAthenaStoreReward_C::Setup(class UFortItem* InItemToRepresent, bool Claime
 
 void UAthenaStoreReward_C::SetState(bool Claimed, bool Locked, bool LevelAchieved, bool bOwned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "SetState");
+	class UFunction* Func = Class->GetFunction("AthenaStoreReward_C", "SetState");
 
 	Params::AthenaStoreReward_C_SetState Parms{};
 
@@ -113,10 +101,7 @@ void UAthenaStoreReward_C::SetState(bool Claimed, bool Locked, bool LevelAchieve
 
 void UAthenaStoreReward_C::EnableRarityFlare()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "EnableRarityFlare");
+	class UFunction* Func = Class->GetFunction("AthenaStoreReward_C", "EnableRarityFlare");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -129,10 +114,7 @@ void UAthenaStoreReward_C::EnableRarityFlare()
 
 void UAthenaStoreReward_C::GetAthenaCosmeticItemDefinition(class UAthenaCosmeticItemDefinition** AsAthena_Cosmetic_Item_Definition)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "GetAthenaCosmeticItemDefinition");
+	class UFunction* Func = Class->GetFunction("AthenaStoreReward_C", "GetAthenaCosmeticItemDefinition");
 
 	Params::AthenaStoreReward_C_GetAthenaCosmeticItemDefinition Parms{};
 
@@ -150,10 +132,7 @@ void UAthenaStoreReward_C::GetAthenaCosmeticItemDefinition(class UAthenaCosmetic
 
 void UAthenaStoreReward_C::GetItem(class UFortItem** Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "GetItem");
+	class UFunction* Func = Class->GetFunction("AthenaStoreReward_C", "GetItem");
 
 	Params::AthenaStoreReward_C_GetItem Parms{};
 
@@ -172,10 +151,7 @@ void UAthenaStoreReward_C::GetItem(class UFortItem** Result)
 
 void UAthenaStoreReward_C::GetTemporaryItems(TArray<struct FFortCosmeticVariantPreviewElement>& Cosmetics, TArray<class UFortItem*>* Temporary_Items) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "GetTemporaryItems");
+	class UFunction* Func = Class->GetFunction("AthenaStoreReward_C", "GetTemporaryItems");
 
 	Params::AthenaStoreReward_C_GetTemporaryItems Parms{};
 

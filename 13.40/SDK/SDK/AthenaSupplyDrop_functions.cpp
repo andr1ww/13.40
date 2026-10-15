@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AAthenaSupplyDrop_C::ExecuteUbergraph_AthenaSupplyDrop(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "ExecuteUbergraph_AthenaSupplyDrop");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "ExecuteUbergraph_AthenaSupplyDrop");
 
 	Params::AthenaSupplyDrop_C_ExecuteUbergraph_AthenaSupplyDrop Parms{};
 
@@ -41,10 +38,7 @@ void AAthenaSupplyDrop_C::ExecuteUbergraph_AthenaSupplyDrop(int32 EntryPoint)
 
 void AAthenaSupplyDrop_C::OnDelayedSpawnLoot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OnDelayedSpawnLoot");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OnDelayedSpawnLoot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +53,7 @@ void AAthenaSupplyDrop_C::OnDelayedSpawnLoot()
 
 void AAthenaSupplyDrop_C::BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_3_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent, bool bIsFirstBody)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_3_WaterInteractionOnEnterWater__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_3_WaterInteractionOnEnterWater__DelegateSignature");
 
 	Params::AthenaSupplyDrop_C_BndEvt__FortWaterInteraction_K2Node_ComponentBoundEvent_3_WaterInteractionOnEnterWater__DelegateSignature Parms{};
 
@@ -79,10 +70,7 @@ void AAthenaSupplyDrop_C::BndEvt__FortWaterInteraction_K2Node_ComponentBoundEven
 
 void AAthenaSupplyDrop_C::SetupQuestData()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "SetupQuestData");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "SetupQuestData");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +83,7 @@ void AAthenaSupplyDrop_C::SetupQuestData()
 
 void AAthenaSupplyDrop_C::BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature");
 
 	Params::AthenaSupplyDrop_C_BndEvt__FortProjectileMovement_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature Parms{};
 
@@ -113,10 +98,7 @@ void AAthenaSupplyDrop_C::BndEvt__FortProjectileMovement_K2Node_ComponentBoundEv
 
 void AAthenaSupplyDrop_C::Play_Looted_Dialogue()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "Play Looted Dialogue");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "Play Looted Dialogue");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -127,10 +109,7 @@ void AAthenaSupplyDrop_C::Play_Looted_Dialogue()
 
 void AAthenaSupplyDrop_C::DestroyGroundComponents()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "DestroyGroundComponents");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "DestroyGroundComponents");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -141,10 +120,7 @@ void AAthenaSupplyDrop_C::DestroyGroundComponents()
 
 void AAthenaSupplyDrop_C::TimerCheckPlayerDistance()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "TimerCheckPlayerDistance");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "TimerCheckPlayerDistance");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -155,10 +131,7 @@ void AAthenaSupplyDrop_C::TimerCheckPlayerDistance()
 
 void AAthenaSupplyDrop_C::OnLanding()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OnLanding");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OnLanding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +142,7 @@ void AAthenaSupplyDrop_C::OnLanding()
 
 void AAthenaSupplyDrop_C::StopFallAudioTimeline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "StopFallAudioTimeline");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "StopFallAudioTimeline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -183,10 +153,7 @@ void AAthenaSupplyDrop_C::StopFallAudioTimeline()
 
 void AAthenaSupplyDrop_C::BeginFallAudioTimeline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "BeginFallAudioTimeline");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "BeginFallAudioTimeline");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -205,10 +172,7 @@ void AAthenaSupplyDrop_C::BeginFallAudioTimeline()
 
 void AAthenaSupplyDrop_C::OnDeathPlayEffects(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OnDeathPlayEffects");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OnDeathPlayEffects");
 
 	Params::AthenaSupplyDrop_C_OnDeathPlayEffects Parms{};
 
@@ -232,10 +196,7 @@ void AAthenaSupplyDrop_C::OnDeathPlayEffects(float Damage, const struct FGamepla
 
 void AAthenaSupplyDrop_C::BlueprintOnInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "BlueprintOnInteract");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "BlueprintOnInteract");
 
 	Params::AthenaSupplyDrop_C_BlueprintOnInteract Parms{};
 
@@ -259,10 +220,7 @@ void AAthenaSupplyDrop_C::BlueprintOnInteract(const class AFortPawn* Interacting
 
 void AAthenaSupplyDrop_C::OnDeathServer(float Damage, const struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OnDeathServer");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OnDeathServer");
 
 	Params::AthenaSupplyDrop_C_OnDeathServer Parms{};
 
@@ -283,10 +241,7 @@ void AAthenaSupplyDrop_C::OnDeathServer(float Damage, const struct FGameplayTagC
 
 void AAthenaSupplyDrop_C::Multicast_ApplyGravityForFall()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "Multicast_ApplyGravityForFall");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "Multicast_ApplyGravityForFall");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -306,10 +261,7 @@ void AAthenaSupplyDrop_C::Multicast_ApplyGravityForFall()
 
 void AAthenaSupplyDrop_C::OnLandingLocationChanged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OnLandingLocationChanged");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OnLandingLocationChanged");
 
 	Params::AthenaSupplyDrop_C_OnLandingLocationChanged Parms{};
 
@@ -331,10 +283,7 @@ void AAthenaSupplyDrop_C::OnLandingLocationChanged(class AActor* DamagedActor, f
 
 void AAthenaSupplyDrop_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -345,10 +294,7 @@ void AAthenaSupplyDrop_C::ReceiveBeginPlay()
 
 void AAthenaSupplyDrop_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "UserConstructionScript");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "UserConstructionScript");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -359,10 +305,7 @@ void AAthenaSupplyDrop_C::UserConstructionScript()
 
 void AAthenaSupplyDrop_C::SpawnLoot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "SpawnLoot");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "SpawnLoot");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -375,10 +318,7 @@ void AAthenaSupplyDrop_C::SpawnLoot()
 
 void AAthenaSupplyDrop_C::Setup_Bind_To_Building_Actor(class UObject* Object)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "Setup Bind To Building Actor");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "Setup Bind To Building Actor");
 
 	Params::AthenaSupplyDrop_C_Setup_Bind_To_Building_Actor Parms{};
 
@@ -393,10 +333,7 @@ void AAthenaSupplyDrop_C::Setup_Bind_To_Building_Actor(class UObject* Object)
 
 void AAthenaSupplyDrop_C::OnRep_Opened()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OnRep_Opened");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OnRep_Opened");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -407,10 +344,7 @@ void AAthenaSupplyDrop_C::OnRep_Opened()
 
 void AAthenaSupplyDrop_C::OpenSupplyDrop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OpenSupplyDrop");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OpenSupplyDrop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -421,10 +355,7 @@ void AAthenaSupplyDrop_C::OpenSupplyDrop()
 
 void AAthenaSupplyDrop_C::UpdateReticleLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "UpdateReticleLocation");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "UpdateReticleLocation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -435,10 +366,7 @@ void AAthenaSupplyDrop_C::UpdateReticleLocation()
 
 void AAthenaSupplyDrop_C::BalloonDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "BalloonDestroyed");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "BalloonDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -449,10 +377,7 @@ void AAthenaSupplyDrop_C::BalloonDestroyed()
 
 void AAthenaSupplyDrop_C::OnRep_BalloonPopped()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OnRep_BalloonPopped");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OnRep_BalloonPopped");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -463,10 +388,7 @@ void AAthenaSupplyDrop_C::OnRep_BalloonPopped()
 
 void AAthenaSupplyDrop_C::InitFall()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "InitFall");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "InitFall");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -479,10 +401,7 @@ void AAthenaSupplyDrop_C::InitFall()
 
 void AAthenaSupplyDrop_C::PlayLandingFX(bool bSpawnVFX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "PlayLandingFX");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "PlayLandingFX");
 
 	Params::AthenaSupplyDrop_C_PlayLandingFX Parms{};
 
@@ -497,10 +416,7 @@ void AAthenaSupplyDrop_C::PlayLandingFX(bool bSpawnVFX)
 
 void AAthenaSupplyDrop_C::InitFallHeightAndSpeed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "InitFallHeightAndSpeed");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "InitFallHeightAndSpeed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -511,10 +427,7 @@ void AAthenaSupplyDrop_C::InitFallHeightAndSpeed()
 
 void AAthenaSupplyDrop_C::DisableFlare()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "DisableFlare");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "DisableFlare");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -525,10 +438,7 @@ void AAthenaSupplyDrop_C::DisableFlare()
 
 void AAthenaSupplyDrop_C::AlmostLanded()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "AlmostLanded");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "AlmostLanded");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -539,10 +449,7 @@ void AAthenaSupplyDrop_C::AlmostLanded()
 
 void AAthenaSupplyDrop_C::OnRep_LandingLocation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OnRep_LandingLocation");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OnRep_LandingLocation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -553,10 +460,7 @@ void AAthenaSupplyDrop_C::OnRep_LandingLocation()
 
 void AAthenaSupplyDrop_C::ForceSetLocationOnLanding()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "ForceSetLocationOnLanding");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "ForceSetLocationOnLanding");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -569,10 +473,7 @@ void AAthenaSupplyDrop_C::ForceSetLocationOnLanding()
 
 void AAthenaSupplyDrop_C::HandleProjectileMovementStop(const struct FHitResult& ImpactResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "HandleProjectileMovementStop");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "HandleProjectileMovementStop");
 
 	Params::AthenaSupplyDrop_C_HandleProjectileMovementStop Parms{};
 
@@ -592,10 +493,7 @@ void AAthenaSupplyDrop_C::HandleProjectileMovementStop(const struct FHitResult& 
 
 void AAthenaSupplyDrop_C::OnSetCustomDepthStencilValue(const TArray<class UPrimitiveComponent*>& PrimComponents, bool bUseCustomDepth, int32 StencilValue, bool* bOutConsume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "OnSetCustomDepthStencilValue");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "OnSetCustomDepthStencilValue");
 
 	Params::AthenaSupplyDrop_C_OnSetCustomDepthStencilValue Parms{};
 
@@ -617,10 +515,7 @@ void AAthenaSupplyDrop_C::OnSetCustomDepthStencilValue(const TArray<class UPrimi
 
 void AAthenaSupplyDrop_C::Analytics(const TArray<struct FFortItemEntry>& ItemsToSpawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "Analytics");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "Analytics");
 
 	Params::AthenaSupplyDrop_C_Analytics Parms{};
 
@@ -635,10 +530,7 @@ void AAthenaSupplyDrop_C::Analytics(const TArray<struct FFortItemEntry>& ItemsTo
 
 void AAthenaSupplyDrop_C::SpawnVehicle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "SpawnVehicle");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "SpawnVehicle");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -654,10 +546,7 @@ void AAthenaSupplyDrop_C::SpawnVehicle()
 
 bool AAthenaSupplyDrop_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "BlueprintCanInteract");
 
 	Params::AthenaSupplyDrop_C_BlueprintCanInteract Parms{};
 
@@ -678,10 +567,7 @@ bool AAthenaSupplyDrop_C::BlueprintCanInteract(const class AFortPawn* Interactin
 
 void AAthenaSupplyDrop_C::GetLootSpawnLocation(struct FVector* LootSpawnLocation) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "GetLootSpawnLocation");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "GetLootSpawnLocation");
 
 	Params::AthenaSupplyDrop_C_GetLootSpawnLocation Parms{};
 
@@ -701,10 +587,7 @@ void AAthenaSupplyDrop_C::GetLootSpawnLocation(struct FVector* LootSpawnLocation
 
 class FText AAthenaSupplyDrop_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSupplyDrop_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("AthenaSupplyDrop_C", "BlueprintGetInteractionString");
 
 	Params::AthenaSupplyDrop_C_BlueprintGetInteractionString Parms{};
 

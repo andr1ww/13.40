@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 void UAbilityFunctions_C::DoNOTUse_BuildArrayOfHitActors(const struct FGameplayAbilityTargetDataHandle& TargetData, class UObject* __WorldContext, TArray<class AActor*>* HitActors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "DoNOTUse-BuildArrayOfHitActors");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "DoNOTUse-BuildArrayOfHitActors");
 
 	Params::AbilityFunctions_C_DoNOTUse_BuildArrayOfHitActors Parms{};
 
@@ -51,10 +48,7 @@ void UAbilityFunctions_C::DoNOTUse_BuildArrayOfHitActors(const struct FGameplayA
 
 void UAbilityFunctions_C::SetArrayOfHitActors(const struct FGameplayAbilityTargetDataHandle& TargetData, TArray<class AActor*>& ArrayToSet, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "SetArrayOfHitActors");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "SetArrayOfHitActors");
 
 	Params::AbilityFunctions_C_SetArrayOfHitActors Parms{};
 
@@ -77,10 +71,7 @@ void UAbilityFunctions_C::SetArrayOfHitActors(const struct FGameplayAbilityTarge
 
 void UAbilityFunctions_C::ConvertRangeToTiles(float InRange, class UObject* __WorldContext, float* OutTile)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "ConvertRangeToTiles");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "ConvertRangeToTiles");
 
 	Params::AbilityFunctions_C_ConvertRangeToTiles Parms{};
 
@@ -104,10 +95,7 @@ void UAbilityFunctions_C::ConvertRangeToTiles(float InRange, class UObject* __Wo
 
 void UAbilityFunctions_C::GetProjectedTeleportLocation(class AActor* Actor, float MovementDistance, class UObject* __WorldContext, struct FVector* TargetLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetProjectedTeleportLocation");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetProjectedTeleportLocation");
 
 	Params::AbilityFunctions_C_GetProjectedTeleportLocation Parms{};
 
@@ -133,10 +121,7 @@ void UAbilityFunctions_C::GetProjectedTeleportLocation(class AActor* Actor, floa
 
 void UAbilityFunctions_C::GetRangeFromGameplayEffectContainerSpec(const struct FFortGameplayEffectContainerSpec& GE_Container_Spec, int32 Target_Selection_List_Index, float At_Level, class UObject* __WorldContext, float* Range)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetRangeFromGameplayEffectContainerSpec");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetRangeFromGameplayEffectContainerSpec");
 
 	Params::AbilityFunctions_C_GetRangeFromGameplayEffectContainerSpec Parms{};
 
@@ -162,10 +147,7 @@ void UAbilityFunctions_C::GetRangeFromGameplayEffectContainerSpec(const struct F
 
 void UAbilityFunctions_C::GetAngleBetweenTwoVectors(const struct FVector& VectorA, const struct FVector& VectorB, class UObject* __WorldContext, float* Angle__Degrees_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetAngleBetweenTwoVectors");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetAngleBetweenTwoVectors");
 
 	Params::AbilityFunctions_C_GetAngleBetweenTwoVectors Parms{};
 
@@ -190,10 +172,7 @@ void UAbilityFunctions_C::GetAngleBetweenTwoVectors(const struct FVector& Vector
 
 void UAbilityFunctions_C::GetTotalGameplayEffectCount(TArray<class UClass*>& EffectsToCount, class UAbilitySystemComponent* AbilitySystemComponent, class UObject* __WorldContext, int32* FinalEffectCount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetTotalGameplayEffectCount");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetTotalGameplayEffectCount");
 
 	Params::AbilityFunctions_C_GetTotalGameplayEffectCount Parms{};
 
@@ -221,10 +200,7 @@ void UAbilityFunctions_C::GetTotalGameplayEffectCount(TArray<class UClass*>& Eff
 
 void UAbilityFunctions_C::GetRangeFromGameplayEffectContainer(const struct FFortGameplayEffectContainer& GE_Container, int32 Target_Selection_List_Index, float At_Level, class UObject* __WorldContext, float* Range)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetRangeFromGameplayEffectContainer");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetRangeFromGameplayEffectContainer");
 
 	Params::AbilityFunctions_C_GetRangeFromGameplayEffectContainer Parms{};
 
@@ -252,10 +228,7 @@ void UAbilityFunctions_C::GetRangeFromGameplayEffectContainer(const struct FFort
 
 void UAbilityFunctions_C::EvaluatePerkTierBalanceValue(const struct FScalableFloat& T01_Balance_Value, const struct FScalableFloat& T02_Balance_Value, bool Owns_T02, bool Should_Override_T01, class UObject* __WorldContext, struct FScalableFloat* Balance_Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "EvaluatePerkTierBalanceValue");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "EvaluatePerkTierBalanceValue");
 
 	Params::AbilityFunctions_C_EvaluatePerkTierBalanceValue Parms{};
 
@@ -282,10 +255,7 @@ void UAbilityFunctions_C::EvaluatePerkTierBalanceValue(const struct FScalableFlo
 
 void UAbilityFunctions_C::GetPawnFromPlayerStateZone(class AActor* InActor, class UObject* __WorldContext, class AFortPlayerPawn** OutPawn, bool* PawnReturned)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetPawnFromPlayerStateZone");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetPawnFromPlayerStateZone");
 
 	Params::AbilityFunctions_C_GetPawnFromPlayerStateZone Parms{};
 
@@ -312,10 +282,7 @@ void UAbilityFunctions_C::GetPawnFromPlayerStateZone(class AActor* InActor, clas
 
 void UAbilityFunctions_C::GetDistanceBetweenActors(class AActor* Actor1, class AActor* Actor2, class UObject* __WorldContext, float* Distance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetDistanceBetweenActors");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "GetDistanceBetweenActors");
 
 	Params::AbilityFunctions_C_GetDistanceBetweenActors Parms{};
 
@@ -341,10 +308,7 @@ void UAbilityFunctions_C::GetDistanceBetweenActors(class AActor* Actor1, class A
 
 void UAbilityFunctions_C::ApplySlowFall(float SlowFallDuration, class UFortGameplayAbility* SelfGameplayAbilityReference, class UClass* GameplayEffect, class UObject* __WorldContext, struct FActiveGameplayEffectHandle* EffectSpecHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "ApplySlowFall");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "ApplySlowFall");
 
 	Params::AbilityFunctions_C_ApplySlowFall Parms{};
 
@@ -369,10 +333,7 @@ void UAbilityFunctions_C::ApplySlowFall(float SlowFallDuration, class UFortGamep
 
 bool UAbilityFunctions_C::ShouldHammerHitsHealRespondToEvent(const struct FGameplayEventData& Payload, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "ShouldHammerHitsHealRespondToEvent");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "ShouldHammerHitsHealRespondToEvent");
 
 	Params::AbilityFunctions_C_ShouldHammerHitsHealRespondToEvent Parms{};
 
@@ -394,10 +355,7 @@ bool UAbilityFunctions_C::ShouldHammerHitsHealRespondToEvent(const struct FGamep
 
 bool UAbilityFunctions_C::ShouldSwordHitsHealRespondToEvent(const struct FGameplayEventData& Payload, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("AbilityFunctions_C", "ShouldSwordHitsHealRespondToEvent");
+	class UFunction* Func = StaticClass()->GetFunction("AbilityFunctions_C", "ShouldSwordHitsHealRespondToEvent");
 
 	Params::AbilityFunctions_C_ShouldSwordHitsHealRespondToEvent Parms{};
 

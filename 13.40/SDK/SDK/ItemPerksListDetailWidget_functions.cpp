@@ -24,10 +24,7 @@ SDK_NAMESPACE_START
 
 void UItemPerksListDetailWidget_C::SetState(EFortPerksWidgetState InState, class UFortHero* InEvolutionOption)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPerksListDetailWidget_C", "SetState");
+	class UFunction* Func = Class->GetFunction("ItemPerksListDetailWidget_C", "SetState");
 
 	Params::ItemPerksListDetailWidget_C_SetState Parms{};
 
@@ -43,10 +40,7 @@ void UItemPerksListDetailWidget_C::SetState(EFortPerksWidgetState InState, class
 
 void UItemPerksListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPerksListDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	class UFunction* Func = Class->GetFunction("ItemPerksListDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UItemPerksListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemPerksListDetailWidget_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPerksListDetailWidget_C", "Construct");
+	class UFunction* Func = Class->GetFunction("ItemPerksListDetailWidget_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,10 +64,7 @@ void UItemPerksListDetailWidget_C::Construct()
 
 void UItemPerksListDetailWidget_C::ExecuteUbergraph_ItemPerksListDetailWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemPerksListDetailWidget_C", "ExecuteUbergraph_ItemPerksListDetailWidget");
+	class UFunction* Func = Class->GetFunction("ItemPerksListDetailWidget_C", "ExecuteUbergraph_ItemPerksListDetailWidget");
 
 	Params::ItemPerksListDetailWidget_C_ExecuteUbergraph_ItemPerksListDetailWidget Parms{};
 

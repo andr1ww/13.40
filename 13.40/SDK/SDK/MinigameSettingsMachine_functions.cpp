@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void AMinigameSettingsMachine_C::ExecuteUbergraph_MinigameSettingsMachine(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "ExecuteUbergraph_MinigameSettingsMachine");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "ExecuteUbergraph_MinigameSettingsMachine");
 
 	Params::MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine Parms{};
 
@@ -41,10 +38,7 @@ void AMinigameSettingsMachine_C::ExecuteUbergraph_MinigameSettingsMachine(int32 
 
 void AMinigameSettingsMachine_C::AbandonMinigameHelper()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "AbandonMinigameHelper");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "AbandonMinigameHelper");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void AMinigameSettingsMachine_C::AbandonMinigameHelper()
 
 void AMinigameSettingsMachine_C::StartMinigameHelper()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "StartMinigameHelper");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "StartMinigameHelper");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void AMinigameSettingsMachine_C::StartMinigameHelper()
 
 void AMinigameSettingsMachine_C::OnGameSettingsUpdated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "OnGameSettingsUpdated");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "OnGameSettingsUpdated");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,10 +71,7 @@ void AMinigameSettingsMachine_C::OnGameSettingsUpdated()
 
 void AMinigameSettingsMachine_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +84,7 @@ void AMinigameSettingsMachine_C::ReceiveBeginPlay()
 
 void AMinigameSettingsMachine_C::GetPickupSpawnLocation(struct FVector* SpawnLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetPickupSpawnLocation");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "GetPickupSpawnLocation");
 
 	Params::MinigameSettingsMachine_C_GetPickupSpawnLocation Parms{};
 
@@ -120,10 +102,7 @@ void AMinigameSettingsMachine_C::GetPickupSpawnLocation(struct FVector* SpawnLoc
 
 void AMinigameSettingsMachine_C::HasMinigameStarted(bool* bHasStarted)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "HasMinigameStarted");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "HasMinigameStarted");
 
 	Params::MinigameSettingsMachine_C_HasMinigameStarted Parms{};
 
@@ -139,10 +118,7 @@ void AMinigameSettingsMachine_C::HasMinigameStarted(bool* bHasStarted)
 
 void AMinigameSettingsMachine_C::UpdateGameMode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameMode");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameMode");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -153,10 +129,7 @@ void AMinigameSettingsMachine_C::UpdateGameMode()
 
 void AMinigameSettingsMachine_C::UpdateTimeLimit()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTimeLimit");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTimeLimit");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -169,10 +142,7 @@ void AMinigameSettingsMachine_C::UpdateTimeLimit()
 
 void AMinigameSettingsMachine_C::GetCurrentMinigame(class AFortMinigame** Minigame)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetCurrentMinigame");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "GetCurrentMinigame");
 
 	Params::MinigameSettingsMachine_C_GetCurrentMinigame Parms{};
 
@@ -188,10 +158,7 @@ void AMinigameSettingsMachine_C::GetCurrentMinigame(class AFortMinigame** Miniga
 
 void AMinigameSettingsMachine_C::UpdateSpawnLocationSetting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateSpawnLocationSetting");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateSpawnLocationSetting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -202,10 +169,7 @@ void AMinigameSettingsMachine_C::UpdateSpawnLocationSetting()
 
 void AMinigameSettingsMachine_C::UpdateTeamSetting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTeamSetting");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTeamSetting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -216,10 +180,7 @@ void AMinigameSettingsMachine_C::UpdateTeamSetting()
 
 void AMinigameSettingsMachine_C::UpdatePostGameSpawnLocationSetting()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePostGameSpawnLocationSetting");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePostGameSpawnLocationSetting");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -230,10 +191,7 @@ void AMinigameSettingsMachine_C::UpdatePostGameSpawnLocationSetting()
 
 void AMinigameSettingsMachine_C::UpdatePlayerLives()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePlayerLives");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePlayerLives");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -244,10 +202,7 @@ void AMinigameSettingsMachine_C::UpdatePlayerLives()
 
 void AMinigameSettingsMachine_C::UpdateAutoEndTeamThreshold()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateAutoEndTeamThreshold");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateAutoEndTeamThreshold");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -258,10 +213,7 @@ void AMinigameSettingsMachine_C::UpdateAutoEndTeamThreshold()
 
 void AMinigameSettingsMachine_C::UpdateTeamToMoveToWhenOutOfSpawns()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTeamToMoveToWhenOutOfSpawns");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTeamToMoveToWhenOutOfSpawns");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -272,10 +224,7 @@ void AMinigameSettingsMachine_C::UpdateTeamToMoveToWhenOutOfSpawns()
 
 void AMinigameSettingsMachine_C::UpdateEndConditions()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateEndConditions");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateEndConditions");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -286,10 +235,7 @@ void AMinigameSettingsMachine_C::UpdateEndConditions()
 
 void AMinigameSettingsMachine_C::UpdateAutoStart()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateAutoStart");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateAutoStart");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -303,10 +249,7 @@ void AMinigameSettingsMachine_C::UpdateAutoStart()
 
 void AMinigameSettingsMachine_C::TryAddEndCondition_CollectItems(TArray<struct FFortMinigameStatQuery>& EndConditions, bool* bResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "TryAddEndCondition_CollectItems");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "TryAddEndCondition_CollectItems");
 
 	Params::MinigameSettingsMachine_C_TryAddEndCondition_CollectItems Parms{};
 
@@ -326,10 +269,7 @@ void AMinigameSettingsMachine_C::TryAddEndCondition_CollectItems(TArray<struct F
 
 void AMinigameSettingsMachine_C::UpdateJoinInProgress()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateJoinInProgress");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateJoinInProgress");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -340,10 +280,7 @@ void AMinigameSettingsMachine_C::UpdateJoinInProgress()
 
 void AMinigameSettingsMachine_C::UpdateMinigameMutators()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateMinigameMutators");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateMinigameMutators");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -354,10 +291,7 @@ void AMinigameSettingsMachine_C::UpdateMinigameMutators()
 
 void AMinigameSettingsMachine_C::UpdateTotalRounds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTotalRounds");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTotalRounds");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -371,10 +305,7 @@ void AMinigameSettingsMachine_C::UpdateTotalRounds()
 
 void AMinigameSettingsMachine_C::TryAddEndCondition_DestroyObjects(TArray<struct FFortMinigameStatQuery>& EndConditions, bool* bResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "TryAddEndCondition_DestroyObjects");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "TryAddEndCondition_DestroyObjects");
 
 	Params::MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects Parms{};
 
@@ -394,10 +325,7 @@ void AMinigameSettingsMachine_C::TryAddEndCondition_DestroyObjects(TArray<struct
 
 void AMinigameSettingsMachine_C::FillTrackedStats()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "FillTrackedStats");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "FillTrackedStats");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -410,10 +338,7 @@ void AMinigameSettingsMachine_C::FillTrackedStats()
 
 void AMinigameSettingsMachine_C::GetScoreboardStatsArray(TArray<class UClass*>* ScoreboardStats)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetScoreboardStatsArray");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "GetScoreboardStatsArray");
 
 	Params::MinigameSettingsMachine_C_GetScoreboardStatsArray Parms{};
 
@@ -429,10 +354,7 @@ void AMinigameSettingsMachine_C::GetScoreboardStatsArray(TArray<class UClass*>* 
 
 void AMinigameSettingsMachine_C::Game_Mode_Preset_Upgrade_Path()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "Game Mode Preset Upgrade Path");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "Game Mode Preset Upgrade Path");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -445,10 +367,7 @@ void AMinigameSettingsMachine_C::Game_Mode_Preset_Upgrade_Path()
 
 void AMinigameSettingsMachine_C::GetUIExtensions(struct FGameplayTagContainer* Return_Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetUIExtensions");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "GetUIExtensions");
 
 	Params::MinigameSettingsMachine_C_GetUIExtensions Parms{};
 
@@ -464,10 +383,7 @@ void AMinigameSettingsMachine_C::GetUIExtensions(struct FGameplayTagContainer* R
 
 void AMinigameSettingsMachine_C::UpdateClassSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateClassSettings");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateClassSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -478,10 +394,7 @@ void AMinigameSettingsMachine_C::UpdateClassSettings()
 
 void AMinigameSettingsMachine_C::UpdatePlayerPersistence()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePlayerPersistence");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePlayerPersistence");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -492,10 +405,7 @@ void AMinigameSettingsMachine_C::UpdatePlayerPersistence()
 
 void AMinigameSettingsMachine_C::UpdateGameSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameSettings");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameSettings");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -509,10 +419,7 @@ void AMinigameSettingsMachine_C::UpdateGameSettings()
 
 void AMinigameSettingsMachine_C::AdditionalUIExtensionValidityChecks(const struct FGameplayTagContainer& TagContainer, bool* bUIExtensionIsValid)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "AdditionalUIExtensionValidityChecks");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "AdditionalUIExtensionValidityChecks");
 
 	Params::MinigameSettingsMachine_C_AdditionalUIExtensionValidityChecks Parms{};
 
@@ -530,10 +437,7 @@ void AMinigameSettingsMachine_C::AdditionalUIExtensionValidityChecks(const struc
 
 void AMinigameSettingsMachine_C::UpdateGameStartCountdown()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameStartCountdown");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameStartCountdown");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -549,10 +453,7 @@ void AMinigameSettingsMachine_C::UpdateGameStartCountdown()
 
 bool AMinigameSettingsMachine_C::BlueprintCanInteract(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted, const ETInteractionType InteractionType) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintCanInteract");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintCanInteract");
 
 	Params::MinigameSettingsMachine_C_BlueprintCanInteract Parms{};
 
@@ -575,10 +476,7 @@ bool AMinigameSettingsMachine_C::BlueprintCanInteract(const class AFortPawn* Int
 
 class FText AMinigameSettingsMachine_C::BlueprintGetInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintGetInteractionString");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintGetInteractionString");
 
 	Params::MinigameSettingsMachine_C_BlueprintGetInteractionString Parms{};
 
@@ -600,10 +498,7 @@ class FText AMinigameSettingsMachine_C::BlueprintGetInteractionString(const clas
 
 class FText AMinigameSettingsMachine_C::BlueprintGetFailedInteractionString(const class AFortPawn* InteractingPawn, const EInteractionBeingAttempted InteractionBeingAttempted) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintGetFailedInteractionString");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintGetFailedInteractionString");
 
 	Params::MinigameSettingsMachine_C_BlueprintGetFailedInteractionString Parms{};
 
@@ -623,10 +518,7 @@ class FText AMinigameSettingsMachine_C::BlueprintGetFailedInteractionString(cons
 
 int32 AMinigameSettingsMachine_C::GetTeamSetting() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetTeamSetting");
+	class UFunction* Func = Class->GetFunction("MinigameSettingsMachine_C", "GetTeamSetting");
 
 	Params::MinigameSettingsMachine_C_GetTeamSetting Parms{};
 

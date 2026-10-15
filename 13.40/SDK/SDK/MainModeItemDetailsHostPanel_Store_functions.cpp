@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void UMainModeItemDetailsHostPanel_Store_C::UpdateDescriptionVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainModeItemDetailsHostPanel_Store_C", "UpdateDescriptionVisibility");
+	class UFunction* Func = Class->GetFunction("MainModeItemDetailsHostPanel_Store_C", "UpdateDescriptionVisibility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void UMainModeItemDetailsHostPanel_Store_C::UpdateDescriptionVisibility()
 
 void UMainModeItemDetailsHostPanel_Store_C::HandleHasItemMarkedForMulchingChanged()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainModeItemDetailsHostPanel_Store_C", "HandleHasItemMarkedForMulchingChanged");
+	class UFunction* Func = Class->GetFunction("MainModeItemDetailsHostPanel_Store_C", "HandleHasItemMarkedForMulchingChanged");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -49,10 +43,7 @@ void UMainModeItemDetailsHostPanel_Store_C::HandleHasItemMarkedForMulchingChange
 
 void UMainModeItemDetailsHostPanel_Store_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainModeItemDetailsHostPanel_Store_C", "Construct");
+	class UFunction* Func = Class->GetFunction("MainModeItemDetailsHostPanel_Store_C", "Construct");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,10 +56,7 @@ void UMainModeItemDetailsHostPanel_Store_C::Construct()
 
 void UMainModeItemDetailsHostPanel_Store_C::ExecuteUbergraph_MainModeItemDetailsHostPanel_Store(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainModeItemDetailsHostPanel_Store_C", "ExecuteUbergraph_MainModeItemDetailsHostPanel_Store");
+	class UFunction* Func = Class->GetFunction("MainModeItemDetailsHostPanel_Store_C", "ExecuteUbergraph_MainModeItemDetailsHostPanel_Store");
 
 	Params::MainModeItemDetailsHostPanel_Store_C_ExecuteUbergraph_MainModeItemDetailsHostPanel_Store Parms{};
 

@@ -27,10 +27,7 @@ SDK_NAMESPACE_START
 
 void UEventScoreBigStat_C::SetData(const class FText& Label, int32 Value, int32 ValueContext, const class FText& FormatterText, const struct FFortTournamentDisplayInfo& Tournament_Display_Info)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventScoreBigStat_C", "SetData");
+	class UFunction* Func = Class->GetFunction("EventScoreBigStat_C", "SetData");
 
 	Params::EventScoreBigStat_C_SetData Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_Athena_FloppingRabbit_C::ExecuteUbergraph_GA_Athena_FloppingRabbit(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit");
 
 	Params::GA_Athena_FloppingRabbit_C_ExecuteUbergraph_GA_Athena_FloppingRabbit Parms{};
 
@@ -41,10 +38,7 @@ void UGA_Athena_FloppingRabbit_C::ExecuteUbergraph_GA_Athena_FloppingRabbit(int3
 
 void UGA_Athena_FloppingRabbit_C::ThrowMontageStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "ThrowMontageStarted");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "ThrowMontageStarted");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void UGA_Athena_FloppingRabbit_C::ThrowMontageStarted()
 
 void UGA_Athena_FloppingRabbit_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -71,10 +62,7 @@ void UGA_Athena_FloppingRabbit_C::K2_ActivateAbility()
 
 void UGA_Athena_FloppingRabbit_C::OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
 
 	Params::GA_Athena_FloppingRabbit_C_OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7 Parms{};
 
@@ -91,10 +79,7 @@ void UGA_Athena_FloppingRabbit_C::OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7(c
 
 void UGA_Athena_FloppingRabbit_C::OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
 
 	Params::GA_Athena_FloppingRabbit_C_OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7 Parms{};
 
@@ -111,10 +96,7 @@ void UGA_Athena_FloppingRabbit_C::OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7(cl
 
 void UGA_Athena_FloppingRabbit_C::OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
 
 	Params::GA_Athena_FloppingRabbit_C_OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7 Parms{};
 
@@ -131,10 +113,7 @@ void UGA_Athena_FloppingRabbit_C::OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7
 
 void UGA_Athena_FloppingRabbit_C::OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
 
 	Params::GA_Athena_FloppingRabbit_C_OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7 Parms{};
 
@@ -151,10 +130,7 @@ void UGA_Athena_FloppingRabbit_C::OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7
 
 void UGA_Athena_FloppingRabbit_C::OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
 
 	Params::GA_Athena_FloppingRabbit_C_OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7 Parms{};
 
@@ -173,10 +149,7 @@ void UGA_Athena_FloppingRabbit_C::OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7(c
 
 bool UGA_Athena_FloppingRabbit_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "K2_CanActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "K2_CanActivateAbility");
 
 	Params::GA_Athena_FloppingRabbit_C_K2_CanActivateAbility Parms{};
 

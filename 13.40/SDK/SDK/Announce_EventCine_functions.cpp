@@ -21,10 +21,7 @@ SDK_NAMESPACE_START
 
 void AAnnounce_EventCine_C::OnClientAnnouncementStop()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Announce_EventCine_C", "OnClientAnnouncementStop");
+	class UFunction* Func = Class->GetFunction("Announce_EventCine_C", "OnClientAnnouncementStop");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,10 +32,7 @@ void AAnnounce_EventCine_C::OnClientAnnouncementStop()
 
 void AAnnounce_EventCine_C::OnPlayerSkippedCutscene()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Announce_EventCine_C", "OnPlayerSkippedCutscene");
+	class UFunction* Func = Class->GetFunction("Announce_EventCine_C", "OnPlayerSkippedCutscene");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -53,10 +47,7 @@ void AAnnounce_EventCine_C::OnPlayerSkippedCutscene()
 
 void AAnnounce_EventCine_C::HandleClientEvent_CinematicFinishedPlaying(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Announce_EventCine_C", "HandleClientEvent_CinematicFinishedPlaying");
+	class UFunction* Func = Class->GetFunction("Announce_EventCine_C", "HandleClientEvent_CinematicFinishedPlaying");
 
 	Params::Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying Parms{};
 
@@ -73,10 +64,7 @@ void AAnnounce_EventCine_C::HandleClientEvent_CinematicFinishedPlaying(class UOb
 
 void AAnnounce_EventCine_C::HandleAllowSkip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Announce_EventCine_C", "HandleAllowSkip");
+	class UFunction* Func = Class->GetFunction("Announce_EventCine_C", "HandleAllowSkip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -87,10 +75,7 @@ void AAnnounce_EventCine_C::HandleAllowSkip()
 
 void AAnnounce_EventCine_C::OnEnteredCinematicState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Announce_EventCine_C", "OnEnteredCinematicState");
+	class UFunction* Func = Class->GetFunction("Announce_EventCine_C", "OnEnteredCinematicState");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +88,7 @@ void AAnnounce_EventCine_C::OnEnteredCinematicState()
 
 void AAnnounce_EventCine_C::ExecuteUbergraph_Announce_EventCine(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Announce_EventCine_C", "ExecuteUbergraph_Announce_EventCine");
+	class UFunction* Func = Class->GetFunction("Announce_EventCine_C", "ExecuteUbergraph_Announce_EventCine");
 
 	Params::Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UGA_HeldObject_Drop_C::ExecuteUbergraph_GA_HeldObject_Drop(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Drop_C", "ExecuteUbergraph_GA_HeldObject_Drop");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Drop_C", "ExecuteUbergraph_GA_HeldObject_Drop");
 
 	Params::GA_HeldObject_Drop_C_ExecuteUbergraph_GA_HeldObject_Drop Parms{};
 
@@ -41,10 +38,7 @@ void UGA_HeldObject_Drop_C::ExecuteUbergraph_GA_HeldObject_Drop(int32 EntryPoint
 
 void UGA_HeldObject_Drop_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_HeldObject_Drop_C", "K2_ActivateAbility");
+	class UFunction* Func = Class->GetFunction("GA_HeldObject_Drop_C", "K2_ActivateAbility");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

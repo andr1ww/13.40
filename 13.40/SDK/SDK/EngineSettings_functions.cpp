@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 class UGameMapsSettings* UGameMapsSettings::GetGameMapsSettings()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("GameMapsSettings", "GetGameMapsSettings");
+	class UFunction* Func = StaticClass()->GetFunction("GameMapsSettings", "GetGameMapsSettings");
 
 	Params::GameMapsSettings_GetGameMapsSettings Parms{};
 
@@ -48,10 +45,7 @@ class UGameMapsSettings* UGameMapsSettings::GetGameMapsSettings()
 
 void UGameMapsSettings::SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameMapsSettings", "SetSkipAssigningGamepadToPlayer1");
+	class UFunction* Func = Class->GetFunction("GameMapsSettings", "SetSkipAssigningGamepadToPlayer1");
 
 	Params::GameMapsSettings_SetSkipAssigningGamepadToPlayer1 Parms{};
 
@@ -73,10 +67,7 @@ void UGameMapsSettings::SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer)
 
 bool UGameMapsSettings::GetSkipAssigningGamepadToPlayer1() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GameMapsSettings", "GetSkipAssigningGamepadToPlayer1");
+	class UFunction* Func = Class->GetFunction("GameMapsSettings", "GetSkipAssigningGamepadToPlayer1");
 
 	Params::GameMapsSettings_GetSkipAssigningGamepadToPlayer1 Parms{};
 

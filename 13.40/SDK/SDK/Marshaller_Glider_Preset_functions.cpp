@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UMarshaller_Glider_Preset_C::ExecuteUbergraph_Marshaller_Glider_Preset(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Marshaller_Glider_Preset_C", "ExecuteUbergraph_Marshaller_Glider_Preset");
+	class UFunction* Func = Class->GetFunction("Marshaller_Glider_Preset_C", "ExecuteUbergraph_Marshaller_Glider_Preset");
 
 	Params::Marshaller_Glider_Preset_C_ExecuteUbergraph_Marshaller_Glider_Preset Parms{};
 

@@ -25,10 +25,7 @@ SDK_NAMESPACE_START
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Add_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Add_FrameNumberFrameNumber");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Add_FrameNumberFrameNumber");
 
 	Params::TimeManagementBlueprintLibrary_Add_FrameNumberFrameNumber Parms{};
 
@@ -55,10 +52,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Add_FrameNumberFrameNumber(
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Add_FrameNumberInteger(const struct FFrameNumber& A, int32 B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Add_FrameNumberInteger");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Add_FrameNumberInteger");
 
 	Params::TimeManagementBlueprintLibrary_Add_FrameNumberInteger Parms{};
 
@@ -84,10 +78,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Add_FrameNumberInteger(cons
 
 int32 UTimeManagementBlueprintLibrary::Conv_FrameNumberToInteger(const struct FFrameNumber& InFrameNumber)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Conv_FrameNumberToInteger");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Conv_FrameNumberToInteger");
 
 	Params::TimeManagementBlueprintLibrary_Conv_FrameNumberToInteger Parms{};
 
@@ -112,10 +103,7 @@ int32 UTimeManagementBlueprintLibrary::Conv_FrameNumberToInteger(const struct FF
 
 float UTimeManagementBlueprintLibrary::Conv_FrameRateToSeconds(const struct FFrameRate& InFrameRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Conv_FrameRateToSeconds");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Conv_FrameRateToSeconds");
 
 	Params::TimeManagementBlueprintLibrary_Conv_FrameRateToSeconds Parms{};
 
@@ -140,10 +128,7 @@ float UTimeManagementBlueprintLibrary::Conv_FrameRateToSeconds(const struct FFra
 
 float UTimeManagementBlueprintLibrary::Conv_QualifiedFrameTimeToSeconds(const struct FQualifiedFrameTime& InFrameTime)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Conv_QualifiedFrameTimeToSeconds");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Conv_QualifiedFrameTimeToSeconds");
 
 	Params::TimeManagementBlueprintLibrary_Conv_QualifiedFrameTimeToSeconds Parms{};
 
@@ -169,10 +154,7 @@ float UTimeManagementBlueprintLibrary::Conv_QualifiedFrameTimeToSeconds(const st
 
 class FString UTimeManagementBlueprintLibrary::Conv_TimecodeToString(const struct FTimecode& InTimecode, bool bForceSignDisplay)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Conv_TimecodeToString");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Conv_TimecodeToString");
 
 	Params::TimeManagementBlueprintLibrary_Conv_TimecodeToString Parms{};
 
@@ -199,10 +181,7 @@ class FString UTimeManagementBlueprintLibrary::Conv_TimecodeToString(const struc
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Divide_FrameNumberInteger(const struct FFrameNumber& A, int32 B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Divide_FrameNumberInteger");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Divide_FrameNumberInteger");
 
 	Params::TimeManagementBlueprintLibrary_Divide_FrameNumberInteger Parms{};
 
@@ -227,10 +206,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Divide_FrameNumberInteger(c
 
 struct FTimecode UTimeManagementBlueprintLibrary::GetTimecode()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "GetTimecode");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "GetTimecode");
 
 	Params::TimeManagementBlueprintLibrary_GetTimecode Parms{};
 
@@ -252,10 +228,7 @@ struct FTimecode UTimeManagementBlueprintLibrary::GetTimecode()
 
 struct FFrameRate UTimeManagementBlueprintLibrary::GetTimecodeFrameRate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "GetTimecodeFrameRate");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "GetTimecodeFrameRate");
 
 	Params::TimeManagementBlueprintLibrary_GetTimecodeFrameRate Parms{};
 
@@ -278,10 +251,7 @@ struct FFrameRate UTimeManagementBlueprintLibrary::GetTimecodeFrameRate()
 
 bool UTimeManagementBlueprintLibrary::IsValid_Framerate(const struct FFrameRate& InFrameRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "IsValid_Framerate");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "IsValid_Framerate");
 
 	Params::TimeManagementBlueprintLibrary_IsValid_Framerate Parms{};
 
@@ -307,10 +277,7 @@ bool UTimeManagementBlueprintLibrary::IsValid_Framerate(const struct FFrameRate&
 
 bool UTimeManagementBlueprintLibrary::IsValid_MultipleOf(const struct FFrameRate& InFrameRate, const struct FFrameRate& OtherFramerate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "IsValid_MultipleOf");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "IsValid_MultipleOf");
 
 	Params::TimeManagementBlueprintLibrary_IsValid_MultipleOf Parms{};
 
@@ -337,10 +304,7 @@ bool UTimeManagementBlueprintLibrary::IsValid_MultipleOf(const struct FFrameRate
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Multiply_FrameNumberInteger(const struct FFrameNumber& A, int32 B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Multiply_FrameNumberInteger");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Multiply_FrameNumberInteger");
 
 	Params::TimeManagementBlueprintLibrary_Multiply_FrameNumberInteger Parms{};
 
@@ -367,10 +331,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Multiply_FrameNumberInteger
 
 struct FFrameTime UTimeManagementBlueprintLibrary::Multiply_SecondsFrameRate(float TimeInSeconds, const struct FFrameRate& FrameRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Multiply_SecondsFrameRate");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Multiply_SecondsFrameRate");
 
 	Params::TimeManagementBlueprintLibrary_Multiply_SecondsFrameRate Parms{};
 
@@ -398,10 +359,7 @@ struct FFrameTime UTimeManagementBlueprintLibrary::Multiply_SecondsFrameRate(flo
 
 struct FFrameTime UTimeManagementBlueprintLibrary::SnapFrameTimeToRate(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& SnapToRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "SnapFrameTimeToRate");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "SnapFrameTimeToRate");
 
 	Params::TimeManagementBlueprintLibrary_SnapFrameTimeToRate Parms{};
 
@@ -429,10 +387,7 @@ struct FFrameTime UTimeManagementBlueprintLibrary::SnapFrameTimeToRate(const str
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Subtract_FrameNumberFrameNumber(const struct FFrameNumber& A, const struct FFrameNumber& B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Subtract_FrameNumberFrameNumber");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Subtract_FrameNumberFrameNumber");
 
 	Params::TimeManagementBlueprintLibrary_Subtract_FrameNumberFrameNumber Parms{};
 
@@ -459,10 +414,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Subtract_FrameNumberFrameNu
 
 struct FFrameNumber UTimeManagementBlueprintLibrary::Subtract_FrameNumberInteger(const struct FFrameNumber& A, int32 B)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Subtract_FrameNumberInteger");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "Subtract_FrameNumberInteger");
 
 	Params::TimeManagementBlueprintLibrary_Subtract_FrameNumberInteger Parms{};
 
@@ -490,10 +442,7 @@ struct FFrameNumber UTimeManagementBlueprintLibrary::Subtract_FrameNumberInteger
 
 struct FFrameTime UTimeManagementBlueprintLibrary::TransformTime(const struct FFrameTime& SourceTime, const struct FFrameRate& SourceRate, const struct FFrameRate& DestinationRate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "TransformTime");
+	class UFunction* Func = StaticClass()->GetFunction("TimeManagementBlueprintLibrary", "TransformTime");
 
 	Params::TimeManagementBlueprintLibrary_TransformTime Parms{};
 

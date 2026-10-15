@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ADA_SpookyMist_C::ExecuteUbergraph_DA_SpookyMist(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_SpookyMist_C", "ExecuteUbergraph_DA_SpookyMist");
+	class UFunction* Func = Class->GetFunction("DA_SpookyMist_C", "ExecuteUbergraph_DA_SpookyMist");
 
 	Params::DA_SpookyMist_C_ExecuteUbergraph_DA_SpookyMist Parms{};
 
@@ -41,10 +38,7 @@ void ADA_SpookyMist_C::ExecuteUbergraph_DA_SpookyMist(int32 EntryPoint)
 
 void ADA_SpookyMist_C::On_DBNO()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_SpookyMist_C", "On DBNO");
+	class UFunction* Func = Class->GetFunction("DA_SpookyMist_C", "On DBNO");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,10 +49,7 @@ void ADA_SpookyMist_C::On_DBNO()
 
 void ADA_SpookyMist_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_SpookyMist_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("DA_SpookyMist_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,10 +60,7 @@ void ADA_SpookyMist_C::ReceiveBeginPlay()
 
 void ADA_SpookyMist_C::CanCancel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_SpookyMist_C", "CanCancel");
+	class UFunction* Func = Class->GetFunction("DA_SpookyMist_C", "CanCancel");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +73,7 @@ void ADA_SpookyMist_C::CanCancel()
 
 void ADA_SpookyMist_C::BPReleaseSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_SpookyMist_C", "BPReleaseSecondaryFire");
+	class UFunction* Func = Class->GetFunction("DA_SpookyMist_C", "BPReleaseSecondaryFire");
 
 	Params::DA_SpookyMist_C_BPReleaseSecondaryFire Parms{};
 
@@ -103,10 +88,7 @@ void ADA_SpookyMist_C::BPReleaseSecondaryFire(class AFortDecoHelper* FortDecoHel
 
 void ADA_SpookyMist_C::BPOnUnEquip()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_SpookyMist_C", "BPOnUnEquip");
+	class UFunction* Func = Class->GetFunction("DA_SpookyMist_C", "BPOnUnEquip");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -119,10 +101,7 @@ void ADA_SpookyMist_C::BPOnUnEquip()
 
 void ADA_SpookyMist_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_SpookyMist_C", "BPPressTrigger");
+	class UFunction* Func = Class->GetFunction("DA_SpookyMist_C", "BPPressTrigger");
 
 	Params::DA_SpookyMist_C_BPPressTrigger Parms{};
 
@@ -139,10 +118,7 @@ void ADA_SpookyMist_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 
 void ADA_SpookyMist_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DA_SpookyMist_C", "BPPressSecondaryFire");
+	class UFunction* Func = Class->GetFunction("DA_SpookyMist_C", "BPPressSecondaryFire");
 
 	Params::DA_SpookyMist_C_BPPressSecondaryFire Parms{};
 

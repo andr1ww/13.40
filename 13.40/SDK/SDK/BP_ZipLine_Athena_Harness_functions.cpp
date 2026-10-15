@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_ZipLine_Athena_Harness_C::ExecuteUbergraph_BP_ZipLine_Athena_Harness(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ExecuteUbergraph_BP_ZipLine_Athena_Harness");
+	class UFunction* Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ExecuteUbergraph_BP_ZipLine_Athena_Harness");
 
 	Params::BP_ZipLine_Athena_Harness_C_ExecuteUbergraph_BP_ZipLine_Athena_Harness Parms{};
 
@@ -41,10 +38,7 @@ void ABP_ZipLine_Athena_Harness_C::ExecuteUbergraph_BP_ZipLine_Athena_Harness(in
 
 void ABP_ZipLine_Athena_Harness_C::Chime_Visual()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Chime Visual");
+	class UFunction* Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Chime Visual");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -64,10 +58,7 @@ void ABP_ZipLine_Athena_Harness_C::Chime_Visual()
 
 void ABP_ZipLine_Athena_Harness_C::HandleOnDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "HandleOnDied");
+	class UFunction* Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "HandleOnDied");
 
 	Params::BP_ZipLine_Athena_Harness_C_HandleOnDied Parms{};
 
@@ -89,10 +80,7 @@ void ABP_ZipLine_Athena_Harness_C::HandleOnDied(class AActor* DamagedActor, floa
 
 void ABP_ZipLine_Athena_Harness_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ReceiveDestroyed");
+	class UFunction* Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ReceiveDestroyed");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +91,7 @@ void ABP_ZipLine_Athena_Harness_C::ReceiveDestroyed()
 
 void ABP_ZipLine_Athena_Harness_C::Stop_Travel_Audio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Stop Travel Audio");
+	class UFunction* Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Stop Travel Audio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -117,10 +102,7 @@ void ABP_ZipLine_Athena_Harness_C::Stop_Travel_Audio()
 
 void ABP_ZipLine_Athena_Harness_C::Start_Travel_Audio()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Start Travel Audio");
+	class UFunction* Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Start Travel Audio");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -131,10 +113,7 @@ void ABP_ZipLine_Athena_Harness_C::Start_Travel_Audio()
 
 void ABP_ZipLine_Athena_Harness_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

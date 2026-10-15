@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UCreative_Enabled_Component_C::ExecuteUbergraph_Creative_Enabled_Component(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "ExecuteUbergraph_Creative_Enabled_Component");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "ExecuteUbergraph_Creative_Enabled_Component");
 
 	Params::Creative_Enabled_Component_C_ExecuteUbergraph_Creative_Enabled_Component Parms{};
 
@@ -44,10 +41,7 @@ void UCreative_Enabled_Component_C::ExecuteUbergraph_Creative_Enabled_Component(
 
 void UCreative_Enabled_Component_C::Minigame_Play_Mode_Changed(class AFortMinigame* Minigame, bool bIsInPlayMode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Minigame Play Mode Changed");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Minigame Play Mode Changed");
 
 	Params::Creative_Enabled_Component_C_Minigame_Play_Mode_Changed Parms{};
 
@@ -66,10 +60,7 @@ void UCreative_Enabled_Component_C::Minigame_Play_Mode_Changed(class AFortMiniga
 
 void UCreative_Enabled_Component_C::Minigame_State_Changed(class AFortMinigame* Minigame, EFortMinigameState MinigameState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Minigame State Changed");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Minigame State Changed");
 
 	Params::Creative_Enabled_Component_C_Minigame_State_Changed Parms{};
 
@@ -87,10 +78,7 @@ void UCreative_Enabled_Component_C::Minigame_State_Changed(class AFortMinigame* 
 
 void UCreative_Enabled_Component_C::Bind_to_Minigame(class AFortMinigame* Minigame)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Bind to Minigame");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Bind to Minigame");
 
 	Params::Creative_Enabled_Component_C_Bind_to_Minigame Parms{};
 
@@ -108,10 +96,7 @@ void UCreative_Enabled_Component_C::Bind_to_Minigame(class AFortMinigame* Miniga
 
 void UCreative_Enabled_Component_C::Initialize_Component(class UFortMinigameLogicComponent* Logic_Component_0, int32 Enabled_Index_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Initialize Component");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Initialize Component");
 
 	Params::Creative_Enabled_Component_C_Initialize_Component Parms{};
 
@@ -130,10 +115,7 @@ void UCreative_Enabled_Component_C::Initialize_Component(class UFortMinigameLogi
 
 void UCreative_Enabled_Component_C::Set_Enabled_on_Phase(EFortMinigameState State, int32 EnabledIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Set Enabled on Phase");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Set Enabled on Phase");
 
 	Params::Creative_Enabled_Component_C_Set_Enabled_on_Phase Parms{};
 
@@ -151,10 +133,7 @@ void UCreative_Enabled_Component_C::Set_Enabled_on_Phase(EFortMinigameState Stat
 
 void UCreative_Enabled_Component_C::IsEnabled(bool* Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "IsEnabled");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "IsEnabled");
 
 	Params::Creative_Enabled_Component_C_IsEnabled Parms{};
 
@@ -172,10 +151,7 @@ void UCreative_Enabled_Component_C::IsEnabled(bool* Enabled)
 
 void UCreative_Enabled_Component_C::Set_Enabled(bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Set Enabled");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Set Enabled");
 
 	Params::Creative_Enabled_Component_C_Set_Enabled Parms{};
 
@@ -192,10 +168,7 @@ void UCreative_Enabled_Component_C::Set_Enabled(bool bEnabled)
 
 void UCreative_Enabled_Component_C::Set_Enabled_on_Play_Mode(bool Play_Mode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Set Enabled on Play Mode");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Set Enabled on Play Mode");
 
 	Params::Creative_Enabled_Component_C_Set_Enabled_on_Play_Mode Parms{};
 
@@ -210,10 +183,7 @@ void UCreative_Enabled_Component_C::Set_Enabled_on_Play_Mode(bool Play_Mode)
 
 void UCreative_Enabled_Component_C::Reset_Delay_Complete()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Reset Delay Complete");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Reset Delay Complete");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -226,10 +196,7 @@ void UCreative_Enabled_Component_C::Reset_Delay_Complete()
 
 void UCreative_Enabled_Component_C::Reset_Delay_Start(float Delay)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Reset Delay Start");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Reset Delay Start");
 
 	Params::Creative_Enabled_Component_C_Reset_Delay_Start Parms{};
 
@@ -247,10 +214,7 @@ void UCreative_Enabled_Component_C::Reset_Delay_Start(float Delay)
 
 void UCreative_Enabled_Component_C::IsResetting(bool* TRUE_0, float* Remaining_Time)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "IsResetting");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "IsResetting");
 
 	Params::Creative_Enabled_Component_C_IsResetting Parms{};
 
@@ -269,10 +233,7 @@ void UCreative_Enabled_Component_C::IsResetting(bool* TRUE_0, float* Remaining_T
 
 void UCreative_Enabled_Component_C::OnRep_EIsEnabled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "OnRep_EIsEnabled");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "OnRep_EIsEnabled");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -285,10 +246,7 @@ void UCreative_Enabled_Component_C::OnRep_EIsEnabled()
 
 void UCreative_Enabled_Component_C::Can_be_Enabled(bool* TRUE_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Enabled_Component_C", "Can be Enabled");
+	class UFunction* Func = Class->GetFunction("Creative_Enabled_Component_C", "Can be Enabled");
 
 	Params::Creative_Enabled_Component_C_Can_be_Enabled Parms{};
 

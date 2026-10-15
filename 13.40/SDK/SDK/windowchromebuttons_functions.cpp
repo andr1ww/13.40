@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void Uwindowchromebuttons_C::ExecuteUbergraph_windowchromebuttons(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("windowchromebuttons_C", "ExecuteUbergraph_windowchromebuttons");
+	class UFunction* Func = Class->GetFunction("windowchromebuttons_C", "ExecuteUbergraph_windowchromebuttons");
 
 	Params::windowchromebuttons_C_ExecuteUbergraph_windowchromebuttons Parms{};
 
@@ -43,10 +40,7 @@ void Uwindowchromebuttons_C::ExecuteUbergraph_windowchromebuttons(int32 EntryPoi
 
 void Uwindowchromebuttons_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("windowchromebuttons_C", "OnMouseLeave");
+	class UFunction* Func = Class->GetFunction("windowchromebuttons_C", "OnMouseLeave");
 
 	Params::windowchromebuttons_C_OnMouseLeave Parms{};
 
@@ -64,10 +58,7 @@ void Uwindowchromebuttons_C::OnMouseLeave(const struct FPointerEvent& MouseEvent
 
 void Uwindowchromebuttons_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("windowchromebuttons_C", "OnMouseEnter");
+	class UFunction* Func = Class->GetFunction("windowchromebuttons_C", "OnMouseEnter");
 
 	Params::windowchromebuttons_C_OnMouseEnter Parms{};
 

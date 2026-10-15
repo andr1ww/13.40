@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void ABP_ProjectileTrajectory_C::ExecuteUbergraph_BP_ProjectileTrajectory(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ExecuteUbergraph_BP_ProjectileTrajectory");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ExecuteUbergraph_BP_ProjectileTrajectory");
 
 	Params::BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory Parms{};
 
@@ -44,10 +41,7 @@ void ABP_ProjectileTrajectory_C::ExecuteUbergraph_BP_ProjectileTrajectory(int32 
 
 void ABP_ProjectileTrajectory_C::SetTrajectorySpline(const TArray<struct FVector>& SplinePoints, const TArray<struct FVector>& SplineTangents)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetTrajectorySpline");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetTrajectorySpline");
 
 	Params::BP_ProjectileTrajectory_C_SetTrajectorySpline Parms{};
 
@@ -65,10 +59,7 @@ void ABP_ProjectileTrajectory_C::SetTrajectorySpline(const TArray<struct FVector
 
 void ABP_ProjectileTrajectory_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ReceiveTick");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ReceiveTick");
 
 	Params::BP_ProjectileTrajectory_C_ReceiveTick Parms{};
 
@@ -83,10 +74,7 @@ void ABP_ProjectileTrajectory_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_ProjectileTrajectory_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ReceiveBeginPlay");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,10 +85,7 @@ void ABP_ProjectileTrajectory_C::ReceiveBeginPlay()
 
 void ABP_ProjectileTrajectory_C::UpdateFromTrajectoryOwner()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "UpdateFromTrajectoryOwner");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_C", "UpdateFromTrajectoryOwner");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -114,10 +99,7 @@ void ABP_ProjectileTrajectory_C::UpdateFromTrajectoryOwner()
 
 void ABP_ProjectileTrajectory_C::SetShouldUpdateFromOwner(bool ShouldUpdate_0, class UObject* Owner_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetShouldUpdateFromOwner");
+	class UFunction* Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetShouldUpdateFromOwner");
 
 	Params::BP_ProjectileTrajectory_C_SetShouldUpdateFromOwner Parms{};
 

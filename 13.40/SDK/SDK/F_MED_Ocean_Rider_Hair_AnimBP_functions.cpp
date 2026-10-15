@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UF_MED_Ocean_Rider_Hair_AnimBP_C::ExecuteUbergraph_F_MED_Ocean_Rider_Hair_AnimBP(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Ocean_Rider_Hair_AnimBP_C", "ExecuteUbergraph_F_MED_Ocean_Rider_Hair_AnimBP");
+	class UFunction* Func = Class->GetFunction("F_MED_Ocean_Rider_Hair_AnimBP_C", "ExecuteUbergraph_F_MED_Ocean_Rider_Hair_AnimBP");
 
 	Params::F_MED_Ocean_Rider_Hair_AnimBP_C_ExecuteUbergraph_F_MED_Ocean_Rider_Hair_AnimBP Parms{};
 
@@ -43,10 +40,7 @@ void UF_MED_Ocean_Rider_Hair_AnimBP_C::ExecuteUbergraph_F_MED_Ocean_Rider_Hair_A
 
 void UF_MED_Ocean_Rider_Hair_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("F_MED_Ocean_Rider_Hair_AnimBP_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("F_MED_Ocean_Rider_Hair_AnimBP_C", "AnimGraph");
 
 	Params::F_MED_Ocean_Rider_Hair_AnimBP_C_AnimGraph Parms{};
 

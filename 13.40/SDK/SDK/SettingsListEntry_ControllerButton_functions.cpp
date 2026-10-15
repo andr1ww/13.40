@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void USettingsListEntry_ControllerButton_C::ExecuteUbergraph_SettingsListEntry_ControllerButton(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_ControllerButton_C", "ExecuteUbergraph_SettingsListEntry_ControllerButton");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_ControllerButton_C", "ExecuteUbergraph_SettingsListEntry_ControllerButton");
 
 	Params::SettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton Parms{};
 
@@ -43,10 +40,7 @@ void USettingsListEntry_ControllerButton_C::ExecuteUbergraph_SettingsListEntry_C
 
 void USettingsListEntry_ControllerButton_C::OnSettingAssigned(const class FText& ActionText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SettingsListEntry_ControllerButton_C", "OnSettingAssigned");
+	class UFunction* Func = Class->GetFunction("SettingsListEntry_ControllerButton_C", "OnSettingAssigned");
 
 	Params::SettingsListEntry_ControllerButton_C_OnSettingAssigned Parms{};
 

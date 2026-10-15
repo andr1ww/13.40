@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UDBNO_Carried_Simulation_C::ExecuteUbergraph_DBNO_Carried_Simulation(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DBNO_Carried_Simulation_C", "ExecuteUbergraph_DBNO_Carried_Simulation");
+	class UFunction* Func = Class->GetFunction("DBNO_Carried_Simulation_C", "ExecuteUbergraph_DBNO_Carried_Simulation");
 
 	Params::DBNO_Carried_Simulation_C_ExecuteUbergraph_DBNO_Carried_Simulation Parms{};
 
@@ -41,10 +38,7 @@ void UDBNO_Carried_Simulation_C::ExecuteUbergraph_DBNO_Carried_Simulation(int32 
 
 void UDBNO_Carried_Simulation_C::BlueprintInitializeAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DBNO_Carried_Simulation_C", "BlueprintInitializeAnimation");
+	class UFunction* Func = Class->GetFunction("DBNO_Carried_Simulation_C", "BlueprintInitializeAnimation");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UDBNO_Carried_Simulation_C::BlueprintInitializeAnimation()
 
 void UDBNO_Carried_Simulation_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DBNO_Carried_Simulation_C", "BlueprintUpdateAnimation");
+	class UFunction* Func = Class->GetFunction("DBNO_Carried_Simulation_C", "BlueprintUpdateAnimation");
 
 	Params::DBNO_Carried_Simulation_C_BlueprintUpdateAnimation Parms{};
 
@@ -78,10 +69,7 @@ void UDBNO_Carried_Simulation_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UDBNO_Carried_Simulation_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DBNO_Carried_Simulation_C", "AnimGraph");
+	class UFunction* Func = Class->GetFunction("DBNO_Carried_Simulation_C", "AnimGraph");
 
 	Params::DBNO_Carried_Simulation_C_AnimGraph Parms{};
 

@@ -23,10 +23,7 @@ SDK_NAMESPACE_START
 
 void UJoinServer_C::ExecuteUbergraph_JoinServer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JoinServer_C", "ExecuteUbergraph_JoinServer");
+	class UFunction* Func = Class->GetFunction("JoinServer_C", "ExecuteUbergraph_JoinServer");
 
 	Params::JoinServer_C_ExecuteUbergraph_JoinServer Parms{};
 
@@ -41,10 +38,7 @@ void UJoinServer_C::ExecuteUbergraph_JoinServer(int32 EntryPoint)
 
 void UJoinServer_C::OnShowTutorialDialog()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JoinServer_C", "OnShowTutorialDialog");
+	class UFunction* Func = Class->GetFunction("JoinServer_C", "OnShowTutorialDialog");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +51,7 @@ void UJoinServer_C::OnShowTutorialDialog()
 
 void UJoinServer_C::OnEnterState(EFortUIState PreviousUIState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("JoinServer_C", "OnEnterState");
+	class UFunction* Func = Class->GetFunction("JoinServer_C", "OnEnterState");
 
 	Params::JoinServer_C_OnEnterState Parms{};
 
