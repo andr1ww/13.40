@@ -87,6 +87,12 @@ struct FGameplayTagContainer final
 public:
 	TArray<struct FGameplayTag>                   GameplayTags;                                      // 0x0000(0x0010)(BlueprintVisible, ZeroConstructor, SaveGame, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FGameplayTag>                   ParentTags;                                        // 0x0010(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	void AppendTags(const struct FGameplayTagContainer& Other)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FGameplayTagContainer*, const FGameplayTagContainer&)>(InSDKUtils::GetImageBase() + 0x4636800), this, Other);
+	}
 };
 DUMPER7_ASSERTS_FGameplayTagContainer;
 

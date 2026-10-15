@@ -389,6 +389,11 @@ public:
 
 	constexpr FName() = default;
 
+	FName(const char* Name)
+		: FName(std::wstring(Name, Name + strlen(Name)).c_str())
+	{
+	}
+
 	FName(const wchar_t* Name)
 	{
 		InSDKUtils::CallGameFunction(reinterpret_cast<FName*(*)(FName*, const wchar_t*, int32)>(InSDKUtils::GetImageBase() + 0x331A0A0), this, Name, 1);
@@ -1408,6 +1413,16 @@ template<typename UnderlayingClassType, int32 Size, int32 Align = 0x8>
 using TActorBasedCycleFixup = CyclicDependencyFixupImpl::TCyclicClassFixup<UnderlayingClassType, Size, Align, class AActor>;
 
 SDK_NAMESPACE_END
+
+template<typename ArrayElementType>
+inline void UC::TArray<ArrayElementType>::Reserve(int32 Num)
+{
+	if (!Data || Num + NumElements > MaxElements)
+	{
+		MaxElements = Num + NumElements;
+		Data = static_cast<ArrayElementType*>(SDK_NAMESPACE_NAME ::FMemory::Realloc(Data, static_cast<uint64>(MaxElements) * sizeof(ArrayElementType), alignof(ArrayElementType)));
+	}
+}
 
 template<typename... ArgTypes>
 inline UC::FString UC::FString::Printf(const wchar_t* Fmt, ArgTypes... Args)

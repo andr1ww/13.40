@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\Headers\Unreal\UObjectGlobals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Runtime\Headers\Engine\World.h">
       <Filter>Header Files</Filter>
     </ClInclude>

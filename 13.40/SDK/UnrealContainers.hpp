@@ -277,16 +277,26 @@ namespace UC
 		inline const ArrayElementType& GetUnsafe(int32 Index) const { return Data[Index]; }
 
 	public:
-		/* Adds to the array if there is still space for one more element */
-		inline bool Add(const ArrayElementType& Element)
-		{
-			if (GetSlack() <= 0)
-				return false;
+		void Reserve(int32 Num);
 
-			Data[NumElements] = Element;
+		inline ArrayElementType& Add(ArrayElementType&& Element)
+		{
+			Reserve(1);
+
+			new (Data + NumElements) ArrayElementType(std::move(Element));
 			NumElements++;
 
-			return true;
+			return Data[NumElements - 1];
+		}
+
+		inline ArrayElementType& Add(const ArrayElementType& Element)
+		{
+			Reserve(1);
+
+			new (Data + NumElements) ArrayElementType(Element);
+			NumElements++;
+
+			return Data[NumElements - 1];
 		}
 
 		inline bool Remove(int32 Index)

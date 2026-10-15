@@ -40435,6 +40435,17 @@ public:
 	void DumpReservations() const;
 
 public:
+	class UFortPlaylistManager* GetPlaylistManager()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UFortPlaylistManager*(*)(AFortGameMode*)>(InSDKUtils::GetImageBase() + 0x246A070), this);
+	}
+
+	void SetCurrentPlaylistName(class FName PlaylistName)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameMode*, class FName)>(InSDKUtils::GetImageBase() + 0x247A9E0), this, PlaylistName);
+	}
+
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("FortGameMode")
@@ -40828,6 +40839,12 @@ public:
 	class UFortServerBotManagerAthena* GetServerBotManager() const;
 	TSubclassOf<class AActor> GetVehicleClassOverride(TSubclassOf<class AActor> DefaultVehicleClass) const;
 	bool IsMapInfoInitialized() const;
+
+public:
+	int32 CountReadyPlayers()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<int32(*)(AFortGameModeAthena*, bool)>(InSDKUtils::GetImageBase() + 0x1EA2E60), this, false);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -52423,6 +52440,27 @@ public:
 	bool ShouldEnterSpawningStartup() const;
 	bool ShouldHaveInfiniteResources(const class APawn* Pawn) const;
 	bool ShouldReturnToMatchmakingOriginOnMatchEnd() const;
+
+public:
+	bool ArePlaylistLevelsLoaded()
+	{
+		uint8* Levels = *reinterpret_cast<uint8**>(reinterpret_cast<uint8*>(this) + 0x358);
+		const int32 NumLevels = *reinterpret_cast<int32*>(reinterpret_cast<uint8*>(this) + 0x360);
+
+		for (int32 i = 0; i < NumLevels; i++)
+		{
+			uint8* Level = Levels + i * 0x18;
+			if (*reinterpret_cast<void**>(Level) && !*reinterpret_cast<bool*>(Level + 0x10))
+				return false;
+		}
+
+		return true;
+	}
+
+	bool AreAllPlaylistLevelsVisible()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(AFortGameStateAthena*)>(InSDKUtils::GetImageBase() + 0x245FA10), this);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -74591,6 +74629,12 @@ class UFortPlaylistManager final : public UObject
 public:
 	TArray<class UFortPlaylistAthena*>            AthenaPlaylists;                                   // 0x0028(0x0010)(BlueprintVisible, ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_38[0x30];                                      // 0x0038(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	class UFortPlaylistAthena* GetPlaylistByName(class FName PlaylistName)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UFortPlaylistAthena*(*)(UFortPlaylistManager*, class FName)>(InSDKUtils::GetImageBase() + 0x2509330), this, PlaylistName);
+	}
 
 public:
 	static class UClass* StaticClass()

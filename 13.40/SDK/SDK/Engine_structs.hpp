@@ -6653,6 +6653,34 @@ public:
 	uint8                                         Pad_58[0xA8];                                      // 0x0058(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
 	EFastArraySerializerDeltaFlags                DeltaFlags;                                        // 0x0100(0x0001)(ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void MarkItemDirty(struct FFastArraySerializerItem& Item, bool bMarkArrayDirty = true)
+	{
+		int32& IDCounter = *reinterpret_cast<int32*>(Pad_0 + 0x50);
+
+		if (Item.ReplicationID == -1)
+		{
+			Item.ReplicationID = ++IDCounter;
+			if (IDCounter == -1)
+				IDCounter++;
+		}
+
+		Item.ReplicationKey++;
+
+		if (bMarkArrayDirty)
+			MarkArrayDirty();
+	}
+
+	void MarkArrayDirty()
+	{
+		ArrayReplicationKey++;
+		if (ArrayReplicationKey == -1)
+			ArrayReplicationKey++;
+
+		*reinterpret_cast<int32*>(Pad_58 + 0xA0) = -1;
+		*reinterpret_cast<int32*>(Pad_58 + 0xA4) = -1;
+	}
 };
 DUMPER7_ASSERTS_FFastArraySerializer;
 

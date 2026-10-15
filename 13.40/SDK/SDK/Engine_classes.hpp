@@ -1705,6 +1705,12 @@ DUMPER7_ASSERTS_UTwitterIntegrationBase;
 class UReplicationDriver : public UObject
 {
 public:
+	inline void ServerReplicateActors(float a2)
+	{
+		static void (*Ptr)(UReplicationDriver*, float) = decltype(Ptr)(InSDKUtils::GetImageBase() + 0x15a78d0);
+		Ptr(this, a2);
+	}
+
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("ReplicationDriver")
@@ -4365,7 +4371,7 @@ public:
 	TSubclassOf<class APlayerController>          ReplaySpectatorPlayerControllerClass;              // 0x0268(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoClear, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class AServerStatReplicator>      ServerStatReplicatorClass;                         // 0x0270(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoClear, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AGameSession*                           GameSession;                                       // 0x0278(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class AGameStateBase*                         GameState;                                         // 0x0280(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortGameStateAthena*                         GameState;                                         // 0x0280(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AServerStatReplicator*                  ServerStatReplicator;                              // 0x0288(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   DefaultPlayerName;                                 // 0x0290(0x0018)(Edit, NativeAccessSpecifierPublic)
 	uint8                                         bUseSeamlessTravel : 1;                            // 0x02A8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
@@ -4588,7 +4594,7 @@ class AController : public AActor
 {
 public:
 	uint8                                         Pad_220[0x8];                                      // 0x0220(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerState*                           PlayerState;                                       // 0x0228(0x0008)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class AFortPlayerStateAthena*                           PlayerState;                                       // 0x0228(0x0008)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_230[0x8];                                      // 0x0230(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void(float Damage, const class UDamageType* DamageType, class AActor* DamagedActor, class AActor* DamageCauser)> OnInstigatedAnyDamage; // 0x0238(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class FName                                   StateName;                                         // 0x0248(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
