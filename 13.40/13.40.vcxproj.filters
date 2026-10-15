@@ -51,6 +51,12 @@
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClInclude Include="Runtime\Headers\Athena\FortPoiVolume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Athena\FortPoiVolume.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClInclude Include="Core\Headers\Unreal\Stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
