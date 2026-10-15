@@ -5908,6 +5908,13 @@ public:
 	uint8                                         Pad_B[0x1];                                        // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TickInterval;                                      // 0x000C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_10[0x18];                                      // 0x0010(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	bool IsTickFunctionRegistered() const
+	{
+		const uint8* InternalData = *reinterpret_cast<const uint8* const*>(Pad_10 + 0x10);
+		return InternalData && (*InternalData & 1);
+	}
 };
 DUMPER7_ASSERTS_FTickFunction;
 
@@ -8850,6 +8857,11 @@ struct FAnimNotifyEventReference final
 public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                NotifySource;                                      // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+	const struct FAnimNotifyEvent* GetNotify() const
+	{
+		return *reinterpret_cast<const struct FAnimNotifyEvent* const*>(Pad_0);
+	}
 };
 DUMPER7_ASSERTS_FAnimNotifyEventReference;
 
@@ -12715,6 +12727,12 @@ struct FSkeletalMeshComponentEndPhysicsTickFunction final : public FTickFunction
 {
 public:
 	uint8                                         Pad_28[0x8];                                       // 0x0028(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	class USkeletalMeshComponent* GetTarget() const
+	{
+		return *reinterpret_cast<class USkeletalMeshComponent* const*>(Pad_28);
+	}
 };
 DUMPER7_ASSERTS_FSkeletalMeshComponentEndPhysicsTickFunction;
 

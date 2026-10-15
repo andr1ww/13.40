@@ -315,6 +315,35 @@ void Hooking::RetTrue(uintptr_t Ptr)
     FlushInstructionCache(GetCurrentProcess(), (void*)Ptr, 4);
 }
 
+void Hooking::RetFalse(uintptr_t Ptr)
+{
+    if (!Ptr)
+        return;
+
+    PatchBytes(Ptr, { 0x32, 0xC0, 0xC3 });
+}
+
+void Hooking::RetNull(uintptr_t Ptr)
+{
+    if (!Ptr)
+        return;
+
+    PatchBytes(Ptr, { 0x31, 0xC0, 0xC3 });
+}
+
+void Hooking::PatchBytes(uintptr_t Ptr, std::initializer_list<uint8_t> Bytes)
+{
+    if (!Ptr)
+        return;
+
+    DWORD og;
+    VirtualProtect(LPVOID(Ptr), Bytes.size(), PAGE_EXECUTE_READWRITE, &og);
+    memcpy(LPVOID(Ptr), Bytes.begin(), Bytes.size());
+    VirtualProtect(LPVOID(Ptr), Bytes.size(), og, &og);
+
+    FlushInstructionCache(GetCurrentProcess(), (void*)Ptr, Bytes.size());
+}
+
 struct FBlock
 {
     void* Page;

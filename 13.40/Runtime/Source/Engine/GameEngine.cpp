@@ -12,7 +12,8 @@ void GameEngine::Start(UGameEngine* _this)
 	for (auto& Init : EngineInitters())
 		Init();
 
-	_this->GameInstance->LocalPlayers.Remove(0);
+	if (_this->GameInstance->LocalPlayers.Num() > 0)
+		_this->GameInstance->RemoveLocalPlayer(_this->GameInstance->LocalPlayers[0]);
 
 	if (UFortGameInstance* GameInstance = Cast<UFortGameInstance>(_this->GameInstance))
 	{
@@ -22,10 +23,30 @@ void GameEngine::Start(UGameEngine* _this)
 			UE_LOG(LogFort, Warning, TEXT("GameEngine::Start: No SeasonalEventManager!!!!"));
 	}
 
-	return StartOG(_this);
+	StartOG(_this);
+
+	UKismetSystemLibrary::CollectGarbage();
+}
+
+void GameEngine::Tick(UGameEngine* _this, float DeltaSeconds, bool bIdleMode)
+{
+	double& LastTimeLogsFlushed = Get<double>(_this, 0xE20);
+
+	if (FPlatformTime::Seconds() - LastTimeLogsFlushed > static_cast<double>(_this->ServerFlushLogInterval))
+	{
+		GLog->Flush();
+		LastTimeLogsFlushed = FPlatformTime::Seconds();
+	}
+
+	TickOG(_this, DeltaSeconds, bIdleMode);
 }
 
 void GameEngine::Init()
 {
 	Hooking::Hook(ImageBase + 0x499FAF0, Start, StartOG);
+	Hooking::Hook(ImageBase + 0x49A0410, Tick, TickOG);
+	Hooking::PatchBytes(ImageBase + 0x4984927, { 0xE9, 0xE1, 0x00, 0x00, 0x00, 0x90 });
+	Hooking::PatchBytes(ImageBase + 0x4990E44, { 0xE9, 0xE2, 0x00, 0x00, 0x00, 0x90 });
+	Hooking::PatchBytes(ImageBase + 0x49A0772, { 0xEB, 0x61 });
+	Hooking::PatchBytes(ImageBase + 0x49A0CB9, { 0xEB, 0x66 });
 } 

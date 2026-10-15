@@ -4,6 +4,7 @@
 namespace Settings
 {
 	DefineHook(void, GetGameDefaultMap, FString* ret, char a2);
+	FString* GetGlobalDefaultGameMode(FString* ret);
 
 	void Init();
 }

@@ -243,6 +243,16 @@ public:
 	bool IsBeingDestroyed() const;
 	bool IsComponentTickEnabled() const;
 
+	bool IsRegistered() const
+	{
+		return *(reinterpret_cast<const uint8*>(this) + 0x88) & 1;
+	}
+
+	void DestroyComponent(bool bPromoteChildren = false)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(UActorComponent*, bool)>(this, 0x3A0 / 8), this, bPromoteChildren);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -3146,6 +3156,17 @@ public:
 	void ReceiveInit();
 	void ReceiveShutdown();
 
+	bool RemoveLocalPlayer(class ULocalPlayer* ExistingPlayer)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(UGameInstance*, class ULocalPlayer*)>(this, 0x2D8 / 8), this, ExistingPlayer);
+	}
+
+	void SetRunAsDedicated(bool bRunAsDedicated)
+	{
+		if (uint8* WorldContext = *reinterpret_cast<uint8**>(Pad_28 + 0x8))
+			*reinterpret_cast<bool*>(WorldContext + 0x24C) = bRunAsDedicated;
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -3951,6 +3972,16 @@ public:
 	bool IsClothingSimulationSuspended() const;
 	bool IsPlaying() const;
 	bool K2_GetClosestPointOnPhysicsAsset(const struct FVector& WorldPosition, struct FVector* ClosestWorldPosition, struct FVector* Normal, class FName* BoneName, float* Distance) const;
+
+	void FinalizeBoneTransform()
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(USkeletalMeshComponent*)>(this, 0x910 / 8), this);
+	}
+
+	void RegisterEndPhysicsTick(bool bRegister)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(USkeletalMeshComponent*, bool)>(this, 0x9B8 / 8), this, bRegister);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -27351,6 +27382,21 @@ public:
 	bool GetBeamTargetTangent(int32 EmitterIndex, int32 TargetIndex, struct FVector* OutTangentPoint) const;
 	class UMaterialInterface* GetNamedMaterial(class FName InName) const;
 	int32 GetNumActiveParticles() const;
+
+	bool IsDeactivateTriggered() const
+	{
+		return *(reinterpret_cast<const uint8*>(this) + 0x458) & 0x80;
+	}
+
+	bool IsAutoDestroy() const
+	{
+		return *(reinterpret_cast<const uint8*>(this) + 0x45A) & 0x80;
+	}
+
+	void DeactivateSystem()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UParticleSystemComponent*)>(InSDKUtils::GetImageBase() + 0x4B3AAD0), this);
+	}
 
 public:
 	static class UClass* StaticClass()

@@ -65,6 +65,9 @@ bool World::Listen(UWorld* _this, FURL& InURL)
 		_this->NetDriver->MaxClientRate = _this->NetDriver->MaxInternetClientRate;
 	}
 
+	if (_this->OwningGameInstance)
+		_this->OwningGameInstance->SetRunAsDedicated(true);
+
 	//NextSwitchCountdown = NetDriver->ServerTravelPause;
 	return true;
 }
@@ -72,4 +75,7 @@ bool World::Listen(UWorld* _this, FURL& InURL)
 void World::Init()
 {
 	Hooking::Rel32Swap(ImageBase + 0x4DC915B, Listen);
+	Hooking::PatchBytes(ImageBase + 0x4E2C1FF, { 0xE9, 0xA2, 0x00, 0x00, 0x00 });
+	Hooking::PatchBytes(ImageBase + 0x4E28BB1, { 0x0F, 0x1F, 0x44, 0x00, 0x00 });
+	Hooking::PatchBytes(ImageBase + 0x4E0E6B7, { 0xEB, 0x3A });
 }

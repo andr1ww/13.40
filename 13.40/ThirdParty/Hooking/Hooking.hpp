@@ -74,6 +74,9 @@ namespace Hooking
 
     void Null(uintptr_t Ptr);
     void RetTrue(uintptr_t Ptr);
+    void RetFalse(uintptr_t Ptr);
+    void RetNull(uintptr_t Ptr);
+    void PatchBytes(uintptr_t Ptr, std::initializer_list<uint8_t> Bytes);
 
     uint8_t* AllocateShellcodeRegion(void* targetAddr, size_t SizeOfShellcode);
 

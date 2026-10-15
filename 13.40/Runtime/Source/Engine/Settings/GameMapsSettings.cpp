@@ -12,7 +12,16 @@ void Settings::GetGameDefaultMap(FString* ret, char a2)
 	GetGameDefaultMapOG(ret, a2);
 }
 
+FString* Settings::GetGlobalDefaultGameMode(FString* ret)
+{
+	UGameMapsSettings* DefaultSettings = UGameMapsSettings::GetDefaultObj();
+
+	*ret = DefaultSettings->GlobalDefaultServerGameMode.IsValid() ? DefaultSettings->GlobalDefaultServerGameMode.ToString() : DefaultSettings->GlobalDefaultGameMode.ToString();
+	return ret;
+}
+
 void Settings::Init()
 {
 	Hooking::Hook(ImageBase + 0x3CF17F0, GetGameDefaultMap, GetGameDefaultMapOG);
+	Hooking::Hook(ImageBase + 0x3CF1E80, GetGlobalDefaultGameMode);
 }

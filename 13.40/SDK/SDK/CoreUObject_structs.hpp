@@ -1235,6 +1235,19 @@ struct FSoftObjectPath
 public:
 	class FName                                   AssetPathName;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 SubPathString;                                     // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	bool IsValid() const
+	{
+		return !AssetPathName.IsNone();
+	}
+
+	class FString ToString() const
+	{
+		class FString Result;
+		InSDKUtils::CallGameFunction(reinterpret_cast<class FString*(*)(const FSoftObjectPath*, class FString*)>(InSDKUtils::GetImageBase() + 0x3531530), this, &Result);
+		return Result;
+	}
 };
 DUMPER7_ASSERTS_FSoftObjectPath;
 

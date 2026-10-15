@@ -1,0 +1,10 @@
+#include "pch.h"
+#include "Core.h"
+#include "UMG/Components/EditableText.h"
+
+DEFINE_INIT(EditableText)
+
+void EditableText::Init()
+{
+	Hooking::PatchBytes(ImageBase + 0x44D85AD, { 0x4C, 0x8B, 0xA4, 0x24, 0xD0, 0x00, 0x00, 0x00, 0xE9, 0x9D, 0x00, 0x00, 0x00 });
+}

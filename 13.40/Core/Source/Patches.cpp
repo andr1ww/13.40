@@ -30,6 +30,7 @@ namespace Patches
 		Hooking::RetTrue(ImageBase + 0x4E1A9A0); // GetNetMode
 		Hooking::RetTrue(ImageBase + 0x4AA8530); // SpawnPlayActor
 		Hooking::RetTrue(ImageBase + 0x34C9C80); // client/server context
+		Hooking::RetTrue(ImageBase + 0x9C6A20); // ShouldSuppressGameplayCues
 
 		Hooking::Null(ImageBase + 0x1D43AC0); // gamesession id patch 1
 		Hooking::Null(ImageBase + 0x1D44090); // patch 2 ^

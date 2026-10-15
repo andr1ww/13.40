@@ -5,6 +5,8 @@
 
 #define GWorld (*reinterpret_cast<UWorld**>(ImageBase + 0x8E94260))
 #define GEngine (static_cast<UFortEngine*>(UEngine::GetEngine()))
+#define GTimeBetweenPurgingPendingKillObjectsOnIdleServerMultiplier (*reinterpret_cast<float*>(ImageBase + 0x879101C))
+#define GSecondsPerCycle (*reinterpret_cast<double*>(ImageBase + 0x8CEC248))
 
 #include <sstream>
 #include "Log/LogMacros.h"
@@ -12,6 +14,52 @@
 #include "Unreal/UnrealNames.h"
 #include "Unreal/UObjectGlobals.h"
 #include "Unreal/Stack.h"
+
+struct FPlatformTime
+{
+	static double Seconds()
+	{
+		LARGE_INTEGER Cycles;
+		QueryPerformanceCounter(&Cycles);
+		return Cycles.QuadPart * GSecondsPerCycle + 16777216.0;
+	}
+};
+
+struct FReferenceController
+{
+	void** VTable;
+	int32 SharedReferenceCount;
+	int32 WeakReferenceCount;
+
+	void ReleaseSharedReference()
+	{
+		if (--SharedReferenceCount != 0)
+			return;
+
+		reinterpret_cast<void(*)(FReferenceController*)>(VTable[0])(this);
+
+		if (--WeakReferenceCount == 0)
+			reinterpret_cast<void(*)(FReferenceController*, uint32)>(VTable[1])(this, 1);
+	}
+};
+
+template <typename ObjectType>
+struct TSharedPtr
+{
+	ObjectType* Object;
+	FReferenceController* Controller;
+};
+
+template <typename ObjectType>
+using TSharedRef = TSharedPtr<ObjectType>;
+
+enum ELevelTick : int32
+{
+	LEVELTICK_TimeOnly,
+	LEVELTICK_ViewportsOnly,
+	LEVELTICK_All,
+	LEVELTICK_PauseTick
+};
 
 inline FGuid NewGuid()
 {
