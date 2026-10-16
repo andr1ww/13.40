@@ -4,10 +4,8 @@
 
 DEFINE_INIT(SlateApplication)
 
-void SlateApplication::PrepassWindowAndChildren(TSharedRef<SWindow>* WindowToPrepass)
+void SlateApplication::PrepassWindowAndChildren(TSharedRef<SWindow> WindowToPrepass)
 {
-	if (WindowToPrepass->Controller)
-		WindowToPrepass->Controller->ReleaseSharedReference();
 }
 
 void SlateApplication::Init()

@@ -41,6 +41,9 @@
 #include <functional>
 #include <type_traits>
 #include <format>
+#include <array>
+#include <tuple>
+#include <intrin.h>
 
 #include "../PropertyFixup.hpp"
 #include "../UnrealContainers.hpp"
@@ -567,6 +570,18 @@ public:
 	{
 		return !TextData || TextData->TextSource.Num() <= 1;
 	}
+	void Release()
+	{
+		void** Controller = *reinterpret_cast<void***>(Pad_8);
+
+		if (!Controller || _InterlockedExchangeAdd(reinterpret_cast<volatile long*>(Controller) + 2, -1) != 1)
+			return;
+
+		reinterpret_cast<void(*)(void*)>((*reinterpret_cast<void***>(Controller))[0])(Controller);
+
+		if (_InterlockedExchangeAdd(reinterpret_cast<volatile long*>(Controller) + 3, -1) == 1)
+			reinterpret_cast<void(*)(void*, uint32)>((*reinterpret_cast<void***>(Controller))[1])(Controller, 1);
+	}
 };
 DUMPER7_ASSERTS_FText;
 
@@ -580,7 +595,11 @@ public:
 
 public:
 	class UObject* Get() const;
+	class UObject* Get(bool bEvenIfPendingKill) const;
 	class UObject* operator->() const;
+	bool IsValid() const;
+	void Reset();
+	void operator=(const class UObject* Object);
 	bool operator==(const FWeakObjectPtr& Other) const;
 	bool operator!=(const FWeakObjectPtr& Other) const;
 	bool operator==(const class UObject* Other) const;
@@ -822,51 +841,8 @@ public:
 };
 
 
-// Predefined struct FScriptDelegate
-// 0x0010 (0x0010 - 0x0000)
-struct FScriptDelegate
-{
-public:
-	FWeakObjectPtr                                Object;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
-	FName                                         FunctionName;                                      // 0x0008(0x0008)(NOT AUTO-GENERATED PROPERTY)
-};
-DUMPER7_ASSERTS_FScriptDelegate;
-
-// Predefined struct TDelegate
-// 0x0010 (0x0010 - 0x0000)
-template<typename FunctionSignature>
-class TDelegate
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-
-// Predefined struct TDelegate<Ret(Args...)>
-// 0x0010 (0x0010 - 0x0000)
-template<typename Ret, typename... Args>
-class TDelegate<Ret(Args...)>
-{
-public:
-	FScriptDelegate                               BoundFunction;                                     // 0x0000(0x0010)(NOT AUTO-GENERATED PROPERTY)
-};
-
-// Predefined struct TMulticastInlineDelegate
-// 0x0010 (0x0010 - 0x0000)
-template<typename FunctionSignature>
-class TMulticastInlineDelegate
-{
-public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-
-// Predefined struct TMulticastInlineDelegate<Ret(Args...)>
-// 0x0000 (0x0000 - 0x0000)
-template<typename Ret, typename... Args>
-class TMulticastInlineDelegate<Ret(Args...)>
-{
-public:
-	TArray<FScriptDelegate>                       InvocationList;                                    // 0x0000(0x0010)(NOT AUTO-GENERATED PROPERTY)
-};
+#include "../UnrealSharedPointer.inl"
+#include "../UnrealDelegates.inl"
 
 template<typename EnumType, typename UnderlyingType>
 class TFixedSizeEnum

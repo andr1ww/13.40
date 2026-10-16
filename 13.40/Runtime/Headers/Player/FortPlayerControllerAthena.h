@@ -11,7 +11,10 @@ namespace FortPlayerControllerAthena
 {
 	DefineHook(void, OnReadyToStartMatch, AFortPlayerControllerAthena* _this);
 	DefineHook(void, ServerLoadingScreenDropped_Implementation, AFortPlayerControllerAthena* _this);
+	DefineHook(void, OnPawnDied, AFortPlayerControllerAthena* _this, AFortPlayerPawn* KilledPawn, float Damage, FGameplayTagContainer* InTags, FGameplayEffectContextHandle* EffectContext, AController* EventInstigator, AActor* DamageCauser, AController* DBNOFinisher);
 	void ServerAcknowledgePossession_Implementation(AFortPlayerControllerAthena* _this, APawn* P);
+	void BindAthenaProfileEvents(AFortPlayerControllerAthena* _this);
+	void UnBindAthenaProfileEvents(AFortPlayerControllerAthena* _this);
 	void RemoveAllInventoryItems(AFortPlayerControllerAthena* _this);
 	void DropItemsAsPickups(AFortPlayerControllerAthena* _this, TArray<UFortWorldItem*>& ItemsToDropViaPickup, AFortPawn* DestructionPawn, AFortPlayerController* InFortPlayerController, EFortPickupSpawnSource SpawnSource = EFortPickupSpawnSource::Unset);
 	void DropItemsAsPickupsAsync(AFortPlayerControllerAthena* _this, TArray<UFortWorldItem*>& ItemsToDropViaPickup, AFortPawn* DestructionPawn);

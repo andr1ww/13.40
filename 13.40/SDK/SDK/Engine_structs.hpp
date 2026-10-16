@@ -6841,6 +6841,12 @@ struct FUniqueNetIdRepl final : public FUniqueNetIdWrapper
 public:
 	uint8                                         Pad_1[0x17];                                       // 0x0001(0x0017)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 ReplicationBytes;                                  // 0x0018(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	TSharedPtr<void>& GetUniqueNetId()
+	{
+		return *reinterpret_cast<TSharedPtr<void>*>(Pad_1 + 0x7);
+	}
 };
 DUMPER7_ASSERTS_FUniqueNetIdRepl;
 

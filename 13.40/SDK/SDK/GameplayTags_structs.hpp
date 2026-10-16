@@ -93,6 +93,13 @@ public:
 	{
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FGameplayTagContainer*, const FGameplayTagContainer&)>(InSDKUtils::GetImageBase() + 0x4636800), this, Other);
 	}
+
+	class FString ToStringSimple(bool bQuoted) const
+	{
+		class FString Result;
+		InSDKUtils::CallGameFunction(reinterpret_cast<class FString*(*)(const FGameplayTagContainer*, class FString*, bool)>(InSDKUtils::GetImageBase() + 0x4641F80), this, &Result, bQuoted);
+		return Result;
+	}
 };
 DUMPER7_ASSERTS_FGameplayTagContainer;
 

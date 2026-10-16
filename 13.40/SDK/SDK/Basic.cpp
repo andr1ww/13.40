@@ -103,7 +103,15 @@ const FName& GetStaticName(const wchar_t* Name, FName& StaticName)
 
 class UObject* FWeakObjectPtr::Get() const
 {
-	return UObject::GObjects->GetByIndex(ObjectIndex);
+	return InSDKUtils::CallGameFunction(reinterpret_cast<class UObject*(*)(const FWeakObjectPtr*)>(InSDKUtils::GetImageBase() + 0x353D260), this);
+}
+
+
+// Predefined Function
+
+class UObject* FWeakObjectPtr::Get(bool bEvenIfPendingKill) const
+{
+	return InSDKUtils::CallGameFunction(reinterpret_cast<class UObject*(*)(const FWeakObjectPtr*, bool)>(InSDKUtils::GetImageBase() + 0x353D2C0), this, bEvenIfPendingKill);
 }
 
 
@@ -111,7 +119,32 @@ class UObject* FWeakObjectPtr::Get() const
 
 class UObject* FWeakObjectPtr::operator->() const
 {
-	return UObject::GObjects->GetByIndex(ObjectIndex);
+	return Get();
+}
+
+
+// Predefined Function
+
+bool FWeakObjectPtr::IsValid() const
+{
+	return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(const FWeakObjectPtr*)>(InSDKUtils::GetImageBase() + 0x353ECE0), this);
+}
+
+
+// Predefined Function
+
+void FWeakObjectPtr::Reset()
+{
+	ObjectIndex = -1;
+	ObjectSerialNumber = 0;
+}
+
+
+// Predefined Function
+
+void FWeakObjectPtr::operator=(const class UObject* Object)
+{
+	InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FWeakObjectPtr*, const class UObject*)>(InSDKUtils::GetImageBase() + 0x353B450), this, Object);
 }
 
 
@@ -144,6 +177,25 @@ bool FWeakObjectPtr::operator==(const class UObject* Other) const
 bool FWeakObjectPtr::operator!=(const class UObject* Other) const
 {
 	return ObjectIndex != Other->Index;
+}
+
+
+// Predefined Function
+
+FName FSparseDelegate::GetDelegateName(const class UObject* DelegateOwner) const
+{
+	const int32 Offset = static_cast<int32>(reinterpret_cast<const uint8*>(this) - reinterpret_cast<const uint8*>(DelegateOwner));
+
+	for (const UStruct* Struct = DelegateOwner->Class; Struct; Struct = Struct->SuperStruct)
+	{
+		for (FField* Field = Struct->ChildProperties; Field; Field = Field->Next)
+		{
+			if ((Field->ClassPrivate->CastFlags & static_cast<uint64>(EClassCastFlags::MulticastSparseDelegateProperty)) && static_cast<FProperty*>(Field)->Offset == Offset)
+				return Field->Name;
+		}
+	}
+
+	return FName();
 }
 
 

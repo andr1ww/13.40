@@ -25,34 +25,6 @@ struct FPlatformTime
 	}
 };
 
-struct FReferenceController
-{
-	void** VTable;
-	int32 SharedReferenceCount;
-	int32 WeakReferenceCount;
-
-	void ReleaseSharedReference()
-	{
-		if (--SharedReferenceCount != 0)
-			return;
-
-		reinterpret_cast<void(*)(FReferenceController*)>(VTable[0])(this);
-
-		if (--WeakReferenceCount == 0)
-			reinterpret_cast<void(*)(FReferenceController*, uint32)>(VTable[1])(this, 1);
-	}
-};
-
-template <typename ObjectType>
-struct TSharedPtr
-{
-	ObjectType* Object;
-	FReferenceController* Controller;
-};
-
-template <typename ObjectType>
-using TSharedRef = TSharedPtr<ObjectType>;
-
 enum ELevelTick : int32
 {
 	LEVELTICK_TimeOnly,

@@ -451,6 +451,16 @@ AActor* FortPlayerController::SpawnToyInstance(AFortPlayerController* _this, TSu
 	return ToyInstance;
 }
 
+void FortPlayerController::OnPossess(AFortPlayerController* _this, APawn* InPawn)
+{
+	OnPossessOG(_this, InPawn);
+
+	if (_this->Role != ENetRole::ROLE_Authority || InPawn == NULL)
+		return;
+
+	_this->OnPlayerPawnPossessed.Broadcast(InPawn);
+}
+
 void FortPlayerController::Init()
 {
 	Hooking::HookEvery<AFortPlayerController>(0x1068 / 8, ServerExecuteInventoryItem_Implementation);
@@ -464,6 +474,7 @@ void FortPlayerController::Init()
 	Hooking::HookEvery<AFortPlayerController>(0x1160 / 8, ServerRepairBuildingActor_Implementation);
 
 	Hooking::Hook(ImageBase + 0x295B660, GetPlayerViewPoint, GetPlayerViewPointOG);
+	Hooking::Hook(ImageBase + 0x2975710, OnPossess, OnPossessOG);
 	Hooking::Hook(ImageBase + 0x24D8E50, RemoveItemFromPlayer);
 
 	Hooking::Rel32Swap(ImageBase + 0x2C95C15, ServerCreateBuildingActorInternal);

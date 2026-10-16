@@ -4,7 +4,7 @@
 
 namespace SlateApplication
 {
-	void PrepassWindowAndChildren(TSharedRef<class SWindow>* WindowToPrepass);
+	void PrepassWindowAndChildren(TSharedRef<class SWindow> WindowToPrepass);
 
 	void Init();
 }

@@ -35158,6 +35158,11 @@ public:
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPlayerControllerAthena*, const class UFortWorldItemDefinition*, bool*, bool*)>(InSDKUtils::GetImageBase() + 0x1F61E80), this, ItemDefinition, &bShouldDrop, &bShouldDestroy);
 	}
 
+	bool IsSquadWiped()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(AFortPlayerControllerAthena*)>(InSDKUtils::GetImageBase() + 0x1F456E0), this);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -41055,6 +41060,11 @@ public:
 	TArray<struct FItemAndCount>* GetStartingItems(TArray<struct FItemAndCount>* OutItems, bool bInitialSpawn, class AController* Controller)
 	{
 		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<TArray<struct FItemAndCount>*(*)(AFortGameModeAthena*, TArray<struct FItemAndCount>*, bool, class AController*)>(this, 0xCF8 / 8), this, OutItems, bInitialSpawn, Controller);
+	}
+
+	void RemoveFromAlivePlayers(class AFortPlayerController* PlayerController, class APlayerState* KillerPlayerState, class AFortPawn* KillerPawn, class UFortWeaponItemDefinition* KillerWeapon, EDeathCause DeathCause, bool bLogout)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameModeAthena*, class AFortPlayerController*, class APlayerState*, class AFortPawn*, class UFortWeaponItemDefinition*, EDeathCause, bool)>(InSDKUtils::GetImageBase() + 0x1EC8680), this, PlayerController, KillerPlayerState, KillerPawn, KillerWeapon, DeathCause, bLogout);
 	}
 
 public:
@@ -52707,6 +52717,11 @@ public:
 		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(AFortGameStateAthena*)>(InSDKUtils::GetImageBase() + 0x245FA10), this);
 	}
 
+	TArray<TWeakObjectPtr<class AFortPlayerStateAthena>>& GetTeamMembers(uint8 TeamIndex)
+	{
+		return *InSDKUtils::CallGameFunction(reinterpret_cast<TArray<TWeakObjectPtr<class AFortPlayerStateAthena>>*(*)(AFortGameStateAthena*, uint8)>(InSDKUtils::GetImageBase() + 0x1F00570), this, TeamIndex);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -53007,6 +53022,11 @@ public:
 	bool IsResurrectingNow() const;
 	bool IsResurrectionChipAvailable() const;
 	bool IsSquadDead() const;
+
+	void SetMatchPlacement(int32 Placement)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPlayerStateAthena*, int32)>(InSDKUtils::GetImageBase() + 0x1FC59A0), this, Placement);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -59020,6 +59040,16 @@ public:
 	void ToggleQuestActiveState(const TArray<class FString>& QuestIds, struct FClientUrlContext* Context);
 	void UnlockRewardNode(const class FString& NodeId, const class FString& rewardGraphId, const class FString& rewardCfg, struct FClientUrlContext* Context);
 
+	TMulticastDelegate<void()>& GetProfileChangedEvent()
+	{
+		return *reinterpret_cast<TMulticastDelegate<void()>*>(Pad_2F8);
+	}
+
+	TMulticastDelegate<void()>& GetProfileReadyEvent()
+	{
+		return *reinterpret_cast<TMulticastDelegate<void()>*>(Pad_2F8 + 0x48);
+	}
+
 	bool CanPurchaseSeasonBook() const;
 	class UAthenaSeasonItemDefinition* GetActiveSeasonDefinition() const;
 	int32 GetSeasonBookLevel() const;
@@ -61062,6 +61092,11 @@ public:
 	bool IsActive() const;
 	bool IsInProgress() const;
 	bool IsVisibleToUser() const;
+
+	bool MatchesStatEvent(EFortQuestObjectiveStatEvent Event) const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(const UFortQuestObjectiveInfo*, EFortQuestObjectiveStatEvent)>(InSDKUtils::GetImageBase() + 0x2A20720), this, Event);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -92063,6 +92098,11 @@ public:
 	class UAbilitySystemComponent* GetAbilitySystemComponent() const;
 	class FString GetPlayerName() const;
 
+	class AFortPlayerController* GetPlayerController() const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class AFortPlayerController*(*)(const UFortRegisteredPlayerInfo*)>(InSDKUtils::GetImageBase() + 0x2545130), this);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -95212,6 +95252,38 @@ public:
 	void OnXpUpdated(int32 InCombatXp, int32 InServivalXp, int32 InBonusMedalXp, int32 InChallengeXp, int32 InMatchXp, int32 InTotalXp);
 	void QuestObjectiveUpdated(class AFortPlayerController* Controller, const class UFortQuestItemDefinition* QuestDef, class FName BackendName, int32 CompletionCount, bool ObjectiveCompleted, bool QuestCompleted);
 
+	void OnProfileReady(class UFortMcpProfileAthena* Profile)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UFortPlayerControllerAthenaXPComponent*, class UFortMcpProfileAthena*)>(InSDKUtils::GetImageBase() + 0x1F84D70), this, Profile);
+	}
+
+	void OnProfileChanged(class UFortMcpProfileAthena* Profile)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UFortPlayerControllerAthenaXPComponent*, class UFortMcpProfileAthena*)>(InSDKUtils::GetImageBase() + 0x1F848E0), this, Profile);
+	}
+
+	void BindToProfile(class UFortMcpProfileAthena* Profile)
+	{
+		Profile->GetProfileChangedEvent().AddUObject(this, &UFortPlayerControllerAthenaXPComponent::OnProfileChanged, Profile);
+		Profile->GetProfileChangedEvent().AddUObject(this, &UFortPlayerControllerAthenaXPComponent::OnProfileUpdated);
+
+		if (Profile->IsProfileLoaded())
+		{
+			OnProfileReady(Profile);
+			OnProfileUpdated();
+		}
+		else
+		{
+			Profile->GetProfileReadyEvent().AddUObject(this, &UFortPlayerControllerAthenaXPComponent::OnProfileReady, Profile);
+		}
+	}
+
+	void UnbindFromProfile(class UFortMcpProfileAthena* Profile)
+	{
+		Profile->GetProfileChangedEvent().RemoveAll(this);
+		Profile->GetProfileReadyEvent().RemoveAll(this);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -98175,6 +98247,17 @@ public:
 	bool IsVisibleToUser(bool bAllowClaimedQuestsToBeVisible) const;
 	bool ShouldDisplayOverallQuestInformation() const;
 
+	class UFortQuestObjectiveInfo* GetObjectiveInfoWithName(class FName BackendName) const
+	{
+		for (class UFortQuestObjectiveInfo* ObjectiveInfo : Objectives)
+		{
+			if (ObjectiveInfo && ObjectiveInfo->BackendName == BackendName)
+				return ObjectiveInfo;
+		}
+
+		return nullptr;
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -98336,6 +98419,23 @@ public:
 	void ListChallenges(const class FString& Filter) const;
 	void MarkQuestsSeen(bool bOnlyMarkPendingSeenQuests) const;
 	void RerollDailyQuest(const class UFortQuestItem* QuestToDiscard) const;
+
+	class FString GetDebugName() const
+	{
+		class FString Result;
+		InSDKUtils::CallGameFunction(reinterpret_cast<class FString*(*)(const UFortQuestManager*, class FString*)>(InSDKUtils::GetImageBase() + 0x26821C0), this, &Result);
+		return Result;
+	}
+
+	void UpdateQuests()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UFortQuestManager*)>(InSDKUtils::GetImageBase() + 0x2A0F770), this);
+	}
+
+	static bool CanProgressQuestObjective(const struct FFortMcpQuestObjectiveInfo& Objective, EFortQuestObjectiveStatEvent StatEvent, const struct FGameplayTagContainer& TargetTags, const struct FGameplayTagContainer& SourceTags, const struct FGameplayTagContainer& ContextTags, const class FString& ContextString)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(const struct FFortMcpQuestObjectiveInfo*, EFortQuestObjectiveStatEvent, const struct FGameplayTagContainer*, const struct FGameplayTagContainer*, const struct FGameplayTagContainer*, const class FString*)>(InSDKUtils::GetImageBase() + 0x2A0E2F0), &Objective, StatEvent, &TargetTags, &SourceTags, &ContextTags, &ContextString);
+	}
 
 public:
 	static class UClass* StaticClass()

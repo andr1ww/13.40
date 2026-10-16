@@ -14156,6 +14156,30 @@ public:
 };
 DUMPER7_ASSERTS_FAthenaXPStats;
 
+enum class EAthenaMatchStat : int32
+{
+	Score                = 0,
+	Placement            = 1,
+	SecondsAlive         = 2,
+	PersonalElimination  = 3,
+	TeamEliminations     = 4,
+	Downs                = 5,
+	Assists              = 6,
+	Revives              = 7,
+	DamageTaken          = 8,
+	TravelDistanceGround = 9,
+	GatheredWood         = 10,
+	GatheredStone        = 11,
+	GatheredMetal        = 12,
+	UsedWood             = 13,
+	UsedStone            = 14,
+	UsedMetal            = 15,
+	Wins                 = 16,
+	HighBracket          = 17,
+	LowBracket           = 18,
+	GamesPlayed          = 19,
+};
+
 // ScriptStruct FortniteGame.AthenaMatchStats
 // 0x00C8 (0x00C8 - 0x0000)
 struct FAthenaMatchStats final
@@ -14171,6 +14195,19 @@ public:
 	bool                                          bIsValid;                                          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FactionTag;                                        // 0x00B8(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	void SetStat(EAthenaMatchStat Stat, int32 Value)
+	{
+		const int32 Index = static_cast<int32>(Stat);
+
+		if (Index >= 0 && Index < 0x14)
+			Stats[Index] = Value;
+	}
+
+	void SetPlacement(int32 Value) { SetStat(EAthenaMatchStat::Placement, Value); }
+	void SetKills(int32 Value) { SetStat(EAthenaMatchStat::PersonalElimination, Value); }
+	void SetTeamKills(int32 Value) { SetStat(EAthenaMatchStat::TeamEliminations, Value); }
 };
 DUMPER7_ASSERTS_FAthenaMatchStats;
 
@@ -31600,6 +31637,23 @@ public:
 	uint8                                         bHasInclusiveSourceTags : 1;                       // 0x0031(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         bHasInclusiveContextTags : 1;                      // 0x0031(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
 	uint8                                         Pad_32[0x16];                                      // 0x0032(0x0016)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void CacheData()
+	{
+		if (!bIsCached)
+			bIsCached = InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(FFortQuestObjectiveStat*, bool)>(InSDKUtils::GetImageBase() + 0x2A10480), this, true);
+	}
+
+	bool CanProgress(EFortQuestObjectiveStatEvent StatEvent, const struct FGameplayTagContainer& TargetTags, const struct FGameplayTagContainer& SourceTags, const struct FGameplayTagContainer& ContextTags) const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(const FFortQuestObjectiveStat*, EFortQuestObjectiveStatEvent, const struct FGameplayTagContainer*, const struct FGameplayTagContainer*, const struct FGameplayTagContainer*)>(InSDKUtils::GetImageBase() + 0x2A0E440), this, StatEvent, &TargetTags, &SourceTags, &ContextTags);
+	}
+
+	void* GetCompiledCondition()
+	{
+		return Pad_32 + 0x6;
+	}
 };
 DUMPER7_ASSERTS_FFortQuestObjectiveStat;
 
@@ -36510,8 +36564,67 @@ public:
 	TArray<class FString>                         AlternateTemplateIds;                              // 0x0090(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsCached;                                         // 0x00A0(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A1[0x17];                                      // 0x00A1(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void CacheData()
+	{
+		if (!bIsCached)
+			bIsCached = InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(FFortQuestObjectiveStatTableRow*, bool)>(InSDKUtils::GetImageBase() + 0x2A106B0), this, true);
+	}
+
+	void* GetCompiledCondition()
+	{
+		return Pad_A1 + 0x7;
+	}
 };
 DUMPER7_ASSERTS_FFortQuestObjectiveStatTableRow;
+
+struct FFortQuestFilterContext final
+{
+public:
+	uint8                                         InlineVariables[0x280];
+	void*                                         Variables;
+	int32                                         NumVariables;
+	int32                                         MaxVariables;
+	struct FGameplayTagContainer                  PawnTags;
+	struct FGameplayTagContainer                  ItemTags;
+	struct FGameplayTagContainer                  SourceTags;
+	struct FGameplayTagContainer                  TargetTags;
+	struct FGameplayTagContainer                  ContextTags;
+	bool                                          bLogErrors;
+	uint8                                         Pad_331[0x7];
+
+public:
+	FFortQuestFilterContext(const class UObject* Object, class UFortMcpProfile* Profile, class AFortPlayerController* PlayerController, void* ZoneDifficultyInfo, const struct FGameplayTagContainer* InSourceTags, const struct FGameplayTagContainer* InTargetTags, const struct FGameplayTagContainer* InContextTags, bool bInLogErrors)
+		: InlineVariables{}, Variables(nullptr), NumVariables(0), MaxVariables(0), bLogErrors(false), Pad_331{}
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<FFortQuestFilterContext*(*)(FFortQuestFilterContext*, const class UObject*, class UFortMcpProfile*, class AFortPlayerController*, void*, const struct FGameplayTagContainer*, const struct FGameplayTagContainer*, const struct FGameplayTagContainer*, bool)>(InSDKUtils::GetImageBase() + 0x29D6150), this, Object, Profile, PlayerController, ZoneDifficultyInfo, InSourceTags, InTargetTags, InContextTags, bInLogErrors);
+	}
+
+	~FFortQuestFilterContext()
+	{
+		if (Variables)
+			FMemory::Free(Variables);
+	}
+
+	bool EvaluateCondition(void* CompiledCondition) const
+	{
+		uint8* Condition = *static_cast<uint8**>(CompiledCondition);
+
+		if (!Condition || !*reinterpret_cast<int32*>(Condition + 0x8) || *reinterpret_cast<int32*>(Condition + 0x28) > 1)
+			return true;
+
+		class FText Error;
+		InSDKUtils::CallGameFunction(reinterpret_cast<class FText*(*)(class FText*)>(InSDKUtils::GetImageBase() + 0x3240AC0), &Error);
+
+		const bool bResult = InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(void*, void*, const FFortQuestFilterContext*, class FText*)>(InSDKUtils::GetImageBase() + 0x29E8F70), reinterpret_cast<void*>(InSDKUtils::GetImageBase() + 0x8C3D970), CompiledCondition, this, &Error);
+
+		Error.Release();
+
+		return bResult;
+	}
+};
+static_assert(sizeof(FFortQuestFilterContext) == 0x000338, "Wrong size on FFortQuestFilterContext");
 
 // ScriptStruct FortniteGame.FortQuestObjectiveStatXPTableRow
 // 0x00C8 (0x00D0 - 0x0008)

@@ -177,6 +177,12 @@
     <ClCompile Include="Runtime\Source\Engine\Components\StaticMeshComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClInclude Include="Runtime\Headers\Quests\FortQuestManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Quests\FortQuestManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClInclude Include="Core\Headers\Unreal\Stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>

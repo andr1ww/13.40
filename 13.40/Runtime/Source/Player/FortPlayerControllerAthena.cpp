@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Core.h"
 #include "Player/FortPlayerControllerAthena.h"
+#include "Quests/FortQuestManager.h"
 DEFINE_ENGINE_INIT(FortPlayerControllerAthena)
 
 void FortPlayerControllerAthena::ServerLoadingScreenDropped_Implementation(AFortPlayerControllerAthena* _this)
@@ -53,6 +54,23 @@ void FortPlayerControllerAthena::OnReadyToStartMatch(AFortPlayerControllerAthena
 void FortPlayerControllerAthena::ServerAcknowledgePossession_Implementation(AFortPlayerControllerAthena* _this, APawn* P)
 {
 	_this->AcknowledgedPawn = P;
+}
+
+void FortPlayerControllerAthena::BindAthenaProfileEvents(AFortPlayerControllerAthena* _this)
+{
+	if (_this->Role != ENetRole::ROLE_Authority || _this->AthenaProfile == NULL || _this->XPComponent == NULL)
+		return;
+
+	_this->XPComponent->BindToProfile(_this->AthenaProfile);
+	_this->XPComponent->bRegisteredWithQuestManager = true;
+}
+
+void FortPlayerControllerAthena::UnBindAthenaProfileEvents(AFortPlayerControllerAthena* _this)
+{
+	if (_this->Role != ENetRole::ROLE_Authority || _this->AthenaProfile == NULL || _this->XPComponent == NULL)
+		return;
+
+	_this->XPComponent->UnbindFromProfile(_this->AthenaProfile);
 }
 
 void FortPlayerControllerAthena::RemoveAllInventoryItems(AFortPlayerControllerAthena* _this)
@@ -244,6 +262,116 @@ void FortPlayerControllerAthena::ServerOnMaterialSelection_Implementation(AFortP
 	_this->CurrentResourceLevel = NewResourceLevel;
 }
 
+void FortPlayerControllerAthena::OnPawnDied(AFortPlayerControllerAthena* _this, AFortPlayerPawn* KilledPawn, float Damage, FGameplayTagContainer* InTags, FGameplayEffectContextHandle* EffectContext, AController* EventInstigator, AActor* DamageCauser, AController* DBNOFinisher)
+{
+	OnPawnDiedOG(_this, KilledPawn, Damage, InTags, EffectContext, EventInstigator, DamageCauser, DBNOFinisher);
+
+	AFortPlayerStateAthena* PlayerState = _this->PlayerState;
+
+	if (PlayerState == NULL || _this->MyFortPawn == NULL || KilledPawn == NULL || DamageCauser == NULL)
+		return;
+
+	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(GWorld->AuthorityGameMode);
+	AFortGameStateAthena* GameState = GameMode != NULL ? GameMode->GameState : NULL;
+
+	AFortPlayerControllerAthena* KillerController = EventInstigator != NULL ? Cast<AFortPlayerControllerAthena>(EventInstigator) : _this;
+	AFortPlayerStateAthena* KillerPlayerState = KillerController != NULL ? KillerController->PlayerState : PlayerState;
+	AFortPlayerPawn* KillerPawn = KillerController != NULL ? KillerController->MyFortPawn : NULL;
+
+	PlayerState->PawnDeathLocation = KilledPawn->K2_GetActorLocation();
+
+	PlayerState->DeathInfo = FDeathInfo{};
+	PlayerState->DeathInfo.bDBNO = KilledPawn->IsDBNO();
+	PlayerState->DeathInfo.DeathLocation = PlayerState->PawnDeathLocation;
+	PlayerState->DeathInfo.DeathTags = *InTags;
+	PlayerState->DeathInfo.DeathCause = AFortPlayerStateAthena::ToDeathCause(*InTags, PlayerState->DeathInfo.bDBNO);
+	PlayerState->DeathInfo.FinisherOrDowner = KillerPlayerState != NULL ? KillerPlayerState : PlayerState;
+	PlayerState->DeathInfo.Distance = PlayerState->DeathInfo.DeathCause != EDeathCause::FallDamage && KillerPawn != NULL ? KillerPawn->GetDistanceTo(KilledPawn) : 0.f;
+	PlayerState->DeathInfo.bInitialized = true;
+	PlayerState->OnRep_DeathInfo();
+
+	const bool bDBNO = PlayerState->DeathInfo.bDBNO;
+
+	if (!bDBNO && KillerPlayerState != NULL && KillerController != NULL && KillerController != _this)
+	{
+		KillerPlayerState->KillScore++;
+		KillerPlayerState->OnRep_Kills();
+
+		KillerPlayerState->TeamKillScore++;
+
+		if (KillerPlayerState->PlayerTeam != NULL)
+		{
+			for (AController* Member : KillerPlayerState->PlayerTeam->TeamMembers)
+			{
+				AFortPlayerControllerAthena* MemberController = Cast<AFortPlayerControllerAthena>(Member);
+				AFortPlayerStateAthena* MemberState = MemberController != NULL ? MemberController->PlayerState : NULL;
+
+				if (MemberState != NULL)
+				{
+					MemberState->TeamKillScore = KillerPlayerState->TeamKillScore;
+					MemberState->OnRep_TeamKillScore();
+					MemberState->ClientReportTeamKill(KillerPlayerState->TeamKillScore);
+				}
+			}
+		}
+
+		KillerPlayerState->OnRep_TeamKillScore();
+		KillerPlayerState->ClientReportTeamKill(KillerPlayerState->TeamKillScore);
+		KillerPlayerState->ClientReportKill(PlayerState);
+	}
+
+	if (bDBNO || GameState == NULL || GameState->IsRespawningAllowed(PlayerState))
+		return;
+
+	AFortWeapon* Weapon = Cast<AFortWeapon>(DamageCauser);
+
+	GameMode->RemoveFromAlivePlayers(_this, KillerPlayerState, KillerPawn, Weapon != NULL ? Weapon->WeaponData : NULL, PlayerState->DeathInfo.DeathCause, false);
+	_this->bMarkedAlive = false;
+
+	if (GameState->IsResurrectionEnabled(KilledPawn) && !_this->IsSquadWiped())
+		return;
+
+	const int32 Placement = GameState->TeamsLeft > 0 ? GameState->TeamsLeft + 1 : 1;
+
+	UFortPlaylistAthena* Playlist = GameState->CurrentPlaylistInfo.OverridePlaylist != NULL ? GameState->CurrentPlaylistInfo.OverridePlaylist : GameState->CurrentPlaylistInfo.BasePlaylist;
+
+	for (TWeakObjectPtr<AFortPlayerStateAthena>& Member : GameState->GetTeamMembers(PlayerState->TeamIndex))
+	{
+		AFortPlayerStateAthena* MemberState = Member.Get();
+
+		if (MemberState == NULL || MemberState->Place != 0)
+			continue;
+
+		AFortPlayerControllerAthena* MemberController = Cast<AFortPlayerControllerAthena>(MemberState->Owner);
+
+		if (MemberController == NULL || MemberController->MatchReport == NULL || MemberController->bMarkedAlive)
+			continue;
+
+		MemberState->SetMatchPlacement(Placement);
+
+		UFortQuestManager* QuestManager = MemberController->GetQuestManager(ESubGame::Athena);
+
+		if (QuestManager != NULL && Playlist != NULL)
+			FortQuestManager::EndBattleRoyaleMatchForPlayer(QuestManager, Playlist, MemberController->MatchReport->MatchStats);
+
+		if (Placement == 1)
+			continue;
+
+		UAthenaPlayerMatchReport* MatchReport = MemberController->MatchReport;
+
+		MatchReport->MatchStats.SetPlacement(Placement);
+		MatchReport->MatchStats.SetKills(MemberState->KillScore);
+		MatchReport->MatchStats.SetTeamKills(MemberState->TeamKillScore);
+
+		MatchReport->TeamStats.Place = Placement;
+		MatchReport->TeamStats.TotalPlayers = GameState->TotalPlayers;
+
+		MemberController->ClientSendMatchStatsForPlayer(MatchReport->MatchStats);
+		MemberController->ClientSendTeamStatsForPlayer(MatchReport->TeamStats);
+		MemberController->ClientSendEndBattleRoyaleMatchForPlayer(true, MatchReport->EndOfMatchResults);
+	}
+}
+
 void FortPlayerControllerAthena::ServerPlaySquadQuickChatMessage_Implementation(AFortPlayerControllerAthena* _this, FAthenaQuickChatActiveEntry& ChatEntry, FUniqueNetIdRepl& SenderID)
 {
 	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(_this->PlayerState);
@@ -314,6 +442,9 @@ void FortPlayerControllerAthena::Init()
 	Hooking::Hook<AFortPlayerControllerAthena>(0x868 / 8, ServerAcknowledgePossession_Implementation);
 	Hooking::Hook<AFortPlayerControllerAthena>(0x1590 / 8, OnReadyToStartMatch, OnReadyToStartMatchOG);
 	Hooking::Hook<AFortPlayerControllerAthena>(0x1358 / 8, ServerLoadingScreenDropped_Implementation, ServerLoadingScreenDropped_ImplementationOG);
+	Hooking::Hook<AFortPlayerControllerAthena>(0x1F80 / 8, OnPawnDied, OnPawnDiedOG);
+	Hooking::Hook<AFortPlayerControllerAthena>(0x1E78 / 8, BindAthenaProfileEvents);
+	Hooking::Hook<AFortPlayerControllerAthena>(0x1E80 / 8, UnBindAthenaProfileEvents);
 	Hooking::Hook<AFortPlayerControllerAthena>(0x1B48 / 8, DropItemsOnPawnDestruction);
 	Hooking::Hook<AFortPlayerControllerAthena>(0x1B58 / 8, DropItemsAsPickupsAsync);
 	Hooking::Hook<AFortPlayerControllerAthena>(0x1680 / 8, ForceEquipValidWeapon);

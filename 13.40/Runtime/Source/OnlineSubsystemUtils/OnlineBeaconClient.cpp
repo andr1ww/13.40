@@ -19,18 +19,16 @@ ULocalPlayer* OnlineBeaconClient::GetFirstGamePlayer(UEngine* _this, UWorld* Wor
 	if (!BeaconConnection)
 		return nullptr;
 
-	TSharedPtr<void> UniquePlayerId{};
+	TSharedPtr<void> UniquePlayerId;
 	reinterpret_cast<void*(*)(void*, TSharedPtr<void>*, UWorld*, int32, FName)>(ImageBase + 0xBAE6F0)(nullptr, &UniquePlayerId, World, 0, FName());
 
-	if (UniquePlayerId.Object)
+	if (UniquePlayerId.IsValid())
 	{
 		FUniqueNetIdRepl PlayerId{};
-		*reinterpret_cast<TSharedPtr<void>*>(reinterpret_cast<uint8*>(&PlayerId) + 0x8) = UniquePlayerId;
+		PlayerId.GetUniqueNetId() = std::move(UniquePlayerId);
 		reinterpret_cast<FUniqueNetIdRepl*(*)(FUniqueNetIdRepl*, const FUniqueNetIdRepl*)>(ImageBase + 0xAEAA00)(&BeaconConnection->PlayerID, &PlayerId);
+		PlayerId.GetUniqueNetId().Reset();
 	}
-
-	if (UniquePlayerId.Controller)
-		UniquePlayerId.Controller->ReleaseSharedReference();
 
 	return nullptr;
 }

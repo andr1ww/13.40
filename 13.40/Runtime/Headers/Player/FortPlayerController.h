@@ -17,6 +17,7 @@ namespace FortPlayerController
 	AActor* SpawnToyInstance(AFortPlayerController* _this, TSubclassOf<AActor> ToyClass, const FTransform& SpawnPosition);
 
 	DefineHook(void, GetPlayerViewPoint, AFortPlayerController* _this, FVector* OutLocation, FRotator* OutRotation);
+	DefineHook(void, OnPossess, AFortPlayerController* _this, APawn* InPawn);
 
 	void Init();
 }

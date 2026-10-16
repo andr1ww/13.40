@@ -96,6 +96,11 @@ public:
 	void QueryPublicProfile(struct FBaseUrlContext* Context);
 	void UnlockProfileForWrite(const class FString& Code, struct FDedicatedServerUrlContext* Context);
 
+	bool IsProfileLoaded() const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(const UMcpProfile*)>(InSDKUtils::GetImageBase() + 0x1307010), this);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{

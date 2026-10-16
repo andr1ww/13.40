@@ -1605,6 +1605,25 @@ namespace UC
             }
         }
 
+        inline void RemoveAtSwap(int32 Index, int32 Count = 1)
+        {
+            DestructItems(GetData() + Index, Count);
+
+            const int32 NumElementsAfterHole = NumElements - (Index + Count);
+            const int32 NumElementsToMoveIntoHole = NumElementsAfterHole < Count ? NumElementsAfterHole : Count;
+
+            if (NumElementsToMoveIntoHole)
+                memcpy((void*)(GetData() + Index), (void*)(GetData() + (NumElements - NumElementsToMoveIntoHole)), NumElementsToMoveIntoHole * ElementSize);
+
+            NumElements -= Count;
+        }
+
+        inline void Shrink()
+        {
+            if (MaxElements != NumElements)
+                Data = FMemory::ReallocForType<ArrayElementType>(Data, MaxElements = NumElements);
+        }
+
         inline bool RemoveNoDestruction(int32 Index)
         {
             if (!IsValidIndex(Index))
