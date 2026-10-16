@@ -278,10 +278,50 @@ void FortPlayerController::ServerAttemptInventoryDrop_Implementation(AFortPlayer
 	Pickup->TossPickup(DropTarget, Pawn, -1, true, true, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::Unset);
 }
 
+void FortPlayerController::ServerPlayEmoteItem_Implementation(AFortPlayerController* _this, UFortMontageItemDefinitionBase* EmoteAsset, float EmoteRandomNumber)
+{
+	AFortPlayerPawn* PlayerPawn = _this->MyFortPawn;
+
+	if (PlayerPawn == NULL)
+		return;
+
+	UClass* AbilityClass = NULL;
+
+	if (UAthenaToyItemDefinition* ToyItemDefinition = Cast<UAthenaToyItemDefinition>(EmoteAsset))
+	{
+		AbilityClass = ToyItemDefinition->ToySpawnAbility.LoadSynchronous();
+	}
+	else if (UAthenaSprayItemDefinition* SprayItemDefinition = Cast<UAthenaSprayItemDefinition>(EmoteAsset))
+	{
+		AbilityClass = UGameDataCosmetics::GetGameDataCosmetics()->SprayGameplayAbility.LoadSynchronous();
+	}
+	else if (UAthenaDanceItemDefinition* DanceItemDefinition = Cast<UAthenaDanceItemDefinition>(EmoteAsset))
+	{
+		UClass* CustomDanceAbility = DanceItemDefinition->CustomDanceAbility.LoadSynchronous();
+
+		AbilityClass = CustomDanceAbility != NULL ? CustomDanceAbility : UGameDataCosmetics::GetGameDataCosmetics()->EmoteGameplayAbility.LoadSynchronous();
+
+		PlayerPawn->bMovingEmote = DanceItemDefinition->bMovingEmote;
+		PlayerPawn->EmoteWalkSpeed = DanceItemDefinition->WalkForwardSpeed;
+		PlayerPawn->bMovingEmoteForwardOnly = DanceItemDefinition->bMoveForwardOnly;
+	}
+
+	if (AbilityClass != NULL)
+	{
+		PlayerPawn->EmoteRandomNum = EmoteRandomNumber;
+
+		FGameplayAbilitySpec Spec;
+		Spec.ConstructAbilitySpec(AbilityClass->ClassDefaultObject, 1, -1, EmoteAsset);
+
+		PlayerPawn->AbilitySystemComponent->GiveAbilityAndActivateOnce(Spec);
+	}
+}
+
 void FortPlayerController::Init()
 {
 	Hooking::HookEvery<AFortPlayerController>(0x1068 / 8, ServerExecuteInventoryItem_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x10E8 / 8, ServerAttemptInventoryDrop_Implementation);
+	Hooking::HookEvery<AFortPlayerController>(0xE48 / 8, ServerPlayEmoteItem_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x1180 / 8, ServerCreateBuildingActor_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x11B8 / 8, ServerBeginEditingBuildingActor_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x1190 / 8, ServerEditBuildingActor_Implementation);

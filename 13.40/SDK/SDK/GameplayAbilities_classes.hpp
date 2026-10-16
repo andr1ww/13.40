@@ -449,6 +449,13 @@ public:
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UAbilitySystemComponent*, struct FGameplayAbilitySpec*, bool)>(InSDKUtils::GetImageBase() + 0x9AFA70), this, &Spec, WasAddOrRemove);
 	}
 
+	struct FGameplayAbilitySpecHandle GiveAbilityAndActivateOnce(struct FGameplayAbilitySpec& Spec)
+	{
+		struct FGameplayAbilitySpecHandle Handle;
+		InSDKUtils::CallGameFunction(reinterpret_cast<struct FGameplayAbilitySpecHandle*(*)(UAbilitySystemComponent*, struct FGameplayAbilitySpecHandle*, struct FGameplayAbilitySpec*)>(InSDKUtils::GetImageBase() + 0x9A5F70), this, &Handle, &Spec);
+		return Handle;
+	}
+
 public:
 	static class UClass* StaticClass()
 	{

@@ -11,6 +11,7 @@ namespace FortPlayerController
 	void ServerEndEditingBuildingActor_Implementation(AFortPlayerController* _this, ABuildingSMActor* BuildingActorToStopEditing);
 	void ServerRepairBuildingActor_Implementation(AFortPlayerController* _this, ABuildingSMActor* BuildingActorToRepair);
 	void ServerAttemptInventoryDrop_Implementation(AFortPlayerController* _this, const FGuid& ItemGuid, int32 Count, bool bTrash);
+	void ServerPlayEmoteItem_Implementation(AFortPlayerController* _this, UFortMontageItemDefinitionBase* EmoteAsset, float EmoteRandomNumber);
 
 	void Init();
 }

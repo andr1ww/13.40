@@ -5499,6 +5499,11 @@ public:
 
 	bool CanRemoveInventoryItem(const struct FGuid& ItemGuid);
 
+	bool CanProbablyPlayEmote(const class UFortMontageItemDefinitionBase* EmoteAsset)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(AFortPlayerController*, const class UFortMontageItemDefinitionBase*)>(InSDKUtils::GetImageBase() + 0x29457C0), this, EmoteAsset);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -101798,6 +101803,11 @@ public:
 	uint8                                         Pad_8B4[0x4];                                      // 0x08B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortHarvestingToolMontageOverrides    HarvestingToolMontageOverrides;                    // 0x08B8(0x0010)(Edit, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 BakedThumbnailData;                                // 0x08C8(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+	static class UGameDataCosmetics* GetGameDataCosmetics()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UGameDataCosmetics*(*)(class UObject*)>(InSDKUtils::GetImageBase() + 0x23C78D0), InSDKUtils::CallGameFunction(reinterpret_cast<class UObject*(*)()>(InSDKUtils::GetImageBase() + 0x23C5DC0)));
+	}
 
 public:
 	static class UClass* StaticClass()

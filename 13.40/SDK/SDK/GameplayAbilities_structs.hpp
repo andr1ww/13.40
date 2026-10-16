@@ -966,6 +966,12 @@ public:
 	TArray<class UGameplayAbility*>               ReplicatedInstances;                               // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FActiveGameplayEffectHandle            GameplayEffectHandle;                              // 0x0068(0x0008)(RepSkip, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_70[0x50];                                      // 0x0070(0x0050)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void ConstructAbilitySpec(class UObject* InAbility, int32 InLevel, int32 InInputID, class UObject* InSourceObject)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FGameplayAbilitySpec*, class UObject*, int32, int32, class UObject*)>(InSDKUtils::GetImageBase() + 0x9820D0), this, InAbility, InLevel, InInputID, InSourceObject);
+	}
 };
 DUMPER7_ASSERTS_FGameplayAbilitySpec;
 
