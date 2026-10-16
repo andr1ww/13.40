@@ -15,5 +15,4 @@ void SkeletalMeshComponent::UpdateEndPhysicsTickRegisteredState(USkeletalMeshCom
 void SkeletalMeshComponent::Init()
 {
 	Hooking::Hook(ImageBase + 0x48D43C0, UpdateEndPhysicsTickRegisteredState, UpdateEndPhysicsTickRegisteredStateOG);
-	Hooking::RetFalse(ImageBase + 0x48D0AD0);
 }

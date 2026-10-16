@@ -279,6 +279,11 @@ public:
 	void SetMaxSimultaneousTileGenerationJobsCount(int32 MaxNumberOfJobs);
 	void UnregisterNavigationInvoker(class AActor* Invoker);
 
+	void ReleaseInitialBuildingLock()
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(UNavigationSystemV1*)>(this, 0x340 / 8), this);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{

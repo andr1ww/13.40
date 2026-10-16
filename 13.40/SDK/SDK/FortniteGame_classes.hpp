@@ -35153,6 +35153,11 @@ public:
 	bool IsPlayerRebootingNow() const;
 	bool IsTryToFireRestrictedByTypeCooldowns() const;
 
+	void ShouldDropOrDestroyByItemType(const class UFortWorldItemDefinition* ItemDefinition, bool& bShouldDrop, bool& bShouldDestroy)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPlayerControllerAthena*, const class UFortWorldItemDefinition*, bool*, bool*)>(InSDKUtils::GetImageBase() + 0x1F61E80), this, ItemDefinition, &bShouldDrop, &bShouldDestroy);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -50069,6 +50074,11 @@ public:
 	bool SetNumInStack(int32 InNumInStack, bool bResetRegenCooldown)
 	{
 		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(UFortWorldItem*, int32, bool)>(this, 0x4F8 / 8), this, InNumInStack, bResetRegenCooldown);
+	}
+
+	bool ShouldAlwaysDropItemOnDeathOrLogout()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(UFortWorldItem*)>(InSDKUtils::GetImageBase() + 0x1F389B0), this);
 	}
 
 public:

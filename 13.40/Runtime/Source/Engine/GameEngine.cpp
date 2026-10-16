@@ -45,8 +45,4 @@ void GameEngine::Init()
 {
 	Hooking::Hook(ImageBase + 0x499FAF0, Start, StartOG);
 	Hooking::Hook(ImageBase + 0x49A0410, Tick, TickOG);
-	Hooking::PatchBytes(ImageBase + 0x4984927, { 0xE9, 0xE1, 0x00, 0x00, 0x00, 0x90 });
-	Hooking::PatchBytes(ImageBase + 0x4990E44, { 0xE9, 0xE2, 0x00, 0x00, 0x00, 0x90 });
-	Hooking::PatchBytes(ImageBase + 0x49A0772, { 0xEB, 0x61 });
-	Hooking::PatchBytes(ImageBase + 0x49A0CB9, { 0xEB, 0x66 });
 } 

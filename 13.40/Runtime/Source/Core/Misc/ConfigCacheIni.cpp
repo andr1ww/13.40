@@ -33,7 +33,7 @@ void ConfigCacheIni::AddStaticLayersToHierarchy(void* _this, const wchar_t* InBa
 	static const auto GConfigLayers = reinterpret_cast<const FConfigLayer*>(ImageBase + 0x86F7470);
 	static const auto GConfigExpansions = reinterpret_cast<const FConfigLayerExpansion*>(ImageBase + 0x86F7550);
 	static const auto GetPlatformInfo = reinterpret_cast<const FDataDrivenPlatformInfo*(*)(const FString*)>(ImageBase + 0x32D8810);
-	static const auto PerformFinalExpansions = reinterpret_cast<FString*(*)(FString*, FString*, const FString*, const wchar_t*, const wchar_t*)>(ImageBase + 0x32B5120);
+	static const auto PerformFinalExpansions = reinterpret_cast<FString(*)(FString, const FString&, const wchar_t*, const wchar_t*)>(ImageBase + 0x32B5120);
 	static const auto AddStaticLayer = reinterpret_cast<void(*)(void*, const int32*, FIniFilename*)>(ImageBase + 0x329C9D0);
 
 	const FString PlatformName(InPlatformName ? InPlatformName : L"Windows");
@@ -70,19 +70,13 @@ void ConfigCacheIni::AddStaticLayersToHierarchy(void* _this, const wchar_t* InBa
 			if (ExpandedPath.empty())
 				continue;
 
-			FString InPath = FString::Printf(L"%s", ExpandedPath.c_str());
-			FString PlatformPath;
-			PerformFinalExpansions(&PlatformPath, &InPath, &DedicatedServerString, EngineDir.c_str(), ProjectDir.c_str());
+			const FString PlatformPath = PerformFinalExpansions(FString(ExpandedPath.c_str()), DedicatedServerString, EngineDir.c_str(), ProjectDir.c_str());
 
 			const bool bGenerateCacheKey = (Layer.Flag & uint32(EConfigLayerFlags::GenerateCacheKey)) && ExpansionIndex == 5;
-			FIniFilename IniFilename{ FString::Printf(L"%s", Replace(PlatformPath.ToWString(), L"Config/DedicatedServer/", L"Config/").c_str()), false, bGenerateCacheKey ? FString::Printf(L"%s", InBaseIniName) : FString() };
-			PlatformPath.Free();
+			FIniFilename IniFilename{ FString(Replace(PlatformPath.ToWString(), L"Config/DedicatedServer/", L"Config/").c_str()), false, bGenerateCacheKey ? FString(InBaseIniName) : FString() };
 
 			const int32 Key = LayerIndex * 10000 + ExpansionIndex * 100 + DedicatedServerIndex;
 			AddStaticLayer(reinterpret_cast<uint8*>(_this) + 0x60, &Key, &IniFilename);
-
-			IniFilename.Filename.Free();
-			IniFilename.CacheKey.Free();
 		}
 	}
 }

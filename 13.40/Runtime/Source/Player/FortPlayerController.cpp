@@ -317,17 +317,156 @@ void FortPlayerController::ServerPlayEmoteItem_Implementation(AFortPlayerControl
 	}
 }
 
+void FortPlayerController::ServerCombineInventoryItems_Implementation(AFortPlayerController* _this, const FGuid& TargetItemGuid, const FGuid& SourceItemGuid)
+{
+	if (TargetItemGuid == SourceItemGuid)
+		return;
+
+	AFortInventory* Inventory = _this->WorldInventory;
+
+	if (Inventory == NULL)
+		return;
+
+	UFortWorldItem* TargetItem = Inventory->GetItem(TargetItemGuid);
+	UFortWorldItem* SourceItem = Inventory->GetItem(SourceItemGuid);
+
+	if (TargetItem == NULL || SourceItem == NULL)
+		return;
+
+	UFortWorldItemDefinition* TargetDefinition = Cast<UFortWorldItemDefinition>(TargetItem->ItemEntry.ItemDefinition);
+
+	if (TargetDefinition == NULL || SourceItem->ItemEntry.ItemDefinition != TargetItem->ItemEntry.ItemDefinition)
+		return;
+
+	int32 MaxStackSize = max(1, AFortInventory::GetItemMaxStackSize(_this, TargetDefinition));
+	int32 AmountToTransfer = std::clamp(SourceItem->ItemEntry.Count, 0, MaxStackSize - TargetItem->ItemEntry.Count);
+
+	if (AmountToTransfer <= 0)
+		return;
+
+	TargetItem->ItemEntry.SetCount(TargetItem->ItemEntry.Count + AmountToTransfer);
+	Inventory->RemoveInventoryItem(SourceItemGuid, AmountToTransfer, false);
+}
+
+int32 FortPlayerController::RemoveItemFromPlayer(AFortPlayerController* _this, UFortWorldItemDefinition* ItemDefinition, int32 AmountToRemove, bool bForceRemoval)
+{
+	AFortInventory* Inventory = _this != NULL ? _this->WorldInventory : NULL;
+
+	if (Inventory == NULL || ItemDefinition == NULL)
+		return 0;
+
+	int32 AmountRemoved = 0;
+
+	for (int32 ItemIndex = Inventory->Inventory.ItemInstances.Num() - 1; ItemIndex >= 0; ItemIndex--)
+	{
+		UFortWorldItem* Item = Inventory->Inventory.ItemInstances[ItemIndex];
+
+		if (Item == NULL || Item->ItemEntry.ItemDefinition != ItemDefinition)
+			continue;
+
+		int32 CountToRemove = AmountToRemove < 0 ? Item->ItemEntry.Count : min(Item->ItemEntry.Count, AmountToRemove - AmountRemoved);
+
+		if (!Inventory->RemoveInventoryItem(Item->ItemEntry.ItemGuid, CountToRemove, bForceRemoval))
+			continue;
+
+		AmountRemoved += CountToRemove;
+
+		if (AmountToRemove >= 0 && AmountRemoved >= AmountToRemove)
+			break;
+	}
+
+	return AmountRemoved;
+}
+
+void FortPlayerController::GetPlayerViewPoint(AFortPlayerController* _this, FVector* OutLocation, FRotator* OutRotation)
+{
+	if (_this->MyFortPawn)
+	{
+		*OutLocation = _this->MyFortPawn->K2_GetActorLocation();
+		*OutRotation = _this->MyFortPawn->GetControlRotation();
+		return;
+	}
+
+	if (_this->StateName == NAME_Spectating && _this->Role == ENetRole::ROLE_Authority)
+	{
+		if (AActor* ViewTarget = _this->GetViewTarget())
+		{
+			*OutLocation = ViewTarget->K2_GetActorLocation();
+			*OutRotation = ViewTarget->K2_GetActorRotation();
+			return;
+		}
+	}
+
+	return GetPlayerViewPointOG(_this, OutLocation, OutRotation);
+}
+
+AActor* FortPlayerController::SpawnToyInstance(AFortPlayerController* _this, TSubclassOf<AActor> ToyClass, const FTransform& SpawnPosition)
+{
+	UClass* ToyActorClass = ToyClass.Get();
+
+	if (_this == NULL || ToyActorClass == NULL)
+		return NULL;
+
+	static int32** NumToysAlivePerPlayer = reinterpret_cast<int32**>(ImageBase + 0x8C39C90);
+
+	int32 MaxToysAlive = **NumToysAlivePerPlayer;
+
+	for (int32 ToyIndex = _this->ActiveToyInstances.Num() - 1; ToyIndex >= 0; ToyIndex--)
+	{
+		AActor* ActiveToyInstance = _this->ActiveToyInstances[ToyIndex];
+
+		if (ActiveToyInstance == NULL || ActiveToyInstance->IsActorBeingDestroyed())
+			_this->ActiveToyInstances.Remove(ToyIndex);
+	}
+
+	while (_this->ActiveToyInstances.Num() > 0 && _this->ActiveToyInstances.Num() >= MaxToysAlive)
+	{
+		AActor* OldestToyInstance = _this->ActiveToyInstances[0];
+
+		if (IFortToyInterface* OldestToyInterface = GetInterface<IFortToyInterface>(OldestToyInstance))
+			OldestToyInterface->StartToyFadeOutDueToNewPlacement();
+		else
+			OldestToyInstance->K2_DestroyActor();
+
+		_this->ActiveToyInstances.Remove(0);
+	}
+
+	int32& NumTimesSummoned = _this->ToySummonCounts.FindOrAdd(ToyActorClass);
+	NumTimesSummoned++;
+
+	AActor* ToyOwner = _this->PlayerState != NULL ? static_cast<AActor*>(_this->PlayerState) : static_cast<AActor*>(_this);
+
+	AActor* ToyInstance = UGameplayStatics::BeginDeferredActorSpawnFromClass(_this, ToyClass, SpawnPosition, ESpawnActorCollisionHandlingMethod::AlwaysSpawn, ToyOwner);
+
+	if (ToyInstance == NULL)
+		return NULL;
+
+	UGameplayStatics::FinishSpawningActor(ToyInstance, SpawnPosition);
+
+	if (IFortToyInterface* ToyInterface = GetInterface<IFortToyInterface>(ToyInstance))
+		ToyInterface->InitializeToyInstance(_this, NumTimesSummoned);
+
+	_this->ActiveToyInstances.Add(ToyInstance);
+
+	return ToyInstance;
+}
+
 void FortPlayerController::Init()
 {
 	Hooking::HookEvery<AFortPlayerController>(0x1068 / 8, ServerExecuteInventoryItem_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x10E8 / 8, ServerAttemptInventoryDrop_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0xE48 / 8, ServerPlayEmoteItem_Implementation);
+	Hooking::HookEvery<AFortPlayerController>(0x10F8 / 8, ServerCombineInventoryItems_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x1180 / 8, ServerCreateBuildingActor_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x11B8 / 8, ServerBeginEditingBuildingActor_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x1190 / 8, ServerEditBuildingActor_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x11A8 / 8, ServerEndEditingBuildingActor_Implementation);
 	Hooking::HookEvery<AFortPlayerController>(0x1160 / 8, ServerRepairBuildingActor_Implementation);
 
+	Hooking::Hook(ImageBase + 0x295B660, GetPlayerViewPoint, GetPlayerViewPointOG);
+	Hooking::Hook(ImageBase + 0x24D8E50, RemoveItemFromPlayer);
+
 	Hooking::Rel32Swap(ImageBase + 0x2C95C15, ServerCreateBuildingActorInternal);
 	Hooking::Rel32Swap(ImageBase + 0x2C960B9, ServerCreateBuildingActorInternal);
+	Hooking::Rel32Swap(ImageBase + 0x306EB5C, SpawnToyInstance);
 }

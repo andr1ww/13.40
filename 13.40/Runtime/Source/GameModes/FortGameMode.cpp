@@ -52,6 +52,32 @@ void FortGameMode::SetupPlaylist(AFortGameModeAthena* _this)
 
 	_this->GameState->OnRep_AdditionalPlaylistLevelsStreamed();
 	_this->GameContextTags.AppendTags(_this->GameState->GetAthenaPlaylistContextTags());
+
+	_this->ServerBotManagerClass = UFortServerBotManagerAthena::StaticClass();
+	_this->ServerBotManager = (UFortServerBotManagerAthena*)UGameplayStatics::SpawnObject(_this->ServerBotManagerClass, _this);
+
+	if (_this->ServerBotManager)
+	{
+		_this->ServerBotManager->UseCustomSupportedItemList.Value = 0.f;
+		_this->ServerBotManager->UseCustomSupportedItemList.Curve.CurveTable = nullptr;
+		_this->ServerBotManager->UseCustomSupportedItemList.Curve.RowName = FName();
+
+		_this->ServerBotManager->CachedGameMode = _this;
+		_this->ServerBotManager->CachedGameState = _this->GameState;
+
+		Set<bool>(_this->ServerBotManager, 0x458, true);
+	}
+
+	if (!_this->SpawningPolicyManager)
+	{
+		FActorSpawnParameters SpawnParameters{};
+		SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+		SpawnParameters.Owner = _this;
+
+		_this->SpawningPolicyManager = GWorld->SpawnActor<AFortAthenaSpawningPolicyManager>({}, SpawnParameters);
+		_this->SpawningPolicyManager->GameStateAthena = _this->GameState;
+		_this->SpawningPolicyManager->GameModeAthena = _this;
+	}
 }
 
 void FortGameMode::FinishWorldInitialization(AFortGameModeAthena* _this, AActor* WorldManager)

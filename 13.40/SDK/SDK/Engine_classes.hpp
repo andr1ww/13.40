@@ -2799,6 +2799,11 @@ public:
 	struct FVector ScaleByMomentOfInertia(const struct FVector& InputVector, class FName BoneName) const;
 	bool WasRecentlyRendered(float Tolerance) const;
 
+	bool IsNavigationRelevant()
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(UPrimitiveComponent*)>(InSDKUtils::GetImageBase() + 0x48A0FF0), this);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{

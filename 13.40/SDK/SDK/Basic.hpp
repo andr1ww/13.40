@@ -425,15 +425,17 @@ public:
 	
 	std::string GetRawString() const
 	{
-		wchar_t buffer[1024];
-	    FString TempString(buffer, 0, 1024);
+		thread_local FAllocatedString TempString(1024);
 	
 		if (!AppendString)
 			InitInternal();
 	
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(const FName*, FString&)>(AppendString), this, TempString);
 	
-		return TempString.ToString();
+		std::string OutputString = TempString.ToString();
+		TempString.Clear();
+
+		return OutputString;
 	}
 	
 	std::string ToString() const
@@ -1431,47 +1433,6 @@ using TActorBasedCycleFixup = CyclicDependencyFixupImpl::TCyclicClassFixup<Under
 
 SDK_NAMESPACE_END
 
-template<typename ArrayElementType>
-inline void UC::TArray<ArrayElementType>::Reserve(int32 Num)
-{
-	if (!Data || Num + NumElements > MaxElements)
-	{
-		MaxElements = Num + NumElements;
-		Data = static_cast<ArrayElementType*>(SDK_NAMESPACE_NAME ::FMemory::Realloc(Data, static_cast<uint64>(MaxElements) * sizeof(ArrayElementType), alignof(ArrayElementType)));
-	}
-}
-
-template<typename ArrayElementType>
-inline void UC::TArray<ArrayElementType>::Free()
-{
-	for (int32 i = 0; i < NumElements; i++)
-		Data[i].~ArrayElementType();
-
-	if (Data)
-		SDK_NAMESPACE_NAME ::FMemory::Free(Data);
-
-	Data = nullptr;
-	NumElements = 0;
-	MaxElements = 0;
-}
-
-template<typename... ArgTypes>
-inline UC::FString UC::FString::Printf(const wchar_t* Fmt, ArgTypes... Args)
-{
-	FString Result;
-	SDK_NAMESPACE_NAME ::InSDKUtils::CallGameFunction(reinterpret_cast<FString*(*)(FString*, const wchar_t*, ...)>(SDK_NAMESPACE_NAME ::InSDKUtils::GetImageBase() + 0x31DC280), &Result, Fmt, Args...);
-	return Result;
-}
-
-inline void UC::FString::Free()
-{
-	if (Data)
-		SDK_NAMESPACE_NAME ::FMemory::Free(Data);
-
-	Data = nullptr;
-	NumElements = 0;
-	MaxElements = 0;
-}
 
 
 template <typename T>

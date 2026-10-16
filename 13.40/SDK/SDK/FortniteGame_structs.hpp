@@ -12779,6 +12779,7 @@ public:
 	~FFortItemEntry()
 	{
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFortItemEntry*)>(InSDKUtils::GetImageBase() + 0x1228A60), this);
+		memset(this, 0, sizeof(FFortItemEntry));
 	}
 
 	FFortItemEntry& operator=(const FFortItemEntry& Other)
