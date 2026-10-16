@@ -189,6 +189,7 @@
     <ClInclude Include="Runtime\Headers\Engine\UnrealEngine.h" />
     <ClInclude Include="Runtime\Headers\Items\FortPickup.h" />
     <ClInclude Include="Runtime\Headers\Athena\FortPoiVolume.h" />
+    <ClInclude Include="Runtime\Headers\Athena\FortSafeZoneIndicator.h" />
     <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_Aircraft.h" />
     <ClInclude Include="Runtime\Headers\Actors\BuildingActor.h" />
     <ClInclude Include="Runtime\Headers\Player\FortPlayerController.h" />
@@ -243,6 +244,7 @@
     <ClCompile Include="Runtime\Source\Engine\UnrealEngine.cpp" />
     <ClCompile Include="Runtime\Source\Items\FortPickup.cpp" />
     <ClCompile Include="Runtime\Source\Athena\FortPoiVolume.cpp" />
+    <ClCompile Include="Runtime\Source\Athena\FortSafeZoneIndicator.cpp" />
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp" />
     <ClCompile Include="Runtime\Source\Actors\BuildingActor.cpp" />
     <ClCompile Include="Runtime\Source\Player\FortPlayerController.cpp" />
