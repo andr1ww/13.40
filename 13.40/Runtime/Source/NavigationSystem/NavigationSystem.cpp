@@ -41,11 +41,11 @@ UNavigationSystemBase* NavigationSystem::CreateAndConfigureNavigationSystem(UAth
 	return NavSystem;
 }
 
-void NavigationSystem::OnWorldInitDone(UNavigationSystemV1* _this, EFNavigationSystemRunMode Mode)
+void NavigationSystem::OnWorldInitDone(UAthenaNavSystem* _this, EFNavigationSystemRunMode Mode)
 {
 	OnWorldInitDoneOG(_this, Mode);
 
-	_this->ReleaseInitialBuildingLock();
+	_this->RemoveNavigationLocks();
 
 	for (ANavigationData* NavData : _this->NavDataSet)
 	{
@@ -60,5 +60,5 @@ void NavigationSystem::OnWorldInitDone(UNavigationSystemV1* _this, EFNavigationS
 void NavigationSystem::Init()
 {
 	Hooking::Hook(ImageBase + 0x50681D0, CreateAndConfigureNavigationSystem, CreateAndConfigureNavigationSystemOG);
-	Hooking::Hook(ImageBase + 0x1C31C40, OnWorldInitDone, OnWorldInitDoneOG);
+	Hooking::Hook(ImageBase + 0x1C65C00, OnWorldInitDone, OnWorldInitDoneOG);
 }

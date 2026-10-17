@@ -1057,6 +1057,12 @@ public:
 	bool WeaponDataIsValid() const;
 
 public:
+	static EFortWeaponType FindWeaponTypeForStats(const class UFortItemDefinition* WeaponItemDef)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<EFortWeaponType(*)(const class UFortItemDefinition*)>(InSDKUtils::GetImageBase() + 0x2C79390), WeaponItemDef);
+	}
+
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("FortWeapon")
@@ -20515,6 +20521,11 @@ public:
 	static bool IsInitialNavigationLockActive(class UObject* WorldContextObject);
 	static void RegisterNavGenerationObserver(class USceneComponent* Component, TDelegate<void(class USceneComponent* Component)> Event);
 	static void UnregisterNavGenerationObserver(class USceneComponent* Component);
+
+	void RemoveNavigationLocks()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UAthenaNavSystem*)>(InSDKUtils::GetImageBase() + 0x1C6F8F0), this);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -86430,6 +86441,11 @@ DUMPER7_ASSERTS_IFortInventoryOverrideProvider;
 class IFortInventoryOwnerInterface final
 {
 public:
+	class UObject* _getUObject() const
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<class UObject*(*)(const IFortInventoryOwnerInterface*)>(this, 1), this);
+	}
+
 	class AFortInventory* GetWorldInventory()
 	{
 		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<class AFortInventory*(*)(IFortInventoryOwnerInterface*)>(this, 9), this);

@@ -4,7 +4,7 @@
 namespace NavigationSystem
 {
 	DefineHook(UNavigationSystemBase*, CreateAndConfigureNavigationSystem, UAthenaNavSystemConfig* _this, UWorld* World);
-	DefineHook(void, OnWorldInitDone, UNavigationSystemV1* _this, EFNavigationSystemRunMode Mode);
+	DefineHook(void, OnWorldInitDone, UAthenaNavSystem* _this, EFNavigationSystemRunMode Mode);
 
 	void Init();
 }

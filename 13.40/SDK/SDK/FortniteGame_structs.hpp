@@ -27355,7 +27355,12 @@ struct FFortBotInventoryInfo final
 public:
 	class UFortItemDefinition*                    ItemDefinition;                                    // 0x0000(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UFortWorldItem*                         FortItem;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	EFortItemType                                 ItemType;                                          // 0x0010(0x0001)(NOT AUTO-GENERATED PROPERTY)
+	EFortWeaponType                               WeaponType;                                        // 0x0011(0x0001)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void SetItem(class UFortWorldItem* NewItem);
 };
 DUMPER7_ASSERTS_FFortBotInventoryInfo;
 
