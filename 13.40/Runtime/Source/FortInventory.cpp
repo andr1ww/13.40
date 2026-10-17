@@ -26,6 +26,11 @@ UFortWorldItem* AFortInventory::GiveItemToInventoryOwner(FFortItemEntry ItemEntr
 	if (Inventory.ReplicatedEntries.Num() == NumEntries && Inventory.ItemInstances.Num() == NumInstances)
 		return nullptr;
 
+	if (FFortItemEntry* Entry = Inventory.ReplicatedEntries.Search([&](FFortItemEntry& Replicated) { return Replicated.ItemGuid == Item->ItemEntry.ItemGuid; }))
+		Inventory.MarkItemDirty(*Entry, false);
+
+	SetRequiresUpdate();
+
 	if (IFortInventoryOwnerInterface* Interface = GetInterfaceAddress<IFortInventoryOwnerInterface>(GetOwner()))
 		Item->OnItemInstanceAdded(Interface);
 
