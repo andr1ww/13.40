@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
@@ -61,6 +61,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClCompile Include="Runtime\Source\Athena\FortSafeZoneIndicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="Runtime\Headers\Athena\FortServerBotManagerAthena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Athena\FortServerBotManagerAthena.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="Runtime\Headers\Athena\FortGameStateAthena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Athena\FortGameStateAthena.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClInclude Include="Runtime\Headers\Items\FortPickup.h">
@@ -219,7 +231,19 @@
     <ClCompile Include="Runtime\Source\AI\FortAthenaAIBotController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClInclude Include="Runtime\Headers\Athena\Modifiers\FortAthenaMutator_Bots.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Athena\Modifiers\FortAthenaMutator_Bots.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaAIBotCustomizationData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaAISpawnerDataComponent_CosmeticLibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaAISpawnerDataComponent_CosmeticLibrary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClInclude Include="Runtime\Headers\Player\FortPlayerControllerAthena.h">

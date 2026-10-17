@@ -7,6 +7,11 @@
 #define GEngine (static_cast<UFortEngine*>(UEngine::GetEngine()))
 #define GTimeBetweenPurgingPendingKillObjectsOnIdleServerMultiplier (*reinterpret_cast<float*>(ImageBase + 0x879101C))
 #define GSecondsPerCycle (*reinterpret_cast<double*>(ImageBase + 0x8CEC248))
+#define GPhoebeEnable (*reinterpret_cast<bool*>(ImageBase + 0x836CEB0))
+#define GPhoebeMinimap (*reinterpret_cast<bool*>(ImageBase + 0x8C00990))
+#define GPhoebeOverrideMMR (*reinterpret_cast<bool*>(ImageBase + 0x8C00991))
+#define GPhoebeOverrideMMRValue (*reinterpret_cast<int32*>(ImageBase + 0x836CEB8))
+#define GPhoebeEnableWarmupBehavior (*reinterpret_cast<bool*>(ImageBase + 0x836CEC0))
 
 #include <sstream>
 #include "Log/LogMacros.h"
@@ -127,6 +132,32 @@ inline RowType* FindRow(UDataTable* Table, FName RowName)
 		{
 			if (!Result && Key == RowName)
 				Result = Row;
+		});
+
+	return Result;
+}
+
+template <typename RowType, typename FuncType>
+inline RowType* PickWeightedRow(UDataTable* Table, FuncType&& Filter)
+{
+	float TotalWeight = 0.f;
+
+	ForEachRow<RowType>(Table, [&](FName Key, RowType* Row)
+		{
+			if (Row->Weight > 0.f && Filter(Row))
+				TotalWeight += Row->Weight;
+		});
+
+	float RandomWeight = FRand(nullptr) * TotalWeight;
+	RowType* Result = nullptr;
+
+	ForEachRow<RowType>(Table, [&](FName Key, RowType* Row)
+		{
+			if (RandomWeight < 0.f || Row->Weight <= 0.f || !Filter(Row))
+				return;
+
+			Result = Row;
+			RandomWeight -= Row->Weight;
 		});
 
 	return Result;

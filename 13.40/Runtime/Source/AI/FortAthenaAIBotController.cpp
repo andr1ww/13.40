@@ -109,10 +109,154 @@ void FortAthenaAIBotController::InitializeInventory(IFortInventoryOwnerInterface
 		Pawn->EquipWeaponDefinition(Cast<UFortWeaponItemDefinition>(WeaponToEquip->ItemEntry.ItemDefinition), WeaponToEquip->ItemEntry.ItemGuid);
 }
 
+void FortAthenaAIBotController::OnPossesedPawnDied(AFortAthenaAIBotController* _this, AActor* DamagedActor, float Damage, AController* InstigatedBy, AActor* DamageCauser, const FVector& HitLocation, UPrimitiveComponent* FHitComponent, FName BoneName, const FVector& Momentum)
+{
+	AFortPlayerPawn* KilledPawn = Cast<AFortPlayerPawn>(DamagedActor);
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(_this->PlayerState);
+
+	if (KilledPawn && KilledPawn == _this->PlayerBotPawn && PlayerState && _this->bIsAnAthenaGameParticipant)
+	{
+		AFortPlayerStateAthena* KillerPlayerState = InstigatedBy ? Cast<AFortPlayerStateAthena>(InstigatedBy->PlayerState) : nullptr;
+		AFortPawn* KillerPawn = InstigatedBy ? Cast<AFortPawn>(InstigatedBy->Pawn) : nullptr;
+
+		PlayerState->PawnDeathLocation = KilledPawn->K2_GetActorLocation();
+
+		PlayerState->DeathInfo = FDeathInfo{};
+		PlayerState->DeathInfo.bDBNO = KilledPawn->IsDBNO();
+		PlayerState->DeathInfo.DeathLocation = PlayerState->PawnDeathLocation;
+		UBlueprintGameplayTagLibrary::AppendGameplayTagContainers(PlayerState->DeathInfo.DeathTags, KilledPawn->DeathTags);
+		PlayerState->DeathInfo.DeathCause = AFortPlayerStateAthena::ToDeathCause(KilledPawn->DeathTags, PlayerState->DeathInfo.bDBNO);
+		PlayerState->DeathInfo.FinisherOrDowner = KillerPlayerState ? KillerPlayerState : PlayerState;
+		PlayerState->DeathInfo.Distance = PlayerState->DeathInfo.DeathCause != EDeathCause::FallDamage && KillerPawn ? KillerPawn->GetDistanceTo(KilledPawn) : 0.f;
+		PlayerState->DeathInfo.bInitialized = true;
+
+		if (!PlayerState->DeathInfo.bDBNO && KillerPlayerState && KillerPlayerState != PlayerState)
+		{
+			AFortPlayerControllerAthena* KillerController = Cast<AFortPlayerControllerAthena>(InstigatedBy);
+
+			KillerPlayerState->KillScore++;
+			KillerPlayerState->TeamKillScore++;
+
+			if (KillerPlayerState->PlayerTeam)
+			{
+				for (AController* Member : KillerPlayerState->PlayerTeam->TeamMembers)
+				{
+					AFortPlayerStateAthena* MemberState = Member ? Cast<AFortPlayerStateAthena>(Member->PlayerState) : nullptr;
+
+					if (!MemberState || MemberState == KillerPlayerState)
+						continue;
+
+					MemberState->TeamKillScore = KillerPlayerState->TeamKillScore;
+
+					if (Cast<AFortPlayerControllerAthena>(Member))
+						MemberState->ClientReportTeamKill(KillerPlayerState->TeamKillScore);
+				}
+			}
+
+			if (KillerController)
+			{
+				KillerPlayerState->ClientReportTeamKill(KillerPlayerState->TeamKillScore);
+				KillerPlayerState->ClientReportKill(PlayerState);
+			}
+		}
+	}
+
+	OnPossesedPawnDiedOG(_this, DamagedActor, Damage, InstigatedBy, DamageCauser, HitLocation, FHitComponent, BoneName, Momentum);
+}
+
+void FortAthenaAIBotController::DropItemsAsPickups(TArray<UFortWorldItem*>& ItemsToDropViaPickup, AFortPawn* DestructionPawn, AFortInventory* Inventory)
+{
+	if (!DestructionPawn || !Inventory)
+		return;
+
+	AFortAthenaAIBotController* Controller = Cast<AFortAthenaAIBotController>(Inventory->GetOwner());
+	const bool bDropWeaponAmmo = Controller && Controller->bIsAnAthenaGameParticipant;
+	const FVector DropLocation = DestructionPawn->K2_GetActorLocation() + FVector{ 0.f, 0.f, 50.f };
+
+	TArray<FFortItemEntry> Drops{};
+
+	for (UFortWorldItem* Item : ItemsToDropViaPickup)
+	{
+		FFortItemEntry& Drop = Drops.Add(Item->ItemEntry);
+		UFortWeaponItemDefinition* WeaponDefinition = Cast<UFortWeaponItemDefinition>(Item->ItemEntry.ItemDefinition);
+
+		if (!WeaponDefinition || Cast<UFortWeaponMeleeItemDefinition>(WeaponDefinition))
+			continue;
+
+		const int32 ClipSize = GetWeaponLoadedAmmo(WeaponDefinition, Item->ItemEntry.Level);
+
+		if (ClipSize > 0 && Drop.LoadedAmmo > ClipSize)
+			Drop.LoadedAmmo = ClipSize;
+
+		UFortWorldItemDefinition* AmmoDefinition = bDropWeaponAmmo ? WeaponDefinition->AmmoData.LoadSynchronous() : nullptr;
+
+		if (!AmmoDefinition || AmmoDefinition == WeaponDefinition || AmmoDefinition->DropCount <= 0)
+			continue;
+
+		if (ItemsToDropViaPickup.Search([&](UFortWorldItem* Entry) { return Entry->ItemEntry.ItemDefinition == AmmoDefinition; }))
+			continue;
+
+		if (Drops.Search([&](FFortItemEntry& Entry) { return Entry.ItemDefinition == AmmoDefinition; }))
+			continue;
+
+		Drops.Add(FFortItemEntry(AmmoDefinition, AmmoDefinition->DropCount));
+	}
+
+	for (FFortItemEntry& Drop : Drops)
+	{
+		FFortCreatePickupData CreatePickupData{};
+		CreatePickupData.World = GWorld;
+		CreatePickupData.ItemEntry = Drop;
+		CreatePickupData.ItemEntry.SetItemGuid(NewGuid());
+		CreatePickupData.SpawnLocation = DropLocation;
+		CreatePickupData.PickupSourceTypeFlags = EFortPickupSourceTypeFlag::AI;
+
+		if (AFortPickup* Pickup = AFortPickup::CreateFromData(CreatePickupData))
+		{
+			Pickup->PawnWhoDroppedPickup = DestructionPawn;
+			Pickup->TossPickup(DropLocation, DestructionPawn, -1, true, true, EFortPickupSourceTypeFlag::AI, EFortPickupSpawnSource::Unset);
+		}
+	}
+
+	Drops.Free();
+}
+
+UFortHero* FortAthenaAIBotController::GetHero(AFortAthenaAIBotController* _this)
+{
+	UFortHero* Hero = _this->CachedHero.Get();
+	UAthenaCharacterItemDefinition* Character = _this->CosmeticLoadoutBC.Character;
+
+	if (Hero && Character && Hero->ItemDefinition != Character->HeroDefinition)
+		_this->CachedHero.Reset();
+
+	return GetHeroOG(_this);
+}
+
+void FortAthenaAIBotController::RemoveAllInventoryItems(AFortAthenaAIBotController* _this)
+{
+	TArray<UFortWorldItem*>& Items = _this->Inventory->GetItems();
+
+	for (int32 i = Items.Num() - 1; i >= 0; i--)
+	{
+		UFortItemDefinition* ItemDefinition = Items[i]->ItemEntry.ItemDefinition;
+
+		if (ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()) || ItemDefinition->IsA(UFortBuildingItemDefinition::StaticClass()) || ItemDefinition->IsA(UFortEditToolItemDefinition::StaticClass()))
+			continue;
+
+		_this->Inventory->RemoveInventoryItem(Items[i]->ItemEntry.ItemGuid, -1, true);
+	}
+
+	for (FFortBotInventoryInfo& Slot : _this->SlotItems)
+		Slot.SetItem(nullptr);
+}
+
 void FortAthenaAIBotController::Init()
 {
 	if (IFortInventoryOwnerInterface* Interface = GetInterfaceAddress<IFortInventoryOwnerInterface>(AFortAthenaAIBotController::GetDefaultObj()))
 		Hooking::VirtualSwap(*reinterpret_cast<void***>(Interface), 0x3, CreateInventory);
 
 	Hooking::Hook(ImageBase + 0x1BC52B0, InitializeInventory, InitializeInventoryOG);
+	Hooking::Hook(ImageBase + 0x1BC9E60, OnPossesedPawnDied, OnPossesedPawnDiedOG);
+	Hooking::Hook(ImageBase + 0x1BBECD0, GetHero, GetHeroOG);
+	Hooking::Rel32Swap(ImageBase + 0x1BB702A, DropItemsAsPickups);
 }

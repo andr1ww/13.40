@@ -165,7 +165,7 @@ void FortInventory::AttemptUnregistrationSave(UFortRegisteredPlayerInfo* _this)
 
 void FortInventory::Init()
 {
-	for (UObject* DefaultObject : { static_cast<UObject*>(AFortPlayerControllerAthena::GetDefaultObj()), static_cast<UObject*>(AFortPlayerControllerZone::GetDefaultObj()), static_cast<UObject*>(AFortPlayerController::GetDefaultObj()) })
+	for (UObject* DefaultObject : { static_cast<UObject*>(AFortPlayerControllerAthena::GetDefaultObj()), static_cast<UObject*>(AFortPlayerControllerZone::GetDefaultObj()), static_cast<UObject*>(AFortPlayerController::GetDefaultObj()), static_cast<UObject*>(AFortAthenaAIBotController::GetDefaultObj()) })
 	{
 		if (IFortInventoryOwnerInterface* Interface = GetInterfaceAddress<IFortInventoryOwnerInterface>(DefaultObject))
 			Hooking::VirtualSwap(*reinterpret_cast<void***>(Interface), 0x1A, RemoveInventoryItem);

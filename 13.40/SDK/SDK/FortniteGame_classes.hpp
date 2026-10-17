@@ -17073,7 +17073,7 @@ public:
 	class AFortGameModeAthena*                    CachedGameMode;                                    // 0x0418(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class AFortAthenaMutator_Bots*                CachedBotMutator;                                  // 0x0420(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UFortAthenaNpcPatrollingComponent*      CachedPatrollingComponent;                         // 0x0428(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_430[0x8];                                      // 0x0430(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TWeakObjectPtr<class UFortHero>               CachedHero;                                        // 0x0430(0x0008)(NOT AUTO-GENERATED PROPERTY)
 	TArray<struct FBotDelayedStimulus>            DelayedStimulus;                                   // 0x0438(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_448[0x18];                                     // 0x0448(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortBotTargetHandler                  TargetHandler;                                     // 0x0460(0x0028)(Transient, NativeAccessSpecifierPrivate)
@@ -46289,6 +46289,9 @@ public:
 	TSoftObjectPtr<class UDataTable>              FallbackCharactersDataTable;                       // 0x0120(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
+	void PickLoadout(struct FFortAthenaLoadout& OutLoadout, const struct FGameplayTag& PredefinedCosmeticSetTag) const;
+
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("FortAthenaAIBotCosmeticLibraryData")
@@ -51954,7 +51957,9 @@ public:
 	bool                                          bBotHostileToHumanPlayersOnly;                     // 0x0418(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_419[0x7];                                      // 0x0419(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAthenaAIBotCustomizationData*      CacheBotData;                                      // 0x0420(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_428[0x18];                                     // 0x0428(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_428[0x10];                                     // 0x0428(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         HumanReservationCount;                             // 0x0438(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_43C[0x4];                                      // 0x043C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UDataTable>              MMRSpawnSpec;                                      // 0x0440(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSoftObjectPtr<class UDataTable>              OverrideTableInfo;                                 // 0x0468(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSoftObjectPtr<class UDataTable>              ABTestOverrideTableInfo;                           // 0x0490(0x0028)(Edit, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -52783,6 +52788,8 @@ public:
 	{
 		return *InSDKUtils::CallGameFunction(reinterpret_cast<TArray<TWeakObjectPtr<class AFortPlayerStateAthena>>*(*)(AFortGameStateAthena*, uint8)>(InSDKUtils::GetImageBase() + 0x1F00570), this, TeamIndex);
 	}
+
+	void AddPlayerToTeamLists(class AFortPlayerStateAthena* PlayerState);
 
 public:
 	static class UClass* StaticClass()

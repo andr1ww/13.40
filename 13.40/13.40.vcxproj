@@ -190,6 +190,8 @@
     <ClInclude Include="Runtime\Headers\Items\FortPickup.h" />
     <ClInclude Include="Runtime\Headers\Athena\FortPoiVolume.h" />
     <ClInclude Include="Runtime\Headers\Athena\FortSafeZoneIndicator.h" />
+    <ClInclude Include="Runtime\Headers\Athena\FortServerBotManagerAthena.h" />
+    <ClInclude Include="Runtime\Headers\Athena\FortGameStateAthena.h" />
     <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_Aircraft.h" />
     <ClInclude Include="Runtime\Headers\Actors\BuildingActor.h" />
     <ClInclude Include="Runtime\Headers\Player\FortPlayerController.h" />
@@ -199,7 +201,9 @@
     <ClInclude Include="Runtime\Headers\Engine\Components\AbilitySystemComponent.h" />
     <ClInclude Include="Runtime\Headers\Player\FortPlayerPawn.h" />
     <ClInclude Include="Runtime\Headers\AI\FortAthenaAIBotController.h" />
+    <ClInclude Include="Runtime\Headers\Athena\Modifiers\FortAthenaMutator_Bots.h" />
     <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaAIBotCustomizationData.h" />
+    <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaAISpawnerDataComponent_CosmeticLibrary.h" />
     <ClInclude Include="Runtime\Headers\Player\FortPlayerControllerAthena.h" />
     <ClInclude Include="Runtime\Headers\FortInventory.h" />
     <ClInclude Include="Runtime\Headers\Engine\Settings\GameMapsSettings.h" />
@@ -247,6 +251,8 @@
     <ClCompile Include="Runtime\Source\Items\FortPickup.cpp" />
     <ClCompile Include="Runtime\Source\Athena\FortPoiVolume.cpp" />
     <ClCompile Include="Runtime\Source\Athena\FortSafeZoneIndicator.cpp" />
+    <ClCompile Include="Runtime\Source\Athena\FortServerBotManagerAthena.cpp" />
+    <ClCompile Include="Runtime\Source\Athena\FortGameStateAthena.cpp" />
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp" />
     <ClCompile Include="Runtime\Source\Actors\BuildingActor.cpp" />
     <ClCompile Include="Runtime\Source\Player\FortPlayerController.cpp" />
@@ -256,7 +262,9 @@
     <ClCompile Include="Runtime\Source\Engine\Components\AbilitySystemComponent.cpp" />
     <ClCompile Include="Runtime\Source\Player\FortPlayerPawn.cpp" />
     <ClCompile Include="Runtime\Source\AI\FortAthenaAIBotController.cpp" />
+    <ClCompile Include="Runtime\Source\Athena\Modifiers\FortAthenaMutator_Bots.cpp" />
     <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaAIBotCustomizationData.cpp" />
+    <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaAISpawnerDataComponent_CosmeticLibrary.cpp" />
     <ClCompile Include="Runtime\Source\Player\FortPlayerControllerAthena.cpp" />
     <ClCompile Include="Runtime\Source\FortInventory.cpp" />
     <ClCompile Include="Runtime\Source\Engine\GameEngine.cpp" />
