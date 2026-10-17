@@ -22,7 +22,13 @@ void AbilitySystemComponent::InternalServerTryActivateAbility(UAbilitySystemComp
 	UGameplayAbility* InstancedAbility = nullptr;
 	Spec->InputPressed = true;
 
-	if (!_this->InternalTryActivateAbility(Handle, PredictionKey, &InstancedAbility, nullptr, TriggerEventData))
+	bool bActivated;
+	{
+		FScopedNativeActionBlockSuspension NativeActionBlockSuspension(Cast<UFortAbilitySystemComponent>(_this));
+		bActivated = _this->InternalTryActivateAbility(Handle, PredictionKey, &InstancedAbility, nullptr, TriggerEventData);
+	}
+
+	if (!bActivated)
 	{
 		std::string AbilityName = AbilityToActivate->GetName();
 		UE_LOG(LogAbilitySystem, Log, TEXT("InternalServerTryActivateAbility. Rejecting ClientActivation of %s. InternalTryActivateAbility failed"), std::wstring(AbilityName.begin(), AbilityName.end()).c_str());

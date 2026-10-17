@@ -4,9 +4,14 @@
 
 DEFINE_INIT(NavigationSystem)
 
-UNavigationSystemBase* NavigationSystem::CreateAndConfigureNavigationSystem(UNavigationSystemModuleConfig* _this, UWorld* World)
+UNavigationSystemBase* NavigationSystem::CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig* _this, UWorld* World)
 {
+	_this->bCreateOnClient = true;
+	_this->bPrioritizeNavigationAroundSpawners = true;
 	_this->bAutoSpawnMissingNavData = true;
+	_this->bAllowAutoRebuild = true;
+	_this->bUsesStreamedInNavLevel = false;
+	_this->bSupportRuntimeNavmeshDisabling = false;
 
 	UNavigationSystemBase* NavSystemBase = CreateAndConfigureNavigationSystemOG(_this, World);
 	UNavigationSystemV1* NavSystem = Cast<UNavigationSystemV1>(NavSystemBase);
@@ -18,16 +23,42 @@ UNavigationSystemBase* NavigationSystem::CreateAndConfigureNavigationSystem(UNav
 	{
 		UClass* NavDataClass = NavSystem->SupportedAgents[i].NavDataClass.Get();
 
-		if (ANavigationData* NavData = NavDataClass ? Cast<ANavigationData>(NavDataClass->ClassDefaultObject) : nullptr)
-			NavData->RuntimeGeneration = ERuntimeGenerationType::Dynamic;
+		ANavigationData* NavData = NavDataClass ? Cast<ANavigationData>(NavDataClass->ClassDefaultObject) : nullptr;
+
+		if (!NavData)
+			continue;
+
+		NavData->RuntimeGeneration = ERuntimeGenerationType::Dynamic;
+
+		if (ARecastNavMesh* NavMesh = Cast<ARecastNavMesh>(NavData))
+		{
+			NavMesh->CellSize = 24.f;
+			NavMesh->CellHeight = 32.f;
+			NavMesh->TileSizeUU = 1008.f;
+		}
 	}
 
-	NavSystem->ReleaseInitialBuildingLock();
-
 	return NavSystem;
+}
+
+void NavigationSystem::OnWorldInitDone(UNavigationSystemV1* _this, EFNavigationSystemRunMode Mode)
+{
+	OnWorldInitDoneOG(_this, Mode);
+
+	_this->ReleaseInitialBuildingLock();
+
+	for (ANavigationData* NavData : _this->NavDataSet)
+	{
+		if (!NavData)
+			continue;
+
+		NavData->RebuildAll();
+		NavData->EnsureBuildCompletion();
+	}
 }
 
 void NavigationSystem::Init()
 {
 	Hooking::Hook(ImageBase + 0x50681D0, CreateAndConfigureNavigationSystem, CreateAndConfigureNavigationSystemOG);
+	Hooking::Hook(ImageBase + 0x1C31C40, OnWorldInitDone, OnWorldInitDoneOG);
 }

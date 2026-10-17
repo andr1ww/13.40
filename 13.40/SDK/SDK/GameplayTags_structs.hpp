@@ -89,9 +89,25 @@ public:
 	TArray<struct FGameplayTag>                   ParentTags;                                        // 0x0010(0x0010)(ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
 public:
+	void AddTag(const struct FGameplayTag& TagToAdd)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FGameplayTagContainer*, const FGameplayTag&)>(InSDKUtils::GetImageBase() + 0x46359A0), this, TagToAdd);
+	}
+
 	void AppendTags(const struct FGameplayTagContainer& Other)
 	{
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FGameplayTagContainer*, const FGameplayTagContainer&)>(InSDKUtils::GetImageBase() + 0x4636800), this, Other);
+	}
+
+	bool HasTagExact(const struct FGameplayTag& TagToCheck) const
+	{
+		for (const FGameplayTag& Tag : GameplayTags)
+		{
+			if (Tag.TagName == TagToCheck.TagName)
+				return true;
+		}
+
+		return false;
 	}
 
 	class FString ToStringSimple(bool bQuoted) const

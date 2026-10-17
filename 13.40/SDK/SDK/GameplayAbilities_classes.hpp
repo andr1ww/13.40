@@ -449,6 +449,11 @@ public:
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UAbilitySystemComponent*, struct FGameplayAbilitySpec*, bool)>(InSDKUtils::GetImageBase() + 0x9AFA70), this, &Spec, WasAddOrRemove);
 	}
 
+	void ApplyAbilityBlockAndCancelTags(const struct FGameplayTagContainer& AbilityTags, class UGameplayAbility* RequestingAbility, bool bEnableBlockTags, const struct FGameplayTagContainer& BlockTags, bool bExecuteCancelTags, const struct FGameplayTagContainer& CancelTags)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(UAbilitySystemComponent*, const struct FGameplayTagContainer&, class UGameplayAbility*, bool, const struct FGameplayTagContainer&, bool, const struct FGameplayTagContainer&)>(this, 0x660 / 8), this, AbilityTags, RequestingAbility, bEnableBlockTags, BlockTags, bExecuteCancelTags, CancelTags);
+	}
+
 	struct FGameplayAbilitySpecHandle GiveAbilityAndActivateOnce(struct FGameplayAbilitySpec& Spec)
 	{
 		struct FGameplayAbilitySpecHandle Handle;

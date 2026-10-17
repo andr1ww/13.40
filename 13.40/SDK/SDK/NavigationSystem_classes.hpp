@@ -199,6 +199,17 @@ public:
 	uint8                                         Pad_3D0[0x58];                                     // 0x03D0(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
+	void RebuildAll()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(ANavigationData*)>(InSDKUtils::GetImageBase() + 0x507F270), this);
+	}
+
+	void EnsureBuildCompletion()
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(ANavigationData*)>(this, 0x6A0 / 8), this);
+	}
+
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("NavigationData")

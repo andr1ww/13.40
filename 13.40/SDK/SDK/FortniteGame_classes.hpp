@@ -23556,7 +23556,9 @@ class UFortAbilitySystemComponent : public UAbilitySystemComponent
 {
 public:
 	TMulticastInlineDelegate<void()>              OnClientVehicleBlockingChanged;                    // 0x12C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_12D8[0x1A8];                                   // 0x12D8(0x01A8)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_12D8[0x50];                                    // 0x12D8(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  CurrentActiveNativeActions;                        // 0x1328(0x0020)(NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1348[0x138];                                   // 0x1348(0x0138)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FReplicatedMontagePair                 LandingMontagePair;                                // 0x1480(0x0028)(Net, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_14A8[0x8];                                     // 0x14A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayAbilityRepSharedAnim          RepSharedAnimInfo;                                 // 0x14B0(0x0010)(Net, RepNotify, NoDestructor, Protected, NativeAccessSpecifierProtected)
@@ -23582,6 +23584,24 @@ public:
 	bool HasActiveAbilityWithAnyMatchingTag(const struct FGameplayTagContainer& Tags) const;
 	struct FGameplayEffectContextHandle MakeFortEffectContext(class UObject* SourceObject, class AActor* EffectCauser, class AActor* DamageSource, const int32 GameplayEffectLevel) const;
 
+	void SetNativeActionBlocksEnabled(const TArray<struct FGameplayTag>& ActionTags, bool bEnabled)
+	{
+		for (const FGameplayTag& ActionTag : ActionTags)
+		{
+			if (!CurrentActiveNativeActions.HasTagExact(ActionTag))
+				continue;
+
+			FGameplayTagContainer AbilityTags{};
+			FGameplayTagContainer NoTags{};
+			AbilityTags.AddTag(ActionTag);
+
+			ApplyAbilityBlockAndCancelTags(AbilityTags, nullptr, bEnabled, NoTags, false, NoTags);
+
+			AbilityTags.GameplayTags.Free();
+			AbilityTags.ParentTags.Free();
+		}
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -23597,6 +23617,37 @@ public:
 	}
 };
 DUMPER7_ASSERTS_UFortAbilitySystemComponent;
+
+struct FScopedNativeActionBlockSuspension final
+{
+public:
+	class UFortAbilitySystemComponent*            AbilitySystemComponent;
+	TArray<struct FGameplayTag>                   SuspendedActions;
+
+public:
+	FScopedNativeActionBlockSuspension(class UFortAbilitySystemComponent* InAbilitySystemComponent)
+		: AbilitySystemComponent(InAbilitySystemComponent)
+	{
+		if (!AbilitySystemComponent)
+			return;
+
+		for (const FGameplayTag& ActionTag : AbilitySystemComponent->CurrentActiveNativeActions.GameplayTags)
+			SuspendedActions.Add(ActionTag);
+
+		AbilitySystemComponent->SetNativeActionBlocksEnabled(SuspendedActions, false);
+	}
+
+	~FScopedNativeActionBlockSuspension()
+	{
+		if (AbilitySystemComponent)
+			AbilitySystemComponent->SetNativeActionBlocksEnabled(SuspendedActions, true);
+
+		SuspendedActions.Free();
+	}
+
+	FScopedNativeActionBlockSuspension(const FScopedNativeActionBlockSuspension&) = delete;
+	FScopedNativeActionBlockSuspension& operator=(const FScopedNativeActionBlockSuspension&) = delete;
+};
 
 // Class FortniteGame.BGAConsumableWrapperItemDefinition
 // 0x0068 (0x0378 - 0x0310)
