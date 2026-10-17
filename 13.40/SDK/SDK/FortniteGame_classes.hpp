@@ -10435,6 +10435,12 @@ public:
 	void UpdateSupplyDropStatus();
 
 public:
+	void RegisterPickupLoot(class AFortPickup* Pickup)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UAthenaAIServiceLoot*, class AFortPickup*)>(InSDKUtils::GetImageBase() + 0x1E27800), this, Pickup);
+	}
+
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("AthenaAIServiceLoot")
@@ -14284,6 +14290,17 @@ public:
 	uint8                                         Pad_38[0x18];                                      // 0x0038(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UAthenaAIService*>               AIServices;                                        // 0x0050(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_60[0x18];                                      // 0x0060(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	static UAthenaAIServiceManager* GetAIServiceManager(class UWorld* World)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<UAthenaAIServiceManager*(*)(class UWorld*)>(InSDKUtils::GetImageBase() + 0x1E17AC0), World);
+	}
+
+	class UAthenaAIService* GetService(class UClass* ServiceClass, bool bExactClass = false)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UAthenaAIService*(*)(UAthenaAIServiceManager*, class UClass*, bool)>(InSDKUtils::GetImageBase() + 0x1E17090), this, ServiceClass, bExactClass);
+	}
 
 public:
 	static class UClass* StaticClass()
@@ -86344,6 +86361,11 @@ class IFortInteractInterface final
 {
 public:
 	bool ServerOnAttemptInteract(const struct FInteractionType& InteractType);
+
+	bool ServerOnAttemptInteract_Implementation(const struct FInteractionType& InteractType)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(IFortInteractInterface*, const struct FInteractionType&)>(this, 0x68 / 8), this, InteractType);
+	}
 
 	void GetBoundsComponents(const class AActor* SelfActor, TArray<class USceneComponent*>* OutComponents) const;
 	TSoftObjectPtr<class UTexture2D> GetCustomIcon() const;

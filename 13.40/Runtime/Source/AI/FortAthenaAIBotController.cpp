@@ -84,22 +84,14 @@ void FortAthenaAIBotController::InitializeInventory(IFortInventoryOwnerInterface
 	Items.Free();
 
 	UFortWorldItem* PrimaryWeapon = nullptr;
-	size_t SlotIndex = 0;
 
-	for (UFortWorldItem* Item : Inventory->GetItems())
+	for (FFortBotInventoryInfo& Slot : Controller->SlotItems)
 	{
-		if (SlotIndex >= std::size(Controller->SlotItems))
+		if (Slot.FortItem && Cast<UFortWeaponItemDefinition>(Slot.ItemDefinition))
+		{
+			PrimaryWeapon = Slot.FortItem;
 			break;
-
-		UFortItemDefinition* ItemDefinition = Item ? Item->ItemEntry.ItemDefinition : nullptr;
-
-		if (!ItemDefinition || !ItemDefinition->bInventorySizeLimited)
-			continue;
-
-		Controller->SlotItems[SlotIndex++].SetItem(Item);
-
-		if (!PrimaryWeapon && Cast<UFortWeaponItemDefinition>(ItemDefinition))
-			PrimaryWeapon = Item;
+		}
 	}
 
 	UFortWorldItem* WeaponToEquip = PrimaryWeapon ? PrimaryWeapon : PickaxeItem;
@@ -245,9 +237,6 @@ void FortAthenaAIBotController::RemoveAllInventoryItems(AFortAthenaAIBotControll
 
 		_this->Inventory->RemoveInventoryItem(Items[i]->ItemEntry.ItemGuid, -1, true);
 	}
-
-	for (FFortBotInventoryInfo& Slot : _this->SlotItems)
-		Slot.SetItem(nullptr);
 }
 
 void FortAthenaAIBotController::Init()

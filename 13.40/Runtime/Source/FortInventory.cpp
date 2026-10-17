@@ -29,6 +29,20 @@ UFortWorldItem* AFortInventory::GiveItemToInventoryOwner(FFortItemEntry ItemEntr
 	if (IFortInventoryOwnerInterface* Interface = GetInterfaceAddress<IFortInventoryOwnerInterface>(GetOwner()))
 		Item->OnItemInstanceAdded(Interface);
 
+	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(GetOwner());
+
+	if (BotController && Item->ItemEntry.ItemDefinition->bInventorySizeLimited)
+	{
+		for (FFortBotInventoryInfo& Slot : BotController->SlotItems)
+		{
+			if (Slot.FortItem)
+				continue;
+
+			Slot.SetItem(Item);
+			break;
+		}
+	}
+
 	return Item;
 }
 
@@ -77,6 +91,15 @@ bool AFortInventory::RemoveInventoryItem(const FGuid& ItemGuid, int32 Count, boo
 	HandleInventoryLocalUpdate();
 
 	Item->OnItemInstanceRemoved(Owner, Item->ItemEntry.Count);
+
+	if (AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(GetOwner()))
+	{
+		for (FFortBotInventoryInfo& Slot : BotController->SlotItems)
+		{
+			if (Slot.FortItem == Item)
+				Slot.SetItem(nullptr);
+		}
+	}
 
 	return true;
 }

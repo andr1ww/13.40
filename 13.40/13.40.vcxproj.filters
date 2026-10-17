@@ -69,6 +69,12 @@
     <ClCompile Include="Runtime\Source\Athena\FortServerBotManagerAthena.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaBTTask_Interact.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaBTTask_Interact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClInclude Include="Runtime\Headers\Athena\FortGameStateAthena.h">
       <Filter>Header Files</Filter>
     </ClInclude>

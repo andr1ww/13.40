@@ -140,7 +140,18 @@ void FortPickup::GivePickupTo(AFortPickup* _this, IFortInventoryOwnerInterface* 
 		_this->K2_DestroyActor();
 }
 
+void FortPickup::BeginPlay(AFortPickup* _this)
+{
+	BeginPlayOG(_this);
+
+	UAthenaAIServiceManager* ServiceManager = UAthenaAIServiceManager::GetAIServiceManager(GWorld);
+
+	if (UAthenaAIServiceLoot* LootService = ServiceManager ? Cast<UAthenaAIServiceLoot>(ServiceManager->GetService(UAthenaAIServiceLoot::StaticClass())) : nullptr)
+		LootService->RegisterPickupLoot(_this);
+}
+
 void FortPickup::Init()
 {
 	Hooking::HookEvery<AFortPickup>(0x650 / 8, GivePickupTo);
+	Hooking::Hook<AFortPickupAthena>(0x328 / 8, BeginPlay, BeginPlayOG);
 }

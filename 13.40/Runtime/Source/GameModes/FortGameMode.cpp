@@ -228,4 +228,5 @@ void FortGameMode::Init()
 	Hooking::Hook(ImageBase + 0x1ED5710, StartAircraftPhase, StartAircraftPhaseOG);
 
 	Hooking::PatchBytes(ImageBase + 0x1EE37DF, { 0x66, 0x0F, 0x1F, 0x44, 0x00, 0x00 });
+	Hooking::PatchBytes(ImageBase + 0x1EA024D, { 0xEB });
 }

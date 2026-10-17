@@ -30204,6 +30204,12 @@ public:
 	TWeakObjectPtr<class UPrimitiveComponent>     InteractComponent;                                 // 0x001C(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TWeakObjectPtr<class UObject>                 OptionalObjectData;                                // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                InteractPoint;                                     // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+public:
+	void Initialize(class AFortPlayerPawn* Pawn, ETInteractionType Type)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<FInteractionType*(*)(FInteractionType*, class AFortPlayerPawn*, ETInteractionType)>(InSDKUtils::GetImageBase() + 0x24B9210), this, Pawn, Type);
+	}
 };
 DUMPER7_ASSERTS_FInteractionType;
 
