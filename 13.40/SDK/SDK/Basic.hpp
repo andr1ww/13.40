@@ -464,6 +464,11 @@ public:
 };
 DUMPER7_ASSERTS_FName;
 
+inline uint32 GetTypeHash(const FName& Name)
+{
+	return static_cast<uint32>(Name.ComparisonIndex) + Name.Number;
+}
+
 template<typename ClassType>
 class TSubclassOf
 {
@@ -569,6 +574,12 @@ public:
 	bool IsEmpty() const
 	{
 		return !TextData || TextData->TextSource.Num() <= 1;
+	}
+	static FText Empty()
+	{
+		FText Result;
+		InSDKUtils::CallGameFunction(reinterpret_cast<FText*(*)(FText*)>(InSDKUtils::GetImageBase() + 0x3240AC0), &Result);
+		return Result;
 	}
 	void Release()
 	{

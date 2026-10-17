@@ -61,7 +61,7 @@ bool FortQuestManager::CanProgressObjective(UFortQuestManager* _this, AFortPlaye
 
 	FFortQuestObjectiveStatTableRow* ObjectiveRow = FindRow<FFortQuestObjectiveStatTableRow>(Objective.ObjectiveStatHandle.DataTable, Objective.ObjectiveStatHandle.RowName);
 
-	if (!ObjectiveRow)
+	if (!ObjectiveRow) 
 		return true;
 
 	ObjectiveRow->CacheData();
@@ -104,7 +104,123 @@ bool FortQuestManager::UpdateObjective(UFortQuestManager* _this, AFortPlayerCont
 
 	_this->HandleQuestUpdated(PlayerController, QuestDefinition, Objective.BackendName, NewCount, Count, nullptr, bObjectiveCompleted, bQuestCompleted);
 
+	_this->OnQuestObjectiveUpdated.Broadcast(PlayerController, QuestDefinition, Objective.BackendName, NewCount, bObjectiveCompleted, bQuestCompleted);
+
+	if (bQuestCompleted)
+		GrantQuestXP(_this, PlayerController, QuestItem);
+
 	return true;
+}
+
+void FortQuestManager::GrantQuestXP(UFortQuestManager* _this, AFortPlayerController* PlayerController, UFortQuestItem* QuestItem)
+{
+	AFortPlayerControllerAthena* PlayerControllerAthena = Cast<AFortPlayerControllerAthena>(PlayerController);
+	UFortPlayerControllerAthenaXPComponent* XPComponent = PlayerControllerAthena ? PlayerControllerAthena->XPComponent : nullptr;
+
+	if (!XPComponent || !XPComponent->CachedSeasonDef)
+		return;
+
+	int32 QuestXp = QuestItem->GetXpRewardAmount(XPComponent->CachedSeasonDef->XpItemDef.LoadSynchronous());
+
+	if (QuestXp > 0)
+		_this->OnXpValueDeltasUpdate.Broadcast(0, 0, 0, QuestXp, 0, QuestXp);
+}
+
+UDataTable* FortQuestManager::GetObjectiveStatXPTable()
+{
+	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
+	UFortPlaylistAthena* Playlist = GameState ? GameState->CurrentPlaylistInfo.BasePlaylist : nullptr;
+	UDataTable* XPTable = Playlist ? Playlist->QuestEventXPTableOverride.LoadSynchronous() : nullptr;
+
+	return XPTable ? XPTable : UGameDataBR::Get()->QuestEventXPTable.LoadSynchronous();
+}
+
+void FortQuestManager::GrantObjectiveStatXP(UFortQuestManager* _this, AFortPlayerController* PlayerController, EFortQuestObjectiveStatEvent StatEvent, const UObject* TargetObject, const FGameplayTagContainer& TargetTags, const FGameplayTagContainer& SourceTags, const FGameplayTagContainer& ContextTags, int32 Count)
+{
+	AFortPlayerControllerAthena* PlayerControllerAthena = Cast<AFortPlayerControllerAthena>(PlayerController);
+	UFortPlayerControllerAthenaXPComponent* XPComponent = PlayerControllerAthena ? PlayerControllerAthena->XPComponent : nullptr;
+	UDataTable* XPTable = XPComponent ? GetObjectiveStatXPTable() : nullptr;
+
+	if (!XPTable)
+		return;
+
+	FFortQuestFilterContext Context(TargetObject, _this->BoundProfile.Get(), PlayerController, nullptr, &SourceTags, &TargetTags, &ContextTags, false);
+
+	ForEachRow<FFortQuestObjectiveStatXPTableRow>(XPTable, [&](FName RowName, FFortQuestObjectiveStatXPTableRow* Row)
+		{
+			if (Row->Type != StatEvent)
+				return;
+
+			if (!UBlueprintGameplayTagLibrary::HasAllTags(TargetTags, Row->TargetTags, false) || !UBlueprintGameplayTagLibrary::HasAllTags(SourceTags, Row->SourceTags, false) || !UBlueprintGameplayTagLibrary::HasAllTags(ContextTags, Row->ContextTags, false) || UBlueprintGameplayTagLibrary::HasAnyTags(ContextTags, Row->ExcludeContextTags, false))
+				return;
+
+			Row->CacheData();
+
+			if (!Context.EvaluateCondition(Row->GetCompiledCondition()))
+				return;
+
+			FXPEventState& EventState = _this->XPEventState.FindOrAdd(RowName);
+
+			if (EventState.bDisabled)
+				return;
+
+			EventState.Count += Count;
+
+			if (EventState.Count < Row->CountThreshhold)
+				return;
+
+			UFortAccoladeItemDefinition* Accolade = Cast<UFortAccoladeItemDefinition>(UKismetSystemLibrary::GetSoftObjectReferenceFromPrimaryAssetId(Row->AccoladePrimaryAssetId).LoadSynchronous());
+
+			if (!Accolade)
+				return;
+
+			if (Row->MaxCount > 0 && XPComponent->GetAccoladeCount(Accolade) >= Row->MaxCount)
+			{
+				EventState.bDisabled = true;
+				return;
+			}
+
+			EventState.Count = 0;
+			EventState.XP += GrantAccolade(_this, XPComponent, Accolade, Row->AccoladePrimaryAssetId);
+			EventState.bDisabled = Row->bOnceOnly;
+		});
+}
+
+int32 FortQuestManager::GrantAccolade(UFortQuestManager* _this, UFortPlayerControllerAthenaXPComponent* XPComponent, UFortAccoladeItemDefinition* Accolade, const FPrimaryAssetId& AccoladeId)
+{
+	bool bMedal = Accolade->GetAccoladeType() == EFortAccoladeType::Medal;
+	int32 XpValue = Accolade->GetAccoladeXpValue();
+	int32 MedalBonusXp = bMedal ? XpValue : 0;
+
+	FXPEventInfo XPEvent{};
+	XPEvent.EventName = Accolade->Name;
+	XPEvent.SimulatedText = FText::Empty();
+	XPEvent.Priority = Accolade->GetPriority();
+	XPEvent.EventXpValue = XpValue;
+	XPEvent.TotalXpEarnedInMatch = XPComponent->TotalXpEarned + XpValue;
+	XPEvent.Accolade = AccoladeId;
+	XPEvent.RestedXPRemaining = XPComponent->RestXP;
+
+	_this->OnObjectiveStatXPGranted.Broadcast(XPEvent);
+	_this->OnXpValueDeltasUpdate.Broadcast(0, 0, MedalBonusXp, 0, XpValue - MedalBonusXp, XpValue);
+
+	XPEvent.SimulatedText.Release();
+
+	if (bMedal)
+	{
+		XPComponent->MedalsEarned.Add(Accolade);
+		XPComponent->ClientMedalsRecived(XPComponent->PlayerAccolades);
+	}
+
+	FGameplayTagContainer SourceTags{};
+	FGameplayTagContainer ContextTags{};
+
+	_this->GetSourceAndContextTags(&SourceTags, &ContextTags);
+	SourceTags.AppendTags(Accolade->GameplayTags);
+
+	SendStatEventInternal(_this, FDataTableRowHandle{}, EFortQuestObjectiveStatEvent::Accolade, Accolade, Accolade->GameplayTags, SourceTags, ContextTags, 1, false);
+
+	return XpValue;
 }
 
 void FortQuestManager::SaveStatEvents(UFortQuestManager* _this)
@@ -186,6 +302,9 @@ void FortQuestManager::SendStatEventInternal(UFortQuestManager* _this, const FDa
 		UE_LOG(LogFortQuest, Warning, TEXT("SendStatEventWithTags: Cannot be called with stat type %d!"), static_cast<int32>(StatEvent));
 		return;
 	}
+
+	if (bObjectiveStatIsNull)
+		GrantObjectiveStatXP(_this, PlayerController, StatEvent, TargetObject, TargetTags, SourceTags, ContextTags, Count);
 
 	UFortItemDefinition* TargetItemDefinition = Cast<UFortItemDefinition>(const_cast<UObject*>(TargetObject));
 
@@ -388,6 +507,11 @@ void FortQuestManager::InitQuests(UFortQuestManager* _this, bool bFromMCP, bool 
 
 	UFortRegisteredPlayerInfo* PlayerInfo = Cast<UFortRegisteredPlayerInfo>(_this->Outer);
 	AFortPlayerController* PlayerController = PlayerInfo ? PlayerInfo->GetPlayerController() : nullptr;
+
+	AFortPlayerControllerAthena* PlayerControllerAthena = Cast<AFortPlayerControllerAthena>(PlayerController);
+
+	if (PlayerControllerAthena && PlayerControllerAthena->Role == ENetRole::ROLE_Authority && PlayerControllerAthena->XPComponent)
+		_this->RegisterXPComponent(PlayerControllerAthena->XPComponent);
 
 	if (PlayerController && PlayerController->MyFortPawn)
 		InitializeQuestAbilities(_this, PlayerController->MyFortPawn);

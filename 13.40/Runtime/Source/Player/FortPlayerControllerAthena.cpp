@@ -62,7 +62,9 @@ void FortPlayerControllerAthena::BindAthenaProfileEvents(AFortPlayerControllerAt
 		return;
 
 	_this->XPComponent->BindToProfile(_this->AthenaProfile);
-	_this->XPComponent->bRegisteredWithQuestManager = true;
+
+	if (UFortQuestManager* QuestManager = _this->GetQuestManager(ESubGame::Athena))
+		QuestManager->RegisterXPComponent(_this->XPComponent);
 }
 
 void FortPlayerControllerAthena::UnBindAthenaProfileEvents(AFortPlayerControllerAthena* _this)
@@ -71,6 +73,9 @@ void FortPlayerControllerAthena::UnBindAthenaProfileEvents(AFortPlayerController
 		return;
 
 	_this->XPComponent->UnbindFromProfile(_this->AthenaProfile);
+
+	if (UFortQuestManager* QuestManager = _this->GetQuestManager(ESubGame::Athena))
+		QuestManager->UnregisterXPComponent(_this->XPComponent);
 }
 
 void FortPlayerControllerAthena::RemoveAllInventoryItems(AFortPlayerControllerAthena* _this)

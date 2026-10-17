@@ -95257,6 +95257,17 @@ public:
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UFortPlayerControllerAthenaXPComponent*, class UFortMcpProfileAthena*)>(InSDKUtils::GetImageBase() + 0x1F84D70), this, Profile);
 	}
 
+	int32 GetAccoladeCount(class UFortAccoladeItemDefinition* Accolade) const
+	{
+		for (const struct FAthenaAccolades& PlayerAccolade : PlayerAccolades)
+		{
+			if (PlayerAccolade.AccoladeDef == Accolade)
+				return PlayerAccolade.Count;
+		}
+
+		return 0;
+	}
+
 	void OnProfileChanged(class UFortMcpProfileAthena* Profile)
 	{
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UFortPlayerControllerAthenaXPComponent*, class UFortMcpProfileAthena*)>(InSDKUtils::GetImageBase() + 0x1F848E0), this, Profile);
@@ -98258,6 +98269,11 @@ public:
 		return nullptr;
 	}
 
+	int32 GetXpRewardAmount(class UFortItemDefinition* XpItemDefinition) const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<int32(*)(const UFortQuestItem*, class UFortItemDefinition*)>(InSDKUtils::GetImageBase() + 0x2A1B220), this, XpItemDefinition);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -98320,10 +98336,12 @@ public:
 	TMulticastInlineDelegate<void()>              OnPinnedQuestsChanged;                             // 0x0088(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const class UFortQuestItem* NewQuest)> OnDailyQuestRerolled;       // 0x0098(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(const class UFortQuestObjectiveInfo* QuestObjective, bool bDisplayStatusUpdate, bool bDisplayAnnouncementUpdate)> OnDisplayDynamicQuestUpdate; // 0x00A8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_B8[0x18];                                      // 0x00B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastDelegate<void(class AFortPlayerController* Controller, const class UFortQuestItemDefinition* QuestDef, class FName BackendName, int32 CompletionCount, bool ObjectiveCompleted, bool QuestCompleted)> OnQuestObjectiveUpdated; // 0x00B8(0x0018)(NOT AUTO-GENERATED PROPERTY)
 	TMulticastInlineDelegate<void(const struct FXPEventInfo& XPEvent)> OnObjectiveStatXPGranted;     // 0x00D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void(int32 CombatXp, int32 ServivalXp, int32 MedalBonusXP, int32 ChallengeXp, int32 MatchXp, int32 TotalXp)> OnXpValueDeltasUpdate; // 0x00E0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_F0[0x158];                                     // 0x00F0(0x0158)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_F0[0x60];                                      // 0x00F0(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, struct FXPEventState>       XPEventState;                                      // 0x0150(0x0050)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_1A0[0xA8];                                     // 0x01A0(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UFortQuestItem*>                 CurrentQuests;                                     // 0x0248(0x0010)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class UFortQuestItem*>                 CurrentTransientQuests;                            // 0x0258(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class UFortHardcoreModifierItem*>      CurrentHardcoreModifiers;                          // 0x0268(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -98430,6 +98448,34 @@ public:
 	void UpdateQuests()
 	{
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UFortQuestManager*)>(InSDKUtils::GetImageBase() + 0x2A0F770), this);
+	}
+
+	void RegisterXPComponent(class UFortPlayerControllerAthenaXPComponent* XPComponent)
+	{
+		static const FName NAME_OnXPEvent = FName(L"OnXPEvent");
+		static const FName NAME_OnXpUpdated = FName(L"OnXpUpdated");
+
+		FScriptDelegate XPEventDelegate{};
+		XPEventDelegate.BindUFunction(XPComponent, NAME_OnXPEvent);
+		OnObjectiveStatXPGranted.AddUnique(XPEventDelegate);
+
+		FScriptDelegate XpUpdatedDelegate{};
+		XpUpdatedDelegate.BindUFunction(XPComponent, NAME_OnXpUpdated);
+		OnXpValueDeltasUpdate.AddUnique(XpUpdatedDelegate);
+
+		OnQuestObjectiveUpdated.RemoveAll(XPComponent);
+		OnQuestObjectiveUpdated.AddUObject(XPComponent, &UFortPlayerControllerAthenaXPComponent::QuestObjectiveUpdated);
+
+		XPComponent->bRegisteredWithQuestManager = true;
+	}
+
+	void UnregisterXPComponent(class UFortPlayerControllerAthenaXPComponent* XPComponent)
+	{
+		OnQuestObjectiveUpdated.RemoveAll(XPComponent);
+		OnObjectiveStatXPGranted.RemoveAll(XPComponent);
+		OnXpValueDeltasUpdate.RemoveAll(XPComponent);
+
+		XPComponent->bRegisteredWithQuestManager = false;
 	}
 
 	static bool CanProgressQuestObjective(const struct FFortMcpQuestObjectiveInfo& Objective, EFortQuestObjectiveStatEvent StatEvent, const struct FGameplayTagContainer& TargetTags, const struct FGameplayTagContainer& SourceTags, const struct FGameplayTagContainer& ContextTags, const class FString& ContextString)

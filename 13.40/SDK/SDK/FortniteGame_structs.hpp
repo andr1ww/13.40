@@ -36614,8 +36614,7 @@ public:
 		if (!Condition || !*reinterpret_cast<int32*>(Condition + 0x8) || *reinterpret_cast<int32*>(Condition + 0x28) > 1)
 			return true;
 
-		class FText Error;
-		InSDKUtils::CallGameFunction(reinterpret_cast<class FText*(*)(class FText*)>(InSDKUtils::GetImageBase() + 0x3240AC0), &Error);
+		class FText Error = FText::Empty();
 
 		const bool bResult = InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(void*, void*, const FFortQuestFilterContext*, class FText*)>(InSDKUtils::GetImageBase() + 0x29E8F70), reinterpret_cast<void*>(InSDKUtils::GetImageBase() + 0x8C3D970), CompiledCondition, this, &Error);
 
@@ -36628,6 +36627,15 @@ static_assert(sizeof(FFortQuestFilterContext) == 0x000338, "Wrong size on FFortQ
 
 // ScriptStruct FortniteGame.FortQuestObjectiveStatXPTableRow
 // 0x00C8 (0x00D0 - 0x0008)
+struct FXPEventState final
+{
+public:
+	bool                                          bDisabled;                                         // 0x0000(0x0001)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Count;                                             // 0x0004(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         XP;                                                // 0x0008(0x0004)(NOT AUTO-GENERATED PROPERTY)
+};
+
 struct FFortQuestObjectiveStatXPTableRow final : public FTableRowBase
 {
 public:
@@ -36644,6 +36652,18 @@ public:
 	bool                                          bOnceOnly;                                         // 0x00B8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsCached;                                         // 0x00B9(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_BA[0x16];                                      // 0x00BA(0x0016)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void CacheData()
+	{
+		if (!bIsCached)
+			bIsCached = InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(FFortQuestObjectiveStatXPTableRow*, bool)>(InSDKUtils::GetImageBase() + 0x2A108E0), this, true);
+	}
+
+	void* GetCompiledCondition()
+	{
+		return Pad_BA + 0x6;
+	}
 };
 DUMPER7_ASSERTS_FFortQuestObjectiveStatXPTableRow;
 

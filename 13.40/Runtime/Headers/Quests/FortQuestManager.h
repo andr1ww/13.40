@@ -9,6 +9,10 @@ namespace FortQuestManager
 	FFortQuestObjectiveCompletion* AddPendingChange(UFortQuestManager* _this, FName BackendName);
 	bool CanProgressObjective(UFortQuestManager* _this, AFortPlayerController* PlayerController, FFortMcpQuestObjectiveInfo& Objective, EFortQuestObjectiveStatEvent StatEvent, const UObject* TargetObject, const FGameplayTagContainer& TargetTags, const FGameplayTagContainer& SourceTags, const FGameplayTagContainer& ContextTags, const FString& ContextString);
 	bool UpdateObjective(UFortQuestManager* _this, AFortPlayerController* PlayerController, UFortQuestItem* QuestItem, UFortQuestItemDefinition* QuestDefinition, const FFortMcpQuestObjectiveInfo& Objective, int32 Count, bool bAddToPendingChange, bool& bObjectiveCompleted, bool& bQuestCompleted);
+	void GrantQuestXP(UFortQuestManager* _this, AFortPlayerController* PlayerController, UFortQuestItem* QuestItem);
+	UDataTable* GetObjectiveStatXPTable();
+	void GrantObjectiveStatXP(UFortQuestManager* _this, AFortPlayerController* PlayerController, EFortQuestObjectiveStatEvent StatEvent, const UObject* TargetObject, const FGameplayTagContainer& TargetTags, const FGameplayTagContainer& SourceTags, const FGameplayTagContainer& ContextTags, int32 Count);
+	int32 GrantAccolade(UFortQuestManager* _this, UFortPlayerControllerAthenaXPComponent* XPComponent, UFortAccoladeItemDefinition* Accolade, const FPrimaryAssetId& AccoladeId);
 	void SaveStatEvents(UFortQuestManager* _this);
 	void SendStatEventsAndUpdateQuests(UFortQuestManager* _this);
 	void EndBattleRoyaleMatchForPlayer(UFortQuestManager* _this, UFortPlaylistAthena* Playlist, const FAthenaMatchStats& MatchStats);
