@@ -160,3 +160,9 @@ inline void FreeGameplayTags(FGameplayTagContainer& Tags)
 	Tags.GameplayTags.Free();
 	Tags.ParentTags.Free();
 }
+
+template <typename T>
+inline T* LoadPrimaryAsset(const FPrimaryAssetId& AssetId)
+{
+	return Cast<T>(UKismetSystemLibrary::GetSoftObjectReferenceFromPrimaryAssetId(AssetId).LoadSynchronous());
+}

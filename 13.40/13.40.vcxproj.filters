@@ -210,6 +210,18 @@
     <ClCompile Include="Runtime\Source\Player\FortPlayerPawn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClInclude Include="Runtime\Headers\AI\FortAthenaAIBotController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaAIBotCustomizationData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\AI\FortAthenaAIBotController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaAIBotCustomizationData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClInclude Include="Runtime\Headers\Player\FortPlayerControllerAthena.h">
       <Filter>Header Files</Filter>
     </ClInclude>

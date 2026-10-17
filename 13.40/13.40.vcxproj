@@ -198,6 +198,8 @@
     <ClInclude Include="Runtime\Headers\FortAthenaMapInfo.h" />
     <ClInclude Include="Runtime\Headers\Engine\Components\AbilitySystemComponent.h" />
     <ClInclude Include="Runtime\Headers\Player\FortPlayerPawn.h" />
+    <ClInclude Include="Runtime\Headers\AI\FortAthenaAIBotController.h" />
+    <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaAIBotCustomizationData.h" />
     <ClInclude Include="Runtime\Headers\Player\FortPlayerControllerAthena.h" />
     <ClInclude Include="Runtime\Headers\FortInventory.h" />
     <ClInclude Include="Runtime\Headers\Engine\Settings\GameMapsSettings.h" />
@@ -253,6 +255,8 @@
     <ClCompile Include="Runtime\Source\FortAthenaMapInfo.cpp" />
     <ClCompile Include="Runtime\Source\Engine\Components\AbilitySystemComponent.cpp" />
     <ClCompile Include="Runtime\Source\Player\FortPlayerPawn.cpp" />
+    <ClCompile Include="Runtime\Source\AI\FortAthenaAIBotController.cpp" />
+    <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaAIBotCustomizationData.cpp" />
     <ClCompile Include="Runtime\Source\Player\FortPlayerControllerAthena.cpp" />
     <ClCompile Include="Runtime\Source\FortInventory.cpp" />
     <ClCompile Include="Runtime\Source\Engine\GameEngine.cpp" />
