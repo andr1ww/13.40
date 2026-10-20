@@ -276,10 +276,16 @@
     <ClInclude Include="Runtime\Headers\FortInventory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Runtime\Headers\FortKismetLibrary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClCompile Include="Runtime\Source\Player\FortPlayerControllerAthena.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Runtime\Source\FortInventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\FortKismetLibrary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClInclude Include="Core\Headers\Unreal\UObjectGlobals.h">
