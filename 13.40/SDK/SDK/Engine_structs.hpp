@@ -5654,8 +5654,31 @@ struct FTimerHandle final
 {
 public:
 	uint64                                        Handle;                                            // 0x0000(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+public:
+	void Invalidate()
+	{
+		Handle = 0;
+	}
 };
 DUMPER7_ASSERTS_FTimerHandle;
+
+class FTimerManager final
+{
+public:
+	bool TimerExists(const struct FTimerHandle& InHandle)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<void*(*)(FTimerManager*, const struct FTimerHandle*)>(InSDKUtils::GetImageBase() + 0x4D9E0B0), this, &InHandle) != nullptr;
+	}
+
+	void ClearTimer(struct FTimerHandle& InHandle)
+	{
+		if (TimerExists(InHandle))
+			InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FTimerManager*, struct FTimerHandle)>(InSDKUtils::GetImageBase() + 0x4DA2AB0), this, InHandle);
+
+		InHandle.Invalidate();
+	}
+};
 
 // ScriptStruct Engine.BranchFilter
 // 0x000C (0x000C - 0x0000)

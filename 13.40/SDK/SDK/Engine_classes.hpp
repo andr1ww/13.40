@@ -731,6 +731,11 @@ public:
 	class USceneComponent* K2_GetRootComponent() const;
 	bool WasRecentlyRendered(float Tolerance) const;
 
+	class FTimerManager& GetWorldTimerManager() const
+	{
+		return *InSDKUtils::CallGameFunction(reinterpret_cast<class FTimerManager*(*)(const AActor*)>(InSDKUtils::GetImageBase() + 0xB0AA40), this);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{

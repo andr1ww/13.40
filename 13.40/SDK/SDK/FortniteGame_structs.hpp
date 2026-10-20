@@ -12700,8 +12700,15 @@ struct FFortGlobalGameplayTags final
 public:
 	uint8                                         Pad_0[0x420];
 	struct FGameplayTag                           EffectInstantDeath;
-	uint8                                         Pad_428[0x2D0];
+	uint8                                         Pad_428[0x100];
+	struct FGameplayTag                           StatusDBNOBeingRevived;
+	uint8                                         Pad_530[0x1C8];
 	struct FGameplayTag                           ActionPlayerInteractBuild;
+	uint8                                         Pad_700[0x80];
+	struct FGameplayTag                           ActionPlayerDBNO;
+	struct FGameplayTag                           ActionPlayerDBNOAthena;
+	uint8                                         Pad_790[0xDD8];
+	struct FGameplayTag                           GameplayCuePlayerBeingReviviedFromDBNO;
 };
 
 // ScriptStruct FortniteGame.FortItemEntryStateValue

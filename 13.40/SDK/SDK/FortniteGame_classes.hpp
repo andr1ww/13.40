@@ -15701,6 +15701,11 @@ public:
 	bool WasDBNOOnDeath() const;
 	bool WillFallFromHeightCauseDamage(float FallDistance) const;
 
+	void RemoveGameplayTag(const struct FGameplayTag& Tag)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(AFortPawn*, const struct FGameplayTag&)>(this, 0xD50 / 8), this, Tag);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -16001,7 +16006,9 @@ public:
 	TArray<class UFortWorldItemDefinition*>       TempWeaponsStack;                                  // 0x2248(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UFortAnimNotifyState_RootMotionInterrupt*> RootMotionInterruptNotifyStack;          // 0x2258(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UAnimMontage*>                   RootMotionInterruptMontageStack;                   // 0x2268(0x0010)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2278[0x20];                                    // 0x2278(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2278[0x8];                                     // 0x2278(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           DBNOTimerHandle;                                   // 0x2280(0x0008)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_2288[0x10];                                    // 0x2288(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortVisibilityComponent*               VisibilityComponent;                               // 0x2298(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UPostProcessComponent*                  BlendablesPostProcessComp;                         // 0x22A0(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_22A8[0x4];                                     // 0x22A8(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -16418,6 +16425,16 @@ public:
 
 		if (AnimInstance && !AnimInstance->Montage_IsPlaying(BluePrintPlaceAnimation))
 			PlayAnimMontage(BluePrintPlaceAnimation, 1.0f, FName());
+	}
+
+	bool CanReviveFromDBNO(class AController* EventInstigator)
+	{
+		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<bool(*)(AFortPlayerPawn*, class AController*)>(this, 0x1220 / 8), this, EventInstigator);
+	}
+
+	void UpdateDBNOInteractCollision()
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPlayerPawn*)>(InSDKUtils::GetImageBase() + 0x2933C10), this);
 	}
 
 public:
@@ -22480,6 +22497,11 @@ public:
 	int32 GetOutpostCoreLevel() const;
 	bool IsOutpostOwner() const;
 
+	void OnPawnRevived(class AController* EventInstigator)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortPlayerControllerZone*, class AController*)>(InSDKUtils::GetImageBase() + 0x29B87C0), this, EventInstigator);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -26503,7 +26525,8 @@ public:
 	ESpawnMachineSubTextState                     SpawnMachineSubTextState;                          // 0x0880(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_881[0x3];                                      // 0x0881(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         HandleIntoGameState;                               // 0x0884(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_888[0x10];                                     // 0x0888(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_888[0x8];                                      // 0x0888(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           ResurrectTimerHandle;                              // 0x0890(0x0008)(NOT AUTO-GENERATED PROPERTY)
 
 public:
 	void OnBeginLongUse(class AFortPlayerControllerAthena* AthenaPC);
@@ -41141,6 +41164,11 @@ public:
 		return InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<TArray<struct FItemAndCount>*(*)(AFortGameModeAthena*, TArray<struct FItemAndCount>*, bool, class AController*)>(this, 0xCF8 / 8), this, OutItems, bInitialSpawn, Controller);
 	}
 
+	void AddToAlivePlayers(class AFortPlayerController* PlayerController)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameModeAthena*, class AFortPlayerController*)>(InSDKUtils::GetImageBase() + 0x1E9C090), this, PlayerController);
+	}
+
 	void RemoveFromAlivePlayers(class AFortPlayerController* PlayerController, class APlayerState* KillerPlayerState, class AFortPawn* KillerPawn, class UFortWeaponItemDefinition* KillerWeapon, EDeathCause DeathCause, bool bLogout)
 	{
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(AFortGameModeAthena*, class AFortPlayerController*, class APlayerState*, class AFortPawn*, class UFortWeaponItemDefinition*, EDeathCause, bool)>(InSDKUtils::GetImageBase() + 0x1EC8680), this, PlayerController, KillerPlayerState, KillerPawn, KillerWeapon, DeathCause, bLogout);
@@ -41567,6 +41595,12 @@ DUMPER7_ASSERTS_UFortAIPawnVariant;
 // 0x0000 (0x0138 - 0x0138)
 class UFortAIPerceptionSystem final : public UAIPerceptionSystem
 {
+public:
+	static void ForceForgetEnemy(class AActor* ActorToForget)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(class AActor*)>(InSDKUtils::GetImageBase() + 0x1BBA650), ActorToForget);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{
@@ -91584,6 +91618,12 @@ public:
 	uint8                                         Pad_38[0x28];                                      // 0x0038(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
+	void ModifyStat(double Value, EStatMod Type)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UStat*, double, EStatMod)>(InSDKUtils::GetImageBase() + 0x2A8BA70), this, Value, Type);
+	}
+
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("Stat")
@@ -106022,6 +106062,12 @@ DUMPER7_ASSERTS_UBaseStatManager;
 // 0x0000 (0x00A0 - 0x00A0)
 class UStatManager final : public UBaseStatManager
 {
+public:
+	class UStat* AddOrGetStat(class FName StatName, EStatRecordingPeriod HighestPeriodToTrack)
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UStat*(*)(UStatManager*, class FName, EStatRecordingPeriod)>(InSDKUtils::GetImageBase() + 0x2A75D20), this, StatName, HighestPeriodToTrack);
+	}
+
 public:
 	static class UClass* StaticClass()
 	{

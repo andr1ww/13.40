@@ -533,6 +533,12 @@ public:
 	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x0278(0x0018)(NativeAccessSpecifierPrivate)
 	float                                         Level;                                             // 0x0290(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_294[0x4];                                      // 0x0294(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+
+public:
+	void SetSetByCallerMagnitude(class FName DataName, float Magnitude)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FGameplayEffectSpec*, class FName, float)>(InSDKUtils::GetImageBase() + 0x9C6520), this, DataName, Magnitude);
+	}
 };
 DUMPER7_ASSERTS_FGameplayEffectSpec;
 
@@ -584,6 +590,12 @@ public:
 	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BaseValue;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                         CurrentValue;                                      // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+
+public:
+	float GetCurrentValue() const
+	{
+		return CurrentValue;
+	}
 };
 DUMPER7_ASSERTS_FGameplayAttributeData;
 
@@ -667,7 +679,7 @@ DUMPER7_ASSERTS_FGameplayCueTranslationLink;
 struct alignas(0x08) FGameplayEffectSpecHandle final
 {
 public:
-	uint8                                         Pad_0[0x10];                                       // 0x0000(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TSharedPtr<struct FGameplayEffectSpec, ESPMode::ThreadSafe> Data;                                // 0x0000(0x0010)(NOT AUTO-GENERATED PROPERTY)
 };
 DUMPER7_ASSERTS_FGameplayEffectSpecHandle;
 

@@ -447,3 +447,9 @@ FodyWeavers.xsd
 *.iobj
 
 *.py
+Tools/ServerAssetGenerator/PackageWriter.cs
+Tools/ServerAssetGenerator/Phoebe.txt
+Tools/ServerAssetGenerator/Program.cs
+Tools/ServerAssetGenerator/Sdk.cs
+Tools/ServerAssetGenerator/ServerAssetGenerator.csproj
+Tools/ServerAssetGenerator/TargetBuild.cs

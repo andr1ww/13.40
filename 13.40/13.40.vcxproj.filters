@@ -75,6 +75,12 @@
     <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaBTTask_Interact.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClInclude Include="Runtime\Headers\Athena\AI\Systems\AthenaAIServiceLoot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Athena\AI\Systems\AthenaAIServiceLoot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClInclude Include="Runtime\Headers\Athena\FortGameStateAthena.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -213,7 +219,13 @@
     <ClInclude Include="Runtime\Headers\Actors\BuildingFoundation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Runtime\Headers\Actors\BuildingGameplayActorSpawnMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClCompile Include="Runtime\Source\Actors\BuildingFoundation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Actors\BuildingGameplayActorSpawnMachine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClInclude Include="Runtime\Headers\Engine\Components\AbilitySystemComponent.h">
@@ -222,10 +234,16 @@
     <ClInclude Include="Runtime\Headers\Player\FortPlayerPawn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Runtime\Headers\Player\FortPlayerPawnAthena.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClCompile Include="Runtime\Source\Engine\Components\AbilitySystemComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Runtime\Source\Player\FortPlayerPawn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Player\FortPlayerPawnAthena.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClInclude Include="Runtime\Headers\AI\FortAthenaAIBotController.h">

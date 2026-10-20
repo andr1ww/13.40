@@ -3941,18 +3941,11 @@ bool UAbilitySystemComponent::IsGameplayCueActive(const struct FGameplayTag& Gam
 
 struct FGameplayEffectContextHandle UAbilitySystemComponent::MakeEffectContext() const
 {
-	class UFunction* Func = Class->GetFunction("AbilitySystemComponent", "MakeEffectContext");
+	struct FGameplayEffectContextHandle ReturnValue{};
 
-	Params::AbilitySystemComponent_MakeEffectContext Parms{};
+	InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<struct FGameplayEffectContextHandle*(*)(const UAbilitySystemComponent*, struct FGameplayEffectContextHandle*)>(this, 0x5D8 / 8), this, &ReturnValue);
 
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
+	return ReturnValue;
 }
 
 
@@ -3966,22 +3959,11 @@ struct FGameplayEffectContextHandle UAbilitySystemComponent::MakeEffectContext()
 
 struct FGameplayEffectSpecHandle UAbilitySystemComponent::MakeOutgoingSpec(TSubclassOf<class UGameplayEffect> GameplayEffectClass, float Level, const struct FGameplayEffectContextHandle& Context) const
 {
-	class UFunction* Func = Class->GetFunction("AbilitySystemComponent", "MakeOutgoingSpec");
+	struct FGameplayEffectSpecHandle ReturnValue{};
 
-	Params::AbilitySystemComponent_MakeOutgoingSpec Parms{};
+	InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<struct FGameplayEffectSpecHandle*(*)(const UAbilitySystemComponent*, struct FGameplayEffectSpecHandle*, class UClass*, float, const struct FGameplayEffectContextHandle*)>(this, 0x5D0 / 8), this, &ReturnValue, GameplayEffectClass.Get(), Level, &Context);
 
-	Parms.GameplayEffectClass = GameplayEffectClass;
-	Parms.Level = Level;
-	Parms.Context = std::move(Context);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
+	return ReturnValue;
 }
 
 

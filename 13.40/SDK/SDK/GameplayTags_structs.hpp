@@ -119,6 +119,21 @@ public:
 };
 DUMPER7_ASSERTS_FGameplayTagContainer;
 
+struct FGameplayTagCountContainer final
+{
+public:
+	uint8                                         Pad_0[0x128];
+
+public:
+	bool UpdateTagCount(const struct FGameplayTag& Tag, int32 CountDelta)
+	{
+		if (CountDelta == 0)
+			return false;
+
+		return InSDKUtils::CallGameFunction(reinterpret_cast<bool(*)(FGameplayTagCountContainer*, const struct FGameplayTag&, int32)>(InSDKUtils::GetImageBase() + 0x9DC7C0), this, Tag, CountDelta);
+	}
+};
+
 // ScriptStruct GameplayTags.GameplayTagCreationWidgetHelper
 // 0x0001 (0x0001 - 0x0000)
 struct FGameplayTagCreationWidgetHelper final

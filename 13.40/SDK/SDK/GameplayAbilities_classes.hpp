@@ -355,8 +355,8 @@ public:
 	struct FActiveGameplayCueContainer            MinimalReplicationGameplayCues;                    // 0x0DB8(0x0128)(Net, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_EE0[0x128];                                    // 0x0EE0(0x0128)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 BlockedAbilityBindings;                            // 0x1008(0x0010)(Net, ZeroConstructor, Transient, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1018[0x128];                                   // 0x1018(0x0128)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMinimalReplicationTagCountMap         MinimalReplicationTags;                            // 0x1140(0x0060)(Net, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FGameplayTagCountContainer             GameplayTagCountContainer;                         // 0x1018(0x0128)(NOT AUTO-GENERATED PROPERTY)
+	struct FMinimalReplicationTagCountMap         MinimalReplicationTags;                           // 0x1140(0x0060)(Net, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_11A0[0x10];                                    // 0x11A0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FReplicatedPredictionKeyMap            ReplicatedPredictionKeyMap;                        // 0x11B0(0x0118)(Net, NativeAccessSpecifierPublic)
 
@@ -436,6 +436,39 @@ public:
 	void ConsumeAllReplicatedData(struct FGameplayAbilitySpecHandle AbilityHandle, const struct FPredictionKey& AbilityOriginalPredictionKey)
 	{
 		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(UAbilitySystemComponent*, struct FGameplayAbilitySpecHandle, const struct FPredictionKey*)>(this, 0x790 / 8), this, AbilityHandle, &AbilityOriginalPredictionKey);
+	}
+
+	struct FActiveGameplayEffectHandle ApplyGameplayEffectSpecToSelf(const struct FGameplayEffectSpec& GameplayEffect, const struct FPredictionKey& PredictionKey)
+	{
+		struct FActiveGameplayEffectHandle ReturnValue{};
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<struct FActiveGameplayEffectHandle*(*)(UAbilitySystemComponent*, struct FActiveGameplayEffectHandle*, const struct FGameplayEffectSpec*, const struct FPredictionKey*)>(this, 0x5B8 / 8), this, &ReturnValue, &GameplayEffect, &PredictionKey);
+		return ReturnValue;
+	}
+
+	void CancelAbilities(const struct FGameplayTagContainer& WithTags, const struct FGameplayTagContainer& WithoutTags, class UGameplayAbility* Ignore)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UAbilitySystemComponent*, const struct FGameplayTagContainer*, const struct FGameplayTagContainer*, class UGameplayAbility*)>(InSDKUtils::GetImageBase() + 0x993CC0), this, &WithTags, &WithoutTags, Ignore);
+	}
+
+	void RemoveGameplayCue(const struct FGameplayTag& GameplayCueTag)
+	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(UAbilitySystemComponent*, const struct FGameplayTag&)>(InSDKUtils::GetImageBase() + 0x96E9C0), this, GameplayCueTag);
+	}
+
+	void OnTagUpdated(const struct FGameplayTag& Tag, bool TagExists)
+	{
+		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(UAbilitySystemComponent*, const struct FGameplayTag&, bool)>(this, 0x810 / 8), this, Tag, TagExists);
+	}
+
+	void UpdateTagMap(const struct FGameplayTag& BaseTag, int32 CountDelta)
+	{
+		if (GameplayTagCountContainer.UpdateTagCount(BaseTag, CountDelta))
+			OnTagUpdated(BaseTag, CountDelta > 0);
+	}
+
+	void RemoveLooseGameplayTag(const struct FGameplayTag& GameplayTag, int32 Count = 1)
+	{
+		UpdateTagMap(GameplayTag, -Count);
 	}
 
 	bool InternalTryActivateAbility(struct FGameplayAbilitySpecHandle AbilityToActivate, const struct FPredictionKey& InPredictionKey, class UGameplayAbility** OutInstancedAbility = nullptr, void* OnGameplayAbilityEndedDelegate = nullptr, const struct FGameplayEventData* TriggerEventData = nullptr)

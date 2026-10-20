@@ -167,6 +167,7 @@
     <ClInclude Include="Core\Headers\Unreal\UObjectGlobals.h" />
     <ClInclude Include="Core\Headers\Unreal\Stack.h" />
     <ClInclude Include="Runtime\Headers\Actors\BuildingFoundation.h" />
+    <ClInclude Include="Runtime\Headers\Actors\BuildingGameplayActorSpawnMachine.h" />
     <ClInclude Include="Runtime\Headers\Quests\FortQuestManager.h" />
     <ClInclude Include="Runtime\Headers\NavigationSystem\NavigationSystem.h" />
     <ClInclude Include="Runtime\Headers\Engine\Components\StaticMeshComponent.h" />
@@ -192,6 +193,7 @@
     <ClInclude Include="Runtime\Headers\Athena\FortSafeZoneIndicator.h" />
     <ClInclude Include="Runtime\Headers\Athena\FortServerBotManagerAthena.h" />
     <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaBTTask_Interact.h" />
+    <ClInclude Include="Runtime\Headers\Athena\AI\Systems\AthenaAIServiceLoot.h" />
     <ClInclude Include="Runtime\Headers\Athena\FortGameStateAthena.h" />
     <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_Aircraft.h" />
     <ClInclude Include="Runtime\Headers\Actors\BuildingActor.h" />
@@ -201,6 +203,7 @@
     <ClInclude Include="Runtime\Headers\FortAthenaMapInfo.h" />
     <ClInclude Include="Runtime\Headers\Engine\Components\AbilitySystemComponent.h" />
     <ClInclude Include="Runtime\Headers\Player\FortPlayerPawn.h" />
+    <ClInclude Include="Runtime\Headers\Player\FortPlayerPawnAthena.h" />
     <ClInclude Include="Runtime\Headers\AI\FortAthenaAIBotController.h" />
     <ClInclude Include="Runtime\Headers\Athena\Modifiers\FortAthenaMutator_Bots.h" />
     <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaAIBotCustomizationData.h" />
@@ -229,6 +232,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Runtime\Source\Actors\BuildingFoundation.cpp" />
+    <ClCompile Include="Runtime\Source\Actors\BuildingGameplayActorSpawnMachine.cpp" />
     <ClCompile Include="Runtime\Source\Quests\FortQuestManager.cpp" />
     <ClCompile Include="Runtime\Source\NavigationSystem\NavigationSystem.cpp" />
     <ClCompile Include="Runtime\Source\Engine\Components\StaticMeshComponent.cpp" />
@@ -254,6 +258,7 @@
     <ClCompile Include="Runtime\Source\Athena\FortSafeZoneIndicator.cpp" />
     <ClCompile Include="Runtime\Source\Athena\FortServerBotManagerAthena.cpp" />
     <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaBTTask_Interact.cpp" />
+    <ClCompile Include="Runtime\Source\Athena\AI\Systems\AthenaAIServiceLoot.cpp" />
     <ClCompile Include="Runtime\Source\Athena\FortGameStateAthena.cpp" />
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp" />
     <ClCompile Include="Runtime\Source\Actors\BuildingActor.cpp" />
@@ -263,6 +268,7 @@
     <ClCompile Include="Runtime\Source\FortAthenaMapInfo.cpp" />
     <ClCompile Include="Runtime\Source\Engine\Components\AbilitySystemComponent.cpp" />
     <ClCompile Include="Runtime\Source\Player\FortPlayerPawn.cpp" />
+    <ClCompile Include="Runtime\Source\Player\FortPlayerPawnAthena.cpp" />
     <ClCompile Include="Runtime\Source\AI\FortAthenaAIBotController.cpp" />
     <ClCompile Include="Runtime\Source\Athena\Modifiers\FortAthenaMutator_Bots.cpp" />
     <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaAIBotCustomizationData.cpp" />
