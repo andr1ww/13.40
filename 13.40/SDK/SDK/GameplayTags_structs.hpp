@@ -110,6 +110,29 @@ public:
 		return false;
 	}
 
+	bool HasAny(const FGameplayTagContainer& ContainerToCheck) const
+	{
+		if (ContainerToCheck.GameplayTags.Num() == 0)
+			return false;
+
+		for (const FGameplayTag& OtherTag : ContainerToCheck.GameplayTags)
+		{
+			for (const FGameplayTag& Tag : GameplayTags)
+			{
+				if (Tag.TagName == OtherTag.TagName)
+					return true;
+			}
+
+			for (const FGameplayTag& Tag : ParentTags)
+			{
+				if (Tag.TagName == OtherTag.TagName)
+					return true;
+			}
+		}
+
+		return false;
+	}
+
 	class FString ToStringSimple(bool bQuoted) const
 	{
 		class FString Result;

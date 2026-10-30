@@ -48,7 +48,13 @@
     <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_Aircraft.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_IndicatedActorManagement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Components\FortControllerComponent_IndicatedActorManagement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClInclude Include="Runtime\Headers\Athena\FortPoiVolume.h">
