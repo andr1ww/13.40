@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Core.h"
 #include "Actors/BuildingGameplayActorSpawnMachine.h"
+#include "Engine/TimerManager.h"
 DEFINE_ENGINE_INIT(BuildingGameplayActorSpawnMachine)
 
 void BuildingGameplayActorSpawnMachine::BeginPlay(ABuildingGameplayActorSpawnMachine* _this)

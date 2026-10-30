@@ -355,19 +355,7 @@ public:
 	}
 };
 
-class FMemory final
-{
-public:
-	static void* Realloc(void* Original, uint64 Count, uint32 Alignment = 0)
-	{
-		return InSDKUtils::CallGameFunction(reinterpret_cast<void*(*)(void*, uint64, uint32)>(InSDKUtils::GetImageBase() + 0x3230950), Original, Count, Alignment);
-	}
-
-	static void Free(void* Original)
-	{
-		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(void*)>(InSDKUtils::GetImageBase() + 0x3221A10), Original);
-	}
-};
+using FMemory = UC::FMemory;
 
 // Predefined struct FName
 // 0x0008 (0x0008 - 0x0000)

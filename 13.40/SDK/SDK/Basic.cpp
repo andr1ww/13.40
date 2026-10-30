@@ -152,7 +152,9 @@ void FWeakObjectPtr::operator=(const class UObject* Object)
 
 bool FWeakObjectPtr::operator==(const FWeakObjectPtr& Other) const
 {
-	return ObjectIndex == Other.ObjectIndex;
+	return
+		(ObjectIndex == Other.ObjectIndex && ObjectSerialNumber == Other.ObjectSerialNumber) ||
+		(!IsValid() && !Other.IsValid());
 }
 
 
@@ -160,7 +162,9 @@ bool FWeakObjectPtr::operator==(const FWeakObjectPtr& Other) const
 
 bool FWeakObjectPtr::operator!=(const FWeakObjectPtr& Other) const
 {
-	return ObjectIndex != Other.ObjectIndex;
+	return
+		(ObjectIndex != Other.ObjectIndex || ObjectSerialNumber != Other.ObjectSerialNumber) &&
+		(IsValid() || Other.IsValid());
 }
 
 

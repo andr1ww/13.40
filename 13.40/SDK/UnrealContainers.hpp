@@ -26,6 +26,10 @@
 #ifndef DEFAULT_ALIGNMENT
 #define DEFAULT_ALIGNMENT 0
 #endif
+
+#ifndef LIKELY
+#define LIKELY(x)			(x)
+#endif
 #undef max
 
 namespace UC
@@ -39,6 +43,8 @@ namespace UC
     typedef uint16_t uint16;
     typedef uint32_t uint32;
     typedef uint64_t uint64;
+
+    enum {INDEX_NONE	= -1				};
 
     template <typename T, bool TypeIsSmall>
     struct TCallTraitsParamTypeHelper
@@ -208,15 +214,22 @@ namespace UC
             return ReallocForType<T>(nullptr, Count);
         }
 
+        static inline auto InternalFree = (void (*)(void*))(*(uint64_t*)(__readgsqword(0x60) + 0x10) + 0x3221A10);
+
         static inline void Free(void* ptr)
         {
-            Realloc(ptr, 0, 0);
+            InternalFree(ptr);
         }
 
         template <typename T>
         static inline void FreeForType(T* ptr)
         {
             ReallocForType<T>(ptr, 0);
+        }
+
+        static FORCEINLINE void* Memcpy(void* Dest, const void* Src, SIZE_T Count)
+        {
+            return memcpy(Dest, Src, Count);
         }
     };
 
@@ -256,6 +269,614 @@ namespace UC
             return (const ElementType*)this;
         }
     };
+
+    template <typename T> struct TRemoveReference      { typedef T Type; };
+    template <typename T> struct TRemoveReference<T& > { typedef T Type; };
+    template <typename T> struct TRemoveReference<T&&> { typedef T Type; };
+
+    template <typename T> struct TRemoveCV                   { typedef T Type; };
+    template <typename T> struct TRemoveCV<const T>          { typedef T Type; };
+    template <typename T> struct TRemoveCV<volatile T>       { typedef T Type; };
+    template <typename T> struct TRemoveCV<const volatile T> { typedef T Type; };
+
+    template <typename T> struct TRemovePointer     { typedef T Type; };
+    template <typename T> struct TRemovePointer<T*> { typedef T Type; };
+
+    template <bool Predicate, typename Result = void>
+    class TEnableIf;
+
+    template <typename Result>
+    class TEnableIf<true, Result>
+    {
+    public:
+        using type = Result;
+        using Type = Result;
+    };
+
+    template <typename Result>
+    class TEnableIf<false, Result>
+    { };
+
+    template <typename... Types>
+    struct TAnd;
+
+    template <bool LHSValue, typename... RHS>
+    struct TAndValue
+    {
+        static constexpr bool Value = TAnd<RHS...>::value;
+        static constexpr bool value = TAnd<RHS...>::value;
+    };
+
+    template <typename... RHS>
+    struct TAndValue<false, RHS...>
+    {
+        static constexpr bool Value = false;
+        static constexpr bool value = false;
+    };
+
+    template <typename LHS, typename... RHS>
+    struct TAnd<LHS, RHS...> : TAndValue<LHS::Value, RHS...>
+    {
+    };
+
+    template <>
+    struct TAnd<>
+    {
+        static constexpr bool Value = true;
+        static constexpr bool value = true;
+    };
+
+    template <typename... Types>
+    struct TOr;
+
+    template <bool LHSValue, typename... RHS>
+    struct TOrValue
+    {
+        static constexpr bool Value = TOr<RHS...>::value;
+        static constexpr bool value = TOr<RHS...>::value;
+    };
+
+    template <typename... RHS>
+    struct TOrValue<true, RHS...>
+    {
+        static constexpr bool Value = true;
+        static constexpr bool value = true;
+    };
+
+    template <typename LHS, typename... RHS>
+    struct TOr<LHS, RHS...> : TOrValue<LHS::Value, RHS...>
+    {
+    };
+
+    template <>
+    struct TOr<>
+    {
+        static constexpr bool Value = false;
+        static constexpr bool value = false;
+    };
+
+    template <typename Type>
+    struct TNot
+    {
+        static constexpr bool Value = !Type::Value;
+        static constexpr bool value = !Type::Value;
+    };
+
+    template<bool Predicate,typename TrueClass,typename FalseClass>
+    class TChooseClass;
+
+    template<typename TrueClass,typename FalseClass>
+    class TChooseClass<true,TrueClass,FalseClass>
+    {
+    public:
+        typedef TrueClass Result;
+    };
+
+    template<typename TrueClass,typename FalseClass>
+    class TChooseClass<false,TrueClass,FalseClass>
+    {
+    public:
+        typedef FalseClass Result;
+    };
+
+    template <typename T, typename... Args>
+    struct TIsConstructible
+    {
+        enum { Value = __is_constructible(T, Args...) };
+    };
+
+    template <typename T>
+    struct TIsPointer
+    {
+        enum { Value = false };
+    };
+
+    template <typename T> struct TIsPointer<T*> { enum { Value = true }; };
+
+    template <typename T> struct TIsPointer<const          T> { enum { Value = TIsPointer<T>::Value }; };
+    template <typename T> struct TIsPointer<      volatile T> { enum { Value = TIsPointer<T>::Value }; };
+    template <typename T> struct TIsPointer<const volatile T> { enum { Value = TIsPointer<T>::Value }; };
+
+    template <typename T>
+    struct TIsMemberPointer
+    {
+        enum { Value = false };
+    };
+
+    template <typename T, typename U> struct TIsMemberPointer<T U::*> { enum { Value = true }; };
+
+    template <typename T> struct TIsMemberPointer<const          T> { enum { Value = TIsPointer<T>::Value }; };
+    template <typename T> struct TIsMemberPointer<      volatile T> { enum { Value = TIsPointer<T>::Value }; };
+    template <typename T> struct TIsMemberPointer<const volatile T> { enum { Value = TIsPointer<T>::Value }; };
+
+    template <typename T>
+    struct TIsArithmetic
+    {
+        enum { Value = false };
+    };
+
+    template <> struct TIsArithmetic<float>       { enum { Value = true }; };
+    template <> struct TIsArithmetic<double>      { enum { Value = true }; };
+    template <> struct TIsArithmetic<long double> { enum { Value = true }; };
+    template <> struct TIsArithmetic<uint8>       { enum { Value = true }; };
+    template <> struct TIsArithmetic<uint16>      { enum { Value = true }; };
+    template <> struct TIsArithmetic<uint32>      { enum { Value = true }; };
+    template <> struct TIsArithmetic<uint64>      { enum { Value = true }; };
+    template <> struct TIsArithmetic<int8>        { enum { Value = true }; };
+    template <> struct TIsArithmetic<int16>       { enum { Value = true }; };
+    template <> struct TIsArithmetic<int32>       { enum { Value = true }; };
+    template <> struct TIsArithmetic<int64>       { enum { Value = true }; };
+    template <> struct TIsArithmetic<long>        { enum { Value = true }; };
+    template <> struct TIsArithmetic<unsigned long> { enum { Value = true }; };
+    template <> struct TIsArithmetic<bool>        { enum { Value = true }; };
+    template <> struct TIsArithmetic<wchar_t>     { enum { Value = true }; };
+    template <> struct TIsArithmetic<char>        { enum { Value = true }; };
+
+    template <typename T> struct TIsArithmetic<const          T> { enum { Value = TIsArithmetic<T>::Value }; };
+    template <typename T> struct TIsArithmetic<      volatile T> { enum { Value = TIsArithmetic<T>::Value }; };
+    template <typename T> struct TIsArithmetic<const volatile T> { enum { Value = TIsArithmetic<T>::Value }; };
+
+    template <typename A, typename B> struct TIsSame       { enum { Value = false }; };
+    template <typename T>             struct TIsSame<T, T> { enum { Value = true  }; };
+
+    template<typename A,typename B>
+    struct TAreTypesEqual;
+
+    template<typename,typename>
+    struct TAreTypesEqual
+    {
+        enum { Value = false };
+    };
+
+    template<typename A>
+    struct TAreTypesEqual<A,A>
+    {
+        enum { Value = true };
+    };
+
+    template <typename T> struct TIsLValueReferenceType     { enum { Value = false }; };
+    template <typename T> struct TIsLValueReferenceType<T&> { enum { Value = true  }; };
+
+    namespace UE4Decay_Private
+    {
+        template <typename T>
+        struct TDecayNonReference
+        {
+            typedef typename TRemoveCV<T>::Type Type;
+        };
+
+        template <typename T>
+        struct TDecayNonReference<T[]>
+        {
+            typedef T* Type;
+        };
+
+        template <typename T, uint32 N>
+        struct TDecayNonReference<T[N]>
+        {
+            typedef T* Type;
+        };
+
+        template <typename RetType, typename... Params>
+        struct TDecayNonReference<RetType(Params...)>
+        {
+            typedef RetType (*Type)(Params...);
+        };
+    }
+
+    template <typename T>
+    struct TDecay
+    {
+        typedef typename UE4Decay_Private::TDecayNonReference<typename TRemoveReference<T>::Type>::Type Type;
+    };
+
+    template <typename From, typename To> struct TCopyQualifiersFromTo                          { typedef                To Type; };
+    template <typename From, typename To> struct TCopyQualifiersFromTo<const          From, To> { typedef const          To Type; };
+    template <typename From, typename To> struct TCopyQualifiersFromTo<      volatile From, To> { typedef       volatile To Type; };
+    template <typename From, typename To> struct TCopyQualifiersFromTo<const volatile From, To> { typedef const volatile To Type; };
+
+    template <typename From, typename To>
+    struct TLosesQualifiersFromTo
+    {
+        enum { Value = !TAreTypesEqual<typename TCopyQualifiersFromTo<From, To>::Type, To>::Value };
+    };
+
+    namespace UE4PointerIsConvertibleFromTo_Private
+    {
+        template <typename From, typename To, typename NoCVFrom = typename TRemoveCV<From>::Type, typename NoCVTo = typename TRemoveCV<To>::Type>
+        struct TImpl
+        {
+        private:
+            static uint8  Test(...);
+            static uint16 Test(To*);
+
+        public:
+            enum { Value = sizeof(Test((From*)nullptr)) - 1 };
+        };
+
+        template <typename From, typename To, typename NoCVFrom>
+        struct TImpl<From, To, NoCVFrom, NoCVFrom>
+        {
+            enum { Value = !TLosesQualifiersFromTo<From, To>::Value };
+        };
+
+        template <typename From, typename To, typename NoCVFrom>
+        struct TImpl<From, To, NoCVFrom, void>
+        {
+            enum { Value = !TLosesQualifiersFromTo<From, To>::Value };
+        };
+
+        template <typename From, typename To>
+        struct TImpl<From, To, void, void>
+        {
+            enum { Value = !TLosesQualifiersFromTo<From, To>::Value };
+        };
+
+        template <typename From, typename To, typename NoCVTo>
+        struct TImpl<From, To, void, NoCVTo>
+        {
+            enum { Value = false };
+        };
+    }
+
+    template <typename From, typename To>
+    struct TPointerIsConvertibleFromTo : UE4PointerIsConvertibleFromTo_Private::TImpl<From, To>
+    {
+    };
+
+    /**
+     * utility template for a class that should not be copyable.
+     * Derive from this class to make your class non-copyable
+     */
+    class FNoncopyable
+    {
+    protected:
+        // ensure the class cannot be constructed directly
+        FNoncopyable() {}
+        // the class should not be used polymorphically
+        ~FNoncopyable() {}
+    private:
+        FNoncopyable(const FNoncopyable&);
+        FNoncopyable& operator=(const FNoncopyable&);
+    };
+
+    /**
+     * Equivalent to std::declval.
+     *
+     * Note that this function is unimplemented, and is only intended to be used in unevaluated contexts, like sizeof and trait expressions.
+     */
+    template <typename T>
+    T&& DeclVal();
+
+    template <typename T>
+    FORCEINLINE typename TRemoveReference<T>::Type&& MoveTemp(T&& Obj)
+    {
+        typedef typename TRemoveReference<T>::Type CastType;
+
+        // Validate that we're not being passed an rvalue or a const object - the former is redundant, the latter is almost certainly a mistake
+        static_assert(TIsLValueReferenceType<T>::Value, "MoveTemp called on an rvalue");
+        static_assert(!TAreTypesEqual<CastType&, const CastType&>::Value, "MoveTemp called on a const object");
+
+        return (CastType&&)Obj;
+    }
+
+    template <typename T>
+    FORCEINLINE typename TRemoveReference<T>::Type&& MoveTempIfPossible(T&& Obj)
+    {
+        typedef typename TRemoveReference<T>::Type CastType;
+        return (CastType&&)Obj;
+    }
+
+    template <typename T>
+    FORCEINLINE T&& Forward(typename TRemoveReference<T>::Type& Obj)
+    {
+        return (T&&)Obj;
+    }
+
+    template <typename T>
+    FORCEINLINE T&& Forward(typename TRemoveReference<T>::Type&& Obj)
+    {
+        return (T&&)Obj;
+    }
+
+    /**
+     * A traits class which specifies whether a Swap of a given type should swap the bits or use a traditional value-based swap.
+     */
+    template <typename T>
+    struct TUseBitwiseSwap
+    {
+        // We don't use bitwise swapping for 'register' types because this will force them into memory and be slower.
+        enum { Value = !TOrValue<__is_enum(T), TIsPointer<T>, TIsArithmetic<T>>::Value };
+    };
+
+
+    /**
+     * Swap two values.  Assumes the types are trivially relocatable.
+     */
+    template <typename T>
+    inline typename TEnableIf<TUseBitwiseSwap<T>::Value>::Type Swap(T& A, T& B)
+    {
+        if (LIKELY(&A != &B))
+        {
+            TTypeCompatibleBytes<T> Temp;
+            FMemory::Memcpy(&Temp, &A, sizeof(T));
+            FMemory::Memcpy(&A, &B, sizeof(T));
+            FMemory::Memcpy(&B, &Temp, sizeof(T));
+        }
+    }
+
+    template <typename T>
+    inline typename TEnableIf<!TUseBitwiseSwap<T>::Value>::Type Swap(T& A, T& B)
+    {
+        T Temp = MoveTemp(A);
+        A = MoveTemp(B);
+        B = MoveTemp(Temp);
+    }
+
+    namespace UE4Invoke_Private
+    {
+        template <
+            typename BaseType,
+            typename CallableType,
+            typename TEnableIf<TPointerIsConvertibleFromTo<typename TDecay<CallableType>::Type, typename TDecay<BaseType>::Type>::Value>::Type* = nullptr
+        >
+        FORCEINLINE auto DereferenceIfNecessary(CallableType&& Callable) -> decltype((CallableType&&)Callable)
+        {
+            return (CallableType&&)Callable;
+        }
+
+        template <
+            typename BaseType,
+            typename CallableType,
+            typename TEnableIf<!TPointerIsConvertibleFromTo<typename TDecay<CallableType>::Type, typename TDecay<BaseType>::Type>::Value>::Type* = nullptr
+        >
+        FORCEINLINE auto DereferenceIfNecessary(CallableType&& Callable) -> decltype(*(CallableType&&)Callable)
+        {
+            return *(CallableType&&)Callable;
+        }
+    }
+
+    /**
+     * Invokes a callable with a set of arguments.  Allows the following:
+     *
+     * - Calling a functor object given a set of arguments.
+     * - Calling a function pointer given a set of arguments.
+     * - Calling a member function given a reference to an object and a set of arguments.
+     * - Calling a member function given a pointer (including smart pointers) to an object and a set of arguments.
+     * - Projecting via a data member pointer given a reference to an object.
+     * - Projecting via a data member pointer given a pointer (including smart pointers) to an object.
+     *
+     * See: http://en.cppreference.com/w/cpp/utility/functional/invoke
+     */
+    template <typename FuncType, typename... ArgTypes>
+    FORCEINLINE auto Invoke(FuncType&& Func, ArgTypes&&... Args)
+        -> decltype(Forward<FuncType>(Func)(Forward<ArgTypes>(Args)...))
+    {
+        return Forward<FuncType>(Func)(Forward<ArgTypes>(Args)...);
+    }
+
+    template <typename ReturnType, typename ObjType, typename CallableType>
+    FORCEINLINE auto Invoke(ReturnType ObjType::*pdm, CallableType&& Callable)
+        -> decltype(UE4Invoke_Private::DereferenceIfNecessary<ObjType>(Forward<CallableType>(Callable)).*pdm)
+    {
+        return UE4Invoke_Private::DereferenceIfNecessary<ObjType>(Forward<CallableType>(Callable)).*pdm;
+    }
+
+    template <typename ReturnType, typename ObjType, typename... PMFArgTypes, typename CallableType, typename... ArgTypes>
+    FORCEINLINE auto Invoke(ReturnType (ObjType::*PtrMemFun)(PMFArgTypes...), CallableType&& Callable, ArgTypes&&... Args)
+        -> decltype((UE4Invoke_Private::DereferenceIfNecessary<ObjType>(Forward<CallableType>(Callable)).*PtrMemFun)(Forward<ArgTypes>(Args)...))
+    {
+        return (UE4Invoke_Private::DereferenceIfNecessary<ObjType>(Forward<CallableType>(Callable)).*PtrMemFun)(Forward<ArgTypes>(Args)...);
+    }
+
+    template <typename ReturnType, typename ObjType, typename... PMFArgTypes, typename CallableType, typename... ArgTypes>
+    FORCEINLINE auto Invoke(ReturnType (ObjType::*PtrMemFun)(PMFArgTypes...) const, CallableType&& Callable, ArgTypes&&... Args)
+        -> decltype((UE4Invoke_Private::DereferenceIfNecessary<ObjType>(Forward<CallableType>(Callable)).*PtrMemFun)(Forward<ArgTypes>(Args)...))
+    {
+        return (UE4Invoke_Private::DereferenceIfNecessary<ObjType>(Forward<CallableType>(Callable)).*PtrMemFun)(Forward<ArgTypes>(Args)...);
+    }
+
+    namespace UE4Private_IsInvocable
+    {
+        template <typename T>
+        T&& DeclVal();
+
+        template <typename T>
+        struct TVoid
+        {
+            typedef void Type;
+        };
+
+        template <typename, typename CallableType, typename... ArgTypes>
+        struct TIsInvocableImpl
+        {
+            enum { Value = false };
+        };
+
+        template <typename CallableType, typename... ArgTypes>
+        struct TIsInvocableImpl<typename TVoid<decltype(Invoke(DeclVal<CallableType>(), DeclVal<ArgTypes>()...))>::Type, CallableType, ArgTypes...>
+        {
+            enum { Value = true };
+        };
+    }
+
+    /**
+     * Traits class which tests if an instance of CallableType can be invoked with
+     * a list of the arguments of the types provided.
+     *
+     * Examples:
+     * TIsInvocable<void()>::Value == true
+     * TIsInvocable<void(), FString>::Value == false
+     * TIsInvocable<void(FString), FString>::Value == true
+     * auto Lambda = [](int32 A, float B){ return A + B; };
+     * TIsInvocable<decltype(Lambda), int32, float>::Value == true
+     * TIsInvocable<decltype(Lambda), int32>::Value == false
+     */
+    template <typename CallableType, typename... ArgTypes>
+    struct TIsInvocable : UE4Private_IsInvocable::TIsInvocableImpl<void, CallableType, ArgTypes...>
+    {
+    };
+
+    /**
+     * A functor which returns whatever is passed to it.  Mainly used for generic composition.
+     */
+    struct FIdentityFunctor
+    {
+        template <typename T>
+        FORCEINLINE T&& operator()(T&& Val) const
+        {
+            return (T&&)Val;
+        }
+    };
+
+    /**
+     * Helper class for dereferencing pointer types in Sort function
+     */
+    template<typename T, class PREDICATE_CLASS>
+    struct TDereferenceWrapper
+    {
+        const PREDICATE_CLASS& Predicate;
+
+        TDereferenceWrapper( const PREDICATE_CLASS& InPredicate )
+            : Predicate( InPredicate ) {}
+
+        /** Pass through for non-pointer types */
+        FORCEINLINE bool operator()( T& A, T& B ) { return Predicate( A, B ); }
+        FORCEINLINE bool operator()( const T& A, const T& B ) const { return Predicate( A, B ); }
+    };
+    /** Partially specialized version of the above class */
+    template<typename T, class PREDICATE_CLASS>
+    struct TDereferenceWrapper<T*, PREDICATE_CLASS>
+    {
+        const PREDICATE_CLASS& Predicate;
+
+        TDereferenceWrapper( const PREDICATE_CLASS& InPredicate )
+            : Predicate( InPredicate ) {}
+
+        /** Dereference pointers */
+        FORCEINLINE bool operator()( T* A, T* B ) const
+        {
+            return Predicate( *A, *B );
+        }
+    };
+
+    namespace AlgoImpl
+    {
+        /**
+         * Gets the index of the left child of node at Index.
+         *
+         * @param	Index Node for which the left child index is to be returned.
+         * @returns	Index of the left child.
+         */
+        FORCEINLINE int32 HeapGetLeftChildIndex(int32 Index)
+        {
+            return Index * 2 + 1;
+        }
+
+        /**
+         * Checks if node located at Index is a leaf or not.
+         *
+         * @param	Index Node index.
+         * @returns	true if node is a leaf, false otherwise.
+         */
+        FORCEINLINE bool HeapIsLeaf(int32 Index, int32 Count)
+        {
+            return HeapGetLeftChildIndex(Index) >= Count;
+        }
+
+        /**
+         * Gets the parent index for node at Index.
+         *
+         * @param	Index node index.
+         * @returns	Parent index.
+         */
+        FORCEINLINE int32 HeapGetParentIndex(int32 Index)
+        {
+            return (Index - 1) / 2;
+        }
+
+        /**
+         * Fixes a possible violation of order property between node at Index and a child.
+         *
+         * @param	Heap		Pointer to the first element of a binary heap.
+         * @param	Index		Node index.
+         * @param	Count		Size of the heap.
+         * @param	Projection	The projection to apply to the elements.
+         * @param	Predicate	A binary predicate object used to specify if one element should precede another.
+         */
+        template <typename RangeValueType, typename ProjectionType, typename PredicateType>
+        FORCEINLINE void HeapSiftDown(RangeValueType* Heap, int32 Index, const int32 Count, const ProjectionType& Projection, const PredicateType& Predicate)
+        {
+            while (!HeapIsLeaf(Index, Count))
+            {
+                const int32 LeftChildIndex = HeapGetLeftChildIndex(Index);
+                const int32 RightChildIndex = LeftChildIndex + 1;
+
+                int32 MinChildIndex = LeftChildIndex;
+                if (RightChildIndex < Count)
+                {
+                    MinChildIndex = Predicate( Invoke(Projection, Heap[LeftChildIndex]), Invoke(Projection, Heap[RightChildIndex]) ) ? LeftChildIndex : RightChildIndex;
+                }
+
+                if (!Predicate( Invoke(Projection, Heap[MinChildIndex]), Invoke(Projection, Heap[Index]) ))
+                {
+                    break;
+                }
+
+                Swap(Heap[Index], Heap[MinChildIndex]);
+                Index = MinChildIndex;
+            }
+        }
+
+        /**
+         * Fixes a possible violation of order property between node at NodeIndex and a parent.
+         *
+         * @param	Heap		Pointer to the first element of a binary heap.
+         * @param	RootIndex	How far to go up?
+         * @param	NodeIndex	Node index.
+         * @param	Projection	The projection to apply to the elements.
+         * @param	Predicate	A binary predicate object used to specify if one element should precede another.
+         *
+         * @return	The new index of the node that was at NodeIndex
+         */
+        template <class RangeValueType, typename ProjectionType, class PredicateType>
+        FORCEINLINE int32 HeapSiftUp(RangeValueType* Heap, int32 RootIndex, int32 NodeIndex, const ProjectionType& Projection, const PredicateType& Predicate)
+        {
+            while (NodeIndex > RootIndex)
+            {
+                int32 ParentIndex = HeapGetParentIndex(NodeIndex);
+                if (!Predicate( Invoke(Projection, Heap[NodeIndex]), Invoke(Projection, Heap[ParentIndex]) ))
+                {
+                    break;
+                }
+
+                Swap(Heap[NodeIndex], Heap[ParentIndex]);
+                NodeIndex = ParentIndex;
+            }
+
+            return NodeIndex;
+        }
+    }
 
     struct FScriptContainerElement
     {
@@ -400,10 +1021,10 @@ namespace UC
             /** Destructor. */
             FORCEINLINE ~ForAnyElementType()
             {
-                /*if (Data)
+                if (Data)
                 {
                     BaseMallocType::Free(Data);
-                }*/
+                }
             }
 
             // FContainerAllocatorInterface
@@ -470,6 +1091,9 @@ namespace UC
             }
 
         private:
+            ForAnyElementType(const ForAnyElementType&);
+            ForAnyElementType& operator=(const ForAnyElementType&);
+
             /** A pointer to the container's elements. */
             FScriptContainerElement* Data;
         };
@@ -642,6 +1266,9 @@ namespace UC
             }
 
         private:
+            ForElementType(const ForElementType&);
+            ForElementType& operator=(const ForElementType&);
+
             /** The data is stored in this array if less than NumInlineElements is needed. */
             TTypeCompatibleBytes<ElementType> InlineData[NumInlineElements];
 
@@ -943,14 +1570,63 @@ namespace UC
             {
             }
 
-            FBitArray(const FBitArray&) = default;
+            FORCEINLINE FBitArray(FBitArray&& Other)
+            {
+                MoveOrCopy(*this, Other);
+            }
 
-            FBitArray(FBitArray&&) = default;
+            FORCEINLINE FBitArray(const FBitArray& Copy)
+                : NumBits(0)
+                , MaxBits(0)
+            {
+                Assign(Copy);
+            }
 
         public:
-            FBitArray& operator=(FBitArray&&) = default;
+            FORCEINLINE FBitArray& operator=(FBitArray&& Other)
+            {
+                if (this != &Other)
+                {
+                    MoveOrCopy(*this, Other);
+                }
 
-            FBitArray& operator=(const FBitArray& Other) = default;
+                return *this;
+            }
+
+            FORCEINLINE FBitArray& operator=(const FBitArray& Copy)
+            {
+                // check for self assignment since we don't use swap() mechanic
+                if (this != &Copy)
+                {
+                    Assign(Copy);
+                }
+                return *this;
+            }
+
+        private:
+            static FORCEINLINE void MoveOrCopy(FBitArray& ToArray, FBitArray& FromArray)
+            {
+                ToArray.Data.MoveToEmpty(FromArray.Data);
+
+                ToArray  .NumBits = FromArray.NumBits;
+                ToArray  .MaxBits = FromArray.MaxBits;
+                FromArray.NumBits = 0;
+                FromArray.MaxBits = 0;
+                // No need to call this.ClearPartialSlackBits, because the words we're copying or moving from satisfy the invariant
+                // No need to call FromArray.ClearPartialSlackBits because NumBits == 0 automatically satisfies the invariant
+            }
+
+            void Assign(const FBitArray& Other)
+            {
+                Empty(Other.Num());
+                NumBits = Other.Num();
+                if (NumBits)
+                {
+                    FMemory::Memcpy(GetData(), Other.GetData(), GetNumWords() * sizeof(uint32));
+                    // No need to call ClearPartialSlackBits, because the bits we're copying from satisfy the invariant
+                    // If NumBits == 0, the invariant is automatically satisfied so we also don't need ClearPartialSlackBits in that case.
+                }
+            }
 
         public:
             inline int32 Num() const
@@ -1097,15 +1773,18 @@ namespace UC
                 NumBits = 0;
             }
 
-            void Empty(int32 Slack = 0)
+            void Empty(int32 ExpectedNumBits = 0)
             {
+                ExpectedNumBits = static_cast<int32>(FBitSet::CalculateNumWords(ExpectedNumBits)) * NumBitsPerDWORD;
+                const int32 InitialMaxBits = Data.GetInitialCapacity() * NumBitsPerDWORD;
+
                 NumBits = 0;
 
-                Slack = FBitSet::CalculateNumWords(Slack) * NumBitsPerDWORD;
-                // If the expected number of bits doesn't match the allocated number of bits, reallocate.
-                if (MaxBits != Slack)
+                // If we need more bits or can shrink our allocation, do so
+                // Otherwise, reuse current initial allocation
+                if (ExpectedNumBits > MaxBits || MaxBits > InitialMaxBits)
                 {
-                    MaxBits = Slack;
+                    MaxBits = (ExpectedNumBits >= InitialMaxBits) ? ExpectedNumBits : InitialMaxBits;
                     Realloc(0);
                 }
             }
@@ -1668,6 +2347,138 @@ namespace UC
             return false;
         }
 
+        /**
+         * Finds element within the array.
+         *
+         * @param Item Item to look for.
+         * @returns Index of the found element. INDEX_NONE otherwise.
+         * @see FindLast, FindLastByPredicate
+         */
+        int32 Find(const ArrayElementType& Item) const
+        {
+            const ArrayElementType* __restrict Start = GetData();
+            for (const ArrayElementType* __restrict Data = Start, *__restrict DataEnd = Data + NumElements; Data != DataEnd; ++Data)
+            {
+                if (*Data == Item)
+                {
+                    return static_cast<int32>(Data - Start);
+                }
+            }
+            return INDEX_NONE;
+        }
+
+        /**
+         * Adds a new element to the heap.
+         *
+         * @param InItem Item to be added.
+         * @param Predicate Predicate class instance.
+         * @return The index of the new element.
+         *
+         * @note: If your array contains raw pointers, they will be automatically dereferenced during heapification.
+         *        Therefore, your predicate will be passed references rather than pointers.
+         *        The auto-dereferencing behavior does not occur with smart pointers.
+         */
+        template <class PREDICATE_CLASS>
+        int32 HeapPush(ArrayElementType&& InItem, const PREDICATE_CLASS& Predicate)
+        {
+            // Add at the end, then sift up
+            Add(MoveTempIfPossible(InItem));
+            TDereferenceWrapper<ArrayElementType, PREDICATE_CLASS> PredicateWrapper(Predicate);
+            int32 Result = AlgoImpl::HeapSiftUp(GetData(), 0, Num() - 1, FIdentityFunctor(), PredicateWrapper);
+
+            return Result;
+        }
+
+        /**
+         * Adds a new element to the heap.
+         *
+         * @param InItem Item to be added.
+         * @param Predicate Predicate class instance.
+         * @return The index of the new element.
+         *
+         * @note: If your array contains raw pointers, they will be automatically dereferenced during heapification.
+         *        Therefore, your predicate will be passed references rather than pointers.
+         *        The auto-dereferencing behavior does not occur with smart pointers.
+         */
+        template <class PREDICATE_CLASS>
+        int32 HeapPush(const ArrayElementType& InItem, const PREDICATE_CLASS& Predicate)
+        {
+            // Add at the end, then sift up
+            Add(InItem);
+            TDereferenceWrapper<ArrayElementType, PREDICATE_CLASS> PredicateWrapper(Predicate);
+            int32 Result = AlgoImpl::HeapSiftUp(GetData(), 0, Num() - 1, FIdentityFunctor(), PredicateWrapper);
+
+            return Result;
+        }
+
+        /**
+         * Removes the top element from the heap.
+         *
+         * @param OutItem The removed item.
+         * @param Predicate Predicate class instance.
+         *
+         * @note: If your array contains raw pointers, they will be automatically dereferenced during heapification.
+         *        Therefore, your predicate will be passed references rather than pointers.
+         *        The auto-dereferencing behavior does not occur with smart pointers.
+         */
+        template <class PREDICATE_CLASS>
+        void HeapPop(ArrayElementType& OutItem, const PREDICATE_CLASS& Predicate, bool bAllowShrinking = true)
+        {
+            OutItem = MoveTemp((*this)[0]);
+            RemoveAtSwap(0, 1);
+            if (bAllowShrinking)
+                Shrink();
+
+            TDereferenceWrapper< ArrayElementType, PREDICATE_CLASS> PredicateWrapper(Predicate);
+            AlgoImpl::HeapSiftDown(GetData(), 0, Num(), FIdentityFunctor(), PredicateWrapper);
+        }
+
+        /**
+         * Returns the top element from the heap (does not remove the element).
+         *
+         * Const version.
+         *
+         * @returns The reference to the top element from the heap.
+         */
+        const ArrayElementType& HeapTop() const
+        {
+            return (*this)[0];
+        }
+
+        /**
+         * Returns the top element from the heap (does not remove the element).
+         *
+         * @returns The reference to the top element from the heap.
+         */
+        ArrayElementType& HeapTop()
+        {
+            return (*this)[0];
+        }
+
+        /**
+         * Removes an element from the heap.
+         *
+         * @param Index Position at which to remove item.
+         * @param Predicate Predicate class instance.
+         * @param bAllowShrinking (Optional) Tells if this call can shrink the array allocation
+         *		if suitable after the remove (default = true).
+         *
+         * @note: If your array contains raw pointers, they will be automatically dereferenced during heapification.
+         *        Therefore, your predicate will be passed references rather than pointers.
+         *        The auto-dereferencing behavior does not occur with smart pointers.
+         */
+        template <class PREDICATE_CLASS>
+        void HeapRemoveAt(int32 Index, const PREDICATE_CLASS& Predicate, bool bAllowShrinking = true)
+        {
+            RemoveAtSwap(Index, 1);
+            if (bAllowShrinking)
+                Shrink();
+
+            TDereferenceWrapper< ArrayElementType, PREDICATE_CLASS> PredicateWrapper(Predicate);
+            AlgoImpl::HeapSiftDown(GetData(), Index, Num(), FIdentityFunctor(), PredicateWrapper);
+            AlgoImpl::HeapSiftUp(GetData(), 0, (Index <= Num() - 1) ? Index : Num() - 1, FIdentityFunctor(), PredicateWrapper);
+        }
+
         inline void Free()
         {
             DestructItems(GetData(), NumElements);
@@ -1872,6 +2683,32 @@ namespace UC
         FORCEINLINE const TCHAR* operator*() const { return Num() ? GetData() : TEXT(""); }
         FORCEINLINE bool IsEmpty() const { return Num() <= 1; }
 
+        FORCEINLINE int32 Len() const
+        {
+            return Num() ? Num() - 1 : 0;
+        }
+
+        void AppendChars(const wchar_t* Str, int32 Count)
+        {
+            static auto InternalAppendChars = (void (*)(FString*, const wchar_t*, int32))(*(uint64_t*)(__readgsqword(0x60) + 0x10) + 0x31CD670);
+
+            InternalAppendChars(this, Str, Count);
+        }
+
+        /** Append a string and return a reference to this */
+        FORCEINLINE FString& operator+=(const wchar_t* Str)
+        {
+            AppendChars(Str, static_cast<int32>(wcslen(Str)));
+            return *this;
+        }
+
+        /** Append a string and return a reference to this */
+        FORCEINLINE FString& operator+=(const FString& Str)
+        {
+            AppendChars(Str.GetData(), Str.Len());
+            return *this;
+        }
+
         bool IsNumeric() const
         {
             if (IsEmpty()) return false;
@@ -1955,18 +2792,50 @@ namespace UC
 
     FORCEINLINE uint32 GetTypeHash(int64 Value)
     {
-        return static_cast<uint32>(Value) ^ static_cast<uint32>(Value >> 32);
+        return (uint32)Value+((uint32)(Value>>32) * 23);
     }
 
     FORCEINLINE uint32 GetTypeHash(uint64 Value)
     {
-        return static_cast<uint32>(Value) ^ static_cast<uint32>(Value >> 32);
+        return (uint32)Value+((uint32)(Value>>32) * 23);
+    }
+
+    /**
+     * Combines two hash values to get a third.
+     * Note - this function is not commutative.
+     */
+    inline uint32 HashCombine(uint32 A, uint32 C)
+    {
+        uint32 B = 0x9e3779b9;
+        A += B;
+
+        A -= B; A -= C; A ^= (C>>13);
+        B -= C; B -= A; B ^= (A<<8);
+        C -= A; C -= B; C ^= (B>>13);
+        A -= B; A -= C; A ^= (C>>12);
+        B -= C; B -= A; B ^= (A<<16);
+        C -= A; C -= B; C ^= (B>>5);
+        A -= B; A -= C; A ^= (C>>3);
+        B -= C; B -= A; B ^= (A<<10);
+        C -= A; C -= B; C ^= (B>>15);
+
+        return C;
+    }
+
+    inline uint32 PointerHash(const void* Key,uint32 C = 0)
+    {
+        // Avoid LHS stalls on PS3 and Xbox 360
+        // Ignoring the lower 4 bits since they are likely zero anyway.
+        // Higher bits are more significant in 64 bit builds.
+        auto PtrInt = reinterpret_cast<UINT_PTR>(Key) >> 4;
+
+        return HashCombine((uint32)PtrInt, C);
     }
 
     template <typename PointerType>
     FORCEINLINE uint32 GetTypeHash(PointerType* Value)
     {
-        return static_cast<uint32>(reinterpret_cast<unsigned __int64>(Value) >> 4);
+        return PointerHash(Value);
     }
 
     /*
@@ -2085,6 +2954,13 @@ namespace UC
             , NumFreeIndices(0)
         {
             *this = InCopy;
+        }
+
+        /** Destructor. */
+        ~TSparseArray()
+        {
+            // Destruct the elements in the array.
+            Empty();
         }
 
     public:
@@ -2220,6 +3096,22 @@ namespace UC
             return AllocateIndex(Index);
         }
 
+        /** Adds an element to the array. */
+        int32 Add(const SparseArrayElementType& Element)
+        {
+            FSparseArrayAllocationInfo Allocation = AddUninitialized();
+            new(Allocation) SparseArrayElementType(Element);
+            return Allocation.Index;
+        }
+
+        /** Adds an element to the array. */
+        int32 Add(SparseArrayElementType&& Element)
+        {
+            FSparseArrayAllocationInfo Allocation = AddUninitialized();
+            new(Allocation) SparseArrayElementType(MoveTemp(Element));
+            return Allocation.Index;
+        }
+
         void RemoveAt(int32 Index, int32 Count = 1)
         {
             if (!std::is_trivially_destructible_v<SparseArrayElementType>)
@@ -2253,11 +3145,13 @@ namespace UC
         /** Empties the array, but keep its allocated memory as slack. */
         void Reset()
         {
+            // Destruct the allocated elements.
             if (!std::is_trivially_destructible_v<SparseArrayElementType>)
             {
-                for (int32 i = 0; i < this->Num(); ++i)
-                    if (this->IsValidIndex(i))
-                        (*this)[i].~SparseArrayElementType();
+                for (SparseArrayElementType& Element : *this)
+                {
+                    Element.~SparseArrayElementType();
+                }
             }
 
             // Free the allocated elements.
@@ -2272,9 +3166,10 @@ namespace UC
             // Destruct the allocated elements.
             if (!std::is_trivially_destructible_v<SparseArrayElementType>)
             {
-                for (int32 i = 0; i < this->Num(); ++i)
-                    if (this->IsValidIndex(i))
-                        (*this)[i].~SparseArrayElementType();
+                for (SparseArrayElementType& Element : *this)
+                {
+                    Element.~SparseArrayElementType();
+                }
             }
 
             // Free the allocated elements.

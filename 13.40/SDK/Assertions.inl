@@ -1227,7 +1227,6 @@ static_assert(offsetof(FRawDistributionFloat, Distribution) == 0x000028, "Member
 #define DUMPER7_ASSERTS_FTimerHandle \
 static_assert(alignof(FTimerHandle) == 0x000008, "Wrong alignment on FTimerHandle"); \
 static_assert(sizeof(FTimerHandle) == 0x000008, "Wrong size on FTimerHandle"); \
-static_assert(offsetof(FTimerHandle, Handle) == 0x000000, "Member 'FTimerHandle::Handle' has a wrong offset!"); \
 
 #define DUMPER7_ASSERTS_FBranchFilter \
 static_assert(alignof(FBranchFilter) == 0x000004, "Wrong alignment on FBranchFilter"); \

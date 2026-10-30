@@ -137,8 +137,21 @@ public:
 	virtual bool CanBeUsedOnAnyThread() const { return false; }
 	virtual bool CanBeUsedOnMultipleThreads() const { return false; }
 
+	template <typename FmtType, typename... Types>
+	FORCEINLINE void Logf(const FmtType& Fmt, Types... Args)
+	{
+		LogfImpl(Fmt, Args...);
+	}
+
 	bool bSuppressEventTag = false;
 	bool bAutoEmitLineTerminator = true;
+
+private:
+	template <typename... Types>
+	void LogfImpl(const TCHAR* Fmt, Types... Args)
+	{
+		UE4Logging_Private::GameFunction<void(*)(FOutputDevice*, const TCHAR*, ...)>(0x32DE4B0)(this, Fmt, Args...);
+	}
 };
 
 struct FOutputDeviceHelper

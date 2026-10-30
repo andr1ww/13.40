@@ -178,6 +178,15 @@
     <ClInclude Include="Runtime\Headers\Hotfix\OnlineHotfixManager.h" />
     <ClInclude Include="Runtime\Headers\OnlineSubsystemUtils\OnlineBeaconClient.h" />
     <ClInclude Include="Runtime\Headers\Engine\TickTaskManager.h" />
+    <ClInclude Include="Core\Headers\CoreMinimal.h" />
+    <ClInclude Include="Core\Headers\Templates\Function.h" />
+    <ClInclude Include="Core\Headers\Stats\Stats.h" />
+    <ClInclude Include="Core\Headers\ProfilingDebugging\CsvProfiler.h" />
+    <ClInclude Include="Core\Headers\HAL\PlatformStackWalk.h" />
+    <ClInclude Include="Core\Headers\Misc\CoreDelegates.h" />
+    <ClInclude Include="Core\Headers\UObject\Object.h" />
+    <ClInclude Include="Runtime\Headers\Engine\EngineTypes.h" />
+    <ClInclude Include="Runtime\Headers\Engine\TimerManager.h" />
     <ClInclude Include="Runtime\Headers\Engine\Components\SkeletalMeshComponent.h" />
     <ClInclude Include="Runtime\Headers\Engine\Particles\Emitter.h" />
     <ClInclude Include="Runtime\Headers\Engine\Particles\ParticleComponents.h" />
@@ -244,6 +253,7 @@
     <ClCompile Include="Runtime\Source\Hotfix\OnlineHotfixManager.cpp" />
     <ClCompile Include="Runtime\Source\OnlineSubsystemUtils\OnlineBeaconClient.cpp" />
     <ClCompile Include="Runtime\Source\Engine\TickTaskManager.cpp" />
+    <ClCompile Include="Runtime\Source\Engine\TimerManager.cpp" />
     <ClCompile Include="Runtime\Source\Engine\Components\SkeletalMeshComponent.cpp" />
     <ClCompile Include="Runtime\Source\Engine\Particles\Emitter.cpp" />
     <ClCompile Include="Runtime\Source\Engine\Particles\ParticleComponents.cpp" />

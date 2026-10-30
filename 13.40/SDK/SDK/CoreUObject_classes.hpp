@@ -80,6 +80,18 @@ public:
 		InSDKUtils::CallGameFunction(InSDKUtils::GetVirtualFunction<void(*)(const UObject*, class UFunction*, void*)>(this, Offsets::ProcessEventIdx), this, Function, Parms);
 	}
 
+	class UFunction* FindFunctionChecked(class FName InName) const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UFunction*(*)(const UObject*, class FName)>(InSDKUtils::GetImageBase() + 0x351D5A0), this, InName);
+	}
+
+	FString GetPathName(const UObject* StopOuter = nullptr) const
+	{
+		FString Result;
+		InSDKUtils::CallGameFunction(reinterpret_cast<FString*(*)(const UObject*, FString*, const UObject*)>(InSDKUtils::GetImageBase() + 0x351FF80), this, &Result, StopOuter);
+		return Result;
+	}
+
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("Object")

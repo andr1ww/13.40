@@ -15,6 +15,8 @@
 #include "InputCore_structs.hpp"
 #include "PhysicsCore_structs.hpp"
 
+class __single_inheritance FTimerManager;
+struct FTimerHeapOrder;
 
 SDK_NAMESPACE_START
 
@@ -5650,35 +5652,75 @@ DUMPER7_ASSERTS_FRawDistributionFloat;
 
 // ScriptStruct Engine.TimerHandle
 // 0x0008 (0x0008 - 0x0000)
-struct FTimerHandle final
+struct FTimerHandle
 {
-public:
-	uint64                                        Handle;                                            // 0x0000(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	friend class ::FTimerManager;
+	friend struct ::FTimerHeapOrder;
 
-public:
+	FTimerHandle()
+	: Handle(0)
+	{
+	}
+
+	/** True if this handle was ever initialized by the timer manager */
+	bool IsValid() const
+	{
+		return Handle != 0;
+	}
+
+	/** Explicitly clear handle */
 	void Invalidate()
 	{
 		Handle = 0;
 	}
+
+	bool operator==(const FTimerHandle& Other) const
+	{
+		return Handle == Other.Handle;
+	}
+
+	bool operator!=(const FTimerHandle& Other) const
+	{
+		return Handle != Other.Handle;
+	}
+
+	FString ToString() const
+	{
+		return FString::Printf(TEXT("%ull"), Handle);
+	}
+
+private:
+	static const uint32 IndexBits        = 24;
+	static const uint32 SerialNumberBits = 40;
+
+	static_assert(IndexBits + SerialNumberBits == 64, "The space for the timer index and serial number should total 64 bits");
+
+	static const int32  MaxIndex        = (int32)1 << IndexBits;
+	static const uint64 MaxSerialNumber = (uint64)1 << SerialNumberBits;
+
+	void SetIndexAndSerialNumber(int32 Index, uint64 SerialNumber)
+	{
+		Handle = (SerialNumber << IndexBits) | (uint64)(uint32)Index;
+	}
+
+	FORCEINLINE int32 GetIndex() const
+	{
+		return (int32)(Handle & (uint64)(MaxIndex - 1));
+	}
+
+	FORCEINLINE uint64 GetSerialNumber() const
+	{
+		return Handle >> IndexBits;
+	}
+
+	uint64 Handle;
+
+	friend uint32 GetTypeHash(const FTimerHandle& InHandle)
+	{
+		return UC::GetTypeHash(InHandle.Handle);
+	}
 };
 DUMPER7_ASSERTS_FTimerHandle;
-
-class FTimerManager final
-{
-public:
-	bool TimerExists(const struct FTimerHandle& InHandle)
-	{
-		return InSDKUtils::CallGameFunction(reinterpret_cast<void*(*)(FTimerManager*, const struct FTimerHandle*)>(InSDKUtils::GetImageBase() + 0x4D9E0B0), this, &InHandle) != nullptr;
-	}
-
-	void ClearTimer(struct FTimerHandle& InHandle)
-	{
-		if (TimerExists(InHandle))
-			InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FTimerManager*, struct FTimerHandle)>(InSDKUtils::GetImageBase() + 0x4DA2AB0), this, InHandle);
-
-		InHandle.Invalidate();
-	}
-};
 
 // ScriptStruct Engine.BranchFilter
 // 0x000C (0x000C - 0x0000)
@@ -13935,7 +13977,9 @@ public:
 struct FLevelCollection final
 {
 public:
-	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	ELevelCollectionType                          CollectionType;                                    // 0x0000(0x0001)(NOT AUTO-GENERATED PROPERTY)
+	bool                                          bIsVisible;                                        // 0x0001(0x0001)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AGameStateBase*                         GameState;                                         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UNetDriver*                             NetDriver;                                         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UDemoNetDriver*                         DemoNetDriver;                                     // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -13943,6 +13987,8 @@ public:
 	TSet<class ULevel*>                           Levels;                                            // 0x0028(0x0050)(NativeAccessSpecifierPrivate)
 
 public:
+	ELevelCollectionType GetType() const { return CollectionType; }
+
 	void SetNetDriver(class UNetDriver* const InNetDriver)
 	{
 		NetDriver = InNetDriver;

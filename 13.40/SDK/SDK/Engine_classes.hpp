@@ -731,9 +731,9 @@ public:
 	class USceneComponent* K2_GetRootComponent() const;
 	bool WasRecentlyRendered(float Tolerance) const;
 
-	class FTimerManager& GetWorldTimerManager() const
+	::FTimerManager& GetWorldTimerManager() const
 	{
-		return *InSDKUtils::CallGameFunction(reinterpret_cast<class FTimerManager*(*)(const AActor*)>(InSDKUtils::GetImageBase() + 0xB0AA40), this);
+		return *InSDKUtils::CallGameFunction(reinterpret_cast<::FTimerManager*(*)(const AActor*)>(InSDKUtils::GetImageBase() + 0xB0AA40), this);
 	}
 
 public:
@@ -3156,9 +3156,18 @@ public:
 	TArray<class ULocalPlayer*>                   LocalPlayers;                                      // 0x0038(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UOnlineSession*                         OnlineSession;                                     // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class UObject*>                        ReferencedObjects;                                 // 0x0050(0x0010)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_60[0x138];                                     // 0x0060(0x0138)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_60[0x60];                                      // 0x0060(0x0060)(Fixing Size After Last Property [ Dumper-7 ])
+	::FTimerManager*                              TimerManager;                                      // 0x00C0(0x0008)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_C8[0xD0];                                      // 0x00C8(0x00D0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
+	class UWorld* GetWorld() const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<class UWorld*(*)(const UGameInstance*)>(InSDKUtils::GetImageBase() + 0x49BD9E0), this);
+	}
+
+	inline ::FTimerManager& GetTimerManager() const { return *TimerManager; }
+
 	void DebugCreatePlayer(int32 ControllerId);
 	void DebugRemovePlayer(int32 ControllerId);
 	void HandleNetworkError(ENetworkFailure FailureType, bool bIsServer);
@@ -8203,7 +8212,9 @@ public:
 	uint8                                         Pad_1B8[0x70];                                     // 0x01B8(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UActorComponent*>                ComponentsThatNeedEndOfFrameUpdate;                // 0x0228(0x0010)(ExportObject, ZeroConstructor, Transient, NonTransactional, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UActorComponent*>                ComponentsThatNeedEndOfFrameUpdate_OnGameThread;   // 0x0238(0x0010)(ExportObject, ZeroConstructor, Transient, NonTransactional, ContainsInstancedReference, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_248[0x340];                                    // 0x0248(0x0340)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_248[0xE0];                                     // 0x0248(0x00E0)(Fixing Size After Last Property [ Dumper-7 ])
+	::FTimerManager*                              TimerManager;                                      // 0x0328(0x0008)(NOT AUTO-GENERATED PROPERTY)
+	uint8                                         Pad_330[0x258];                                    // 0x0330(0x0258)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWorldComposition*                      WorldComposition;                                  // 0x0588(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_590[0x88];                                     // 0x0590(0x0088)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FWorldPSCPool                          PSCPool;                                           // 0x0618(0x0058)(ContainsInstancedReference, NativeAccessSpecifierPrivate)
@@ -8220,6 +8231,22 @@ public:
 	struct FLevelCollection* FindCollectionByType(ELevelCollectionType InType)
 	{
 		return InSDKUtils::CallGameFunction(reinterpret_cast<struct FLevelCollection*(*)(UWorld*, ELevelCollectionType)>(InSDKUtils::GetImageBase() + 0x4E147B0), this, InType);
+	}
+
+	int32 FindCollectionIndexByType(const ELevelCollectionType InType) const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<int32(*)(const UWorld*, ELevelCollectionType)>(InSDKUtils::GetImageBase() + 0x4E147E0), this, InType);
+	}
+
+	const struct FLevelCollection* GetActiveLevelCollection() const
+	{
+		return InSDKUtils::CallGameFunction(reinterpret_cast<const struct FLevelCollection*(*)(const UWorld*)>(InSDKUtils::GetImageBase() + 0x4E15130), this);
+	}
+
+	/** Returns TimerManager instance for this world. */
+	inline ::FTimerManager& GetTimerManager() const
+	{
+		return (OwningGameInstance ? OwningGameInstance->GetTimerManager() : *TimerManager);
 	}
 
 	class AActor* SpawnActor(class UClass* Class, const struct FTransform& Transform, const struct FActorSpawnParameters& SpawnParameters = FActorSpawnParameters())

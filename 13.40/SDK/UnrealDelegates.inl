@@ -217,6 +217,32 @@ public:
 		return Instance ? Instance->GetHandle() : FDelegateHandle();
 	}
 
+	FORCEINLINE const void* GetObjectForTimerManager() const
+	{
+		IDelegateInstance* Ptr = GetDelegateInstanceProtected();
+
+		const void* Result = Ptr ? Ptr->GetObjectForTimerManager() : nullptr;
+		return Result;
+	}
+
+	/**
+	 * Returns the address of the method pointer which can be used to learn the address of the function that will be executed.
+	 * Returns nullptr if this delegate type does not directly invoke a function pointer.
+	 *
+	 * Note: Only intended to be used to aid debugging of delegates.
+	 *
+	 * @return The address of the function pointer that would be executed by this delegate
+	 */
+	uint64 GetBoundProgramCounterForTimerManager() const
+	{
+		if (IDelegateInstance* Ptr = GetDelegateInstanceProtected())
+		{
+			return Ptr->GetBoundProgramCounterForTimerManager();
+		}
+
+		return 0;
+	}
+
 	IDelegateInstance* GetDelegateInstanceProtected() const
 	{
 		return DelegateSize ? reinterpret_cast<IDelegateInstance*>(Allocation) : nullptr;
@@ -791,6 +817,10 @@ class TBaseDelegate<Ret(Args...)> : public FDelegateBase
 	using FDelegateInstanceInterface = IBaseDelegateInstance<Ret(Args...)>;
 
 public:
+	template <typename UserClass> struct TUObjectMethodDelegate       : TBaseUObjectMethodDelegateInstance<false, UserClass, Ret(Args...)> { typedef TBaseUObjectMethodDelegateInstance<false, UserClass, Ret(Args...)> Super; TUObjectMethodDelegate      (UserClass* InUserObject, typename Super::FMethodPtr InMethodPtr) : Super(InUserObject, InMethodPtr) {} };
+	template <typename UserClass> struct TUObjectMethodDelegate_Const : TBaseUObjectMethodDelegateInstance<true , UserClass, Ret(Args...)> { typedef TBaseUObjectMethodDelegateInstance<true , UserClass, Ret(Args...)> Super; TUObjectMethodDelegate_Const(UserClass* InUserObject, typename Super::FMethodPtr InMethodPtr) : Super(InUserObject, InMethodPtr) {} };
+
+public:
 	TBaseDelegate() = default;
 	TBaseDelegate(TBaseDelegate&&) = default;
 	TBaseDelegate& operator=(TBaseDelegate&&) = default;
@@ -1028,6 +1058,17 @@ private:
 		return static_cast<FDelegateInstanceInterface*>(GetDelegateInstanceProtected());
 	}
 };
+
+/**
+ * Declares a delegate that can only bind to one native function at a time
+ *
+ * @note: The last parameter is variadic and is used as the 'template args' for this delegate's classes (__VA_ARGS__)
+ * @note: To avoid issues with macro expansion breaking code navigation, make sure the type/class name macro params are unique across all of these macros
+ */
+#define FUNC_DECLARE_DELEGATE( DelegateName, ReturnType, ... ) \
+	typedef TBaseDelegate<ReturnType(__VA_ARGS__)> DelegateName;
+
+#define DECLARE_DELEGATE( DelegateName ) FUNC_DECLARE_DELEGATE( DelegateName, void )
 
 class FMulticastDelegateBase
 {
@@ -1365,9 +1406,25 @@ public:
 		DelegatePrivate::ProcessEvent(ObjectPtr, DelegatePrivate::FindFunction(ObjectPtr, FunctionName), Parameters);
 	}
 
-	bool operator==(const FScriptDelegate& Other) const
+	template <class UObjectTemplate>
+	void ProcessDelegate( void* Parameters ) const
 	{
-		return Object.ObjectIndex == Other.Object.ObjectIndex && Object.ObjectSerialNumber == Other.Object.ObjectSerialNumber && FunctionName == Other.FunctionName;
+		// Object was pending kill, so we cannot execute the delegate.  Note that it's important to assert
+		// here and not simply continue execution, as memory may be left uninitialized if the delegate is
+		// not able to execute, resulting in much harder-to-detect code errors.  Users should always make
+		// sure IsBound() returns true before calling ProcessDelegate()!
+		UObjectTemplate* ObjectPtr = static_cast< UObjectTemplate* >( Object.Get() );	// Down-cast
+
+		// Object *must* implement the specified function
+		UFunction* Function = ObjectPtr->FindFunctionChecked( FunctionName );
+
+		// Execute the delegate!
+		ObjectPtr->ProcessEvent(Function, Parameters);
+	}
+
+	FORCEINLINE bool operator==( const FScriptDelegate& Other ) const
+	{
+		return Object == Other.Object && FunctionName == Other.FunctionName;
 	}
 
 	bool operator!=(const FScriptDelegate& Other) const
