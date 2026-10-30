@@ -146,7 +146,7 @@ void FortPlayerPawn::ServerReviveFromDBNO_Implementation(AFortPlayerPawn* _this,
 
 			AFortPlayerControllerZone* FortPlayerController = Cast<AFortPlayerControllerZone>(_this->Controller);
 			if (FortPlayerController != NULL)
-				FortPlayerController->OnPawnRevived(EventInstigator);
+				FortPlayerController->ClientOnPawnRevived(EventInstigator);
 
 			if (EventInstigator != _this->Controller && EventInstigator != NULL)
 			{
