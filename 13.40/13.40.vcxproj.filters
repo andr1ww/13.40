@@ -96,10 +96,16 @@
     <ClInclude Include="Runtime\Headers\Athena\FortGameStateAthena.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Runtime\Headers\Athena\FortAthenaLivingWorldManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Runtime\Headers\Athena\FortVehicleManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClCompile Include="Runtime\Source\Athena\FortGameStateAthena.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Athena\FortAthenaLivingWorldManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Runtime\Source\Athena\FortVehicleManager.cpp">
@@ -429,6 +435,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\GameplayTags_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\LagerRuntime_functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\NavigationSystem_functions.cpp">

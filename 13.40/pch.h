@@ -38,6 +38,7 @@
 #include "SDK/SDK/McpProfileSys_classes.hpp"
 #include "SDK/SDK/EngineSettings_Classes.hpp"
 #include "SDK/SDK/GameplayTags_classes.hpp"
+#include "SDK/SDK/LagerRuntime_classes.hpp"
 #include "SDK/SDK/UACBase_classes.hpp"
 #include "SDK/SDK/OnlineSubsystem_structs.hpp"
 

@@ -204,6 +204,7 @@
     <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaBTTask_Interact.h" />
     <ClInclude Include="Runtime\Headers\Athena\AI\Systems\AthenaAIServiceLoot.h" />
     <ClInclude Include="Runtime\Headers\Athena\FortGameStateAthena.h" />
+    <ClInclude Include="Runtime\Headers\Athena\FortAthenaLivingWorldManager.h" />
     <ClInclude Include="Runtime\Headers\Athena\FortVehicleManager.h" />
     <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_Aircraft.h" />
     <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_IndicatedActorManagement.h" />
@@ -274,6 +275,7 @@
     <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaBTTask_Interact.cpp" />
     <ClCompile Include="Runtime\Source\Athena\AI\Systems\AthenaAIServiceLoot.cpp" />
     <ClCompile Include="Runtime\Source\Athena\FortGameStateAthena.cpp" />
+    <ClCompile Include="Runtime\Source\Athena\FortAthenaLivingWorldManager.cpp" />
     <ClCompile Include="Runtime\Source\Athena\FortVehicleManager.cpp" />
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp" />
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_IndicatedActorManagement.cpp" />
@@ -305,6 +307,7 @@
     <ClCompile Include="SDK\SDK\FortniteGame_functions.cpp" />
     <ClCompile Include="SDK\SDK\GameplayAbilities_functions.cpp" />
     <ClCompile Include="SDK\SDK\GameplayTags_functions.cpp" />
+    <ClCompile Include="SDK\SDK\LagerRuntime_functions.cpp" />
     <ClCompile Include="SDK\SDK\NavigationSystem_functions.cpp" />
     <ClCompile Include="ThirdParty\Hooking\hde64.cpp" />
     <ClCompile Include="ThirdParty\Hooking\Hooking.cpp" />
