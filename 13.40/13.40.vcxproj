@@ -206,6 +206,7 @@
     <ClInclude Include="Runtime\Headers\Athena\FortGameStateAthena.h" />
     <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_Aircraft.h" />
     <ClInclude Include="Runtime\Headers\Components\FortControllerComponent_IndicatedActorManagement.h" />
+    <ClInclude Include="Runtime\Headers\Components\FortHeldObjectComponent.h" />
     <ClInclude Include="Runtime\Headers\Actors\BuildingActor.h" />
     <ClInclude Include="Runtime\Headers\Player\FortPlayerController.h" />
     <ClInclude Include="Runtime\Headers\Items\FortLootTier.h" />
@@ -274,6 +275,7 @@
     <ClCompile Include="Runtime\Source\Athena\FortGameStateAthena.cpp" />
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_Aircraft.cpp" />
     <ClCompile Include="Runtime\Source\Components\FortControllerComponent_IndicatedActorManagement.cpp" />
+    <ClCompile Include="Runtime\Source\Components\FortHeldObjectComponent.cpp" />
     <ClCompile Include="Runtime\Source\Actors\BuildingActor.cpp" />
     <ClCompile Include="Runtime\Source\Player\FortPlayerController.cpp" />
     <ClCompile Include="Runtime\Source\Items\FortLootTier.cpp" />
