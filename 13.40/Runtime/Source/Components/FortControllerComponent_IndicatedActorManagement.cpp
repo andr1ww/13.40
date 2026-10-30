@@ -103,7 +103,7 @@ void AddActorsToList(UFortControllerComponent_IndicatedActorManagement* _this, L
 	}
 }
 
-static bool GroupIdentifierMatches(const FString& A, const FString& B)
+bool GroupIdentifierMatches(const FString& A, const FString& B)
 {
 	return wcscmp(*A, *B) == 0;
 }
