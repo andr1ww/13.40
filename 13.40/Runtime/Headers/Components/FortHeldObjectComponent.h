@@ -6,6 +6,10 @@ namespace FortHeldObjectComponent
 	void AttachToOwningPawn(UFortHeldObjectComponent* _this);
 	bool PerformPlacementTrace(UFortHeldObjectComponent* _this, FHitResult& OutHit);
 
+	UFortProjectileMovementComponent* GetProjectileMovement(UFortHeldObjectComponent* _this);
+	void SetIgnorePawnWhenMoving(UFortHeldObjectComponent* _this, AFortPlayerPawn* PlayerPawn, bool bIgnore);
+	void BindWeaponUnequipped(UFortHeldObjectComponent* _this, AFortPlayerPawn* PlayerPawn, bool bBind);
+
 	void ValidateDetachLocation(UFortHeldObjectComponent* _this, FVector& InOutDetachLocation);
 	void DetachFromOwningPawn(UFortHeldObjectComponent* _this);
 	void SetupOwningPawn(UFortHeldObjectComponent* _this, AFortPlayerPawn* PlayerPawn);

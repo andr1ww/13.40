@@ -96,7 +96,13 @@
     <ClInclude Include="Runtime\Headers\Athena\FortGameStateAthena.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Runtime\Headers\Athena\FortVehicleManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClCompile Include="Runtime\Source\Athena\FortGameStateAthena.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\Source\Athena\FortVehicleManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClInclude Include="Runtime\Headers\Items\FortPickup.h">

@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Core.h"
 #include "Components/FortHeldObjectComponent.h"
+#include "Engine/TimerManager.h"
 DEFINE_ENGINE_INIT(FortHeldObjectComponent)
 
 void FortHeldObjectComponent::AttachToOwningPawn(UFortHeldObjectComponent* _this)
@@ -11,6 +12,44 @@ void FortHeldObjectComponent::AttachToOwningPawn(UFortHeldObjectComponent* _this
 bool FortHeldObjectComponent::PerformPlacementTrace(UFortHeldObjectComponent* _this, FHitResult& OutHit)
 {
 	return reinterpret_cast<bool(*)(UFortHeldObjectComponent*, FHitResult*)>(ImageBase + 0x2284410)(_this, &OutHit);
+}
+
+UFortProjectileMovementComponent* FortHeldObjectComponent::GetProjectileMovement(UFortHeldObjectComponent* _this)
+{
+	if (!_this->ProjectileMovementComponent)
+	{
+		if (AActor* Owner = _this->GetOwner())
+			_this->ProjectileMovementComponent = Cast<UFortProjectileMovementComponent>(Owner->GetComponentByClass(UFortProjectileMovementComponent::StaticClass()));
+	}
+
+	return _this->ProjectileMovementComponent;
+}
+
+void FortHeldObjectComponent::SetIgnorePawnWhenMoving(UFortHeldObjectComponent* _this, AFortPlayerPawn* PlayerPawn, bool bIgnore)
+{
+	AActor* Owner = _this->GetOwner();
+	if (!Owner || !PlayerPawn)
+		return;
+
+	if (UPrimitiveComponent* RootPrimitive = Cast<UPrimitiveComponent>(Owner->RootComponent))
+		RootPrimitive->IgnoreActorWhenMoving(PlayerPawn, bIgnore);
+}
+
+void FortHeldObjectComponent::BindWeaponUnequipped(UFortHeldObjectComponent* _this, AFortPlayerPawn* PlayerPawn, bool bBind)
+{
+	if (!PlayerPawn)
+		return;
+
+	if (bBind)
+	{
+		FScriptDelegate UnequippedDelegate;
+		UnequippedDelegate.BindUFunction(_this, FName(L"OnWeaponUnequipped"));
+		PlayerPawn->OnWeaponUnEquippedDelegate.AddUnique(UnequippedDelegate);
+	}
+	else
+	{
+		PlayerPawn->OnWeaponUnEquippedDelegate.Remove(_this, FName(L"OnWeaponUnequipped"));
+	}
 }
 
 void FortHeldObjectComponent::ValidateDetachLocation(UFortHeldObjectComponent* _this, FVector& InOutDetachLocation)
@@ -58,6 +97,9 @@ void FortHeldObjectComponent::SetupOwningPawn(UFortHeldObjectComponent* _this, A
 
 	Owner->FlushNetDormancy();
 
+	if (!Owner->bReplicateMovement)
+		Owner->SetReplicateMovement(true);
+
 	_this->PreviousOwningPawn = nullptr;
 	_this->OwningPawn = PlayerPawn;
 	_this->ObjectPickupRotation = Owner->K2_GetActorRotation();
@@ -87,6 +129,8 @@ void FortHeldObjectComponent::ClearOwningPawn(UFortHeldObjectComponent* _this)
 
 	if (OwningPawn)
 	{
+		BindWeaponUnequipped(_this, OwningPawn, false);
+
 		if (OwningPawn->HeldObject.Get() == Owner)
 			OwningPawn->HeldObject = nullptr;
 
@@ -148,7 +192,8 @@ bool FortHeldObjectComponent::EquipBackingWeapon(UFortHeldObjectComponent* _this
 	if (OwningPawn->CurrentWeapon && OwningPawn->CurrentWeapon->WeaponData == WeaponDefinition)
 		_this->GrantedWeapon = OwningPawn->CurrentWeapon;
 
-	return _this->GrantedWeapon.Get() != nullptr;
+	BindWeaponUnequipped(_this, OwningPawn, true);
+	return true;
 }
 
 void FortHeldObjectComponent::UnequipBackingWeapon(UFortHeldObjectComponent* _this, AFortPlayerPawn* PlayerPawn)
@@ -157,6 +202,8 @@ void FortHeldObjectComponent::UnequipBackingWeapon(UFortHeldObjectComponent* _th
 
 	_this->GrantedWeaponItem = nullptr;
 	_this->GrantedWeapon = nullptr;
+
+	BindWeaponUnequipped(_this, PlayerPawn, false);
 
 	AFortPlayerController* PlayerController = PlayerPawn ? Cast<AFortPlayerController>(PlayerPawn->Controller) : nullptr;
 	if (!GrantedItem || !PlayerController || !PlayerController->WorldInventory)
@@ -181,7 +228,7 @@ void FortHeldObjectComponent::UnequipBackingWeapon(UFortHeldObjectComponent* _th
 void FortHeldObjectComponent::StartProjectileMovement(UFortHeldObjectComponent* _this, const FVector& InVelocity)
 {
 	AActor* Owner = _this->GetOwner();
-	UFortProjectileMovementComponent* ProjectileMovement = _this->ProjectileMovementComponent;
+	UFortProjectileMovementComponent* ProjectileMovement = GetProjectileMovement(_this);
 
 	if (!Owner || !ProjectileMovement)
 		return;
@@ -201,7 +248,7 @@ void FortHeldObjectComponent::StartProjectileMovement(UFortHeldObjectComponent* 
 
 void FortHeldObjectComponent::StopProjectileMovement(UFortHeldObjectComponent* _this)
 {
-	UFortProjectileMovementComponent* ProjectileMovement = _this->ProjectileMovementComponent;
+	UFortProjectileMovementComponent* ProjectileMovement = GetProjectileMovement(_this);
 	if (!ProjectileMovement)
 		return;
 
@@ -217,15 +264,38 @@ void FortHeldObjectComponent::PickupHeldObject(UFortHeldObjectComponent* _this, 
 		return;
 
 	StopProjectileMovement(_this);
+	SetIgnorePawnWhenMoving(_this, _this->PreviousOwningPawn.Get(), false);
 	SetCollisionBlockedByPawns(_this, false);
 	SetupOwningPawn(_this, PlayerPawn);
 
 	_this->bDroppedFromWeaponSwap = false;
 
-	EquipBackingWeapon(_this);
 	AttachToOwningPawn(_this);
 
+	Owner->ForceNetUpdate();
+	PlayerPawn->ForceNetUpdate();
+
 	_this->OnHeldObjectPickedUp.Broadcast();
+
+	TWeakObjectPtr<UFortHeldObjectComponent> WeakComponent;
+	WeakComponent = _this;
+	TWeakObjectPtr<AFortPlayerPawn> WeakPawn;
+	WeakPawn = PlayerPawn;
+
+	FTimerHandle EquipTimerHandle;
+	GWorld->GetTimerManager().SetTimer(EquipTimerHandle, [WeakComponent, WeakPawn]()
+		{
+			UFortHeldObjectComponent* Component = WeakComponent.Get();
+			AFortPlayerPawn* Pawn = WeakPawn.Get();
+
+			if (!Component || !Pawn || Component->HeldObjectState != EHeldObjectState::Held || Component->OwningPawn.Get() != Pawn)
+				return;
+
+			AttachToOwningPawn(Component);
+
+			if (!EquipBackingWeapon(Component))
+				DropHeldObject(Component);
+		}, 0.1f, false);
 }
 
 void FortHeldObjectComponent::DropHeldObject(UFortHeldObjectComponent* _this)
@@ -239,6 +309,7 @@ void FortHeldObjectComponent::DropHeldObject(UFortHeldObjectComponent* _this)
 	FVector DetachLocation = Owner->K2_GetActorLocation();
 	ValidateDetachLocation(_this, DetachLocation);
 
+	StopProjectileMovement(_this);
 	DetachFromOwningPawn(_this);
 	Owner->K2_SetActorLocationAndRotation(DetachLocation, FRotator{ 0.f, OwningPawn->K2_GetActorRotation().Yaw, 0.f }, false, nullptr, true);
 
@@ -246,6 +317,7 @@ void FortHeldObjectComponent::DropHeldObject(UFortHeldObjectComponent* _this)
 
 	ClearOwningPawn(_this);
 	UnequipBackingWeapon(_this, OwningPawn);
+	SetIgnorePawnWhenMoving(_this, OwningPawn, true);
 	SetCollisionBlockedByPawns(_this, true);
 	StartProjectileMovement(_this, FVector{});
 
@@ -264,6 +336,7 @@ void FortHeldObjectComponent::PlaceHeldObject(UFortHeldObjectComponent* _this)
 	if (!PerformPlacementTrace(_this, Hit))
 		return;
 
+	StopProjectileMovement(_this);
 	DetachFromOwningPawn(_this);
 	Owner->K2_SetActorLocationAndRotation(FVector{ Hit.Location.X, Hit.Location.Y, Hit.Location.Z }, FRotator{ 0.f, OwningPawn->K2_GetActorRotation().Yaw, 0.f }, false, nullptr, true);
 
@@ -287,12 +360,14 @@ void FortHeldObjectComponent::ThrowHeldObject(UFortHeldObjectComponent* _this, c
 	FVector ValidatedDetachLocation = DetachLocation;
 	ValidateDetachLocation(_this, ValidatedDetachLocation);
 
+	StopProjectileMovement(_this);
 	DetachFromOwningPawn(_this);
 	Owner->K2_SetActorLocationAndRotation(ValidatedDetachLocation, FRotator{ 0.f, ThrowDirection.Yaw, 0.f }, false, nullptr, true);
 
 	_this->HeldObjectState = EHeldObjectState::Thrown;
 
 	ClearOwningPawn(_this);
+	SetIgnorePawnWhenMoving(_this, OwningPawn, true);
 	SetCollisionBlockedByPawns(_this, true);
 
 	const FVector Direction = UKismetMathLibrary::GetForwardVector(ThrowDirection);
@@ -310,6 +385,7 @@ void FortHeldObjectComponent::ThrownObjectStopped(UFortHeldObjectComponent* _thi
 		return;
 
 	StopProjectileMovement(_this);
+	SetIgnorePawnWhenMoving(_this, _this->PreviousOwningPawn.Get(), false);
 	SetCollisionBlockedByPawns(_this, false);
 
 	_this->HeldObjectState = EHeldObjectState::Dropped;
@@ -334,8 +410,34 @@ void FortHeldObjectComponent::OnWeaponUnequipped(UFortHeldObjectComponent* _this
 	if (_this->HeldObjectState != EHeldObjectState::Held)
 		return;
 
-	_this->bDroppedFromWeaponSwap = true;
-	DropHeldObject(_this);
+	AFortPlayerPawn* OwningPawn = _this->OwningPawn.Get();
+	AFortWeapon* GrantedWeapon = _this->GrantedWeapon.Get();
+
+	if (!OwningPawn || !GrantedWeapon || OwningPawn->CurrentWeapon == GrantedWeapon)
+		return;
+
+	BindWeaponUnequipped(_this, OwningPawn, false);
+
+	TWeakObjectPtr<UFortHeldObjectComponent> WeakComponent;
+	WeakComponent = _this;
+
+	GWorld->GetTimerManager().SetTimerForNextTick([WeakComponent]()
+		{
+			UFortHeldObjectComponent* Component = WeakComponent.Get();
+			if (!Component || Component->HeldObjectState != EHeldObjectState::Held)
+				return;
+
+			AFortPlayerPawn* Pawn = Component->OwningPawn.Get();
+			AFortWeapon* Weapon = Component->GrantedWeapon.Get();
+			if (Pawn && Weapon && Pawn->CurrentWeapon == Weapon)
+			{
+				BindWeaponUnequipped(Component, Pawn, true);
+				return;
+			}
+
+			Component->bDroppedFromWeaponSwap = true;
+			DropHeldObject(Component);
+		});
 }
 
 void FortHeldObjectComponent::HandleOwnerDestroyed(UFortHeldObjectComponent* _this, AActor* DestroyedActor)
@@ -343,6 +445,7 @@ void FortHeldObjectComponent::HandleOwnerDestroyed(UFortHeldObjectComponent* _th
 	AFortPlayerPawn* OwningPawn = _this->OwningPawn.Get();
 
 	StopProjectileMovement(_this);
+	BindWeaponUnequipped(_this, OwningPawn, false);
 
 	if (OwningPawn)
 	{
