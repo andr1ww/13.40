@@ -2,29 +2,10 @@
 #include "Core.h"
 #include "Athena/FortAthenaLivingWorldManager.h"
 #include "Engine/TimerManager.h"
-#include "SDK/SDK/LagerRuntime_parameters.hpp"
 DEFINE_ENGINE_INIT(FortAthenaLivingWorldManager)
 
 template <typename T>
-T& Field(const void* Object, uint32 Offset)
-{
-	return *reinterpret_cast<T*>(reinterpret_cast<uintptr_t>(Object) + Offset);
-}
-
-int32& PendingLoads(UFortAthenaLivingWorldManager* _this) { return Field<int32>(_this, 0x250); }
-TArray<FortAthenaLivingWorldManager::FLivingWorldEventRuntimeData>& EventRuntimeData(UFortAthenaLivingWorldManager* _this) { return Field<TArray<FortAthenaLivingWorldManager::FLivingWorldEventRuntimeData>>(_this, 0x268); }
-float& NextGenerationTime(UFortAthenaLivingWorldManager* _this) { return Field<float>(_this, 0x2B8); }
-FGameplayTagContainer& CachedPlaylistContextTags(UFortAthenaLivingWorldManager* _this) { return Field<FGameplayTagContainer>(_this, 0x2C0); }
-bool& bVerboseLogging(UFortAthenaLivingWorldManager* _this) { return Field<bool>(_this, 0x2E0); }
-bool& bGenerateEvents(UFortAthenaLivingWorldManager* _this) { return Field<bool>(_this, 0x2E1); }
-
-bool MatchesTagQuery(const FGameplayTagContainer& Tags, const FGameplayTagQuery& Query)
-{
-	return Query.QueryTokenStream.Num() == 0 || UBlueprintGameplayTagLibrary::DoesContainerMatchTagQuery(Tags, Query);
-}
-
-template <typename T>
-void BindToPlaylistLoaded(T* Object)
+void FortAthenaLivingWorldManager::BindToPlaylistLoaded(T* Object)
 {
 	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(GWorld->GameState);
 
@@ -67,122 +48,93 @@ void FortAthenaLivingWorldManager::UnregisterPointProvider(AActor* PointProvider
 		Manager->PointProviders.Remove(PointProvider);
 }
 
-bool FortAthenaLivingWorldManager::GetProviderLocation(AActor* PointProvider, FVector& OutLocation, FRotator& OutRotation)
+bool FortAthenaLivingWorldManager::MatchesTagQuery(const FGameplayTagContainer& Tags, const FGameplayTagQuery& Query)
 {
-	if (PointProvider->IsA<AFortAthenaLivingWorldVolume>())
-		return reinterpret_cast<bool(*)(void*, FVector*, FRotator*)>(ImageBase + 0x1221550)(reinterpret_cast<uint8*>(PointProvider) + 0x258, &OutLocation, &OutRotation);
-
-	UFunction* Func = PointProvider->Class->FindFunctionByName(FName(L"GetValidLocation"));
-
-	if (Func == NULL)
-		return false;
-
-	Params::FortAthenaLivingWorldPointProviderInterface_GetValidLocation Parms{};
-	PointProvider->ProcessEvent(Func, &Parms);
-
-	OutLocation = Parms.OutPosition;
-	OutRotation = Parms.OutRotation;
-
-	return Parms.ReturnValue;
+	return Query.QueryTokenStream.Num() == 0 || UBlueprintGameplayTagLibrary::DoesContainerMatchTagQuery(Tags, Query);
 }
 
-AActor* FortAthenaLivingWorldManager::PickPointProvider(UFortAthenaLivingWorldManager* _this, const FGameplayTagQuery& FiltersTagQuery, FVector& OutLocation, FRotator& OutRotation)
+bool FortAthenaLivingWorldManager::MatchesPlaylistTags(UFortAthenaLivingWorldManager* _this, const FGameplayTagContainer& RequirePlaylistTags)
+{
+	return RequirePlaylistTags.GameplayTags.Num() == 0 || UBlueprintGameplayTagLibrary::HasAnyTags(Get<FGameplayTagContainer>(_this, 0x2C0), RequirePlaylistTags, false);
+}
+
+bool FortAthenaLivingWorldManager::GetProviderLocation(AActor* PointProvider, FVector& OutLocation, FRotator& OutRotation)
+{
+	IFortAthenaLivingWorldPointProviderInterface* Interface = GetInterfaceAddress<IFortAthenaLivingWorldPointProviderInterface>(PointProvider);
+	return Interface && (*reinterpret_cast<bool(***)(IFortAthenaLivingWorldPointProviderInterface*, FVector*, FRotator*)>(Interface))[2](Interface, &OutLocation, &OutRotation);
+}
+
+AActor* FortAthenaLivingWorldManager::PickPointProvider(UFortAthenaLivingWorldManager* _this, const FGameplayTagQuery& FiltersTagQuery)
 {
 	TArray<AActor*> Candidates;
 
 	for (int32 i = 0; i < _this->PointProviders.Num(); i++)
 	{
-		AActor* PointProvider = _this->PointProviders[i];
+		AFortAthenaLivingWorldVolume* Volume = Cast<AFortAthenaLivingWorldVolume>(_this->PointProviders[i]);
 
-		if (PointProvider == NULL)
-			continue;
-
-		FGameplayTagContainer FiltersTags{};
-
-		if (AFortAthenaLivingWorldVolume* Volume = Cast<AFortAthenaLivingWorldVolume>(PointProvider))
-			FiltersTags = Volume->FiltersTags;
-		else if (UFunction* Func = PointProvider->Class->FindFunctionByName(FName(L"GetFiltersTags")))
-		{
-			Params::FortAthenaLivingWorldPointProviderInterface_GetFiltersTags Parms{};
-			PointProvider->ProcessEvent(Func, &Parms);
-			FiltersTags = Parms.FilterTags;
-		}
-
-		if (MatchesTagQuery(FiltersTags, FiltersTagQuery))
-			Candidates.Add(PointProvider);
+		if (Volume && MatchesTagQuery(Volume->FiltersTags, FiltersTagQuery))
+			Candidates.Add(Volume);
 	}
 
-	AActor* Result = NULL;
+	return Candidates.Num() > 0 ? Candidates[min((int32)(FRand(nullptr) * Candidates.Num()), Candidates.Num() - 1)] : NULL;
+}
 
-	while (Result == NULL && Candidates.Num() > 0)
+bool FortAthenaLivingWorldManager::HasPointProvider(UFortAthenaLivingWorldManager* _this, UFortAthenaLivingWorldEventData* EventData)
+{
+	if (!PointProviderCache.contains(EventData))
+		PointProviderCache[EventData] = PickPointProvider(_this, EventData->ProviderFiltersTagQuery) != NULL;
+
+	return PointProviderCache[EventData];
+}
+
+int32 FortAthenaLivingWorldManager::GetSpawnedCount(UFortAthenaLivingWorldManager* _this, FFortAthenaLivingWorldCategory* Category, FFortAthenaLivingWorldEvent* Event)
+{
+	const float TimeSeconds = UGameplayStatics::GetTimeSeconds(GWorld);
+	TArray<FLivingWorldEventRuntimeData>& RuntimeData = Get<TArray<FLivingWorldEventRuntimeData>>(_this, 0x268);
+	TArray<FLivingWorldEventRequest>& PendingEventRequests = Get<TArray<FLivingWorldEventRequest>>(_this, 0x258);
+	int32 Count = 0;
+
+	for (int32 i = 0; i < RuntimeData.Num(); i++)
 	{
-		const int32 Index = min((int32)(FRand(nullptr) * Candidates.Num()), Candidates.Num() - 1);
-
-		if (GetProviderLocation(Candidates[Index], OutLocation, OutRotation))
-			Result = Candidates[Index];
-
-		Candidates.Remove(Index);
+		if ((Category == NULL || RuntimeData[i].Category == Category) && (Event == NULL || RuntimeData[i].Event == Event))
+			Count += RuntimeData[i].SpawnedActors.Num() > 0 ? RuntimeData[i].SpawnedActors.Num() : RuntimeData[i].NextSpawnTime > TimeSeconds;
 	}
 
-	return Result;
+	for (int32 i = 0; i < PendingEventRequests.Num(); i++)
+	{
+		if ((Category == NULL || PendingEventRequests[i].Category == Category) && (Event == NULL || PendingEventRequests[i].Event == Event))
+			Count++;
+	}
+
+	return Count;
 }
 
 bool FortAthenaLivingWorldManager::IsEventAvailable(UFortAthenaLivingWorldManager* _this, FFortAthenaLivingWorldEvent* Event)
 {
 	UFortAthenaLivingWorldEventData* EventData = Event->EventData.LoadSynchronous();
 
-	if (EventData == NULL || !UBlueprintGameplayTagLibrary::HasAllTags(CachedPlaylistContextTags(_this), Event->RequirePlaylistTags, false))
+	if (EventData == NULL || !MatchesPlaylistTags(_this, Event->RequirePlaylistTags) || GetSpawnedCount(_this, NULL, Event) >= Event->MaxCount)
 		return false;
 
-	if (EventData->TimeOfDayFilters != 0)
-	{
-		AFortTimeOfDayManager* TimeOfDayManager = AFortTimeOfDayManager::GetTimeOfDayManagerFromContext(GWorld);
+	AFortTimeOfDayManager* TimeOfDayManager = AFortTimeOfDayManager::GetTimeOfDayManagerFromContext(GWorld);
 
-		if (TimeOfDayManager && (EventData->TimeOfDayFilters & (1 << (int32)TimeOfDayManager->CurrentDayNightPhase)) == 0)
+	if (TimeOfDayManager == NULL || (EventData->TimeOfDayFilters & (1 << (int32)TimeOfDayManager->CurrentDayNightPhase)) == 0)
+		return false;
+
+	if (void* WaterSubsystem = reinterpret_cast<void*(*)(UWorld*)>(ImageBase + 0xFA78C0)(GWorld))
+	{
+		const float WaterLevelIndex = Get<float>(WaterSubsystem, 0x7C) * (1.f / 384.f);
+
+		if (WaterLevelIndex != -1.f && ((EventData->WaterLevelIndexMin != -1.f && WaterLevelIndex < EventData->WaterLevelIndexMin) || (EventData->WaterLevelIndexMax != -1.f && WaterLevelIndex > EventData->WaterLevelIndexMax)))
 			return false;
 	}
 
-	if (uint8* WaterLevel = reinterpret_cast<uint8*(*)(UWorld*)>(ImageBase + 0xFA78C0)(GWorld))
-	{
-		const float WaterLevelIndex = *reinterpret_cast<float*>(WaterLevel + 0x7C) / 384.f;
-
-		if ((EventData->WaterLevelIndexMin != -1.f && WaterLevelIndex < EventData->WaterLevelIndexMin) || (EventData->WaterLevelIndexMax != -1.f && WaterLevelIndex > EventData->WaterLevelIndexMax))
-			return false;
-	}
-
-	const float TimeSeconds = UGameplayStatics::GetTimeSeconds(GWorld);
-	TArray<FLivingWorldEventRuntimeData>& RuntimeData = EventRuntimeData(_this);
-	int32 Instances = 0;
-
-	for (int32 i = 0; i < RuntimeData.Num(); i++)
-	{
-		if (RuntimeData[i].Event != Event)
-			continue;
-
-		if (RuntimeData[i].SpawnedActors.Num() == 0 && RuntimeData[i].NextSpawnTime <= TimeSeconds)
-			return true;
-
-		Instances++;
-	}
-
-	return Event->MaxCount <= 0 || Instances < Event->MaxCount;
+	return HasPointProvider(_this, EventData);
 }
 
 bool FortAthenaLivingWorldManager::IsCategoryAvailable(UFortAthenaLivingWorldManager* _this, FFortAthenaLivingWorldCategory* Category)
 {
-	if (!UBlueprintGameplayTagLibrary::HasAllTags(CachedPlaylistContextTags(_this), Category->RequirePlaylistTags, false))
-		return false;
-
-	TArray<FLivingWorldEventRuntimeData>& RuntimeData = EventRuntimeData(_this);
-	int32 ActiveEvents = 0;
-
-	for (int32 i = 0; i < RuntimeData.Num(); i++)
-	{
-		if (RuntimeData[i].Category == Category && RuntimeData[i].SpawnedActors.Num() > 0)
-			ActiveEvents++;
-	}
-
-	if (Category->MaxCount > 0 && ActiveEvents >= Category->MaxCount)
+	if (!MatchesPlaylistTags(_this, Category->RequirePlaylistTags) || GetSpawnedCount(_this, Category, NULL) >= Category->MaxCount)
 		return false;
 
 	bool bHasAvailableEvent = false;
@@ -198,56 +150,48 @@ bool FortAthenaLivingWorldManager::IsCategoryAvailable(UFortAthenaLivingWorldMan
 
 AActor* FortAthenaLivingWorldManager::SpawnActorDescription(UFortAthenaLivingWorldManager* _this, FFortAthenaLivingWorldEventDataActorSpawnDescription& Description, const FVector& Location, const FRotator& Rotation)
 {
+	if (UClass* ActorClass = Description.ActorClass.LoadSynchronous())
+	{
+		FActorSpawnParameters SpawnParameters{};
+		SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+
+		return GWorld->SpawnActor(ActorClass, Location, Rotation, SpawnParameters);
+	}
+
+	TArray<UClass*> SpawnerDataClasses;
 	UClass* SpawnerData = Description.SpawnerData.LoadSynchronous();
 
-	if (SpawnerData == NULL && Description.SpawnerDataTagQuery.QueryTokenStream.Num() > 0)
-	{
-		TArray<UClass*> Matches;
-
-		for (int32 i = 0; i < _this->LoadedSpawnerDataClass.Num(); i++)
-		{
-			UClass* SpawnerDataClass = _this->LoadedSpawnerDataClass[i];
-			UFortAthenaAISpawnerData* SpawnerDataDefault = SpawnerDataClass ? Cast<UFortAthenaAISpawnerData>(SpawnerDataClass->ClassDefaultObject) : NULL;
-
-			if (SpawnerDataDefault && UBlueprintGameplayTagLibrary::DoesContainerMatchTagQuery(SpawnerDataDefault->DescriptorTag, Description.SpawnerDataTagQuery))
-				Matches.Add(SpawnerDataClass);
-		}
-
-		if (Matches.Num() > 0)
-			SpawnerData = Matches[min((int32)(FRand(nullptr) * Matches.Num()), Matches.Num() - 1)];
-	}
-
 	if (SpawnerData && SpawnerData->IsSubclassOf(UFortAthenaAISpawnerData::StaticClass()))
-	{
-		AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(GWorld->AuthorityGameMode);
-		UFortAthenaAISpawnerDataComponentList* ComponentList = UFortAthenaAISpawnerData::CreateComponentListFromClass(SpawnerData, _this);
+		SpawnerDataClasses.Add(SpawnerData);
 
-		return GameMode && GameMode->ServerBotManager && ComponentList ? GameMode->ServerBotManager->SpawnAI(Location, Rotation, ComponentList) : NULL;
+	for (int32 i = 0; i < _this->LoadedSpawnerDataClass.Num() && Description.SpawnerDataTagQuery.QueryTokenStream.Num() > 0; i++)
+	{
+		UClass* SpawnerDataClass = _this->LoadedSpawnerDataClass[i];
+		UFortAthenaAISpawnerData* SpawnerDataDefault = SpawnerDataClass ? Cast<UFortAthenaAISpawnerData>(SpawnerDataClass->ClassDefaultObject) : NULL;
+
+		if (SpawnerDataDefault && !SpawnerDataClasses.Contains(SpawnerDataClass) && UBlueprintGameplayTagLibrary::DoesContainerMatchTagQuery(SpawnerDataDefault->DescriptorTag, Description.SpawnerDataTagQuery))
+			SpawnerDataClasses.Add(SpawnerDataClass);
 	}
 
-	UClass* ActorClass = Description.ActorClass.LoadSynchronous();
-
-	if (ActorClass == NULL)
+	if (SpawnerDataClasses.Num() == 0)
 		return NULL;
 
-	FActorSpawnParameters SpawnParameters{};
-	SpawnParameters.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
+	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(GWorld->AuthorityGameMode);
+	UFortAthenaAISpawnerDataComponentList* ComponentList = UFortAthenaAISpawnerData::CreateComponentListFromClass(SpawnerDataClasses[min((int32)(FRand(nullptr) * SpawnerDataClasses.Num()), SpawnerDataClasses.Num() - 1)], _this);
 
-	return GWorld->SpawnActor(ActorClass, Location, Rotation, SpawnParameters);
+	return GameMode && GameMode->ServerBotManager && ComponentList ? GameMode->ServerBotManager->SpawnAI(Location, Rotation, ComponentList) : NULL;
 }
 
-int32 FortAthenaLivingWorldManager::SpawnEvent(UFortAthenaLivingWorldManager* _this, FFortAthenaLivingWorldCategory* Category, FFortAthenaLivingWorldEvent* Event)
+void FortAthenaLivingWorldManager::SpawnEvent(UFortAthenaLivingWorldManager* _this, FFortAthenaLivingWorldCategory* Category, FFortAthenaLivingWorldEvent* Event)
 {
 	UFortAthenaLivingWorldEventData* EventData = Event->EventData.LoadSynchronous();
+	AActor* PointProvider = EventData ? PickPointProvider(_this, EventData->ProviderFiltersTagQuery) : NULL;
 
-	FVector Location;
-	FRotator Rotation;
-
-	if (EventData == NULL || !PickPointProvider(_this, EventData->ProviderFiltersTagQuery, Location, Rotation))
-		return 0;
+	if (PointProvider == NULL)
+		return;
 
 	const float TimeSeconds = UGameplayStatics::GetTimeSeconds(GWorld);
-	TArray<FLivingWorldEventRuntimeData>& RuntimeData = EventRuntimeData(_this);
+	TArray<FLivingWorldEventRuntimeData>& RuntimeData = Get<TArray<FLivingWorldEventRuntimeData>>(_this, 0x268);
 	int32 EntryIndex = -1;
 
 	for (int32 i = 0; i < RuntimeData.Num() && EntryIndex == -1; i++)
@@ -273,26 +217,64 @@ int32 FortAthenaLivingWorldManager::SpawnEvent(UFortAthenaLivingWorldManager* _t
 	for (int32 i = 0; i < EventData->ActorDescriptions.Num(); i++)
 	{
 		FFortAthenaLivingWorldEventDataActorSpawnDescription& Description = EventData->ActorDescriptions[i];
+		AActor* DescriptionPointProvider = Description.bUseProviderTagOverrides ? PickPointProvider(_this, Description.ProviderFiltersTagQueryOverride) : PointProvider;
 
-		FVector SpawnLocation = Location;
-		FRotator SpawnRotation = Rotation;
+		FVector Location;
+		FRotator Rotation;
 
-		if (Description.bUseProviderTagOverrides && !PickPointProvider(_this, Description.ProviderFiltersTagQueryOverride, SpawnLocation, SpawnRotation))
-			continue;
-
-		AActor* SpawnedActor = SpawnActorDescription(_this, Description, SpawnLocation, SpawnRotation);
-
-		if (SpawnedActor == NULL)
+		if (DescriptionPointProvider == NULL || !GetProviderLocation(DescriptionPointProvider, Location, Rotation))
 			continue;
 
 		TWeakObjectPtr<AActor> WeakActor;
-		WeakActor = SpawnedActor;
+		WeakActor = SpawnActorDescription(_this, Description, Location, Rotation);
+
+		if (WeakActor.Get() == NULL)
+			continue;
 
 		RuntimeData[EntryIndex].SpawnedActors.Add(WeakActor);
-		SpawnedActor->OnDestroyed.AddUnique(SpawnedActor, DestroyDelegate);
+		WeakActor.Get()->OnDestroyed.AddUnique(WeakActor.Get(), DestroyDelegate);
+
+		if (Get<bool>(_this, 0x2E8))
+			AddActorOnMinimap(_this, WeakActor.Get());
+	}
+}
+
+void FortAthenaLivingWorldManager::AddActorOnMinimap(UFortAthenaLivingWorldManager* _this, AActor* Actor)
+{
+	if (_this->CachedGameState == NULL || _this->CachedGameState->SpecialActorData == NULL)
+		return;
+
+	FSlateBrush* MinimapIconBrush = &_this->SpecialActorMinimapIconBrush;
+	FVector2D MinimapIconScale = _this->SpecialActorMinimapIconScale;
+	FSlateBrush* CompassIconBrush = &_this->SpecialActorCompassIconBrush;
+	FVector2D CompassIconScale = _this->SpecialActorCompassIconScale;
+
+	AFortPawn* Pawn = Cast<AFortPawn>(Actor);
+	AFortAthenaAIBotController* Controller = Pawn ? Cast<AFortAthenaAIBotController>(Pawn->Controller) : NULL;
+
+	if (Controller && Controller->DebugMinimapData.bIsOverridden)
+	{
+		MinimapIconBrush = &Controller->DebugMinimapData.DebugMinimapIconBrush;
+		MinimapIconScale = Controller->DebugMinimapData.DebugMinimapIconScale;
+		CompassIconBrush = &Controller->DebugMinimapData.DebugCompassIconBrush;
+		CompassIconScale = Controller->DebugMinimapData.DebugCompassIconScale;
 	}
 
-	return RuntimeData[EntryIndex].SpawnedActors.Num();
+	const std::string ActorName = Actor->GetName();
+	alignas(16) uint8 InitData[0x1A0];
+
+	reinterpret_cast<void*(*)(void*)>(ImageBase + 0x2537370)(InitData);
+	Get<AActor*>(InitData, 0x0) = Actor;
+	Get<FName>(InitData, 0x8) = FName((L"LW__" + std::wstring(ActorName.begin(), ActorName.end())).c_str());
+	Get<float>(InitData, 0x20) = 3.f;
+	Get<float>(InitData, 0x24) = 1.5f;
+	reinterpret_cast<void*(*)(void*, const FSlateBrush*)>(ImageBase + 0xA2DBB0)(InitData + 0x28, MinimapIconBrush);
+	Get<FVector2D>(InitData, 0xB0) = MinimapIconScale;
+	reinterpret_cast<void*(*)(void*, const FSlateBrush*)>(ImageBase + 0xA2DBB0)(InitData + 0xB8, CompassIconBrush);
+	Get<FVector2D>(InitData, 0x140) = CompassIconScale;
+
+	reinterpret_cast<int32(*)(AFortSpecialActorReplicationInfo*, void*)>(ImageBase + 0x253ABA0)(_this->CachedGameState->SpecialActorData, InitData);
+	reinterpret_cast<void(*)(void*)>(ImageBase + 0x1E35940)(InitData);
 }
 
 void FortAthenaLivingWorldManager::GenerateEvents(UFortAthenaLivingWorldManager* _this)
@@ -303,15 +285,10 @@ void FortAthenaLivingWorldManager::GenerateEvents(UFortAthenaLivingWorldManager*
 	if (CategoryTable == NULL)
 		return;
 
-	TArray<FLivingWorldEventRuntimeData>& RuntimeData = EventRuntimeData(_this);
-	int32 Budget = (int32)Config->MaxActorCount.Evaluate(0.f);
+	const int32 Budget = (int32)Config->MaxActorCount.Evaluate(0.f) - GetSpawnedCount(_this, NULL, NULL);
+	PointProviderCache.clear();
 
-	for (int32 i = 0; i < RuntimeData.Num(); i++)
-		Budget -= RuntimeData[i].SpawnedActors.Num();
-
-	const int32 MaxEventSpawnPerTick = max((int32)Config->MaxEventSpawnPerTick.Evaluate(0.f), 1);
-
-	for (int32 i = 0; i < MaxEventSpawnPerTick && Budget > 0; i++)
+	for (int32 i = 0; i < Budget; i++)
 	{
 		FFortAthenaLivingWorldCategory* Category = PickWeightedRow<FFortAthenaLivingWorldCategory>(CategoryTable, [&](FFortAthenaLivingWorldCategory* Candidate) { return IsCategoryAvailable(_this, Candidate); });
 		FFortAthenaLivingWorldEvent* Event = Category ? PickWeightedRow<FFortAthenaLivingWorldEvent>(Category->EventTable.LoadSynchronous(), [&](FFortAthenaLivingWorldEvent* Candidate) { return IsEventAvailable(_this, Candidate); }) : NULL;
@@ -319,30 +296,45 @@ void FortAthenaLivingWorldManager::GenerateEvents(UFortAthenaLivingWorldManager*
 		if (Event == NULL)
 			break;
 
-		Budget -= SpawnEvent(_this, Category, Event);
+		Get<TArray<FLivingWorldEventRequest>>(_this, 0x258).Add({ Category, Event });
 	}
 }
 
 void FortAthenaLivingWorldManager::Update(UFortAthenaLivingWorldManager* _this)
 {
-	if (NextGenerationTime(_this) < 0.f || !bGenerateEvents(_this) || PendingLoads(_this) > 0)
-		return;
-
-	const float TimeSeconds = UGameplayStatics::GetTimeSeconds(GWorld);
-
-	if (TimeSeconds < NextGenerationTime(_this))
+	if (Get<float>(_this, 0x2B8) < 0.f || Get<int32>(_this, 0x250) > 0)
 		return;
 
 	UFortAthenaLivingWorldConfigData* Config = _this->LagerConfig.LoadSynchronous();
-	NextGenerationTime(_this) = TimeSeconds + (Config ? Config->MinimumEventGenerationInterval.Evaluate(0.f) : 0.f);
+	const float TimeSeconds = UGameplayStatics::GetTimeSeconds(GWorld);
 
-	GenerateEvents(_this);
+	if (Config == NULL)
+		return;
+
+	if (Get<bool>(_this, 0x2E1) && TimeSeconds >= Get<float>(_this, 0x2B8))
+	{
+		Get<float>(_this, 0x2B8) = TimeSeconds + Config->MinimumEventGenerationInterval.Evaluate(0.f);
+		GenerateEvents(_this);
+	}
+
+	TArray<FLivingWorldEventRequest>& PendingEventRequests = Get<TArray<FLivingWorldEventRequest>>(_this, 0x258);
+	const int32 MaxEventSpawnPerTick = (int32)Config->MaxEventSpawnPerTick.Evaluate(0.f);
+
+	for (int32 i = 0; i < MaxEventSpawnPerTick && PendingEventRequests.Num() > 0; i++)
+	{
+		FLivingWorldEventRequest Request = PendingEventRequests[0];
+		PendingEventRequests.Remove(0);
+
+		SpawnEvent(_this, Request.Category, Request.Event);
+	}
 }
 
 void FortAthenaLivingWorldManager::Flush(UFortAthenaLivingWorldManager* _this)
 {
-	TArray<FLivingWorldEventRuntimeData>& RuntimeData = EventRuntimeData(_this);
+	TArray<FLivingWorldEventRuntimeData>& RuntimeData = Get<TArray<FLivingWorldEventRuntimeData>>(_this, 0x268);
 	TArray<AActor*> SpawnedActors;
+
+	Get<TArray<FLivingWorldEventRequest>>(_this, 0x258).Free();
 
 	for (int32 i = 0; i < RuntimeData.Num(); i++)
 	{
@@ -359,6 +351,8 @@ void FortAthenaLivingWorldManager::Flush(UFortAthenaLivingWorldManager* _this)
 
 void FortAthenaLivingWorldManager::BeginPlay(UFortAthenaLivingWorldManager* _this)
 {
+	static FTimerHandle UpdateTimerHandle;
+
 	BeginPlayOG(_this);
 
 	AActor* Owner = _this->GetOwner();
@@ -372,12 +366,65 @@ void FortAthenaLivingWorldManager::BeginPlay(UFortAthenaLivingWorldManager* _thi
 	TWeakObjectPtr<UFortAthenaLivingWorldManager> WeakManager;
 	WeakManager = _this;
 
-	FTimerHandle UpdateTimerHandle;
+	GWorld->GetTimerManager().ClearTimer(UpdateTimerHandle);
 	GWorld->GetTimerManager().SetTimer(UpdateTimerHandle, [WeakManager]()
 		{
 			if (UFortAthenaLivingWorldManager* Manager = WeakManager.Get())
 				Update(Manager);
+			else
+				GWorld->GetTimerManager().ClearTimer(UpdateTimerHandle);
 		}, 0.25f, true);
+}
+
+void FortAthenaLivingWorldManager::VolumePostInitializeComponents(AFortAthenaLivingWorldVolume* _this)
+{
+	static UStaticMesh* Cube = StaticLoadObject<UStaticMesh>(L"/Engine/BasicShapes/Cube.Cube");
+
+	if (_this->BrushComponent || !_this->Brush || !Cube || !Cube->BodySetup)
+		return VolumePostInitializeComponentsOG(_this);
+
+	TArray<AFortPoiVolume*> PoiVolumes = GetAll<AFortPoiVolume>();
+	FVector Min{}, Max{};
+	bool bFound = false;
+
+	for (int32 i = 0; i < PoiVolumes.Num(); i++)
+	{
+		if (!PoiVolumes[i] || !PoiVolumes[i]->BrushComponent || !UBlueprintGameplayTagLibrary::HasAnyTags(PoiVolumes[i]->LocationTags, _this->FiltersTags, true))
+			continue;
+
+		FVector Origin, Extent;
+		float SphereRadius;
+		UKismetSystemLibrary::GetComponentBounds(PoiVolumes[i]->BrushComponent, &Origin, &Extent, &SphereRadius);
+
+		Min = bFound ? UKismetMathLibrary::Vector_ComponentMin(Min, Origin - Extent) : Origin - Extent;
+		Max = bFound ? UKismetMathLibrary::Vector_ComponentMax(Max, Origin + Extent) : Origin + Extent;
+		bFound = true;
+	}
+
+	PoiVolumes.Free();
+
+	if (!bFound)
+		return VolumePostInitializeComponentsOG(_this);
+
+	FTransform Identity = UKismetMathLibrary::MakeTransform(FVector{}, FRotator{}, FVector{ 1.f, 1.f, 1.f });
+	UBrushComponent* BrushComponent = Cast<UBrushComponent>(_this->AddComponentByClass(UBrushComponent::StaticClass(), false, Identity, true));
+
+	if (!BrushComponent)
+		return VolumePostInitializeComponentsOG(_this);
+
+	BrushComponent->Brush = _this->Brush;
+	BrushComponent->BrushBodySetup = Cube->BodySetup;
+	BrushComponent->SetMobility(EComponentMobility::Movable);
+	BrushComponent->SetCollisionProfileName(FName(L"NoCollision"), false);
+
+	_this->FinishAddComponent(BrushComponent, false, Identity);
+	_this->BrushComponent = BrushComponent;
+
+	const float HalfExtent = max(Max.X - Min.X, max(Max.Y - Min.Y, Max.Z - Min.Z)) * 0.5f;
+	BrushComponent->SetWorldScale3D(FVector{ HalfExtent / 50.f, HalfExtent / 50.f, HalfExtent / 50.f });
+	_this->K2_SetActorLocation((Min + Max) * 0.5f, false, nullptr, true);
+
+	VolumePostInitializeComponentsOG(_this);
 }
 
 void FortAthenaLivingWorldManager::VolumeBeginPlay(AFortAthenaLivingWorldVolume* _this)
@@ -388,11 +435,33 @@ void FortAthenaLivingWorldManager::VolumeBeginPlay(AFortAthenaLivingWorldVolume*
 		BindToPlaylistLoaded(_this);
 }
 
+void FortAthenaLivingWorldManager::VolumeEndPlay(AFortAthenaLivingWorldVolume* _this, EEndPlayReason EndPlayReason)
+{
+	if (_this->Role == ENetRole::ROLE_Authority)
+		UnregisterPointProvider(_this);
+
+	VolumeEndPlayOG(_this, EndPlayReason);
+}
+
+void FortAthenaLivingWorldManager::VolumeOnCurrentPlaylistLoaded(AFortAthenaLivingWorldVolume* _this, FName PlaylistName, const FGameplayTagContainer& PlaylistContextTags)
+{
+	if (UNavigationSystemV1* NavSystem = Cast<UNavigationSystemV1>(GWorld->NavigationSystem))
+	{
+		for (int32 i = 0; i < NavSystem->NavDataSet.Num(); i++)
+		{
+			if (NavSystem->NavDataSet[i])
+				NavSystem->NavDataSet[i]->EnsureBuildCompletion();
+		}
+	}
+
+	VolumeOnCurrentPlaylistLoadedOG(_this, PlaylistName, PlaylistContextTags);
+}
+
 void FortAthenaLivingWorldManager::OnEnvQueryFinished(AFortAthenaLivingWorldVolume* _this, void* Result)
 {
 	OnEnvQueryFinishedOG(_this, Result);
 
-	if (Field<TArray<FVector>>(_this, 0x2C8).Num() > 0)
+	if (Get<TArray<FVector>>(_this, 0x2C8).Num() > 0)
 		RegisterPointProvider(_this);
 }
 
@@ -423,23 +492,39 @@ void FortAthenaLivingWorldManager::execLivingWorldManagerGenerateEvents(UObject*
 {
 	Stack.IncrementCode();
 
-	GenerateEvents(static_cast<UFortAthenaLivingWorldManager*>(Context));
+	UFortAthenaLivingWorldManager* Manager = static_cast<UFortAthenaLivingWorldManager*>(Context);
+
+	if (Get<float>(Manager, 0x2B8) >= 0.f)
+		GenerateEvents(Manager);
+}
+
+void FortAthenaLivingWorldManager::execLivingWorldManagerProviderDebugActor(UObject* Context, FFrame& Stack, void* const Result)
+{
+	int32 ProviderIndex = Stack.StepCompiledInRef<int32>();
+	Stack.IncrementCode();
+
+	Get<int32>(Context, 0x2E4) = ProviderIndex;
+}
+
+void FortAthenaLivingWorldManager::execLivingWorldManagerToggleActorMinimap(UObject* Context, FFrame& Stack, void* const Result)
+{
+	Stack.IncrementCode();
+
+	Get<bool>(Context, 0x2E8) = !Get<bool>(Context, 0x2E8);
 }
 
 void FortAthenaLivingWorldManager::execLivingWorldManagerToggleGenerateEvents(UObject* Context, FFrame& Stack, void* const Result)
 {
 	Stack.IncrementCode();
 
-	UFortAthenaLivingWorldManager* Manager = static_cast<UFortAthenaLivingWorldManager*>(Context);
-	bGenerateEvents(Manager) = !bGenerateEvents(Manager);
+	Get<bool>(Context, 0x2E1) = !Get<bool>(Context, 0x2E1);
 }
 
 void FortAthenaLivingWorldManager::execLivingWorldManagerToggleVerboseLogging(UObject* Context, FFrame& Stack, void* const Result)
 {
 	Stack.IncrementCode();
 
-	UFortAthenaLivingWorldManager* Manager = static_cast<UFortAthenaLivingWorldManager*>(Context);
-	bVerboseLogging(Manager) = !bVerboseLogging(Manager);
+	Get<bool>(Context, 0x2E0) = !Get<bool>(Context, 0x2E0);
 }
 
 void FortAthenaLivingWorldManager::execLivingWorldManagerSpawn(UObject* Context, FFrame& Stack, void* const Result)
@@ -449,7 +534,7 @@ void FortAthenaLivingWorldManager::execLivingWorldManagerSpawn(UObject* Context,
 	Stack.IncrementCode();
 
 	UFortAthenaLivingWorldManager* Manager = GetLivingWorldManager();
-	UFortAthenaLivingWorldConfigData* Config = Manager ? Manager->LagerConfig.LoadSynchronous() : NULL;
+	UFortAthenaLivingWorldConfigData* Config = Manager && Get<float>(Manager, 0x2B8) >= 0.f ? Manager->LagerConfig.LoadSynchronous() : NULL;
 
 	if (Config == NULL)
 		return;
@@ -481,13 +566,18 @@ void FortAthenaLivingWorldManager::Init()
 	UClass* ManagerClass = UFortAthenaLivingWorldManager::StaticClass();
 
 	Hooking::Hook<UFortAthenaLivingWorldManager>(0x320 / 8, BeginPlay, BeginPlayOG);
+	Hooking::Hook<AFortAthenaLivingWorldVolume>(0x480 / 8, VolumePostInitializeComponents, VolumePostInitializeComponentsOG);
 	Hooking::Hook<AFortAthenaLivingWorldVolume>(0x328 / 8, VolumeBeginPlay, VolumeBeginPlayOG);
+	Hooking::Hook<AFortAthenaLivingWorldVolume>(0x330 / 8, VolumeEndPlay, VolumeEndPlayOG);
+	Hooking::Hook(ImageBase + 0x12216A0, VolumeOnCurrentPlaylistLoaded, VolumeOnCurrentPlaylistLoadedOG);
 	Hooking::Hook(ImageBase + 0x1221D50, OnEnvQueryFinished, OnEnvQueryFinishedOG);
 
 	Hooking::ExecHook(ManagerClass->GetFunction("LivingWorldManagerRegisterPointProvider"), execLivingWorldManagerRegisterPointProvider);
 	Hooking::ExecHook(ManagerClass->GetFunction("LivingWorldManagerUnregisterPointProvider"), execLivingWorldManagerUnregisterPointProvider);
 	Hooking::ExecHook(ManagerClass->GetFunction("LivingWorldManagerFlush"), execLivingWorldManagerFlush);
 	Hooking::ExecHook(ManagerClass->GetFunction("LivingWorldManagerGenerateEvents"), execLivingWorldManagerGenerateEvents);
+	Hooking::ExecHook(ManagerClass->GetFunction("LivingWorldManagerProviderDebugActor"), execLivingWorldManagerProviderDebugActor);
+	Hooking::ExecHook(ManagerClass->GetFunction("LivingWorldManagerToggleActorMinimap"), execLivingWorldManagerToggleActorMinimap);
 	Hooking::ExecHook(ManagerClass->GetFunction("LivingWorldManagerToggleGenerateEvents"), execLivingWorldManagerToggleGenerateEvents);
 	Hooking::ExecHook(ManagerClass->GetFunction("LivingWorldManagerToggleVerboseLogging"), execLivingWorldManagerToggleVerboseLogging);
 	Hooking::ExecHook(UFortCheatManager_LivingWorldManager::StaticClass()->GetFunction("LivingWorldManagerSpawn"), execLivingWorldManagerSpawn);
