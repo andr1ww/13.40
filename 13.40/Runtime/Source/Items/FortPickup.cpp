@@ -76,18 +76,22 @@ void FortPickup::GivePickupTo(AFortPickup* _this, IFortInventoryOwnerInterface* 
 		CountToDrop = std::clamp(CountToDrop, 0, PickupEntry->Count);
 
 		int32 CountToGive = PickupEntry->Count - CountToDrop;
-		UFortWorldItem* ExistingItem = Inventory->FindExistingItemForDefinition(ItemDefinition, false);
+		TArray<UFortWorldItem*>& Items = Inventory->GetItems();
 
-		if (ExistingItem && CountToGive > 0)
+		for (int32 j = 0; j < Items.Num() && CountToGive > 0; j++)
 		{
+			UFortWorldItem* ExistingItem = Items[j];
+
+			if (!ExistingItem || ExistingItem->ItemEntry.ItemDefinition != ItemDefinition)
+				continue;
+
 			const int32 AmountToStack = min(CountToGive, MaxStackSize - ExistingItem->ItemEntry.Count);
 
-			if (AmountToStack > 0)
-			{
-				ExistingItem->ItemEntry.SetCount(ExistingItem->ItemEntry.Count + AmountToStack);
-				Inventory->SetItemRequiresUpdate(&ExistingItem->ItemEntry);
-				CountToGive -= AmountToStack;
-			}
+			if (AmountToStack <= 0)
+				continue;
+
+			ExistingItem->SetNumInStack(ExistingItem->ItemEntry.Count + AmountToStack, false);
+			CountToGive -= AmountToStack;
 		}
 
 		UFortWorldItem* GivenItem = nullptr;

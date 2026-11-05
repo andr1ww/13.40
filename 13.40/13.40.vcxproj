@@ -218,6 +218,8 @@
     <ClInclude Include="Runtime\Headers\Player\FortPlayerPawn.h" />
     <ClInclude Include="Runtime\Headers\Player\FortPlayerPawnAthena.h" />
     <ClInclude Include="Runtime\Headers\AI\FortAthenaAIBotController.h" />
+    <ClInclude Include="Runtime\Headers\AI\FortAIGoalManager.h" />
+    <ClInclude Include="Runtime\Headers\Pawns\FortAIPawn.h" />
     <ClInclude Include="Runtime\Headers\Athena\Modifiers\FortAthenaMutator_Bots.h" />
     <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaAIBotCustomizationData.h" />
     <ClInclude Include="Runtime\Headers\Athena\AI\FortAthenaAISpawnerDataComponent_CosmeticLibrary.h" />
@@ -289,6 +291,8 @@
     <ClCompile Include="Runtime\Source\Player\FortPlayerPawn.cpp" />
     <ClCompile Include="Runtime\Source\Player\FortPlayerPawnAthena.cpp" />
     <ClCompile Include="Runtime\Source\AI\FortAthenaAIBotController.cpp" />
+    <ClCompile Include="Runtime\Source\AI\FortAIGoalManager.cpp" />
+    <ClCompile Include="Runtime\Source\Pawns\FortAIPawn.cpp" />
     <ClCompile Include="Runtime\Source\Athena\Modifiers\FortAthenaMutator_Bots.cpp" />
     <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaAIBotCustomizationData.cpp" />
     <ClCompile Include="Runtime\Source\Athena\AI\FortAthenaAISpawnerDataComponent_CosmeticLibrary.cpp" />

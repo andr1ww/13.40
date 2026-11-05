@@ -210,6 +210,9 @@ void FortAthenaAIBotController::DropItemsAsPickups(TArray<UFortWorldItem*>& Item
 		}
 	}
 
+	for (UFortWorldItem* Item : ItemsToDropViaPickup)
+		Inventory->RemoveInventoryItem(Item->ItemEntry.ItemGuid, -1, true);
+
 	Drops.Free();
 }
 
@@ -226,17 +229,25 @@ UFortHero* FortAthenaAIBotController::GetHero(AFortAthenaAIBotController* _this)
 
 void FortAthenaAIBotController::RemoveAllInventoryItems(AFortAthenaAIBotController* _this)
 {
-	TArray<UFortWorldItem*>& Items = _this->Inventory->GetItems();
+	if (_this->Inventory == NULL)
+		return;
 
-	for (int32 i = Items.Num() - 1; i >= 0; i--)
+	TArray<FGuid> ItemGuids{};
+
+	for (UFortWorldItem* Item : _this->Inventory->GetItems())
 	{
-		UFortItemDefinition* ItemDefinition = Items[i]->ItemEntry.ItemDefinition;
+		UFortItemDefinition* ItemDefinition = Item ? Item->ItemEntry.ItemDefinition : nullptr;
 
-		if (ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()) || ItemDefinition->IsA(UFortBuildingItemDefinition::StaticClass()) || ItemDefinition->IsA(UFortEditToolItemDefinition::StaticClass()))
+		if (!ItemDefinition || ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()) || ItemDefinition->IsA(UFortBuildingItemDefinition::StaticClass()) || ItemDefinition->IsA(UFortEditToolItemDefinition::StaticClass()))
 			continue;
 
-		_this->Inventory->RemoveInventoryItem(Items[i]->ItemEntry.ItemGuid, -1, true);
+		ItemGuids.Add(Item->ItemEntry.ItemGuid);
 	}
+
+	for (const FGuid& ItemGuid : ItemGuids)
+		_this->Inventory->RemoveInventoryItem(ItemGuid, -1, true);
+
+	ItemGuids.Free();
 }
 
 void FortAthenaAIBotController::Init()

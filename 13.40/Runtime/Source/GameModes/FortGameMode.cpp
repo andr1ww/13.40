@@ -41,6 +41,9 @@ void FortGameMode::SetupPlaylist(AFortGameModeAthena* _this)
 	if (Playlist->AISettings)
 		_this->AISettings = Playlist->AISettings;
 
+	if (!_this->AIGoalManager)
+		reinterpret_cast<void(*)(AFortGameModeAthena*)>(_this->VTable[0xC80 / 8])(_this);
+
 	_this->GameState->CurrentPlaylistInfo.BasePlaylist = Playlist;
 
 	_this->GameState->CurrentPlaylistInfo.PlaylistReplicationKey++;

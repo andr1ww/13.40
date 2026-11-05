@@ -223,8 +223,8 @@ bool BuildingActor::AttemptSpawnResources(ABuildingSMActor* _this, AFortPlayerPa
 	{
 		if (ExistingItem)
 		{
-			ExistingItem->ItemEntry.SetCount(CurrentCount + CountToGive);
-			Inventory->SetItemRequiresUpdate(&ExistingItem->ItemEntry);
+			ExistingItem->SetNumInStack(CurrentCount + CountToGive, false);
+			Inventory->HandleInventoryLocalUpdate();
 		}
 		else if (!Inventory->GiveItemToInventoryOwner(FFortItemEntry(ResourceItemDefinition, CountToGive)))
 		{

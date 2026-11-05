@@ -2261,16 +2261,12 @@ namespace UC
             if (!IsValidIndex(Index))
                 return false;
 
-            auto* RemovePtr = GetData() + Index;
-            DestructItems(RemovePtr, 1);
+            DestructItems(GetData() + Index, 1);
 
             NumElements--;
 
-            for (int i = Index; i < NumElements; i++)
-            {
-                /* NumElements was decremented, acessing i + 1 is safe */
-                Data[i] = Data[i + 1];
-            }
+            if (Index < NumElements)
+                memmove((void*)(GetData() + Index), (void*)(GetData() + Index + 1), (NumElements - Index) * ElementSize);
 
             return true;
         }
@@ -2310,11 +2306,8 @@ namespace UC
 
             NumElements--;
 
-            for (int i = Index; i < NumElements; i++)
-            {
-                /* NumElements was decremented, acessing i + 1 is safe */
-                Data[i] = Data[i + 1];
-            }
+            if (Index < NumElements)
+                memmove((void*)(GetData() + Index), (void*)(GetData() + Index + 1), (NumElements - Index) * ElementSize);
 
             return true;
         }

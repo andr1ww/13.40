@@ -24,16 +24,13 @@ void FortKismetLibrary::GiveItemToInventoryOwner(TScriptInterface<class IFortInv
 		return;
 
 	AFortPlayerController* PlayerController = Cast<AFortPlayerController>(InventoryOwner.ObjectPointer);
+	IFortInventoryOwnerInterface* Interface = GetInterfaceAddress<IFortInventoryOwnerInterface>(InventoryOwner.ObjectPointer);
+	AFortInventory* Inventory = PlayerController ? PlayerController->WorldInventory : Interface ? Interface->GetWorldInventory() : NULL;
 
-	if (PlayerController == NULL)
+	if (Inventory == NULL)
 		return;
 
 	UFortWorldItemDefinition* MutableDefinition = const_cast<UFortWorldItemDefinition*>(ItemDefinition);
-
-	if (PlayerController->WorldInventory == NULL)
-		return;
-
-	AFortInventory* Inventory = PlayerController->WorldInventory;
 
 	const int32 ActualMaxStackSize = AFortInventory::GetItemMaxStackSize(PlayerController, MutableDefinition);
 	const int32 MaxStackSize = ActualMaxStackSize > 0 ? ActualMaxStackSize : INT32_MAX;
@@ -49,19 +46,22 @@ void FortKismetLibrary::GiveItemToInventoryOwner(TScriptInterface<class IFortInv
 	int32 CountToDrop = std::clamp(Inventory->GetOverflowFromAddingItem(ItemEntry), 0, NumberToGive);
 	int32 CountToGive = NumberToGive - CountToDrop;
 
-	UFortWorldItem* ExistingItem = Inventory->FindExistingItemForDefinition(MutableDefinition, false);
+	TArray<UFortWorldItem*>& Items = Inventory->GetItems();
 
-	if (ExistingItem != NULL && CountToGive > 0)
+	for (int32 i = 0; i < Items.Num() && CountToGive > 0; i++)
 	{
-		const int32 SpaceInStack = MaxStackSize - ExistingItem->ItemEntry.Count;
+		UFortWorldItem* ExistingItem = Items[i];
 
-		if (SpaceInStack > 0)
-		{
-			const int32 AmountToStack = CountToGive < SpaceInStack ? CountToGive : SpaceInStack;
+		if (ExistingItem == NULL || ExistingItem->ItemEntry.ItemDefinition != MutableDefinition)
+			continue;
 
-			ExistingItem->ItemEntry.SetCount(ExistingItem->ItemEntry.Count + AmountToStack);
-			CountToGive -= AmountToStack;
-		}
+		const int32 AmountToStack = min(CountToGive, MaxStackSize - ExistingItem->ItemEntry.Count);
+
+		if (AmountToStack <= 0)
+			continue;
+
+		ExistingItem->SetNumInStack(ExistingItem->ItemEntry.Count + AmountToStack, false);
+		CountToGive -= AmountToStack;
 	}
 
 	while (CountToGive > 0)

@@ -242,7 +242,7 @@ void FortPlayerController::ServerAttemptInventoryDrop_Implementation(AFortPlayer
 	UFortWorldItem* Item = Inventory->GetItem(ItemGuid);
 	UFortWorldItemDefinition* ItemDefinition = Item ? Cast<UFortWorldItemDefinition>(Item->ItemEntry.ItemDefinition) : nullptr;
 
-	if (!ItemDefinition)
+	if (!ItemDefinition || Item->ItemEntry.Count <= 0)
 		return;
 
 	Count = std::clamp(Count, 1, Item->ItemEntry.Count);
@@ -339,13 +339,14 @@ void FortPlayerController::ServerCombineInventoryItems_Implementation(AFortPlaye
 		return;
 
 	int32 MaxStackSize = max(1, AFortInventory::GetItemMaxStackSize(_this, TargetDefinition));
-	int32 AmountToTransfer = std::clamp(SourceItem->ItemEntry.Count, 0, MaxStackSize - TargetItem->ItemEntry.Count);
+	int32 AmountToTransfer = min(SourceItem->ItemEntry.Count, MaxStackSize - TargetItem->ItemEntry.Count);
 
 	if (AmountToTransfer <= 0)
 		return;
 
-	TargetItem->ItemEntry.SetCount(TargetItem->ItemEntry.Count + AmountToTransfer);
+	TargetItem->SetNumInStack(TargetItem->ItemEntry.Count + AmountToTransfer, false);
 	Inventory->RemoveInventoryItem(SourceItemGuid, AmountToTransfer, false);
+	Inventory->HandleInventoryLocalUpdate();
 }
 
 int32 FortPlayerController::RemoveItemFromPlayer(AFortPlayerController* _this, UFortWorldItemDefinition* ItemDefinition, int32 AmountToRemove, bool bForceRemoval)
@@ -365,6 +366,9 @@ int32 FortPlayerController::RemoveItemFromPlayer(AFortPlayerController* _this, U
 			continue;
 
 		int32 CountToRemove = AmountToRemove < 0 ? Item->ItemEntry.Count : min(Item->ItemEntry.Count, AmountToRemove - AmountRemoved);
+
+		if (CountToRemove <= 0 && !bForceRemoval)
+			continue;
 
 		if (!Inventory->RemoveInventoryItem(Item->ItemEntry.ItemGuid, CountToRemove, bForceRemoval))
 			continue;

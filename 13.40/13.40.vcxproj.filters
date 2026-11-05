@@ -309,6 +309,18 @@
     <ClCompile Include="Runtime\Source\AI\FortAthenaAIBotController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClInclude Include="Runtime\Headers\AI\FortAIGoalManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\AI\FortAIGoalManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="Runtime\Headers\Pawns\FortAIPawn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="Runtime\Source\Pawns\FortAIPawn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClInclude Include="Runtime\Headers\Athena\Modifiers\FortAthenaMutator_Bots.h">
       <Filter>Header Files</Filter>
     </ClInclude>

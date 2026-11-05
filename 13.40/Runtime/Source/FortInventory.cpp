@@ -5,8 +5,7 @@ DEFINE_ENGINE_INIT(FortInventory)
 
 UFortWorldItem* AFortInventory::GiveItemToInventoryOwner(FFortItemEntry ItemEntry)
 {
-	if (!UFortGlobals::IsInAthena(GWorld))
-		bAllowMcpItemCreation = true;
+	bAllowMcpItemCreation = true;
 
 	ItemEntry.SetItemGuid(NewGuid());
 
@@ -18,21 +17,12 @@ UFortWorldItem* AFortInventory::GiveItemToInventoryOwner(FFortItemEntry ItemEntr
 	if (AFortPlayerController* PC = Cast<AFortPlayerController>(GetOwner()))
 		Item->SetOwningControllerForTemporaryItem(PC);
 
-	int32 NumEntries = Inventory.ReplicatedEntries.Num();
-	int32 NumInstances = Inventory.ItemInstances.Num();
-
 	InitializeExistingItem(Item);
 
-	if (Inventory.ReplicatedEntries.Num() == NumEntries && Inventory.ItemInstances.Num() == NumInstances)
+	if (!Inventory.ItemInstances.Contains(Item))
 		return nullptr;
 
-	if (FFortItemEntry* Entry = Inventory.ReplicatedEntries.Search([&](FFortItemEntry& Replicated) { return Replicated.ItemGuid == Item->ItemEntry.ItemGuid; }))
-		Inventory.MarkItemDirty(*Entry, false);
-
-	SetRequiresUpdate();
-
-	if (IFortInventoryOwnerInterface* Interface = GetInterfaceAddress<IFortInventoryOwnerInterface>(GetOwner()))
-		Item->OnItemInstanceAdded(Interface);
+	HandleInventoryLocalUpdate();
 
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(GetOwner());
 
@@ -53,49 +43,38 @@ UFortWorldItem* AFortInventory::GiveItemToInventoryOwner(FFortItemEntry ItemEntr
 
 bool AFortInventory::RemoveInventoryItem(const FGuid& ItemGuid, int32 Count, bool bForceRemoval)
 {
-	IFortInventoryOwnerInterface* Owner = GetInterfaceAddress<IFortInventoryOwnerInterface>(GetOwner());
 	UFortWorldItem* Item = GetItem(ItemGuid);
 
-	if (!Item || !Owner)
+	if (!Item)
 		return false;
 
 	int32 NewCount = Item->ItemEntry.Count - (Count > 0 ? Count : 0);
-
-	if (Count >= 0 && NewCount > 0 && !bForceRemoval)
-	{
-		Item->SetNumInStack(NewCount, true);
-		Item->OnItemInstanceRemoved(Owner, NewCount);
-		return true;
-	}
-
 	UFortWorldItemDefinition* ItemDefinition = Cast<UFortWorldItemDefinition>(Item->ItemEntry.ItemDefinition);
 
-	bool bKeepStack = ItemDefinition && ItemDefinition->bPersistInInventoryWhenFinalStackEmpty && Count > 0
+	bool bKeepStack = (Count >= 0 && NewCount > 0) || (!bForceRemoval && ItemDefinition && ItemDefinition->bPersistInInventoryWhenFinalStackEmpty && Count > 0
 		&& !Inventory.ReplicatedEntries.Search([&](FFortItemEntry& Entry)
 			{
 				return Entry.ItemDefinition == ItemDefinition && Entry.ItemGuid != ItemGuid;
-			});
+			}));
 
 	if (bKeepStack)
 	{
-		Item->SetNumInStack(NewCount, true);
-		Item->OnItemInstanceRemoved(Owner, NewCount);
+		if (!Item->SetNumInStack(NewCount, true))
+			return false;
+
+		HandleInventoryLocalUpdate();
 		return true;
 	}
 
 	int32 EntryIndex = Inventory.ReplicatedEntries.SearchIndex([&](FFortItemEntry& Entry) { return Entry.ItemGuid == ItemGuid; });
-	Inventory.ReplicatedEntries.Remove(EntryIndex);
-	Inventory.ItemInstances.Remove(Item);
 
-	for (int32 i = EntryIndex; i >= 0 && i < Inventory.ReplicatedEntries.Num(); i++)
-	{
-		Inventory.MarkItemDirty(Inventory.ReplicatedEntries[i], false);
-	}
+	if (EntryIndex == -1)
+		return false;
+
+	Inventory.ReplicatedEntries.RemoveAtSwap(EntryIndex);
 
 	SetRequiresUpdate();
 	HandleInventoryLocalUpdate();
-
-	Item->OnItemInstanceRemoved(Owner, Item->ItemEntry.Count);
 
 	if (AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(GetOwner()))
 	{
@@ -139,6 +118,16 @@ bool FortInventory::SetPhantomReserveAmmo(UFortWorldItem* Item, int32 PhantomRes
 	Item->ItemEntry.PhantomReserveAmmo = PhantomReserveAmmo;
 	Item->OwnerInventory->SetItemRequiresUpdate(&Item->ItemEntry);
 	Item->ItemEntry.bIsDirty = true;
+
+	return true;
+}
+
+bool FortInventory::SetDurability(UFortWorldItem* Item, float Durability)
+{
+	if (!Item || !Item->OwnerInventory)
+		return false;
+
+	Item->ItemEntry.SetDurability(Durability);
 
 	return true;
 }
@@ -193,12 +182,13 @@ void FortInventory::AttemptUnregistrationSave(UFortRegisteredPlayerInfo* _this)
 
 void FortInventory::Init()
 {
-	for (UObject* DefaultObject : { static_cast<UObject*>(AFortPlayerControllerAthena::GetDefaultObj()), static_cast<UObject*>(AFortPlayerControllerZone::GetDefaultObj()), static_cast<UObject*>(AFortPlayerController::GetDefaultObj()), static_cast<UObject*>(AFortAthenaAIBotController::GetDefaultObj()) })
+	for (UObject* DefaultObject : { static_cast<UObject*>(AFortPlayerControllerAthena::GetDefaultObj()), static_cast<UObject*>(AFortPlayerControllerZone::GetDefaultObj()), static_cast<UObject*>(AFortPlayerController::GetDefaultObj()), static_cast<UObject*>(AFortAthenaAIBotController::GetDefaultObj()), static_cast<UObject*>(AFortAIPawn::GetDefaultObj()) })
 	{
 		if (IFortInventoryOwnerInterface* Interface = GetInterfaceAddress<IFortInventoryOwnerInterface>(DefaultObject))
 			Hooking::VirtualSwap(*reinterpret_cast<void***>(Interface), 0x1A, RemoveInventoryItem);
 	}
 
+	Hooking::HookEvery<UFortWorldItem>(0x4E0 / 8, SetDurability);
 	Hooking::HookEvery<UFortWorldItem>(0x518 / 8, SetLoadedAmmo);
 	Hooking::HookEvery<UFortWorldItem>(0x520 / 8, SetPhantomReserveAmmo);
 

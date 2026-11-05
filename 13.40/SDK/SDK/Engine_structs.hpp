@@ -6727,25 +6727,15 @@ public:
 	uint8                                         Pad_101[0x7];                                      // 0x0101(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
-	void MarkItemDirty(struct FFastArraySerializerItem& Item, bool bMarkArrayDirty = true)
+	void MarkItemDirty(struct FFastArraySerializerItem& Item)
 	{
-		int32& IDCounter = *reinterpret_cast<int32*>(Pad_0 + 0x50);
-
-		if (Item.ReplicationID == -1)
-		{
-			Item.ReplicationID = ++IDCounter;
-			if (IDCounter == -1)
-				IDCounter++;
-		}
-
-		Item.ReplicationKey++;
-
-		if (bMarkArrayDirty)
-			MarkArrayDirty();
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(FFastArraySerializer*, struct FFastArraySerializerItem*)>(InSDKUtils::GetImageBase() + 0x160E160), this, &Item);
 	}
 
 	void MarkArrayDirty()
 	{
+		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(void*)>(InSDKUtils::GetImageBase() + 0x9C0800), Pad_0);
+
 		ArrayReplicationKey++;
 		if (ArrayReplicationKey == -1)
 			ArrayReplicationKey++;

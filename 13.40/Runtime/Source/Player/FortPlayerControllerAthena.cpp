@@ -80,13 +80,21 @@ void FortPlayerControllerAthena::UnBindAthenaProfileEvents(AFortPlayerController
 
 void FortPlayerControllerAthena::RemoveAllInventoryItems(AFortPlayerControllerAthena* _this)
 {
-	TArray<UFortWorldItem*>& Items = _this->WorldInventory->GetItems();
+	if (_this->WorldInventory == NULL)
+		return;
 
-	for (int32 i = Items.Num() - 1; i >= 0; i--)
+	TArray<FGuid> ItemGuids{};
+
+	for (UFortWorldItem* Item : _this->WorldInventory->GetItems())
 	{
-		if (_this->CanRemoveInventoryItem(Items[i]->ItemEntry.ItemGuid))
-			_this->WorldInventory->RemoveInventoryItem(Items[i]->ItemEntry.ItemGuid, -1, true);
+		if (Item && _this->CanRemoveInventoryItem(Item->ItemEntry.ItemGuid))
+			ItemGuids.Add(Item->ItemEntry.ItemGuid);
 	}
+
+	for (const FGuid& ItemGuid : ItemGuids)
+		_this->WorldInventory->RemoveInventoryItem(ItemGuid, -1, true);
+
+	ItemGuids.Free();
 }
 
 void FortPlayerControllerAthena::DropItemsAsPickups(AFortPlayerControllerAthena* _this, TArray<UFortWorldItem*>& ItemsToDropViaPickup, AFortPawn* DestructionPawn, AFortPlayerController* InFortPlayerController, EFortPickupSpawnSource SpawnSource)
