@@ -1,4 +1,4 @@
 # 13.40
 another gameserver made by yours truely (andr1ww)
 
-anyway, some of this is ported from my 9.41 gs, and its expected to stay private. 
+This gameserver will not be worked on anymore, and is missing some small base game features, but enjoy if you want nice code to look at.
